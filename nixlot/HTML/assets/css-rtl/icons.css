@@ -1,0 +1,30 @@
+/*------------------------------------------------------------------
+[Icons Plugins Included Stylesheet]
+
+Project        :   Nixlot - HTML5 Bootstrap Admin Template
+Version        :   V.1
+Create Date    :   05/02/20
+Last Update    :   05/02/20
+Copyright      :   Spruko Technologies Private Limited 
+Author         :   SprukoSoft
+Author URL     :   https://themeforest.net/user/sprukosoft
+Support		   :   support@spruko.com
+License        :   Licensed under ThemeForest License
+
+-------------------------------------------------------------------*/
+
+
+
+
+@charset "UTF-8";
+@import url("../plugins/web-fonts/font-awesome/css/font-awesome.min.css"); /*font-awesome 4 icons*/
+@import url("../plugins/web-fonts/fontawesome-free/css/all.css"); /*font-awesome 5 icons*/
+@import url("../plugins/web-fonts/Glyphicons/glyphicon.css");
+@import url("../plugins/web-fonts/Linearicons/Linearicons.css");
+@import url("../plugins/web-fonts/materialdesignicons/materialdesignicons.css");
+@import url("../plugins/web-fonts/Pe-icon-7-stroke/Pe-icon-7.css");
+@import url("../plugins/web-fonts/simple-line-icons/simple-line-icons.css");
+@import url("../plugins/web-fonts/themify/themify.css");
+@import url("../plugins/web-fonts/typicons/typicons.css");
+@import url("../plugins/web-fonts/weathericons/weathericons.css");
+@import url("../plugins/web-fonts/feather/feather.css");

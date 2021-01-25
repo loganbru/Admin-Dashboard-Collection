@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/core.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script type="text/javascript" src="assets/js/plugins/ui/prism.min.js"></script>
+	
+	<script type="text/javascript" src="assets/js/core/app.js"></script>
+	<script type="text/javascript" src="assets/js/pages/sidebar_detached_sticky_native.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body data-spy="scroll" data-target=".sidebar-detached" class="has-detached-right">
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-default navbar-lg header-highlight">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="index.html"><img src="assets/images/logo_light.png" alt=""></a>
+
+			<ul class="nav navbar-nav pull-right visible-xs-block">
+				<li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+				<li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+				<li><a class="sidebar-mobile-detached-toggle"><i class="icon-grid7"></i></a></li>
+			</ul>
+		</div>
+
+		<div class="navbar-collapse collapse" id="navbar-mobile">
+			<ul class="nav navbar-nav">
+				<li><a class="sidebar-control sidebar-main-hide hidden-xs"><i class="icon-paragraph-justify3"></i></a></li>
+				<li><a class="sidebar-control sidebar-detached-hide hidden-xs"><i class="icon-drag-right"></i></a></li>
+			</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="other_changelog.html">Changelog <span class="label label-inline bg-warning-400 position-right">v. 2.0</span></a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page container -->
+	<div class="page-container">
+
+		<!-- Page content -->
+		<div class="page-content">
+
+			<!-- Main sidebar -->
+			<div class="sidebar sidebar-main">
+				<div class="sidebar-content">
+
+	        		<!-- Support -->
+					<div class="sidebar-category no-margin">
+						<div class="category-title">
+							<span>Have questions?</span>
+							<i class="icon-help text-muted pull-right"></i>
+						</div>
+
+						<div class="category-content">
+							<a href="http://kopyov.ticksy.com" class="btn bg-success-400 btn-block" target="_blank"><i class="icon-lifebuoy position-left"></i> Limitless support</a>
+						</div>
+					</div>
+					<!-- /support -->
+
+
+					<!-- Main navigation -->
+					<div class="sidebar-category">
+						<div class="category-title">
+							<span>Navigation</span>
+							<i class="icon-menu7 text-muted pull-right"></i>
+						</div>
+
+						<div class="category-content no-padding">
+							<ul class="navigation navigation-main navigation-accordion">
+
+								<!-- Main -->
+								<li class="navigation-header">Main</li>
+								<li><a href="index.html">Introduction</a></li>
+								<li><a href="main_getting_started.html">Getting started</a></li>
+								<li><a href="main_starter_kit.html">Starter kit</a></li>
+								<li><a href="main_rtl.html">RTL layout</a></li>
+
+								<li class="navigation-header">Basic functionality</li>								
+								<li><a href="base_less_css.html">LESS and CSS</a></li>
+								<li><a href="base_less_compile.html">Compiling LESS</a></li>
+								<li><a href="base_less_compile_rtl.html">Compiling LESS for RTL version</a></li>
+								<li>
+									<a href="#">Plugins</a>
+									<ul>
+										<li><a href="plugins_forms.html">Forms</a></li>
+										<li><a href="plugins_forms_styling.html">Form styling</a></li>
+										<li><a href="plugins_selects.html">Selects</a></li>
+										<li><a href="plugins_editors.html">Editors</a></li>
+										<li><a href="plugins_uploaders.html">Uploaders</a></li>
+										<li><a href="plugins_wizards.html">Wizards</a></li>
+										<li><a href="plugins_extensions.html">Extensions</a></li>
+										<li><a href="plugins_notifications.html">Notifications</a></li>
+										<li><a href="plugins_pickers.html">Pickers</a></li>
+										<li><a href="plugins_tables.html">Tables</a></li>
+										<li><a href="plugins_ui.html">UI</a></li>
+										<li><a href="plugins_vis.html">Visualization</a></li>
+									</ul>
+								</li>
+								<li><a href="base_bootstrap.html">Bootstrap</a></li>
+								<li><a href="base_color_system.html">Color system</a></li>
+								<li><a href="base_helpers.html">Helpers</a></li>
+								<li><a href="base_themes.html">Themes</a></li>
+
+								<li class="navigation-header">Layout options</li>
+								<li><a href="layout_markup.html">Markup</a></li>
+								<li><a href="layout_sidebars.html">Sidebars</a></li>
+								<li><a href="layout_navbars.html">Navbars</a></li>
+								<li><a href="layout_v_nav.html">Vertical navigation</a></li>
+								<li><a href="layout_h_nav.html">Horizontal navigation</a></li>
+								<li class="active"><a href="layout_page_header.html">Page header</a></li>
+								<li><a href="layout_footer.html">Footer</a></li>
+
+								<li class="navigation-header">Other</li>
+								<li><a href="other_credits.html">Sources and credits</a></li>
+								<li><a href="other_changelog.html">Changelog <span class="label bg-warning-400">version 2.0</span></a></li>
+								<!-- /main -->
+
+							</ul>
+						</div>
+					</div>
+					<!-- /main navigation -->
+
+				</div>
+			</div>
+			<!-- /main sidebar -->
+
+
+			<!-- Main content -->
+			<div class="content-wrapper">
+
+				<!-- Page header -->
+				<div class="page-header">
+					<div class="page-header-content">
+						<div class="page-title">
+							<h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold">Limitless</span> - Page Header</h4>
+						</div>
+
+						<div class="heading-elements">
+							<ul class="breadcrumb">
+								<li><a href="index.html"><i class="icon-home2 position-left"></i> Home</a></li>
+								<li class="active">Page header</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- /page header -->
+				
+
+				<!-- Content area -->
+				<div class="content">
+
+					<!-- Detached content -->
+					<div class="container-detached">
+						<div class="content-detached">
+
+							<!-- Page header -->
+							<div class="panel panel-flat" id="page_header">
+								<div class="panel-heading">
+									<h5 class="panel-title">Page header component</h5>
+									<div class="heading-elements">
+										<ul class="icons-list">
+					                		<li><a data-action="collapse"></a></li>
+					                		<li><a data-action="close"></a></li>
+					                	</ul>
+					            	</div>
+								</div>
+
+								<div class="panel-body">
+									<div class="content-group-lg" id="page_header_overview">
+										<p>Page header - component that displays page title. Depending on the layout variation, page header can have white, light grey or transparent background color. By default hage header supports title, subtitle and optional components that appear on the right side of the header area.</p>
+
+										<p class="content-group">All optional components are available in both panel header and page header components and use same markup, all of them are adapted to any height of the headers and always vertically centered. Custom components are collapsed on mobiles and tables and are visible on toggle button click.</p>
+
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Component</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="text-semibold">Buttons</td>
+														<td>All button options, including floating buttons</td>
+													</tr>
+													<tr>
+														<td class="text-semibold">Button dropdowns</td>
+														<td>Button dropdowns with all available options</td>
+													</tr>
+													<tr>
+														<td class="text-semibold">Labeled buttons</td>
+														<td>Transparent buttons with icon and text label</td>
+													</tr>
+													<tr>
+														<td class="text-semibold">Input fields</td>
+														<td>All available input fields with options</td>
+													</tr>
+													<tr>
+														<td class="text-semibold">Input groups</td>
+														<td>Input groups with all available options</td>
+													</tr>
+													<tr>
+														<td class="text-semibold">Checkboxes, radios</td>
+														<td>Unstyled, styles, switchery toggles and Bootstrap switches</td>
+													</tr>
+													<tr>
+														<td class="text-semibold">Selects</td>
+														<td>Default, Select2, Bootstrap select, Bootstrap multiselect and SelectBoxIt selects</td>
+													</tr>
+													<tr>
+														<td class="text-semibold">File input</td>
+														<td>Single file input, styled and unstyled</td>
+													</tr>
+													<tr>
+														<td class="text-semibold">Tabs</td>
+														<td>Tabs nav, available in panel header only</td>
+													</tr>
+													<tr>
+														<td class="text-semibold">Pills</td>
+														<td>Pills nav, available in panel header only</td>
+													</tr>
+													<tr>
+														<td class="text-semibold">Text, links</td>
+														<td>Text with links, all possible options</td>
+													</tr>
+													<tr>
+														<td class="text-semibold">Labels, badges</td>
+														<td>Labels and badges in all variations</td>
+													</tr>
+													<tr>
+														<td class="text-semibold">Icons</td>
+														<td>Single and multiple icons list</td>
+													</tr>
+													<tr>
+														<td class="text-semibold">Pagination</td>
+														<td>Pagination and pager components in 3 sizes</td>
+													</tr>
+													<tr>
+														<td class="text-semibold">Date picker</td>
+														<td>Date range picker attached to the button and with custom display format</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="content-group-lg" id="page_header_markup">
+										<h6 class="text-semibold">Page header markup</h6>
+										<p>Page header markup is identical in all layouts, but in some layouts default page header classes can be different. This was made to reduce number of classes in markup if default page header style is different. Default page header markup is:</p>
+										<pre class="language-markup"><code>&lt;!-- Page header -->
+&lt;div class="page-header page-header-default">
+
+	&lt;!-- Page header content -->
+	&lt;div class="page-header-content">
+
+		&lt;!-- Page title -->
+		&lt;div class="page-title">
+			&lt;h4>
+				&lt;i class="icon-arrow-left52 position-left">&lt;/i>
+				&lt;span class="text-semibold">Horizontal Nav&lt;/span> - On Click
+			&lt;/h4>
+		&lt;/div>
+		&lt;!-- /page title -->
+
+
+		&lt;!-- Heading elements -->
+		&lt;div class="heading-elements">
+			...
+		&lt;/div>
+		&lt;!-- /heading elements -->
+
+	&lt;/div>
+	&lt;!-- /page header content -->
+
+&lt;/div>
+&lt;!-- /page header -->
+</code></pre>
+									</div>
+
+									<div id="page_header_elements">
+										<h6 class="text-semibold">Page header elements</h6>
+										<p class="content-group">The table above demonstrates what components can be ised in page header area. All these components are completely optional. All components are hidden on mobiles and tablets and can be reached by clicking toggle button on the right side of the header area, all components are displayed as block elements and appear below the page header. In future releases header components list will be extended with new components according to the functionality additions.</p>
+
+										<p class="text-semibold">Example of page header components:</p>
+										<pre class="language-markup" data-line="8-17"><code>&lt;!-- Page header -->
+&lt;div class="page-header page-header-default">
+
+	&lt;!-- Page header content -->
+	&lt;div class="page-header-content">
+
+		&lt;!-- Page title -->
+		&lt;div class="page-title">
+			&lt;h4>
+				&lt;i class="icon-arrow-left52 position-left">&lt;/i>
+				&lt;span class="text-semibold">Horizontal Nav&lt;/span> - On Click
+			&lt;/h4>
+		&lt;/div>
+		&lt;!-- /page title -->
+
+
+		&lt;!-- Header elements -->
+		&lt;div class="heading-elements">
+			&lt;div class="heading-btn-group">
+				&lt;a href="#" class="btn btn-link btn-float has-text">
+					&lt;i class="icon-bars-alt text-primary">&lt;/i>
+					&lt;span>Statistics&lt;/span>
+				&lt;/a>
+
+				&lt;a href="#" class="btn btn-link btn-float has-text">
+					&lt;i class="icon-calculator text-primary">&lt;/i>
+					&lt;span>Invoices&lt;/span>
+				&lt;/a>
+
+				&lt;a href="#" class="btn btn-link btn-float has-text">
+					&lt;i class="icon-calendar5 text-primary">&lt;/i>
+					&lt;span>Schedule&lt;/span>
+				&lt;/a>
+			&lt;/div>
+		&lt;/div>
+		&lt;!-- /header elements -->
+
+	&lt;/div>
+	&lt;!-- /page header content -->
+
+&lt;/div>
+&lt;!-- /page header -->
+
+</code></pre>
+									</div>
+								</div>
+							</div>
+							<!-- /page header -->
+
+
+							<!-- Breadcrumbs -->
+							<div class="panel panel-flat" id="breadcrumb">
+								<div class="panel-heading">
+									<h5 class="panel-title">Breadcrumb component</h5>
+									<div class="heading-elements">
+										<ul class="icons-list">
+					                		<li><a data-action="collapse"></a></li>
+					                		<li><a data-action="close"></a></li>
+					                	</ul>
+				                	</div>
+								</div>
+
+								<div class="panel-body">
+									<div class="content-group-lg" id="breadcrumb_line">
+										<h6 class="text-semibold">Breadcrumb line component</h6>
+										<p class="content-group">By default, breadcrumbs component is placed inside custom <code>&lt;div class="breadcrumb-line" /></code> container. This container has a lot of different options, such as different placement, background and border color options, optional components etc. Similar to page header component, all breadcrumb line elements are collapsed on mobiles and tablets and appear on ly on toggle button click. For now, breadcrumb line elements support only buttons and labels with badges.</p>
+
+										<p class="text-semibold">Default markup without breadcrumb line:</p>
+										<pre class="language-markup"><code>&lt;!-- Breadcrumb line component -->
+&lt;div class="breadcrumb-line">
+
+	&lt;!-- Breadcrumb itself -->
+	&lt;ul class="breadcrumb">
+		...
+	&lt;/ul>
+	&lt;!-- /breadcrumb itself -->
+
+
+	&lt;!-- Breadcrumb line elements -->
+	&lt;ul class="breadcrumb-elements">
+		...
+	&lt;/ul>
+	&lt;!-- /breadcrumb line elements -->
+
+&lt;/div>
+&lt;!-- /breadcrumb line component -->
+</code></pre>
+									</div>
+
+									<div id="breadcrumb_base">
+										<h6 class="text-semibold">Breadcrumb component</h6>
+										<p class="content-group">Limitless template allows you to use breadcrumb as a stand alone component or as a part of <strong>breadcrumb line</strong> component. Breadcrumb component can be used above and below page title, above and below page header content or as a page header element displayed on the right side. Breadcrumb itself supports a lot of customization options and placements, depending on layout.</p>
+
+										<p class="text-semibold">Example markup:</p>
+										<pre class="language-markup" data-line="6"><code>&lt;!-- Breadcrumb component -->
+&lt;ul class="breadcrumb">
+	&lt;li>&lt;a href="index.html">&lt;i class="icon-home2 position-left">&lt;/i> Home&lt;/a>&lt;/li>
+	&lt;li>&lt;a href="navigation_horizontal_click.html">Horizontal nav&lt;/a>&lt;/li>
+	&lt;li class="active">On click&lt;/li>
+&lt;/ul>
+&lt;!-- /breadcrumb component -->
+</code></pre>
+									</div>
+								</div>
+							</div>
+							<!-- /breadcrumbs -->
+
+						</div>
+					</div>
+					<!-- /detached content -->
+
+
+					<!-- Detached sidebar -->
+					<div class="sidebar-detached">
+			        	<div class="sidebar sidebar-default">
+							<div class="sidebar-content">
+
+				        		<!-- Contact author -->
+								<div class="sidebar-category no-margin">
+									<div class="category-title">
+										<span>Page navigation</span>
+										<i class="icon-menu7 text-muted pull-right"></i>
+									</div>
+
+									<div class="category-content">
+										<a href="http://themeforest.net/user/kopyov" class="btn bg-blue btn-block" target="_blank"><i class="icon-reading position-left"></i> Contact author</a>
+									</div>
+								</div>
+								<!-- /contact author -->
+
+			        			
+			        			<!-- Navigation -->
+								<div class="sidebar-category">
+									<div class="category-content no-padding">
+										<ul class="nav navigation no-padding-top">
+											<li class="navigation-header"><i class="icon-history pull-right"></i> Navigation</li>
+											<li>
+												<a href="#page_header">Page header</a>
+												<ul>
+													<li><a href="#page_header_overview">Overview</a></li>
+													<li><a href="#page_header_markup">Page header markup</a></li>
+													<li><a href="#page_header_elements">Page header elements</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#breadcrumb">Breadcrumbs</a>
+												<ul>
+													<li><a href="#breadcrumb_line">Breadcrumb line component</a></li>
+													<li><a href="#breadcrumb_base">Breadcrumb component</a></li>
+												</ul>
+											</li>
+											<li class="navigation-divider"></li>
+											<li><a href="#">Go to top <i class="icon-circle-up2 pull-right"></i></a></li>
+							            </ul>
+						            </div>
+					            </div>
+					            <!-- /navigation -->
+
+				            </div>
+			            </div>
+		            </div>
+		            <!-- /detached sidebar -->
+
+
+					<!-- Footer -->
+					<div class="footer text-muted">
+						&copy; 2015. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
+					</div>
+					<!-- /footer -->
+
+				</div>
+				<!-- /content area -->
+
+			</div>
+			<!-- /main content -->
+
+		</div>
+		<!-- /page content -->
+
+	</div>
+	<!-- /page container -->
+
+</body>
+</html>

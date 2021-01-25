@@ -1,0 +1,91 @@
+---
+layout: default
+title: Sign up
+---
+
+<!-- Hero and nav -->
+<div class="hero hero-wavy is-relative is-light-grey huge-pb">
+    
+    {{> navbar-fade-dark}}
+
+    <!-- Hero -->
+    <div id="main-hero" class="hero-body">
+        <div class="container has-text-centered">
+            <div class="columns is-vcentered pt-50 pb-50">
+
+                <!-- Signup form -->
+                <div class="column is-5 is-offset-2 z-index-2">
+                    <div id="signup-card" class="animated preFadeInLeft fadeInLeft">
+                        <div class="flex-card clean-signup-card">
+                            <h2 class="has-text-centered text-bold">Sign up</h2>
+                            <form>
+                                <div class="control-material is-secondary">      
+                                    <input class="material-input" type="text" required>
+                                    <span class="material-highlight"></span>
+                                    <span class="bar"></span>
+                                    <label>Email *</label>
+                                </div>
+                                <div class="control-material is-secondary">      
+                                    <input class="material-input" type="text" required>
+                                    <span class="material-highlight"></span>
+                                    <span class="bar"></span>
+                                    <label>Full name *</label>
+                                </div>
+                                <div class="control-material is-secondary">      
+                                    <input class="material-input" type="text" required>
+                                    <span class="material-highlight"></span>
+                                    <span class="bar"></span>
+                                    <label>Password *</label>
+                                </div>
+
+                                <div class="mt-20">
+                                    <button class="button button-cta btn-align secondary-btn is-fullwidth rounded raised no-lh">Get started now</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- Signup form -->
+
+                <!-- Signup features -->
+                <div class="column is-4 z-index-2">
+                    <div class="flex-card signup-context secondary-card light-raised padding-40 is-hidden-mobile">
+                        <h2 class="title is-4 is-landing-light has-text-centered light-text">What you get.</h2>
+                        <!-- Icon block -->
+                        <div class="argument">
+                            <div class="icon">
+                                <i class="im im-icon-Timer-2"></i>
+                            </div>
+                            <div class="argument-text light-text">
+                                Instant access to the app
+                            </div>
+                        </div>
+                        <!-- Icon block -->
+                        <div class="argument">
+                            <div class="icon">
+                                <i class="im im-icon-Basket-Coins"></i>
+                            </div>
+                            <div class="argument-text light-text">
+                                First <b>5</b> customers are free
+                            </div>
+                        </div>
+                        <!-- Icon block -->
+                        <div class="argument pb-40">
+                            <div class="icon">
+                                <i class="im im-icon-Present"></i>
+                            </div>
+                            <div class="argument-text light-text">
+                                <b>10Gb</b> cloud storage included
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Signup features -->
+            </div>
+        </div>
+    </div>
+    <!-- /Hero image -->
+</div>
+<!-- /Hero and nav -->
+
+{{> footer-light}}

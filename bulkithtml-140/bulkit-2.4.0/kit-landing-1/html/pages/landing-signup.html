@@ -1,0 +1,54 @@
+---
+layout: default
+title: Sign up
+---
+
+<!-- Hero and nav -->
+<div class="hero hero-waves-dark is-fullheight is-relative is-light-grey">
+    
+    {{> navbar-fade-dark}}
+
+    <!-- Hero -->
+    <div id="main-hero" class="hero-body">
+        <div class="container has-text-centered">
+            <div class="columns is-vcentered">
+                <div class="column is-6 is-offset-3 z-index-2">
+                    <div id="signup-card" class="animated preFadeInLeft fadeInLeft">
+                        <div class="flex-card wavy-signup-card">
+                            <h2 class="has-text-centered text-bold no-margin-bottom pt-20 pb-20">Sign up</h2>
+                            <form>
+                                <div class="control-material is-secondary">      
+                                    <input class="material-input" type="text" required>
+                                    <span class="material-highlight"></span>
+                                    <span class="bar"></span>
+                                    <label>Email *</label>
+                                </div>
+                                <div class="control-material is-secondary">      
+                                    <input class="material-input" type="text" required>
+                                    <span class="material-highlight"></span>
+                                    <span class="bar"></span>
+                                    <label>Full name *</label>
+                                </div>
+                                <div class="control-material is-secondary">      
+                                    <input class="material-input" type="text" required>
+                                    <span class="material-highlight"></span>
+                                    <span class="bar"></span>
+                                    <label>Password *</label>
+                                </div>
+
+                                <div class="pt-20 pb-20">
+                                    <button class="button button-cta btn-align secondary-btn is-fullwidth rounded raised no-lh">Get started now</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Hero image -->
+</div>
+<!-- /Hero and nav -->
+
+{{> footer-dark}}

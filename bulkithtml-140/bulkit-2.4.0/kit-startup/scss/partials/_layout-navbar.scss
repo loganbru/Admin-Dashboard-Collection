@@ -1,0 +1,557 @@
+/*! _navbar.scss | Bulkit | CSS Ninja */
+
+/* ==========================================================================
+Navbar related styles
+========================================================================== */
+
+/***
+TABLE OF CONTENTS
+=============================================================================
+0. Resets
+1. Navbar placeholder
+2. Fixed solid navbar
+3. Static navbar
+4. Shared styles
+5. Sticky fade navbar
+6. Light and transparent navbar
+7. Base styles
+8. Hero head
+9. Account avatar
+10. Scrollnav
+11. Hamburger menu icon
+=============================================================================
+***/
+
+/* ==========================================================================
+1. Navbar placeholder
+========================================================================== */
+.navbar-placeholder {
+    z-index: 999;
+}
+
+/* ==========================================================================
+3. Static navbar
+========================================================================== */
+.navbar-wrapper {
+    width: 100%;
+    height: 4.6rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    transition: all 0.4s;
+
+    &.is-static {
+        position: static !important;
+    }
+
+    &.is-solid {
+        background: $white;
+        box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.12);
+    }
+
+    //Cloned fixed navbar
+    &.is-cloned {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transform: translateY(-100%);
+        z-index: 100;
+        background: $white;
+        box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.12);
+
+        &.is-active {
+            transform: translateY(0);
+        }
+    }
+
+    &.is-transparent {
+        .navbar-item, .navbar-link {
+            &.is-slide {
+                border-bottom: 1px solid transparent;
+
+                &:after {
+                    content: '';
+                    display: block;
+                    width: 0;
+                    min-width: 0;
+                    height: 1.6px;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    background: $primary;
+                    transition: width .3s;
+                }
+
+                &:hover {
+                    &:after {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar-brand {
+        align-items: center;
+
+        img {
+            height: 28px;
+
+            &.light-logo {
+                display: block;
+            }
+
+            &.dark-logo {
+                display: none;
+            }
+        }
+    }
+
+    .navbar-item, .navbar-item.has-dropdown {
+        &:hover {
+            color: $muted-grey;
+            background: transparent;
+
+            a {
+                background: transparent;
+            }
+        }
+    }
+
+    .navbar-item {
+        &.is-menu {
+            &:hover {
+                background: #e8e8e8 !important;
+
+                i, span {
+                    color: $secondary !important;
+                }
+            }
+
+            span {
+                padding: 0 10px;
+            }
+
+            i {
+                font-size: 22px;
+                color: $muted-grey;
+            }
+        }
+
+        &.is-mega {
+            position: static;
+
+            .is-mega-menu-title {
+                margin-bottom: 0;
+                padding: .375rem 1rem;
+            }
+        }
+    }
+
+    .navbar-link {
+        &:hover {
+            background: transparent !important;
+            color: $secondary;
+
+            &:after {
+                border-color: $secondary;
+            }
+        }
+
+        &:after {
+            font-size: 0.85rem;
+            border: 1.6px solid transparent;
+            border-radius: 2px;
+            border-right: 0;
+            border-top: 0;
+            border-color: $blue-grey;
+            margin-top: -0.375em;
+            right: 1.125em;
+            transition: all .3s;
+            right: 1.525em;
+        }
+    }
+
+    .custom-burger {
+        margin-left: auto;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        height: 4.6rem;
+        width: 4.6rem;
+    }
+
+    //Light navbar
+    &.navbar-light {
+        .icon-box-toggle {
+            span i {
+                background: $white !important;
+            }
+        }
+
+        .navbar-item, .navbar-link {
+            color: $white;
+
+            &.is-slide {
+                border-bottom: 1px solid transparent;
+
+                &:after {
+                    content: '';
+                    display: block;
+                    width: 0;
+                    min-width: 0;
+                    height: 1px;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    background: $white;
+                    transition: width .3s;
+                }
+
+                &:hover {
+                    &:after {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .navbar-item {
+            &.has-dropdown {
+                &:hover {
+                    .navbar-link:after {}
+                }
+            }
+        }
+
+        .navbar-link {
+            &:after {
+                font-size: 0.85rem;
+                border: 1.6px solid transparent;
+                border-radius: 2px;
+                border-right: 0;
+                border-top: 0;
+                border-color: $white;
+                margin-top: -0.375em;
+                right: 1.125em;
+                transition: all .3s;
+                right: 1.525em;
+            }
+        }
+
+        .navbar-burger {
+            span {
+                background: $white !important;
+            }
+        }
+    }
+
+    &.navbar-inverse {
+        &.is-reverse {
+            background: $sidebar;
+
+            .navbar-menu.is-active {
+                background: $sidebar;
+            }
+        }
+
+        &.is-blue {
+            background: $blue;
+
+            .navbar-menu.is-active {
+                background: $blue;
+            }
+        }
+
+        &.is-purple {
+            background: $secondary;
+
+            .navbar-menu.is-active {
+                background: $secondary;
+            }
+        }
+
+        &.is-red {
+            background: $red;
+
+            .navbar-menu.is-active {
+                background: $red;
+            }
+        }
+
+        .icon-box-toggle {
+            span i {
+                background: $white !important;
+            }
+        }
+
+        .navbar-item, .navbar-link {
+            color: $white;
+        }
+
+        .navbar-item {
+            &.has-dropdown {
+                &:hover {
+                    .navbar-link:after {}
+                }
+            }
+        }
+
+        .navbar-link {
+            &:after {
+                font-size: 0.85rem;
+                border: 1.6px solid transparent;
+                border-radius: 2px;
+                border-right: 0;
+                border-top: 0;
+                border-color: $white;
+                margin-top: -0.375em;
+                right: 1.125em;
+                transition: all .3s;
+                right: 1.525em;
+            }
+        }
+
+        .navbar-burger {
+            span {
+                background: $white !important;
+            }
+        }
+    }
+
+    .navbar-dropdown {
+        &.is-medium {
+            width: 200px;
+        }
+
+        .navbar-item {
+            color: $blue-grey;
+        }
+    }
+
+    //Active Transparent navbar modifiers
+    &.navbar-faded {
+        background: $white;
+        box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.12);
+
+        .navbar-brand {
+            img {
+                height: 28px;
+
+                &.light-logo {
+                    display: none;
+                }
+
+                &.dark-logo {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+9. Account avatar
+========================================================================== */
+.account {
+    position: relative;
+    right: 20px;
+    top: 5px;
+    margin-left: 30px;
+
+    .nav-item {
+        border-bottom: 1px solid transparent !important;
+    }
+
+    img.account-avatar {
+        max-height: 40px;
+        border-radius: 50px;
+        border: 1px solid $light-grey;
+    }
+
+    div a {
+        color: $medium-grey !important;
+    }
+
+    div a i {
+        position: relative;
+        top: 3px;
+        left: 10px;
+        font-size: 7px !important;
+        color: $medium-grey;
+    }
+
+    .dropOut ul {
+        margin-left: 0 !important;
+    }
+}
+
+/* ==========================================================================
+10. Scrollnav (component pages spyscroll nav)
+========================================================================== */
+.scroll-nav-wrapper {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background: $white;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.12);
+
+    .tabs {
+        background: $white;
+
+        a {
+            padding-bottom: 0;
+            padding-top: 0;
+            border-bottom-color: transparent;
+        }
+
+        ul {
+            border-bottom: none;
+        }
+
+        ul li a {
+            color: $title-grey;
+        }
+
+        ul li:hover a {
+            color: $accent;
+            border-bottom-color: $accent;
+        }
+
+        ul li.is-active a {
+            color: $accent;
+            border-bottom: 2px solid $accent;
+        }
+
+        ul li a.there {
+            color: $accent;
+            border-bottom: 2px solid $accent;
+        }
+    }
+}
+
+/* ==========================================================================
+11. Hamburger menu icon
+========================================================================== */
+.menu-toggle {
+    font-size: 20px;
+    color: #666;
+    line-height: 48px;
+    text-align: center;
+    background: transparent;
+    display: block;
+    width: 24px;
+    height: 26px;
+    cursor: pointer;
+    padding: 0;
+    margin: 0 14px;
+    transition: opacity 0.4s;
+    opacity: 1;
+    position: relative;
+    top: 2px;
+
+    .icon-box-toggle {
+        height: 100%;
+        width: 100%;
+        background: tranparent;
+        position: relative;
+        display: block;
+        width: 30px;
+        height: 30px;
+
+        &.active > span.rotate {
+            /*transform*/
+            -webkit-transform: rotate(90deg);
+            -moz-transform: translate(0px, 0px) rotate(90deg);
+            -ms-transform: translate(0px, 0px) rotate(90deg);
+            -o-transform: translate(0px, 0px) rotate(90deg);
+            transform: translate(0px, 0px) rotate(90deg);
+        }
+
+        &.active > span > i.icon-line-center {
+            visibility: hidden;
+            width: 1px;
+            height: 3px;
+            left: 70%;
+        }
+
+        &.active > span > i.icon-line-bottom {
+            margin: -2px 0 0 -10px;
+            left: 50%;
+            top: 12px;
+
+            /*transform*/
+            -webkit-transform: rotate(135deg);
+            -moz-transform: translate(0px, 0px) rotate(135deg);
+            -ms-transform: translate(0px, 0px) rotate(135deg);
+            -o-transform: translate(0px, 0px) rotate(135deg);
+            transform: translate(0px, 0px) rotate(135deg);
+        }
+
+        &.active > span > i.icon-line-top {
+            margin: -2px 0 0 -10px;
+            left: 50%;
+            top: 12px;
+
+            /*transform*/
+            -webkit-transform: rotate(45deg);
+            -moz-transform: translate(0px, 0px) rotate(45deg);
+            -ms-transform: translate(0px, 0px) rotate(45deg);
+            -o-transform: translate(0px, 0px) rotate(45deg);
+            transform: translate(0px, 0px) rotate(45deg);
+        }
+    }
+
+    .icon-line-center {
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        background: $title-grey;
+        margin: -1px 0 0 -10px;
+        left: 50%;
+        top: 11px;
+        -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+    }
+
+    .icon-line-top {
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        background: $title-grey;
+        margin: -3px 0 0 -10px;
+        left: 50%;
+        top: 7px;
+        -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+    }
+
+    .icon-line-bottom {
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        background: $title-grey;
+        margin: 2px 0 0 -10px;
+        left: 50%;
+        top: 14px;
+        -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+    }
+}
+
+//Burger responsive adustment
+@media only screen and (min-width: 768px) and (max-width: 1088px) {
+    .desktop.landscape {
+        .custom-burger {
+            display: flex !important;
+        }
+    }
+}

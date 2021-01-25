@@ -1,0 +1,131 @@
+//
+// Subheader Search
+//
+
+
+
+
+// Variables
+$kt-base-color: #574cc6;
+$kt-border-color: lighten($kt-base-color, 8%);
+$kt-icon-color: #22b9ff; // General Mode
+
+// Subheader Search
+.kt-subheader-search {
+	background: #564FC1;
+	padding: 40px 0;
+	margin-bottom: kt-get($kt-page-padding, desktop);
+	
+	// Title
+	.kt-subheader-search__title {
+		font-size: 1.8rem;
+		font-weight: 500;
+		color: #fff;
+		margin: 0;
+	} 
+	
+	// Desc
+	.kt-subheader-search__desc {
+		font-size: 1rem;
+		font-weight: 500;
+		color: #9388fa;
+		display: inline-block;
+		padding-left: 0.5rem;
+	}
+
+	// Input icon
+	.kt-input-icon {
+		margin-right: 15px;
+	}
+
+	.kt-input-icon__icon {
+		i {
+			color: $kt-icon-color;
+		}
+	}
+
+	// Form control
+	.form-control {
+		background: transparent;
+		border-color: $kt-border-color;
+		color: lighten($kt-border-color, 10%);
+		@include kt-input-placeholder( lighten($kt-border-color, 5%));
+		
+		&:focus {
+			border-color: lighten($kt-border-color, 10%);
+			@include kt-input-placeholder( lighten($kt-border-color, 10%));
+			color: lighten($kt-border-color, 13%);
+			
+			&+.kt-input-icon__icon i {
+				color: lighten($kt-icon-color, 5%);
+			}
+		}
+	}
+
+	// Search button
+	.kt-subheader-search__submit-btn {
+		background: $kt-icon-color;
+		border-color: $kt-icon-color;
+		color: #fff;
+
+		&:hover {
+			background: lighten($kt-icon-color, 5%);
+			border-color: lighten($kt-icon-color, 5%);
+		}
+	}
+
+	// Search link
+	.kt-subheader-search__link {
+		display: inline-block;
+		margin-left: 20px;
+		font-weight:500;
+		color: #9388fa;
+
+		&:hover {
+			color: lighten(#9388fa, 7%);
+		}
+
+		@include kt-link-color( #9388fa, lighten(#9388fa, 7%));
+	}
+
+	// Search form
+	.kt-form {
+		margin-top: 2rem;
+	}
+
+	// Clear bottom margin
+	&.kt-subheader-search--clear {
+		margin-bottom: 0;
+	}
+} 
+
+// Tablet and mobile mode
+@include kt-tablet-and-mobile {
+	// Subheader Search
+	.kt-subheader-search {
+		padding: 20px 0;
+		margin-bottom: kt-get($kt-page-padding, mobile);
+
+		// Title
+		.kt-subheader-search__title {
+			font-size: 1.4rem;
+		} 
+		
+		// Desc
+		.kt-subheader-search__desc {
+			font-size: 1rem;
+			padding-left: 0;
+		}
+
+		// Input icon
+		.kt-input-icon {
+			width: auto;
+			margin-bottom: 10px;
+		}
+
+		// Clear bottom margin
+		&.kt-subheader-search--clear {
+			margin-bottom: 0;
+		}
+	}
+}

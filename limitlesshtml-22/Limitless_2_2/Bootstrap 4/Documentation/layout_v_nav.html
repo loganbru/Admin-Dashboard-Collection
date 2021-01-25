@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/layout.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script src="assets/js/main/jquery.min.js"></script>
+	<script src="assets/js/main/bootstrap.bundle.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script src="assets/js/plugins/prism.min.js"></script>
+	<script src="assets/js/plugins/sticky.min.js"></script>
+	
+	<script src="assets/js/main/app.js"></script>
+	<script src="assets/js/pages/components_scrollspy.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body data-spy="scroll" data-target=".sidebar-component-right">
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-expand-md navbar-light">
+		<div class="navbar-header navbar-dark d-none d-md-flex align-items-md-center">
+			<div class="navbar-brand navbar-brand-md">
+				<a href="index.html" class="d-inline-block">
+					<img src="assets/images/logo_light.png" alt="">
+				</a>
+			</div>
+	
+			<div class="navbar-brand navbar-brand-xs">
+				<a href="index.html" class="d-inline-block">
+					<img src="assets/images/logo_icon_light.png" alt="">
+				</a>
+			</div>
+		</div>
+
+		<div class="d-flex flex-1 d-md-none">
+			<div class="navbar-brand mr-auto">
+				<a href="index.html" class="d-inline-block">
+					<img src="assets/images/logo_dark.png" alt="">
+				</a>
+			</div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile">
+				<i class="icon-tree5"></i>
+			</button>
+			<button class="navbar-toggler sidebar-mobile-main-toggle" type="button">
+				<i class="icon-paragraph-justify3"></i>
+			</button>
+			<button class="navbar-toggler sidebar-mobile-component-toggle" type="button">
+				<i class="icon-unfold"></i>
+			</button>
+		</div>
+
+		<div class="collapse navbar-collapse" id="navbar-mobile">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a href="#" class="navbar-nav-link sidebar-control sidebar-main-hide d-none d-md-block">
+						<i class="icon-paragraph-justify3"></i>
+					</a>
+				</li>
+
+				<li class="nav-item">
+					<a href="#" class="navbar-nav-link sidebar-control sidebar-component-toggle d-none d-md-block">
+						<i class="icon-transmission"></i>
+					</a>
+				</li>
+			</ul>
+
+			<ul class="navbar-nav ml-md-auto">
+				<li class="nav-item dropdown">
+					<a href="other_changelog.html" class="navbar-nav-link">
+						<i class="icon-history mr-2"></i>
+						Changelog
+						<span class="badge bg-warning-400 badge-pill position-static ml-md-2">2.2</span>
+					</a>					
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page content -->
+	<div class="page-content">
+
+		<!-- Main sidebar -->
+		<div class="sidebar sidebar-dark sidebar-main sidebar-expand-md">
+
+			<!-- Sidebar mobile toggler -->
+			<div class="sidebar-mobile-toggler text-center">
+				<a href="#" class="sidebar-mobile-main-toggle">
+					<i class="icon-arrow-left8"></i>
+				</a>
+				Navigation
+				<a href="#" class="sidebar-mobile-expand">
+					<i class="icon-screen-full"></i>
+					<i class="icon-screen-normal"></i>
+				</a>
+			</div>
+			<!-- /sidebar mobile toggler -->
+
+
+			<!-- Sidebar content -->
+			<div class="sidebar-content">
+
+        		<!-- Support -->
+				<div class="card card-body">
+					<a href="http://kopyov.ticksy.com" class="btn bg-success-400 btn-block" target="_blank"><i class="icon-lifebuoy mr-2"></i> Limitless support</a>
+				</div>
+				<!-- /support -->
+
+
+				<!-- Main navigation -->
+				<div class="card card-sidebar-mobile">
+					<ul class="nav nav-sidebar" data-nav-type="accordion">
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Main</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="index.html" class="nav-link">Introduction</a></li>
+						<li class="nav-item"><a href="main_getting_started.html" class="nav-link">Getting started</a></li>
+						<li class="nav-item"><a href="main_starter_kit.html" class="nav-link">Starter kit</a></li>
+						<li class="nav-item"><a href="main_rtl.html" class="nav-link">RTL layout</a></li>
+
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Basic functionality</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="base_scss_css.html" class="nav-link">SCSS and CSS</a></li>
+						<li class="nav-item"><a href="base_scss_compile.html" class="nav-link">Compiling SCSS</a></li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link">Plugins</a>
+							<ul class="nav nav-group-sub" data-submenu-title="Plugins">
+								<li class="nav-item"><a href="plugins_forms.html" class="nav-link">Forms</a></li>
+								<li class="nav-item"><a href="plugins_forms_styling.html" class="nav-link">Form styling</a></li>
+								<li class="nav-item"><a href="plugins_editors.html" class="nav-link">Editors</a></li>
+								<li class="nav-item"><a href="plugins_uploaders.html" class="nav-link">Uploaders</a></li>
+								<li class="nav-item"><a href="plugins_extensions.html" class="nav-link">Extensions</a></li>
+								<li class="nav-item"><a href="plugins_notifications.html" class="nav-link">Notifications</a></li>
+								<li class="nav-item"><a href="plugins_pickers.html" class="nav-link">Pickers</a></li>
+								<li class="nav-item"><a href="plugins_tables.html" class="nav-link">Tables</a></li>
+								<li class="nav-item"><a href="plugins_ui.html" class="nav-link">UI</a></li>
+								<li class="nav-item"><a href="plugins_vis.html" class="nav-link">Visualization</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a href="base_icons.html" class="nav-link">Icons</a></li>
+
+						<li class="nav-item"><a href="base_bootstrap.html" class="nav-link">Bootstrap</a></li>
+						<li class="nav-item"><a href="base_color_system.html" class="nav-link">Color system</a></li>
+						<li class="nav-item"><a href="base_helpers.html" class="nav-link">Helpers</a></li>
+						<li class="nav-item"><a href="base_themes.html" class="nav-link">Themes</a></li>
+
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Layout options</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="layout_overview.html" class="nav-link">Layouts</a></li>
+						<li class="nav-item"><a href="layout_sidebars.html" class="nav-link">Sidebars</a></li>
+						<li class="nav-item"><a href="layout_navbars.html" class="nav-link">Navbars</a></li>
+						<li class="nav-item"><a href="layout_v_nav.html" class="nav-link active">Vertical navigation</a></li>
+						<li class="nav-item"><a href="layout_h_nav.html" class="nav-link">Horizontal navigation</a></li>
+						<li class="nav-item"><a href="layout_page_header.html" class="nav-link">Page header</a></li>
+
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Other</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="other_credits.html" class="nav-link">Sources and credits</a></li>
+						<li class="nav-item"><a href="other_changelog.html" class="nav-link">Changelog <span class="badge badge-pill bg-warning-400 ml-auto">version 2.2</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /main navigation -->
+
+		</div>
+		<!-- /main sidebar -->
+
+
+		<!-- Main content -->
+		<div class="content-wrapper">
+
+			<!-- Page header -->
+			<div class="page-header">
+				<div class="page-header-content header-elements-md-inline">
+					<div class="page-title d-flex">
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Limitless</span> - Vertical Navigation</h4>
+						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+					</div>
+
+					<div class="header-elements d-none py-0 mb-3 mb-md-0">
+						<div class="breadcrumb">
+							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
+							<span class="breadcrumb-item active">Vertical navigation</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /page header -->
+			
+
+			<!-- Content area -->
+			<div class="content pt-0">
+
+				<!-- Inner container -->
+				<div class="d-flex align-items-start flex-column flex-md-row">
+
+					<!-- Left content -->
+					<div class="order-2 order-md-1">
+
+							<!-- Navigation overview -->
+							<div class="card" id="overview">
+								<div class="card-header header-elements-inline">
+									<h5 class="card-title">Navigation overview</h5>
+									<div class="header-elements">
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+					                </div>
+								</div>
+
+								<div class="card-body">
+									<p>Vertical navigation - type of navigation that is used in sidebars and has vertical direction. By default navigation includes custom icons based on 16px grid, aligned to the left (to the right in RTL layout) and have absolute position. In mini sidebar navigation text is hidden. In this type of sidebar icons are centered and have static position. Also optional styling is available: different sizes, bordered nav and layout with right aligned icons. Vertical navigation supports the following options:</p>
+									
+									<div class="table-responsive">
+										<table class="table table-bordered table-striped">
+											<thead>
+												<tr>
+													<th style="width: 250px;">Option</th>
+													<th>Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="font-weight-semibold">Navigation placement</td>
+													<td>Main navigation can be used in any sidebar type - main, secondary, right and content. Please note - collapsed navigation is allowed only in main sidebar, all other sidebars display full sized navigation. Since navigation is a part of sidebar content, it can be mixed with other components and can be placed before or after them depending on the priority.</td>
+												</tr>
+												<tr>
+													<td class="font-weight-semibold">Navigation types</td>
+													<td>Default navigation type is <strong>collapsible</strong>: when new item is expanded, current level remains opened. This logic works in all navigation levels. Collapsible navigation doesn't require any additional classes. The second navigation type is <strong>accordion</strong>: when new item is expanded, current level is collapsed. This logic works in all navigation levels as well. In mini sidebar parent level of navigation doesn't have click event and shows child levels on hover, but child levels functionality remains according to the type of navigation. Sidebar navigation supports <strong>up to 4 levels</strong> of child menus. To use collsprible nav type, add <code>data-nav-type="collapsible"</code> data attribute to <code>.nav-sidebar</code> container. To use accordion nav type, add <code>data-nav-type="accordion"</code> attribute to <code>.nav-sidebar</code> container.</td>
+												</tr>
+												<tr>
+													<td class="font-weight-semibold">Additional styling</td>
+													<td>Vertical navigation support a few additional styling options: <strong>bordered</strong> navigation styling adds horizontal lines to nav items in top level; <strong>right icons</strong> - icons in vertical navigation can be aligned to the left <strong>or</strong> to the right. To use right aligned icons, add <code>.nav-sidebar-icons-reverse</code> to <code>.nav-sidebar</code> container</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<!-- /navigation overview -->
+
+
+							<!-- Main navigation examples -->
+							<div class="card" id="options">
+								<div class="card-header header-elements-inline">
+									<h5 class="card-title">Navigation options</h5>
+									<div class="header-elements">
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+					                </div>
+								</div>
+
+								<div class="card-body">
+									<h6 class="font-weight-semibold" id="options_types">Collapsible and accordion types</h6>
+									<p class="mb-3">Flexible template functionality offers 2 different kinds of navigation: collapsible and accordion. Both have custom jQuery code and provide extended control over the child nav items. Default type is <code>collapsible</code> navigation: open as many child levels as you want, they all will be visible all the time. Second type is <code>accordion</code> navigation: allows to display only 1 parent level, collapsing all others. Both navigation types have hidden 2nd level in mini sidebar that opens on hover.</p>
+
+									<div class="row">
+										<div class="col-md-6">
+											<p class="font-weight-semibold">Collapsible navigation markup</p>
+											<pre class="language-markup mb-3" data-line="2"><code>&lt;!-- Default navigation markup -->
+&lt;ul class="nav nav-sidebar nav-sidebar-icons-reverse" data-nav-type="collapsible">
+	&lt;li class="nav-item-header">
+		&lt;div class="text-uppercase font-size-sm line-height-sm">Sidebar header&lt;/div>
+	&lt;/li>
+
+	&lt;li class="nav-item">
+		&lt;a href="#" class="nav-link">
+			Top level link
+		&lt;/a>
+	&lt;/li>
+
+	&lt;li class="nav-item nav-item-submenu">
+		&lt;a href="#" class="nav-link">With children&lt;/a>
+
+		&lt;ul class="nav nav-group-sub">
+			&lt;li class="nav-item">
+				&lt;a href="#" class="nav-link">
+					Second level link
+				&lt;/a>
+			&lt;/li>
+			&lt;li class="nav-item">
+				&lt;a href="#" class="nav-link">
+					Second level link
+				&lt;/a>
+			&lt;/li>
+		&lt;/ul>
+	&lt;/li>
+
+	&lt;li class="nav-item">
+		&lt;a href="#" class="nav-link disabled">Disabled Item&lt;/a>
+	&lt;/li>
+&lt;/ul>
+&lt;!-- /default navigation markup -->										
+</code></pre>
+										</div>
+
+										<div class="col-md-6">
+											<p class="font-weight-semibold">Accordion navigation markup</p>
+											<pre class="language-markup mb-3" data-line="2"><code>&lt;!-- Accordion navigation markup -->
+&lt;ul class="nav nav-sidebar nav-sidebar-icons-reverse" data-nav-type="accordion">
+	&lt;li class="nav-item-header">
+		&lt;div class="text-uppercase font-size-sm line-height-sm">Sidebar header&lt;/div>
+	&lt;/li>
+
+	&lt;li class="nav-item">
+		&lt;a href="#" class="nav-link">
+			Top level link
+		&lt;/a>
+	&lt;/li>
+
+	&lt;li class="nav-item nav-item-submenu">
+		&lt;a href="#" class="nav-link">With children&lt;/a>
+
+		&lt;ul class="nav nav-group-sub">
+			&lt;li class="nav-item">
+				&lt;a href="#" class="nav-link">
+					Second level link
+				&lt;/a>
+			&lt;/li>
+			&lt;li class="nav-item">
+				&lt;a href="#" class="nav-link">
+					Second level link
+				&lt;/a>
+			&lt;/li>
+		&lt;/ul>
+	&lt;/li>
+
+	&lt;li class="nav-item">
+		&lt;a href="#" class="nav-link disabled">Disabled Item&lt;/a>
+	&lt;/li>
+&lt;/ul>
+&lt;!-- /accordion navigation markup -->										
+</code></pre>
+										</div>
+									</div>
+
+
+									<h6 class="font-weight-semibold" id="options_positions">Icons alignment</h6>
+									<p class="mb-3">Sidebar navigation supports icons in all menu levels. Default icons alignment is <code>left</code>. All icons have absolute position, allowing parent link text wrap and keep permanent left padding. Left icons alignment allows you to keep a visual hierarchy: icon > text > arrow (label), but right icons alignment makes usage of arrows useless as they won't be visible. To change icons alignment just add <code>.nav-sidebar-icons-reverse</code> to the <code>.nav-sidebar</code> container, CSS will do the rest.</p>
+
+									<div class="row">
+										<div class="col-md-6">
+											<p class="font-weight-semibold">Default left icons alignment</p>
+											<pre class="language-markup mb-3" data-line="2"><code>&lt;!-- Left icons alignment -->
+&lt;ul class="nav nav-sidebar" data-nav-type="accordion">
+	&lt;li class="nav-item-header">
+		&lt;div class="text-uppercase font-size-sm line-height-sm">Sidebar header&lt;/div>
+	&lt;/li>
+
+	&lt;li class="nav-item">
+		&lt;a href="#" class="nav-link">
+			&lt;i class="icon-strategy">&lt;/i>
+			Top level link
+		&lt;/a>
+	&lt;/li>
+
+	&lt;li class="nav-item">
+		&lt;a href="#" class="nav-link disabled">&lt;i class="icon-make-group">&lt;/i> Disabled Item&lt;/a>
+	&lt;/li>
+&lt;/ul>
+&lt;!-- /left icons alignment -->										
+</code></pre>
+										</div>
+
+										<div class="col-md-6">
+											<p class="font-weight-semibold">Optional right icons alignment</p>
+											<pre class="language-markup mb-3" data-line="2"><code>&lt;!-- Right icons alignment -->
+&lt;ul class="nav nav-sidebar nav-sidebar-icons-reverse" data-nav-type="accordion">
+	&lt;li class="nav-item-header">
+		&lt;div class="text-uppercase font-size-sm line-height-sm">Sidebar header&lt;/div>
+	&lt;/li>
+
+	&lt;li class="nav-item">
+		&lt;a href="#" class="nav-link">
+			&lt;i class="icon-strategy">&lt;/i>
+			Top level link
+		&lt;/a>
+	&lt;/li>
+
+	&lt;li class="nav-item">
+		&lt;a href="#" class="nav-link disabled">&lt;i class="icon-make-group">&lt;/i> Disabled Item&lt;/a>
+	&lt;/li>
+&lt;/ul>
+&lt;!-- /right icons alignment -->										
+</code></pre>
+										</div>
+									</div>
+
+
+									<h6 class="font-weight-semibold" id="options_display">Bordered navigation</h6>
+									<p class="mb-3">By default, vertical sidebar navigation doesn't have clear visual separation between nav items, it has its own advantages and disadvantages - thanks to bigger vertical padding, nav items are readable enough and match general design theme. But in some cases you might want to highlight them by adding horizontal lines to them. This is where this nav style preset might be handy. To use, simply add <code>.nav-sidebar-bordered</code> class to main sidebar nav container..</p>
+
+									<div class="row">
+										<div class="col-md-6">
+											<p class="font-weight-semibold">Navigation without borders</p>
+											<pre class="language-markup mb-3" data-line="2"><code>&lt;!-- Navigation without borders -->
+&lt;ul class="nav nav-sidebar" data-nav-type="accordion">
+	&lt;li class="nav-item-header">
+		&lt;div class="text-uppercase font-size-sm line-height-sm">Sidebar header&lt;/div>
+	&lt;/li>
+
+	&lt;li class="nav-item">
+		&lt;a href="#" class="nav-link">
+			&lt;i class="icon-strategy">&lt;/i>
+			Top level link
+		&lt;/a>
+	&lt;/li>
+
+	&lt;li class="nav-item">
+		&lt;a href="#" class="nav-link active">
+			&lt;i class="icon-puzzle4">&lt;/i>
+			Active link
+		&lt;/a>
+	&lt;/li>
+
+	&lt;li class="nav-item">
+		&lt;a href="#" class="nav-link disabled">
+			&lt;i class="icon-make-group">&lt;/i>
+			Disabled link
+		&lt;/a>
+	&lt;/li>
+&lt;/ul>
+&lt;!-- /navigation without borders -->										
+</code></pre>
+										</div>
+
+										<div class="col-md-6">
+											<p class="font-weight-semibold">Navigation with borders</p>
+											<pre class="language-markup mb-3" data-line="2"><code>&lt;!-- Navigation with borders -->
+&lt;ul class="nav nav-sidebar nav-sidebar-bordered" data-nav-type="accordion">
+	&lt;li class="nav-item-header">
+		&lt;div class="text-uppercase font-size-sm line-height-sm">Sidebar header&lt;/div>
+	&lt;/li>
+
+	&lt;li class="nav-item">
+		&lt;a href="#" class="nav-link">
+			&lt;i class="icon-strategy">&lt;/i>
+			Top level link
+		&lt;/a>
+	&lt;/li>
+
+	&lt;li class="nav-item">
+		&lt;a href="#" class="nav-link active">
+			&lt;i class="icon-puzzle4">&lt;/i>
+			Active link
+		&lt;/a>
+	&lt;/li>
+
+	&lt;li class="nav-item">
+		&lt;a href="#" class="nav-link disabled">
+			&lt;i class="icon-make-group">&lt;/i>
+			Disabled link
+		&lt;/a>
+	&lt;/li>
+&lt;/ul>
+&lt;!-- /navigation with borders -->										
+</code></pre>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /main navigation examples -->
+
+
+							<!-- Navigation classes -->
+							<div class="card" id="classes">
+								<div class="card-header header-elements-inline">
+									<h5 class="card-title">Navigation classes</h5>
+
+									<div class="header-elements">
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="reload"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+				                	</div>
+								</div>
+
+								<div class="card-body">
+									This table contains all classes related to the vertical sidebar navigation. Vertical navigation is a custom layout element that uses global <code>nav</code> component classes and adapted for main navigation purposes. Depending on the needs, it supports different options such as collapsing type, icons, badges, combination with other sidebar components etc. This list explains the logic and purpose:
+								</div>
+
+								<div class="table-responsive">
+									<table class="table table-bordered">
+										<thead>
+											<tr>
+												<th style="width: 20%;">Class</th>
+												<th>Description</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td><code>.nav</code></td>
+												<td>Global wrapper for navigation list. It uses default Bootstrap's styles of <code>.nav</code> component and similar markup options.</td>
+											</tr>
+											<tr>
+												<td><code>.nav-sidebar</code></td>
+												<td>Default navigation class, must be used with any navigation type and color. Responsible for targeting specific style changes and basic styling of item colors, borders and icons.</td>
+											</tr>
+											<tr>
+												<td><code>.nav-item-header</code></td>
+												<td>Targets optional <code>header</code> element for separating group of nav items. In main sidebar this class is responsible for toggling text in folded sidebar mode. Use text utility classes to style inner content.</td>
+											</tr>
+											<tr>
+												<td><code>.nav-item-divider</code></td>
+												<td>Navigation item with this class separates groups of related menu items - it adds thick light (dark in light sidebar) line with extra vertical spacing. Useful in long lists.</td>
+											</tr>
+											<tr>
+												<td><code>.nav-item</code></td>
+												<td>This class is required as an immediate nav link parent in any <code>.nav</code> container. Since active link color is different from hover and initial states color, <code>.nav-item</code> has 1px vertical spacing to separate items that have same background color. Dropdown menu items have same logic.</td>
+											</tr>
+											<tr>
+												<td><code>.nav-link</code></td>
+												<td>This class is responsible for navigation link styling and is also required as a part of nav list class structure. It's also a target for <code>.active</code> and <code>disabled</code> states. Please note - this class doesn't reset <code>&lt;button></code> styles, so make sure you use <code>&lt;a></code> instead.</td>
+											</tr>
+											<tr>
+												<td><code>.nav-link.active</code></td>
+												<td>Combination of these classes in a single <code>&lt;a></code> element highlights nav item link and indicates the current page. By default, expanded submenu and <code>active</code> item state color is the same in each level.</td>
+											</tr>
+											<tr>
+												<td><code>.nav-link.disabled</code></td>
+												<td>Combination of these classes in a single <code>&lt;a></code> element disables all pointer and click events and mutes out nav link text and background colors.</td>
+											</tr>
+
+
+											<tr>
+												<td><code>.nav-item-submenu</code></td>
+												<td>This class indicates nav list item with children menu levels and needs to be added to <code>.nav-item</code> container.</td>
+											</tr>
+											<tr>
+												<td><code>.nav-item-expanded</code></td>
+												<td>Responsible for <strong>expanding</strong> submenu on page load - this class should be added to <code>.nav-item</code> container in all levels.</td>
+											</tr>
+											<tr>
+												<td><code>.nav-item-open</code></td>
+												<td>This class also should be used in combination with <code>.nav-item</code> and/or <code>.nav-item-expanded</code> classes, since it's responsible for some styling and toggles dynamically.</td>
+											</tr>
+											<tr>
+												<td><code>.nav-group-sub</code></td>
+												<td>Navigation submenu class - should be used with <code>.nav</code> class in <code>&lt;ul></code> element in all menu levels.</td>
+											</tr>
+
+											<tr>
+												<td><code>.nav-sidebar-icons-reverse</code></td>
+												<td>Add this class to <code>.nav-sidebar</code> container to change icons alignment from <code>left</code> to <code>right</code>.</td>
+											</tr>
+											<tr>
+												<td><code>.nav-sidebar-bordered</code></td>
+												<td>Add this class to <code>.nav-sidebar</code> container if you want to add horizontal borders to all navigation links on the first level.</td>
+											</tr>
+
+
+											<tr>
+												<td><code>[data-nav-type="collapsible"]</code></td>
+												<td>Default navigation behaviour - when new item is expanded, current level remains opened. Actually navigation container doesn't require this, but is used for the sake of semantic naming.</td>
+											</tr>
+											<tr>
+												<td><code>[data-nav-type="accordion"]</code></td>
+												<td>Changes default <code>collapsible</code> navigation type to <code>accordion</code> type - when new item is expanded, current level is collapsed.</td>
+											</tr>
+											<tr>
+												<td><code>[data-submenu-title="..."]</code></td>
+												<td>This data attribute adds the title to the second menu level in <strong>main</strong> sidebar in <strong>folded</strong> mode. Use it in <code>.nav-group-sub</code> container.</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<!-- /navigation classes -->
+
+					</div>
+					<!-- /left content -->
+
+
+					<!-- Right sidebar component -->
+					<div class="sidebar-sticky w-100 w-md-auto order-1 order-md-2">
+						<div class="sidebar sidebar-light sidebar-component sidebar-component-right sidebar-expand-md mb-3">
+							<div class="sidebar-content">
+								<div class="card">
+									<div class="card-header bg-transparent header-elements-inline">
+										<span class="text-uppercase font-size-sm font-weight-semibold">Page navigation</span>
+										<div class="header-elements">
+											<div class="list-icons">
+						                		<a class="list-icons-item" data-action="collapse"></a>
+					                		</div>
+				                		</div>
+									</div>
+
+									<div class="card-body">
+										<a href="http://themeforest.net/user/kopyov" class="btn bg-blue btn-block" target="_blank"><i class="icon-reading mr-2"></i> Contact author</a>
+									</div>
+
+									<ul class="nav nav-sidebar nav-scrollspy" data-nav-type="accordion">
+										<li class="nav-item-header pt-0"><div class="text-uppercase font-size-xs line-height-xs">Sections</div> <i class="icon-menu"></i></li>
+										<li class="nav-item"><a href="#overview" class="nav-link">Navigation overview</a></li>
+										<li class="nav-item nav-item-submenu">
+											<a href="#options" class="nav-link">Navigation options</a>
+											<ul class="nav nav-group-sub d-block">
+												<li class="nav-item"><a href="#options_types" class="nav-link">Navigation types</a></li>
+												<li class="nav-item"><a href="#options_positions" class="nav-link">Navigation positions</a></li>
+												<li class="nav-item"><a href="#options_display" class="nav-link">Display options</a></li>
+											</ul>
+										</li>
+										<li class="nav-item"><a href="#classes" class="nav-link">Navigation classes</a></li>
+										<li class="nav-item-divider"></li>
+										<li class="nav-item"><a href="#" class="nav-link">Go to top <i class="icon-circle-up2 mr-0 ml-auto"></i></a></li>
+									</ul>
+								</div>
+				            </div>
+						</div>
+					</div>
+					<!-- /right sidebar component -->
+
+				</div>
+				<!-- /inner container -->
+
+			</div>
+			<!-- /content area -->
+
+
+			<!-- Footer -->
+			<div class="navbar navbar-expand-lg navbar-light">
+				<div class="text-center d-lg-none w-100">
+					<button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse" data-target="#navbar-footer">
+						<i class="icon-unfold mr-2"></i>
+						Footer
+					</button>
+				</div>
+
+				<div class="navbar-collapse collapse" id="navbar-footer">
+					<span class="navbar-text">
+						&copy; 2015 - 2018. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
+					</span>
+
+					<ul class="navbar-nav ml-lg-auto">
+						<li class="nav-item"><a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov" class="navbar-nav-link font-weight-semibold"><span class="text-pink-400"><i class="icon-cart2 mr-2"></i> Purchase</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /footer -->
+
+		</div>
+		<!-- /main content -->
+
+	</div>
+	<!-- /page content -->
+
+</body>
+</html>

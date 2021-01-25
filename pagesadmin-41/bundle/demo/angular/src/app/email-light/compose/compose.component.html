@@ -1,0 +1,115 @@
+<pg-secondary-sidebar extraClass="light">
+  <div class=" m-b-30 m-l-30 m-r-30 d-none d-sm-block">
+      <a [routerLink]="['../compose']" class="btn btn-primary btn-block btn-compose">Compose</a>
+    </div>
+    <p class="menu-title">BROWSE</p>
+    <ul class="main-menu">
+      <li class="active">
+        <a [routerLink]="['../list']">
+          <span class="title"><i class="pg pg-inbox"></i> Inbox</span>
+          <span class="badge pull-right">5</span>
+        </a>
+      </li>
+      <li class="">
+        <a [routerLink]="['../list']">
+          <span class="title"><i class="pg pg-folder"></i> All mail</span>
+        </a>
+        <ul class="sub-menu no-padding">
+          <li>
+            <a [routerLink]="['../list']">
+              <span class="title">Important</span>
+            </a>
+          </li>
+          <li>
+            <a [routerLink]="['../list']">
+              <span class="title">Labeled</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a [routerLink]="['../list']">
+          <span class="title"><i class="pg pg-sent"></i> Sent</span>
+        </a>
+      </li>
+      <li>
+        <a [routerLink]="['../list']">
+          <span class="title"><i class="pg pg-spam"></i> Spam</span>
+          <span class="badge pull-right">10</span>
+        </a>
+      </li>
+    </ul>
+    <p class="menu-title m-t-20 all-caps">Quick view</p>
+    <ul class="sub-menu no-padding">
+      <li>
+        <a href="javascript:void(0)">
+          <span class="title">Documents</span>
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0)">
+          <span class="title">Flagged</span>
+          <span class="badge pull-right">5</span>
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0)">
+          <span class="title">Images</span>
+        </a>
+      </li>
+    </ul>  
+</pg-secondary-sidebar>
+<div class="inner-content full-height">
+	<!-- START COMPOSE EMAIL -->
+  <div class="email-composer container-fluid">
+    <div class="row">
+      <div class="col-md-12 no-padding">
+        <div class="wysiwyg5-wrapper email-toolbar-wrapper">
+        </div>
+          <div class="form-group-attached">
+            <div class="row clearfix">
+              <div class="col-md-6">
+                <div class="form-group form-group-default">
+                  <label>TO:</label>
+                  <pg-tag-control></pg-tag-control>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group form-group-default">
+                  <label>CC:</label>
+                  <pg-tag-control placeholder="Add Carbon Copy"></pg-tag-control>
+                </div>
+              </div>
+            </div>
+            <div class="form-group form-group-default">
+              <label>Subject</label>
+              <input type="text" class="form-control" name="subject">
+            </div>
+          </div>
+        <div class="email-body-wrapper">
+            <quill-editor [style]="{height: '350px'}" placeholder="Reply" [modules]="editorModules">
+            </quill-editor>
+        </div>
+      </div>
+    </div>
+    <div class="row p-b-20">
+      <div class="col-md-11 d-flex">
+        <div>
+          <button class="btn btn-white btn-cons">Cancel</button>
+          <button class="btn btn-complete btn-cons m-l-10">Send</button>
+        </div>
+        <div class="checkbox d-flex m-l-20">
+          <input type="checkbox" value="1" id="sendCC">
+          <label for="sendCC" class="hint-text d-none d-lg-block">Send a <span class="text-complete">Carbon Copy</span> CC to my Primary email address.</label>
+          <label for="sendCC" class="hint-text d-md-none">Send me a CC</label>
+        </div>
+      </div>
+      <div class="col-md-1">
+        <button class="btn btn-complete pull-right">
+          <i class="pg pg-save"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- END COMPOSE EMAIL -->
+</div>  

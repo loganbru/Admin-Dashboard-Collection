@@ -1,0 +1,123 @@
+input[type=checkbox],
+input[type=radio] {
+  margin: 0;
+}
+
+input {
+  margin: 0;
+}
+
+.message-input {
+  position: relative;
+  &__strong {
+    position: absolute;
+    height: 22px;
+    padding: 0 8px;
+    margin-top: -11px;
+    top: 50%;
+    right: 0;
+    border-radius: 3px;
+    background-color: #3cb878;
+    color: #ffffff;
+    align-items: center;
+    .display-flex();
+    @media only screen and (max-width: @screen-md-down) {
+      display: none;
+    }
+  }
+}
+
+label.custom-checkbox {
+  position: relative;
+  display: inline-block;
+  vertical-align: -4px;
+  background-color: #e9ecee;
+  cursor: pointer;
+  .squre(18px);
+  i {
+    display: none;
+    position: absolute;
+    width: 6px;
+    height: 9px;
+    top: 50%;
+    left: 50%;
+    margin-left: -3px;
+    margin-top: -6px;
+    border-bottom: solid 2px #5b6065;
+    border-right: solid 2px #5b6065;
+    .rotate(45deg);
+  }
+  input {
+    display: none;
+    &:checked + i {
+      display: block;
+    }
+  }
+}
+
+label.custom-radio {
+  position: relative;
+  display: inline-block;
+  vertical-align: -4px;
+  background-color: #e9ecee;
+  border-radius: 50%;
+  cursor: pointer;
+  .squre(18px);
+  i {
+    display: none;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: 50%;
+    left: 50%;
+    margin-left: -4px;
+    margin-top: -4px;
+    border-radius: 50%;
+    background-color: #5b6065;
+  }
+  input {
+    display: none;
+    &:checked + i {
+      display: block;
+    }
+  }
+}
+
+select {
+  height: 38px;
+  border: none;
+  outline: none;
+  background-color: #e9ecee;
+  @media only screen and (min-width: @screen-md) {
+    padding: 0 40px 0 15px;
+  }
+  @media only screen and (max-width: @screen-md-down) {
+    padding: 0 30px 0 8px;
+    font-size: 13px;
+  }
+}
+.custom-select {
+  position: relative;
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    margin-top: -5px;
+    top: 50%;
+    border-bottom: solid 1px #81858a;
+    border-right: solid 1px #81858a;
+    .squre(7px);
+    .rotate(45deg);
+    @media only screen and (min-width: @screen-md) {
+      right: 15px;
+    }
+    @media only screen and (max-width: @screen-md-down) {
+      right: 12px;
+    }
+  }
+}

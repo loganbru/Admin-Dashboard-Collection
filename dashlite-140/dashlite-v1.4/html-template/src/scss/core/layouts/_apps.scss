@@ -1,0 +1,9 @@
+//@i-v1.1
+@include media-breakpoint-up(lg){
+    .layout-apps {
+        .nk-header,.nk-footer,.nk-content{
+            padding-left: 14px;
+            padding-left: 14px;
+        }
+    }
+}

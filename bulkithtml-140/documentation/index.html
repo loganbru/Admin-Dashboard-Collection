@@ -1,0 +1,1552 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Bulkit Documentation</title>
+    <meta name="description" content="Free responsive HTML template for your documentation">
+    <meta name="author" content="Css Ninja">
+    <meta name="format-detection" content="telephone=no">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,cyrillic' rel='stylesheet'
+        type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/prettify.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-xs-12 left">
+                    <div id="logo">
+                        <img src="images/bulkit-white.svg" alt="vdoc">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-7 col-xs-12">
+                    <div class="slogan">
+                        2.4.0 | Documentation
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-xs-12 right">
+                    <a class="btn" href="https://cssninja.io" target="_blank">Support</a>
+                </div>
+                <div class="col-lg-2 col-md-3 col-xs-12 right">
+                    <a class="btn" href="https://docs.bulkit.cssninja.io" target="_blank">Online Docs</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="content">
+        <div class="container">
+            <div class="content-wrap">
+                <div class="row">
+                    <aside>
+                        <div class="menu-box">
+                            <h4>BULKIT DOCS</h4>
+                            <nav>
+                                <ul>
+                                    <li><a href="#start" class="current">Welcome</a></li>
+                                    <li><a href="#get-started">Get Started</a></li>
+                                    <li><a href="#template-structure">Template Structure</a></li>
+                                    <li><a href="#gulp">Working with Gulp</a></li>
+                                    <li><a href="#css-ref">CSS Reference</a></li>
+                                    <li><a href="#js-ref">JS Reference</a></li>
+                                    <li><a href="#support">Support</a></li>
+                                    <li><a href="#changelog">Changelog</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </aside>
+                    <div class="content-info">
+
+                        <div class="section-txt" id="start">
+                            <h2>Welcome</h2>
+                            <p>First of all, Thank you so much for purchasing this template and for being our loyal
+                                customer. You are awesome! You are entitled to get free lifetime updates to this
+                                product and support from the css ninja team directly.</p>
+
+                            <p>This documentation is available as a local documentation that you can use offline, on
+                                your computer. However, for a better documentation browsing and search experience, we
+                                recommend you to use the <a href="https://docs.bulkit.cssninja.io" target="_blank">Online
+                                    Documentation</a>.</p>
+
+                            <p>This documentation has been written to help you regarding each step of customization.
+                                Please go through the documentation carefully to understand how this template is made
+                                and how to edit this properly. HTML and CSS knowledge is required to customize this
+                                template.</p>
+                            <p class="message">
+                                <img src="images/warn.svg">
+                                <span>Be careful before you start working with the template and read the documentation.
+                                    If not edited properly, layouts may break completely. No support is provided for
+                                    faulty customization. Please aslo note that this kit might not work as expected
+                                    under nodejs versions higher than 6 or 7, due to node-sass incompatibility with
+                                    higher versions of nodejs (Please also note that issues might have been resolved with the transition to gulp-sass 3.0).</span>
+                            </p>
+                        </div>
+
+                        <div class="section-txt" id="update">
+                            <h2>Bulkit 2.4 Update</h2>
+                            <p>You are currently reading the new <code>Bulkit 2.4 documentation</code> (The v1
+                                documentation is still available online). Bulkit supports <code>npm</code> and
+                                <code>gulp</code>..
+                                New features have been added : </p>
+
+                            <ul>
+                                <li>Upgrade to Bulma 0.7.5 version</li>
+                                <li>Fixed Navbar responsive issues</li>
+                                <li>Fixed regressions due to Bulma breaking changes</li>
+                                <li>Added material style select box</li>
+                                <li>Added Error kit with 404 and 500 errors templates</li>
+                                <li>Added a new One pager kit</li>
+                                <li>Fixed dashboard datatable filtering and sorting issues</li>
+                            </ul>
+
+                            <p>We added a new "Error kit" concept. These special pages can be used in your projects to display error pages. They have their own assets but they still use some of the Bulkit main styles.</p>
+
+                            <p class="message">
+                                <img src="images/warn.svg">
+                                <span>Please carefully read this documentation to get started fast with the template.
+                                    You don't need to know any `nodejs` or anything else. Just follow the steps to
+                                    setup your templates.</span>
+                            </p>
+                        </div>
+
+                        <div class="section-txt" id="get-started">
+                            <h2>Getting started</h2>
+                            <h3><a id="Support_12"></a>Support</h3>
+                            <p>If you have any trouble while editing this template or if you simply want to ask a
+                                question about something, feel free to contact us at <a href="mailto:support@cssninja.io">support@cssninja.io</a>
+                                or to post your request on our support forums at <a href="https://cssninja.io/forum">cssninja.io</a></p>
+                            <h3>Prerequisites</h3>
+                            <p>You will need the following tools to customize this template.</p>
+                            <ul>
+                                <li>A good code editor of your choice</li>
+                                <li>A supported web browser</li>
+                                <li><code>node.js</code> and <code>npm</code> installed on your machine</li>
+                                <li>Intermediate <code>html</code> knowledge</li>
+                                <li>Intermediate <code>scss</code> knowledge</li>
+                                <li>Basic <code>javascript</code> knowledge</li>
+                            </ul>
+
+                            <p class="message">
+                                <img src="images/warn.svg">
+                                <span>Be careful before you start working with the template and read the documentation.
+                                    If not edited properly, layouts may break completely. No support is provided for
+                                    faulty customization.</span>
+                            </p>
+
+                            <h3>Template folders</h3>
+                            <p>You will find 2 root folders inside your Bulkit Downloaded Zip file :</p>
+
+                            <ul>
+                                <li>Documentation: The local documentation version shipped with Bulkit</li>
+                                <li>Bulkit: The project folder containing all the template parts</li>
+                            </ul>
+
+                            <p class="message">
+                                <img src="images/warn.svg">
+                                <span>Note that the global version results from the build of each one of the separated
+                                    kits, put together in a single demo. Therefore this documentation will rather focus
+                                    on building the kits.</span>
+                            </p>
+
+                            <h3><a id="Bulkit_Gulp_47"></a>Bulkit Gulp</h3>
+                            <p>Using the Bulkit Gulp bundle will give you total control over the template. All the
+                                important tasks are fully automated, <strong>you don’t have to do anything</strong>.
+                                Howevern we will explain in details how to get the most from the template, even if
+                                you’ve never worked, with <code>npm</code>, <code>gulp</code> or <code>panini</code>.</p>
+                            <p>To avoid repeating same chunks of code, Bulkit also uses <strong>zurb-panini</strong>, a
+                                very lightweight html templating engine. You can quikly create easily reusable chunks
+                                of code. But before diving into the template itself, We need to setup a <strong>nodejs</strong>
+                                environment. If you already have Node and Npm installed on your machine, you can skip
+                                the following sections.</p>
+                            <h4><a id="Npm_52"></a>Npm</h4>
+                            <p>To start working with Bulkit, we are going to need the <code>Node Package Manager</code>,
+                                commonly known as <code>npm</code>. npm makes it easy for JavaScript developers to
+                                share and reuse code, and makes it easy to update the code that you’re sharing, so you
+                                can build amazing things.</p>
+                            <h4><a id="Install_nodejs_55"></a>Install nodejs</h4>
+                            <p>npm is distributed with Node.js, which means that when you download Node.js, you
+                                automatically get npm installed on your computer. First, check if you already have node
+                                and npm installed. To check if you have Node.js installed, run this command in your
+                                terminal:</p>
+                            <pre class="prettyprint"><code>node -v
+</code></pre>
+                            <p>To confirm that you have npm installed you can run this command in your terminal:</p>
+                            <pre class="prettyprint"><code>npm -v
+</code></pre>
+                            <p>If node is not installed on your machine, follow the steps described in one of the
+                                following guides, depending on your operating system:</p>
+                            <ul>
+                                <li><a href="https://treehouse.github.io/installation-guides/windows/node-windows.html"
+                                        target="_blank">Windows</a> : Install node.js and npm on Windows</li>
+                                <li><a href="https://www.ostechnix.com/install-node-js-linux/" target="_blank">Linux</a>
+                                    : Install node.js and npm on Linux</li>
+                                <li><a href="https://www.codementor.io/mercurial/how-to-install-node-js-on-macos-sierra-mphz41ekk"
+                                        target="_blank">MacOS</a> : Install node.js and npm on Mac OSX</li>
+                            </ul>
+
+                            <h3><a id="npm_versions_74"></a>npm versions</h3>
+                            <p>npm is a separate project from Node.js, and tends to update more frequently. As a
+                                result, even if you’ve just downloaded Node.js (and therefore npm), you’ll probably
+                                need to update your npm. Luckily, npm knows how to update itself! To update your npm,
+                                type this into your terminal:</p>
+                            <pre class="prettyprint"><code>npm install npm@latest -g
+</code></pre>
+                            <h4><a id="Installing_gulpjs_81"></a>Installing gulp.js</h4>
+                            <p>Gulp is a “Task runner” served as a Frontend tool. It is capable of executing chunks of
+                                code and save you huge amounts of time. What gulp can do is very vast :</p>
+                            <ul>
+                                <li>Simple operations like CSS and Javascript minification / concatenation</li>
+                                <li>Directory creation or deletion, project creation from scratch</li>
+                                <li>Image optimization and compression</li>
+                                <li>Deploying a local server to run tests</li>
+                                <li>Ghost browser simulation to test display regressions etc …</li>
+                            </ul>
+                            <p>To stay simple, Gulp will help you save tremendous amounts of time by handling recurring
+                                and automated tasks. You can then focus on your real work : produce clear and concise
+                                code, and get a coffee from time to time ! If you want to install Gulp globally on your
+                                machine, meaning that you will have access to its commands everywhere, follow the
+                                following steps. Otherwise jump to the next section.</p>
+                            <p>As soon as <code>node</code> and <code>npm</code> are installed, you can start instaling
+                                Gulp. In your terminal window, enter the following command :</p>
+                            <pre class="prettyprint"><code>npm install gulp -g
+</code></pre>
+
+                            <p class="message">
+                                <img src="images/warn.svg">
+                                <span>If you are working in a Linux or a Mac OSX environment, you will probably need to
+                                    add the <code>sudo</code> command to have the required rights</span>
+                            </p>
+
+                            <pre class="prettyprint"><code>sudo npm install gulp -g
+</code></pre>
+                            <p>Gulp should now be installed and ready to serve.</p>
+                            <p>To work properly, it relies on 2 files that you can find at the root of the project :</p>
+                            <ul>
+                                <li><code>package.json</code></li>
+                                <li><code>gulpfile.js</code></li>
+                            </ul>
+                            <p>The <code>package.json</code> file lists all your project’s developement and production
+                                dependencies installed via <code>npm</code>, an effective way to manage your project’s
+                                assets consistently. The <code>gulpfile.js</code> file contains all the task that Gulp
+                                will perform once launched.</p>
+
+                            <h3><a id="Installing_the_project_114"></a>Installing a kit</h3>
+                            <p>Before we dive more in the Bulkit template, you need to learn how to install one of the
+                                provided projects and go through a little setup to make it functional and running.
+                                Create a new directory for your project. For the sake of the example, we will call it
+                                `my-project`. Unzip the contents of the bulkit/agency/ folder inside it. We will talk
+                                about the project structure in the upcoming section :</p>
+                            <pre class="prettyprint"><code>cd path/to/my/project</code></pre>
+                            <p>Once done, you need to install the project dependencies with <code>npm</code>, that we
+                                previously installed. Enter the following command at the root of the <code>my-project</code>
+                                folder :</p>
+                            <pre class="prettyprint"><code>npm install</code></pre>
+                            <p>This will automatically fecth all the dependencies listed in your <code>package.json</code>
+                                file and install them in your project. Once the installation process is done, you are
+                                ready to start Gulp and begin developing. However, before you start we are going to
+                                take a closer look to the template structure, and to how things are organized.</p>
+                        </div>
+
+                        <div class="section-txt" id="template-structure">
+                            <h2><a id="Template_structure_125"></a>Template structure</h2>
+                            <p>This section is about the Bulkit File structure. Each Project / Kit follows the same
+                                file structure. Learning more about it will help setup any of the provided projects
+                                quickly and easily.</p>
+
+                            <h3><a id="Global_structure_189"></a>Finding the kits</h3>
+
+                            <p>All the kits can be found inside the Bulkit folder, each one being a separate zip file :</p>
+
+                            <ul>
+                                <li>demo-kit : Holds all the components, elements and layout demos</li>
+                                <li>agency-kit : Agency template files</li>
+                                <li>startup-kit : Startup template files</li>
+                                <li>landing-kit-1 : First landing kit files</li>
+                                <li>landing-kit-2 : Second landing kit files</li>
+                                <li>landing-kit-3 : Third landing kit files</li>
+                                <li>landing-kit-4 : Fourth landing kit files</li>
+                                <li>landing-kit-5 : Fifth landing kit files</li>
+                                <li>landing-kit-6 : Sixth landing kit files</li>
+                                <li>onepager-kit-1 : Onepager kit 1 files</li>
+                                <li>onepager-kit-2 : Onepager kit 2 files</li>
+                                <li>dashboard-kit : Bulkit Dashboard kit files</li>
+                                <li>error-kit : Error kit files</li>
+                            </ul>
+
+
+                            <h3><a id="Global_structure_128"></a>Global structure</h3>
+                            <pre class="prettyprint"><code>kit-name
+|-- assets
+|     |-- css
+|     |-- data
+|     |-- fonts
+|     |-- js
+|
+|-- bulma
+|     |-- sass
+|     |-- bulma.sass
+|
+|-- html
+|     |-- includes
+|     |-- layouts
+|     |-- pages
+|
+|-- images
+|
+|-- js
+|     |-- common.js
+|     |-- main.js
+|
+|-- scss
+|     |-- partials
+|     |-- core.scss
+|     |-- demo.scss
+|  
+|-- gulpfile.js 
+|-- package.json 
+|-- package-lock.json 
+
+</code></pre>
+                            <p>The directory structure can seem unusual for someone who is not used to build tools. We
+                                will break each part of it, so you understand how everything works.</p>
+                            <h3><a id="Assets_folder_167"></a>Assets folder</h3>
+                            <pre class="prettyprint"><code>|-- assets
+|     |-- css
+|     |-- data
+|     |-- fonts
+|     |-- js
+</code></pre>
+                            <p>The main reason we are working with <code>npm</code> and <code>gulp</code> is that we
+                                want to keep our development process clean, as well as our dependencies management.
+                                This kind of setup highly increases the project’s code maintainability and scalability.
+                                However, you’ll be sometimes in a situation where you could need assets that are not
+                                served via <code>npm</code> or any package manager. That is the role of the <code>assets</code>
+                                folder. You can add to it any external css, js, fonts or data that you will need to use
+                                in your project. However, always prefer the <code>npm</code> method when adding new
+                                assets. Use the assets folder only if you can’t fetch your required dependency with
+                                <code>npm</code>.</p>
+                            <h3><a id="Bulma_folder_179"></a>Bulma folder</h3>
+                            <pre class="prettyprint"><code>|-- bulma
+|     |-- sass
+|     |-- bulma.sass
+</code></pre>
+                            <p>When you installed the project by doing <code>npm install</code>, you also installed
+                                Bulma 0.7.5 as a project dependency. All bulma framework Sass source files are there.
+                                You can customize them to fit your needs or leave them as they are. If you do so, you
+                                will get the standard Bulma version (identical to the css file you can find in the
+                                bulma distibution folder in the official repo) when you build the project. We provided
+                                this option as numerous developers want to have control on this for code optimization
+                                purposes.</p>
+                            <p>!&gt; Edit the Bulma source files only if you know what you are doing as any faulty
+                                customization may completely break the layout.</p>
+                            <h3><a id="Html_folder_191"></a>Html folder</h3>
+                            <pre class="prettyprint"><code>|-- html
+|     |-- includes
+|     |-- layouts
+|     |-- pages
+</code></pre>
+                            <p>All the html code resides in this folder. For a more concise code, Bulkit uses a flat
+                                file compiler named <strong>Panini</strong>, by <strong>Zurb</strong>. Panini makes it
+                                easy to break your layouts into several reusable components, preventing you to go
+                                through every page to make your changes. You can find more information about <strong>zurb/panini</strong>
+                                by visiting the <a href="https://github.com/zurb/panini" target="_blank">Zurb Panini</a>
+                                official repository. Bulkit follows the panini pattern for the html file structure :</p>
+                            <ul>
+                                <li><strong>includes</strong> : the <code>includes</code> folder holds all your html
+                                    partials. Partials are chunks of code that you want to reuse as is accrosse your
+                                    application : it can be a button, a navbar, a content section or whatever you want.
+                                    Note that you can create as many subfolders as you want to organize your partials.
+                                    You simply have to make sure that your partial names are unique. Partials are named
+                                    like html files : <code>navbar.html</code>. When you want to call a partial in one
+                                    of your <code>layouts</code> or <code>pages</code> use the following expression :
+                                    <code>{{&gt; partial-name}}</code>. You don’t have to mention the path, even if it
+                                    is nested in several subfolders, <strong>panini</strong> will find it. Also note
+                                    that you don’t have to add the html extension in your partial call.</li>
+                                <li><strong>layouts</strong> : the <code>layouts</code> folder holds all the template
+                                    layouts. It is <strong>mandatory</strong> to have at least one layout, and it
+                                    should always be named <code>default.html</code>. Additional layouts can have the
+                                    names you want, but don’t forget the <code>.html</code> extension. A layout acts as
+                                    container providing the same base for a set of similar pages. Finally notice the
+                                    <code>{{&gt; body}}</code> call that is present in each layout file. This is a
+                                    reference to append the rest of the page content.</li>
+                                <li><strong>pages</strong> : the <code>pages</code> folder holds all the template
+                                    pages. Pages are focused on content. They are related to a layout and automatically
+                                    appended to it by <strong>panini</strong> when the page is served. You will always
+                                    find the same statement at the top of each page’s code :</li>
+                            </ul>
+                            <pre class="prettyprint"><code>---
+layout: default
+title: This is the page title
+---
+</code></pre>
+                            <p>The <code>layout</code> statement tells <strong>panini</strong> wich layout to use to
+                                serve the page. The title element is a string that gets inserted as the page title when
+                                <strong>panini</strong> has finished assembling the page parts together. Now that we
+                                had a look to panini’s basic features let’s dive into the Bulkit html files :</p>
+                            <h3><a id="Html_files_216"></a>Html files</h3>
+                            <h4><a id="Includes_218"></a>Includes</h4>
+                            <pre class="prettyprint"><code>|-- html
+|     |-- includes
+|     |   |-- backtotop
+|     |   |-- footer
+|     |   |-- navbar
+|     |   |-- pageloader
+|     |   |-- scripts
+|     |   |-- sidebar
+</code></pre>
+                            <ul>
+                                <li>backtotop subfolder : Holds the rounded back to top button that appears on all
+                                    pages.</li>
+                                <li>footer subfolder : Holds the `footer` partial (or partials) used by the currently
+                                    selected kit.</li>
+                                <li>navbar subfolder : Holds all the navbar partials used by the currntly selected kit.</li>
+                                <li>pageloader subfolder : Holds the fullwidth pageloader partial used by all the
+                                    template pages.</li>
+                                <li>scripts subfolder : Holds all the script tags that are injected into the layout</li>
+                                <li>sidebar subfolder : Holds all the sidebar related partials</li>
+                            </ul>
+
+                            <h4><a id="Layouts_272"></a>Layouts</h4>
+                            <p>The `html/layouts/` folder generally holds a single layou files: `default.html`, wich is
+                                used by almost all pages. There are however some exceptions.</p>
+
+                            <h4><a id="Pages_278"></a>Pages</h4>
+                            <p>All html pages live in this folder. Each one of this pages is linked ot one of the
+                                existing layouts and makes use of partials living in the `html/includes/` folder.</p>
+                            <p>Bulkit demo pages are regrouped in 9 standalone kits that you can use to create your own
+                                website. Each kit loads needed components and has an additional specific stylesheet,
+                                and is tied to a theme. We will see later on how to work with the Themes.</p>
+                            <ol>
+                                <li>Agency kit : A creative agency ready demo template featuring a homepage, an about
+                                    page, a portfolio page, a contact page, a blog page and two blog post page
+                                    variations.</li>
+                                <li>Startup kit : A startup / business ready template featuring a homepage, a product
+                                    page, an about page, a contact page, a login page and a sign up page.</li>
+                                <li>Landing kit 1 : An app selling landing page kit including a landing page, a feature
+                                    page, a pricing page, a login page and a sign up page.</li>
+                                <li>Landing kit 2 : An app selling landing page kit including a landing page, a feature
+                                    page, a pricing page, a login page and a sign up page.</li>
+                                <li>Landing kit 3 : An app selling landing page kit including a landing page, a feature
+                                    page, a pricing page, a login page and a sign up page.</li>
+                                <li>Landing kit 4 : An app selling landing page kit including a landing page, a help
+                                    center page, a help center categories page, a help article page, a pricing page, a
+                                    login page and a sign up page.</li>
+                                <li>Landing kit 5 : An app selling landing page kit including a landing page, a feature
+                                    page, a pricing page, a login / sign up page.</li>
+                                <li>Landing kit 6 : An app selling landing page kit including a landing page, a feature
+                                    page, a pricing page, a login / sign up page.</li>
+                                <li>One Pager kit 1 : A one page landing kit including all you need for a quick website.</li>
+                                <li>One Pager kit 2 : A one page landing kit including all you need for a quick website.</li>
+                                <li>Dashboard kit : Because we care about our customers, Bulkit features an extra
+                                    Dashboard kit to jumpstart app frontend development. Several pages are available at
+                                    the moment. More will come in the future. All menu items marked with a small lock
+                                    icon represent features that are not available yet and will likely be released in
+                                    the future. The dashboard kit uses its own layout, core file and theme. It uses
+                                    however the same components as the website template. 18 Demo pages are currently
+                                    available.</li>
+                                <li>Error Kit : A collection of error pages templates.</li>
+                            </ol>
+                            <h3><a id="Images_306"></a>Images</h3>
+                            <pre class="prettyprint"><code>|-- images
+|     
+</code></pre>
+                            <p>All the project images live in this folder. It can have as many subfolders as you want.
+                                When you build the projects, all these images are automatically transfered to the right
+                                location by Gulp. We will see that a bit later.</p>
+
+                            <h3><a id="Images_306"></a>Component pages</h3>
+                            <p>Bulkit features 45 component pages wich feature numerous UI elements and variations.
+                                These pages reside inside the Demo-Kit. These pages are named following this naming
+                                convention: <code>_components_*category_*component.html</code> . Each category features
+                                different components and variations. You'll find detailed explanations and code
+                                examples that you can immediatly copy to start developping.</p>
+
+                            <h3><a id="Js_318"></a>Js</h3>
+                            <pre class="prettyprint"><code>|-- js
+|     |-- common.js
+|     |-- main.js
+|     
+</code></pre>
+                            <p>All of Bulkit own javascript files live in this folder. Depending on the selected, kit
+                                there will be additional javascript files in this folder. these additional files
+                                control some kit specific features. There is 1 main file that is used accross all
+                                templates :</p>
+                            <ul>
+                                <li><code>main.js</code> : it holds all the global functions used by Bulkit.</li>
+                            </ul>
+                            <p>Bulkit ships with severa javascript plugins, that are for the most managed via <code>npm</code>
+                                dependency management.</p>
+                            <ul>
+                                <li><code>Innostudio file uploader</code>: A premium jQuery plugin developed by
+                                    Innostudio. Bulkit grants you a license to use this plugin in one of your projects.
+                                    It lets you setup a beautiful file uploader for your projects. Read the plugin
+                                    documentation <a href="https://innostudio.de/fileuploader/documentation/" target="_blank">Here</a>
+                                    for more details about usage.</li>
+                                <li><code>Billboardjs</code>: A javascript library that lets you display nice looking
+                                    charts based on datasets Read the plugin documentation <a href="https://naver.github.io/billboard.js/"
+                                        target="_blank">Here</a> for more details about usage. Billboard js depends on
+                                    <a href="https://d3js.org/" target="_blank">D3js</a></li>
+                                <li><code>Chartjs</code>: Another javascript library that lets you display nice looking
+                                    charts based on datasets. Read the plugin documentation <a href="http://www.chartjs.org/"
+                                        target="_blank">Here</a> for more details about usage.</li>
+                                <li><code>Chosenjs</code>: A plugin that transforms native html select boxes into
+                                    beautiful and customizable select boxes with additional features. Read the plugin
+                                    documentation <a href="https://harvesthq.github.io/chosen/" target="_blank">Here</a>
+                                    for more details about usage.</li>
+                                <li><code>Counterup</code>: A plugin that makes easy to create animated counters.
+                                    Notice that it relies on <a href="http://imakewebthings.com/waypoints/" target="_blank">Waypoints</a>,
+                                    another javascript plugin that triggers events based on scroll position. Read the
+                                    plugin documentation <a href="https://github.com/bfintal/Counter-Up" target="_blank">Here</a>
+                                    for more details about usage.</li>
+                                <li><code>Covervid</code>: Bulkit uses this plugin to display full height background
+                                    videos. Read the plugin documentation <a href="https://github.com/stefanerickson/covervid"
+                                        target="_blank">Here</a> for more details about usage.</li>
+                                <li><code>D3js</code>: D3 handles svg paths rendering. It is a dependency often used by
+                                    charting libraries. Billboard js relies on D3. D3 official homepage can be found <a
+                                        href="https://d3js.org" target="_blank">Here</a>.</li>
+                                <li><code>Datedropper</code>: Datedropper is a jQuery timepicker plugin. It stands out
+                                    by it's awesome design and features. Read the plugin documentation <a href="http://felicegattuso.com/projects/datedropper/"
+                                        target="_blank">Here</a> for more details about usage.</li>
+                                <li><code>Datepicker</code>: jQuery Datepicker is a jQuery timepicker plugin. It has
+                                    basic features and is a good choice if you are looking for a simple datepicker for
+                                    your website. Read the plugin documentation <a href="https://fengyuanchen.github.io/datepicker/"
+                                        target="_blank">Here</a> for more details about usage.</li>
+                                <li><code>easyAutocomplete</code>: A jQuery plugin that lets you easily setup an
+                                    autocomplete input. You can also create custom templates for your autocomplete
+                                    fields. Read the plugin documentation <a href="http://easyautocomplete.com/" target="_blank">Here</a>
+                                    for more details about usage.</li>
+                                <li><code>Embed</code>: Embed is a small jQuery plugin that lets you embed a Youtube or
+                                    a Vimeo video inside your page. Nothing to configure, you just have to add the
+                                    video url.</li>
+                                <li><code>Ggtooltip</code>: A small plugin that helps you to display simple tooltips.
+                                    Documentation can be found <a href="http://www.gigagit.com/item/ggtooltip-js-a-jquery-tooltip-plugin"
+                                        target="_blank">Here</a>.</li>
+                                <li><code>Ggpopover</code>: A small plugin that helps you to display nice popovers with
+                                    many configuration options. Read the plugin documentation <a href="http://demo.gigagit.com/ggpopover/"
+                                        target="_blank">Here</a> for more details about usage.</li>
+                                <li><code>gmapjs</code>: A small plugin that lets you display a google map on your web
+                                    page. Documentation can be found <a href="https://hpneo.github.io/gmaps/" target="_blank">Here</a>.</li>
+                                <li><code>Izitoast</code>: A nice jQuery plugin to display styled toast notifications
+                                    on your website. It has many configuration options. Read the plugin <a href="http://izitoast.marcelodolce.com/"
+                                        target="_blank">Here</a> for more details about usage.</li>
+                                <li><code>jqDropdown</code>: A flexible and easy to use dropdown jQuery plugin. Read
+                                    the plugin documentation <a href="https://labs.abeautifulsite.net/jquery-dropdown/"
+                                        target="_blank">Here</a> for more details about usage.</li>
+                                <li><code>jqVmap</code>: A plugin to display interactive svg maps with less complexity
+                                    than some others. Read the plugin documentation <a href="https://jqvmap.com/"
+                                        target="_blank">Here</a> for more details about usage.</li>
+                                <li><code>Peity</code>: A very small plugin that let's you display mini charts in a
+                                    breeze. Read the plugin documentation <a href="http://benpickles.github.io/peity/"
+                                        target="_blank">Here</a> for more details about usage.</li>
+                                <li><code>ScrollReveal</code>: A must have plugin if you want elements to animate on
+                                    when visible on scroll. Read the plugin documentation <a href="https://scrollrevealjs.org/"
+                                        target="_blank">Here</a> more details about usage.</li>
+                                <li><code>ScrollSpy</code>: Everybody knows Scrollspy from Bootstrap. This plugin has
+                                    the same behaviour. Documentation can be found <a href="https://github.com/r3plica/Scrollspy"
+                                        target="_blank">Here</a>.</li>
+                                <li><code>Slick Carousel</code>: A powerful and highly customizable carousel with a
+                                    very rich documentation. Read more about it <a href="http://kenwheeler.github.io/slick/"
+                                        target="_blank">here</a>.</li>
+                                <li><code>Tagsinput</code>: A simple component to transform a text input into a styled
+                                    tags input. Read more about it <a href="https://github.com/xoxco/jQuery-Tags-Input"
+                                        target="_blank">Here</a>. </li>
+                                <li><code>Timedropper</code>: An original timepicker that can be customized. Read the
+                                    plugin documentation <a href="http://felicegattuso.com/projects/timedropper/"
+                                        target="_blank">Here</a> for more details about usage. </li>
+                                <li><code>Vivusjs</code>: Vivus is a svg animation library. It makes animating svg
+                                    paths really easy. Read the plugin documentation <a href="https://maxwellito.github.io/vivus/"
+                                        target="_blank">Here</a> for more details about usage. </li>
+                                <li><code>Waypoints</code>: Waypoints is a famous jQuery and vanilla js library that
+                                    let's you setup events that trigger at certain scroll position. The sticky plugin
+                                    is also really useful to fix elements on scroll. Read the plugin <a href="http://imakewebthings.com/waypoints/"
+                                        target="_blank">Here</a> for more details about usage.</li>
+                                <li><code>Wallop Slider</code>: Wallop slider is an original and powerful slider.
+                                    Beside being lightweight, it is highly customizable. Read more about it <a href="https://github.com/peduarte/wallop"
+                                        target="_blank">Here</a>. </li>
+                                <li><code>Wickedpicker</code>: A lightweight library that offers a nice timepicker to
+                                    replace the boring html native one. Read more about it <a href="https://ericjgagnon.github.io/wickedpicker/"
+                                        target="_blank">Here</a>.</li>
+                                <li><code></code></li>
+                            </ul>
+
+                            <p>Bulkit also comes with it's own javascript files :</p>
+
+                            <ul>
+                                <li><code>agency.js</code> : Agency kit specific js file</li>
+                                <li><code>startup.js</code> : Startup kit specific js file</li>
+                                <li><code>landing.js</code> : Landing kit 1 specific js file</li>
+                                <li><code>landingv1.js</code> : Landing kit 2 specific js file</li>
+                                <li><code>landingv2.js</code> : Landing kit 3 specific js file</li>
+                                <li><code>landingv3.js</code> : Landing kit 4 specific js file</li>
+                                <li><code>landingv4.js</code> : Landing kit 5 specific js file</li>
+                                <li><code>dashboard.js</code> : Dashboard kit main js file</li>
+                                <li><code>auth.js</code> : Holds hide and show functions used in login pages</li>
+                                <li><code>contact.js</code> : Holds code for google maps used in contact pages</li>
+                                <li><code>demo.js</code> : Holds code used in demo pages (component pages and index, do
+                                    not use in production)</li>
+                                <li><code>components-accordion.js</code> : Accordion components implementation</li>
+                                <li><code>components-fileinput.js</code> : File input components implementation</li>
+                                <li><code>components-inputs.js</code> : Input components implementation (autocomplete,
+                                    tagsinput, timepickers, datepickers)</li>
+                                <li><code>components-modals.js</code> : Modal components implementation</li>
+                                <li><code>components-quickview.js</code> : Quickview component implementation</li>
+                                <li><code>components-range.js</code> : Custom range input component implementation</li>
+                                <li><code>components-toasts.js</code> : Izitoast plugin examples</li>
+                                <li><code>projects.js</code> : Holds code used in the dashboard project pages</li>
+                                <li><code>datatable.js</code> : Holds code used in the dashboard datatable pages</li>
+                            </ul>
+
+                            <h3><a id="Scss_333"></a>Scss</h3>
+                            <p>Bulkit relies on the powerful Sass features, letting you handle complex styles in a
+                                breeze. Below you can find all the SCSS partial files that are used accross all the
+                                template kits. Of course, you will never find them all at one in one place. We simply
+                                display them here in a friendly manner so you can identify each one of them. The naming
+                                convention is always the same for the SCSS partials: <code>_category-partial-name.scss</code>
+                                . For example, the file for the accordions is <code>_components-accordion.scss</code>.
+                                You can notice that we don't follow this pattern in the list below, but just for a
+                                matter of clarity. There are no more components, extensions, layout, pages and themes
+                                subfolders. Instead, all Scss partials reside in the <code>kit-name/scss/partials/</code>
+                                folder.</p>
+                            <pre class="prettyprint"><code>scss
+Partials
+|-- components
+|     |-- _accordion.scss
+|     |-- _boxes.scss
+|     |-- _buttons.scss
+|     |-- _cards.scss
+|     |-- _dialogs.scss
+|     |-- _dropdowns.scss
+|     |-- _forms.scss
+|     |-- _labels.scss
+|     |-- _lists.scss
+|     |-- _messages.scss
+|     |-- _pricing.scss
+|     |-- _tables.scss
+|     |-- _tabs.scss
+|     |-- _testimonials.scss
+| 
+|-- extensions
+|     |-- _badge.scss
+|     |-- _checkboxes.scss
+|     |-- _quickview.scss
+|     |-- _range.scss
+|     |-- _ribbon.scss
+|     |-- _slider.scss
+|     |-- _switch.scss
+|     |-- _timeline.scss
+|     |-- _uploader.scss
+| 
+|-- layout
+|     |-- _animations.scss
+|     |-- _footer.scss  
+|     |-- _helpers.scss
+|     |-- _hero.scss  
+|     |-- _navbar.scss
+|     |-- _navigation.scss  
+|     |-- _pageloader.scss
+|     |-- _responsive.scss  
+|     |-- _sections.scss  
+|     |-- _utils.scss  
+|
+|-- pages
+|     |-- _agency.scss
+|     |-- _auth.scss  
+|     |-- _demo.scss
+|     |-- _details.scss  
+|     |-- _landing.scss
+|     |-- _landing-v1.scss 
+|     |-- _landing-v2.scss 
+|     |-- _landing-v3.scss 
+|     |-- _startup.scss
+|
+|-- dashboard
+|     |-- _charts.scss
+|     |-- _datatables.scss  
+|     |-- _feed.scss
+|     |-- _layout.scss  
+|     |-- _projects.scss
+|     |-- _responsive.scss
+|     |-- _right-sidebar.scss
+|     |-- _sidebar.scss
+|     |-- _utils.scss
+|     |-- _widgets.scss
+|
+|-- themes
+|     |-- _dashboard.scss
+|     |-- _deep-blue.scss  
+|     |-- _flashy.scss
+|     |-- _green.scss  
+|     |-- _lemonade.scss
+|     |-- _main.scss 
+|
+|-- _colors.scss
+|-- core_deep-blue.scss
+|-- core_demo.scss
+|-- core_flashy.scss
+|-- core_green.scss
+|-- core_lemonade.scss
+|-- dashboard.scss
+
+</code></pre>
+
+                            <div class="section-txt" id="gulp">
+                                <h2><a id="Working_with_Gulp_445"></a>Working with Gulp</h2>
+                                <p>In this section, we are briefly going to see how to use gulp and the Bulkit <code>gulpfile.js</code>.</p>
+                                <h3><a id="Available_modules_448"></a>Available modules</h3>
+                                <p>Bulkit takes advantage of several gulp modules. We are going to see what each one
+                                    does to give you a better understanding of what is happening. Let’s see the modules
+                                    used by our gulpfile :</p>
+                                <pre class="prettyprint"><code class="language-js"><span class="hljs-keyword">var</span> gulp = <span class="hljs-built_in">require</span>(<span class="hljs-string">'gulp'</span>);
+<span class="hljs-keyword">var</span> clean = <span class="hljs-built_in">require</span>(<span class="hljs-string">'gulp-clean'</span>);
+<span class="hljs-keyword">var</span> sass = <span class="hljs-built_in">require</span>(<span class="hljs-string">'gulp-sass'</span>);
+<span class="hljs-keyword">var</span> sourcemaps = <span class="hljs-built_in">require</span>(<span class="hljs-string">'gulp-sourcemaps'</span>);
+<span class="hljs-keyword">var</span> postcss = <span class="hljs-built_in">require</span>(<span class="hljs-string">'gulp-postcss'</span>);
+<span class="hljs-keyword">var</span> autoprefixer = <span class="hljs-built_in">require</span>(<span class="hljs-string">'autoprefixer'</span>);
+<span class="hljs-keyword">var</span> mq4HoverShim = <span class="hljs-built_in">require</span>(<span class="hljs-string">'mq4-hover-shim'</span>);
+<span class="hljs-keyword">var</span> rimraf = <span class="hljs-built_in">require</span>(<span class="hljs-string">'rimraf'</span>).sync;
+<span class="hljs-keyword">var</span> browser = <span class="hljs-built_in">require</span>(<span class="hljs-string">'browser-sync'</span>);
+<span class="hljs-keyword">var</span> panini = <span class="hljs-built_in">require</span>(<span class="hljs-string">'panini'</span>);
+<span class="hljs-keyword">var</span> concat = <span class="hljs-built_in">require</span>(<span class="hljs-string">'gulp-concat'</span>);
+
+</code></pre>
+                                <ul>
+                                    <li><code>gulp</code> : the base gulp package</li>
+                                    <li><code>gulp-clean</code> : A utility to clean code</li>
+                                    <li><code>gulp-sass</code> : A utility to handle saas compilation into css</li>
+                                    <li><code>gulp-sourcemaps</code> : Maps the Sass source into your compiled css</li>
+                                    <li><code>gulp-postcss</code> : Gives the ability to transfer and manipulate css
+                                        before its final destination</li>
+                                    <li><code>gulp-concat</code> : A utility to concatenate outputed code</li>
+                                    <li><code>autoprefixer</code> : Automatically generates necessary vendor prefixes
+                                        for your css code</li>
+                                    <li><code>mq4-hover-shim</code> : A utility to avoid hover/click problems on touche
+                                        devices</li>
+                                    <li><code>rimraf</code> : A utility to remove small or large chunks of code</li>
+                                    <li><code>browser-sync</code> : A utility that launches a developemnt server with
+                                        auto page refresh when watching changes</li>
+                                    <li><code>panini</code> : If you read previous parts of this documentation, you
+                                        should already now panini. Panini is a lightweight flat file compilator and a
+                                        html templating engine.</li>
+                                </ul>
+                                <h3><a id="Additional_variables_478"></a>Additional variables</h3>
+                                <p>There are two additional variables that we define at the top of the file. We will
+                                    need them to continue :</p>
+                                <pre class="prettyprint"><code class="language-js"><span class="hljs-keyword">var</span> port = process.env.SERVER_PORT || <span class="hljs-number">8080</span>;
+<span class="hljs-keyword">var</span> nodepath =  <span class="hljs-string">'node_modules/'</span>;
+</code></pre>
+                                <ul>
+                                    <li><code>port</code> : used by <code>browser-sync</code> to setup and launch your
+                                        development server.</li>
+                                    <li><code>nodepath</code> : a shortcut to get stuff from the <code>/node-modules</code>
+                                        folder (created by npm), so we don’t expose our internal paths.</li>
+                                </ul>
+                                <h3><a id="Gulp_tasks_489"></a>Gulp tasks</h3>
+                                <p>We prepared a certain number of predefined tasks that will help you during all the
+                                    development process. We will go through the <code>gulpfile.js</code> file to detail
+                                    each one of this tasks.</p>
+                                <h4><a id="Server_task_492"></a>Server task</h4>
+                                <pre class="prettyprint"><code class="language-js">gulp.task(<span class="hljs-string">'server'</span>, [<span class="hljs-string">'build'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    browser.init({server: <span class="hljs-string">'./_site'</span>, port: port});
+});
+</code></pre>
+                                <p>Gulp uses this task to create a <code>browser-sync</code> instance. It creates a
+                                    local developement server and automatically opens a browser window showing <code>index.html</code>.</p>
+                                <h4><a id="Watch_task_502"></a>Watch task</h4>
+                                <pre class="prettyprint"><code class="language-js">gulp.task(<span class="hljs-string">'watch'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    gulp.watch(<span class="hljs-string">'scss/**/*'</span>, [<span class="hljs-string">'compile-scss'</span>, browser.reload]);
+    gulp.watch(<span class="hljs-string">'sass/**/*'</span>, [<span class="hljs-string">'compile-sass'</span>, browser.reload]);
+    gulp.watch(<span class="hljs-string">'html/pages/**/*'</span>, [<span class="hljs-string">'compile-html'</span>]);
+    gulp.watch([<span class="hljs-string">'html/{layouts,includes,helpers,data}/**/*'</span>], [<span class="hljs-string">'compile-html:reset'</span>,<span class="hljs-string">'compile-html'</span>]);
+    gulp.watch([<span class="hljs-string">'./src/{layouts,partials,helpers,data}/**/*'</span>], [panini.refresh]);
+});
+</code></pre>
+                                <p>Gulp uses this task to watch any change you make to the html and Sass files. When it
+                                    detects changes, it triggers other tasks that handle Sass and html compilation.</p>
+                                <h4><a id="Reset_task_516"></a>Reset task</h4>
+                                <pre class="prettyprint"><code class="language-js">gulp.task(<span class="hljs-string">'reset'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    rimraf(<span class="hljs-string">'bulma/*'</span>);
+    rimraf(<span class="hljs-string">'scss/*'</span>);
+    rimraf(<span class="hljs-string">'assets/css/*'</span>);
+    rimraf(<span class="hljs-string">'assets/fonts/*'</span>);
+    rimraf(<span class="hljs-string">'images/*'</span>);
+});
+</code></pre>
+                                <p>Gulp uses this task to entirely reset the project. It deletes everything from every
+                                    folder. You should not need to use this but we provide it for experienced
+                                    developers who know what they are doing.</p>
+                                <h4><a id="Clean_task_530"></a>Clean task</h4>
+                                <pre class="prettyprint"><code class="language-js">gulp.task(<span class="hljs-string">'clean'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    rimraf(<span class="hljs-string">'_site'</span>);
+});
+</code></pre>
+                                <p>Gulp uses this task to clean the <code>_site</code> folder, wich the result of the
+                                    project build. At the moment you should not see any <code>_site</code> folder
+                                    because you didn’t build the project yet. This task is also used at the beginnning
+                                    of the build process, to clean the folder before compilign the assets again.</p>
+                                <h4><a id="Bulma_task_540"></a>Bulma task</h4>
+                                <pre class="prettyprint"><code class="language-js">gulp.task(<span class="hljs-string">'setupBulma'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-comment">//Get Bulma from node modules</span>
+    gulp.src([nodepath + <span class="hljs-string">'bulma/*.sass'</span>]).pipe(gulp.dest(<span class="hljs-string">'bulma/'</span>));
+    gulp.src([nodepath + <span class="hljs-string">'bulma/**/*.sass'</span>]).pipe(gulp.dest(<span class="hljs-string">'bulma/'</span>));
+});
+</code></pre>
+                                <p>gulp uses this task to copy the Bulma source file from their location in the <code>_node-modules</code>
+                                    folder to the <code>bulma/</code> folder. As these assets are already copied in the
+                                    project, you shouldn’t need this task right now.</p>
+
+                                <h4><a id="Assets_task_579"></a>Assets task</h4>
+                                <pre class="prettyprint"><code class="language-js">gulp.task(<span class="hljs-string">'copy'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-comment">//Copy other external css assets</span>
+    gulp.src([<span class="hljs-string">'assets/css/**/*'</span>]).pipe(gulp.dest(<span class="hljs-string">'_site/assets/css/'</span>));
+    <span class="hljs-comment">//Copy other external js assets</span>
+    gulp.src([<span class="hljs-string">'assets/js/**/*'</span>]).pipe(gulp.dest(<span class="hljs-string">'_site/assets/js/external/'</span>));
+    <span class="hljs-comment">//Copy other external font assets</span>
+    gulp.src([<span class="hljs-string">'assets/fonts/*'</span>]).pipe(gulp.dest(<span class="hljs-string">'_site/assets/fonts/'</span>));
+});
+</code></pre>
+                                <p>gulp uses this task to copy all external assets (e.g that cannot be served by npm or
+                                    any package manager) into the corresponding subfolder of the <code>assets/</code>
+                                    folder of the production site.</p>
+                                <h4><a id="Compile_Sass_task_594"></a>Compile Sass task</h4>
+                                <pre class="prettyprint"><code class="language-js">gulp.task(<span class="hljs-string">'compile-sass'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">var</span> processors = [
+        mq4HoverShim.postprocessorFor({ hoverSelectorPrefix: <span class="hljs-string">'.is-true-hover '</span> }),
+        autoprefixer({
+            browsers: [
+                <span class="hljs-string">"Chrome &gt;= 45"</span>,
+                <span class="hljs-string">"Firefox ESR"</span>,
+                <span class="hljs-string">"Edge &gt;= 12"</span>,
+                <span class="hljs-string">"Explorer &gt;= 10"</span>,
+                <span class="hljs-string">"iOS &gt;= 9"</span>,
+                <span class="hljs-string">"Safari &gt;= 9"</span>,
+                <span class="hljs-string">"Android &gt;= 4.4"</span>,
+                <span class="hljs-string">"Opera &gt;= 30"</span>
+            ]
+        })<span class="hljs-comment">//,</span>
+        <span class="hljs-comment">//cssnano(),</span>
+    ];
+    <span class="hljs-comment">//Watch me get Sassy</span>
+    <span class="hljs-keyword">return</span> gulp.src(<span class="hljs-string">'./bulma/bulma.sass'</span>)
+        .pipe(sourcemaps.init())
+        .pipe(sass(sassOptions).on(<span class="hljs-string">'error'</span>, sass.logError))
+        .pipe(postcss(processors))
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest(<span class="hljs-string">'./_site/assets/css/'</span>));
+});
+</code></pre>
+                                <p>Gulp uses this task to compile the bulma source files into a single css file. it
+                                    then copies this file in <code>_site/assets/css/</code>.</p>
+                                <h4><a id="Compile_Scss_task_627"></a>Compile Scss task</h4>
+                                <pre class="prettyprint"><code class="language-js">gulp.task(<span class="hljs-string">'compile-scss'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">var</span> processors = [
+        mq4HoverShim.postprocessorFor({ hoverSelectorPrefix: <span class="hljs-string">'.is-true-hover '</span> }),
+        autoprefixer({
+            browsers: [
+                <span class="hljs-string">"Chrome &gt;= 45"</span>,
+                <span class="hljs-string">"Firefox ESR"</span>,
+                <span class="hljs-string">"Edge &gt;= 12"</span>,
+                <span class="hljs-string">"Explorer &gt;= 10"</span>,
+                <span class="hljs-string">"iOS &gt;= 9"</span>,
+                <span class="hljs-string">"Safari &gt;= 9"</span>,
+                <span class="hljs-string">"Android &gt;= 4.4"</span>,
+                <span class="hljs-string">"Opera &gt;= 30"</span>
+            ]
+        })<span class="hljs-comment">//,</span>
+        <span class="hljs-comment">//cssnano(),</span>
+    ];
+    <span class="hljs-comment">//Watch me get Sassy</span>
+    <span class="hljs-keyword">return</span> gulp.src(<span class="hljs-string">'./scss/*.scss'</span>)
+        .pipe(sourcemaps.init())
+        .pipe(sass(sassOptions).on(<span class="hljs-string">'error'</span>, sass.logError))
+        .pipe(postcss(processors))
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest(<span class="hljs-string">'./_site/assets/css/'</span>));
+});
+</code></pre>
+                                <p>Gulp uses this task to compile the Bulkit Scss source files into a single css file (<code>core.css</code>).
+                                    it then copies this file in <code>_site/assets/css/</code>.</p>
+                                <h4><a id="Compile_Html_task_660"></a>Compile Html task</h4>
+                                <pre class="prettyprint"><code class="language-js">gulp.task(<span class="hljs-string">'compile-html'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    gulp.src(<span class="hljs-string">'html/pages/**/*.html'</span>)
+        .pipe(panini({
+        root: <span class="hljs-string">'html/pages/'</span>,
+        layouts: <span class="hljs-string">'html/layouts/'</span>,
+        partials: <span class="hljs-string">'html/includes/'</span>,
+        helpers: <span class="hljs-string">'html/helpers/'</span>,
+        data: <span class="hljs-string">'html/data/'</span>
+    }))
+        .pipe(gulp.dest(<span class="hljs-string">'_site'</span>))
+        .on(<span class="hljs-string">'finish'</span>, browser.reload);
+});
+
+gulp.task(<span class="hljs-string">'compile-html:reset'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">done</span>) </span>{
+    panini.refresh();
+    done();
+});
+</code></pre>
+                                <p>Gulp uses this task to compile all the changes you make to the template html files.
+                                    It the triggers a refresh from Panini to update your templates before rendering.</p>
+                                <h4><a id="Compile_js_task_684"></a>Compile js task</h4>
+                                <pre class="prettyprint"><code class="language-js">gulp.task(<span class="hljs-string">'compile-js'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">return</span> // Compile js from node modules (Landing kit 5 example)
+gulp.task('compile-js', function() {
+    return gulp.src([ 
+        nodepath + 'jquery/dist/jquery.min.js', 
+        nodepath + 'slick-carousel/slick/slick.min.js', 
+        nodepath + 'chosen-js/chosen.jquery.min.js',
+        nodepath + 'scrollreveal/dist/scrollreveal.min.js',
+        nodepath + 'vivus/dist/vivus.min.js',
+        nodepath + 'waypoints/lib/jquery.waypoints.min.js',
+        nodepath + 'waypoints/lib/shortcuts/sticky.min.js',
+        nodepath + 'jquery.counterup/jquery.counterup.min.js',
+        nodepath + '@fengyuanchen/datepicker/dist/datepicker.min.js',
+        nodepath + 'paper/dist/paper-full.min.js',
+        //Additional static js assets
+        assetspath + 'js/ggpopover/ggpopover.min.js',
+        assetspath + 'js/ggpopover/ggtooltip.js',
+        nodepath + 'bulma-extensions/bulma-steps/dist/bulma-steps.min.js',
+    ])
+        .pipe(concat('app.js'))
+        .pipe(gulp.dest('./_site/assets/js/'));
+});
+</code></pre>
+                                <p>Gulp uses this task to compile all the plugins javascript into a single concatenated
+                                    file residing in <code>_site/assets/js/app.js</code>, for better performance.</p>
+                                <h4><a id="Copy_js_task_707"></a>Copy js task</h4>
+                                <pre class="prettyprint"><code class="language-js">gulp.task(<span class="hljs-string">'copy-js'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    gulp.src(<span class="hljs-string">'js/**/*.js'</span>)
+        .pipe(gulp.dest(<span class="hljs-string">'./_site/assets/js/'</span>));
+});
+</code></pre>
+                                <p>Gulp uses this task to copy Bulkit specific js files in <code>_site/assets/js/</code>.</p>
+                                <h4><a id="Copy_images_task_718"></a>Copy images task</h4>
+                                <pre class="prettyprint"><code class="language-js">gulp.task(<span class="hljs-string">'copy-images'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    gulp.src(<span class="hljs-string">'images/**/*'</span>)
+        .pipe(gulp.dest(<span class="hljs-string">'./_site/assets/images/'</span>));
+});
+</code></pre>
+                                <p>Gulp uses this task to copy all your images to the production site, into the <code>_site/assets/images/</code>
+                                    folder.</p>
+                                <h3><a id="Gulp_commands_729"></a>Gulp commands</h3>
+                                <p>Now that we have seen that we have a lot of ready to use tasks for gulp. While you
+                                    can run some of the above tasks individually, let’s now see the available commands
+                                    that make use of multiple tasks at once.</p>
+                                <h3><a id="gulp_init_732"></a>gulp init</h3>
+                                <p>You will need this command in only one case : if you want to reset the bulma source
+                                    files to their original state. Use with caution, only if you know what you are
+                                    doing. All previous changes made to these source files will be discarded. Run it by
+                                    typing this command in your terminal window, at the root of the project :</p>
+                                <p><code>gulp init</code></p>
+                                <h3><a id="gulp_build_737"></a>gulp build</h3>
+                                <p>Builds the project. One of the two essential commands of <strong>Bulkit</strong>. It
+                                    runs several tasks that we defined above. Run it by typing this command in your
+                                    terminal window, at the root of the project :</p>
+                                <p><code>gulp build</code></p>
+                                <p>Here is what happens when you run <code>gulp build</code> :</p>
+                                <ul>
+                                    <li>Gulp deletes the <code>_site</code> folder</li>
+                                    <li>Then, gulp executes all assets copying and compilation tasks (<code>copy</code>,
+                                        <code>copy-plugins</code>, <code>compile-js</code>, <code>copy-js</code>, <code>compile-sass</code>,
+                                        <code>compile-scss</code>, <code>compile-html</code> and <code>copy-images</code>)</li>
+                                </ul>
+                                <h4><a id="gulp_default_747"></a>gulp default</h4>
+                                <p>Starts the gulp watcher and a browser instance with auto refresh. This is the
+                                    command you will be using when you will want to start developping. Run it by typing
+                                    this command in your terminal window, at the root of the project :</p>
+                                <p><code>gulp default</code></p>
+                                <p>Hit <strong>Ctrl + c</strong> in your terminal window to interrupt the watcher.</p>
+                                <h3><a id="Setup_Bulkit_755"></a>Setup Bulkit</h3>
+                                <p>You should now have a baisc understanding of what <strong>Gulp</strong> and <strong>Panini</strong>
+                                    are doing. You are now ready to setup the project to start developing. We’ve been
+                                    talking about gulp and panini for ages but you’ll quickly see how fast it is to
+                                    setup your project. In your terminal window, change directory to the root of the
+                                    <strong>chosen kit</strong> folder :</p>
+                                <p><code>cd path/to/selected-kit/</code></p>
+                                <p>Then start by building the project. Run the following command :</p>
+                                <p><code>gulp build</code></p>
+                                <p>Finally start the gulp watcher. Run the following command. It will build the <code>_site</code>
+                                    folder with all relevant assets inside it :</p>
+                                <p><code>gulp default</code></p>
+                                <p>When the task starts, you should be redirected to your browser showing the <code>index.html</code>
+                                    page. That’s it, your project is now running. Every change you make to the html or
+                                    scss files will trigger a code compilation and a browser refresh. Really easy isn’t
+                                    it ?</p>
+                                <h2><a id="Bulkit_plugins_772"></a>Bulkit Plugins</h2>
+                                <p>Bulkit is bundled with some javascript plugins to enhance the template features. If
+                                    you want more details about plugin usage and initialization, please head to the <a
+                                        href="#">js reference section</a>. Here is a list of the plugins used by
+                                    Bulkit.</p>
+                                <ul>
+                                    <li><strong>Card.js</strong></li>
+                                </ul>
+                                <p>A plugin that enhances the user checkout experience by mocking a credit card. Read
+                                    the plugin <a href="https://github.com/jessepollak/card" target="_blank">documentation</a>
+                                    for more details about usage.</p>
+                                <ul>
+                                    <li><strong>Chosen.js</strong></li>
+                                </ul>
+                                <p>A plugin that transforms html5 native selects into beautiful javascript powered
+                                    components. Read the plugin <a href="https://harvesthq.github.io/chosen/" target="_blank">documentation</a>
+                                    for more details about usage.</p>
+                                <ul>
+                                    <li><strong>feather.js</strong></li>
+                                </ul>
+                                <p>A plugin that implements a full features svg icon library and gives you great
+                                    control over them. Read the plugin <a href="https://github.com/feathericons/feather#feather"
+                                        target="_blank">documentation</a> for more details about usage.</p>
+                                <ul>
+                                    <li><strong>iziToast.js</strong></li>
+                                </ul>
+                                <p>A plugin that implements a very flexible set of toast notifications. Read the plugin
+                                    <a href="http://izitoast.marcelodolce.com/" target="_blank">documentation</a> for
+                                    more details about usage.</p>
+                                <ul>
+                                    <li><strong>slick.js</strong></li>
+                                </ul>
+                                <p>An already world famous carousel plugin. Read the plugin <a href="http://kenwheeler.github.io/slick/"
+                                        target="_blank">documentation</a> for more details about usage.</p>
+                                <ul>
+                                    <li><strong>webuipopover.js</strong></li>
+                                </ul>
+                                <p>A plugin that offers fully customizable popovers. Read the plugin <a href="https://github.com/sandywalker/webui-popover"
+                                        target="_blank">documentation</a> for more details about usage.</p>
+                                <ul>
+                                    <li><strong>zoom.js</strong></li>
+                                </ul>
+                                <p>A simple jQuery plugin for image zooming, as seen on Medium. Read the plugin <a href="https://github.com/fat/zoom.js/"
+                                        target="_blank">documentation</a> for more details about usage.</p>
+                                <ul>
+                                    <li><strong>datepicker.js</strong></li>
+                                </ul>
+                                <p>A simple jQuery datepicker plugin, with basic options. Read the plugin <a href="https://fengyuanchen.github.io/datepicker/"
+                                        target="_blank">documentation</a> for more details about usage.</p>
+                                <ul>
+                                    <li><strong>easy-autocomplete</strong></li>
+                                </ul>
+                                <p>A powerful autocomplete plugin with many features. Read the plugin <a href="http://easyautocomplete.com/"
+                                        target="_blank">documentation</a> for more details about usage.</p>
+                            </div>
+
+                            <div class="section-txt" id="css-ref">
+                                <h2><a id="CSS_Reference_899"></a>CSS Reference</h2>
+                                <p>This is the css reference section. You will find here the most important classes,
+                                    related modifiers and hints about styles distribution.</p>
+
+                                <h3><a id="Layout_1005"></a>Layout</h3>
+                                <h4><a id="Grid_system_1007"></a>Grid system</h4>
+                                <h5><a id="Columns_1009"></a>Columns</h5>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Main class</th>
+                                            <th>Modifier</th>
+                                            <th>Effects</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.columns</code></td>
+                                            <td><code>is-vcentered</code></td>
+                                            <td>Centers nested <code>column</code> elements verticaly using flexbox</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>is-multiline</code></td>
+                                            <td>Makes the nested columns wrap into a new row when the end of the
+                                                current row is reached</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>is-mobile</code></td>
+                                            <td>Prevents columns from stacking on mobile devices</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>is-gapless</code></td>
+                                            <td>Removes padding from children columns</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <h5><a id="Column_1018"></a>Column</h5>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Main class</th>
+                                            <th>Modifier</th>
+                                            <th>Effects</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.column</code></td>
+                                            <td><code>is-half</code></td>
+                                            <td>Makes the column take half of the available space</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>is-one-third</code></td>
+                                            <td>Makes the column take 1/3 of the available space</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>is-two-thirds</code></td>
+                                            <td>Makes the column take 2/3 of the available space</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>is-one-quarter</code></td>
+                                            <td>Makes the column take 1/4 of the available space</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>is-*1-12</code></td>
+                                            <td>Makes the column take a ammount of space corresponding to the specified
+                                                number between 1 and 12</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <h4><a id="Responsive_helpers_1028"></a>Responsive helpers</h4>
+                                <h5><a id="Display_helpers_1030"></a>Display helpers</h5>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Main class</th>
+                                            <th>Modifier</th>
+                                            <th>Effects</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.*</code></td>
+                                            <td><code>is-flex-mobile</code></td>
+                                            <td>Sets display to flex for the target element when device width is &lt;
+                                                768px</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>is-flex-tablet-only</code></td>
+                                            <td>Sets display to flex for the target element when device width is
+                                                between 769px and 1023px</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>is-flex-desktop-only</code></td>
+                                            <td>Sets display to flex for the target element when device width is
+                                                between 1024px and 1215px</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>is-flex-widescreen-only</code></td>
+                                            <td>Sets display to flex for the target element when device width is
+                                                between 1216px and 1407px</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>is-flex-touch</code></td>
+                                            <td>Sets display to flex for the target element when device width is &gt;
+                                                1408px</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>is-flex-tablet</code></td>
+                                            <td>Sets display to flex for the target element when device width is &gt;
+                                                768px</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>is-flex-desktop</code></td>
+                                            <td>Sets display to flex for the target element when device width is &gt;
+                                                1024px</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>is-flex-widescreen</code></td>
+                                            <td>Sets display to flex for the target element when device width is &gt;
+                                                1216px</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>is-flex-fullhd</code></td>
+                                            <td>Sets display to flex for the target element when device width is &gt;
+                                                1216px</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p>You can replace the keyword <code>flex</code> with the following parameters</p>
+                                <ul>
+                                    <li><code>block</code></li>
+                                    <li><code>inline</code></li>
+                                    <li><code>inline-block</code></li>
+                                    <li><code>inline-flex</code></li>
+                                </ul>
+                                <h5><a id="Hide_helpers_1051"></a>Hide helpers</h5>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Main class</th>
+                                            <th>Modifier</th>
+                                            <th>Effects</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.*</code></td>
+                                            <td><code>is-hidden-mobile</code></td>
+                                            <td>Hides the target element when device width is &lt; 768px</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>is-hidden-tablet-only</code></td>
+                                            <td>Hides the target element when device width is between 769px and 1023px</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>is-hidden-desktop-only</code></td>
+                                            <td>Hides the target element when device width is between 1024px and 1215px</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>is-hidden-widescreen-only</code></td>
+                                            <td>Hides the target element when device width is between 1216px and 1407px</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>is-hidden-touch</code></td>
+                                            <td>Hides the target element when device width is &gt; 1408px</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>is-hidden-tablet</code></td>
+                                            <td>Hides the target element when device width is &gt; 768px</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>is-hidden-desktop</code></td>
+                                            <td>Hides the target element when device width is &gt; 1024px</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>is-hidden-widescreen</code></td>
+                                            <td>Hides the target element when device width is &gt; 1216px</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>is-hidden-fullhd</code></td>
+                                            <td>Hides the target element when device width is &gt; 1216px</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <h4><a id="General_helpers_1065"></a>General helpers</h4>
+                                <h5><a id="Heading_helpers_1067"></a>Heading helpers</h5>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Main class</th>
+                                            <th>Modifier</th>
+                                            <th>Effects</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.title</code></td>
+                                            <td><code>is-*1-6</code></td>
+                                            <td>Sets the title size on a scale of 1 to 6</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.subtitle</code></td>
+                                            <td><code>is-*1-6</code></td>
+                                            <td>Sets the subtitle size on a scale of 1 to 6</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <h5><a id="States_helpers_1074"></a>States helpers</h5>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Main class</th>
+                                            <th>Modifier</th>
+                                            <th>Effects</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>*</code></td>
+                                            <td><code>is-hidden</code></td>
+                                            <td>Sets the target element to<code>display: none</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>is-vhidden</code></td>
+                                            <td>Sets the target element to<code>visibility: hidden</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>is-disabled</code></td>
+                                            <td>Disables pointer events on target element</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="section-txt" id="js-ref">
+                                <h2><a id="Js_reference_1109"></a>Js reference</h2>
+                                <p>This is the javascript reference section. You will find here what you need to know
+                                    to get started with the theme’s js. All the following code snippets can be found in
+                                    the <code>/assets/js/main.js</code> file.</p>
+                                <h3><a id="Pageloader_1112"></a>Pageloader</h3>
+                                <p>If you wish to change the behaviour of the pageloader component, you’ll have to edit
+                                    this snippet:</p>
+                                <pre class="prettyprint"><code class="language-js">$(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+
+    <span class="hljs-comment">//Page loader</span>
+    <span class="hljs-keyword">if</span> ($(<span class="hljs-string">'.pageloader'</span>).length) {
+
+        $(<span class="hljs-string">'.pageloader'</span>).toggleClass(<span class="hljs-string">'is-active'</span>);
+
+        $(<span class="hljs-built_in">window</span>).on(<span class="hljs-string">'load'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-keyword">var</span> pageloaderTimeout = setTimeout( <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+            $(<span class="hljs-string">'.pageloader'</span>).toggleClass(<span class="hljs-string">'is-active'</span>);
+            $(<span class="hljs-string">'.infraloader'</span>).toggleClass(<span class="hljs-string">'is-active'</span>)
+            clearTimeout( pageloaderTimeout );
+        }, <span class="hljs-number">700</span> );
+        })
+    }
+});
+</code></pre>
+                                <h3><a id="Responsive_toggle_1134"></a>Responsive toggle</h3>
+                                <p>If you want to change the way the responsive menu toggle behaves, you’ll have to
+                                    edit this snippet:</p>
+                                <pre class="prettyprint"><code class="language-js"><span class="hljs-comment">//Mobile menu toggle</span>
+<span class="hljs-keyword">if</span> ($(<span class="hljs-string">'.navbar-burger'</span>).length) {
+    $(<span class="hljs-string">'.navbar-burger'</span>).on(<span class="hljs-string">"click"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+        $(<span class="hljs-keyword">this</span>).toggleClass(<span class="hljs-string">'is-active'</span>);
+        <span class="hljs-keyword">if</span> ($(<span class="hljs-string">'.navbar-menu'</span>).hasClass(<span class="hljs-string">'is-active'</span>)) {
+            $(<span class="hljs-string">'.navbar-menu'</span>).removeClass(<span class="hljs-string">'is-active'</span>);
+        } <span class="hljs-keyword">else</span> {
+            $(<span class="hljs-string">'.navbar-menu'</span>).addClass(<span class="hljs-string">'is-active'</span>);
+        }
+    });
+}
+</code></pre>
+                                <p>Use the following pattern to set your backgrounds</p>
+                                <pre class="prettyprint"><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"some-div"</span> <span class="hljs-attribute">data-background</span>=<span class="hljs-value">"path/to/your/image.jpeg"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span> 
+</code></pre>
+                                <h3><a id="iziToasts_1189"></a>iziToasts</h3>
+                                <p>This is how you can create an iziToast object:</p>
+                                <pre class="prettyprint"><code class="language-js">iziToast.show({
+    class: 'success-toast',
+    icon: 'fa fa-heart-o',
+    title: 'Successfuly removed from Wishlist',
+    message: '',
+    titleColor: '#fff',
+    messageColor: '#fff',
+    iconColor: "#fff",
+    backgroundColor: '#FF7273',
+    progressBarColor: '#444F60',
+    position: 'bottomRight',
+    transitionIn: 'fadeInUp',
+    close: false,
+    timeout: 2000,
+    zindex: 99999,
+}); 
+</code></pre>
+                                <p>You can easily use it in your callbacks, when needed. Check the plugin’s
+                                    documentation for more full documented examples.</p>
+                                <h3><a id="chosen_js_1213"></a>chosen js</h3>
+                                <p>Create javascript select boxes easily :</p>
+                                <pre class="prettyprint"><code class="language-js"><span class="hljs-comment">//Chosen select init</span>
+<span class="hljs-keyword">if</span> ($(<span class="hljs-string">'.chosen-select'</span>).length) {
+    $(<span class="hljs-string">".chosen-select"</span>).chosen({
+        disable_search_threshold: <span class="hljs-number">6</span>,
+        width: <span class="hljs-string">'100%'</span>
+    });
+}
+</code></pre>
+                                <p>Then give the <code>chosen-select</code> class to a native <code>select</code>
+                                    element and watch the magic.</p>
+
+                                <p>Read the plugin documentation to see all available options.</p>
+                                <h3><a id="Easy_Autocomplete_1245"></a>Easy Autocomplete</h3>
+                                <p>Create autompletes easily following the plugin documentation. Here is an advanced
+                                    example using templating :</p>
+                                <pre class="prettyprint"><code class="language-js"><span class="hljs-comment">//Users autocomplete</span>
+<span class="hljs-keyword">if</span> ($(<span class="hljs-string">'#users-autocpl'</span>).length) {
+    <span class="hljs-keyword">var</span> usersOptions = {
+        url: <span class="hljs-string">"assets/js/easyAutocomplete/data/persons.json"</span>,
+        getValue: <span class="hljs-string">"name"</span>,
+        template: {
+            type: <span class="hljs-string">"custom"</span>,
+            method: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">value, item</span>) </span>{
+                <span class="hljs-keyword">return</span> <span class="hljs-string">"&lt;div class="</span> + <span class="hljs-string">'template-wrapper'</span> + <span class="hljs-string">"&gt;&lt;img class="</span> + <span class="hljs-string">'autocpl-avatar'</span> + <span class="hljs-string">" src='"</span> + item.pic + <span class="hljs-string">"' /&gt;&lt;div class="</span> + <span class="hljs-string">'entry-text'</span> + <span class="hljs-string">"&gt;"</span> + value + <span class="hljs-string">"&lt;br&gt;&lt;span&gt;"</span> + item.email + <span class="hljs-string">"&lt;/span&gt;&lt;/div&gt;&lt;/div&gt; "</span>;
+            }
+        },
+        highlightPhrase: <span class="hljs-literal">false</span>,
+        list: {
+            maxNumberOfElements: <span class="hljs-number">3</span>,
+            showAnimation: {
+                type: <span class="hljs-string">"fade"</span>, <span class="hljs-comment">//normal|slide|fade</span>
+                time: <span class="hljs-number">400</span>,
+                callback: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{}
+            },
+            match: {
+                enabled: <span class="hljs-literal">true</span>
+            }
+        },
+    };
+
+    $(<span class="hljs-string">"#users-autocpl"</span>).easyAutocomplete(usersOptions);
+}
+</code></pre>
+                                <p>The demo data is fecthed from a <code>json</code> file in the <code>data</code>
+                                    directory of the <code>assets/data/</code> folder. It is then copied to the plugin
+                                    folder on the production site.</p>
+                            </div>
+                        </div>
+
+                        <div class="section-txt" id="support">
+                            <h2><a id="Customer_support_1360"></a>Customer support</h2>
+                            <p>Please remember you have purchased a very affordable theme and you did not pay for a
+                                full-time web design agency. We will help with your issues, but these requests will be
+                                put on a relevant priority, regarding their nature. Support is provided for your
+                                comfort and for a best possible experience, so please be patient, polite and
+                                respectful, as we are towards you.</p>
+                            <h3><a id="Support_includes_1363"></a>Support includes</h3>
+                            <ul>
+                                <li>Responding to questions or problems regarding the item and its features</li>
+                                <li>Fixing bugs and reported issues</li>
+                                <li>Providing updates</li>
+                            </ul>
+                            <h3><a id="Support_doesnt_include_1369"></a>Support doesn’t include</h3>
+                            <ul>
+                                <li>Customization and installation services</li>
+                                <li>Support for third party software and plugins</li>
+                            </ul>
+                            <h3><a id="Before_Support_1374"></a>Before Support</h3>
+                            <ul>
+                                <li>Make sure your question is a valid Theme Issue and not a customization request</li>
+                                <li>Make sure you have read through the documentation and any ressources before asking
+                                    support on how to accomplish a task</li>
+                                <li>Make sure to double check the theme FAQs.</li>
+                                <li>If you have customized your theme and now have an issue, back-track to make sure
+                                    you didn’t make a mistake. If you have made changes and can’t find the issue,
+                                    please provide us with your changelog.</li>
+                                <li>Almost 80% of the time we find that the solution to people’s issues can be solved
+                                    with a simple “Google Search”. You might want to try that before seeking support.
+                                    You might be able to fix the issue yourself much quicker than we can respond to
+                                    your request.</li>
+                                <li>Make sure to state the name of the theme you are having issues with when requesting
+                                    support.</li>
+                            </ul>
+                        </div>
+
+                        <div class="section-txt" id="changelog">
+                            <h2><a id="Changelog_1383"></a>Changelog</h2>
+                            <p>Once again, thank you so much for purchasing this theme. As I said at the beginning,
+                                we’d be glad to help you if you have any questions relating to this theme. No
+                                guarantees, but we’ll do our best to assist and support you. If you have a more general
+                                question relating to Bulkit, you might consider visiting our support forums and asking
+                                your question in the "Bulkit support” section.</p>
+                            <pre><code>-----------------------------------------------------------------------------------------
+Version 2.4.0 - Sep 01, 2019
+-----------------------------------------------------------------------------------------
+
+- Updated Bulma to 0.7.5
+- Fixed Navbar responsive issues
+- Fixed regressions due to Bulma breaking changes
+- Added material style select box
+- Added Error kit with 404 and 500 errors templates
+- Added a new One pager kit
+- Fixed dashboard datatable filtering and sorting issues
+
+-----------------------------------------------------------------------------------------
+Version 2.3.0 - Mar 24, 2019
+-----------------------------------------------------------------------------------------
+
+- Updated Bulma to 0.7.4
+- Upgraded gulp-sass to 3.2.0
+- Added a new onepager kit
+- Added Chat UI to the dashboard
+- Added Inbox UI to the dashboard
+- Fixed various layout bugs
+
+-----------------------------------------------------------------------------------------
+Version 2.2.0 - Jan 05, 2019
+-----------------------------------------------------------------------------------------
+
+- Updated Bulma to 0.7.2
+- Reworked dashboard navbar
+- Reworked dashboard dropdowns
+- Reworked dashboard javascript structure
+- Reworked dashboard navigation
+- Fixed various layout bugs
+- Added 9 new dashboard pages
+
+-----------------------------------------------------------------------------------------
+Version 2.1.0 - Sep 25, 2018
+-----------------------------------------------------------------------------------------
+
+- Added a new landing page one pager kit
+- Reworked mobile dashboard navigation
+- Fixed some layout issues
+- Added 7 new dashboard pages
+
+-----------------------------------------------------------------------------------------
+Version 2.0.0 - Jun 10, 2018
+-----------------------------------------------------------------------------------------
+
+- Upgraded Bulma to 0.7
+- Splitted the initial template into 9 gulp standalone kits
+- Npm is now supported
+- Gulp is now the build and watch system
+- Added browser sync for development mode
+- Added a Panini flat file generator for partials
+- Navbar component has been completely rewritten
+- Improved layout with newest Bulma Features
+- Added a 5th landing Kit
+- Added project pages and datatable pages to the dashboard kit
+- Added additional components
+
+-----------------------------------------------------------------------------------------
+Version 0.0.1 - Apr 23, 2018
+-----------------------------------------------------------------------------------------
+
+- initial release
+
+</code></pre>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 center">
+                    Bulkit is a template designed and coded by <a href="https://cssninja.io" target="_blank">cssninja.io</a>
+                    <br>Access <a href="https://docs.bulkit.cssninja.io" target="_blank">the Online Documentation</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 center">
+                    Css Ninja Studio © 2018. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/prettify.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+</body>
+
+</html>

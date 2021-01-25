@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/core.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script type="text/javascript" src="assets/js/plugins/ui/prism.min.js"></script>
+	
+	<script type="text/javascript" src="assets/js/core/app.js"></script>
+	<script type="text/javascript" src="assets/js/pages/sidebar_detached_sticky_native.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body data-spy="scroll" data-target=".sidebar-detached" class="has-detached-right">
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-default navbar-lg header-highlight">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="index.html"><img src="assets/images/logo_light.png" alt=""></a>
+
+			<ul class="nav navbar-nav pull-right visible-xs-block">
+				<li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+				<li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+				<li><a class="sidebar-mobile-detached-toggle"><i class="icon-grid7"></i></a></li>
+			</ul>
+		</div>
+
+		<div class="navbar-collapse collapse" id="navbar-mobile">
+			<ul class="nav navbar-nav">
+				<li><a class="sidebar-control sidebar-main-hide hidden-xs"><i class="icon-paragraph-justify3"></i></a></li>
+				<li><a class="sidebar-control sidebar-detached-hide hidden-xs"><i class="icon-drag-right"></i></a></li>
+			</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="other_changelog.html">Changelog <span class="label label-inline bg-warning-400 position-right">v. 2.0</span></a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page container -->
+	<div class="page-container">
+
+		<!-- Page content -->
+		<div class="page-content">
+
+			<!-- Main sidebar -->
+			<div class="sidebar sidebar-main">
+				<div class="sidebar-content">
+
+	        		<!-- Support -->
+					<div class="sidebar-category no-margin">
+						<div class="category-title">
+							<span>Have questions?</span>
+							<i class="icon-help text-muted pull-right"></i>
+						</div>
+
+						<div class="category-content">
+							<a href="http://kopyov.ticksy.com" class="btn bg-success-400 btn-block" target="_blank"><i class="icon-lifebuoy position-left"></i> Limitless support</a>
+						</div>
+					</div>
+					<!-- /support -->
+
+
+					<!-- Main navigation -->
+					<div class="sidebar-category">
+						<div class="category-title">
+							<span>Navigation</span>
+							<i class="icon-menu7 text-muted pull-right"></i>
+						</div>
+
+						<div class="category-content no-padding">
+							<ul class="navigation navigation-main navigation-accordion">
+
+								<!-- Main -->
+								<li class="navigation-header">Main</li>
+								<li><a href="index.html">Introduction</a></li>
+								<li><a href="main_getting_started.html">Getting started</a></li>
+								<li><a href="main_starter_kit.html">Starter kit</a></li>
+								<li><a href="main_rtl.html">RTL layout</a></li>
+
+								<li class="navigation-header">Basic functionality</li>								
+								<li><a href="base_less_css.html">LESS and CSS</a></li>
+								<li><a href="base_less_compile.html">Compiling LESS</a></li>
+								<li><a href="base_less_compile_rtl.html">Compiling LESS for RTL version</a></li>
+								<li>
+									<a href="#">Plugins</a>
+									<ul>
+										<li><a href="plugins_forms.html">Forms</a></li>
+										<li><a href="plugins_forms_styling.html">Form styling</a></li>
+										<li><a href="plugins_selects.html">Selects</a></li>
+										<li><a href="plugins_editors.html">Editors</a></li>
+										<li><a href="plugins_uploaders.html">Uploaders</a></li>
+										<li><a href="plugins_wizards.html">Wizards</a></li>
+										<li><a href="plugins_extensions.html">Extensions</a></li>
+										<li><a href="plugins_notifications.html">Notifications</a></li>
+										<li><a href="plugins_pickers.html">Pickers</a></li>
+										<li><a href="plugins_tables.html">Tables</a></li>
+										<li><a href="plugins_ui.html">UI</a></li>
+										<li><a href="plugins_vis.html">Visualization</a></li>
+									</ul>
+								</li>
+								<li><a href="base_bootstrap.html">Bootstrap</a></li>
+								<li><a href="base_color_system.html">Color system</a></li>
+								<li><a href="base_helpers.html">Helpers</a></li>
+								<li><a href="base_themes.html">Themes</a></li>
+
+								<li class="navigation-header">Layout options</li>
+								<li><a href="layout_markup.html">Markup</a></li>
+								<li><a href="layout_sidebars.html">Sidebars</a></li>
+								<li><a href="layout_navbars.html">Navbars</a></li>
+								<li><a href="layout_v_nav.html">Vertical navigation</a></li>
+								<li class="active"><a href="layout_h_nav.html">Horizontal navigation</a></li>
+								<li><a href="layout_page_header.html">Page header</a></li>
+								<li><a href="layout_footer.html">Footer</a></li>
+
+								<li class="navigation-header">Other</li>
+								<li><a href="other_credits.html">Sources and credits</a></li>
+								<li><a href="other_changelog.html">Changelog <span class="label bg-warning-400">version 2.0</span></a></li>
+								<!-- /main -->
+
+							</ul>
+						</div>
+					</div>
+					<!-- /main navigation -->
+
+				</div>
+			</div>
+			<!-- /main sidebar -->
+
+
+			<!-- Main content -->
+			<div class="content-wrapper">
+
+				<!-- Page header -->
+				<div class="page-header">
+					<div class="page-header-content">
+						<div class="page-title">
+							<h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold">Limitless</span> - Horizontal Navigation</h4>
+						</div>
+
+						<div class="heading-elements">
+							<ul class="breadcrumb">
+								<li><a href="index.html"><i class="icon-home2 position-left"></i> Home</a></li>
+								<li class="active">Horizontal navigation</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- /page header -->
+				
+
+				<!-- Content area -->
+				<div class="content">
+
+					<!-- Detached content -->
+					<div class="container-detached">
+						<div class="content-detached">
+
+							<!-- Navigation overview -->
+							<div class="panel panel-flat" id="overview">
+								<div class="panel-heading">
+									<h5 class="panel-title">Navigation overview</h5>
+									<div class="heading-elements">
+										<ul class="icons-list">
+					                		<li><a data-action="collapse"></a></li>
+					                		<li><a data-action="close"></a></li>
+					                	</ul>
+					            	</div>
+								</div>
+
+								<div class="panel-body">
+									<p>Horizontal navigation - type of navigation that is used in the top/bottom navbars and has horizontal direction: left to right or right to left in RTL version. By default horizontal navigation is a part of navbar component and can include a simple link, link with icon and dropdown menu. Navigation can be placed in main navbar or in secondary navbar. Can be used in all layouts: with sidebar, 3 columns, double and dual sidebars, bottom navbar, fixed navbar etc. Default placement is main navbar. Horizontal navigation supports options:</p>
+
+									<div class="table-responsive">
+										<table class="table table-bordered table-striped">
+											<thead>
+												<tr>
+													<th style="width: 250px;">Option</th>
+													<th>Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="text-semibold">Navigation placement</td>
+													<td>Simple usage of horizontal navigation allows to add simple navigation links to the main navbar: left or right position, excluding navbar header area with logo. For more advanced usage navigation can have multiple menu levels, tabbed navigation option, links with icons, inline and absolute positioned labels and badges etc. And can be placed in separate secondary navbar or in both navbars: top or bottom, fixed or static. Everything depends on specific needs. Since horizontal navigation is a part of <code>navbar</code> component, is does support all available navbar options, components, sizes, colors etc.</td>
+												</tr>
+												<tr>
+													<td class="text-semibold">Double side navigation</td>
+													<td>By default horizontal navigation supports 2 main positions: <code>left</code> and <code>right</code>. For these positions are responsible 2 classes: <code>.navbar-left</code> and <code>navbar-right</code> that can be added to all navbar components to align them properly. For more advanced options like 3 or more positions, add grid columns inside navbar content. But please note: BS grid is mobile-first, if you need to use responsive columns, they wrap to a new line on certain screen size. To avoid this issue use <code>.col-xs-*</code> classes.</td>
+												</tr>
+												<tr>
+													<td class="text-semibold">Multiple level dropdowns</td>
+													<td>Horizontal navigation supports multiple menu levels with different directions. Navigation menu uses default markup for Bootstrap <strong>dropdown menus</strong> and opens children levels <strong>on click</strong>. Another option available - show submenu <strong>on hover</strong> using <code>hover_dropdown.js</code> plugin. Navigation dropdopwns support all available options for dropdown menus: border and background colors, icons, headers, dividers etc. For example - they can be white or match navbar background color by adding <code>.bg-*</code> and <code>border-*</code> classes to the dropdown.</td>
+												</tr>
+												<tr>
+													<td class="text-semibold">Additional styling</td>
+													<td>Depending on navbar background color, navigation menu automatically adjust link colors for parent level. By default all dropdowns have white background color, but this color can be changed by adding proper classes to the dropdown menu list. Available options are: border width and border color - <code>.border-*</code> class; background color - <code>.bg-*</code> class; active state background color - <code>.element-*</code> class.</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<!-- /navigation overview -->
+
+
+							<!-- Navigation options -->
+							<div class="panel panel-flat" id="options">
+								<div class="panel-heading">
+									<h5 class="panel-title">Navigation options</h5>
+									<div class="heading-elements">
+										<ul class="icons-list">
+					                		<li><a data-action="collapse"></a></li>
+					                		<li><a data-action="close"></a></li>
+					                	</ul>
+				                	</div>
+								</div>
+
+								<div class="panel-body">
+									<div class="content-group-lg" id="options_click">
+										<h6 class="text-semibold">Open submenu on click</h6>
+										<p class="content-group">By default dropdown menu opens on click. Via data attributes or JavaScript, the dropdown plugin toggles hidden content (dropdown menus) by toggling the <code>.open</code> class on the parent list item. <strong>Note:</strong> The <code>data-toggle="dropdown"</code> attribute is relied on for closing dropdown menus at an application level, so it's a good idea to always use it. Horizontal navigation supports left and right menu directions, full width mega menu and submenus.</p>
+
+										<p class="text-semibold">Example markup:</p>
+										<pre class="language-markup" data-line="5-12"><code>&lt;!-- Left aligned navigation -->
+&lt;ul class="nav navbar-nav">
+	&lt;li class="active">&lt;a href="#">Link&lt;/a>&lt;/li>
+	&lt;li>&lt;a href="#">Link&lt;/a>&lt;/li>
+	&lt;li class="dropdown">
+		&lt;a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown &lt;span class="caret">&lt;/span>&lt;/a>
+		&lt;ul class="dropdown-menu">
+			&lt;li>&lt;a href="#">Action&lt;/a>&lt;/li>
+			&lt;li>&lt;a href="#">Another action&lt;/a>&lt;/li>
+			&lt;li>&lt;a href="#">Something else here&lt;/a>&lt;/li>
+		&lt;/ul>
+	&lt;/li>
+&lt;/ul>
+&lt;!-- /left aligned navigation -->
+
+&lt;!-- Right aligned navigation -->
+&lt;ul class="nav navbar-nav navbar-right">
+	&lt;li>&lt;a href="#">Link&lt;/a>&lt;/li>
+	&lt;li>&lt;a href="#">Another link&lt;/a>&lt;/li>
+	&lt;li>&lt;a href="#">One more link&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;!-- /right aligned navigation -->
+</code></pre>
+									</div>
+
+									<div class="content-group-lg" id="options_hover">
+										<h6 class="text-semibold">Open submenu on hover</h6>
+										<p class="content-group">By default dropdown menu opens on <code>click</code>. Optionally it can be changed to <code>hover</code> by adding <code>data-hover="dropdown"</code> data attribute to the parent link, right there where your <code>data-toggle="dropdown"</code> is, no Javascript needed. Also include path to <code>hover_dropdown.min.js</code> file. This plugin doesn't remove click functionality, but adds an ability to open all submenu levels on hover.</p>
+
+										<p class="text-semibold">Example markup:</p>
+										<pre class="language-markup" data-line="6"><code>&lt;!-- Left aligned navigation -->
+&lt;ul class="nav navbar-nav">
+	&lt;li class="active">&lt;a href="#">Link&lt;/a>&lt;/li>
+	&lt;li>&lt;a href="#">Link&lt;/a>&lt;/li>
+	&lt;li class="dropdown">
+		&lt;a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">
+			Dropdown &lt;span class="caret">&lt;/span>
+		&lt;/a>
+		&lt;ul class="dropdown-menu">
+			&lt;li>&lt;a href="#">Action&lt;/a>&lt;/li>
+			&lt;li>&lt;a href="#">Another action&lt;/a>&lt;/li>
+			&lt;li>&lt;a href="#">Something else here&lt;/a>&lt;/li>
+		&lt;/ul>
+	&lt;/li>
+&lt;/ul>
+&lt;!-- /left aligned navigation -->
+
+&lt;!-- Right aligned navigation -->
+&lt;ul class="nav navbar-nav navbar-right">
+	&lt;li>&lt;a href="#">Link&lt;/a>&lt;/li>
+	&lt;li>&lt;a href="#">Another link&lt;/a>&lt;/li>
+	&lt;li>&lt;a href="#">One more link&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;!-- /right aligned navigation -->
+</code></pre>
+									</div>
+
+									<div class="content-group-lg" id="options_elements">
+										<h6 class="text-semibold">Optional elements</h6>
+										<p class="content-group">Horizontal navigation is a navbar component. It means that it can be used along with all default and custom components: forms, buttons, text, selects, progress bars, checkboxes, radios, labels, badges, file uploaders etc. Also all of them look similar in all navbar styles and sizes. <strong>Please note:</strong> some components require additional color options, such as <code>switchery</code>, <code>checkboxes/radios</code>, <code>file uploader</code> and <code>select2</code>.</p>
+
+										<p class="text-semibold">Example markup with form elements:</p>
+										<pre class="language-markup" data-line="8-17"><code>&lt;!-- Left aligned navigation -->
+&lt;ul class="nav navbar-nav">
+	&lt;li class="active">&lt;a href="#">Link&lt;/a>&lt;/li>
+	&lt;li>&lt;a href="#">Link&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;!-- /left aligned navigation -->
+
+&lt;!-- Left aligned search form -->
+&lt;form class="navbar-form navbar-left" action="#">
+	&lt;div class="form-group has-feedback">
+		&lt;input type="search" class="form-control input-xs bg-primary" placeholder="Search">
+		&lt;div class="form-control-feedback">
+			&lt;i class="icon-search4 text-normal">&lt;/i>
+		&lt;/div>
+	&lt;/div>
+&lt;/form>
+&lt;!-- /left aligned search form -->
+
+&lt;!-- Right aligned form -->
+&lt;div class="navbar-right">
+	&lt;form class="navbar-form navbar-left" action="#">
+		&lt;div class="checkbox-inline checkbox-right">
+			&lt;input type="checkbox" id="stay-online" class="styled" checked="checked">
+			&lt;label for="stay-online">Stay online&lt;/label>
+		&lt;/div>
+	&lt;/form>
+&lt;/div>
+&lt;!-- /right aligned form -->
+</code></pre>
+									</div>
+
+									<div id="options_tabs">
+										<h6 class="text-semibold">Tabbed navigation</h6>
+										<p class="content-group">Replace standard navigation links with quick, dynamic tab functionality to transition through panes of local content, even via dropdown menus. Add <code>data-toggle="tab"</code> to the navbar navigation links and specify id's. Tabs content needs to be placed in div's that have unique id's, <code>.tab-pane</code> class and <code>.tab-pane.active</code> classes for active pane. Wrap all content panes in <code>&lt;div class="tab-content no-padding /&gt;"</code> div.</p>
+
+										<p class="text-semibold">Example markup with tabbed navigation:</p>
+										<pre class="language-markup"><code>&lt;!-- Tabbed navigation -->
+&lt;ul class="nav navbar-nav">
+	&lt;li class="active">&lt;a href="#tab-demo1" data-toggle="tab">Active tab&lt;/a>&lt;/li>
+	&lt;li>&lt;a href="#tab-demo2" data-toggle="tab">Second tab&lt;/a>&lt;/li>
+	&lt;li>&lt;a href="#tab-demo3" data-toggle="tab">Third tab&lt;/a>&lt;/li>
+	&lt;li class="dropdown">
+		&lt;a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown &lt;span class="caret">&lt;/span>&lt;/a>
+		&lt;ul class="dropdown-menu dropdown-menu-right">
+			&lt;li>&lt;a href="#tab-demo4" data-toggle="tab">Another tab&lt;/a>&lt;/li>
+			&lt;li>&lt;a href="#tab-demo5" data-toggle="tab">One more tab&lt;/a>&lt;/li>
+		&lt;/ul>
+	&lt;/li>
+&lt;/ul>
+&lt;!-- /tabbed navigation -->
+
+&lt;!-- Tabbed navigation content -->
+&lt;div class="tab-content">
+	&lt;div class="tab-pane fade active in" id="tab-demo1">Tab 1 content&lt;/div>
+	&lt;div class="tab-pane fade" id="tab-demo2">Tab 2 content&lt;/div>
+	&lt;div class="tab-pane fade" id="tab-demo3">Tab 3 content&lt;/div>
+	&lt;div class="tab-pane fade" id="tab-demo4">Tab 4 content&lt;/div>
+	&lt;div class="tab-pane fade" id="tab-demo5">Tab 5 content&lt;/div>
+&lt;/div>
+&lt;!-- /tabbed navigation content -->
+</code></pre>
+									</div>
+								</div>
+							</div>
+							<!-- /navigation options -->
+
+
+							<!-- Mega menu -->
+							<div class="panel panel-flat" id="mega">
+								<div class="panel-heading">
+									<h5 class="panel-title">Mega menu</h5>
+									<div class="heading-elements">
+										<ul class="icons-list">
+					                		<li><a data-action="collapse"></a></li>
+					                		<li><a data-action="close"></a></li>
+					                	</ul>
+				                	</div>
+								</div>
+
+								<div class="panel-body">
+									<div class="content-group-lg" id="mega_overview">
+										<h6 class="text-semibold">Overview</h6>
+										<p class="content-group">Mega menu is a group of custom navbar components that uses slightly modified BS dropdown markup and native styling. Basically dropdown menu may contain any component - text blocks, lists, galleries, tabs, forms, tables, accordion, panels, buttons etc. However since default dropdown menu closes itself on first click, some extra js code is needed to stop propagation. In this case dropdown toggle inside dropdown menu doesn't work by default and needs additional modifications. See the table with necessary classes and description below.</p>
+
+										<p class="text-semibold">Example markup:</p>
+										<pre class="language-markup"><code>&lt;!-- Navigation with mega menu -->
+&lt;ul class="nav navbar-nav">
+
+	&lt;!-- Auto width -->
+	&lt;li class="mega-menu">
+		&lt;a href="#" data-toggle="dropdown" class="dropdown-toggle">Auto width &lt;span class="caret">&lt;/span>&lt;/a>
+		&lt;div class="dropdown-menu dropdown-content">
+			&lt;div class="dropdown-content-body">...&lt;/div>
+		&lt;/div>
+	&lt;/li>
+	&lt;!-- /auto width -->
+
+
+	&lt;!-- Fixed width -->
+	&lt;li class="dropdown">
+		&lt;a href="#" data-toggle="dropdown" class="dropdown-toggle">Auto width &lt;span class="caret">&lt;/span>&lt;/a>
+		&lt;div class="dropdown-menu dropdown-content width-300">
+			&lt;div class="dropdown-content-body">...&lt;/div>
+		&lt;/div>
+	&lt;/li>
+	&lt;!-- /fixed width -->
+
+
+	&lt;!-- Full width -->
+	&lt;li class="mega-menu mega-menu-wide">
+		&lt;a href="#" data-toggle="dropdown" class="dropdown-toggle">Full width &lt;span class="caret">&lt;/span>&lt;/a>
+		&lt;div class="dropdown-menu dropdown-content">
+			&lt;div class="dropdown-content-body">...&lt;/div>
+		&lt;/div>
+	&lt;/li>
+	&lt;!-- /full width -->
+
+&lt;/ul>
+&lt;!-- /navigation with mega menu -->
+</code></pre>
+									</div>
+
+									<div class="content-group-lg" id="mega_options">
+										<h6 class="text-semibold">Menu and content options</h6>
+										<p class="content-group">All mega dropdowns support additional options for menu itself and content inside - menu header, menu footer, block titles, custom colors for menu's list background and menu borders, or its components. Different types of lists support all components and options available for basic dropdown menu component, such as labels, badges, switches, icons, headers etc. Custom background colors available only for simple dropdown menu.</p>
+
+										<div class="content-group">
+											<p class="text-semibold">Example heading markup:</p>
+											<pre class="language-markup" data-line="4-10"><code>&lt;!-- Dropdown menu with heading -->
+&lt;div class="dropdown-menu dropdown-content">
+
+	&lt;!-- Dropdown heading -->
+	&lt;div class="dropdown-content-heading">
+		&lt;ul class="icons-list">
+			&lt;li>
+				&lt;a href="#">
+					&lt;i class="icon-menu7">&lt;/i>
+				&lt;/a>
+			&lt;/li>
+		&lt;/ul>
+	&lt;/div>
+	&lt;!-- /dropdown heading -->
+
+
+	&lt;!-- Dropdown content -->
+	&lt;div class="dropdown-content-body">
+		...
+	&lt;/div>
+	&lt;!-- /dropdown content -->
+
+&lt;/div>
+&lt;!-- /dropdown menu with heading -->
+</code></pre>
+										</div>
+
+										<p class="text-semibold">Example footer markup:</p>
+										<pre class="language-markup" data-line="8-14"><code>&lt;!-- Dropdown menu with footer -->
+&lt;div class="dropdown-menu dropdown-content">
+
+	&lt;!-- Dropdown content -->
+	&lt;div class="dropdown-content-body">
+		...
+	&lt;/div>
+	&lt;!-- /dropdown content -->
+
+
+	&lt;!-- Dropdown footer -->
+	&lt;div class="dropdown-content-footer">
+		&lt;a href="#">
+			See all messages &lt;i class="icon-circle-right2">&lt;/i>
+		&lt;/a>
+	&lt;/div>
+	&lt;!-- /dropdown footer -->
+
+&lt;/div>
+&lt;!-- /dropdown menu with footer -->
+</code></pre>
+									</div>
+
+									<div class="content-group-lg" id="mega_grid">
+										<h6 class="text-semibold">Mega menu grid</h6>
+										<p class="content-group">Mega menu component supports a responsive, mobile first fluid grid system that appropriately scales up to 12 columns as the device or viewport size increases. Using a single set of <code>.col-md-*</code> grid classes, you can create a basic grid system that starts out stacked on mobile devices and tablet devices (the extra small to small range) before becoming horizontal on desktop (medium) devices. Place grid columns in any <code>.row</code> inside mega menu dropdown.</p>
+
+										<p class="text-semibold">Example markup:</p>
+										<pre class="language-markup"><code>&lt;!-- Dropdown menu grid -->
+&lt;div class="dropdown-menu dropdown-content">
+	&lt;div class="dropdown-content-body">
+		&lt;div class="row">
+			&lt;div class="col-md-3 col-sm-6">First column content&lt;/div>
+			&lt;div class="col-md-3 col-sm-6">Second column content&lt;/div>
+			&lt;div class="col-md-3 col-sm-6">Third column content&lt;/div>
+			&lt;div class="col-md-3 col-sm-6">Fourth column content&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/div>
+&lt;!-- /dropdown menu grid -->
+</code></pre>
+									</div>
+
+									<div id="mega_classes">
+										<h6 class="text-semibold">Mega menu classes</h6>
+										<p>Mega menu - responsive navbar component driven by CSS and a small piece of jquery code. This table displays custom classes for navbar mega menu needed for proper look and correct functionality.</p>
+
+										<div class="table-responsive">
+											<table class="table table-bordered">
+												<thead>
+													<tr>
+														<th>Class</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>.dropdown-content</code></td>
+														<td>Prevents dropdown menu from closing on click. Some of the components need additional jquery initialization such as tabs and children dropdowns</td>
+													</tr>
+													<tr>
+														<td><code>li.mega-menu</code></td>
+														<td>This class changes dropdown menu position from <code>absolute</code> to <code>static</code> to remove dependency from parent container</td>
+													</tr>
+													<tr>
+														<td><code>li.mega-menu-wide</code></td>
+														<td>Adds 100% width to children dropdown menu. Must be used with <code>.mega-menu</code> class</td>
+													</tr>
+													<tr>
+														<td><code>.dropdown-content-body</code></td>
+														<td>Similar to <code>.panel-body</code> adds padding to the content. Sometimes some components don't require padding, just remove this div to get a full sized content without spacing</td>
+													</tr>
+													<tr>
+														<td><code>.menu-list</code></td>
+														<td>Specific class for menu lists. It adds additional padding to list items and adds background color to hover and focus states</td>
+													</tr>
+													<tr>
+														<td><code>.menu-heading</code></td>
+														<td>Headings for menu content. 2 options available: default and underlined. For underlined heading add <code>.underlined</code> class to the same div</td>
+													</tr>
+													<tr>
+														<td><code>.dropdown-content-heading</code></td>
+														<td>Dropdown menu heading. Supports custom background color options and list of links. See examples below</td>
+													</tr>
+													<tr>
+														<td><code>.dropdown-content-footer</code></td>
+														<td>Dropdown menu footer. Could be both link and group of content similar to dropdown heading. See examples below</td>
+													</tr>
+													<tr>
+														<td><code>.dropdown-content.col-*</code></td>
+														<td>Optional column classes for %-based width of the dropdown menu. This type of dropdowns don't have fixed width and change it according to the window size</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /mega menu -->
+
+
+							<!-- Navbar component classes -->
+							<div class="panel panel-flat" id="classes">
+								<div class="panel-heading">
+									<h5 class="panel-title">Component classes</h5>
+									<div class="heading-elements">
+										<ul class="icons-list">
+					                		<li><a data-action="collapse"></a></li>
+					                		<li><a data-action="close"></a></li>
+					                	</ul>
+				                	</div>
+								</div>
+
+								<div class="panel-body">
+									<p>The table below contains default navbar classes for components available for use in the navbar component. Control navigation and elements placement, color theme of navbar and child elements, dropdown menu appearance and positioning, sizing by adding or removing proper class:</p>
+
+									<div class="table-responsive">
+										<table class="table table-bordered">
+											<thead>
+												<tr>
+													<th style="width: 20%;">Class</th>
+													<th>Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><code>.navbar-nav</code></td>
+													<td>Default navbar navigation class, must be used with any navigation type and color. Responsible for basic navigation styling.</td>
+												</tr>
+												<tr>
+													<td><code>.navbar-left</code>, <code>.navbar-right</code></td>
+													<td>Positioning classes. Align nav links, forms, buttons, or text, using the <code>.navbar-left</code> or <code>.navbar-right</code> utility classes. Both classes will add a CSS float in the specified direction</td>
+												</tr>
+												<tr>
+													<td><code>.navbar-form</code></td>
+													<td>Place form content within <code>.navbar-form</code> for proper vertical alignment and collapsed behavior in narrow viewports. Use the alignment options to decide where it resides within the navbar content.</td>
+												</tr>
+												<tr>
+													<td><code>.navbar-btn</code></td>
+													<td>Add the <code>.navbar-btn</code> class to <code>&lt;button></code> elements not residing in a <code>&lt;form></code> to vertically center them in the navbar. Supports default, small and mini button sizes.</td>
+												</tr>
+												<tr>
+													<td><code>.navbar-text</code></td>
+													<td>Wrap strings of text in an element with <code>.navbar-text</code>, usually on a <code>&lt;p></code> tag for proper leading and color.</td>
+												</tr>
+												<tr>
+													<td><code>.navbar-link</code></td>
+													<td>For standard links that are not within the regular navbar navigation component, use the <code>.navbar-link</code> class to add the proper colors for the default and inverse navbar options.</td>
+												</tr>
+												<tr>
+													<td><code>data-hover="dropdown"</code></td>
+													<td>This data attribute shows submenu on hover instead of click. Needs to be added to the parent navigation link after <code>data-toggle="dropdown"</code>. Requires <code>hover_dropdown.min.js</code> file to be added.</td>
+												</tr>
+												<tr>
+													<td><code>.navbar.bg-*</code>, <code>.navbar-header.bg-*</code></td>
+													<td>Apply custom background color to the whote navbar or navbar header only. All navbar components automatically adjust their styling according to the navbar color.</td>
+												</tr>
+												<tr>
+													<td><code>.disabled</code></td>
+													<td>Disable any navbar navigation item by adding <code>.disabled</code> class to the <code>&lt;li></code> element. To disable item in hover navigation version, <code>data-hover="dropdown"</code> needs to be removed as well.</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<!-- /navbar component classes -->
+
+						</div>
+					</div>
+					<!-- /detached content -->
+
+
+					<!-- Detached sidebar -->
+					<div class="sidebar-detached">
+			        	<div class="sidebar sidebar-default">
+							<div class="sidebar-content">
+
+				        		<!-- Contact author -->
+								<div class="sidebar-category no-margin">
+									<div class="category-title">
+										<span>Page navigation</span>
+										<i class="icon-menu7 text-muted pull-right"></i>
+									</div>
+
+									<div class="category-content">
+										<a href="http://themeforest.net/user/kopyov" class="btn bg-blue btn-block" target="_blank"><i class="icon-reading position-left"></i> Contact author</a>
+									</div>
+								</div>
+								<!-- /contact author -->
+
+			        			
+			        			<!-- Navigation -->
+								<div class="sidebar-category">
+									<div class="category-content no-padding">
+										<ul class="nav navigation no-padding-top">
+											<li class="navigation-header"><i class="icon-history pull-right"></i> Navigation</li>
+											<li><a href="#overview">Navigation overview</a></li>
+											<li>
+												<a href="#options">Navigation options</a>
+												<ul>
+													<li><a href="#options_click">Open submenu on click</a></li>
+													<li><a href="#options_hover">Open submenu on hover</a></li>
+													<li><a href="#options_elements">Optional elements</a></li>
+													<li><a href="#options_tabs">Tabbed navigation</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#mega">Mega menu</a>
+												<ul>
+													<li><a href="#mega_overview">Overview</a></li>
+													<li><a href="#mega_options">Menu options</a></li>
+													<li><a href="#mega_grid">Menu grid</a></li>
+													<li><a href="#mega_classes">Mega menu classes</a></li>
+												</ul>
+											</li>
+											<li><a href="#classes">Components classes</a></li>
+											<li class="navigation-divider"></li>
+											<li><a href="#">Go to top <i class="icon-circle-up2 pull-right"></i></a></li>
+							            </ul>
+						            </div>
+					            </div>
+					            <!-- /navigation -->
+
+				            </div>
+			            </div>
+		            </div>
+		            <!-- /detached sidebar -->
+
+
+					<!-- Footer -->
+					<div class="footer text-muted">
+						&copy; 2015. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
+					</div>
+					<!-- /footer -->
+
+				</div>
+				<!-- /content area -->
+
+			</div>
+			<!-- /main content -->
+
+		</div>
+		<!-- /page content -->
+
+	</div>
+	<!-- /page container -->
+
+</body>
+</html>

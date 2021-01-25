@@ -1,0 +1,178 @@
+// Mobile Pro Menu
+@include media-breakpoint-down(md){
+    .mobile-pro{
+        top: 0;
+        left: 20px;
+        right: 20px;
+        bottom: 0;
+        opacity: 0;
+        z-index: 952;
+        visibility: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 280px;
+        + .toggle-overlay{
+            background: rgba($darker,.6);
+        }
+        &.content-active{
+            animation: animate-fade .4s ease;
+            opacity: 1;
+            visibility: visible;
+        }
+        .nk-menu{
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width : 98%;
+            max-width: 640px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            padding: 32px 0;
+            &-heading{
+                display: none;
+            }
+            &-item{
+                width: 160px;
+                padding: .5rem 0;
+            }
+            &-link{
+                flex-wrap: wrap;
+                justify-content: center;
+                padding-left: .25rem;
+                padding-right: .25rem;
+            }
+            &-icon{
+                display: block;
+                width: 100%;
+                color: $base-light;
+                padding-bottom: 0.5rem;
+                .icon{
+                    font-size: 30px;
+                    color: $accent-400;
+                }
+            }
+            &-text{
+                color: $base-text;
+                font-size: $fx-sz-12;
+            }
+            &-sub{
+                display: none !important;
+            }
+        }
+        .nk-menu-sm{
+            margin-top: auto;
+            border-top: 1px solid $border-color;
+            width: 100%;
+            max-width: 100%;
+            padding: 6px 20px 8px;
+            background: $lighter;
+            .nk-menu-item{
+                width:auto;
+                padding-left: 25px;
+                padding-right: 25px;
+            }
+            .nk-menu-text{
+                color:$accent-color
+            }
+        }
+        .nk-aside{
+            &-header{
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 40px 20px 16px;
+            }
+            &-close{
+                display: flex;
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                padding-top: 30px;
+                padding-bottom: 34px;
+                justify-content: center;
+                .toggle{
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 50%;
+                    background: $white;
+                    color: $base-text;
+                    font-size: 24px;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    &:hover{
+                        color: $base-color;
+                        background: $light-100;
+                    }
+                }
+            }
+        }
+        .nk-sidebar-menu{
+            padding: 0;
+            background: $white; 
+            border-radius: $border-radius*3;
+            box-shadow: 0 0 20px -10px rgba($dark,.4);
+            overflow: hidden;
+            width: 660px;
+            max-width: 98%;
+            height: auto;
+        }
+        .simplebar-content{
+            padding-bottom: 0 !important;
+        }
+    }
+}
+@include media-breakpoint-down(sm){
+    .mobile-pro{
+        .nk-menu{
+            padding: 24px 0;
+            max-width: 460px;
+        }
+        .nk-menu-sm{
+            padding: 6px 0 8px;
+            width: 100%;
+            max-width: 100%;
+        }
+        .nk-menu-item{
+            width: 112px;
+        }
+    }
+}
+@include media-breakpoint-down(xs){
+    .mobile-pro{
+        .nk-menu{
+            width: 98%;
+        }
+        .nk-menu-sm{
+            width: 100%;
+        }
+        .nk-menu-item{
+            width: 116px;
+        }
+    }
+}
+@media (max-width:420px){
+    .mobile-pro{
+        .nk-menu-item{
+            min-width: 48%;
+        }
+        .nk-menu-sm .nk-menu-item{
+            min-width: auto;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+}
+
+@include media-breakpoint-down(xs){
+    .nk-aside-header{
+        padding-top: 28px;
+    }
+    .nk-aside-close{
+        padding-bottom: 28px;
+    }
+}

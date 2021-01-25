@@ -1,0 +1,200 @@
+/// TABLE
+/////////////////////////////////////
+.nk-tb{
+    &-list{
+        display: table;
+        width: 100%;
+        font-size: $fx-sz-13;
+        color: $base-light;
+        &.is-alt {
+            color: $base-text;
+        }
+        .list-status, .tb-status {
+            font-size: $fx-sz-12;
+            font-weight: $fw-medium;
+        }
+        .tb-lead, .tb-amount {
+            font-weight: $fw-medium;
+            color: $base-color;
+            display: block;
+            line-height: 1.4;
+            &-sub {
+                color: $base-text;
+                display: block;
+                line-height: 1.4;
+            }
+        }
+        .tb-sub, .tb-amount-sm {
+            font-size: .9em;
+        }
+        .tb-amount {
+            span, .currency {
+                color: $base-text;
+                font-weight: $fw-normal;
+            }
+        }
+        .user-info .tb-lead + span, .tb-lead + .tb-date {
+            font-size: $fx-sz-11;
+        }
+        //@i-v140
+        .tb-country{
+            display: flex;
+            align-items: center;
+            .name{
+                color: $base-color;
+            }
+            .flag{
+                height: 16px;
+                border-radius: $border-radius-sm;
+                + .name{
+                    margin-left: 0.6875rem;
+                }
+            }
+        }
+    }
+    &-item{
+        transition: background-color .3s, box-shadow .3s;
+        display: table-row;
+        &:not(.nk-tb-head):hover, &:not(.nk-tb-head).seleted {
+            background: lighten($lighter, 1%);
+            box-shadow: 0 0 10px -4px rgba($base-color, 0.2);
+        }
+    }
+    &-col{
+        position: relative;
+        display: table-cell;
+        vertical-align: middle;
+        padding: 1rem .5rem;
+        &:first-child{
+            padding-left: 1.25rem;
+        }
+        &:last-child{
+            padding-right: 1.25rem;
+        }
+        &-tools{
+            max-width: 1.25rem + .5rem + 2rem;
+        }
+        &-check{
+            width: 3rem;
+            .custom-control{
+                vertical-align: middle;
+            }
+        }
+        .nk-tb-item:not(:last-child) &{
+            border-bottom: 1px solid $border-color;
+        }
+        .nk-tb-head &{
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            color: $base-light;
+            font-size: .9em;
+            border-bottom: 1px solid $border-color; //@i-v140
+        }
+        &-action {
+            text-align: right;
+            > .dropdown:last-child {
+                right: -.5rem;
+            }
+        }
+        &-nosort{
+            &:before,&:after{
+                display: none !important;
+            }
+        }
+    }
+    &-actions{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        position: relative;
+        .nk-tb-ulist &, .nk-tb-actions-adj &{
+            right: -0.5rem;
+        }
+        &.visible1{
+            width: 1rem;
+        }
+    }
+    &-action{
+        &-hidden{
+            opacity: 0;
+            transition: .3s ease;
+            .nk-tb-item:hover &{
+                opacity: 1;
+                background: lighten($lighter, 1%);
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(sm){
+    .nk-tb{
+        &-col{
+            &-check{
+                width: 3.25rem;
+            }
+            .nk-tb-item &{
+                &:first-child{
+                    padding-left: 1.5rem;
+                }
+                &:last-child{
+                    padding-right: 1.5rem;
+                }
+            }
+        }
+    }
+}
+@include media-breakpoint-up(xxl){
+    .nk-tb{
+        &-list{
+            font-size: $fx-sz-14;
+            .list-status, .tb-status {
+                font-size: $fx-sz-13;
+            }
+            .user-info .tb-lead + span, .tb-lead + .tb-date {
+                font-size: $fx-sz-12;
+            }
+        }
+    }
+}
+
+///////////////////////////////////
+/// Table Loose - Loose
+///////////////////////////////////
+.is-loose{
+    .nk-tb-item:not(.nk-tb-head){
+        .nk-tb {
+            &-col {
+                padding-top: 1.125rem;
+                padding-bottom: 1.125rem;
+            }
+        }
+    }
+}
+
+///////////////////////////////////
+/// Table Loose - Medium
+///////////////////////////////////
+.is-medium{
+    .nk-tb-item:not(.nk-tb-head){
+        .nk-tb {
+            &-col {
+                padding-top: .75rem;
+                padding-bottom: .75rem;
+            }
+        }
+    }
+}
+
+///////////////////////////////////
+/// Table Compact - minimal
+///////////////////////////////////
+.is-compact{
+    .nk-tb-item:not(.nk-tb-head){
+        .nk-tb {
+            &-col {
+                padding-top: .5rem;
+                padding-bottom: .5rem;
+            }
+        }
+    }
+}

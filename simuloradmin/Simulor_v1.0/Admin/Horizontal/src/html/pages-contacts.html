@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Simulor - Responsive Bootstrap 4 Admin Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+        <meta content="Coderthemes" name="author" />
+
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- Plugins css -->
+        <link href="css/vendor/dataTables.bootstrap4.css" rel="stylesheet" type="text/css" />
+        <link href="css/vendor/responsive.bootstrap4.css" rel="stylesheet" type="text/css" />
+
+        <!-- App css -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/app.min.css" rel="stylesheet" type="text/css" />
+
+    </head>
+
+    <body>
+
+        @@include('./partials/topbar.html')
+
+        <div class="wrapper">
+            <div class="container-fluid">
+
+                <!-- start page title -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="page-title-box">
+                            <div class="page-title-right">
+                                <ol class="breadcrumb m-0">
+                                    <li class="breadcrumb-item"><a href="#">Simulor</a></li>
+                                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                                    <li class="breadcrumb-item active">Contacts</li>
+                                </ol>
+                            </div>
+                            <h4 class="page-title">Contacts</h4>
+                        </div>
+                    </div>
+                </div>     
+                <!-- end page title --> 
+
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <button type="button" class="btn btn-primary mb-3"  data-toggle="modal" data-target="#addcontactmodal"> <i class="mdi mdi-account-plus mr-1"></i> Add Contact</button>
+                                <button type="button" class="btn btn-light float-right d-none d-sm-block ml-2"> <i class="mdi mdi-format-list-bulleted"></i></button>
+                                <button type="button" class="btn btn-light float-right"> <i class="mdi mdi-filter-variant mr-1"></i> Filter</button>
+
+
+                                <table id="basic-datatable" class="table table-hover dt-responsive nowrap table-centered">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Basic Info</th>
+                                            <th>Phone</th>
+                                            <th>Location</th>
+                                            <th>Created Date</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                
+                                
+                                    <tbody>
+                                        <tr>
+                                            <td><b>#0121</b></td>
+                                            <td>
+                                                <img src="assets/images/users/avatar-2.jpg" alt="contact-img" height="36" title="contact-img" class="rounded-circle float-left mr-2" />
+                                                <p class="mb-0 font-weight-bold"><a href="javascript: void(0);">George Lanes</a></p>
+                                                <span class="font-13 d-none d-sm-block">george@examples.com</span>
+                                            </td>
+
+                                            <td>
+                                                606-467-7601
+                                            </td>
+
+                                            <td>
+                                                New York
+                                            </td>
+
+                                            <td>
+                                                2018/04/28
+                                            </td>
+
+                                            <td>
+                                                <div class="btn-group dropdown">
+                                                    <a href="javascript: void(0);" class="dropdown-toggle arrow-none btn btn-light btn-sm" data-toggle="dropdown" aria-expanded="false"><i class="mdi mdi-dots-horizontal"></i></a>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <a class="dropdown-item" href="#"><i class="mdi mdi-pencil mr-1 text-muted"></i>Edit Contact</a>
+                                                        <a class="dropdown-item" href="#"><i class="mdi mdi-delete mr-1 text-muted"></i>Remove</a>
+                                                        <a class="dropdown-item" href="#"><i class="mdi mdi-email mr-1 text-muted"></i>Send Email</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>#0120</b></td>
+                                            <td>
+                                                <img src="assets/images/users/avatar-3.jpg" alt="contact-img" height="36" title="contact-img" class="rounded-circle float-left mr-2" />
+                                                <p class="mb-0 font-weight-bold"><a href="javascript: void(0);">Morgan Fuller</a></p>
+                                                <span class="font-13 d-none d-sm-block">morgan@examples.com</span>
+                                            </td>
+
+                                            <td>
+                                                407-748-6878
+                                            </td>
+
+                                            <td>
+                                                England
+                                            </td>
+
+                                            <td>
+                                                2018/04/27
+                                            </td>
+
+                                            <td>
+                                                <div class="btn-group dropdown">
+                                                    <a href="javascript: void(0);" class="dropdown-toggle arrow-none btn btn-light btn-sm" data-toggle="dropdown" aria-expanded="false"><i class="mdi mdi-dots-horizontal"></i></a>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <a class="dropdown-item" href="#"><i class="mdi mdi-pencil mr-1 text-muted"></i>Edit Contact</a>
+                                                        <a class="dropdown-item" href="#"><i class="mdi mdi-delete mr-1 text-muted"></i>Remove</a>
+                                                        <a class="dropdown-item" href="#"><i class="mdi mdi-email mr-1 text-muted"></i>Send Email</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>#0119</b></td>
+                                            <td>
+                                                <img src="assets/images/users/avatar-4.jpg" alt="contact-img" height="36" title="contact-img" class="rounded-circle float-left mr-2" />
+                                                <p class="mb-0 font-weight-bold"><a href="javascript: void(0);">Charlie Daly</a></p>
+                                                <span class="font-13 d-none d-sm-block">charlie@examples.com</span>
+                                            </td>
+
+                                            <td>
+                                                918-766-5946
+                                            </td>
+
+                                            <td>
+                                                Canada
+                                            </td>
+
+                                            <td>
+                                                2018/04/27
+                                            </td>
+
+                                            <td>
+                                                <div class="btn-group dropdown">
+                                                    <a href="javascript: void(0);" class="dropdown-toggle arrow-none btn btn-light btn-sm" data-toggle="dropdown" aria-expanded="false"><i class="mdi mdi-dots-horizontal"></i></a>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <a class="dropdown-item" href="#"><i class="mdi mdi-pencil mr-1 text-muted"></i>Edit Contact</a>
+                                                        <a class="dropdown-item" href="#"><i class="mdi mdi-delete mr-1 text-muted"></i>Remove</a>
+                                                        <a class="dropdown-item" href="#"><i class="mdi mdi-email mr-1 text-muted"></i>Send Email</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><b>#0118</b></td>
+                                            <td>
+                                                <img src="assets/images/users/avatar-5.jpg" alt="contact-img" height="36" title="contact-img" class="rounded-circle float-left mr-2" />
+                                                <p class="mb-0 font-weight-bold"><a href="javascript: void(0);">Skye Saunders</a></p>
+                                                <span class="font-13 d-none d-sm-block">skye@examples.com</span>
+                                            </td>
+
+                                            <td>
+                                                302-232-1376
+                                            </td>
+
+                                            <td>
+                                                France
+                                            </td>
+
+                                            <td>
+                                                2018/04/26
+                                            </td>
+
+                                            <td>
+                                                <div class="btn-group dropdown">
+                                                    <a href="javascript: void(0);" class="dropdown-toggle arrow-none btn btn-light btn-sm" data-toggle="dropdown" aria-expanded="false"><i class="mdi mdi-dots-horizontal"></i></a>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <a class="dropdown-item" href="#"><i class="mdi mdi-pencil mr-1 text-muted"></i>Edit Contact</a>
+                                                        <a class="dropdown-item" href="#"><i class="mdi mdi-delete mr-1 text-muted"></i>Remove</a>
+                                                        <a class="dropdown-item" href="#"><i class="mdi mdi-email mr-1 text-muted"></i>Send Email</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><b>#0117</b></td>
+                                            <td>
+                                                <img src="assets/images/users/avatar-6.jpg" alt="contact-img" height="36" title="contact-img" class="rounded-circle float-left mr-2" />
+                                                <p class="mb-0 font-weight-bold"><a href="javascript: void(0);">Jodie Townsend</a></p>
+                                                <span class="font-13 d-none d-sm-block">jodie@examples.com</span>
+                                            </td>
+
+                                            <td>
+                                                251-661-5962
+                                            </td>
+
+                                            <td>
+                                                Tokyo
+                                            </td>
+
+                                            <td>
+                                                2017/11/28
+                                            </td>
+
+                                            <td>
+                                                <div class="btn-group dropdown">
+                                                    <a href="javascript: void(0);" class="dropdown-toggle arrow-none btn btn-light btn-sm" data-toggle="dropdown" aria-expanded="false"><i class="mdi mdi-dots-horizontal"></i></a>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <a class="dropdown-item" href="#"><i class="mdi mdi-pencil mr-1 text-muted"></i>Edit Contact</a>
+                                                        <a class="dropdown-item" href="#"><i class="mdi mdi-delete mr-1 text-muted"></i>Remove</a>
+                                                        <a class="dropdown-item" href="#"><i class="mdi mdi-email mr-1 text-muted"></i>Send Email</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><b>#0116</b></td>
+                                            <td>
+                                                <img src="assets/images/users/avatar-7.jpg" alt="contact-img" height="36" title="contact-img" class="rounded-circle float-left mr-2" />
+                                                <p class="mb-0 font-weight-bold"><a href="javascript: void(0);">Bruno Nash</a></p>
+                                                <span class="font-13 d-none d-sm-block">bruno@examples.com</span>
+                                            </td>
+
+                                            <td>
+                                                406-664-9593
+                                            </td>
+
+                                            <td>
+                                                London
+                                            </td>
+
+                                            <td>
+                                                2017/10/28
+                                            </td>
+
+                                            <td>
+                                                <div class="btn-group dropdown">
+                                                    <a href="javascript: void(0);" class="dropdown-toggle arrow-none btn btn-light btn-sm" data-toggle="dropdown" aria-expanded="false"><i class="mdi mdi-dots-horizontal"></i></a>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <a class="dropdown-item" href="#"><i class="mdi mdi-pencil mr-1 text-muted"></i>Edit Contact</a>
+                                                        <a class="dropdown-item" href="#"><i class="mdi mdi-delete mr-1 text-muted"></i>Remove</a>
+                                                        <a class="dropdown-item" href="#"><i class="mdi mdi-email mr-1 text-muted"></i>Send Email</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>#0115</b></td>
+                                            <td>
+                                                <img src="assets/images/users/avatar-8.jpg" alt="contact-img" height="36" title="contact-img" class="rounded-circle float-left mr-2" />
+                                                <p class="mb-0 font-weight-bold"><a href="javascript: void(0);">Fiona Green</a></p>
+                                                <span class="font-13 d-none d-sm-block">fiona@examples.com</span>
+                                            </td>
+
+                                            <td>
+                                                352-331-9450
+                                            </td>
+
+                                            <td>
+                                                San Francisco
+                                            </td>
+
+                                            <td>
+                                                2017/10/28
+                                            </td>
+
+                                            <td>
+                                                <div class="btn-group dropdown">
+                                                    <a href="javascript: void(0);" class="dropdown-toggle arrow-none btn btn-light btn-sm" data-toggle="dropdown" aria-expanded="false"><i class="mdi mdi-dots-horizontal"></i></a>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <a class="dropdown-item" href="#"><i class="mdi mdi-pencil mr-1 text-muted"></i>Edit Contact</a>
+                                                        <a class="dropdown-item" href="#"><i class="mdi mdi-delete mr-1 text-muted"></i>Remove</a>
+                                                        <a class="dropdown-item" href="#"><i class="mdi mdi-email mr-1 text-muted"></i>Send Email</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><b>#0114</b></td>
+                                            <td>
+                                                <img src="assets/images/users/avatar-9.jpg" alt="contact-img" height="36" title="contact-img" class="rounded-circle float-left mr-2" />
+                                                <p class="mb-0 font-weight-bold"><a href="javascript: void(0);">Jena Gaines</a></p>
+                                                <span class="font-13 d-none d-sm-block">jena@examples.com</span>
+                                            </td>
+
+                                            <td>
+                                                701-824-2693
+                                            </td>
+
+                                            <td>
+                                                Edinburgh
+                                            </td>
+
+                                            <td>
+                                                2017/09/17
+                                            </td>
+
+                                            <td>
+                                                <div class="btn-group dropdown">
+                                                    <a href="javascript: void(0);" class="dropdown-toggle arrow-none btn btn-light btn-sm" data-toggle="dropdown" aria-expanded="false"><i class="mdi mdi-dots-horizontal"></i></a>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <a class="dropdown-item" href="#"><i class="mdi mdi-pencil mr-1 text-muted"></i>Edit Contact</a>
+                                                        <a class="dropdown-item" href="#"><i class="mdi mdi-delete mr-1 text-muted"></i>Remove</a>
+                                                        <a class="dropdown-item" href="#"><i class="mdi mdi-email mr-1 text-muted"></i>Send Email</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><b>#0113</b></td>
+                                            <td>
+                                                <img src="assets/images/users/avatar-1.jpg" alt="contact-img" height="36" title="contact-img" class="rounded-circle float-left mr-2" />
+                                                <p class="mb-0 font-weight-bold"><a href="javascript: void(0);">Jennifer Chang	</a></p>
+                                                <span class="font-13 d-none d-sm-block">jennifer@examples.com</span>
+                                            </td>
+
+                                            <td>
+                                                920-347-5992
+                                            </td>
+
+                                            <td>
+                                                Singapore
+                                            </td>
+
+                                            <td>
+                                                2017/09/03
+                                            </td>
+
+                                            <td>
+                                                <div class="btn-group dropdown">
+                                                    <a href="javascript: void(0);" class="dropdown-toggle arrow-none btn btn-light btn-sm" data-toggle="dropdown" aria-expanded="false"><i class="mdi mdi-dots-horizontal"></i></a>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <a class="dropdown-item" href="#"><i class="mdi mdi-pencil mr-1 text-muted"></i>Edit Contact</a>
+                                                        <a class="dropdown-item" href="#"><i class="mdi mdi-delete mr-1 text-muted"></i>Remove</a>
+                                                        <a class="dropdown-item" href="#"><i class="mdi mdi-email mr-1 text-muted"></i>Send Email</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><b>#0112</b></td>
+                                            <td>
+                                                <img src="assets/images/users/avatar-10.jpg" alt="contact-img" height="36" title="contact-img" class="rounded-circle float-left mr-2" />
+                                                <p class="mb-0 font-weight-bold"><a href="javascript: void(0);">Michelle House</a></p>
+                                                <span class="font-13 d-none d-sm-block">michelle@examples.com</span>
+                                            </td>
+
+                                            <td>
+                                                541-520-6802
+                                            </td>
+
+                                            <td>
+                                                Sidney
+                                            </td>
+
+                                            <td>
+                                                2017/08/22
+                                            </td>
+
+                                            <td>
+                                                <div class="btn-group dropdown">
+                                                    <a href="javascript: void(0);" class="dropdown-toggle arrow-none btn btn-light btn-sm" data-toggle="dropdown" aria-expanded="false"><i class="mdi mdi-dots-horizontal"></i></a>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <a class="dropdown-item" href="#"><i class="mdi mdi-pencil mr-1 text-muted"></i>Edit Contact</a>
+                                                        <a class="dropdown-item" href="#"><i class="mdi mdi-delete mr-1 text-muted"></i>Remove</a>
+                                                        <a class="dropdown-item" href="#"><i class="mdi mdi-email mr-1 text-muted"></i>Send Email</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><b>#0111</b></td>
+                                            <td>
+                                                <img src="assets/images/users/avatar-2.jpg" alt="contact-img" height="36" title="contact-img" class="rounded-circle float-left mr-2" />
+                                                <p class="mb-0 font-weight-bold"><a href="javascript: void(0);">Sakura Yamamoto</a></p>
+                                                <span class="font-13 d-none d-sm-block">sakura@examples.com</span>
+                                            </td>
+
+                                            <td>
+                                                281-270-7312
+                                            </td>
+
+                                            <td>
+                                                Tokyo
+                                            </td>
+
+                                            <td>
+                                                2017/08/17
+                                            </td>
+
+                                            <td>
+                                                <div class="btn-group dropdown">
+                                                    <a href="javascript: void(0);" class="dropdown-toggle arrow-none btn btn-light btn-sm" data-toggle="dropdown" aria-expanded="false"><i class="mdi mdi-dots-horizontal"></i></a>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <a class="dropdown-item" href="#"><i class="mdi mdi-pencil mr-1 text-muted"></i>Edit Contact</a>
+                                                        <a class="dropdown-item" href="#"><i class="mdi mdi-delete mr-1 text-muted"></i>Remove</a>
+                                                        <a class="dropdown-item" href="#"><i class="mdi mdi-email mr-1 text-muted"></i>Send Email</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><b>#0110</b></td>
+                                            <td>
+                                                <img src="assets/images/users/avatar-4.jpg" alt="contact-img" height="36" title="contact-img" class="rounded-circle float-left mr-2" />
+                                                <p class="mb-0 font-weight-bold"><a href="javascript: void(0);">Tiger Nixon	</a></p>
+                                                <span class="font-13 d-none d-sm-block">tiger@examples.com</span>
+                                            </td>
+
+                                            <td>
+                                                219-895-3278
+                                            </td>
+
+                                            <td>
+                                                San Francisco
+                                            </td>
+
+                                            <td>
+                                                2017/07/08
+                                            </td>
+
+                                            <td>
+                                                <div class="btn-group dropdown">
+                                                    <a href="javascript: void(0);" class="dropdown-toggle arrow-none btn btn-light btn-sm" data-toggle="dropdown" aria-expanded="false"><i class="mdi mdi-dots-horizontal"></i></a>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <a class="dropdown-item" href="#"><i class="mdi mdi-pencil mr-1 text-muted"></i>Edit Contact</a>
+                                                        <a class="dropdown-item" href="#"><i class="mdi mdi-delete mr-1 text-muted"></i>Remove</a>
+                                                        <a class="dropdown-item" href="#"><i class="mdi mdi-email mr-1 text-muted"></i>Send Email</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><b>#0109</b></td>
+                                            <td>
+                                                <img src="assets/images/users/avatar-6.jpg" alt="contact-img" height="36" title="contact-img" class="rounded-circle float-left mr-2" />
+                                                <p class="mb-0 font-weight-bold"><a href="javascript: void(0);">Brenden Wagner</a></p>
+                                                <span class="font-13 d-none d-sm-block">wagner@examples.com</span>
+                                            </td>
+
+                                            <td>
+                                                303-320-4051
+                                            </td>
+
+                                            <td>
+                                                London
+                                            </td>
+
+                                            <td>
+                                                2017/04/25
+                                            </td>
+
+                                            <td>
+                                                <div class="btn-group dropdown">
+                                                    <a href="javascript: void(0);" class="dropdown-toggle arrow-none btn btn-light btn-sm" data-toggle="dropdown" aria-expanded="false"><i class="mdi mdi-dots-horizontal"></i></a>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <a class="dropdown-item" href="#"><i class="mdi mdi-pencil mr-1 text-muted"></i>Edit Contact</a>
+                                                        <a class="dropdown-item" href="#"><i class="mdi mdi-delete mr-1 text-muted"></i>Remove</a>
+                                                        <a class="dropdown-item" href="#"><i class="mdi mdi-email mr-1 text-muted"></i>Send Email</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+
+                            </div> <!-- end card-body-->
+                        </div> <!-- end card -->
+                    </div> <!-- end col -->
+                </div>
+                <!-- end row -->
+
+                
+            </div> <!-- end container -->
+        </div>
+        <!-- end wrapper -->
+
+
+        @@include('./partials/footer.html')
+
+
+        <div class="modal fade" id="addcontactmodal" tabindex="-1" role="dialog" aria-labelledby="myCenterModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myCenterModalLabel">Add Contact</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    </div>
+                    <div class="modal-body p-4">
+                        <form role="form">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter name">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <label for="position">Phone Number</label>
+                                <input type="text" class="form-control" id="position" placeholder="Enter phone no.">
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Location</label>
+                                <input type="text" class="form-control" id="company" placeholder="Enter location">
+                            </div>
+                            <div class="text-right">
+                                <button type="submit" class="btn btn-success waves-effect waves-light">Save</button>
+                                <button type="button" class="btn btn-light" data-dismiss="modal">Cancel</button>
+                            </div>
+                        </form>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+
+        <!-- App js -->
+        <script src="js/vendor.min.js"></script>
+        <script src="js/app.min.js"></script>
+
+        <!-- Plugins js -->
+        <script src="js/vendor/jquery.dataTables.js"></script>
+        <script src="js/vendor/dataTables.bootstrap4.js"></script>
+        <script src="js/vendor/dataTables.responsive.min.js"></script>
+        <script src="js/vendor/responsive.bootstrap4.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                // Default Datatable
+                $('#basic-datatable').DataTable({
+                    "pageLength": 8,
+                    "lengthMenu": [[8, 15, 25, 50, -1], [8, 15, 25, 50, "All"]],
+                    "language": {
+                        "paginate": {
+                            "previous": "<i class='mdi mdi-chevron-left'>",
+                            "next": "<i class='mdi mdi-chevron-right'>"
+                        }
+                    },
+                    "drawCallback": function () {
+                        $('.dataTables_paginate > .pagination').addClass('pagination-rounded');
+                    }
+                });
+            });
+        </script>
+
+    </body>
+</html>

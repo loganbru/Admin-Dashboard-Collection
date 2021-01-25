@@ -1,0 +1,108 @@
+//
+//  Dark Sidenav
+// 
+
+body{
+  &.dark-sidenav{
+    .topbar {
+      .topbar-left{
+        background-color: $bg-dark-logo;
+        .logo{
+          .logo-lg{
+            display: none;
+            &.logo-light{
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+    .left-sidenav{
+      background-color: $bg-dark-leftbar;
+      .left-sidenav-menu{
+        li{
+          > a{
+            color:$menu-item-dark-color; 
+            i{
+              color: lighten($gray-700, 8%);
+            }
+            &.active{
+              color: $white;
+              i{
+                color: lighten($primary, 15%);
+              }
+              &:hover{                
+                i{
+                  color: lighten($primary, 15%);
+                }
+              }
+            }
+            &:hover{
+              color: $white;
+              i{
+                color: lighten($primary, 15%);
+              }
+            }
+          }
+          ul {
+            li {
+              > a{
+                color: $menu-item-dark-color;
+                &:hover{
+                  color: $menu-item-dark-hover-color;
+                }
+              }
+            }
+          }
+          &.mm-active{
+            .nav-item{
+              &.active{
+                a{
+                  &.nav-link{
+                    &.active{
+                      background-color: transparent;
+                      color: $white;
+                      i{
+                        color: $white;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            .mm-active {
+              > a{
+                background-color: lighten($bg-dark-leftbar, 2%);
+                box-shadow: 3px 0 20px 0 $bg-dark-leftbar;
+                color: lighten($primary, 20%);
+              }
+            }
+            > a{
+              color: $white;
+               i{
+                color:$white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1024px) {
+  body.dark-sidenav {
+    .topbar {
+        .topbar-left {
+          .logo {
+            .logo-lg{
+              &.logo-light{
+                display: none;
+            }  
+          }
+        }
+      }
+    }
+  }
+}

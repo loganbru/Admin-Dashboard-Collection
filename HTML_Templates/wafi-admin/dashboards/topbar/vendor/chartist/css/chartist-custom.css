@@ -1,0 +1,459 @@
+.ct-slice-pie {
+	stroke-width: 2px;
+}
+.chartist {
+	position: relative;
+}
+.ct-label {
+	font-size: 12px; 
+}
+.ct-grid {
+	stroke: #a9c0d2;
+	stroke-width: 1px;
+	stroke-dasharray: 2px;
+}
+.ct-point {
+	stroke-width: 8px;
+	stroke-linecap: round;
+}
+.ct-line {
+	fill: none;
+	stroke-width: 3px;
+}
+.ct-area {
+	stroke: none;
+	fill-opacity: 1;
+}
+.ct-bar {
+	fill: none;
+	stroke-width: 12px;
+}
+.ct-slice-donut {
+	fill: none;
+	stroke-width: 60px;
+}
+
+
+/* Tooltip */
+.chartist-tooltip {
+	position: absolute;
+	display: block;
+	min-width: 90px;
+	padding: 15px;
+	opacity: 0;
+	background: #2e343c;
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: 700;
+	text-align: center;
+	pointer-events: none;
+	z-index: 1000;
+	-webkit-transition: opacity .2s linear;
+	-moz-transition: opacity .2s linear;
+	-o-transition: opacity .2s linear;
+	transition: opacity .2s linear
+}
+.chartist-tooltip:before {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	width: 0;
+	height: 0;
+	margin-left: -15px;
+	border: 15px solid transparent;
+	border-top-color: #2e343c;
+}
+.chartist-tooltip.tooltip-show {
+	opacity: 1
+}
+
+
+
+
+
+/*********************
+	*********************
+	********************* Custom Area Charts *********************
+	*********************
+*********************/
+
+/* Area Scheme One */
+.area-scheme-one .ct-series-a .ct-area {
+	fill: #1a8e5f;
+}
+.area-scheme-one .ct-series-a .ct-line {
+	stroke: #1a8e5f;
+}
+.area-scheme-one .ct-series-a .ct-point {
+	stroke: #1a8e5f;
+}
+.area-scheme-one .ct-area {
+	fill-opacity: .2;
+}
+
+
+/* Area Scheme Two */
+.area-scheme-two .ct-series-a .ct-area {
+	fill: #89b4d6;
+}
+.area-scheme-two .ct-series-a .ct-line {
+	stroke: #89b4d6;
+}
+.area-scheme-two .ct-series-a .ct-point {
+	stroke: #89b4d6;
+}
+.area-scheme-two .ct-series-b .ct-area {
+	fill: #2e343c;
+}
+.area-scheme-two .ct-series-b .ct-line {
+	stroke: #2e343c;
+}
+.area-scheme-two .ct-series-b .ct-point {
+	stroke: #2e343c;
+}
+.area-scheme-two .ct-series-c .ct-area {
+	fill: #ff4f57;
+}
+.area-scheme-three .ct-series-c .ct-line {
+	stroke: #ff4f57;
+}
+.area-scheme-three .ct-series-c .ct-point {
+	stroke: #ff4f57;
+}
+.area-scheme-three .ct-area {
+	fill-opacity: .1;
+}
+
+
+/* Area Scheme Four */
+.area-scheme-four .ct-series-a .ct-area {
+	fill: #FFFFFF;
+}
+.area-scheme-four .ct-series-a .ct-line {
+	stroke: #FFFFFF;
+}
+.area-scheme-four .ct-series-a .ct-point {
+	stroke: #FFFFFF;
+	stroke-width: 2px;
+}
+.area-scheme-four .ct-series-b .ct-area {
+	fill: #89b4d6;
+}
+.area-scheme-four .ct-series-b .ct-line {
+	stroke: #89b4d6;
+}
+.area-scheme-four .ct-series-b .ct-point {
+	stroke: #89b4d6;
+	stroke-width: 2px;
+}
+
+
+
+
+/*********************
+	*********************
+	********************* Custom Bar Charts *********************
+	*********************
+*********************/
+
+/* Bar Scheme One */
+.bar-scheme-one .ct-series-a .ct-bar {
+	stroke: #1a8e5f;
+}
+.bar-scheme-one .ct-series-b .ct-bar {
+	stroke: #1d9f6c;
+}
+.bar-scheme-one .ct-series-c .ct-bar {
+	stroke: #20b077;
+}
+
+
+/* Bar Scheme Two */
+.bar-scheme-two .ct-series-a .ct-bar {
+	stroke: #89b5d6;
+}
+.bar-scheme-two .ct-series-b .ct-bar {
+	stroke: #2e343c;
+}
+.bar-scheme-two .ct-series-a .ct-slice-pie {
+	fill: #ff4f57;
+}
+
+
+
+
+
+
+/*********************
+	*********************
+	********************* Custom Pie Charts *********************
+	*********************
+*********************/
+
+/* Pie Scheme One */
+.pie-scheme-one .ct-series-a .ct-slice-pie {
+	fill: #1a8e5f;
+}
+.pie-scheme-one .ct-series-b .ct-slice-pie {
+	fill: #1d9f6c;
+}
+.pie-scheme-one .ct-series-c .ct-slice-pie {
+	fill: #20b077;
+}
+.pie-scheme-one .ct-label {
+	fill: #ffffff;
+	color: #ffffff;
+}
+
+
+
+
+
+
+/*********************
+	*********************
+	********************* Custom Donut Charts *********************
+	*********************
+*********************/
+
+/* Donut Scheme One */
+.donut-scheme-one .ct-series-a .ct-slice-donut {
+	stroke: #1a8e5f;
+}
+.donut-scheme-one .ct-series-b .ct-slice-donut {
+	stroke: #1d9f6c;
+}
+.donut-scheme-one .ct-series-c .ct-slice-donut {
+	stroke: #20b077;
+}
+
+
+/* Donut Scheme Two */
+.donut-scheme-two .ct-series-a .ct-slice-donut {
+	stroke: #1a8e5f;
+}
+.donut-scheme-two .ct-series-b .ct-slice-donut {
+	stroke: #4abd90;
+}
+
+
+
+
+
+/*********************
+	*********************
+	********************* Custom Line Charts *********************
+	*********************
+*********************/
+
+/* Line Scheme One */
+.line-scheme-one .ct-series-a .ct-line {
+	stroke: #1a8e5f;
+}
+.line-scheme-one .ct-series-a .ct-point {
+	stroke: #1a8e5f;
+}
+.line-scheme-one .ct-series-a .ct-area {
+	fill: #1a8e5f;
+}
+.line-scheme-one .ct-series-b .ct-line {
+	stroke: #2e343c;
+}
+.line-scheme-one .ct-series-b .ct-point {
+	stroke: #2e343c;
+}
+
+
+
+
+/* Line Scheme Two */
+.line-scheme-two .ct-series-a .ct-line {
+	stroke: #2e343c;
+}
+.line-scheme-two .ct-series-a .ct-point {
+	stroke: #2e343c;
+}
+.line-scheme-two .ct-series-b .ct-line {
+	stroke: #89b5d6;
+}
+.line-scheme-two .ct-series-b .ct-point {
+	stroke: #89b5d6;
+}
+.line-scheme-two .ct-series-c .ct-line {
+	stroke: #ff4f57;
+}
+.line-scheme-two .ct-series-c .ct-point {
+	stroke: #ff4f57;
+}
+.line-scheme-two .ct-series-d .ct-line {
+	stroke: #ffd717;
+}
+.line-scheme-two .ct-series-d .ct-point {
+	stroke: #ffd717;
+}
+
+
+
+
+
+/* Line Scheme Three */
+.line-scheme-three .ct-series-a .ct-line {
+	stroke: #2e343c;
+}
+.line-scheme-three .ct-series-a .ct-point {
+	stroke: #2e343c;
+}
+.line-scheme-three .ct-series-a .ct-area {
+	stroke: #2e343c;
+	fill-opacity: .2;
+}
+.line-scheme-three .ct-series-b .ct-line {
+	stroke: #ff4f57;
+}
+.line-scheme-three .ct-series-b .ct-point {
+	stroke: #ff4f57;
+}
+.line-scheme-three .ct-series-b .ct-area {
+	stroke: #ff4f57;
+	fill-opacity: .2;
+}
+.line-scheme-three .ct-series-c .ct-line {
+	stroke: #89b5d6;
+}
+.line-scheme-three .ct-series-c .ct-point {
+	stroke: #89b5d6;
+}
+.line-scheme-three .ct-series-c .ct-area {
+	stroke: #89b5d6;
+	fill-opacity: .2;
+}
+
+
+
+
+/* Line Scheme Four */
+.line-scheme-four .ct-series-a .ct-line {
+	stroke: #cc2626;
+}
+.line-scheme-four .ct-series-a .ct-point {
+	stroke: #cc2626;
+}
+.line-scheme-four .ct-series-a .ct-area {
+	fill: #cc2626;
+}
+
+
+
+
+
+/*********************
+	*********************
+	********************* Custom Scatter Charts *********************
+	*********************
+*********************/
+
+/* Scatter Scheme One */
+.scatter-scheme-one .ct-series-a .ct-point {
+	stroke: #89b5d6;
+}
+.scatter-scheme-one .ct-series-b .ct-point {
+	stroke: #2e343c;
+}
+.scatter-scheme-one .ct-series-c .ct-point {
+	stroke: #ff4f57;
+}
+.scatter-scheme-one .ct-series-d .ct-point {
+	stroke: #a7d5f3;
+}
+.scatter-scheme-one .ct-series-e .ct-point {
+	stroke: #b8e1fb;
+}
+.scatter-scheme-one .ct-point {
+	stroke-width: 12px;
+}
+
+
+
+
+
+/*********************
+	*********************
+	********************* Custom Threshold Charts *********************
+	*********************
+*********************/
+@-webkit-keyframes dashoffset {
+  0% {
+		stroke-dashoffset: 0
+  }
+  100% {
+		stroke-dashoffset: -20px
+  }
+}
+@-moz-keyframes dashoffset {
+  0% {
+		stroke-dashoffset: 0
+  }
+  100% {
+		stroke-dashoffset: -20px
+  }
+}
+@-ms-keyframes dashoffset {
+  0% {
+		stroke-dashoffset: 0
+  }
+  100% {
+		stroke-dashoffset: -20px
+  }
+}
+@keyframes dashoffset {
+  0% {
+		stroke-dashoffset: 0
+  }
+  100% {
+		stroke-dashoffset: -20px
+  }
+}
+
+.threshold-scheme .ct-series-a .ct-area {
+  fill: #1a8e5f;
+  fill-opacity: 0.2;
+}
+.threshold-scheme .ct-series-a .ct-point {
+	stroke: #1a8e5f;
+	stroke-width: 9px;
+}
+.threshold-scheme .ct-series-a .ct-line {
+	stroke: #1a8e5f;
+	stroke-width: 6px;
+	stroke-dasharray: 5px;
+	-webkit-animation: dashoffset 1s linear infinite;
+	-moz-animation: dashoffset 1s linear infinite;
+	-o-animation: dashoffset 1s linear infinite;
+	animation: dashoffset 1s linear infinite
+}
+.threshold-scheme .ct-series-b .ct-area {
+  fill: #2e343c;
+  fill-opacity: 0.1;
+}
+.threshold-scheme .ct-series-b .ct-point {
+	stroke: #2e343c;
+	stroke-width: 6px;
+}
+.threshold-scheme .ct-series-b .ct-line {
+	stroke: #2e343c;
+	stroke-width: 4px;
+}
+.threshold-scheme .ct-series-c .ct-area {
+  fill: #cc2626;
+  fill-opacity: 0.1;
+}
+.threshold-scheme .ct-series-c .ct-point {
+	stroke: #cc2626;
+	stroke-width: 5px;
+}
+.threshold-scheme .ct-series-c .ct-line {
+	stroke: #cc2626;
+	stroke-width: 2px;
+}
+

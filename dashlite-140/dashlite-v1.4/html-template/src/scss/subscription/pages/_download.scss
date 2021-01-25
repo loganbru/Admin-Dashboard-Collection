@@ -1,0 +1,99 @@
+$pdl-margin:   1rem !default;
+
+$pdl-item-gap-x: 1.25rem !default;
+$pdl-item-gap-y: 1rem !default;
+
+$pdl-item-gap-x-desk: 1.5rem !default;
+$pdl-item-gap-y-desk: 1rem !default;
+
+$pdl-icon-width: 1.75rem !default;
+$pdl-icon-width-desk: 2.5rem !default;
+
+
+// /// Download Item
+// /////////////////////// 
+.sp-pdl {
+    &-item {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: $pdl-item-gap-y $pdl-item-gap-x;
+        border: 1px solid $border-color;
+        border-radius: $border-radius;
+        background: $white; // @i-v120
+        &:not(:last-child){
+            margin-bottom: $pdl-margin;
+        }
+    }
+    &-btn {
+        padding-left: ($pdl-icon-width + $pdl-margin);
+    }
+    &-desc {
+        display: flex;
+        flex-grow: 1;
+    }
+    &-info{
+        margin-top: .35rem;
+    }
+    &-title{
+        font-size: 1rem;
+        line-height: 1.2;
+    }
+    &-img {
+        flex-shrink: 0;
+        width: $pdl-icon-width;
+        margin-right: $pdl-margin;
+    }
+    &-meta {
+        .version, .release {
+            display: block;
+            line-height: 1.2;
+            padding: 0.25rem 0;
+        }
+    }
+    &-title{
+        .badge {
+            margin-left: $pdl-margin;
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .sp-pdl {
+        &-img {
+            width: $pdl-icon-width-desk;
+            margin-right: ($pdl-margin * 1.5);
+        }
+        &-desc {
+            align-items: center;
+        }
+        &-item {
+            padding: $pdl-item-gap-y-desk $pdl-item-gap-x-desk;
+        }
+        &-meta {
+            .version, .release {
+                display: inline-block;
+                padding-right: 1.5rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 459px){
+    .sp-pdl {
+        &-desc{
+            width: 100%;
+            padding-left: ($pdl-icon-width + $pdl-margin);
+        }
+        &-img{
+            position: absolute;
+            margin-left: -($pdl-icon-width + $pdl-margin);
+        }
+        &-btn{
+            margin: $pdl-margin 0 ($pdl-margin / 2);
+        }
+    }
+    
+}

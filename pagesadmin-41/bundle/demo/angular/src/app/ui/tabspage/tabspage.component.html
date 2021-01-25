@@ -1,0 +1,365 @@
+<div class="jumbotron" >
+  <pg-container extraHorizontalClass="p-l-0 p-r-0">
+    <div class="inner" pg-parallax>
+      <!-- START BREADCRUMB -->
+      <pg-breadcrumb>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="javascript:void(0);">UI Elements</a></li>
+          <li class="breadcrumb-item active">TABS & ACCORDIANS</li>
+        </ol>
+      </pg-breadcrumb>      
+      <div class="row">
+        <div class="col-xl-7 col-lg-6 ">
+          <!-- START card -->
+          <div class="full-height">
+            <div class="card-body text-center">
+              <img class="image-responsive-height demo-mw-600" src="assets/img/demo/tab.png" alt="">
+            </div>
+          </div>
+          <!-- END card -->
+        </div>
+        <div class="col-xl-5 col-lg-6 ">
+          <!-- START card -->
+          <div class="card card-transparent">
+            <div class="card-header ">
+              <div class="card-title">Getting started
+              </div>
+            </div>
+            <div class="card-body">
+              <h3>Simply organized</h3>
+              <p>Seemingly unimportant but our range of simple and effective tab choices, allows the user to select the manner in which to categorize, store and obtain content. All this can be done by clicking on the preferred type of tab. </p>
+              <br>
+              <div>
+                <div class="profile-img-wrapper m-t-5 inline">
+                  <img width="35" height="35" src="assets/img/profiles/avatar_small.jpg" alt="" pgRetina src1x="assets/img/profiles/avatar_small.jpg" src2x="assets/img/profiles/avatar_small2x.jpg">
+                  <div class="chat-status available">
+                  </div>
+                </div>
+                <div class="inline m-l-10">
+                  <p class="small hint-text m-t-5">VIA senior product manage
+                    <br> for UI/UX at REVOX</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END card -->
+        </div>
+      </div>
+    </div>
+  </pg-container>
+</div>
+<!-- END JUMBOTRON -->
+<!-- START CONTAINER FLUID -->
+<pg-container>
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="sm-m-l-5 sm-m-r-5">
+
+        <pg-collapseset Accordion="true">
+          <pg-collapse [Title]="'Collapsible Group Item'">
+            Click headers to expand/collapse content that is broken into logical sections, much like tabs. Optionally, toggle sections open/closed on mouseover.
+          </pg-collapse>
+          <pg-collapse [Title]="'Typography Variables'">
+            <h1 class="light">
+              go explore the <span class="semi-bold">world</span>
+            </h1>
+            <h4>
+              small things in life matters the most
+            </h4>
+            <h2>
+              Big Heading <span class="semi-bold">Body</span>,
+              <i>Variations</i>
+            </h2>
+            <h4>
+              <span class="semi-bold">Open Me</span>, Light , <span class=
+              "semi-bold">Bold</span>, <i>Everything</i>
+            </h4>
+            <p>
+              is the art and technique of arranging type in order to make language visible. The arrangement of type involves the selection of typefaces, point size, line length, leading (line spacing), adjusting the spaces between groups of letters (tracking)
+            </p>
+            <p>
+              and adjusting the Case space between pairs of letters (kerning). Type design is a closely related craft, which some consider distinct and others a part of typography
+            </p>
+          </pg-collapse>
+          <pg-collapse [Title]="'Easy Edit'">
+           Click headers to expand/collapse content that is broken into logical sections, much like tabs. Optionally, toggle sections open/closed on mouseover.
+          </pg-collapse>
+        </pg-collapseset>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="card card-borderless">
+          <pg-tabset tabAnimation="slide-left" Type="simple" ShowPagination="true">
+              <pg-tab>
+                <ng-template #TabHeading>
+                  Hello World
+                </ng-template>
+                <div class="row column-seperation">
+                    <div class="col-lg-6">
+                      <h3>
+                        <span class="semi-bold">Sometimes</span> Small things in life means the most
+                      </h3>
+                    </div>
+                    <div class="col-lg-6">
+                      <h3 class="semi-bold">great tabs</h3>
+                      <p>Native boostrap tabs customized to Pages look and feel, simply changing class name you can change color as well as its animations</p>
+                    </div>
+                  </div>
+              </pg-tab>
+              <pg-tab>
+                <ng-template #TabHeading>
+                    Hello Two
+                </ng-template>
+                <div class="row">
+                    <div class="col-lg-12">
+                      <h3>“ Nothing is
+                        <span class="semi-bold">impossible</span>, the word itself says 'I'm
+                        <span class="semi-bold">possible</span>'! ”
+                      </h3>
+                      <p>A style represents visual customizations on top of a layout. By editing a style, you can use Squarespace's visual interface to customize your...</p>
+                      <br>
+                      <p class="pull-right">
+                        <button type="button" class="btn btn-default btn-cons">White</button>
+                        <button type="button" class="btn btn-success btn-cons">Success</button>
+                      </p>
+                    </div>
+                </div>
+              </pg-tab>
+              <pg-tab>
+                  <ng-template #TabHeading>
+                      Hello Three
+                  </ng-template>
+                  <div class="row">
+                      <div class="col-lg-12">
+                        <h3>Follow us &amp; get updated!</h3>
+                        <p>Instantly connect to what's most important to you. Follow your friends, experts, favorite celebrities, and breaking news.</p>
+                        <br>
+                      </div>
+                    </div>
+              </pg-tab>
+          </pg-tabset>
+      </div>
+    </div>
+  </div>
+  <!-- START card -->
+  <div class="card card-transparent">
+    <div class="card-header ">
+      <div class="card-title">tab Orientations
+      </div>
+    </div>
+    <div class="card-body no-padding">
+      <div class="row">
+        <div class="col-xl-6">
+          <div class="card card-transparent flex-row">
+              <pg-tabset tabAnimation="slide-left" Type="simple" TabPosition="left" extraTabClass="bg-white">
+                  <pg-tab>
+                    <ng-template #TabHeading>
+                      Hello World
+                    </ng-template>
+                    <div class="row column-seperation">
+                        <div class="col-lg-6">
+                          <h3>
+                            <span class="semi-bold">Sometimes</span> Small things in life means the most
+                          </h3>
+                        </div>
+                        <div class="col-lg-6">
+                          <h3 class="semi-bold">great tabs</h3>
+                          <p>Native boostrap tabs customized to Pages look and feel, simply changing class name you can change color as well as its animations</p>
+                        </div>
+                      </div>
+                  </pg-tab>
+                  <pg-tab>
+                    <ng-template #TabHeading>
+                        Hello Two
+                    </ng-template>
+                    <div class="row">
+                        <div class="col-lg-12">
+                          <h3>“ Nothing is
+                            <span class="semi-bold">impossible</span>, the word itself says 'I'm
+                            <span class="semi-bold">possible</span>'! ”
+                          </h3>
+                          <p>A style represents visual customizations on top of a layout. By editing a style, you can use Squarespace's visual interface to customize your...</p>
+                          <br>
+                          <p class="pull-right">
+                            <button type="button" class="btn btn-default btn-cons">White</button>
+                            <button type="button" class="btn btn-success btn-cons">Success</button>
+                          </p>
+                        </div>
+                    </div>
+                  </pg-tab>
+              </pg-tabset>
+          </div>
+        </div>
+        <div class="col-xl-6">
+          <div class="card card-transparent flex-row-reverse">
+              <pg-tabset tabAnimation="slide-left" Type="simple" TabPosition="right" extraTabClass="bg-white">
+                  <pg-tab>
+                    <ng-template #TabHeading>
+                      Hello World
+                    </ng-template>
+                    <div class="row column-seperation">
+                        <div class="col-lg-6">
+                          <h3>
+                            <span class="semi-bold">Sometimes</span> Small things in life means the most
+                          </h3>
+                        </div>
+                        <div class="col-lg-6">
+                          <h3 class="semi-bold">great tabs</h3>
+                          <p>Native boostrap pgtabs customized to Pages look and feel, simply changing class name you can change color as well as its animations</p>
+                        </div>
+                      </div>
+                  </pg-tab>
+                  <pg-tab>
+                    <ng-template #TabHeading>
+                        Hello Two
+                    </ng-template>
+                    <div class="row">
+                        <div class="col-lg-12">
+                          <h3>“ Nothing is
+                            <span class="semi-bold">impossible</span>, the word itself says 'I'm
+                            <span class="semi-bold">possible</span>'! ”
+                          </h3>
+                          <p>A style represents visual customizations on top of a layout. By editing a style, you can use Squarespace's visual interface to customize your...</p>
+                          <br>
+                          <p class="pull-right">
+                            <button type="button" class="btn btn-default btn-cons">White</button>
+                            <button type="button" class="btn btn-success btn-cons">Success</button>
+                          </p>
+                        </div>
+                    </div>
+                  </pg-tab>
+                </pg-tabset>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END card -->
+  <!-- START card -->
+  <div class="card card-transparent">
+    <div class="card-header ">
+      <div class="card-title">tabs Styles
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>Line Triangle tabs</h5> Add the attribute
+          <code>Type="linetriangle"</code> to pg-tabset
+          <br>
+          <br>
+          <div class="card card-transparent">
+            <pg-tabset tabAnimation="slide-left" Type="linetriangle" extraTabContentClass="bg-white">
+                <pg-tab>
+                  <ng-template #TabHeading>
+                    Hello World
+                  </ng-template>
+                  <div class="row column-seperation">
+                      <div class="col-lg-6">
+                        <h3>
+                          <span class="semi-bold">Sometimes</span> Small things in life means the most
+                        </h3>
+                      </div>
+                      <div class="col-lg-6">
+                        <h3 class="semi-bold">great tabs</h3>
+                        <p>Native boostrap tabs customized to Pages look and feel, simply changing class name you can change color as well as its animations</p>
+                      </div>
+                    </div>
+                </pg-tab>
+                <pg-tab>
+                  <ng-template #TabHeading>
+                      Hello Two
+                  </ng-template>
+                  <div class="row">
+                      <div class="col-lg-12">
+                        <h3>“ Nothing is
+                          <span class="semi-bold">impossible</span>, the word itself says 'I'm
+                          <span class="semi-bold">possible</span>'! ”
+                        </h3>
+                        <p>A style represents visual customizations on top of a layout. By editing a style, you can use Squarespace's visual interface to customize your...</p>
+                        <br>
+                        <p class="pull-right">
+                          <button type="button" class="btn btn-default btn-cons">White</button>
+                          <button type="button" class="btn btn-success btn-cons">Success</button>
+                        </p>
+                      </div>
+                    </div>
+                </pg-tab>
+                <pg-tab>
+                    <ng-template #TabHeading>
+                        Hello Three
+                    </ng-template>
+                    <div class="row">
+                        <div class="col-lg-12">
+                          <h3>Follow us &amp; get updated!</h3>
+                          <p>Instantly connect to what's most important to you. Follow your friends, experts, favorite celebrities, and breaking news.</p>
+                          <br>
+                        </div>
+                      </div>
+                  </pg-tab>
+            </pg-tabset>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h5>Fill In tabs</h5> Add the attribute
+          <code>Type="fillup"</code> to pg-tabset
+          <br>
+          <br>
+          <div class="card card-transparent ">
+              <pg-tabset tabAnimation="slide-left" Type="fillup" extraTabContentClass="bg-white">
+                  <pg-tab>
+                    <ng-template #TabHeading>
+                      <span>Hello World</span>
+                    </ng-template>
+                    <div class="row column-seperation">
+                        <div class="col-lg-6">
+                          <h3>
+                            <span class="semi-bold">Sometimes</span> Small things in life means the most
+                          </h3>
+                        </div>
+                        <div class="col-lg-6">
+                          <h3 class="semi-bold">great tabs</h3>
+                          <p>Native boostrap tabs customized to Pages look and feel, simply changing class name you can change color as well as its animations</p>
+                        </div>
+                      </div>
+                  </pg-tab>
+                  <pg-tab>
+                    <ng-template #TabHeading>
+                      <span>Hello Two</span>
+                    </ng-template>
+                    <div class="row">
+                        <div class="col-lg-12">
+                          <h3>“ Nothing is
+                            <span class="semi-bold">impossible</span>, the word itself says 'I'm
+                            <span class="semi-bold">possible</span>'! ”
+                          </h3>
+                          <p>A style represents visual customizations on top of a layout. By editing a style, you can use Squarespace's visual interface to customize your...</p>
+                          <br>
+                          <p class="pull-right">
+                            <button type="button" class="btn btn-default btn-cons">White</button>
+                            <button type="button" class="btn btn-success btn-cons">Success</button>
+                          </p>
+                        </div>
+                      </div>
+                  </pg-tab>
+                  <pg-tab>
+                      <ng-template #TabHeading>
+                        <span>Hello Three</span>
+                      </ng-template>
+                      <div class="row">
+                          <div class="col-lg-12">
+                            <h3>Follow us &amp; get updated!</h3>
+                            <p>Instantly connect to what's most important to you. Follow your friends, experts, favorite celebrities, and breaking news.</p>
+                            <br>
+                          </div>
+                        </div>
+                    </pg-tab>
+                </pg-tabset>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END card -->
+</pg-container>
+<!-- END CONTAINER FLUID -->

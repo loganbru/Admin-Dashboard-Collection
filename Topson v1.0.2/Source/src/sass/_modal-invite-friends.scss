@@ -1,0 +1,16 @@
+.modal-invite-friends {
+    .modal__content {
+        @apply bg-light-2;
+        .modal__content__scrollable {
+            height: 410px;
+        }
+    }
+}
+
+.dark {
+    .modal-invite-friends {
+        .modal__content {
+            @apply bg-dark-1;
+        }
+    }
+}

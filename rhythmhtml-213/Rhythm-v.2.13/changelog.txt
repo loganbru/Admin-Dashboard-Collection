@@ -1,0 +1,322 @@
+##############################################################
+
+# Changelog
+# Rhythm - Multipurpose One/Multi Page Template
+# Full Changelog - http://themeforest.net/item/rhythm-multipurpose-onemulti-page-template/10140354#item-description__changelog
+
+##############################################################
+v. 2.13 – 22 October 2019
+
+- accessibility was improved - keyboard navigation was added in fullscreen menu:
+--- file /js/all.js (lines 850-877) was updated
+
+- lazy-loading function was added:
+--- file elements-sliders-lazyload.html was added
+--- file portfolio-lazyload.html was added
+--- file elements-images-lazyload.html was added
+--- file images/portfolio/projects-thumb.gif was added
+--- file /js/jquery.lazyload.min.js was added
+--- file /js/all.js (lines 559-700) was updated
+--- file /js/all.js (lines 1135-1151) was updated
+--- file /js/isotope.pkgd.min.js was updated
+--- all HTML files were updated (scripts includings in the end of the documents)
+--- HTML code of multi-level menu was updated
+
+-  behaviour of "mute" button for HTML5 video was improved:
+--- file /js/jquery.backgroundvideo.min.js was updated
+
+-  YTplayer plugin was updated:
+--- file /js/jquery.mb.YTPlayer.js was updated
+
+
+##############################################################
+
+v. 2.12 – 31 May February 2019
+
+- documentation was updated
+
+- accessibility was improved - keyboard navigation was added ([TAB], [SHIFT]+[TAB]]):
+--- file /css/style.css (lines 227-237) was updated
+--- file /js/all.js (lines 279-322) was updated
+--- file /js/all.js (lines 539-546) was updated
+--- file /js/all.js (line 1092) was updated
+--- file /js/all.js (line 1159) was updated
+--- HTML code of Google Maps sections was updated
+
+- plugin SmoothScroll.js was updated to the latest version
+--- file /js/SmoothScroll.js was updated
+
+- newsletter form was improved:
+--- file /js/jquery.ajaxchimp.min.js was updated
+
+- intro page was updated:
+--- file intro.html was updated
+--- file /css/style.css (line 5631) was updated
+
+##############################################################
+
+v. 2.12 – 31 May February 2019
+
+- documentation was updated
+
+- accessibility was improved - keyboard navigation was added ([TAB], [SHIFT]+[TAB]]):
+--- file /css/style.css (lines 227-237) was updated
+--- file /js/all.js (lines 279-322) was updated
+--- file /js/all.js (lines 539-546) was updated
+--- file /js/all.js (line 1092) was updated
+--- file /js/all.js (line 1159) was updated
+--- HTML code of Google Maps sections was updated
+
+- plugin SmoothScroll.js was updated to the latest version
+--- file /js/SmoothScroll.js was updated
+
+- newsletter form was improved:
+--- file /js/jquery.ajaxchimp.min.js was updated
+
+- intro page was updated:
+--- file intro.html was updated
+--- file /css/style.css (line 5631) was updated
+
+##############################################################
+
+v. 2.11.1 – 4 January 2019
+
+- issue with HTML5 background video on IOS was fixed:
+--- file /js/jquery.backgroundvideo.min.js was updated 
+
+##############################################################
+
+v. 2.11 – 12 November 2018
+
+- jquery.mb.YTPlayer was updated to the latest version:
+--- file /js/jquery.mb.YTPlayer.js was updated 
+
+##############################################################
+
+v. 2.10 – 29 June 2018
+
+- Google Maps Api was replaced with Google Maps embed (details - https://forums.envato.com/t/important-changes-to-the-google-maps-platform/173357):
+--- file /css/style.css was updated ("Google Maps" section)
+--- file /css/style-responsive.css was updated
+--- file /js/all.js was updated ("Google Maps" section)
+--- all HTML files were updated (removed including of Google Maps Api and file /js/gmap3.min.js)
+--- HTML code of Google Maps sections was updated
+--- file /js/gmap3.min.js was removed
+
+
+##############################################################
+
+v. 2.9.9 – 15 May 2018
+
+- issue with autoplay video in Google Chrome was fixed:
+--- file /js/jquery.backgroundvideo.min.js was updated
+--- file /css/style.css (line 1153) was updated
+--- files index-15.html, index-19.html, mp-index-15.html, mp-index-19.html, special-restaurant-2.html were updated
+
+##############################################################
+
+v. 2.9.8 – 23 November 2017
+
+- small bug with newsletter form was fixed:
+--- file /js/jquery.ajaxchimp.min.js (line 9) was updated
+
+##############################################################
+
+v. 2.9.7 – 23 November 2017
+
+- bug with side and fullscreen menus was fixed:
+--- file /css/style.css (lines 2245 and 6122) was updated
+
+- Font Awesome was updated
+--- file /css/font-awesome.min.css was updated
+--- file /fonts/FontAwesome.otf was updated
+--- file /fonts/fontawesome-webfont.eot was updated
+--- file /fonts/fontawesome-webfont.svg was updated
+--- file /fonts/fontawesome-webfont.ttf was updated
+--- file /fonts/fontawesome-webfont.woff was updated
+--- file /fonts/fontawesome-webfont.woff2 was added
+
+##############################################################
+
+v. 2.9.6 – 13 June 2017
+
+- bug with the contact form in demo "Product Designer" was fixed:
+
+--- special-product-designer-about.html was updated
+--- special-product-designer-contact.html was updated
+--- special-product-designer.html was updated
+
+- small bug with side panel on mobile devices was fixed:
+--- file /js/all.js (line 938) was updated
+
+##############################################################
+
+v. 2.9.5 – 10 April 2017
+
+- new demo was added:
+
+--- folder /images/product-designer was added
+--- file special-product-designer.html was added
+--- file special-product-designer-about.html was added
+--- file special-product-designer-contact.html was added
+--- file /css/style.css (line 177) was updated
+
+- intro page page was updated:
+
+--- file intro.html was updated
+--- files /images/intro/intro-40.jpg was added
+
+##############################################################
+
+v. 2.9.4 – 19 January 2017
+
+- IMPORTANT SECURITY UPDATE of PHPMailer class:
+
+--- file /php/class.phpmailer.php was updated
+--- file /php/class.smtp.php was updated
+--- file /php/PHPMailerAutoload.php was updated
+
+- issue with search field in fullscreen menu was fixed:
+--- file /css/style-responsive.css (line 808) was updated
+
+
+##############################################################
+
+v. 2.9.3 – 21 December 2016
+
+- issue with HTML validation was fixed:
+--- all HTML files (Favicons section) were updated
+
+##############################################################
+
+v. 2.9.2 – 3 December 2016
+
+- small bug with accordion was fixed:
+--- file /js/all.js (line 399) was updated
+
+##############################################################
+
+v. 2.9.1 – 3 October 2016
+
+- small bug with sidebar in RTL version was fixed:
+--- folder /www-rtl/js/all.js was updated
+
+- documentation was updated
+
+##############################################################
+
+v. 2.9 – 3 July 2016
+
+- new cv/resume demo was added:
+
+--- folder /images/cv-resume was added
+--- file special-cv-resume.html was added
+
+- intro page page was updated:
+
+--- file intro.html was updated
+--- files /images/intro/intro-39.jpg was added
+
+- Google Maps API Key was added:
+--- all HTML files were updated (scripts includings in the end of the documents)
+
+- documentation was updated
+
+##############################################################
+
+v. 2.8 – 14 June 2016
+
+- new barbershop demo was added:
+
+--- folder /images/barbershop was added
+--- file special-barbershop.html was added
+--- file special-barbershop-about.html was added
+--- file special-barbershop-gallery.html was added
+--- file special-barbershop-pricing.html was added
+--- file special-barbershop-contact.html was added
+
+- intro page page was improved:
+
+--- file /css/style.css (line 5581) was updated
+--- file intro.html was updated
+--- files /images/intro/intro-22.jpg - /images/intro/intro-37.jpg were updated
+--- files /images/intro/intro-38.jpg was added
+
+##############################################################
+
+v. 2.7.1 – 15 May 2016
+
+- fashion shop demo was added:
+
+--- file special-fashion.html was added
+--- folder /images/fashion was added
+--- file intro.html was updated
+--- file /images/intro/intro-37.jpg was added
+
+- label "new" was added to intro page and mega menu
+
+--- file /css/style.css (line 5567) was updated
+--- all HTML files were updated (mega menu - link "special demos")
+
+- small bug with portfolio filtering was fixed
+--- file /js/all.js (lines 48 and 19) was updated
+
+##############################################################
+
+v. 2.6 – 19 April 2016
+
+- small bug with portfolio filtering was fixed:
+--- file /js/all.js (line 971) was updated
+
+- two finance demos were added:
+
+--- file special-finance-1.html was added
+--- file special-finance-2.html was added
+--- file special-finance-2-about.html was added
+--- file special-finance-2-expertise.html was added
+--- file special-finance-2-portfolio.html was added
+--- file special-finance-2-qa.html was added
+--- file special-finance-2-contact.html was added
+--- folder /images/finance was added
+--- file /css/style.css (lines 2791-2850) was updated
+--- file /css/style-responsive.css (lines 90, 127-137) was updated
+--- file/js/all.js (lines 59, 1117) was updated
+--- file /images/intro/intro-35.jpg was added
+--- file /images/intro/intro-36.jpg was added
+--- file intro.html was updated
+
+##############################################################
+
+v. 2.5 – 30 March 2016
+
+- restaurant demo was added:
+
+--- folder /images/restaurant/ was added
+
+--- file special-restaurant-1.html was added
+--- file special-restaurant-2.html was added  
+--- file special-restaurant-2-about.html was added
+--- file special-restaurant-2-menu.html was added
+--- file special-restaurant-2-gallery.html was added 
+--- file special-restaurant-2-location.html was added
+--- file special-restaurant-2-reservations.html was added  
+  
+--- file /js/contact-reservations.js was added 
+--- file contact_reservations.php was added
+--- file contact_reservations_smtp.php was added 
+--- file /video/video-restaurant.jpg was added
+--- file /video/video-restaurant.mp4 was added
+--- file /video/video-restaurant.ogg was added
+--- file /video/video-restaurant.webm was added
+
+--- file /js/jquery.backgroundvideo.min.js was updated
+--- file /css/style-responsive.css (line 411) was updated
+--- file index-19.html (line 45) was updated
+--- file mp-index-19.html (line 46) was updated
+
+##############################################################
+
+v. 2.4 – 14 February 2016
+
+- RTL version was added:
+--- folder "www-rtl" was added

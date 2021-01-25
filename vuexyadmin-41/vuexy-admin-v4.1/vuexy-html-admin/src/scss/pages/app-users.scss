@@ -1,0 +1,226 @@
+// Core variables and mixins
+@import "../bootstrap/functions";
+@import "../bootstrap/mixins";
+@import "../bootstrap-extended/mixins";
+
+// Load variable overrides
+@import "../core/variables/variables";
+@import "../bootstrap/variables";
+
+// Overrides user variable
+@import "../core/variables/components-variables";
+
+$checkbox-border-color: #b4b4b4;
+
+// Search Icon
+.dataTables_wrapper {
+  .dataTables_length {
+    display: inline-block;
+    .custom-select {
+      width: 6.714rem !important;
+      height: 3rem;
+      border-radius: 1.428rem;
+      border: 1px solid $gray-300;
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+      background-position: calc(100% - 8px) 13px, calc(100% - 13px) 13px, 100% 0 !important;
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+
+  .dataTables_filter {
+    display: flex;
+    justify-content: flex-end;
+    .form-control {
+      // padding: 1.45rem 2.2rem !important;
+      border-radius: 1.428rem;
+      border: 1px solid $gray-300;
+      font-size: 1rem;
+      width: 197px;
+      height: 40px;
+      padding-left: 2.2rem;
+    }
+    label {
+      position: relative;
+      &:after {
+        content: "\e8bd";
+        font-family: "feather";
+        position: absolute;
+        left: 1.428rem;
+        top: 10px;
+        font-size: 1.1rem;
+        color: $gray-300;
+      }
+    }
+  }
+
+  .dt-checkboxes-select-all,
+  .dt-checkboxes-select {
+    input {
+      width: 0;
+      position: relative;
+      &:before {
+        border: 2px solid $checkbox-border-color;
+        content: "";
+        width: 1.071rem;
+        height: 1.071rem;
+        padding: 0;
+        border-radius: 2px;
+        transition: all 0.2s ease;
+        transform: rotate(-90deg);
+        overflow: hidden;
+        transition: all 0.2s ease;
+        position: absolute;
+      }
+      &:after {
+        background-color: $primary;
+        border: 2px solid $primary;
+        font-family: "feather";
+        content: "\e83f";
+        font-size: 0.75rem;
+        line-height: 1.2;
+        color: $white;
+        opacity: 0;
+        position: absolute;
+        width: 0.928rem;
+        height: 1rem;
+        transform: translate(100%);
+        transform-origin: right;
+        transition: all 0.2s ease;
+        overflow: hidden;
+      }
+
+      &:active:checked {
+        &:after {
+          transform: translate(3px);
+        }
+      }
+
+      &:checked {
+        &:before {
+          border: 2px solid $primary;
+          transform: rotate(0deg);
+        }
+        &:after {
+          transition: all 0.2s ease;
+          opacity: 1;
+          transform: translate(0);
+        }
+      }
+    }
+  }
+  .dataTable {
+    thead {
+      tr {
+        th:first-child {
+          padding-right: 2rem;
+        }
+      }
+    }
+    tbody {
+      .select-checkbox {
+        &:before,
+        &:after {
+          display: none !important;
+        }
+      }
+      tr {
+        &.selected {
+          border-radius: 0;
+        }
+        td:first-child {
+          padding-right: 2rem;
+        }
+        td {
+          .user-info {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+
+  .dataTables_paginate {
+    .pagination {
+      justify-content: center !important;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .dataTables_wrapper {
+    .dataTable {
+      tbody {
+        tr {
+          td:nth-child(2) {
+            display: flex;
+            flex-wrap: wrap;
+          }
+        }
+      }
+    }
+  }
+}
+
+// IE Specific CSS
+_:-ms-lang(x),
+.dataTable {
+  tbody,
+  thead {
+    tr {
+      td,
+      th {
+        &.dt-checkboxes-cell {
+          input {
+            width: auto !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Macos Firefox Specific
+@supports (-moz-osx-font-smoothing: auto) {
+  .dataTable {
+    input {
+      width: auto !important;
+    }
+  }
+}
+
+// Safari specific
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .dataTable {
+      tbody {
+        td.dt-checkboxes-cell {
+          input:after {
+            left: -0.485rem;
+          }
+        }
+      }
+    }
+    .dataTable {
+      .dt-checkboxes-cell {
+        input {
+          -webkit-appearance: none;
+          top: -10px;
+        }
+      }
+    }
+  }
+}
+
+// macbook chrome specific
+.dataTable {
+  .mac-checkbox {
+    -webkit-appearance: none;
+    outline: none;
+    width: auto;
+  }
+}

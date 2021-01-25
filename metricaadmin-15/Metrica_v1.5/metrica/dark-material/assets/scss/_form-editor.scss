@@ -1,0 +1,90 @@
+// X-Editor
+.form-control:disabled, 
+.form-control[readonly]{
+  background-color: $card;
+}
+// Form editor
+
+.mce-tinymce{
+  box-shadow: none !important;
+}
+.mce-flow-layout{
+  background-color: $editor-layout !important;
+}
+.mce-btn {
+  background: transparent !important;
+}
+
+.mce-top-part::before{
+  box-shadow: none !important;
+}
+
+// CK Editor
+
+.mce-menubar .mce-menubtn button span{
+  color: $gray-500 !important;
+}
+.mce-caret,
+.mce-menubar .mce-caret {
+  border-top-color: $gray-200 !important;
+}
+
+.mce-menubar .mce-menubtn:hover, 
+.mce-menubar .mce-menubtn.mce-active, 
+.mce-menubar .mce-menubtn:focus {
+  border-color: $gray-200 !important;
+  background: lighten($card, 10%) !important;
+  color: $gray-500 !important;
+  filter: none;
+}
+
+.mce-menu-item .mce-ico, 
+.mce-menu-item .mce-text {
+  color: $gray-500 !important;
+}
+
+.mce-menu-item:hover .mce-text, 
+.mce-menu-item.mce-selected .mce-text, 
+.mce-menu-item:focus .mce-text {
+  color: $white !important;
+}
+.mce-btn{
+  background-color: lighten($card, 10%) !important;
+  &:hover{
+    border-color: $gray-200 !important;
+    color: $gray-600 !important;
+  }
+}
+.mce-ico{
+  color: $gray-500 !important;
+}
+.mce-menubtn button {
+  color: $gray-500 !important;
+}
+
+.mce-menubar {
+  border: 1px solid $gray-200 !important;
+}
+.mce-btn-group:not(:first-child) {
+  border-left: 1px solid $gray-200 !important;
+}
+
+.mce-flow-layout{
+  background-color: lighten($card, 2%) !important;
+}
+.mce-panel{
+  border-color: $gray-200 !important;
+  background-color: $bg-body !important;
+}
+.mce-label{
+  text-shadow: none !important;
+}
+.mce-menu-item:hover, .mce-menu-item:focus {
+  background: lighten($card, 20%) !important;
+}
+
+.mce-menu-item.mce-disabled, 
+.mce-menu-item.mce-disabled:hover {
+  background: lighten($card, 20%) !important;
+}
+

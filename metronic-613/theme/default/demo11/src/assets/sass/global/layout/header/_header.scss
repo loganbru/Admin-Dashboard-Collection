@@ -1,0 +1,48 @@
+//
+// Header
+//
+
+
+
+// Desktop mode(1024px and above)
+@include kt-desktop() {
+	// Header
+	.kt-header {
+		display: flex;
+    	position: relative;
+		z-index: 2;
+		height: kt-get($kt-header-config, base, desktop, default, height);
+		align-items: stretch;
+		justify-content: space-between;
+		transition: height 0.3s ease;
+		box-shadow: kt-get($kt-header-config, base, self, shadow);
+		background-color: kt-get($kt-header-config, base, self, bg-color);
+
+		// Header container
+		.kt-container {
+			display: flex;
+			align-items: stretch;
+			justify-content: space-between;
+
+			&:before,
+			&:after {
+				display: none !important;  
+			}
+		}
+
+    	// Fixed header
+		.kt-header--fixed & {
+			position: fixed;
+			top: 0;
+			right: 0;
+			left: 0;
+			z-index: kt-get($kt-header-config, base, desktop, fixed, zindex);
+		}
+
+		// Fixed and minimized header
+		.kt-header--fixed.kt-header--minimize & {
+			transition: height 0.3s ease;
+			height: kt-get($kt-header-config, base, desktop, fixed, height);
+		}
+	}
+}

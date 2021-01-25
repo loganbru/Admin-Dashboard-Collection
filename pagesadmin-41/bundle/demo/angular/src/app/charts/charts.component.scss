@@ -1,0 +1,23 @@
+.demo-chart{
+    height: 300px;
+    display:flex;
+    width: 100%;
+}
+.tab-rickshaw-realtime .realtimeChart{
+        height: 500px !important;
+}
+
+.sample-bar-chart{
+    height: 500px !important;
+}
+
+:host /deep/ {
+    .echarts-tooltip{
+        border-radius: 2px;
+        padding: 3px 8px;
+        
+        .text-muted{
+            opacity: .5;
+        }
+    }
+}

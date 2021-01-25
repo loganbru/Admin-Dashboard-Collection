@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/core.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script type="text/javascript" src="assets/js/plugins/ui/prism.min.js"></script>
+	
+	<script type="text/javascript" src="assets/js/core/app.js"></script>
+	<script type="text/javascript" src="assets/js/pages/sidebar_detached_sticky_native.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body data-spy="scroll" data-target=".sidebar-detached" class="has-detached-right">
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-default navbar-lg header-highlight">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="index.html"><img src="assets/images/logo_light.png" alt=""></a>
+
+			<ul class="nav navbar-nav pull-right visible-xs-block">
+				<li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+				<li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+				<li><a class="sidebar-mobile-detached-toggle"><i class="icon-grid7"></i></a></li>
+			</ul>
+		</div>
+
+		<div class="navbar-collapse collapse" id="navbar-mobile">
+			<ul class="nav navbar-nav">
+				<li><a class="sidebar-control sidebar-main-hide hidden-xs"><i class="icon-paragraph-justify3"></i></a></li>
+				<li><a class="sidebar-control sidebar-detached-hide hidden-xs"><i class="icon-drag-right"></i></a></li>
+			</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="other_changelog.html">Changelog <span class="label label-inline bg-warning-400 position-right">v. 2.0</span></a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page container -->
+	<div class="page-container">
+
+		<!-- Page content -->
+		<div class="page-content">
+
+			<!-- Main sidebar -->
+			<div class="sidebar sidebar-main">
+				<div class="sidebar-content">
+
+	        		<!-- Support -->
+					<div class="sidebar-category no-margin">
+						<div class="category-title">
+							<span>Have questions?</span>
+							<i class="icon-help text-muted pull-right"></i>
+						</div>
+
+						<div class="category-content">
+							<a href="http://kopyov.ticksy.com" class="btn bg-success-400 btn-block" target="_blank"><i class="icon-lifebuoy position-left"></i> Limitless support</a>
+						</div>
+					</div>
+					<!-- /support -->
+
+
+					<!-- Main navigation -->
+					<div class="sidebar-category">
+						<div class="category-title">
+							<span>Navigation</span>
+							<i class="icon-menu7 text-muted pull-right"></i>
+						</div>
+
+						<div class="category-content no-padding">
+							<ul class="navigation navigation-main navigation-accordion">
+
+								<!-- Main -->
+								<li class="navigation-header">Main</li>
+								<li><a href="index.html">Introduction</a></li>
+								<li><a href="main_getting_started.html">Getting started</a></li>
+								<li><a href="main_starter_kit.html">Starter kit</a></li>
+								<li><a href="main_rtl.html">RTL layout</a></li>
+
+								<li class="navigation-header">Basic functionality</li>								
+								<li><a href="base_less_css.html">LESS and CSS</a></li>
+								<li><a href="base_less_compile.html">Compiling LESS</a></li>
+								<li><a href="base_less_compile_rtl.html">Compiling LESS for RTL version</a></li>
+								<li>
+									<a href="#">Plugins</a>
+									<ul>
+										<li><a href="plugins_forms.html">Forms</a></li>
+										<li><a href="plugins_forms_styling.html">Form styling</a></li>
+										<li><a href="plugins_selects.html">Selects</a></li>
+										<li><a href="plugins_editors.html">Editors</a></li>
+										<li><a href="plugins_uploaders.html">Uploaders</a></li>
+										<li><a href="plugins_wizards.html">Wizards</a></li>
+										<li><a href="plugins_extensions.html">Extensions</a></li>
+										<li><a href="plugins_notifications.html">Notifications</a></li>
+										<li><a href="plugins_pickers.html">Pickers</a></li>
+										<li><a href="plugins_tables.html">Tables</a></li>
+										<li><a href="plugins_ui.html">UI</a></li>
+										<li><a href="plugins_vis.html">Visualization</a></li>
+									</ul>
+								</li>
+								<li><a href="base_bootstrap.html">Bootstrap</a></li>
+								<li><a href="base_color_system.html">Color system</a></li>
+								<li><a href="base_helpers.html">Helpers</a></li>
+								<li><a href="base_themes.html">Themes</a></li>
+
+								<li class="navigation-header">Layout options</li>
+								<li><a href="layout_markup.html">Markup</a></li>
+								<li><a href="layout_sidebars.html">Sidebars</a></li>
+								<li class="active"><a href="layout_navbars.html">Navbars</a></li>
+								<li><a href="layout_v_nav.html">Vertical navigation</a></li>
+								<li><a href="layout_h_nav.html">Horizontal navigation</a></li>
+								<li><a href="layout_page_header.html">Page header</a></li>
+								<li><a href="layout_footer.html">Footer</a></li>
+
+								<li class="navigation-header">Other</li>
+								<li><a href="other_credits.html">Sources and credits</a></li>
+								<li><a href="other_changelog.html">Changelog <span class="label bg-warning-400">version 2.0</span></a></li>
+								<!-- /main -->
+
+							</ul>
+						</div>
+					</div>
+					<!-- /main navigation -->
+
+				</div>
+			</div>
+			<!-- /main sidebar -->
+
+
+			<!-- Main content -->
+			<div class="content-wrapper">
+
+				<!-- Page header -->
+				<div class="page-header">
+					<div class="page-header-content">
+						<div class="page-title">
+							<h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold">Limitless</span> - Navbars</h4>
+						</div>
+
+						<div class="heading-elements">
+							<ul class="breadcrumb">
+								<li><a href="index.html"><i class="icon-home2 position-left"></i> Home</a></li>
+								<li class="active">Navbars</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- /page header -->
+				
+
+				<!-- Content area -->
+				<div class="content">
+
+					<!-- Detached content -->
+					<div class="container-detached">
+						<div class="content-detached">
+
+							<!-- Navbars overview -->
+							<div class="panel panel-flat" id="overview">
+								<div class="panel-heading">
+									<h5 class="panel-title">Navbars overview</h5>
+									<div class="heading-elements">
+										<ul class="icons-list">
+					                		<li><a data-action="collapse"></a></li>
+					                		<li><a data-action="close"></a></li>
+					                	</ul>
+					            	</div>
+								</div>
+
+								<div class="panel-body">
+									<div class="content-group">
+										<p>Navbar is a navigation component, usually displayed on top of the page and includes brand logo, navigation and other components. By default, navbar has top <code>static</code> position. Navbar placement can be top and bottom, types can be <code>static</code> and <code>fixed</code>. Navbar available in 4 different sizes - large, default, small and mini. All navbar components automatically adjust their height to match chosen navbar height.</p>
+
+										<p>Since navbars are available in 4 different sizes, it's required to specify proper class in <code>&lt;body></code> tag to set correct padding. If single navbar is sticked to the bottom of the page, correct body classes will be .navbar-bottom for default height and .navbar-bottom-* for given size - large (*-lg), small (*-sm) and mini (*-xs).</p>
+									</div>
+
+									<p>Table below describes all navbar types and combinations available:</p>
+									<div class="table-responsive" id="options">
+										<table class="table table-bordered table-striped">
+											<thead>
+												<tr>
+													<th style="width: 250px;">Option</th>
+													<th>Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr class="active">
+													<td colspan="2"><span class="text-muted text-uppercase text-size-mini">Type</span></td>
+												</tr>
+												<tr>
+													<td class="text-semibold">Single navbar</td>
+													<td>Single navbar. Collapsible navbar, always displayed full width without spacings (except navbar component) and on top by default. Supports different navbar components and usually appears as a main navbar with branding info, user info and navigation.</td>
+												</tr>
+												<tr>
+													<td class="text-semibold">Multiple navbars</td>
+													<td>Multiple navbars have additional display options. They can be placed one after another, mixed with page header content and main content. Second sidebar is usually used as a separate component with main navigation (in horizontal navigation layout) and alternative content.</td>
+												</tr>
+												<tr>
+													<td class="text-semibold">Navbar component</td>
+													<td>Displayed as a stand-alone component: includes spacings, borders and rounded corners. Can be placed anywhere - content area, footer, header or used as a main navbar. Supports all available navbar components.</td>
+												</tr>
+
+												<tr class="border-double active">
+													<td colspan="2"><span class="text-muted text-uppercase text-size-mini">Positioning</span></td>
+												</tr>
+												<tr>
+													<td class="text-semibold">Top single</td>
+													<td>Single top navbar, usually a main navigation toolbar.</td>
+												</tr>
+												<tr>
+													<td class="text-semibold">Top multiple</td>
+													<td>Double top navbar. Can be both static or fixed, check navbar related pages.</td>
+												</tr>
+												<tr>
+													<td class="text-semibold">Bottom single</td>
+													<td>Single bottom navbar, usually a main navigation toolbar.</td>
+												</tr>
+												<tr>
+													<td class="text-semibold">Bottom multiple</td>
+													<td>Double bottom navbar. Can be both static or fixed, check navbar related pages.</td>
+												</tr>
+
+												<tr class="border-double active">
+													<td colspan="2"><span class="text-muted text-uppercase text-size-mini">Variations</span></td>
+												</tr>
+												<tr>
+													<td class="text-semibold">Static</td>
+													<td>Default option. Means navbar is scrolled out along with content.</td>
+												</tr>
+												<tr>
+													<td class="text-semibold">Fixed</td>
+													<td>Always sticket to the page top and always visible. Becomes static on mobiles.</td>
+												</tr>
+												<tr>
+													<td class="text-semibold">Hideable</td>
+													<td>Hide navbar on scroll down and display on scroll up. Animated by default and supports both top and bottom positions.</td>
+												</tr>
+
+												<tr class="border-double active">
+													<td colspan="2"><span class="text-muted text-uppercase text-size-mini">Styling</span></td>
+												</tr>
+												<tr>
+													<td class="text-semibold">Default</td>
+													<td>Light background with adapted components: navigation, links etc. Requires <code>.navbar-default</code> class added to the <code>&lt;navbar></code> container.</td>
+												</tr>
+												<tr>
+													<td class="text-semibold">Inverse</td>
+													<td>Dark background with adapted components: navigation, links etc. Requires <code>.navbar-inverse</code> class added to the <code>&lt;navbar></code> container.</td>
+												</tr>
+												<tr>
+													<td class="text-semibold">Custom color</td>
+													<td>Custom background color. Requires <code>.navbar-inverse</code> class and <code>.bg-*</code> color class added to the <code>&lt;navbar></code> container.</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<!-- /navbars overview -->
+
+
+							<!-- Navbar markup -->
+							<div class="panel panel-flat" id="markup">
+								<div class="panel-heading">
+									<h5 class="panel-title">Navbar markup</h5>
+									<div class="heading-elements">
+										<ul class="icons-list">
+					                		<li><a data-action="collapse"></a></li>
+					                		<li><a data-action="close"></a></li>
+					                	</ul>
+				                	</div>
+								</div>
+
+								<div class="panel-body">
+									<div class="content-group-lg">
+										<p>Navbar markup is identical in all layout versions. It has one difference from default Bootstrap navbar component markup - <code>&lt;div class="container" /></code> has been removed since boxed layout is an extra option and replaced with <code>&lt;div class="navbar-boxed" /></code> container. All other options - default and custom - are supported in all variations and versions. Below you'll find markup examples of differetn variations of navbar component.</p>
+									</div>
+
+									<div class="content-group-lg">
+										<h6 class="text-semibold" id="markup_static">Static navbar</h6>
+										<p>Static navbar is collapsible dy default, on mobiles and tablets its content is collapsed and available on button click. All default Bootstrap animations are removed for better performance:</p>
+										<pre class="language-markup"><code>&lt;!-- Static navbar -->
+&lt;body>
+
+	&lt;!-- Main navbar -->
+	&lt;div class="navbar navbar-inverse">
+
+		&lt;!-- Navbar header -->
+		&lt;div class="navbar-header">
+			&lt;a class="navbar-brand" href="index.html">
+				&lt;img src="assets/images/logo_light.png" alt="">
+			&lt;/a>
+
+			&lt;!-- Collapse button -->
+			&lt;ul class="nav navbar-nav pull-right visible-xs-block">
+				&lt;li>
+					&lt;a data-toggle="collapse" data-target="#navbar-mobile">
+						&lt;i class="icon-tree5">&lt;/i>
+					&lt;/a>
+				&lt;/li>
+			&lt;/ul>
+			&lt;!-- /collapse button -->
+
+		&lt;/div>
+		&lt;!-- /navbar header -->
+
+
+		&lt;!-- Navbar content -->
+		&lt;div class="navbar-collapse collapse" id="navbar-mobile">
+			...
+		&lt;/div>
+		&lt;!-- /navbar content -->
+
+	&lt;/div>
+	&lt;!-- /main navbar -->
+
+	...
+
+&lt;/body>
+&lt;!-- /static navbar -->
+</code></pre>
+
+									</div>
+
+									<div class="content-group-lg">
+										<h6 class="text-semibold" id="markup_fixed_top">Top fixed navbar</h6>
+										<p>Top fixed navbar markup is similar to static, the only difference is it requires <code>.navbar-fixed-top</code> class added to the <code>&lt;navbar></code> container and proper body class to add top padding:</p>
+										<pre data-line="2, 5" class="language-markup" data-line="2"><code>&lt;!-- Top fixed navbar -->
+&lt;body class="navbar-top">
+
+	&lt;!-- Main navbar -->
+	&lt;div class="navbar navbar-inverse navbar-fixed-top">
+
+		&lt;!-- Navbar header -->
+		&lt;div class="navbar-header">
+			&lt;a class="navbar-brand" href="index.html">
+				&lt;img src="assets/images/logo_light.png" alt="">
+			&lt;/a>
+
+			&lt;!-- Collapse button -->
+			&lt;ul class="nav navbar-nav pull-right visible-xs-block">
+				&lt;li>
+					&lt;a data-toggle="collapse" data-target="#navbar-mobile">
+						&lt;i class="icon-tree5">&lt;/i>
+					&lt;/a>
+				&lt;/li>
+			&lt;/ul>
+			&lt;!-- /collapse button -->
+
+		&lt;/div>
+		&lt;!-- /navbar header -->
+
+
+		&lt;!-- Navbar content -->
+		&lt;div class="navbar-collapse collapse" id="navbar-mobile">
+			...
+		&lt;/div>
+		&lt;!-- /navbar content -->
+
+	&lt;/div>
+	&lt;!-- /main navbar -->
+
+	...
+
+&lt;/body>
+&lt;!-- /top fixed navbar -->
+</code></pre>
+
+									</div>
+
+
+									<div class="content-group-lg">
+										<h6 class="text-semibold" id="markup_fixed_bottom">Bottom fixed navbar</h6>
+										<p>Bottom fixed navbar markup is similar to static and top fixed, the only difference is it requires <code>.navbar-fixed-bottom</code> class added to the <code>&lt;navbar></code> container and proper body class to add bottom padding:</p>
+										<pre data-line="2" class="language-markup" data-line="2"><code>&lt;!-- Bottom fixed navbar -->
+&lt;body class="navbar-bottom">
+
+	&lt;!-- Main navbar -->
+	&lt;div class="navbar navbar-inverse navbar-fixed-bottom">
+
+		&lt;!-- Navbar header -->
+		&lt;div class="navbar-header">
+			&lt;a class="navbar-brand" href="index.html">
+				&lt;img src="assets/images/logo_light.png" alt="">
+			&lt;/a>
+
+			&lt;!-- Collapse button -->
+			&lt;ul class="nav navbar-nav pull-right visible-xs-block">
+				&lt;li>
+					&lt;a data-toggle="collapse" data-target="#navbar-mobile">
+						&lt;i class="icon-tree5">&lt;/i>
+					&lt;/a>
+				&lt;/li>
+			&lt;/ul>
+			&lt;!-- /collapse button -->
+
+		&lt;/div>
+		&lt;!-- /navbar header -->
+
+
+		&lt;!-- Navbar content -->
+		&lt;div class="navbar-collapse collapse" id="navbar-mobile">
+			...
+		&lt;/div>
+		&lt;!-- /navbar content -->
+
+	&lt;/div>
+	&lt;!-- /main navbar -->
+
+	...
+
+&lt;/body>
+&lt;!-- /bottom fixed navbar -->
+</code></pre>
+
+									</div>
+
+
+									<div>
+										<h6 class="text-semibold" id="markup_collapsed">Collapsed navbar</h6>
+										<p>There is one additional option, when navbar doesn't have a logo and used as a toolbar. In this case the whole navbar becomes a link on mobiles and tables, all navbar content opens on click. Supports all options stated above:</p>
+										<pre data-line="7-15, 18-22" class="language-markup" data-line="2"><code>&lt;!-- Collapsed navbar -->
+&lt;body>
+	
+	&lt;!-- Navbar -->
+	&lt;div class="navbar navbar-default">
+
+		&lt;!-- Collapse button -->
+		&lt;ul class="nav navbar-nav no-border visible-xs-block">
+			&lt;li>
+				&lt;a class="text-center collapsed" data-toggle="collapse" data-target="#navbar-second-toggle">
+					&lt;i class="icon-menu7">&lt;/i>
+				&lt;/a>
+			&lt;/li>
+		&lt;/ul>
+		&lt;!-- /collapse button -->
+
+
+		&lt;!-- Navbar content -->
+		&lt;div class="navbar-collapse collapse" id="navbar-second-toggle">
+			...
+		&lt;/div>
+		&lt;!-- /navbar content -->
+
+	&lt;/div>
+	&lt;!-- /navbar -->
+
+	...
+
+&lt;/body>
+&lt;!-- /collapsed navbar -->
+</code></pre>
+
+									</div>
+								</div>
+							</div>
+							<!-- /sidebar markup -->
+
+
+							<!-- Navbar classes -->
+							<div class="panel panel-flat">
+								<div class="panel-heading" id="navbar_classes">
+									<h5 class="panel-title">Navbar classes</h5>
+
+									<div class="heading-elements">
+										<ul class="icons-list">
+					                		<li><a data-action="collapse"></a></li>
+					                		<li><a data-action="close"></a></li>
+					                	</ul>
+				                	</div>
+								</div>
+
+								<div class="panel-body">
+									Navbar is a complex and very flexible component, which allows you to control appearance of different types of content, components placement, sizes, colors etc. All this functionality is available by setting proper classes to the navbar components and navbar itself. 
+									Table below demonstrates all available classes that can be used with the navbar:
+								</div>
+
+								<div class="table-responsive">
+									<table class="table table-bordered">
+										<thead>
+											<tr>
+												<th style="width: 20%;">Class</th>
+												<th>Description</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td><code>.navbar</code></td>
+												<td>Default navbar class, must be used with any navbar type and color. Responsible for basic navbar and navbar components styling as a parent container.</td>
+											</tr>
+											<tr>
+												<td><code>.navbar-fixed-top</code></td>
+												<td>Makes navbar sticked to the <code>top</code> of the page. Requires proper class for <code>&lt;body></code> tag, see the table below.</td>
+											</tr>
+											<tr>
+												<td><code>.navbar-fixed-bottom</code></td>
+												<td>Makes navbar sticked to the <code>bottom</code> of the page. Requires proper class for <code>&lt;body></code> tag, see the table below.</td>
+											</tr>
+											<tr>
+												<td><code>.navbar-static-top</code></td>
+												<td>Full-width navbar that scrolls away with the page. Unlike the <code>.navbar-fixed-*</code> classes, no need to add any extra class on the body for padding correction.</td>
+											</tr>
+											<tr>
+												<td><code>.navbar-default</code><br><code>.navbar-inverse</code></td>
+												<td>Default color options for navbar provided by Bootstrap styles: default - white navbar, inverse - dark grey navbar.</td>
+											</tr>
+											<tr>
+												<td><code>.navbar-default-secondary</code></td>
+												<td>If you have 2 light navbars, use this class to darken one of them. Based on default navbar background color.</td>
+											</tr>
+											<tr>
+												<td><code>.navbar-inverse.bg-*</code></td>
+												<td>Optional background colors for navbar. Just add one of available color classes to apply custom color scheme.</td>
+											</tr>
+											<tr>
+												<td><code>.navbar-component</code></td>
+												<td>Display navbar as a stand alone component, with border and rounded corners.</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<!-- /navbar classes -->
+
+
+							<!-- Body classes -->
+							<div class="panel panel-flat" id="body_classes">
+								<div class="panel-heading">
+									<h5 class="panel-title">Body classes</h5>
+									<div class="heading-elements">
+										<ul class="icons-list">
+					                		<li><a data-action="collapse"></a></li>
+					                		<li><a data-action="close"></a></li>
+					                	</ul>
+				                	</div>
+								</div>
+
+								<div class="panel-body">
+									Bottom navbar is available only as a <code>fixed</code> component, always sticked to the bottom of the page. All dropdown menus are automatically changed to dropups in this type of navbar. The fixed navbar will overlay your other content, unless you add necessary to the top of the <code>&lt;body></code>. Depending on the fixed navbar position and size, add one of the classes specified in the following table. By default, the navbar is <code>47px</code> high.
+								</div>
+
+								<div class="table-responsive">
+									<table class="table table-bordered">
+										<thead>
+											<tr>
+												<th style="width: 20%;">Class</th>
+												<th>Description</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td><code>.navbar-top</code><br><code>.navbar-bottom</code></td>
+												<td>This class adds necessary <code>top</code> or <code>bottom</code> padding to the <code>&lt;body></code> tag. Works only with default navbar height. If another height is specified, apply another class, see the line below.</td>
+											</tr>
+											<tr>
+												<td><code>.navbar-top-*</code><br><code>.navbar-bottom-*</code></td>
+												<td>Controls padding for different navbar heights, for both positions. Available classes: mini (<code>*-xs</code>), small (<code>*-sm</code>) and large (<code>*-lg</code>). Default navbar requires <code>.navbar-top(bottom)-fixed</code> class.</td>
+											</tr>
+											<tr>
+												<td><code>.navbar-top-*-*</code><br><code>.navbar-bottom-*-*</code></td>
+												<td>This type of classes is used only with multiple navbars. This is the only class, where <code>*-md</code> suffix is available. For example class <code>.navbar-top-md-xs</code> means main navbar has default height (<code>.*-md-*</code>), secondary navbar - mini height (<code>.*-xs</code>). It calculates both navbars height and adds top or bottom padding with the same value.</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<!-- /body classes -->
+
+						</div>
+					</div>
+					<!-- /detached content -->
+
+
+					<!-- Detached sidebar -->
+					<div class="sidebar-detached">
+			        	<div class="sidebar sidebar-default">
+							<div class="sidebar-content">
+
+				        		<!-- Contact author -->
+								<div class="sidebar-category no-margin">
+									<div class="category-title">
+										<span>Page navigation</span>
+										<i class="icon-menu7 text-muted pull-right"></i>
+									</div>
+
+									<div class="category-content">
+										<a href="http://themeforest.net/user/kopyov" class="btn bg-blue btn-block" target="_blank"><i class="icon-reading position-left"></i> Contact author</a>
+									</div>
+								</div>
+								<!-- /contact author -->
+
+			        			
+			        			<!-- Navigation -->
+								<div class="sidebar-category">
+									<div class="category-content no-padding">
+										<ul class="nav navigation no-padding-top">
+											<li class="navigation-header"><i class="icon-history pull-right"></i> Navigation</li>
+											<li><a href="#overview">Navbars overview</a></li>
+											<li><a href="#options">Navbar options</a></li>
+											<li>
+												<a href="#markup">Markup</a>
+												<ul>
+													<li><a href="#markup_static">Static navbar</a></li>
+													<li><a href="#markup_fixed_top">Top fixed navbar</a></li>
+													<li><a href="#markup_fixed_bottom">Bottom fixed navbar</a></li>
+													<li><a href="#markup_collapsed">Collapsed navbar</a></li>
+												</ul>
+											</li>
+											<li><a href="#navbar_classes">Navbar classes</a></li>
+											<li><a href="#body_classes">Body classes</a></li>
+											<li class="navigation-divider"></li>
+											<li><a href="#">Go to top <i class="icon-circle-up2 pull-right"></i></a></li>
+							            </ul>
+						            </div>
+					            </div>
+					            <!-- /navigation -->
+
+				            </div>
+			            </div>
+		            </div>
+		            <!-- /detached sidebar -->
+
+
+					<!-- Footer -->
+					<div class="footer text-muted">
+						&copy; 2015. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
+					</div>
+					<!-- /footer -->
+
+				</div>
+				<!-- /content area -->
+
+			</div>
+			<!-- /main content -->
+
+		</div>
+		<!-- /page content -->
+
+	</div>
+	<!-- /page container -->
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+//Builder Related Styles
+@import "core.scss";
+
+app-casual-builder,app-executive-builder,app-simplywhite-builder,app-condensed-builder,app-corporate-builder{
+    height: 100%;
+    & > div{
+        height: 100%;
+    }
+}
+.demo-container{
+    display: block;
+}
+.builder{
+    width: 423px;
+    right: -423px;
+    & > div{
+        height:calc(100% - 12px);
+    }
+    a{
+        position: relative;
+        display: block;
+        width: 100%;
+        color:mix($color-master, #fff, 60%);
+        & > img{
+            opacity: 0.33;
+            @include transition(opacity 0.1s linear);
+        }
+
+        &.active{
+            color:$color-master;
+             & > img{
+                opacity: 0.87;
+             }
+        }
+        
+        &:hover{
+            color:mix($color-master, #fff, 80%);
+             & > img{
+                opacity: 0.7;
+             }
+        }
+        
+        &.btn-toggle-layout{
+            &.active{
+            }
+        }
+    }
+
+    .nav-tabs {
+        background-color: transparent;
+        padding: 0;
+        & > li > a{
+            min-width: 99px;
+            padding: 16px 0;
+            padding-bottom: 24px;
+        }
+    }
+    .builder-close{
+        position: absolute;
+        right: 36px;
+        top: 20px;
+        padding: 7px;
+        width: auto;
+        z-index: 10;
+    }
+    .builder-toggle{
+        position: absolute;
+        width: 54px;
+        height: 50px;
+        top: 20%;
+        left: -48px;
+        text-align: center;
+        line-height: 50px;
+        cursor: pointer;
+    }
+    &:before{
+        position: absolute;
+        content: '';
+        width: 48px;
+        height: 50px;
+        background-color: #fff;
+        top:20%;
+        left: -47px;
+        box-shadow:0 0 9px rgba(191,191,191,.36);
+        border-left: 1px solid rgba(222,227,231,.56);
+        @include border-left-radius(4px);
+    }
+    &:after{
+        position: absolute;
+        content: '';
+        background-color: #fff;
+        width: 5px;
+        height: 50px;
+        left: 0;
+        top: 20%;
+    }
+
+}
+.builder {
+    a.btn-toggle-layout.active:before, .content-select.active:before {
+      background-image: url(../../assets/img/demo/tick.svg);
+      width: 23px;
+      height: 23px;
+      content: '';
+      position: absolute;
+      top: 84px;
+      right: -10px;
+      z-index: 10;
+    }
+    a.active > img {
+      opacity: .87;
+    }
+    ul{
+        padding: 0;
+    }
+    ul li {
+        list-style: none;
+    }
+    .tab-wrapper .nav-tabs-simple .active-bar{
+        background-color:$color-primary
+    }
+    .scrollable {
+        padding-top: 27px;
+        height: 100%;
+        overflow-x: hidden!important;
+    }
+
+    .tab-pane {
+        height: 100%;
+        overflow-x: hidden!important;
+    }
+    .tab-wrapper .tab-content-wrapper{
+        height: calc(100% - 54px);
+        display: flex;
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+    pg-tabset{
+        display: unset;
+        position: unset;
+    }
+    .tab-wrapper{
+        height: 100%;
+    }
+    .ps--active-y > .ps__rail-y{
+        right: 0 !important;
+        left: auto !important;
+    }
+}
+
+

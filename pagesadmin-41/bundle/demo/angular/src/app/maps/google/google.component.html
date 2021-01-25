@@ -1,0 +1,18 @@
+        <!-- START CONTENT INNER -->
+        <pg-container extraHorizontalClass="relative">
+          <div class="map-controls">
+            <div class="pull-left">
+              <div class="btn-group btn-group-vertical">
+                <button (click)="zoomIn()" class="btn btn-success btn-xs"><i class="fa fa-plus"></i>
+                </button>
+                <button (click)="zoomOut()" class="btn btn-success btn-xs"><i class="fa fa-minus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </pg-container>
+        <!-- Map -->
+        <div class="map-container full-width full-height">
+          <ngui-map  [zoom]="zoomLevel" [styles]="styles" [center]="center" [disableDefaultUI]="disableDefaultUI"></ngui-map>
+        </div>
+        <!-- END CONTENT INNER -->

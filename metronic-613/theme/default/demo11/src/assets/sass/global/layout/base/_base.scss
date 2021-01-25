@@ -1,0 +1,90 @@
+//
+// Base
+//
+
+
+
+
+// Page body
+body {
+	background: $kt-page-body-bg-color;
+
+	// Container 
+	.kt-container {
+		.kt-container {
+			width: 100%;
+		}
+	}
+}
+
+// Desktop
+@include kt-desktop() {
+	// Container 
+	.kt-container {
+		padding: 0 kt-get($kt-page-padding, desktop);
+	}
+	
+	// Body
+	.kt-body {
+		> .kt-container {
+			.kt-aside--enabled & {
+				padding-right: 0 !important;
+			}			
+		}
+	}
+
+	// Wrapper
+	.kt-wrapper {
+		// Fixed Header
+		.kt-header--fixed & {
+			padding-top: kt-get($kt-header-config, base, desktop, default, height);
+		}
+	}
+
+	// Subheader
+	.kt-subheader {
+		margin-top: kt-get($kt-page-padding, desktop) - 5px;
+		padding: 5px 0 !important;
+
+		// aside disabled
+		body:not(.kt-aside--enabled) & {
+			padding-left: 0;	
+		}
+	}
+}
+
+// Page fluid mode(below $kt-page-container-width)
+@media (min-width: #{$kt-page-container-width + (2 * $kt-page-fluid-container-padding) - 1px}) {
+	// Page container
+	.kt-container.kt-container--fluid {
+		padding: 0 $kt-page-fluid-container-padding;
+	}
+}
+
+// Tablet & Mobile Mode(1024px and below)
+@include kt-tablet-and-mobile() {
+	// Container 
+	.kt-container {
+		padding: 0 kt-get($kt-page-padding, mobile);
+	}
+
+	// Body
+	.kt-body {
+		> .kt-container {
+			padding: 0 !important;
+		}
+	}
+
+	// Page
+	.kt-wrapper {
+		// Fixed Header
+		.kt-header-mobile--fixed & {
+			padding-top: kt-get($kt-header-config, base, mobile, self, default, height);
+		}
+	}
+
+	// Subheader
+	.kt-subheader {
+		padding: 5px 0 !important;
+	}
+}

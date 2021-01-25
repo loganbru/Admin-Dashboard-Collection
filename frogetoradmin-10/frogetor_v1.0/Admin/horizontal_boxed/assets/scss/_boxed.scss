@@ -1,0 +1,38 @@
+//
+// Boxed
+// 
+
+.boxed{
+  .topbar,
+  .page-wrapper,
+  .page-wrapper-img,
+  .footer{
+    max-width: 1320px;
+    margin: 0 auto;
+  }  
+  .page-wrapper .page-wrapper-inner,
+  .page-wrapper-img,
+  .navbar-custom{
+    padding: 0 20px;
+  }
+  .page-wrapper .page-content {
+    margin: 0 10px 60px;
+  }
+  .page-title-box{
+    padding: 30px 0px;
+  }
+  .page-wrapper{
+    min-height: 660px;
+  }
+}
+
+@media (max-width: 768px){
+  .page-wrapper .page-wrapper-inner {
+    padding: 0;
+    margin-bottom: 0;
+  }
+  .navbar-custom-menu{
+    margin:  0;
+    padding-top: 20px;
+  }
+}

@@ -1,0 +1,624 @@
+<pg-container>
+  <div class="m-t-50">
+    <pg-tabset tabAnimation="slide-left" Type="linetriangle" extraTabClass="no-border" extraTabContentClass="bg-white b-t b-light" [SelectedIndex]="selectedStep">
+      <pg-tab>
+        <ng-template #TabHeading><i class="fa fa-shopping-cart tab-icon"></i> <span>Your cart</span></ng-template>
+          <div class="row row-same-height">
+            <div class="col-md-5 b-r b-dashed b-grey sm-b-b">
+              <div class="padding-30 sm-padding-5 sm-m-t-15 m-t-50">
+                <i class="fa fa-shopping-cart fa-2x hint-text"></i>
+                <h2>Your Bags are ready to check out!</h2>
+                <p>Discover goods you'll love from brands that inspire. The easiest way to open your own online store. Discover amazing stuff or open your own store for free!</p>
+                <p class="small hint-text">Below is a sample page for your cart , Created using pages design UI Elementes</p>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div class="padding-30 sm-padding-5">
+                <table class="table table-condensed">
+                  <tr>
+                    <td class="col-lg-8 col-md-6 col-sm-7 ">
+                      <a href="javascript:void(0)" class="remove-item"><i class="pg pg-close"></i></a>
+                      <span class="m-l-10 font-montserrat fs-11 all-caps">Webarch UI Framework</span>
+                      <span class="m-l-10 ">Dashboard UI Pack</span>
+                    </td>
+                    <td class=" col-lg-2 col-md-3 col-sm-3 text-right">
+                      <span>Qty 1</span>
+                    </td>
+                    <td class=" col-lg-2 col-md-3 col-sm-2 text-right">
+                      <h4 class="text-primary no-margin font-montserrat">$27</h4>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="col-lg-8 col-md-6 col-sm-7">
+                      <a href="javascript:void(0)" class="remove-item"><i class="pg pg-close"></i></a>
+                      <span class="m-l-10 font-montserrat fs-11 all-caps">Pages UI Framework</span>
+                      <span class="m-l-10 ">Next Gen UI Pack</span>
+                    </td>
+                    <td class="col-lg-2 col-md-3 col-sm-3 text-right">
+                      <span>Qty 1</span>
+                    </td>
+                    <td class=" col-lg-2 col-md-3 col-sm-2 text-right">
+                      <h4 class="text-primary no-margin font-montserrat">$27</h4>
+                    </td>
+                  </tr>
+                </table>
+                <h5>Donation</h5>
+                <div class="row">
+                  <div class="col-lg-7 col-md-6">
+                    <p class="no-margin">Donate now and give clean, safe water to those in need. </p>
+                    <p class="small hint-text">
+                      100% of your donation goes to the field, and you can track the progress of every dollar spent. <a href="javascript:void(0)">Click Here</a>
+                    </p>
+                  </div>
+                  <div class="col-lg-5 col-md-6">
+                      <form role="form"  autocomplete="off" [formGroup]="pricingOptForm" class="form-inline">
+                          <div class="btn-group" btnRadioGroup formControlName="pricingPick">
+                            <Label btnRadio="A" class="btn btn-default"> <span class="fs-16">$0</span></Label>
+                            <Label btnRadio="B" class="btn btn-default"> <span class="fs-16">$10</span></Label>
+                            <Label btnRadio="C" class="btn btn-default"><span class="fs-16">$20</span></Label>
+                          </div>
+                      </form>
+                  </div>
+                </div>
+                <br>
+                <div class="row b-a b-grey no-margin">
+                  <div class="col-md-3 p-l-10 sm-padding-15 align-items-center d-flex">
+                    <div>
+                      <h5 class="font-montserrat all-caps small no-margin hint-text bold">Discount (10%)</h5>
+                      <p class="no-margin">$10</p>
+                    </div>
+                  </div>
+                  <div class="col-md-7 col-middle sm-padding-15 align-items-center d-flex">
+                    <div>
+                      <h5 class="font-montserrat all-caps small no-margin hint-text bold">Donations</h5>
+                      <p class="no-margin">$0</p>
+                    </div>
+                  </div>
+                  <div class="col-md-2 text-right bg-primary padding-10">
+                    <h5 class="font-montserrat all-caps small no-margin hint-text text-white bold">Total</h5>
+                    <h4 class="no-margin text-white">$44</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-end p-t-20 p-b-20">
+            <button class="btn btn-primary btn-cons pull-right btn-animated from-left fa fa-credit-card" type="button" (click)="navigateToShipping()">
+            <span>Next</span>
+            </button>
+          </div>
+            <div class="wizard-footer padding-20 bg-master-light">
+              <p class="small hint-text pull-left no-margin">
+                The Top Content Is Soley Created using pages UI Elements such as Invoice, Tabs, Form Layouts etc. and are prior for representation Purpose Only.
+              </p>
+              <div class="pull-right">
+                <img src="assets/img/logo.png" alt="logo" pgRetina src1x="assets/img/logo.png" src2x="assets/img/logo_2x.png" width="78" height="22">
+              </div>
+              <div class="clearfix"></div>
+            </div>
+        </pg-tab>
+      <pg-tab [Disabled]="disabledTabs.shippingTab">
+        <ng-template #TabHeading><i class="fa fa-truck tab-icon"></i> <span>Shipping information</span></ng-template>
+          <div class="row row-same-height">
+            <div class="col-md-5 b-r b-dashed b-grey ">
+              <div class="padding-30 sm-padding-5 sm-m-t-15 m-t-50">
+                <h2>Your Information is safe with us!</h2>
+                <p>We respect your privacy and protect it with strong encryption, plus strict policies . Two-step verification, which we encourage all our customers to use.</p>
+                <p class="small hint-text">Below is a sample page for your cart , Created using pages design UI Elementes</p>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div class="padding-30 sm-padding-5">
+                <form role="form"  autocomplete="off" [formGroup]="shippingForm">
+                  <p>Name and Email Address</p>
+                  <div class="form-group-attached">
+                    <div class="row clearfix">
+                      <div class="col-sm-6">
+                        <div class="form-group form-group-default required" [class.has-error]="getFormControl('firstName').invalid && (getFormControl('firstName').dirty || getFormControl('firstName').touched)">
+                          <Label>First name</Label>
+                          <input  pgFormGroupDefault type="text" class="form-control" name="firstName" formControlName="firstName">
+                          <div class="invalid-tooltip" *ngIf="getFormControl('firstName').invalid && (getFormControl('firstName').dirty || getFormControl('firstName').touched)">
+                              This field is required.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group form-group-default">
+                          <Label>Last name</Label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group form-group-default required" [class.has-error]="getFormControl('email').invalid && (getFormControl('email').dirty || getFormControl('email').touched)">
+                        <Label>Email</Label>
+                        <input  pgFormGroupDefault type="text" class="form-control" name="email" formControlName="email">
+                        <div class="invalid-tooltip" *ngIf="getFormControl('email').invalid && (getFormControl('email').dirty || getFormControl('email').touched)">
+                            This field is required.
+                        </div>
+                      </div>
+                  </div>
+                  <br>
+                  <p>Billing Address</p>
+                  <div class="form-group-attached">
+                    <div class="form-group form-group-default required" [class.has-error]="getFormControl('address').invalid && (getFormControl('address').dirty || getFormControl('address').touched)">
+                        <Label>Address</Label>
+                        <input  pgFormGroupDefault type="text" class="form-control" name="address" formControlName="address" placeholder="Current address">
+                        <div class="invalid-tooltip" *ngIf="getFormControl('address').invalid && (getFormControl('address').dirty || getFormControl('address').touched)">
+                            This field is required.
+                        </div>
+                    </div>
+                    <div class="row clearfix">
+                      <div class="col-sm-6">
+                        <div class="form-group form-group-default required form-group-default-selectFx">
+                          <Label>Country</Label>
+                          <pg-select-fx class="cs-select cs-skin-slide cs-transparent form-control" [PlaceHolder]="'Select'">
+                            <pg-selectfx-option Value="AF" Label="Afghanistan">Afghanistan</pg-selectfx-option>
+                            <pg-selectfx-option Value="AX" Label="Åland Islands">Åland Islands</pg-selectfx-option>
+                            <pg-selectfx-option Value="AL" Label="Albania">Albania</pg-selectfx-option>
+                            <pg-selectfx-option Value="DZ" Label="Algeria">Algeria</pg-selectfx-option>
+                            <pg-selectfx-option Value="AS" Label="American Samoa">American Samoa</pg-selectfx-option>
+                            <pg-selectfx-option Value="AD" Label="Andorra">Andorra</pg-selectfx-option>
+                            <pg-selectfx-option Value="AO" Label="Angola">Angola</pg-selectfx-option>
+                            <pg-selectfx-option Value="AI" Label="Anguilla">Anguilla</pg-selectfx-option>
+                            <pg-selectfx-option Value="AQ" Label="Antarctica">Antarctica</pg-selectfx-option>
+                            <pg-selectfx-option Value="AG" Label="Antigua and Barbuda">Antigua and Barbuda</pg-selectfx-option>
+                            <pg-selectfx-option Value="AR" Label="Argentina">Argentina</pg-selectfx-option>
+                            <pg-selectfx-option Value="AM" Label="Armenia">Armenia</pg-selectfx-option>
+                            <pg-selectfx-option Value="AW" Label="Aruba">Aruba</pg-selectfx-option>
+                            <pg-selectfx-option Value="AU" Label="Australia">Australia</pg-selectfx-option>
+                            <pg-selectfx-option Value="AT" Label="Austria">Austria</pg-selectfx-option>
+                            <pg-selectfx-option Value="AZ" Label="Azerbaijan">Azerbaijan</pg-selectfx-option>
+                            <pg-selectfx-option Value="BS" Label="Bahamas">Bahamas</pg-selectfx-option>
+                            <pg-selectfx-option Value="BH" Label="Bahrain">Bahrain</pg-selectfx-option>
+                            <pg-selectfx-option Value="BD" Label="Bangladesh">Bangladesh</pg-selectfx-option>
+                            <pg-selectfx-option Value="BB" Label="Barbados">Barbados</pg-selectfx-option>
+                            <pg-selectfx-option Value="BY" Label="Belarus">Belarus</pg-selectfx-option>
+                            <pg-selectfx-option Value="BE" Label="Belgium">Belgium</pg-selectfx-option>
+                            <pg-selectfx-option Value="BZ" Label="Belize">Belize</pg-selectfx-option>
+                            <pg-selectfx-option Value="BJ" Label="Benin">Benin</pg-selectfx-option>
+                            <pg-selectfx-option Value="BM" Label="Bermuda">Bermuda</pg-selectfx-option>
+                            <pg-selectfx-option Value="BT" Label="Bhutan">Bhutan</pg-selectfx-option>
+                            <pg-selectfx-option Value="BO" Label="Bolivia, Plurinational State of">Bolivia, Plurinational State of</pg-selectfx-option>
+                            <pg-selectfx-option Value="BQ" Label="Bonaire, Sint Eustatius and Saba">Bonaire, Sint Eustatius and Saba</pg-selectfx-option>
+                            <pg-selectfx-option Value="BA" Label="Bosnia and Herzegovina">Bosnia and Herzegovina</pg-selectfx-option>
+                            <pg-selectfx-option Value="BW" Label="Botswana">Botswana</pg-selectfx-option>
+                            <pg-selectfx-option Value="BV" Label="Bouvet Island">Bouvet Island</pg-selectfx-option>
+                            <pg-selectfx-option Value="BR" Label="Brazil">Brazil</pg-selectfx-option>
+                            <pg-selectfx-option Value="IO" Label="British Indian Ocean Territory">British Indian Ocean Territory</pg-selectfx-option>
+                            <pg-selectfx-option Value="BN" Label="Brunei Darussalam">Brunei Darussalam</pg-selectfx-option>
+                            <pg-selectfx-option Value="BG" Label="Bulgaria">Bulgaria</pg-selectfx-option>
+                            <pg-selectfx-option Value="BF" Label="Burkina Faso">Burkina Faso</pg-selectfx-option>
+                            <pg-selectfx-option Value="BI" Label="Burundi">Burundi</pg-selectfx-option>
+                            <pg-selectfx-option Value="KH" Label="Cambodia">Cambodia</pg-selectfx-option>
+                            <pg-selectfx-option Value="CM" Label="Cameroon">Cameroon</pg-selectfx-option>
+                            <pg-selectfx-option Value="CA" Label="Canada">Canada</pg-selectfx-option>
+                            <pg-selectfx-option Value="CV" Label="Cape Verde">Cape Verde</pg-selectfx-option>
+                            <pg-selectfx-option Value="KY" Label="Cayman Islands">Cayman Islands</pg-selectfx-option>
+                            <pg-selectfx-option Value="CF" Label="Central African Republic">Central African Republic</pg-selectfx-option>
+                            <pg-selectfx-option Value="TD" Label="Chad">Chad</pg-selectfx-option>
+                            <pg-selectfx-option Value="CL" Label="Chile">Chile</pg-selectfx-option>
+                            <pg-selectfx-option Value="CN" Label="China">China</pg-selectfx-option>
+                            <pg-selectfx-option Value="CX" Label="Christmas Island">Christmas Island</pg-selectfx-option>
+                            <pg-selectfx-option Value="CC" Label="Cocos (Keeling) Islands">Cocos (Keeling) Islands</pg-selectfx-option>
+                            <pg-selectfx-option Value="CO" Label="Colombia">Colombia</pg-selectfx-option>
+                            <pg-selectfx-option Value="KM" Label="Comoros">Comoros</pg-selectfx-option>
+                            <pg-selectfx-option Value="CG" Label="Congo">Congo</pg-selectfx-option>
+                            <pg-selectfx-option Value="CD" Label="Congo, the Democratic Republic of the">Congo, the Democratic Republic of the</pg-selectfx-option>
+                            <pg-selectfx-option Value="CK" Label="Cook Islands">Cook Islands</pg-selectfx-option>
+                            <pg-selectfx-option Value="CR" Label="Costa Rica">Costa Rica</pg-selectfx-option>
+                            <pg-selectfx-option Value="CI" Label="Côte d'Ivoire">Côte d'Ivoire</pg-selectfx-option>
+                            <pg-selectfx-option Value="HR" Label="Croatia">Croatia</pg-selectfx-option>
+                            <pg-selectfx-option Value="CU" Label="Cuba">Cuba</pg-selectfx-option>
+                            <pg-selectfx-option Value="CW" Label="Curaçao">Curaçao</pg-selectfx-option>
+                            <pg-selectfx-option Value="CY" Label="Cyprus">Cyprus</pg-selectfx-option>
+                            <pg-selectfx-option Value="CZ" Label="Czech Republic">Czech Republic</pg-selectfx-option>
+                            <pg-selectfx-option Value="DK" Label="Denmark">Denmark</pg-selectfx-option>
+                            <pg-selectfx-option Value="DJ" Label="Djibouti">Djibouti</pg-selectfx-option>
+                            <pg-selectfx-option Value="DM" Label="Dominica">Dominica</pg-selectfx-option>
+                            <pg-selectfx-option Value="DO" Label="Dominican Republic">Dominican Republic</pg-selectfx-option>
+                            <pg-selectfx-option Value="EC" Label="Ecuador">Ecuador</pg-selectfx-option>
+                            <pg-selectfx-option Value="EG" Label="Egypt">Egypt</pg-selectfx-option>
+                            <pg-selectfx-option Value="SV" Label="El Salvador">El Salvador</pg-selectfx-option>
+                            <pg-selectfx-option Value="GQ" Label="Equatorial Guinea">Equatorial Guinea</pg-selectfx-option>
+                            <pg-selectfx-option Value="ER" Label="Eritrea">Eritrea</pg-selectfx-option>
+                            <pg-selectfx-option Value="EE" Label="Estonia">Estonia</pg-selectfx-option>
+                            <pg-selectfx-option Value="ET" Label="Ethiopia">Ethiopia</pg-selectfx-option>
+                            <pg-selectfx-option Value="FK" Label="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</pg-selectfx-option>
+                            <pg-selectfx-option Value="FO" Label="Faroe Islands">Faroe Islands</pg-selectfx-option>
+                            <pg-selectfx-option Value="FJ" Label="Fiji">Fiji</pg-selectfx-option>
+                            <pg-selectfx-option Value="FI" Label="Finland">Finland</pg-selectfx-option>
+                            <pg-selectfx-option Value="FR" Label="France">France</pg-selectfx-option>
+                            <pg-selectfx-option Value="GF" Label="French Guiana">French Guiana</pg-selectfx-option>
+                            <pg-selectfx-option Value="PF" Label="French Polynesia">French Polynesia</pg-selectfx-option>
+                            <pg-selectfx-option Value="TF" Label="French Southern Territories">French Southern Territories</pg-selectfx-option>
+                            <pg-selectfx-option Value="GA" Label="Gabon">Gabon</pg-selectfx-option>
+                            <pg-selectfx-option Value="GM" Label="Gambia">Gambia</pg-selectfx-option>
+                            <pg-selectfx-option Value="GE" Label="Georgia">Georgia</pg-selectfx-option>
+                            <pg-selectfx-option Value="DE" Label="Germany">Germany</pg-selectfx-option>
+                            <pg-selectfx-option Value="GH" Label="Ghana">Ghana</pg-selectfx-option>
+                            <pg-selectfx-option Value="GI" Label="Gibraltar">Gibraltar</pg-selectfx-option>
+                            <pg-selectfx-option Value="GR" Label="Greece">Greece</pg-selectfx-option>
+                            <pg-selectfx-option Value="GL" Label="Greenland">Greenland</pg-selectfx-option>
+                            <pg-selectfx-option Value="GD" Label="Grenada">Grenada</pg-selectfx-option>
+                            <pg-selectfx-option Value="GP" Label="Guadeloupe">Guadeloupe</pg-selectfx-option>
+                            <pg-selectfx-option Value="GU" Label="Guam">Guam</pg-selectfx-option>
+                            <pg-selectfx-option Value="GT" Label="Guatemala">Guatemala</pg-selectfx-option>
+                            <pg-selectfx-option Value="GG" Label="Guernsey">Guernsey</pg-selectfx-option>
+                            <pg-selectfx-option Value="GN" Label="Guinea">Guinea</pg-selectfx-option>
+                            <pg-selectfx-option Value="GW" Label="Guinea-Bissau">Guinea-Bissau</pg-selectfx-option>
+                            <pg-selectfx-option Value="GY" Label="Guyana">Guyana</pg-selectfx-option>
+                            <pg-selectfx-option Value="HT" Label="Haiti">Haiti</pg-selectfx-option>
+                            <pg-selectfx-option Value="HM" Label="Heard Island and McDonald Islands">Heard Island and McDonald Islands</pg-selectfx-option>
+                            <pg-selectfx-option Value="VA" Label="Holy See (Vatican City State)">Holy See (Vatican City State)</pg-selectfx-option>
+                            <pg-selectfx-option Value="HN" Label="Honduras">Honduras</pg-selectfx-option>
+                            <pg-selectfx-option Value="HK" Label="Hong Kong">Hong Kong</pg-selectfx-option>
+                            <pg-selectfx-option Value="HU" Label="Hungary">Hungary</pg-selectfx-option>
+                            <pg-selectfx-option Value="IS" Label="Iceland">Iceland</pg-selectfx-option>
+                            <pg-selectfx-option Value="IN" Label="India">India</pg-selectfx-option>
+                            <pg-selectfx-option Value="ID" Label="Indonesia">Indonesia</pg-selectfx-option>
+                            <pg-selectfx-option Value="IR" Label="Iran, Islamic Republic of">Iran, Islamic Republic of</pg-selectfx-option>
+                            <pg-selectfx-option Value="IQ" Label="Iraq">Iraq</pg-selectfx-option>
+                            <pg-selectfx-option Value="IE" Label="Ireland">Ireland</pg-selectfx-option>
+                            <pg-selectfx-option Value="IM" Label="Isle of Man">Isle of Man</pg-selectfx-option>
+                            <pg-selectfx-option Value="IL" Label="Israel">Israel</pg-selectfx-option>
+                            <pg-selectfx-option Value="IT" Label="Italy">Italy</pg-selectfx-option>
+                            <pg-selectfx-option Value="JM" Label="Jamaica">Jamaica</pg-selectfx-option>
+                            <pg-selectfx-option Value="JP" Label="Japan">Japan</pg-selectfx-option>
+                            <pg-selectfx-option Value="JE" Label="Jersey">Jersey</pg-selectfx-option>
+                            <pg-selectfx-option Value="JO" Label="Jordan">Jordan</pg-selectfx-option>
+                            <pg-selectfx-option Value="KZ" Label="Kazakhstan">Kazakhstan</pg-selectfx-option>
+                            <pg-selectfx-option Value="KE" Label="Kenya">Kenya</pg-selectfx-option>
+                            <pg-selectfx-option Value="KI" Label="Kiribati">Kiribati</pg-selectfx-option>
+                            <pg-selectfx-option Value="KP" Label="Korea, Democratic People's Republic of">Korea, Democratic People's Republic of</pg-selectfx-option>
+                            <pg-selectfx-option Value="KR" Label="Korea, Republic of">Korea, Republic of</pg-selectfx-option>
+                            <pg-selectfx-option Value="KW" Label="Kuwait">Kuwait</pg-selectfx-option>
+                            <pg-selectfx-option Value="KG" Label="Kyrgyzstan">Kyrgyzstan</pg-selectfx-option>
+                            <pg-selectfx-option Value="LA" Label="Lao People's Democratic Republic">Lao People's Democratic Republic</pg-selectfx-option>
+                            <pg-selectfx-option Value="LV" Label="Latvia">Latvia</pg-selectfx-option>
+                            <pg-selectfx-option Value="LB" Label="Lebanon">Lebanon</pg-selectfx-option>
+                            <pg-selectfx-option Value="LS" Label="Lesotho">Lesotho</pg-selectfx-option>
+                            <pg-selectfx-option Value="LR" Label="Liberia">Liberia</pg-selectfx-option>
+                            <pg-selectfx-option Value="LY" Label="Libya">Libya</pg-selectfx-option>
+                            <pg-selectfx-option Value="LI" Label="Liechtenstein">Liechtenstein</pg-selectfx-option>
+                            <pg-selectfx-option Value="LT" Label="Lithuania">Lithuania</pg-selectfx-option>
+                            <pg-selectfx-option Value="LU" Label="Luxembourg">Luxembourg</pg-selectfx-option>
+                            <pg-selectfx-option Value="MO" Label="Macao">Macao</pg-selectfx-option>
+                            <pg-selectfx-option Value="MK" Label="Macedonia, the former Yugoslav Republic of">Macedonia, the former Yugoslav Republic of</pg-selectfx-option>
+                            <pg-selectfx-option Value="MG" Label="Madagascar">Madagascar</pg-selectfx-option>
+                            <pg-selectfx-option Value="MW" Label="Malawi">Malawi</pg-selectfx-option>
+                            <pg-selectfx-option Value="MY" Label="Malaysia">Malaysia</pg-selectfx-option>
+                            <pg-selectfx-option Value="MV" Label="Maldives">Maldives</pg-selectfx-option>
+                            <pg-selectfx-option Value="ML" Label="Mali">Mali</pg-selectfx-option>
+                            <pg-selectfx-option Value="MT" Label="Malta">Malta</pg-selectfx-option>
+                            <pg-selectfx-option Value="MH" Label="Marshall Islands">Marshall Islands</pg-selectfx-option>
+                            <pg-selectfx-option Value="MQ" Label="Martinique">Martinique</pg-selectfx-option>
+                            <pg-selectfx-option Value="MR" Label="Mauritania">Mauritania</pg-selectfx-option>
+                            <pg-selectfx-option Value="MU" Label="Mauritius">Mauritius</pg-selectfx-option>
+                            <pg-selectfx-option Value="YT" Label="Mayotte">Mayotte</pg-selectfx-option>
+                            <pg-selectfx-option Value="MX" Label="Mexico">Mexico</pg-selectfx-option>
+                            <pg-selectfx-option Value="FM" Label="Micronesia, Federated States of">Micronesia, Federated States of</pg-selectfx-option>
+                            <pg-selectfx-option Value="MD" Label="Moldova, Republic of">Moldova, Republic of</pg-selectfx-option>
+                            <pg-selectfx-option Value="MC" Label="Monaco">Monaco</pg-selectfx-option>
+                            <pg-selectfx-option Value="MN" Label="Mongolia">Mongolia</pg-selectfx-option>
+                            <pg-selectfx-option Value="ME" Label="Montenegro">Montenegro</pg-selectfx-option>
+                            <pg-selectfx-option Value="MS" Label="Montserrat">Montserrat</pg-selectfx-option>
+                            <pg-selectfx-option Value="MA" Label="Morocco">Morocco</pg-selectfx-option>
+                            <pg-selectfx-option Value="MZ" Label="Mozambique">Mozambique</pg-selectfx-option>
+                            <pg-selectfx-option Value="MM" Label="Myanmar">Myanmar</pg-selectfx-option>
+                            <pg-selectfx-option Value="NA" Label="Namibia">Namibia</pg-selectfx-option>
+                            <pg-selectfx-option Value="NR" Label="Nauru">Nauru</pg-selectfx-option>
+                            <pg-selectfx-option Value="NP" Label="Nepal">Nepal</pg-selectfx-option>
+                            <pg-selectfx-option Value="NL" Label="Netherlands">Netherlands</pg-selectfx-option>
+                            <pg-selectfx-option Value="NC" Label="New Caledonia">New Caledonia</pg-selectfx-option>
+                            <pg-selectfx-option Value="NZ" Label="New Zealand">New Zealand</pg-selectfx-option>
+                            <pg-selectfx-option Value="NI" Label="Nicaragua">Nicaragua</pg-selectfx-option>
+                            <pg-selectfx-option Value="NE" Label="Niger">Niger</pg-selectfx-option>
+                            <pg-selectfx-option Value="NG" Label="Nigeria">Nigeria</pg-selectfx-option>
+                            <pg-selectfx-option Value="NU" Label="Niue">Niue</pg-selectfx-option>
+                            <pg-selectfx-option Value="NF" Label="Norfolk Island">Norfolk Island</pg-selectfx-option>
+                            <pg-selectfx-option Value="MP" Label="Northern Mariana Islands">Northern Mariana Islands</pg-selectfx-option>
+                            <pg-selectfx-option Value="NO" Label="Norway">Norway</pg-selectfx-option>
+                            <pg-selectfx-option Value="OM" Label="Oman">Oman</pg-selectfx-option>
+                            <pg-selectfx-option Value="PK" Label="Pakistan">Pakistan</pg-selectfx-option>
+                            <pg-selectfx-option Value="PW" Label="Palau">Palau</pg-selectfx-option>
+                            <pg-selectfx-option Value="PS" Label="Palestinian Territory, Occupied">Palestinian Territory, Occupied</pg-selectfx-option>
+                            <pg-selectfx-option Value="PA" Label="Panama">Panama</pg-selectfx-option>
+                            <pg-selectfx-option Value="PG" Label="Papua New Guinea">Papua New Guinea</pg-selectfx-option>
+                            <pg-selectfx-option Value="PY" Label="Paraguay">Paraguay</pg-selectfx-option>
+                            <pg-selectfx-option Value="PE" Label="Peru">Peru</pg-selectfx-option>
+                            <pg-selectfx-option Value="PH" Label="Philippines">Philippines</pg-selectfx-option>
+                            <pg-selectfx-option Value="PN" Label="Pitcairn">Pitcairn</pg-selectfx-option>
+                            <pg-selectfx-option Value="PL" Label="Poland">Poland</pg-selectfx-option>
+                            <pg-selectfx-option Value="PT" Label="Portugal">Portugal</pg-selectfx-option>
+                            <pg-selectfx-option Value="PR" Label="Puerto Rico">Puerto Rico</pg-selectfx-option>
+                            <pg-selectfx-option Value="QA" Label="Qatar">Qatar</pg-selectfx-option>
+                            <pg-selectfx-option Value="RE" Label="Réunion">Réunion</pg-selectfx-option>
+                            <pg-selectfx-option Value="RO" Label="Romania">Romania</pg-selectfx-option>
+                            <pg-selectfx-option Value="RU" Label="Russian Federation">Russian Federation</pg-selectfx-option>
+                            <pg-selectfx-option Value="RW" Label="Rwanda">Rwanda</pg-selectfx-option>
+                            <pg-selectfx-option Value="BL" Label="Saint Barthélemy">Saint Barthélemy</pg-selectfx-option>
+                            <pg-selectfx-option Value="SH" Label="Saint Helena, Ascension and Tristan da Cunha">Saint Helena, Ascension and Tristan da Cunha</pg-selectfx-option>
+                            <pg-selectfx-option Value="KN" Label="Saint Kitts and Nevis">Saint Kitts and Nevis</pg-selectfx-option>
+                            <pg-selectfx-option Value="LC" Label="Saint Lucia">Saint Lucia</pg-selectfx-option>
+                            <pg-selectfx-option Value="MF" Label="Saint Martin (French part)">Saint Martin (French part)</pg-selectfx-option>
+                            <pg-selectfx-option Value="PM" Label="Saint Pierre and Miquelon">Saint Pierre and Miquelon</pg-selectfx-option>
+                            <pg-selectfx-option Value="VC" Label="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</pg-selectfx-option>
+                            <pg-selectfx-option Value="WS" Label="Samoa">Samoa</pg-selectfx-option>
+                            <pg-selectfx-option Value="SM" Label="San Marino">San Marino</pg-selectfx-option>
+                            <pg-selectfx-option Value="ST" Label="Sao Tome and Principe">Sao Tome and Principe</pg-selectfx-option>
+                            <pg-selectfx-option Value="SA" Label="Saudi Arabia">Saudi Arabia</pg-selectfx-option>
+                            <pg-selectfx-option Value="SN" Label="Senegal">Senegal</pg-selectfx-option>
+                            <pg-selectfx-option Value="RS" Label="Serbia">Serbia</pg-selectfx-option>
+                            <pg-selectfx-option Value="SC" Label="Seychelles">Seychelles</pg-selectfx-option>
+                            <pg-selectfx-option Value="SL" Label="Sierra Leone">Sierra Leone</pg-selectfx-option>
+                            <pg-selectfx-option Value="SG" Label="Singapore">Singapore</pg-selectfx-option>
+                            <pg-selectfx-option Value="SX" Label="Sint Maarten (Dutch part)">Sint Maarten (Dutch part)</pg-selectfx-option>
+                            <pg-selectfx-option Value="SK" Label="Slovakia">Slovakia</pg-selectfx-option>
+                            <pg-selectfx-option Value="SI" Label="Slovenia">Slovenia</pg-selectfx-option>
+                            <pg-selectfx-option Value="SB" Label="Solomon Islands">Solomon Islands</pg-selectfx-option>
+                            <pg-selectfx-option Value="SO" Label="Somalia">Somalia</pg-selectfx-option>
+                            <pg-selectfx-option Value="ZA" Label="South Africa">South Africa</pg-selectfx-option>
+                            <pg-selectfx-option Value="GS" Label="South Georgia and the South Sandwich Islands">South Georgia and the South Sandwich Islands</pg-selectfx-option>
+                            <pg-selectfx-option Value="SS" Label="South Sudan">South Sudan</pg-selectfx-option>
+                            <pg-selectfx-option Value="ES" Label="Spain">Spain</pg-selectfx-option>
+                            <pg-selectfx-option Value="LK" Label="Sri Lanka">Sri Lanka</pg-selectfx-option>
+                            <pg-selectfx-option Value="SD" Label="Sudan">Sudan</pg-selectfx-option>
+                            <pg-selectfx-option Value="SR" Label="Suriname">Suriname</pg-selectfx-option>
+                            <pg-selectfx-option Value="SJ" Label="Svalbard and Jan Mayen">Svalbard and Jan Mayen</pg-selectfx-option>
+                            <pg-selectfx-option Value="SZ" Label="Swaziland">Swaziland</pg-selectfx-option>
+                            <pg-selectfx-option Value="SE" Label="Sweden">Sweden</pg-selectfx-option>
+                            <pg-selectfx-option Value="CH" Label="Switzerland">Switzerland</pg-selectfx-option>
+                            <pg-selectfx-option Value="SY" Label="Syrian Arab Republic">Syrian Arab Republic</pg-selectfx-option>
+                            <pg-selectfx-option Value="TW" Label="Taiwan, Province of China">Taiwan, Province of China</pg-selectfx-option>
+                            <pg-selectfx-option Value="TJ" Label="Tajikistan">Tajikistan</pg-selectfx-option>
+                            <pg-selectfx-option Value="TZ" Label="Tanzania, United Republic of">Tanzania, United Republic of</pg-selectfx-option>
+                            <pg-selectfx-option Value="TH" Label="Thailand">Thailand</pg-selectfx-option>
+                            <pg-selectfx-option Value="TL" Label="Timor-Leste">Timor-Leste</pg-selectfx-option>
+                            <pg-selectfx-option Value="TG" Label="Togo">Togo</pg-selectfx-option>
+                            <pg-selectfx-option Value="TK" Label="Tokelau">Tokelau</pg-selectfx-option>
+                            <pg-selectfx-option Value="TO" Label="Tonga">Tonga</pg-selectfx-option>
+                            <pg-selectfx-option Value="TT" Label="Trinidad and Tobago">Trinidad and Tobago</pg-selectfx-option>
+                            <pg-selectfx-option Value="TN" Label="Tunisia">Tunisia</pg-selectfx-option>
+                            <pg-selectfx-option Value="TR" Label="Turkey">Turkey</pg-selectfx-option>
+                            <pg-selectfx-option Value="TM" Label="Turkmenistan">Turkmenistan</pg-selectfx-option>
+                            <pg-selectfx-option Value="TC" Label="Turks and Caicos Islands">Turks and Caicos Islands</pg-selectfx-option>
+                            <pg-selectfx-option Value="TV" Label="Tuvalu">Tuvalu</pg-selectfx-option>
+                            <pg-selectfx-option Value="UG" Label="Uganda">Uganda</pg-selectfx-option>
+                            <pg-selectfx-option Value="UA" Label="Ukraine">Ukraine</pg-selectfx-option>
+                            <pg-selectfx-option Value="AE" Label="United Arab Emirates">United Arab Emirates</pg-selectfx-option>
+                            <pg-selectfx-option Value="GB" Label="United Kingdom">United Kingdom</pg-selectfx-option>
+                            <pg-selectfx-option Value="US" Label="United States">United States</pg-selectfx-option>
+                            <pg-selectfx-option Value="UM" Label="United States Minor Outlying Islands">United States Minor Outlying Islands</pg-selectfx-option>
+                            <pg-selectfx-option Value="UY" Label="Uruguay">Uruguay</pg-selectfx-option>
+                            <pg-selectfx-option Value="UZ" Label="Uzbekistan">Uzbekistan</pg-selectfx-option>
+                            <pg-selectfx-option Value="VU" Label="Vanuatu">Vanuatu</pg-selectfx-option>
+                            <pg-selectfx-option Value="VE" Label="Venezuela, Bolivarian Republic of">Venezuela, Bolivarian Republic of</pg-selectfx-option>
+                            <pg-selectfx-option Value="VN" Label="Viet Nam">Viet Nam</pg-selectfx-option>
+                            <pg-selectfx-option Value="VG" Label="Virgin Islands, British">Virgin Islands, British</pg-selectfx-option>
+                            <pg-selectfx-option Value="VI" Label="Virgin Islands, U.S.">Virgin Islands, U.S.</pg-selectfx-option>
+                            <pg-selectfx-option Value="WF" Label="Wallis and Futuna">Wallis and Futuna</pg-selectfx-option>
+                            <pg-selectfx-option Value="EH" Label="Western Sahara">Western Sahara</pg-selectfx-option>
+                            <pg-selectfx-option Value="YE" Label="Yemen">Yemen</pg-selectfx-option>
+                            <pg-selectfx-option Value="ZM" Label="Zambia">Zambia</pg-selectfx-option>
+                        	  <pg-selectfx-option Value="ZW" Label="Zimbabwe">Zimbabwe</pg-selectfx-option>
+                          </pg-select-fx>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group form-group-default">
+                          <Label>City</Label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row clearfix">
+                      <div class="col-sm-9">
+                        <div class="form-group form-group-default required" [class.has-error]="getFormControl('state').invalid && (getFormControl('state').dirty || getFormControl('state').touched)">
+                          <Label>State/Province</Label>
+                          <input  pgFormGroupDefault type="text" class="form-control" name="state" formControlName="state"  placeholder="Outside US/Canada">
+                          <div class="invalid-tooltip" *ngIf="getFormControl('state').invalid && (getFormControl('state').dirty || getFormControl('state').touched)">
+                              This field is required.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="form-group form-group-default">
+                          <Label>Zip code</Label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-end p-t-20 p-b-20">
+            <button class="btn btn-default btn-cons pull-right btn-animated from-left fa fa-shopping-cart" type="button" (click)="prevTab()">
+            <span>Previous</span>
+            </button>
+            <button class="btn btn-primary btn-cons pull-right btn-animated from-left fa fa-credit-card" [class.disabled]="shippingForm.invalid" type="button" (click)="navigateToPayment()">
+            <span>Next</span>
+            </button>
+          </div>
+        <div class="wizard-footer padding-20 bg-master-light">
+          <p class="small hint-text pull-left no-margin">
+            The Top Content Is Soley Created using pages UI Elements such as Invoice, Tabs, Form Layouts etc. and are prior for representation Purpose Only.
+          </p>
+          <div class="pull-right">
+            <img src="assets/img/logo.png" alt="logo" pgRetina src1x="assets/img/logo.png" src2x="assets/img/logo_2x.png" width="78" height="22">
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </pg-tab>
+      <pg-tab [Disabled]="disabledTabs.paymentTab">
+        <ng-template #TabHeading><i class="fa fa-credit-card tab-icon"></i> <span>Payment details</span></ng-template>
+          <div class="row row-same-height">
+            <div class="col-md-5 b-r b-dashed b-grey ">
+              <div class="padding-30 sm-padding-5 sm-m-t-15 m-t-50">
+                <h2>We Secured Your Line</h2>
+                <p>Below is a sample page for your cart , Created using pages design UI Elementes</p>
+                <p class="small hint-text">Below is a sample page for your cart , Created using pages design UI Elementes</p>
+                <table class="table table-condensed">
+                  <tr>
+                    <td class=" col-md-9">
+                      <span class="m-l-10 font-montserrat fs-11 all-caps">Webarch UI Framework</span>
+                      <span class="m-l-10 ">Dashboard UI Pack</span>
+                    </td>
+                    <td class=" col-md-3 text-right">
+                      <span>Qty 1</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class=" col-md-9">
+                      <span class="m-l-10 font-montserrat fs-11 all-caps">Pages UI Framework</span>
+                      <span class="m-l-10 ">Next Gen UI Pack</span>
+                    </td>
+                    <td class=" col-md-3 text-right">
+                      <span>Qty 1</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class=" col-md-3 text-right">
+                      <h4 class="text-primary no-margin font-montserrat">$27</h4>
+                    </td>
+                  </tr>
+                </table>
+                <p class="small">Invoice are issued on the date of despatch. Payment terms: Pre-orders: within 10 days of invoice date with 4% discount, from the 11th to the 30th day net. Re-orders: non-reduced stock items are payable net after 20 days. </p>
+                <p class="small">By pressing Pay Now You will Agree to the Payment <a href="javascript:void(0)">Terms &amp; Conditions</a></p>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div class="padding-30 sm-padding-5">
+                <ul class="list-unstyled list-inline m-l-30">
+                  <li><a href="javascript:void(0)" class="p-r-30 text-black">Credit card</a></li>
+                  <li><a href="javascript:void(0)" class="p-r-30 text-black  hint-text">PayPal</a></li>
+                  <li><a href="javascript:void(0)" class="p-r-30 text-black  hint-text">Wire transfer</a></li>
+                </ul>
+                <form role="form"  [formGroup]="billingForm" >
+                  <div class="bg-master-light padding-30 b-rad-lg">
+                    <h2 class="pull-left no-margin">Credit Card</h2>
+                    <ul class="list-unstyled pull-right list-inline no-margin">
+                      <li>
+                        <a href="javascript:void(0)">
+                          <img width="51" height="32" src2x="assets/img/form-wizard/visa2x.png" pgRetina src1x="assets/img/form-wizard/visa.png" class="brand" alt="logo" src="assets/img/form-wizard/visa.png">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="hint-text">
+                          <img width="51" height="32" src2x="assets/img/form-wizard/amex2x.png" pgRetina src1x="assets/img/form-wizard/amex.png" class="brand" alt="logo" src="assets/img/form-wizard/amex.png">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="hint-text">
+                          <img width="51" height="32" src2x="assets/img/form-wizard/mastercard2x.png" pgRetina src1x="assets/img/form-wizard/mastercard.png" class="brand" alt="logo" src="assets/img/form-wizard/mastercard.png">
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                    <div class="form-group form-group-default required m-t-25" [class.has-error]="getFormControlBilling('cardHolderName').invalid && (getFormControlBilling('cardHolderName').dirty || getFormControlBilling('cardHolderName').touched)">
+                      <Label>Card holder's name</Label>
+                      <input type="text" class="form-control" placeholder="Name on the card"  name="cardHolderName" formControlName="cardHolderName">
+                      <div class="invalid-tooltip" *ngIf="getFormControlBilling('cardHolderName').invalid && (getFormControlBilling('cardHolderName').dirty || getFormControlBilling('cardHolderName').touched)">
+                          This field is required.
+                      </div>
+                    </div>
+                    <div class="form-group form-group-default required" [class.has-error]="getFormControlBilling('cardNumber').invalid && (getFormControlBilling('cardNumber').dirty || getFormControlBilling('cardNumber').touched)">
+                      <Label>Card number</Label>
+                      <input type="text" class="form-control" placeholder="8888-8888-8888-8888" name="cardNumber" formControlName="cardNumber">
+                      <div class="invalid-tooltip" *ngIf="getFormControlBilling('cardNumber').invalid && (getFormControlBilling('cardNumber').dirty || getFormControlBilling('cardNumber').touched)">
+                          This field is required.
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <Label>Expiration</Label>
+                        <br>
+                        <pg-select-fx [PlaceHolder]="'Select'">
+                          <pg-selectfx-option>Jan (01)</pg-selectfx-option>
+                          <pg-selectfx-option Label="Feb (02)">Feb (02)</pg-selectfx-option>
+                          <pg-selectfx-option Label="Mar (03)">Mar (03)</pg-selectfx-option>
+                          <pg-selectfx-option Label="Apr (04)">Apr (04)</pg-selectfx-option>
+                          <pg-selectfx-option Label="May (05)">May (05)</pg-selectfx-option>
+                          <pg-selectfx-option Label="Jun (06)">Jun (06)</pg-selectfx-option>
+                          <pg-selectfx-option Label="Jul (07)">Jul (07)</pg-selectfx-option>
+                          <pg-selectfx-option Label="Aug (08)">Aug (08)</pg-selectfx-option>
+                          <pg-selectfx-option Label="Sep (09)">Sep (09)</pg-selectfx-option>
+                          <pg-selectfx-option Label="Oct (10)">Oct (10)</pg-selectfx-option>
+                          <pg-selectfx-option Label="Nov (11)">Nov (11)</pg-selectfx-option>
+                          <pg-selectfx-option Label="Dec (12)">Dec (12)</pg-selectfx-option>
+                        </pg-select-fx>
+                        <pg-select-fx [PlaceHolder]="'Select'">
+                          <pg-selectfx-option value="2014" Label="2014">2014</pg-selectfx-option>
+                          <pg-selectfx-option value="2015" Label="2015">2015</pg-selectfx-option>
+                          <pg-selectfx-option value="2016" Label="2016">2016</pg-selectfx-option>
+                          <pg-selectfx-option value="2017" Label="2017">2017</pg-selectfx-option>
+                          <pg-selectfx-option value="2018" Label="2018">2018</pg-selectfx-option>
+                          <pg-selectfx-option value="2019" Label="2019">2019</pg-selectfx-option>
+                          <pg-selectfx-option value="2020" Label="2020">2020</pg-selectfx-option>
+                          <pg-selectfx-option value="2021" Label="2021">2021</pg-selectfx-option>
+                          <pg-selectfx-option value="2022" Label="2022">2022</pg-selectfx-option>
+                          <pg-selectfx-option value="2023" Label="2023">2023</pg-selectfx-option>
+                          <pg-selectfx-option value="2024" Label="2024">2024</pg-selectfx-option>
+                          <pg-selectfx-option value="2025" Label="2025">2025</pg-selectfx-option>
+                          <pg-selectfx-option value="2026" Label="2026">2026</pg-selectfx-option>
+                          <pg-selectfx-option value="2027" Label="2027">2027</pg-selectfx-option>
+                          <pg-selectfx-option value="2028" Label="2028">2028</pg-selectfx-option>
+                          <pg-selectfx-option value="2029" Label="2029">2029</pg-selectfx-option>
+                          <pg-selectfx-option value="2030" Label="2030">2030</pg-selectfx-option>
+                        </pg-select-fx>
+                      </div>
+                      <div class="col-md-2 offset-md-4">
+                        <div class="form-group required">
+                          <Label>CVC Code</Label>
+                          <input type="text" class="form-control" placeholder="000" required>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-end p-t-20 p-b-20">
+            <button class="btn btn-default btn-cons pull-right btn-animated from-left fa fa-truck" type="button" (click)="prevTab()">
+              <span>Previous</span>
+            </button>
+            <button class="btn btn-primary btn-cons pull-right btn-animated from-left fa fa-check" [class.disabled]="billingForm.invalid" type="button" (click)="navigateToFinal()">
+            <span>Next</span>
+            </button>
+          </div>
+          <div class="wizard-footer padding-20 bg-master-light">
+            <p class="small hint-text pull-left no-margin">
+              The Top Content Is Soley Created using pages UI Elements such as Invoice, Tabs, Form Layouts etc. and are prior for representation Purpose Only.
+            </p>
+            <div class="pull-right">
+              <img src="assets/img/logo.png" alt="logo" pgRetina src1x="assets/img/logo.png" src2x="assets/img/logo_2x.png" width="78" height="22">
+            </div>
+            <div class="clearfix"></div>
+          </div>
+      </pg-tab>
+      <pg-tab [Disabled]="disabledTabs.FinalTab">
+        <ng-template #TabHeading><i class="fa fa-check tab-icon"></i> <span>Summary</span></ng-template>
+        <h1>Thank you.</h1>
+        <div class="d-flex justify-content-end p-t-20 p-b-20">
+            <button class="btn btn-white btn-cons pull-right" type="button" (click)="prevTab()">
+            <span>Previous</span>
+            </button>
+            <button class="btn btn-primary btn-cons pull-right" type="button" >
+            <span>Finish</span>
+            </button>
+          </div>
+          <div class="wizard-footer padding-20 bg-master-light">
+              <p class="small hint-text pull-left no-margin">
+                The Top Content Is Soley Created using pages UI Elements such as Invoice, Tabs, Form Layouts etc. and are prior for representation Purpose Only.
+              </p>
+              <div class="pull-right">
+                <img src="assets/img/logo.png" alt="logo" pgRetina src1x="assets/img/logo.png" src2x="assets/img/logo_2x.png" width="78" height="22">
+              </div>
+              <div class="clearfix"></div>
+            </div>
+      </pg-tab>
+    </pg-tabset>
+  </div>
+</pg-container>

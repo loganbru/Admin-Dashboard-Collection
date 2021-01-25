@@ -1,0 +1,1115 @@
+---
+layout: components
+title: Dropdowns
+---
+
+<!-- Hero and nav -->
+<div class="hero is-relative is-theme-info">
+
+    {{> navbar-static-light}}
+
+    <!-- Hero image -->
+    <div id="main-hero" class="hero-body">
+        <div class="container has-text-centered">
+            <div class="columns is-vcentered">
+                <div class="column is-4 is-offset-1 has-text-left">
+                    <h1 class="title components-title is-1">
+                        Dropdowns
+                    </h1>
+                    <h2 class="subtitle is-4 components-subtitle">
+                        Dropdown styles and variations.
+                    </h2>
+                    <p class="components-cta">
+                        <a href="#hover-dropdowns" class="button button-cta btn-align light-btn btn-outlined is-bold rounded">
+                            Get Started
+                        </a>
+                    </p>
+                </div>
+                <div class="column is-offset-1 has-text-centered is-hidden-mobile">
+                    <div id="dropdowns-ill" class="vivus-svg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Hero image -->
+</div>
+<!-- /Hero and nav -->
+
+<!-- Scrollnav -->
+<div id="scrollnav" class="scroll-nav-wrapper">
+    <div class="container">
+        <div class="tabs scrollnav-tabs is-centered">
+            <ul>
+                <li class="scrollnav-item is-active"><a href="#hover-dropdowns">Hover dropdowns</a></li>
+                <li class="scrollnav-item"><a href="#click-dropdowns">Click dropdowns</a></li>
+                <li class="scrollnav-item"><a href="#drop-panels">Drop panels</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- /Scrollnav -->
+
+<section class="section is-medium">
+    <div class="container">
+        <div id="hover-dropdowns" class="section-title-wrapper has-text-centered">
+            <div class="bg-number">1</div>
+            <h2 class="title section-title has-text-centered dark-text text-bold">
+                Hover dropdowns
+            </h2>
+        </div>
+
+        <!-- Basic hover dropdowns -->
+        <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Basic dropdown</h4>
+                    <p class="no-padding">If you dont want to use any javascript for your dropdowns, Bulkit ships with handy hover dropdowns. Any element can be a hover dropdown trigger. You just need to add the <code>.is-drop</code> class to it. Then insert the dropdown structure inside the trigger element. Note that it is better if the trigger element has a defined width, like a button, else your dropdown might not behave as expected. Check the code sample for more details.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-3 has-text-centered">
+                <div class="button btn-align has-icon-right is-drop">Dropdown <i class="sl sl-icon-arrow-down"></i>
+                    <div class="dropContain">
+                        <div class="dropOut">
+                            <ul>
+                                <li>Download invoice</li>
+                                <li>Send info</li>
+                                <li>Delete</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Basic hover dropdowns -->
+
+        <!-- Icon hover dropdowns -->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Dropdown with icons</h4>
+                    <p class="no-padding">A hover dropdown menu items can have icons on the left. Simply add the icons you want inside the item markup. Check the code example.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-4 is-offset-4 has-text-centered">
+                <div class="button btn-align has-icon-right primary-btn btn-outlined is-drop">Dropdown <i class="sl sl-icon-arrow-down"></i>
+                    <div class="dropContain">
+                        <div class="dropOut">
+                            <ul>
+                                <li><i class="drop-icon sl sl-icon-cloud-download"></i> Download invoice</li>
+                                <li><i class="drop-icon sl sl-icon-paper-plane"></i> Send info</li>
+                                <li><i class="drop-icon sl sl-icon-trash"></i> Delete</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-3">
+                <!-- Code section -->
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <figure class="highlight highlight-block">
+                                <pre><code class="html code-highlight">
+&#x3C;div class=&#x22;button btn-align has-icon-right primary-btn btn-outlined is-drop&#x22;&#x3E;Dropdown &#x3C;i class=&#x22;sl sl-icon-arrow-down is-icon-xs&#x22;&#x3E;&#x3C;/i&#x3E;
+    &#x3C;div class=&#x22;dropContain&#x22;&#x3E;
+        &#x3C;div class=&#x22;dropOut&#x22;&#x3E;
+            &#x3C;ul&#x3E;
+                &#x3C;li&#x3E;&#x3C;i class=&#x22;drop-icon sl sl-icon-cloud-download&#x22;&#x3E;&#x3C;/i&#x3E; Download invoice&#x3C;/li&#x3E;
+                &#x3C;li&#x3E;&#x3C;i class=&#x22;drop-icon sl sl-icon-paper-plane&#x22;&#x3E;&#x3C;/i&#x3E; Send info&#x3C;/li&#x3E;
+                &#x3C;li&#x3E;&#x3C;i class=&#x22;drop-icon sl sl-icon-trash&#x22;&#x3E;&#x3C;/i&#x3E; Delete&#x3C;/li&#x3E;
+            &#x3C;/ul&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+                                        </code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Code section -->
+            </div>
+        </div>
+
+        <!-- /Icon hover dropdowns -->
+
+        <!-- Hover positions -->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Dropdown positions</h4>
+                    <p class="no-padding">Hover dropdowns can be positioned in 3 ways : left, wich is default, center and right. For a centered dropdown, add the <code>.is-centered</code> class to the <code>.is-drop</code> trigger element. For a right positioned dropdown, use the <code>is-right</code> class.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-4 has-text-centered">
+                <div class="button btn-align accent-btn btn-outlined has-icon-right is-drop">Left <i class="sl sl-icon-arrow-down"></i>
+                    <div class="dropContain">
+                        <div class="dropOut">
+                            <ul>
+                                <li><i class="drop-icon sl sl-icon-cloud-download"></i> Download invoice</li>
+                                <li><i class="drop-icon sl sl-icon-paper-plane"></i> Send info</li>
+                                <li><i class="drop-icon sl sl-icon-trash"></i> Delete</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column is-4 has-text-centered">
+                <div class="button btn-align danger-btn btn-outlined has-icon-right is-drop is-centered">Center <i class="sl sl-icon-arrow-down"></i>
+                    <div class="dropContain">
+                        <div class="dropOut">
+                            <ul>
+                                <li><i class="drop-icon sl sl-icon-cloud-download"></i> Download invoice</li>
+                                <li><i class="drop-icon sl sl-icon-paper-plane"></i> Send info</li>
+                                <li><i class="drop-icon sl sl-icon-trash"></i> Delete</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="column is-4 has-text-centered">
+                <div class="button btn-align success-btn btn-outlined has-icon-right is-drop is-right">Right <i class="sl sl-icon-arrow-down"></i>
+                    <div class="dropContain">
+                        <div class="dropOut">
+                            <ul>
+                                <li><i class="drop-icon sl sl-icon-cloud-download"></i> Download invoice</li>
+                                <li><i class="drop-icon sl sl-icon-paper-plane"></i> Send info</li>
+                                <li><i class="drop-icon sl sl-icon-trash"></i> Delete</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Hover positions -->
+
+        <!-- Hover colors -->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Hover colors</h4>
+                    <p class="no-padding">You can change the dropdown items color on hover. For primary color, add the <code>.is-primary</code> class to the <code>.dropOut</code> element. For secondary color, add the <code>.is-secondary</code> class to the <code>.dropOut</code> element. For accent color, add the <code>.is-accent</code> class to the <code>.dropOut</code> element.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-3 has-text-centered">
+                <div class="button btn-align btn-outlined has-icon-right is-drop">Default <i class="sl sl-icon-arrow-down"></i>
+                    <div class="dropContain">
+                        <div class="dropOut">
+                            <ul>
+                                <li><i class="drop-icon sl sl-icon-cloud-download"></i> Download invoice</li>
+                                <li><i class="drop-icon sl sl-icon-paper-plane"></i> Send info</li>
+                                <li><i class="drop-icon sl sl-icon-trash"></i> Delete</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column is-3 has-text-centered">
+                <div class="button btn-align primary-btn btn-outlined has-icon-right is-drop">Primary <i class="sl sl-icon-arrow-down"></i>
+                    <div class="dropContain">
+                        <div class="dropOut is-primary">
+                            <ul>
+                                <li><i class="drop-icon sl sl-icon-cloud-download"></i> Download invoice</li>
+                                <li><i class="drop-icon sl sl-icon-paper-plane"></i> Send info</li>
+                                <li><i class="drop-icon sl sl-icon-trash"></i> Delete</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column is-3 has-text-centered">
+                <div class="button btn-align secondary-btn btn-outlined has-icon-right is-drop">Secondary <i class="sl sl-icon-arrow-down"></i>
+                    <div class="dropContain">
+                        <div class="dropOut is-secondary">
+                            <ul>
+                                <li><i class="drop-icon sl sl-icon-cloud-download"></i> Download invoice</li>
+                                <li><i class="drop-icon sl sl-icon-paper-plane"></i> Send info</li>
+                                <li><i class="drop-icon sl sl-icon-trash"></i> Delete</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="column is-3 has-text-centered">
+                <div class="button btn-align accent-btn btn-outlined has-icon-right is-drop">Accent <i class="sl sl-icon-arrow-down"></i>
+                    <div class="dropContain">
+                        <div class="dropOut is-accent">
+                            <ul>
+                                <li><i class="drop-icon sl sl-icon-cloud-download"></i> Download invoice</li>
+                                <li><i class="drop-icon sl sl-icon-paper-plane"></i> Send info</li>
+                                <li><i class="drop-icon sl sl-icon-trash"></i> Delete</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Hover colors -->
+
+        <!-- Card action -->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Card action</h4>
+                    <p class="no-padding">Hover dropdowns can be very handy for context menus like in this example. Hover over the small arrow on the right side of the card to make the dropdown appear. Check the code example for more details</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-3">
+                <!-- Demo section -->
+
+                <div class="flex-card light-bordered hover-inset card-overflow">
+                    <div class="flex-card-header">
+                        <div class="header-avatar">
+                            <img src="https://via.placeholder.com/250x250" alt=""
+                                data-demo-src="assets/images/avatars/helen.jpg">
+                        </div>
+                        <div class="header-info">
+                            <div class="header-title">Helen Miller</div>
+                            <div class="header-subtitle">Sales team</div>
+                        </div>
+                        <div class="header-control ml-auto is-drop drop-sm">
+                            <i class="sl sl-icon-arrow-down"></i>
+                            <div class="dropContain">
+                                <div class="dropOut">
+                                    <ul>
+                                        <li><i class="drop-icon sl sl-icon-cloud-download"></i> Download invoice</li>
+                                        <li><i class="drop-icon sl sl-icon-paper-plane"></i> Send info</li>
+                                        <li><i class="drop-icon sl sl-icon-trash"></i> Delete</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body is-small">
+                        <div class="content">
+                            <p class="pb-10">Lorem ipsum dolor sit amet, has vero libris melius ea, omnis velit comprehensam duo an, meis ornatus eam ad. Ius ut labores scaevola.</p>
+                        </div>
+                        <div class="has-text-right">
+                            <a class="button btn-align btn-outlined accent-btn rounded raised">Follow</a>
+                        </div>
+                    </div>  
+                </div>
+                <!-- /Demo section -->
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-3">
+                <!-- Code section -->
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <figure class="highlight highlight-block">
+                                <pre><code class="html code-highlight">
+&#x3C;div class=&#x22;flex-card light-bordered hover-inset card-overflow&#x22;&#x3E;
+    &#x3C;div class=&#x22;flex-card-header&#x22;&#x3E;
+        &#x3C;div class=&#x22;header-avatar&#x22;&#x3E;
+            &#x3C;img src=&#x22;assets/images/avatars/helen.jpg&#x22; alt=&#x22;&#x22;&#x3E;
+        &#x3C;/div&#x3E;
+        &#x3C;div class=&#x22;header-info&#x22;&#x3E;
+            &#x3C;div class=&#x22;header-title&#x22;&#x3E;Helen Miller&#x3C;/div&#x3E;
+            &#x3C;div class=&#x22;header-subtitle&#x22;&#x3E;Sales team&#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+        &#x3C;div class=&#x22;header-control ml-auto is-drop drop-sm&#x22;&#x3E;
+            &#x3C;i class=&#x22;sl sl-icon-arrow-down&#x22;&#x3E;&#x3C;/i&#x3E;
+            &#x3C;div class=&#x22;dropContain&#x22;&#x3E;
+                &#x3C;div class=&#x22;dropOut&#x22;&#x3E;
+                    &#x3C;ul&#x3E;
+                        &#x3C;li&#x3E;&#x3C;i class=&#x22;drop-icon sl sl-icon-cloud-download&#x22;&#x3E;&#x3C;/i&#x3E; Download invoice&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;&#x3C;i class=&#x22;drop-icon sl sl-icon-paper-plane&#x22;&#x3E;&#x3C;/i&#x3E; Send info&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;&#x3C;i class=&#x22;drop-icon sl sl-icon-trash&#x22;&#x3E;&#x3C;/i&#x3E; Delete&#x3C;/li&#x3E;
+                    &#x3C;/ul&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;card-body is-small&#x22;&#x3E;
+        &#x3C;div class=&#x22;content&#x22;&#x3E;
+            &#x3C;p class=&#x22;pb-10&#x22;&#x3E;Lorem ipsum dolor sit amet, has vero libris melius ea, omnis velit comprehensam duo an, meis ornatus eam ad. Ius ut labores scaevola.&#x3C;/p&#x3E;
+        &#x3C;/div&#x3E;
+        &#x3C;div class=&#x22;has-text-right&#x22;&#x3E;
+            &#x3C;a class=&#x22;button btn-align btn-outlined accent-btn rounded raised&#x22;&#x3E;Follow&#x3C;/a&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;  
+&#x3C;/div&#x3E;
+                                        </code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Code section -->
+            </div>
+        </div>
+        <!-- /Card action -->
+    </div>
+</section>
+
+<section class="section section-feature-grey is-medium">
+    <div class="container">
+        <div id="click-dropdowns" class="section-title-wrapper has-text-centered">
+            <div class="bg-number">2</div>
+            <h2 class="title section-title has-text-centered dark-text text-bold">
+                Click dropdowns
+            </h2>
+        </div>
+
+        <!-- Basic click dropdowns -->
+        <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Basic examples</h4>
+                    <p class="no-padding">You can have more control on dropdowns by using click dropdown. In this case the trigger has to be clicked for the dropdown to show up. Bulkit click dropdowns are based on <a href="https://github.com/soundasleep/jquery-dropdown" target="_blank">Jquery Dropdown</a>. Click dropdowns are handled with the <code>data-jq-dropdown="#myDropdownId"</code>, pointing to a separate dropdown <code>div</code> elsewhere on the page. Click dropdowns can have a small arrow if you add the class <code>.jq-dropdown-tip</code> to the dropdown parent container.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-4 has-text-centered">
+                <button class="button" data-jq-dropdown="#with-tip">Dropdown</button>
+            </div>
+            <div class="column is-4 has-text-centered">
+                <button class="button btn-align accent-btn btn-outlined raised" data-jq-dropdown="#without-tip">Dropdown</button>
+            </div>
+            <div class="column is-4 has-text-centered">
+                <button class="button btn-align accent-btn btn-outlined raised" data-jq-dropdown="#without-tip">Dropdown</button>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-3">
+                <!-- Code section -->
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <figure class="highlight highlight-block">
+                                <pre><code class="html code-highlight">
+&#x3C;!-- Dropdown trigger --&#x3E;
+&#x3C;button class=&#x22;button&#x22; data-jq-dropdown=&#x22;#my-dropdown&#x22;&#x3E;Dropdown&#x3C;/button&#x3E;
+&#x3C;!-- /Dropdown trigger --&#x3E;
+
+&#x3C;!-- Dropdown --&#x3E;
+&#x3C;div id=&#x22;my-dropdown&#x22; class=&#x22;jq-dropdown jq-dropdown-tip&#x22;&#x3E;
+    &#x3C;ul class=&#x22;jq-dropdown-menu&#x22;&#x3E;
+        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Account&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Tasks&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Settings&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;jq-dropdown-divider&#x22;&#x3E;&#x3C;/li&#x3E;
+        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Log out&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+    &#x3C;/ul&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;!-- /Dropdown --&#x3E;
+                                        </code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Code section -->
+            </div>
+        </div>
+        <!-- /Basic click dropdowns -->
+
+        <!-- Click with icons -->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>With icons</h4>
+                    <p class="no-padding">Click dropdowns menu items can have icons as well. Just add the desired icons inside the menu items elements.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-3 is-offset-3 has-text-centered">
+                <button class="button" data-jq-dropdown="#with-icons-tip">Dropdown</button>
+            </div>
+            <div class="column is-3 has-text-centered">
+                <button class="button btn-align accent-btn btn-outlined raised" data-jq-dropdown="#with-icons-notip">Dropdown</button>
+            </div>
+        </div>
+        <!-- /Click with icons -->
+
+        <!-- Click with scroll -->
+        <div class="columns is-vcentered mt-80">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered pb-20">
+                    <h4>Scroll dropdown</h4>
+                    <p class="no-padding">If you need to display a very long content inside your dropdown, you can use a scroll dropdown. To make your dropdown scroll automatically when there is enough content, add the <code>.jq-dropdown-scroll</code> class to the dropdown parent element.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-3 has-text-centered">
+                <button class="button btn-align accent-btn btn-outlined raised" data-jq-dropdown="#with-scroll">Dropdown</button>
+            </div>
+        </div>
+        <!-- /Click with scroll -->
+
+        <!-- With checkboxes and radio -->
+        <div class="columns is-vcentered mt-80">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered pb-20">
+                    <h4>Checkboxes and radios</h4>
+                    <p class="no-padding">You can easily add controls inside click dropdowns. You can add either checkboxes or radio buttons. Check the code to see a live example.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-3 has-text-centered">
+                <button class="button btn-align accent-btn btn-outlined raised" data-jq-dropdown="#with-checkboxes-radios">Dropdown</button>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-3">
+                <!-- Code section -->
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <figure class="highlight highlight-block">
+                                <pre><code class="html code-highlight">
+&#x3C;!-- Dropdown trigger --&#x3E;
+&#x3C;button class=&#x22;button btn-align accent-btn btn-outlined raised&#x22; data-jq-dropdown=&#x22;#with-checkboxes-radios&#x22;&#x3E; Dropdown&#x3C;/button&#x3E;
+&#x3C;!-- /Dropdown trigger --&#x3E;
+
+&#x3C;!-- Dropdown --&#x3E;
+&#x3C;div id=&#x22;with-checkboxes-radios&#x22; class=&#x22;jq-dropdown&#x22;&#x3E;
+    &#x3C;ul class=&#x22;jq-dropdown-menu&#x22;&#x3E;
+        &#x3C;li&#x3E;
+            &#x3C;label class=&#x22;checkbox-wrap is-small&#x22;&#x3E;
+                &#x3C;input id=&#x22;check1&#x22; type=&#x22;checkbox&#x22; class=&#x22;b-checkbox&#x22; onchange=&#x22;console.log(&#x27;changed&#x27;);&#x22;&#x3E;
+                &#x3C;span&#x3E;&#x3C;/span&#x3E;
+                Pro features
+            &#x3C;/label&#x3E;
+        &#x3C;/li&#x3E;
+        &#x3C;li&#x3E;
+            &#x3C;label class=&#x22;checkbox-wrap is-small&#x22;&#x3E;
+                &#x3C;input id=&#x22;check2&#x22; type=&#x22;checkbox&#x22; class=&#x22;b-checkbox&#x22; onchange=&#x22;console.log(&#x27;changed&#x27;);&#x22;&#x3E;
+                &#x3C;span&#x3E;&#x3C;/span&#x3E;
+                Auto backup
+            &#x3C;/label&#x3E;
+        &#x3C;/li&#x3E;
+        &#x3C;li&#x3E;
+            &#x3C;label class=&#x22;checkbox-wrap is-small&#x22;&#x3E;
+                &#x3C;input id=&#x22;check3&#x22; type=&#x22;checkbox&#x22; class=&#x22;b-checkbox&#x22; onchange=&#x22;console.log(&#x27;changed&#x27;);&#x22;&#x3E;
+                &#x3C;span&#x3E;&#x3C;/span&#x3E;
+                Dedicated support
+            &#x3C;/label&#x3E;
+        &#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;jq-dropdown-divider&#x22;&#x3E;&#x3C;/li&#x3E;
+        &#x3C;li&#x3E;
+            &#x3C;label class=&#x22;radio-wrap is-small is-primary&#x22;&#x3E;
+                &#x3C;input type=&#x22;radio&#x22; class=&#x22;b-radio&#x22; name=&#x22;radio-group&#x22;&#x3E;
+                &#x3C;span&#x3E;&#x3C;/span&#x3E;
+                Starter plan
+            &#x3C;/label&#x3E;
+        &#x3C;/li&#x3E;
+        &#x3C;li&#x3E;
+            &#x3C;label class=&#x22;radio-wrap is-small is-secondary&#x22;&#x3E;
+                &#x3C;input type=&#x22;radio&#x22; class=&#x22;b-radio&#x22; name=&#x22;radio-group&#x22;&#x3E;
+                &#x3C;span&#x3E;&#x3C;/span&#x3E;
+                Pro plan
+            &#x3C;/label&#x3E;
+        &#x3C;/li&#x3E;
+        &#x3C;li&#x3E;
+            &#x3C;label class=&#x22;radio-wrap is-small is-accent&#x22;&#x3E;
+                &#x3C;input type=&#x22;radio&#x22; class=&#x22;b-radio&#x22; name=&#x22;radio-group&#x22;&#x3E;
+                &#x3C;span&#x3E;&#x3C;/span&#x3E;
+                Business plan
+            &#x3C;/label&#x3E;
+        &#x3C;/li&#x3E;
+    &#x3C;/ul&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;!-- /Dropdown --&#x3E;
+                                        </code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Code section -->
+            </div>
+        </div>
+        <!-- /With checkboxes and radio -->
+
+        <!-- hover colors -->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Hover colors</h4>
+                    <p class="no-padding">Click dropdowns menu items can have different colors on hover. Available classes are <code>.is-primary</code>, <code>.is-secondary</code> and <code>.is-accent</code>. Add one of these classes to the <code>.jq-dropdown</code> container.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-3 has-text-centered">
+                <button class="button" data-jq-dropdown="#with-icons-notip">Default</button>
+            </div>
+            <div class="column is-3 has-text-centered">
+                <button class="button btn-align primary-btn btn-outlined raised" data-jq-dropdown="#primary">Primary</button>
+            </div>
+            <div class="column is-3 has-text-centered">
+                <button class="button btn-align secondary-btn btn-outlined raised" data-jq-dropdown="#secondary">Secondary</button>
+            </div>
+            <div class="column is-3 has-text-centered">
+                <button class="button btn-align accent-btn btn-outlined raised" data-jq-dropdown="#accent">Accent</button>
+            </div>
+        </div>
+        <!-- /Hover colors -->
+    </div>
+</section>
+
+<section class="section is-medium">
+    <div class="container">
+        <div id="drop-panels" class="section-title-wrapper has-text-centered">
+            <div class="bg-number">3</div>
+            <h2 class="title section-title has-text-centered dark-text text-bold">
+                Dropdown panels
+            </h2>
+        </div>
+
+        <!-- Basic panel -->
+        <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Basic example</h4>
+                    <p class="no-padding">A variant of Jquery dropdowns are panels. Panels can contain regular html markup and serve many purposes. All jquery dropdown options also apply to panels.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-3 is-offset-3 has-text-centered">
+                <button class="button btn-align accent-btn btn-outlined raised" data-jq-dropdown="#tip-panel">Drop panel</button>
+            </div>
+            <div class="column is-3 has-text-centered">
+                <button class="button btn-align accent-btn btn-outlined raised" data-jq-dropdown="#notip-panel">Drop panel</button>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered mt-40">
+            <div class="column is-6 is-offset-3">
+                <!-- Code section -->
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <figure class="highlight highlight-block">
+                                <pre><code class="html code-highlight">
+&#x3C;!-- Panel trigger --&#x3E;
+&#x3C;button class=&#x22;button btn-align accent-btn btn-outlined raised&#x22; data-jq-dropdown=&#x22;#tip-panel&#x22;&#x3E; Drop panel&#x3C;/button&#x3E;
+&#x3C;!-- /Panel trigger --&#x3E;
+
+&#x3C;!-- Panel --&#x3E;
+&#x3C;div id=&#x22;tip-panel&#x22; class=&#x22;jq-dropdown jq-dropdown-tip has-icons&#x22;&#x3E;
+    &#x3C;div class=&#x22;jq-dropdown-panel&#x22;&#x3E;
+        Here is some &#x3C;code&#x3E;HTML&#x3C;/code&#x3E; inside of a jq-dropdown. You can put pretty much
+        anything inside of a jq-dropdown, so have fun with it!
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;!-- /Panel --&#x3E;
+                                        </code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Code section -->
+            </div>
+        </div>
+        <!-- /Basic panel -->
+
+        <!-- Notifications panel -->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Notifications panel</h4>
+                    <p class="no-padding">Here is an example of what you can do with a dropdown panel. this panel shows a user notifications panel, like you can find in many apps. Notification items rely on a modified Bulma <a href="http://bulma.io/documentation/layout/media-object/" target="_blank">Media object</a>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-3 has-text-centered">
+                <button class="button btn-align success-btn btn-outlined raised" data-jq-dropdown="#notifications-panel">Notifications</button>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered mt-40">
+            <div class="column is-6 is-offset-3">
+                <!-- Code section -->
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <figure class="highlight highlight-block">
+                                <pre><code class="html code-highlight">
+&#x3C;!-- Panel trigger --&#x3E;
+&#x3C;button class=&#x22;button btn-align success-btn btn-outlined raised&#x22; data-jq-dropdown=&#x22;#notifications-panel&#x22;&#x3E; Notifications&#x3C;/button&#x3E;
+&#x3C;!-- /Panel trigger --&#x3E;
+
+&#x3C;!-- Panel --&#x3E;
+&#x3C;div id=&#x22;notifications-panel&#x22; class=&#x22;jq-dropdown jq-dropdown-tip has-icons&#x22;&#x3E;
+    &#x3C;div class=&#x22;jq-dropdown-panel&#x22;&#x3E;
+        &#x3C;article class=&#x22;media media-notification&#x22;&#x3E;
+            &#x3C;figure class=&#x22;media-left&#x22;&#x3E;
+                &#x3C;p class=&#x22;image is-32x32&#x22;&#x3E;
+                    &#x3C;img class=&#x22;img-circle&#x22; src=&#x22;assets/images/avatars/terry.jpg&#x22;&#x3E;
+                &#x3C;/p&#x3E;
+            &#x3C;/figure&#x3E;
+            &#x3C;div class=&#x22;media-content&#x22;&#x3E;
+                &#x3C;div class=&#x22;content&#x22;&#x3E;
+                    &#x3C;p&#x3E;
+                        &#x3C;span class=&#x22;notification-title&#x22;&#x3E;Terry Daniels&#x3C;/span&#x3E; &#x3C;small class=&#x22;timestamp pull-right&#x22;&#x3E;31 minutes ago&#x3C;/small&#x3E;
+                        &#x3C;br&#x3E;
+                        &#x3C;span class=&#x22;notification-text&#x22;&#x3E;Added a document to the project library.&#x3C;/span&#x3E;
+                    &#x3C;/p&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/article&#x3E;
+        &#x3C;article class=&#x22;media media-notification&#x22;&#x3E;
+            &#x3C;figure class=&#x22;media-left&#x22;&#x3E;
+                &#x3C;p class=&#x22;image is-32x32&#x22;&#x3E;
+                    &#x3C;img class=&#x22;img-circle&#x22; src=&#x22;assets/images/avatars/carolin.png&#x22;&#x3E;
+                &#x3C;/p&#x3E;
+            &#x3C;/figure&#x3E;
+            &#x3C;div class=&#x22;media-content&#x22;&#x3E;
+                &#x3C;div class=&#x22;content&#x22;&#x3E;
+                    &#x3C;p&#x3E;
+                        &#x3C;span class=&#x22;notification-title&#x22;&#x3E;Marjory Cambell&#x3C;/span&#x3E; &#x3C;small class=&#x22;timestamp pull-right&#x22;&#x3E;2 hours ago&#x3C;/small&#x3E;
+                        &#x3C;br&#x3E;
+                        &#x3C;span class=&#x22;notification-text&#x22;&#x3E;Commented one of your tasks.&#x3C;/span&#x3E;
+                    &#x3C;/p&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/article&#x3E;
+        &#x3C;article class=&#x22;media media-notification&#x22;&#x3E;
+            &#x3C;figure class=&#x22;media-left&#x22;&#x3E;
+                &#x3C;p class=&#x22;image is-32x32&#x22;&#x3E;
+                    &#x3C;img class=&#x22;img-circle&#x22; src=&#x22;assets/images/avatars/henry.jpg&#x22;&#x3E;
+                &#x3C;/p&#x3E;
+            &#x3C;/figure&#x3E;
+            &#x3C;div class=&#x22;media-content&#x22;&#x3E;
+                &#x3C;div class=&#x22;content&#x22;&#x3E;
+                    &#x3C;p&#x3E;
+                        &#x3C;span class=&#x22;notification-title&#x22;&#x3E;Henry Rogers&#x3C;/span&#x3E; &#x3C;small class=&#x22;timestamp pull-right&#x22;&#x3E;3 hours ago&#x3C;/small&#x3E;
+                        &#x3C;br&#x3E;
+                        &#x3C;span class=&#x22;notification-text&#x22;&#x3E;Added new tasks to project #122.&#x3C;/span&#x3E;
+                    &#x3C;/p&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/article&#x3E;
+        &#x3C;div class=&#x22;see-all has-text-centered&#x22;&#x3E;
+            &#x3C;a href=&#x22;#&#x22;&#x3E;All notifications&#x3C;/a&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;!-- /Panel --&#x3E;
+                                        </code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Code section -->
+            </div>
+        </div>
+        <!-- /Notifications panel -->
+
+        <!-- Bookmarks panel -->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Bookmarks panel</h4>
+                    <p class="no-padding">Here is another example of dropdown panel, this one is used to display previsously added bookmarks.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-3 has-text-centered">
+                <button class="button btn-align warning-btn btn-outlined raised" data-jq-dropdown="#bookmarks-panel">Bookmarks</button>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered mt-40">
+            <div class="column is-6 is-offset-3">
+                <!-- Code section -->
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <figure class="highlight highlight-block">
+                                <pre><code class="html code-highlight">
+&#x3C;!-- Panel trigger --&#x3E;
+&#x3C;button class=&#x22;button btn-align warning-btn btn-outlined raised&#x22; data-jq-dropdown=&#x22;#bookmarks-panel&#x22;&#x3E; Bookmarks&#x3C;/button&#x3E;
+&#x3C;!-- /Panel trigger --&#x3E;
+
+&#x3C;!-- Panel --&#x3E;
+&#x3C;div id=&#x22;bookmarks-panel&#x22; class=&#x22;jq-dropdown jq-dropdown-tip has-icons&#x22;&#x3E;
+    &#x3C;div class=&#x22;jq-dropdown-panel&#x22;&#x3E;
+        &#x3C;article class=&#x22;media icon-media&#x22;&#x3E;
+            &#x3C;figure class=&#x22;media-left&#x22;&#x3E;
+                &#x3C;i class=&#x22;im im-icon-File-Word&#x22;&#x3E;&#x3C;/i&#x3E;
+            &#x3C;/figure&#x3E;
+            &#x3C;div class=&#x22;media-content&#x22;&#x3E;
+                &#x3C;div class=&#x22;content&#x22;&#x3E;
+                    &#x3C;p&#x3E;
+                        &#x3C;span class=&#x22;notification-title&#x22;&#x3E;Project_budget.docx&#x3C;/span&#x3E; &#x3C;small class=&#x22;timestamp pull-right&#x22;&#x3E;&#x3C;i class=&#x22;sl sl-icon-lock&#x22;&#x3E;&#x3C;/i&#x3E; Locked&#x3C;/small&#x3E;
+                        &#x3C;br&#x3E;
+                        &#x3C;span class=&#x22;notification-text&#x22;&#x3E;Word document&#x3C;/span&#x3E;
+                    &#x3C;/p&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/article&#x3E;
+        &#x3C;article class=&#x22;media icon-media&#x22;&#x3E;
+            &#x3C;figure class=&#x22;media-left&#x22;&#x3E;
+                &#x3C;i class=&#x22;im im-icon-File-Excel&#x22;&#x3E;&#x3C;/i&#x3E;
+            &#x3C;/figure&#x3E;
+            &#x3C;div class=&#x22;media-content&#x22;&#x3E;
+                &#x3C;div class=&#x22;content&#x22;&#x3E;
+                    &#x3C;p&#x3E;
+                        &#x3C;span class=&#x22;notification-title&#x22;&#x3E;Accounts_stakeholders.xlsx&#x3C;/span&#x3E; &#x3C;small class=&#x22;timestamp pull-right&#x22;&#x3E;&#x3C;i class=&#x22;sl sl-icon-lock-open&#x22;&#x3E;&#x3C;/i&#x3E; Unlocked&#x3C;/small&#x3E;
+                        &#x3C;br&#x3E;
+                        &#x3C;span class=&#x22;notification-text&#x22;&#x3E;Excel document&#x3C;/span&#x3E;
+                    &#x3C;/p&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/article&#x3E;
+        &#x3C;article class=&#x22;media icon-media&#x22;&#x3E;
+            &#x3C;figure class=&#x22;media-left&#x22;&#x3E;
+                &#x3C;i class=&#x22;im im-icon-File-JPG&#x22;&#x3E;&#x3C;/i&#x3E;
+            &#x3C;/figure&#x3E;
+            &#x3C;div class=&#x22;media-content&#x22;&#x3E;
+                &#x3C;div class=&#x22;content&#x22;&#x3E;
+                    &#x3C;p&#x3E;
+                        &#x3C;span class=&#x22;notification-title&#x22;&#x3E;Train_receipts.jpg&#x3C;/span&#x3E; &#x3C;small class=&#x22;timestamp pull-right&#x22;&#x3E;&#x3C;i class=&#x22;sl sl-icon-lock-open&#x22;&#x3E;&#x3C;/i&#x3E; Unlocked&#x3C;/small&#x3E;
+                        &#x3C;br&#x3E;
+                        &#x3C;span class=&#x22;notification-text&#x22;&#x3E;Image document&#x3C;/span&#x3E;
+                    &#x3C;/p&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/article&#x3E;
+        &#x3C;div class=&#x22;see-all has-text-centered&#x22;&#x3E;
+            &#x3C;a href=&#x22;#&#x22;&#x3E;All bookmarks&#x3C;/a&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;!-- /Panel --&#x3E;
+                                        </code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Code section -->
+            </div>
+        </div>
+        <!-- /Bookmarks panel -->
+
+    </div>
+</section>
+
+{{> footer-dark}}
+
+<!-- DROPDOWNS -->
+
+<!-- With tip -->
+<div id="with-tip" class="jq-dropdown jq-dropdown-tip">
+    <ul class="jq-dropdown-menu">
+        <li><a href="#">Account</a></li>
+        <li><a href="#">Tasks</a></li>
+        <li><a href="#">Settings</a></li>
+        <li class="jq-dropdown-divider"></li>
+        <li><a href="#">Log out</a></li>
+    </ul>
+</div>
+<!-- /With tip -->
+
+<!-- Without tip -->
+<div id="without-tip" class="jq-dropdown">
+    <ul class="jq-dropdown-menu">
+        <li><a href="#">Account</a></li>
+        <li><a href="#">Tasks</a></li>
+        <li><a href="#">Settings</a></li>
+        <li class="jq-dropdown-divider"></li>
+        <li><a href="#">Log out</a></li>
+    </ul>
+</div>
+<!-- /Without tip -->
+
+<!-- With icons tip -->
+<div id="with-icons-tip" class="jq-dropdown jq-dropdown-tip">
+    <ul class="jq-dropdown-menu">
+        <li><a href="#"><i class="sl sl-icon-user mr-10"></i> Account</a></li>
+        <li><a href="#"><i class="sl sl-icon-check mr-10"></i> Tasks</a></li>
+        <li><a href="#"><i class="sl sl-icon-settings mr-10"></i> Settings</a></li>
+        <li class="jq-dropdown-divider"></li>
+        <li><a href="#"><i class="sl sl-icon-logout mr-10"></i> Log out</a></li>
+    </ul>
+</div>
+<!-- /With icons tip -->
+
+<!-- With icons no tip -->
+<div id="with-icons-notip" class="jq-dropdown">
+    <ul class="jq-dropdown-menu">
+        <li><a href="#"><i class="sl sl-icon-user mr-10"></i> Account</a></li>
+        <li><a href="#"><i class="sl sl-icon-check mr-10"></i> Tasks</a></li>
+        <li><a href="#"><i class="sl sl-icon-settings mr-10"></i> Settings</a></li>
+        <li class="jq-dropdown-divider"></li>
+        <li><a href="#"><i class="sl sl-icon-logout mr-10"></i> Log out</a></li>
+    </ul>
+</div>
+<!-- /With icons no tip -->
+
+<!-- With scroll -->
+<div id="with-scroll" class="jq-dropdown jq-dropdown-scroll">
+    <ul class="jq-dropdown-menu">
+        <li><a href="#"><i class="sl sl-icon-pencil mr-10"></i> Edit document</a></li>
+        <li><a href="#"><i class="sl sl-icon-cloud-upload mr-10"></i> Ulpoad new version</a></li>
+        <li><a href="#"><i class="sl sl-icon-clock mr-10"></i> Manage versions</a></li>
+        <li><a href="#"><i class="sl sl-icon-check mr-10"></i> Start a workflow</a></li>
+        <li><a href="#"><i class="sl sl-icon-user mr-10"></i> Assign user</a></li>
+        <li><a href="#"><i class="sl sl-icon-star mr-10"></i> Add to bookmarks</a></li>
+        <li class="jq-dropdown-divider"></li>
+        <li><a href="#"><i class="sl sl-icon-trash mr-10"></i> Delete</a></li>
+    </ul>
+</div>
+<!-- /With scroll -->
+
+<!-- With checkboxes radios -->
+<div id="with-checkboxes-radios" class="jq-dropdown">
+    <ul class="jq-dropdown-menu">
+        <li>
+            <label class="checkbox-wrap is-small">
+                <input id="check1" type="checkbox" class="b-checkbox" onchange="console.log('changed');">
+                <span></span>
+                Pro features
+            </label>
+        </li>
+        <li>
+            <label class="checkbox-wrap is-small">
+                <input id="check2" type="checkbox" class="b-checkbox" onchange="console.log('changed');">
+                <span></span>
+                Auto backup
+            </label>
+        </li>
+        <li>
+            <label class="checkbox-wrap is-small">
+                <input id="check3" type="checkbox" class="b-checkbox" onchange="console.log('changed');">
+                <span></span>
+                Dedicated support
+            </label>
+        </li>
+        <li class="jq-dropdown-divider"></li>
+        <li>
+            <label class="radio-wrap is-small is-primary">
+                <input type="radio" class="b-radio" name="radio-group">
+                <span></span>
+                Starter plan
+            </label>
+        </li>
+        <li>
+            <label class="radio-wrap is-small is-secondary">
+                <input type="radio" class="b-radio" name="radio-group">
+                <span></span>
+                Pro plan
+            </label>
+        </li>
+        <li>
+            <label class="radio-wrap is-small is-accent">
+                <input type="radio" class="b-radio" name="radio-group">
+                <span></span>
+                Business plan
+            </label>
+        </li>
+    </ul>
+</div>
+<!-- /With checkboxes radios -->
+
+<!-- Primary click -->
+<div id="primary" class="jq-dropdown is-primary">
+    <ul class="jq-dropdown-menu">
+        <li><a href="#"><i class="sl sl-icon-user mr-10"></i> Account</a></li>
+        <li><a href="#"><i class="sl sl-icon-check mr-10"></i> Tasks</a></li>
+        <li><a href="#"><i class="sl sl-icon-settings mr-10"></i> Settings</a></li>
+        <li class="jq-dropdown-divider"></li>
+        <li><a href="#"><i class="sl sl-icon-logout mr-10"></i> Log out</a></li>
+    </ul>
+</div>
+<!-- /Primary click -->
+
+<!-- Secondary click -->
+<div id="secondary" class="jq-dropdown is-secondary">
+    <ul class="jq-dropdown-menu">
+        <li><a href="#"><i class="sl sl-icon-user mr-10"></i> Account</a></li>
+        <li><a href="#"><i class="sl sl-icon-check mr-10"></i> Tasks</a></li>
+        <li><a href="#"><i class="sl sl-icon-settings mr-10"></i> Settings</a></li>
+        <li class="jq-dropdown-divider"></li>
+        <li><a href="#"><i class="sl sl-icon-logout mr-10"></i> Log out</a></li>
+    </ul>
+</div>
+<!-- /Secondary click -->
+
+<!-- Accent click -->
+<div id="accent" class="jq-dropdown is-accent">
+    <ul class="jq-dropdown-menu">
+        <li><a href="#"><i class="sl sl-icon-user mr-10"></i> Account</a></li>
+        <li><a href="#"><i class="sl sl-icon-check mr-10"></i> Tasks</a></li>
+        <li><a href="#"><i class="sl sl-icon-settings mr-10"></i> Settings</a></li>
+        <li class="jq-dropdown-divider"></li>
+        <li><a href="#"><i class="sl sl-icon-logout mr-10"></i> Log out</a></li>
+    </ul>
+</div>
+<!-- /Accent click -->
+
+<!-- Tip panel -->
+<div id="tip-panel" class="jq-dropdown jq-dropdown-tip has-icons">
+    <div class="jq-dropdown-panel">
+        Here is some <code>HTML</code> inside of a jq-dropdown. You can put pretty much
+        anything inside of a jq-dropdown, so have fun with it!
+    </div>
+</div>
+<!-- /Tip panel -->
+
+<!-- noTip panel -->
+<div id="notip-panel" class="jq-dropdown has-icons">
+    <div class="jq-dropdown-panel">
+        Here is some <code>HTML</code> inside of a jq-dropdown. You can put pretty much
+        anything inside of a jq-dropdown, so have fun with it!
+    </div>
+</div>
+<!-- /noTip panel -->
+
+<!-- Notifications panel -->
+<div id="notifications-panel" class="jq-dropdown jq-dropdown-tip has-icons">
+    <div class="jq-dropdown-panel">
+        <div class="media media-notification">
+            <figure class="media-left">
+                <p class="image is-32x32">
+                    <img class="img-circle" src="https://via.placeholder.com/250x250" alt=""
+                        data-demo-src="assets/images/avatars/terry.jpg">
+                </p>
+            </figure>
+            <div class="media-content">
+                <div class="content">
+                    <p>
+                        <span class="notification-title is-block">Terry Daniels</span>
+                        <span class="notification-text is-block">Added a document to the project library.</span>
+                        <small class="timestamp is-block">31 minutes ago</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="media media-notification">
+            <figure class="media-left">
+                <p class="image is-32x32">
+                    <img class="img-circle" src="https://via.placeholder.com/250x250" alt=""
+                        data-demo-src="assets/images/avatars/carolin.png">
+                </p>
+            </figure>
+            <div class="media-content">
+                <div class="content">
+                    <p>
+                        <span class="notification-title is-block">Marjory Cambell</span>
+                        <span class="notification-text is-block">Commented one of your tasks.</span>
+                        <small class="timestamp is-block">2 hours ago</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="media media-notification">
+            <figure class="media-left">
+                <p class="image is-32x32">
+                    <img class="img-circle" src="https://via.placeholder.com/250x250" alt=""
+                        data-demo-src="assets/images/avatars/henry.jpg">
+                </p>
+            </figure>
+            <div class="media-content">
+                <div class="content">
+                    <p>
+                        <span class="notification-title is-block">Henry Rogers</span>
+                        <span class="notification-text is-block">Added new tasks to project #122.</span>
+                        <small class="timestamp is-block">3 hours ago</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Notifications panel -->
+
+<!-- Bookmarks panel -->
+<div id="bookmarks-panel" class="jq-dropdown jq-dropdown-tip has-icons">
+    <div class="jq-dropdown-panel">
+        <div class="media icon-media">
+            <figure class="media-left">
+                <i class="im im-icon-Add-File"></i>
+            </figure>
+            <div class="media-content">
+                <div class="content">
+                    <p>
+                        <span class="notification-title is-block">Project_budget.docx</span>
+                        <span class="notification-text is-block">Word document</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="media icon-media">
+            <figure class="media-left">
+                <i class="im im-icon-Add-File"></i>
+            </figure>
+            <div class="media-content">
+                <div class="content">
+                    <p>
+                        <span class="notification-title is-block">Accounts_stakeholders.xlsx</span>
+                        <span class="notification-text is-block">Excel document</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="media icon-media">
+            <figure class="media-left">
+                <i class="im im-icon-Add-File"></i>
+            </figure>
+            <div class="media-content">
+                <div class="content">
+                    <p>
+                        <span class="notification-title is-block">Train_receipts.jpg</span>
+                        <span class="notification-text is-block">Image document</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Bookmarks panel -->
+
+
+<!-- /DROPDOWNS -->

@@ -1,0 +1,85 @@
+//
+// Form Wizard
+// 
+#smart_wizard{
+  .nav-tabs {
+    border-bottom: 1px solid lighten($bg-card, 8%);
+  }
+}
+.sw-theme-default > ul.step-anchor > li.active > a{
+  color: $info !important;
+}
+
+.sw-theme-default > ul.step-anchor > li > a::after{
+  background-color: $info;
+}
+
+#smart_wizard_circles {
+  .nav-tabs{
+    i{
+      font-size: 18px;
+    }
+  }
+}
+
+
+.sw-theme-circles > ul.step-anchor > li > a{
+  border-radius: 25%;
+  height: 62px;
+  width: 62px;
+  padding: 20px 0;
+  background-color: lighten($bg-card, 8%);
+  border: 2px solid lighten($bg-card, 12%);
+  box-shadow: none !important;
+}
+.sw-theme-circles > ul.step-anchor > li > a:hover{
+  background-color: lighten($bg-card, 5%);
+}
+.sw-theme-circles > ul.step-anchor:before{
+  height: 0;
+}
+
+.sw-theme-circles > ul.step-anchor > li > a > small{
+  bottom: -28px;
+}
+.sw-theme-circles > ul.step-anchor{
+  margin-bottom: 48px;
+  background-color: $bg-card;
+}
+
+.sw-theme-default,
+.sw-theme-arrows,
+.sw-circle-content{
+  border: 5px solid lighten($bg-card, 8%);
+  border-radius: 5px;
+  min-height: 300px !important;
+}
+.sw-theme-default .step-content,
+.sw-theme-circles .step-content,
+.sw-theme-arrows .step-content{
+  background-color: $bg-card;
+}
+.sw-theme-arrows > .sw-toolbar-bottom{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.sw-theme-arrows > ul.step-anchor,
+.sw-theme-circles .sw-toolbar,
+.sw-theme-default .sw-toolbar{
+  background-color: $bg-card;
+}
+
+.sw-theme-arrows > ul.step-anchor > li > a, 
+.sw-theme-arrows > ul.step-anchor > li > a:hover{
+  background-color: lighten($bg-card, 8%);
+}
+.sw-theme-arrows > ul.step-anchor > li > a:hover:after,
+.sw-theme-arrows > ul.step-anchor > li > a:after {
+  content: " ";
+  border-left: 30px solid lighten($bg-card, 8%);
+}
+
+.sw-theme-arrows > ul.step-anchor{
+  border-bottom: 1px solid lighten($bg-card, 8%);
+}

@@ -1,0 +1,23 @@
+{
+  "name": "metrica",
+  "version": "1.0.0",
+  "description": "Metrica is a responsive admin and dashboard template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "admin",
+    "template"
+  ],
+  "author": "mannatthemes",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "autoprefixer": "^9.6.0",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5"
+  }
+}

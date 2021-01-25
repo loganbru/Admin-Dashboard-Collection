@@ -1,0 +1,62 @@
+.nk-cta {
+	display: flex;
+	align-items: center;
+	&-block {
+		display: flex;
+		align-items: center;
+		flex-grow: 1;
+	}
+	&-img {
+		flex-shrink: 0;
+		.icon {
+			width: 2.25rem;
+			height: 2.25rem;
+			font-size: 1rem;
+		}
+	}
+	&-text {
+		flex-grow: 1;
+		line-height: 1.5;
+		font-family: $alt-font-family;
+		font-weight: $fw-bold;
+		font-size: .9375rem;
+		padding: 0.25rem 1.5rem 0.25rem 1.25rem;
+	}
+	&-action {
+		flex-shrink: 0;
+		margin-left: auto;
+	}
+}
+
+@media (max-width: 459px){
+	.nk-cta {
+		flex-wrap: wrap;
+		&-text {
+			padding-right: 0;
+			font-size: .875rem;
+		}
+		&-action {
+			flex-shrink: 1;
+			width: 100%;
+			margin: 1rem 0 .5rem (2.25rem + 1.25rem);
+		}
+	}
+}
+
+.nk-cta-plain {
+	.nk-cta {
+		&-block {
+			display: block;	
+		}
+		&-img {
+			margin-bottom: 1rem;
+		}
+		&-text {
+			font-weight: $fw-normal;
+			padding: 0.25rem 0;
+		}
+		&-action {
+			margin-top: 1.25em;
+		}
+	}
+}

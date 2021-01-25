@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/core.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script type="text/javascript" src="assets/js/plugins/ui/prism.min.js"></script>
+	
+	<script type="text/javascript" src="assets/js/core/app.js"></script>
+	<script type="text/javascript" src="assets/js/pages/sidebar_detached_sticky_native.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body data-spy="scroll" data-target=".sidebar-detached" class="has-detached-right">
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-default navbar-lg header-highlight">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="index.html"><img src="assets/images/logo_light.png" alt=""></a>
+
+			<ul class="nav navbar-nav pull-right visible-xs-block">
+				<li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+				<li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+				<li><a class="sidebar-mobile-detached-toggle"><i class="icon-grid7"></i></a></li>
+			</ul>
+		</div>
+
+		<div class="navbar-collapse collapse" id="navbar-mobile">
+			<ul class="nav navbar-nav">
+				<li><a class="sidebar-control sidebar-main-hide hidden-xs"><i class="icon-paragraph-justify3"></i></a></li>
+				<li><a class="sidebar-control sidebar-detached-hide hidden-xs"><i class="icon-drag-right"></i></a></li>
+			</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="other_changelog.html">Changelog <span class="label label-inline bg-warning-400 position-right">v. 2.0</span></a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page container -->
+	<div class="page-container">
+
+		<!-- Page content -->
+		<div class="page-content">
+
+			<!-- Main sidebar -->
+			<div class="sidebar sidebar-main">
+				<div class="sidebar-content">
+
+	        		<!-- Support -->
+					<div class="sidebar-category no-margin">
+						<div class="category-title">
+							<span>Have questions?</span>
+							<i class="icon-help text-muted pull-right"></i>
+						</div>
+
+						<div class="category-content">
+							<a href="http://kopyov.ticksy.com" class="btn bg-success-400 btn-block" target="_blank"><i class="icon-lifebuoy position-left"></i> Limitless support</a>
+						</div>
+					</div>
+					<!-- /support -->
+
+
+					<!-- Main navigation -->
+					<div class="sidebar-category">
+						<div class="category-title">
+							<span>Navigation</span>
+							<i class="icon-menu7 text-muted pull-right"></i>
+						</div>
+
+						<div class="category-content no-padding">
+							<ul class="navigation navigation-main navigation-accordion">
+
+								<!-- Main -->
+								<li class="navigation-header">Main</li>
+								<li><a href="index.html">Introduction</a></li>
+								<li><a href="main_getting_started.html">Getting started</a></li>
+								<li><a href="main_starter_kit.html">Starter kit</a></li>
+								<li class="active"><a href="main_rtl.html">RTL layout</a></li>
+
+								<li class="navigation-header">Basic functionality</li>								
+								<li><a href="base_less_css.html">LESS and CSS</a></li>
+								<li><a href="base_less_compile.html">Compiling LESS</a></li>
+								<li><a href="base_less_compile_rtl.html">Compiling LESS for RTL version</a></li>
+								<li>
+									<a href="#">Plugins</a>
+									<ul>
+										<li><a href="plugins_forms.html">Forms</a></li>
+										<li><a href="plugins_forms_styling.html">Form styling</a></li>
+										<li><a href="plugins_selects.html">Selects</a></li>
+										<li><a href="plugins_editors.html">Editors</a></li>
+										<li><a href="plugins_uploaders.html">Uploaders</a></li>
+										<li><a href="plugins_wizards.html">Wizards</a></li>
+										<li><a href="plugins_extensions.html">Extensions</a></li>
+										<li><a href="plugins_notifications.html">Notifications</a></li>
+										<li><a href="plugins_pickers.html">Pickers</a></li>
+										<li><a href="plugins_tables.html">Tables</a></li>
+										<li><a href="plugins_ui.html">UI</a></li>
+										<li><a href="plugins_vis.html">Visualization</a></li>
+									</ul>
+								</li>
+								<li><a href="base_bootstrap.html">Bootstrap</a></li>
+								<li><a href="base_color_system.html">Color system</a></li>
+								<li><a href="base_helpers.html">Helpers</a></li>
+								<li><a href="base_themes.html">Themes</a></li>
+
+								<li class="navigation-header">Layout options</li>
+								<li><a href="layout_markup.html">Markup</a></li>
+								<li><a href="layout_sidebars.html">Sidebars</a></li>
+								<li><a href="layout_navbars.html">Navbars</a></li>
+								<li><a href="layout_v_nav.html">Vertical navigation</a></li>
+								<li><a href="layout_h_nav.html">Horizontal navigation</a></li>
+								<li><a href="layout_page_header.html">Page header</a></li>
+								<li><a href="layout_footer.html">Footer</a></li>
+
+								<li class="navigation-header">Other</li>
+								<li><a href="other_credits.html">Sources and credits</a></li>
+								<li><a href="other_changelog.html">Changelog <span class="label bg-warning-400">version 2.0</span></a></li>
+								<!-- /main -->
+
+							</ul>
+						</div>
+					</div>
+					<!-- /main navigation -->
+
+				</div>
+			</div>
+			<!-- /main sidebar -->
+
+
+			<!-- Main content -->
+			<div class="content-wrapper">
+
+				<!-- Page header -->
+				<div class="page-header">
+					<div class="page-header-content">
+						<div class="page-title">
+							<h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold">Limitless</span> - RTL Layout</h4>
+						</div>
+
+						<div class="heading-elements">
+							<ul class="breadcrumb">
+								<li><a href="index.html"><i class="icon-home2 position-left"></i> Home</a></li>
+								<li class="active">RTL layout</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- /page header -->
+				
+
+				<!-- Content area -->
+				<div class="content">
+
+					<!-- Detached content -->
+					<div class="container-detached">
+						<div class="content-detached">
+
+							<!-- RTL layout -->
+							<div class="panel panel-flat" id="rtl">
+								<div class="panel-heading">
+									<h5 class="panel-title">RTL layout overview</h5>
+									<div class="heading-elements">
+										<ul class="icons-list">
+					                		<li><a data-action="collapse"></a></li>
+					                		<li><a data-action="close"></a></li>
+					                	</ul>
+				                	</div>
+								</div>
+
+								<div class="panel-body">
+									<div class="content-group-lg">
+										<div class="content-group">
+											<h6 class="text-semibold" id="rtl_overview">Overview</h6>
+											<p>RTL layout - layout in right-to-left direction, where content displays from the right-hand side of a page and concludes on the left-hand side, such as in Arabic, Hebrew and Urdu. Other words - the whole page layout and content is mirrored. Limitless template supports RTL layout version in all 4 available main layout variations.</p>
+										</div>
+
+										<p class="text-muted text-size-small">Screenshot of <code>RTL</code> folder</p>
+										<img src="assets/images/screenshots/u/folder_rtl.png" alt="" class="img-thumbnail img-responsive">
+									</div>
+
+									<div class="content-group-lg">
+										<div class="content-group">
+											<h6 class="text-semibold" id="rtl_diff">The difference</h6>
+											<p>Both LTR and RTL versions use the same markup, class names and content ordering. The only difference is <code>dir="rtl"</code> attribute added to the <code>&lt;html></code> element of the page, which changes the direction. Starting from version 1.3, both LTR and RTL layouts are using the same set of LESS files, with minor additions. From now on, CSS files with RTL styles are automatically generated by gulp task runner - first it compiles LESS files to a normal LTR version, right after that it generates a new set of CSS files with RTL support.</p>
+
+											<p>The main benefit of this method - no need to store separate versions of LESS files and update them manually, it saves a lot of time and makes updating process much faster. However, the only downside here is - it works only with GULP. So if you have any questions about LESS files compilation in RTL version - do not hesitate to let me know, i'll assist you withmigrating.</p>
+
+											<p>For those who don't know how to use gulp, please check <a href="base_less_compile.html">this section</a> for step-by-step description on how to set it up and running.</p>
+
+											<p>Also some of the plugins are modified in order to work with RTL direction, because by default they don't support it. A couple of components, such as NoUI slider and Datatable extensions don't support RTL at all due to the plugin logic, but NoUI sliders will be fixed soon. All other options and features are supported.</p>
+										</div>
+
+										<p>Example markup:</p>
+										<pre data-line="2"><code class="language-markup">&lt;!-- RTL layout -->
+&lt;html lang="ar" dir="rtl">
+
+	&lt;!-- Page head -->
+	&lt;head>
+		...
+	&lt;/head>
+	&lt;!-- /page head -->
+
+
+	&lt;!-- Page body -->
+	&lt;body>
+
+		&lt;!-- Main navbar -->
+		&lt;div class="navbar navbar-inverse">
+			...
+		&lt;/div>
+		&lt;!-- /main navbar -->
+
+
+		&lt;!-- Page container -->
+		&lt;div class="page-container">
+			...
+		&lt;/div>
+		&lt;!-- /page container -->
+
+	&lt;/body>
+	&lt;!-- /page body -->
+
+&lt;/html>
+&lt;!-- /RTL layout -->
+</code></pre>
+									</div>
+
+									<div class="content-group-lg">
+										<h6 class="text-semibold" id="rtl_bs">Bootstrap RTL</h6>
+										<p>By default, Bootstrap framework doesn't support RTL direction. But fortunately it can be updated manually. Limitless template uses a custom manually updated Bootstrap LESS version, which is the same as LTR version, except a couple of additinal fixes. Table below contains files that belongs to original Bootstrap LESS files and have been modified:</p>
+
+										<div class="table-responsive content-group">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px">What</th>
+														<th>Where</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>tooltip.less</code></td>
+														<td>/less/bootstrap/</td>
+														<td>Ignore arrow and tooltip positioning</td>
+													</tr>
+													<tr>
+														<td><code>popovers.less</code></td>
+														<td>/less/bootstrap/</td>
+														<td>Ignore arrow and popover positioning</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+
+										<p>All other files are identical in both LTR and RTL versions. Apart from Bootstrap, there's also a few files in LESS folders that differ from LTR version, mainly for proper positioning or in those components that don't support RTL direction.</p>
+									</div>
+								</div>
+							</div>
+							<!-- /RTL layout -->
+
+						</div>
+					</div>
+					<!-- /detached content -->
+
+
+					<!-- Detached sidebar -->
+					<div class="sidebar-detached">
+			        	<div class="sidebar sidebar-default">
+							<div class="sidebar-content">
+
+				        		<!-- Contact author -->
+								<div class="sidebar-category no-margin">
+									<div class="category-title">
+										<span>Page navigation</span>
+										<i class="icon-menu7 text-muted pull-right"></i>
+									</div>
+
+									<div class="category-content">
+										<a href="http://themeforest.net/user/kopyov" class="btn bg-blue btn-block" target="_blank"><i class="icon-reading position-left"></i> Contact author</a>
+									</div>
+								</div>
+								<!-- /contact author -->
+
+			        			
+			        			<!-- Navigation -->
+								<div class="sidebar-category">
+									<div class="category-content no-padding">
+										<ul class="nav navigation no-padding-top">
+											<li class="navigation-header"><i class="icon-history pull-right"></i> Navigation</li>
+											<li><a href="#rtl_overview">RTL layout overview</a></li>
+											<li><a href="#rtl_diff">The difference</a></li>
+											<li><a href="#rtl_bs">Bootstrap RTL</a></li>
+											<li><a href="#rtl_rules">Rules and notices</a></li>
+											<li class="navigation-divider"></li>
+											<li><a href="#">Go to top <i class="icon-circle-up2 pull-right"></i></a></li>
+							            </ul>
+						            </div>
+					            </div>
+					            <!-- /navigation -->
+
+				            </div>
+			            </div>
+		            </div>
+		            <!-- /detached sidebar -->
+
+
+					<!-- Footer -->
+					<div class="footer text-muted">
+						&copy; 2015. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
+					</div>
+					<!-- /footer -->
+
+				</div>
+				<!-- /content area -->
+
+			</div>
+			<!-- /main content -->
+
+		</div>
+		<!-- /page content -->
+
+	</div>
+	<!-- /page container -->
+
+</body>
+</html>

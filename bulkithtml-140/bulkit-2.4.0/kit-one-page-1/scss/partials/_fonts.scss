@@ -1,0 +1,27 @@
+/*! _fonts.scss | Bulkit | CSS Ninja */
+
+/* ==========================================================================
+Font styles
+========================================================================== */
+
+/***
+TABLE OF CONTENTS
+=============================================================================
+0. Imports
+=============================================================================
+***/
+
+/* ==========================================================================
+0. Imports
+========================================================================== */
+
+@font-face {
+    font-family: 'Nexa Light';
+    src: url("../fonts/nexa/NexaLight.woff") format("woff"), url("../fonts/nexa/NexaLight.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Nexa Bold';
+    font-weight: bold;
+    src: url("../fonts/nexa/NexaBold.woff") format("woff"), url("../fonts/nexa/NexaBold.ttf") format("truetype");
+}

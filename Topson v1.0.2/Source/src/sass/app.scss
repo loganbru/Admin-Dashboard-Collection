@@ -1,0 +1,54 @@
+// Fonts
+@import 'fonts/roboto';
+
+// Breakpoint
+@import 'breakpoint';
+
+// 3rd Parties
+@import '~slick-carousel/slick/slick';
+@import '~slick-carousel/slick/slick-theme';
+@import '~highlight.js/scss/github';
+@import '~tooltipster/dist/css/tooltipster.bundle.min';
+@import '~tooltipster/dist/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-shadow.min';
+@import '~tooltipster/dist/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-borderless.min';
+@import '~daterangepicker/daterangepicker';
+@import '~select2/src/scss/core';
+@import '~jquery-toast-plugin/src/jquery.toast';
+
+// Animations
+@import 'typing-dots';
+@import 'zoom-in';
+@import 'intro';
+
+// Components
+@import 'app';
+@import 'box';
+@import 'input';
+@import 'button';
+@import 'image-fit';
+@import 'global';
+@import 'tailwind';
+@import 'dropdown';
+@import 'modal';
+@import 'tab';
+@import 'checkbox';
+@import 'scrollbar';
+@import 'accordion';
+@import 'tooltip';
+@import 'slick';
+@import 'slick';
+@import 'toast';
+@import 'auth';
+@import 'top-bar';
+@import 'side-menu';
+@import 'chat-box';
+@import 'user-list';
+@import 'chat-list';
+@import 'boxed-tabs';
+@import 'shared-file';
+@import 'dropdown-menu';
+@import 'side-content';
+@import 'info-content';
+@import 'account-dropdown';
+@import 'modal-invite-friends';
+@import 'notification-dropdown';

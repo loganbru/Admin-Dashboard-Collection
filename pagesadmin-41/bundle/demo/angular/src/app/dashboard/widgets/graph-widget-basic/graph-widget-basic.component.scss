@@ -1,0 +1,29 @@
+graph-widget-basic{
+	display: flex;
+	width: 100%;
+	pgcard{
+		display: flex;
+		width: 100%;
+	}
+}
+.widget-12-basic{
+    .inner-wrapper{
+      display: flex;
+      flex-direction: column;
+    }
+    .chart-container{
+      flex: 1;    
+    }
+    .card-body{
+      padding-top: 25px !important;
+    }
+    .list-inline a {
+      padding: 3px 4px;
+      border-radius: 3px;
+      opacity: .7;
+    }
+    .nv-axisMaxMin-y{
+      display: none;
+    }
+}
+

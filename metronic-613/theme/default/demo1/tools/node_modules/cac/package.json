@@ -1,0 +1,68 @@
+{
+  "name": "cac",
+  "version": "3.0.4",
+  "description": "Command & Conquer, the command-line queen.",
+  "license": "MIT",
+  "repository": "egoist/cac",
+  "author": {
+    "name": "egoist",
+    "email": "0x142857@gmail.com",
+    "url": "github.com/egoist"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo src/index.js",
+    "test2": "npm run build && npm test",
+    "build": "bili",
+    "dev": "bili --watch"
+  },
+  "watch": {
+    "./src": [
+      "build"
+    ]
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/cac.common.js",
+  "keywords": [
+    "cli",
+    "commander",
+    "yargs",
+    "args",
+    "meow",
+    "minimist"
+  ],
+  "devDependencies": {
+    "nswatch": "^0.1.0",
+    "xo": "latest"
+  },
+  "xo": {
+    "semicolon": false,
+    "space": 2,
+    "rules": {
+      "xo/no-process-exit": 0,
+      "unicorn/no-process-exit": 0,
+      "import/no-dynamic-require": 0
+    }
+  },
+  "dependencies": {
+    "camelcase-keys": "^3.0.0",
+    "chalk": "^1.1.3",
+    "indent-string": "^3.0.0",
+    "minimist": "^1.2.0",
+    "read-pkg-up": "^1.0.1",
+    "suffix": "^0.1.0",
+    "text-table": "^0.2.0"
+  },
+  "bili": {
+    "transforms": {
+      "dangerousForOf": true
+    }
+  },
+  "kanpai": {
+    "test": "test2"
+  }
+}

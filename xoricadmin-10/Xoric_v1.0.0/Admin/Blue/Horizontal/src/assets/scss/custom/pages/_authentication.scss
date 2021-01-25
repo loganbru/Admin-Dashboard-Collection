@@ -1,0 +1,36 @@
+// 
+// authentication.scss
+//
+
+.bg-pattern {
+    background-image: url("../images/bg-pattern.png");
+    background-size: cover;
+    background-position: center;
+}
+
+// authentication home icon
+.home-btn {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+}
+
+.form-group-custom{
+    position: relative;
+    label{
+        position: absolute;
+        top: 8px;
+        padding: 4px 16px;
+        transition: 0.2s;
+    }
+    .form-control{
+        height: 45px;
+
+        &:focus, &:valid{
+            + label{
+                transform: translate(-0.75em,-96%) scale(.8);
+                color: $primary;
+            }
+        }
+    }
+}

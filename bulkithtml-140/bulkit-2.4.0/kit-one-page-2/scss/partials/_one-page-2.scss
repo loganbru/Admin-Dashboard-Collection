@@ -1,0 +1,335 @@
+/*! one-page-2.scss | Bulkit | CSS Ninja */
+
+/* ==========================================================================
+General Layout
+========================================================================== */
+
+/***
+TABLE OF CONTENTS
+=============================================================================
+0. Hero
+1. Section
+2. Columns
+3. Titles
+4. Footer
+5. Media Queries
+=============================================================================
+***/
+
+/* ==========================================================================
+0. Hero
+========================================================================== */
+
+body {
+    overflow-x: hidden;
+}
+
+.hero {
+    position: relative;
+    max-height: 90vh;
+
+    .is-hero-caption {
+        margin-top: 60px;
+        position: relative;
+        z-index: 1;
+
+        .title {
+            margin-bottom: 10px !important;
+        }
+
+        .subtitle {
+            max-width: 450px;
+            margin: 0 auto;
+        }
+
+        .button-wrap {
+            margin-top: 16px;
+
+            .button {
+                min-width: 200px;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+1. Section
+========================================================================== */
+
+.section {
+    &.is-grey {
+        background: $section-grey;
+    }
+
+    &.is-dark {
+        background: $sidebar;
+    }
+
+    &.is-reversed {
+        .columns {
+            flex-direction: row-reverse;
+        }
+    }
+
+    &.is-pricing {
+        background-image: url(../images/illustrations/ice.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 500px;
+        background-position-y: 50%;
+    }
+
+    .section-title {
+        img {
+            display: block;
+            width: 40px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            margin: 10px auto;
+            text-align: center;
+        }
+
+        h3 {
+            color: $muted-grey;
+        }
+    }
+
+    .side-title {
+        position: relative;
+    }
+
+    .side-paragraph {
+        color: $muted-grey;
+        font-size: 1.2rem;
+        max-width: 450px;
+
+        &.is-small {
+            font-size: 1rem;
+        }
+
+        &.has-margin {
+            margin-top: 20px;
+        }
+    }
+
+    .side-card {
+        width: 100%;
+        padding: 16px;
+        border-radius: 8px;
+        border: 1px solid darken($fade-grey, 1%);
+        background: $white;
+        display: flex;
+        align-items: center;
+        box-shadow: $light-box-shadow;
+        margin-bottom: 20px;
+        transition: all .3s;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:hover {
+            transform: translateY(-5px);
+
+            .round-icon {
+                background: $sidebar !important;
+            }
+        }
+
+        .round-icon {
+            height: 60px;
+            width: 60px;
+            min-width: 60px;
+            border-radius: 14px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all .3s;
+
+            &.is-primary {
+                background: $primary;
+            }
+
+            &.is-accent {
+                background: $accent;
+            }
+
+            svg {
+                height: 28px;
+                width: 28px;
+                stroke: $smoke-white;
+                stroke-width: 1px;
+            }
+        }
+
+        .meta {
+            margin-left: 16px;
+
+            span, a {
+                display: block;
+
+                &:first-child {
+                    font-weight: 500;
+                    color: $dark-text;
+                }
+
+                &:nth-child(2) {
+                    color: $muted-grey;
+                    font-size: .9rem;
+                }
+
+                &:nth-child(3) {
+                    color: $primary;
+                    font-size: .95rem;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    .side-image {
+        position: relative;
+        z-index: 2;
+        transition: all .5s;
+        transform: translateX(0);
+
+        &.is-pulled {
+            transform: translateX(-80px);
+        }
+    }
+
+    .shadow-side-image {
+        position: absolute;
+        top: 10px;
+        left: 0;
+        display: block;
+        height: calc(100% - 20px);
+        z-index: 1;
+        transform: translateX(60px);
+        transition: all .5s;
+
+        &.is-active {
+            transform: translateX(-30px);
+        }
+    }
+
+    .content-wrapper {
+        margin-top: 60px;
+
+        &.has-margin-bottom {
+            margin-bottom: 60px;
+        }
+    }
+}
+
+/* ==========================================================================
+2. Columns
+========================================================================== */
+
+.columns {
+    .column {
+        &.is-relative {
+            position: relative;
+        }
+    }
+}
+
+/* ==========================================================================
+3. Titles
+========================================================================== */
+
+.title {
+    font-family: 'Nexa Bold', sans-serif;
+    color: $dark-text;
+
+    &.is-light {
+        color: $smoke-white;
+    }
+
+    &.primary-title {
+        color: $primary;
+    }
+
+    &.grey-title {
+        color: $med-grey;
+    }
+}
+
+.subtitle {
+    font-family: 'Open Sans', sans-serif;
+
+    &.is-light {
+        color: $smoke-white;
+    }
+}
+
+/* ==========================================================================
+4. Footer
+========================================================================== */
+
+.footer {
+    //background: $primary;
+    background: $sidebar;
+    padding: 8rem 1.5rem 4rem 1.5rem;
+
+    .footer-logo {
+        max-width: 40px;
+    }
+
+    .footer-logo-text {
+        margin-top: 16px;
+        color: $smoke-white;
+        padding-right: 20px;
+    }
+
+    .footer-menu {
+        li {
+            padding: 8px 0;
+            color: $smoke-white;
+
+            a {
+                color: $smoke-white;
+            }
+        }
+    }
+
+    .copyright {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 8rem;
+
+        .copyright-logo {
+            display: block;
+            max-width: 70px;
+        }
+
+        .copyright-text {
+            font-weight: 500;
+            font-size: .9rem;
+            color: $smoke-white;
+        }
+    }
+}
+
+/* ==========================================================================
+5. Media Queries
+========================================================================== */
+
+@media (max-width: 767px) {
+    .pricing-card {
+        padding: 24px !important;
+    }
+
+    .partner-logos {
+        img {
+            height: 54px !important;
+            margin: 0 12px !important;
+        }
+    }
+}

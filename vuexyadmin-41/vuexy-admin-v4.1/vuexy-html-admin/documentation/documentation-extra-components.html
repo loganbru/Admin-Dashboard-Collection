@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
+    <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
+    <meta name="author" content="PIXINVENT">
+    <title>Extra Components Documentation - Vuexy - Bootstrap HTML admin template</title>
+    <link rel="apple-touch-icon" sizes="60x60" href="../app-assets/images/ico/apple-icon-60.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../app-assets/images/ico/apple-icon-76.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../app-assets/images/ico/apple-icon-120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../app-assets/images/ico/apple-icon-152.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../app-assets/images/ico/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i%7COpen+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <!-- BEGIN VENDOR CSS-->
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/vendors.min.css">
+    <!-- END VENDOR CSS-->
+    <!-- BEGIN VUEXY CSS-->
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/colors.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/components.css">
+    <!-- BEGIN Page Level CSS-->
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/core/menu/menu-types/vertical-menu.css">
+    <!-- link(rel='stylesheet', type='text/css', href='../../../app-assets/css'+rtl+'/core/menu/menu-types/vertical-overlay-menu.css')-->
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/ui/prism.min.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/documentation.css">
+    <!-- END Page Level CSS-->
+    <!-- BEGIN Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <!-- END Custom CSS-->
+  </head>
+  <body class="vertical-layout vertical-menu-modern content-right-sidebar  fixed-navbar" data-open="click" data-menu="vertical-menu-modern" data-col="content-right-sidebar">
+
+    <!-- fixed-top-->
+    <nav class="header-navbar navbar-expand-md navbar navbar-with-menu fixed-top navbar-light navbar-shadow">
+      <div class="navbar-wrapper">
+        <div class="navbar-container content float-right">
+          <div class="collapse navbar-collapse" id="navbar-mobile">
+            <ul class="nav navbar-nav">
+              <li class="nav-item"><a class="btn btn-link btn-doc-header" href="#"> V 4.1</a></li>
+              <li class="nav-item"><a class="btn btn-success btn-doc-header" href="https://pixinvent.ticksy.com" target="_blank"><i class="icon-help2"></i> Support</a></li>
+              <li class="nav-item"><a class="btn btn-warning btn-doc-header" href="https://1.envato.market/vuexy_admin"><i class="icon-bag3"></i> Purchase</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ////////////////////////////////////////////////////////////////////////////-->
+
+
+    <!-- main menu-->
+    <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
+      <div class="navbar-header">
+        <ul class="nav navbar-nav flex-row">
+          <li class="nav-item mr-auto"><a class="navbar-brand"><img class="brand-logo" alt="Vuexy admin logo" src="../app-assets/images/logo/logo.png"/>
+              <h2 class="brand-text">Vuexy</h2></a></li>
+          <li class="nav-item d-none d-xl-block nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="toggle-icon feather icon-disc font-medium-4 primary" data-ticon="icon-disc"></i></a></li>
+        </ul>
+      </div>
+      <div class="shadow-bottom"></div>
+      <!-- main menu content-->
+      <div class="main-menu-content">
+        <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+          <li class=" nav-item"><a href="index.html"><i class="feather icon-home"></i><span class="menu-title" data-i18n="">Vuexy Admin</span></a>
+          </li>
+          <li class=" nav-item"><a href="documentation-introduction.html"><i class="feather icon-align-justify"></i><span class="menu-title" data-i18n="">Introduction</span></a>
+          </li>
+          <li class=" nav-item"><a href="documentation-folder-structure.html"><i class="feather icon-folder"></i><span class="menu-title" data-i18n="">Folder Structure</span></a>
+          </li>
+          <li class=" nav-item"><a href="documentation-gulp.html"><i class="feather icon-settings"></i><span class="menu-title" data-i18n="">Gulp Building Tools</span></a>
+          </li>
+          <li class=" nav-item"><a href="documentation-styles-customization.html"><i class="feather icon-check-square"></i><span class="menu-title" data-i18n="">Styles Customization</span></a>
+          </li>
+          <li class=" nav-item"><a href="documentation-javascript-usage.html"><i class="feather icon-file"></i><span class="menu-title" data-i18n="">JavaScript Usage</span></a>
+          </li>
+          <li class=" nav-item"><a href="documentation-html-structure.html"><i class="feather icon-code"></i><span class="menu-title" data-i18n="">HTML Structure</span></a>
+          </li>
+          <li class=" nav-item"><a href="documentation-laravel.html"><i class="feather icon-edit"></i><span class="menu-title" data-i18n="">Laravel Integration</span></a>
+          </li>
+          <li class=" nav-item"><a href="documentation-template-customization.html"><i class="feather icon-settings"></i><span class="menu-title" data-i18n="">Template Customization</span></a>
+          </li>
+          <li class=" nav-item"><a href="documentation-apps.html"><i class="feather icon-server"></i><span class="menu-title" data-i18n="">Apps</span></a>
+          </li>
+          <li class=" nav-item"><a href="#"><i class="feather icon-layout"></i><span class="menu-title" data-i18n="">Layouts</span></a>
+            <ul class="menu-content">
+              <li><a class="menu-item" href="documentation-1-column.html">1 Column</a>
+              </li>
+              <li><a class="menu-item" href="documentation-2-columns.html">2 Column</a>
+              </li>
+              <li><a class="menu-item" href="documentation-content-left-sidebar.html">Content Left Sidebar</a>
+              </li>
+              <li><a class="menu-item" href="documentation-content-right-sidebar.html">Content Right Sidebar</a>
+              </li>
+              <li><a class="menu-item" href="documentation-content-detached-left-sidebar.html">Content Detached Left Sidebar</a>
+              </li>
+              <li><a class="menu-item" href="documentation-content-detached-right-sidebar.html">Content Detached Right Sidebar</a>
+              </li>
+            </ul>
+          </li>
+          <li class=" nav-item"><a href="documentation-starter-kit.html"><i class="feather icon-zap"></i><span class="menu-title" data-i18n="">Starter Kit</span></a>
+          </li>
+          <li class=" nav-item"><a href="#"><i class="feather icon-grid"></i><span class="menu-title" data-i18n="">UI</span></a>
+            <ul class="menu-content">
+              <li><a class="menu-item" href="documentation-card.html">Cards</a>
+              </li>
+              <li><a class="menu-item" href="documentation-colors.html">Colors</a>
+              </li>
+              <li><a class="menu-item" href="documentation-icons.html">Icons</a>
+              </li>
+              <li><a class="menu-item" href="documentation-data-view.html">Data View</a>
+              </li>
+            </ul>
+          </li>
+          <li class=" nav-item"><a href="#"><i class="feather icon-box"></i><span class="menu-title" data-i18n="">Components</span></a>
+            <ul class="menu-content">
+              <li><a class="menu-item" href="documentation-components.html">Components</a>
+              </li>
+              <li class="active"><a class="menu-item" href="documentation-extra-components.html">Extra Components</a>
+              </li>
+            </ul>
+          </li>
+          <li class=" nav-item"><a href="#"><i class="feather icon-copy"></i><span class="menu-title" data-i18n="">Forms</span></a>
+            <ul class="menu-content">
+              <li><a class="menu-item" href="documentation-form-elements.html">Form Elements</a>
+              </li>
+              <li><a class="menu-item" href="documentation-form-layouts.html">Form Layouts</a>
+              </li>
+              <li><a class="menu-item" href="documentation-form-wizard.html">Form Wizard</a>
+              </li>
+              <li><a class="menu-item" href="documentation-form-validation.html">Form Validation</a>
+              </li>
+            </ul>
+          </li>
+          <li class=" nav-item"><a href="#"><i class="feather icon-server"></i><span class="menu-title" data-i18n="">Tables</span></a>
+            <ul class="menu-content">
+              <li><a class="menu-item" href="documentation-bootstrap-tables.html">Tables</a>
+              </li>
+              <li><a class="menu-item" href="documentation-datatables.html">Data Tables</a>
+              </li>
+              <li><a class="menu-item" href="documentation-aggrid.html">AgGrid</a>
+              </li>
+            </ul>
+          </li>
+          <li class=" nav-item"><a href="#.html"><i class="feather icon-pie-chart"></i><span class="menu-title" data-i18n="">Charts</span></a>
+            <ul class="menu-content">
+              <li><a class="menu-item" href="documentation-charts-apex.html">Apex Chart</a>
+              </li>
+              <li><a class="menu-item" href="documentation-charts-chartjs.html">Chart JS</a>
+              </li>
+              <li><a class="menu-item" href="documentation-charts-echart.html">Echarts</a>
+              </li>
+            </ul>
+          </li>
+          <li class=" nav-item"><a href="documentation-maps.html"><i class="feather icon-map"></i><span class="menu-title" data-i18n="">Maps</span></a>
+          </li>
+          <li class=" nav-item"><a href="documentation-extensions.html"><i class="feather icon-edit"></i><span class="menu-title" data-i18n="">Extensions</span></a>
+          </li>
+          <li class=" nav-item"><a href="#"><i class="feather icon-layers"></i><span class="menu-title" data-i18n="">Other</span></a>
+            <ul class="menu-content">
+              <li><a class="menu-item" href="documentation-sources-credits.html">Sources &amp; Credits</a>
+              </li>
+              <li><a class="menu-item" href="documentation-changelog.html">Changelog</a>
+              </li>
+              <li><a class="menu-item" href="documentation-notes.html">Notes</a>
+              </li>
+              <li><a class="menu-item" href="https://pixinvent.ticksy.com/">Support</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- /main menu content-->
+      <!-- main menu footer-->
+      <!-- main menu footer-->
+    </div>
+    <!-- / main menu-->
+
+    <div class="app-content content">
+      <div class="sidebar-right sidebar-sticky">
+        <div class="sidebar"><div class="pt-2 pr-2">
+  <div class="sidebar-content p-1" data-spy="affix" data-offset-top="-77">
+    <div class="card">
+      <div class="card-header">
+        <h6 class="card-title">Extra Components</h6>
+      </div>
+      <div class="card-content" aria-expanded="true">
+        <div class="card-body">
+          <nav id="sidebar-page-navigation">
+            <ul id="page-navigation-list" class="nav">
+              <li class="nav-item"><a class="nav-link active" href="#avatar">Avatar</a></li>
+              <li class="nav-item"><a class="nav-link" href="#chips">Chips</a></li>
+              <li class="nav-item"><a class="nav-link" href="#divider">Divider</a></li>
+            </ul>
+          </nav>
+        </div>
+        <h6 class="border-top-grey border-top-lighten-2 p-1 mt-1 mb-0">
+          <a class="nav-link display-block text-muted" href="#top">Back to top
+            <i class="float-right fa fa-arrow-circle-o-up font-medium-3"></i>
+          </a>
+        </h6>
+      </div>
+    </div>
+  </div>
+</div>
+
+        </div>
+      </div>
+      <div class="content-detached content-left">
+        <div class="content-wrapper">
+          <div class="content-header row">
+            <div class="content-header-left col-12 mb-2">
+              <div class="row breadcrumbs-top">
+                <div class="col-12">
+                  <h2 class="content-header-title float-left mb-0">Extra Components Documentation</h2>
+                  <div class="breadcrumb-wrapper">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="index.html">Home</a>
+                      </li>
+                      <li class="breadcrumb-item active">Extra Components
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content-body"><!-- Avatar -->
+<div class="card">
+  <div class="card-header">
+    <h4 id="avatar" class="card-title">Avatar</h4>
+    <div class="heading-elements">
+      <ul class="list-inline mb-0">
+        <li><a data-action="collapse"><i class="feather icon-chevron-down"></i></a></li>
+        <li><a data-action="expand"><i class="feather icon-maximize"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="card-content collapse show">
+    <div class="card-body">
+      <p>Often you need to add an user's avatar to your app. In order to make this we have the component.
+        <strong>Note:</strong> you have to use inline attributes for avatar image size.
+      </p>
+      <p>Use below mentioned code to create an avatar.</p>
+      <pre class="language-markup">
+<code class="language-markup">
+    &lt;div class=&quot;avatar&quot;&gt;
+    &lt;span class=&quot;avatar-content&quot;&gt;&lt;i class=&quot;avatar-icon feather icon-github&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+  &lt;/div&gt;
+</code>
+      </pre>
+      <table class="table table-bordered tabled-striped">
+        <thead>
+          <tr>
+            <th>Avatar Type</th>
+            <th>Class</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Basic</td>
+            <td><code>.avatar.bg-*</code></td>
+            <td>Use any template color from <a href="documentation-colors.html">COLOR PALETTE</a> that you like to add
+              for avatar.</td>
+          </tr>
+          <tr>
+            <td>Avatar Sizes</td>
+            <td><code>.avatar-{sm|lg|xl}</code></td>
+            <td>Diffrent sizes for avatar.</td>
+          </tr>
+          <tr>
+            <td>Avatar Status</td>
+            <td><code>.avatar-status-{online | offline | away | busy}</code></td>
+            <td>Adds little element to avatar with color according to status.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><strong>Referrals :</strong></p>
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>URL</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Template Page</strong></td>
+            <td><a
+                href="https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/ex-component-avatar.html"
+                target="_blank">https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/ex-component-avatar.html</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<!--/ Avatar -->
+
+<!-- Chips -->
+<div class="card">
+  <div class="card-header">
+    <h4 id="chips" class="card-title">Chips</h4>
+    <div class="heading-elements">
+      <ul class="list-inline mb-0">
+        <li><a data-action="collapse"><i class="feather icon-chevron-down"></i></a></li>
+        <li><a data-action="expand"><i class="feather icon-maximize"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="card-content collapse show">
+    <div class="card-body">
+      <p>Chips are compact elements that represent an input, attribute, or action.</p>
+      <p>Use below mentioned code to create a chip.</p>
+      <pre class="language-markup">
+  <code class="language-markup">
+  &lt;div class=&quot;chip&quot;&gt;
+  &lt;div class=&quot;chip-body&quot;&gt;
+    &lt;div class=&quot;avatar&quot;&gt;
+      &lt;div class=&quot;avatar-content&quot;&gt;
+        LD
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;span class=&quot;chip-text&quot;&gt;Avatar Text&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+  </code>
+        </pre>
+      <table class="table table-bordered tabled-striped">
+        <thead>
+          <tr>
+            <th>Chip Type</th>
+            <th>Class</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Basic</td>
+            <td><code>.chip.chip-*</code></td>
+            <td>Use any template color from <a href="documentation-colors.html">COLOR PALETTE</a> that you like to add
+              for chip.</td>
+          </tr>
+          <tr>
+            <td>Avatar</td>
+            <td><code>.avatar</code></td>
+            <td>Adds avatar inside chip.</td>
+          </tr>
+          <tr>
+            <td>Closeable</td>
+            <td><code>.chip-closeable</code></td>
+            <td>creates a closeable chip.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><strong>Referrals :</strong></p>
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>URL</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Template Page</strong></td>
+            <td><a
+                href="https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/ex-component-chips.html"
+                target="_blank">https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/ex-component-chips.html</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<!--/ Chips -->
+
+<!-- Divider -->
+<div class="card">
+  <div class="card-header">
+    <h4 id="divider" class="card-title">Divider</h4>
+    <div class="heading-elements">
+      <ul class="list-inline mb-0">
+        <li><a data-action="collapse"><i class="feather icon-chevron-down"></i></a></li>
+        <li><a data-action="expand"><i class="feather icon-maximize"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="card-content collapse show">
+    <div class="card-body">
+      <p>Divide text or section components with some great features and quick to implement.</p>
+      <p>Use below mentioned code to create a divider.</p>
+      <pre class="language-markup">
+    <code class="language-markup">
+    &lt;div class=&quot;divider&quot;&gt;
+    &lt;div class=&quot;divider-text&quot;&gt;My Text&lt;/div&gt;
+  &lt;/div&gt;
+    </code>
+          </pre>
+      <table class="table table-bordered tabled-striped">
+        <thead>
+          <tr>
+            <th>Divider Type</th>
+            <th>Class</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Basic Divider</td>
+            <td><code>.divider</code></td>
+            <td>Creates a divider</td>
+          </tr>
+          <tr>
+            <td>Divider Text</td>
+            <td><code>.divider-text</code></td>
+            <td>Adds text between divider.</td>
+          </tr>
+          <tr>
+            <td>Position</td>
+            <td><code>.divider-{left|left-center|right|right-center}</code></td>
+            <td>Changes divider text position.</td>
+          </tr>
+          <tr>
+            <td>Colors</td>
+            <td><code>.divider-*</code></td>
+            <td>Changes divider color.</td>
+          </tr>
+          <tr>
+            <td>Style</td>
+            <td><code>.divider-{dotted | dashed}</code></td>
+            <td>Changes divider style.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><strong>Referrals :</strong></p>
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>URL</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Template Page</strong></td>
+            <td><a
+                href="https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/ex-component-divider.html"
+                target="_blank">https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/ex-component-divider.html</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<!--/ Divider -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ////////////////////////////////////////////////////////////////////////////-->
+
+
+    <footer class="footer footer-static footer-light">
+      <p class="clearfix blue-grey lighten-2 mb-0"><span class="float-md-left d-block d-md-inline-block">COPYRIGHT  &copy; 2019<a class="text-bold-800 grey darken-2" href="https://1.envato.market/pixinvent_portfolio" target="_blank">Pixinvent,</a>All rights Reserved</span><span class="float-md-right d-none d-md-block">Hand-crafted & Made with<i class="feather icon-heart pink"></i></span></p>
+    </footer>
+
+    <script src="../app-assets/vendors/js/vendors.min.js"></script>
+    <script src="../app-assets/js/core/app-menu.js"></script>
+    <script src="../app-assets/js/core/app.js"></script>
+    <script src="../app-assets/js/scripts/customizer.js"></script>
+    <script src="../app-assets/js/scripts/documentation.js" type="text/javascript"></script>
+    <script src="../app-assets/vendors/js/ui/prism.min.js" type="text/javascript"></script>
+    <script src="../app-assets/vendors/js/ui/affix.js" type="text/javascript"></script>
+  </body>
+</html>

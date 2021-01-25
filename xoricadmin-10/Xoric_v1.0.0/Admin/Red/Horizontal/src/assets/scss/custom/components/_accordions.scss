@@ -1,0 +1,24 @@
+//
+// accordion.scss
+//
+
+.custom-accordion {
+
+  .card{
+    border: 1px solid $card-border-color !important;
+    border-radius: $card-border-radius !important;
+  }
+
+  a {
+    .accor-plus-icon {
+      font-size: 18px;
+    }
+      &.collapsed {
+          i.accor-plus-icon {
+              &:before {
+                  content: "\F140";
+              }
+          }
+      }
+  }
+}

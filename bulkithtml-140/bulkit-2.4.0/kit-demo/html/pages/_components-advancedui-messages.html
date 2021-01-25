@@ -1,0 +1,400 @@
+---
+layout: components
+title: Messages
+---
+
+<!-- Hero and nav -->
+<div class="hero is-relative is-theme-info">
+    
+    {{> navbar-static-light}}
+
+    <!-- Hero image -->
+    <div id="main-hero" class="hero-body">
+        <div class="container has-text-centered">
+            <div class="columns is-vcentered">
+                <div class="column is-4 is-offset-1 has-text-left">
+                    <h1 class="title components-title is-1">
+                        Messages 
+                    </h1>
+                    <h2 class="subtitle is-4 components-subtitle">
+                        Messages and toasts variations
+                    </h2>
+                    <p class="components-cta">
+                        <a href="#start" class="button button-cta btn-align light-btn btn-outlined is-bold rounded">
+                            Get Started
+                        </a>
+                    </p>
+                </div>
+                <div class="column is-offset-1 has-text-centered is-hidden-mobile">
+                    <div id="messages-ill" class="vivus-svg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Hero image -->
+</div>
+<!-- /Hero and nav -->
+
+<!-- Static messages -->
+<section class="section is-medium">
+    <div class="container">
+        <div id="start" class="section-title-wrapper has-text-centered">
+            <div class="bg-number">1</div>
+            <h2 class="title section-title has-text-centered dark-text text-bold">
+                Static messages
+            </h2>
+        </div>
+
+        <!-- Basic markup -->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Basic message</h4>
+                    <p class="no-padding">Messages are a convenient way to inform users when they accomplish some actions. The markup is very simple, lightweight and highly customizable.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered is-multiline pt-30">
+            <div class="column is-6 is-offset-3">
+                <!-- Message -->
+                <article class="message">
+                    <h4 class="message-header">
+                        <span>Basic message</span>
+                        <span class="delete" aria-label="delete"></span>
+                    </h4>
+                    <div class="message-body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur.
+                    </div>
+                </article>
+            </div>
+        </div>
+        <!-- /Basic markup -->
+
+        <!-- Messages colors -->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Messages colors</h4>
+                    <p class="no-padding">Message headers can have different colors, regarding the type of message you wish to deliver. Available modifiers are <code>.msg-primary</code>, <code>.msg-secondary</code>, <code>.msg-accent</code>, <code>.msg-info</code>, <code>.msg-success</code>, <code>.msg-warning</code> and <code>.msg-danger</code>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered is-multiline pt-30">
+            <div class="column is-6 is-offset-3">
+                <!-- Message -->
+                <article class="message">
+                    <h4 class="message-header">
+                        <span>Default</span>
+                        <span class="delete" aria-label="delete"></span>
+                    </h4>
+                    <div class="message-body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum felis venenatis efficitur.
+                    </div>
+                </article>
+                <!-- Message -->
+                <article class="message msg-primary">
+                    <h4 class="message-header">
+                        <span>Primary</span>
+                        <span class="delete" aria-label="delete"></span>
+                    </h4>
+                    <div class="message-body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum felis venenatis efficitur.
+                    </div>
+                </article>
+                <!-- Message -->
+                <article class="message msg-secondary">
+                    <h4 class="message-header">
+                        <span>Secondary</span>
+                        <span class="delete" aria-label="delete"></span>
+                    </h4>
+                    <div class="message-body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum felis venenatis efficitur.
+                    </div>
+                </article>
+                <!-- Message -->
+                <article class="message msg-accent">
+                    <h4 class="message-header">
+                        <span>Accent</span>
+                        <span class="delete" aria-label="delete"></span>
+                    </h4>
+                    <div class="message-body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum felis venenatis efficitur.
+                    </div>
+                </article>
+                <!-- Message -->
+                <article class="message msg-info">
+                    <h4 class="message-header">
+                        <span>Info</span>
+                        <span class="delete" aria-label="delete"></span>
+                    </h4>
+                    <div class="message-body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum felis venenatis efficitur.
+                    </div>
+                </article>
+                <!-- Message -->
+                <article class="message msg-success">
+                    <h4 class="message-header">
+                        <span>Success</span>
+                        <span class="delete" aria-label="delete"></span>
+                    </h4>
+                    <div class="message-body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum felis venenatis efficitur.
+                    </div>
+                </article>
+                <!-- Message -->
+                <article class="message msg-warning">
+                    <h4 class="message-header">
+                        <span>Warning</span>
+                        <span class="delete" aria-label="delete"></span>
+                    </h4>
+                    <div class="message-body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum felis venenatis efficitur.
+                    </div>
+                </article>
+                <!-- Message -->
+                <article class="message msg-danger">
+                    <h4 class="message-header">
+                        <span>Danger</span>
+                        <span class="delete" aria-label="delete"></span>
+                    </h4>
+                    <div class="message-body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum felis venenatis efficitur.
+                    </div>
+                </article>
+            </div>
+        </div>
+        <!-- /Messages colors -->
+
+        <!-- Icon messages -->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered pb-20">
+                    <h4>Icon Messages</h4>
+                    <p class="no-padding">Sometimes, you will need something that is visually stronger. Icon messages are pefect for that. They feature a big colored icon that you can use to quicly inform the user before he dives into content. Available modifiers to the <code>.icon-msg</code> are <code>.primary-msg</code>, <code>.secondary-msg</code>, <code>.accent-msg</code>, <code>.info-msg</code>, <code>.success-msg</code>, <code>.warning-msg</code> and <code>.danger-msg</code>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered is-multiline pt-30">
+            <div class="column is-6 is-offset-3">
+                <!-- Message -->
+                <article class="message icon-msg">
+                    <i class="material-icons">favorite</i>
+                    <div class="message-body">
+                        <h4>Default message</h4>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum felis venenatis efficitur.
+                    </div>
+                </article>
+                <div class="mt-60"></div>
+                <!-- Message -->
+                <article class="message icon-msg primary-msg">
+                    <i class="material-icons">help</i>
+                    <div class="message-body">
+                        <h4>Primary message</h4>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum felis venenatis efficitur.
+                    </div>
+                </article>
+                <div class="mt-60"></div>
+                <!-- Message -->
+                <article class="message icon-msg secondary-msg">
+                    <i class="material-icons">work</i>
+                    <div class="message-body">
+                        <h4>Secondary message</h4>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum felis venenatis efficitur.
+                    </div>
+                </article>
+                <div class="mt-60"></div>
+                <!-- Message -->
+                <article class="message icon-msg accent-msg">
+                    <i class="material-icons">info</i>
+                    <div class="message-body">
+                        <h4>Accent message</h4>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum felis venenatis efficitur.
+                    </div>
+                </article>
+                <div class="mt-60"></div>
+                <!-- Message -->
+                <article class="message icon-msg info-msg">
+                    <i class="material-icons">chat_bubble</i>
+                    <div class="message-body">
+                        <h4>Info message</h4>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum felis venenatis efficitur.
+                    </div>
+                </article>
+                <div class="mt-60"></div>
+                <!-- Message -->
+                <article class="message icon-msg success-msg">
+                    <i class="material-icons">assignment_turned_in</i>
+                    <div class="message-body">
+                        <h4>Success message</h4>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum felis venenatis efficitur.
+                    </div>
+                </article>
+                <div class="mt-60"></div>
+                <!-- Message -->
+                <article class="message icon-msg warning-msg">
+                    <i class="material-icons">warning</i>
+                    <div class="message-body">
+                        <h4>Warning message</h4>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum felis venenatis efficitur.
+                    </div>
+                </article>
+                <div class="mt-60"></div>
+                <!-- Message -->
+                <article class="message icon-msg danger-msg">
+                    <i class="material-icons">assignment_late</i>
+                    <div class="message-body">
+                        <h4>Danger message</h4>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum felis venenatis efficitur.
+                    </div>
+                </article>
+            </div>
+        </div>
+        <!-- /Icon messages -->
+    </div>
+</section>
+<!-- /Static messages -->
+
+<!-- Static messages -->
+<section class="section section-feature-grey is-medium">
+    <div class="container">
+        <div class="section-title-wrapper has-text-centered">
+            <div class="bg-number">2</div>
+            <h2 class="title section-title has-text-centered dark-text text-bold">
+                Toast messages
+            </h2>
+        </div>
+
+        <!-- Toast positions -->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Toast positions</h4>
+                    <p class="no-padding">Bulkit Toast messages are based on the <a href="http://izitoast.marcelodolce.com/" target="_blank">IziToast</a> jQuery library. The library is very easy to use and to customize. It also offers a lot of options. Check out the <a href="http://izitoast.marcelodolce.com/#documentation" target="_blank">plugin documentation</a> for more details about usage. In the following example you can see the available toast positions. Use the <code>position</code> option to set your toast position.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered is-multiline has-text-centered pt-30">
+            <div class="column">
+                <button id="top-left-toast" class="button btn-align raised">Top Left</button>
+            </div>
+            <div class="column">
+                <button id="top-center-toast" class="button btn-align raised">Top Center</button>
+            </div>
+            <div class="column">
+                <button id="top-right-toast" class="button btn-align raised">Top Right</button>
+            </div>
+            <div class="column">
+                <button id="center-toast" class="button btn-align raised">Centered</button>
+            </div>
+            <div class="column">
+                <button id="bottom-left-toast" class="button btn-align raised">Bottom Left</button>
+            </div>
+            <div class="column">
+                <button id="bottom-center-toast" class="button btn-align raised">Bottom Center</button>
+            </div>
+            <div class="column">
+                <button id="bottom-right-toast" class="button btn-align raised">Bottom Right</button>
+            </div>
+        </div>
+        <!-- Toast positions -->
+
+        <!-- Message Toasts -->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Message Toasts</h4>
+                    <p class="no-padding">You can also use toasts to display success or error messages. Izitoast offers built-in messages but you can create your own like in the following example.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered is-multiline has-text-centered pt-30">
+            <div class="column is-3">
+                <button id="info-toast" class="button btn-align info-btn raised rounded">Info toast</button>
+            </div>
+            <div class="column is-3">
+                <button id="success-toast" class="button btn-align success-btn raised rounded">Success toast</button>
+            </div>
+            <div class="column is-3">
+                <button id="warning-toast" class="button btn-align warning-btn raised rounded">Warning toast</button>
+            </div>
+            <div class="column is-3">
+                <button id="danger-toast" class="button btn-align danger-btn raised rounded">Danger toast</button>
+            </div>
+        </div>
+        <!-- /Message Toasts -->
+
+        <!-- Toast Animations -->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Toast Animations</h4>
+                    <p class="no-padding">The way toasts appear and disappear from the screen can be controlled via options. Use the <code>transitionIn</code> and the <code>transitionOut</code> options to define enter and leave animations. Check the <a href="http://izitoast.marcelodolce.com/#documentation" target="_blank">plugin documentation</a> for more details.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered is-multiline has-text-centered pt-30">
+            <div class="column">
+                <button id="fade-toast" class="button btn-align raised">Fade Static</button>
+            </div>
+            <div class="column">
+                <button id="fadeUp-toast" class="button btn-align raised">Fade Up</button>
+            </div>
+            <div class="column">
+                <button id="fadeDown-toast" class="button btn-align raised">Fade Down</button>
+            </div>
+            <div class="column">
+                <button id="fadeLeft-toast" class="button btn-align raised">Fade Left</button>
+            </div>
+            <div class="column">
+                <button id="fadeRight-toast" class="button btn-align raised">Fade Right</button>
+            </div>
+            <div class="column">
+                <button id="bounceUp-toast" class="button btn-align raised">Bounce Up</button>
+            </div>
+            <div class="column">
+                <button id="bounceDown-toast" class="button btn-align raised">Bounce Down</button>
+            </div>
+            <div class="column">
+                <button id="bounceLeft-toast" class="button btn-align raised">Bounce Left</button>
+            </div>
+            <div class="column">
+                <button id="bounceRight-toast" class="button btn-align raised">Bounce Right</button>
+            </div>
+            <div class="column">
+                <button id="flip-toast" class="button btn-align raised">Flip</button>
+            </div>
+        </div>
+        <!-- /Toast Animations -->
+
+        <!-- Custom toasts -->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Custom Toasts</h4>
+                    <p class="no-padding">Detailed API and examples let you customize toasts to exactly fit your needs. The following examples feature an interactive toast, a bubble toast including callbacks and custom layout toast.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered is-multiline has-text-centered pt-30">
+            <div class="column">
+                <button id="question-toast" class="button btn-align accent-btn raised rounded">Question toast</button>
+            </div>
+            <div class="column">
+                <button id="balloon-toast" class="button btn-align secondary-btn raised rounded">Balloon toast</button>
+            </div>
+            <div class="column">
+                <button id="custom-toast" class="button btn-align primary-btn raised rounded">Custom toast</button>
+            </div>
+        </div>
+        <!-- /Custom toasts -->
+    </div>
+</section>
+
+{{> footer-dark}}

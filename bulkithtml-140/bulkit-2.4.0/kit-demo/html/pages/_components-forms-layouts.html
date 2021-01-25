@@ -1,0 +1,415 @@
+---
+layout: components
+title: Form Layouts
+---
+
+<!-- Hero and nav -->
+<div class="hero is-relative is-theme-info">
+    
+    {{> navbar-static-light}}
+
+    <!-- Hero image -->
+    <div id="main-hero" class="hero-body">
+        <div class="container has-text-centered">
+            <div class="columns is-vcentered">
+                <div class="column is-4 is-offset-1 has-text-left">
+                    <h1 class="title components-title is-1">
+                        Form layouts 
+                    </h1>
+                    <h2 class="subtitle is-4 components-subtitle">
+                        Form layouts examples and variations.
+                    </h2>
+                    <p class="components-cta">
+                        <a href="#vertical-form" class="button button-cta btn-align light-btn btn-outlined is-bold rounded">
+                            Get Started
+                        </a>
+                    </p>
+                </div>
+                <div class="column is-offset-1 has-text-centered is-hidden-mobile">
+                    <div id="forms-ill" class="vivus-svg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Hero image -->
+</div>
+<!-- /Hero and nav -->
+
+<!-- Vertical forms -->
+<section class="section is-medium">
+    <div id="vertical-form" class="section-title-wrapper has-text-centered">
+        <div class="bg-number">1</div>
+        <h2 class="title section-title has-text-centered dark-text text-bold">
+            Vertical forms
+        </h2>
+    </div>
+
+    <div class="columns is-vcentered">
+        <div class="column is-4 is-offset-4">
+            <div class="info-block has-text-centered">
+                <h4>Plain fields</h4>
+                <p>You can use plain input fields to create visually engaging and clean forms.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Plain fields -->
+    <div class="columns is-vcentered">
+        <div class="column is-4 is-offset-4">
+            <div class="flex-card light-bordered light-raised">
+                <div class="content has-text-centered mt-20">
+                    <h3>Form title</h3>
+                </div>
+                <div class="card-body">
+                    <form class="padding-20">
+                        <div class="field">
+                            <label class="form-label">First Name</label>
+                            <div class="control">
+                                <input type="text" class="input is-medium">
+                            </div>
+                        </div>
+                        <div class="field mt-20">
+                            <label class="form-label">Last Name</label>
+                            <div class="control">
+                                <input type="text" class="input is-medium">
+                            </div>
+                        </div>
+                        <div class="field mt-20">
+                            <label class="form-label">Email</label>
+                            <div class="control">
+                                <input type="email" class="input is-medium">
+                            </div>
+                        </div>
+                        <div class="file-input-wrapper mt-20">
+                            <div class="control field-input-wrapper">
+                                <div class='field-input'>
+                                    <input type='file'>
+                                    <span class='button btn-align info-btn raised'>Upload CV</span>
+                                    <span class='label' data-js-label>No file selected</span>
+                                </div>
+                            </div>   
+                        </div>
+                        <div class="mt-20 has-text-right">
+                            <button type="submit" class="button btn-align info-btn raised">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Plain fields -->
+
+    <div class="columns is-vcentered pt-60">
+        <div class="column is-4 is-offset-4">
+            <div class="info-block has-text-centered">
+                <h4>Material fields</h4>
+                <p>You can use material input fields instead of plain fields if you want a cleaner look.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Material fields -->
+    <div class="columns is-vcentered">
+        <div class="column is-4 is-offset-4">
+            <div class="flex-card light-bordered light-raised">
+                <div class="content has-text-centered mt-20">
+                    <h3>Form title</h3>
+                </div>
+                <div class="card-body">
+                    <form class="padding-20">
+                        <div class="control-material is-primary">      
+                            <input class="material-input " type="text" required>
+                            <span class="material-highlight"></span>
+                            <span class="bar"></span>
+                            <label>First Name</label>
+                        </div>
+                        <div class="control-material is-primary">      
+                            <input class="material-input " type="text" required>
+                            <span class="material-highlight"></span>
+                            <span class="bar"></span>
+                            <label>Last Name</label>
+                        </div>
+                        <div class="control-material is-primary">      
+                            <input class="material-input " type="email" required>
+                            <span class="material-highlight"></span>
+                            <span class="bar"></span>
+                            <label>Email</label>
+                        </div>
+                        <div class="file-input-wrapper mt-20">
+                            <div class="control field-input-wrapper">
+                                <div class='field-input'>
+                                    <input type='file'>
+                                    <span class='button btn-align info-btn raised'>Upload CV</span>
+                                    <span class='label' data-js-label>No file selected</span>
+                                </div>
+                            </div>   
+                        </div>
+                        <div class="mt-20 has-text-right">
+                            <button type="submit" class="button btn-align info-btn raised">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Material fields -->
+
+    <div class="columns is-vcentered pt-60">
+        <div class="column is-4 is-offset-4">
+            <div class="info-block has-text-centered">
+                <h4>Plain contact</h4>
+                <p>A simple and versatile contact form to reuse in your site designs.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Plain contact form -->
+    <div class="columns is-vcentered">
+        <div class="column is-4 is-offset-4">
+            <div class="flex-card light-bordered light-raised">
+                <div class="content has-text-centered mt-20">
+                    <h3>Form title</h3>
+                </div>
+                <div class="card-body">
+                    <form class="padding-20">
+                        <div class="field">
+                            <label class="form-label">Full name</label>
+                            <div class="control">
+                                <input type="text" class="input is-medium">
+                            </div>
+                        </div>
+                        <div class="field mt-20">
+                            <label class="form-label">Email</label>
+                            <div class="control">
+                                <input type="email" class="input is-medium">
+                            </div>
+                        </div>
+                        <div class="field mt-20">
+                            <label class="form-label">Message</label>
+                            <div class="control">
+                                <textarea class="textarea" rows="5" placeholder="Type your message ..."></textarea>
+                            </div>
+                        </div>
+                        <div class="mt-20 has-text-right">
+                            <button type="submit" class="button btn-align info-btn raised">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Plain contact form -->
+
+    <div class="columns is-vcentered mt-60">
+        <div class="column is-4 is-offset-4">
+            <div class="info-block has-text-centered">
+                <h4>Material contact</h4>
+                <p>A simple and versatile contact form featuring material inputs to reuse in your site designs.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Material contact form -->
+    <div class="columns is-vcentered">
+        <div class="column is-4 is-offset-4">
+            <div class="flex-card light-bordered light-raised">
+                <div class="content has-text-centered mt-20">
+                    <h3>Form title</h3>
+                </div>
+                <div class="card-body">
+                    <form class="padding-20">
+                        <div class="control-material is-primary">      
+                            <input class="material-input " type="text" required>
+                            <span class="material-highlight"></span>
+                            <span class="bar"></span>
+                            <label>Full name *</label>
+                        </div>
+                        <div class="control-material is-primary">      
+                            <input class="material-input " type="email" required>
+                            <span class="material-highlight"></span>
+                            <span class="bar"></span>
+                            <label>Email *</label>
+                        </div>
+                        <div class="control-material is-primary">  
+                            <textarea rows="5"></textarea>
+                            <span class="material-highlight"></span>
+                            <span class="bar"></span>
+                            <label>Message *</label>
+                        </div>
+                        <div class="mt-20 has-text-right">
+                            <button type="submit" class="button btn-align info-btn raised">SUBMIT</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Material contact form -->
+</section>
+<!-- Vertical forms -->
+
+<!-- Horizontal forms -->
+<section class="section section-feature-grey is-medium">
+    <div class="section-title-wrapper has-text-centered">
+        <div class="bg-number">2</div>
+        <h2 class="title section-title has-text-centered dark-text text-bold">
+            Horizontal forms
+        </h2>
+    </div>
+
+    <div class="columns is-vcentered">
+        <div class="column is-4 is-offset-4">
+            <div class="info-block has-text-centered">
+                <h4>2 Columns</h4>
+                <p>You can chose to diplay your forms in a horizontal layout. The example below shows a form with a two columns layout.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2 columns -->
+    <div class="columns is-vcentered">
+        <div class="column is-6 is-offset-3">
+            <div class="flex-card light-bordered light-raised">
+                <div class="card-body">
+                    <h2 class="title is-4 text-bold mb-20">Create project</h2>
+                    <form>
+                        <div class="columns mt-50">
+                            <div class="column">
+                                <div class="control">
+                                    <label>Project ID</label>
+                                    <input class="input is-medium mt-5" type="text">
+                                </div>
+                                <div class="control">
+                                    <label>Project category</label>
+                                    <div class="mt-5"></div>
+                                    <select class="chosen-select" data-placeholder="Project category">
+                                        <option label="Project category"></option>
+                                        <option>Marketing</option>
+                                        <option>Sales</option>
+                                        <option>Support</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="control">
+                                    <label>Project name</label>
+                                    <input class="input is-medium mt-5" type="text">
+                                </div>
+                                <div class="control">
+                                    <label>Project type</label>
+                                    <div class="mt-5"></div>
+                                    <select class="chosen-select" data-placeholder="Project type">
+                                        <option label="Project type"></option>
+                                        <option>Kanban</option>
+                                        <option>Scrum</option>
+                                        <option>List</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <div class="control">
+                                    <textarea class="textarea is-grow" rows="5" placeholder="Enter a project description ..."></textarea>
+                                </div>
+                            </div>   
+                        </div>
+                        <div class="mt-30">  
+                            <button class="button btn-align no-lh raised primary-btn">Create</button>
+                            <button class="button is-link no-lh">Cancel</button>
+                        </div>
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 2 columns -->
+
+    <div class="columns is-vcentered pt-60">
+        <div class="column is-4 is-offset-4">
+            <div class="info-block has-text-centered">
+                <h4>3 Columns</h4>
+                <p>You can chose to diplay your forms in a horizontal layout. The example below shows a form with a three columns layout.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3 columns -->
+    <div class="columns is-vcentered">
+        <div class="column is-6 is-offset-3">
+            <div class="flex-card light-bordered light-raised">
+                <div class="card-body">
+                    <h2 class="title is-4 text-bold mb-20">Create project</h2>
+                    <form>
+                        <div class="columns mt-50">
+                            <div class="column">
+                                <div class="control">
+                                    <label>Project ID</label>
+                                    <input class="input is-medium mt-5" type="text">
+                                </div>
+                                <div class="control">
+                                    <label>Project category</label>
+                                    <div class="mt-5"></div>
+                                    <select class="chosen-select" data-placeholder="Project category">
+                                        <option label="Project category"></option>
+                                        <option>Marketing</option>
+                                        <option>Sales</option>
+                                        <option>Support</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="control">
+                                    <label>Project name</label>
+                                    <input class="input is-medium mt-5" type="text">
+                                </div>
+                                <div class="control">
+                                    <label>Project type</label>
+                                    <div class="mt-5"></div>
+                                    <select class="chosen-select" data-placeholder="Project type">
+                                        <option label="Project type"></option>
+                                        <option>Kanban</option>
+                                        <option>Scrum</option>
+                                        <option>List</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="control">
+                                    <label>Department</label>
+                                    <input class="input is-medium mt-5" type="text">
+                                </div>
+                                <div class="control">
+                                    <label>Project size</label>
+                                    <div class="mt-5"></div>
+                                    <select class="chosen-select" data-placeholder="Project size">
+                                        <option label="Project size"></option>
+                                        <option>Small business</option>
+                                        <option>Corporate</option>
+                                        <option>Major</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <div class="control">
+                                    <textarea class="textarea is-grow" rows="5" placeholder="Enter a project description ..."></textarea>
+                                </div>
+                            </div>   
+                        </div>
+                        <div class="mt-30">  
+                            <button class="button btn-align no-lh raised primary-btn">Create</button>
+                            <button class="button is-link no-lh">Cancel</button>
+                        </div>
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 3 columns -->
+
+</section>
+<!-- /Horizontal forms -->
+
+{{> footer-dark}}

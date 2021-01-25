@@ -1,0 +1,18 @@
+
+
+.modal-content {
+  border-color: rgba($gray-900, .16);
+  @include border-radius();
+
+  .close {
+    font-weight: $font-weight-light;
+    font-size: 28px;
+    line-height: 0.87;
+  }
+}
+
+.modal-backdrop {
+  background-color: rgba(darken($gray-900, 8%), .7);
+
+  &.show { opacity: 1; }
+}

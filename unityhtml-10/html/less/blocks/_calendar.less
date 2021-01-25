@@ -1,0 +1,79 @@
+.calendar {
+  flex-direction: column;
+  .display-inline-flex();
+  & > div {
+    &:not(:first-child) {
+      margin-top: 18px;
+    }
+  }
+  &__top {
+
+  }
+  &__center {
+    margin-left: 1px;
+    flex-direction: column;
+    .display-flex();
+    & > div {
+      &:not(:first-child) {
+        margin-top: 6px;
+      }
+    }
+  }
+  &__bottom {
+    .display-flex();
+  }
+  &__btn {
+    height: 38px;
+    padding: 0 15px;
+    ._flex-center();
+    .display-inline-flex();
+    &:not(:first-child) {
+      margin-left: 15px;
+    }
+    i {
+      font-size: 18px;
+      &.icon-Calender {
+        font-size: 20px;
+      }
+    }
+    &&--c-01 {
+      background-color: #e9ecee;
+      i {
+        color: #5c6166;
+      }
+    }
+    &&--c-02 {
+      background-color: #f9bc64;
+      i {
+        color: #ffffff;
+      }
+    }
+  }
+  &__first,
+  &__last {
+    margin-left: 2px;
+    color: #8e9091;
+  }
+  &__range {
+    position: relative;
+    height: 370px;
+    border-left: solid 1px #e9ecee;
+  }
+  &__current {
+    position: absolute;
+    height: 40px;
+    padding-left: 15px;
+    margin-top: -20px;
+    border-left: solid 5px #f9bc64;
+    top: 50%;
+    left: -3px;
+    p {
+      margin: 0;
+      line-height: 1.2;
+      font-weight: @fw--semi-bold;
+    }
+    span {
+      color: #8e9091;
+    }
+  }
+}

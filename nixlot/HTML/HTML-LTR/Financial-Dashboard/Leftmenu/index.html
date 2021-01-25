@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+  <link rel="icon" href="../../../assets/img/brand/favicon.ico" type="image/x-icon" />
+  <title>Nixlot - HTML5 Bootstrap Admin Template</title>
+  <link href="../../../assets/plugins/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="../../../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../../assets/plugins/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="../../../assets/plugins/typicons.font/typicons.css" rel="stylesheet">
+  <link href="../../../assets/plugins/sidebar/sidebar.css" rel="stylesheet">
+  <link href="../../../assets/plugins/sidemenu/sidemenu.css" rel="stylesheet">
+  <link href="../../../assets/plugins/mscrollbar/jquery.mCustomScrollbar.css" rel="stylesheet" />
+  <link href="../../../assets/plugins/select2/css/select2.min.css" rel="stylesheet">
+  <link href="../../../assets/plugins/morris.js/morris.css" rel="stylesheet">
+  <link href="../../../assets/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+  <link href="../../../assets/css/dashboard-three.css" rel="stylesheet">
+  <link href="../../../assets/css/dashboard-three-dark.css" rel="stylesheet">
+  <link href="../../../assets/css/icons.css" rel="stylesheet">
+  <link href="../../../assets/plugins/lightslider/css/lightslider.min.css" rel="stylesheet">
+  <link href="../../../assets/plugins/cryptofont/css/cryptofont.min.css" rel="stylesheet">
+  <link href="../../../assets/plugins/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
+</head>
+
+<body class="main-body app sidebar-mini">
+  <div id="loading">
+    <img src="../../../assets/img/loader3.svg" class="loader-img" alt="Loader">
+  </div>
+  <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+  <aside class="app-sidebar">
+    <div class="side-header">
+      <a class="main-logo desktop-logo" href="index.html"><img src="../../../assets/img/brand/logo-3.png"
+          alt="logo"></a>
+      <a class="main-logo mobile-logo" href="index.html"><img src="../../../assets/img/brand/icon-3.png" alt="logo"></a>
+      <a class="main-logo dark-theme-logo" href="index.html"><img src="../../../assets/img/brand/logo-3-dark.png"
+          alt="logo"></a>
+      <div class="app-sidebar__toggle" data-toggle="sidebar">
+        <a class="open-toggle" href="#"><i class="header-icons" data-eva="menu-outline"></i></a>
+        <a class="close-toggle" href="#"><i class="header-icons" data-eva="close-outline"></i></a>
+      </div>
+    </div>
+    <ul class="side-menu">
+      <li class="slide">
+        <a class="side-menu__item" href="index.html"><i class="side-menu__icon" data-eva="monitor-outline"></i><span
+            class="side-menu__label">Dashboard</span></a>
+      </li>
+      <li class="slide">
+        <a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon"
+            data-eva="pin-outline"></i><span class="side-menu__label">Maps</span><i
+            class="angle fe fe-chevron-down"></i></a>
+        <ul class="slide-menu">
+          <li><a class="slide-item" href="map-leaflet.html">Leaflet</a></li>
+          <li><a class="slide-item" href="map-vector.html">Vector Maps</a></li>
+        </ul>
+      </li>
+    </ul>
+  </aside>
+  <div class="main-content px-0 app-content">
+    <div class="main-header">
+      <div class="container-fluid">
+        <div class="mobileheader-logo">
+          <div class="app-sidebar__toggle mobile-toggle" data-toggle="sidebar">
+            <a class="open-toggle" href="#"><i class="header-icons" data-eva="menu-outline"></i></a>
+            <a class="close-toggle" href="#"><i class="header-icons" data-eva="close-outline"></i></a>
+          </div>
+          <a class="main-logo mobile-logo" href="index.html"><img src="../../../assets/img/brand/icon-3.png"
+              alt="logo"></a>
+        </div>
+        <div class="main-header-center">
+          <input class="form-control" placeholder="Search" type="search">
+          <button class="btn"><i class="fe fe-search"></i></button>
+        </div>
+        <div class="main-header-right ml-auto">
+          <div class="dropdown main-header-search mobile-search">
+            <a class="new header-link" href="">
+              <i class="header-icons" data-eva="search-outline"></i>
+            </a>
+            <div class="dropdown-menu">
+              <div class="p-2 main-form-search">
+                <input class="form-control" placeholder="Search here..." type="search">
+                <button class="btn"><i class="fe fe-search"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="main-header-fullscreen fullscreen-button">
+            <a href="#" class="header-link">
+              <i class="header-icons" data-eva="expand-outline"></i>
+            </a>
+          </div>
+          <div class="dropdown main-header-notification">
+            <a class="new header-link" href="">
+              <i class="header-icons" data-eva="bell-outline"></i>
+              <span class="pulse bg-danger"></span>
+            </a>
+            <div class="dropdown-menu">
+              <div class="p-3 border-bottom text-center">
+                <h6 class="main-notification-title">Notifications</h6>
+              </div>
+              <div class="main-notification-list">
+                <a href="#" class="dropdown-item d-flex">
+                  <div class="text-primary tx-18 mr-3 ">
+                    <i class="fe fe-mail"></i>
+                  </div>
+                  <div>
+                    <h6 class="mb-1">Commented on your post.</h6>
+                    <div class="small text-muted">3 hours ago</div>
+                  </div>
+                </a>
+                <a href="#" class="dropdown-item d-flex border-top">
+                  <div class="text-pink tx-18 mr-3 ">
+                    <i class="fe fe-user"></i>
+                  </div>
+                  <div>
+                    <h6 class="mb-1">New User Registered</h6>
+                    <div class="small text-muted">1 day ago</div>
+                  </div>
+                </a>
+                <a href="#" class="dropdown-item d-flex  border-top">
+                  <div class="text-success tx-18 mr-3 ">
+                    <i class="fe fe-thumbs-up"></i>
+                  </div>
+                  <div>
+                    <h6 class="mb-1">Someone likes our posts</h6>
+                    <div class="small text-muted">5 mins ago</div>
+                  </div>
+                </a>
+                <a href="#" class="dropdown-item d-flex border-top">
+                  <div class="text-purple tx-18 mr-3 ">
+                    <i class="fe fe-upload"></i>
+                  </div>
+                  <div>
+                    <h6 class="mb-1">New file has been uploaded</h6>
+                    <div class="small text-muted">50 sec ago</div>
+                  </div>
+                </a>
+                <a href="#" class="dropdown-item d-flex border-top">
+                  <div class="text-danger tx-18 mr-3 ">
+                    <i class="fe fe-alert-circle"></i>
+                  </div>
+                  <div>
+                    <h6 class="mb-1">System alert</h6>
+                    <div class="small text-muted">2 days ago</div>
+                  </div>
+                </a>
+                <a href="#" class="dropdown-item d-flex border-top">
+                  <div class="text-warning tx-18 mr-3 ">
+                    <i class="fe fe-server"></i>
+                  </div>
+                  <div>
+                    <h6 class="mb-1">Server Rebooted</h6>
+                    <div class="small text-muted">45 mins ago</div>
+                  </div>
+                </a>
+              </div>
+              <div class="dropdown-footer">
+                <a href="">View All Notifications</a>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown main-profile-menu">
+            <a class="main-img-user" href="">
+              <img alt="" src="../../../assets/img/users/male/15.jpg">
+            </a>
+            <div class="dropdown-menu">
+              <div class="main-header-profile">
+                <h6>Peter Hill</h6>
+                <span>Administrator</span>
+              </div>
+              <a class="dropdown-item" href="#"><i class="si si-user"></i> Profile</a>
+              <a class="dropdown-item" href="#"><i class="si si-envelope-open"></i> Inbox</a>
+              <a class="dropdown-item" href="#"><i class="si si-calendar"></i> Activity</a>
+              <a class="dropdown-item" href="#"><i class="si si-bubbles"></i> Chat</a>
+              <a class="dropdown-item" href="#"><i class="si si-settings"></i> Settings</a>
+              <a class="dropdown-item" href="#"><i class="si si-power"></i> Logo Out</a>
+            </div>
+          </div>
+          <div class="main-header-sidebar-notification">
+            <a href="#" class="header-link" data-toggle="sidebar-right" data-target=".sidebar-right">
+              <i class="header-icons" data-eva="options-2-outline"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="page-header">
+        <h4 class="page-title">Welcome to Dashboard</h4>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Financial Dashboard</li>
+        </ol>
+      </div>
+      <div class="main-content">
+
+      </div>
+    </div>
+  </div>
+  <div class="main-footer mg-t-auto">
+    <div class="container-fluid">
+      <span>Copyright &copy; 2020 <a href="#">Nixlot</a>. Designed by <a href="https://www.spruko.com/">Spruko</a> All
+        rights reserved.</span>
+    </div>
+  </div>
+  <script src="../../../assets/plugins/jquery/jquery.min.js"></script>
+  <script src="../../../assets/plugins/jquery-ui/ui/widgets/datepicker.js"></script>
+  <script src="../../../assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../../../assets/plugins/ionicons/ionicons.js"></script>
+  <script src="../../../assets/plugins/web-fonts/eva.min.js"></script>
+  <script src="../../../assets/plugins/chart.js/Chart.bundle.min.js"></script>
+  <script src="../../../assets/plugins/jquery.flot/jquery.flot.js"></script>
+  <script src="../../../assets/plugins/jquery.flot/jquery.flot.pie.js"></script>
+  <script src="../../../assets/plugins/jquery.flot/jquery.flot.resize.js"></script>
+  <script src="../../../assets/plugins/chart.js/Chart.bundle.min.js"></script>
+  <script src="../../../assets/plugins/peity/jquery.peity.min.js"></script>
+  <script src="../../../assets/plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
+  <script src="../../../assets/js/chart.flot.sampledata.js"></script>
+  <script src="../../../assets/plugins/moment/moment.js"></script>
+  <script src="../../../assets/plugins/select2/js/select2.min.js"></script>
+  <script src="../../../assets/js/select2.js"></script>
+  <script src="../../../assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+  <script src="../../../assets/plugins/sidebar/sidebar.js"></script>
+  <script src="../../../assets/plugins/sidebar/sidebar-custom.js"></script>
+  <script src="../../../assets/plugins/mscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../../../assets/plugins/jqvmap/jquery.vmap.min.js"></script>
+  <script src="../../../assets/plugins/jqvmap/maps/jquery.vmap.world.js"></script>
+  <script src="../../../assets/js/jquery.vmap.sampledata.js"></script>
+  <script src="../../../assets/plugins/sidemenu/sidemenu.js"></script>
+  <script src="../../../assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+  <script src="../../../assets/plugins/ionicons/ionicons.js"></script>
+  <script src="../../../assets/plugins/lightslider/js/lightslider.min.js"></script>
+  <script src="../../../assets/js/custom.js"></script>
+  <script src="../../../assets/js/chart.flot.sampledata.js"></script>
+  <script src="../../../assets/js/dashboard.sampledata.js"></script>
+  <script src="../../../assets/plugins/raphael/raphael.min.js"></script>
+  <script src="../../../assets/plugins/morris.js/morris.min.js"></script>
+  <script src="../../../assets/plugins/jqvmap/jquery.vmap.min.js"></script>
+  <script src="../../../assets/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+  <script src="../../../assets/plugins/jqvmap/maps/jquery.vmap.world.js"></script>
+  <script src="../../../assets/js/jquery.vmap.sampledata.js"></script>
+  <script src="../../../assets/js/index3.js"></script>
+</body>
+
+</html>

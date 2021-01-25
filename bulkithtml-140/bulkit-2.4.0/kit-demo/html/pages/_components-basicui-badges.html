@@ -1,0 +1,1164 @@
+---
+layout: components
+title: Nadges and Labels
+---
+
+<!-- Hero and nav -->
+<div class="hero is-relative is-theme-info">
+    
+    {{> navbar-static-light}}
+
+    <!-- Hero image -->
+    <div id="main-hero" class="hero-body">
+        <div class="container has-text-centered">
+            <div class="columns is-vcentered">
+                <div class="column is-4 is-offset-1 has-text-left">
+                    <h1 class="title components-title is-1">
+                        Badges 
+                    </h1>
+                    <h2 class="subtitle is-4 components-subtitle">
+                        Badges, labels and ribbons.
+                    </h2>
+                    <p class="components-cta">
+                        <a href="#badges" class="button button-cta btn-align light-btn btn-outlined is-bold rounded">
+                            Get Started
+                        </a>
+                    </p>
+                </div>
+                <div class="column is-offset-1 has-text-centered is-hidden-mobile">
+                    <div id="badges-ill" class="vivus-svg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Hero image -->
+</div>
+<!-- /Hero and nav -->
+
+<!-- Scrollnav -->
+<div id="scrollnav" class="scroll-nav-wrapper">
+    <div class="container">
+        <div class="tabs scrollnav-tabs is-centered">
+            <ul>
+                <li class="scrollnav-item is-active"><a href="#badges">Badges</a></li>
+                <li class="scrollnav-item"><a href="#bulma-badges">Bulma badges</a></li>
+                <li class="scrollnav-item"><a href="#ribbons">Ribbons</a></li>
+                <li class="scrollnav-item"><a href="#labels-tags">Labels and tags</a></li>
+            </ul>
+        </div>
+    </div>  
+</div>
+<!-- /Scrollnav -->
+
+<section id="badges" class="section is-medium">
+    <div class="container">
+        <div id="badges" class="section-title-wrapper has-text-centered">
+            <div class="bg-number">1</div>
+            <h2 class="title section-title has-text-centered dark-text text-bold">
+                Badges
+            </h2>
+        </div>
+
+        <!-- Basic badges -->
+        <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered pb-20">
+                    <h4>Badge shapes</h4>
+                    <p class="no-padding">Badges are handy if you want to show users useful notifications. They are perfect in a list block for example. Bulkit badges have two main shapes : square, wich is default, and rounded. Add the <code>.rounded</code> class to a <code>.b-badge</code> element to make its edges rounded.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-3 is-offset-3">
+                <ul class="list-block minimal">
+                    <li class="is-active"><a>Outlined badge</a> <span class="b-badge is-primary">9</span></li>
+                    <li><a>Square badge</a> <span class="b-badge is-primary">5</span></li>
+                </ul>
+            </div>
+            <div class="column is-3">
+                <ul class="list-block minimal">
+                    <li class="is-active"><a>Rounded outlined badge</a> <span class="b-badge rounded is-primary">9</span></li>
+                    <li><a>Rounded badge</a> <span class="b-badge rounded is-primary">5</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-3">
+                <!-- Code section -->
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <figure class="highlight highlight-block">
+                                <pre><code class="html code-highlight">
+&#x3C;span class=&#x22;b-badge is-primary&#x22;&#x3E;5&#x3C;/span&#x3E;
+
+&#x3C;span class=&#x22;b-badge rounded is-primary&#x22;&#x3E;5&#x3C;/span&#x3E;
+                                        </code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Code section -->
+            </div>
+        </div>
+        <!-- /Basic badges -->
+
+        <!-- Solid colors -->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Solid colors</h4>
+                    <p class="no-padding">Bulkit badges can have several solid colors. Available classes are <code>.is-primary</code>, <code>.is-secondary</code>, <code>is-accent</code>, <code>.is-success</code>, <code>.is-warning</code>, <code>.is-danger</code>, and <code>.is-info</code>. Add one of these classes to a <code>.b-badge</code> element to change its color.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-3 is-offset-3">
+                <ul class="list-block minimal">
+                    <li><a>Primary</a> <span class="b-badge is-primary">9</span></li>
+                    <li><a>Secondary</a> <span class="b-badge is-secondary">5</span></li>
+                    <li><a>Accent</a> <span class="b-badge is-accent">7</span></li>
+                    <li><a>Success</a> <span class="b-badge is-success">9</span></li>
+                    <li><a>Warning</a> <span class="b-badge is-warning">5</span></li>
+                    <li><a>Danger</a> <span class="b-badge is-danger">7</span></li>
+                    <li><a>Info</a> <span class="b-badge is-info">9</span></li>
+                </ul>
+            </div>
+            <div class="column is-3">
+                <ul class="list-block minimal">
+                    <li><a>Primary rounded</a> <span class="b-badge rounded is-primary">9</span></li>
+                    <li><a>Secondary rounded</a> <span class="b-badge rounded is-secondary">5</span></li>
+                    <li><a>Accent rounded</a> <span class="b-badge rounded is-accent">7</span></li>
+                    <li><a>Success</a> <span class="b-badge rounded is-success">9</span></li>
+                    <li><a>Warning</a> <span class="b-badge rounded is-warning">5</span></li>
+                    <li><a>Danger</a> <span class="b-badge rounded is-danger">7</span></li>
+                    <li><a>Info</a> <span class="b-badge rounded is-info">9</span></li>
+                </ul>
+            </div>
+        </div>
+        <!-- /Solid colors -->
+
+        <!-- Outlined colors -->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Outlined colors</h4>
+                    <p class="no-padding">Bulkit badges can be outlined. Add the<code>.badge-outlined</code> class to a <code>.b-badge</code> to make a badge outlined. Several colors are available. Available classes are <code>.is-primary</code>, <code>.is-secondary</code>, <code>is-accent</code>, <code>.is-success</code>, <code>.is-warning</code>, <code>.is-danger</code>, and <code>.is-info</code>. Add one of these classes to a <code>.b-badge</code> element to change its color.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-3 is-offset-3">
+                <ul class="list-block minimal">
+                    <li><a>Primary</a> <span class="b-badge badge-outlined is-primary">9</span></li>
+                    <li><a>Secondary</a> <span class="b-badge badge-outlined is-secondary">5</span></li>
+                    <li><a>Accent</a> <span class="b-badge badge-outlined is-accent">7</span></li>
+                    <li><a>Success</a> <span class="b-badge badge-outlined is-success">9</span></li>
+                    <li><a>Warning</a> <span class="b-badge badge-outlined is-warning">5</span></li>
+                    <li><a>Danger</a> <span class="b-badge badge-outlined is-danger">7</span></li>
+                    <li><a>Info</a> <span class="b-badge badge-outlined is-info">9</span></li>
+                </ul>
+            </div>
+            <div class="column is-3">
+                <ul class="list-block minimal">
+                    <li><a>Primary rounded</a> <span class="b-badge badge-outlined rounded is-primary">9</span></li>
+                    <li><a>Secondary rounded</a> <span class="b-badge badge-outlined rounded is-secondary">5</span></li>
+                    <li><a>Accent rounded</a> <span class="b-badge badge-outlined rounded is-accent">7</span></li>
+                    <li><a>Success</a> <span class="b-badge badge-outlined rounded is-success">9</span></li>
+                    <li><a>Warning</a> <span class="b-badge badge-outlined rounded is-warning">5</span></li>
+                    <li><a>Danger</a> <span class="b-badge badge-outlined rounded is-danger">7</span></li>
+                    <li><a>Info</a> <span class="b-badge badge-outlined rounded is-info">9</span></li>
+                </ul>
+            </div>
+        </div>
+        <!-- /Outlined colors -->
+
+    </div>
+</section>
+
+<section class="section section-feature-grey is-medium">
+    <div class="container">
+        <div id="bulma-badges" class="section-title-wrapper has-text-centered">
+            <div class="bg-number">2</div>
+            <h2 class="title section-title has-text-centered dark-text text-bold">
+                Bulma badges
+            </h2>
+        </div>
+
+        <!-- Basic badges -->
+        <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Basic badge</h4>
+                    <p class="no-padding">Bulma badges are an extension to the main framework. They are positionned via pseudo elements. Add the <code>.badge</code> class to an html element like a button to create a badge on its top right corner. Then, use the <code>data-badge=""</code> attribute to set its value.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-3 is-offset-3 has-text-centered">
+                <button class="button badge" data-badge="">Button</button>
+            </div>
+            <div class="column is-3 has-text-centered">
+                <button class="button badge" data-badge="8">Button</button>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered mt-40">
+            <div class="column is-3 is-offset-3 has-text-centered">
+                <span class="badge" data-badge="">Span</span>
+            </div>
+            <div class="column is-3 has-text-centered">
+                <span class="badge" data-badge="8">Span</span>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-3">
+                <!-- Code section -->
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <figure class="highlight highlight-block">
+                                <pre><code class="html code-highlight">
+&#x3C;button class=&#x22;button badge&#x22; data-badge=&#x22;&#x22;&#x3E;Button&#x3C;/button&#x3E;
+
+&#x3C;span class=&#x22;badge&#x22; data-badge=&#x22;&#x22;&#x3E;Span&#x3C;/span&#x3E;
+                                        </code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Code section -->
+            </div>
+        </div>
+        <!-- Basic badges -->
+
+        <!-- Button badges colors -->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Badge colors</h4>
+                    <p class="no-padding">Bulma badges can have several solid colors. Available classes are <code>.badge-primary</code>, <code>.badge-secondary</code>, <code>badge-accent</code>, <code>.badge-success</code>, <code>.badge-warning</code>, <code>.badge-danger</code>, and <code>.badge-info</code>. Add one of these classes to a <code>.badge</code> element to change its color.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-3 has-text-centered">
+                <button class="button badge" data-badge="">Default</button>
+            </div>
+            <div class="column is-3 has-text-centered">
+                <button class="button badge badge-primary" data-badge="">Primary</button>
+            </div>
+            <div class="column is-3 has-text-centered">
+                <button class="button badge badge-secondary" data-badge="">Secondary</button>
+            </div>
+            <div class="column is-3 has-text-centered">
+                <button class="button badge badge-accent" data-badge="">Accent</button>
+            </div>
+        </div>
+        <div class="columns is-vcentered mt-40">
+            <div class="column is-3 has-text-centered">
+                <button class="button badge badge-success" data-badge="">Success</button>
+            </div>
+            <div class="column is-3 has-text-centered">
+                <button class="button badge badge-warning" data-badge="">Warning</button>
+            </div>
+            <div class="column is-3 has-text-centered">
+                <button class="button badge badge-danger" data-badge="">Danger</button>
+            </div>
+            <div class="column is-3 has-text-centered">
+                <button class="button badge badge-info" data-badge="">Info</button>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-3">
+                <!-- Code section -->
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <figure class="highlight highlight-block">
+                                <pre><code class="html code-highlight">
+&#x3C;button class=&#x22;button badge badge-primary&#x22; data-badge=&#x22;&#x22;&#x3E;Primary&#x3C;/button&#x3E;
+                                        </code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Code section -->
+            </div>
+        </div>
+        <!-- Button badges colors -->
+
+        <!-- Outlined badges -->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Outlined badges</h4>
+                    <p class="no-padding">Bulma badges can be outlined. Add the <code>.is-badge-outlined</code> class to a <code>.badge</code> element to make it oulined. Colors apply the same way than in the above example.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-3 has-text-centered">
+                <button class="button badge is-badge-outlined" data-badge="">Default</button>
+            </div>
+            <div class="column is-3 has-text-centered">
+                <button class="button badge badge-primary is-badge-outlined" data-badge="">Primary</button>
+            </div>
+            <div class="column is-3 has-text-centered">
+                <button class="button badge badge-secondary is-badge-outlined" data-badge="">Secondary</button>
+            </div>
+            <div class="column is-3 has-text-centered">
+                <button class="button badge badge-accent is-badge-outlined" data-badge="">Accent</button>
+            </div>
+        </div>
+        <div class="columns is-vcentered mt-40">
+            <div class="column is-3 has-text-centered">
+                <button class="button badge badge-success is-badge-outlined" data-badge="">Success</button>
+            </div>
+            <div class="column is-3 has-text-centered">
+                <button class="button badge badge-warning is-badge-outlined" data-badge="">Warning</button>
+            </div>
+            <div class="column is-3 has-text-centered">
+                <button class="button badge badge-danger is-badge-outlined" data-badge="">Danger</button>
+            </div>
+            <div class="column is-3 has-text-centered">
+                <button class="button badge badge-info is-badge-outlined" data-badge="">Info</button>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-3">
+                <!-- Code section -->
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <figure class="highlight highlight-block">
+                                <pre><code class="html code-highlight">
+&#x3C;button class=&#x22;button badge badge-primary is-badge-outlined&#x22; data-badge=&#x22;&#x22;&#x3E;Primary&#x3C;/button&#x3E;
+                                        </code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Code section -->
+            </div>
+        </div>
+        <!-- Outlined badges -->
+
+        <!-- Badge sizes -->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Badge sizes</h4>
+                    <p class="no-padding">Badges are available in different sizes : <code>.is-badge-small</code>, <code>.is-badge-medium</code>, <code>.is-badge-large</code>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-3 has-text-centered">
+                <button class="button is-badge-small badge" data-badge="">Small</button>
+            </div>
+            <div class="column is-3 has-text-centered">
+                <button class="button badge badge-primary" data-badge="">Normal</button>
+            </div>
+            <div class="column is-3 has-text-centered">
+                <button class="button is-badge-medium badge badge-secondary" data-badge="">Medium</button>
+            </div>
+            <div class="column is-3 has-text-centered">
+                <button class="button is-badge-large badge badge-accent" data-badge="">Large</button>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-3">
+                <!-- Code section -->
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <figure class="highlight highlight-block">
+                                <pre><code class="html code-highlight">
+&#x3C;button class=&#x22;button is-badge-small badge&#x22; data-badge=&#x22;&#x22;&#x3E;Small&#x3C;/button&#x3E;
+
+&#x3C;button class=&#x22;button badge&#x22; data-badge=&#x22;&#x22;&#x3E;Small&#x3C;/button&#x3E;
+
+&#x3C;button class=&#x22;button is-badge-medium badge&#x22; data-badge=&#x22;&#x22;&#x3E;Small&#x3C;/button&#x3E;
+
+&#x3C;button class=&#x22;button is-badge-large badge&#x22; data-badge=&#x22;&#x22;&#x3E;Small&#x3C;/button&#x3E;
+                                        </code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Code section -->
+            </div>
+        </div>
+        <!-- /Badge sizes -->
+
+    </div>
+</section>
+
+<section class="section is-medium">
+    <div class="container">
+        <div id="ribbons" class="section-title-wrapper has-text-centered">
+            <div class="bg-number">3</div>
+            <h2 class="title section-title has-text-centered dark-text text-bold">
+                Ribbons
+            </h2>
+        </div>
+
+        <!-- Basic ribbons -->
+        <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered pb-20">
+                    <h4>Ribbons</h4>
+                    <p class="no-padding">Ribbons are also an extension of Bulma framework. Ribbons extend Bulma's <code>.box</code> component. It display a small ribbon with text in a chosen corner. Add the <code>.has-ribbon</code> class to a box to display a ribbon in the top right corner. Ribbons have many colors.  Available classes are <code>.is-primary</code>, <code>.is-secondary</code>, <code>is-accent</code>, <code>.is-success</code>, <code>.is-warning</code>, <code>.is-danger</code>, and <code>.is-info</code>. Add one of these classes to a <code>.ribbon</code> element to change its color.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-3">
+                <div class="box has-ribbon">
+                    <div class="ribbon">Default</div>
+                    <p class="pt-20">
+                        <strong>Box content</strong><br>
+                        Lorem ipsum dolor sit amet, omnes essent legendos no vix, qui everti probatus ex.
+                    </p>
+                </div>
+            </div>
+            <div class="column is-3">
+                <div class="box has-ribbon">
+                    <div class="ribbon is-primary">Primary</div>
+                    <p class="pt-20">
+                        <strong>Box content</strong><br>
+                        Lorem ipsum dolor sit amet, omnes essent legendos no vix, qui everti probatus ex.
+                    </p>
+                </div>
+            </div>
+            <div class="column is-3">
+                <div class="box has-ribbon">
+                    <div class="ribbon is-secondary">Secondary</div>
+                    <p class="pt-20">
+                        <strong>Box content</strong><br>
+                        Lorem ipsum dolor sit amet, omnes essent legendos no vix, qui everti probatus ex.
+                    </p>
+                </div>
+            </div>
+            <div class="column is-3">
+                <div class="box has-ribbon">
+                    <div class="ribbon is-accent">Accent</div>
+                    <p class="pt-20">
+                        <strong>Box content</strong><br>
+                        Lorem ipsum dolor sit amet, omnes essent legendos no vix, qui everti probatus ex.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="columns is-vcentered">
+            <div class="column is-3">
+                <div class="box has-ribbon">
+                    <div class="ribbon is-success">Success</div>
+                    <p class="pt-20">
+                        <strong>Box content</strong><br>
+                        Lorem ipsum dolor sit amet, omnes essent legendos no vix, qui everti probatus ex.
+                    </p>
+                </div>
+            </div>
+            <div class="column is-3">
+                <div class="box has-ribbon">
+                    <div class="ribbon is-warning">Warning</div>
+                    <p class="pt-20">
+                        <strong>Box content</strong><br>
+                        Lorem ipsum dolor sit amet, omnes essent legendos no vix, qui everti probatus ex.
+                    </p>
+                </div>
+            </div>
+            <div class="column is-3">
+                <div class="box has-ribbon">
+                    <div class="ribbon is-danger">Danger</div>
+                    <p class="pt-20">
+                        <strong>Box content</strong><br>
+                        Lorem ipsum dolor sit amet, omnes essent legendos no vix, qui everti probatus ex.
+                    </p>
+                </div>
+            </div>
+            <div class="column is-3">
+                <div class="box has-ribbon">
+                    <div class="ribbon is-info">Info</div>
+                    <p class="pt-20">
+                        <strong>Box content</strong><br>
+                        Lorem ipsum dolor sit amet, omnes essent legendos no vix, qui everti probatus ex.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-3">
+                <!-- Code section -->
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <figure class="highlight highlight-block">
+                                <pre><code class="html code-highlight">
+&#x3C;div class=&#x22;box has-ribbon&#x22;&#x3E;
+    &#x3C;div class=&#x22;ribbon is-primary&#x22;&#x3E;Primary&#x3C;/div&#x3E;
+    &#x3C;strong&#x3E;Box content&#x3C;/strong&#x3E;
+    &#x3C;p class=&#x22;pt-20&#x22;&#x3E;Lorem ipsum dolor sit amet, omnes essent legendos no vix, qui everti probatus ex.&#x3C;/p&#x3E;
+&#x3C;/div&#x3E;
+                                        </code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Code section -->
+            </div>
+        </div>
+        <!-- /Basic ribbons -->
+
+        <!-- Ribbons sizes -->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Ribbon sizes</h4>
+                    <p class="no-padding">4 sizes are available. Available classes are <code>.is-small</code>, <code>.is-medium</code>, and <code>.is-large</code>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-3">
+                <div class="box has-ribbon">
+                    <div class="ribbon is-accent is-small">Small</div>
+                    <p class="pt-20">
+                        <strong>Box content</strong><br>
+                        Lorem ipsum dolor sit amet, omnes essent legendos no vix, qui everti probatus ex.
+                    </p>
+                </div>
+            </div>
+            <div class="column is-3">
+                <div class="box has-ribbon">
+                    <div class="ribbon is-accent">Normal</div>
+                    <p class="pt-20">
+                        <strong>Box content</strong><br>
+                        Lorem ipsum dolor sit amet, omnes essent legendos no vix, qui everti probatus ex.
+                    </p>
+                </div>
+            </div>
+            <div class="column is-3">
+                <div class="box has-ribbon">
+                    <div class="ribbon is-accent is-medium">Medium</div>
+                    <p class="pt-30">
+                        <strong>Box content</strong><br>
+                        Lorem ipsum dolor sit amet, omnes essent legendos no vix, qui everti probatus ex.
+                    </p>
+                </div>
+            </div>
+            <div class="column is-3">
+                <div class="box has-ribbon">
+                    <div class="ribbon is-accent is-large">Large</div>
+                    <p class="pt-40">
+                        <strong>Box content</strong><br>
+                        Lorem ipsum dolor sit amet, omnes essent legendos no vix, qui everti probatus ex.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- /Ribbons sizes -->
+
+        <!-- Ribbons positions -->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Ribbon positions</h4>
+                    <p class="no-padding">2 additionnal positions are available. Left by replacing <code>.has-ribbon</code> with <code>.has-ribbon-left</code>, and bottom by replacing <code>.has-ribbon</code> with <code>.has-ribbon-bottom</code>. Note that with left and bottom position, you might have to repoistion your content to avoid overflow.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-4">
+                <div class="box has-ribbon">
+                    <div class="ribbon is-accent">Default</div>
+                    <p class="pt-20">
+                        <strong>Box content</strong><br>
+                        Lorem ipsum dolor sit amet, omnes essent legendos no vix, qui everti probatus ex.
+                    </p>
+                </div>
+            </div>
+            <div class="column is-4">
+                <div class="box has-ribbon-left">
+                    <div class="ribbon is-accent">Left</div>
+                    <p class="pt-30">
+                        <strong>Box content</strong><br>
+                        Lorem ipsum dolor sit amet, omnes essent legendos no vix, qui everti probatus ex.
+                    </p>
+                </div>
+            </div>
+            <div class="column is-4">
+                <div class="box has-ribbon-bottom">
+                    <div class="ribbon is-accent">Bottom</div>
+                    <p class="pb-20">
+                        <strong>Box content</strong><br>
+                        Lorem ipsum dolor sit amet, omnes essent legendos no vix, qui everti probatus ex.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- /Ribbons positions -->
+
+    </div>
+</section>
+
+<section class="section section-feature-grey is-medium">
+    <div class="container">
+        <div id="labels-tags" class="section-title-wrapper has-text-centered">
+            <div class="bg-number">4</div>
+            <h2 class="title section-title has-text-centered dark-text text-bold">
+                Labels and Tags
+            </h2>
+        </div>
+
+        <!-- Basic tags -->
+        <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Basic tags</h4>
+                    <p class="no-padding">Tag labels can be square, rounded and outlined.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-2 is-offset-2 has-text-centered">
+                <span class="tag">Tag label</span>
+            </div>
+            <div class="column is-2 has-text-centered">
+                <span class="tag squared">Tag label</span>
+            </div>
+            <div class="column is-2 has-text-centered">
+                <span class="tag is-outlined">Tag label</span>
+            </div>
+            <div class="column is-2 has-text-centered">
+                <span class="tag squared is-outlined">Tag label</span>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered mb-80">
+            <div class="column is-6 is-offset-3">
+                <!-- Code section -->
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <figure class="highlight highlight-block">
+                                <pre><code class="html code-highlight">
+&#x3C;span class=&#x22;tag&#x22;&#x3E;Tag label&#x3C;/span&#x3E;
+
+&#x3C;span class=&#x22;tag squared&#x22;&#x3E;Tag label&#x3C;/span&#x3E;
+
+&#x3C;span class=&#x22;tag is-outlined&#x22;&#x3E;Tag label&#x3C;/span&#x3E;
+
+&#x3C;span class=&#x22;tag squared is-outlined&#x22;&#x3E;Tag label&#x3C;/span&#x3E;
+                                        </code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Code section -->
+            </div>
+        </div>
+        <!-- Basic tags -->
+
+        <!-- Tag colors -->
+        <div class="columns is-vcentered mt-80">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered pb-20">
+                    <h4>Tag colors</h4>
+                    <p class="no-padding">Tags can have many colors. Available classes are <code>.is-primary</code>, <code>.is-secondary</code>, <code>is-accent</code>, <code>.is-success</code>, <code>.is-warning</code>, <code>.is-danger</code>, and <code>.is-info</code>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-2 is-offset-2 has-text-centered">
+                <span class="tag squared">Default</span>
+            </div>
+            <div class="column is-2 has-text-centered">
+                <span class="tag squared is-primary">Primary</span>
+            </div>
+            <div class="column is-2 has-text-centered">
+                <span class="tag squared is-secondary">Secondary</span>
+            </div>
+            <div class="column is-2 has-text-centered">
+                <span class="tag squared is-accent">Accent</span>
+            </div>
+        </div>
+        <div class="columns is-vcentered">
+            <div class="column is-2 is-offset-2 has-text-centered">
+                <span class="tag squared is-success">Success</span>
+            </div>
+            <div class="column is-2 has-text-centered">
+                <span class="tag squared is-warning">Warning</span>
+            </div>
+            <div class="column is-2 has-text-centered">
+                <span class="tag squared is-danger">Danger</span>
+            </div>
+            <div class="column is-2 has-text-centered">
+                <span class="tag squared is-info">Info</span>
+            </div>
+        </div>
+        <div class="columns is-vcentered">
+            <div class="column is-2 is-offset-2 has-text-centered">
+                <span class="tag">Default</span>
+            </div>
+            <div class="column is-2 has-text-centered">
+                <span class="tag is-primary">Primary</span>
+            </div>
+            <div class="column is-2 has-text-centered">
+                <span class="tag is-secondary">Secondary</span>
+            </div>
+            <div class="column is-2 has-text-centered">
+                <span class="tag is-accent">Accent</span>
+            </div>
+        </div>
+        <div class="columns is-vcentered">
+            <div class="column is-2 is-offset-2 has-text-centered">
+                <span class="tag is-success">Success</span>
+            </div>
+            <div class="column is-2 has-text-centered">
+                <span class="tag is-warning">Warning</span>
+            </div>
+            <div class="column is-2 has-text-centered">
+                <span class="tag is-danger">Danger</span>
+            </div>
+            <div class="column is-2 has-text-centered">
+                <span class="tag is-info">Info</span>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered mb-80">
+            <div class="column is-6 is-offset-3">
+                <!-- Code section -->
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <figure class="highlight highlight-block">
+                                <pre><code class="html code-highlight">
+&#x3C;span class=&#x22;tag squared is-primary&#x22;&#x3E;Primary&#x3C;/span&#x3E;
+                                        </code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Code section -->
+            </div>
+        </div>
+        <!-- /Tag colors -->
+
+        <!-- Tag colors -->
+        <div class="columns is-vcentered mt-80">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered pb-20">
+                    <h4>Outlined tag colors</h4>
+                    <p class="no-padding">Add the <code>.is-outlined</code> class to a <code>.tag</code> element to make it outlined. Tags can have many colors. Available classes are <code>.is-primary</code>, <code>.is-secondary</code>, <code>is-accent</code>, <code>.is-success</code>, <code>.is-warning</code>, <code>.is-danger</code>, and <code>.is-info</code>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-2 is-offset-2 has-text-centered">
+                <span class="tag squared is-outlined">Default</span>
+            </div>
+            <div class="column is-2 has-text-centered">
+                <span class="tag squared is-outlined is-primary">Primary</span>
+            </div>
+            <div class="column is-2 has-text-centered">
+                <span class="tag squared is-outlined is-secondary">Secondary</span>
+            </div>
+            <div class="column is-2 has-text-centered">
+                <span class="tag squared is-outlined is-accent">Accent</span>
+            </div>
+        </div>
+        <div class="columns is-vcentered">
+            <div class="column is-2 is-offset-2 has-text-centered">
+                <span class="tag squared is-outlined is-success">Success</span>
+            </div>
+            <div class="column is-2 has-text-centered">
+                <span class="tag squared is-outlined is-warning">Warning</span>
+            </div>
+            <div class="column is-2 has-text-centered">
+                <span class="tag squared is-outlined is-danger">Danger</span>
+            </div>
+            <div class="column is-2 has-text-centered">
+                <span class="tag squared is-outlined is-info">Info</span>
+            </div>
+        </div>
+        <div class="columns is-vcentered">
+            <div class="column is-2 is-offset-2 has-text-centered">
+                <span class="tag is-outlined">Default</span>
+            </div>
+            <div class="column is-2 has-text-centered">
+                <span class="tag is-outlined is-primary">Primary</span>
+            </div>
+            <div class="column is-2 has-text-centered">
+                <span class="tag is-outlined is-secondary">Secondary</span>
+            </div>
+            <div class="column is-2 has-text-centered">
+                <span class="tag is-outlined is-accent">Accent</span>
+            </div>
+        </div>
+        <div class="columns is-vcentered">
+            <div class="column is-2 is-offset-2 has-text-centered">
+                <span class="tag is-outlined is-success">Success</span>
+            </div>
+            <div class="column is-2 has-text-centered">
+                <span class="tag is-outlined is-warning">Warning</span>
+            </div>
+            <div class="column is-2 has-text-centered">
+                <span class="tag is-outlined is-danger">Danger</span>
+            </div>
+            <div class="column is-2 has-text-centered">
+                <span class="tag is-outlined is-info">Info</span>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered mb-80">
+            <div class="column is-6 is-offset-3">
+                <!-- Code section -->
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <figure class="highlight highlight-block">
+                                <pre><code class="html code-highlight">
+&#x3C;span class=&#x22;tag squared is-outlined is-primary&#x22;&#x3E;Primary&#x3C;/span&#x3E;
+                                        </code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Code section -->
+            </div>
+        </div>
+        <!-- /Tag colors -->
+
+        <!-- Tag sizes -->
+        <div class="columns is-vcentered mt-80">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered pb-20">
+                    <h4>Tag sizes</h4>
+                    <p class="no-padding">Tags are available in 3 sizes, default, <code>.is-medium</code> and <code>.is-large</code>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-2 is-offset-3 has-text-centered">
+                <span class="tag squared">Default</span>
+            </div>
+            <div class="column is-2 has-text-centered">
+                <span class="tag squared is-primary is-medium">Medium</span>
+            </div>
+            <div class="column is-2 has-text-centered">
+                <span class="tag squared is-secondary is-large">Large</span>
+            </div>
+        </div>
+        <div class="columns is-vcentered">
+            <div class="column is-2 is-offset-3 has-text-centered">
+                <span class="tag">Default</span>
+            </div>
+            <div class="column is-2 has-text-centered">
+                <span class="tag is-primary is-medium">Medium</span>
+            </div>
+            <div class="column is-2 has-text-centered">
+                <span class="tag is-secondary is-large">Large</span>
+            </div>
+        </div>
+        <div class="columns is-vcentered">
+            <div class="column is-2 is-offset-3 has-text-centered">
+                <span class="tag squared is-outlined">Default</span>
+            </div>
+            <div class="column is-2 has-text-centered">
+                <span class="tag squared is-outlined is-primary is-medium">Medium</span>
+            </div>
+            <div class="column is-2 has-text-centered">
+                <span class="tag squared is-outlined is-secondary is-large">Large</span>
+            </div>
+        </div>
+        <div class="columns is-vcentered">
+            <div class="column is-2 is-offset-3 has-text-centered">
+                <span class="tag is-outlined">Default</span>
+            </div>
+            <div class="column is-2 has-text-centered">
+                <span class="tag is-outlined is-primary is-medium">Medium</span>
+            </div>
+            <div class="column is-2 has-text-centered">
+                <span class="tag is-outlined is-secondary is-large">Large</span>
+            </div>
+        </div>
+        <!-- /Tag sizes -->
+
+        <!-- Tag delete -->
+        <div class="columns is-vcentered mt-80">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered pb-20">
+                    <h4>Tag delete</h4>
+                    <p class="no-padding">A <code>.delete</code> element can be nested inside a tag.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-2 is-offset-3 has-text-centered">
+                <span class="tag squared is-primary">Normal <button class="delete is-small"></button></span>
+
+            </div>
+            <div class="column is-2 has-text-centered">
+                <a class="tag squared is-secondary is-medium">Medium <span class="delete is-small"></span></a>
+            </div>
+            <div class="column is-2 has-text-centered">
+                <a class="tag squared is-accent is-large">Large <span class="delete"></span></a>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered mb-80">
+            <div class="column is-6 is-offset-3">
+                <!-- Code section -->
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <figure class="highlight highlight-block">
+                                <pre><code class="html code-highlight">
+&#x3C;span class=&#x22;tag squared is-primary&#x22;&#x3E;Normal &#x3C;button class=&#x22;delete is-small&#x22;&#x3E;&#x3C;/button&#x3E;&#x3C;/span&#x3E;
+
+&#x3C;span class=&#x22;tag squared is-secondary is-medium&#x22;&#x3E;Medium &#x3C;button class=&#x22;delete is-small&#x22;&#x3E;&#x3C;/button&#x3E;&#x3C;/span&#x3E;
+
+&#x3C;span class=&#x22;tag squared is-accent is-large&#x22;&#x3E;Large &#x3C;button class=&#x22;delete&#x22;&#x3E;&#x3C;/button&#x3E;&#x3C;/span&#x3E;
+                                        </code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Code section -->
+            </div>
+        </div>
+        <!-- Tag delete -->
+
+        <!-- Tag list -->
+        <div class="columns is-vcentered mt-80">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered pb-20">
+                    <h4>Tag list</h4>
+                    <p class="no-padding">Tags can be organized like a list. Wrap the <code>.tag</code> elements into a <code>.tags</code> parent element.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-3 has-text-centered">
+                <div class="tags">
+                    <span class="tag is-secondary">One</span>
+                    <span class="tag is-primary">Two</span>
+                    <span class="tag is-accent">Three</span>
+                    <span class="tag is-secondary">Four</span>
+                    <span class="tag is-accent">Five</span>
+                    <span class="tag is-secondary">Six</span>
+                    <span class="tag is-primary">Seven</span>
+                    <span class="tag is-accent">Eight</span>
+                    <span class="tag is-primary">Nine</span>
+                    <span class="tag is-secondary">Ten</span>
+                    <span class="tag is-accent">Eleven</span>
+                    <span class="tag is-secondary">Twelve</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered mb-80">
+            <div class="column is-6 is-offset-3">
+                <!-- Code section -->
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <figure class="highlight highlight-block">
+                                <pre><code class="html code-highlight">
+&#x3C;div class=&#x22;tags&#x22;&#x3E;
+    &#x3C;span class=&#x22;tag is-secondary&#x22;&#x3E;One&#x3C;/span&#x3E;
+    &#x3C;span class=&#x22;tag is-primary&#x22;&#x3E;Two&#x3C;/span&#x3E;
+    &#x3C;span class=&#x22;tag is-accent&#x22;&#x3E;Three&#x3C;/span&#x3E;
+    &#x3C;span class=&#x22;tag is-secondary&#x22;&#x3E;Four&#x3C;/span&#x3E;
+    &#x3C;span class=&#x22;tag is-accent&#x22;&#x3E;Five&#x3C;/span&#x3E;
+    &#x3C;span class=&#x22;tag is-secondary&#x22;&#x3E;Six&#x3C;/span&#x3E;
+    &#x3C;span class=&#x22;tag is-primary&#x22;&#x3E;Seven&#x3C;/span&#x3E;
+    &#x3C;span class=&#x22;tag is-accent&#x22;&#x3E;Eight&#x3C;/span&#x3E;
+    &#x3C;span class=&#x22;tag is-primary&#x22;&#x3E;Nine&#x3C;/span&#x3E;
+    &#x3C;span class=&#x22;tag is-secondary&#x22;&#x3E;Ten&#x3C;/span&#x3E;
+    &#x3C;span class=&#x22;tag is-accent&#x22;&#x3E;Eleven&#x3C;/span&#x3E;
+    &#x3C;span class=&#x22;tag is-secondary&#x22;&#x3E;Twelve&#x3C;/span&#x3E;
+&#x3C;/div&#x3E;
+                                        </code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Code section -->
+            </div>
+        </div>
+        <!-- Tag list -->
+
+        <!-- Tag groups -->
+        <div class="columns is-vcentered mt-80">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered pb-20">
+                    <h4>Tag groups</h4>
+                    <p class="no-padding">Tags can be grouped to show more complex informations. Check the code examples for more details about structure.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-hidden-mobile"></div>
+            <div class="column is-2 has-text-centered">
+                <div class="control tag-group">
+                    <div class="tags has-addons">
+                        <span class="tag squared is-dark">npm</span>
+                        <span class="tag squared is-info">0.5.0</span>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-2 has-text-centered">
+                <div class="control tag-group">
+                    <div class="tags has-addons">
+                        <span class="tag squared is-dark">build</span>
+                        <span class="tag squared is-success">passing</span>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-2 has-text-centered">
+                <div class="control tag-group">
+                    <div class="tags has-addons">
+                        <span class="tag squared is-dark">release</span>
+                        <span class="tag squared is-warning">1.4.3</span>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-hidden-mobile"></div>
+        </div>
+        <div class="columns is-vcentered mt-20">
+            <div class="column is-hidden-mobile"></div>
+            <div class="column is-2 has-text-centered">
+                <div class="tags has-addons is-centered">
+                    <span class="tag is-primary">Alex Smith</span>
+                    <a class="tag is-delete"></a>
+                </div>
+            </div>
+            <div class="column is-2 has-text-centered">
+                <div class="tags has-addons is-centered">
+                    <span class="tag is-secondary">Alex Smith</span>
+                    <a class="tag is-delete"></a>
+                </div>
+            </div>
+            <div class="column is-2 has-text-centered">
+                <div class="tags has-addons is-centered">
+                    <span class="tag is-accent">Alex Smith</span>
+                    <a class="tag is-delete"></a>
+                </div>
+            </div>
+            <div class="column is-hidden-mobile"></div>
+        </div>
+
+        <div class="columns is-vcentered mt-20">
+            <div class="column is-hidden-mobile"></div>
+            <div class="column is-2 has-text-centered">
+                <div class="tags has-addons is-centered">
+                    <span class="tag squared is-primary">Alex Smith</span>
+                    <a class="tag is-delete"></a>
+                </div>
+            </div>
+            <div class="column is-2 has-text-centered">
+                <div class="tags has-addons is-centered">
+                    <span class="tag squared is-secondary">Alex Smith</span>
+                    <a class="tag is-delete"></a>
+                </div>
+            </div>
+            <div class="column is-2 has-text-centered">
+                <div class="tags has-addons is-centered">
+                    <span class="tag squared is-accent">Alex Smith</span>
+                    <a class="tag is-delete"></a>
+                </div>
+            </div>
+            <div class="column is-hidden-mobile"></div>
+        </div>
+        <!-- Tag groups -->
+
+        <div class="columns is-vcentered mt-20">
+            <div class="column is-6 is-offset-3">
+                <!-- Code section -->
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <div class="navigation-tabs animated-tabs simple-tabs mb-40">
+                                <div class="tabs is-right">
+                                    <ul>
+                                        <li class="tab-link is-active" data-tab="double"><a>double</a></li>
+                                        <li class="tab-link" data-tab="rounded-delete"><a>rounded</a></li>
+                                        <li class="tab-link" data-tab="squared-delete"><a>squared</a></li>
+                                    </ul>
+                                </div>
+                                <div id="double" class="navtab-content is-active">
+                                    <figure class="highlight highlight-block"><pre><code class="html code-highlight">
+        &#x3C;div class=&#x22;control tag-group&#x22;&#x3E;
+            &#x3C;div class=&#x22;tags has-addons&#x22;&#x3E;
+                &#x3C;span class=&#x22;tag squared is-dark&#x22;&#x3E;npm&#x3C;/span&#x3E;
+                &#x3C;span class=&#x22;tag squared is-info&#x22;&#x3E;0.5.0&#x3C;/span&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+                                                </code></pre></figure>
+                                </div>
+                                <div id="rounded-delete" class="navtab-content">
+                                    <figure class="highlight highlight-block"><pre><code class="html code-highlight">
+        &#x3C;div class=&#x22;tags has-addons&#x22;&#x3E;
+            &#x3C;span class=&#x22;tag is-primary&#x22;&#x3E;Alex Smith&#x3C;/span&#x3E;
+            &#x3C;a class=&#x22;tag is-delete&#x22;&#x3E;&#x3C;/a&#x3E;
+        &#x3C;/div&#x3E;
+                                                </code></pre></figure>
+                                </div>
+                                <div id="squared-delete" class="navtab-content">
+                                    <figure class="highlight highlight-block"><pre><code class="html code-highlight">
+        &#x3C;div class=&#x22;tags has-addons&#x22;&#x3E;
+            &#x3C;span class=&#x22;tag squared is-primary&#x22;&#x3E;Alex Smith&#x3C;/span&#x3E;
+            &#x3C;a class=&#x22;tag is-delete&#x22;&#x3E;&#x3C;/a&#x3E;
+        &#x3C;/div&#x3E;
+                                                </code></pre></figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Code section -->
+            </div>
+        </div>
+    </div>
+</section>
+
+{{> footer-dark}}

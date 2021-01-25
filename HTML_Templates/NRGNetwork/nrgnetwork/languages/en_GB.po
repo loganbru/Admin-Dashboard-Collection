@@ -1,0 +1,2725 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: NRGNetwork v1.4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2016-01-07 16:46:21+0000\n"
+"Last-Translator: admin <info@wordpress.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED KINGDOM\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: 404.php:13
+#@ nrgnetwork
+msgid "Sorry! the page not found"
+msgstr ""
+
+#: 404.php:14
+#@ nrgnetwork
+msgid "The Link You Folowed Probably Broken, or the page has been removed."
+msgstr ""
+
+#: 404.php:15
+#@ nrgnetwork
+msgid "Return to home"
+msgstr ""
+
+#: buddypress.php:44
+#: content-single.php:7
+#: page.php:56
+#: single-no-sidebar.php:41
+#: single-sidebar.php:56
+#@ nrgnetwork
+msgid "Pages:"
+msgstr ""
+
+#: buddypress.php:48
+#: content-single.php:11
+#: page.php:60
+#: single-no-sidebar.php:45
+#: single-sidebar.php:60
+#@ nrgnetwork
+msgid "Page"
+msgstr ""
+
+#: comments.php:24
+#@ nrgnetwork
+msgid "Pingback:"
+msgstr ""
+
+#: comments.php:24
+#: tpl-author.php:52
+#: tpl-folio-add.php:148
+#: tpl-folio-add.php:166
+#: tpl-folio-add.php:202
+#@ nrgnetwork
+msgid "Edit"
+msgstr ""
+
+#: comments.php:38
+#, php-format
+#@ nrgnetwork
+msgid "%1$s"
+msgstr ""
+
+#: comments.php:60
+#, php-format
+#@ nrgnetwork
+msgctxt "comments title"
+msgid "One comment on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s comments on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:89
+#@ nrgnetwork
+msgid "Comments are closed."
+msgstr ""
+
+#: content.php:45
+#@ nrgnetwork
+msgid "Read more"
+msgstr ""
+
+#: footer.php:340
+#@ nrgnetwork
+msgid "New Collection"
+msgstr ""
+
+#: footer.php:341
+#@ nrgnetwork
+msgid "Add"
+msgstr ""
+
+#: footer.php:355
+#@ nrgnetwork
+msgid "New section"
+msgstr ""
+
+#: footer.php:363
+#: footer.php:364
+#: tpl-author-edit.php:264
+#@ nrgnetwork
+msgid "Section Title"
+msgstr ""
+
+#: footer.php:369
+#: includes/vc-elements/caption.php:40
+#: includes/vc-elements/contact-details.php:81
+#: includes/vc-elements/counter.php:54
+#: includes/vc-elements/service.php:88
+#: tpl-author-edit.php:242
+#: tpl-author-edit.php:270
+#@ nrgnetwork
+msgid "Description"
+msgstr ""
+
+#: footer.php:370
+#: tpl-author-edit.php:243
+#@ nrgnetwork
+msgid "Something about you"
+msgstr ""
+
+#: footer.php:385
+#@ nrgnetwork
+msgid "clear all filters"
+msgstr ""
+
+#: framework/classes/class.meta.post.php:52
+#@ nrgnetwork
+msgid "Delete image"
+msgstr ""
+
+#: framework/classes/class.meta.post.php:52
+#: tpl-messages.php:56
+#@ nrgnetwork
+msgid "Delete"
+msgstr ""
+
+#: framework/classes/class.meta.post.php:61
+#@ nrgnetwork
+msgid "Add post gallery images"
+msgstr ""
+
+#: framework/classes/class.meta.post.php:68
+#@ nrgnetwork
+msgid "Post Gallery"
+msgstr ""
+
+#: framework/classes/class.render.meta.fields.php:118
+#@ nrgnetwork
+msgid "Choose page..."
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:333
+#: includes/plugins.php:77
+#@ nrgnetwork
+msgid "Install Required Plugins"
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:334
+#: includes/plugins.php:78
+#@ nrgnetwork
+msgid "Install Plugins"
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:335
+#: includes/plugins.php:79
+#, php-format
+#@ nrgnetwork
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:336
+#: includes/plugins.php:80
+#@ nrgnetwork
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:338
+#: includes/plugins.php:81
+#, php-format
+#@ nrgnetwork
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/classes/class.tgm.plugin.activation.php:343
+#: includes/plugins.php:82
+#, php-format
+#@ nrgnetwork
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/classes/class.tgm.plugin.activation.php:348
+#, php-format
+#@ nrgnetwork
+msgid "Sorry, but you do not have the correct permissions to install the %1$s plugin."
+msgid_plural "Sorry, but you do not have the correct permissions to install the %1$s plugins."
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/classes/class.tgm.plugin.activation.php:353
+#: includes/plugins.php:87
+#, php-format
+#@ nrgnetwork
+msgid "The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s."
+msgid_plural "The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/classes/class.tgm.plugin.activation.php:358
+#, php-format
+#@ nrgnetwork
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/classes/class.tgm.plugin.activation.php:363
+#, php-format
+#@ nrgnetwork
+msgid "Sorry, but you do not have the correct permissions to update the %1$s plugin."
+msgid_plural "Sorry, but you do not have the correct permissions to update the %1$s plugins."
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/classes/class.tgm.plugin.activation.php:368
+#: includes/plugins.php:84
+#, php-format
+#@ nrgnetwork
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/classes/class.tgm.plugin.activation.php:373
+#: includes/plugins.php:85
+#, php-format
+#@ nrgnetwork
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/classes/class.tgm.plugin.activation.php:378
+#, php-format
+#@ nrgnetwork
+msgid "Sorry, but you do not have the correct permissions to activate the %1$s plugin."
+msgid_plural "Sorry, but you do not have the correct permissions to activate the %1$s plugins."
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/classes/class.tgm.plugin.activation.php:383
+#: includes/plugins.php:89
+#@ nrgnetwork
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/classes/class.tgm.plugin.activation.php:388
+#@ nrgnetwork
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/classes/class.tgm.plugin.activation.php:393
+#: includes/plugins.php:90
+#@ nrgnetwork
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/classes/class.tgm.plugin.activation.php:397
+#: includes/plugins.php:91
+#@ nrgnetwork
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:398
+#@ nrgnetwork
+msgid "Return to the dashboard"
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:399
+#: framework/classes/class.tgm.plugin.activation.php:3034
+#: includes/plugins.php:92
+#@ nrgnetwork
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:401
+#, php-format
+#@ nrgnetwork
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:402
+#, php-format
+#@ nrgnetwork
+msgid "Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin."
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:403
+#, php-format
+#@ nrgnetwork
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:404
+#@ nrgnetwork
+msgid "Dismiss this notice"
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:405
+#@ nrgnetwork
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:524
+#@ nrgnetwork
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:525
+#@ nrgnetwork
+msgid "Update Required"
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:639
+#@ nrgnetwork
+msgid "Set the parent_slug config variable instead."
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:833
+#: framework/classes/class.tgm.plugin.activation.php:3443
+#@ nrgnetwork
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:940
+#@ nrgnetwork
+msgid "The remote plugin package does not contain a folder with the desired slug and renaming did not work."
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:940
+#: framework/classes/class.tgm.plugin.activation.php:943
+#@ nrgnetwork
+msgid "Please contact the plugin provider and ask them to package their plugin according to the WordPress guidelines."
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:943
+#@ nrgnetwork
+msgid "The remote plugin package consists of more than one file, but the files are not packaged in a folder."
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:1121
+#: framework/classes/class.tgm.plugin.activation.php:2833
+#@ nrgnetwork
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:1886
+#, php-format
+#@ nrgnetwork
+msgctxt "%s = version number"
+msgid "TGMPA v%s"
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:2172
+#@ nrgnetwork
+msgid "Required"
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:2175
+#@ nrgnetwork
+msgid "Recommended"
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:2191
+#@ nrgnetwork
+msgid "WordPress Repository"
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:2194
+#@ nrgnetwork
+msgid "External Source"
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:2197
+#@ nrgnetwork
+msgid "Pre-Packaged"
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:2214
+#@ nrgnetwork
+msgid "Not Installed"
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:2218
+#@ nrgnetwork
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:2220
+#@ nrgnetwork
+msgid "Active"
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:2226
+#@ nrgnetwork
+msgid "Required Update not Available"
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:2229
+#@ nrgnetwork
+msgid "Requires Update"
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:2232
+#@ nrgnetwork
+msgid "Update recommended"
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:2240
+#, php-format
+#@ nrgnetwork
+msgctxt "%1$s = install status, %2$s = update status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:2285
+#, php-format
+#@ nrgnetwork
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/classes/class.tgm.plugin.activation.php:2288
+#, php-format
+#@ nrgnetwork
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/classes/class.tgm.plugin.activation.php:2291
+#, php-format
+#@ nrgnetwork
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/classes/class.tgm.plugin.activation.php:2294
+#, php-format
+#@ nrgnetwork
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/classes/class.tgm.plugin.activation.php:2376
+#@ nrgnetwork
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:2384
+#@ nrgnetwork
+msgid "Installed version:"
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:2392
+#@ nrgnetwork
+msgid "Minimum required version:"
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:2404
+#@ nrgnetwork
+msgid "Available version:"
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:2427
+#, php-format
+#@ nrgnetwork
+msgid "No plugins to install, update or activate. <a href=\"%1$s\">Return to the Dashboard</a>"
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:2441
+#@ nrgnetwork
+msgid "Plugin"
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:2442
+#@ nrgnetwork
+msgid "Source"
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:2443
+#@ nrgnetwork
+msgid "Type"
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:2447
+#@ nrgnetwork
+msgid "Version"
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:2448
+#: includes/vc-elements/stat.php:34
+#@ nrgnetwork
+msgid "Status"
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:2496
+#, php-format
+#@ nrgnetwork
+msgctxt "%2$s = plugin name in screen reader markup"
+msgid "Install %2$s"
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:2500
+#, php-format
+#@ nrgnetwork
+msgctxt "%2$s = plugin name in screen reader markup"
+msgid "Update %2$s"
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:2505
+#, php-format
+#@ nrgnetwork
+msgctxt "%2$s = plugin name in screen reader markup"
+msgid "Activate %2$s"
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:2575
+#@ nrgnetwork
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:2608
+#@ nrgnetwork
+msgid "Install"
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:2614
+#@ nrgnetwork
+msgid "Update"
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:2617
+#@ nrgnetwork
+msgid "Activate"
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:2648
+#@ nrgnetwork
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:2650
+#@ nrgnetwork
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:2686
+#@ nrgnetwork
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:2688
+#@ nrgnetwork
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:2793
+#@ nrgnetwork
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:2819
+#@ nrgnetwork
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#. gettext fix: identical singular and plural forms found, that may be ambiguous! Please check the code!
+#: framework/classes/class.tgm.plugin.activation.php:2837
+#: framework/classes/class.tgm.plugin.activation.php:400
+#@ nrgnetwork
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/classes/class.tgm.plugin.activation.php:3033
+#@ nrgnetwork
+msgid "Plugin activation failed."
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:3367
+#, php-format
+#@ nrgnetwork
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:3369
+#, php-format
+#@ nrgnetwork
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:3370
+#, php-format
+#@ nrgnetwork
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:3374
+#@ nrgnetwork
+msgid "The installation and activation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:3375
+#, php-format
+#@ nrgnetwork
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:3375
+#: framework/classes/class.tgm.plugin.activation.php:3381
+#@ nrgnetwork
+msgid "Show Details"
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:3375
+#: framework/classes/class.tgm.plugin.activation.php:3381
+#@ nrgnetwork
+msgid "Hide Details"
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:3376
+#@ nrgnetwork
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:3377
+#, php-format
+#@ nrgnetwork
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:3380
+#@ nrgnetwork
+msgid "The installation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:3381
+#, php-format
+#@ nrgnetwork
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:3382
+#@ nrgnetwork
+msgid "All installations have been completed."
+msgstr ""
+
+#: framework/classes/class.tgm.plugin.activation.php:3383
+#, php-format
+#@ nrgnetwork
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: framework/classes/class.wp.customize.controls.php:52
+#: framework/classes/class.wp.customize.controls.php:91
+#@ nrgnetwork
+msgid "Remove"
+msgstr ""
+
+#: framework/classes/lib/wp.importer/parsers.php:42
+#: framework/classes/lib/wp.importer/parsers.php:72
+#: framework/classes/lib/wp.importer/parsers.php:80
+#@ nrgnetwork
+msgid "There was an error when reading this WXR file"
+msgstr ""
+
+#: framework/classes/lib/wp.importer/parsers.php:43
+#@ nrgnetwork
+msgid "Details are shown above. The importer will now try again with a different parser..."
+msgstr ""
+
+#: framework/classes/lib/wp.importer/parsers.php:84
+#: framework/classes/lib/wp.importer/parsers.php:89
+#: framework/classes/lib/wp.importer/parsers.php:279
+#: framework/classes/lib/wp.importer/parsers.php:463
+#@ nrgnetwork
+msgid "This does not appear to be a WXR file, missing/invalid WXR version number"
+msgstr ""
+
+#: framework/classes/lib/wp.importer/wp.importer.php:136
+#: framework/classes/lib/wp.importer/wp.importer.php:145
+#: framework/classes/lib/wp.importer/wp.importer.php:196
+#: framework/classes/lib/wp.importer/wp.importer.php:200
+#: framework/classes/lib/wp.importer/wp.importer.php:209
+#@ nrgnetwork
+msgid "Sorry, there has been an error."
+msgstr ""
+
+#: framework/classes/lib/wp.importer/wp.importer.php:137
+#@ nrgnetwork
+msgid "The file does not exist, please try again."
+msgstr ""
+
+#: framework/classes/lib/wp.importer/wp.importer.php:180
+#@ nrgnetwork
+msgid "All done."
+msgstr ""
+
+#: framework/classes/lib/wp.importer/wp.importer.php:180
+#@ nrgnetwork
+msgid "Have fun!"
+msgstr ""
+
+#: framework/classes/lib/wp.importer/wp.importer.php:181
+#@ nrgnetwork
+msgid "Remember to update the passwords and roles of imported users."
+msgstr ""
+
+#: framework/classes/lib/wp.importer/wp.importer.php:201
+#, php-format
+#@ nrgnetwork
+msgid "The export file could not be found at <code>%s</code>. It is likely that this was caused by a permissions problem."
+msgstr ""
+
+#: framework/classes/lib/wp.importer/wp.importer.php:217
+#, php-format
+#@ nrgnetwork
+msgid "This WXR file (version %s) may not be supported by this version of the importer. Please consider updating."
+msgstr ""
+
+#: framework/classes/lib/wp.importer/wp.importer.php:242
+#, php-format
+#@ nrgnetwork
+msgid "Failed to import author %s. Their posts will be attributed to the current user."
+msgstr ""
+
+#: framework/classes/lib/wp.importer/wp.importer.php:268
+#@ nrgnetwork
+msgid "Assign Authors"
+msgstr ""
+
+#: framework/classes/lib/wp.importer/wp.importer.php:269
+#@ nrgnetwork
+msgid "To make it easier for you to edit and save the imported content, you may want to reassign the author of the imported item to an existing user of this site. For example, you may want to import all the entries as <code>admin</code>s entries."
+msgstr ""
+
+#: framework/classes/lib/wp.importer/wp.importer.php:271
+#, php-format
+#@ nrgnetwork
+msgid "If a new user is created by WordPress, a new password will be randomly generated and the new user&#8217;s role will be set as %s. Manually changing the new user&#8217;s details will be necessary."
+msgstr ""
+
+#: framework/classes/lib/wp.importer/wp.importer.php:281
+#@ nrgnetwork
+msgid "Import Attachments"
+msgstr ""
+
+#: framework/classes/lib/wp.importer/wp.importer.php:284
+#@ nrgnetwork
+msgid "Download and import file attachments"
+msgstr ""
+
+#: framework/classes/lib/wp.importer/wp.importer.php:288
+#@ nrgnetwork
+msgid "Submit"
+msgstr ""
+
+#: framework/classes/lib/wp.importer/wp.importer.php:301
+#@ nrgnetwork
+msgid "Import author:"
+msgstr ""
+
+#: framework/classes/lib/wp.importer/wp.importer.php:312
+#@ nrgnetwork
+msgid "or create new user with login name:"
+msgstr ""
+
+#: framework/classes/lib/wp.importer/wp.importer.php:315
+#@ nrgnetwork
+msgid "as a new user:"
+msgstr ""
+
+#: framework/classes/lib/wp.importer/wp.importer.php:323
+#@ nrgnetwork
+msgid "assign posts to an existing user:"
+msgstr ""
+
+#: framework/classes/lib/wp.importer/wp.importer.php:325
+#@ nrgnetwork
+msgid "or assign posts to an existing user:"
+msgstr ""
+
+#: framework/classes/lib/wp.importer/wp.importer.php:326
+#@ nrgnetwork
+msgid "- Select -"
+msgstr ""
+
+#: framework/classes/lib/wp.importer/wp.importer.php:376
+#, php-format
+#@ nrgnetwork
+msgid "Failed to create new user for %s. Their posts will be attributed to the current user."
+msgstr ""
+
+#: framework/classes/lib/wp.importer/wp.importer.php:427
+#, php-format
+#@ nrgnetwork
+msgid "Failed to import category %s"
+msgstr ""
+
+#: framework/classes/lib/wp.importer/wp.importer.php:467
+#, php-format
+#@ nrgnetwork
+msgid "Failed to import post tag %s"
+msgstr ""
+
+#: framework/classes/lib/wp.importer/wp.importer.php:513
+#: framework/classes/lib/wp.importer/wp.importer.php:654
+#, php-format
+#@ nrgnetwork
+msgid "Failed to import %s %s"
+msgstr ""
+
+#: framework/classes/lib/wp.importer/wp.importer.php:539
+#, php-format
+#@ nrgnetwork
+msgid "Failed to import &#8220;%s&#8221;: Invalid post type %s"
+msgstr ""
+
+#: framework/classes/lib/wp.importer/wp.importer.php:561
+#, php-format
+#@ nrgnetwork
+msgid "%s &#8220;%s&#8221; already exists."
+msgstr ""
+
+#: framework/classes/lib/wp.importer/wp.importer.php:620
+#, php-format
+#@ nrgnetwork
+msgid "Failed to import %s &#8220;%s&#8221;"
+msgstr ""
+
+#: framework/classes/lib/wp.importer/wp.importer.php:785
+#@ nrgnetwork
+msgid "Menu item skipped due to missing menu slug"
+msgstr ""
+
+#: framework/classes/lib/wp.importer/wp.importer.php:792
+#, php-format
+#@ nrgnetwork
+msgid "Menu item skipped due to invalid menu slug: %s"
+msgstr ""
+
+#: framework/classes/lib/wp.importer/wp.importer.php:855
+#@ nrgnetwork
+msgid "Fetching attachments is not enabled"
+msgstr ""
+
+#: framework/classes/lib/wp.importer/wp.importer.php:868
+#@ nrgnetwork
+msgid "Invalid file type"
+msgstr ""
+
+#: framework/classes/lib/wp.importer/wp.importer.php:912
+#@ nrgnetwork
+msgid "Remote server did not respond"
+msgstr ""
+
+#: framework/classes/lib/wp.importer/wp.importer.php:918
+#, php-format
+#@ nrgnetwork
+msgid "Remote server returned error response %1$d %2$s"
+msgstr ""
+
+#: framework/classes/lib/wp.importer/wp.importer.php:925
+#@ nrgnetwork
+msgid "Remote file is incorrect size"
+msgstr ""
+
+#: framework/classes/lib/wp.importer/wp.importer.php:930
+#@ nrgnetwork
+msgid "Zero size file downloaded"
+msgstr ""
+
+#: framework/classes/lib/wp.importer/wp.importer.php:936
+#, php-format
+#@ nrgnetwork
+msgid "Remote file is too large, limit is %s"
+msgstr ""
+
+#: framework/classes/lib/wp.importer/wp.importer.php:1034
+#@ nrgnetwork
+msgid "Import WordPress"
+msgstr ""
+
+#: framework/classes/lib/wp.importer/wp.importer.php:1041
+#, php-format
+#@ nrgnetwork
+msgid "A new version of this importer is available. Please update to version %s to ensure compatibility with newer export files."
+msgstr ""
+
+#: framework/classes/lib/wp.importer/wp.importer.php:1056
+#@ nrgnetwork
+msgid "Howdy! Upload your WordPress eXtended RSS (WXR) file and we&#8217;ll import the posts, pages, comments, custom fields, categories, and tags into this site."
+msgstr ""
+
+#: framework/classes/lib/wp.importer/wp.importer.php:1057
+#@ nrgnetwork
+msgid "Choose a WXR (.xml) file to upload, then click Upload file and import."
+msgstr ""
+
+#: framework/functions/functions.breadcrumb.php:79
+#@ nrgnetwork
+msgid "Error 404: Page not found"
+msgstr ""
+
+#: framework/functions/functions.breadcrumb.php:80
+#@ nrgnetwork
+msgid "Archives for"
+msgstr ""
+
+#: framework/functions/functions.breadcrumb.php:81
+#: functions.php:306
+#@ nrgnetwork
+msgid "Home"
+msgstr ""
+
+#: framework/functions/functions.breadcrumb.php:82
+#@ nrgnetwork
+msgid "You searched for"
+msgstr ""
+
+#: framework/functions/functions.for.theme.php:120
+#@ nrgnetwork
+msgid "Import Demo"
+msgstr ""
+
+#: functions.php:12
+#@ nrgnetwork
+msgid "Post Sidebar Area"
+msgstr ""
+
+#: functions.php:13
+#@ nrgnetwork
+msgid "Page Sidebar Area"
+msgstr ""
+
+#: functions.php:14
+#@ nrgnetwork
+msgid "Portfolio Sidebar Area"
+msgstr ""
+
+#: functions.php:91
+#@ nrgnetwork
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:92
+#@ nrgnetwork
+msgid "Sub Footer Menu"
+msgstr ""
+
+#: functions.php:173
+#@ nrgnetwork
+msgid "Add widgets here to appear in your sidebar."
+msgstr ""
+
+#: functions.php:190
+#@ nrgnetwork
+msgid "Footer Column"
+msgstr ""
+
+#: functions.php:192
+#@ nrgnetwork
+msgid "Add widgets here to appear in your footer column"
+msgstr ""
+
+#: functions.php:270
+#@ nrgnetwork
+msgid "You are not allowed to access this part of the site"
+msgstr ""
+
+#: includes/ExtendVCRow.php:62
+#@ nrgnetwork
+msgid "Overlay"
+msgstr ""
+
+#: includes/ExtendVCRow.php:65
+#@ nrgnetwork
+msgid "No"
+msgstr ""
+
+#: includes/ExtendVCRow.php:66
+#@ nrgnetwork
+msgid "Yes"
+msgstr ""
+
+#: includes/ExtendVCRow.php:72
+#@ nrgnetwork
+msgid "Overlay Color"
+msgstr ""
+
+#: includes/ExtendVCRow.php:80
+#@ nrgnetwork
+msgid "Overlay Opacity"
+msgstr ""
+
+#: includes/ExtendVCRow.php:123
+#@ nrgnetwork
+msgid "Horizontal Alignment"
+msgstr ""
+
+#: includes/ExtendVCRow.php:126
+#: includes/ExtendVCRow.php:137
+#@ nrgnetwork
+msgid "None"
+msgstr ""
+
+#: includes/ExtendVCRow.php:127
+#: includes/vc-elements/caption.php:48
+#@ nrgnetwork
+msgid "Left"
+msgstr ""
+
+#: includes/ExtendVCRow.php:128
+#: includes/vc-elements/caption.php:49
+#@ nrgnetwork
+msgid "Center"
+msgstr ""
+
+#: includes/ExtendVCRow.php:129
+#: includes/vc-elements/caption.php:50
+#@ nrgnetwork
+msgid "Right"
+msgstr ""
+
+#: includes/ExtendVCRow.php:134
+#@ nrgnetwork
+msgid "Vertical Alignment"
+msgstr ""
+
+#: includes/ExtendVCRow.php:138
+#@ nrgnetwork
+msgid "Top"
+msgstr ""
+
+#: includes/ExtendVCRow.php:139
+#@ nrgnetwork
+msgid "Middle"
+msgstr ""
+
+#: includes/ExtendVCRow.php:140
+#@ nrgnetwork
+msgid "Bottom"
+msgstr ""
+
+#: includes/community.php:194
+#@ nrgnetwork
+msgid "Author Profile"
+msgstr ""
+
+#: includes/community.php:197
+#@ nrgnetwork
+msgid "Edit Profile"
+msgstr ""
+
+#: includes/community.php:200
+#@ nrgnetwork
+msgid "Author Collections"
+msgstr ""
+
+#: includes/community.php:203
+#@ nrgnetwork
+msgid "Edit Portfolio"
+msgstr ""
+
+#: includes/community.php:206
+#: tpl-author-header.php:105
+#: tpl-statistic.php:30
+#@ nrgnetwork
+msgid "Statistics"
+msgstr ""
+
+#: includes/community.php:956
+#: single-portfolio.php:160
+#: woo-single.php:120
+#@ nrgnetwork
+msgid "AUTHOR"
+msgstr ""
+
+#: includes/community.php:963
+#: includes/community.php:966
+#: includes/community.php:971
+#: single-portfolio.php:167
+#: single-portfolio.php:170
+#: single-portfolio.php:176
+#: tpl-author.php:59
+#: tpl-author.php:62
+#: woo-single.php:127
+#: woo-single.php:130
+#: woo-single.php:136
+#@ nrgnetwork
+msgid "FOLLOW"
+msgstr ""
+
+#: includes/community.php:963
+#: includes/community.php:966
+#: single-portfolio.php:167
+#: single-portfolio.php:170
+#: tpl-author.php:59
+#: tpl-author.php:62
+#: woo-single.php:127
+#: woo-single.php:130
+#@ nrgnetwork
+msgid "FOLLOWING"
+msgstr ""
+
+#: includes/community.php:1147
+#@ nrgnetwork
+msgid "Add Work"
+msgstr ""
+
+#: includes/community.php:1220
+#@ nrgnetwork
+msgid "User already exists"
+msgstr ""
+
+#: includes/community.php:1251
+#@ nrgnetwork
+msgid "There was an error sending that message. Please try again."
+msgstr ""
+
+#: includes/community.php:1255
+#@ nrgnetwork
+msgid "Buddypress not installed. Please install buddypress and try again."
+msgstr ""
+
+#: includes/community.php:1259
+#@ nrgnetwork
+msgid "You are not logged in. Please log in and try again ..."
+msgstr ""
+
+#: includes/community.php:1284
+#@ nrgnetwork
+msgid "You have a message from"
+msgstr ""
+
+#: includes/community.php:1294
+#@ nrgnetwork
+msgid "Please check your fields"
+msgstr ""
+
+#: includes/community.php:1550
+#@ nrgnetwork
+msgid "LOADING..."
+msgstr ""
+
+#: includes/community.php:1551
+#@ nrgnetwork
+msgid "LIKE PROJECT"
+msgstr ""
+
+#: includes/community.php:1552
+#@ nrgnetwork
+msgid "YOU LIKED PROJECT"
+msgstr ""
+
+#: includes/plugins.php:83
+#, php-format
+#@ nrgnetwork
+msgid "Sorry, but you do not have the correct permissions to install the %s plugin. Contact the administrator of this site for help on getting the plugin installed."
+msgid_plural "Sorry, but you do not have the correct permissions to install the %s plugins. Contact the administrator of this site for help on getting the plugins installed."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/plugins.php:86
+#, php-format
+#@ nrgnetwork
+msgid "Sorry, but you do not have the correct permissions to activate the %s plugin. Contact the administrator of this site for help on getting the plugin activated."
+msgid_plural "Sorry, but you do not have the correct permissions to activate the %s plugins. Contact the administrator of this site for help on getting the plugins activated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/plugins.php:88
+#, php-format
+#@ nrgnetwork
+msgid "Sorry, but you do not have the correct permissions to update the %s plugin. Contact the administrator of this site for help on getting the plugin updated."
+msgid_plural "Sorry, but you do not have the correct permissions to update the %s plugins. Contact the administrator of this site for help on getting the plugins updated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/plugins.php:93
+#, php-format
+#@ nrgnetwork
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: includes/template-tags.php:135
+#@ nrgnetwork
+msgid "prev page"
+msgstr ""
+
+#: includes/template-tags.php:136
+#@ nrgnetwork
+msgid "next page"
+msgstr ""
+
+#: includes/template-tags.php:186
+#@ nrgnetwork
+msgid "Next post"
+msgstr ""
+
+#: includes/template-tags.php:206
+#@ nrgnetwork
+msgid "Previous post"
+msgstr ""
+
+#: includes/template-tags.php:286
+#@ nrgnetwork
+msgid "Related Projects"
+msgstr ""
+
+#: includes/template-tags.php:294
+#: single-no-sidebar.php:110
+#@ nrgnetwork
+msgid "Related Posts"
+msgstr ""
+
+#: includes/template-tags.php:466
+#: tpl-page-title.php:41
+#@ nrgnetwork
+msgid "Shop"
+msgstr ""
+
+#: includes/template-tags.php:468
+#: tpl-page-title.php:43
+#@ nrgnetwork
+msgid "Shop Details"
+msgstr ""
+
+#: includes/template-tags.php:473
+#: tpl-page-title.php:48
+#, php-format
+#@ nrgnetwork
+msgid "Category: <span>%s</span>"
+msgstr ""
+
+#: includes/template-tags.php:484
+#: page-activity-p.php:96
+#: page-activity.php:93
+#: page-activity.php:96
+#: tpl-author.php:252
+#: tpl-page-title.php:59
+#@ nrgnetwork
+msgid "Projects"
+msgstr ""
+
+#: includes/template-tags.php:486
+#: tpl-page-title.php:61
+#@ nrgnetwork
+msgid "Blog"
+msgstr ""
+
+#: includes/template-tags.php:489
+#: tpl-page-title.php:64
+#@ nrgnetwork
+msgid "404 Page"
+msgstr ""
+
+#: includes/template-tags.php:604
+#@ nrgnetwork
+msgid "Comment navigation"
+msgstr ""
+
+#: includes/template-tags.php:607
+#@ nrgnetwork
+msgid "Older Comments"
+msgstr ""
+
+#: includes/template-tags.php:611
+#@ nrgnetwork
+msgid "Newer Comments"
+msgstr ""
+
+#: includes/vc-elements/blog-posts.php:75
+#: includes/vc-elements/blog-posts.php:114
+#: woo-single.php:232
+#@ nrgnetwork
+msgid "by"
+msgstr ""
+
+#: includes/vc-elements/blog-posts.php:80
+#: includes/vc-elements/blog-posts.php:109
+#: includes/widgets/post_slider_widget.php:52
+#@ nrgnetwork
+msgid ", "
+msgstr ""
+
+#: includes/vc-elements/blog-posts.php:83
+#@ nrgnetwork
+msgid "Read More"
+msgstr ""
+
+#: includes/vc-elements/blog-posts.php:159
+#@ nrgnetwork
+msgid "Blog Posts"
+msgstr ""
+
+#: includes/vc-elements/blog-posts.php:160
+#@ nrgnetwork
+msgid "Only post type: post"
+msgstr ""
+
+#: includes/vc-elements/blog-posts.php:164
+#: includes/vc-elements/caption.php:27
+#: includes/vc-elements/contact-details.php:36
+#: includes/vc-elements/counter.php:34
+#: includes/vc-elements/google-maps.php:35
+#: includes/vc-elements/service-container.php:35
+#: includes/vc-elements/service.php:43
+#: includes/vc-elements/stat.php:38
+#: includes/vc-elements/team.php:47
+#: includes/vc-elements/testimonial-container.php:43
+#: includes/vc-elements/testimonial.php:35
+#@ nrgnetwork
+msgid "Themeton"
+msgstr ""
+
+#: includes/vc-elements/blog-posts.php:169
+#@ nrgnetwork
+msgid "Blog Style"
+msgstr ""
+
+#: includes/vc-elements/blog-posts.php:180
+#@ nrgnetwork
+msgid "Posts Count"
+msgstr ""
+
+#: includes/community_extra.php:56
+#: includes/vc-elements/blog-posts.php:186
+#@ nrgnetwork
+msgid "Categories"
+msgstr ""
+
+#: includes/vc-elements/blog-posts.php:187
+#@ nrgnetwork
+msgid "Specify category Id or leave blank to display items from all categories."
+msgstr ""
+
+#: includes/vc-elements/blog-posts.php:193
+#@ nrgnetwork
+msgid "Show Categories?"
+msgstr ""
+
+#: includes/vc-elements/blog-posts.php:203
+#@ nrgnetwork
+msgid "Show Pagination?"
+msgstr ""
+
+#: includes/vc-elements/blog-posts.php:213
+#: includes/vc-elements/contact-details.php:88
+#: includes/vc-elements/counter.php:72
+#: includes/vc-elements/service-container.php:40
+#: includes/vc-elements/stat.php:90
+#: includes/vc-elements/team.php:108
+#: includes/vc-elements/testimonial-container.php:60
+#: includes/vc-elements/testimonial.php:67
+#@ nrgnetwork
+msgid "Extra Class"
+msgstr ""
+
+#: includes/vc-elements/blog-posts.php:215
+#: includes/vc-elements/contact-details.php:90
+#: includes/vc-elements/counter.php:74
+#: includes/vc-elements/service-container.php:42
+#: includes/vc-elements/stat.php:92
+#: includes/vc-elements/team.php:110
+#: includes/vc-elements/testimonial-container.php:62
+#: includes/vc-elements/testimonial.php:69
+#@ nrgnetwork
+msgid "If you wish to style particular content element differently, then use this field to add a class name and then refer to it in your css file."
+msgstr ""
+
+#: includes/vc-elements/contact-details.php:31
+#@ nrgnetwork
+msgid "Contact detail"
+msgstr ""
+
+#: includes/vc-elements/contact-details.php:32
+#@ nrgnetwork
+msgid "your location info"
+msgstr ""
+
+#: includes/vc-elements/contact-details.php:42
+#: includes/vc-elements/service.php:49
+#: includes/vc-elements/stat.php:44
+#@ nrgnetwork
+msgid "Icon Type"
+msgstr ""
+
+#: includes/vc-elements/contact-details.php:52
+#: includes/vc-elements/service.php:59
+#: includes/vc-elements/stat.php:54
+#: includes/vc-elements/team.php:66
+#: includes/vc-elements/testimonial.php:41
+#@ nrgnetwork
+msgid "Image Image"
+msgstr ""
+
+#: includes/vc-elements/contact-details.php:60
+#: includes/vc-elements/service.php:67
+#: includes/vc-elements/stat.php:62
+#@ nrgnetwork
+msgid "Icon"
+msgstr ""
+
+#: includes/vc-elements/caption.php:33
+#: includes/vc-elements/contact-details.php:74
+#: includes/vc-elements/counter.php:47
+#: includes/vc-elements/service.php:81
+#: includes/vc-elements/stat.php:83
+#@ nrgnetwork
+msgid "Title"
+msgstr ""
+
+#: includes/vc-elements/counter.php:30
+#@ nrgnetwork
+msgid "Counter"
+msgstr ""
+
+#: includes/vc-elements/counter.php:31
+#@ nrgnetwork
+msgid "Animated Nubmers"
+msgstr ""
+
+#: includes/vc-elements/counter.php:40
+#: includes/vc-elements/stat.php:76
+#@ nrgnetwork
+msgid "Number"
+msgstr ""
+
+#: includes/vc-elements/counter.php:60
+#: includes/vc-elements/service.php:94
+#@ nrgnetwork
+msgid "Button Text"
+msgstr ""
+
+#: includes/vc-elements/counter.php:66
+#: includes/vc-elements/service.php:100
+#@ nrgnetwork
+msgid "Button Link"
+msgstr ""
+
+#: includes/vc-elements/google-maps.php:30
+#@ nrgnetwork
+msgid "Google Map"
+msgstr ""
+
+#: includes/vc-elements/google-maps.php:31
+#@ nrgnetwork
+msgid "Google Maps Latitude, Longitude"
+msgstr ""
+
+#: includes/vc-elements/google-maps.php:41
+#@ nrgnetwork
+msgid "Latitude"
+msgstr ""
+
+#: includes/vc-elements/google-maps.php:47
+#@ nrgnetwork
+msgid "Longitude"
+msgstr ""
+
+#: includes/vc-elements/google-maps.php:53
+#@ nrgnetwork
+msgid "Hue Color"
+msgstr ""
+
+#: includes/vc-elements/google-maps.php:59
+#@ nrgnetwork
+msgid "Saturation"
+msgstr ""
+
+#: includes/vc-elements/google-maps.php:66
+#@ nrgnetwork
+msgid "Zoom"
+msgstr ""
+
+#: includes/vc-elements/google-maps.php:73
+#@ nrgnetwork
+msgid "Height"
+msgstr ""
+
+#: includes/vc-elements/google-maps.php:79
+#@ nrgnetwork
+msgid "Marker Image"
+msgstr ""
+
+#: includes/vc-elements/service-container.php:27
+#@ nrgnetwork
+msgid "Service Carousel"
+msgstr ""
+
+#: includes/vc-elements/service-container.php:28
+#@ nrgnetwork
+msgid "Service Container"
+msgstr ""
+
+#: includes/vc-elements/service.php:38
+#@ nrgnetwork
+msgid "Service"
+msgstr ""
+
+#: includes/vc-elements/stat.php:35
+#@ nrgnetwork
+msgid "Statistic Nubmers"
+msgstr ""
+
+#: includes/vc-elements/team.php:43
+#@ nrgnetwork
+msgid "Team member"
+msgstr ""
+
+#: includes/vc-elements/team.php:53
+#: includes/vc-elements/testimonial.php:48
+#@ nrgnetwork
+msgid "Name"
+msgstr ""
+
+#: includes/vc-elements/team.php:60
+#: includes/vc-elements/testimonial.php:55
+#@ nrgnetwork
+msgid "Position"
+msgstr ""
+
+#: includes/vc-elements/team.php:72
+#@ nrgnetwork
+msgid "Profile Link"
+msgstr ""
+
+#: includes/vc-elements/team.php:78
+#@ nrgnetwork
+msgid "Facebook"
+msgstr ""
+
+#: includes/vc-elements/team.php:84
+#@ nrgnetwork
+msgid "Twitter"
+msgstr ""
+
+#: includes/vc-elements/team.php:90
+#@ nrgnetwork
+msgid "Google+"
+msgstr ""
+
+#: includes/vc-elements/team.php:96
+#@ nrgnetwork
+msgid "Linkedin"
+msgstr ""
+
+#: includes/vc-elements/team.php:102
+#@ nrgnetwork
+msgid "Instagram"
+msgstr ""
+
+#: includes/vc-elements/testimonial-container.php:35
+#@ nrgnetwork
+msgid "Testimonial Carousel"
+msgstr ""
+
+#: includes/vc-elements/testimonial-container.php:36
+#@ nrgnetwork
+msgid "Testimonial Container"
+msgstr ""
+
+#: includes/vc-elements/testimonial-container.php:48
+#@ nrgnetwork
+msgid "Slide number"
+msgstr ""
+
+#: includes/vc-elements/testimonial.php:30
+#@ nrgnetwork
+msgid "Testimonial"
+msgstr ""
+
+#: includes/vc-elements/testimonial.php:61
+#: tpl-folio-add.php:53
+#@ nrgnetwork
+msgid "Content"
+msgstr ""
+
+#: includes/widgets/address_widget.php:63
+#: includes/widgets/popular_posts_widget.php:84
+#: includes/widgets/post_slider_widget.php:103
+#: includes/widgets/recent_works_widget.php:79
+#@ nrgnetwork
+msgid "Title:"
+msgstr ""
+
+#: includes/widgets/address_widget.php:67
+#@ nrgnetwork
+msgid "address:"
+msgstr ""
+
+#: includes/widgets/address_widget.php:71
+#@ nrgnetwork
+msgid "phone:"
+msgstr ""
+
+#: includes/widgets/address_widget.php:75
+#@ nrgnetwork
+msgid "email:"
+msgstr ""
+
+#: includes/widgets/address_widget.php:79
+#@ nrgnetwork
+msgid "website:"
+msgstr ""
+
+#: includes/widgets/popular_posts_widget.php:106
+#: includes/widgets/post_slider_widget.php:125
+#: includes/widgets/recent_works_widget.php:101
+#@ nrgnetwork
+msgid "Select Type:"
+msgstr ""
+
+#: page-activity-p.php:81
+#: page-activity.php:81
+#: searchform.php:2
+#: woo-shop.php:44
+#@ nrgnetwork
+msgid "Enter keyword"
+msgstr ""
+
+#: page-activity-p.php:93
+#: page-activity-p.php:97
+#: page-activity.php:97
+#: woo-shop.php:61
+#@ nrgnetwork
+msgid "People"
+msgstr ""
+
+#: page-activity-p.php:131
+#: page-activity-p.php:134
+#: page-activity.php:131
+#: page-activity.php:134
+#: woo-shop.php:94
+#: woo-shop.php:97
+#@ nrgnetwork
+msgid "Worldwide"
+msgstr ""
+
+#: page-activity-p.php:175
+#: page-activity.php:175
+#: woo-shop.php:138
+#@ nrgnetwork
+msgid "Popular Categories"
+msgstr ""
+
+#: page-activity-p.php:197
+#: page-activity.php:195
+#: woo-shop.php:158
+#@ nrgnetwork
+msgid "Popular Tags"
+msgstr ""
+
+#: sidebar-page.php:14
+#: sidebar.php:18
+#@ nrgnetwork
+msgid "Please add your widgets."
+msgstr ""
+
+#: single-no-sidebar.php:62
+#: single-portfolio.php:60
+#: single-sidebar.php:76
+#@ nrgnetwork
+msgid "Tags"
+msgstr ""
+
+#: single-no-sidebar.php:72
+#: single-sidebar.php:86
+#@ nrgnetwork
+msgid "Share"
+msgstr ""
+
+#: single-portfolio.php:209
+#: woo-single.php:169
+#@ nrgnetwork
+msgid "About Project"
+msgstr ""
+
+#: single-portfolio.php:235
+#: woo-single.php:195
+#@ nrgnetwork
+msgid "ADD TO COLLECTION"
+msgstr ""
+
+#: single-sidebar.php:35
+#@ nrgnetwork
+msgid "by "
+msgstr ""
+
+#: tpl-author-edit.php:33
+#: tpl-messages.php:44
+#@ nrgnetwork
+msgid "back to profile"
+msgstr ""
+
+#: tpl-author-edit.php:38
+#@ nrgnetwork
+msgid "Choose Category"
+msgstr ""
+
+#: tpl-author-edit.php:42
+#: tpl-author-edit.php:65
+#@ nrgnetwork
+msgid "Basic Information"
+msgstr ""
+
+#: tpl-author-edit.php:44
+#: tpl-author-edit.php:172
+#@ nrgnetwork
+msgid "On The Web"
+msgstr ""
+
+#: tpl-author-edit.php:45
+#: tpl-author-edit.php:236
+#: tpl-author.php:217
+#@ nrgnetwork
+msgid "About Me"
+msgstr ""
+
+#: footer.php:175
+#: footer.php:296
+#: tpl-author-edit.php:83
+#@ nrgnetwork
+msgid "First Name"
+msgstr ""
+
+#: footer.php:178
+#: footer.php:299
+#: tpl-author-edit.php:89
+#@ nrgnetwork
+msgid "Last Name"
+msgstr ""
+
+#: tpl-author-edit.php:95
+#@ nrgnetwork
+msgid "Occupation"
+msgstr ""
+
+#: tpl-author-edit.php:101
+#: tpl-author-edit.php:102
+#@ nrgnetwork
+msgid "Company"
+msgstr ""
+
+#: footer.php:193
+#: footer.php:305
+#: tpl-author-edit.php:107
+#@ nrgnetwork
+msgid "Country"
+msgstr ""
+
+#: tpl-author-edit.php:124
+#@ nrgnetwork
+msgid "City"
+msgstr ""
+
+#: tpl-author-edit.php:130
+#@ nrgnetwork
+msgid "Website URL"
+msgstr ""
+
+#: tpl-author-header.php:13
+#@ nrgnetwork
+msgid "Your Notification"
+msgstr ""
+
+#: tpl-author-header.php:29
+#@ nrgnetwork
+msgid "Start following you"
+msgstr ""
+
+#: tpl-author-header.php:54
+#@ nrgnetwork
+msgid "Your Messages"
+msgstr ""
+
+#: tpl-author-header.php:57
+#: tpl-messages.php:45
+#@ nrgnetwork
+msgid "compose"
+msgstr ""
+
+#: tpl-author-header.php:58
+#@ nrgnetwork
+msgid "View all messages"
+msgstr ""
+
+#: tpl-author-header.php:102
+#@ nrgnetwork
+msgid "Hi"
+msgstr ""
+
+#: tpl-author.php:67
+#@ nrgnetwork
+msgid "Follow"
+msgstr ""
+
+#: tpl-author.php:175
+#@ nrgnetwork
+msgid "Projects views"
+msgstr ""
+
+#: tpl-author.php:183
+#: tpl-statistic.php:40
+#: tpl-statistic.php:428
+#: tpl-statistic.php:452
+#@ nrgnetwork
+msgid "Appreciations"
+msgstr ""
+
+#: tpl-author.php:191
+#: tpl-author.php:261
+#@ nrgnetwork
+msgid "Followers"
+msgstr ""
+
+#: tpl-author.php:205
+#: tpl-author.php:264
+#@ nrgnetwork
+msgid "Following"
+msgstr ""
+
+#: tpl-author.php:255
+#@ nrgnetwork
+msgid "Appreciated"
+msgstr ""
+
+#: tpl-author.php:258
+#@ nrgnetwork
+msgid "Collections"
+msgstr ""
+
+#: tpl-author.php:466
+#@ nrgnetwork
+msgid "view collection"
+msgstr ""
+
+#: includes/community_extra.php:57
+#: tpl-page-title.php:84
+#@ nrgnetwork
+msgid "Date"
+msgstr ""
+
+#: tpl-page-title.php:85
+#@ nrgnetwork
+msgid "Category"
+msgstr ""
+
+#: tpl-page-title.php:98
+#@ nrgnetwork
+msgid "Author"
+msgstr ""
+
+#: content-none.php:3
+#@ nrgnetwork
+msgid "Nothing found, please search again with an another query."
+msgstr ""
+
+#: footer.php:124
+#: header.php:79
+#@ nrgnetwork
+msgid "Log in"
+msgstr ""
+
+#: footer.php:129
+#: footer.php:181
+#@ nrgnetwork
+msgid "Username"
+msgstr ""
+
+#: footer.php:132
+#: footer.php:187
+#: tpl-author-edit.php:149
+#@ nrgnetwork
+msgid "Password"
+msgstr ""
+
+#: footer.php:140
+#@ nrgnetwork
+msgid "Stay signed in"
+msgstr ""
+
+#: footer.php:144
+#@ nrgnetwork
+msgid "Forgot password?"
+msgstr ""
+
+#: footer.php:145
+#@ nrgnetwork
+msgid "Sign up now"
+msgstr ""
+
+#: footer.php:148
+#@ nrgnetwork
+msgid "SIGN IN"
+msgstr ""
+
+#: footer.php:167
+#@ nrgnetwork
+msgid "Register"
+msgstr ""
+
+#: footer.php:184
+#: footer.php:317
+#@ nrgnetwork
+msgid "Email"
+msgstr ""
+
+#: footer.php:206
+#@ nrgnetwork
+msgid "Date of birth"
+msgstr ""
+
+#: footer.php:211
+#@ nrgnetwork
+msgid "Month"
+msgstr ""
+
+#: footer.php:213
+#@ nrgnetwork
+msgid "January"
+msgstr ""
+
+#: footer.php:214
+#@ nrgnetwork
+msgid "February"
+msgstr ""
+
+#: footer.php:215
+#@ nrgnetwork
+msgid "March"
+msgstr ""
+
+#: footer.php:216
+#@ nrgnetwork
+msgid "April"
+msgstr ""
+
+#: footer.php:217
+#@ nrgnetwork
+msgid "May"
+msgstr ""
+
+#: footer.php:218
+#@ nrgnetwork
+msgid "June"
+msgstr ""
+
+#: footer.php:219
+#@ nrgnetwork
+msgid "July"
+msgstr ""
+
+#: footer.php:220
+#@ nrgnetwork
+msgid "August"
+msgstr ""
+
+#: footer.php:221
+#@ nrgnetwork
+msgid "September"
+msgstr ""
+
+#: footer.php:222
+#@ nrgnetwork
+msgid "October"
+msgstr ""
+
+#: footer.php:223
+#@ nrgnetwork
+msgid "November"
+msgstr ""
+
+#: footer.php:224
+#@ nrgnetwork
+msgid "December"
+msgstr ""
+
+#: footer.php:230
+#@ nrgnetwork
+msgid "Day"
+msgstr ""
+
+#: footer.php:242
+#@ nrgnetwork
+msgid "Year"
+msgstr ""
+
+#: footer.php:266
+#@ nrgnetwork
+msgid "Send me notifications"
+msgstr ""
+
+#: footer.php:271
+#@ nrgnetwork
+msgid "SIGN UP"
+msgstr ""
+
+#: footer.php:290
+#@ nrgnetwork
+msgid "Send message"
+msgstr ""
+
+#: footer.php:320
+#: tpl-messages.php:113
+#: tpl-messages.php:124
+#@ nrgnetwork
+msgid "Message"
+msgstr ""
+
+#: footer.php:323
+#@ nrgnetwork
+msgid "SEND"
+msgstr ""
+
+#: includes/community.php:209
+#: tpl-author-header.php:106
+#@ nrgnetwork
+msgid "Messages"
+msgstr ""
+
+#: includes/community.php:808
+#@ nrgnetwork
+msgid "Not found authors."
+msgstr ""
+
+#: includes/community.php:841
+#@ nrgnetwork
+msgid "Not found projects."
+msgstr ""
+
+#: includes/template-tags.php:481
+#@ nrgnetwork
+msgid "Our Blog"
+msgstr ""
+
+#: includes/vc-elements/caption.php:22
+#@ nrgnetwork
+msgid "Heading"
+msgstr ""
+
+#: includes/vc-elements/caption.php:45
+#@ nrgnetwork
+msgid "Text Align"
+msgstr ""
+
+#: includes/vc-elements/caption.php:56
+#@ nrgnetwork
+msgid "Margin Bottom"
+msgstr ""
+
+#: woo-shop.php:57
+#: woo-shop.php:60
+#@ nrgnetwork
+msgid "Products"
+msgstr ""
+
+#: comments.php:110
+#@ nrgnetwork
+msgid "Your name"
+msgstr ""
+
+#: comments.php:114
+#@ nrgnetwork
+msgid "Your email"
+msgstr ""
+
+#: comments.php:118
+#: single-portfolio.php:196
+#: tpl-author.php:100
+#: woo-single.php:156
+#@ nrgnetwork
+msgid "Your text"
+msgstr ""
+
+#: functions.php:15
+#@ nrgnetwork
+msgid "Activity Page Sidebar"
+msgstr ""
+
+#: includes/community_extra.php:18
+#, php-format
+#@ nrgnetwork
+msgid "%1$s started following you on %2$s"
+msgstr ""
+
+#: includes/community_extra.php:24
+#, php-format
+#@ nrgnetwork
+msgid ""
+"%1$s sent you a new message:\n"
+"\n"
+"Subject: %2$s\n"
+"\n"
+"\"%3$s\"\n"
+msgstr ""
+
+#: includes/community_extra.php:55
+#: tpl-folio-add.php:76
+#@ nrgnetwork
+msgid "Portfolio Title"
+msgstr ""
+
+#: page-activity-p.php:103
+#: page-activity.php:103
+#: woo-shop.php:67
+#@ nrgnetwork
+msgid "All Creative Categories"
+msgstr ""
+
+#: page-activity-p.php:106
+#: page-activity.php:106
+#: woo-shop.php:70
+#@ nrgnetwork
+msgid "All Categories"
+msgstr ""
+
+#: page-activity-p.php:118
+#: page-activity-p.php:121
+#: page-activity.php:118
+#: page-activity.php:121
+#: woo-shop.php:85
+#@ nrgnetwork
+msgid "Most Recent"
+msgstr ""
+
+#: page-activity-p.php:122
+#: page-activity.php:122
+#@ nrgnetwork
+msgid "Featured"
+msgstr ""
+
+#: page-activity-p.php:123
+#: page-activity.php:123
+#: woo-shop.php:86
+#@ nrgnetwork
+msgid "Most Appreciated"
+msgstr ""
+
+#: page-activity-p.php:124
+#: page-activity.php:124
+#: woo-shop.php:87
+#@ nrgnetwork
+msgid "Most Viewed"
+msgstr ""
+
+#: page-activity-p.php:125
+#: page-activity.php:125
+#: woo-shop.php:88
+#@ nrgnetwork
+msgid "Most Discussed"
+msgstr ""
+
+#: page-activity-p.php:255
+#: page-activity.php:286
+#: tpl-author.php:348
+#: tpl-author.php:408
+#@ nrgnetwork
+msgid "Load more ..."
+msgstr ""
+
+#: single-portfolio.php:184
+#: woo-single.php:144
+#@ nrgnetwork
+msgid "MESSAGE"
+msgstr ""
+
+#: single-portfolio.php:193
+#: tpl-author.php:97
+#: woo-single.php:153
+#@ nrgnetwork
+msgid "Send Message To"
+msgstr ""
+
+#: single-portfolio.php:198
+#: tpl-author.php:102
+#: woo-single.php:158
+#@ nrgnetwork
+msgid "send message"
+msgstr ""
+
+#: single-portfolio.php:216
+#: tpl-author.php:74
+#: tpl-author.php:128
+#: woo-single.php:176
+#@ nrgnetwork
+msgid "share"
+msgstr ""
+
+#: single-portfolio.php:238
+#: woo-single.php:198
+#@ nrgnetwork
+msgid "Recent Works"
+msgstr ""
+
+#: tpl-author-edit.php:43
+#: tpl-author-edit.php:143
+#@ nrgnetwork
+msgid "Change Password"
+msgstr ""
+
+#: tpl-author-edit.php:55
+#@ nrgnetwork
+msgid "save profile"
+msgstr ""
+
+#: tpl-author-edit.php:72
+#@ nrgnetwork
+msgid "Edit Image"
+msgstr ""
+
+#: tpl-author-edit.php:96
+#@ nrgnetwork
+msgid "UI/UX, Web Design, Art Direction"
+msgstr ""
+
+#: tpl-author-edit.php:125
+#@ nrgnetwork
+msgid "City name"
+msgstr ""
+
+#: tpl-author-edit.php:155
+#@ nrgnetwork
+msgid "Repeat Password"
+msgstr ""
+
+#: tpl-author-edit.php:160
+#@ nrgnetwork
+msgid "If you don't wanna change password, leave blank password field."
+msgstr ""
+
+#: tpl-author-edit.php:281
+#@ nrgnetwork
+msgid "add sections"
+msgstr ""
+
+#: tpl-author-header.php:104
+#@ nrgnetwork
+msgid "My Portfolio"
+msgstr ""
+
+#: tpl-author-header.php:107
+#@ nrgnetwork
+msgid "Account Settings"
+msgstr ""
+
+#: tpl-author-header.php:108
+#@ nrgnetwork
+msgid "Logout"
+msgstr ""
+
+#: tpl-author.php:90
+#@ nrgnetwork
+msgid "message"
+msgstr ""
+
+#: tpl-author.php:440
+#: tpl-author.php:441
+#@ nrgnetwork
+msgid "Rename"
+msgstr ""
+
+#: tpl-filter.php:3
+#@ nrgnetwork
+msgid "Filter By"
+msgstr ""
+
+#: tpl-filter.php:10
+#@ nrgnetwork
+msgid "Enter School"
+msgstr ""
+
+#: tpl-filter.php:13
+#: tpl-filter.php:24
+#: tpl-filter.php:168
+#@ nrgnetwork
+msgid "Start typing..."
+msgstr ""
+
+#: tpl-folio-add.php:54
+#@ nrgnetwork
+msgid "Cover"
+msgstr ""
+
+#: tpl-folio-add.php:55
+#@ nrgnetwork
+msgid "Settings"
+msgstr ""
+
+#: tpl-folio-add.php:58
+#@ nrgnetwork
+msgid "Previous"
+msgstr ""
+
+#: tpl-folio-add.php:59
+#@ nrgnetwork
+msgid "Next"
+msgstr ""
+
+#: tpl-folio-add.php:60
+#@ nrgnetwork
+msgid "Save"
+msgstr ""
+
+#: tpl-folio-add.php:76
+#@ nrgnetwork
+msgid "Title Project"
+msgstr ""
+
+#: tpl-folio-add.php:78
+#@ nrgnetwork
+msgid "Upload New Image"
+msgstr ""
+
+#: tpl-folio-add.php:81
+#@ nrgnetwork
+msgid "Cancel"
+msgstr ""
+
+#: tpl-folio-add.php:82
+#@ nrgnetwork
+msgid "Continue"
+msgstr ""
+
+#: tpl-folio-add.php:93
+#@ nrgnetwork
+msgid "Creative Fields"
+msgstr ""
+
+#: tpl-folio-add.php:112
+#@ nrgnetwork
+msgid "Project Tags"
+msgstr ""
+
+#: tpl-folio-add.php:125
+#@ nrgnetwork
+msgid "Project Description"
+msgstr ""
+
+#: tpl-folio-add.php:143
+#: tpl-folio-add.php:161
+#: tpl-folio-add.php:197
+#@ nrgnetwork
+msgid "example1, example2..."
+msgstr ""
+
+#: tpl-folio-add.php:184
+#@ nrgnetwork
+msgid "Edit Color"
+msgstr ""
+
+#: tpl-folio-add.php:216
+#@ nrgnetwork
+msgid "Adult Content"
+msgstr ""
+
+#: tpl-folio-add.php:225
+#: tpl-messages.php:31
+#@ nrgnetwork
+msgid "Close"
+msgstr ""
+
+#: tpl-folio-add.php:226
+#@ nrgnetwork
+msgid "Publish"
+msgstr ""
+
+#: tpl-folio-add.php:236
+#@ nrgnetwork
+msgid "ADD MEDIA"
+msgstr ""
+
+#: tpl-folio-add.php:240
+#@ nrgnetwork
+msgid "Upload Image"
+msgstr ""
+
+#: tpl-folio-add.php:241
+#@ nrgnetwork
+msgid "Embed media"
+msgstr ""
+
+#: tpl-folio-add.php:242
+#@ nrgnetwork
+msgid "Add text"
+msgstr ""
+
+#: tpl-folio-add.php:248
+#@ nrgnetwork
+msgid "CUSTOMIZE DESIGN"
+msgstr ""
+
+#: tpl-folio-add.php:252
+#@ nrgnetwork
+msgid "Dividers & Spacing"
+msgstr ""
+
+#: tpl-folio-add.php:260
+#@ nrgnetwork
+msgid "No Divider"
+msgstr ""
+
+#: tpl-folio-add.php:279
+#@ nrgnetwork
+msgid "Spacing"
+msgstr ""
+
+#: tpl-folio-add.php:287
+#@ nrgnetwork
+msgid "Header"
+msgstr ""
+
+#: tpl-folio-add.php:295
+#: tpl-folio-add.php:303
+#@ nrgnetwork
+msgid "Color"
+msgstr ""
+
+#: tpl-folio-add.php:300
+#@ nrgnetwork
+msgid "Background"
+msgstr ""
+
+#: tpl-folio-add.php:306
+#@ nrgnetwork
+msgid "Text"
+msgstr ""
+
+#: tpl-folio-add.php:320
+#@ nrgnetwork
+msgid "Delete Project"
+msgstr ""
+
+#: tpl-folio-add.php:336
+#@ nrgnetwork
+msgid "Portfolio name"
+msgstr ""
+
+#: tpl-folio-add.php:356
+#@ nrgnetwork
+msgid "Compellingly redefine timely interfaces vis-a-vis proactive web-readiness. Objectively synthesize impactful markets with client-centric channels. Proactively target granular meta-services via."
+msgstr ""
+
+#: tpl-folio-add.php:381
+#@ nrgnetwork
+msgid "Add Brand"
+msgstr ""
+
+#: tpl-folio-add.php:384
+#@ nrgnetwork
+msgid "DONE"
+msgstr ""
+
+#: tpl-folio-add.php:392
+#@ nrgnetwork
+msgid "Choose Color"
+msgstr ""
+
+#: tpl-folio-add.php:530
+#@ nrgnetwork
+msgid "Embed Media"
+msgstr ""
+
+#: tpl-folio-add.php:535
+#@ nrgnetwork
+msgid "Embed"
+msgstr ""
+
+#: tpl-messages.php:32
+#@ nrgnetwork
+msgid "Message Error"
+msgstr ""
+
+#: tpl-messages.php:33
+#@ nrgnetwork
+msgid "Use does not exists"
+msgstr ""
+
+#: tpl-messages.php:51
+#@ nrgnetwork
+msgid "select all"
+msgstr ""
+
+#: tpl-messages.php:54
+#@ nrgnetwork
+msgid "actions"
+msgstr ""
+
+#: tpl-messages.php:100
+#@ nrgnetwork
+msgid "New Message"
+msgstr ""
+
+#: tpl-messages.php:100
+#@ nrgnetwork
+msgid "Conversation"
+msgstr ""
+
+#: tpl-messages.php:108
+#@ nrgnetwork
+msgid "To"
+msgstr ""
+
+#: tpl-messages.php:109
+#@ nrgnetwork
+msgid "Enter user name"
+msgstr ""
+
+#: tpl-messages.php:112
+#: tpl-messages.php:123
+#@ nrgnetwork
+msgid "Your Message"
+msgstr ""
+
+#: tpl-messages.php:115
+#@ nrgnetwork
+msgid "cancel"
+msgstr ""
+
+#: tpl-messages.php:116
+#@ nrgnetwork
+msgid "send"
+msgstr ""
+
+#: tpl-messages.php:126
+#@ nrgnetwork
+msgid "reply"
+msgstr ""
+
+#: tpl-statistic.php:37
+#@ nrgnetwork
+msgid "Profile Views"
+msgstr ""
+
+#: tpl-statistic.php:43
+#@ nrgnetwork
+msgid "Projects Comments"
+msgstr ""
+
+#: tpl-statistic.php:46
+#@ nrgnetwork
+msgid "Projects Views"
+msgstr ""
+
+#: tpl-statistic.php:66
+#@ nrgnetwork
+msgid "Weekly Profile Views"
+msgstr ""
+
+#: tpl-statistic.php:69
+#: tpl-statistic.php:103
+#: tpl-statistic.php:136
+#: tpl-statistic.php:169
+#@ nrgnetwork
+msgid "Mon"
+msgstr ""
+
+#: tpl-statistic.php:70
+#: tpl-statistic.php:104
+#: tpl-statistic.php:137
+#: tpl-statistic.php:170
+#@ nrgnetwork
+msgid "Tue"
+msgstr ""
+
+#: tpl-statistic.php:71
+#: tpl-statistic.php:105
+#: tpl-statistic.php:138
+#: tpl-statistic.php:171
+#@ nrgnetwork
+msgid "Wed"
+msgstr ""
+
+#: tpl-statistic.php:72
+#: tpl-statistic.php:106
+#: tpl-statistic.php:139
+#: tpl-statistic.php:172
+#@ nrgnetwork
+msgid "Thu"
+msgstr ""
+
+#: tpl-statistic.php:73
+#: tpl-statistic.php:107
+#: tpl-statistic.php:140
+#: tpl-statistic.php:173
+#@ nrgnetwork
+msgid "Fri"
+msgstr ""
+
+#: tpl-statistic.php:74
+#: tpl-statistic.php:108
+#: tpl-statistic.php:141
+#: tpl-statistic.php:174
+#@ nrgnetwork
+msgid "Sat"
+msgstr ""
+
+#: tpl-statistic.php:75
+#: tpl-statistic.php:109
+#: tpl-statistic.php:142
+#: tpl-statistic.php:175
+#@ nrgnetwork
+msgid "Sun"
+msgstr ""
+
+#: tpl-statistic.php:101
+#@ nrgnetwork
+msgid "Weekly Appreciations"
+msgstr ""
+
+#: tpl-statistic.php:134
+#@ nrgnetwork
+msgid "Weekly Comments"
+msgstr ""
+
+#: tpl-statistic.php:167
+#@ nrgnetwork
+msgid "Weekly Project Views"
+msgstr ""
+
+#: tpl-statistic.php:207
+#@ nrgnetwork
+msgid "Receives"
+msgstr ""
+
+#: tpl-statistic.php:210
+#@ nrgnetwork
+msgid "Given"
+msgstr ""
+
+#: tpl-statistic.php:225
+#@ nrgnetwork
+msgid "project views"
+msgstr ""
+
+#: tpl-statistic.php:235
+#: tpl-statistic.php:271
+#@ nrgnetwork
+msgid "project appreciations"
+msgstr ""
+
+#: tpl-statistic.php:245
+#: tpl-statistic.php:301
+#@ nrgnetwork
+msgid "project comments"
+msgstr ""
+
+#: tpl-statistic.php:255
+#: tpl-statistic.php:281
+#: tpl-statistic.php:291
+#@ nrgnetwork
+msgid "profile views"
+msgstr ""
+
+#: tpl-statistic.php:316
+#@ nrgnetwork
+msgid "in all time"
+msgstr ""
+
+#: tpl-statistic.php:316
+#@ nrgnetwork
+msgid "Portfolio All Time Review"
+msgstr ""
+
+#: tpl-statistic.php:323
+#@ nrgnetwork
+msgid "Project"
+msgstr ""
+
+#: tpl-statistic.php:333
+#@ nrgnetwork
+msgid "Appreciated By"
+msgstr ""
+
+#: tpl-statistic.php:469
+#@ nrgnetwork
+msgid "Commentors"
+msgstr ""
+
+#: tpl-statistic.php:493
+#@ nrgnetwork
+msgid "Comments"
+msgstr ""
+

@@ -1,0 +1,3662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/layout.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script src="assets/js/main/jquery.min.js"></script>
+	<script src="assets/js/main/bootstrap.bundle.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script src="assets/js/plugins/prism.min.js"></script>
+	<script src="assets/js/plugins/sticky.min.js"></script>
+	
+	<script src="assets/js/main/app.js"></script>
+	<script src="assets/js/pages/components_scrollspy.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body data-spy="scroll" data-target=".sidebar-component-right">
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-expand-md navbar-light">
+		<div class="navbar-header navbar-dark d-none d-md-flex align-items-md-center">
+			<div class="navbar-brand navbar-brand-md">
+				<a href="index.html" class="d-inline-block">
+					<img src="assets/images/logo_light.png" alt="">
+				</a>
+			</div>
+	
+			<div class="navbar-brand navbar-brand-xs">
+				<a href="index.html" class="d-inline-block">
+					<img src="assets/images/logo_icon_light.png" alt="">
+				</a>
+			</div>
+		</div>
+
+		<div class="d-flex flex-1 d-md-none">
+			<div class="navbar-brand mr-auto">
+				<a href="index.html" class="d-inline-block">
+					<img src="assets/images/logo_dark.png" alt="">
+				</a>
+			</div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile">
+				<i class="icon-tree5"></i>
+			</button>
+			<button class="navbar-toggler sidebar-mobile-main-toggle" type="button">
+				<i class="icon-paragraph-justify3"></i>
+			</button>
+			<button class="navbar-toggler sidebar-mobile-component-toggle" type="button">
+				<i class="icon-unfold"></i>
+			</button>
+		</div>
+
+		<div class="collapse navbar-collapse" id="navbar-mobile">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a href="#" class="navbar-nav-link sidebar-control sidebar-main-hide d-none d-md-block">
+						<i class="icon-paragraph-justify3"></i>
+					</a>
+				</li>
+
+				<li class="nav-item">
+					<a href="#" class="navbar-nav-link sidebar-control sidebar-component-toggle d-none d-md-block">
+						<i class="icon-transmission"></i>
+					</a>
+				</li>
+			</ul>
+
+			<ul class="navbar-nav ml-md-auto">
+				<li class="nav-item dropdown">
+					<a href="other_changelog.html" class="navbar-nav-link">
+						<i class="icon-history mr-2"></i>
+						Changelog
+						<span class="badge bg-warning-400 badge-pill position-static ml-md-2">2.2</span>
+					</a>					
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page content -->
+	<div class="page-content">
+
+		<!-- Main sidebar -->
+		<div class="sidebar sidebar-dark sidebar-main sidebar-expand-md">
+
+			<!-- Sidebar mobile toggler -->
+			<div class="sidebar-mobile-toggler text-center">
+				<a href="#" class="sidebar-mobile-main-toggle">
+					<i class="icon-arrow-left8"></i>
+				</a>
+				Navigation
+				<a href="#" class="sidebar-mobile-expand">
+					<i class="icon-screen-full"></i>
+					<i class="icon-screen-normal"></i>
+				</a>
+			</div>
+			<!-- /sidebar mobile toggler -->
+
+
+			<!-- Sidebar content -->
+			<div class="sidebar-content">
+
+        		<!-- Support -->
+				<div class="card card-body">
+					<a href="http://kopyov.ticksy.com" class="btn bg-success-400 btn-block" target="_blank"><i class="icon-lifebuoy mr-2"></i> Limitless support</a>
+				</div>
+				<!-- /support -->
+
+
+				<!-- Main navigation -->
+				<div class="card card-sidebar-mobile">
+					<ul class="nav nav-sidebar" data-nav-type="accordion">
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Main</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="index.html" class="nav-link">Introduction</a></li>
+						<li class="nav-item"><a href="main_getting_started.html" class="nav-link">Getting started</a></li>
+						<li class="nav-item"><a href="main_starter_kit.html" class="nav-link">Starter kit</a></li>
+						<li class="nav-item"><a href="main_rtl.html" class="nav-link">RTL layout</a></li>
+
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Basic functionality</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="base_scss_css.html" class="nav-link">SCSS and CSS</a></li>
+						<li class="nav-item"><a href="base_scss_compile.html" class="nav-link">Compiling SCSS</a></li>
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+							<a href="#" class="nav-link">Plugins</a>
+							<ul class="nav nav-group-sub" data-submenu-title="Plugins">
+								<li class="nav-item"><a href="plugins_forms.html" class="nav-link">Forms</a></li>
+								<li class="nav-item"><a href="plugins_forms_styling.html" class="nav-link">Form styling</a></li>
+								<li class="nav-item"><a href="plugins_editors.html" class="nav-link">Editors</a></li>
+								<li class="nav-item"><a href="plugins_uploaders.html" class="nav-link">Uploaders</a></li>
+								<li class="nav-item"><a href="plugins_extensions.html" class="nav-link">Extensions</a></li>
+								<li class="nav-item"><a href="plugins_notifications.html" class="nav-link">Notifications</a></li>
+								<li class="nav-item"><a href="plugins_pickers.html" class="nav-link">Pickers</a></li>
+								<li class="nav-item"><a href="plugins_tables.html" class="nav-link">Tables</a></li>
+								<li class="nav-item"><a href="plugins_ui.html" class="nav-link active">UI</a></li>
+								<li class="nav-item"><a href="plugins_vis.html" class="nav-link">Visualization</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a href="base_icons.html" class="nav-link">Icons</a></li>
+
+						<li class="nav-item"><a href="base_bootstrap.html" class="nav-link">Bootstrap</a></li>
+						<li class="nav-item"><a href="base_color_system.html" class="nav-link">Color system</a></li>
+						<li class="nav-item"><a href="base_helpers.html" class="nav-link">Helpers</a></li>
+						<li class="nav-item"><a href="base_themes.html" class="nav-link">Themes</a></li>
+
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Layout options</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="layout_overview.html" class="nav-link">Layouts</a></li>
+						<li class="nav-item"><a href="layout_sidebars.html" class="nav-link">Sidebars</a></li>
+						<li class="nav-item"><a href="layout_navbars.html" class="nav-link">Navbars</a></li>
+						<li class="nav-item"><a href="layout_v_nav.html" class="nav-link">Vertical navigation</a></li>
+						<li class="nav-item"><a href="layout_h_nav.html" class="nav-link">Horizontal navigation</a></li>
+						<li class="nav-item"><a href="layout_page_header.html" class="nav-link">Page header</a></li>
+
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Other</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="other_credits.html" class="nav-link">Sources and credits</a></li>
+						<li class="nav-item"><a href="other_changelog.html" class="nav-link">Changelog <span class="badge badge-pill bg-warning-400 ml-auto">version 2.2</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /main navigation -->
+
+		</div>
+		<!-- /main sidebar -->
+
+
+		<!-- Main content -->
+		<div class="content-wrapper">
+
+			<!-- Page header -->
+			<div class="page-header">
+				<div class="page-header-content header-elements-md-inline">
+					<div class="page-title d-flex">
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Limitless</span> - UI</h4>
+						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+					</div>
+
+					<div class="header-elements d-none py-0 mb-3 mb-md-0">
+						<div class="breadcrumb">
+							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
+							<span class="breadcrumb-item active">UI</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /page header -->
+			
+
+			<!-- Content area -->
+			<div class="content pt-0">
+
+				<!-- Inner container -->
+				<div class="d-flex align-items-start flex-column flex-md-row">
+
+					<!-- Left content -->
+					<div class="order-2 order-md-1">
+
+							<!-- Fancy tree -->
+							<div class="card" id="fancytree">
+								<div class="card-header header-elements-md-inline">
+									<h5 class="card-title">Fancy tree</h5>
+									<div class="header-elements d-flex justify-content-between">
+										<span class="badge bg-slate">Trees</span>
+										<span class="text-muted mx-3">/trees/</span>
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+									</div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Overview</h6>
+										<p>Fancytree is a JavaScript dynamic tree view plugin for jQuery with support for persistence, keyboard, checkboxes, tables, drag'n'drop, and lazy loading. Main features:</p>
+
+										<ul class="list">
+											<li>Lazy loading and very efficient and performant handling of large data sets</li>
+											<li>Keyboard navigation</li>
+											<li>(Hierarchical) selection and checkboxes</li>
+											<li>Table view (gridview)</li>
+											<li>Drag and drop</li>
+											<li>Persistence of expansion, selection and active state</li>
+											<li>Inline editing</li>
+											<li>Themable (comes with WinXP, Win7, Win8, OS X Lion, and Glyph samples)</li>
+											<li>The tree behaves like a single form control, i.e. it is 'tabbable' (example)</li>
+											<li>Rich object oriented API</li>
+											<li>Extensible modular design</li>
+											<li>and more ...</li>
+										</ul>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Usage</h6>
+										<div class="mb-3">
+											<p>Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+											<pre><code class="language-markup">&lt;!-- Load jQuery -->
+&lt;script src="../../../../global_assets/js/main/jquery.min.js">&lt;/script>
+
+&lt;!-- Load jQuery UI -->
+&lt;script src="../../../../global_assets/js/plugins/extensions/jquery_ui/full.min.js">&lt;/script>
+
+&lt;!-- Load plugin -->
+&lt;script src="../../../../global_assets/js/plugins/trees/fancytree_all.min.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Add element with attributes:</p>
+											<pre><code class="language-markup">&lt;!-- Add list markup -->
+&lt;div class="tree-default">
+	&lt;ul>
+		&lt;li class="folder expanded">Expanded folder with children
+			&lt;ul>
+				&lt;li class="expanded">Expanded sub-item
+					&lt;ul>
+						&lt;li class="active focused">Active sub-item (active and focus on init)&lt;/li>
+						&lt;li>Basic &lt;i>menu item&lt;/i> with &lt;strong class="font-weight-semibold">HTML support&lt;/strong>&lt;/li>
+					&lt;/ul>
+				&lt;/li>
+				&lt;li>Collapsed sub-item
+					&lt;ul>
+						&lt;li>Sub-item 2.2.1&lt;/li>
+						&lt;li>Sub-item 2.2.2&lt;/li>
+					&lt;/ul>
+				&lt;/li>
+			&lt;/ul>
+		&lt;/li>
+		&lt;li class="has-tooltip" title="Look, a tool tip!">Menu item with key and tooltip&lt;/li>
+		&lt;li class="folder">Collapsed folder
+			&lt;ul>
+				&lt;li>Sub-item 1.1&lt;/li>
+				&lt;li>Sub-item 1.2&lt;/li>
+			&lt;/ul>
+		&lt;/li>
+		&lt;li class="selected">This is a selected item&lt;/li>
+		&lt;li class="expanded">Document with some children (expanded on init)
+			&lt;ul>
+				&lt;li>Document sub-item&lt;/li>
+				&lt;li>Another document sub-item
+					&lt;ul>
+						&lt;li>Sub-item 2.1.1&lt;/li>
+						&lt;li>Sub-item 2.1.2&lt;/li>
+					&lt;/ul>
+				&lt;/li>
+			&lt;/ul>
+		&lt;/li>	
+	&lt;/ul>
+&lt;/div>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Call the plugin via JavaScript:</p>
+											<pre><code class="language-javascript">// Basic initialization
+$('.tree-default').fancytree({
+    init: function(event, data) {
+        $('.has-tooltip .fancytree-title').tooltip();
+    }
+});
+</code></pre>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Plugin options</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Option</th>
+														<th>Type</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>activeVisible</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>Boolean. Make sure that the active node is always visible, i.e. its parents are expanded</td>
+													</tr>
+													<tr>
+														<td><code>ajax</code></td>
+														<td class="font-weight-semibold">-</td>
+														<td>Object. Default options for ajax requests</td>
+													</tr>
+													<tr>
+														<td><code>aria</code></td>
+														<td class="font-weight-semibold">false</td>
+														<td>Boolean. Add WAI-ARIA attributes to markup</td>
+													</tr>
+													<tr>
+														<td><code>autoActivate</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>Boolean. Activate a node when focused with the keyboard</td>
+													</tr>
+													<tr>
+														<td><code>autoCollapse</code></td>
+														<td class="font-weight-semibold">false</td>
+														<td>Boolean. Automatically collapse all siblings, when a node is expanded</td>
+													</tr>
+													<tr>
+														<td><code>autoScroll</code></td>
+														<td class="font-weight-semibold">false</td>
+														<td>Boolean. Scroll node into visible area, when focused by keyboard</td>
+													</tr>
+													<tr>
+														<td><code>checkbox</code></td>
+														<td class="font-weight-semibold">false</td>
+														<td>Boolean. Display checkboxes to allow selection</td>
+													</tr>
+													<tr>
+														<td><code>clickFolderMode</code></td>
+														<td class="font-weight-semibold">4</td>
+														<td>Integer. Defines what happens, when the user click a folder node. 1: <code>activate</code>, 2: <code>expand</code>, 3: <code>activate and expand</code>, 4: <code>activate/dblclick expands</code></td>
+													</tr>
+													<tr>
+														<td><code>debugLevel</code></td>
+														<td class="font-weight-semibold">null</td>
+														<td>Integer. 0..2 (null: use global setting <code>$.ui.fancytree.debugInfo</code>)</td>
+													</tr>
+													<tr>
+														<td><code>defaultKey</code></td>
+														<td class="font-weight-semibold">null</td>
+														<td>Callback(node) is called for ner nodes without a key. Must return a new unique key. (default <code>null</code>: generates default keys like that: "_" + counter)</td>
+													</tr>
+													<tr>
+														<td><code>enableAspx</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>Boolean. Accept passing ajax data in a property named <code>`d`</code></td>
+													</tr>
+													<tr>
+														<td><code>extensions</code></td>
+														<td class="font-weight-semibold">[]</td>
+														<td>String[]. List of active extensions</td>
+													</tr>
+													<tr>
+														<td><code>focusOnSelect</code></td>
+														<td class="font-weight-semibold">false</td>
+														<td>Boolean. Set focus when node is checked by a mouse click</td>
+													</tr>
+													<tr>
+														<td><code>generateIds</code></td>
+														<td class="font-weight-semibold">false</td>
+														<td>Boolean. Add <code>id="..."</code> to node markup</td>
+													</tr>
+													<tr>
+														<td><code>icons</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>Boolean. Display node icons</td>
+													</tr>
+													<tr>
+														<td><code>idPrefix</code></td>
+														<td class="font-weight-semibold">"ft_"</td>
+														<td>String. ID prefix</td>
+													</tr>
+													<tr>
+														<td><code>imagePath</code></td>
+														<td class="font-weight-semibold">null, using 'skin/' subdirectory</td>
+														<td>String. Path to a folder containing icons</td>
+													</tr>
+													<tr>
+														<td><code>keyboard</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>Boolean. Support keyboard navigation</td>
+													</tr>
+													<tr>
+														<td><code>keyPathSeparator</code></td>
+														<td class="font-weight-semibold">"/"</td>
+														<td>String</td>
+													</tr>
+													<tr>
+														<td><code>minExpandLevel</code></td>
+														<td class="font-weight-semibold">1</td>
+														<td>Integer. 2: top-level nodes are not collapsible</td>
+													</tr>
+													<tr>
+														<td><code>quicksearch</code></td>
+														<td class="font-weight-semibold">false</td>
+														<td>Boolean. Navigate to next node by typing the first letters</td>
+													</tr>
+													<tr>
+														<td><code>scrollOfs</code></td>
+														<td class="font-weight-semibold">{top: 0, bottom: 0}</td>
+														<td>Object. Optional margins for <code>node.scrollIntoView()</code></td>
+													</tr>
+													<tr>
+														<td><code>scrollParent</code></td>
+														<td class="font-weight-semibold">$container</td>
+														<td>Scrollable container for <code>node.scrollIntoView()</code></td>
+													</tr>
+													<tr>
+														<td><code>selectMode</code></td>
+														<td class="font-weight-semibold">2</td>
+														<td>Integer. 1: <strong>single</strong>, 2: <strong>multi</strong>, 3: <strong>multi-hier</strong></td>
+													</tr>
+													<tr>
+														<td><code>source</code></td>
+														<td class="font-weight-semibold">any</td>
+														<td>Used to Initialize the tree</td>
+													</tr>
+													<tr>
+														<td><code>strings</code></td>
+														<td class="font-weight-semibold">-</td>
+														<td>Strings. Translation table</td>
+													</tr>
+													<tr>
+														<td><code>tabbable</code></td>
+														<td class="font-weight-semibold">-</td>
+														<td>Boolean. Add <code>tabindex='0'</code> to container, so tree can be reached using <kbd>tab</kbd></td>
+													</tr>
+													<tr>
+														<td><code>titlesTabbable</code></td>
+														<td class="font-weight-semibold">-</td>
+														<td>Boolean. Add <code>tabindex='0'</code> to node title span, so it can receive keyboard focus</td>
+													</tr>
+													<tr>
+														<td><code>toggleEffect</code></td>
+														<td class="font-weight-semibold">{ effect: "blind", options: {direction: "vertical", scale: "box"}, duration: 200 }</td>
+														<td>Object. Animation options, <code>false</code>: <strong>off</strong></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Plugin events</h6>
+										<p>Events are called like this: <code>`CALLBACK_NAME(event, data)`</code> where <code>`event`</code> is a jQuery Event object and <code>`data`</code> is of type EventData The <code>`this`</code> context is set to tree's the HTMLDivElement:</p>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Event</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>activate</code></td>
+														<td><strong>`data.node`</strong> was activated</td>
+													</tr>
+													<tr>
+														<td><code>beforeActivate</code></td>
+														<td><strong>`data.node`</strong> is about to tbe (de)activated. Current status is <code>data.node.isActive()</code>. Return <code>false</code> to prevent default processing</td>
+													</tr>
+													<tr>
+														<td><code>beforeExpand</code></td>
+														<td><strong>`data.node`</strong> is about to tbe collapsed/expanded. Current status is <code>data.node.isExpanded()</code>. Return <code>false</code> to prevent default processing</td>
+													</tr>
+													<tr>
+														<td><code>beforeSelect</code></td>
+														<td><strong>`data.node`</strong> is about to tbe (de)selected. Current status is <strong>data.node.isSelected()</strong>. Return <code>false</code> to prevent default processing</td>
+													</tr>
+													<tr>
+														<td><code>blur</code></td>
+														<td><strong>`data.node`</strong> lost keyboard focus</td>
+													</tr>
+													<tr>
+														<td><code>blurTree</code></td>
+														<td><strong>`data.tree`</strong> lost keyboard focus</td>
+													</tr>
+													<tr>
+														<td><code>click</code></td>
+														<td><strong>`data.node`</strong> was clicked. <strong>`data.targetType`</strong> contains the region ("title", "expander", ...). Return <code>false</code> to prevent default processing, i.e. activating, expanding, selecting, etc</td>
+													</tr>
+													<tr>
+														<td><code>collapse</code></td>
+														<td><strong>`data.node`</strong> was collapsed</td>
+													</tr>
+													<tr>
+														<td><code>create</code></td>
+														<td>Widget was created (called only once, even if re-initialized)</td>
+													</tr>
+													<tr>
+														<td><code>createNode</code></td>
+														<td>Allow tweaking and binding, after node was created for the first time (NOTE: this event is only available as callback, but not for <code>bind()</code>)</td>
+													</tr>
+													<tr>
+														<td><code>dblclick</code></td>
+														<td><strong>`data.node`</strong> was double-clicked. <strong>`data.targetType`</strong> contains the region ("title", "expander", ...). Return <code>false</code> to prevent default processing, i.e. expanding, etc</td>
+													</tr>
+													<tr>
+														<td><code>deactivate</code></td>
+														<td><strong>`data.node`</strong> was deactivated</td>
+													</tr>
+													<tr>
+														<td><code>expand</code></td>
+														<td><strong>`data.node`</strong> was expanded</td>
+													</tr>
+													<tr>
+														<td><code>focus</code></td>
+														<td><strong>`data.node`</strong> received keyboard focus</td>
+													</tr>
+													<tr>
+														<td><code>focusTree</code></td>
+														<td><strong>`data.tree`</strong> received keyboard focus</td>
+													</tr>
+													<tr>
+														<td><code>iconClass</code></td>
+														<td>Allows to override the class names added to the <strong>`data.node`</strong> icon markup to define custom icons or glyphs</td>
+													</tr>
+													<tr>
+														<td><code>init</code></td>
+														<td>Widget was (re-)initialized</td>
+													</tr>
+													<tr>
+														<td><code>keydown</code></td>
+														<td><strong>`data.node`</strong> received key. <strong>`event.which`</strong> contains the key. Return <code>false</code> to prevent default processing, i.e. navigation. Call <strong>`data.result = "preventNav";`</strong> to prevent navigation but still allow default handling inside embedded input controls</td>
+													</tr>
+													<tr>
+														<td><code>keypress</code></td>
+														<td>(currently unused)</td>
+													</tr>
+													<tr>
+														<td><code>lazyLoad</code></td>
+														<td><strong>`data.node`</strong> is a lazy node that is expanded for the first time. The new child data must be returned in the <strong>`data.result`</strong> property (see <code>source</code> option for available formats)</td>
+													</tr>
+													<tr>
+														<td><code>loadChildren</code></td>
+														<td>Node data was loaded, i.e. <strong>`node.nodeLoadChildren()`</strong> finished</td>
+													</tr>
+													<tr>
+														<td><code>loadError</code></td>
+														<td>A load error occurred. Return <code>false</code> to prevent default processing</td>
+													</tr>
+													<tr>
+														<td><code>postProcess</code></td>
+														<td>Allows to modify the ajax response</td>
+													</tr>
+													<tr>
+														<td><code>removeNode</code></td>
+														<td><strong>`data.node`</strong> was removed (NOTE: this event is only available as callback, but not for <code>bind()</code>)</td>
+													</tr>
+													<tr>
+														<td><code>renderColumns</code></td>
+														<td>(used by table extension)</td>
+													</tr>
+													<tr>
+														<td><code>renderNode</code></td>
+														<td>Allow tweaking after node state was rendered (NOTE: this event is only available as callback, but not for <code>bind()</code>)</td>
+													</tr>
+													<tr>
+														<td><code>renderTitle</code></td>
+														<td>Allow replacing the <code>'&lt;span class='fancytree-title'>`</code> markup (NOTE: this event is only available as callback, but not for <code>bind()</code>)</td>
+													</tr>
+													<tr>
+														<td><code>restore</code></td>
+														<td>Text-persist has expanded, selected, and activated the previous state</td>
+													</tr>
+													<tr>
+														<td><code>select</code></td>
+														<td><strong>`data.node`</strong> was selected</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div>
+										<h6 class="font-weight-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="font-weight-semibold">File name</td>
+														<td>fancytree_all.min.js, fancytree_childcounter.js</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Location</td>
+														<td>global_assets/js/plugins/trees/</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Links</td>
+														<td>
+															<p>
+																<a href="http://wwwendt.de/tech/fancytree/demo/" class="btn btn-sm bg-danger-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+
+															<p>
+																<a href="https://github.com/mar10/fancytree/wiki" class="btn btn-sm bg-brown btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-book"></i></b>
+																	Project wiki
+																</a>
+															</p>
+
+															<p>
+																<a href="http://wwwendt.de/tech/fancytree/doc/jsdoc/Fancytree.html" class="btn btn-sm bg-slate btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-file-text2"></i></b>
+																	Full documentation
+																</a>
+															</p>
+															
+															<a href="https://github.com/mar10/fancytree/" class="btn btn-sm bg-blue btn-labeled btn-labeled-left" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /fancytree -->
+
+
+							<!-- Full calendar -->
+							<div class="card" id="fullcalendar">
+								<div class="card-header header-elements-md-inline">
+									<h5 class="card-title">Full calendar</h5>
+									<div class="header-elements d-flex justify-content-between">
+										<span class="badge bg-slate">Calendars</span>
+										<span class="text-muted mx-3">/ui/fullcalendar/</span>
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+									</div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Overview</h6>
+										<p>FullCalendar is a drag-n-drop jQuery plugin for displaying events on a full-sized calendar. FullCalendar is great for displaying events, but it isn't a complete solution for event content-management. Beyond dragging an event to a different time/day, you cannot change an event's name or other associated data. It is up to you to add this functionality through FullCalendar's event hooks.</p>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Usage</h6>
+										<div class="mb-3">
+											<p>Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+											<pre><code class="language-markup">&lt;!-- Load jQuery -->
+&lt;script src="../../../../global_assets/js/main/jquery.min.js">&lt;/script>
+
+&lt;!-- Load Moment.js extensions -->
+&lt;script src="../../../../global_assets/js/plugins/ui/moment/moment.min.js">&lt;/script>
+
+&lt;!-- Load plugin -->
+&lt;script src="../../../../global_assets/js/plugins/ui/fullcalendar/fullcalendar.min.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Add element with attributes:</p>
+											<pre><code class="language-markup">&lt;!-- Add DIV element -->
+&lt;div class="fullcalendar-basic">&lt;/div>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Call the plugin via JavaScript:</p>
+											<pre><code class="language-javascript">// Basic initialization
+$('.fullcalendar-basic').fullCalendar({
+    header: {
+        left: 'prev,next today',
+        center: 'title',
+        right: 'month,basicWeek,basicDay'
+    },
+    defaultDate: '2014-11-12',
+    editable: true,
+    events: [
+        {
+            title: 'All Day Event',
+            start: '2014-11-01'
+        },
+        {
+            title: 'Long Event',
+            start: '2014-11-07',
+            end: '2014-11-10'
+        },
+        ...
+    ]
+});
+</code></pre>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Fullcalendar documentation</h6>
+										<p>Complete Fullcalendar documentation can be found online on <a href="http://fullcalendar.io/docs/" target="_blank">Official library website</a>. It's quite big, with a lot of options, events and methods. Also check out <a href="http://fullcalendar.io/docs/google_calendar/" target="_blank">Google Calendar integration</a>. I find it useless to copy them all and paste to the Limitless documentation, nobody can represent and describe library features better than its creators. Below you can find additional links related to Fullcalendar library.</p>
+									</div>
+
+									<div>
+										<h6 class="font-weight-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="font-weight-semibold">File name</td>
+														<td>fullcalendar.min.js</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Location</td>
+														<td>global_assets/js/plugins/ui/fullcalendar/</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Links</td>
+														<td>
+															<p>
+																<a href="http://fullcalendar.io/" class="btn btn-sm bg-danger-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+
+															<p>
+																<a href="http://fullcalendar.io/docs/" class="btn btn-sm bg-slate btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-file-text2"></i></b>
+																	Full documentation
+																</a>
+															</p>
+
+															<a href="https://github.com/fullcalendar/fullcalendar" class="btn btn-sm bg-blue btn-labeled btn-labeled-left" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /full calendar -->
+
+
+							<!-- Headroom -->
+							<div class="card" id="headroom">
+								<div class="card-header header-elements-md-inline">
+									<h5 class="card-title">Headroom</h5>
+									<div class="header-elements d-flex justify-content-between">
+										<span class="badge bg-slate">Navigation</span>
+										<span class="text-muted mx-3">/ui/headroom/</span>
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+									</div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Overview</h6>
+										<p>Headroom.js is a lightweight, high-performance JS widget (with no dependencies!) that allows you to react to the user's scroll. The header on this site is a living example, it slides out of view when scrolling down and slides back in when scrolling up. Headroom.js allows you to bring elements into view when appropriate, and give focus to your content the rest of the time.</p>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Usage</h6>
+										<div class="mb-3">
+											<p>Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+											<pre><code class="language-markup">&lt;!-- Load jQuery -->
+&lt;script src="../../../../global_assets/js/main/jquery.min.js">&lt;/script>
+
+&lt;!-- Load core -->
+&lt;script src="../../../../global_assets/js/plugins/ui/headroom/headroom.min.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Add element with attributes:</p>
+											<pre><code class="language-markup">&lt;!-- Add navbar markup -->
+&lt;div class="navbar navbar-dark navbar-slide-top fixed-top">
+	&lt;div class="navbar-header">
+		...
+	&lt;/div>
+
+	&lt;div class="navbar-collapse collapse" id="navbar-mobile">
+		...
+	&lt;/div>
+&lt;/div>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Call the plugin via JavaScript:</p>
+											<pre><code class="language-javascript">// Basic initialization
+// Construct an instance of Headroom, passing the element
+var headroomTop  = new Headroom(document.querySelector('.navbar-slide-top'), {
+    offset: navbarTop.offsetHeight,
+    tolerance: {
+        up: 10,
+        down: 10
+    },
+    onUnpin : function() {
+        $('.headroom').find('.show').removeClass('show');
+    }
+});
+
+// Initialise
+headroomTop.init(); 
+</code></pre>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">How does it work?</h6>
+										<div class="mb-3">
+											<p>At it's most basic <code>headroom.js</code> simply adds and removes CSS classes from an element in response to a scroll event. This means you must supply your own CSS styles separately. The classes that are used in headroom.js that are added and removed are:</p>
+
+											<pre><code class="language-markup">&lt;!-- Initially -->
+&lt;div class="headroom">
+
+&lt;!-- Scrolling down -->
+&lt;div class="headroom headroom--unpinned">
+
+&lt;!-- Scrolling up -->
+&lt;div class="headroom headroom--pinned">
+</code></pre>
+										</div>
+
+										<p>Relying on CSS classes affords <code>headroom.js</code> incredible flexibility. The choice of what to do when scrolling up or down is now entirely yours - anything you can do with CSS you can do in response to the user's scroll.</p>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Plugin options</h6>
+										<p>Headroom.js can also accept an options object to alter the way it behaves. You can see the default options by inspecting Headroom.options. The structure of an options object is as follows:</p>
+										
+										<pre><code class="language-javascript">// Basic initialization
+{
+    // vertical offset in px before element is first unpinned
+    offset : 0,
+
+    // scroll tolerance in px before state changes
+    tolerance : 0,
+
+    // or you can specify tolerance individually for up/down scroll
+    tolerance : {
+        up : 5,
+        down : 0
+    },
+
+    // css classes to apply
+    classes : {
+
+        // when element is initialised
+        initial : "headroom",
+
+        // when scrolling up
+        pinned : "headroom--pinned",
+
+        // when scrolling down
+        unpinned : "headroom--unpinned",
+
+        // when above offset
+        top : "headroom--top",
+
+        // when below offset
+        notTop : "headroom--not-top"
+    },
+
+    // element to listen to scroll events on, defaults to `window`
+    scroller : someElement,
+
+    // callback when pinned, `this` is headroom object
+    onPin : function() {},
+
+    // callback when unpinned, `this` is headroom object
+    onUnpin : function() {},
+
+    // callback when above offset, `this` is headroom object
+    onTop : function() {},
+
+    // callback when below offset, `this` is headroom object
+    onNotTop : function() {}
+}
+</code></pre>
+									</div>
+
+									<div>
+										<h6 class="font-weight-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="font-weight-semibold">File name</td>
+														<td>headroom.min.js, headroom_jquery.min.js</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Location</td>
+														<td>global_assets/js/plugins/ui/headroom/</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Links</td>
+														<td>
+															<p>
+																<a href="http://wicky.nillia.ms/headroom.js/" class="btn btn-sm bg-danger-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+
+															<p>
+																<a href="http://wicky.nillia.ms/headroom.js/playroom/" class="btn btn-sm bg-teal-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-file-eye"></i></b>
+																	Demonstration
+																</a>
+															</p>
+															
+															<a href="https://github.com/WickyNilliams/headroom.js" class="btn btn-sm bg-blue btn-labeled btn-labeled-left" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /headroom -->
+
+
+							<!-- Sticky kit -->
+							<div class="card" id="sticky">
+								<div class="card-header header-elements-md-inline">
+									<h5 class="card-title">Sticky kit</h5>
+									<div class="header-elements d-flex justify-content-between">
+										<span class="badge bg-slate">Misc</span>
+										<span class="text-muted mx-3">sticky.min.js</span>
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+									</div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Overview</h6>
+										<div class="mb-3">
+											<p>Sticky kit is a jQuery plugin for making smart sticky elements - it provides an easy way to attach elements to the page when the user scrolls such that the element is always visible.</p>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Usage</h6>
+										<div class="mb-3">
+											<p>Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+											<pre><code class="language-markup">&lt;!-- Load jQuery -->
+&lt;script src="../../../../global_assets/js/main/jquery.min.js">&lt;/script>
+
+&lt;!-- Load plugin -->
+&lt;script src="assets/js/plugins/ui/sticky.min.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Add element with attributes:</p>
+											<pre><code class="language-markup">&lt;!-- Add sidebar markup -->
+&lt;div class="sidebar-sticky w-100 w-md-auto order-1 order-md-2">
+	&lt;div class="sidebar sidebar-light sidebar-component sidebar-component-right sidebar-expand-md">
+		&lt;div class="sidebar-content">
+			&lt;div class="card">
+				[...]
+			&lt;/div>
+        &lt;/div>
+	&lt;/div>
+&lt;/div>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Just call <code>stick_in_parent</code> on the elements you want to be stuck inside of their parent. Sticky elements “bottom out” so they never leave the container, no more worrying if a sticky element will accidentally cover your footer:</p>
+											<pre><code class="language-javascript">// Basic initialization
+$('.sidebar-sticky .sidebar').stick_in_parent({
+    offset_top: 20,
+    parent: '.content'
+});
+</code></pre>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Plugin options</h6>
+										<p>You can pass a hash of options to configure how Sticky Kit works. The following options are accepted, each one is optional:</p>
+
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Option</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>parent</code></td>
+														<td>The element will be the parent of the sticky item. The dimensions of the parent control when the sticky element bottoms out. Defaults to the closest parent of the sticky element. Can be a selector.</td>
+													</tr>
+													<tr>
+														<td><code>inner_scrolling</code></td>
+														<td>Boolean to enable or disable the ability of the sticky element to scroll independently of the scrollbar when it’s taller than the viewport. Defaults to <code>true</code> for enabled.</td>
+													</tr>
+													<tr>
+														<td><code>sticky_class</code></td>
+														<td>The name of the CSS class to apply to elements when they have become stuck. Defaults to <code>"is_stuck"</code></td>
+													</tr>
+													<tr>
+														<td><code>offset_top</code></td>
+														<td>Offsets the initial sticking position by of number of pixels, can be either negative or positive</td>
+													</tr>
+													<tr>
+														<td><code>spacer</code></td>
+														<td>either a selector to use for the spacer element, or <code>false</code> to disable the spacer. The selector is passed to closest, so you should nest the sticky element within the spacer. Defaults to Stiky Kit creating its own spacer.</td>
+													</tr>
+													<tr>
+														<td><code>bottoming</code></td>
+														<td>Boolean to control whether elements bottom out. Defaults to <code>true</code></td>
+													</tr>
+													<tr>
+														<td><code>recalc_every</code></td>
+														<td>Integer specifying that a recalc should automatically take place between that many ticks. A tick takes place on every scroll event. Defaults to never calling recalc on a tick.</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Plugin events</h6>
+										<p>Various events are triggered from a sticky element when its state changes. They are:</p>
+
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Option</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>sticky_kit:stick</code></td>
+														<td>Triggered when element becomes stuck.</td>
+													</tr>
+													<tr>
+														<td><code>sticky_kit:unstick</code></td>
+														<td>Triggered when element becomes unstuck. (Note: an element is still considered stuck when it has bottomed out)</td>
+													</tr>
+													<tr>
+														<td><code>sticky_kit:bottom</code></td>
+														<td>Triggered when element bottoms out.</td>
+													</tr>
+													<tr>
+														<td><code>sticky_kit:unbottom</code></td>
+														<td>Triggered when element is no longer bottomed out.</td>
+													</tr>
+													<tr>
+														<td><code>sticky_kit:recalc</code></td>
+														<td>Trigger this event to cause all sticky elements to be recalculated.</td>
+													</tr>
+													<tr>
+														<td><code>sticky_kit:detach</code></td>
+														<td>Remove sticky kit and restore element to original positionю If you want to remove sticky kit from an element after applying it you can send that element a sticky_kit:detach event</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Scrolling performance</h6>
+										<div class="mb-3">
+											<p>StickyKit takes scrolling performance very seriously. It’s built from the ground up to let you have sticky elements without incurring scroll lag or jank.</p>
+
+											<p>Probably the biggest cause of scrolling lag is <code>onscroll</code> handlers that do too much work, trigger page reflows, etc. StickyKit avoids this by having a very light scroll handler that operates on cached values.</p>
+
+											<p>If you notice that your sticky element is acting strange, like it pops to the bottom of the page, or jumps around, then your cached value are most likely outdated. Luckily it’s easy to fix, read Recalculating Sticky Elements below.</p>
+
+											<p>Sticky Kit has two internal callbacks:</p>
+
+											<ul class="list mb-2">
+												<li><code>recalc</code> — Updates the cached sizes of the elements it checks</li>
+												<li><code>tick</code> — Checks and updates if necessary the sticky state from the cached values</li>
+											</ul>
+
+											<p>A <code>tick</code> happens on every scroll event. It’s designed to be as fast as possible.
+												<br>
+											A <code>recalc</code> happens whenever the cached values need to be updated. It’s (comparatively) slower, so you don’t want to run this on every scroll event. A recalc can happen automatically in the following cases: Sticky kit is first initialized, on the following tick after the height of the document changes.</p>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Recalculating Sticky Elements</h6>
+										<div class="mb-3">
+											<p>If you're changing the markup of your page on the fly by removing, adding or resizing elements then you most likely need to tell Sticky Kit to recalculate the sticky elements to guarantee they're positioned correctly.</p>
+
+											<p>You can manually cause a recalculation to happen by triggering an event on document.body:</p>
+											<pre class="mb-2"><code class="language-javascript">// Recalc
+$(document.body).trigger('sticky_kit:recalc');
+</code></pre>
+
+											<p>Typically you only need to trigger a recalculation if you are changing the positions/sizes of elements above the sticky element, adjacent to it, or the sticky element itself.</p>
+
+											<p>Instead of manually calling <code>sticky_kit:recalc</code> you can use the recalc_every option described above to periodically do a recalculation between ticks. Setting it to 1 will cause a recalculation to happen on every scroll event, preventing the state from ever being out of date.</p>
+											<pre><code class="language-javascript">// Recalc
+$('#sticky_item').stick_in_parent({recalc_every: 1});
+</code></pre>
+										</div>
+									</div>
+
+									<div>
+										<h6 class="font-weight-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="font-weight-semibold">File name</td>
+														<td>sticky.min.js</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Location</td>
+														<td>global_assets/js/plugins/ui/</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Links</td>
+														<td>
+															<p>
+																<a href="http://leafo.net/sticky-kit/" class="btn btn-sm bg-danger-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+
+															<a href="https://github.com/leafo/sticky-kit" class="btn btn-sm bg-blue btn-labeled btn-labeled-left" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /sticky kit -->
+
+
+							<!-- Slinky -->
+							<div class="card" id="slinky">
+								<div class="card-header header-elements-md-inline">
+									<h5 class="card-title">Slinky</h5>
+									<div class="header-elements d-flex justify-content-between">
+										<span class="badge bg-slate">Navigations</span>
+										<span class="text-muted mx-3">slinky.min.js</span>
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+									</div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Overview</h6>
+										<p class="mb-3">A light-weight, responsive, mobile-like navigation menu plugin</p>
+
+										<p>Core features:</p>
+										<ul class="list">
+											<li>Single light weight file</li>
+											<li>Unlimited navigation levels</li>
+											<li>Easy styling through SASS/CSS</li>
+											<li>Fully integrated with jQuery</li>
+											<li>Advanced configuration via available options and events</li>
+											<li>Tested for all major browsers desktop and mobile versions</li>
+											<li><strong>Tip</strong>: set <code>.active</code> class on the last child <code>ul</code> element to jump there on init</li>
+										</ul>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Usage</h6>
+										<div class="mb-3">
+											<p>Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+											<pre><code class="language-markup">&lt;!-- Load jQuery -->
+&lt;script src="../../../../global_assets/js/main/jquery.min.js">&lt;/script>
+
+&lt;!-- Load plugin -->
+&lt;script src="assets/js/plugins/ui/slinky.min.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Call the plugin via JavaScript:</p>
+											<pre><code class="language-javascript">// Attach drill down menu to menu list with child levels
+$('.nav-item-multi').one('shown.bs.dropdown', function () {
+    $('.dropdown-item-group').each(function() {
+        $(this).slinky({
+            title: true,
+            speed: 200
+        });
+    });
+});
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<h6 class="font-weight-semibold">Plugin options</h6>
+
+											<div class="table-responsive">
+												<table class="table table-bordered table-striped">
+													<thead>
+														<tr>
+															<th style="width: 250px;">Option</th>
+															<th>Default</th>
+															<th>Description</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td><code>resize</code></td>
+															<td><span class="font-weight-semibold">true</span></td>
+															<td>Resize menu height to match content on navigation</td>
+														</tr>
+														<tr>
+															<td><code>speed</code></td>
+															<td><span class="font-weight-semibold">300</span></td>
+															<td>Animation speed in milliseconds</td>
+														</tr>
+														<tr>
+															<td><code>theme</code></td>
+															<td><span class="font-weight-semibold">slinky-theme-default</span></td>
+															<td>Slinky theme</td>
+														</tr>
+														<tr>
+															<td><code>title</code></td>
+															<td><span class="font-weight-semibold">false</span></td>
+															<td>Show title of sub menu</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+
+										<div class="mb-3">
+											<h6 class="font-weight-semibold">Plugin API</h6>
+
+											<div class="mb-3">
+												<strong>.home(animate)</strong>
+												<p>Navigate back to the root menu</p>
+												<div class="table-responsive">
+													<table class="table table-bordered table-striped">
+														<thead>
+															<tr>
+																<th style="width: 250px;">Option</th>
+																<th>Default</th>
+																<th>Description</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td><code>animate</code></td>
+																<td><span class="font-weight-semibold">true</span></td>
+																<td>Pass <code>false</code> to skip animation</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+
+											<div class="mb-3">
+												<strong>.jump(target, animate)</strong>
+												<p>Navigate to a sub menu</p>
+												<div class="table-responsive">
+													<table class="table table-bordered table-striped">
+														<thead>
+															<tr>
+																<th style="width: 250px;">Option</th>
+																<th>Default</th>
+																<th>Description</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td><code>to</code></td>
+																<td><span class="font-weight-semibold">null</span></td>
+																<td>Selector for <code>ul</code> target to jump to</td>
+															</tr>
+															<tr>
+																<td><code>animate</code></td>
+																<td><span class="font-weight-semibold">true</span></td>
+																<td>Pass <code>false</code> to skip animation</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+
+											<div class="mb-3">
+												<strong>.destroy()</strong>
+												Remove Slinky
+											</div>
+										</div>
+									</div>
+
+									<div>
+										<h6 class="font-weight-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="font-weight-semibold">File name</td>
+														<td>slinky.min.js</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Location</td>
+														<td>global_assets/js/plugins/ui/</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Links</td>
+														<td>
+															<p>
+																<a href="https://alizahid.github.io/slinky/" class="btn btn-sm bg-danger-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+															
+															<a href="https://github.com/alizahid/slinky" class="btn btn-sm bg-blue btn-labeled btn-labeled-left" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /slinky -->
+
+
+							<!-- Perfect scrollbar -->
+							<div class="card" id="ps">
+								<div class="card-header header-elements-md-inline">
+									<h5 class="card-title">Perfect scrollbar</h5>
+									<div class="header-elements d-flex justify-content-between">
+										<span class="badge bg-slate">Navigations</span>
+										<span class="text-muted mx-3">perfect_scrolbar.min.js</span>
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+									</div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Overview</h6>
+										<p class="mb-3">Minimalistic but perfect custom scrollbar plugin. Main highlights:</p>
+
+										<ul class="list">
+											<li>No change on design layout</li>
+											<li>No manipulation on DOM tree</li>
+											<li>Use plain <code>scrollTop</code> and <code>scrollLeft</code></li>
+											<li>Scrollbar style is fully customizable/li>
+											<li>Efficient update on layout change</li>
+										</ul>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Before using perfect-scrollbar</h6>
+										<p class="mb-3">The following requirements should meet.</p>
+
+										<ul class="list mb-3">
+											<li>the container must have a <code>position</code> style.</li>
+											<li>the container must be a normal container element.</li>
+										</ul>
+
+										<p class="mb-3">The following requirements are included in the basic CSS, but please keep in mind when you'd like to change the CSS files.</p>
+
+										<ul class="list mb-3">
+											<li>the container must have an <code>overflow: hidden</code> css style.</li>
+											<li>the scrollbar's position must be <code>absolute</code>.</li>
+											<li>the scrollbar-x must have <code>bottom</code> or <code>top</code>, and the scrollbar-y must have <code>right</code> or <code>left</code>.</li>
+										</ul>
+
+										Finally, scroll hooking is generally considered as a bad practice, and perfect-scrollbar should be used carefully. Unless custom scroll is really needed, using browser-native scroll is always recommended.
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Usage</h6>
+										<div class="mb-3">
+											<p>Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+											<pre><code class="language-markup">&lt;!-- Load jQuery -->
+&lt;script src="../../../../global_assets/js/main/jquery.min.js">&lt;/script>
+
+&lt;!-- Load plugin -->
+&lt;script src="../../../../global_assets/js/plugins/ui/perfect_scrollbar.min.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Call the plugin via JavaScript:</p>
+											<pre><code class="language-javascript">// Initialize
+var ps = new PerfectScrollbar('.sidebar-fixed .sidebar-content', {
+    wheelSpeed: 2,
+    wheelPropagation: true
+});
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<h6 class="font-weight-semibold">Plugin options</h6>
+
+											<div class="table-responsive">
+												<table class="table table-bordered table-striped">
+													<thead>
+														<tr>
+															<th style="width: 250px;">Option</th>
+															<th>Default</th>
+															<th>Description</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td><code>handlers {String[]}</code></td>
+															<td><span class="font-weight-semibold">['click-rail', 'drag-thumb', 'keyboard', 'wheel', 'touch']</span></td>
+															<td>It is a list of handlers to scroll the element.</td>
+														</tr>
+														<tr>
+															<td><code>wheelSpeed {Number}</code></td>
+															<td><span class="font-weight-semibold">1</span></td>
+															<td>The scroll speed applied to mousewheel event.</td>
+														</tr>
+														<tr>
+															<td><code>wheelPropagation {Boolean}</code></td>
+															<td><span class="font-weight-semibold">false</span></td>
+															<td>If this option is true, when the scroll reaches the end of the side, mousewheel event will be propagated to parent element.</td>
+														</tr>
+														<tr>
+															<td><code>swipeEasing {Boolean}</code></td>
+															<td><span class="font-weight-semibold">true</span></td>
+															<td>If this option is true, swipe scrolling will be eased.</td>
+														</tr>
+														<tr>
+															<td><code>minScrollbarLength {Number?}</code></td>
+															<td><span class="font-weight-semibold">null</span></td>
+															<td>When set to an integer value, the thumb part of the scrollbar will not shrink below that number of pixels.</td>
+														</tr>
+														<tr>
+															<td><code>maxScrollbarLength {Number?}</code></td>
+															<td><span class="font-weight-semibold">null</span></td>
+															<td>When set to an integer value, the thumb part of the scrollbar will not expand over that number of pixels.</td>
+														</tr>
+														<tr>
+															<td><code>scrollingThreshold {Number}</code></td>
+															<td><span class="font-weight-semibold">1000</span></td>
+															<td>This sets threashold for <code>ps--scrolling-x</code> and <code>ps--scrolling-y</code> classes to remain. In the default CSS, they make scrollbars shown regardless of hover state. The unit is millisecond.</td>
+														</tr>
+														<tr>
+															<td><code>useBothWheelAxes {Boolean}</code></td>
+															<td><span class="font-weight-semibold">false</span></td>
+															<td>When set to true, and only one (vertical or horizontal) scrollbar is visible then both vertical and horizontal scrolling will affect the scrollbar.</td>
+														</tr>
+														<tr>
+															<td><code>suppressScrollX {Boolean}</code></td>
+															<td><span class="font-weight-semibold">false</span></td>
+															<td>When set to true, the scroll bar in X axis will not be available, regardless of the content width.</td>
+														</tr>
+														<tr>
+															<td><code>suppressScrollY {Boolean}</code></td>
+															<td><span class="font-weight-semibold">false</span></td>
+															<td>When set to true, the scroll bar in Y axis will not be available, regardless of the content height.</td>
+														</tr>
+														<tr>
+															<td><code>scrollXMarginOffset {Number}</code></td>
+															<td><span class="font-weight-semibold">0</span></td>
+															<td>The number of pixels the content width can surpass the container width without enabling the X axis scroll bar. Allows some "wiggle room" or "offset break", so that X axis scroll bar is not enabled just because of a few pixels.</td>
+														</tr>
+														<tr>
+															<td><code>scrollYMarginOffset {Number}</code></td>
+															<td><span class="font-weight-semibold">0</span></td>
+															<td>The number of pixels the content height can surpass the container height without enabling the Y axis scroll bar. Allows some "wiggle room" or "offset break", so that Y axis scroll bar is not enabled just because of a few pixels.</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+
+										<div class="mb-3">
+											<h6 class="font-weight-semibold">Plugin events</h6>
+											<p>perfect-scrollbar dispatches custom events.</p>
+											<pre><code class="language-javascript">// Register event
+container.addEventListener('ps-scroll-x', () => ...);
+</code></pre>
+
+											<div class="table-responsive">
+												<table class="table table-bordered table-striped">
+													<thead>
+														<tr>
+															<th style="width: 250px;">Option</th>
+															<th>Description</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td><code>ps-scroll-y</code></td>
+															<td>This event fires when the y-axis is scrolled in either direction.</td>
+														</tr>
+														<tr>
+															<td><code>ps-scroll-x</code></td>
+															<td>This event fires when the x-axis is scrolled in either direction.</td>
+														</tr>
+														<tr>
+															<td><code>ps-scroll-up</code></td>
+															<td>This event fires when scrolling upwards.</td>
+														</tr>
+														<tr>
+															<td><code>ps-scroll-down</code></td>
+															<td>This event fires when scrolling downwards.</td>
+														</tr>
+														<tr>
+															<td><code>ps-scroll-left</code></td>
+															<td>This event fires when scrolling to the left.</td>
+														</tr>
+														<tr>
+															<td><code>ps-scroll-right</code></td>
+															<td>This event fires when scrolling to the right.</td>
+														</tr>
+														<tr>
+															<td><code>ps-y-reach-start</code></td>
+															<td>This event fires when scrolling reaches the start of the y-axis.</td>
+														</tr>
+														<tr>
+															<td><code>ps-y-reach-end</code></td>
+															<td>This event fires when scrolling reaches the end of the y-axis (useful for infinite scroll).</td>
+														</tr>
+														<tr>
+															<td><code>ps-x-reach-start</code></td>
+															<td>This event fires when scrolling reaches the start of the x-axis.</td>
+														</tr>
+														<tr>
+															<td><code>ps-x-reach-end</code></td>
+															<td>This event fires when scrolling reaches the end of the x-axis.</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+
+									<div>
+										<h6 class="font-weight-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="font-weight-semibold">File name</td>
+														<td>prefect_scrollbar.min.js</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Location</td>
+														<td>global_assets/js/plugins/ui/</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Links</td>
+														<td>
+															<p>
+																<a href="http://utatti.github.io/perfect-scrollbar/" class="btn btn-sm bg-danger-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+															
+															<a href="https://github.com/utatti/perfect-scrollbar" class="btn btn-sm bg-blue btn-labeled btn-labeled-left" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /perfect scrollbar -->
+
+
+							<!-- Ion range slider -->
+							<div class="card" id="ion">
+								<div class="card-header header-elements-md-inline">
+									<h5 class="card-title">Ion range slider</h5>
+									<div class="header-elements d-flex justify-content-between">
+										<span class="badge bg-slate">Sliders</span>
+										<span class="text-muted mx-3">ion_rangeslider.min.js</span>
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+									</div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Overview</h6>
+										<p class="mb-3">Ion.RangeSlider. Is an easy, flexible and responsive range slider with tons of options. Supports events and public methods, has flexible settings, can be completely altered with CSS. Cross-browser: Google Chrome, Mozilla Firefox 3.6+, Opera 12+, Safari 5+, Internet Explorer 8+. Also supports touch-devices (iPhone, iPad, Nexus, etc.). Key slider features:</p>
+
+										<ul>
+											<li>Skin support</li>
+											<li>Any number of sliders at one page without conflicts and big performance problems</li>
+											<li>Two slider types single (1 slider) and double (2 sliders)</li>
+											<li>Support of negative and fractional values</li>
+											<li>Ability to set custom step and snap grid to step</li>
+											<li>Support of custom values diapason</li>
+											<li>Customisable grid of values</li>
+											<li>Ability to disable UI elements (min and max, current value, grid)</li>
+											<li>Postfixes and prefixes for your numbers ($20, 20 € etc.)</li>
+											<li>Additional postfix for maximum value (eg. $0 — $100<b>+</b>)</li>
+											<li>Ability to prettify large numbers (eg. 10000000 -&gt; 10 000 000 or 10.000.000)</li>
+											<li>Slider writes its value right into input value field. This makes it easy to use in any html form</li>
+											<li>Any slider value can be set through input data-attribute (eg. data-min="10")</li>
+											<li>Slider supports disable param. You can set it true to make slider inactive</li>
+											<li>Slider supports external methods (update, reset and remove) to control it after creation</li>
+											<li>For advanced users slider has callbacks (onStart, onChange, onFinish, onUpdate). Slider pastes all its params to callback first argument as object</li>
+											<li>Slider supports date and time</li>
+										</ul>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Usage</h6>
+										<div class="mb-3">
+											<p>Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+											<pre><code class="language-markup">&lt;!-- Load jQuery -->
+&lt;script src="../../../../global_assets/js/main/jquery.min.js">&lt;/script>
+
+&lt;!-- Load plugin -->
+&lt;script src="../../../../global_assets/js/plugins/sliders/ion_rangeslider.min.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Add element with attributes:</p>
+											<pre><code class="language-markup">&lt;!-- Add DIV element -->
+&lt;div id="ion-slider-default">&lt;/div>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<div class="mb-3">
+												<p>Call the plugin via JavaScript:</p>
+												<pre><code class="language-javascript">// Initialize
+$("#ion-slider-default").ionRangeSlider({
+	// options
+});
+</code></pre>
+											</div>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Plugin options</h6>
+										<div class="table-responsive">
+											<table class="table table-striped table-bordered table-sm">
+											    <thead>
+											        <tr>
+											            <th>Option</th>
+											            <th>Defaults</th>
+											            <th>Type</th>
+											            <th>Description</th>
+											        </tr>
+											    </thead>
+											    <tbody>
+											        <tr>
+											            <td>type<div><sup>data-type</sup></div></td>
+											            <td>"single"</td>
+											            <td>string</td>
+											            <td>Choose slider type, could be <code>single</code> - for one handle, or <code>double</code> for two handles</td>
+											        </tr>
+
+											        <tr>
+											            <td>min<div><sup>data-min</sup></div></td>
+											            <td>10</td>
+											            <td>number</td>
+											            <td>Set slider minimum value</td>
+											        </tr>
+											        <tr>
+											            <td>max<div><sup>data-max</sup></div></td>
+											            <td>100</td>
+											            <td>number</td>
+											            <td>Set slider maximum value</td>
+											        </tr>
+											        <tr>
+											            <td>from<div><sup>data-from</sup></div></td>
+											            <td>min</td>
+											            <td>number</td>
+											            <td>Set start position for left handle (or for single handle)</td>
+											        </tr>
+											        <tr>
+											            <td>to<div><sup>data-to</sup></div></td>
+											            <td>max</td>
+											            <td>number</td>
+											            <td>Set start position for right handle</td>
+											        </tr>
+											        <tr>
+											            <td>step<div><sup>data-step</sup></div></td>
+											            <td>1</td>
+											            <td>number</td>
+											            <td>Set sliders step. Always &gt; 0. Could be fractional.</td>
+											        </tr>
+
+											        <tr>
+											            <td>min_interval<div><sup>data-min-interval</sup></div></td>
+											            <td>—</td>
+											            <td>number</td>
+											            <td>Set minimum diapason between sliders. Only in "double" type</td>
+											        </tr>
+											        <tr>
+											            <td>max_interval<div><sup>data-max-interval</sup></div></td>
+											            <td>—</td>
+											            <td>number</td>
+											            <td>Set maximum diapason between sliders. Only in "double" type</td>
+											        </tr>
+											        <tr>
+											            <td>drag_interval<div><sup>data-drag-interval</sup></div></td>
+											            <td>false</td>
+											            <td>boolean</td>
+											            <td>Allow user to drag whole range. Only in "double" type (beta)</td>
+											        </tr>
+
+											        <tr>
+											            <td>values<div><sup>data-values</sup></div></td>
+											            <td>[]</td>
+											            <td>array</td>
+											            <td>Set up your own array of possible slider values. They could be numbers or strings. If the values array is set up, min, max and step param, are no longer can be changed.</td>
+											        </tr>
+
+											        <tr>
+											            <td>from_fixed<div><sup>data-from-fixed</sup></div></td>
+											            <td>false</td>
+											            <td>boolean</td>
+											            <td>Fix position of left (or single) handle.</td>
+											        </tr>
+											        <tr>
+											            <td>from_min<div><sup>data-from-min</sup></div></td>
+											            <td>min</td>
+											            <td>number</td>
+											            <td>Set minimum limit for left handle.</td>
+											        </tr>
+											        <tr>
+											            <td>from_max<div><sup>data-from-max</sup></div></td>
+											            <td>max</td>
+											            <td>number</td>
+											            <td>Set the maximum limit for left handle</td>
+											        </tr>
+											        <tr>
+											            <td>from_shadow<div><sup>data-from-shadow</sup></div></td>
+											            <td>false</td>
+											            <td>boolean</td>
+											            <td>Highlight the limits for left handle</td>
+											        </tr>
+
+											        <tr>
+											            <td>to_fixed<div><sup>data-to-fixed</sup></div></td>
+											            <td>false</td>
+											            <td>boolean</td>
+											            <td>Fix position of right handle.</td>
+											        </tr>
+											        <tr>
+											            <td>to_min<div><sup>data-to-min</sup></div></td>
+											            <td>min</td>
+											            <td>number</td>
+											            <td>Set the minimum limit for right handle</td>
+											        </tr>
+											        <tr>
+											            <td>to_max<div><sup>data-to-max</sup></div></td>
+											            <td>max</td>
+											            <td>number</td>
+											            <td>Set the maximum limit for right handle</td>
+											        </tr>
+											        <tr>
+											            <td>to_shadow<div><sup>data-to-shadow</sup></div></td>
+											            <td>false</td>
+											            <td>boolean</td>
+											            <td>Highlight the limits for right handle</td>
+											        </tr>
+
+											        <tr>
+											            <td>prettify_enabled<div><sup>data-prettify-enabled</sup></div></td>
+											            <td>true</td>
+											            <td>boolean</td>
+											            <td>Improve readability of long numbers. 10000000 → 10 000 000</td>
+											        </tr>
+											        <tr>
+											            <td>prettify_separator<div><sup>data-prettify-separator</sup></div></td>
+											            <td>" "</td>
+											            <td>string</td>
+											            <td>Set up your own separator for long numbers. 10 000, 10.000, 10-000 и т.п.</td>
+											        </tr>
+											        <tr>
+											            <td>prettify<div><sup>—</sup></div></td>
+											            <td>null</td>
+											            <td>function</td>
+											            <td>Set up your own prettify function. Can be anything. For example, you can set up unix time as slider values and than transform them to cool looking dates.</td>
+											        </tr>
+
+											        <tr>
+											            <td>force_edges<div><sup>data-force-edges</sup></div></td>
+											            <td>false</td>
+											            <td>boolean</td>
+											            <td>Slider will be always inside it's container.</td>
+											        </tr>
+
+											        <tr>
+											            <td>keyboard<div><sup>data-keyboard</sup></div></td>
+											            <td>false</td>
+											            <td>boolean</td>
+											            <td>Activates keyboard controls. Move left: ←, ↓, A, S. Move right: →, ↑, W, D.</td>
+											        </tr>
+											        <tr>
+											            <td>keyboard_step<div><sup>data-keyboard-step</sup></div></td>
+											            <td>5</td>
+											            <td>number</td>
+											            <td>Movement step, than controling from keyboard. In percents.</td>
+											        </tr>
+
+											        <tr>
+											            <td>grid<div><sup>data-grid</sup></div></td>
+											            <td>false</td>
+											            <td>boolean</td>
+											            <td>Enables grid of values.</td>
+											        </tr>
+											        <tr>
+											            <td>grid_margin<div><sup>data-grid-margin</sup></div></td>
+											            <td>true</td>
+											            <td>boolean</td>
+											            <td>Set left and right grid borders.</td>
+											        </tr>
+											        <tr>
+											            <td>grid_num<div><sup>data-grid-num</sup></div></td>
+											            <td>4</td>
+											            <td>number</td>
+											            <td>Number of grid units.</td>
+											        </tr>
+											        <tr>
+											            <td>grid_snap<div><sup>data-grid-snap</sup></div></td>
+											            <td>false</td>
+											            <td>boolean</td>
+											            <td>Snap grid to sliders step (step param). If activated, grid_num will not be used.</td>
+											        </tr>
+
+											        <tr>
+											            <td>hide_min_max<div><sup>data-hide-min-max</sup></div></td>
+											            <td>false</td>
+											            <td>boolean</td>
+											            <td>Hides min and max labels</td>
+											        </tr>
+											        <tr>
+											            <td>hide_from_to<div><sup>data-hide-from-to</sup></div></td>
+											            <td>false</td>
+											            <td>boolean</td>
+											            <td>Hide from and to lables</td>
+											        </tr>
+
+											        <tr>
+											            <td>prefix<div><sup>data-prefix</sup></div></td>
+											            <td>—</td>
+											            <td>string</td>
+											            <td>Set prefix for values. Will be set up right before the number: $100</td>
+											        </tr>
+											        <tr>
+											            <td>postfix<div><sup>data-postfix</sup></div></td>
+											            <td>—</td>
+											            <td>string</td>
+											            <td>Set postfix for values. Will be set up right after the number: 100k</td>
+											        </tr>
+											        <tr>
+											            <td>max_postfix<div><sup>data-max-postfix</sup></div></td>
+											            <td>—</td>
+											            <td>string</td>
+											            <td>Special postfix, used only for maximum value. Will be showed after handle will reach maximum right position. For example 0 — 100+</td>
+											        </tr>
+											        <tr>
+											            <td>decorate_both<div><sup>data-decorate-both</sup></div></td>
+											            <td>true</td>
+											            <td>boolean</td>
+											            <td>Used for "double" type and only if prefix or postfix was set up. Determine how to decorate close values. For example: $10k — $100k or $10 — 100k</td>
+											        </tr>
+											        <tr>
+											            <td>values_separator<div><sup>data-values-separator</sup></div></td>
+											            <td>" — "</td>
+											            <td>string</td>
+											            <td>Set your own separator for close values. Used for "double" type. Default: 10 — 100. Or you may set: 10 to 100, 10 + 100, 10 → 100 etc.</td>
+											        </tr>
+											        
+											        <tr>
+											            <td>input_values_separator<div><sup>data-input-values-separator</sup></div></td>
+											            <td>" ; "</td>
+											            <td>string</td>
+											            <td>Separator for double values in input value property.</td>
+											        </tr>
+
+											        <tr>
+											            <td>disable<div><sup>data-disable</sup></div></td>
+											            <td>false</td>
+											            <td>boolean</td>
+											            <td>Locks slider and makes it inactive.</td>
+											        </tr>
+
+											        <tr>
+											            <td>onStart<div><sup>—</sup></div></td>
+											            <td>null</td>
+											            <td>function</td>
+											            <td>Callback. Is called on slider start.</td>
+											        </tr>
+											        <tr>
+											            <td>onChange<div><sup>—</sup></div></td>
+											            <td>null</td>
+											            <td>function</td>
+											            <td>Callback. IS called on each values change.</td>
+											        </tr>
+											        <tr>
+											            <td>onFinish<div><sup>—</sup></div></td>
+											            <td>null</td>
+											            <td>function</td>
+											            <td>Callback. Is called than user releases handle.</td>
+											        </tr>
+											        <tr>
+											            <td>onUpdate<div><sup>—</sup></div></td>
+											            <td>null</td>
+											            <td>function</td>
+											            <td>Callback. Is called than slider is modified by external methods <code>update</code> or <code>reset</code>.</td>
+											        </tr>
+											    </tbody>
+											</table>
+										</div>
+									</div>
+
+									<div>
+										<h6 class="font-weight-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="font-weight-semibold">File name</td>
+														<td>ion_rangeslider.min.js</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Location</td>
+														<td>global_assets/js/plugins/sliders/</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Links</td>
+														<td>
+															<p>
+																<a href="http://ionden.com/a/plugins/ion.rangeSlider/en.html" class="btn btn-sm bg-danger-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+
+															<a href="https://github.com/IonDen/ion.rangeSlider" class="btn btn-sm bg-blue btn-labeled btn-labeled-left" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /ion range slider -->
+
+
+							<!-- NoUI slider -->
+							<div class="card" id="noui">
+								<div class="card-header header-elements-md-inline">
+									<h5 class="card-title">NoUI slider</h5>
+									<div class="header-elements d-flex justify-content-between">
+										<span class="badge bg-slate">Sliders</span>
+										<span class="text-muted mx-3">nouislider.min.js</span>
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+									</div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Overview</h6>
+										<p>noUiSlider is a range slider without bloat. It offers a ton off features, and it is as small, lightweight and minimal as possible, which is great for mobile use on the many supported devices, including iPhone, iPad, Android devices &amp; Windows (Phone) 8 desktops, tablets and all-in-ones. It works on desktops too, of course!</p>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Usage</h6>
+										<div class="mb-3">
+											<p>Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+											<pre><code class="language-markup">&lt;!-- Load jQuery -->
+&lt;script src="../../../../global_assets/js/main/jquery.min.js">&lt;/script>
+
+&lt;!-- Load plugin -->
+&lt;script src="../../../../global_assets/js/plugins/sliders/nouislider.min.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Add element with attributes:</p>
+											<pre><code class="language-markup">&lt;!-- Add DIV element -->
+&lt;div id="noui-slider-handles">&lt;/div>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<div class="mb-3">
+												<p>Call the plugin via JavaScript:</p>
+												<pre><code class="language-javascript">// Define element
+var slider = document.getElementById('noui-slider-default');
+
+// Initialize with options
+var slider_handles = document.getElementById('noui-slider-handles');
+noUiSlider.create(slider_handles, {
+    start: [40, 80],
+    range: {
+        'min': [20],
+        'max': [100]
+    },
+    direction: $('html').attr('dir') == 'rtl' ? 'rtl' : 'ltr'
+});
+</code></pre>
+											</div>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Plugin options</h6>
+										<p>noUiSlider can be configured with a wide variety of options, which can be use to customize the slider in to doing exactly what you want:</p>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Option</th>
+														<th>Default</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>start</code></td>
+														<td class="font-weight-semibold">Default: none <br> Accepted: number, array[number], array[number, number]</td>
+														<td>The start option sets the number of handles and their start positions, relative to <code>range</code></td>
+													</tr>
+													<tr>
+														<td><code>connect</code></td>
+														<td class="font-weight-semibold">Default: false <br> Accepted: "lower", "upper", true, false</td>
+														<td>The connect setting can be used to control the (green) bar between the handles, or the edges of the slider. Use <code>"lower"</code> to connect to the lower side, or <code>"upper"</code> to connect to the upper side. Setting <code>true</code> sets the bar between the handles</td>
+													</tr>
+													<tr>
+														<td><code>margin</code></td>
+														<td class="font-weight-semibold">Default: none <br> Accepted: number</td>
+														<td>When using two handles, the minimum distance between the handles can be set using the <code>margin</code> option. The margin value is relative to the value set in <code>'range'</code>. This option is only available on standard linear sliders</td>
+													</tr>
+													<tr>
+														<td><code>limit</code></td>
+														<td class="font-weight-semibold">Default: none <br> Accepted: number</td>
+														<td>The <code>limit</code> option is the oposite of the margin option, limiting the maximum distance between two handles. As with the <code>margin</code> option, the <code>limit</code> option can only be used on linear sliders</td>
+													</tr>
+													<tr>
+														<td><code>padding</code></td>
+														<td class="font-weight-semibold">Default: 0 <br> Accepted: number</td>
+														<td>Padding limits how close to the slider edges handles can be.</td>
+													</tr>
+													<tr>
+														<td><code>step</code></td>
+														<td class="font-weight-semibold">Default: none <br> Accepted: number</td>
+														<td>By default, the slider slides fluently. In order to make the handles jump between intervals, you can use this option. The <code>step</code> option is relative to the values provided to range</td>
+													</tr>
+													<tr>
+														<td><code>Orientation</code></td>
+														<td class="font-weight-semibold">Default: "horizontal" <br> Accepted: "vertical", "horizontal"</td>
+														<td>The <code>orientation</code> setting can be used to set the slider to <code>"vertical"</code> or <code>"horizontal"</code></td>
+													</tr>
+													<tr>
+														<td><code>Direction</code></td>
+														<td class="font-weight-semibold">Default: "ltr" <br> Accepted: "ltr", "rtl"</td>
+														<td>By default the sliders are <strong>top-to-bottom</strong> and <strong>left-to-right</strong>, but you can change this using the direction option, which decides where the upper side of the slider is</td>
+													</tr>
+													<tr>
+														<td><code>Tooltips</code></td>
+														<td class="font-weight-semibold">Default: false <br> Accepted: false, true, formatter,  array</td>
+														<td>noUiSlider can provide a basic tooltip using the <code>tooltips</code> option. This option can also accept formatting options to format the tooltips content. In that case, pass an array with a formatter for each handle, <code>true</code> to use the default or <code>false</code> to display no tooltip.</td>
+													</tr>
+													<tr>
+														<td><code>Animate</code></td>
+														<td class="font-weight-semibold">Default: true <br> Accepted: true, false</td>
+														<td>Set the animate option to <code>false</code> to prevent the slider from animating to a new value with when calling <code>.val()</code></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Slider behaviour</h6>
+										<p>noUiSlider offers several ways to handle user interaction. The range can be set to drag, and handles can move to taps. All these effects are optional, and can be enable by adding their keyword to the <code>behaviour</code> option. This option accepts a "-" separated list of <strong>"drag"</strong>, <strong>"tap"</strong>, <strong>"fixed"</strong>, <strong>"snap"</strong> or <strong>"none"</strong>.</p>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Behaviour</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>drag</code></td>
+														<td>Make the <strong>range</strong> draggable. <strong>Handles</strong> are always draggable</td>
+													</tr>
+													<tr>
+														<td><code>drag-fixed</code></td>
+														<td>The range is draggable. The range width can't be changed, so dragging one handle will move the other, too</td>
+													</tr>
+													<tr>
+														<td><code>tap</code></td>
+														<td>Make the closest handle when the slider gets tapped</td>
+													</tr>
+													<tr>
+														<td><code>tap-drag</code></td>
+														<td>Make the closest handle jump when the slider bar is tapped, make the range draggable</td>
+													</tr>
+													<tr>
+														<td><code>none</code></td>
+														<td>Turn off all behaviour, except for standard moving</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div>
+										<h6 class="font-weight-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="font-weight-semibold">File name</td>
+														<td>nouislider.min.js</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Location</td>
+														<td>global_assets/js/plugins/sliders/</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Links</td>
+														<td>
+															<p>
+																<a href="http://refreshless.com/nouislider/" class="btn btn-sm bg-danger-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+
+															<a href="https://github.com/leongersen/noUiSlider" class="btn btn-sm bg-blue btn-labeled btn-labeled-left" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /noUI slider -->
+
+
+							<!-- Image cropper -->
+							<div class="card" id="cropper">
+								<div class="card-header header-elements-md-inline">
+									<h5 class="card-title">Image cropper</h5>
+									<div class="header-elements d-flex justify-content-between">
+										<span class="badge bg-slate">Media</span>
+										<span class="text-muted mx-3">cropper.min.js</span>
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+									</div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Overview</h6>
+										<p>A simple jQuery image cropping plugin with enhanced features and suppot of: options, methods, events, touch devices, zomoing, rotation, scale, canvas and multiple croppers on the page.</p>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Usage</h6>
+										<div class="mb-3">
+											<p>Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+											<pre><code class="language-markup">&lt;!-- Load jQuery -->
+&lt;script src="../../../../global_assets/js/main/jquery.min.js">&lt;/script>
+
+&lt;!-- Load plugin -->
+&lt;script src="../../../../global_assets/js/plugins/media/cropper.min.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Wrap the image or canvas element with a block element:</p>
+											<pre><code class="language-markup">&lt;!-- Basic markup -->
+&lt;div class="container">
+	&lt;img src="picture.jpg">
+&lt;/div>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Finally call the plugin via JavaScript:</p>
+											<pre><code class="language-javascript">// Initialize
+$('.container > img').cropper({
+	aspectRatio: 16 / 9,
+	crop: function(e) {
+		// Output the result data for cropping image.
+		console.log(e.x);
+		console.log(e.y);
+		console.log(e.width);
+		console.log(e.height);
+		console.log(e.rotate);
+		console.log(e.scaleX);
+		console.log(e.scaleY);
+	}
+});
+</code></pre>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Plugin options</h6>
+										<p>You may set cropper options with <code>$().cropper(options)</code>. If you want to change the global default options, you may use <code>$.fn.cropper.setDefaults(options)</code>.</p>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Option</th>
+														<th style="width: 200px;">Default</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>aspectRatio</code></td>
+														<td class="font-weight-semibold">NaN</td>
+														<td>Number. Set the aspect ratio of the crop box. By default, the crop box is free ratio</td>
+													</tr>
+													<tr>
+														<td><code>data</code></td>
+														<td class="font-weight-semibold">null</td>
+														<td>Object. The previous cropped data if you had stored, will be passed to <code>setData</code> method automatically</td>
+													</tr>
+													<tr>
+														<td><code>preview</code></td>
+														<td class="font-weight-semibold">''</td>
+														<td>String. Add extra elements (containers) for previewing</td>
+													</tr>
+													<tr>
+														<td><code>strict</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>Boolean. In strict mode, the canvas (image wrapper) cannot be smaller than the container, and the crop box cannot be outside of the canvas (image wrapper)</td>
+													</tr>
+													<tr>
+														<td><code>responsive</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>Boolean. Rebuild the cropper when resize the window</td>
+													</tr>
+													<tr>
+														<td><code>checkImageOrigin</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>Boolean. By default, the plugin will check the image origin, and if it is a cross-origin image, a <code>crossOrigin</code> attribute will be added to the image element and a timestamp will be added to the image url to reload the image for <code>"getCroppedCanvas"</code>. By adding <code>crossOrigin</code> attribute to image will stop adding timestamp to image url, and stop reload of image</td>
+													</tr>
+													<tr>
+														<td><code>modal</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>Boolean. Show the black modal above the image and under the crop box</td>
+													</tr>
+													<tr>
+														<td><code>guides</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>Boolean. Show the dashed lines above the crop box</td>
+													</tr>
+													<tr>
+														<td><code>center</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>Boolean. Show the center indicator above the crop box</td>
+													</tr>
+													<tr>
+														<td><code>highlight</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>Boolean. Show the white modal above the crop box (highlight the crop box)</td>
+													</tr>
+													<tr>
+														<td><code>background</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>Boolean. Show the grid background of the container</td>
+													</tr>
+													<tr>
+														<td><code>autoCrop</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>Boolean. Enable to crop the image automatically when initialize</td>
+													</tr>
+													<tr>
+														<td><code>autoCropArea</code></td>
+														<td class="font-weight-semibold">0.8 (80% of the image)</td>
+														<td>Number. A number between <code>0</code> and <code>1</code>. Define the automatic cropping area size (percentage)</td>
+													</tr>
+													<tr>
+														<td><code>dragCrop</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>Boolean. Enable to remove the current crop box and create a new one by dragging over the image</td>
+													</tr>
+													<tr>
+														<td><code>movable</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>Boolean. Enable to move the image</td>
+													</tr>
+													<tr>
+														<td><code>rotatable</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>Boolean. Enable to rotate the image</td>
+													</tr>
+													<tr>
+														<td><code>scalable</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>Boolean. Enable to scale the image</td>
+													</tr>
+													<tr>
+														<td><code>zoomable</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>Boolean. Enable to zoom the image</td>
+													</tr>
+													<tr>
+														<td><code>mouseWheelZoom</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>Boolean. Enable to zoom the image by wheeling mouse</td>
+													</tr>
+													<tr>
+														<td><code>wheelZoomRatio</code></td>
+														<td class="font-weight-semibold">0.1</td>
+														<td>Number. Define zoom ratio when zoom the image by wheeling mouse</td>
+													</tr>
+													<tr>
+														<td><code>touchDragZoom</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>Boolean. Enable to zoom the image by dragging touch</td>
+													</tr>
+													<tr>
+														<td><code>cropBoxMovable</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>Boolean. Enable to move the crop box</td>
+													</tr>
+													<tr>
+														<td><code>cropBoxResizable</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>Boolean. Enable to resize the crop box</td>
+													</tr>
+													<tr>
+														<td><code>doubleClickToggle</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>Boolean. Enable to toggle drag mode between <code>"crop"</code> and <code>"move"</code> when double click on the cropper</td>
+													</tr>
+													<tr>
+														<td><code>minContainerWidth</code></td>
+														<td class="font-weight-semibold">200</td>
+														<td>Number. The minimum width of the container</td>
+													</tr>
+													<tr>
+														<td><code>minContainerHeight</code></td>
+														<td class="font-weight-semibold">100</td>
+														<td>Number. The minimum height of the container</td>
+													</tr>
+													<tr>
+														<td><code>minCanvasWidth</code></td>
+														<td class="font-weight-semibold">0</td>
+														<td>Number. The minimum width of the canvas (image wrapper)</td>
+													</tr>
+													<tr>
+														<td><code>minCanvasHeight</code></td>
+														<td class="font-weight-semibold">0</td>
+														<td>Number. The minimum height of the canvas (image wrapper)</td>
+													</tr>
+													<tr>
+														<td><code>minCropBoxWidth</code></td>
+														<td class="font-weight-semibold">0</td>
+														<td>Number. The minimum width of the crop box</td>
+													</tr>
+													<tr>
+														<td><code>minCropBoxHeight</code></td>
+														<td class="font-weight-semibold">0</td>
+														<td>Number. The minimum height of the crop box</td>
+													</tr>
+													<tr>
+														<td><code>build</code></td>
+														<td class="font-weight-semibold">null</td>
+														<td>Function. A shortcut of the <code>"build.cropper"</code> event</td>
+													</tr>
+													<tr>
+														<td><code>built</code></td>
+														<td class="font-weight-semibold">null</td>
+														<td>Function. A shortcut of the <code>"built.cropper"</code> event</td>
+													</tr>
+													<tr>
+														<td><code>cropstart</code></td>
+														<td class="font-weight-semibold">null</td>
+														<td>Function. A shortcut of the <code>"cropstart.cropper"</code> event</td>
+													</tr>
+													<tr>
+														<td><code>cropmove</code></td>
+														<td class="font-weight-semibold">null</td>
+														<td>Function. A shortcut of the <code>"cropmove.cropper"</code> event</td>
+													</tr>
+													<tr>
+														<td><code>cropend</code></td>
+														<td class="font-weight-semibold">null</td>
+														<td>Function. A shortcut of the <code>"cropend.cropper"</code> event</td>
+													</tr>
+													<tr>
+														<td><code>crop</code></td>
+														<td class="font-weight-semibold">null</td>
+														<td>Function. A shortcut of the <code>"crop.cropper"</code> event</td>
+													</tr>
+													<tr>
+														<td><code>zoom</code></td>
+														<td class="font-weight-semibold">null</td>
+														<td>Function. A shortcut of the <code>"zoom.cropper"</code> event</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Plugin events</h6>
+										<div class="mb-3">
+											<p>Example usage:</p>
+
+											<pre><code class="language-javascript">// Events example
+$().on('cropstart.cropper', function (e) {
+	console.log(e.type); // cropstart
+	console.log(e.namespace); // cropper
+	console.log(e.action); // ...
+	console.log(e.originalEvent.pageX);
+
+	// Prevent to start cropping, moving, etc if necessary
+	if (e.action === 'crop') {
+		e.preventDefault();
+	}
+});
+</code></pre>
+										</div>
+
+										<p>Available events:</p>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Option</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>build.cropper</code></td>
+														<td>This event fires when a cropper instance starts to load an image</td>
+													</tr>
+													<tr>
+														<td><code>built.cropper</code></td>
+														<td>This event fires when a cropper instance has built completely</td>
+													</tr>
+													<tr>
+														<td><code>cropstart.cropper</code></td>
+														<td>This event fires when the canvas (image wrapper) or the crop box starts to change</td>
+													</tr>
+													<tr>
+														<td><code>cropmove.cropper</code></td>
+														<td>This event fires when the canvas (image wrapper) or the crop box is changing</td>
+													</tr>
+													<tr>
+														<td><code>cropend.cropper</code></td>
+														<td>This event fires when the canvas (image wrapper) or the crop box stops to change</td>
+													</tr>
+													<tr>
+														<td><code>crop.cropper</code></td>
+														<td>This event fires when the canvas (image wrapper) or the crop box changed</td>
+													</tr>
+													<tr>
+														<td><code>zoom.cropper</code></td>
+														<td>This event fires when a cropper instance starts to zoom in or zoom out its canvas (image wrapper)</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div>
+										<h6 class="font-weight-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="font-weight-semibold">File name</td>
+														<td>cropper.min.js</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Location</td>
+														<td>global_assets/js/plugins/media/</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Links</td>
+														<td>
+															<p>
+																<a href="http://fengyuanchen.github.io/cropper/" class="btn btn-sm bg-danger-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+
+															<p>
+																<a href="https://github.com/fengyuanchen/cropper/blob/v1.0.0-rc.1/README.md" class="btn btn-sm bg-slate btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-file-text2"></i></b>
+																	Full documentation
+																</a>
+															</p>
+
+															<a href="https://github.com/fengyuanchen/cropper" class="btn btn-sm bg-blue btn-labeled btn-labeled-left" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /image cropper -->
+
+
+							<!-- Fancybox -->
+							<div class="card" id="fancybox">
+								<div class="card-header header-elements-md-inline">
+									<h5 class="card-title">Fancybox</h5>
+									<div class="header-elements d-flex justify-content-between">
+										<span class="badge bg-slate">Media</span>
+										<span class="text-muted mx-3">fancybox.min.js</span>
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+									</div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Overview</h6>
+										<p>FancyBox is a tool that offers a nice and elegant way to add zooming functionality for images, html content and multi-media on your webpages. It is built on the top of the popular JavaScript framework jQuery and is both easy to implement and a snap to customize.</p>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Usage</h6>
+										<div class="mb-3">
+											<p>Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+											<pre><code class="language-markup">&lt;!-- Load jQuery -->
+&lt;script src="../../../../global_assets/js/main/jquery.min.js">&lt;/script>
+
+&lt;!-- Load plugin -->
+&lt;script src="../../../../global_assets/js/plugins/media/fancybox.min.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Create link elements whose href attributes will contain the path of the element you wish to open within the fancyBox:</p>
+											<pre><code class="language-markup">&lt;!-- Image 1 -->
+&lt;a class="fancybox" rel="group" href="big_image_1.jpg">
+	&lt;img src="small_image_1.jpg" alt="">
+&lt;/a>
+
+&lt;!-- Image 1 -->
+&lt;a class="fancybox" rel="group" href="big_image_2.jpg">
+	&lt;img src="small_image_2.jpg" alt="">
+&lt;/a>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Finally call the plugin via JavaScript:</p>
+											<pre><code class="language-javascript">// Initialize
+$(document).ready(function() {
+	$(".fancybox").fancybox({
+		// options
+	});
+});
+</code></pre>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Plugin options</h6>
+										<p>You can pass these options as key/value object to <code>fancybox()</code> method. It is also possible to modify defaults directly at fancyBox JS file or <code>$.fancybox.defaults</code></p>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Option</th>
+														<th style="width: 200px;">Default</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>padding</code></td>
+														<td class="font-weight-semibold">15</td>
+														<td>Space inside fancyBox around content. Can be set as array - <code>[top, right, bottom, left]</code></td>
+													</tr>
+													<tr>
+														<td><code>margin</code></td>
+														<td class="font-weight-semibold">20</td>
+														<td>Minimum space between viewport and fancyBox. Can be set as array - <code>[top, right, bottom, left]</code>. Right and bottom margins are ignored if content dimensions exceeds viewport</td>
+													</tr>
+													<tr>
+														<td><code>width</code></td>
+														<td class="font-weight-semibold">800</td>
+														<td>Default width for <code>'iframe'</code> and <code>'swf'</code> content. Also for 'inline', 'ajax' and 'html' if 'autoSize' is set to 'false'. Can be <code>numeric</code> or <code>'auto'</code>.</td>
+													</tr>
+													<tr>
+														<td><code>height</code></td>
+														<td class="font-weight-semibold">600</td>
+														<td>Default height for <code>'iframe'</code> and <code>'swf'</code> content. Also for 'inline', 'ajax' and 'html' if 'autoSize' is set to 'false'. Can be <code>numeric</code> or <code>'auto'</code></td>
+													</tr>
+													<tr>
+														<td><code>minWidth</code></td>
+														<td class="font-weight-semibold">100</td>
+														<td>Minimum width fancyBox should be allowed to resize to</td>
+													</tr>
+													<tr>
+														<td><code>minHeight</code></td>
+														<td class="font-weight-semibold">100</td>
+														<td>Minimum height fancyBox should be allowed to resize to</td>
+													</tr>
+													<tr>
+														<td><code>maxWidth</code></td>
+														<td class="font-weight-semibold">9999</td>
+														<td>Maximum width fancyBox should be allowed to resize to</td>
+													</tr>
+													<tr>
+														<td><code>maxHeight</code></td>
+														<td class="font-weight-semibold">9999</td>
+														<td>Maximum height fancyBox should be allowed to resize to</td>
+													</tr>
+													<tr>
+														<td><code>autoSize</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>If <code>true</code>, then sets both <code>autoHeight</code> and <code>autoWidth</code> to <code>true</code></td>
+													</tr>
+													<tr>
+														<td><code>autoHeight</code></td>
+														<td class="font-weight-semibold">false</td>
+														<td>If set to true, for <code>'inline'</code>, <code>'ajax'</code> and <code>'html'</code> type content width is auto determined. If no dimensions set this may give unexpected results</td>
+													</tr>
+													<tr>
+														<td><code>autoWidth</code></td>
+														<td class="font-weight-semibold">false</td>
+														<td>If set to <code>true</code>, for <code>'inline'</code>, <code>'ajax'</code> and <code>'html'</code> type content height is auto determined. If no dimensions set this may give unexpected results</td>
+													</tr>
+													<tr>
+														<td><code>autoResize</code></td>
+														<td class="font-weight-semibold">!isTouch</td>
+														<td>If set to <code>true</code>, the content will be resized after window resize event</td>
+													</tr>
+													<tr>
+														<td><code>autoCenter</code></td>
+														<td class="font-weight-semibold">!isTouch</td>
+														<td>If set to <code>true</code>, the content will always be centered</td>
+													</tr>
+													<tr>
+														<td><code>fitToView</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>If set to <code>true</code>, fancyBox is resized to fit inside viewport before opening</td>
+													</tr>
+													<tr>
+														<td><code>aspectRatio</code></td>
+														<td class="font-weight-semibold">false</td>
+														<td>If set to <code>true</code>, resizing is constrained by the original aspect ratio (images always keep ratio)</td>
+													</tr>
+													<tr>
+														<td><code>topRatio</code></td>
+														<td class="font-weight-semibold">0.5</td>
+														<td>Top space ratio for vertical centering. If set to <code>0.5</code>, then vertical and bottom space will be equal. If <code>0</code> - fancyBox will be at the viewport top</td>
+													</tr>
+													<tr>
+														<td><code>leftRatio</code></td>
+														<td class="font-weight-semibold">0.5</td>
+														<td>Left space ratio for horizontal centering. If set to <code>0.5</code>, then left and right space will be equal. If <code>0</code> - fancyBox will be at the viewport left</td>
+													</tr>
+													<tr>
+														<td><code>scrolling</code></td>
+														<td class="font-weight-semibold">'auto'</td>
+														<td>Set the overflow CSS property to create or hide scrollbars. Can be set to 'auto', 'yes', 'no' or 'visible'</td>
+													</tr>
+													<tr>
+														<td><code>wrapCSS</code></td>
+														<td class="font-weight-semibold">-</td>
+														<td>Customizable CSS class for wrapping element (useful for custom styling)</td>
+													</tr>
+													<tr>
+														<td><code>arrows</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>If set to <code>true</code>, navigation arrows will be displayed</td>
+													</tr>
+													<tr>
+														<td><code>closeBtn</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>If set to <code>true</code>, close button will be displayed</td>
+													</tr>
+													<tr>
+														<td><code>closeClick</code></td>
+														<td class="font-weight-semibold">false</td>
+														<td>If set to <code>true</code>, fancyBox will be closed when user clicks the content</td>
+													</tr>
+													<tr>
+														<td><code>nextClick</code></td>
+														<td class="font-weight-semibold">false</td>
+														<td>If set to <code>true</code>, will navigate to next gallery item when user clicks the content</td>
+													</tr>
+													<tr>
+														<td><code>mouseWheel</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>If set to <code>true</code>, you will be able to navigate gallery using the mouse wheel</td>
+													</tr>
+													<tr>
+														<td><code>autoPlay</code></td>
+														<td class="font-weight-semibold">false</td>
+														<td>If set to <code>true</code>, slideshow will start after opening the first gallery item</td>
+													</tr>
+													<tr>
+														<td><code>playSpeed</code></td>
+														<td class="font-weight-semibold">3000</td>
+														<td>Slideshow speed in milliseconds</td>
+													</tr>
+													<tr>
+														<td><code>preload</code></td>
+														<td class="font-weight-semibold">3</td>
+														<td>Number of gallery images to preload</td>
+													</tr>
+													<tr>
+														<td><code>modal</code></td>
+														<td class="font-weight-semibold">false</td>
+														<td>If set to <code>true</code>, will disable navigation and closing</td>
+													</tr>
+													<tr>
+														<td><code>loop</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>If set to <code>true</code>, enables cyclic navigation. This means, if you click <code>"next"</code> after you reach the last element, first element will be displayed (and vice versa)</td>
+													</tr>
+													<tr>
+														<td><code>ajax</code></td>
+														<td class="font-weight-semibold">-</td>
+														<td>Options for ajax request: <code>dataType</code> and <code>headers</code></td>
+													</tr>
+													<tr>
+														<td><code>iframe</code></td>
+														<td class="font-weight-semibold">-</td>
+														<td>Options for content type "iframe": <code>scrolling</code> and <code>preload</code></td>
+													</tr>
+													<tr>
+														<td><code>swf</code></td>
+														<td class="font-weight-semibold">-</td>
+														<td>Options for content type "swf": <code>wmode</code>, <code>allowfullscreen</code> and <code>allowscriptaccess</code></td>
+													</tr>
+													<tr>
+														<td><code>keys</code></td>
+														<td class="font-weight-semibold">-</td>
+														<td>Define keyboard keys for gallery navigation, closing and slideshow</td>
+													</tr>
+													<tr>
+														<td><code>direction</code></td>
+														<td class="font-weight-semibold">-</td>
+														<td>Default navigation direction (for navigation arrows, too): <code>next</code> and <code>prev</code></td>
+													</tr>
+													<tr>
+														<td><code>scrollOutside</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>If <code>true</code>, the script will try to avoid horizontal scrolling for iframes and html content</td>
+													</tr>
+													<tr>
+														<td><code>index</code></td>
+														<td class="font-weight-semibold">0</td>
+														<td>Overrides group start index</td>
+													</tr>
+													<tr>
+														<td><code>type</code></td>
+														<td class="font-weight-semibold">null</td>
+														<td>Overrides type for content. Supported types are <code>'image'</code>, <code>'inline'</code>, <code>'ajax'</code>, <code>'iframe'</code>, <code>'swf'</code> and <code>'html'</code></td>
+													</tr>
+													<tr>
+														<td><code>href</code></td>
+														<td class="font-weight-semibold">null</td>
+														<td>Overrides content source link</td>
+													</tr>
+													<tr>
+														<td><code>content</code></td>
+														<td class="font-weight-semibold">null</td>
+														<td>Overrides content to be displayed</td>
+													</tr>
+													<tr>
+														<td><code>title</code></td>
+														<td class="font-weight-semibold">null</td>
+														<td>Overrides title content, accepts any HTML</td>
+													</tr>
+													<tr>
+														<td><code>live</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>If set to <code>true</code>, fancyBox uses <code>"live"</code> to assign click event. Set to <code>false</code>, if you need to apply only to current collection</td>
+													</tr>
+													<tr>
+														<td><code>parent</code></td>
+														<td class="font-weight-semibold">'body'</td>
+														<td>Parent element of the container</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div>
+										<h6 class="font-weight-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="font-weight-semibold">File name</td>
+														<td>fancybox.min.js</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Location</td>
+														<td>global_assets/js/plugins/media/</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Links</td>
+														<td>
+															<p>
+																<a href="http://fancyapps.com/fancybox/" class="btn btn-sm bg-danger-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+
+															<p>
+																<a href="http://fancyapps.com/fancybox/#docs" class="btn btn-sm bg-slate btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-file-text2"></i></b>
+																	Full documentation
+																</a>
+															</p>
+
+															<a href="https://github.com/fancyapps/fancyBox" class="btn btn-sm bg-blue btn-labeled btn-labeled-left" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /fancybox -->
+
+
+							<!-- Bootstrap progress bar -->
+							<div class="card" id="progress">
+								<div class="card-header header-elements-md-inline">
+									<h5 class="card-title">Bootstrap progress bar</h5>
+									<div class="header-elements d-flex justify-content-between">
+										<span class="badge bg-slate">Styling</span>
+										<span class="text-muted mx-3">progressbar.min.js</span>
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+									</div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Overview</h6>
+										<p>Bootstrap progressbar is a jQuery plugin which extends the basic bootstrap progressbar. It provides the ability to animate the progressbar by adding Javascript in combination with the preexisting css transitions. Additionally you can display the current progress information in the bar or get the value via callback.</p>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Usage</h6>
+										<div class="mb-3">
+											<p>Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+											<pre><code class="language-markup">&lt;!-- Load jQuery -->
+&lt;script src="../../../../global_assets/js/main/jquery.min.js">&lt;/script>
+
+&lt;!-- Load Bootstrap -->
+&lt;script src="../../../../global_assets/js/main/bootstrap.min.js">&lt;/script>
+
+&lt;!-- Load plugin -->
+&lt;script src="../../../../global_assets/js/plugins/loaders/progressbar.min.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Set the <code>aria</code> attribute and remove the <code>width</code> style attribute (alternatively you can set it to 0):</p>
+											<pre><code class="language-markup">// Basic markup
+&lt;div class="progress">
+	&lt;div class="progress-bar" data-transitiongoal="75" aria-valuemin="-1337" aria-valuemax="9000">&lt;/div>
+&lt;/div>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Finally call the plugin via JavaScript:</p>
+											<pre><code class="language-javascript">// Initialize
+$('.progress .progress-bar').progressbar({
+	// options
+});
+</code></pre>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Plugin options</h6>
+										<div class="table-responsive mb-3">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Option</th>
+														<th>Default</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>transition_delay</code></td>
+														<td class="font-weight-semibold">300</td>
+														<td>Is the time in milliseconds until the animation starts</td>
+													</tr>
+													<tr>
+														<td><code>refresh_speed</code></td>
+														<td class="font-weight-semibold">50</td>
+														<td>Is the time in milliseconds which will elapse between every text refresh, <code>aria-valuenow</code> attribute update and update callback call</td>
+													</tr>
+													<tr>
+														<td><code>display_text</code></td>
+														<td class="font-weight-semibold">'none'</td>
+														<td>Determines if and where to display text on the progressbar. Possible options: <strong>none</strong>, <strong>fill</strong> and <strong>center</strong></td>
+													</tr>
+													<tr>
+														<td><code>use_percentage</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>If text will be displayed - this option determines whether to show the percentage value or the amount. So if <code>use_percentage</code> is <code>false</code> and <code>aria-valuemin</code> and <code>aria-valuemax</code> are not set (or to 0 and 100) the value will be the same but <code>amount_format</code> will be used to format the result</td>
+													</tr>
+													<tr>
+														<td><code>percent_format</code></td>
+														<td class="font-weight-semibold">function(percent) { return percent + '%'; }</td>
+														<td>Is a function which returns the text format for progressbar with <code>use_percentage: true</code>. It takes 1 argument which is the current percent value</td>
+													</tr>
+													<tr>
+														<td><code>amount_format</code></td>
+														<td class="font-weight-semibold">function(amount_part, amount_total) { return amount_part + ' / ' + amount_total; }</td>
+														<td>Is a function which returns the text format for progressbar with <code>use_percentage: false</code>. It takes 3 argument which are the current-, the max- and the min-amount</td>
+													</tr>
+													<tr>
+														<td><code>update</code></td>
+														<td class="font-weight-semibold">$.noop</td>
+														<td>Is a callback function which will be called while the progressbar is transitioning. Depends on <code>refresh_speed</code>. It takes 2 argument which is the current percent value and a reference to the attached progressbar element</td>
+													</tr>
+													<tr>
+														<td><code>done</code></td>
+														<td class="font-weight-semibold">$.noop</td>
+														<td>Is a callback function which will be called when the transition process is done. It takes 1 argument which is a reference to the attached progressbar element.</td>
+													</tr>
+													<tr>
+														<td><code>fail</code></td>
+														<td class="font-weight-semibold">$.noop</td>
+														<td>Is a callback function which will be called when an error occurs. It takes 1 argument which is the error message</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div>
+										<h6 class="font-weight-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="font-weight-semibold">File name</td>
+														<td>progressbar.min.js</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Location</td>
+														<td>global_assets/js/plugins/loaders/</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Links</td>
+														<td>
+															<p>
+																<a href="http://www.minddust.com/project/bootstrap-progressbar/" class="btn btn-sm bg-danger-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+
+															<p>
+																<a href="http://www.minddust.com/project/bootstrap-progressbar/demo/bootstrap-3-3-4/" class="btn btn-sm bg-teal-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-file-eye"></i></b>
+																	Demonstration
+																</a>
+															</p>
+
+															<a href="https://github.com/minddust/bootstrap-progressbar" class="btn btn-sm bg-blue btn-labeled btn-labeled-left" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /bootstrap progress bar -->
+
+
+							<!-- Ladda buttons -->
+							<div class="card" id="ladda">
+								<div class="card-header header-elements-md-inline">
+									<h5 class="card-title">Ladda buttons</h5>
+									<div class="header-elements d-flex justify-content-between">
+										<span class="badge bg-slate">Styling</span>
+										<span class="text-muted mx-3">ladda.min.js</span>
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+									</div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Overview</h6>
+										<p>A UI concept which merges loading indicators into the action that invoked them. Primarily intended for use with forms where it gives users immediate feedback upon submit rather than leaving them wondering while the browser does its thing</p>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Usage</h6>
+										<p><strong class="text-warning-400">Note</strong>: You need to include both <code>ladda.min.js</code> and <code>spin.min.js</code> files, because these 2 libraries work together.</p>
+										<p>Ladda buttons must be given the class ladda-button and the button label needs to have the ladda-label class. The ladda-label will be automatically created if it does not exist in the DOM. Below is an example of a button which will use the expand-right animation style:</p>
+
+										<div class="mb-3">
+											<pre><code class="language-markup">&lt;!-- Markup -->
+&lt;button class="ladda-button" data-style="expand-right">
+	&lt;span class="ladda-label">Submit&lt;/span>
+&lt;/button>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>If you will be using the loading animation for a form that is submitted to the server (always resulting in a page reload) you can use the <code>ladda('bind')</code> method:</p>
+											<pre><code class="language-javascript">// Automatically trigger the loading animation on click
+$( 'input[type=submit]' ).ladda( 'bind' );
+
+// Same as the above but automatically stops after two seconds
+$( 'input[type=submit]' ).ladda( 'bind', { timeout: 2000 } );</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>If you want JavaScript control over your buttons you can use the following approach:</p>
+											<pre><code class="language-javascript">// Create a new instance of ladda for the specified button
+var l = $( '.my-button' ).ladda();
+
+// Start loading
+l.ladda( 'start' );
+
+// Will display a progress bar for 50% of the button width
+l.ladda( 'setProgress', 0.5 );
+
+// Stop loading
+l.ladda( 'stop' );
+
+// Toggle between loading/not loading states
+l.ladda( 'toggle' );
+
+// Check the current state
+l.ladda( 'isLoading' );
+
+// Stop all loading animations
+$.ladda( 'stopAll' );</code></pre>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Options</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th class="col-xs-3">Option</th>
+														<th class="col-xs-3">Value</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>data-style</code></td>
+														<td>
+															<span class="font-weight-semibold">expand-* (left, right, up, down)</span>
+															<br><span class="font-weight-semibold">slide-* (left, right, up, down)</span>
+															<br><span class="font-weight-semibold">contract, contract-overlay</span>
+															<br><span class="font-weight-semibold">zoom-in, zoom-out</span>
+														</td>
+														<td>One of the button styles. This option is required</td>
+													</tr>
+													<tr>
+														<td><code>data-spinner-size</code></td>
+														<td><span class="font-weight-semibold">40</span></td>
+														<td>Pixel dimensions of spinner, defaults to dynamic size based on the button height</td>
+													</tr>
+													<tr>
+														<td><code>data-spinner-color</code></td>
+														<td><span class="font-weight-semibold">true</span></td>
+														<td>A hex code or any named CSS color</td>
+													</tr>
+													<tr>
+														<td><code>data-spinner-lines</code></td>
+														<td><span class="font-weight-semibold">12</span></td>
+														<td>The number of lines the for the spinner, defaults to 12</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div>
+										<h6 class="font-weight-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="font-weight-semibold">File name</td>
+														<td>ladda.min.js, spin.min.js</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Location</td>
+														<td>global_assets/js/plugins/buttons/</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Links</td>
+														<td>
+															<p>
+																<a href="http://lab.hakim.se/ladda/" class="btn btn-sm bg-danger-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+
+															<a href="https://github.com/hakimel/Ladda" class="btn btn-sm bg-blue btn-labeled btn-labeled-left" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /ladda buttons -->
+
+
+							<!-- Dragula -->
+							<div class="card" id="dragula">
+								<div class="card-header header-elements-md-inline">
+									<h5 class="card-title">Dragula - drag and drop</h5>
+									<div class="header-elements d-flex justify-content-between">
+										<span class="badge bg-slate">UI</span>
+										<span class="text-muted mx-3">dragula.min.js</span>
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+									</div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Overview</h6>
+										<p class="mb-3">Dragula - drag and drop library that just works. It doesn't just depend on bloated frameworks and actually understands where to place the elements when they are dropped. And it doesn't need you to do a zillion things to get it to work. Dragula provides the easiest possible API to make drag and drop a breeze in your applications. Key library features:</p>
+
+										<ul class="list">
+											<li>Super easy to set up</li>
+											<li>No bloated dependencies</li>
+											<li><strong>Figures out sort order</strong> on its own</li>
+											<li>A shadow where the item would be dropped offers <strong>visual feedback</strong></li>
+											<li>Touch events!</li>
+											<li>Seamlessly handles clicks without any configuration</li>
+										</ul>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Usage</h6>
+										<div class="mb-3">
+											<p>Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+											<pre><code class="language-markup">&lt;!-- Load plugin -->
+&lt;script src="../../../../global_assets/js/plugins/ui/dragula.min.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>By default, dragula will allow the user to drag an element in any of the containers and drop it in any other container in the list. If the element is dropped anywhere that's not one of the containers, the event will be gracefully cancelled according to the <code>revertOnSpill</code> and <code>removeOnSpill</code> options.</p>
+											<pre><code class="language-markup">&lt;!-- Left container -->
+&lt;div id="left">
+	...
+&lt;/div>
+&lt;!-- /left container -->
+
+&lt;!-- Right container -->
+&lt;div id="right">
+	...
+&lt;/div>
+&lt;!-- /right container -->
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<div class="mb-3">
+												<p>Call the plugin via JavaScript:</p>
+												<pre><code class="language-javascript">// Initialize
+dragula([
+	document.querySelector('#left'),
+	document.querySelector('#right')
+]);
+</code></pre>
+											</div>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Plugin options</h6>
+										<p>You can also provide an options object. Here's an overview of the <strong>default values</strong>:</p>
+
+										<pre><code class="language-javascript">// Defaults
+dragula(containers, {
+	isContainer: function (el) {
+		return false; // only elements in drake.containers will be taken into account
+	},
+	moves: function (el, source, handle, sibling) {
+		return true; // elements are always draggable by default
+	},
+	accepts: function (el, target, source, sibling) {
+		return true; // elements can be dropped in any of the `containers` by default
+	},
+	invalid: function (el, target) {
+		return false; // don't prevent any drags from initiating by default
+	},
+	direction: 'vertical',             // Y axis is considered when determining where an element would be dropped
+	copy: false,                       // elements are moved by default, not copied
+	copySortSource: false,             // elements in copy-source containers can be reordered
+	revertOnSpill: false,              // spilling will put the element back where it was dragged from, if this is true
+	removeOnSpill: false,              // spilling will `.remove` the element, if this is true
+	mirrorContainer: document.body,    // set the element that gets mirror elements appended
+	ignoreInputTextSelection: true     // allows users to select input text, see details below
+});
+</code></pre>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Plugin options</h6>
+										<div class="table-responsive">
+											<table class="table table-striped table-bordered table-sm">
+											    <thead>
+											        <tr>
+											            <th style="width: 290px;">Option</th>
+											            <th>Description</th>
+											        </tr>
+											    </thead>
+											    <tbody>
+											        <tr>
+											            <td><code>options.containers</code></td>
+											            <td>Setting this option is effectively the same as passing the containers in the first argument to <code>dragula(containers, options)</code></td>
+											        </tr>
+											        <tr>
+											            <td><code>options.isContainer</code></td>
+											            <td>Besides the containers that you pass to dragula, or the containers you dynamically push or unshift from <code>drake.containers</code>, you can also use this method to specify any sort of logic that defines what is a container for this particular <code>drake</code> instance.</td>
+											        </tr>
+											        <tr>
+											            <td><code>options.moves</code></td>
+											            <td>You can define a <code>moves</code> method which will be invoked with (<code>el</code>, <code>source</code>, <code>handle</code>, <code>sibling</code>) whenever an element is clicked. If this method returns <code>false</code>, a drag event won't begin, and the event won't be prevented either. The <code>handle</code> element will be the original click target, which comes in handy to test if that element is an expected "drag handle".</td>
+											        </tr>
+											        <tr>
+											            <td><code>options.accepts</code></td>
+											            <td>You can set <code>accepts</code> to a method with the following signature: (<code>el</code>, <code>target</code>, <code>source</code>, <code>sibling</code>). It'll be called to make sure that an element <code>el</code>, that came from container <code>source</code>, can be dropped on container target before a sibling element. The <code>sibling</code> can be <code>null</code>, which would mean that the element would be placed as the last element in the container</td>
+											        </tr>
+											        <tr>
+											            <td><code>options.copy</code></td>
+											            <td>If <code>copy</code> is set to <code>true</code> (or a method that returns <code>true</code>), items will be copied rather than moved</td>
+											        </tr>
+											        <tr>
+											            <td><code>options.copySortSource</code></td>
+											            <td>If <code>copy</code> is set to <code>true</code> (or a method that returns <code>true</code>) and <code>copySortSource</code> is <code>true</code> as well, users will be able to sort elements in copy-source containers</td>
+											        </tr>
+											        <tr>
+											            <td><code>options.revertOnSpill</code></td>
+											            <td>By default, spilling an element outside of any containers will move the element back to the drop position previewed by the feedback shadow. Setting <code>revertOnSpill</code> to <code>true</code> will ensure elements dropped outside of any approved containers are moved back to the source element where the drag event began, rather than stay at the drop position previewed by the feedback shadow</td>
+											        </tr>
+											        <tr>
+											            <td><code>options.removeOnSpill</code></td>
+											            <td>By default, spilling an element outside of any containers will move the element back to the drop position previewed by the feedback shadow. Setting <code>removeOnSpill</code> to <code>true</code> will ensure elements dropped outside of any approved containers are removed from the DOM</td>
+											        </tr>
+											        <tr>
+											            <td><code>options.direction</code></td>
+											            <td>When an element is dropped onto a container, it'll be placed near the point where the mouse was released. If the <code>direction</code> is <code>'vertical'</code>, the default value, the Y axis will be considered. Otherwise, if the direction is <code>'horizontal'</code>, the X axis will be considered</td>
+											        </tr>
+											        <tr>
+											            <td><code>options.invalid</code></td>
+											            <td>You can provide an <code>invalid</code> method with a (<code>el</code>, <code>target</code>) signature. This method should return <code>true</code> for elements that shouldn't trigger a drag</td>
+											        </tr>
+											        <tr>
+											            <td><code>options.mirrorContainer</code></td>
+											            <td>The DOM element where the mirror element displayed while dragging will be appended to. Defaults to <code>document.body</code></td>
+											        </tr>
+											        <tr>
+											            <td><code>options.ignoreInputTextSelection</code></td>
+											            <td>When this option is enabled, if the user clicks on an input element the drag won't start until their mouse pointer exits the input. This translates into the user being able to select text in inputs contained inside draggable elements, and still drag the element by moving their mouse outside of the input -- so you get the best of both worlds</td>
+											        </tr>
+											    </tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Plugin events</h6>
+										<div class="table-responsive">
+											<table class="table table-striped table-bordered table-sm">
+												<thead>
+													<tr>
+														<th style="width: 200px;">Event Name</th>
+														<th style="width: 270px;">Listener Arguments</th>
+														<th>Event Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>drag</code></td>
+														<td><code>el, source</code></td>
+														<td><code>el</code> was lifted from <code>source</code></td>
+													</tr>
+													<tr>
+														<td><code>dragend</code></td>
+														<td><code>el</code></td>
+														<td>Dragging event for <code>el</code> ended with either <code>cancel</code>, <code>remove</code>, or <code>drop</code></td>
+													</tr>
+													<tr>
+														<td><code>drop</code></td>
+														<td><code>el, target, source, sibling</code></td>
+														<td><code>el</code> was dropped into <code>target</code> before a <code>sibling</code> element, and originally came from <code>source</code></td>
+													</tr>
+													<tr>
+														<td><code>cancel</code></td>
+														<td><code>el, container, source</code></td>
+														<td><code>el</code> was being dragged but it got nowhere and went back into <code>container</code>, its last stable parent; <code>el</code> originally came from <code>source</code></td>
+													</tr>
+													<tr>
+														<td><code>remove</code></td>
+														<td><code>el, container, source</code></td>
+														<td><code>el</code> was being dragged but it got nowhere and it was removed from the DOM. Its last stable parent was <code>container</code>, and originally came from <code>source</code></td>
+													</tr>
+													<tr>
+														<td><code>shadow</code></td>
+														<td><code>el, container, source</code></td>
+														<td><code>el</code>, <em>the visual aid shadow</em>, was moved into <code>container</code>. May trigger many times as the position of <code>el</code> changes, even within the same <code>container</code>; <code>el</code> originally came from <code>source</code></td>
+													</tr>
+													<tr>
+														<td><code>over</code></td>
+														<td><code>el, container, source</code></td>
+														<td><code>el</code> is over <code>container</code>, and originally came from <code>source</code></td>
+													</tr>
+													<tr>
+														<td><code>out</code></td>
+														<td><code>el, container, source</code></td>
+														<td><code>el</code> was dragged out of <code>container</code> or dropped, and originally came from <code>source</code></td>
+													</tr>
+													<tr>
+														<td><code>cloned</code></td>
+														<td><code>clone, original, type</code></td>
+														<td>DOM element <code>original</code> was cloned as <code>clone</code>, of <code>type</code> <em>(<code>'mirror'</code> or <code>'copy'</code>)</em>. Fired for mirror images and when <code>copy: true</code></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div>
+										<h6 class="font-weight-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="font-weight-semibold">File name</td>
+														<td>dragula.min.js</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Location</td>
+														<td>global_assets/js/plugins/ui/</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Links</td>
+														<td>
+															<p>
+																<a href="http://bevacqua.github.io/dragula/" class="btn btn-sm bg-danger-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+
+															<a href="https://github.com/bevacqua/dragula" class="btn btn-sm bg-blue btn-labeled btn-labeled-left" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /dragula -->
+
+					</div>
+					<!-- /left content -->
+
+
+					<!-- Right sidebar component -->
+					<div class="sidebar-sticky w-100 w-md-auto order-1 order-md-2">
+						<div class="sidebar sidebar-light sidebar-component sidebar-component-right sidebar-expand-md mb-3">
+							<div class="sidebar-content">
+								<div class="card">
+									<div class="card-header bg-transparent header-elements-inline">
+										<span class="text-uppercase font-size-sm font-weight-semibold">Page navigation</span>
+										<div class="header-elements">
+											<div class="list-icons">
+						                		<a class="list-icons-item" data-action="collapse"></a>
+					                		</div>
+				                		</div>
+									</div>
+
+									<div class="card-body">
+										<a href="http://themeforest.net/user/kopyov" class="btn bg-blue btn-block" target="_blank"><i class="icon-reading mr-2"></i> Contact author</a>
+									</div>
+
+									<ul class="nav nav-sidebar nav-scrollspy" data-nav-type="accordion">
+										<li class="nav-item-header pt-0"><div class="text-uppercase font-size-xs line-height-xs">Sections</div> <i class="icon-menu"></i></li>
+										<li class="nav-item"><a href="#fancytree" class="nav-link">Fancytree</a></li>
+										<li class="nav-item"><a href="#fullcalendar" class="nav-link">Full Calendar</a></li>
+										<li class="nav-item"><a href="#headroom" class="nav-link">Headroom</a></li>
+										<li class="nav-item"><a href="#sticky" class="nav-link">Sticky kit</a></li>
+										<li class="nav-item"><a href="#slinky" class="nav-link">Slinky</a></li>
+										<li class="nav-item"><a href="#ps" class="nav-link">Perfect scrollbar</a></li>
+										<li class="nav-item"><a href="#ion" class="nav-link">Ion Range Sliders</a></li>
+										<li class="nav-item"><a href="#noui" class="nav-link">NoUI Sliders</a></li>
+										<li class="nav-item"><a href="#cropper" class="nav-link">Image Cropper</a></li>
+										<li class="nav-item"><a href="#fancybox" class="nav-link">Fancybox Lightbox</a></li>
+										<li class="nav-item"><a href="#progress" class="nav-link">Bootstrap Progress Bars</a></li>
+										<li class="nav-item"><a href="#ladda" class="nav-link">Ladda Buttons</a></li>
+										<li class="nav-item"><a href="#dragula" class="nav-link">Dragula</a></li>
+										<li class="nav-item-divider"></li>
+										<li class="nav-item"><a href="#" class="nav-link">Go to top <i class="icon-circle-up2 mr-0 ml-auto"></i></a></li>
+									</ul>
+								</div>
+				            </div>
+						</div>
+					</div>
+					<!-- /right sidebar component -->
+
+				</div>
+				<!-- /inner container -->
+
+			</div>
+			<!-- /content area -->
+
+
+			<!-- Footer -->
+			<div class="navbar navbar-expand-lg navbar-light">
+				<div class="text-center d-lg-none w-100">
+					<button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse" data-target="#navbar-footer">
+						<i class="icon-unfold mr-2"></i>
+						Footer
+					</button>
+				</div>
+
+				<div class="navbar-collapse collapse" id="navbar-footer">
+					<span class="navbar-text">
+						&copy; 2015 - 2018. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
+					</span>
+
+					<ul class="navbar-nav ml-lg-auto">
+						<li class="nav-item"><a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov" class="navbar-nav-link font-weight-semibold"><span class="text-pink-400"><i class="icon-cart2 mr-2"></i> Purchase</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /footer -->
+
+		</div>
+		<!-- /main content -->
+
+	</div>
+	<!-- /page content -->
+
+</body>
+</html>

@@ -1,0 +1,255 @@
+           <!-- START JUMBOTRON -->
+           <div class="jumbotron">
+              <pg-container extraHorizontalClass="p-l-0 p-r-0">
+                <div class="inner" pg-parallax>
+                  <!-- START BREADCRUMB -->
+                  <pg-breadcrumb>
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="javascript:void(0);">UI Elements</a></li>
+                      <li class="breadcrumb-item active">Sliders</li>
+                    </ol>
+                  </pg-breadcrumb>
+                  <!-- END BREADCRUMB --> 
+                  <div class="container-md-height m-b-20">
+                    <div class="row">
+                      <div class="col-xl-7 col-lg-6 bg-white">
+                        <!-- START card -->
+                        <div class="full-height">
+                          <div class="card-body text-center">
+                            <img class="image-responsive-height demo-mw-300" src="assets/img/demo/slider_hero.gif" alt="">
+                          </div>
+                        </div>
+                        <!-- END card -->
+                      </div>
+                      <div class="col-xl-5 col-lg-6">
+                        <!-- START card -->
+                        <div class="card card-transparent">
+                          <div class="card-header ">
+                            <div class="card-title">Getting started
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <h3>Sometimes small things matter the most in life!</h3>
+                            <p>A slider, also known as a track bar, allows users to set or adjust a value. When the user changes the value, it does not change the format of the interface or other info on the screen.</p>
+                            <br>
+                            <div>
+                              <div class="profile-img-wrapper m-t-5 inline">
+                                <img width="35" height="35" src="assets/img/profiles/avatar_small.jpg" alt="" pgRetina src1x="assets/img/profiles/avatar_small.jpg" src2x="assets/img/profiles/avatar_small2x.jpg">
+                                <div class="chat-status available">
+                                </div>
+                              </div>
+                              <div class="inline m-l-10">
+                                <p class="small hint-text m-t-5">VIA senior product manage
+                                  <br> for UI/UX at REVOX</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- END card -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </pg-container>
+            </div>
+            <!-- END JUMBOTRON -->
+            <!-- START CONTAINER FLUID -->
+            <pg-container>
+              <div class="row">
+                <div class="col-md-5">
+                  <!-- START card -->
+                  <div class="card card-transparent">
+                    <div class="card-header ">
+                      <div class="card-title">Pages slider
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <p class="m-b-20">Pages is a range slider without bloat. It offers a ton off features, and it is as small, lightweight and minimal as possible, which is great for mobile use on the many supported devices.
+                        <br>
+                        <br>
+                      </p>
+                      <div class="col-lg-8 disable-hover-scale no-padding m-t-20">
+                        <div class="bg-master m-b-10" id="slider-tooltips"></div>
+
+                        <pg-slider [DefaultValue]="30" Tooltip="true" TooltipForceVisiblity="true"></pg-slider>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- END card -->
+                </div>
+                <div class="col-md-7">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <!-- START card -->
+                      <div class="card card-transparent">
+                        <div class="card-header ">
+                          <div class="card-title">Responsive All Around
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <p>Pages works with pretty much any device, mouse, touchscreen or both, and it'll work beautifully in responsive designs.</p>
+                          <br>
+                          <div class="row">
+                            <div class="col-md-12">
+                              <a href="https://docs.pages.revox.io/v/angular/ui-components/sliders" target="_blank" class="btn btn-complete">See Plugin</a>
+                              <p class="small hint-text m-t-20 col-middle">
+                                see the plugin for uiSlider
+                                <br> https://docs.pages.revox.io/v/angular/ui-components/sliders
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- END card -->
+                    </div>
+                    <div class="col-md-6">
+                      <!-- START card -->
+                      <div class="card card-transparent">
+                        <div class="card-header ">
+                          <div class="card-title">Compatible with all browsers
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <p>Pages Sliders supports IE9 and up, and of course the latest versions of the 'evergreen' browsers: Chrome, Safari, Firefox and Opera.</p>
+                        </div>
+                      </div>
+                      <!-- END card -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- START card -->
+              <div class="card card-transparent">
+                <div class="card-header ">
+                  <div class="card-title">Slider options
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="card card-transparent">
+                        <div class="card-body no-top-padding">
+                          <h5>Connect</h5>
+                          <p>Basic slider with different color options, use of the below classes to quickly create a styled slider. Uses native boostrap colors scheme classes
+                          </p>
+                          <div class="row">
+                            <div class="col-lg-5 col-xl-5 padding-20">
+                              <pg-slider [DefaultValue]="90" ></pg-slider>
+                              <br>
+                              <pg-slider [DefaultValue]="70" [Color]="'danger'" ></pg-slider>
+                              <br>
+                              <pg-slider [DefaultValue]="20" [Color]="'warning'" ></pg-slider>
+                              <br>
+                              <pg-slider [DefaultValue]="50" [Color]="'success'" ></pg-slider>
+                              <br>
+                              <pg-slider [DefaultValue]="30" [Color]="'complete'" ></pg-slider>
+                              <br>
+                              <pg-slider [DefaultValue]="50" [Color]="'primary'" ></pg-slider>
+                              <br>
+                            </div>
+                            <div class="col-lg-5">
+                              <p class="small hint-text">All the colours included in pages color pallete is applicable to the default pages slider.</p>
+                              <a href="javascript:void(0)" class="btn btn-warning">See color Pallete</a>
+                            </div>
+                          </div>
+                          <br>
+                          <p>The slider variations are made by the ciours included as the base clours excluding the menue base color.</p>
+                        </div>
+                      </div>
+                      <div class="card card-transparent">
+                        <div class="card-body no-top-padding">
+                          <h5>Limit</h5>
+                          <p>The limit option is the oposite of the margin option, limiting the maximum distance between two handles. As with the margin option, the limit option can only be used on linear sliders.</p>
+                          <div class="row">
+                            <div class="col-md-5 padding-20">
+                              <pg-slider [Color]="'success'" [(ngModel)]="value2" [Min]="1" [Max]="20" ></pg-slider>
+                              <div class="m-t-10">{{value2}}</div>
+                            </div>
+                            <div class="col-lg-5">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card card-transparent">
+                        <div class="card-body no-top-padding">
+                          <h5>Step</h5>
+                          <p>By default, the slider slides fluently. In order to make the handles jump between intervals, you can use this option. The step option is relative to the values provided to range.
+                          </p>
+                          <div class="row">
+                            <div class="col-md-5 padding-20">
+                                <pg-slider Range [Color]="'danger'" [(ngModel)]="rangeValue" [Step]="10" [DefaultValue]="[20, 50]"></pg-slider>
+                                <div class="m-t-10">{{rangeValue}}</div>
+                            </div>
+                            <div class="col-lg-5">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card card-transparent">
+                        <div class="card-body no-top-padding">
+                          <h5>Connect</h5>
+                          <p>The connect setting can be used to control the bar between the handles, or the edges of the slider. Use "lower" to connect to the lower side, or "upper" to connect to the upper side. Setting true sets the bar between the handles.
+                          </p>
+                          <div class="row">
+                            <div class="col-md-5 padding-20">
+                              <pg-slider [DefaultValue]="50" [Color]="'primary'" [(ngModel)]="value1"></pg-slider>
+                              <br>
+                              <pg-slider [DefaultValue]="50" [Color]="'complete'" [(ngModel)]="value1"></pg-slider>
+                            </div>
+                            <div class="col-lg-5 d-flex align-items-center">
+                                <div class="form-group" style="width:50px">
+                                  <input type="text" placeholder="" class="form-control" [(ngModel)]="value1">
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card card-transparent">
+                        <div class="card-body no-top-padding">
+                          <h5>Labeled</h5>
+                          <p>Option to segment and label the sliders with specific positions. You will have the ability to step to segment or free form slide as show in the examples.
+                          </p>
+                          <div class="m-b-15 p-b-10">
+                              <p>Enable stepping with markers by adding <code>Step</code> attribute</p> 
+                              <div class="col-lg-8 p-t-15">
+                              <pg-slider [Marks]="marks" [Step]="10" [DefaultValue]="37" [Color]="'success'"></pg-slider>
+                              </div>
+                          </div>
+
+                          <div class="m-b-15 p-b-10">
+                              <p>Allowing snap to markers can be adding <code>Dots</code> attribute</p> 
+                              <div class="col-lg-8 p-t-15">
+                              <pg-slider [Marks]="marks" Dots [DefaultValue]="26" [Color]="'danger'"></pg-slider>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="card card-transparent">
+                          <div class="card-body no-top-padding">
+                            <h5>Orientation</h5>
+                            <p>The orientation setting can be used to set the slider to "vertical" or "horizontal".Set dimensions! Vertical sliders don't assume a default height, so you'll need to set one. You can use any unit you want, including % or px.
+                            </p>
+                            <div class="row">
+                              <div class="col-md-5 padding-20 d-flex">
+                                <div [ngStyle]="{ height: '150px' }">
+                                  <pg-slider Vertical [DefaultValue]="30"></pg-slider>
+                                </div>
+                                <div [ngStyle]="{ height: '150px' }">
+                                    <pg-slider Vertical Range [Color]="'danger'" [Step]="10" [DefaultValue]="[20, 50]"></pg-slider>
+                                  </div>
+                              </div>
+                              <div class="col-lg-5">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </pg-container>
+            <!-- END CONTAINER FLUID -->

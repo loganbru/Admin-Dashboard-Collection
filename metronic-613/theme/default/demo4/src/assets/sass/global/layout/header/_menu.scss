@@ -1,0 +1,156 @@
+//
+// Header Menu
+//
+
+
+
+
+// Build desktop menu
+@include kt-menu-hor-build-layout(kt-get($kt-header-config, menu, desktop));
+@include kt-menu-hor-build-skin(kt-get($kt-header-config, menu, desktop), default);
+
+// Build mobile menu
+@include kt-menu-ver-build-layout(kt-get($kt-header-config, menu, tablet-and-mobile));
+@include kt-menu-ver-build-skin(kt-get($kt-header-config, menu, tablet-and-mobile), default);
+
+// Header menu mobile offcanvas
+@include kt-offcanvas-build(kt-header-menu-wrapper, tablet-and-mobile, kt-get($kt-header-config, menu, offcanvas-mobile));
+
+// General mode
+.kt-header-menu-wrapper {
+	.kt-header-toolbar {
+		.btn.btn-custom {
+			background-color: #e7e8ef;
+			border-color: #e7e8ef;
+			color: #68667f;
+			font-size: 0.95rem;
+			font-weight: 600;
+			padding: 0.75rem 2rem;
+			text-transform: uppercase;
+
+			.show > &,
+	  		&.active,
+	  		&:active,
+	  		&:hover {
+				background-color: darken(#e7e8ef, 3%);
+				border-color: darken(#e7e8ef, 3%);
+				color: lighten(#68667f, 3%);
+			}
+		}
+	}
+}
+
+// Desktop mode(1024px and above)
+@include kt-desktop() {
+	// Header default mode
+	.kt-header-menu-wrapper {
+		display: flex;
+		width: 100%;
+		align-items: center;
+		justify-content: space-between;
+		margin-left: 40px;
+
+		// Menu
+		.kt-header-menu {
+			.kt-menu__nav {
+				> .kt-menu__item {
+					// Link
+					> .kt-menu__link {
+						padding: 0.75rem 1.25rem;
+
+						@include kt-rounded {
+							border-radius: $kt-border-radius;
+						}
+					}
+
+					// Active state
+					&.kt-menu__item--here,
+					&.kt-menu__item--active {
+						> .kt-menu__link {
+							background-color: rgba(#fff, 0.1);
+						}
+					}
+
+					// Hover state
+					&:hover,
+					&.kt-menu__item--open,
+					&.kt-menu__item--hover {
+						> .kt-menu__link {
+							background-color: rgba(#fff, 0.1);
+						}
+					}
+				}
+			}
+		}
+	}	
+
+	// Header minimize mode
+	.kt-header--fixed.kt-header--minimize {
+		.kt-header-menu-wrapper  {
+			.kt-header-menu {
+				.kt-menu__nav {
+					> .kt-menu__item {
+						// Link
+						> .kt-menu__link {
+							> .kt-menu__link-icon {
+								color: lighten(#6c7293, 3%);
+							}
+
+							> .kt-menu__link-text {
+								color: #6c7293;
+							}
+
+							> .kt-menu__link-arrow {
+								color: lighten(#6c7293, 3%);
+							}
+						}
+
+						// Active state
+						&.kt-menu__item--here,
+						&.kt-menu__item--active {
+							> .kt-menu__link {
+								background-color: #f8f8fb;
+							}
+						}
+
+						// Hover state
+						&:hover,
+						&.kt-menu__item--open,
+						&.kt-menu__item--hover {
+							> .kt-menu__link {
+								background-color: #f8f8fb;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// Media range(above 1024px and below 1200px)
+@include kt-media-range(lg, xl) {
+	.kt-header-menu-wrapper {
+		.kt-header-menu {
+			.kt-menu__nav {
+				> .kt-menu__item {
+					> .kt-menu__link {
+						padding: 0.75rem 0.75rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+// Tablet and mobile mode(1024px and below)
+@include kt-media-below(lg) {
+	.kt-header-menu-wrapper {
+		.kt-header-menu {
+			.kt-menu__nav {
+				margin-bottom: 0;
+				padding-bottom: 10px;
+			}
+		}
+	}
+}

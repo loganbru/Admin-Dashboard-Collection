@@ -1,0 +1,15 @@
+{
+  "public": "_site",
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/metronic/preview/react"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/metronic/preview/react/**",
+      "destination": "/metronic/preview/react/index.html"
+    }
+  ]
+}

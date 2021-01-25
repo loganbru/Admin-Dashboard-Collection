@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+    <title>Simulor - Responsive Admin Dashboard Template | Coderthemes </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+    <meta content="Coderthemes" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+	<!-- Google-Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:100,300,400,600,700,900,400italic' rel='stylesheet'>
+
+	<!-- Bootstrap Core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="css/prettify.css" />
+
+	<!-- Custom CSS -->
+	<link href="css/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<h3 class="pull-right label label-danger">v1.0.0</h3>
+			<a class="navbar-brand" href="#">Simulor Documentation</a>
+		</div><!-- /.container-fluid -->
+	</nav>
+
+	<div id="wrapper">
+
+		<!-- Sidebar -->
+		<div id="sidebar-wrapper">
+			<ul class="sidebar-nav">
+				<li>
+					<a href="#intro">Introduction</a>
+				</li>
+				<li>
+					<a href="#structure">Structure</a>
+				</li>
+				<li>
+					<a href="#getstarted">Getting Started</a>
+				</li>
+				<li>
+					<a href="#layouts">Layouts</a>
+				</li>
+				<li>
+					<a href="#credits">Credits</a>
+				</li>
+				<li>
+					<a href="#support">Support</a>
+				</li>
+				<li><a href="#changelog">Change Log</a></li>
+			</ul>
+		</div>
+		<!-- /#sidebar-wrapper -->
+
+		<!-- Page Content -->
+		<div id="page-content-wrapper">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="right-bar">
+
+							<div  class="com-container">
+
+								<div id="intro" class="com-container">
+									<h3 class="page-header">Thank you very much for your purchase!</h3>
+									<div class="p-t-20">
+											<div class="alert alert-info alert-dismissable">
+												<p>If you have any questions that are beyond the scope of this documentation, please feel free to email or contact us via my page.</p>
+											</div>
+									</div>
+								</div>
+
+								<a href="//1.envato.market/c/417428/377370/4662"><img src="//a.impactradius-go.com/display-ad/4662-377370" border="0" alt="" width="728" height="90"/></a><img height="0" width="0" src="//1.envato.market/i/417428/377370/4662" style="position:absolute;visibility:hidden;" border="0" />
+
+								<h4 class="page-header">Introduction</h4>
+
+								<p>Simulor is a premium and multi featured bootstrap 4 admin template with flat design. It is built using html5, css3 and other modern frontend technologies. The flexibility around choosing the layout options and great collection of reusable widgets, components, elements etc allows you to easily build a web application including custom admin panel, project management system, crm, cms, etc. It is fully responsive and works on all major web browsers, desktop and all smart phone devices.
+								</p>
+								<p>
+									We really care for our buyers and so in case if you have any question or feedback, please feel free to get back to us.
+								</p>
+
+
+
+									<div id="structure" class="com-container">
+										<h4 class="page-header">Structure</h4>
+										<p>I have tried to follow the standards and modular structure while developing the theme. Following sections are explaining the theme File &amp; Folder, structure, html file struture and plugins.</p>
+
+										<div class="row p-t-20">
+											<div class="col-sm-12">
+												<h4>File &amp; Folder Structure</h4>
+												<hr/>
+
+												<pre class="prettyprint">
+
+├── dist
+│   └── assets
+│          └── fonts
+│          └── images
+│   └── css
+│   └── js
+│   └── Html Files
+├── src/
+│   └── assets
+│          └── fonts
+│          └── images
+│   └── html
+│   └── js
+│   └── scss
+├── gulpfile.js
+├── package.json
+└── package-lock.json
+
+</pre>
+										
+
+											<div class="row">
+												<div class="col-sm-12 p-t-30">
+													<h4>HTML Structure</h4>
+													<hr/>
+													<p>
+														<iframe src="html_str.html" width="100%" height="1040" style="border: none"></iframe>
+													</p>
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-sm-12 p-t-30">
+													<h4>CSS &amp; SCSS</h4>
+													<hr/>
+													
+													<p class="m-t-20">
+	                                                    Scss is a CSS pre-processor and it extends the CSS language, adding features that allow variables, functions and many other techniques that allow you to make CSS that is more maintainable, themable and extendable. Scss runs inside Node, in the browser and inside Rhino.
+	                                                </p>
+	                                                <!-- <p>
+	                                                    All the css files are pre-compiled using less compiler and provided inside the <code>assets/css/</code> folder. In case if you are not familiar with less or
+	                                                    don't have any environment setup which can be used to compile the less files, then you can use these CSS files directly.
+	                                                    But if you are familiar with less, then I'll suggest you to use the less files.
+	                                                </p> -->
+	                                                <p>Files are explained below: </p>
+
+	                                                <table class="table table-bordered m-0">
+														<thead>
+															<tr>
+																<th style="width: 20%;"><i class="ti-file"></i> File</th>
+																<th>Description</th>
+															</tr>
+														</thead>
+														<tbody>
+
+															<tr>
+																<td>
+	                                                                <code>app.scss</code>/<code>app.css</code>
+	                                                            </td>
+	                                                            <td>
+	                                                                This is main style file. The scss version is importing all the custom scss files. Each of the scss file is containing style for
+	                                                                speicic element. E.g Buttons, checkbox, icons, forms, etc.
+	                                                            </td>
+															</tr>
+															
+
+	                                                    </tbody>
+	                                                </table>
+
+	                                                
+												</div>
+											</div>
+
+
+										</div>
+
+										<div class="col-sm-12 p-t-30">
+												<h4>Javascript</h4>
+												<hr/>
+												<p class="m-t-20">
+                                                    Simulor uses jQuery, Bootstrap JS framework(at its core) and some of the third-party plugins. There are may more third party plugin which you can use according to your needs. The css is already containing matching style for these plugins so you will not need to do anything around it.
+                                                </p>
+
+                                                <p>Files are explained below: </p>
+
+                                                <table class="table table-bordered m-0">
+													<thead>
+														<tr>
+															<th style="width: 20%;"><i class="ti-file"></i> File</th>
+															<th>Description</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>
+                                                                <code>vendor.js / vendor.min.js</code>
+
+                                                            </td>
+                                                            <td>
+                                                                These file are used at core of the theme.
+                                                            </td>
+														</tr>
+                                                        <tr>
+															<td>
+                                                                <code>app.js</code>
+                                                            </td>
+                                                            <td>
+                                                                This is a main js file. It contains the custom JS code needed for features including
+                                                                layout, sidebar, etc.
+                                                                Also it contains the definition of some of the key components (e.g. notifications, portlet, etc) and code (for self-initialization) related to some of the controls (e.g. modal, range-slider, switchery, multiselect, etc).
+                                                            </td>
+														</tr>
+
+                                                        <tr>
+															<td>
+                                                                <code>*.js</code>
+                                                            </td>
+                                                            <td>
+                                                                These are the files containing pages specific code. They are mainly used for demo purpose.
+                                                            </td>
+														</tr>
+                                                    </tbody>
+                                                </table>
+											</div>
+
+									</div>
+
+									
+
+									<div id="getstarted" class="com-container">
+										<h4 class="page-header">Getting Started</h4>
+										
+										<p>
+                                            We are using
+                                            <a href="https://gulpjs.com/" target="_blank">gulp</a> which allows to have complete automatation for build flow. In case if
+                                            you don't know - Gulp is a gulp is a toolkit for automating painful or time-consuming
+                                            tasks in development workflow, so you can stop messing around and build something.
+                                            You can read it more about it
+                                            <a href="https://gulpjs.com/" target="_blank">here</a>. Please follow below steps to install and setup all prerequisites:
+                                        </p>
+                                        <p>
+                                            <ul>
+                                                <li>
+                                                    <strong>Install nodejs and gulp</strong>
+                                                    <p>If you have already installed nodejs and gulp, you can skip this step</p>
+
+                                                    <ol>
+                                                        <li>
+                                                            Make sure to have the latest version of
+                                                            <a href="https://nodejs.org/" target="_blank">Node.js</a> installed &amp; running in your computer
+                                                        </li>
+                                                        <li>
+                                                            Open your terminal and install gulp globally. You can use command
+                                                            <code>npm install -g gulp</code>
+                                                        </li>
+                                                    </ol>
+                                                </li>
+
+                                                <li class="mt-3">
+                                                    <strong>Install dependencies</strong>
+                                                    <p>Go to your folder and enter the command
+                                                        <code>npm install</code>. This would install all dependencies in node_modules folder.</p>
+                                                </li>
+                                            </ul>
+                                        </p>
+
+                                        <p>
+                                            After you finished with above two steps, you can run the automated tasks (as described below) to build the application.
+                                        </p>
+                                        <table class="table table-bordered m-0">
+                                            <thead>
+                                                <tr>
+                                                    <th style="width: 20%;">
+                                                        <i class="ti-file"></i> Command</th>
+                                                    <th>Description</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <code>gulp</code>
+                                                    </td>
+                                                    <td>
+                                                        It runs the watch command and starts a development server in 'http://localhost:3000/'. You can modify your html, sass and
+                                                        js files and it automatically compiles the sass into css, sync your
+                                                        html or js file change.
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+									</div>
+
+
+									<div id="layouts" class="com-container">
+										<h4 class="page-header">Layouts</h4>
+										
+										<p>
+                                            You can customize various elements including navbar, topbar, form elements etc by simply editing Sass files in
+                                            <code>/src/scss</code> directory or removing unneeded components from
+                                            <code>app.scss</code> source files.
+                                        </p>
+                                        
+                                        <table class="table table-bordered m-0">
+                                            <thead>
+                                                <tr>
+                                                    <th style="width: 20%;">Layout Option</th>
+                                                    <th>Description</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        Dark leftbar
+                                                    </td>
+                                                    <td>
+                                                        <p>To have a dark left menu, add class <code>"left-side-menu-dark"</code> on <code>".left-side-menu"</code> element.</p>
+                                                        <p>
+                                                        	E.g. <code>&lt;div class="left-side-menu left-side-menu-dark"></code>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        Small leftbar
+                                                    </td>
+                                                    <td>
+                                                        <p>To have a small left menu, add class <code>"left-side-menu-sm"</code> on <code>".left-side-menu"</code> element.</p>
+                                                        <p>
+                                                        	E.g. <code>&lt;div class="left-side-menu left-side-menu-sm"></code>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        Light topbar
+                                                    </td>
+                                                    <td>
+                                                        <p>To have a light topbar, add class <code>"navbar-custom-light"</code> on <code>".navbar-custom"</code> element.</p>
+                                                        <p>
+                                                        	E.g. <code>&lt;div class="navbar-custom navbar-custom-light"></code>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+									</div>
+
+
+
+										
+
+
+										
+
+
+										<div id="credits" class="com-container">
+											<h4 class="page-header">Credits &amp; Official Documentation</h4>
+											<p>We've used the following resources as listed. These are some awesome creation and we are thankful to the community.</p>
+
+											<ul class="credits-list">
+								                <li><a href="http://getbootstrap.com/">Bootstrap</a></li>
+								                <li><a href="https://jquery.com/">Jquery</a></li>
+								                <li><a href="https://gulpjs.com/">Gulpjs</a></li>
+								                <li><a href="https://www.npmjs.com/">Npmjs</a></li>
+								                <li><a href="https://materialdesignicons.com/">Material design icons</a></li>
+								                <li><a href="http://arshaw.com/fullcalendar/">Full Calendar</a></li>
+								                <li><a href="https://select2.github.io/">Select2</a></li>
+								                <li><a href="https://www.datatables.net">Datatables</a></li>
+								                <li><a href="http://chartjs.org/">Chartjs</a></li>
+								                <li><a href="http://omnipotent.net/jquery.sparkline/">Sparkline</a></li>
+								                <li><a href="https://github.com/aterrien/jQuery-Knob">JQuery-Knob</a></li>
+								                <li><a href="http://ionden.com/a/plugins/ion.rangeSlider/en.html">Ion.rangeSlider</a></li>
+								                <li><a href="https://hpneo.github.io/gmaps/">Gmaps</a></li>
+								                <li><a href="http://uifaces.com/">Uifaces (images)</a></li>
+								                <li><a href="http://flatlogic.github.io/awesome-bootstrap-checkbox/demo/"> Checkbox and radio</a></li>
+								                <li><a href="http://abpetkov.github.io/switchery/">Switchery</a></li>
+								                <li><a href="https://github.com/dangrossman/bootstrap-daterangepicker">Daterangepicker</a></li>
+								                <li><a href="http://demo.amitjakhu.com/dripicons/">Dripicon</a></li>
+								                <li><a href="https://github.com/mimo84/bootstrap-maxlength">Bootstrap MaxLength</a></li>
+								                <li><a href="http://hernansartorio.com/jquery-nice-select/">Nice-select</a></li>
+								                <li><a href="https://github.com/RobinHerbots/Inputmask">Input Masks</a></li>
+								                <li><a href="http://rocha.la/jQuery-slimScroll">SlimScroll</a></li>
+								                <li><a href="https://github.com/kamranahmedse/jquery-toast-plugin">Jquery-toast-plugin</a></li>
+								                <li><a href="https://www.10bestdesign.com/jqvmap/">Jqvmap</a></li>
+								                <li><a href="https://github.com/onokumus/metismenu">Metismenu</a></li>
+								                <li><a href="https://sweetalert2.github.io/">Sweetalert2</a></li>
+								            </ul>
+										</div>
+
+										<div id="support" class="com-container">
+											<h4 class="page-header">Support</h4>
+											<p class="m-t-20">
+                                                    Once again thank you for your purchase. I'll be happy to answer the the questions you have related to the theme.
+                                                    In case if you have any suggestion or feature, request please feel free to contact me, I'll try to implement it and will release as part of future updates.
+                                                </p>
+
+                                                <p>
+                                                    Stay Awesome!
+                                                </p>
+                                                <p class="text-primary">
+                                                    - <strong>Coderthemes</strong>
+                                                </p>
+										</div>
+
+										<div id="changelog" class="com-container">
+											<h4 class="page-header">Change Log</h4>
+
+											<p style="margin-top: 30px;"><strong  style="text-decoration: underline; font-weight: 900;">Version 1.0.0 </strong> &nbsp;&nbsp;&nbsp;<small class="text-muted"> 19 July 2018</small></p>
+											
+											<ul>
+												<li>
+													Initial released
+												</li>
+											</ul>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /#page-content-wrapper -->
+
+					<div class="text-center">
+						<p class="copy">© 2018 Coderthemes.</p>
+					</div>
+				</div>
+				<!-- /#wrapper -->
+
+				<!-- jQuery -->
+				<script src="js/jquery.js"></script>
+
+				<!-- Bootstrap Core JavaScript -->
+				<script src="js/bootstrap.min.js"></script>
+
+				<script src="js/jquery.easing.min.js"></script>
+
+				<script type="text/javascript" src="js/prettify.js"></script>
+
+				<!-- Menu Toggle Script -->
+				<script>
+
+					//jQuery for page scrolling feature - requires jQuery Easing plugin
+					$(function() {
+					    $('.sidebar-nav a').bind('click', function(event) {
+					        var $anchor = $(this);
+					        $('html, body').stop().animate({
+					            scrollTop: $($anchor.attr('href')).offset().top - 100
+					        }, 1500, 'easeInOutExpo');
+					        event.preventDefault();
+					    });
+					});
+				</script>
+
+			</body>
+
+			</html>

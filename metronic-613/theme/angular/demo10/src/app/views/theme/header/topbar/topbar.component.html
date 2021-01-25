@@ -1,0 +1,37 @@
+<!-- begin:: Header Topbar -->
+<div class="kt-header__topbar">
+	<!--begin: Search -->
+	<kt-search-dropdown [type]="'brand'"></kt-search-dropdown>
+	<!--end: Search -->
+
+	<!--begin: Notifications -->
+	<kt-notification [type]="'brand'" [iconType]="'success'" [skin]="'light'"></kt-notification>
+	<!--end: Notifications -->
+
+	<!--begin: Quick actions -->
+	<kt-quick-action [iconType]="'warning'"></kt-quick-action>
+	<!--end: Quick actions -->
+
+	<!--begin: My Cart -->
+	<kt-cart [iconType]="'brand'" [bgImage]="'./assets/media/misc/bg-1.jpg'"></kt-cart>
+	<!--end: My Cart -->
+
+	<!--begin: Quick panel toggler -->
+	<div class="kt-header__topbar-item kt-header__topbar-item--quick-panel" data-placement="left" ngbTooltip="Quick panel">
+		<div class="kt-header__topbar-wrapper">
+			<span class="kt-header__topbar-icon kt-header__topbar-icon--success" id="kt_quick_panel_toggler_btn">
+				<i class="flaticon2-menu-2"></i>
+			</span>
+		</div>
+	</div>
+	<!--end: Quick panel toggler -->
+
+	<!--begin: Language bar -->
+	<kt-language-selector [iconType]="'brand'"></kt-language-selector>
+	<!--end: Language bar -->
+
+	<!--begin: User bar -->
+	<kt-user-profile2 [greeting]="false"></kt-user-profile2>
+	<!--end: User bar -->
+</div>
+<!-- end:: Header Topbar -->

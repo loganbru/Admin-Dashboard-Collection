@@ -1,0 +1,232 @@
+
+
+.pmeta_item_browse{
+    
+}
+.pmeta_item_browse .browse_preview{
+    max-width: 245px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    line-height: 0px;
+    margin-top: 12px;
+    position: relative;
+    display: none;
+}
+.pmeta_item_browse .browse_preview img{
+    width: 100%;
+    max-width: 100%;
+}
+.pmeta_item_browse .browse_preview a{
+    position: absolute;
+    top: 14px;
+    right: 10px;
+    display: inline-block;
+    font-size: 11px;
+    color: #ff0000;
+}
+
+
+.page_option_fieldset{
+    margin: 20px 0;
+    border-bottom: 1px dotted #ddd;
+    border-bottom: 1px dashed #ddd;
+    padding-bottom: 20px;
+}
+.page_option_field{
+    width: 55%;
+    float: left;
+}
+.field_description{
+    font-size: 11px;
+    color: #777;
+    font-style: italic;
+}
+
+.page_option_field input[type=text]{
+    width: 100%;
+}
+.page_option_field .pmeta_item_browse input[type=text],
+.page_option_field .pmeta_item_font input[type=text]{
+    width: 70%;
+}
+
+.page_option_field textarea{
+    width: 100%;
+    min-height: 100px;
+}
+.page_option_field select{
+    min-width: 50%;
+}
+
+.page_option_field_thumbs{
+
+}
+.page_option_field_thumbs input{
+    display: none;
+}
+.page_option_field_thumbs img{
+    border: 2px solid #ddd;
+    margin-right: 10px;
+}
+.page_option_field_thumbs img.active{
+    border-color: #4cd864;
+}
+
+/*
+.page_option_field .wp-picker-container{
+    float: left;
+    margin-top: -4px;
+    margin-right: 7px;
+}
+*/
+.page_option_field .wp-picker-container .wp-color-picker{
+    width: 70px;
+}
+
+
+
+
+#header_layout_images img{
+    width: 100%;
+}
+
+
+
+.pmeta_item_background{
+
+}
+.pmeta_item_background input{
+    width: 60% !important;
+}
+.pmeta_item_background .browse_preview{
+    width: 400px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding: 3px;
+    border: 1px solid #ccc;
+    position: relative;
+}
+.pmeta_item_background .browse_preview .preview_sample{
+    width: 100%;
+    height: 80px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #ccc;
+}
+.pmeta_item_background .browse_preview a{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #ff0000;
+    font-size: 11px;
+    text-decoration: underline;
+}
+.pmeta_item_background select{
+    min-width: 0px;
+}
+
+
+
+
+/* Render Gallery Element
+==================================*/
+.pmeta_gallery{
+    position: relative;
+}
+.pmeta_gallery .gallery_images_preview{
+    display: block;
+    margin-top: 10px;
+}
+.pmeta_gallery .gallery_images_preview span{
+    display: inline-block;
+    width: 60px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    padding: 2px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.pmeta_gallery .pmeta_remove{
+    color: #ff0000;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 16px;
+    margin-top: 4px;
+}
+
+
+
+.pmeta_video{
+
+}
+.pmeta_video input[type=text]{
+    width: 70%;
+}
+
+
+#pmeta_post,
+#pmeta_page,
+#pmeta_portfolio{
+    background: #fff;
+}
+
+
+
+
+/* Blox Switcher */
+/* ================================ */
+ .blox_switcher {
+    border: 1px solid #e0e0e0;
+    border-radius: 20px;
+    display: inline-block;
+    width: 50px;
+    position: relative;
+    height: 25px;
+    cursor: pointer;
+    margin-bottom: -10px;
+    margin-right: 7px;
+    transition: all .2s ease-in-out;
+}
+.blox_switcher .handle {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    position: absolute;
+    box-shadow: 0px 2px 4px rgba(0,0,0,.2);
+    transition: all .2s ease-in-out;
+}
+.blox_switcher.on {
+    background: #4cd864;
+    border-color: #4cd864;
+}
+.blox_switcher:active .handle {
+    width: 40px;
+    border-radius: 24px;
+}
+.blox_switcher.on .handle {
+    right: 0;
+}
+
+
+.meta-option-field{
+    display: table;
+    width: 100%;
+}
+.meta-option-field > div{
+    display: table-cell;
+    width: 50%;
+    vertical-align: middle;
+}
+.meta-option-field > div .page_option_field{
+    width: 99%;
+    max-width: 400px;
+}
+.meta-option-field > div textarea{
+    
+}

@@ -1,0 +1,10 @@
+$assets-url :"/assets";
+@import 'core.scss';
+
+:host /deep/ .widget-6 {
+    background: mix($color-master, #fff, 69%);
+    .label {
+      background: rgba(0, 0, 0, .3);
+      color: rgba(255, 255, 255, .67);
+    }
+}

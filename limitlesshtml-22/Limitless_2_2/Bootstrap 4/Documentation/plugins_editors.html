@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/layout.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script src="assets/js/main/jquery.min.js"></script>
+	<script src="assets/js/main/bootstrap.bundle.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script src="assets/js/plugins/prism.min.js"></script>
+	<script src="assets/js/plugins/sticky.min.js"></script>
+	
+	<script src="assets/js/main/app.js"></script>
+	<script src="assets/js/pages/components_scrollspy.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body data-spy="scroll" data-target=".sidebar-component-right">
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-expand-md navbar-light">
+		<div class="navbar-header navbar-dark d-none d-md-flex align-items-md-center">
+			<div class="navbar-brand navbar-brand-md">
+				<a href="index.html" class="d-inline-block">
+					<img src="assets/images/logo_light.png" alt="">
+				</a>
+			</div>
+	
+			<div class="navbar-brand navbar-brand-xs">
+				<a href="index.html" class="d-inline-block">
+					<img src="assets/images/logo_icon_light.png" alt="">
+				</a>
+			</div>
+		</div>
+
+		<div class="d-flex flex-1 d-md-none">
+			<div class="navbar-brand mr-auto">
+				<a href="index.html" class="d-inline-block">
+					<img src="assets/images/logo_dark.png" alt="">
+				</a>
+			</div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile">
+				<i class="icon-tree5"></i>
+			</button>
+			<button class="navbar-toggler sidebar-mobile-main-toggle" type="button">
+				<i class="icon-paragraph-justify3"></i>
+			</button>
+			<button class="navbar-toggler sidebar-mobile-component-toggle" type="button">
+				<i class="icon-unfold"></i>
+			</button>
+		</div>
+
+		<div class="collapse navbar-collapse" id="navbar-mobile">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a href="#" class="navbar-nav-link sidebar-control sidebar-main-hide d-none d-md-block">
+						<i class="icon-paragraph-justify3"></i>
+					</a>
+				</li>
+
+				<li class="nav-item">
+					<a href="#" class="navbar-nav-link sidebar-control sidebar-component-toggle d-none d-md-block">
+						<i class="icon-transmission"></i>
+					</a>
+				</li>
+			</ul>
+
+			<ul class="navbar-nav ml-md-auto">
+				<li class="nav-item dropdown">
+					<a href="other_changelog.html" class="navbar-nav-link">
+						<i class="icon-history mr-2"></i>
+						Changelog
+						<span class="badge bg-warning-400 badge-pill position-static ml-md-2">2.2</span>
+					</a>					
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page content -->
+	<div class="page-content">
+
+		<!-- Main sidebar -->
+		<div class="sidebar sidebar-dark sidebar-main sidebar-expand-md">
+
+			<!-- Sidebar mobile toggler -->
+			<div class="sidebar-mobile-toggler text-center">
+				<a href="#" class="sidebar-mobile-main-toggle">
+					<i class="icon-arrow-left8"></i>
+				</a>
+				Navigation
+				<a href="#" class="sidebar-mobile-expand">
+					<i class="icon-screen-full"></i>
+					<i class="icon-screen-normal"></i>
+				</a>
+			</div>
+			<!-- /sidebar mobile toggler -->
+
+
+			<!-- Sidebar content -->
+			<div class="sidebar-content">
+
+        		<!-- Support -->
+				<div class="card card-body">
+					<a href="http://kopyov.ticksy.com" class="btn bg-success-400 btn-block" target="_blank"><i class="icon-lifebuoy mr-2"></i> Limitless support</a>
+				</div>
+				<!-- /support -->
+
+
+				<!-- Main navigation -->
+				<div class="card card-sidebar-mobile">
+					<ul class="nav nav-sidebar" data-nav-type="accordion">
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Main</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="index.html" class="nav-link">Introduction</a></li>
+						<li class="nav-item"><a href="main_getting_started.html" class="nav-link">Getting started</a></li>
+						<li class="nav-item"><a href="main_starter_kit.html" class="nav-link">Starter kit</a></li>
+						<li class="nav-item"><a href="main_rtl.html" class="nav-link">RTL layout</a></li>
+
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Basic functionality</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="base_scss_css.html" class="nav-link">SCSS and CSS</a></li>
+						<li class="nav-item"><a href="base_scss_compile.html" class="nav-link">Compiling SCSS</a></li>
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+							<a href="#" class="nav-link">Plugins</a>
+							<ul class="nav nav-group-sub" data-submenu-title="Plugins">
+								<li class="nav-item"><a href="plugins_forms.html" class="nav-link">Forms</a></li>
+								<li class="nav-item"><a href="plugins_forms_styling.html" class="nav-link">Form styling</a></li>
+								<li class="nav-item"><a href="plugins_editors.html" class="nav-link active">Editors</a></li>
+								<li class="nav-item"><a href="plugins_uploaders.html" class="nav-link">Uploaders</a></li>
+								<li class="nav-item"><a href="plugins_extensions.html" class="nav-link">Extensions</a></li>
+								<li class="nav-item"><a href="plugins_notifications.html" class="nav-link">Notifications</a></li>
+								<li class="nav-item"><a href="plugins_pickers.html" class="nav-link">Pickers</a></li>
+								<li class="nav-item"><a href="plugins_tables.html" class="nav-link">Tables</a></li>
+								<li class="nav-item"><a href="plugins_ui.html" class="nav-link">UI</a></li>
+								<li class="nav-item"><a href="plugins_vis.html" class="nav-link">Visualization</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a href="base_icons.html" class="nav-link">Icons</a></li>
+
+						<li class="nav-item"><a href="base_bootstrap.html" class="nav-link">Bootstrap</a></li>
+						<li class="nav-item"><a href="base_color_system.html" class="nav-link">Color system</a></li>
+						<li class="nav-item"><a href="base_helpers.html" class="nav-link">Helpers</a></li>
+						<li class="nav-item"><a href="base_themes.html" class="nav-link">Themes</a></li>
+
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Layout options</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="layout_overview.html" class="nav-link">Layouts</a></li>
+						<li class="nav-item"><a href="layout_sidebars.html" class="nav-link">Sidebars</a></li>
+						<li class="nav-item"><a href="layout_navbars.html" class="nav-link">Navbars</a></li>
+						<li class="nav-item"><a href="layout_v_nav.html" class="nav-link">Vertical navigation</a></li>
+						<li class="nav-item"><a href="layout_h_nav.html" class="nav-link">Horizontal navigation</a></li>
+						<li class="nav-item"><a href="layout_page_header.html" class="nav-link">Page header</a></li>
+
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Other</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="other_credits.html" class="nav-link">Sources and credits</a></li>
+						<li class="nav-item"><a href="other_changelog.html" class="nav-link">Changelog <span class="badge badge-pill bg-warning-400 ml-auto">version 2.2</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /main navigation -->
+
+		</div>
+		<!-- /main sidebar -->
+
+
+		<!-- Main content -->
+		<div class="content-wrapper">
+
+			<!-- Page header -->
+			<div class="page-header">
+				<div class="page-header-content header-elements-md-inline">
+					<div class="page-title d-flex">
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Limitless</span> - Editors</h4>
+						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+					</div>
+
+					<div class="header-elements d-none py-0 mb-3 mb-md-0">
+						<div class="breadcrumb">
+							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
+							<span class="breadcrumb-item active">Editors</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /page header -->
+			
+
+			<!-- Content area -->
+			<div class="content pt-0">
+
+				<!-- Inner container -->
+				<div class="d-flex align-items-start flex-column flex-md-row">
+
+					<!-- Left content -->
+					<div class="order-2 order-md-1">
+
+							<!-- Ace code editor -->
+							<div class="card" id="ace">
+								<div class="card-header header-elements-md-inline">
+									<h5 class="card-title">Ace code editor</h5>
+									<div class="header-elements d-flex justify-content-between">
+										<span class="badge bg-slate">Editors</span>
+										<span class="text-muted mx-3">/editors/ace/</span>
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+									</div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Overview</h6>
+										<p class="mb-3">Ace is an embeddable code editor written in JavaScript. It matches the features and performance of native editors such as Sublime, Vim and TextMate. It can be easily embedded in any web page and JavaScript application. Ace is maintained as the primary editor for Cloud9 IDE and is the successor of the Mozilla Skywriter (Bespin) project. Main features:</p>
+
+										<ul class="list">
+			                                <li><a href="http://pcwalton.blogspot.com/2010/11/syntax-highlighting-specification.html">Syntax highlighting</a> for over 110 languages (TextMate/Sublime Text<em>.tmlanguage</em> files can be imported)</li>
+			                                <li>Over 20 themes (TextMate/Sublime Text <em>.tmtheme</em> files can be imported)</li>
+			                                <li>Automatic indent and outdent</li>
+			                                <li>An optional command line</li>
+			                                <li>Handles huge documents (four million lines seems to be the limit!)</li>
+			                                <li>Fully customizable key bindings including vim and Emacs modes</li>
+			                                <li>Search and replace with regular expressions</li>
+			                                <li>Highlight matching parentheses</li>
+			                                <li>Toggle between soft tabs and real tabs</li>
+			                                <li>Displays hidden characters</li>
+			                                <li>Drag and drop text using the mouse</li>
+			                                <li>Line wrapping</li>
+			                                <li>Code folding</li>
+			                                <li>Multiple cursors and selections</li>
+			                                <li>Live syntax checker (currently JavaScript/CoffeeScript/CSS/XQuery)</li>
+			                                <li>Cut, copy, and paste functionality</li>
+			                            </ul>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Usage</h6>
+										<div class="mb-3">
+											<p>Ace can be easily embedded into any existing web page. You can either use one of pre-packaged versions of <a href="https://github.com/ajaxorg/ace-builds/" target="_blank">ace</a> (just copy one of <code>src*</code> subdirectories somewhere into your project), or use requireJS to load contents of <a href="https://github.com/ajaxorg/ace/tree/master/lib/ace" target="_blank">lib/ace</a> as ace. By default the editor only supports plain text mode; many other languages are available as separate modules.</p>
+										</div>
+
+										<div class="mb-3">
+											<p>Basic markup is:</p>
+											<pre><code class="language-markup">&lt;!-- Basic markup-->
+&lt;div id="html_editor">
+
+	&lt;!-- Default card -->
+	&lt;div class="card">
+		&lt;div class="card-header header-elements-md-inline">
+			&lt;h5 class="card-title">
+				Card title
+				&lt;span class="font-weight-semibold">Default&lt;/span>
+				&lt;small>Full featured toolbar&lt;/small>
+			&lt;/h5>
+		&lt;/div>
+
+		&lt;div class="card-body">
+			Card body
+		&lt;/div>
+	&lt;/div>
+	&lt;!-- /default card -->
+
+&lt;/div>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Initialize via JavaScript:</p>
+											<pre><code class="language-javascript">// HTML editor
+var html_editor = ace.edit("html_editor");
+    html_editor.setTheme("ace/theme/monokai");
+    html_editor.getSession().setMode("ace/mode/html");
+    html_editor.setShowPrintMargin(false);
+</code></pre>
+										</div>
+									</div>
+
+									<div>
+										<h6 class="font-weight-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="font-weight-semibold">File name</td>
+														<td>ace.js, [modes, extensions, themes]</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Location</td>
+														<td>global_assets/js/plugins/editors/ace/</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Links</td>
+														<td>															
+															<p>
+																<a href="http://ace.c9.io/#nav=about" class="btn bg-danger-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+
+															<p>
+																<a href="https://groups.google.com/forum/#!forum/ace-discuss" class="btn bg-purple-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-google"></i></b>
+																	Google Group
+																</a>
+															</p>
+
+															<a href="https://github.com/ajaxorg/ace" class="btn bg-blue btn-labeled btn-labeled-left" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /ace code editor -->
+
+
+							<!-- Summernote text editor -->
+							<div class="card" id="summernote">
+								<div class="card-header header-elements-md-inline">
+									<h5 class="card-title">Summernote editor</h5>
+									<div class="header-elements d-flex justify-content-between">
+										<span class="badge bg-slate">Editors</span>
+										<span class="text-muted mx-3">summernote.min.js</span>
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+									</div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Overview</h6>
+										<p>Summernote is a JavaScript library that helps you create WYSIWYG editors online. The editor uses open source libraries - jQuery and Bootstrap. Font Awesome was required as well, but i've replaced it with Icomoon icon set. Summernote editor supports keyboard shortcuts, full list you can find in demos by clicking "Help" toolbar button. Summernote has a few special features:</p>
+
+										<ul class="list">
+											<li>Paste images from clipboard</li>
+											<li>Saves images directly in the content of the field using base64 encoding, so you don't need to implement image handling at all</li>
+											<li>Simple UI</li>
+											<li>Interactive WYSIWYG editing</li>
+											<li>Handy integration with server</li>
+										</ul>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Usage</h6>
+										<p>Usage is pretty simple. First include main JS file and Uniform plugin. Uniform is needed to style checkboxes and file inputs inside modal dialogs:</p>
+
+										<div class="mb-3">
+											<pre><code class="language-markup">&lt;!-- JS file path -->
+&lt;script src="../../../../global_assets/js/plugins/editors/summernote/summernote.min.js">&lt;/script>
+
+&lt;!-- Uniform plugin file path -->
+&lt;script src="../../../../global_assets/js/plugins/forms/styling/uniform.min.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Then place a <code>div</code> tag somewhere in the <code>body</code> tag. This element will be replaced with the summernote editor:</p>
+											<pre><code class="language-markup">&lt;!-- Target element -->
+&lt;div id="summernote">Hello Summernote&lt;/div>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Finally, run this script after the DOM is ready:</p>
+											<pre><code class="language-javascript">// Initialize plugin
+$(document).ready(function() {
+	$('#summernote').summernote();
+});
+</code></pre>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Custom toolbar</h6>
+
+										<div class="mb-3">
+											<p>Summernote allows you to make own custom toolbar. To create one, use <code>toolbar</code> option:</p>
+											<pre><code class="language-javascript">// Font style only toolbar
+$('.summernote').summernote({
+  toolbar: [
+    //[groupname, [button list]]
+     
+    ['style', ['bold', 'italic', 'underline', 'clear']],
+    ['font', ['strikethrough', 'superscript', 'subscript']],
+    ['fontsize', ['fontsize']],
+    ['color', ['color']],
+    ['para', ['ul', 'ol', 'paragraph']],
+    ['height', ['height']],
+  ]
+});
+</code></pre>
+										</div>
+
+
+										<div class="mb-3">
+											<p>You can compose a toolbar with pre-shipped buttons:</p>
+											<div class="table-responsive">
+												<table class="table table-striped table-bordered">
+													<thead>
+														<tr>
+															<th style="width: 250px;">Category</th>
+															<th>Button id</th>
+															<th>Function</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<th rowspan="5">Insert</th>
+															<td><code>picture</code></td>
+															<td>Insert a picture</td>
+														</tr>
+														<tr>
+															<td><code>link</code></td>
+															<td>Insert a hyperlink</td>
+														</tr>
+														<tr>
+															<td><code>video</code></td>
+															<td>Insert a video</td>
+														</tr>
+														<tr>
+															<td><code>table</code></td>
+															<td>Insert a table</td>
+														</tr>
+														<tr>
+															<td><code>hr</code></td>
+															<td>Insert a horizontal rule</td>
+														</tr>
+														<tr>
+														<th rowspan="9">Style</th>
+															<td><code>style</code></td>
+															<td>Format selected block</td>
+														</tr>
+														<tr>
+															<td><code>fontname</code></td>
+															<td>Set font family</td>
+														</tr>
+														<tr>
+															<td><code>fontsize</code></td>
+															<td>Set font size</td>
+														</tr>
+														<tr>
+															<td><code>color</code></td>
+															<td>Set foreground and background color</td>
+														</tr>
+														<tr>
+															<td><code>bold</code></td>
+															<td>Toggle weight</td>
+														</tr>
+														<tr>
+															<td><code>italic</code></td>
+															<td>Toggle italic</td>
+														</tr>
+														<tr>
+															<td><code>underline</code></td>
+															<td>Toggle underline</td>
+														</tr>
+														<tr>
+															<td><code>strikethrough</code></td>
+															<td>Toggle strikethrough</td>
+														</tr>
+														<tr>
+															<td><code>clear</code></td>
+															<td>Clearing all styles</td>
+														</tr>
+														<tr>
+															<th rowspan="4">Layout</th>
+															<td><code>ul</code></td>
+															<td>Make an un-ordered list</td>
+														</tr>
+														<tr>
+															<td><code>ol</code></td>
+															<td>Make an ordered list</td>
+														</tr>
+														<tr>
+															<td><code>paragraph</code></td>
+															<td>Set text alignment</td>
+														</tr>
+														<tr>
+															<td><code>height</code></td>
+															<td>Set height of text</td>
+														</tr>
+														<tr>
+															<th rowspan="5">Misc</th>
+															<td><code>fullscreen</code></td>
+															<td>Toggle fullscreen editing mode</td>
+														</tr>
+														<tr>
+															<td><code>codeview</code></td>
+															<td>Toggle wysiwyg and html editing mode</td>
+														</tr>
+														<tr>
+															<td><code>undo</code></td>
+															<td>Undo</td>
+														</tr>
+														<tr>
+															<td><code>redo</code></td>
+															<td>Redo</td>
+														</tr>
+														<tr>
+															<td><code>help</code></td>
+															<td>Show help dialog</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">API reference</h6>
+										<p class="mb-3">Usage is pretty simple. First include main JS file and Uniform plugin. Uniform is needed to style checkboxes and file inputs inside modal dialogs:</p>
+
+										<div class="mb-3">
+											<p><code>code</code> - get the HTML source code underlying the text in the editor:</p>
+											<pre><code class="language-javascript">// Summernote API
+var sHTML = $('#summernote').code();
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p><code>Destroy</code> Summernote:</p>
+											<pre><code class="language-javascript">// Destroy editor
+$('#summernote').destroy();
+</code></pre>
+										</div>
+
+										<p><strong class="text-pink">Note:</strong> Full Summernote API can be found on <a href="http://summernote.org/#/deep-dive#api" target="_blank">official API documentation</a> pages.</p>
+									</div>
+
+									<div>
+										<h6 class="font-weight-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="font-weight-semibold">File name</td>
+														<td>summernote.min.js</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Location</td>
+														<td>global_assets/js/plugins/editors/summernote/</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Links</td>
+														<td>															
+															<p>
+																<a href="http://summernote.org/#/" class="btn bg-danger-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+
+															<p>
+																<a href="http://summernote.org/jsduck/" class="btn bg-slate btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-file-text2"></i></b>
+																	Full documentation
+																</a>
+															</p>
+
+															<p>
+																<a href="http://summernote.org/#/example" class="btn btn-sm bg-teal-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-file-eye"></i></b>
+																	Demonstration
+																</a>
+															</p>
+
+															<a href="https://github.com/summernote/summernote" class="btn bg-blue btn-labeled btn-labeled-left" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /summernote text editor -->
+
+
+							<!-- Trumbowyg text editor -->
+							<div class="card" id="trumbowyg">
+								<div class="card-header header-elements-md-inline">
+									<h5 class="card-title">Trumbowyg</h5>
+									<div class="header-elements d-flex justify-content-between">
+										<span class="badge bg-slate">Editors</span>
+										<span class="text-muted mx-3">/editors/trumbowyg/</span>
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+									</div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Overview</h6>
+										<p>Trumbowyg is a lightweight WYSIWYG editor optimized for HTML5 support. Options and design are entirely configurable to suit your needs. However, the default design is compatible with Retina display and optimized for a great and simple user experience. Editor can be extended with additional plugins, supports 30+ languages and custom packages. Trumbowyg is an MIT-licensed open source project and completely free to use.</p>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Usage</h6>
+										<p class="mb-3">Installation is fairly simple - just load <code>trumbowyg.min.js</code> after <code>jquery.min.js</code> (minimum required version 1.8), make sure <code>$enable-trumbowyg</code> variable in <code>_config.scss</code> is set to <code>true</code> and initialize plugin in JS:</p>
+
+
+										<div class="mb-3">
+											<p>If you don't already do it, load jQuery at bottom of <code>&lt;body></code> or in <code>&lt;head></code> and load Trumbowyg after it. In addition, load necessary plugins:</p>
+											<pre><code class="language-markup">&lt;!-- Include jQuery -->
+&lt;script src="../../../../global_assets/js/main/jquery.min.js">&lt;/script>
+
+&lt;!-- Include editor -->
+&lt;script src="../../../../global_assets/js/plugins/editors/trumbowyg/trumbowyg.min.js">&lt;/script>
+
+&lt;!-- Plugins -->
+&lt;script src="../../../../global_assets/js/plugins/editors/trumbowyg/plugins/base64/trumbowyg.base64.js">&lt;/script>
+&lt;script src="../../../../global_assets/js/plugins/editors/trumbowyg/plugins/cleanpaste/trumbowyg.cleanpaste.js">&lt;/script>
+&lt;script src="../../../../global_assets/js/plugins/editors/trumbowyg/plugins/colors/trumbowyg.colors.js">&lt;/script>
+&lt;script src="../../../../global_assets/js/plugins/editors/trumbowyg/plugins/insertaudio/trumbowyg.insertaudio.js">&lt;/script>
+&lt;script src="../../../../global_assets/js/plugins/editors/trumbowyg/plugins/noembed/trumbowyg.noembed.js">&lt;/script>
+&lt;script src="../../../../global_assets/js/plugins/editors/trumbowyg/plugins/preformatted/trumbowyg.preformatted.js">&lt;/script>
+&lt;script src="../../../../global_assets/js/plugins/editors/trumbowyg/plugins/template/trumbowyg.template.js">&lt;/script>
+&lt;script src="../../../../global_assets/js/plugins/editors/trumbowyg/plugins/upload/trumbowyg.upload.js">&lt;/script>
+&lt;script src="../../../../global_assets/js/plugins/editors/trumbowyg/plugins/pasteimage/trumbowyg.pasteimage.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>This the minimal code to transform a simple div into the amazing WYSIWYG editor which is Trumbowyg. Or if you want to set options to Trumbowyg, add an object which contains your options as parameters:</p>
+											<pre><code class="language-javascript">// Initialize default editor
+$('#trumbowyg-demo').trumbowyg();
+
+// Initialize with options
+$('#trumbowyg-demo').trumbowyg({
+    btns: ['strong', 'em', '|', 'insertImage'],
+    autogrow: true
+});
+</code></pre>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Options</h6>
+										<p class="mb-3">Following is a list of all configuration parameters with their corresponding default values:</p>
+										
+										<div class="mb-3">
+											<strong>Prefix</strong>
+											<div class="font-size-sm text-muted mb-2">default: 'trumbowyg'</div>
+											<p>You can change prefix of all class added on elements of Trumbowyg using this option:</p>
+											<pre><code class="language-javascript">// Initialize
+$('textarea').trumbowyg({
+    prefix: 'custom-prefix'
+});
+</code></pre>
+										</div>	
+
+										<div class="mb-3">
+											<strong>Localization</strong>
+											<div class="font-size-sm text-muted mb-2">default: null</div>
+											<p>Your users don't speak english? No problem, Trumbowyg has a language parameter. You have to load the appropriate lang file. Search in <code>/dist/langs</code> folder to see if a language file already exists, if not create it and share it :). Don't forget include the lang file in your pages:</p>
+											<pre class="mb-3"><code class="language-markup">&lt;!-- Include lang file -->
+&lt;script type="text/javascript" src="js/dist/langs/fr.min.js">&lt;/script>
+</code></pre>
+
+											Make sure to include lang file after Trumbowyg and before instantiating the editor!
+
+											<p>Usage of language parameter (English is a fallback lang):</p>
+
+											<pre><code class="language-javascript">// Initialize
+$('textarea').trumbowyg({
+    lang: 'fr'
+});
+</code></pre>
+										</div>	
+
+										<div class="mb-3">
+											<strong>Button pane</strong>
+											<div class="font-size-sm text-muted mb-2">default: all buttons</div>
+											<p>It's probably the most interesting option, it allows you to choose the buttons that appears in the button pane. This option is an array containing string values representing the buttons or vertical separators (using the pipe character). To create your own custom button pane, define an array and pass it to the <code>btns</code> option:</p>
+											<pre><code class="language-javascript">// Custom button set
+$('.simple-editor').trumbowyg({
+    btns: [['bold', 'italic'], ['link']]
+});
+
+// Default button set
+$('.simple-editor').trumbowyg({
+    btns: [
+        ['viewHTML'],
+        ['undo', 'redo'], // Only supported in Blink browsers
+        ['formatting'],
+        ['strong', 'em', 'del'],
+        ['superscript', 'subscript'],
+        ['link'],
+        ['insertImage'],
+        ['justifyLeft', 'justifyCenter', 'justifyRight', 'justifyFull'],
+        ['unorderedList', 'orderedList'],
+        ['horizontalRule'],
+        ['removeformat'],
+        ['fullscreen']
+    ]
+});
+</code></pre>
+										</div>	
+
+										<div class="mb-3">
+											<strong>Hide button texts</strong>
+											<div class="font-size-sm text-muted mb-2">default: false</div>
+											<p>You can hide button texts showed when you put <code>svgPath</code> to <code>false</code></p>
+											<pre><code class="language-javascript">// Globally
+$.trumbowyg.hideButtonTexts = true
+
+// Or locally
+$('.trumbowyg').trumbowyg({
+    hideButtonTexts: true
+});
+</code></pre>
+										</div>	
+
+										<div class="mb-3">
+											<strong>Semantic</strong>
+											<div class="font-size-sm text-muted mb-2">default: true</div>
+											<p>Generates a better, more semantic oriented HTML (i.e. <code>&lt;em></code> instead of <code>&lt;i></code>, <code>&lt;strong></code> instead of <code>&lt;b></code>, etc.). It's just a boolean. This option deactivates the underline button by default because they do not convey any real semantic. If you want to reactivate them, you have to do it explicitly
+											:</p>
+											<pre><code class="language-javascript">// Initialize
+$('.trumbowyg').trumbowyg({
+    semantic: false
+});
+</code></pre>
+										</div>	
+
+										<div class="mb-3">
+											<strong>Reset CSS</strong>
+											<div class="font-size-sm text-muted mb-2">default: false</div>
+											<p>If you don't want the page style to impact on the look of the text in the editor, you will need to apply a reset-css on the editor. You can activate this with the <code>resetCss</code> option:</p>
+											<pre><code class="language-javascript">// Initialize
+$('.trumbowyg').trumbowyg({
+    resetCss: true
+});
+</code></pre>
+										</div>	
+
+										<div class="mb-3">
+											<strong>Remove format pasted</strong>
+											<div class="font-size-sm text-muted mb-2">default: false</div>
+											<p>If you don't want styles pasted from clipboard (from Word or other webpage for example), pass the <code>removeformatPasted</code> option to <code>true</code>. In order to use this option, you need to define a font size in your CSS or use a reset like normalize.</p>
+											<pre><code class="language-javascript">// Initialize
+$('.trumbowyg').trumbowyg({
+    removeformatPasted: true
+});
+</code></pre>
+										</div>	
+
+										<div class="mb-3">
+											<strong>Auto grow</strong>
+											<div class="font-size-sm text-muted mb-2">default: false</div>
+											<p>The text editing zone can extend itself when writing a long text. To activate this feature, use the autogrow option::</p>
+											<pre><code class="language-javascript">// Initialize
+$('.trumbowyg').trumbowyg({
+    autogrow: true
+});
+</code></pre>
+										</div>	
+
+										<div class="mb-3">
+											<strong>Auto grow on enter</strong>
+											<div class="font-size-sm text-muted mb-2">default: false</div>
+											<p>The text editing zone can extend itself when editor get focus and reduce on blur. To activate this feature, use the following option:</p>
+											<pre><code class="language-javascript">// Initialize
+$('.trumbowyg').trumbowyg({
+    autogrowOnEnter: true
+});
+</code></pre>
+										</div>	
+
+										<div class="mb-3">
+											<strong>Image width modal edit</strong>
+											<div class="font-size-sm text-muted mb-2">default: false</div>
+											<p>Add a field in image insert/edit modal which allow users to set the image width. To activate this feature, use the following option:</p>
+											<pre><code class="language-javascript">// Initialize
+$('.trumbowyg').trumbowyg({
+	imageWidthModalEdit: true
+});
+</code></pre>
+										</div>	
+
+										<div class="mb-3">
+											<strong>URL protocol</strong>
+											<div class="font-size-sm text-muted mb-2">default: false</div>
+											<p>An option to auto-prefix URLs with a protocol. When this option is set to <code>true</code>, URLs missing a protocol will be prefixed with <code>https://</code>. Alternatively, a string can be provided for a custom prefix. For example, a value of true would convert example.com to https://example.com, while a value of ftp converts to ftp://example.com.</p>
+											<pre><code class="language-javascript">// Initialize
+$('.trumbowyg').trumbowyg({
+    urlProtocol: true
+});
+</code></pre>
+										</div>	
+
+										<div class="mb-3">
+											<strong>Minimal links</strong>
+											<div class="font-size-sm text-muted mb-2">default: false</div>
+											<p>Reduce the link overlay to use only <code>url</code> and <code>text</code> fields, omitting <code>title</code> and <code>target</code>.</p>
+											<pre><code class="language-javascript">// Initialize
+$('.trumbowyg').trumbowyg({
+    minimalLinks: true
+});
+</code></pre>
+										</div>
+									</div>
+
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Modal box API</h6>
+										<p class="mb-3">When you want create your custom extension for Trumbowyg, you can open and close a modal box with custom inner HTML code, listen events and more:</p>
+
+										<div class="mb-3">
+											<strong>Open and close</strong>
+											<p>For that use the <code>.trumbowyg()</code> method and give parameters <code>'openModal'</code> or <code>'closeModal'</code> like that:</p>
+											<pre class="mb-3"><code class="language-javascript">// Open modal box
+var $modal = $('#editor').trumbowyg('openModal', {
+    title: 'A title for modal box',
+    content: '<p>Content in HTML which you want include in created modal box</p>'
+});
+
+// Close current modal box
+$('#editor').trumbowyg('closeModal');
+</code></pre>
+											An <code>openModal</code> call returns a jQuery object which contains the modal box. You need this object if you want to use listen events (see below)
+										</div>	
+
+										<div class="mb-3">
+											<strong>Events on modal box</strong>
+											<p>Modal boxes in Trumbowy come with two buttons: "Confirm" and "Cancel". An event is associated to each one:
+												<ul class="list">
+													<li>tbwsubmit: trigged when form is submit</li>
+													<li>tbwreset: trigged when user cancel operation</li>
+												</ul>
+											</p>
+											
+											<pre><code class="language-javascript">// Open modal
+var $modal = $('#editor').trumbowyg('openModal', {
+    title: 'A title for modal box',
+    content: '<p>Content in HTML which you want include in created modal box</p>'
+});
+
+// Listen clicks on modal box buttons
+$modal.on('tbwconfirm', function(e){
+    // Save datas
+    $("#editor").trumbowyg('closeModal');
+});
+$modal.on('tbwcancel', function(e){
+    $('#editor').trumbowyg('closeModal');
+});
+</code></pre>
+										</div>	
+
+										<div class="mb-3">
+											<strong>Only build inputs in modal</strong>
+											<p>If you want only add inputs in the modal box, this function is more simple. Indeed, you do not manage confirm and close buttons, and get all input value on confirm.</p>
+											<pre><code class="language-javascript">// Config
+var img = $('img#an-img');
+$("#editor").trumbowyg('openModalInsert', {
+    title: 'A title for modal box',
+    fields: {
+        url: {
+            value: img.attr('src')
+        },
+        alt: {
+            label: 'Alt',
+            name: 'alt',
+            value: img.attr('alt'),
+            type: 'text'.
+            attributes: {}
+        },
+        example: {
+            // Missing label is replaced by the key of this object (here 'example')
+            // Missing name is the key
+            // When value is missing, value = ''
+            // When type is missing, 'text' is assumed. You can use all the input field types,
+            //   plus checkbox and radio (select and textarea are not supported)
+            // When attributes is missing, {} is used. Attributes are added as attributes to
+            //   the input element.
+            // For radio and checkbox fields, you will need to use attributes if you want it
+            //   to be checked by default.        }
+    },
+    callback: function(values){
+        img.attr('src', values['url']);
+        img.attr('alt', values['alt']);
+
+        return true; // Return true if you have finished with this modal box
+        // If you do not return anything, you must manage the closing of the modal box yourself
+    }
+});
+
+// You can also listen for modal confirm/cancel events to do some custom things
+// Note: the openModalInsert callback is called on tbwconfirm
+$modal.on('tbwconfirm', function(e){
+    // Do what you want
+});
+$modal.on('tbwcancel', function(e){
+    trumbowyg.closeModal();
+});
+</code></pre>
+										</div>
+									</div>
+
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Range</h6>
+										<p class="mb-3">Managing correctly text range, is not so trivial. Trumbowyg has a system to save and restore selection range which does not involves typical getter/setter.</p>
+
+										<div class="mb-3">
+											<strong>Save and get current range</strong>
+											<pre><code class="language-javascript">// Save current range
+$('#editor').trumbowyg('saveRange');
+
+// Restore last saved range
+$('#editor').trumbowyg('restoreRange');
+</code></pre>
+										</div>	
+
+										<div class="mb-3">
+											<strong>Get selection range</strong>
+											<pre><code class="language-javascript">// Range contains a JavaScript range
+var range = $('#editor').trumbowyg('getRange');
+</code></pre>
+										</div>	
+
+										<div class="mb-3">
+											<strong>Get last saved range text</strong>
+											<pre><code class="language-javascript">// Get text
+var text = $('#editor').trumbowyg('getRangeText');
+</code></pre>
+										</div>
+									</div>
+
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Manage content</h6>
+										<p>You can set and get current HTML content of the editor with a getter/setter:</p>
+										<pre><code class="language-javascript">// Get HTML content
+$('#editor').trumbowyg('html');
+
+// Set HTML content
+$('#editor').trumbowyg('html', "&lt;p>Your content here&lt;/p>");
+</code></pre>
+									</div>
+
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Empty</h6>
+										<p>You can empty the content of the editor.</p>
+										<pre><code class="language-javascript">// Clear editor
+$('#editor').trumbowyg('empty');
+</code></pre>
+									</div>
+
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Enable/disable edition</h6>
+										<p>As you can disable editor by using <code>disabled</code> option, you can also switch between enabled and disabled states by using API.</p>
+										<pre><code class="language-javascript">// States
+$('#editor').trumbowyg('disable');
+$('#editor').trumbowyg('enable');
+</code></pre>
+									</div>
+
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Toggle between HTML & WYSIWYG modes</h6>
+										<p>You can switch between HTML view and WYSIWYG view via toggle method.</p>
+										<pre><code class="language-javascript">// Toggle views
+$('#editor').trumbowyg('toggle');
+</code></pre>
+									</div>
+
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Destroy editor</h6>
+										<p>When you wish, you can restore the previous state of the element was used to create the editor.</p>
+										<pre><code class="language-javascript">// Destroy editor
+$('#editor').trumbowyg('destroy');
+</code></pre>
+									</div>
+
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Events</h6>
+										<p>
+											Some events are fired on the jQuery element which is used to build the editor.
+											<ul class="list">
+												<li>Focus on editor: <code>tbwfocus</code></li>
+												<li>Blur on editor: <code>tbwblur</code></li>
+												<li>Editor is initialized: <code>tbwinit</code></li>
+												<li>Change in editor: <code>tbwchange</code></li>
+												<li>Resize the editor on autogrow: <code>tbwresize</code></li>
+												<li>Paste something in the editor: <code>tbwpaste</code></li>
+												<li>Switch to fullscreen mode: <code>tbwopenfullscreen</code></li>
+												<li>Leave editor's fullscreen mode: <code>tbwclosefullscreen</code></li>
+												<li>Close the editor: <code>tbwclose</code></li>
+											</ul>
+										</p>
+										<pre><code class="language-javascript">// Events
+$('#editor')
+.trumbowyg() // Build Trumbowyg on the #editor element
+.on('tbwfocus', function(){ console.log('Focus!'); }); // Listen for `tbwfocus` event
+.on('tbwblur', function(){ console.log('Blur!'); }); // Listen for `tbwblur` event
+</code></pre>
+									</div>
+
+
+									<div>
+										<h6 class="font-weight-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="font-weight-semibold">File name</td>
+														<td>trumbowyg.min.js</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Location</td>
+														<td>global_assets/js/plugins/editors/trumbowyg/</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Links</td>
+														<td>															
+															<p>
+																<a href="https://alex-d.github.io/Trumbowyg/" class="btn bg-danger-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+
+															<p>
+																<a href="https://alex-d.github.io/Trumbowyg/documentation/" class="btn bg-slate btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-file-text2"></i></b>
+																	Full documentation
+																</a>
+															</p>
+
+															<a href="https://github.com/Alex-D/Trumbowyg" class="btn bg-blue btn-labeled btn-labeled-left" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /trumbowyg text editor -->
+
+					</div>
+					<!-- /left content -->
+
+
+					<!-- Right sidebar component -->
+					<div class="sidebar-sticky w-100 w-md-auto order-1 order-md-2">
+						<div class="sidebar sidebar-light sidebar-component sidebar-component-right sidebar-expand-md mb-3">
+							<div class="sidebar-content">
+								<div class="card">
+									<div class="card-header bg-transparent header-elements-inline">
+										<span class="text-uppercase font-size-sm font-weight-semibold">Page navigation</span>
+										<div class="header-elements">
+											<div class="list-icons">
+						                		<a class="list-icons-item" data-action="collapse"></a>
+					                		</div>
+				                		</div>
+									</div>
+
+									<div class="card-body">
+										<a href="http://themeforest.net/user/kopyov" class="btn bg-blue btn-block" target="_blank"><i class="icon-reading mr-2"></i> Contact author</a>
+									</div>
+
+									<ul class="nav nav-sidebar nav-scrollspy" data-nav-type="accordion">
+										<li class="nav-item-header pt-0"><div class="text-uppercase font-size-xs line-height-xs">Sections</div> <i class="icon-menu"></i></li>
+										<li class="nav-item"><a href="#ace" class="nav-link">Ace Code Editor</a></li>
+										<li class="nav-item"><a href="#summernote" class="nav-link">Summernote Editor</a></li>
+										<li class="nav-item"><a href="#trumbowyg" class="nav-link">Trumbowyg Editor</a></li>
+										<li class="nav-item-divider"></li>
+										<li class="nav-item"><a href="#" class="nav-link">Go to top <i class="icon-circle-up2 mr-0 ml-auto"></i></a></li>
+									</ul>
+								</div>
+				            </div>
+						</div>
+					</div>
+					<!-- /right sidebar component -->
+
+				</div>
+				<!-- /inner container -->
+
+			</div>
+			<!-- /content area -->
+
+
+			<!-- Footer -->
+			<div class="navbar navbar-expand-lg navbar-light">
+				<div class="text-center d-lg-none w-100">
+					<button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse" data-target="#navbar-footer">
+						<i class="icon-unfold mr-2"></i>
+						Footer
+					</button>
+				</div>
+
+				<div class="navbar-collapse collapse" id="navbar-footer">
+					<span class="navbar-text">
+						&copy; 2015 - 2018. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
+					</span>
+
+					<ul class="navbar-nav ml-lg-auto">
+						<li class="nav-item"><a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov" class="navbar-nav-link font-weight-semibold"><span class="text-pink-400"><i class="icon-cart2 mr-2"></i> Purchase</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /footer -->
+
+		</div>
+		<!-- /main content -->
+
+	</div>
+	<!-- /page content -->
+
+</body>
+</html>

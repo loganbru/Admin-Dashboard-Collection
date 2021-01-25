@@ -1,0 +1,276 @@
+
+/* Import Fonts
+----------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Mukta|Roboto');
+
+/* Horizontal Menu css
+----------------------------------------*/
+
+.horizontal-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0 10px;
+    background: #fff;
+    float:left;
+    width:100%;
+	position: relative;
+	z-index: 10;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 1px solid #d5d4da;
+	-webkit-box-shadow: 0 5px 15px rgba(57, 98, 254, 0.02), 0 3px 6px rgba(117, 108, 254, 0.12);
+    box-shadow: 0 5px 15px rgba(57, 98, 254, 0.02), 0 3px 6px rgba(117, 108, 254, 0.12);
+}
+.horizontal-menu li{
+    list-style: none;
+}
+.horizontal-menu li ul {
+    display:none;
+}
+.horizontal-menu > li {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0px;
+    float: left;
+}
+/* .horizontal-menu li a {
+        color:#4e4e4e;
+} */
+.horizontal-menu > li > a {
+    display: block;
+    position: relative;
+    margin: 0;
+    border: 0px;
+    padding: 15px 12px 15px 12px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+    color: #4e4e4e;
+}
+.horizontal-menu > li > a:hover {
+    background: rgba(129, 90, 232, 0.12);
+    color:#7f5be8;
+}
+/* .horizontal-menu li a i {
+    padding-right: 5px;
+    color: #4e4e4e;
+} */
+.horizontal-menu > li > a i {
+    font-size: 16px;
+    text-shadow: none;
+	padding-right: 5px;
+}
+.horizontal-menu li ul.sub-menu li a i {
+    padding-right: 10px;
+}
+.horizontal-menu li.menu-active > a {
+    background: rgba(129, 90, 232, 0.12);
+    color:#7f5be8;
+} 
+.horizontal-menu li .menu-active {
+    position: relative;
+}
+.horizontal-menu > li > a > .arrow:before {  
+    margin-left: 15px;
+    display: inline;
+    font-size: 16px;
+    font-family: FontAwesome;
+    height: auto;
+    content: " \276F";
+    font-weight: 300;
+    text-shadow: none;
+    width: 10px;
+    display: inline-block;
+	transform: rotate(90deg);
+}
+
+.horizontal-menu > li > ul.sub-menu {
+    display: none;
+    list-style: none;
+    clear: both;
+    margin: 0;
+    position: absolute;
+    z-index: 999;
+	border: 1px solid #d5d4da;
+	box-shadow: 0 5px 15px rgba(57, 98, 254, 0.02), 0 3px 6px rgba(117, 108, 254, 0.12);
+}
+.horizontal-menu li ul.sub-menu {
+    background: #fff;
+}
+.horizontal-menu li ul.sub-menu > li {
+    width: 200px;
+}
+.horizontal-menu li ul.sub-menu li a {
+    display: block;
+    margin: 0px 0px;
+    padding: 9px 15px 9px 0px;
+    text-decoration: none;
+    font-size: 14px;
+	color: #4e4e4e;
+    font-weight: normal;
+    background: none;
+}
+.horizontal-menu li ul.sub-menu li a:hover {
+	color: #7934f3;
+}
+.horizontal-menu > li > ul.sub-menu > li {
+    position: relative;
+}
+.horizontal-menu > li > ul.sub-menu > li ul.sub-menu {
+    position: absolute;
+    left: 200px;
+    top: 0px;
+    display: none;
+    list-style: none;
+	border: 1px solid #d5d4da;
+	box-shadow: 0 5px 15px rgba(57, 98, 254, 0.02), 0 3px 6px rgba(117, 108, 254, 0.12);
+}
+.horizontal-menu > li > ul.sub-menu > li ul.sub-menu > li ul.sub-menu {
+    position: absolute;
+    left: 200px;
+    top: 0px;
+    display: none;
+    list-style: none;
+}
+.horizontal-menu > li > ul.sub-menu li > a > .arrow:before {
+    float: right;
+    margin-top: 1px;
+    margin-right: 0px;
+    display: inline;
+    font-size: 16px;
+    font-family: FontAwesome;
+    height: auto;
+    content: "\f104";
+    font-weight: 300;
+    text-shadow: none;
+}
+
+/* Menu Toggle Btn
+----------------------------------------*/
+.menu-toggle {
+    display: none;
+    float: left;
+    width: 100%;
+    background: #fff;
+	border-bottom: 1px solid #d5d4da;
+	-webkit-box-shadow: 0 5px 15px rgba(57, 98, 254, 0.02), 0 3px 6px rgba(117, 108, 254, 0.12);
+    box-shadow: 0 5px 15px rgba(57, 98, 254, 0.02), 0 3px 6px rgba(117, 108, 254, 0.12);
+}
+.menu-toggle h3 {
+    float: left;
+    color: #4e4e4e;
+    padding: 10px 10px;
+    font-weight: 600;
+    font-size: 16px;
+}
+.menu-toggle .icon-bar {
+    display: block !important;
+    width: 20px;
+    height: 2px;
+    background-color: #4e4e4e !important;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+    margin: 3px;
+}
+
+/* .menu-toggle .icon-bar:hover {
+    background-color: #F5F5F5 !important;
+} */
+
+.menu-toggle #menu-btn {
+    float: right;
+    background: #ffffff;
+    border: 1px solid rgb(225, 223, 241);
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.menu-toggle #menu-btn:focus,
+.menu-toggle #menu-btn:hover {
+	background: rgba(129, 90, 232, 0.12);
+}
+
+.hide-menu {
+    display: none;
+}
+
+/* Responsive Menu Styles
+----------------------------------------*/
+/*Note: change the max-width asper your requirement and change the same in aceResponsiveMenu({resizeWidth: "1024" }) function*/
+
+@media screen and (max-width: 1024px) {
+  
+    .horizontal-menu {
+        float: left;
+        width:100%;
+    }
+    .horizontal-menu > li {
+        border-bottom: 1px solid #d5d4da;
+        float: none;
+    }   
+	
+	.horizontal-menu > li > a{
+		padding: 10px 12px 10px 12px;
+	}
+	.horizontal-menu li ul.sub-menu li a{
+		padding: 6px 15px 6px 0px;
+	}
+    .horizontal-menu > li > a i {
+        padding-right: 10px;
+    }
+    .horizontal-menu > li > a > .arrow:before {
+        float: right;
+        content: " \276F";
+		font-weight: 300;
+		text-shadow: none;
+		width: 10px;
+		display: inline-block;
+		transform: rotate(90deg);
+    }
+    li.menu-active > a > .arrow:before {
+    content: " \276F";
+    font-weight: 300;
+    text-shadow: none;
+    width: 10px;
+    display: inline-block;
+	transform: rotate(90deg);
+    }
+    .horizontal-menu li ul.sub-menu > li {
+        width: 100%;
+    }
+    .horizontal-menu li ul.sub-menu li ul.sub-menu li a
+        {
+        padding-left: 30px;
+    }  
+    .horizontal-menu li ul.sub-menu li ul.sub-menu li ul.sub-menu li a 
+       {
+        padding-left: 50px;
+    }  
+    .horizontal-menu > li > ul.sub-menu {
+        position: static;
+		border: 0px solid #d5d4da; 
+        box-shadow: none;
+    }
+    .horizontal-menu > li > ul.sub-menu > li ul.sub-menu {
+        position: static;
+		border: 0px solid #d5d4da; 
+        box-shadow: none;
+    }
+    .horizontal-menu > li > ul.sub-menu > li ul.sub-menu > li ul.sub-menu {
+        position: static;
+    }
+    .horizontal-menu li ul.sub-menu li.menu-active > a > .arrow:before {
+    content: " \276F";
+    font-weight: 300;
+    text-shadow: none;
+    width: 10px;
+    display: inline-block;
+	transform: rotate(90deg);
+    }
+	
+} 
+ 

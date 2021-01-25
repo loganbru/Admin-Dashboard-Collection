@@ -1,0 +1,281 @@
+/* ==============
+  Form-Advanced
+===================*/
+
+/* Datepicker */
+.datepicker {
+  border: 1px solid $gray-200;
+  padding: 8px;
+}
+
+.datepicker table tr td.active, .datepicker table tr td.active:hover, .datepicker table tr td.active.disabled,
+.datepicker table tr td.active.disabled:hover,.datepicker table tr td.today, .datepicker table tr td.today.disabled,
+.datepicker table tr td.today.disabled:hover, .datepicker table tr td.today:hover,.datepicker table tr td.selected,
+.datepicker table tr td.selected.disabled, .datepicker table tr td.selected.disabled:hover,
+.datepicker table tr td.selected:hover  {
+  background-color: $primary !important;
+  background-image: none;
+  box-shadow: none;
+  color: $white;
+}
+
+
+.daterangepicker{
+  background-color: lighten($card, 4%);
+  border-color: lighten($card, 8%);
+  &:after{
+    border-bottom-color: lighten($card, 20%);
+  }
+  .calendar-table {
+    border: 1px solid lighten($card, 10%);
+    border-radius: 4px;
+    background-color: lighten($card, 8%);
+    .next span,
+    .prev span{
+      border: solid $gray-600;
+      border-width: 0 2px 2px 0;
+    }
+  }
+  .drp-buttons{
+    border-color: lighten($card, 10%);
+    .btn {
+      font-weight: normal;
+    }
+  }
+  select.hourselect, 
+  select.minuteselect, 
+  select.secondselect, 
+  select.ampmselect,
+  select.yearselect,
+  select.monthselect{
+    background-color: lighten($card, 20%);
+    color: $gray-500;
+    border-color: $gray-300;
+  }
+  td.off,
+  td.off.in-range,
+  td.off.start-date,
+  td.off.end-date{
+    color: $gray-200;
+    background-color: lighten($card, 2%);
+  }
+  td.active,
+  td.active:hover
+  {
+    background-color: rgba($primary, 0.1);
+    border-color: transparent;
+    color: $primary;
+  }
+  td.available:hover, 
+  th.available:hover {
+    background-color: lighten($card, 20%);
+    border-color: transparent;
+    color: $gray-700;
+  }
+}
+
+
+.table-condensed>thead>tr>th, .table-condensed>tbody>tr>td {
+  padding: 5px;
+}
+
+
+/* Bootstrap-touchSpin */
+.bootstrap-touchspin .input-group-btn-vertical .btn {
+  padding: 9px 12px;
+}
+.bootstrap-touchspin .input-group-btn-vertical i {
+  top: 4px;
+  left: 8px;
+}
+
+/* Prism */
+:not(pre) > code[class*="language-"], pre[class*="language-"] {
+  background: $light;
+}
+
+/* Rating */
+.badge:empty {
+  padding: 0;
+}
+
+.select2{
+  .select2-search input::placeholder,
+  .select2-search textarea::placeholder{
+    color: darken($gray-700, 35%) !important;
+  }
+}
+
+
+
+.select2-dropdown{
+  border: 1px solid $border;
+  background-color: $card;
+  color: $gray-400;
+}
+
+.select2-container--default{
+  .select2-results__option[aria-selected=true]{
+    background-color: lighten($card, 5%);
+  }
+  .select2-search--inline{
+    .select2-search__field{
+      color: $gray-400;
+      margin-top: 7px;
+    }
+  }
+  .select2-search--dropdown{
+    .select2-search__field{
+      border: 1px solid lighten($card, 5%);
+      background-color: lighten($card, 5%);
+      color: $gray-500;
+    }
+  }
+  .select2-selection--single{
+    .select2-selection__rendered {
+      color: $form-control;
+      line-height: 38px;     
+    }
+    .select2-selection__arrow {
+      height: 38px;
+      right: 8px;
+      b {
+        border-color: $gray-400 transparent transparent transparent;
+      }
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  .select2-selection--multiple{
+    .select2-selection__choice__remove{
+      &:hover{
+        color: $gray-500;
+      }
+    }
+    .select2-selection__choice {
+      margin-top: 7px;
+      background-color:  lighten($card, 12%);
+    }
+  } 
+  &.select2-container--open{
+    .select2-selection--single{
+      .select2-selection__arrow{
+        b {
+          border-color: transparent transparent $gray-400 transparent;
+        }
+      }
+    }
+  }
+}
+
+
+
+.select2-container .select2-selection--multiple,
+.select2-container--default.select2-container--focus .select2-selection--multiple,
+.select2-container--default .select2-selection--single {
+  background-color:  $card;
+  border: 1px solid lighten($card, 5%);
+  color: $gray-400;
+  height: 38px;
+  outline: 0;
+}
+
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+  border: 1px solid $gray-300;
+  color: $form-control;
+}
+
+/*---datetimepicker---*/
+.dtp-btn-cancel {
+  margin-right: 5px;
+}
+
+.addon-color-picker .btn {
+  padding: 8px;
+  line-height: 0;
+  border-color: #bfbfbf;
+}
+/*--colorpicker--*/
+.asColorPicker-clear {
+  display: none;
+  position: absolute;
+  top: 8px;
+  right: 45px;
+  text-decoration: none;
+}
+
+.asColorPicker-trigger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 38px;
+  width: 38px;
+  border: 0;
+}
+
+.asColorPicker-dropdown {
+  max-width: 260px;
+}
+
+.asColorPicker-wrap {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  padding-right: 35px;
+}
+
+
+.input-title{
+  font-weight: 400;
+  font-size: 15px;
+  color: $dark;
+}
+
+//Bootstrap Material Datetimepicker
+
+.dtp > .dtp-content > .dtp-date-view > header.dtp-header {
+  background: $dtp;
+}
+.dtp table.dtp-picker-days tr > td > a.selected {
+  background: rgba($primary, 0.1);
+  color: $primary;
+}
+
+.dtp div.dtp-date, .dtp div.dtp-time {
+  background: lighten($dtp, 3%);
+  color: $primary;
+}
+.dtp div.dtp-actual-year,
+.dtp div.dtp-actual-month{
+  color: $white;
+  font-size: 14px;
+  padding: 8px 0 ;
+}
+
+.dtp > .dtp-content{
+  max-height: 555px;
+}
+.dtp table.dtp-picker-days tr > th{
+  color: lighten($dtp, 15%);
+}
+.dtp-actual-maxtime,
+.dtp-actual-num{
+  color: $white;
+}
+.dtp table.dtp-picker-days tr > td > a, 
+.dtp .dtp-picker-time > a{
+  color: $gray-700;
+  font-size: 12px;
+  font-weight: 400;
+}
+.dtp div.dtp-actual-num{
+  font-size: 64px;
+}
+
+[class^="ti-"], [class*=" ti-"]{
+  color: $white;
+}
+
+.dtp .p10 > a { color: $dtp; text-decoration: none; }

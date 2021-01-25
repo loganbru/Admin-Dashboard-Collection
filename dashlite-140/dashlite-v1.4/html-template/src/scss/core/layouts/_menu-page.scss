@@ -1,0 +1,88 @@
+/// Page Menus
+////////////////////////////
+.nk-pg-menu{
+    padding: .5rem 0;
+    li{
+        margin: .125rem 0;
+        a{
+            color: $base-text;
+            font-size: $fx-sz-14;
+            font-weight: 500;
+            display: block;
+            line-height: 1.25rem;
+            padding: .5rem ($content-gap-x-sm/3);
+        }
+    }
+    &-tree{
+        padding: .5rem 0;
+        li{
+            a{
+                color: $base-text;
+                font-size: $fx-sz-13;
+                font-weight: 500;
+                display: block;
+                line-height: 1.25rem;
+                padding: .5rem 0;
+            }
+        }
+    }
+    &-sub{
+        padding-bottom: 1.25rem;
+        padding-top: 4px;
+        li{
+            a{
+                border-radius: 4px;
+                color: $base-light;
+            }
+            &:hover,&.active{
+                a{
+                    background: $light-200;
+                }
+            }
+            &:hover{
+                a{
+                    color: $base-text;
+                }
+            }
+            &.active{
+                a{
+                    color: $accent-color;
+                }
+            }
+        }
+        &-tree{
+            padding-bottom: 8px;
+            li {
+                a{
+                    position: relative;
+                    color: $base-light;
+                    padding: 5px 16px;
+                    border-left: 1px solid $border-light;
+                    &:after{
+                        position: absolute;
+                        width: 3px;
+                        content: '';
+                        background: $accent-color;
+                        left: -1px;
+                        top: 0;
+                        bottom: 0;
+                        opacity: 0;
+                    }
+                }
+                &:hover{
+                    a{
+                        color: $base-text;
+                    }
+                }
+                &.active{
+                    a{
+                        color: $accent-color;
+                        &:after{
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

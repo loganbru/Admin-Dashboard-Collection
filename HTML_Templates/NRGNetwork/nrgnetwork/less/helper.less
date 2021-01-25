@@ -1,0 +1,145 @@
+img.img-round{
+    border-radius: 50%;
+}
+.img-round{
+    img{
+        border-radius: 50%;
+    }
+}
+
+
+.vc_row{
+    position: relative;
+
+    .vc-row-overlay{
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+    }
+}
+
+
+
+.vc-col-option{
+    display: none;
+
+    &[data-valign="top"] + div{
+        vertical-align: top;
+    }
+    &[data-valign="middle"] + div{
+        vertical-align: middle;
+    }
+    &[data-valign="bottom"] + div{
+        vertical-align: bottom;
+    }
+
+    &[data-align="left"] + div{
+        text-align: left;
+    }
+    &[data-align="center"] + div{
+        text-align: center;
+    }
+    &[data-align="right"] + div{
+        text-align: right;
+    }
+}
+.vc-row-table{
+    width: 100%;
+}
+
+@media only screen and (min-width: 601px){
+    .vc_row.vc-row-table{
+        display: table;
+        width: 100%;
+        table-layout: fixed;
+    }
+    .vc_row.vc-row-table > .vc_column_container,
+    .vc_row.vc-row-table > .vc_vc_column{
+        display: table-cell;
+        float: none;
+    }
+
+    /* Columns has same height */
+    .vc_row.vc_row-no-padding{
+        display: table;
+        table-layout: fixed;
+    }
+    .vc_row.vc_row-no-padding > .vc_column_container{
+        display: table-cell;
+        float: none;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .vc-row-table{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+.vc_row[data-vc-full-width="true"]{
+    &::before,
+    &::after{
+        
+    }
+}
+
+.vc_row,
+.vc_column_container{
+    .vc-overlay{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        opacity: 0.71;
+    }
+
+    &.img-left-top{
+        background-position: left top !important;
+    }
+    &.img-left-center{
+        background-position: left center !important;
+    }
+    &.img-left-bottom{
+        background-position: left bottom !important;
+    }
+    &.img-center-top{
+        background-position: center top !important;
+    }
+    &.img-center-center{
+        background-position: center center !important;
+    }
+    &.img-center-bottom{
+        background-position: center bottom !important;
+    }
+    &.img-right-top{
+        background-position: right top !important;
+    }
+    &.img-right-center{
+        background-position: right center !important;
+    }
+    &.img-right-bottom{
+        background-position: right bottom !important;
+    }
+
+    &.overlay-dark{
+        &::before{
+            content: '';
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            background-color: rgba(0,0,0,0.55);
+            z-index: 1;
+        }
+
+        & > *{
+            z-index: 10;
+            position: relative;
+        }
+    }
+}

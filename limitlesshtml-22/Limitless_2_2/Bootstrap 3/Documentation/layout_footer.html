@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/core.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script type="text/javascript" src="assets/js/plugins/ui/prism.min.js"></script>
+	
+	<script type="text/javascript" src="assets/js/core/app.js"></script>
+	<script type="text/javascript" src="assets/js/pages/sidebar_detached_sticky_native.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body data-spy="scroll" data-target=".sidebar-detached" class="has-detached-right">
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-default navbar-lg header-highlight">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="index.html"><img src="assets/images/logo_light.png" alt=""></a>
+
+			<ul class="nav navbar-nav pull-right visible-xs-block">
+				<li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+				<li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+				<li><a class="sidebar-mobile-detached-toggle"><i class="icon-grid7"></i></a></li>
+			</ul>
+		</div>
+
+		<div class="navbar-collapse collapse" id="navbar-mobile">
+			<ul class="nav navbar-nav">
+				<li><a class="sidebar-control sidebar-main-hide hidden-xs"><i class="icon-paragraph-justify3"></i></a></li>
+				<li><a class="sidebar-control sidebar-detached-hide hidden-xs"><i class="icon-drag-right"></i></a></li>
+			</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="other_changelog.html">Changelog <span class="label label-inline bg-warning-400 position-right">v. 2.0</span></a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page container -->
+	<div class="page-container">
+
+		<!-- Page content -->
+		<div class="page-content">
+
+			<!-- Main sidebar -->
+			<div class="sidebar sidebar-main">
+				<div class="sidebar-content">
+
+	        		<!-- Support -->
+					<div class="sidebar-category no-margin">
+						<div class="category-title">
+							<span>Have questions?</span>
+							<i class="icon-help text-muted pull-right"></i>
+						</div>
+
+						<div class="category-content">
+							<a href="http://kopyov.ticksy.com" class="btn bg-success-400 btn-block" target="_blank"><i class="icon-lifebuoy position-left"></i> Limitless support</a>
+						</div>
+					</div>
+					<!-- /support -->
+
+
+					<!-- Main navigation -->
+					<div class="sidebar-category">
+						<div class="category-title">
+							<span>Navigation</span>
+							<i class="icon-menu7 text-muted pull-right"></i>
+						</div>
+
+						<div class="category-content no-padding">
+							<ul class="navigation navigation-main navigation-accordion">
+
+								<!-- Main -->
+								<li class="navigation-header">Main</li>
+								<li><a href="index.html">Introduction</a></li>
+								<li><a href="main_getting_started.html">Getting started</a></li>
+								<li><a href="main_starter_kit.html">Starter kit</a></li>
+								<li><a href="main_rtl.html">RTL layout</a></li>
+
+								<li class="navigation-header">Basic functionality</li>								
+								<li><a href="base_less_css.html">LESS and CSS</a></li>
+								<li><a href="base_less_compile.html">Compiling LESS</a></li>
+								<li><a href="base_less_compile_rtl.html">Compiling LESS for RTL version</a></li>
+								<li>
+									<a href="#">Plugins</a>
+									<ul>
+										<li><a href="plugins_forms.html">Forms</a></li>
+										<li><a href="plugins_forms_styling.html">Form styling</a></li>
+										<li><a href="plugins_selects.html">Selects</a></li>
+										<li><a href="plugins_editors.html">Editors</a></li>
+										<li><a href="plugins_uploaders.html">Uploaders</a></li>
+										<li><a href="plugins_wizards.html">Wizards</a></li>
+										<li><a href="plugins_extensions.html">Extensions</a></li>
+										<li><a href="plugins_notifications.html">Notifications</a></li>
+										<li><a href="plugins_pickers.html">Pickers</a></li>
+										<li><a href="plugins_tables.html">Tables</a></li>
+										<li><a href="plugins_ui.html">UI</a></li>
+										<li><a href="plugins_vis.html">Visualization</a></li>
+									</ul>
+								</li>
+								<li><a href="base_bootstrap.html">Bootstrap</a></li>
+								<li><a href="base_color_system.html">Color system</a></li>
+								<li><a href="base_helpers.html">Helpers</a></li>
+								<li><a href="base_themes.html">Themes</a></li>
+
+								<li class="navigation-header">Layout options</li>
+								<li><a href="layout_markup.html">Markup</a></li>
+								<li><a href="layout_sidebars.html">Sidebars</a></li>
+								<li><a href="layout_navbars.html">Navbars</a></li>
+								<li><a href="layout_v_nav.html">Vertical navigation</a></li>
+								<li><a href="layout_h_nav.html">Horizontal navigation</a></li>
+								<li><a href="layout_page_header.html">Page header</a></li>
+								<li class="active"><a href="layout_footer.html">Footer</a></li>
+
+								<li class="navigation-header">Other</li>
+								<li><a href="other_credits.html">Sources and credits</a></li>
+								<li><a href="other_changelog.html">Changelog <span class="label bg-warning-400">version 2.0</span></a></li>
+								<!-- /main -->
+
+							</ul>
+						</div>
+					</div>
+					<!-- /main navigation -->
+
+				</div>
+			</div>
+			<!-- /main sidebar -->
+
+
+			<!-- Main content -->
+			<div class="content-wrapper">
+
+				<!-- Page header -->
+				<div class="page-header">
+					<div class="page-header-content">
+						<div class="page-title">
+							<h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold">Limitless</span> - Footer</h4>
+						</div>
+
+						<div class="heading-elements">
+							<ul class="breadcrumb">
+								<li><a href="index.html"><i class="icon-home2 position-left"></i> Home</a></li>
+								<li class="active">Footer</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- /page header -->
+				
+
+				<!-- Content area -->
+				<div class="content">
+
+					<!-- Detached content -->
+					<div class="container-detached">
+						<div class="content-detached">
+
+							<!-- Footer -->
+							<div class="panel panel-flat" id="footer">
+								<div class="panel-heading">
+									<h5 class="panel-title">Footer component</h5>
+									<div class="heading-elements">
+										<ul class="icons-list">
+					                		<li><a data-action="collapse"></a></li>
+					                		<li><a data-action="close"></a></li>
+					                	</ul>
+					            	</div>
+								</div>
+
+								<div class="panel-body">
+									<div class="content-group-lg" id="overview">
+										<h6 class="text-semibold">Overview</h6>
+										<p>Basically footer is a completely optional component, displayed at the bottom of the page. Limitless layout allows us to display footer component always at the bottom of the page, despite its height. Yes, it's always sticked to the bottom. It can be a simple <code>&lt;div /></code> element with <code>.footer</code> class or a more complex thing with navbar component and full featured navigation, even mega menu with multiple level navigation. Also footer can be either fixed or static (default).</p>
+
+										<p>Depending on the layout version, position of the footer container can be different. For example, first and second layout display footer component inside <code>&lt;div class="content" /></code> content container. But third and fourth layouts footer component is placed inside <code>&lt;div class="content-wrapper" /></code> container, because <code>&lt;div class="content" /></code> is omitted, so in these layouts it takes 100% width of the page.</p>
+									</div>
+
+									<div class="content-group-lg" id="markup">
+										<div class="content-group">
+											<h6 class="text-semibold">Footer markup</h6>
+											<p>Below you'll find examples of markup used in different layout versions and as different components. <strong>Note:</strong> although navbar can be used as a footer component with copyright info and other navbar components, fixed navbar option requires some JS tricks if you want to display it inside content area only. By default fixed navbar in footer has always 100% width.</p>
+										</div>
+
+										<div class="content-group-lg" id="markup_base_1_2">
+											<p>Default footer component markup in <strong>first</strong> and <strong>second</strong> layouts:</p>
+											<pre data-line="15-19" class="language-markup"><code>&lt;!-- Main content -->
+&lt;div class="content-wrapper">
+
+	&lt;!-- Page header -->
+	&lt;div class="page-header">
+		[page header content]
+	&lt;/div>
+	&lt;!-- /page header -->
+
+
+	&lt;!-- Content area -->
+	&lt;div class="content">
+		[main content]
+
+		&lt;!-- Footer -->
+		&lt;div class="footer text-muted">
+			&copy; 2015. &lt;a href="#">Limitless Web App Kit&lt;/a> by &lt;a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov&lt;/a>
+		&lt;/div>
+		&lt;!-- /footer -->
+
+	&lt;/div>
+	&lt;!-- /content area -->
+
+&lt;/div>
+&lt;!-- /main content -->
+</code></pre>
+										</div>
+
+										<div class="content-group-lg" id="markup_base_3_4">
+											<p>Default footer component markup in <strong>third</strong> and <strong>fourth</strong> layouts:</p>
+											<pre data-line="5-9" class="language-markup"><code>&lt;!-- Main content -->
+&lt;div class="content-wrapper">
+	[main content]
+
+	&lt;!-- Footer -->
+	&lt;div class="footer text-muted">
+		&copy; 2015. &lt;a href="#">Limitless Web App Kit&lt;/a> by &lt;a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov&lt;/a>
+	&lt;/div>
+	&lt;!-- /footer -->
+
+&lt;/div>
+&lt;!-- /main content -->
+</code></pre>
+										</div>
+
+										<div class="content-group-lg" id="markup_navbar_1_2">
+											<p>Using <code>navbar</code> component as a footer component in <strong>first</strong> and <strong>second</strong> layouts:</p>
+											<pre data-line="15-42" class="language-markup"><code>&lt;!-- Main content -->
+&lt;div class="content-wrapper">
+
+	&lt;!-- Page header -->
+	&lt;div class="page-header">
+		[page header content]
+	&lt;/div>
+	&lt;!-- /page header -->
+
+
+	&lt;!-- Content area -->
+	&lt;div class="content">
+		[main content]
+
+		&lt;!-- Footer -->
+		&lt;div class="navbar navbar-default navbar-sm navbar-fixed-bottom">
+
+			&lt;!-- Toggle button -->
+			&lt;ul class="nav navbar-nav no-border visible-xs-block">
+				&lt;li>
+					&lt;a class="text-center collapsed" data-toggle="collapse" data-target="#navbar-second">
+						&lt;i class="icon-circle-up2">&lt;/i>
+					&lt;/a>
+				&lt;/li>
+			&lt;/ul>
+			&lt;!-- /toggle button -->
+
+
+			&lt;!-- Navbar content -->
+			&lt;div class="navbar-collapse collapse" id="navbar-second">
+				&lt;div class="navbar-text">
+					&copy; 2015. &lt;a href="#">Limitless Web App Kit&lt;/a> by &lt;a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov&lt;/a>
+				&lt;/div>
+
+				&lt;div class="navbar-right">
+					[right side content]
+				&lt;/div>
+			&lt;/div>
+			&lt;!-- /navbar content -->
+
+		&lt;/div>
+		&lt;!-- /footer -->
+
+	&lt;/div>
+	&lt;!-- /content area -->
+
+&lt;/div>
+&lt;!-- /main content -->
+</code></pre>
+										</div>
+
+										<div id="markup_navbar_3_4">
+											<p>Using <code>navbar</code> component as a footer component in <strong>third</strong> and <strong>fourth</strong> layouts:</p>
+											<pre data-line="5-32" class="language-markup"><code>&lt;!-- Main content -->
+&lt;div class="content-wrapper">
+	[main content]
+
+	&lt;!-- Footer -->
+	&lt;div class="navbar navbar-default navbar-sm navbar-fixed-bottom">
+
+		&lt;!-- Toggle button -->
+		&lt;ul class="nav navbar-nav no-border visible-xs-block">
+			&lt;li>
+				&lt;a class="text-center collapsed" data-toggle="collapse" data-target="#navbar-second">
+					&lt;i class="icon-circle-up2">&lt;/i>
+				&lt;/a>
+			&lt;/li>
+		&lt;/ul>
+		&lt;!-- /toggle button -->
+
+
+		&lt;!-- Navbar content -->
+		&lt;div class="navbar-collapse collapse" id="navbar-second">
+			&lt;div class="navbar-text">
+				&copy; 2015. &lt;a href="#">Limitless Web App Kit&lt;/a> by &lt;a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov&lt;/a>
+			&lt;/div>
+
+			&lt;div class="navbar-right">
+				[right side content]
+			&lt;/div>
+		&lt;/div>
+		&lt;!-- /navbar content -->
+
+	&lt;/div>
+	&lt;!-- /footer -->
+
+&lt;/div>
+&lt;!-- /main content -->
+</code></pre>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /footer -->
+
+						</div>
+					</div>
+					<!-- /detached content -->
+
+
+					<!-- Detached sidebar -->
+					<div class="sidebar-detached">
+			        	<div class="sidebar sidebar-default">
+							<div class="sidebar-content">
+
+				        		<!-- Contact author -->
+								<div class="sidebar-category no-margin">
+									<div class="category-title">
+										<span>Page navigation</span>
+										<i class="icon-menu7 text-muted pull-right"></i>
+									</div>
+
+									<div class="category-content">
+										<a href="http://themeforest.net/user/kopyov" class="btn bg-blue btn-block" target="_blank"><i class="icon-reading position-left"></i> Contact author</a>
+									</div>
+								</div>
+								<!-- /contact author -->
+
+			        			
+			        			<!-- Navigation -->
+								<div class="sidebar-category">
+									<div class="category-content no-padding">
+										<ul class="nav navigation no-padding-top">
+											<li class="navigation-header"><i class="icon-history pull-right"></i> Navigation</li>
+											<li><a href="#footer">Footer component</a></li>
+											<li><a href="#overview">Overview</a></li>
+											<li>
+												<a href="#markup">Footer markup</a>
+												<ul>
+													<li><a href="#markup_base_1_2">Basic footer in 1st and 2nd</a></li>
+													<li><a href="#markup_base_3_4">Basic footer in 3rd and 4th</a></li>
+													<li><a href="#markup_navbar_1_2">Navbar in 1st and 2nd</a></li>
+													<li><a href="#markup_navbar_3_4">Navbar in 3rd and 4th</a></li>
+												</ul>
+											</li>
+											<li class="navigation-divider"></li>
+											<li><a href="#">Go to top <i class="icon-circle-up2 pull-right"></i></a></li>
+							            </ul>
+						            </div>
+					            </div>
+					            <!-- /navigation -->
+
+				            </div>
+			            </div>
+		            </div>
+		            <!-- /detached sidebar -->
+
+
+					<!-- Footer -->
+					<div class="footer text-muted">
+						&copy; 2015. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
+					</div>
+					<!-- /footer -->
+
+				</div>
+				<!-- /content area -->
+
+			</div>
+			<!-- /main content -->
+
+		</div>
+		<!-- /page content -->
+
+	</div>
+	<!-- /page container -->
+
+</body>
+</html>

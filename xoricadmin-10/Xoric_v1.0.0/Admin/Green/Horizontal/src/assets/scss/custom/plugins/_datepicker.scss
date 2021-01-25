@@ -1,0 +1,71 @@
+
+//
+// Datepicker
+//
+
+.datepicker {
+  border: 1px solid $dropdown-border-color;
+  z-index: 999 !important;
+  background-color: $dropdown-bg;
+  color: $body-color;
+}
+
+.datepicker-inline {
+  .datepicker{
+    border-color: $dropdown-border-color;
+  }
+}
+
+.datepicker--nav{
+  background-color: rgba($primary, 0.2);
+  border-color: $border-color;
+}
+
+.datepicker--pointer{
+  background: lighten($gray-200, 2%);
+  border-top-color: $border-color;
+  border-right-color: $border-color;
+}
+
+.datepicker--time{
+  border-color: $border-color;
+}
+
+.datepicker--time-row{
+  background: linear-gradient(to right, $gray-300, $gray-300) left 50%/100% 1px no-repeat;
+}
+
+.datepicker--day-name{
+  color: $primary;
+}
+
+.datepicker--cell{
+  &.-current-{
+    color: $primary;
+  }
+
+  &.-selected-, &.-selected-.-current-{
+    background-color: $primary !important;
+  }
+
+  &.-focus-{
+    background-color: rgba($primary, 0.1);
+  }
+
+  &.-in-range-{
+    background-color: $gray-300;
+    color: $gray-600;
+  }
+}
+
+.datepicker--nav-action, .datepicker--nav-title{
+  &:hover{
+    background-color: rgba($primary, 0.07);
+  }
+}
+
+.datepicker--time-current-hours, .datepicker--time-current-minutes{
+  &:after{
+    background-color: rgba($primary, 0.1);
+  }
+}

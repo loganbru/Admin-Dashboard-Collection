@@ -1,0 +1,161 @@
+//
+// Header Menu
+//
+
+
+
+
+// Build desktop menu
+@include kt-menu-hor-build-layout(kt-get($kt-header-config, menu, desktop));
+@include kt-menu-hor-build-skin(kt-get($kt-header-config, menu, desktop), default);
+
+// Build mobile menu
+@include kt-menu-ver-build-layout(kt-get($kt-header-config, menu, tablet-and-mobile));
+@include kt-menu-ver-build-skin(kt-get($kt-header-config, menu, tablet-and-mobile), default);
+
+// Header menu mobile offcanvas
+@include kt-offcanvas-build(kt-header-menu-wrapper, tablet-and-mobile, kt-get($kt-header-config, menu, offcanvas-mobile));
+
+// General mode
+.kt-header-menu-wrapper {
+
+	// Header toolbar
+	.kt-header-toolbar {
+		.btn.btn-custom {
+			background-color: #e7e8ef;
+			border-color: #e7e8ef;
+			color: #68667f;
+			font-size: 0.95rem;
+			font-weight: 600;
+			padding: 0.75rem 2rem;
+			text-transform: uppercase;
+
+			.show > &,
+	  		&.active,
+	  		&:active,
+	  		&:hover {
+				background-color: darken(#e7e8ef, 3%);
+				border-color: darken(#e7e8ef, 3%);
+				color: lighten(#68667f, 3%);
+			}
+		}
+	}
+}
+
+// Desktop mode(1024px and above)
+@include kt-desktop {
+	// Header menu wrapper
+	.kt-header-menu-wrapper {
+		position: relative;
+		display: flex;
+		width: 100%;
+		align-items: stretch;
+		justify-content: space-between;
+
+		// Toolbar
+		.kt-header-toolbar {
+			padding-left: 1rem;
+			display: flex;
+			align-items: center;	
+		}
+	}
+
+	// Header menu
+	.kt-header-menu {
+		width: auto;
+		margin: 0;
+		height: kt-get($kt-header-config, base, desktop, default, height, bottom);
+
+		// Menu nav
+		.kt-menu__nav {
+			width: auto;
+
+			// Menu item
+			> .kt-menu__item {
+				display: flex;
+				align-items: stretch;
+				padding: 0 3px 0 0;
+
+				@include kt-rounded {
+					border-top-left-radius: $kt-border-radius;
+					border-top-right-radius: $kt-border-radius;
+				}
+
+				// Primary link
+				> .kt-menu__link {
+					transition: none;
+					padding: 0 25px;
+					background: #e5f3fe;
+					
+					@include kt-rounded {
+						border-top-left-radius: $kt-border-radius;
+						border-top-right-radius: $kt-border-radius;
+					}
+
+					> .kt-menu__link-text {
+						font-family: 'Asap Condensed';
+						font-weight: 500;
+						font-size: 1.2rem;
+						color: #757893;
+						text-transform: uppercase;
+					}
+
+					> .kt-menu__link-icon {
+						font-size: 1.1rem;
+						color: #757893;
+					}
+				}
+				
+				// Active menu item
+				&.kt-menu__item--active,
+				&.kt-menu__item--here {
+					> .kt-menu__link {
+						transition: none;
+						background: $kt-page-content-bg-color;
+
+						> .kt-menu__link-text {
+							color: kt-brand-color();
+						}
+
+						> .kt-menu__link-icon {
+							color: kt-brand-color();
+						}
+					}
+				}
+
+				// Hover menu item
+				&:hover,
+				&.kt-menu__item--hover {
+					> .kt-menu__link {
+						> .kt-menu__link-text {
+							color: kt-brand-color();
+						}
+
+						> .kt-menu__link-icon {
+							color: kt-brand-color();
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// Tablet and mobile mode(1024px and below)
+@include kt-tablet-and-mobile() {
+	.kt-header-menu-wrapper {
+		// Menu
+		.kt-header-menu {
+			// Nav
+			.kt-menu__nav {
+				margin-bottom: 0;
+				padding-bottom: 10px;
+			}
+		}
+
+		// Toolbar
+		.kt-header-toolbar {
+			padding-left: 30px;
+		}
+	}
+}

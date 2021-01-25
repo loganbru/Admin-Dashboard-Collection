@@ -1,0 +1,142 @@
+/*! _pricing.scss | Bulkit | CSS Ninja */
+
+/* ==========================================================================
+Pricing tables styles
+========================================================================== */
+
+/***
+TABLE OF CONTENTS
+=============================================================================
+0. Pricing blocks
+=============================================================================
+***/
+
+/* ==========================================================================
+0. Pricing blocks
+========================================================================== */
+
+.pricing-wrap {
+    padding: 60px 0;
+
+    .pricing-card {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        border: 1px solid $fade-grey;
+        border-radius: 8px;
+        background: $white;
+        padding: 30px;
+        box-shadow: $light-box-shadow;
+
+        &:hover {
+            .pricing-overlay {
+                transform: scale(20);
+            }
+
+            .pricing-head {
+                .price {
+                    color: $smoke-white;
+                }
+
+                .meta span {
+                    color: $smoke-white !important;
+                }
+            }
+
+            .pricing-desc {
+                opacity: 0;
+            }
+
+            .pricing-button {
+                opacity: 1;
+                pointer-events: all;
+                transform: translateY(0);
+            }
+        }
+
+        .pricing-overlay {
+            position: absolute;
+            bottom: -50px;
+            right: -50px;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background: $primary;
+            transition: all .3s;
+
+            &.is-accent {
+                background: $accent;
+            }
+
+            &.is-bold {
+                background: $sidebar;
+            }
+        }
+
+        .pricing-head {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            z-index: 1;
+
+            .price {
+                font-size: 3.6rem;
+                font-family: 'Nexa Bold', sans-serif;
+                font-weight: bolder;
+                color: $dark-text;
+                transition: color .3s;
+
+                &:before {
+                    content: '$';
+                    position: relative;
+                    top: -20px;
+                    font-size: 1.6rem;
+                }
+            }
+
+            .meta {
+                span {
+                    display: block;
+                    transition: color .3s;
+
+                    &:first-child {
+                        font-family: 'Nexa Bold', sans-serif;
+                        font-size: 1.1rem;
+                    }
+
+                    &:nth-child(2) {
+                        color: $med-grey;
+                    }
+                }
+            }
+        }
+
+        .pricing-desc {
+            position: relative;
+            padding: 20px;
+            user-select: none;
+            pointer-events: none;
+            z-index: 1;
+            transition: opacity .3s;
+
+            p {
+                color: $muted-grey;
+            }
+        }
+
+        .pricing-button {
+            position: absolute;
+            bottom: 44px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            max-width: 160px;
+            z-index: 1;
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(10px);
+            transition: opacity .3s, transform .3s;
+        }
+    }
+}

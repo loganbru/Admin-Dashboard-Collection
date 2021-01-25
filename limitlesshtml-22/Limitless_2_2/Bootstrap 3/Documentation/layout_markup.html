@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/core.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script type="text/javascript" src="assets/js/plugins/ui/prism.min.js"></script>
+	
+	<script type="text/javascript" src="assets/js/core/app.js"></script>
+	<script type="text/javascript" src="assets/js/pages/sidebar_detached_sticky_native.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body data-spy="scroll" data-target=".sidebar-detached" class="has-detached-right">
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-default navbar-lg header-highlight">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="index.html"><img src="assets/images/logo_light.png" alt=""></a>
+
+			<ul class="nav navbar-nav pull-right visible-xs-block">
+				<li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+				<li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+				<li><a class="sidebar-mobile-detached-toggle"><i class="icon-grid7"></i></a></li>
+			</ul>
+		</div>
+
+		<div class="navbar-collapse collapse" id="navbar-mobile">
+			<ul class="nav navbar-nav">
+				<li><a class="sidebar-control sidebar-main-hide hidden-xs"><i class="icon-paragraph-justify3"></i></a></li>
+				<li><a class="sidebar-control sidebar-detached-hide hidden-xs"><i class="icon-drag-right"></i></a></li>
+			</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="other_changelog.html">Changelog <span class="label label-inline bg-warning-400 position-right">v. 2.0</span></a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page container -->
+	<div class="page-container">
+
+		<!-- Page content -->
+		<div class="page-content">
+
+			<!-- Main sidebar -->
+			<div class="sidebar sidebar-main">
+				<div class="sidebar-content">
+
+	        		<!-- Support -->
+					<div class="sidebar-category no-margin">
+						<div class="category-title">
+							<span>Have questions?</span>
+							<i class="icon-help text-muted pull-right"></i>
+						</div>
+
+						<div class="category-content">
+							<a href="http://kopyov.ticksy.com" class="btn bg-success-400 btn-block" target="_blank"><i class="icon-lifebuoy position-left"></i> Limitless support</a>
+						</div>
+					</div>
+					<!-- /support -->
+
+
+					<!-- Main navigation -->
+					<div class="sidebar-category">
+						<div class="category-title">
+							<span>Navigation</span>
+							<i class="icon-menu7 text-muted pull-right"></i>
+						</div>
+
+						<div class="category-content no-padding">
+							<ul class="navigation navigation-main navigation-accordion">
+
+								<!-- Main -->
+								<li class="navigation-header">Main</li>
+								<li><a href="index.html">Introduction</a></li>
+								<li><a href="main_getting_started.html">Getting started</a></li>
+								<li><a href="main_starter_kit.html">Starter kit</a></li>
+								<li><a href="main_rtl.html">RTL layout</a></li>
+
+								<li class="navigation-header">Basic functionality</li>								
+								<li><a href="base_less_css.html">LESS and CSS</a></li>
+								<li><a href="base_less_compile.html">Compiling LESS</a></li>
+								<li><a href="base_less_compile_rtl.html">Compiling LESS for RTL version</a></li>
+								<li>
+									<a href="#">Plugins</a>
+									<ul>
+										<li><a href="plugins_forms.html">Forms</a></li>
+										<li><a href="plugins_forms_styling.html">Form styling</a></li>
+										<li><a href="plugins_selects.html">Selects</a></li>
+										<li><a href="plugins_editors.html">Editors</a></li>
+										<li><a href="plugins_uploaders.html">Uploaders</a></li>
+										<li><a href="plugins_wizards.html">Wizards</a></li>
+										<li><a href="plugins_extensions.html">Extensions</a></li>
+										<li><a href="plugins_notifications.html">Notifications</a></li>
+										<li><a href="plugins_pickers.html">Pickers</a></li>
+										<li><a href="plugins_tables.html">Tables</a></li>
+										<li><a href="plugins_ui.html">UI</a></li>
+										<li><a href="plugins_vis.html">Visualization</a></li>
+									</ul>
+								</li>
+								<li><a href="base_bootstrap.html">Bootstrap</a></li>
+								<li><a href="base_color_system.html">Color system</a></li>
+								<li><a href="base_helpers.html">Helpers</a></li>
+								<li><a href="base_themes.html">Themes</a></li>
+
+								<li class="navigation-header">Layout options</li>
+								<li class="active"><a href="layout_markup.html">Markup</a></li>
+								<li><a href="layout_sidebars.html">Sidebars</a></li>
+								<li><a href="layout_navbars.html">Navbars</a></li>
+								<li><a href="layout_v_nav.html">Vertical navigation</a></li>
+								<li><a href="layout_h_nav.html">Horizontal navigation</a></li>
+								<li><a href="layout_page_header.html">Page header</a></li>
+								<li><a href="layout_footer.html">Footer</a></li>
+
+								<li class="navigation-header">Other</li>
+								<li><a href="other_credits.html">Sources and credits</a></li>
+								<li><a href="other_changelog.html">Changelog <span class="label bg-warning-400">version 2.0</span></a></li>
+								<!-- /main -->
+
+							</ul>
+						</div>
+					</div>
+					<!-- /main navigation -->
+
+				</div>
+			</div>
+			<!-- /main sidebar -->
+
+
+			<!-- Main content -->
+			<div class="content-wrapper">
+
+				<!-- Page header -->
+				<div class="page-header">
+					<div class="page-header-content">
+						<div class="page-title">
+							<h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold">Limitless</span> - Markup</h4>
+						</div>
+
+						<div class="heading-elements">
+							<ul class="breadcrumb">
+								<li><a href="index.html"><i class="icon-home2 position-left"></i> Home</a></li>
+								<li class="active">Markup</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- /page header -->
+				
+
+				<!-- Content area -->
+				<div class="content">
+
+					<!-- Detached content -->
+					<div class="container-detached">
+						<div class="content-detached">
+
+							<!-- Layout overview -->
+							<div class="panel panel-flat">
+								<div class="panel-heading">
+									<h5 class="panel-title" id="layouts_overview">Layouts overview</h5>
+									<div class="heading-elements">
+										<ul class="icons-list">
+					                		<li><a data-action="collapse"></a></li>
+					                		<li><a data-action="close"></a></li>
+					                	</ul>
+					            	</div>
+								</div>
+
+								<div class="panel-body">
+									<div class="content-group">
+										Limitless template uses <code>table</code> CSS layout. This means no extra margins, paddings and hidden overflows. This layout type was chosen not without a reason: it's very flexible in terms of markup and structure - you can easily add as many columns as you need using proper classes. All sidebars and content area use <code>display: table-cell;</code> CSS properties, all sidebars have fixed <code>260px</code> width, main sidebar can be collapsed or completely hid. Depending on layout type, markup slightly differs.
+									</div>
+
+									<p>Table below describes all layout types available:</p>
+									<div class="table-responsive">
+										<table class="table table-bordered table-striped">
+											<thead>
+												<tr>
+													<th style="width: 250px;">Layout</th>
+													<th>Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="text-semibold">Layout 1</td>
+													<td>Base layout. By default contains sidebar and navbar in dark colors, content area has default <code>&lt;body></code>'s light grey background color. Default styling of components can be changed: sidebars and navbars include different color and styling options; page header can be either white or transparent; breadcrumbs can be placed on top, bottom or as a component.</td>
+												</tr>
+												<tr>
+													<td class="text-semibold">Layout 2</td>
+													<td>Similar to layout 1, but has a bit different defaults - navbar is white by default, but navbar header background color is similar to sidebar's color. Page header has different default styling and is transparent, breadcrumb appears as a component by default and placed after page header content.</td>
+												</tr>
+												<tr>
+													<td class="text-semibold">Layout 3</td>
+													<td>Detached layout. All sidebars appears as separate components and have side spacings. Page header is transparent by default and is full width - placed outside content are right after navbars. Breadcrumb line is moved outside page header and placed after navbar and <strong>before</strong> page header content.</td>
+												</tr>
+												<tr>
+													<td class="text-semibold">Layout 4</td>
+													<td>Full width 1 column layout with horizontal navigation. By default doesn't have any sidebars, but they can be added as alternative content to the content area. Page header is transparent by default and breadcrumb component appears as a part of page title. Breadcrumb line is removed, but still can be used since functionality remains the same.</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<!-- /layout overview -->
+
+
+							<!-- Layout 1 -->
+							<div class="panel panel-flat">
+								<div class="panel-heading">
+									<h5 class="panel-title" id="layout_1">Layout 1</h5>
+									<div class="heading-elements">
+										<ul class="icons-list">
+					                		<li><a data-action="collapse"></a></li>
+					                		<li><a data-action="close"></a></li>
+					                	</ul>
+					            	</div>
+								</div>
+
+								<div class="panel-body">
+									<div class="content-group-lg">
+									 	<h6 class="text-semibold" id="layout_1_overview">Overview</h6>
+									 	<p>First layout is considered as main, all other layouts use this one as a base. It supports up to 4 columns in different combinations: sidebar + content; main sidebar + secondary sidebar + content; main sidebar + secondary sidebar + content + opposite sidebar; main sidebar + content + opposite sidebar etc. Main and secondary sidebars can be swapped. All structure variations are markup dependent, this means you need to insert layout parts to the layout and add a poper class to them, no need to add/remove/change any classes elsewhere.</p>
+								 	</div>
+
+								 	<div class="content-group-lg">
+								 		<h6 class="text-semibold" id="layout_1_full">Full width markup</h6>
+									 	<p>Example below demonstrates basic <strong>full width</strong> 4 columns layout markup - top navbar, 3 sidebars and main content area:</p>
+
+										<pre><code class="language-markup">&lt;!-- Liquid layout -->
+&lt;body>
+
+	&lt;!-- Main navbar -->
+	&lt;div class="navbar navbar-inverse">
+		...
+	&lt;/div>
+	&lt;!-- /main navbar -->
+
+
+	&lt;!-- Page container -->
+	&lt;div class="page-container">
+
+		&lt;!-- Page content -->
+		&lt;div class="page-content">
+
+			&lt;!-- Main sidebar -->
+			&lt;div class="sidebar sidebar-main">
+				...
+			&lt;/div>
+			&lt;!-- /main sidebar -->
+
+
+			&lt;!-- Secondary sidebar -->
+			&lt;div class="sidebar sidebar-secondary">
+				...
+			&lt;/div>
+			&lt;!-- /secondary sidebar -->
+
+
+			&lt;!-- Main content -->
+			&lt;div class="content-wrapper">
+
+				&lt;!-- Page header -->
+				&lt;div class="page-header">
+					...
+				&lt;/div>
+				&lt;!-- /page header -->
+
+
+				&lt;!-- Content area -->
+				&lt;div class="content">
+					...
+				&lt;/div>
+				&lt;!-- /content area -->
+
+			&lt;/div>
+			&lt;!-- /main content -->
+
+
+			&lt;!-- Opposite sidebar -->
+			&lt;div class="sidebar sidebar-opposite">
+				...
+			&lt;/div>
+			&lt;!-- /opposite sidebar -->
+
+		&lt;/div>
+		&lt;!-- /page content -->
+
+	&lt;/div>
+	&lt;!-- /page container -->
+
+&lt;/body>
+</code></pre>
+									</div>
+
+									<div>
+										<h6 class="text-semibold" id="layout_1_fixed">Fixed width markup</h6>
+										<p>Markup of the <strong>boxed</strong> (or fixed width) layout is the same, the only difference is <code>.layout-boxed</code> class added to the <code>&lt;body></code> tag. This class adds optional background image to the <code>&lt;body></code> and sets fixed width for main layout areas: navbar and page container. You can use either darker background color added to the <code>body</code> element in CSS, or any background image, it's up to you. Styles for <code>body</code> element you can find in <code>boxed.less</code> file located in <code>assets/less/code/layout/</code> folder.</p>
+
+										<p>Boxed layout markup example:</p>
+										<pre><code class="language-markup">&lt;!-- Fixed layout -->
+&lt;body class="layout-boxed">
+	...
+&lt;/body>
+</code></pre>
+									</div>
+								</div>
+							</div>
+							<!-- /layout 1 -->
+
+
+							<!-- Layout 2 -->
+							<div class="panel panel-flat">
+								<div class="panel-heading">
+									<h5 class="panel-title" id="layout_2">Layout 2</h5>
+									<div class="heading-elements">
+										<ul class="icons-list">
+					                		<li><a data-action="collapse"></a></li>
+					                		<li><a data-action="close"></a></li>
+					                	</ul>
+					            	</div>
+								</div>
+
+								<div class="panel-body">
+									<div class="content-group-lg">
+									 	<h6 class="text-semibold" id="layout_2_overview">Overview</h6>
+									 	<p>Second layout uses same markup as the first one. But some components have different default styling: <strong>navbar</strong> component includes additional <code>.header-highlight</code> class which adds sidebar's background color to navbar header; <strong>page header</strong> and <strong>breadcrumb</strong> components have different default styling to avoid extra classes added to their containers.</p>
+								 	</div>
+
+								 	<div class="content-group-lg">
+								 		<h6 class="text-semibold" id="layout_2_full">Full width markup</h6>
+									 	<p>Example below demonstrates basic <strong>full width</strong> 4 columns layout markup - top navbar, 3 sidebars and main content area:</p>
+
+										<pre data-line="5-7"><code class="language-markup">&lt;!-- Liquid layout -->
+&lt;body>
+
+	&lt;!-- Main navbar -->
+	&lt;div class="navbar navbar-inverse header-highlight">
+		...
+	&lt;/div>
+	&lt;!-- /main navbar -->
+
+
+	&lt;!-- Page container -->
+	&lt;div class="page-container">
+
+		&lt;!-- Page content -->
+		&lt;div class="page-content">
+
+			&lt;!-- Main sidebar -->
+			&lt;div class="sidebar sidebar-main">
+				...
+			&lt;/div>
+			&lt;!-- /main sidebar -->
+
+
+			&lt;!-- Secondary sidebar -->
+			&lt;div class="sidebar sidebar-secondary">
+				...
+			&lt;/div>
+			&lt;!-- /secondary sidebar -->
+
+
+			&lt;!-- Main content -->
+			&lt;div class="content-wrapper">
+
+				&lt;!-- Page header -->
+				&lt;div class="page-header">
+					...
+				&lt;/div>
+				&lt;!-- /page header -->
+
+
+				&lt;!-- Content area -->
+				&lt;div class="content">
+					...
+				&lt;/div>
+				&lt;!-- /content area -->
+
+			&lt;/div>
+			&lt;!-- /main content -->
+
+
+			&lt;!-- Opposite sidebar -->
+			&lt;div class="sidebar sidebar-opposite">
+				...
+			&lt;/div>
+			&lt;!-- /opposite sidebar -->
+
+		&lt;/div>
+		&lt;!-- /page content -->
+
+	&lt;/div>
+	&lt;!-- /page container -->
+
+&lt;/body>
+</code></pre>
+									</div>
+
+									<div>
+										<h6 class="text-semibold" id="layout_2_fixed">Fixed width markup</h6>
+										<p>Boxed width markup of second layout is the same as in first layout, without additions and changes. To use fixed width, add <code>.layout-boxed</code> class to the <code>&lt;body></code> tag. This class adds optional background image to the <code>&lt;body></code> and sets fixed width for main layout areas: navbar and page container. You can use either darker background color added to the <code>body</code> element in CSS, or any background image, it's up to you. Styles for <code>body</code> element you can find in <code>boxed.less</code> file located in <code>assets/less/code/layout/</code> folder.</p>
+
+										<p>Boxed layout markup example:</p>
+										<pre><code class="language-markup">&lt;!-- Fixed layout -->
+&lt;body class="layout-boxed">
+	...
+&lt;/body>
+</code></pre>
+									</div>
+								</div>
+							</div>
+							<!-- /layout 2 -->
+
+
+							<!-- Layout 3 -->
+							<div class="panel panel-flat">
+								<div class="panel-heading">
+									<h5 class="panel-title" id="layout_3">Layout 3</h5>
+									<div class="heading-elements">
+										<ul class="icons-list">
+					                		<li><a data-action="collapse"></a></li>
+					                		<li><a data-action="close"></a></li>
+					                	</ul>
+					            	</div>
+								</div>
+
+								<div class="panel-body">
+									<div class="content-group-lg">
+									 	<h6 class="text-semibold" id="layout_3_overview">Overview</h6>
+									 	<p>Third layout's structure is different from the first and second variations. Here <strong>page header</strong> component is moved outside <code>.page-container</code> container and placed right after <strong>navbar</strong> component. All sidebars remain on the same position, but appear as detached stand-alone components. In this version sidebars don't have a <code>detached</code> option as they are detached by default. Also <code>.content</code> container is useless and has been removed, because basically it was needed to add spacing to main content area.</p>
+
+									 	<p>In first 2 layout options <strong>footer</strong> component is placed inside <code>&lt;div class="content">...&lt;/div></code> container after all content. Since 3rd layout doesn't have <code>&lt;div class="content" /></code> container, footer is moved to the parent container and placed after <code>&lt;div class="page-content" /></code> container.</p>
+								 	</div>
+
+								 	<div class="content-group-lg">
+								 		<h6 class="text-semibold" id="layout_3_full">Full width markup</h6>
+									 	<p>Example below demonstrates basic <strong>full width</strong> 4 columns layout markup - top navbar, 3 sidebars and main content area:</p>
+
+										<pre data-line="11-15, 38-42, 55-59"><code class="language-markup">&lt;!-- Liquid layout -->
+&lt;body>
+
+	&lt;!-- Main navbar -->
+	&lt;div class="navbar navbar-inverse">
+		...
+	&lt;/div>
+	&lt;!-- /main navbar -->
+
+
+	&lt;!-- Page header -->
+	&lt;div class="page-header">
+		...
+	&lt;/div>
+	&lt;!-- /page header -->
+
+
+	&lt;!-- Page container -->
+	&lt;div class="page-container">
+
+		&lt;!-- Page content -->
+		&lt;div class="page-content">
+
+			&lt;!-- Main sidebar -->
+			&lt;div class="sidebar sidebar-main">
+				...
+			&lt;/div>
+			&lt;!-- /main sidebar -->
+
+
+			&lt;!-- Secondary sidebar -->
+			&lt;div class="sidebar sidebar-secondary">
+				...
+			&lt;/div>
+			&lt;!-- /secondary sidebar -->
+
+
+			&lt;!-- Main content -->
+			&lt;div class="content-wrapper">
+				...
+			&lt;/div>
+			&lt;!-- /main content -->
+
+
+			&lt;!-- Opposite sidebar -->
+			&lt;div class="sidebar sidebar-opposite">
+				...
+			&lt;/div>
+			&lt;!-- /opposite sidebar -->
+
+		&lt;/div>
+		&lt;!-- /page content -->
+
+
+		&lt;!-- Footer -->
+		&lt;div class="footer">
+			...
+		&lt;/div>
+		&lt;!-- /footer -->
+
+	&lt;/div>
+	&lt;!-- /page container -->
+
+&lt;/body>
+</code></pre>
+									</div>
+
+									<div>
+										<h6 class="text-semibold" id="layout_3_fixed">Fixed width markup</h6>
+										<p>In 3rd layout version, boxed layout needs additional markup changes. Besides <code>.layout-boxed</code> class added to the <code>&lt;body></code> tag, you need to wrap <strong>navbar</strong> inner content in <code>&lt;div class="navbar-boxed" /></code> container and <strong>breadcrumb line</strong> inner content in <code>&lt;div class="breadcrumb-boxed" /></code> container. In this version <code>body</code> doesn't include any background images, but uses containers mentioned earlier to center content in components, but keep components themself full width.</p>
+
+										<p>Boxed layout markup example:</p>
+										<pre data-line="7-11, 23-27"><code class="language-markup">&lt;!-- Fixed layout -->
+&lt;body class="layout-boxed">
+
+	&lt;!-- Main navbar -->
+	&lt;div class="navbar navbar-inverse">
+		
+		&lt;!-- Boxed container -->
+		&lt;div class="navbar-boxed">
+			...
+		&lt;/div>
+		&lt;!-- /boxed container -->
+
+	&lt;/div>
+	&lt;!-- /main navbar -->
+
+
+	&lt;!-- Page header -->
+	&lt;div class="page-header">
+
+		&lt;!-- Breadcrumb line -->
+		&lt;div class="breadcrumb-line breadcrumb-line-wide">
+
+			&lt;!-- Boxed container -->
+			&lt;div class="breadcrumb-boxed">
+				...
+			&lt;/div>
+			&lt;!-- /boxed container -->
+
+		&lt;/div>
+		&lt;!-- /breadcrumb line -->
+
+	&lt;/div>
+	&lt;!-- /page header -->
+
+	...
+
+&lt;/body>
+</code></pre>
+									</div>
+								</div>
+							</div>
+							<!-- /layout 3 -->
+
+
+							<!-- Layout 4 -->
+							<div class="panel panel-flat">
+								<div class="panel-heading">
+									<h5 class="panel-title" id="layout_4">Layout 4</h5>
+									<div class="heading-elements">
+										<ul class="icons-list">
+					                		<li><a data-action="collapse"></a></li>
+					                		<li><a data-action="close"></a></li>
+					                	</ul>
+					            	</div>
+								</div>
+
+								<div class="panel-body">
+									<div class="content-group-lg">
+									 	<h6 class="text-semibold" id="layout_4_overview">Overview</h6>
+									 	<p>Fourth layout structure is the same as in third, the only difference is by default it doesn't have any sidebars and uses multiple navbars for navigation, so called "Horizontal navigation layout". Although by default sidebars aren't presented, the functionality remains the same - sidebars can be used in any page, but the importance is much lower, means they can be used for alternative page navigation or page content. Instead, navbar navigation supports multiple child levels with state saving feature.</p>
+								 	</div>
+
+								 	<div class="content-group-lg">
+								 		<h6 class="text-semibold" id="layout_4_full">Full width markup</h6>
+									 	<p>Example below demonstrates basic <strong>full width</strong> - 2 top navbar and main content area:</p>
+
+										<pre data-line="11-15, 31-35"><code class="language-markup">&lt;!-- Liquid layout -->
+&lt;body>
+
+	&lt;!-- Main navbar -->
+	&lt;div class="navbar navbar-inverse">
+		...
+	&lt;/div>
+	&lt;!-- /main navbar -->
+
+
+	&lt;!-- Navigation navbar -->
+	&lt;div class="navbar navbar-default" id="navbar-second">
+		...
+	&lt;/div>
+	&lt;!-- /navigation navbar -->
+
+
+	&lt;!-- Page header -->
+	&lt;div class="page-header">
+		...
+	&lt;/div>
+	&lt;!-- /page header -->
+
+
+	&lt;!-- Page container -->
+	&lt;div class="page-container">
+
+		&lt;!-- Page content -->
+		&lt;div class="page-content">
+
+			&lt;!-- Main content -->
+			&lt;div class="content-wrapper">
+				...
+			&lt;/div>
+			&lt;!-- /main content -->
+
+		&lt;/div>
+		&lt;!-- /page content -->
+
+
+		&lt;!-- Footer -->
+		&lt;div class="footer">
+			...
+		&lt;/div>
+		&lt;!-- /footer -->
+
+	&lt;/div>
+	&lt;!-- /page container -->
+
+&lt;/body>
+</code></pre>
+									</div>
+
+									<div>
+										<h6 class="text-semibold" id="layout_4_fixed">Fixed width markup</h6>
+										<p>In 4th layout version, boxed layout completely replicates 3rd layout. Besides <code>.layout-boxed</code> class added to the <code>&lt;body></code> tag, you need to wrap <strong>navbar</strong> inner content in <code>&lt;div class="navbar-boxed" /></code> container and <strong>breadcrumb line</strong> inner content in <code>&lt;div class="breadcrumb-boxed" /></code> container. In this version <code>body</code> doesn't include any background images, but uses containers mentioned earlier to center content in components, but keep components themself full width.</p>
+
+										<p>Boxed layout markup example:</p>
+										<pre data-line="7-11, 20-24"><code class="language-markup">&lt;!-- Fixed layout -->
+&lt;body class="layout-boxed">
+
+	&lt;!-- Main navbar -->
+	&lt;div class="navbar navbar-inverse">
+		
+		&lt;!-- Boxed container -->
+		&lt;div class="navbar-boxed">
+			...
+		&lt;/div>
+		&lt;!-- /boxed container -->
+
+	&lt;/div>
+	&lt;!-- /main navbar -->
+
+
+	&lt;!-- Navigation navbar -->
+	&lt;div class="navbar navbar-inverse">
+		
+		&lt;!-- Boxed container -->
+		&lt;div class="navbar-boxed">
+			...
+		&lt;/div>
+		&lt;!-- /boxed container -->
+
+	&lt;/div>
+	&lt;!-- /navigation navbar -->
+
+	...
+
+&lt;/body>
+</code></pre>
+									</div>
+								</div>
+							</div>
+							<!-- /layout 4 -->
+
+						</div>
+					</div>
+					<!-- /detached content -->
+
+
+					<!-- Detached sidebar -->
+					<div class="sidebar-detached">
+			        	<div class="sidebar sidebar-default">
+							<div class="sidebar-content">
+
+				        		<!-- Contact author -->
+								<div class="sidebar-category no-margin">
+									<div class="category-title">
+										<span>Page navigation</span>
+										<i class="icon-menu7 text-muted pull-right"></i>
+									</div>
+
+									<div class="category-content">
+										<a href="http://themeforest.net/user/kopyov" class="btn bg-blue btn-block" target="_blank"><i class="icon-reading position-left"></i> Contact author</a>
+									</div>
+								</div>
+								<!-- /contact author -->
+
+			        			
+			        			<!-- Navigation -->
+								<div class="sidebar-category">
+									<div class="category-content no-padding">
+										<ul class="nav navigation no-padding-top">
+											<li class="navigation-header"><i class="icon-history pull-right"></i> Navigation</li>
+											<li><a href="#layouts_overview">Layouts overview</a></li>
+											<li>
+												<a href="#layout_1">Layout 1</a>
+												<ul>
+													<li><a href="#layout_1_overview">Overview</a></li>
+													<li><a href="#layout_1_full">Full width</a></li>
+													<li><a href="#layout_1_fixed">Fixed width</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#layout_2">Layout 2</a>
+												<ul>
+													<li><a href="#layout_2_overview">Overview</a></li>
+													<li><a href="#layout_2_full">Full width</a></li>
+													<li><a href="#layout_2_fixed">Fixed width</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#layout_3">Layout 3</a>
+												<ul>
+													<li><a href="#layout_3_overview">Overview</a></li>
+													<li><a href="#layout_3_full">Full width</a></li>
+													<li><a href="#layout_3_fixed">Fixed width</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#layout_4">Layout 4</a>
+												<ul>
+													<li><a href="#layout_4_overview">Overview</a></li>
+													<li><a href="#layout_4_full">Full width</a></li>
+													<li><a href="#layout_4_fixed">Fixed width</a></li>
+												</ul>
+											</li>
+											<li class="navigation-divider"></li>
+											<li><a href="#">Go to top <i class="icon-circle-up2 pull-right"></i></a></li>
+							            </ul>
+						            </div>
+					            </div>
+					            <!-- /navigation -->
+
+				            </div>
+			            </div>
+		            </div>
+		            <!-- /detached sidebar -->
+
+
+					<!-- Footer -->
+					<div class="footer text-muted">
+						&copy; 2015. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
+					</div>
+					<!-- /footer -->
+
+				</div>
+				<!-- /content area -->
+
+			</div>
+			<!-- /main content -->
+
+		</div>
+		<!-- /page content -->
+
+	</div>
+	<!-- /page container -->
+
+</body>
+</html>

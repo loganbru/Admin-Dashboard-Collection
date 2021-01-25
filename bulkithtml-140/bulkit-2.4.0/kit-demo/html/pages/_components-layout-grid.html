@@ -1,0 +1,323 @@
+---
+layout: components
+title: Home
+---
+
+<!-- Hero and nav -->
+<div class="hero is-relative is-theme-info is-bold">
+
+    {{> navbar-static-light}}
+
+    <!-- Hero image -->
+    <div id="main-hero" class="hero-body">
+        <div class="container has-text-centered">
+            <div class="columns is-vcentered">
+                <div class="column is-4 is-offset-1 has-text-left">
+                    <h1 class="title components-title is-1">
+                        Grid system
+                    </h1>
+                    <h2 class="subtitle is-4 components-subtitle">
+                        How to use the Bulma grid.
+                    </h2>
+                    <p class="components-cta">
+                        <a href="#basic" class="button button-cta btn-align light-btn btn-outlined is-bold rounded">
+                            Get Started
+                        </a>
+                    </p>
+                </div>
+                <div class="column is-offset-1 has-text-centered is-hidden-mobile">
+                    <div id="grid-ill" class="vivus-svg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Hero image -->
+</div>
+<!-- /Hero and nav -->
+
+<!-- Grid -->
+<section id="basic" class="section is-medium">
+    <div class="container">
+        <div class="section-title-wrapper">
+            <div class="bg-number">1</div>
+            <h2 class="title section-title has-text-centered dark-text text-bold huge-pb">
+                Grid basics
+            </h2>
+        </div>
+
+        <!-- Basic grid -->
+        <div class="columns has-text-left">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block">
+                    <h4>Basic grid</h4>
+                    <p>Bulkit uses the <a href="https://bulma.io/" target="_blank">Bulma.io</a> flex-box based grid system. It is very flexible and easy to use. To create a new row, create a <code>div</code> with a <code>.columns</code> class. It serves as the main wrapper for the columns that you will use to build your layout. This columns can have several modifiers:  </p>
+                    <ul>
+                        <li><p><b><code>.is-vcentered</code></b>: vertically centers all columns inside that row.</p></li>
+                        <li><p><b><code>.is-gapless</code></b>: removes padding between columns.</p></li>
+                        <li><p><b><code>.is-multiline</code></b>: gives the row the <code>flex-wrap: wrap</code> css property, so your columns span accross multiple lines.</p></li>
+                        <li><p><b><code>.is-flex-mobile</code></b>: maintains the flex layout on mobile devices.</p></li>
+                    </ul>
+                    <p class="pt-20">More modifiers and responsive options are available, just check the <a href="https://bulma.io/" target="_blank">Bulma.io</a> framework documentation. To add columns, just add the needed number of <code>divs</code> with a class of <code>.column</code> inside the previously created <code>.columns</code> div. Columns without any modifier share the available space.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-system">
+            <div class="columns">
+                <div class="column"><p class="is-blue">Column</p></div>
+                <div class="column"><p class="is-green">Column</p></div>
+                <div class="column"><p class="is-orange">Column</p></div>
+                <div class="column"><p class="is-red">Column</p></div>
+            </div>
+        </div>
+        <!-- /Basic grid -->
+
+        <!-- Column sizes -->
+        <div class="columns has-text-left pt-80">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block">
+                    <h4>Column sizes</h4>
+                    <p>Columns have several size modifiers that you can define. You can try <code>.is-three-quarters</code>, <code>is-two-thirds</code>, <code>.is-half</code>, <code>.is-one-third</code> or <code>.is-one-quarter</code>. Columns without a modifier will take the available space remaining.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-system is-medium">
+            <div class="columns">
+                <div class="column is-three-quarters"><p class="is-blue"><code>is-three-quarters</code></p></div>
+                <div class="column"><p class="is-green">Auto</p></div>
+                <div class="column"><p class="is-orange">Auto</p></div>
+            </div>
+        </div>
+
+        <div class="grid-system is-medium">
+            <div class="columns">
+                <div class="column is-two-thirds"><p class="is-blue"><code>is-two-thirds</code></p></div>
+                <div class="column"><p class="is-green">Auto</p></div>
+                <div class="column"><p class="is-orange">Auto</p></div>
+            </div>
+        </div>
+
+        <div class="grid-system is-medium">
+            <div class="columns">
+                <div class="column is-half"><p class="is-blue"><code>is-half</code></p></div>
+                <div class="column"><p class="is-green">Auto</p></div>
+                <div class="column"><p class="is-orange">Auto</p></div>
+            </div>
+        </div>
+
+        <div class="grid-system is-medium">
+            <div class="columns">
+                <div class="column is-one-third"><p class="is-blue"><code>is-one-third</code></p></div>
+                <div class="column"><p class="is-green">Auto</p></div>
+                <div class="column"><p class="is-orange">Auto</p></div>
+            </div>
+        </div>
+
+        <div class="grid-system is-medium">
+            <div class="columns">
+                <div class="column is-one-quarter"><p class="is-blue"><code>is-one-quarter</code></p></div>
+                <div class="column"><p class="is-green">Auto</p></div>
+                <div class="column"><p class="is-orange">Auto</p></div>
+            </div>
+        </div>
+        <!-- /Column sizes -->
+
+        <!-- 12 columns system -->
+        <div class="columns has-text-left pt-80">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block">
+                    <h4>12 columns system</h4>
+                    <p>Columns can also be organized following a 12 columns grid system. In this case, modifiers take the form of <code>.is-*</code> followed by desired number, from <b>1</b> to <b>12</b>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-system is-medium">
+            <div class="columns is-multiline">
+                <div class="column is-2"><p class="is-blue"><code>is-2</code></p></div>
+                <div class="column"><p class="is-green">Auto</p></div>
+                <div class="column"><p class="is-green">Auto</p></div>
+                <div class="column"><p class="is-green">Auto</p></div>
+                <div class="column"><p class="is-green">Auto</p></div>
+                <div class="column"><p class="is-green">Auto</p></div>
+                <div class="column"><p class="is-green">Auto</p></div>
+                <div class="column"><p class="is-green">Auto</p></div>
+            </div>
+        </div>
+
+        <div class="grid-system is-medium">
+            <div class="columns">
+                <div class="column is-3"><p class="is-blue"><code>is-3</code></p></div>
+                <div class="column"><p class="is-green">Auto</p></div>
+                <div class="column"><p class="is-green">Auto</p></div>
+                <div class="column"><p class="is-green">Auto</p></div>
+                <div class="column"><p class="is-green">Auto</p></div>
+                <div class="column"><p class="is-green">Auto</p></div>
+                <div class="column"><p class="is-green">Auto</p></div>
+            </div>
+        </div>
+
+        <div class="grid-system is-medium">
+            <div class="columns">
+                <div class="column is-4"><p class="is-blue"><code>is-4</code></p></div>
+                <div class="column"><p class="is-green">Auto</p></div>
+                <div class="column"><p class="is-green">Auto</p></div>
+                <div class="column"><p class="is-green">Auto</p></div>
+                <div class="column"><p class="is-green">Auto</p></div>
+                <div class="column"><p class="is-green">Auto</p></div>
+            </div>
+        </div>
+
+        <div class="grid-system is-medium">
+            <div class="columns">
+                <div class="column is-5"><p class="is-blue"><code>is-5</code></p></div>
+                <div class="column"><p class="is-green">Auto</p></div>
+                <div class="column"><p class="is-green">Auto</p></div>
+                <div class="column"><p class="is-green">Auto</p></div>
+                <div class="column"><p class="is-green">Auto</p></div>
+                <div class="column"><p class="is-green">Auto</p></div>
+            </div>
+        </div>
+
+        <div class="grid-system is-medium">
+            <div class="columns">
+                <div class="column is-6"><p class="is-blue"><code>is-6</code></p></div>
+                <div class="column"><p class="is-green">Auto</p></div>
+                <div class="column"><p class="is-green">Auto</p></div>
+                <div class="column"><p class="is-green">Auto</p></div>
+                <div class="column"><p class="is-green">Auto</p></div>
+            </div>
+        </div>
+        <!-- /12 columns system -->
+
+        <!-- Grid examples -->
+        <div class="columns has-text-left pt-80">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block">
+                    <h4>12 columns examples</h4>
+                    <p>You can find below some examples of what you can achieve with the Bulma grid. Layout possibilities are endless. Note that you can easily nest <code>.columns</code> (e.g : rows) inside others <code>.columns</code>. </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-system is-medium">
+            <div class="columns">
+                <div class="column is-6"><p class="is-blue"><code>is-6</code></p></div>
+                <div class="column is-6"><p class="is-green"><code>is-6</code></p></div>
+            </div>
+        </div>
+
+        <div class="grid-system is-medium">
+            <div class="columns">
+                <div class="column is-4"><p class="is-blue"><code>is-4</code></p></div>
+                <div class="column is-8"><p class="is-green"><code>is-8</code></p></div>
+            </div>
+        </div>
+
+        <div class="grid-system is-medium">
+            <div class="columns">
+                <div class="column is-4"><p class="is-blue"><code>is-4</code></p></div>
+                <div class="column is-4"><p class="is-green"><code>is-4</code></p></div>
+                <div class="column is-4"><p class="is-orange"><code>is-4</code></p></div>
+            </div>
+        </div>
+
+        <div class="grid-system is-medium">
+            <div class="columns">
+                <div class="column is-3"><p class="is-blue"><code>is-3</code></p></div>
+                <div class="column is-3"><p class="is-green"><code>is-3</code></p></div>
+                <div class="column is-3"><p class="is-orange"><code>is-3</code></p></div>
+                <div class="column is-3"><p class="is-red"><code>is-3</code></p></div>
+            </div>
+        </div>
+
+        <div class="grid-system is-medium">
+            <div class="columns">
+                <div class="column is-7"><p class="is-blue"><code>is-7</code></p></div>
+                <div class="column is-5"><p class="is-green"><code>is-5</code></p></div>
+            </div>
+        </div>
+        <!-- /Grid examples -->
+
+        <!-- Column offsets -->
+        <div class="columns has-text-left pt-80">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block">
+                    <h4>Column offsets</h4>
+                    <p>Columns can be offseted easily. To offset a column, add a modifier following this naming convention : <code>is-offset-*</code> where <code>*</code> represents the value of the offset you want in the grid.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-system is-medium">
+            <div class="columns">
+                <div class="column is-6 is-offset-3"><p class="is-blue"><code>is-6 is-offset-3</code></p></div>
+            </div>
+        </div>
+        <div class="grid-system is-medium">
+            <div class="columns">
+                <div class="column is-4 is-offset-2"><p class="is-green"><code>is-4 is-offset-2</code></p></div>
+            </div>
+        </div>
+        <div class="grid-system is-medium">
+            <div class="columns">
+                <div class="column is-3 is-offset-5"><p class="is-orange"><code>is-3 is-offset-5</code></p></div>
+            </div>
+        </div>
+        <!-- /Column offsets -->
+
+        <!-- Column Fifths-->
+        <div class="columns has-text-left pt-80">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block">
+                    <h4>Using Fifths </h4> <span class="tag is-success">New 0.6.1</span>
+                    <p>Columns now support being divided in fifths since <b>Bulma 0.6.1</b> : You can now use the following multiples of 20% :</p>
+                    <div class="content">
+                        <ul>
+                            <li><code>is-four-fifths</code></li>
+                            <li><code>is-three-fifths</code></li>
+                            <li><code>is-two-fifths</code></li>
+                            <li><code>is-one-fifth</code></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="grid-system is-medium">
+            <div class="columns is-multiline">
+                <div class="column is-four-fifths"><p class="is-blue"><code>is-four-fifths</code></p></div>
+                <div class="column"><p class="is-green">Auto</p></div>
+                <div class="column"><p class="is-green">Auto</p></div>
+            </div>
+        </div>
+        
+        <div class="grid-system is-medium">
+            <div class="columns is-multiline">
+                <div class="column is-three-fifths"><p class="is-blue"><code>is-three-fifths</code></p></div>
+                <div class="column"><p class="is-green">Auto</p></div>
+                <div class="column"><p class="is-green">Auto</p></div>
+            </div>
+        </div>
+        
+        <div class="grid-system is-medium">
+            <div class="columns is-multiline">
+                <div class="column is-two-fifths"><p class="is-blue"><code>is-two-fifths</code></p></div>
+                <div class="column"><p class="is-green">Auto</p></div>
+                <div class="column"><p class="is-green">Auto</p></div>
+            </div>
+        </div>
+        
+        <div class="grid-system is-medium">
+            <div class="columns is-multiline">
+                <div class="column is-one-fifth"><p class="is-blue"><code>is-one-fifth</code></p></div>
+                <div class="column"><p class="is-green">Auto</p></div>
+                <div class="column"><p class="is-green">Auto</p></div>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+{{> footer-light}}

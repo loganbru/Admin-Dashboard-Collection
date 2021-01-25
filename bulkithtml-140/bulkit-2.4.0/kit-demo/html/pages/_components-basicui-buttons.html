@@ -1,0 +1,1043 @@
+---
+layout: components
+title: Buttons
+---
+
+<!-- Hero and nav -->
+<div class="hero is-relative is-theme-info">
+    
+    {{> navbar-static-light}}
+
+    <!-- Hero image -->
+    <div id="main-hero" class="hero-body">
+        <div class="container has-text-centered">
+            <div class="columns is-vcentered">
+                <div class="column is-4 is-offset-1 has-text-left">
+                    <h1 class="title components-title is-1">
+                        Buttons
+                    </h1>
+                    <h2 class="subtitle is-4 components-subtitle">
+                        Button styles and variations.
+                    </h2>
+                    <p class="components-cta">
+                        <a href="#basic-buttons" class="button button-cta btn-align light-btn btn-outlined is-bold rounded">
+                            Get Started
+                        </a>
+                    </p>
+                </div>
+                <div class="column is-offset-1 has-text-centered is-hidden-mobile">
+                    <div id="buttons" class="vivus-svg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Hero image -->
+</div>
+<!-- /Hero and nav -->
+
+<div id="scrollnav" class="scroll-nav-wrapper">
+    <div class="container">
+        <div class="tabs scrollnav-tabs is-centered">
+            <ul>
+                <li class="scrollnav-item is-active"><a href="#basic-buttons">Basic buttons</a></li>
+                <li class="scrollnav-item"><a href="#bulkit-buttons">Bulkit buttons</a></li>
+                <li class="scrollnav-item"><a href="#icon-buttons">With icons</a></li>
+                <li class="scrollnav-item"><a href="#effect-buttons">Button effects</a></li>
+                <li class="scrollnav-item"><a href="#social-buttons">Social buttons</a></li>
+            </ul>
+        </div>
+    </div>  
+</div>
+
+<section class="section is-medium">
+
+    <div id="basic-buttons" class="section-title-wrapper has-text-centered">
+        <div class="bg-number">1</div>
+        <h2 class="title section-title has-text-centered dark-text text-bold">
+            Basic buttons
+        </h2>
+    </div>
+
+    <!-- Bulma buttons-->
+    <div class="columns is-vcentered">
+        <div class="column is-6 is-offset-3">
+            <div class="info-block">
+                <h4>Bulma buttons</h4>
+                <p>You can use the default buttons if you want to. Add a class of <code>.button</code> to a <code>a</code> or a <code>button</code> element. Available classes for sizes are <code>.is-small</code>, <code>.is-medium</code>, and <code>.is-large</code></p>
+            </div>
+            <div class="level-left mb-40">
+                <div class="level-item">
+                    <a class="button is-small">Small</a>
+                </div>
+                <div class="level-item">
+                    <a class="button ">Standard</a>
+                </div>
+                <div class="level-item">
+                    <a class="button is-medium">Medium</a>
+                </div>
+                <div class="level-item">
+                    <a class="button is-large">Large</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Bulma buttons-->
+
+    <!-- Aligned buttons-->
+    <div class="columns is-vcentered">
+        <div class="column is-6 is-offset-3">
+            <div class="info-block">
+                <h4>Aligned buttons</h4>
+                <p>If you want to center vertically the text inside the button, you can add the class <code>.btn-align</code>.</p>
+            </div>
+            <div class="level-left mb-40">
+                <div class="level-item">
+                    <a class="button is-small btn-align">Small</a>
+                </div>
+                <div class="level-item">
+                    <a class="button btn-align">Standard</a>
+                </div>
+                <div class="level-item">
+                    <a class="button is-medium btn-align">Medium</a>
+                </div>
+                <div class="level-item">
+                    <a class="button is-large btn-align">Large</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Basic buttons-->
+
+    <!-- Bulma colors-->
+    <div class="columns is-vcentered">
+        <div class="column is-6 is-offset-3">
+            <div class="info-block">
+                <h4>Bulma native colors</h4>
+                <p>You can use the Bulma native color scheme if you want to. Some of the available classes are <code>.is-primary</code>, <code>.is-info</code>, <code>.is-success</code>. Check the <a href="http://bulma.io/documentation/elements/button/" target="_blank">Bulma documentation</a> for all button colors.</p>
+            </div>
+            <div class="level-left mb-40">
+                <div class="level-item">
+                    <a class="button btn-align is-primary">Primary</a>
+                </div>
+                <div class="level-item">
+                    <a class="button btn-align is-info">Info</a>
+                </div>
+                <div class="level-item">
+                    <a class="button btn-align is-success">Success</a>
+                </div>
+                <div class="level-item">
+                    <a class="button btn-align is-warning">Warning</a>
+                </div>
+                <div class="level-item">
+                    <a class="button btn-align is-danger">Danger</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Bulma colors-->
+</section>
+
+<section class="section section-feature-grey is-medium">
+
+    <div id="bulkit-buttons" class="section-title-wrapper has-text-centered">
+        <div class="bg-number">2</div>
+        <h2 class="title section-title has-text-centered dark-text text-bold">
+            Bulkit buttons
+        </h2>
+    </div>
+
+    <!-- Bulkit buttons-->
+    <div class="columns is-vcentered">
+        <div class="column is-6 is-offset-3">
+            <!-- Demo section -->
+            <div class="info-block">
+                <h4>Bulkit CTA</h4>
+                <p>Bulkit brings in CTA buttons that can also be reused for other purposes. Add the class <code>.button-cta</code>. You can also define button colors regarding the current selected Bulkit theme. The available color classes for buttons are <code>primary-btn</code>, <code>secondary-btn</code>,<code>accent-btn</code>.</p>
+            </div>
+            <div class="level-left mb-40">
+                <div class="level-item">
+                    <a class="button button-cta">Default</a>
+                </div>
+                <div class="level-item">
+                    <a class="button button-cta primary-btn">Primary</a>
+                </div>
+                <div class="level-item">
+                    <a class="button button-cta secondary-btn">Secondary</a>
+                </div>
+                <div class="level-item">
+                    <a class="button button-cta accent-btn">Accent</a>
+                </div>
+            </div>
+            <!-- /Demo section -->
+
+            <!-- Code section -->
+            <div class="accordion-wrapper">
+                <div class="toggle-wrap">
+                    <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                    <div class="toggle-container">
+                        <div class="navigation-tabs animated-tabs simple-tabs mb-40">
+                            <div class="tabs is-right">
+                                <ul>
+                                    <li class="tab-link is-active" data-tab="default"><a>Default</a></li>
+                                    <li class="tab-link" data-tab="primary"><a>Primary</a></li>
+                                    <li class="tab-link" data-tab="secondary"><a>Secondary</a></li>
+                                    <li class="tab-link" data-tab="accent"><a>Accent</a></li>
+                                </ul>
+                            </div>
+                            <div id="default" class="navtab-content is-active">
+                                <figure class="highlight highlight-block"><pre><code class="html code-highlight">&lt;a class=&quot;button button-cta&quot;&gt;Default&lt;/a&gt;</code></pre></figure>
+                            </div>
+                            <div id="primary" class="navtab-content">
+                                <figure class="highlight highlight-block"><pre><code class="html code-highlight">&lt;a class=&quot;button button-cta primary-btn&quot;&gt;Primary&lt;/a&gt;</code></pre></figure>
+                            </div>
+                            <div id="secondary" class="navtab-content">
+                                <figure class="highlight highlight-block"><pre><code class="html code-highlight">&lt;a class=&quot;button button-cta secondary-btn&quot;&gt;Secondary&lt;/a&gt;</code></pre></figure>
+                            </div>
+                            <div id="accent" class="navtab-content">
+                                <figure class="highlight highlight-block"><pre><code class="html code-highlight">&lt;a class=&quot;button button-cta accent-btn&quot;&gt;Accent&lt;/a&gt;</code></pre></figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Code section -->
+        </div>
+    </div>
+    <!-- Bulkit buttons-->
+
+    <!-- Rounded buttons-->
+    <div class="columns is-vcentered pt-60">
+        <div class="column is-6 is-offset-3">
+            <!-- Demo section -->
+            <div class="info-block">
+                <h4>Rounded buttons</h4>
+                <p>You can make a button rounded by adding the class <code>.rounded</code></p>
+            </div>
+            <div class="level-left mb-40">
+                <div class="level-item">
+                    <a class="button button-cta rounded">Default</a>
+                </div>
+                <div class="level-item">
+                    <a class="button button-cta primary-btn rounded">Primary</a>
+                </div>
+                <div class="level-item">
+                    <a class="button button-cta secondary-btn rounded">Secondary</a>
+                </div>
+                <div class="level-item">
+                    <a class="button button-cta accent-btn rounded">Accent</a>
+                </div>
+            </div>
+            <!-- /Demo section -->
+
+            <!-- Code section -->
+            <div class="accordion-wrapper">
+                <div class="toggle-wrap">
+                    <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                    <div class="toggle-container">
+                        <div class="navigation-tabs animated-tabs simple-tabs mb-40">
+                            <div class="tabs is-right">
+                                <ul>
+                                    <li class="tab-link is-active" data-tab="rounded-default"><a>Default</a></li>
+                                    <li class="tab-link" data-tab="rounded-primary"><a>Primary</a></li>
+                                    <li class="tab-link" data-tab="rounded-secondary"><a>Secondary</a></li>
+                                    <li class="tab-link" data-tab="rounded-accent"><a>Accent</a></li>
+                                </ul>
+                            </div>
+                            <div id="rounded-default" class="navtab-content is-active">
+                                <figure class="highlight highlight-block"><pre><code class="html code-highlight">&lt;a class=&quot;button button-cta rounded&quot;&gt;Default&lt;/a&gt;</code></pre></figure>
+                            </div>
+                            <div id="rounded-primary" class="navtab-content">
+                                <figure class="highlight highlight-block"><pre><code class="html code-highlight">&lt;a class=&quot;button button-cta primary-btn rounded&quot;&gt;Primary&lt;/a&gt;</code></pre></figure>
+                            </div>
+                            <div id="rounded-secondary" class="navtab-content">
+                                <figure class="highlight highlight-block"><pre><code class="html code-highlight">&lt;a class=&quot;button button-cta secondary-btn rounded&quot;&gt;Secondary&lt;/a&gt;</code></pre></figure>
+                            </div>
+                            <div id="rounded-accent" class="navtab-content">
+                                <figure class="highlight highlight-block"><pre><code class="html code-highlight">&lt;a class=&quot;button button-cta accent-btn rounded&quot;&gt;Accent&lt;/a&gt;</code></pre></figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Code section -->
+        </div>
+    </div>
+    <!-- /Rounded buttons-->
+
+    <!-- Outlined buttons-->
+    <div class="columns is-vcentered pt-60">
+        <div class="column is-6 is-offset-3">
+            <!-- Demo section -->
+            <div class="info-block">
+                <h4>Outlined buttons</h4>
+                <p>You can make a button outlined by adding the class <code>.btn-outlined</code></p>
+            </div>
+            <div class="level-left mb-40">
+                <div class="level-item">
+                    <a class="button button-cta btn-outlined">Default</a>
+                </div>
+                <div class="level-item">
+                    <a class="button button-cta btn-outlined primary-btn">Primary</a>
+                </div>
+                <div class="level-item">
+                    <a class="button button-cta btn-outlined secondary-btn">Secondary</a>
+                </div>
+                <div class="level-item">
+                    <a class="button button-cta btn-outlined accent-btn">Accent</a>
+                </div>
+            </div>
+            <!-- /Demo section -->
+
+            <!-- Code section -->
+            <div class="accordion-wrapper">
+                <div class="toggle-wrap">
+                    <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                    <div class="toggle-container">
+                        <div class="navigation-tabs animated-tabs simple-tabs mb-40">
+                            <div class="tabs is-right">
+                                <ul>
+                                    <li class="tab-link is-active" data-tab="outlined-default"><a>Default</a></li>
+                                    <li class="tab-link" data-tab="outlined-primary"><a>Primary</a></li>
+                                    <li class="tab-link" data-tab="outlined-secondary"><a>Secondary</a></li>
+                                    <li class="tab-link" data-tab="outlined-accent"><a>Accent</a></li>
+                                </ul>
+                            </div>
+                            <div id="outlined-default" class="navtab-content is-active">
+                                <figure class="highlight highlight-block"><pre><code class="html code-highlight">&lt;a class=&quot;button button-cta btn-outlined&quot;&gt;Default&lt;/a&gt;</code></pre></figure>
+                            </div>
+                            <div id="outlined-primary" class="navtab-content">
+                                <figure class="highlight highlight-block"><pre><code class="html code-highlight">&lt;a class=&quot;button button-cta primary-btn btn-outlined&quot;&gt;Primary&lt;/a&gt;</code></pre></figure>
+                            </div>
+                            <div id="outlined-secondary" class="navtab-content">
+                                <figure class="highlight highlight-block"><pre><code class="html code-highlight">&lt;a class=&quot;button button-cta secondary-btn btn-outlined&quot;&gt;Secondary&lt;/a&gt;</code></pre></figure>
+                            </div>
+                            <div id="outlined-accent" class="navtab-content">
+                                <figure class="highlight highlight-block"><pre><code class="html code-highlight">&lt;a class=&quot;button button-cta accent-btn btn-outlined&quot;&gt;Accent&lt;/a&gt;</code></pre></figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Code section -->
+        </div>
+    </div>
+    <!-- /Outlined buttons-->
+
+    <!-- Outlined rounded buttons-->
+    <div class="columns is-vcentered pt-60">
+        <div class="column is-6 is-offset-3">
+            <!-- Demo section -->
+            <div class="info-block">
+                <h4>Outlined rounded buttons</h4>
+                <p>You can make a button both outlined and rounded by adding the classes <code>.btn-outlined</code> and <code>.rounded</code></p>
+            </div>
+            <div class="level-left mb-40">
+                <div class="level-item">
+                    <a class="button button-cta btn-outlined rounded">Default</a>
+                </div>
+                <div class="level-item">
+                    <a class="button button-cta btn-outlined primary-btn rounded">Primary</a>
+                </div>
+                <div class="level-item">
+                    <a class="button button-cta btn-outlined secondary-btn rounded">Secondary</a>
+                </div>
+                <div class="level-item">
+                    <a class="button button-cta btn-outlined accent-btn rounded">Accent</a>
+                </div>
+            </div>
+            <!-- /Demo section -->
+
+            <!-- Code section -->
+            <div class="accordion-wrapper">
+                <div class="toggle-wrap">
+                    <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                    <div class="toggle-container">
+                        <div class="navigation-tabs animated-tabs simple-tabs mb-40">
+                            <div class="tabs is-right">
+                                <ul>
+                                    <li class="tab-link is-active" data-tab="outlined-rounded-default"><a>Default</a></li>
+                                    <li class="tab-link" data-tab="outlined-rounded-primary"><a>Primary</a></li>
+                                    <li class="tab-link" data-tab="outlined-rounded-secondary"><a>Secondary</a></li>
+                                    <li class="tab-link" data-tab="outlined-rounded-accent"><a>Accent</a></li>
+                                </ul>
+                            </div>
+                            <div id="outlined-rounded-default" class="navtab-content is-active">
+                                <figure class="highlight highlight-block"><pre><code class="html code-highlight">&lt;a class=&quot;button button-cta btn-outlined rounded&quot;&gt;Default&lt;/a&gt;</code></pre></figure>
+                            </div>
+                            <div id="outlined-rounded-primary" class="navtab-content">
+                                <figure class="highlight highlight-block"><pre><code class="html code-highlight">&lt;a class=&quot;button button-cta primary-btn btn-outlined rounded&quot;&gt;Primary&lt;/a&gt;</code></pre></figure>
+                            </div>
+                            <div id="outlined-rounded-secondary" class="navtab-content">
+                                <figure class="highlight highlight-block"><pre><code class="html code-highlight">&lt;a class=&quot;button button-cta secondary-btn btn-outlined rounded&quot;&gt;Secondary&lt;/a&gt;</code></pre></figure>
+                            </div>
+                            <div id="outlined-rounded-accent" class="navtab-content">
+                                <figure class="highlight highlight-block"><pre><code class="html code-highlight">&lt;a class=&quot;button button-cta accent-btn btn-outlined rounded&quot;&gt;Accent&lt;/a&gt;</code></pre></figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Code section -->
+        </div>
+    </div>
+    <!-- /Outlined rounded buttons-->
+
+    <!-- Outlined bold rounded buttons-->
+    <div class="columns is-vcentered pt-60">
+        <div class="column is-6 is-offset-3">
+            <!-- Demo section -->
+            <div class="info-block">
+                <h4>Outlined bold buttons</h4>
+                <p>You can make an outlined button bolder by adding the classe <code>.is-bold</code> to a button with the <code>.btn-outlined</code> class.</p>
+            </div>
+            <div class="level-left mb-40">
+                <div class="level-item">
+                    <a class="button button-cta btn-outlined is-bold">Default</a>
+                </div>
+                <div class="level-item">
+                    <a class="button button-cta btn-outlined is-bold primary-btn">Primary</a>
+                </div>
+                <div class="level-item">
+                    <a class="button button-cta btn-outlined is-bold secondary-btn rounded">Secondary</a>
+                </div>
+                <div class="level-item">
+                    <a class="button button-cta btn-outlined is-bold accent-btn rounded">Accent</a>
+                </div>
+            </div>
+            <!-- /Demo section -->
+
+            <!-- Code section -->
+            <div class="accordion-wrapper">
+                <div class="toggle-wrap">
+                    <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                    <div class="toggle-container">
+                        <div class="navigation-tabs animated-tabs simple-tabs mb-40">
+                            <div class="tabs is-right">
+                                <ul>
+                                    <li class="tab-link is-active" data-tab="outlined-bold-default"><a>Default</a></li>
+                                    <li class="tab-link" data-tab="outlined-bold-primary"><a>Primary</a></li>
+                                    <li class="tab-link" data-tab="outlined-bold-secondary"><a>Secondary</a></li>
+                                    <li class="tab-link" data-tab="outlined-bold-accent"><a>Accent</a></li>
+                                </ul>
+                            </div>
+                            <div id="outlined-bold-default" class="navtab-content is-active">
+                                <figure class="highlight highlight-block"><pre><code class="html code-highlight">&lt;a class=&quot;button button-cta btn-outlined is-bold &quot;&gt;Default&lt;/a&gt;</code></pre></figure>
+                            </div>
+                            <div id="outlined-bold-primary" class="navtab-content">
+                                <figure class="highlight highlight-block"><pre><code class="html code-highlight">&lt;a class=&quot;button button-cta primary-btn btn-outlined is-bold &quot;&gt;Primary&lt;/a&gt;</code></pre></figure>
+                            </div>
+                            <div id="outlined-bold-secondary" class="navtab-content">
+                                <figure class="highlight highlight-block"><pre><code class="html code-highlight">&lt;a class=&quot;button button-cta secondary-btn btn-outlined is-bold rounded&quot;&gt;Secondary&lt;/a&gt;</code></pre></figure>
+                            </div>
+                            <div id="outlined-bold-accent" class="navtab-content">
+                                <figure class="highlight highlight-block"><pre><code class="html code-highlight">&lt;a class=&quot;button button-cta accent-btn btn-outlined is-bold rounded&quot;&gt;Accent&lt;/a&gt;</code></pre></figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Code section -->
+        </div>
+    </div>
+    <!-- /Outlined bold rounded buttons-->
+
+    <!-- Light buttons-->
+    <div class="columns is-vcentered pt-60">
+        <div class="column is-6 is-offset-3">
+            <!-- Demo section -->
+            <div class="info-block">
+                <h4>Light buttons</h4>
+                <p>Light buttons cans be used on darker backgrounds. Simply replace the color class with the <code>.light-btn</code> class.</p>
+            </div>
+            <div class="level-left padding-20 mb-40 dark-bg">
+                <div class="level-item">
+                    <a class="button button-cta btn-outlined is-bold light-btn">Light outlined</a>
+                </div>
+                <div class="level-item">
+                    <a class="button button-cta btn-outlined is-bold light-btn rounded">Light outlined rounded</a>
+                </div>
+            </div>
+            <!-- /Demo section -->
+        </div>
+    </div>
+    <!-- Light buttons-->
+</section>
+
+<section class="section is-medium">
+
+    <div id="icon-buttons" class="section-title-wrapper has-text-centered">
+        <div class="bg-number">3</div>
+        <h2 class="title section-title has-text-centered dark-text text-bold">
+            Icon buttons
+        </h2>
+    </div>
+
+    <!-- Icon buttons-->
+    <div class="columns is-vcentered">
+        <div class="column is-6 is-offset-3">
+            <!-- Demo section -->
+            <div class="info-block">
+                <h4>With icons</h4>
+                <p>Add an icon <code>i</code> tag (eg: <code>class="fa fa-shopping-cart"</code>) inside a <code>.button</code> element to create a button with icon. Icons can be placed before or after the button text. You can chose any icon from <a href="#">Font Awesome</a>, <a href="#">Simple line icons</a>, <a href="#">Icons Mind</a> or <a href="#">Material icons</a>.</p>
+            </div>
+            <div class="level-left mb-40">
+                <div class="level-item">
+                    <a class="button button-cta"><i class="fa fa-shopping-cart"></i> Default</a>
+                </div>
+                <div class="level-item">
+                    <a class="button button-cta primary-btn"><i class="sl sl-icon-lock"></i> Primary</a>
+                </div>
+                <div class="level-item">
+                    <a class="button button-cta secondary-btn"><i class="im im-icon-Yes"></i> Secondary</a>
+                </div>
+                <div class="level-item">
+                    <a class="button button-cta accent-btn"><i class="material-icons">work</i> Accent</a>
+                </div>
+            </div>
+            <!-- /Demo section -->
+
+            <!-- Code section -->
+            <div class="accordion-wrapper">
+                <div class="toggle-wrap">
+                    <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                    <div class="toggle-container">
+                        <div class="navigation-tabs animated-tabs simple-tabs mb-40">
+                            <div class="tabs is-right">
+                                <ul>
+                                    <li class="tab-link is-active" data-tab="icon-button-default"><a>Default</a></li>
+                                    <li class="tab-link" data-tab="icon-button-primary"><a>Primary</a></li>
+                                    <li class="tab-link" data-tab="icon-button-secondary"><a>Secondary</a></li>
+                                    <li class="tab-link" data-tab="icon-button-accent"><a>Accent</a></li>
+                                </ul>
+                            </div>
+                            <div id="icon-button-default" class="navtab-content is-active">
+                                <figure class="highlight highlight-block"><pre><code class="html code-highlight">&lt;a class=&quot;button button-cta&quot;&gt;&lt;i class=&quot;fa fa-shopping-cart&quot;&gt;&lt;/i&gt; Default&lt;/a&gt;</code></pre></figure>
+                            </div>
+                            <div id="icon-button-primary" class="navtab-content">
+                                <figure class="highlight highlight-block"><pre><code class="html code-highlight">&lt;a class=&quot;button button-cta primary-btn&quot;&gt;&lt;i class=&quot;sl sl-icon-lock&quot;&gt;&lt;/i&gt; Primary&lt;/a&gt;</code></pre></figure>
+                            </div>
+                            <div id="icon-button-secondary" class="navtab-content">
+                                <figure class="highlight highlight-block"><pre><code class="html code-highlight">&lt;li class=&quot;tab-link&quot; data-tab=&quot;icon-button-secondary&quot;&gt;&lt;a&gt;Secondary&lt;/a&gt;&lt;/li&gt;</code></pre></figure>
+                            </div>
+                            <div id="icon-button-accent" class="navtab-content">
+                                <figure class="highlight highlight-block"><pre><code class="html code-highlight">&lt;a class=&quot;button button-cta accent-btn&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;work&lt;/i&gt; Accent&lt;/a&gt;</code></pre></figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Code section -->
+        </div>
+    </div>
+    <!-- /Icon buttons-->
+
+    <!-- Square buttons-->
+    <div class="columns is-vcentered pt-60">
+        <div class="column is-6 is-offset-3">
+            <!-- Demo section -->
+            <div class="info-block">
+                <h4>Square buttons</h4>
+                <p>Square buttons don't have any text, just a single icon. Available button sizes also apply to square buttons.</p>
+            </div>
+            <div class="level-left mb-40">
+                <div class="level-item">
+                    <a class="button btn-square is-small"><i class="im im-icon-Yes"></i></a>
+                </div>
+                <div class="level-item">
+                    <a class="button btn-square primary-btn"><i class="im im-icon-Yes"></i></a>
+                </div>
+                <div class="level-item">
+                    <a class="button btn-square secondary-btn is-medium"><i class="im im-icon-Yes"></i></a>
+                </div>
+                <div class="level-item">
+                    <a class="button btn-square accent-btn is-large"><i class="im im-icon-Yes"></i></a>
+                </div>
+            </div>
+            <!-- /Demo section -->
+
+            <!-- Code section -->
+            <div class="accordion-wrapper">
+                <div class="toggle-wrap">
+                    <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                    <div class="toggle-container">
+                        <div class="navigation-tabs animated-tabs simple-tabs mb-40">
+                            <div class="tabs is-right">
+                                <ul>
+                                    <li class="tab-link is-active" data-tab="square-button-small"><a>Small</a></li>
+                                    <li class="tab-link" data-tab="square-button"><a>Default</a></li>
+                                    <li class="tab-link" data-tab="square-button-medium"><a>Medium</a></li>
+                                    <li class="tab-link" data-tab="square-button-large"><a>Large</a></li>
+                                </ul>
+                            </div>
+                            <div id="square-button-small" class="navtab-content is-active">
+                                <figure class="highlight highlight-block"><pre><code class="html code-highlight">&lt;a class=&quot;button btn-square is-small&quot;&gt;&lt;i class=&quot;im im-icon-Yes&quot;&gt;&lt;/i&gt;&lt;/a&gt;</code></pre></figure>
+                            </div>
+                            <div id="square-button" class="navtab-content">
+                                <figure class="highlight highlight-block"><pre><code class="html code-highlight">&lt;a class=&quot;button btn-square primary-btn&quot;&gt;&lt;i class=&quot;im im-icon-Yes&quot;&gt;&lt;/i&gt;&lt;/a&gt;</code></pre></figure>
+                            </div>
+                            <div id="square-button-medium" class="navtab-content">
+                                <figure class="highlight highlight-block"><pre><code class="html code-highlight">&lt;a class=&quot;button btn-square secondary-btn is-medium&quot;&gt;&lt;i class=&quot;im im-icon-Yes&quot;&gt;&lt;/i&gt;&lt;/a&gt;</code></pre></figure>
+                            </div>
+                            <div id="square-button-large" class="navtab-content">
+                                <figure class="highlight highlight-block"><pre><code class="html code-highlight">&lt;a class=&quot;button btn-square accent-btn is-large&quot;&gt;&lt;i class=&quot;im im-icon-Yes&quot;&gt;&lt;/i&gt;&lt;/a&gt;</code></pre></figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Code section -->
+        </div>
+    </div>
+    <!-- /Square buttons-->
+
+    <!-- Circle buttons-->
+    <div class="columns is-vcentered pt-60">
+        <div class="column is-6 is-offset-3">
+            <!-- Demo section -->
+            <div class="info-block">
+                <h4>Circle buttons</h4>
+                <p>Like square buttons, Circle buttons don't have any text, just a single icon. Available button sizes also apply to circle buttons.</p>
+            </div>
+            <div class="level-left mb-40">
+                <div class="level-item">
+                    <a class="button btn-square rounded is-small"><i class="im im-icon-Yes"></i></a>
+                </div>
+                <div class="level-item">
+                    <a class="button btn-square rounded primary-btn"><i class="im im-icon-Yes"></i></a>
+                </div>
+                <div class="level-item">
+                    <a class="button btn-square rounded secondary-btn is-medium"><i class="im im-icon-Yes"></i></a>
+                </div>
+                <div class="level-item">
+                    <a class="button btn-square rounded accent-btn is-large"><i class="im im-icon-Yes"></i></a>
+                </div>
+            </div>
+            <!-- /Demo section -->
+
+            <!-- Code section -->
+            <div class="accordion-wrapper">
+                <div class="toggle-wrap">
+                    <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                    <div class="toggle-container">
+                        <div class="navigation-tabs animated-tabs simple-tabs mb-40">
+                            <div class="tabs is-right">
+                                <ul>
+                                    <li class="tab-link is-active" data-tab="circle-button-small"><a>Small</a></li>
+                                    <li class="tab-link" data-tab="circle-button"><a>Default</a></li>
+                                    <li class="tab-link" data-tab="circle-button-medium"><a>Medium</a></li>
+                                    <li class="tab-link" data-tab="circle-button-large"><a>Large</a></li>
+                                </ul>
+                            </div>
+                            <div id="circle-button-small" class="navtab-content is-active">
+                                <figure class="highlight highlight-block"><pre><code class="html code-highlight">&lt;a class=&quot;button btn-square rounded is-small&quot;&gt;&lt;i class=&quot;im im-icon-Yes&quot;&gt;&lt;/i&gt;&lt;/a&gt;</code></pre></figure>
+                            </div>
+                            <div id="circle-button" class="navtab-content">
+                                <figure class="highlight highlight-block"><pre><code class="html code-highlight">&lt;a class=&quot;button btn-square rounded primary-btn&quot;&gt;&lt;i class=&quot;im im-icon-Yes&quot;&gt;&lt;/i&gt;&lt;/a&gt;</code></pre></figure>
+                            </div>
+                            <div id="circle-button-medium" class="navtab-content">
+                                <figure class="highlight highlight-block"><pre><code class="html code-highlight">&lt;a class=&quot;button btn-square rounded secondary-btn is-medium&quot;&gt;&lt;i class=&quot;im im-icon-Yes&quot;&gt;&lt;/i&gt;&lt;/a&gt;</code></pre></figure>
+                            </div>
+                            <div id="circle-button-large" class="navtab-content">
+                                <figure class="highlight highlight-block"><pre><code class="html code-highlight">&lt;a class=&quot;button btn-square rounded accent-btn is-large&quot;&gt;&lt;i class=&quot;im im-icon-Yes&quot;&gt;&lt;/i&gt;&lt;/a&gt;</code></pre></figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Code section -->
+        </div>
+    </div>
+    <!-- /Circle buttons-->
+</section>
+
+<section class="section is-medium section-feature-grey">
+
+    <div id="effect-buttons" class="section-title-wrapper has-text-centered">
+        <div class="bg-number">4</div>
+        <h2 class="title section-title has-text-centered dark-text text-bold">
+            Button effects
+        </h2>
+    </div>
+
+    <!-- Disabled buttons-->
+    <div class="columns is-vcentered">
+        <div class="column is-6 is-offset-3">
+
+            <!-- Demo section -->
+            <div class="info-block">
+                <h4>Disabled buttons</h4>
+                <p>A button can be disabled by adding the class <code>.is-disabled</code>.</p>
+            </div>
+            <div class="level-left mb-40">
+                <div class="level-item">
+                    <a class="button button-cta is-disabled">Default</a>
+                </div>
+                <div class="level-item">
+                    <a class="button button-cta primary-btn is-disabled">Primary</a>
+                </div>
+                <div class="level-item">
+                    <a class="button button-cta secondary-btn is-disabled">Secondary</a>
+                </div>
+                <div class="level-item">
+                    <a class="button button-cta accent-btn is-disabled">Accent</a>
+                </div>
+            </div>
+            <!-- /Demo section -->
+
+            <!-- Code section -->
+            <div class="accordion-wrapper">
+                <div class="toggle-wrap">
+                    <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                    <div class="toggle-container">
+                        <div class="navigation-tabs animated-tabs simple-tabs mb-40">
+                            <div class="tabs is-right">
+                                <ul>
+                                    <li class="tab-link is-active" data-tab="disabled-default"><a>Default</a></li>
+                                    <li class="tab-link" data-tab="disabled-primary"><a>Primary</a></li>
+                                    <li class="tab-link" data-tab="disabled-secondary"><a>Secondary</a></li>
+                                    <li class="tab-link" data-tab="disabled-accent"><a>Accent</a></li>
+                                </ul>
+                            </div>
+                            <div id="disabled-default" class="navtab-content is-active">
+                                <figure class="highlight highlight-block"><pre><code class="html code-highlight">&lt;a class=&quot;button button-cta is-disabled&quot;&gt;Default&lt;/a&gt;</code></pre></figure>
+                            </div>
+                            <div id="disabled-primary" class="navtab-content">
+                                <figure class="highlight highlight-block"><pre><code class="html code-highlight">&lt;a class=&quot;button button-cta primary-btn is-disabled&quot;&gt;Primary&lt;/a&gt;</code></pre></figure>
+                            </div>
+                            <div id="disabled-secondary" class="navtab-content">
+                                <figure class="highlight highlight-block"><pre><code class="html code-highlight">&lt;a class=&quot;button button-cta secondary-btn is-disabled&quot;&gt;Secondary&lt;/a&gt;</code></pre></figure>
+                            </div>
+                            <div id="disabled-accent" class="navtab-content">
+                                <figure class="highlight highlight-block"><pre><code class="html code-highlight">&lt;a class=&quot;button button-cta accent-btn is-disabled&quot;&gt;Accent&lt;/a&gt;</code></pre></figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Code section -->
+        </div>
+    </div>
+    <!-- Disabled buttons-->
+
+    <!-- Faded buttons-->
+    <div class="columns is-vcentered pt-60">
+        <div class="column is-6 is-offset-3">
+
+            <!-- Demo section -->
+            <div class="info-block">
+                <h4>Faded buttons</h4>
+                <p>A button can fade on hover by adding the class <code>.btn-fade</code> to a <code>.button</code> element.</p>
+            </div>
+            <div class="level-left mb-40">
+                <div class="level-item">
+                    <a class="button button-cta btn-fade">Default</a>
+                </div>
+                <div class="level-item">
+                    <a class="button button-cta primary-btn btn-fade">Primary</a>
+                </div>
+                <div class="level-item">
+                    <a class="button button-cta secondary-btn btn-fade">Secondary</a>
+                </div>
+                <div class="level-item">
+                    <a class="button button-cta accent-btn btn-fade">Accent</a>
+                </div>
+            </div>
+            <!-- /Demo section -->
+
+            <!-- Code section -->
+            <div class="accordion-wrapper">
+                <div class="toggle-wrap">
+                    <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                    <div class="toggle-container">
+                        <div class="navigation-tabs animated-tabs simple-tabs mb-40">
+                            <div class="tabs is-right">
+                                <ul>
+                                    <li class="tab-link is-active" data-tab="fade-default"><a>Default</a></li>
+                                    <li class="tab-link" data-tab="fade-primary"><a>Primary</a></li>
+                                    <li class="tab-link" data-tab="fade-secondary"><a>Secondary</a></li>
+                                    <li class="tab-link" data-tab="fade-accent"><a>Accent</a></li>
+                                </ul>
+                            </div>
+                            <div id="fade-default" class="navtab-content is-active">
+                                <figure class="highlight highlight-block"><pre><code class="html code-highlight">&lt;a class=&quot;button button-cta btn-fade&quot;&gt;Default&lt;/a&gt;</code></pre></figure>
+                            </div>
+                            <div id="fade-primary" class="navtab-content">
+                                <figure class="highlight highlight-block"><pre><code class="html code-highlight">&lt;a class=&quot;button button-cta primary-btn btn-fade&quot;&gt;Primary&lt;/a&gt;</code></pre></figure>
+                            </div>
+                            <div id="fade-secondary" class="navtab-content">
+                                <figure class="highlight highlight-block"><pre><code class="html code-highlight">&lt;a class=&quot;button button-cta secondary-btn btn-fade&quot;&gt;Secondary&lt;/a&gt;</code></pre></figure>
+                            </div>
+                            <div id="fade-accent" class="navtab-content">
+                                <figure class="highlight highlight-block"><pre><code class="html code-highlight">&lt;a class=&quot;button button-cta accent-btn btn-fade&quot;&gt;Accent&lt;/a&gt;</code></pre></figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Code section -->
+        </div>
+    </div>
+    <!-- Faded buttons-->
+
+    <!-- Raised buttons-->
+    <div class="columns is-vcentered pt-60">
+        <div class="column is-6 is-offset-3">
+
+            <!-- Demo section -->
+            <div class="info-block">
+                <h4>Raised buttons</h4>
+                <p>A button can raised on hover by adding the class <code>.raised</code> to a <code>.button</code> element.</p>
+            </div>
+            <div class="level-left mb-40">
+                <div class="level-item">
+                    <a class="button button-cta raised">Default</a>
+                </div>
+                <div class="level-item">
+                    <a class="button button-cta primary-btn raised">Primary</a>
+                </div>
+                <div class="level-item">
+                    <a class="button button-cta secondary-btn raised">Secondary</a>
+                </div>
+                <div class="level-item">
+                    <a class="button button-cta accent-btn raised">Accent</a>
+                </div>
+            </div>
+            <!-- /Demo section -->
+
+            <!-- Code section -->
+            <div class="accordion-wrapper">
+                <div class="toggle-wrap">
+                    <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                    <div class="toggle-container">
+                        <div class="navigation-tabs animated-tabs simple-tabs mb-40">
+                            <div class="tabs is-right">
+                                <ul>
+                                    <li class="tab-link is-active" data-tab="raised-default"><a>Default</a></li>
+                                    <li class="tab-link" data-tab="raised-primary"><a>Primary</a></li>
+                                    <li class="tab-link" data-tab="raised-secondary"><a>Secondary</a></li>
+                                    <li class="tab-link" data-tab="raised-accent"><a>Accent</a></li>
+                                </ul>
+                            </div>
+                            <div id="raised-default" class="navtab-content is-active">
+                                <figure class="highlight highlight-block"><pre><code class="html code-highlight">&lt;a class=&quot;button button-cta raised&quot;&gt;Default&lt;/a&gt;</code></pre></figure>
+                            </div>
+                            <div id="raised-primary" class="navtab-content">
+                                <figure class="highlight highlight-block"><pre><code class="html code-highlight">&lt;a class=&quot;button button-cta primary-btn raised&quot;&gt;Primary&lt;/a&gt;</code></pre></figure>
+                            </div>
+                            <div id="raised-secondary" class="navtab-content">
+                                <figure class="highlight highlight-block"><pre><code class="html code-highlight">&lt;a class=&quot;button button-cta secondary-btn raised&quot;&gt;Secondary&lt;/a&gt;</code></pre></figure>
+                            </div>
+                            <div id="raised-accent" class="navtab-content">
+                                <figure class="highlight highlight-block"><pre><code class="html code-highlight">&lt;a class=&quot;button button-cta accent-btn raised&quot;&gt;Accent&lt;/a&gt;</code></pre></figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Code section -->
+        </div>
+    </div>
+    <!-- Raised buttons-->
+
+    <!-- Gelatine buttons-->
+    <div class="columns is-vcentered pt-60">
+        <div class="column is-6 is-offset-3">
+
+            <!-- Demo section -->
+            <div class="info-block">
+                <h4>Gelatine buttons</h4>
+                <p>A button can animate on hover by adding the class <code>.g-item</code> to a <code>.button</code> element.</p>
+            </div>
+            <div class="level-left mb-40">
+                <div class="level-item">
+                    <a class="button button-cta g-item">Default</a>
+                </div>
+                <div class="level-item">
+                    <a class="button button-cta primary-btn g-item">Primary</a>
+                </div>
+                <div class="level-item">
+                    <a class="button button-cta secondary-btn g-item">Secondary</a>
+                </div>
+                <div class="level-item">
+                    <a class="button button-cta accent-btn g-item">Accent</a>
+                </div>
+            </div>
+            <!-- /Demo section -->
+
+            <!-- Code section -->
+            <div class="accordion-wrapper">
+                <div class="toggle-wrap">
+                    <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                    <div class="toggle-container">
+                        <div class="navigation-tabs animated-tabs simple-tabs mb-40">
+                            <div class="tabs is-right">
+                                <ul>
+                                    <li class="tab-link is-active" data-tab="gelatine-default"><a>Default</a></li>
+                                    <li class="tab-link" data-tab="gelatine-primary"><a>Primary</a></li>
+                                    <li class="tab-link" data-tab="gelatine-secondary"><a>Secondary</a></li>
+                                    <li class="tab-link" data-tab="gelatine-accent"><a>Accent</a></li>
+                                </ul>
+                            </div>
+                            <div id="gelatine-default" class="navtab-content is-active">
+                                <figure class="highlight highlight-block"><pre><code class="html code-highlight">&lt;a class=&quot;button button-cta g-item&quot;&gt;Default&lt;/a&gt;</code></pre></figure>
+                            </div>
+                            <div id="gelatine-primary" class="navtab-content">
+                                <figure class="highlight highlight-block"><pre><code class="html code-highlight">&lt;a class=&quot;button button-cta primary-btn g-item&quot;&gt;Primary&lt;/a&gt;</code></pre></figure>
+                            </div>
+                            <div id="gelatine-secondary" class="navtab-content">
+                                <figure class="highlight highlight-block"><pre><code class="html code-highlight">&lt;a class=&quot;button button-cta secondary-btn g-item&quot;&gt;Secondary&lt;/a&gt;</code></pre></figure>
+                            </div>
+                            <div id="gelatine-accent" class="navtab-content">
+                                <figure class="highlight highlight-block"><pre><code class="html code-highlight">&lt;a class=&quot;button button-cta accent-btn g-item&quot;&gt;Accent&lt;/a&gt;</code></pre></figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Code section -->
+        </div>
+    </div>
+    <!-- Gelatine buttons-->
+
+    <!-- Loading buttons-->
+    <div class="columns is-vcentered pt-60">
+        <div class="column is-6 is-offset-3">
+
+            <!-- Demo section -->
+            <div class="info-block">
+                <h4>Loading buttons</h4>
+                <p>A button can be set to loading state by adding the class <code>.is-loading</code> to a <code>.button</code> element.</p>
+            </div>
+            <div class="level-left mb-40">
+                <div class="level-item">
+                    <a class="button is-loading is-small">Standard</a>
+                </div>
+                <div class="level-item">
+                    <a class="button primary-btn is-loading">Primary</a>
+                </div>
+                <div class="level-item">
+                    <a class="button secondary-btn is-loading is-medium">Secondary</a>
+                </div>
+                <div class="level-item">
+                    <a class="button accent-btn is-loading is-large">Accent</a>
+                </div>
+                <div class="level-item">
+                    <a class="button button-cta accent-btn is-loading">CTA</a>
+                </div>
+            </div>
+            <!-- /Demo section -->
+
+            <!-- Code section -->
+            <div class="accordion-wrapper">
+                <div class="toggle-wrap">
+                    <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                    <div class="toggle-container">
+                        <div class="navigation-tabs animated-tabs simple-tabs mb-40">
+                            <div class="tabs is-right">
+                                <ul>
+                                    <li class="tab-link is-active" data-tab="loading-small"><a>Small</a></li>
+                                    <li class="tab-link" data-tab="loading-normal"><a>Normal</a></li>
+                                    <li class="tab-link" data-tab="loading-medium"><a>Medium</a></li>
+                                    <li class="tab-link" data-tab="loading-large"><a>Large</a></li>
+                                    <li class="tab-link" data-tab="loading-cta"><a>CTA</a></li>
+                                </ul>
+                            </div>
+                            <div id="loading-small" class="navtab-content is-active">
+                                <figure class="highlight highlight-block"><pre><code class="html code-highlight">&lt;a class=&quot;button is-loading is-small&quot;&gt;Standard&lt;/a&gt;</code></pre></figure>
+                            </div>
+                            <div id="loading-normal" class="navtab-content">
+                                <figure class="highlight highlight-block"><pre><code class="html code-highlight">&lt;a class=&quot;button primary-btn is-loading&quot;&gt;Primary&lt;/a&gt;</code></pre></figure>
+                            </div>
+                            <div id="loading-medium" class="navtab-content">
+                                <figure class="highlight highlight-block"><pre><code class="html code-highlight">&lt;a class=&quot;button secondary-btn is-loading is-medium&quot;&gt;Secondary&lt;/a&gt;</code></pre></figure>
+                            </div>
+                            <div id="loading-large" class="navtab-content">
+                                <figure class="highlight highlight-block"><pre><code class="html code-highlight">&lt;a class=&quot;button accent-btn is-loading is-large&quot;&gt;Accent&lt;/a&gt;</code></pre></figure>
+                            </div>
+                            <div id="loading-cta" class="navtab-content">
+                                <figure class="highlight highlight-block"><pre><code class="html code-highlight">&lt;a class=&quot;button button-cta accent-btn is-loading&quot;&gt;CTA&lt;/a&gt;</code></pre></figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Code section -->
+        </div>
+    </div>
+    <!-- Loading buttons-->
+</section>
+
+<section class="section is-medium">
+
+    <div id="social-buttons" class="section-title-wrapper has-text-centered pt-60">
+        <div class="bg-number">5</div>
+        <h2 class="title section-title has-text-centered revealOnScroll text-bold">
+            Social buttons
+        </h2>
+    </div>
+
+    <!-- Social buttons-->
+    <div class="columns is-vcentered">
+        <div class="column is-6 is-offset-3">
+            <!-- Demo section -->
+            <div class="info-block">
+                <h4>Social buttons</h4>
+                <p>Add an icon <code>i</code> tag (eg: <code>class="fa fa-shopping-cart"</code>) inside a <code>.button</code> element to create a button with icon. Icons can be placed before or after the button text.</p>
+            </div>
+            <div class="level-left mb-40">
+                <div class="level-item">
+                    <a class="button button-cta social-btn facebook"><i class="fa fa-facebook-f"></i> Share</a>
+                </div>
+                <div class="level-item">
+                    <a class="button button-cta social-btn twitter"><i class="fa fa-twitter"></i> Share</a>
+                </div>
+                <div class="level-item">
+                    <a class="button button-cta social-btn linkedin"><i class="fa fa-linkedin"></i> Share</a>
+                </div>
+                <div class="level-item">
+                    <a class="button button-cta social-btn tumblr"><i class="fa fa-tumblr"></i> Share</a>
+                </div>
+                <div class="level-item">
+                    <a class="button button-cta social-btn github"><i class="fa fa-github"></i> Fork</a>
+                </div>
+            </div>
+            <!-- /Demo section -->
+        </div>
+    </div>
+    <!-- /Social buttons -->
+
+    <!-- Social square buttons-->
+    <div class="columns is-vcentered pt-60">
+        <div class="column is-6 is-offset-3">
+            <!-- Demo section -->
+            <div class="info-block">
+                <h4>Social icon buttons</h4>
+                <p>Add an icon <code>i</code> tag (eg: <code>class="fa fa-shopping-cart"</code>) inside a <code>.button</code> element to create a button with icon. Icons can be placed before or after the button text.</p>
+            </div>
+            <div class="level-left mb-40">
+                <!-- Square -->
+                <div class="level-item">
+                    <a class="button btn-square social-btn icon-solo facebook raised"><i class="fa fa-facebook-f"></i></a>
+                </div>
+                <div class="level-item">
+                    <a class="button btn-square social-btn icon-solo twitter raised"><i class="fa fa-twitter"></i></a>
+                </div>
+                <div class="level-item">
+                    <a class="button btn-square social-btn icon-solo linkedin raised"><i class="fa fa-linkedin"></i></a>
+                </div>
+                <div class="level-item">
+                    <a class="button btn-square social-btn icon-solo tumblr raised"><i class="fa fa-tumblr"></i></a>
+                </div>
+                <div class="level-item">
+                    <a class="button btn-square social-btn icon-solo github raised"><i class="fa fa-github"></i></a>
+                </div>
+                <!-- /Square -->
+            </div>
+            <!-- /Demo section -->
+        </div>
+    </div>
+    <!-- /Social buttons -->
+
+</section>
+
+{{> footer-dark}}

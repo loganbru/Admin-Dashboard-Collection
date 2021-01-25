@@ -1,0 +1,10 @@
+.user-list {
+    .user-list__action {
+        z-index: 50;
+        transform: translateX(50px);
+        animation: 0.4s intro-x-animation ease-in-out .33333s;
+        animation-fill-mode: forwards;
+        animation-delay: 0.2s;
+        @apply opacity-0 sticky left-0 bottom-0;
+    }
+}

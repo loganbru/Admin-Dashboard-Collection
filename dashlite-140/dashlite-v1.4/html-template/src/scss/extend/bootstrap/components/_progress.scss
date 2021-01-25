@@ -1,0 +1,70 @@
+.progress{
+    &-bar{
+        height: 100%;
+        line-height: 1;
+    }
+    &-sm{
+        height:.25rem;
+    }
+    &-md{
+        height:.375rem;
+    } //@i-v120
+    &-lg{
+        height:1rem;
+    }
+    &-pill{
+        border-radius: 100px;
+        .progress-bar{
+            @extend .progress-pill;
+        }
+    }
+    
+    //@i-v120
+    &-text{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: $base-light;
+        margin-bottom: 0.25rem;
+    }
+    &-label{
+        font-size: 0.875rem;
+    }
+    &-amount{
+        font-size: $fx-sz-12;
+        padding-left: .5rem;
+    }
+
+    //@i-v120
+    &-alt{
+        display: flex;
+        align-items: center;
+        overflow: visible;
+        .progress-bar{
+            border-radius: $progress-border-radius;
+        }
+    }
+
+    //@i-v140
+    &-reverse{
+        flex-direction: row-reverse;
+    }
+    &-bordered{
+        .progress-bar{
+            margin-top: -2px;
+            border:2px solid $white;
+            box-sizing: content-box;
+            &:not(:first-child){
+                margin-left: -4px;
+            }
+        }
+        &.progress-reverse {
+            .progress-bar{
+                margin-left: 0;
+                &:not(:last-child){
+                    margin-left: -5px;
+                }
+            }
+        }
+    }
+}

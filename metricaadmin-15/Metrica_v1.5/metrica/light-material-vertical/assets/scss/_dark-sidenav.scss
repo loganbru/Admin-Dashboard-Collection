@@ -1,0 +1,126 @@
+//
+//  Dark Sidenav
+// 
+body{
+  &.dark-sidenav-iconbar{
+    &.dark-main-menu{
+      .topbar {
+        .topbar-left{
+          background-color: $bg-dark-logo;
+          .logo{
+            .logo-lg{
+              display: none;            
+            }
+            .logo-light{
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+    
+    .left-sidenav{
+      .main-icon-menu{
+          background-color: $bg-icon-menu-dark;                
+      }            
+    }
+  }
+  &.dark-main-menu{
+    .main-menu-inner{
+        background-color:$main-menu-inner-dark-bg; 
+        .menu-body {
+            .nav-item{
+                .nav-link{
+                    color: $menu-item-dark-color;
+                    &:hover,
+                    &.active{
+                        color: $menu-item-dark-active-color; 
+                        i{
+                            color: $menu-icon-dark-active-color; 
+                        }
+                    }
+                }
+                ul {
+                    li {
+                        > a{
+                            color: $menu-item-dark-color;
+                            &.active{
+                                color: $menu-item-dark-active-color; 
+                            } 
+                        }
+                    }
+                }
+            }
+        }           
+    }
+    .menu-title{
+        color: $menu-title-dark-color;
+    }
+    .left-sidenav{
+        .main-icon-menu{
+            .nav-link.active:before {
+                color: $main-menu-inner-dark-bg;
+            }
+        }            
+    }
+  } 
+  &.dark-topbar{
+    .navbar-custom{
+      background-color: $bg-dark-navbar;
+      .nav-link{
+        color: $topbar-nav-link-dark-color;
+      }
+      .topbar-nav {
+        li.show {
+          .nav-link{
+            background-color: lighten($bg-dark-navbar, 3%);
+            color: $topbar-nav-link-dark-color;
+          }
+        }
+      }
+    }
+    .topbar {
+      .topbar-left{
+        background-color: $bg-dark-logo;
+        .logo{
+          .logo-lg{
+            display: none;            
+          }
+          .logo-light{
+            display: inline-block;
+          }
+        }
+      }
+    }
+    .app-search {
+      .form-control, 
+      .form-control:focus {
+        border: 1px solid $app-search-border-dark-color;
+        color: $app-search-dark-color;
+        background: $app-search-dark-bg-color;
+      }
+      a {
+        background: lighten($app-search-dark-bg-color, 5%);
+        border: 1px solid $app-search-border-dark-color;
+        color: $gray-500;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1024px) {
+  body.dark-sidenav-iconbar {
+    .topbar {
+        .topbar-left {
+          .logo {
+            .logo-lg{
+              &.logo-light{
+                display: none;
+            }  
+          }
+        }
+      }
+    }
+  }
+}

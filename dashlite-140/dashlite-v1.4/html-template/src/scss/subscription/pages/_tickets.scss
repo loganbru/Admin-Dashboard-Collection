@@ -1,0 +1,376 @@
+////////////////////////////////////
+///  Ticket List Table
+////////////////////////////////////
+.table-tickets {
+	font-size: $fx-sz-13;
+	color: $base-light;
+}
+
+.tb-ticket {
+	&-item {
+		td, th {
+			vertical-align: middle;
+		}
+		td {
+			padding-top: 0.75rem;
+			padding-bottom: 0.75rem;
+			&.tb-ticket-desc {
+				font-size: $fs-base;
+				color: $base-text;
+			}
+			&.tb-ticket-id {
+				font-size: $fs-base;
+			}
+		}
+		&.is-unread {
+			background: $lighter;
+			.title {
+				font-weight: $fw-medium;
+				color: $base-color;
+			}
+		}
+		.date, .date-last {
+			white-space: nowrap;
+		}
+		.title {
+			vertical-align: middle;
+			display: inline-block;
+			max-width: 220px;
+			padding-right: 1rem;
+			@extend .ellipsis;
+		}
+	}
+	&-id {
+		font-weight: $fw-medium;
+		color: $accent-color;
+		width: 120px;
+	}
+	&-id, &-desc {
+		a {
+			display: block;
+			padding: 0.25rem 0;
+			color: inherit;
+		}
+	}
+	&-date, &-seen, &-status {
+		width: 115px;
+	}
+	&-status {
+		text-align: center;
+	}
+	&-action {
+		text-align:right;
+		.tb-ticket-item & {
+			height: 52px;
+		}
+	}
+	&-title {
+		th {
+			color: $base-light;
+			font-size: $fx-sz-12;
+			font-weight: $fw-medium;
+			text-transform: uppercase;
+			letter-spacing: 0.1em;
+			height: auto;
+		}
+	}
+}
+
+
+@include media-breakpoint-up(xl){
+	.tb-ticket {
+		&-item {
+			.title {
+				max-width: 320px;
+			}
+		}
+	}
+}
+@include media-breakpoint-down(xs){
+	.table-tickets {
+		font-size: $fx-sz-12;
+	}
+	.tb-ticket {
+		&-item {
+			display: flex;
+			position: relative;
+			flex-wrap: wrap;
+			padding: .5rem 1.25rem;
+			align-items: center;
+			td {
+				border: 0;
+				padding: 0;
+				&:first-child, &:last-child {
+					padding: 0;
+				}
+				&.tb-ticket-id {
+					font-size: $fx-sz-14;
+				} 
+				&.tb-ticket-desc {
+					font-size: $fx-sz-12;
+				}
+			}
+			&:not(:first-child) {
+				border-top: 1px solid $border-color;
+			}
+			.title {
+				max-width: 360px;
+			}
+		}
+		&-id {
+			width: 100%;
+			.tb-ticket-item & {
+				margin-top: .25rem;
+				margin-bottom: .125rem;
+			}
+		}
+		&-desc {
+			width: 78%;
+		}
+
+		&-id a, &-desc a {
+			padding: 0;
+		}
+		&-action {
+			margin-left: auto;
+			.tb-ticket-item & {
+				height: auto;
+			}
+		}
+		&-date, &-seen, &-status {
+			width: auto;
+		}
+		&-status {
+			position: absolute;
+			right: 1.25rem;
+			width: 90px;
+			text-align: right;
+			top: .75rem;
+		}
+		&-title {
+			display: flex;
+			position: relative;
+			th {
+				&:not(:first-child):not(.tb-ticket-status) {
+					display: none;
+				}
+				&.tb-ticket-status {
+					padding-right: 0;
+					top: 0;
+					.table & {
+						border: 0;
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 420px) {
+	.tb-ticket-item .title {
+		max-width: 270px;
+	}
+}
+@media (max-width: 374px) {
+	.tb-ticket-item .title {
+		max-width: 220px;
+	}
+}
+
+
+////////////////////////////////////
+///  Ticket Details
+////////////////////////////////////
+.ticket {
+	&-info {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: -.5rem;
+	}
+	&-status {
+		padding-left: 1rem;
+	}
+	&-meta {
+		color: $base-light;
+		li {
+			display: inline-block;
+			padding-right: 1rem;
+		}
+		strong {
+			color: $base-text;
+		}
+		.ticket-id strong {
+			color: $accent-color;
+		}
+	}
+
+	//////////// MSG ///////////
+	&-msg {
+		&-item {
+			.user-card {
+				.user-avatar {
+					width: 40px;
+					height: 40px;
+					font-size: $fx-sz-14;
+				}
+			}
+			&:not(:first-child) {
+				margin-top: 3rem;
+			}
+		}
+		&-from {
+			margin-bottom: 1.25rem;
+		}
+		&-attach {
+			margin-top: 2rem;
+			.title {
+				font-size: $fx-sz-12;
+				text-transform: uppercase;
+				letter-spacing: 0.1em;
+				color: $base-light;
+			}
+			&-list {
+				display: flex; 
+				flex-wrap: wrap;
+				margin: -0.375rem;
+				li {
+					width: 72px;
+					position: relative;
+					margin: 0.375rem;
+					img{
+						border-radius: $border-radius;
+					}
+				}
+				a {
+					display: block;
+	                position: relative;
+	                border-radius: $border-radius;
+	                z-index: 1;
+	                &:after {
+	                    position: absolute;
+	                    content: "";
+	                    left: 0;
+	                    top: 0;
+	                    right: 0;
+	                    bottom: 0;
+	                    background: rgba($dark, 0.4);
+	                    border-radius: $border-radius;
+	                    z-index: 2;
+	                    opacity: 0;
+	                    transition: opacity 0.3s;
+	                }
+	                .icon {
+	                    position: absolute;
+	                    left: 50%;
+	                    top: 50%;
+	                    transform: translate(-50%, -50%);
+	                    width: 2rem;
+	                    height: 2rem;
+	                    line-height: 2rem;
+	                    color: $white;
+	                    background: $accent-color;
+	                    border-radius: $border-radius;
+	                    text-align: center;
+	                    z-index: 3;
+	                    opacity: 0;
+	                    transition: opacity 0.6s;
+	                }
+	                &:hover {
+	                    &:after {
+	                        opacity: 1;
+	                    }
+	                    .icon {
+	                        opacity: 1;
+	                    }
+	                }
+				}
+			}
+		}
+	}
+
+	/////////// REPLY ///////////
+	&-msg-reply {
+		margin-bottom: .5rem;
+		margin-top: 3rem;
+		padding-top: 2.5rem;
+		border-top: 1px solid $border-light;
+        textarea{
+            height: 156px;
+            resize: none;
+            padding: 0.75rem 1.5rem;
+        }
+	    &-action {
+	        &-list {
+	            display: inline-flex;
+	            align-items: center;
+	            margin: 0 -0.35rem;
+	            li{
+	                .icon {
+	                    font-size: 1.1rem;
+	                    color: $body-color;
+	                    transition: color 0.4s;
+	                    &:hover {
+	                        color: $primary;
+	                    }
+	                }
+	            }
+	        }
+	    }
+	}
+}
+
+@include media-breakpoint-up(md){
+	.ticket {
+		&-msg {
+			&-from {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+			}
+			&-comment, &-attach, &-reply {
+				margin-left: 56px;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(sm){
+	.ticket {
+		&-msg {
+			&-from {
+				padding-bottom: 1rem;
+				border-bottom: 1px solid $border-light;
+			}
+			&-reply {
+				.card-bordered & {
+					margin-left: -1.25rem;
+					margin-right: -1.25rem;
+					padding-left: 1.25rem;
+					padding-right: 1.25rem;
+					margin-top: 2rem;
+					padding-top: 1.25rem;
+				}
+			}
+			&-item {
+				&:not(:first-child) {
+					border-top: 1px solid $border-color;
+					padding-top: 1.5rem;
+					margin-top: 1.5rem;
+				}
+				.card-bordered & {
+					margin-left: -1.25rem;
+					margin-right: -1.25rem;
+					padding-left: 1.25rem;
+					padding-right: 1.25rem;
+				}
+				.user-card {
+					& + .ticket-msg-date {
+						font-style: italic;
+						margin-left: 56px;
+					}
+				}
+			}
+		}
+
+	}
+}

@@ -1,0 +1,45 @@
+{
+  "name": "lazypipe",
+  "description": "Use to create an immutable, lazily initialized pipeline from a series of streams.",
+  "version": "1.0.2",
+  "homepage": "https://github.com/OverZealous/lazypipe",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/OverZealous/lazypipe.git"
+  },
+  "bugs": {
+    "url": "https://github.com/OverZealous/lazypipe/issues"
+  },
+  "author": {
+    "name": "Phil DeJarnett",
+    "url": "http://overzealous.com/"
+  },
+  "main": "./index.js",
+  "keywords": [
+    "gulpfriendly",
+    "stream",
+    "streams",
+    "combine",
+    "lazy",
+    "pipeline",
+    "gulp"
+  ],
+  "dependencies": {
+    "stream-combiner": "*"
+  },
+  "devDependencies": {
+    "event-stream": "3.3.4",
+    "mocha": "^5.2.0",
+    "should": "*"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "license": "MIT"
+}

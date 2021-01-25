@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Simulor - Responsive Bootstrap 4 Admin Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+        <meta content="Coderthemes" name="author" />
+
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- Sweet Alert-->
+        <link href="css/vendor/sweetalert2.min.css" rel="stylesheet" type="text/css" />
+
+        <!-- App css -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/app.min.css" rel="stylesheet" type="text/css" />
+
+    </head>
+
+    <body>
+
+        @@include('./partials/topbar.html')
+
+        <div class="wrapper">
+            <div class="container-fluid">
+
+                <!-- start page title -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="page-title-box">
+                            <div class="page-title-right">
+                                <ol class="breadcrumb m-0">
+                                    <li class="breadcrumb-item"><a href="#">Simulor</a></li>
+                                    <li class="breadcrumb-item"><a href="#">Components</a></li>
+                                    <li class="breadcrumb-item active">Sweet Alerts</li>
+                                </ol>
+                            </div>
+                            <h4 class="page-title">Sweet Alerts</h4>
+                        </div>
+                    </div>
+                </div>     
+                <!-- end page title --> 
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <table class="table mb-0">
+                                    <thead>
+                                    <tr>
+                                        <th style="min-width:50%;">Alert Type</th>
+                                        <th>Example</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>A basic message</td>
+                                        <td>
+                                            <button type="button" class="btn btn-info btn-sm" id="sa-basic">Click me</button>
+                                        </td>
+                                    </tr>
+    
+                                    <tr>
+                                        <td>A title with a text under</td>
+                                        <td>
+                                            <button type="button" class="btn btn-info btn-sm" id="sa-title">Click me</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>A success message!</td>
+                                        <td>
+                                            <button type="button" class="btn btn-info btn-sm" id="sa-success">Click me</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>A warning message, with a function attached to the "Confirm"-button...</td>
+                                        <td>
+                                            <button type="button" class="btn btn-info btn-sm" id="sa-warning">Click me</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>By passing a parameter, you can execute something else for "Cancel".</td>
+                                        <td>
+                                            <button type="button" class="btn btn-info btn-sm" id="sa-params">Click me</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>A message with custom Image Header</td>
+                                        <td>
+                                            <button type="button" class="btn btn-info btn-sm" id="sa-image">Click me</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>A message with auto close timer</td>
+                                        <td>
+                                            <button type="button" class="btn btn-info btn-sm" id="sa-close">Click me</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Custom HTML description and buttons</td>
+                                        <td>
+                                            <button type="button" class="btn btn-info btn-sm" id="custom-html-alert">Click me</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>A message with custom width, padding and background</td>
+                                        <td>
+                                            <button type="button" class="btn btn-info btn-sm" id="custom-padding-width-alert">Click me</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ajax request example</td>
+                                        <td>
+                                            <button type="button" class="btn btn-info btn-sm" id="ajax-alert">Click me</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Chaining modals (queue) example</td>
+                                        <td>
+                                            <button type="button" class="btn btn-info btn-sm" id="chaining-alert">Click me</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dynamic queue example</td>
+                                        <td>
+                                            <button type="button" class="btn btn-info btn-sm" id="dynamic-alert">Click me</button>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+    
+                            </div> <!-- end card-body -->
+                        </div> <!-- end card-->
+                    </div>
+                    <!-- end col -->
+                </div>
+                <!-- end row -->
+
+                
+            </div> <!-- end container -->
+        </div>
+        <!-- end wrapper -->
+
+
+        @@include('./partials/footer.html')
+
+
+        <!-- App js -->
+        <script src="js/vendor.min.js"></script>
+        <script src="js/app.min.js"></script>
+
+        <!-- App js -->
+        <script src="js/vendor/sweetalert2.min.js"></script>
+        <script src="js/pages/sweet-alerts.init.js"></script>
+
+    </body>
+</html>

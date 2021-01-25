@@ -1,0 +1,86 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+
+// Color variables
+
+$primary:       #4d79f6;
+$secondary:     #4ac7ec;
+$success:       #1ecab8;
+$info:          #505d82;
+$warning:       #f3c74d;
+$danger:        #f1646c;
+$light:         #262f50;
+$white:         #ffffff;
+$dark:          #f1f5fa;
+$muted:         #7a88af;
+$pink:          #ff5da0;
+$purple:        #7551e9;
+$blue:          #2b55cc;
+
+
+$gray-900:      #f3f6f7;
+$gray-800:      #eff2f9;
+$gray-700:      #aeb4ce;
+$gray-600:      #b6c2e4;
+$gray-500:      #8997bd;
+$gray-400:      #7081b9;
+$gray-300:      #50649c;
+$gray-200:      #28365f;
+$gray-100:      #20294a;
+
+
+
+// Body Background
+$bg-body:                   #151933;
+$body-text:                 #828db1;
+$account-body:              #1c233f;
+$card:                      #1c233f;
+$table:                     #869ab8;
+// Topbar
+$topbar-height:               70px;
+$topbar-left-width:           230px;
+$bg-navbar:                 #1c233f; 
+$bg-logo:                   #1c233f;
+$svg-fill:                  #86a3f7;
+$svg-fill2:                 #d3deff;
+$bg-list-group:             #1c233f;
+
+$dtp:                       #4d79f6;
+$editor-layout:             #50649c;
+$tooltip-custom:            #20294a;
+// Left-sidebar
+$bg-icon-menu:              #4d79f6;
+$bg-leftbar:                #1c233f;
+
+$leftbar-width:               300px;
+$leftbar-width-collapsed:     70px;
+$menu-title-color:          #acb3ce;
+$menu-item-color:           #91a7bb;
+$menu-item-hover-color:     #7496f8;
+$menu-sub-item-color:       #676c79;
+$menu-sub-item-hover-color: #7496f8;
+
+$label:                     #919cbb;
+$form-control:              #8997bd;
+
+// Font variables
+$font-primary: 'Poppins', sans-serif;
+$font-secondary: 'Roboto', sans-serif;
+
+// Font Base
+$font-size-base:              13px;
+
+// Shadow
+$shadow:                        0px 0px 3px rgba(31, 30, 47,0.05);
+$shadow-md:                     1px 0px 20px rgba(96,93,175,0.05);
+
+// Border
+
+$border:                        #283158;
+$border_2:                      #28365f;
+$table-border-color:            #272f52;
+$input-border-color:            #283158;
+$dropdown-color:                #1c233f;

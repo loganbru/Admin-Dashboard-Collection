@@ -1,0 +1,14 @@
+// 
+// widgets.scss
+//
+
+
+// Simple tile box
+.widget-flat {
+    position: relative;
+    overflow: hidden;
+
+    i.widget-icon {
+        font-size: 36px;
+    }
+}

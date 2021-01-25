@@ -1,0 +1,323 @@
+@font-face {
+  font-family: 'mainfont';
+  src:
+    url('fonts/mainfont.ttf?f8whkn') format('truetype'),
+    url('fonts/mainfont.woff?f8whkn') format('woff'),
+    url('fonts/mainfont.svg?f8whkn#mainfont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'mainfont' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Achive:before {
+  content: "\e900";
+  color: #5b6166;
+}
+.icon-Activity:before {
+  content: "\e901";
+  color: #5b6166;
+}
+.icon-Add:before {
+  content: "\e902";
+  color: #5b6166;
+}
+.icon-Add_User:before {
+  content: "\e903";
+  color: #5b6166;
+}
+.icon-Advanced_Search:before {
+  content: "\e904";
+  color: #5b6166;
+}
+.icon-Already_Bookmarked:before {
+  content: "\e905";
+  color: #5b6166;
+}
+.icon-Arrow_Below:before {
+  content: "\e906";
+  color: #5b6166;
+}
+.icon-Arrow_Down:before {
+  content: "\e907";
+  color: #5b6166;
+}
+.icon-Arrow_Left:before {
+  content: "\e908";
+  color: #5b6166;
+}
+.icon-Arrow_Right:before {
+  content: "\e909";
+  color: #5b6166;
+}
+.icon-Arrow_Up:before {
+  content: "\e90a";
+  color: #5b6166;
+}
+.icon-Arrow_Up2:before {
+  content: "\e90b";
+  color: #5b6166;
+}
+.icon-Badge:before {
+  content: "\e90c";
+  color: #5b6166;
+}
+.icon-Blocked:before {
+  content: "\e90d";
+  color: #5b6166;
+}
+.icon-BlockQuote:before {
+  content: "\e90e";
+  color: #5b6166;
+}
+.icon-Bold:before {
+  content: "\e90f";
+  color: #5b6166;
+}
+.icon-Bookmark:before {
+  content: "\e910";
+  color: #5b6166;
+}
+.icon-Bullet_List:before {
+  content: "\e911";
+  color: #5b6166;
+}
+.icon-Calender:before {
+  content: "\e912";
+  color: #5b6166;
+}
+.icon-Cancel:before {
+  content: "\e913";
+  color: #5b6166;
+}
+.icon-Color_Picker:before {
+  content: "\e914";
+  color: #5b6166;
+}
+.icon-Copy:before {
+  content: "\e915";
+  color: #5b6166;
+}
+.icon-Download:before {
+  content: "\e916";
+  color: #5b6166;
+}
+.icon-Downvote:before {
+  content: "\e917";
+  color: #5b6166;
+}
+.icon-Email:before {
+  content: "\e918";
+  color: #5b6166;
+}
+.icon-Emoticon:before {
+  content: "\e919";
+  color: #5b6166;
+}
+.icon-Favorite_Topic:before {
+  content: "\e91a";
+  color: #5b6166;
+}
+.icon-Flag_Topic:before {
+  content: "\e91b";
+  color: #5b6166;
+}
+.icon-Group:before {
+  content: "\e91c";
+  color: #5b6166;
+}
+.icon-heading:before {
+  content: "\e91d";
+  color: #5b6166;
+}
+.icon-Horizontal_Line:before {
+  content: "\e91e";
+  color: #5b6166;
+}
+.icon-Info:before {
+  content: "\e91f";
+  color: #5b6166;
+}
+.icon-Italic:before {
+  content: "\e920";
+  color: #5b6166;
+}
+.icon-Locked:before {
+  content: "\e921";
+  color: #5b6166;
+}
+.icon-Login_signup:before {
+  content: "\e922";
+  color: #5b6166;
+}
+.icon-Logo_Forum .path1:before {
+  content: "\e923";
+  color: rgb(248, 188, 100);
+}
+.icon-Logo_Forum .path2:before {
+  content: "\e924";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Logo_Forum .path3:before {
+  content: "\e925";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Logo_Forum .path4:before {
+  content: "\e926";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Logo_Forum .path5:before {
+  content: "\e927";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Logout:before {
+  content: "\e928";
+  color: #5b6166;
+}
+.icon-Menu_Icon:before {
+  content: "\e929";
+  color: #5b6166;
+}
+.icon-Message:before {
+  content: "\e92a";
+  color: #5b6166;
+}
+.icon-More_Options:before {
+  content: "\e92b";
+  color: #5b6166;
+}
+.icon-Muted:before {
+  content: "\e92c";
+  color: #5b6166;
+}
+.icon-New_Topic .path1:before {
+  content: "\e92d";
+  color: rgb(86, 201, 235);
+}
+.icon-New_Topic .path2:before {
+  content: "\e92e";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-New_Topic .path3:before {
+  content: "\e92f";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-New_Topic .path4:before {
+  content: "\e930";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-New_Topic .path5:before {
+  content: "\e931";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-New_Topic .path6:before {
+  content: "\e932";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Notification:before {
+  content: "\e933";
+  color: #5b6166;
+}
+.icon-Pencil:before {
+  content: "\e934";
+  color: #5b6166;
+}
+.icon-Performatted:before {
+  content: "\e935";
+  color: #5b6166;
+}
+.icon-Pinned:before {
+  content: "\e936";
+  color: #5b6166;
+}
+.icon-Preferences:before {
+  content: "\e937";
+  color: #5b6166;
+}
+.icon-Quote:before {
+  content: "\e938";
+  color: #5b6166;
+}
+.icon-Reply_Empty:before {
+  content: "\e939";
+  color: #5b6166;
+}
+.icon-Reply_Fill:before {
+  content: "\e93a";
+  color: #5b6166;
+}
+.icon-Search:before {
+  content: "\e93b";
+  color: #5b6166;
+}
+.icon-Settings:before {
+  content: "\e93c";
+  color: #5b6166;
+}
+.icon-Share_Topic:before {
+  content: "\e93d";
+  color: #5b6166;
+}
+.icon-Support:before {
+  content: "\e93e";
+  color: #5b6166;
+}
+.icon-Track:before {
+  content: "\e93f";
+  color: #5b6166;
+}
+.icon-Tracking:before {
+  content: "\e940";
+  color: #5b6166;
+}
+.icon-Upload_Files:before {
+  content: "\e941";
+  color: #5b6166;
+}
+.icon-Upvote:before {
+  content: "\e942";
+  color: #5b6166;
+}
+.icon-User:before {
+  content: "\e943";
+  color: #5b6166;
+}
+.icon-Verified .path1:before {
+  content: "\e944";
+  color: rgb(248, 188, 100);
+}
+.icon-Verified .path2:before {
+  content: "\e945";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-Watch_Later:before {
+  content: "\e946";
+  color: #5b6166;
+}
+.icon-Watching:before {
+  content: "\e947";
+  color: #5b6166;
+}

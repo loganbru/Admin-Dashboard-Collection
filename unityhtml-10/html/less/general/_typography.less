@@ -1,0 +1,78 @@
+body {
+  font-family: @font-family;
+  font-size: @font-size;
+  line-height: @line-height;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #ffffff;
+}
+
+main {
+  min-height: 400px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: @fw--bold;
+}
+h1 {
+  font-size: @fs--h1;
+  line-height: @lh--h1;
+}
+h2 {
+  font-size: @fs--h2;
+  line-height: @lh--h2;
+}
+h3 {
+  font-size: @fs--h3;
+  line-height: @lh--h3;
+}
+h4 {
+  font-size: @fs--h4;
+  line-height: @lh--h4;
+}
+h5 {
+  font-size: @fs--h5;
+  line-height: @lh--h5;
+}
+h6 {
+  font-size: @fs--h6;
+  line-height: @lh--h6;
+}
+
+label {
+  font-weight: @fw--regular;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  image-rendering: auto;
+}
+
+a {
+  .display-inline-flex();
+  &:hover,
+  &:visited,
+  &:active,
+  &:link {
+    text-decoration: none;
+  }
+  -webkit-tap-highlight-color: transparent;
+  .transition(color @dur);
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+[class^="icon-"] {
+  .display-inline-flex();
+  ._flex-center();
+  &::before {
+    margin: 0;
+  }
+}

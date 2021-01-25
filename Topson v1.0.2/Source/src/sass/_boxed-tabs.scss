@@ -1,0 +1,18 @@
+.boxed-tabs {
+    a {
+        @apply border-b-0;
+        &.active {
+            @apply bg-light-1 text-white;
+        }
+    }
+}
+
+.dark {
+    .boxed-tabs {
+        a {
+            &.active {
+                @apply bg-light-1 text-white;
+            }
+        }
+    }
+}

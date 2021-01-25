@@ -1,0 +1,80 @@
+//
+// Page
+//
+
+
+
+
+// Page body
+body {
+	background: $kt-page-body-bg-color;
+
+	// Container 
+	.kt-container {
+		.kt-container {
+			width: 100%;
+		}
+	}
+}
+
+// Desktop(1024px and above)
+@include kt-desktop() {
+	// Page body
+	.kt-wrapper {
+		// Fixed Header
+		.kt-header--fixed & {
+			padding-top: kt-get($kt-header-config, base, desktop, default, height);
+		}
+
+		// Fixed Content Head
+		.kt-header--fixed.kt-subheader--fixed.kt-subheader--enabled & {
+			padding-top: kt-get($kt-header-config, base, desktop, default, height) + kt-get($kt-subheader-config, fixed, height);
+		}
+	}
+
+	// Container 
+	.kt-container {
+		padding: 0 kt-get($kt-page-padding, desktop);
+	}
+
+	// Body
+	.kt-body {
+		> .kt-container {
+			padding-right: 0 !important;
+		}
+	}
+
+	// Subheader
+	.kt-subheader {
+		padding: 10px 0 !important;
+	}
+}
+
+// Page fluid mode(below $kt-page-container-width)
+@media (min-width: #{$kt-page-container-width + (2 * $kt-page-fluid-container-padding) - 1px}) {
+	// Page container
+	.kt-container.kt-container--fluid {
+		padding: 0 $kt-page-fluid-container-padding;
+	}
+}
+
+// Tablet & mobile mode(1024px and below)
+@include kt-tablet-and-mobile() {
+	// Page container
+	.kt-container {
+		padding: 0 kt-get($kt-page-padding, mobile);
+	}
+
+	// Page wrapper
+	.kt-wrapper {
+		// Fixed Header
+		.kt-header-mobile--fixed & {
+			padding-top: kt-get($kt-header-config, base, mobile, self, default, height);
+		}
+	}
+
+	// Subheader
+	.kt-subheader {
+		padding: 5px 0 !important;
+	}
+}

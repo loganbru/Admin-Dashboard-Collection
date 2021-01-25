@@ -1,0 +1,88 @@
+//
+// Header Mobile
+//
+
+
+
+// Desktop mode(1024px and above)
+@include kt-desktop {
+	// Hide mobile header for desktop mode
+	.kt-header-mobile {
+		display: none;
+	}
+}
+
+// Tablet & mobile mode(1024px and below)
+@include kt-tablet-and-mobile {
+	.kt-header-mobile {
+		display: flex;
+		justify-content: space-between;
+		padding: 0 kt-get($kt-page-padding, mobile);
+		height: kt-get($kt-header-config, base, mobile, self, default, height);
+		min-height: kt-get($kt-header-config, base, mobile, self, default, height);
+		position: relative;
+		z-index: 1;
+		box-shadow: 0px 4px 30px -4px rgba(0,51,90, 0.1);
+		background: #fff;
+
+		// Topbar expanded mode
+		.kt-header__topbar--mobile-on & {
+			box-shadow: none;
+		}
+		
+		// Fixed header mode
+		.kt-header-mobile--fixed & {
+			position: fixed;
+			top: 0;
+			right: 0;
+			left: 0;
+			z-index: kt-get($kt-header-config, base, mobile, self, fixed, zindex);
+			padding: 0 kt-get($kt-page-padding, mobile);
+		}
+
+		// Logo
+		.kt-header-mobile__logo {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			.dropdown {
+				margin-left: 15px;
+			}
+		}
+
+		// Toolbar
+		.kt-header-mobile__toolbar {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+
+			@include kt-burger-icon-build(kt-header-mobile__toolbar-toggler, kt-get($kt-header-config, base, mobile, toolbar, toggler));
+			@include kt-burger-icon-skin(kt-header-mobile__toolbar-toggler, kt-get($kt-header-config, base, mobile, toolbar, toggler, color));
+
+			.kt-header-mobile__toolbar-toggler {
+				margin: 0 0 0 1.5rem;
+			}
+
+			.kt-header-mobile__toolbar-topbar-toggler {
+				@include kt-button-reset();
+				display: flex;
+				align-items: center;
+				margin: 0 0.5rem 0 1.25rem;
+
+				i {
+					font-size: 1.6rem;
+					line-height: 0;
+					color: kt-get($kt-header-config, base, mobile, toolbar, toggler, color, default);
+				}
+
+				&.kt-header-mobile__toolbar-topbar-toggler--active,
+				&:hover {
+					i {
+						color: kt-get($kt-header-config, base, mobile, toolbar, toggler, color, hover);
+					}
+				}
+			}
+		}
+	}
+}

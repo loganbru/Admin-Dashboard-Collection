@@ -1,0 +1,23 @@
+//
+// Footer
+//
+
+.footer {
+  border-top: 1px solid $gray-300;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  .boxed-footer{
+    width: 1380px;
+    margin: 0 auto;
+    padding: 20px;   
+    color: $gray-600;
+  } 
+}
+
+@media (max-width: 1024px){
+  .boxed-footer {
+    width: 100% !important;
+  }
+}

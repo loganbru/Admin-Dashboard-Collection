@@ -1,0 +1,119 @@
+// 
+// timeline.scss
+//
+
+/************** vertical timeline **************/ 
+
+.timeline{
+    position: relative;
+    margin-bottom: 30px;
+    &:before {
+        content: "";
+        position: absolute;
+        width: 2px;
+        top: 30px;
+        left: 0;
+        bottom: 0;
+        background-color: darken($gray-300,4%);
+    }
+
+    .timeline-item{
+        display: flex;
+    }
+
+    .timeline-block{
+        width: 100%;
+    }
+
+    .time-show-btn{
+        margin-bottom: 30px;
+    }
+
+    .timeline-box{
+        margin: 20px 0;
+        position: relative;
+    }
+    .timeline-icon{
+        display: none;
+    }
+
+}
+
+@include media-breakpoint-up(md) {
+
+    .timeline{
+
+        .timeline-block{
+            width: 50%;
+        }
+
+        &:before {
+            left: 50%;
+        }
+        .time-show-btn{
+            position: relative;
+            left: 67px;
+            text-align: right;
+        }
+
+        .timeline-icon{
+            display: block;
+            position: absolute;
+            left: -60px;
+            &:after{
+                content: "";
+                position: absolute;
+                width: 45px;
+                height: 3px;
+                background-color: rgba($primary, 0.2);
+                top: 14px;
+                left: 40px;
+            }
+        }
+    }
+
+
+
+    .timeline-item{
+        &::before {
+            content: "";
+            display: block;
+            width: 50%;
+        }
+
+        &.timeline-left{
+            text-align: right;
+            &::after {
+                content: "";
+                display: block;
+                width: 50%;
+            }
+
+            &::before {
+                display: none;
+            }
+        }
+
+        .timeline-box{
+            margin-left: 45px;
+        }
+
+        &.timeline-left{
+            .timeline-box{
+                margin-left: 0;
+                margin-right: 45px;
+            }
+
+            .timeline-icon{
+                right: -64px;
+                left: auto;
+                &:after{
+                    right: 40px;
+                    left: auto;
+                }
+            }
+        }
+    }
+
+
+}

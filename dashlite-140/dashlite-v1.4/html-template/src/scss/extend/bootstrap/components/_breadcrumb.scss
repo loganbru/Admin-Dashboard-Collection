@@ -1,0 +1,27 @@
+.breadcrumb{
+    &-item{
+        font-size: $breadcrumb-font-size;
+        font-weight: $breadcrumb-font-weight;
+        text-transform: $breadcrumb-font-case;
+        letter-spacing: $breadcrumb-letter-spacing;
+        a:not(:hover){
+            color: $breadcrumb-not-hover-color;
+        }
+        + .breadcrumb-item::before{
+            .breadcrumb-pipe &{
+                content: '|';
+            }
+        }
+        + .breadcrumb-item::before{
+            .breadcrumb-arrow &{
+                font-family: $nk-dashlite-font;
+                content: $ni-forward-ios;
+            }
+        }
+        &.active {
+            &:not(:only-child) {
+                font-weight: $fw-normal;
+            }
+        }
+    }
+}

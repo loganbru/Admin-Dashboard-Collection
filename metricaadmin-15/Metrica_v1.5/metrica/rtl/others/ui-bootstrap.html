@@ -1,0 +1,2373 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Metrica - Responsive Bootstrap 4 Admin Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="A premium admin dashboard template by Mannatthemes" name="description" />
+        <meta content="Mannatthemes" name="author" />
+
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="../assets/images/favicon.ico">
+
+        <!-- App css -->
+        <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/css/metisMenu.min.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/css/style.css" rel="stylesheet" type="text/css" />
+
+    </head>
+
+    <body>
+
+        <!-- Top Bar Start -->
+        <div class="topbar">
+
+            <!-- LOGO -->
+            <div class="topbar-left">
+                <a href="../projects/projects-index.html" class="logo">
+                    <span>
+                        <img src="../assets/images/logo-sm.png" alt="logo-small" class="logo-sm">
+                    </span>
+                    <span>
+                        <img src="../assets/images/logo-dark.png" alt="logo-large" class="logo-lg">
+                    </span>
+                </a>
+            </div>
+            <!--end logo-->
+            <!-- Navbar -->
+            <nav class="navbar-custom">    
+                <ul class="list-unstyled topbar-nav float-right mb-0"> 
+                    <li class="hidden-sm">
+                        <a class="nav-link dropdown-toggle waves-effect waves-light" data-toggle="dropdown" href="javascript: void(0);" role="button"
+                            aria-haspopup="false" aria-expanded="false">
+                            English <img src="../assets/images/flags/us_flag.jpg" class="ml-2" height="16" alt=""/> <i class="mdi mdi-chevron-down"></i> 
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="javascript: void(0);"><span> German </span><img src="../assets/images/flags/germany_flag.jpg" alt="" class="ml-2 float-right" height="14"/></a>
+                            <a class="dropdown-item" href="javascript: void(0);"><span> Italian </span><img src="../assets/images/flags/italy_flag.jpg" alt="" class="ml-2 float-right" height="14"/></a>
+                            <a class="dropdown-item" href="javascript: void(0);"><span> French </span><img src="../assets/images/flags/french_flag.jpg" alt="" class="ml-2 float-right" height="14"/></a>
+                            <a class="dropdown-item" href="javascript: void(0);"><span> Spanish </span><img src="../assets/images/flags/spain_flag.jpg" alt="" class="ml-2 float-right" height="14"/></a>
+                            <a class="dropdown-item" href="javascript: void(0);"><span> Russian </span><img src="../assets/images/flags/russia_flag.jpg" alt="" class="ml-2 float-right" height="14"/></a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown notification-list">
+                        <a class="nav-link dropdown-toggle arrow-none waves-light waves-effect" data-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="false" aria-expanded="false">
+                            <i class="dripicons-bell noti-icon"></i>
+                            <span class="badge badge-danger badge-pill noti-icon-badge">2</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-lg">
+                            <!-- item-->
+                            <h6 class="dropdown-item-text">
+                                Notifications (18)
+                            </h6>
+                            <div class="slimscroll notification-list">
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item active">
+                                    <div class="notify-icon bg-success"><i class="mdi mdi-cart-outline"></i></div>
+                                    <p class="notify-details">Your order is placed<small class="text-muted">Dummy text of the printing and typesetting industry.</small></p>
+                                </a>
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <div class="notify-icon bg-warning"><i class="mdi mdi-message"></i></div>
+                                    <p class="notify-details">New Message received<small class="text-muted">You have 87 unread messages</small></p>
+                                </a>
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <div class="notify-icon bg-info"><i class="mdi mdi-glass-cocktail"></i></div>
+                                    <p class="notify-details">Your item is shipped<small class="text-muted">It is a long established fact that a reader will</small></p>
+                                </a>
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <div class="notify-icon bg-primary"><i class="mdi mdi-cart-outline"></i></div>
+                                    <p class="notify-details">Your order is placed<small class="text-muted">Dummy text of the printing and typesetting industry.</small></p>
+                                </a>
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <div class="notify-icon bg-danger"><i class="mdi mdi-message"></i></div>
+                                    <p class="notify-details">New Message received<small class="text-muted">You have 87 unread messages</small></p>
+                                </a>
+                            </div>
+                            <!-- All-->
+                            <a href="javascript:void(0);" class="dropdown-item text-center text-primary">
+                                View all <i class="fi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="nav-link dropdown-toggle waves-effect waves-light nav-user" data-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="false" aria-expanded="false">
+                            <img src="../assets/images/users/user-4.jpg" alt="profile-user" class="rounded-circle" /> 
+                            <span class="ml-1 nav-user-name hidden-sm">Amelia <i class="mdi mdi-chevron-down"></i> </span>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#"><i class="dripicons-user text-muted mr-2"></i> Profile</a>
+                            <a class="dropdown-item" href="#"><i class="dripicons-wallet text-muted mr-2"></i> My Wallet</a>
+                            <a class="dropdown-item" href="#"><i class="dripicons-gear text-muted mr-2"></i> Settings</a>
+                            <a class="dropdown-item" href="#"><i class="dripicons-lock text-muted mr-2"></i> Lock screen</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"><i class="dripicons-exit text-muted mr-2"></i> Logout</a>
+                        </div>
+                    </li>
+                </ul><!--end topbar-nav-->
+    
+                <ul class="list-unstyled topbar-nav mb-0">                        
+                    <li>
+                        <button class="button-menu-mobile nav-link waves-effect waves-light">
+                            <i class="dripicons-menu nav-icon"></i>
+                        </button>
+                    </li>
+                    <li class="hide-phone app-search">
+                        <form role="search" class="">
+                            <input type="text" placeholder="Search..." class="form-control">
+                            <a href=""><i class="fas fa-search"></i></a>
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+            <!-- end navbar-->
+        </div>
+        <!-- Top Bar End -->
+
+        <div class="page-wrapper">
+            <!-- Left Sidenav -->
+            <div class="left-sidenav">
+                <div class="main-icon-menu">
+                    <nav class="nav">
+                        <a href="#MetricaAnalytic" class="nav-link" data-toggle="tooltip-custom" data-placement="top" title="" data-original-title="Analytics">
+                            <svg class="nav-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                <g>
+                                    <path d="M184,448h48c4.4,0,8-3.6,8-8V72c0-4.4-3.6-8-8-8h-48c-4.4,0-8,3.6-8,8v368C176,444.4,179.6,448,184,448z"/>
+                                    <path class="svg-primary" d="M88,448H136c4.4,0,8-3.6,8-8V296c0-4.4-3.6-8-8-8H88c-4.4,0-8,3.6-8,8V440C80,444.4,83.6,448,88,448z"/>
+                                    <path class="svg-primary" d="M280.1,448h47.8c4.5,0,8.1-3.6,8.1-8.1V232.1c0-4.5-3.6-8.1-8.1-8.1h-47.8c-4.5,0-8.1,3.6-8.1,8.1v207.8
+                                        C272,444.4,275.6,448,280.1,448z"/>
+                                    <path d="M368,136.1v303.8c0,4.5,3.6,8.1,8.1,8.1h47.8c4.5,0,8.1-3.6,8.1-8.1V136.1c0-4.5-3.6-8.1-8.1-8.1h-47.8
+                                        C371.6,128,368,131.6,368,136.1z"/>
+                                </g>
+                            </svg>
+                        </a><!--end MetricaAnalytic-->
+
+                        <a href="#MetricaCrypto" class="nav-link" data-toggle="tooltip-custom" data-placement="top" title="" data-original-title="Crypto">
+                            <svg class="nav-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path class="svg-primary" d="M410.5 279.2c-5-11.5-12.7-21.6-28.1-30.1-8.2-4.5-16.1-7.8-25.4-10 5.4-2.5 10-5.4 16.3-11 7.5-6.6 13.1-15.7 15.6-23.3 2.6-7.5 4.1-18 3.5-28.2-1.1-16.8-4.4-33.1-13.2-44.8-8.8-11.7-21.2-20.7-37.6-27-12.6-4.8-25.5-7.8-45.5-8.9V32h-40v64h-32V32h-41v64H96v48h27.9c8.7 0 14.6.8 17.6 2.3 3.1 1.5 5.3 3.5 6.5 6 1.3 2.5 1.9 8.4 1.9 17.5V343c0 9-.6 14.8-1.9 17.4-1.3 2.6-2 4.9-5.1 6.3-3.1 1.4-3.2 1.3-11.8 1.3h-26.4L96 416h87v64h41v-64h32v64h40v-64.4c26-1.3 44.5-4.7 59.4-10.3 19.3-7.2 34.1-17.7 44.7-31.5 10.6-13.8 14.9-34.9 15.8-51.2.7-14.5-.9-33.2-5.4-43.4zM224 150h32v74h-32v-74zm0 212v-90h32v90h-32zm72-208.1c6 2.5 9.9 7.5 13.8 12.7 4.3 5.7 6.5 13.3 6.5 21.4 0 7.8-2.9 14.5-7.5 20.5-3.8 4.9-6.8 8.3-12.8 11.1v-65.7zm28.8 186.7c-7.8 6.9-12.3 10.1-22.1 13.8-2 .8-4.7 1.4-6.7 1.9v-82.8c5 .8 7.6 1.8 11.3 3.4 7.8 3.3 15.2 6.9 19.8 13.2 4.6 6.3 8 15.6 8 24.7 0 10.9-2.8 19.2-10.3 25.8z"/>
+                            </svg>
+                        </a><!--end MetricaCrypto-->
+
+                        <a href="#MetricaProject" class="nav-link" data-toggle="tooltip-custom" data-placement="top" title="" data-original-title="Projects">
+                            <svg class="nav-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path class="svg-primary" d="M256 32C132.288 32 32 132.288 32 256s100.288 224 224 224 224-100.288 224-224S379.712 32 256 32zm135.765 359.765C355.5 428.028 307.285 448 256 448s-99.5-19.972-135.765-56.235C83.972 355.5 64 307.285 64 256s19.972-99.5 56.235-135.765C156.5 83.972 204.715 64 256 64s99.5 19.972 135.765 56.235C428.028 156.5 448 204.715 448 256s-19.972 99.5-56.235 135.765z"/>
+                                <path d="M200.043 106.067c-40.631 15.171-73.434 46.382-90.717 85.933H256l-55.957-85.933zM412.797 288A160.723 160.723 0 0 0 416 256c0-36.624-12.314-70.367-33.016-97.334L311 288h101.797zM359.973 134.395C332.007 110.461 295.694 96 256 96c-7.966 0-15.794.591-23.448 1.715L310.852 224l49.121-89.605zM99.204 224A160.65 160.65 0 0 0 96 256c0 36.639 12.324 70.394 33.041 97.366L201 224H99.204zM311.959 405.932c40.631-15.171 73.433-46.382 90.715-85.932H256l55.959 85.932zM152.046 377.621C180.009 401.545 216.314 416 256 416c7.969 0 15.799-.592 23.456-1.716L201.164 288l-49.118 89.621z"/>
+                            </svg>
+                        </a><!--end MetricaProject-->
+
+                        <a href="#MetricaEcommerce" class="nav-link" data-toggle="tooltip-custom" data-placement="top" title="" data-original-title="Ecommerce">
+                            <svg class="nav-svg" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                <g>
+                                    <ellipse class="svg-primary" transform="matrix(0.9998 -1.842767e-02 1.842767e-02 0.9998 -7.7858 3.0205)" cx="160" cy="424" rx="24" ry="24"/>
+                                    <ellipse class="svg-primary" transform="matrix(2.381651e-02 -0.9997 0.9997 2.381651e-02 -48.5107 798.282)" cx="384.5" cy="424" rx="24" ry="24"/>
+                                    <path d="M463.8,132.2c-0.7-2.4-2.8-4-5.2-4.2L132.9,96.5c-2.8-0.3-6.2-2.1-7.5-4.7c-3.8-7.1-6.2-11.1-12.2-18.6
+                                        c-7.7-9.4-22.2-9.1-48.8-9.3c-9-0.1-16.3,5.2-16.3,14.1c0,8.7,6.9,14.1,15.6,14.1c8.7,0,21.3,0.5,26,1.9c4.7,1.4,8.5,9.1,9.9,15.8
+                                        c0,0.1,0,0.2,0.1,0.3c0.2,1.2,2,10.2,2,10.3l40,211.6c2.4,14.5,7.3,26.5,14.5,35.7c8.4,10.8,19.5,16.2,32.9,16.2h236.6
+                                        c7.6,0,14.1-5.8,14.4-13.4c0.4-8-6-14.6-14-14.6H189h-0.1c-2,0-4.9,0-8.3-2.8c-3.5-3-8.3-9.9-11.5-26l-4.3-23.7
+                                        c0-0.3,0.1-0.5,0.4-0.6l277.7-47c2.6-0.4,4.6-2.5,4.9-5.2l16-115.8C464,134,464,133.1,463.8,132.2z"/>
+                                </g>
+                            </svg>
+                        </a> <!--end MetricaEcommerce-->   
+
+                        <a href="#MetricaCRM" class="nav-link" data-toggle="tooltip-custom" data-placement="top" title="" data-original-title="CRM">
+                            <svg class="nav-svg" version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <path d="M276,68.1v219c0,3.7-2.5,6.8-6,7.7L81.1,343.4c-2.3,0.6-3.6,3.1-2.7,5.4C109.1,426,184.9,480.6,273.2,480
+                                            C387.8,479.3,480,386.5,480,272c0-112.1-88.6-203.5-199.8-207.8C277.9,64.1,276,65.9,276,68.1z"/>
+                                    </g>
+                                    <path class="svg-primary" d="M32,239.3c0,0,0.2,48.8,15.2,81.1c0.8,1.8,2.8,2.7,4.6,2.2l193.8-49.7c3.5-0.9,6.4-4.6,6.4-8.2V36c0-2.2-1.8-4-4-4
+                                        C91,33.9,32,149,32,239.3z"/>
+                                </g>
+                            </svg>
+                        </a><!--end MetricaCRM-->
+
+                        <a href="#MetricaOthers" class="nav-link" data-toggle="tooltip-custom" data-placement="top" title="" data-original-title="UI Kit">
+                            <svg class="nav-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M70.7 164.5l169.2 81.7c4.4 2.1 10.3 3.2 16.1 3.2s11.7-1.1 16.1-3.2l169.2-81.7c8.9-4.3 8.9-11.3 0-15.6L272.1 67.2c-4.4-2.1-10.3-3.2-16.1-3.2s-11.7 1.1-16.1 3.2L70.7 148.9c-8.9 4.3-8.9 11.3 0 15.6z"/>
+                                <path class="svg-primary" d="M441.3 248.2s-30.9-14.9-35-16.9-5.2-1.9-9.5.1S272 291.6 272 291.6c-4.5 2.1-10.3 3.2-16.1 3.2s-11.7-1.1-16.1-3.2c0 0-117.3-56.6-122.8-59.3-6-2.9-7.7-2.9-13.1-.3l-33.4 16.1c-8.9 4.3-8.9 11.3 0 15.6l169.2 81.7c4.4 2.1 10.3 3.2 16.1 3.2s11.7-1.1 16.1-3.2l169.2-81.7c9.1-4.2 9.1-11.2.2-15.5z"/>
+                                <path d="M441.3 347.5s-30.9-14.9-35-16.9-5.2-1.9-9.5.1S272.1 391 272.1 391c-4.5 2.1-10.3 3.2-16.1 3.2s-11.7-1.1-16.1-3.2c0 0-117.3-56.6-122.8-59.3-6-2.9-7.7-2.9-13.1-.3l-33.4 16.1c-8.9 4.3-8.9 11.3 0 15.6l169.2 81.7c4.4 2.2 10.3 3.2 16.1 3.2s11.7-1.1 16.1-3.2l169.2-81.7c9-4.3 9-11.3.1-15.6z"/>
+                            </svg>
+                        </a><!--end MetricaOthers-->
+
+                        <a href="#MetricaPages" class="nav-link" data-toggle="tooltip-custom" data-placement="top" title="" data-original-title="Pages">
+                            <svg class="nav-svg" version="1.1" id="Layer_4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                <g>
+                                    <path d="M462.5,352.3c-1.9-5.5-5.6-11.5-11.4-18.3c-10.2-12-30.8-29.3-54.8-47.2c-2.6-2-6.4-0.8-7.5,2.3l-4.7,13.4
+                                        c-0.7,2,0,4.3,1.7,5.5c15.9,11.6,35.9,27.9,41.8,35.9c2,2.8-0.5,6.6-3.9,5.8c-10-2.3-29-7.3-44.2-12.8c-8.6-3.1-17.7-6.7-27.2-10.6
+                                        c16-20.8,24.7-46.3,24.7-72.6c0-32.8-13.2-63.6-37.1-86.4c-22.9-21.9-53.8-34.1-85.7-33.7c-25.7,0.3-50.1,8.4-70.7,23.5
+                                        c-18.3,13.4-32.2,31.3-40.6,52c-8.3-6-16.1-11.9-23.2-17.6c-13.7-10.9-28.4-22-38.7-34.7c-2.2-2.8,0.9-6.7,4.4-5.9
+                                        c11.3,2.6,35.4,10.9,56.4,18.9c1.5,0.6,3.2,0.3,4.5-0.8l11.1-10.1c2.4-2.1,1.7-6-1.3-7.2C121,137.4,89.2,128,73.2,128
+                                        c-11.5,0-19.3,3.5-23.3,10.4c-7.6,13.3,7.1,35.2,45.1,66.8c34.1,28.5,82.6,61.8,136.5,92c87.5,49.1,171.1,81,208,81
+                                        c11.2,0,18.7-3.1,22.1-9.1C464.4,364.4,464.7,358.7,462.5,352.3z"/>
+                                    <path  class="svg-primary" d="M312,354c-29.1-12.8-59.3-26-92.6-44.8c-30.1-16.9-59.4-36.5-84.4-53.6c-1-0.7-2.2-1.1-3.4-1.1c-0.9,0-1.9,0.2-2.8,0.7
+                                        c-2,1-3.3,3-3.3,5.2c0,1.2-0.1,2.4-0.1,3.5c0,32.1,12.6,62.3,35.5,84.9c22.9,22.7,53.4,35.2,85.8,35.2c23.6,0,46.5-6.7,66.2-19.5
+                                        c1.9-1.2,2.9-3.3,2.7-5.5C315.5,356.8,314.1,354.9,312,354z"/>
+                                </g>
+                           </svg>                           
+                        </a><!--end MetricaPages-->
+
+                        <a href="#MetricaAuthentication" class="nav-link" data-toggle="tooltip-custom" data-placement="top" title="" data-original-title="Authentication">
+                            <svg class="nav-svg" version="1.1" id="Layer_5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                <g>
+                                    <path class="svg-primary" d="M376,192h-24v-46.7c0-52.7-42-96.5-94.7-97.3c-53.4-0.7-97.3,42.8-97.3,96v48h-24c-22,0-40,18-40,40v192c0,22,18,40,40,40
+                                        h240c22,0,40-18,40-40V232C416,210,398,192,376,192z M270,316.8v68.8c0,7.5-5.8,14-13.3,14.4c-8,0.4-14.7-6-14.7-14v-69.2
+                                        c-11.5-5.6-19.1-17.8-17.9-31.7c1.4-15.5,14.1-27.9,29.6-29c18.7-1.3,34.3,13.5,34.3,31.9C288,300.7,280.7,311.6,270,316.8z
+                                            M324,192H188v-48c0-18.1,7.1-35.1,20-48s29.9-20,48-20s35.1,7.1,48,20s20,29.9,20,48V192z"/>
+                                </g>
+                            </svg>
+                        </a> <!--end MetricaAuthentication--> 
+
+                    </nav><!--end nav-->
+                </div><!--end main-icon-menu-->
+
+                <div class="main-menu-inner">
+                    <div class="menu-body slimscroll">
+                        <div id="MetricaAnalytic" class="main-icon-menu-pane">
+                            <div class="title-box">
+                                <h6 class="menu-title">Analytics</h6>       
+                            </div>
+                            <ul class="nav">
+                                <li class="nav-item"><a class="nav-link" href="../analytics/analytics-index.html"><i class="dripicons-meter"></i>Dashboard</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../analytics/analytics-customers.html"><i class="dripicons-user-group"></i>Customers</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../analytics/analytics-reports.html"><i class="dripicons-document"></i>Reports</a></li> 
+                            </ul>
+                        </div><!-- end Analytic -->
+                        <div id="MetricaCrypto" class="main-icon-menu-pane">
+                            <div class="title-box">
+                                <h6 class="menu-title">Crypto</h6>
+                            </div>
+                            <ul class="nav">
+                                <li class="nav-item"><a class="nav-link" href="../crypto/crypto-index.html"><i class="dripicons-device-desktop"></i>Dashboard</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../crypto/crypto-exchange.html"><i class="dripicons-swap"></i>Exchange</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../crypto/crypto-wallet.html"><i class="dripicons-wallet"></i>My Wallet</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../crypto/crypto-calendar.html"><i class="dripicons-calendar"></i>Calendar</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../crypto/crypto-news.html"><i class="dripicons-blog"></i>Crypto News</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../crypto/crypto-ico.html"><i class="dripicons-stack"></i>ICO List</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../crypto/crypto-settings.html"><i class="dripicons-gear"></i>Settings</a></li>
+                            </ul>
+                        </div><!-- end Crypto -->
+                        <div id="MetricaProject" class="main-icon-menu-pane">
+                            <div class="title-box">
+                                <h6 class="menu-title">Projects</h6>        
+                            </div>
+                            <ul class="nav">
+                                <li class="nav-item"><a class="nav-link" href="../projects/projects-index.html"><i class="dripicons-view-thumb"></i>Dashboard</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../projects/projects-clients.html"><i class="dripicons-user-id"></i>Clients</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../projects/projects-calendar.html"><i class="dripicons-calendar"></i>Calendar</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../projects/projects-team.html"><i class="dripicons-trophy"></i>Team</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../projects/projects-project.html"><i class="dripicons-jewel"></i>Project</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../projects/projects-task.html"><i class="dripicons-checklist"></i>Task</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../projects/projects-kanban-board.html"><i class="dripicons-move"></i>Kanban Board</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../projects/projects-invoice.html"><i class="dripicons-document"></i>Invoice</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../projects/projects-chat.html"><i class="dripicons-conversation"></i>Chat</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../projects/projects-users.html"><i class="dripicons-user-group"></i>Users</a></li>
+                            </ul>
+                        </div><!-- end  Project-->
+                        <div id="MetricaEcommerce" class="main-icon-menu-pane">
+                            <div class="title-box">
+                                <h6 class="menu-title">Ecommerce</h6>           
+                            </div>
+                            <ul class="nav">
+                                <li class="nav-item"><a class="nav-link" href="../ecommerce/ecommerce-index.html"><i class="dripicons-device-desktop"></i>Dashboard</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../ecommerce/ecommerce-products.html"><i class="dripicons-view-apps"></i>Products</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../ecommerce/ecommerce-product-list.html"><i class="dripicons-list"></i>Product List</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../ecommerce/ecommerce-product-detail.html"><i class="dripicons-article"></i>Product Detail</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../ecommerce/ecommerce-cart.html"><i class="dripicons-cart"></i>Cart</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../ecommerce/ecommerce-checkout.html"><i class="dripicons-card"></i>Checkout</a></li>
+                            </ul>
+                        </div><!-- end Ecommerce -->
+                        <div id="MetricaCRM" class="main-icon-menu-pane">
+                            <div class="title-box">
+                                <h6 class="menu-title">CRM</h6>          
+                            </div>
+                            <ul class="nav">
+                                <li class="nav-item"><a class="nav-link" href="../crm/crm-index.html"><i class="dripicons-monitor"></i>Dashboard</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../crm/crm-contacts.html"><i class="dripicons-user-id"></i>Contacts</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../crm/crm-opportunities.html"><i class="dripicons-lightbulb"></i>Opportunities</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../crm/crm-leads.html"><i class="dripicons-toggles"></i>Leads</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../crm/crm-customers.html"><i class="dripicons-user-group"></i>Customers</a></li>
+                            </ul>
+                        </div><!-- end CRM -->
+                        <div id="MetricaOthers" class="main-icon-menu-pane">
+                            <div class="title-box">
+                                <h6 class="menu-title">Others</h6>      
+                            </div>
+                            <ul class="nav metismenu" id="main_menu_side_nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="dripicons-mail"></i><span class="w-100">Email</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                                    <ul class="nav-second-level" aria-expanded="false">
+                                        <li><a href="../others/email-inbox.html">Inbox</a></li>
+                                        <li><a href="../others/email-read.html">Read Email</a></li>            
+                                    </ul>            
+                                </li><!--end nav-item-->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="dripicons-view-thumb"></i><span class="w-100">UI Elements</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                                    <ul class="nav-second-level" aria-expanded="false">
+                                        <li><a href="../others/ui-bootstrap.html">Bootstrap</a></li>
+                                        <li><a href="../others/ui-animation.html">Animation</a></li>
+                                        <li><a href="../others/ui-avatar.html">Avatar</a></li>
+                                        <li><a href="../others/ui-clipboard.html">Clip Board</a></li>
+                                        <li><a href="../others/ui-files.html">File Manager</a></li>
+                                        <li><a href="../others/ui-ribbons.html">Ribbons</a></li>
+                                        <li><a href="../others/ui-dragula.html"><span>Dragula</span></a></li>
+                                        <li><a href="../others/ui-check-radio.html"><span>Check & Radio</span></a></li>
+                                    </ul>            
+                                </li><!--end nav-item-->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="dripicons-anchor"></i><span class="w-100">Advanced UI</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                                    <ul class="nav-second-level" aria-expanded="false">
+                                        <li><a href="../others/advanced-rangeslider.html">Range Slider</a></li>
+                                        <li><a href="../others/advanced-sweetalerts.html">Sweet Alerts</a></li>
+                                        <li><a href="../others/advanced-nestable.html">Nestable List</a></li>
+                                        <li><a href="../others/advanced-ratings.html">Ratings</a></li>
+                                        <li><a href="../others/advanced-highlight.html">Highlight</a></li>
+                                        <li><a href="../others/advanced-session.html">Session Timeout</a></li>
+                                        <li><a href="../others/advanced-idle-timer.html">Idle Timer</a></li>
+                                    </ul>            
+                                </li><!--end nav-item-->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="dripicons-document"></i><span class="w-100">Forms</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                                    <ul class="nav-second-level" aria-expanded="false">
+                                        <li><a href="../others/forms-elements.html">Basic Elements</a></li>
+                                        <li><a href="../others/forms-advanced.html">Advance Elements</a></li>
+                                        <li><a href="../others/forms-validation.html">Validation</a></li>
+                                        <li><a href="../others/forms-wizard.html">Wizard</a></li>
+                                        <li><a href="../others/forms-editors.html">Editors</a></li>
+                                        <li><a href="../others/forms-repeater.html">Repeater</a></li>
+                                        <li><a href="../others/forms-x-editable.html">X Editable</a></li>
+                                        <li><a href="../others/forms-uploads.html">File Upload</a></li>
+                                        <li><a href="../others/forms-img-crop.html">Image Crop</a></li>
+                                    </ul>            
+                                </li><!--end nav-item-->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="dripicons-graph-line"></i><span class="w-100">Charts</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                                    <ul class="nav-second-level" aria-expanded="false">
+                                        <li><a href="../others/charts-apex.html">Apex</a></li>
+                                        <li><a href="../others/charts-morris.html">Morris</a></li>
+                                        <li><a href="../others/charts-chartist.html">Chartist</a></li>
+                                        <li><a href="../others/charts-flot.html">Flot</a></li>
+                                        <li><a href="../others/charts-peity.html">Peity</a></li>
+                                        <li><a href="../others/charts-chartjs.html">Chartjs</a></li>
+                                        <li><a href="../others/charts-sparkline.html">Sparkline</a></li>
+                                        <li><a href="../others/charts-knob.html">Jquery Knob</a></li>
+                                        <li><a href="../others/charts-justgage.html">JustGage</a></li>
+                                    </ul>            
+                                </li><!--end nav-item-->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="dripicons-view-list-large"></i><span class="w-100">Tables</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                                    <ul class="nav-second-level" aria-expanded="false">
+                                        <li><a href="../others/tables-basic.html">Basic</a></li>
+                                        <li><a href="../others/tables-datatable.html">Datatables</a></li>
+                                        <li><a href="../others/tables-responsive.html">Responsive</a></li>
+                                        <li><a href="../others/tables-footable.html">Footable</a></li>
+                                        <li><a href="../others/tables-jsgrid.html">Jsgrid</a></li>
+                                        <li><a href="../others/tables-editable.html">Editable</a></li>
+                                    </ul>            
+                                </li><!--end nav-item-->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="dripicons-headset"></i><span class="w-100">Icons</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                                    <ul class="nav-second-level" aria-expanded="false">
+                                        <li><a href="../others/icons-materialdesign.html">Material Design</a></li>
+                                        <li><a href="../others/icons-dripicons.html">Dripicons</a></li>
+                                        <li><a href="../others/icons-fontawesome.html">Font awesome</a></li>
+                                        <li><a href="../others/icons-themify.html">Themify</a></li>
+                                        <li><a href="../others/icons-typicons.html">Typicons</a></li>
+                                        <li><a href="../others/icons-emoji.html">Emoji <i class="em em-ok_hand"></i></a></li>
+                                        <li><a href="../others/icons-svg.html">SVG</a></li>
+                                    </ul>            
+                                </li><!--end nav-item-->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="dripicons-map"></i><span class="w-100">Maps</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                                    <ul class="nav-second-level" aria-expanded="false">
+                                        <li><a href="../others/maps-google.html">Google Maps</a></li>
+                                        <li><a href="../others/maps-vector.html">Vector Maps</a></li>        
+                                    </ul>            
+                                </li><!--end nav-item-->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="dripicons-article"></i><span class="w-100">Email Templates</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                                    <ul class="nav-second-level" aria-expanded="false">
+                                        <li><a href="../others/email-templates-basic.html">Basic Action Email</a></li>
+                                        <li><a href="../others/email-templates-alert.html">Alert Email</a></li>
+                                        <li><a href="../others/email-templates-billing.html">Billing Email</a></li>               
+                                    </ul>            
+                                </li><!--end nav-item-->
+                            </ul><!--end nav-->
+                        </div><!-- end Others -->
+
+                        <div id="MetricaPages" class="main-icon-menu-pane">
+                            <div class="title-box">
+                                <h6 class="menu-title">Pages</h6>        
+                            </div>
+                            <ul class="nav">
+                                <li class="nav-item"><a class="nav-link" href="../pages/pages-profile.html"><i class="dripicons-user"></i>Profile</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../pages/pages-chat.html"><i class="dripicons-conversation"></i>Chat</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../pages/pages-contact-list.html"><i class="dripicons-user-id"></i>Contact List</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../pages/pages-tour.html"><i class="dripicons-rocket"></i>Tour</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../pages/pages-timeline.html"><i class="dripicons-clock"></i>Timeline</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../pages/pages-invoice.html"><i class="dripicons-document"></i>Invoice</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../pages/pages-treeview.html"><i class="dripicons-network-3"></i>Treeview</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../pages/pages-starter.html"><i class="dripicons-clipboard"></i>Starter Page</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../pages/pages-pricing.html"><i class="dripicons-article"></i>Pricing</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../pages/pages-blogs.html"><i class="dripicons-blog"></i>Blogs</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../pages/pages-faq.html"><i class="dripicons-question"></i>FAQs</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../pages/pages-gallery.html"><i class="dripicons-photo-group"></i>Gallery</a></li>
+                            </ul>
+                        </div><!-- end Pages -->
+                        <div id="MetricaAuthentication" class="main-icon-menu-pane">
+                            <div class="title-box">
+                                <h6 class="menu-title">Authentication</h6>     
+                            </div>
+                            <ul class="nav">
+                                <li class="nav-item"><a class="nav-link" href="../authentication/auth-login.html"><i class="dripicons-enter"></i>Log in</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../authentication/auth-register.html"><i class="dripicons-pencil"></i>Register</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../authentication/auth-recover-pw.html"><i class="dripicons-clockwise"></i>Recover Password</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../authentication/auth-lock-screen.html"><i class="dripicons-lock"></i>Lock Screen</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../authentication/auth-404.html"><i class="dripicons-warning"></i>Error 404</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../authentication/auth-500.html"><i class="dripicons-wrong"></i>Error 500</a></li>
+                            </ul>
+                        </div><!-- end Authentication-->
+                    </div><!--end menu-body-->
+                </div><!-- end main-menu-inner-->
+            </div>
+            <!-- end left-sidenav-->
+
+            <!-- Page Content-->
+            <div class="page-content">
+
+                <div class="container-fluid">
+                    <!-- Page-Title -->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="page-title-box">
+                                <div class="float-right">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="javascript:void(0);">Metrica</a></li>
+                                        <li class="breadcrumb-item"><a href="javascript:void(0);">Others</a></li>
+                                        <li class="breadcrumb-item active">UI Bootstrap</li>
+                                    </ol>
+                                </div>
+                                <h4 class="page-title">UI Bootstrap</h4>
+                            </div><!--end page-title-box-->
+                        </div><!--end col-->
+                    </div>
+                    <!-- end page title end breadcrumb -->
+
+                    <div class="row">
+                        <div class="col-12">
+                            <h4 class="mt-0 mb-2 header-title">Jumbotron</h4>
+                            <p class="text-muted mb-3">Lightweight, flexible component for showcasing hero unit style content. </p>  
+                        </div> <!-- end col -->
+                    </div> <!-- end row -->
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="jumbotron mb-0 bg-light">
+                                        <h1 class="display-4">Hello, world!</h1>
+                                        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                                        <hr class="my-4">
+                                        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                                        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                                    </div>
+                                </div><!--end card-body-->    
+                            </div><!--end card-->
+                        </div><!--end col-->
+                    </div><!--end row-->
+
+                    <div class="row">
+                        <div class="col-12">
+                            <h4 class="mt-0 mb-2 header-title">Alerts</h4>
+                            <p class="text-muted mb-3">Provide contextual feedback messages for typical user 
+                                actions with the handful of available and flexible alert messages.
+                            </p>  
+                        </div> <!-- end col -->
+                    </div> <!-- end row -->
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="alert alert-secondary border-0" role="alert">
+                                        <strong>Well done!</strong> You successfully read this important alert message.
+                                    </div>    
+                                    <div class="alert alert-info alert-dismissible fade show" role="alert">
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true"><i class="mdi mdi-close"></i></span>
+                                        </button>
+                                        <strong>Oh snap!</strong> Change a few things up and try submitting again.
+                                    </div> 
+                                    <div class="alert alert-light mb-0" role="alert">
+                                        <h4 class="alert-heading font-18">Well done!</h4>
+                                        <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+                                        <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+                                    </div>                             
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div><!--end col-->
+
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="alert alert-outline-purple b-round" role="alert">
+                                        <strong>Well done!</strong> You successfully read this important alert message.
+                                    </div>
+                                    <div class="alert icon-custom-alert alert-outline-pink b-round fade show" role="alert">                                            
+                                        <i class="mdi mdi-alert-outline alert-icon"></i>
+                                        <div class="alert-text">
+                                            <strong>Oh snap!</strong> Change a few things up and try submitting again.
+                                        </div>
+                                        
+                                        <div class="alert-close">
+                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                <span aria-hidden="true"><i class="mdi mdi-close text-danger"></i></span>
+                                            </button>
+                                        </div>
+                                    </div>  
+                                    <div class="alert icon-custom-alert alert-outline-success alert-success-shadow" role="alert">
+                                        <i class="mdi mdi-check-all alert-icon"></i>
+                                        <div class="alert-text">
+                                            <strong>Well done!</strong> You successfully read this important alert message.
+                                        </div>                                            
+                                    </div>
+                                    <div class="alert alert-outline-warning alert-warning-shadow mb-0 alert-dismissible fade show" role="alert">
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true"><i class="mdi mdi-close"></i></span>
+                                        </button>
+                                        <strong>Oh snap!</strong> Change a few things up and try submitting again.
+                                    </div>                                       
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div><!--end col-->
+                    </div><!--end row-->
+
+                    
+
+                    
+
+                    <div class="row">
+                        <div class="col-12">
+                            <h4 class="mt-0 mb-2 header-title">Pagination</h4>
+                            <p class="text-muted mb-3">Documentation and examples for showing pagination to indicate
+                                    a series of related content exists across multiple pages.
+                            </p>  
+                        </div> <!-- end col -->
+                    </div> <!-- end row -->
+
+                    <div class="row">   
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-body">
+    
+                                    <nav aria-label="Page navigation example">
+                                        <ul class="pagination">
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Previous">
+                                                    <span aria-hidden="true">&laquo;</span>
+                                                    <span class="sr-only">Previous</span>
+                                                </a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Next">
+                                                    <span aria-hidden="true">&raquo;</span>
+                                                    <span class="sr-only">Next</span>
+                                                </a>
+                                            </li>
+                                        </ul><!--end pagination-->
+                                    </nav><!--end nav-->
+
+                                    <nav aria-label="...">
+                                        <ul class="pagination">
+                                            <li class="page-item disabled">
+                                                <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item active">
+                                                <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#">Next</a>
+                                            </li>
+                                        </ul><!--end pagination-->
+                                    </nav><!--end nav-->
+
+                                    <nav aria-label="...">
+                                        <ul class="pagination pagination-lg mb-0">
+                                            <li class="page-item disabled">
+                                                <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#">Next</a>
+                                            </li>
+                                        </ul><!--end pagination-->
+                                    </nav><!--end nav-->
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div><!--end col-->             
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <nav aria-label="Page navigation example">
+                                        <ul class="pagination">
+                                            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                        </ul><!--end pagination-->
+                                    </nav><!--end nav-->
+    
+                                    <nav aria-label="Page navigation example">
+                                        <ul class="pagination justify-content-center">
+                                            <li class="page-item disabled">
+                                                <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#">Next</a>
+                                            </li>
+                                        </ul><!--end pagination-->
+                                    </nav><!--end nav-->
+    
+                                    <nav aria-label="Page navigation example">
+                                        <ul class="pagination justify-content-end">
+                                            <li class="page-item disabled">
+                                                <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#">Next</a>
+                                            </li>
+                                        </ul><!--end pagination-->
+                                    </nav><!--end nav-->
+                                </div><!--end card-body-->
+                            </div><!--end card--> 
+                        </div> <!-- end col -->
+                    </div> <!-- end row -->
+
+                    <div class="row">
+                        <div class="col-12">
+                            <h4 class="mt-0 mb-2 header-title">Cards</h4>
+                            <p class="text-muted mb-3">Bootstrap’s cards provide a flexible and extensible content 
+                                container with multiple variants and options.
+                            </p>  
+                        </div> <!-- end col -->
+                    </div> <!-- end row -->
+
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card card-border">
+                                <img class="card-img-top img-fluid" src="../assets/images/small/ex-card.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title mt-0">Card title</h4>
+                                    <p class="card-text text-muted ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>   
+                                </div><!--end card -body-->
+                            </div><!--end card-->
+                        </div><!--end col-->
+
+                        <div class="col-md-12 col-xl-4">
+                            <div class="card card-border">
+                                <div class="card-body">
+                                    <h4 class="card-title mt-0">Card title</h4>
+                                    <p class="card-subtitle mb-2">This is the card subtitle</p>
+                                    <p class="card-text text-muted">Some quick example text to build on the card title and make up 
+                                        the bulk of the card's content.
+                                        It is a long established fact that a reader will be distracted by the readable 
+                                        content. 
+                                    </p>
+                                    <a href="#" class="card-link">Card link</a>
+                                    <a href="#" class="card-link">Another link</a>
+                                </div><!--end card -body-->
+                            </div><!--end card-->
+
+                            <div class="card card-border">
+                                <div class="card-body">
+                                    <h4 class="card-title mt-0">Kitchen sink</h4>
+                                    <p class="card-text  text-muted ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Cras justo odio</li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="#" class="card-link">Card link</a>
+                                    <a href="#" class="card-link">Another link</a>
+                                </div><!--end card -body-->
+                            </div><!--end card-->                                                                                                   
+                        </div><!--end col-->
+
+                        <div class="col-lg-4">
+                            <div class="card text-white card-dark">
+                                <div class="card-body">
+                                    <blockquote class="card-bodyquote mb-0">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+                                            erat a ante.</p>
+                                        <footer class="blockquote-footer text-white font-14">
+                                            Someone famous in <cite title="Source Title">Source Title</cite>
+                                        </footer>
+                                    </blockquote>
+                                </div><!--end card-body-->
+                            </div><!--end card-->                    
+                            <div class="card">
+                                <h5 class="card-header bg-primary text-white mt-0">Header - Primary</h5>
+                                <div class="card-body">
+                                    <h4 class="card-title mt-0">Card title</h4>
+                                    <p class="card-text text-muted">Some quick example text to build on the card title and make up the bulk of the card's content.</p>                                        
+                                </div><!--end card-body-->
+                            </div><!--end card--> 
+                            <div class="card"> 
+                                <h5 class="card-header bg-secondary text-white mt-0">Header - Secondary</h5>                                       
+                                <div class="card-body">
+                                    <p class="card-text text-muted">Some quick example text to build on the card title and make up the bulk of the card's content.</p>                                        
+                                </div><!--end card-body-->
+                                <p class="card-footer bg-light m-0">Footer - 2019 Metrica</p>
+                            </div><!--end card-->                                   
+                        </div><!--end col-->
+                    </div><!--end row-->
+                    
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="card card-body">
+                                <h4 class="card-title mt-0">Special title treatment</h4>
+                                <p class="card-text text-muted ">With supporting text below as a natural lead-in to additional
+                                    content.</p>
+                                <a href="#" class="btn btn-soft-pink ">Go somewhere</a>
+                            </div><!--end card-->
+                        </div><!--end col-->
+    
+                        <div class="col-lg-4 ">
+                            <div class="card card-body text-center">
+                                <h4 class="card-title mt-0">Special title treatment</h4>
+                                <p class="card-text text-muted ">With supporting text below as a natural lead-in to additional
+                                    content.</p>
+                                <a href="#" class="btn btn-soft-pink ">Go somewhere</a>
+                            </div><!--end card-->
+                        </div><!--end col-->
+    
+                        <div class="col-lg-4">
+                            <div class="card card-body text-right">
+                                <h4 class="card-title mt-0">Special title treatment</h4>
+                                <p class="card-text text-muted ">With supporting text below as a natural lead-in to additional
+                                    content.</p>
+                                <a href="#" class="btn btn-soft-pink ">Go somewhere</a>
+                            </div><!--end card-->
+                        </div><!--end col-->
+                    </div><!--end row-->
+
+                    <div class="row">
+                        <div class="col-12">
+                            <h4 class="mt-0 mb-2 header-title">Dropdown Outline</h4>
+                            <p class="text-muted mb-3">Toggle contextual overlays for displaying lists 
+                                of links and more with the Bootstrap dropdown plugin.
+                            </p>  
+                        </div> <!-- end col -->
+                    </div> <!-- end row -->
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-body"> 
+                                    <div class="btn-group mb-4">
+                                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Primary <i class="mdi mdi-chevron-down"></i></button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Separated link</a>
+                                        </div>
+                                    </div><!-- /btn-group -->
+                                    <div class="btn-group mb-4">
+                                        <button type="button" class="btn btn-secondary">Secondary</button>
+                                        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="sr-only">Toggle Dropdown</span> <i class="mdi mdi-chevron-down"></i>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Separated link</a>
+                                        </div>
+                                    </div><!-- /btn-group -->
+                                    <div class="btn-group mb-4">
+                                        <button type="button" class="btn btn-danger btn-round dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Danger <i class="mdi mdi-chevron-down"></i></button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Separated link</a>
+                                        </div>
+                                    </div><!-- /btn-group -->
+                                    <div class="btn-group mb-4">
+                                        <button type="button" class="btn btn-dark btn-round">Dark</button>
+                                        <button type="button" class="btn btn-dark btn-round dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="sr-only">Toggle Dropdown</span> <i class="mdi mdi-chevron-down"></i>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Separated link</a>
+                                        </div>
+                                    </div><!-- /btn-group -->   
+                                   <div class="d-block my-2">
+                                                                         
+                                   </div>
+                                   <div class="btn-group dropup mb-4 mb-md-0">
+                                        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropup <i class="mdi mdi-chevron-up"></i></button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Separated link</a>
+                                        </div>
+                                    </div><!-- /btn-group -->
+
+                                    <div class="btn-group dropright mb-4 mb-md-0">
+                                        <button type="button" class="btn btn-info waves-effect waves-light">
+                                            Split dropright
+                                        </button>
+                                        <button type="button" class="btn btn-info waves-effect waves-light dropdown-toggle-split dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="sr-only">Toggle Dropright</span><i class="mdi mdi-chevron-right"></i>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Separated link</a>
+                                        </div>
+                                    </div><!-- /btn-group -->
+
+                                    <div class="btn-group dropleft mb-4 mb-md-0">
+                                        <button type="button" class="btn btn-info waves-effect waves-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="mdi mdi-chevron-left"></i> Dropleft
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Separated link</a>
+                                        </div>
+                                    </div> <!-- /btn-group -->       
+                                    <!-- Split dropright button -->
+                                    
+                                </div><!--end card-body--> 
+                            </div><!--end card-->        
+                        </div> <!-- end col -->
+
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-body">   
+                                    <div class="btn-group mb-4">
+                                        <button type="button" class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Primary <i class="mdi mdi-chevron-down"></i></button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Separated link</a>
+                                        </div>
+                                    </div><!-- /btn-group -->
+                                    <div class="btn-group mb-4">
+                                        <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Secondary <i class="mdi mdi-chevron-down"></i></button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Separated link</a>
+                                        </div>
+                                    </div><!-- /btn-group -->
+                                    <div class="btn-group mb-4">
+                                        <button type="button" class="btn btn-outline-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Success <i class="mdi mdi-chevron-down"></i></button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Separated link</a>
+                                        </div>
+                                    </div><!-- /btn-group -->                                            
+                                    <div class="btn-group mb-4">
+                                        <button type="button" class="btn btn-outline-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Warning <i class="mdi mdi-chevron-down"></i></button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Separated link</a>
+                                        </div>
+                                    </div><!-- /btn-group -->
+                                    <div class="btn-group mb-4">
+                                        <button type="button" class="btn btn-outline-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Info <i class="mdi mdi-chevron-down"></i></button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Separated link</a>
+                                        </div>
+                                    </div><!-- /btn-group -->
+                                    <div class="btn-group mb-4">
+                                        <button type="button" class="btn btn-outline-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Danger <i class="mdi mdi-chevron-down"></i></button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Separated link</a>
+                                        </div>
+                                    </div><!-- /btn-group -->
+                                    <div class="d-block my-2">
+                                        <div class="btn-group mb-4 mb-md-0">
+                                            <button type="button" class="btn btn-outline-success">Danger</button>
+                                            <button type="button" class="btn btn-outline-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span class="sr-only">Toggle Dropdown</span> <i class="mdi mdi-chevron-down"></i>
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">Separated link</a>
+                                            </div>
+                                        </div><!-- /btn-group -->
+                                        <div class="btn-group mb-4 mb-md-0">
+                                            <button type="button" class="btn btn-outline-purple btn-round dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Purple <i class="mdi mdi-chevron-down"></i></button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">Separated link</a>
+                                            </div>
+                                        </div><!-- /btn-group -->
+
+                                        <div class="btn-group mb-4 mb-md-0">
+                                            <button type="button" class="btn btn-outline-pink btn-round">Pink</button>
+                                            <button type="button" class="btn btn-outline-pink btn-round dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span class="sr-only">Toggle Dropdown</span> <i class="mdi mdi-chevron-down"></i>
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">Separated link</a>
+                                            </div>
+                                        </div><!-- /btn-group --> 
+                                    </div>        
+                                </div><!--end card-body--> 
+                            </div><!--end card-->        
+                        </div> <!-- end col -->
+                    </div> <!-- end row -->
+                    <div class="row">
+                        <div class="col-12">
+                            <h4 class="mt-0 mb-2 header-title">Buttons</h4>
+                            <p class="text-muted mb-3">Bootstrap includes six predefined button styles, 
+                                each serving its own semantic purpose.
+                            </p>  
+                        </div> <!-- end col -->
+                    </div> <!-- end row -->
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="button-items mb-4">
+                                        <button type="button" class="btn btn-primary waves-effect waves-light">Primary</button>
+    
+                                        <button type="button" class="btn btn-secondary waves-effect">Secondary</button>
+    
+                                        <button type="button" class="btn btn-success waves-effect waves-light">Success</button>
+    
+                                        <button type="button" class="btn btn-warning waves-effect waves-light">Warning</button>
+
+                                        <button type="button" class="btn btn-info waves-effect waves-light">Info</button>
+    
+                                        <button type="button" class="btn btn-danger waves-effect waves-light">Danger</button>
+    
+                                        <button type="button" class="btn btn-dark waves-effect waves-light">Dark</button>
+
+                                        <button type="button" class="btn btn-light waves-effect waves-light">Light</button>
+    
+                                        <button type="button" class="btn btn-link waves-effect">Link</button>
+                                    </div>
+                                    
+                                    
+                                        
+                                    <div class="button-items mb-4">
+
+                                        <button type="button" class="btn btn-blue btn-square waves-effect waves-light"><i class="mdi mdi-check-all mr-2"></i>Blue</button>
+
+                                        <button type="button" class="btn btn-warning btn-round waves-effect waves-light"><i class="mdi mdi-check-all mr-2"></i>Warning</button> 
+
+                                        <button type="button" class="btn btn-info btn-square btn-outline-dashed waves-effect waves-light"><i class="mdi mdi-check-all mr-2"></i>Info</button>
+
+                                        <button type="button" class="btn btn-dark btn-square btn-skew waves-effect waves-light"><span><i class="mdi mdi-check-all mr-2"></i>Dark</span></button>   
+
+                                        <button type="button" class="btn btn-purple waves-effect waves-light"><i class="mdi mdi-alert-outline mr-2"></i>Purple</button>
+    
+                                        <button type="button" class="btn btn-soft-pink btn-round waves-effect waves-light"><i class="mdi mdi-power mr-2"></i>Pink</button>
+
+                                        <button type="button" class="btn btn-soft-warning btn-square waves-effect waves-light"><i class="mdi mdi-refresh mr-2"></i>Warning</button>
+                                        
+                                    </div> 
+
+                                    <div class="button-items mb-4">
+                                        <button type="button" class="btn btn-outline-primary waves-effect waves-light">Primary</button>
+
+                                        <button type="button" class="btn btn-outline-secondary waves-effect">Secondary</button>
+
+                                        <button type="button" class="btn btn-outline-success waves-effect waves-light">Success</button>
+
+                                        <button type="button" class="btn btn-outline-info waves-effect waves-light">Info</button>
+
+                                        <button type="button" class="btn btn-outline-warning waves-effect waves-light">Warning</button>
+
+                                        <button type="button" class="btn btn-outline-danger waves-effect waves-light">Danger</button>
+
+                                        <button type="button" class="btn btn-outline-dark waves-effect waves-light">Dark</button>
+
+                                        <button type="button" class="btn btn-outline-light waves-effect waves-light">Light</button>
+                                    </div>
+                                    <div class="button-items mb-4"> 
+
+                                        <button type="button" class="btn btn-outline-purple btn-round waves-effect waves-light"><i class="mdi mdi-email-outline mr-2"></i>Purple</button>
+
+                                        <button type="button" class="btn btn-outline-pink waves-effect waves-light"><i class="mdi mdi-send mr-2"></i>Pink</button>
+
+                                        <button type="button" class="btn btn-outline-primary btn-square btn-skew waves-effect waves-light"><span><i class="mdi mdi-power mr-2"></i>Primary</span></button>
+
+                                        <button type="button" class="btn btn-outline-blue btn-square waves-effect waves-light"><i class="mdi mdi-check-all mr-2"></i>Blue</button>
+
+                                    </div>
+                                    <div class="button-list btn-social-icon mb-4">
+                                        <button type="button" class="btn btn-facebook">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </button>
+
+                                        <button type="button" class="btn btn-twitter btn-round">
+                                            <i class="fab fa-twitter"></i>
+                                        </button>               
+
+                                        <button type="button" class="btn btn-outline-pink">
+                                            <i class="fab fa-dribbble"></i>
+                                        </button>
+
+                                        <button type="button" class="btn btn-outline-info btn-round">
+                                            <i class="fab fa-linkedin"></i>
+                                        </button>                            
+                                    </div>                                                                     
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div><!--end col-->
+
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-body">                                    
+                                    <div class="button-items mb-4">
+                                        <button type="button" class="btn btn-secondary btn-xl">Extra Large</button>
+                                        <button type="button" class="btn btn-secondary btn-sm">Small button</button>
+                                        <button type="button" class="btn btn-secondary btn-xs">Extra Small</button>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="btn-group mb-4 d-block" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-outline-light"><i class="fa fa-align-left"></i></button>
+                                                <button type="button" class="btn btn-outline-light"><i class="fa fa-align-center"></i></button>
+                                                <button type="button" class="btn btn-outline-light"><i class="fa fa-align-right"></i></button>
+                                            </div> 
+                                            <div class="btn-group mb-4" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-outline-light">Left</button>
+                                                <button type="button" class="btn btn-outline-light">Middle</button>
+                                                <button type="button" class="btn btn-outline-light">Right</button>
+                                            </div> 
+                                        </div><!--end col-->
+                                        <div class="col-lg-6">
+                                            <div class="btn-group btn-group-toggle mb-4" data-toggle="buttons">
+                                                <label class="btn btn-outline-secondary active">
+                                                    <input type="checkbox" checked=""> Active
+                                                </label>
+                                                <label class="btn btn-outline-secondary">
+                                                    <input type="checkbox"> Check
+                                                </label>
+                                                <label class="btn btn-outline-secondary">
+                                                    <input type="checkbox"> Check
+                                                </label>
+                                            </div>
+
+                                            <div class="btn-group btn-group-toggle mb-4" data-toggle="buttons">
+                                                <label class="btn btn-outline-secondary active">
+                                                    <input type="radio" name="options" id="option1" checked=""> Active
+                                                </label>
+                                                <label class="btn btn-outline-secondary">
+                                                    <input type="radio" name="options" id="option2"> Radio
+                                                </label>
+                                                <label class="btn btn-outline-secondary">
+                                                    <input type="radio" name="options" id="option3"> Radio
+                                                </label>
+                                            </div>
+                                        </div><!--end col-->
+                                    </div><!--end row-->
+
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="mb-4">
+                                                <div class="btn-group-vertical">    
+                                                    <button type="button" class="btn btn-secondary">Button 1</button>
+                                                    <button type="button" class="btn btn-secondary">Button 2</button>
+                                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> Button 3 <span class="caret"></span> </button>
+                                                    <div class="dropdown-menu">
+                                                        <a class="dropdown-item" href="#">Dropdown link</a>
+                                                        <a class="dropdown-item" href="#">Dropdown link</a>
+                                                    </div>
+                                                </div>
+                                            </div>                                                    
+                                        </div><!--end col-->
+                                        <div class="col-lg-6">
+                                            
+                                            <div class="mb-4">
+                                                <div class="btn-group" aria-label="Basic example" role="group">
+                                                    <button type="button" class="btn btn-secondary"><i class="mdi mdi-play"></i></button>
+                                                    <button type="button" class="btn btn-secondary active"><i class="mdi mdi-pause"></i></button>
+                                                    <button type="button" class="btn btn-secondary"><i class="mdi mdi-stop"></i></button>
+                                                </div>
+                                            </div>
+                                            
+                                            
+                                            <div class="mb-4">
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-secondary">1</button>
+                                                    <button type="button" class="btn btn-secondary">2</button>
+                                                    <button type="button" class="btn btn-dark ">3</button>
+                                                    <button type="button" class="btn btn-secondary">4</button>
+                                                </div>
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-secondary">5</button>
+                                                    <button type="button" class="btn btn-dark ">6</button>
+                                                    <button type="button" class="btn btn-secondary">7</button>
+                                                </div>
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-secondary">8</button>
+                                                </div>                
+                                            </div>
+                                        </div><!--end col-->
+                                    </div><!--end row--> 
+                                    <div class="button-items">
+                                        <button type="button" class="btn btn-dark btn-lg btn-block">Block level button</button>
+                                    </div>
+                                </div><!--end card-body-->    
+                            </div><!--end card-->
+                        </div><!--end col-->
+                    </div><!--end row-->
+                    <div class="row">
+                        <div class="col-12">
+                            <h4 class="mt-0 mb-2 header-title">Modals</h4>
+                            <p class="text-muted mb-3">Modals are streamlined, but flexible
+                                dialog prompts powered by JavaScript. They support a number of use cases
+                                from user notification to completely custom content and feature a
+                                handful of helpful subcomponents, sizes, and more.
+                            </p>  
+                        </div> <!-- end col -->
+                    </div> <!-- end row -->
+
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="header-title mt-0 mb-3">Small Modal</h4>
+                                    <div class="text-center">
+                                        <!-- Small modal -->
+                                        <img src="../assets/images/widgets/modal1.png" alt="" class="img-fluid">
+                                        <button type="button" class="btn btn-dark waves-effect waves-light" data-toggle="modal" data-animation="bounce" data-target=".bs-example-modal-sm">Small modal</button>
+                                    </div>
+
+                                    <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-sm">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title mt-0" id="mySmallModalLabel">Small modal</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>Cras mattis consectetur purus sit amet fermentum.
+                                                        Cras justo odio, dapibus ac facilisis in,
+                                                        egestas eget quam. Morbi leo risus, porta ac
+                                                        consectetur ac, vestibulum at eros.</p>
+                                                    <p>Praesent commodo cursus magna, vel scelerisque
+                                                        nisl consectetur et. Vivamus sagittis lacus vel
+                                                        augue laoreet rutrum faucibus dolor auctor.</p>
+                                                    <p>Aenean lacinia bibendum nulla sed consectetur.
+                                                        Praesent commodo cursus magna, vel scelerisque
+                                                        nisl consectetur et. Donec sed odio dui. Donec
+                                                        ullamcorper nulla non metus auctor
+                                                        fringilla.</p>
+                                                </div>
+                                            </div><!-- /.modal-content -->
+                                        </div><!-- /.modal-dialog -->
+                                    </div><!-- /.modal -->
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div><!--end col-->
+
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="header-title mt-0 mb-3">Large Modal</h4>
+                                    <div class="text-center">
+                                        <img src="../assets/images/widgets/modal2.png" alt="" class="img-fluid">
+                                        <!-- Large modal -->
+                                        <button type="button" class="btn btn-dark waves-effect waves-light" data-toggle="modal" data-animation="bounce" data-target=".bs-example-modal-lg">Large modal</button>
+                                    </div>
+                                    <!--  Modal content for the above example -->
+                                    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title mt-0" id="myLargeModalLabel">Large modal</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>Cras mattis consectetur purus sit amet fermentum.
+                                                        Cras justo odio, dapibus ac facilisis in,
+                                                        egestas eget quam. Morbi leo risus, porta ac
+                                                        consectetur ac, vestibulum at eros.</p>
+                                                    <p>Praesent commodo cursus magna, vel scelerisque
+                                                        nisl consectetur et. Vivamus sagittis lacus vel
+                                                        augue laoreet rutrum faucibus dolor auctor.</p>
+                                                    <p>Aenean lacinia bibendum nulla sed consectetur.
+                                                        Praesent commodo cursus magna, vel scelerisque
+                                                        nisl consectetur et. Donec sed odio dui. Donec
+                                                        ullamcorper nulla non metus auctor
+                                                        fringilla.</p>
+                                                </div>
+                                            </div><!-- /.modal-content -->
+                                        </div><!-- /.modal-dialog -->
+                                    </div><!-- /.modal -->
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div><!--end col-->
+
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="header-title mt-0 mb-3">Extra Large Modal</h4>
+                                    <div class=" text-center">                                        
+                                        <img src="../assets/images/widgets/modal3.png" alt="" class="img-fluid">
+                                        <button type="button" class="btn btn-dark waves-effect waves-light" data-toggle="modal" data-target=".bd-example-modal-xl">Extra large modal</button>
+                                    </div>
+
+                                    <!-- sample modal content -->
+                                    <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-hidden="true">
+                                        <div class="modal-dialog modal-xl">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title mt-0" id="myModalLabel">Modal Heading</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <h5 class="mt-0">Overflowing text to show scroll behavior</h5>
+                                                    <p>Cras mattis consectetur purus sit amet fermentum.
+                                                        Cras justo odio, dapibus ac facilisis in,
+                                                        egestas eget quam. Morbi leo risus, porta ac
+                                                        consectetur ac, vestibulum at eros.</p>
+                                                    <p>Praesent commodo cursus magna, vel scelerisque
+                                                        nisl consectetur et. Vivamus sagittis lacus vel
+                                                        augue laoreet rutrum faucibus dolor auctor.</p>
+                                                    <p>Aenean lacinia bibendum nulla sed consectetur.
+                                                        Praesent commodo cursus magna, vel scelerisque
+                                                        nisl consectetur et. Donec sed odio dui. Donec
+                                                        ullamcorper nulla non metus auctor
+                                                        fringilla.</p>
+                                                    <p>Cras mattis consectetur purus sit amet fermentum.
+                                                        Cras justo odio, dapibus ac facilisis in,
+                                                        egestas eget quam. Morbi leo risus, porta ac
+                                                        consectetur ac, vestibulum at eros.</p>
+                                                    <p>Praesent commodo cursus magna, vel scelerisque
+                                                        nisl consectetur et. Vivamus sagittis lacus vel
+                                                        augue laoreet rutrum faucibus dolor auctor.</p>
+                                                    <p>Aenean lacinia bibendum nulla sed consectetur.
+                                                        Praesent commodo cursus magna, vel scelerisque
+                                                        nisl consectetur et. Donec sed odio dui. Donec
+                                                        ullamcorper nulla non metus auctor
+                                                        fringilla.</p>
+                                                    <p>Cras mattis consectetur purus sit amet fermentum.
+                                                        Cras justo odio, dapibus ac facilisis in,
+                                                        egestas eget quam. Morbi leo risus, porta ac
+                                                        consectetur ac, vestibulum at eros.</p>
+                                                    <p>Praesent commodo cursus magna, vel scelerisque
+                                                        nisl consectetur et. Vivamus sagittis lacus vel
+                                                        augue laoreet rutrum faucibus dolor auctor.</p>
+                                                    <p>Aenean lacinia bibendum nulla sed consectetur.
+                                                        Praesent commodo cursus magna, vel scelerisque
+                                                        nisl consectetur et. Donec sed odio dui. Donec
+                                                        ullamcorper nulla non metus auctor
+                                                        fringilla.</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary waves-effect" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary waves-effect waves-light">Save changes</button>
+                                                </div>
+                                            </div><!-- /.modal-content -->
+                                        </div><!-- /.modal-dialog -->
+                                    </div><!-- /.modal -->                                      
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div><!--end col-->
+
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="header-title mt-0 mb-3">Center Modal</h4>
+                                    <div class="text-center">                                        
+                                        <img src="../assets/images/widgets/modal4.png" alt="" class="img-fluid">
+                                        <!-- Small modal -->
+                                        <button type="button" class="btn btn-dark waves-effect waves-light" data-toggle="modal" data-animation="bounce" data-target=".bs-example-modal-center">Center modal</button>
+                                    </div>
+
+                                    <div class="modal fade bs-example-modal-center" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title mt-0" id="exampleModalLabel">Modal title</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>Cras mattis consectetur purus sit amet fermentum.
+                                                        Cras justo odio, dapibus ac facilisis in,
+                                                        egestas eget quam. Morbi leo risus, porta ac
+                                                        consectetur ac, vestibulum at eros.</p>
+                                                    <p>Praesent commodo cursus magna, vel scelerisque
+                                                        nisl consectetur et. Vivamus sagittis lacus vel
+                                                        augue laoreet rutrum faucibus dolor auctor.</p>
+                                                    <p>Aenean lacinia bibendum nulla sed consectetur.
+                                                        Praesent commodo cursus magna, vel scelerisque
+                                                        nisl consectetur et. Donec sed odio dui. Donec
+                                                        ullamcorper nulla non metus auctor
+                                                        fringilla.
+                                                    </p>
+                                                </div>
+                                            </div><!-- /.modal-content -->
+                                        </div><!-- /.modal-dialog -->
+                                    </div><!-- /.modal -->
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div><!--end col-->
+                    </div><!--end row-->
+
+                    <div class="row">
+                        <div class="col-12">
+                            <h4 class="mt-0 mb-2 header-title">Carousel</h4>
+                            <p class="text-muted mb-3">A slideshow component for cycling through 
+                                elements—images or slides of text—like a carousel.
+                            </p>  
+                        </div> <!-- end col -->
+                    </div> <!-- end row -->
+
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="card">
+                                <div class="card-body"> 
+    
+                                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="3000">
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="carousel-item active">
+                                                <img class="d-block img-fluid" src="../assets/images/small/img-1.jpg" alt="First slide">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block img-fluid" src="../assets/images/small/img-2.jpg" alt="Second slide">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block img-fluid" src="../assets/images/small/img-3.jpg" alt="Third slide">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div> <!-- end col -->    
+                        <div class="col-lg-4">
+                            <div class="card">
+                                <div class="card-body">
+    
+                                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                        </ol>
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="carousel-item active">
+                                                <img class="d-block img-fluid" src="../assets/images/small/img-4.jpg" alt="First slide">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block img-fluid" src="../assets/images/small/img-5.jpg" alt="Second slide">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block img-fluid" src="../assets/images/small/img-6.jpg" alt="Third slide">
+                                            </div>
+                                        </div>
+                                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div> <!-- end col -->
+                        <div class="col-lg-4">
+                            <div class="card">
+                                <div class="card-body">
+    
+                                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                 <img class="d-block img-fluid" src="../assets/images/small/img-7.jpg" alt="Third slide">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block img-fluid" src="../assets/images/small/img-3.jpg" alt="Third slide">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block img-fluid" src="../assets/images/small/img-1.jpg" alt="Third slide">
+                                            </div>
+                                        </div>
+                                        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div> <!-- end col -->
+                    </div> <!-- end row --> 
+
+                    
+
+                    <div class="row">
+                        <div class="col-12">
+                            <h4 class="mt-0 mb-2 header-title">Tabs & Accordions</h4>
+                            <p class="text-muted mb-3">Documentation and examples for how to use Bootstrap’s included navigation components.
+                                Toggle the visibility of content across your project with a few classes and our JavaScript plugins.
+                            </p>  
+                        </div> <!-- end col -->
+                    </div> <!-- end row -->
+                    <div class="row">
+                        <div class="col-md-12 col-lg-6">
+                            <div class="card">
+                                <div class="card-body">
+    
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" data-toggle="tab" href="#home" role="tab">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="tab" href="#profile" role="tab">Profile</a>
+                                        </li>                                                
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="tab" href="#settings" role="tab">Settings</a>
+                                        </li>
+                                    </ul>
+    
+                                    <!-- Tab panes -->
+                                    <div class="tab-content">
+                                        <div class="tab-pane active p-3" id="home" role="tabpanel">
+                                            <p class="mb-0 text-muted">
+                                                Raw denim you probably haven't heard of them jean shorts Austin.
+                                            </p>
+                                        </div>
+                                        <div class="tab-pane p-3" id="profile" role="tabpanel">
+                                            <p class="mb-0 text-muted">
+                                                Food truck fixie locavore, accusamus mcsweeney's marfa nulla
+                                                single-origin coffee squid. 
+                                            </p>
+                                        </div>                                                
+                                        <div class="tab-pane p-3" id="settings" role="tabpanel">
+                                            <p class="text-muted mb-0">
+                                                Trust fund seitan letterpress, keytar raw denim keffiyeh etsy.
+                                            </p>
+                                        </div>
+                                    </div>        
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div><!--end col-->
+    
+                        <div class="col-md-12 col-lg-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-pills nav-justified" role="tablist">
+                                        <li class="nav-item waves-effect waves-light">
+                                            <a class="nav-link active" data-toggle="tab" href="#home-1" role="tab">Home</a>
+                                        </li>
+                                        <li class="nav-item waves-effect waves-light">
+                                            <a class="nav-link" data-toggle="tab" href="#profile-1" role="tab">Profile</a>
+                                        </li>
+                                        <li class="nav-item waves-effect waves-light">
+                                            <a class="nav-link" data-toggle="tab" href="#settings-1" role="tab">Settings</a>
+                                        </li>
+                                    </ul>
+    
+                                    <!-- Tab panes -->
+                                    <div class="tab-content">
+                                        <div class="tab-pane active p-3" id="home-1" role="tabpanel">
+                                            <p class="text-muted mb-0">
+                                                Raw denim you probably haven't heard of them jean shorts Austin.
+                                            </p>
+                                        </div>
+                                        <div class="tab-pane p-3" id="profile-1" role="tabpanel">
+                                            <p class="text-muted mb-0">
+                                                Food truck fixie locavore, accusamus mcsweeney's marfa nulla
+                                                single-origin coffee squid. 
+                                            </p>
+                                        </div>
+                                        <div class="tab-pane p-3" id="settings-1" role="tabpanel">
+                                            <p class="text-muted mb-0">
+                                                Trust fund seitan letterpress, keytar raw denim keffiyeh etsy.
+                                            </p>
+                                        </div>
+                                    </div>    
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div><!--end col-->
+                    </div><!--end row-->
+
+                   
+    
+                    <!-- Collapse -->
+                    <div class="row">
+                        <div class="col-md-12 col-lg-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <div class="nav flex-column nav-pills text-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                                <a class="nav-link waves-effect waves-light active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
+                                                <a class="nav-link waves-effect waves-light" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a>
+                                                <a class="nav-link waves-effect waves-light" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-9">
+                                            <div class="tab-content mo-mt-2" id="v-pills-tabContent">
+                                                <div class="tab-pane fade active show" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                                    <p class="text-muted mb-0">
+                                                        Trust fund seitan letterpress, keytar raw denim keffiyeh etsy
+                                                        art party before they sold out master cleanse gluten-free squid
+                                                        scenester freegan cosby sweater. Fanny pack portland seitan DIY,
+                                                        art party locavore wolf cliche high life echo park Austin. Cred
+                                                        vinyl keffiyeh DIY salvia PBR, banh mi before they sold out
+                                                        farm-to-table VHS viral locavore cosby sweater.
+                                                    </p>
+                                                </div>
+                                                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                                    <p class="text-muted mb-0">
+                                                        Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin
+                                                        coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next
+                                                        level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo
+                                                        booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco
+                                                            ad vinyl cillum PBR. Homo nostrud organic.
+                                                    </p>
+                                                </div>
+                                                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                    <p class="text-muted mb-0">
+                                                        Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin
+                                                        coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next
+                                                        level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo
+                                                        booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco
+                                                            ad vinyl cillum PBR. 
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                            <div class="card">
+                                <div class="card-body">    
+                                    <p>
+                                        <a class="btn btn-outline-light mb-2 mb-lg-0" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                            Link with href
+                                        </a>
+                                        <button class="btn btn-outline-light" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                            Button with data-target
+                                        </button>
+                                    </p>
+                                    <div class="collapse show" id="collapseExample">
+                                        <div class="card mb-0 card-body">
+                                            <p class="mb-0 text-muted">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p> 
+                                        </div>
+                                    </div>    
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div><!--end col-->
+    
+                        <div class="col-md-12 col-lg-12 col-xl-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="card border mb-0 shadow-none">
+                                            <div class="card-header p-0" id="headingOne">
+                                            <h5 class="my-1">
+                                                <button class="btn btn-link text-dark" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                Collapsible Group Item #1
+                                                </button>
+                                            </h5>
+                                            </div>
+                                        
+                                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                                <div class="card-body">
+                                                <p class="mb-0 text-muted">
+                                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                                                </p> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-0 border shadow-none">
+                                            <div class="card-header p-0" id="headingTwo">
+                                            <h5 class="my-1">
+                                                <button class="btn btn-link collapsed text-dark" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                Collapsible Group Item #2
+                                                </button>
+                                            </h5>
+                                            </div>
+                                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                                <div class="card-body">
+                                                    <p class="mb-0 text-muted">
+                                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                                                    </p> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-0 border shadow-none">
+                                            <div class="card-header p-0" id="headingThree">
+                                                <h5 class="my-1">
+                                                    <button class="btn btn-link collapsed text-dark" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                    Collapsible Group Item #3
+                                                    </button>
+                                                </h5>
+                                            </div>
+                                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                                <div class="card-body">
+                                                    <p class="mb-0 text-muted">
+                                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                                                    </p> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>    
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div><!--end col-->
+                    </div><!--end row--> 
+                    
+                    <div class="row">
+                        <div class="col-12">
+                            <h4 class="mt-0 mb-2 header-title">Progress</h4>
+                            <p class="text-muted mb-3">Documentation and examples for using Bootstrap custom progress bars 
+                                featuring support for stacked bars, animated backgrounds, and text labels.
+                            </p>  
+                        </div> <!-- end col -->
+                    </div> <!-- end row -->
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-body">       
+                                    
+                                    <div class="progress mb-4" style="height: 3px;">
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 15%;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="progress mb-4">
+                                        <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                    </div>
+                                    <div class="progress mb-4" style="height: 12px;">
+                                        <div class="progress-bar  progress-bar-striped progress-bar-animated bg-secondary" role="progressbar" style="width: 35%;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="progress mb-4">
+                                        <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">15%</div>
+                                        <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">15%</div>
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">15%</div>
+                                    </div>
+
+                                    <div class="progress" style="height: 24px;">
+                                        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div><!--end col-->
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-body">       
+                                    
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-12 d-flex justify-content-center">                                                
+                                            <div class="progress progress-vertical my-3" style="height: 8px;">
+                                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="height: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="progress progress-vertical my-3" style="height: 8px;">
+                                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" role="progressbar" style="height: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="progress progress-vertical my-3" style="height: 8px;">
+                                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="height: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>                                                
+                                        </div><!--end col-->
+
+                                        <div class="col-md-4 col-sm-12 d-flex justify-content-center">
+                                            <div class="progress progress-vertical-bottom my-3" style="height: 8px;">
+                                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="height: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="progress progress-vertical-bottom my-3" style="height: 8px;">
+                                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" role="progressbar" style="height: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="progress progress-vertical-bottom my-3" style="height: 8px;">
+                                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="height: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div><!--end col-->
+
+                                        <div class="col-md-4 col-sm-12 d-flex justify-content-center">
+                                            <div class="progress progress-vertical-bottom my-3" style="width: 30px;">
+                                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" role="progressbar" style="height: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            
+                                            <div class="progress progress-vertical-bottom my-3" style="width: 30px;">
+                                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="height: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+                                            </div>
+                                        </div><!--end col-->
+                                    </div><!--end row-->    
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div><!--end col-->
+                    </div><!--end row-->
+
+                    <div class="row">
+                        <div class="col-12">
+                            <h4 class="mt-0 mb-2 header-title">Bootstrap Tooltips & Popovers</h4>
+                            <p class="text-muted mb-3">Documentation and examples for how to use Bootstrap’s included navigation components.
+                                Toggle the visibility of content across your project with a few classes and our JavaScript plugins.
+                            </p>  
+                        </div> <!-- end col -->
+                    </div> <!-- end row -->
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-body">
+    
+                                    <button type="button" class="btn btn-outline-light" data-toggle="tooltip" data-placement="top" title="Tooltip-top">
+                                        Tooltip on top
+                                    </button>
+                                    <button type="button" class="btn btn-outline-light" data-toggle="tooltip" data-placement="right" title="Tooltip-right">
+                                        Tooltip on right
+                                    </button>
+                                    <button type="button" class="btn btn-outline-light" data-toggle="tooltip" data-placement="bottom" title="Tooltip-bottom">
+                                        Tooltip on bottom
+                                    </button>
+                                    <button type="button" class="btn btn-outline-light" data-toggle="tooltip" data-placement="left" title="Tooltip-left">
+                                        Tooltip on left
+                                    </button>                                          
+                                </div>
+                            </div>
+                        </div> <!-- end col -->
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-body">    
+                                    <button type="button" class="btn btn-outline-light waves-effect mo-mb-2" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                                        Popover-top
+                                    </button>
+    
+                                    <button type="button" class="btn btn-outline-light waves-effect mo-mb-2" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                                        Popover-right
+                                    </button>
+    
+                                    <button type="button" class="btn btn-outline-light waves-effect mo-mb-2"
+                                            data-container="body" data-toggle="popover" title="Popover Title" data-placement="bottom"
+                                            data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                                        Popover-bottom
+                                    </button>
+    
+                                    <button type="button" class="btn btn-outline-light waves-effect mo-mb-2" data-container="body" data-toggle="popover" data-placement="left" title="Popover Title" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                                        Popover-left
+                                    </button>
+    
+                                    <button type="button" tabindex="0" class="btn btn-info waves-effect" data-toggle="popover" data-trigger="focus" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="Dismissible popover">
+                                            Dismissible popover
+                                        </button>
+                                </div>
+                            </div>
+                        </div> <!-- end col -->                        
+                    </div> <!-- end row -->
+
+                    <div class="row">
+                        <div class="col-12">
+                            <h4 class="mt-0 mb-2 header-title">Toasts</h4>
+                            <p class="text-muted mb-3">Push notifications to your visitors with a toast,
+                                    a lightweight and easily customizable alert message.
+                            </p>  
+                        </div> <!-- end col -->
+                    </div> <!-- end row -->    
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-body"> 
+                                    <div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true" data-toggle="toast">
+                                        <div class="toast-header">
+                                            <i class="mdi mdi-circle-slice-8 font-18 mr-1 text-primary"></i>
+                                            <h5 class="mr-auto">Metrica</h5>
+                                            <small>11 mins ago</small>
+                                            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="toast-body">
+                                            Hello, world! This is a toast message.
+                                        </div>
+                                    </div> <!--end toast-->   
+                                    <div class="bg-light p-3">
+                                        <div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center" style="min-height: 200px;">
+
+                                            <!-- Then put toasts within -->
+                                            <div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true" data-toggle="toast">
+                                                <div class="toast-header">
+                                                <i class="mdi mdi-circle-slice-8 font-18 mr-1 text-secondary"></i>
+                                                <strong class="mr-auto">Metrica</strong>
+                                                <small>11 mins ago</small>
+                                                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                                </div>
+                                                <div class="toast-body">
+                                                Hello, world! This is a toast message.
+                                                </div>
+                                            </div> <!--end toast-->
+                                        </div>
+                                    </div> <!--end div-->                                                                          
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div> <!-- end col -->
+
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-body">  
+                                    <div class="bg-light p-3">
+                                        <div aria-live="polite" aria-atomic="true" style="position: relative; min-height: 200px;">
+                                            <!-- Position it -->
+                                            <div style="position: absolute; top: 0; right: 0;">
+                                            
+                                                <!-- Then put toasts within -->
+                                                <div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true" data-toggle="toast">
+                                                    <div class="toast-header">
+                                                        <i class="mdi mdi-circle-slice-8 font-18 mr-1 text-warning"></i>
+                                                        <strong class="mr-auto">Metrica</strong>
+                                                        <small class="text-muted">just now</small>
+                                                        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="toast-body">
+                                                        See? Just like this.
+                                                    </div>
+                                                </div> <!--end toast-->
+                                            
+                                                <div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true" data-toggle="toast">
+                                                    <div class="toast-header">
+                                                        <i class="mdi mdi-circle-slice-8 font-18 mr-1 text-info"></i>
+                                                        <strong class="mr-auto">Metrica</strong>
+                                                        <small class="text-muted">2 seconds ago</small>
+                                                        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="toast-body">
+                                                        Heads up, toasts will stack automatically
+                                                    </div>
+                                                </div> <!--end toast-->
+                                            </div>
+                                        </div>                                            
+                                    </div> <!--end /div-->                                                                                 
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div> <!-- end col -->                                 
+                    </div> <!-- end row -->
+                     
+                    
+                    <div class="row">
+                        <div class="col-12">
+                            <h4 class="mt-0 mb-2 header-title">Spinner</h4>
+                            <p class="text-muted mb-3">Indicate the loading state of a component or page with Bootstrap spinners, 
+                                built entirely with HTML, CSS, and no JavaScript.
+                            </p>  
+                        </div> <!-- end col -->
+                    </div> <!-- end row -->
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="spinner-border text-primary" role="status"></div>
+                                    <div class="spinner-border text-blue" role="status"></div>
+                                    <div class="spinner-border text-secondary" role="status"></div>
+                                    <div class="spinner-border text-success" role="status"></div>
+                                    <div class="spinner-border text-danger" role="status"></div>
+                                    <div class="spinner-border text-warning" role="status"></div>
+                                    <div class="spinner-border text-info" role="status"></div>
+                                    <div class="spinner-border text-pink" role="status"></div>
+                                    <div class="spinner-border text-purple" role="status"></div>
+                                    <div class="spinner-border text-light" role="status"></div>
+                                    <div class="spinner-border text-dark" role="status"></div>  
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <div class="spinner-border thumb-md text-primary" role="status"></div>
+                                            <div class="spinner-border thumb-md text-secondary" role="status"></div>
+                                        </div><!-- end col -->
+                                        
+                                        <div class="col-lg-4 align-self-center">
+                                            <div class="spinner-border text-primary" role="status"></div>
+                                            <div class="spinner-border text-secondary" role="status"></div>
+                                        </div><!-- end col -->
+                
+                                        <div class="col-lg-4 align-self-center">
+                                            <div class="spinner-border spinner-border-sm" role="status"></div>
+                                            <div class="spinner-grow spinner-grow-sm" role="status"></div>
+                                        </div><!-- end col -->                                            
+                                    </div><!--end row-->
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div> <!-- end col -->
+
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-body">  
+                                    <div class="spinner-grow text-primary" role="status"></div>
+                                    <div class="spinner-grow text-secondary" role="status"></div>
+                                    <div class="spinner-grow text-success" role="status"></div>
+                                    <div class="spinner-grow text-danger" role="status"></div>
+                                    <div class="spinner-grow text-warning" role="status"></div>
+                                    <div class="spinner-grow text-info" role="status"></div>
+                                    <div class="spinner-grow text-pink" role="status"></div>
+                                    <div class="spinner-grow text-purple" role="status"></div>
+                                    <div class="spinner-grow text-light" role="status"></div>
+                                    <div class="spinner-grow text-dark" role="status"></div>
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <button class="btn btn-primary" type="button" disabled>
+                                                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span><span class="sr-only">Loading...</span>
+                                            </button>
+                                            <button class="btn btn-primary" type="button" disabled>
+                                                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                                Loading...
+                                            </button>                                                         
+                                        </div><!-- end col -->
+                                        <div class="col-lg-6">
+                                            <button class="btn btn-primary" type="button" disabled>
+                                                <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span> <span class="sr-only">Loading...</span>
+                                            </button>
+                                            <button class="btn btn-primary" type="button" disabled>
+                                                <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                                                Loading...
+                                            </button>
+                                        </div><!-- end col -->
+                                    </div> <!-- end row -->
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div> <!-- end col -->
+                    </div> <!-- end row -->
+
+                    <div class="row">
+                        <div class="col-12">
+                            <h4 class="mt-0 mb-2 header-title">Grid Option</h4>
+                            <p class="text-muted mb-3">See how aspects of the Bootstrap grid system work 
+                                across multiple devices with a handy table.
+                            </p>  
+                        </div> <!-- end col -->
+                    </div> <!-- end row -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-body">
+    
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered table-striped table-centered">
+                                            <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th class="text-center">
+                                                    Extra small<br>
+                                                    <small>&lt;576px</small>
+                                                </th>
+                                                <th class="text-center">
+                                                    Small<br>
+                                                    <small>≥576px</small>
+                                                </th>
+                                                <th class="text-center">
+                                                    Medium<br>
+                                                    <small>≥768px</small>
+                                                </th>
+                                                <th class="text-center">
+                                                    Large<br>
+                                                    <small>≥992px</small>
+                                                </th>
+                                                <th class="text-center">
+                                                    Extra large<br>
+                                                    <small>≥1200px</small>
+                                                </th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <th class="text-nowrap" scope="row">Grid behavior</th>
+                                                <td>Horizontal at all times</td>
+                                                <td colspan="4">Collapsed to start, horizontal above breakpoints</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-nowrap" scope="row">Max container width</th>
+                                                <td>None (auto)</td>
+                                                <td>540px</td>
+                                                <td>720px</td>
+                                                <td>960px</td>
+                                                <td>1140px</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-nowrap" scope="row">Class prefix</th>
+                                                <td><code>.col-</code></td>
+                                                <td><code>.col-sm-</code></td>
+                                                <td><code>.col-md-</code></td>
+                                                <td><code>.col-lg-</code></td>
+                                                <td><code>.col-xl-</code></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-nowrap" scope="row"># of columns</th>
+                                                <td colspan="5">12</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-nowrap" scope="row">Gutter width</th>
+                                                <td colspan="5">20px (10px on each side of a column)</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-nowrap" scope="row">Nestable</th>
+                                                <td colspan="5">Yes</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-nowrap" scope="row">Offsets</th>
+                                                <td colspan="5">Yes</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-nowrap" scope="row">Column ordering</th>
+                                                <td colspan="5">Yes</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div> <!-- end col -->        
+                    </div> <!-- end row -->
+
+                    <div class="row">
+                        <div class="col-12">
+                            <h4 class="mt-0 mb-2 header-title">Typography</h4>
+                            <p class="text-muted mb-3">Documentation and examples for Bootstrap typography, 
+                                including global settings, headings, body text, lists, and more.
+                            </p>  
+                        </div> <!-- end col -->
+                    </div> <!-- end row -->
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <span class="float-right text-muted font-weight-normal">Normal / 400</span>
+                                            <h1 class="font-54 font-weight-normal mt-0 mb-4">Aa</h1>
+                                            <h5 class="mb-0 font-weight-normal">Metrica</h5>
+                                        </div><!--end card-body-->
+                                    </div><!--end card-->
+                                </div><!--end col-->
+                                
+                                <div class="col-lg-6">
+                                    <div class="card ">
+                                        <div class="card-body">
+                                            <span class="float-right text-muted font-weight-bold">Bold / 700</span>
+                                            <h1 class="font-54 font-weight-bold mt-0 mb-4">Aa</h1>
+                                            <h5 class="mb-0 font-weight-bold">Metrica</h5>
+                                        </div><!--end card-body-->
+                                    </div><!--end card-->
+                                </div><!--end col-->
+                            </div><!--end row-->
+                                        
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="header-title mt-0">Heading </h4> 
+                                    <p class="text-muted mb-4">All HTML headings, 
+                                        <code class="highlighter-rouge">&lt;h1&gt;</code> through 
+                                        <code class="highlighter-rouge">&lt;h6&gt;</code>, are available.
+                                    </p>   
+                                    <h1>h1. Bootstrap heading</h1>
+                                    <h2>h2. Bootstrap heading</h2>
+                                    <h3>h3. Bootstrap heading</h3>
+                                    <h4>h4. Bootstrap heading</h4>
+                                    <h5>h5. Bootstrap heading</h5>
+                                    <h6>h6. Bootstrap heading</h6>
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="header-title mt-0">Lead</h4> 
+                                    <p class="text-muted mb-4">Make a paragraph stand out by adding <code class="highlighter-rouge">.lead</code>.</p>
+                                    <p class="lead mb-0">
+                                        Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+                                    </p>
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div><!--end col-->
+                        
+                        <div class="col-lg-6">
+                            <div class="card bg-topbar">
+                                <div class="card-body">
+                                    <div class="font-18">                                                
+                                        <code>@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');</code><br>
+                                        <code>font-family : 'Roboto', sans-serif ; </code>
+                                    </div>
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="header-title mt-0">Display Headings</h4>
+                                    <p class="text-muted mb-4">Traditional heading elements are designed to work best in the meat of your page content. </p>
+                                    <h1 class="display-1">Display 1</h1>
+                                    <h1 class="display-2">Display 2</h1>
+                                    <h1 class="display-3">Display 3</h1>
+                                    <h1 class="display-4">Display 4</h1>
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div><!--end col-->
+                    </div><!--end row-->
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-body">        
+                                    <h4 class="mt-0 header-title">Blockquotes</h4>
+                                    <p class="text-muted mb-4 ">For quoting blocks of content from
+                                        another source within your document. Wrap <code class="highlighter-rouge">&lt;blockquote
+                                            class="blockquote"&gt;</code> around any <abbr title="HyperText Markup Language">HTML</abbr> as the quote.</p>
+    
+                                    <blockquote class="blockquote">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                        <footer class="blockquote-footer font-14">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                                    </blockquote>
+    
+                                    <blockquote class="blockquote blockquote-reverse mb-0">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                        <footer class="blockquote-footer font-14">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                                    </blockquote>
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div><!--end col-->
+
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-body">        
+                                    <h4 class="mt-0 header-title">Inline text elements</h4>
+                                    <p class="text-muted mb-4">Styling for common inline HTML5 elements.</p>        
+                                    <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+                                    <p><del>This line of text is meant to be treated as deleted text.</del></p>
+                                    <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+                                    <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+                                    <p><u>This line of text will render as underlined</u></p>
+                                    <p><small>This line of text is meant to be treated as fine print.</small></p>
+                                    <p><strong>This line rendered as bold text.</strong></p>
+                                    <p class="mb-0"><em>This line rendered as italicized text.</em></p>
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div><!--end col-->
+                    </div><!--end row-->
+
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="card">
+                                <div class="card-body">        
+                                    <h4 class="mt-0 header-title">Unorder List</h4>
+                                    <p class="text-muted mb-4 ">Bootstrap unorder list style</p>
+    
+                                    <ul class="mb-0">
+                                        <li>Integer molestie lorem at massa</li>
+                                        <li>Nulla volutpat aliquam velit
+                                            <ul>
+                                                <li>Phasellus iaculis neque</li>
+                                                <li>Purus sodales ultricies</li>
+                                                <li>Vestibulum laoreet porttitor sem</li>
+                                            </ul>
+                                        </li>
+                                        <li>Faucibus porta lacus fringilla vel</li>
+                                    </ul>
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div><!--end col-->
+
+                        <div class="col-lg-3">
+                            <div class="card">
+                                <div class="card-body">        
+                                    <h4 class="mt-0 header-title">Order List</h4>
+                                    <p class="text-muted mb-4 ">Bootstrap order list style</p>
+    
+                                    <ol class="mb-0">
+                                        <li>Integer molestie lorem at massa</li>
+                                        <li>Nulla volutpat aliquam velit </li>
+                                        <li>Phasellus iaculis neque</li>
+                                        <li>Purus sodales ultricies</li>
+                                        <li>Vestibulum laoreet porttitor sem</li>                                           
+                                        <li>Faucibus porta lacus fringilla vel</li>
+                                    </ol>
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div><!--end col-->
+
+                        <div class="col-lg-3">
+                            <div class="card">
+                                <div class="card-body">        
+                                    <h4 class="mt-0 header-title">Unstyled List</h4>
+                                    <p class="text-muted mb-4 ">Bootstrap unstyled list style</p>
+    
+                                    <ul class="mb-0 list-unstyled">
+                                        <li>Integer molestie lorem at massa</li>
+                                        <li>Nulla volutpat aliquam velit </li>
+                                        <li>Phasellus iaculis neque</li>
+                                        <li>Purus sodales ultricies</li>
+                                        <li>Vestibulum laoreet porttitor sem</li>                                           
+                                        <li>Faucibus porta lacus fringilla vel</li>
+                                    </ul>
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div><!--end col-->
+                        
+                        <div class="col-lg-3">
+                            <div class="card">
+                                <div class="card-body">        
+                                    <h4 class="mt-0 header-title">Inline List</h4>
+                                    <p class="text-muted mb-4 ">Bootstrap inline list style</p>
+    
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item"><i class="mdi mdi-circle-outline font-13 text-success mr-1"></i>Lorem ipsum</li>
+                                        <li class="list-inline-item"><i class="mdi mdi-circle-outline font-13 text-success mr-1"></i>Phasellus iaculis</li>
+                                        <li class="list-inline-item"><i class="mdi mdi-circle-outline font-13 text-success mr-1"></i>Nulla volutpat</li>
+                                        <li class="list-inline-item"><i class="mdi mdi-circle-outline font-13 text-success mr-1"></i>Lorem ipsum</li>
+                                        <li class="list-inline-item"><i class="mdi mdi-circle-outline font-13 text-success mr-1"></i>Phasellus iaculis</li>
+                                        <li class="list-inline-item"><i class="mdi mdi-circle-outline font-13 text-success mr-1"></i>Nulla volutpat</li>
+                                        <li class="list-inline-item"><i class="mdi mdi-circle-outline font-13 text-success mr-1"></i>Lorem ipsum</li>
+                                        <li class="list-inline-item"><i class="mdi mdi-circle-outline font-13 text-success mr-1"></i>Phasellus iaculis</li>
+                                        <li class="list-inline-item"><i class="mdi mdi-circle-outline font-13 text-success mr-1"></i>Nulla volutpat</li>                                            
+                                    </ul>
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div><!--end col-->
+                    </div><!--end row-->
+
+                    <div class="row">
+                        <div class="col-12">        
+                            <div class="card">
+                                <div class="card-body">        
+                                    <h4 class="mt-0 header-title">Description list alignment</h4>
+                                    <p class="text-muted mb-4">Align terms and descriptions
+                                        horizontally by using our grid system’s predefined classes (or semantic
+                                        mixins). For longer terms, you can optionally add a <code class="highlighter-rouge">.text-truncate</code> class to
+                                        truncate the text with an ellipsis.
+                                    </p>
+    
+                                    <dl class="row mb-0">
+                                        <dt class="col-sm-3">Description lists</dt>
+                                        <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
+    
+                                        <dt class="col-sm-3">Euismod</dt>
+                                        <dd class="col-sm-9">Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+                                        <dd class="col-sm-9 offset-sm-3">Donec id elit non mi porta gravida at eget metus.</dd>
+    
+                                        <dt class="col-sm-3">Malesuada porta</dt>
+                                        <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
+    
+                                        <dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
+                                        <dd class="col-sm-9">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+    
+                                        <dt class="col-sm-3">Nesting</dt>
+                                        <dd class="col-sm-9 mb-0">
+                                            <dl class="row mb-0">
+                                                <dt class="col-sm-4">Nested definition list</dt>
+                                                <dd class="col-sm-8">Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.</dd>
+                                            </dl>
+                                        </dd>
+                                    </dl>        
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div><!--end col-->
+                    </div><!--end row-->
+                </div><!-- container -->
+
+                <footer class="footer text-center text-sm-left">
+                    &copy; 2019 Metrica <span class="text-muted d-none d-sm-inline-block float-right">Crafted with <i class="mdi mdi-heart text-danger"></i> by Mannatthemes</span>
+                </footer><!--end footer-->
+            </div>
+            <!-- end page content -->
+        </div>
+        <!-- end page-wrapper -->
+
+        <!-- jQuery  -->
+        <script src="../assets/js/jquery.min.js"></script>
+        <script src="../assets/js/bootstrap.bundle.min.js"></script>
+        <script src="../assets/js/metisMenu.min.js"></script>
+        <script src="../assets/js/waves.min.js"></script>
+        <script src="../assets/js/jquery.slimscroll.min.js"></script>
+
+        <!-- App js -->
+        <script src="../assets/js/jquery.core.js"></script>
+        <script src="../assets/js/app.js"></script>
+
+    </body>
+</html>

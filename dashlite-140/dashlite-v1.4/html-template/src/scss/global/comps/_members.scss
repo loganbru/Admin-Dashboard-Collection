@@ -1,0 +1,78 @@
+/// Member Table
+///////////////////////////////
+.tb-member {
+	&-item {
+		td {
+			vertical-align: middle;
+			padding-top: 1rem;
+			padding-bottom: 1rem;
+		}
+		&:first-child {
+			td:first-child {
+				border-radius: $border-radius;
+			}
+		}
+		.user-card .user-info {
+			flex-grow: 1;
+		}
+	}
+	&-role {
+		width: 150px;
+	}
+	&-info {
+		width: 40%;
+	}
+	&-action {
+		text-align: right;
+		div > .link {
+			margin-left: .75rem;
+		}
+	}
+}
+@media (max-width: 992px) {
+	.tb-member {
+		&-action {
+			width: 150px;
+		}
+	}
+}
+@media (max-width: 767px) {
+	.tb-member {
+		&-info {
+			width: 60%;
+		}
+	}
+}
+@media (max-width: 575px) {
+	.tb-member {
+		&-item {
+			display: flex;
+		}
+		&-info {
+			width: auto;
+			flex-grow: 1;
+		}
+		&-action {
+			margin-left: auto;
+			width: auto;
+			&:last-child {
+				.table .tb-member-body & {
+					padding-right: .5rem;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 374px) {
+	.tb-member {
+		&-item .user-card {
+			max-width: 200px;
+			.sub-text {
+				width: 96%;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+		}
+	}
+}

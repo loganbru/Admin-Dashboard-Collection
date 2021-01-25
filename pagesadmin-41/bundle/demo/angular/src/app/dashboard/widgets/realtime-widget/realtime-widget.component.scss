@@ -1,0 +1,17 @@
+.widget-14 {
+    .nvd3-svg{
+        height: 330px !important;
+    }
+    .tick text, .widget-4 .widget-4-chart .line-chart .nvd3 .nv-axis .nv-axisMaxMin text{
+
+    }
+    .nvd3 .nv-axis{
+        transform: translateX(13px);
+    }
+    .nvd3 .nv-axis path{
+        stroke: transparent
+    }
+    .nv-axisMaxMin{
+        display: none;
+    }
+}

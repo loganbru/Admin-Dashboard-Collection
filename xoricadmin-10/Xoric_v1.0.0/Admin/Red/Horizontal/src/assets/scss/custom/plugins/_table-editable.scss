@@ -1,0 +1,79 @@
+
+//
+// Table editable
+//
+
+
+.table-editable{
+  .editable-input{
+    display: inline-block;
+    .form-control{
+      height: 2rem;
+    }
+    
+  }
+  a.editable{
+    color: $table-color;
+  }
+  .editable-buttons{
+    .btn {
+      &.btn-sm{
+        font-size: 12px;
+      }
+    }
+
+    .editable-submit{
+      .glyphicon-ok{
+        &::before{
+          content: "\F12C";
+          font-family: "Material Design Icons";
+        }
+      }
+    }
+
+    .editable-cancel{
+      color: $white;
+      background-color: $danger;
+      .glyphicon-remove{
+        &::before{
+          content: "\F156";
+          font-family: "Material Design Icons";
+        }
+      }
+    }
+  }
+
+  .editableform{
+    .editable-buttons{
+      display: inline-block;
+      .btn{
+        margin: 4px;
+      }
+    }
+  }
+
+  tbody {
+    td{
+      &.focus{
+        box-shadow: inset 0 0 1px 1px $primary !important;
+      }
+    }
+  }
+}
+
+.dt-autofill-list{
+  border: none !important;
+  background-color: $card-bg !important;
+  
+  .dt-autofill-question, .dt-autofill-button{
+    border-bottom-color: $gray-300 !important;
+  }
+
+  ul{
+    li{
+      &:hover{
+        background-color: $gray-300 !important;
+      }
+    }
+  }
+}

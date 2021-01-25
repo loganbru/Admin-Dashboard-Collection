@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
+    <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
+    <meta name="author" content="PIXINVENT">
+    <title>Laravel Integration - Vuexy - Bootstrap HTML admin template</title>
+    <link rel="apple-touch-icon" sizes="60x60" href="../app-assets/images/ico/apple-icon-60.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../app-assets/images/ico/apple-icon-76.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../app-assets/images/ico/apple-icon-120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../app-assets/images/ico/apple-icon-152.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../app-assets/images/ico/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i%7COpen+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <!-- BEGIN VENDOR CSS-->
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/vendors.min.css">
+    <!-- END VENDOR CSS-->
+    <!-- BEGIN VUEXY CSS-->
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/colors.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/components.css">
+    <!-- BEGIN Page Level CSS-->
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/core/menu/menu-types/vertical-menu.css">
+    <!-- link(rel='stylesheet', type='text/css', href='../../../app-assets/css'+rtl+'/core/menu/menu-types/vertical-overlay-menu.css')-->
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/ui/prism.min.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/ui/prism-treeview.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/documentation.css">
+    <!-- END Page Level CSS-->
+    <!-- BEGIN Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <!-- END Custom CSS-->
+  </head>
+  <body class="vertical-layout vertical-menu-modern content-right-sidebar  fixed-navbar" data-open="click" data-menu="vertical-menu-modern" data-col="content-right-sidebar">
+
+    <!-- fixed-top-->
+    <nav class="header-navbar navbar-expand-md navbar navbar-with-menu fixed-top navbar-light navbar-shadow">
+      <div class="navbar-wrapper">
+        <div class="navbar-container content float-right">
+          <div class="collapse navbar-collapse" id="navbar-mobile">
+            <ul class="nav navbar-nav">
+              <li class="nav-item"><a class="btn btn-link btn-doc-header" href="#"> V 4.1</a></li>
+              <li class="nav-item"><a class="btn btn-success btn-doc-header" href="https://pixinvent.ticksy.com" target="_blank"><i class="icon-help2"></i> Support</a></li>
+              <li class="nav-item"><a class="btn btn-warning btn-doc-header" href="https://1.envato.market/vuexy_admin"><i class="icon-bag3"></i> Purchase</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ////////////////////////////////////////////////////////////////////////////-->
+
+
+    <!-- main menu-->
+    <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
+      <div class="navbar-header">
+        <ul class="nav navbar-nav flex-row">
+          <li class="nav-item mr-auto"><a class="navbar-brand"><img class="brand-logo" alt="Vuexy admin logo" src="../app-assets/images/logo/logo.png"/>
+              <h2 class="brand-text">Vuexy</h2></a></li>
+          <li class="nav-item d-none d-xl-block nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="toggle-icon feather icon-disc font-medium-4 primary" data-ticon="icon-disc"></i></a></li>
+        </ul>
+      </div>
+      <div class="shadow-bottom"></div>
+      <!-- main menu content-->
+      <div class="main-menu-content">
+        <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+          <li class=" nav-item"><a href="index.html"><i class="feather icon-home"></i><span class="menu-title" data-i18n="">Vuexy Admin</span></a>
+          </li>
+          <li class=" nav-item"><a href="documentation-introduction.html"><i class="feather icon-align-justify"></i><span class="menu-title" data-i18n="">Introduction</span></a>
+          </li>
+          <li class=" nav-item"><a href="documentation-folder-structure.html"><i class="feather icon-folder"></i><span class="menu-title" data-i18n="">Folder Structure</span></a>
+          </li>
+          <li class=" nav-item"><a href="documentation-gulp.html"><i class="feather icon-settings"></i><span class="menu-title" data-i18n="">Gulp Building Tools</span></a>
+          </li>
+          <li class=" nav-item"><a href="documentation-styles-customization.html"><i class="feather icon-check-square"></i><span class="menu-title" data-i18n="">Styles Customization</span></a>
+          </li>
+          <li class=" nav-item"><a href="documentation-javascript-usage.html"><i class="feather icon-file"></i><span class="menu-title" data-i18n="">JavaScript Usage</span></a>
+          </li>
+          <li class=" nav-item"><a href="documentation-html-structure.html"><i class="feather icon-code"></i><span class="menu-title" data-i18n="">HTML Structure</span></a>
+          </li>
+          <li class="active"><a href="documentation-laravel.html"><i class="feather icon-edit"></i><span class="menu-title" data-i18n="">Laravel Integration</span></a>
+          </li>
+          <li class=" nav-item"><a href="documentation-template-customization.html"><i class="feather icon-settings"></i><span class="menu-title" data-i18n="">Template Customization</span></a>
+          </li>
+          <li class=" nav-item"><a href="documentation-apps.html"><i class="feather icon-server"></i><span class="menu-title" data-i18n="">Apps</span></a>
+          </li>
+          <li class=" nav-item"><a href="#"><i class="feather icon-layout"></i><span class="menu-title" data-i18n="">Layouts</span></a>
+            <ul class="menu-content">
+              <li><a class="menu-item" href="documentation-1-column.html">1 Column</a>
+              </li>
+              <li><a class="menu-item" href="documentation-2-columns.html">2 Column</a>
+              </li>
+              <li><a class="menu-item" href="documentation-content-left-sidebar.html">Content Left Sidebar</a>
+              </li>
+              <li><a class="menu-item" href="documentation-content-right-sidebar.html">Content Right Sidebar</a>
+              </li>
+              <li><a class="menu-item" href="documentation-content-detached-left-sidebar.html">Content Detached Left Sidebar</a>
+              </li>
+              <li><a class="menu-item" href="documentation-content-detached-right-sidebar.html">Content Detached Right Sidebar</a>
+              </li>
+            </ul>
+          </li>
+          <li class=" nav-item"><a href="documentation-starter-kit.html"><i class="feather icon-zap"></i><span class="menu-title" data-i18n="">Starter Kit</span></a>
+          </li>
+          <li class=" nav-item"><a href="#"><i class="feather icon-grid"></i><span class="menu-title" data-i18n="">UI</span></a>
+            <ul class="menu-content">
+              <li><a class="menu-item" href="documentation-card.html">Cards</a>
+              </li>
+              <li><a class="menu-item" href="documentation-colors.html">Colors</a>
+              </li>
+              <li><a class="menu-item" href="documentation-icons.html">Icons</a>
+              </li>
+              <li><a class="menu-item" href="documentation-data-view.html">Data View</a>
+              </li>
+            </ul>
+          </li>
+          <li class=" nav-item"><a href="#"><i class="feather icon-box"></i><span class="menu-title" data-i18n="">Components</span></a>
+            <ul class="menu-content">
+              <li><a class="menu-item" href="documentation-components.html">Components</a>
+              </li>
+              <li><a class="menu-item" href="documentation-extra-components.html">Extra Components</a>
+              </li>
+            </ul>
+          </li>
+          <li class=" nav-item"><a href="#"><i class="feather icon-copy"></i><span class="menu-title" data-i18n="">Forms</span></a>
+            <ul class="menu-content">
+              <li><a class="menu-item" href="documentation-form-elements.html">Form Elements</a>
+              </li>
+              <li><a class="menu-item" href="documentation-form-layouts.html">Form Layouts</a>
+              </li>
+              <li><a class="menu-item" href="documentation-form-wizard.html">Form Wizard</a>
+              </li>
+              <li><a class="menu-item" href="documentation-form-validation.html">Form Validation</a>
+              </li>
+            </ul>
+          </li>
+          <li class=" nav-item"><a href="#"><i class="feather icon-server"></i><span class="menu-title" data-i18n="">Tables</span></a>
+            <ul class="menu-content">
+              <li><a class="menu-item" href="documentation-bootstrap-tables.html">Tables</a>
+              </li>
+              <li><a class="menu-item" href="documentation-datatables.html">Data Tables</a>
+              </li>
+              <li><a class="menu-item" href="documentation-aggrid.html">AgGrid</a>
+              </li>
+            </ul>
+          </li>
+          <li class=" nav-item"><a href="#.html"><i class="feather icon-pie-chart"></i><span class="menu-title" data-i18n="">Charts</span></a>
+            <ul class="menu-content">
+              <li><a class="menu-item" href="documentation-charts-apex.html">Apex Chart</a>
+              </li>
+              <li><a class="menu-item" href="documentation-charts-chartjs.html">Chart JS</a>
+              </li>
+              <li><a class="menu-item" href="documentation-charts-echart.html">Echarts</a>
+              </li>
+            </ul>
+          </li>
+          <li class=" nav-item"><a href="documentation-maps.html"><i class="feather icon-map"></i><span class="menu-title" data-i18n="">Maps</span></a>
+          </li>
+          <li class=" nav-item"><a href="documentation-extensions.html"><i class="feather icon-edit"></i><span class="menu-title" data-i18n="">Extensions</span></a>
+          </li>
+          <li class=" nav-item"><a href="#"><i class="feather icon-layers"></i><span class="menu-title" data-i18n="">Other</span></a>
+            <ul class="menu-content">
+              <li><a class="menu-item" href="documentation-sources-credits.html">Sources &amp; Credits</a>
+              </li>
+              <li><a class="menu-item" href="documentation-changelog.html">Changelog</a>
+              </li>
+              <li><a class="menu-item" href="documentation-notes.html">Notes</a>
+              </li>
+              <li><a class="menu-item" href="https://pixinvent.ticksy.com/">Support</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- /main menu content-->
+      <!-- main menu footer-->
+      <!-- main menu footer-->
+    </div>
+    <!-- / main menu-->
+
+    <div class="app-content content">
+      <div class="sidebar-right sidebar-sticky">
+        <div class="sidebar"><div class="pt-2 pr-2">
+    <div class="sidebar-content p-1" data-spy="affix" data-offset-top="-77">
+        <div class="card">
+            <div class="card-header">
+                <h6 class="card-title">Laravel Integration</h6>
+            </div>
+            <div class="card-content" aria-expanded="true">
+                <div class="card-body">
+                    <nav id="sidebar-page-navigation">
+                        <ul id="page-navigation-list" class="nav">
+                            <li class="nav-item"><a class="nav-link" href="#folder">Folder Structure</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#installation">Installation</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#create-new-page">Create New Page</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#configuration">Configuration</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#rtl">RTL</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <h6 class="border-top-grey border-top-lighten-2 p-1 mt-1 mb-0">
+                    <a class="nav-link display-block text-muted" href="#top">Back to top
+                        <i class="float-right fa fa-arrow-circle-o-up font-medium-3"></i>
+                    </a>
+                </h6>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+      </div>
+      <div class="content-detached content-left">
+        <div class="content-wrapper">
+          <div class="content-header row">
+            <div class="content-header-left col-12 mb-2">
+              <div class="row breadcrumbs-top">
+                <div class="col-12">
+                  <h2 class="content-header-title float-left mb-0">Laravel Integration</h2>
+                  <div class="breadcrumb-wrapper">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="index.html">Home</a>
+                      </li>
+                      <li class="breadcrumb-item active">Laravel Integration
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content-body"><!-- Laravel Folder Structure -->
+<div class="card">
+    <div class="card-header">
+        <h4 id="folder" class="card-title">Folder Structure</h4>
+        <div class="heading-elements">
+            <ul class="list-inline mb-0">
+                <li><a data-action="collapse"><i class="feather icon-chevron-down"></i></a></li>
+                <li><a data-action="expand"><i class="feather icon-maximize"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="card-content collapse show" aria-expanded="true">
+        <div class="card-body">
+            <div class="card-text">
+                <p>Vuexy also provide HTML laravel version. In this page, we have provided installation and usage information.</p>
+            </div>
+            <p>Once you download the template from ThemeForest, unzip the package and you will find the below folder structure in <strong>vuexy-bootstrap-laravel-admin-template/</strong>.</p>
+            <hr>
+            <pre>
+                <code class="language-treeview">
+                    vuexy-bootstrap-laravel-admin-template/
+                    ├── app/
+                    |   ├── Http/
+                    |   |   ├── Controllers/
+                    ├── bootstrap/
+                    ├── config/
+                    |   ├── custom.php (Template configuration file)
+                    ├── database/
+                    ├── public/
+                    |   ├── css/
+                    |   ├── data/
+                    |   |   ├── locales/ (Langulage files)
+                    |   |   ├── ag-grid-data.json
+                    |   |   ├── laravel-search-list.json
+                    |   ├── fonts/
+                    |   ├── images/
+                    |   ├── js/
+                    |   ├── vendors/
+                    |   ├── mix-manifest.json
+                    ├── resources/
+                    |   |   ├── images/ (Vuexy Admin images)
+                    |   |   ├── js/ (Include js files)
+                    |   |   ├── json/
+                    |   |   |   ├── horizontalMenu.json
+                    |   |   |   ├── verticalMenu.json
+                    |   |   ├── lang/ (Include Languages)
+                    |   |   ├── sass/ (Include scss files)
+                    |   |   ├── views/ (Include blade.php files)
+                    |   |   |   ├── layouts/
+                    |   |   |   ├── pages/
+                    |   |   |   ├── panels/
+                    ├── routes/
+                    ├── storage/
+                    ├── tests/ (For testing)
+                    ├── .editorconfig (Related with your editor)
+                    ├── .env.example (Include Database credentials, it will be .env after update it.)
+                    ├── artisan (Include artisans commands)
+                    ├── composer.json (Dependencies used by composer)
+                    ├── package.json (Dependencies used by node)
+                    ├── phpunit.xml (Related With testing)
+                    ├── server.php (For php's internal web server)
+                    └── webpack.mix.js (Laravel's webpack file)
+                </code>
+            </pre>
+            <div class="alert alert-info mt-2" role="alert">
+                <strong>Tip:</strong> We also provide laravel starter-kit to speed up your laravel development with Vuexy Admin.</p>
+            </div>
+            <h6 class="mt-3">Following is the details for laravel folder structure.</h6>
+            <div class="table-responsive">
+                <table class="table table-striped mb-0">
+                    <thead>
+                        <tr>
+                            <th>Folder/Files</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>app/</td>
+                            <td>This folder contains all the controller inside controllers folder and model files.</td>
+                        </tr>
+                        <tr>
+                            <td>bootstrap/</td>
+                            <td>This folder contains cache and app.php.</td>
+                        </tr>
+                        <tr>
+                            <td>config/</td>
+                            <td>This folder contains the config files. You can find custom.php file for template customization.</td>
+                        </tr>
+                        <tr>
+                            <td>database/</td>
+                            <td>This folder contains database Migrations, model factories, & seeds.</td>
+                        </tr>
+                        <tr>
+                            <td>public/</td>
+                            <td>This folder contains index.php ,static folder & Build of the tempalte.</td>
+                        </tr>
+                        <tr>
+                            <td>public/data/laravel-search-list.json</td>
+                            <td>This file contains the list of search menu items.</td>
+                        </tr>
+                        <tr>
+                            <td>resources/</td>
+                            <td>This folder contains views, layouts, store and js, sass, json files.</td>
+                        </tr>
+                        <tr>
+                            <td>routes/</td>
+                            <td>It contains the web.php file where pages can be served on the browser.</td>
+                        </tr>
+                        <tr>
+                            <td>storage/</td>
+                            <td>This folder contains compile blade templates.</td>
+                        </tr>
+                        <tr>
+                            <td>verticalMenu.json</td>
+                            <td>It contains the list of main-menu sidebar items of Vertical menu.</td>
+                        </tr>
+                        <tr>
+                            <td>horizontalMenu.json</td>
+                            <td>It contains the list of main-menu items of Horizontal menu.</td>
+                        </tr>
+                        <tr>
+                            <td>views/layouts</td>
+                            <td>It contains the all master layout files.</td>
+                        </tr>
+                        <tr>
+                            <td>views/panels</td>
+                            <td>It contains all panel files like header / footer / sidebar / navbar etc.</td>
+                        </tr>
+                        <tr>
+                            <td>views/pages</td>
+                            <td>It contains the content page files. To create new page <a href="#create-new-page">refer the code.</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/ Laravel Folder Structure -->
+
+<!-- Installation Steps -->
+<div class="card">
+    <div class="card-header">
+        <h4 id="installation" class="card-title">Installation</h4>
+        <div class="heading-elements">
+            <ul class="list-inline mb-0">
+                <li><a data-action="collapse"><i class="feather icon-chevron-down"></i></a></li>
+                <li><a data-action="expand"><i class="feather icon-maximize"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="card-content collapse show" aria-expanded="true">
+        <div class="card-body">
+            <div class="card-text">
+                <p>Given below are the steps you need to follow, to install the vuexy-bootstrap-laravel-admin-template on your system:</p>
+                <p><strong>Step 1: </strong> Open the terminal in your root directory(vuexy-bootstrap-laravel-admin-template) & to install the composer packages run the following command:</p>
+                <div class="alert alert-primary mb-2" role="alert">
+                    <p>composer install</p>
+                </div>
+                <p><strong>Step 2: </strong> In the root directory, you will find a file named <strong>.env.example, rename the given file name to .env</strong> and run the following command to generate the key (and you can also edit your database credentials here).</p>
+                <div class="alert alert-primary mb-2" role="alert">
+                    <p>php artisan key:generate</p>
+                </div>
+                <p><strong>Step 3: </strong> By running the following command, you will be able to get all the dependencies in your node_modules folder:</p>
+                <div class="alert alert-primary mb-2" role="alert">
+                    <p>npm install</p>
+                </div>
+                <p><strong>Step 4: </strong> If you want to watch all the changes you make in the application then run the following command in the root directory.</p>
+                <div class="alert alert-primary mb-2" role="alert">
+                    <p>npm run watch</p>
+                </div>
+                <p><strong>Step 5: </strong> To run the project, you need to run following command in the project directory. It will compile the php files & all the other project files. If you are making any changes in any of the .php file then you need to run the given command again.</p>
+                <div class="alert alert-primary mb-2" role="alert">
+                    <p>npm run dev</p>
+                </div>
+                <p><strong>Step 6: </strong> If you want to run the project and make the build in the production mode then run the following command in the root directory, otherwise the project will continue to run in the development mode.</p>
+                <div class="alert alert-primary mb-2" role="alert">
+                    <p>npm run prod</p>
+                </div>
+                <p><strong>Step 7: </strong> To serve the application you need to run the following command in the project directory. (This will give you an address with port number 8000.)</p>
+                <p>Now navigate to the given address you will see your application is running.</p>
+                <div class="alert alert-primary mb-2" role="alert">
+                    <p>php artisan serve</p>
+                </div>
+                <p>To change the port address, run the following command:</p>
+                <div class="alert alert-primary mb-2" role="alert">
+                    <p>php artisan serve --port=8080 // For port 8080</p>
+                    <p>sudo php artisan serve --port=80 // If you want to run it on port 80, you probably need to sudo.</p>
+                </div>
+                <p><strong>Required Permissions</strong></p>
+                <p>If you are facing any issues regarding the permissions, then you need to run the following command in your project directory:</p>
+                <div class="alert alert-primary mb-2" role="alert">
+                    <p>sudo chmod -R o+rw bootstrap/cache</p>
+                    <p>sudo chmod -R o+rw storage</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/ Installation Steps -->
+
+<!-- Create New Page Steps -->
+<div class="card">
+    <div class="card-header">
+        <h4 id="create-new-page" class="card-title">Create New Page</h4>
+        <div class="heading-elements">
+            <ul class="list-inline mb-0">
+                <li><a data-action="collapse"><i class="feather icon-chevron-down"></i></a></li>
+                <li><a data-action="expand"><i class="feather icon-maximize"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="card-content collapse show" aria-expanded="true">
+        <div class="card-body">
+            <div class="card-text">
+                <p><strong>How to add a New Page:</strong></p>
+                <ul>
+                    <li>Create New View with <strong>blade.php</strong> extenstion.</li>
+                    <li>Create Controller for different methods related to page. (Optional. You can use default controller also.)</li>
+                    <li>Set Path in <strong>route.php</strong> file to serve the page on the browser.</li>
+                    <li>Add page link to <strong>resources -> json -> verticalMenu.json & horizontalMenu.json</strong> files to display menu item in sidebar/menu.</li>
+                    <li>Add page link to <strong>public -> data -> laravel-search-list.json</strong> file to display in navbar search option.</li>
+                </ul>
+                <h5>Steps to add a new page :</h5>
+                <hr>
+                <p class="mt-2"><strong>Step 1: </strong> Create a file with the <strong>extension .blade.php</strong> under the <strong>resources -> views -> pages </strong> directory. Let's create a testPage for an example with filename testPage.blade.php and placing the below code in that file.</p>
+                <pre class="language-html">
+                    <code class="language-html">
+                        @extends('layouts/contentLayoutMaster') // choose any one option {contentLayoutMaster/fullLayoutMaster}
+
+                        @section('title', 'Content Layout')  // change title accrodingly
+
+                        @section('content')
+                            &lt;div&gt;
+                                .....
+                            &lt;/div&gt;
+                        @endsection
+                    </code>
+                </pre>
+                <p class="mt-2"><strong>Step 2: </strong> To add new controller, use below command :</p>
+                <div class="alert alert-primary mb-2" role="alert">
+                    <p>php artisan make:controller {ControllerName} {-r}</p>
+                </div>
+                <p><strong>Add Configuration in controller as described <a href="#control-config">here</a>.</strong></p>
+                <p><strong>To add breadcrumbs :</strong></p>
+                <pre class="language-html">
+                    <code class="language-html">
+                    $breadcrumbs = [
+                        ['link'=>"/",'name'=>"Home"],['link'=>"/",'name'=>"Page"], ['name'=>"Content Layout"]
+                    ];
+
+                    return view('/pages/content-layout', [
+                        'breadcrumbs' => $breadcrumbs
+                    ]);
+                    </code>
+                </pre>
+                <p class="mt-2"><strong>Step 3: </strong> After creating file and controller you need to declare its route where it can be served on the browser, suppose you want created page to be serve on the route http://localhost:8080/testPage . To access this page define its routes in the <strong>resources -> web.php</strong> file.</p>
+                <pre class="language-html">
+                    <code class="language-html">
+                    Route::get('/testPage', function () {
+                        return view('pages/testPage');
+                    });
+                    </code>
+                </pre>
+                <p class="mt-2"><strong>Step 4: </strong> After defining the route, add page link to sidebar at <strong>resources -> json -> verticalMenu.json / horizontalMenu.json</strong> file.</p>
+                <p class="mt-1"><strong>Option 1:</strong> To add item in menu.</p>
+                <pre class="language-html">
+                    <code class="language-html">
+                    {"url":"/testPage", "name":"Test Page", "i18n":"Test Page", "icon":"feather icon-file-text"},
+                    </code>
+                </pre>
+                <p class="mt-1"><strong>Option 2:</strong> To add item as a sub menu item.</p>
+                <pre class="language-html">
+                    <code class="language-html">
+                    {"url":"#", "name":"Main menu", "i18n":"Main Menu", "icon":"feather icon-file-text",
+                        "submenu": [
+                            {"url":"submenu1", "name":"Submenu 1", "i18n":"Submenu1", "icon":"feather icon-circle"},
+                            {"url":"submenu2", "name":"Submenu 2", "i18n":"Submenu2", "icon":"feather icon-circle"}
+                        ]
+                    },
+                    </code>
+                </pre>
+                <p class="mt-2"><strong>Step 5: </strong> For page searching options in navbar search box, add page link in <strong>public -> data -> laravel-search-list.json</strong> file.</p>
+                <pre class="language-html">
+                    <code class="language-html">
+                    {"name":"Test Page", "url":"/testPage","icon":"feather icon-file-text"},
+                    </code>
+                </pre>
+                <p class="mt-2">After completing these above steps you need to run the command <code>npm run dev</code> or <code>npm run watch</code> command in the project directory. After running this process you need to run the command <code>php artisan serve</code> . It will serve your app on the localhost.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/ Create New Page Steps -->
+
+<!-- Configuration -->
+<div class="card">
+    <div class="card-header">
+        <h4 id="configuration" class="card-title">Configuration</h4>
+        <div class="heading-elements">
+            <ul class="list-inline mb-0">
+                <li><a data-action="collapse"><i class="feather icon-chevron-down"></i></a></li>
+                <li><a data-action="expand"><i class="feather icon-maximize"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="card-content collapse show" aria-expanded="true">
+        <div class="card-body">
+            <div class="card-text">
+                <p>To configuration Options in details:</p>
+                <div class="alert alert-primary mb-2" role="alert">
+                    <p>You can change configuration options from <strong>config -> custom.php</strong> file which can be effected for all pages in templates.
+                        <br>For Page Level Configuration you can change variable values in <strong>App -> Http -> Controller -> {Controller File}</strong> file. </p>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-striped mb-0">
+                        <thead>
+                            <tr>
+                                <th>Key</th>
+                                <th>Possible Options</th>
+                                <th>Details</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>theme</td>
+                                <td>light (default) / dark / semi dark</td>
+                                <td>This variable provides the options for theme layouts.</td>
+                            </tr>
+                            <tr>
+                                <td>sidebarCollapsed</td>
+                                <td>true / false (default)</td>
+                                <td>This variable provides the collapsible sidebar.</td>
+                            </tr>
+                            <tr>
+                                <td>navbarColor</td>
+                                <td>bg-{primary/info/success/danger/warning}</td>
+                                <td>This variable provides the navbar color options.</td>
+                            </tr>
+                            <tr>
+                                <td>menuType</td>
+                                <td>fixed (default), static</td>
+                                <td>This variable provides the menu layout options.</td>
+                            </tr>
+                            <tr>
+                                <td>navbarType</td>
+                                <td>floating (default), static, sticky, hidden</td>
+                                <td>This variable provides the navbar layout options.</td>
+                            </tr>
+                            <tr>
+                                <td>footerType</td>
+                                <td>static (default), sticky, hidden</td>
+                                <td>This variable provides the footer layout options.</td>
+                            </tr>
+                            <tr>
+                                <td>bodyClass</td>
+                                <td colspan="2"> Using this variable, you can add your own custom class to include in <code>&lt;body&gt;</code> tag.</td>
+                            </tr>
+                            <tr>
+                                <td>pageHeader</td>
+                                <td>true(default), false</td>
+                                <td>This option is used to show breadcrumb.</td>
+                            </tr>
+                            <tr>
+                                <td>contentLayout</td>
+                                <td>""(default), content-left-sidebar, content-right-sidebar, content-detached-left-sidebar, content-detached-right-sidebar</td>
+                                <td>Leave this option blank for default layout with sidebar.</td>
+                            </tr>
+                            <tr>
+                                <td>blankPage</td>
+                                <td>true, false(default)</td>
+                                <td>Pages that don't require to show header, footer, sidebar will be done by "blankPage" valur to "true". For example: Login, register, etc pages need this option value to be true on page level.</td>
+                            </tr>
+                            <tr>
+                                <td>mainLayoutType</td>
+                                <td>vertical(default), horizontal</td>
+                                <td>To switch vertical/horizontal layout. By defaul this will work with vertical layout.</td>
+                            </tr>
+                            <tr>
+                                <td>direction</td>
+                                <td>env('MIX_CONTENT_DIRECTION', 'ltr')(default), env('MIX_CONTENT_DIRECTION', 'rtl')</td>
+                                <td>To switch ltr/rtl direction of the layout. By defaul this will work with LTR layout.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p id="control-config" class="mt-2"><strong>Change for Page Level Configuration :</strong> <br>If you want to add Page level configuration for layout, you need to to set array for page configuration in <strong>app -> Http -> Controller -> {Controller file}</strong> and send it to your view.</p>
+                <pre class="language-html">
+                    <code class="language-html">
+                    public function {functionName}(){
+                        $pageConfigs = [
+                            'theme' => 'dark',
+                            'navbarColor' => 'bg-primary',
+                            'navbarType' => 'static',
+                            'footerType' => 'sticky',
+                            'bodyClass' => 'testClass'
+                        ];
+
+                        return view('/pages/testPage', [
+                            'pageConfigs' => $pageConfigs
+                        ]);
+                    }
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/ Configuration -->
+
+<!-- RTL -->
+<div class="card">
+    <div class="card-header">
+        <h4 id="rtl" class="card-title">RTL</h4>
+        <div class="heading-elements">
+            <ul class="list-inline mb-0">
+                <li><a data-action="collapse"><i class="feather icon-chevron-down"></i></a></li>
+                <li><a data-action="expand"><i class="feather icon-maximize"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="card-content collapse show" aria-expanded="true">
+        <div class="card-body">
+            <div class="card-text">
+                <p>To create RTL layout, Follow below steps then build the template.</p>
+                <h5>Step 1</h5>
+                <p>Change <strong>MIX_CONTENT_DIRECTION</strong> variable value from <code>ltr</code> to <code>rtl</code> in .env file</p>
+                <h5>Step 2</h5>
+                <p>Change configuration option from <strong>config -> custom.php</strong> file.</p>
+                <p>Update <strong>direction</strong> value from env('MIX_CONTENT_DIRECTION', 'ltr') to <code>env('MIX_CONTENT_DIRECTION', 'rtl')</code></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/ RTL -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ////////////////////////////////////////////////////////////////////////////-->
+
+
+    <footer class="footer footer-static footer-light">
+      <p class="clearfix blue-grey lighten-2 mb-0"><span class="float-md-left d-block d-md-inline-block">COPYRIGHT  &copy; 2019<a class="text-bold-800 grey darken-2" href="https://1.envato.market/pixinvent_portfolio" target="_blank">Pixinvent,</a>All rights Reserved</span><span class="float-md-right d-none d-md-block">Hand-crafted & Made with<i class="feather icon-heart pink"></i></span></p>
+    </footer>
+
+    <script src="../app-assets/vendors/js/vendors.min.js"></script>
+    <script src="../app-assets/js/core/app-menu.js"></script>
+    <script src="../app-assets/js/core/app.js"></script>
+    <script src="../app-assets/js/scripts/customizer.js"></script>
+    <script src="../app-assets/js/scripts/documentation.js" type="text/javascript"></script>
+    <script src="../app-assets/vendors/js/ui/prism.min.js" type="text/javascript"></script>
+    <script src="../app-assets/vendors/js/ui/prism-treeview.js" type="text/javascript"></script>
+    <script src="../app-assets/vendors/js/ui/affix.js" type="text/javascript"></script>
+  </body>
+</html>

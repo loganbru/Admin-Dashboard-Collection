@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
+    <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
+    <meta name="author" content="PIXINVENT">
+    <title>Drag &amp; Drop Documentation - Vuexy - Bootstrap HTML admin template</title>
+    <link rel="apple-touch-icon" sizes="60x60" href="../app-assets/images/ico/apple-icon-60.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../app-assets/images/ico/apple-icon-76.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../app-assets/images/ico/apple-icon-120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../app-assets/images/ico/apple-icon-152.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../app-assets/images/ico/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i%7COpen+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <!-- BEGIN VENDOR CSS-->
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/vendors.min.css">
+    <!-- END VENDOR CSS-->
+    <!-- BEGIN VUEXY CSS-->
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/colors.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/components.css">
+    <!-- BEGIN Page Level CSS-->
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/core/menu/menu-types/vertical-menu.css">
+    <!-- link(rel='stylesheet', type='text/css', href='../../../app-assets/css'+rtl+'/core/menu/menu-types/vertical-overlay-menu.css')-->
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/ui/prism.min.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/documentation.css">
+    <!-- END Page Level CSS-->
+    <!-- BEGIN Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <!-- END Custom CSS-->
+  </head>
+  <body class="vertical-layout vertical-menu-modern 2-columns  fixed-navbar" data-open="click" data-menu="vertical-menu-modern" data-col="2-columns">
+
+    <!-- fixed-top-->
+    <nav class="header-navbar navbar-expand-md navbar navbar-with-menu fixed-top navbar-light navbar-shadow">
+      <div class="navbar-wrapper">
+        <div class="navbar-container content float-right">
+          <div class="collapse navbar-collapse" id="navbar-mobile">
+            <ul class="nav navbar-nav">
+              <li class="nav-item"><a class="btn btn-link btn-doc-header" href="#"> V 4.1</a></li>
+              <li class="nav-item"><a class="btn btn-success btn-doc-header" href="https://pixinvent.ticksy.com" target="_blank"><i class="icon-help2"></i> Support</a></li>
+              <li class="nav-item"><a class="btn btn-warning btn-doc-header" href="https://1.envato.market/vuexy_admin"><i class="icon-bag3"></i> Purchase</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ////////////////////////////////////////////////////////////////////////////-->
+
+
+    <!-- main menu-->
+    <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
+      <div class="navbar-header">
+        <ul class="nav navbar-nav flex-row">
+          <li class="nav-item mr-auto"><a class="navbar-brand"><img class="brand-logo" alt="Vuexy admin logo" src="../app-assets/images/logo/logo.png"/>
+              <h2 class="brand-text">Vuexy</h2></a></li>
+          <li class="nav-item d-none d-xl-block nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="toggle-icon feather icon-disc font-medium-4 primary" data-ticon="icon-disc"></i></a></li>
+        </ul>
+      </div>
+      <div class="shadow-bottom"></div>
+      <!-- main menu content-->
+      <div class="main-menu-content">
+        <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+          <li class=" nav-item"><a href="index.html"><i class="feather icon-home"></i><span class="menu-title" data-i18n="">Vuexy Admin</span></a>
+          </li>
+          <li class=" nav-item"><a href="documentation-introduction.html"><i class="feather icon-align-justify"></i><span class="menu-title" data-i18n="">Introduction</span></a>
+          </li>
+          <li class=" nav-item"><a href="documentation-folder-structure.html"><i class="feather icon-folder"></i><span class="menu-title" data-i18n="">Folder Structure</span></a>
+          </li>
+          <li class=" nav-item"><a href="documentation-gulp.html"><i class="feather icon-settings"></i><span class="menu-title" data-i18n="">Gulp Building Tools</span></a>
+          </li>
+          <li class=" nav-item"><a href="documentation-styles-customization.html"><i class="feather icon-check-square"></i><span class="menu-title" data-i18n="">Styles Customization</span></a>
+          </li>
+          <li class=" nav-item"><a href="documentation-javascript-usage.html"><i class="feather icon-file"></i><span class="menu-title" data-i18n="">JavaScript Usage</span></a>
+          </li>
+          <li class=" nav-item"><a href="documentation-html-structure.html"><i class="feather icon-code"></i><span class="menu-title" data-i18n="">HTML Structure</span></a>
+          </li>
+          <li class=" nav-item"><a href="documentation-laravel.html"><i class="feather icon-edit"></i><span class="menu-title" data-i18n="">Laravel Integration</span></a>
+          </li>
+          <li class=" nav-item"><a href="documentation-template-customization.html"><i class="feather icon-settings"></i><span class="menu-title" data-i18n="">Template Customization</span></a>
+          </li>
+          <li class=" nav-item"><a href="documentation-apps.html"><i class="feather icon-server"></i><span class="menu-title" data-i18n="">Apps</span></a>
+          </li>
+          <li class=" nav-item"><a href="#"><i class="feather icon-layout"></i><span class="menu-title" data-i18n="">Layouts</span></a>
+            <ul class="menu-content">
+              <li><a class="menu-item" href="documentation-1-column.html">1 Column</a>
+              </li>
+              <li><a class="menu-item" href="documentation-2-columns.html">2 Column</a>
+              </li>
+              <li><a class="menu-item" href="documentation-content-left-sidebar.html">Content Left Sidebar</a>
+              </li>
+              <li><a class="menu-item" href="documentation-content-right-sidebar.html">Content Right Sidebar</a>
+              </li>
+              <li><a class="menu-item" href="documentation-content-detached-left-sidebar.html">Content Detached Left Sidebar</a>
+              </li>
+              <li><a class="menu-item" href="documentation-content-detached-right-sidebar.html">Content Detached Right Sidebar</a>
+              </li>
+            </ul>
+          </li>
+          <li class=" nav-item"><a href="documentation-starter-kit.html"><i class="feather icon-zap"></i><span class="menu-title" data-i18n="">Starter Kit</span></a>
+          </li>
+          <li class=" nav-item"><a href="#"><i class="feather icon-grid"></i><span class="menu-title" data-i18n="">UI</span></a>
+            <ul class="menu-content">
+              <li><a class="menu-item" href="documentation-card.html">Cards</a>
+              </li>
+              <li><a class="menu-item" href="documentation-colors.html">Colors</a>
+              </li>
+              <li><a class="menu-item" href="documentation-icons.html">Icons</a>
+              </li>
+              <li><a class="menu-item" href="documentation-data-view.html">Data View</a>
+              </li>
+            </ul>
+          </li>
+          <li class=" nav-item"><a href="#"><i class="feather icon-box"></i><span class="menu-title" data-i18n="">Components</span></a>
+            <ul class="menu-content">
+              <li><a class="menu-item" href="documentation-components.html">Components</a>
+              </li>
+              <li><a class="menu-item" href="documentation-extra-components.html">Extra Components</a>
+              </li>
+            </ul>
+          </li>
+          <li class=" nav-item"><a href="#"><i class="feather icon-copy"></i><span class="menu-title" data-i18n="">Forms</span></a>
+            <ul class="menu-content">
+              <li><a class="menu-item" href="documentation-form-elements.html">Form Elements</a>
+              </li>
+              <li><a class="menu-item" href="documentation-form-layouts.html">Form Layouts</a>
+              </li>
+              <li><a class="menu-item" href="documentation-form-wizard.html">Form Wizard</a>
+              </li>
+              <li><a class="menu-item" href="documentation-form-validation.html">Form Validation</a>
+              </li>
+            </ul>
+          </li>
+          <li class=" nav-item"><a href="#"><i class="feather icon-server"></i><span class="menu-title" data-i18n="">Tables</span></a>
+            <ul class="menu-content">
+              <li><a class="menu-item" href="documentation-bootstrap-tables.html">Tables</a>
+              </li>
+              <li><a class="menu-item" href="documentation-datatables.html">Data Tables</a>
+              </li>
+              <li><a class="menu-item" href="documentation-aggrid.html">AgGrid</a>
+              </li>
+            </ul>
+          </li>
+          <li class=" nav-item"><a href="#.html"><i class="feather icon-pie-chart"></i><span class="menu-title" data-i18n="">Charts</span></a>
+            <ul class="menu-content">
+              <li><a class="menu-item" href="documentation-charts-apex.html">Apex Chart</a>
+              </li>
+              <li><a class="menu-item" href="documentation-charts-chartjs.html">Chart JS</a>
+              </li>
+              <li><a class="menu-item" href="documentation-charts-echart.html">Echarts</a>
+              </li>
+            </ul>
+          </li>
+          <li class=" nav-item"><a href="documentation-maps.html"><i class="feather icon-map"></i><span class="menu-title" data-i18n="">Maps</span></a>
+          </li>
+          <li class=" nav-item"><a href="documentation-extensions.html"><i class="feather icon-edit"></i><span class="menu-title" data-i18n="">Extensions</span></a>
+          </li>
+          <li class=" nav-item"><a href="#"><i class="feather icon-layers"></i><span class="menu-title" data-i18n="">Other</span></a>
+            <ul class="menu-content">
+              <li><a class="menu-item" href="documentation-sources-credits.html">Sources &amp; Credits</a>
+              </li>
+              <li><a class="menu-item" href="documentation-changelog.html">Changelog</a>
+              </li>
+              <li><a class="menu-item" href="documentation-notes.html">Notes</a>
+              </li>
+              <li><a class="menu-item" href="https://pixinvent.ticksy.com/">Support</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- /main menu content-->
+      <!-- main menu footer-->
+      <!-- main menu footer-->
+    </div>
+    <!-- / main menu-->
+
+    <div class="app-content content">
+      <div class="content-wrapper">
+        <div class="content-header row">
+          <div class="content-header-left col-12 mb-2">
+            <div class="row breadcrumbs-top">
+              <div class="col-12">
+                <h2 class="content-header-title float-left mb-0">Drag &amp; Drop Documentation</h2>
+                <div class="breadcrumb-wrapper">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a>
+                    </li>
+                    <li class="breadcrumb-item active">Drag &amp; Drop Documentation
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-body"><!-- Drag & Drop -->
+<div class="card">
+    <div class="card-header">
+        <h4 id="basic-forms" class="card-title">Drag & Drop</h4>
+        <div class="heading-elements">
+            <ul class="list-inline mb-0">
+                <li><a data-action="collapse"><i class="feather icon-chevron-down"></i></a></li>
+                <li><a data-action="expand"><i class="feather icon-maximize"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="card-content collapse show" aria-expanded="true">
+        <div class="card-body">
+            <p class="card-text">Have you ever wanted a drag and drop library that just works? That doesn't just depend on bloated frameworks, that has great support? That actually understands where to place the elements when they are dropped? That doesn't need you to do a zillion things to get it to work? Dragula is the answer.</p>
+
+            <p class="card-text">By default, dragula will allow the user to drag an element in any of the containers and drop it in any other container in the list. If the element is dropped anywhere that's not one of the containers, the event will be gracefully cancelled according to the revertOnSpill and removeOnSpill options.</p>
+
+            <p class="card-text">Note that dragging is only triggered on left clicks, and only if no meta keys are pressed.</p>
+
+            <h6>1. Initialize the plugin by referencing the necessary files:</h6>
+            <pre class="language-markup">
+                <code class="language-markup">
+                    &lt;script src="/path/to/dragula.js"&gt;&lt;/script&gt;
+                    &lt;link rel="stylesheet" type="text/css" href="/path/to/dragula.css"&gt;
+                </code>
+            </pre>
+
+            <h6>2. Allows the user to drag elements from <code>left</code> into <code>right</code>, and from <code>right</code> into <code>left</code>.</h6>
+            <pre class="language-javascript">
+                <code class="language-javascript">
+                    dragula([document.querySelector('#left'), document.querySelector('#right')]);
+                </code>
+            </pre>
+
+            <h6>3. You can also provide an options object. Here's an overview of the default values.</h6>
+            <pre class="language-javascript">
+                <code class="language-javascript">
+                    dragula(containers, {
+                        isContainer: function (el) {
+                        return false; // only elements in drake.containers will be taken into account
+                        },
+                        moves: function (el, source, handle, sibling) {
+                        return true; // elements are always draggable by default
+                        },
+                        accepts: function (el, target, source, sibling) {
+                        return true; // elements can be dropped in any of the `containers` by default
+                        },
+                        invalid: function (el, handle) {
+                        return false; // don't prevent any drags from initiating by default
+                        },
+                        direction: 'vertical',             // Y axis is considered when determining where an element would be dropped
+                        copy: false,                       // elements are moved by default, not copied
+                        copySortSource: false,             // elements in copy-source containers can be reordered
+                        revertOnSpill: false,              // spilling will put the element back where it was dragged from, if this is true
+                        removeOnSpill: false,              // spilling will `.remove` the element, if this is true
+                        mirrorContainer: document.body,    // set the element that gets mirror elements appended
+                        ignoreInputTextSelection: true     // allows users to select input text, see details below
+                    });
+                </code>
+            </pre>
+
+            <h6>4. You can omit the <code>containers</code> argument and add containers dynamically later on.</h6>
+            <pre class="language-javascript">
+                <code class="language-javascript">
+                    var drake = dragula({
+                        copy: true
+                    });
+                    drake.containers.push(container);
+                </code>
+            </pre>
+
+            <h6>5. You can also set the containers from the options object.</h6>
+            <pre class="language-javascript">
+                <code class="language-javascript">
+                    var drake = dragula({ containers: containers });
+                </code>
+            </pre>
+
+            <h6>6. You could also not set any arguments, which defaults to a drake without containers and with the default options.</h6>
+            <pre class="language-javascript">
+                <code class="language-javascript">
+                    var drake = dragula();
+                </code>
+            </pre>
+        </div>
+
+        <div class="card-body">
+            <p><strong>Refer following links for usage:</strong></p>
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>URL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Plugin Link</strong></td>
+                        <td><a href="https://bevacqua.github.io/dragula/" target="_blank">https://bevacqua.github.io/dragula/</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Github Page</strong></td>
+                        <td><a href="https://github.com/bevacqua/dragula" target="_blank">https://github.com/bevacqua/dragula</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Template Page</strong></td>
+                        <td><a href="https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/add-on-drag-drop.html" target="_blank">https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/add-on-drag-drop.html</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<!--/ Drag & Drop -->
+
+        </div>
+      </div>
+    </div>
+    <!-- ////////////////////////////////////////////////////////////////////////////-->
+
+
+    <footer class="footer footer-static footer-light">
+      <p class="clearfix blue-grey lighten-2 mb-0"><span class="float-md-left d-block d-md-inline-block">COPYRIGHT  &copy; 2019<a class="text-bold-800 grey darken-2" href="https://1.envato.market/pixinvent_portfolio" target="_blank">Pixinvent,</a>All rights Reserved</span><span class="float-md-right d-none d-md-block">Hand-crafted & Made with<i class="feather icon-heart pink"></i></span></p>
+    </footer>
+
+    <script src="../app-assets/vendors/js/vendors.min.js"></script>
+    <script src="../app-assets/js/core/app-menu.js"></script>
+    <script src="../app-assets/js/core/app.js"></script>
+    <script src="../app-assets/js/scripts/customizer.js"></script>
+    <script src="../app-assets/js/scripts/documentation.js" type="text/javascript"></script>
+    <script src="../app-assets/vendors/js/ui/prism.min.js" type="text/javascript"></script>
+    <script src="../app-assets/vendors/js/ui/affix.js" type="text/javascript"></script>
+  </body>
+</html>

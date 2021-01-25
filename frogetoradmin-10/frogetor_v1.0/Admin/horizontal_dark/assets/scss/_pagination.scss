@@ -1,0 +1,67 @@
+//
+// Pagination
+// 
+.pagination{
+  .page-link {
+    color: $gray-400;
+    background-color: lighten($bg-card, 8%);
+    border: 1px solid lighten($bg-card, 12%);
+  }
+  .page-item.active .page-link {
+    background-color: $primary;
+    border-color: $primary;
+    color: $white
+  }
+  .page-link:focus, .page-link:hover {
+    color: $dark;
+    background-color: lighten($bg-card, 12%);
+    box-shadow: 0 0 0 0.2rem rgba($primary, 0.33);
+  
+  }
+  .form-control{
+    border-color: transparent;
+    font-size: 12px;
+    padding: 0;
+    height: calc(16px + 1px);
+    background-color: transparent;
+    &:focus
+    {
+      border-color: transparent;
+      background-color: transparent;
+      box-shadow: none;
+    }
+  }
+}
+.page-item.disabled .page-link {
+  color: $gray-200;
+  background-color: lighten($bg-card, 3%);
+  border-color: lighten($bg-card, 12%);
+}
+.custom-pagination .page-link{
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding-left: 14px;
+  line-height: 20px;
+}
+.custom-pagination-2{
+ .page-item{
+   a{
+    background-color: $gray-200;
+    border-color: $gray-300;
+  }
+ }
+  .page-item:first-child{
+    .page-link {
+      margin-left: 0;
+      border-top-left-radius: 40px;
+      border-bottom-left-radius: 40px;
+    }
+  }
+  .page-item:last-child {
+    .page-link {
+      border-top-right-radius: 40px;
+      border-bottom-right-radius: 40px;
+    }
+  }
+}

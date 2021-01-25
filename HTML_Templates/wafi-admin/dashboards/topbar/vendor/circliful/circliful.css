@@ -1,0 +1,58 @@
+@font-face {
+  font-family: 'icomoon';
+	src:  url('../../fonts/icomoonf33b.eot?7qthrd');
+	src:  url('../../fonts/icomoonf33b.eot?7qthrd#iefix') format('embedded-opentype'),
+		url('../../fonts/icomoonf33b.ttf?7qthrd') format('truetype'),
+		url('../../fonts/icomoonf33b.woff?7qthrd') format('woff'),
+		url('../../fonts/icomoonf33b.svg?7qthrd#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.circliful .outer {
+	fill: transparent;
+	stroke: #333;	
+	stroke-width: 19.8;
+	stroke-dasharray: 534;
+	transition: stroke-dashoffset 1s;
+	-webkit-animation-play-state: running;
+	/* firefox bug fix - won't rotate at 90deg angles */
+	-moz-transform: rotate(-89deg) translateX(-190px);
+}
+
+/* full circle 25 empty 534 */
+.circliful .inner {
+	fill: transparent;
+	stroke: orange;
+	stroke-width: 20;
+	stroke-dasharray: 534;
+	transition: stroke-dashoffset 1s;
+	-webkit-animation-play-state: running;
+	/* firefox bug fix - won't rotate at 90deg angles */
+	-moz-transform: rotate(-89deg) translateX(-190px);
+	stroke-dashoffset: 0;
+}
+
+
+/*Commented by srinu - its adding scrollbar in IE*/
+/*.circliful {
+	overflow: visible !important;	
+}*/
+
+.svg-container {
+	width: 85%;
+	max-width: 85%;
+	margin: 0 auto;
+	overflow: visible;
+}
+.traffic-source .svg-container {
+	width: 85px;
+} 
+
+svg .icon {
+	font-family: 'icomoon';
+}
+
+.timer {
+	font-size: 1rem !important;
+}

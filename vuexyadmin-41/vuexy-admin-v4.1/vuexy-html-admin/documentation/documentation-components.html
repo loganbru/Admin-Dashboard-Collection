@@ -1,0 +1,1785 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
+    <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
+    <meta name="author" content="PIXINVENT">
+    <title>Component Documetation - Vuexy - Bootstrap HTML admin template</title>
+    <link rel="apple-touch-icon" sizes="60x60" href="../app-assets/images/ico/apple-icon-60.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../app-assets/images/ico/apple-icon-76.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../app-assets/images/ico/apple-icon-120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../app-assets/images/ico/apple-icon-152.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../app-assets/images/ico/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i%7COpen+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <!-- BEGIN VENDOR CSS-->
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/vendors.min.css">
+    <!-- END VENDOR CSS-->
+    <!-- BEGIN VUEXY CSS-->
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/colors.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/components.css">
+    <!-- BEGIN Page Level CSS-->
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/core/menu/menu-types/vertical-menu.css">
+    <!-- link(rel='stylesheet', type='text/css', href='../../../app-assets/css'+rtl+'/core/menu/menu-types/vertical-overlay-menu.css')-->
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/ui/prism.min.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/documentation.css">
+    <!-- END Page Level CSS-->
+    <!-- BEGIN Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <!-- END Custom CSS-->
+  </head>
+  <body class="vertical-layout vertical-menu-modern content-right-sidebar  fixed-navbar" data-open="click" data-menu="vertical-menu-modern" data-col="content-right-sidebar">
+
+    <!-- fixed-top-->
+    <nav class="header-navbar navbar-expand-md navbar navbar-with-menu fixed-top navbar-light navbar-shadow">
+      <div class="navbar-wrapper">
+        <div class="navbar-container content float-right">
+          <div class="collapse navbar-collapse" id="navbar-mobile">
+            <ul class="nav navbar-nav">
+              <li class="nav-item"><a class="btn btn-link btn-doc-header" href="#"> V 4.1</a></li>
+              <li class="nav-item"><a class="btn btn-success btn-doc-header" href="https://pixinvent.ticksy.com" target="_blank"><i class="icon-help2"></i> Support</a></li>
+              <li class="nav-item"><a class="btn btn-warning btn-doc-header" href="https://1.envato.market/vuexy_admin"><i class="icon-bag3"></i> Purchase</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ////////////////////////////////////////////////////////////////////////////-->
+
+
+    <!-- main menu-->
+    <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
+      <div class="navbar-header">
+        <ul class="nav navbar-nav flex-row">
+          <li class="nav-item mr-auto"><a class="navbar-brand"><img class="brand-logo" alt="Vuexy admin logo" src="../app-assets/images/logo/logo.png"/>
+              <h2 class="brand-text">Vuexy</h2></a></li>
+          <li class="nav-item d-none d-xl-block nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="toggle-icon feather icon-disc font-medium-4 primary" data-ticon="icon-disc"></i></a></li>
+        </ul>
+      </div>
+      <div class="shadow-bottom"></div>
+      <!-- main menu content-->
+      <div class="main-menu-content">
+        <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+          <li class=" nav-item"><a href="index.html"><i class="feather icon-home"></i><span class="menu-title" data-i18n="">Vuexy Admin</span></a>
+          </li>
+          <li class=" nav-item"><a href="documentation-introduction.html"><i class="feather icon-align-justify"></i><span class="menu-title" data-i18n="">Introduction</span></a>
+          </li>
+          <li class=" nav-item"><a href="documentation-folder-structure.html"><i class="feather icon-folder"></i><span class="menu-title" data-i18n="">Folder Structure</span></a>
+          </li>
+          <li class=" nav-item"><a href="documentation-gulp.html"><i class="feather icon-settings"></i><span class="menu-title" data-i18n="">Gulp Building Tools</span></a>
+          </li>
+          <li class=" nav-item"><a href="documentation-styles-customization.html"><i class="feather icon-check-square"></i><span class="menu-title" data-i18n="">Styles Customization</span></a>
+          </li>
+          <li class=" nav-item"><a href="documentation-javascript-usage.html"><i class="feather icon-file"></i><span class="menu-title" data-i18n="">JavaScript Usage</span></a>
+          </li>
+          <li class=" nav-item"><a href="documentation-html-structure.html"><i class="feather icon-code"></i><span class="menu-title" data-i18n="">HTML Structure</span></a>
+          </li>
+          <li class=" nav-item"><a href="documentation-laravel.html"><i class="feather icon-edit"></i><span class="menu-title" data-i18n="">Laravel Integration</span></a>
+          </li>
+          <li class=" nav-item"><a href="documentation-template-customization.html"><i class="feather icon-settings"></i><span class="menu-title" data-i18n="">Template Customization</span></a>
+          </li>
+          <li class=" nav-item"><a href="documentation-apps.html"><i class="feather icon-server"></i><span class="menu-title" data-i18n="">Apps</span></a>
+          </li>
+          <li class=" nav-item"><a href="#"><i class="feather icon-layout"></i><span class="menu-title" data-i18n="">Layouts</span></a>
+            <ul class="menu-content">
+              <li><a class="menu-item" href="documentation-1-column.html">1 Column</a>
+              </li>
+              <li><a class="menu-item" href="documentation-2-columns.html">2 Column</a>
+              </li>
+              <li><a class="menu-item" href="documentation-content-left-sidebar.html">Content Left Sidebar</a>
+              </li>
+              <li><a class="menu-item" href="documentation-content-right-sidebar.html">Content Right Sidebar</a>
+              </li>
+              <li><a class="menu-item" href="documentation-content-detached-left-sidebar.html">Content Detached Left Sidebar</a>
+              </li>
+              <li><a class="menu-item" href="documentation-content-detached-right-sidebar.html">Content Detached Right Sidebar</a>
+              </li>
+            </ul>
+          </li>
+          <li class=" nav-item"><a href="documentation-starter-kit.html"><i class="feather icon-zap"></i><span class="menu-title" data-i18n="">Starter Kit</span></a>
+          </li>
+          <li class=" nav-item"><a href="#"><i class="feather icon-grid"></i><span class="menu-title" data-i18n="">UI</span></a>
+            <ul class="menu-content">
+              <li><a class="menu-item" href="documentation-card.html">Cards</a>
+              </li>
+              <li><a class="menu-item" href="documentation-colors.html">Colors</a>
+              </li>
+              <li><a class="menu-item" href="documentation-icons.html">Icons</a>
+              </li>
+              <li><a class="menu-item" href="documentation-data-view.html">Data View</a>
+              </li>
+            </ul>
+          </li>
+          <li class=" nav-item"><a href="#"><i class="feather icon-box"></i><span class="menu-title" data-i18n="">Components</span></a>
+            <ul class="menu-content">
+              <li class="active"><a class="menu-item" href="documentation-components.html">Components</a>
+              </li>
+              <li><a class="menu-item" href="documentation-extra-components.html">Extra Components</a>
+              </li>
+            </ul>
+          </li>
+          <li class=" nav-item"><a href="#"><i class="feather icon-copy"></i><span class="menu-title" data-i18n="">Forms</span></a>
+            <ul class="menu-content">
+              <li><a class="menu-item" href="documentation-form-elements.html">Form Elements</a>
+              </li>
+              <li><a class="menu-item" href="documentation-form-layouts.html">Form Layouts</a>
+              </li>
+              <li><a class="menu-item" href="documentation-form-wizard.html">Form Wizard</a>
+              </li>
+              <li><a class="menu-item" href="documentation-form-validation.html">Form Validation</a>
+              </li>
+            </ul>
+          </li>
+          <li class=" nav-item"><a href="#"><i class="feather icon-server"></i><span class="menu-title" data-i18n="">Tables</span></a>
+            <ul class="menu-content">
+              <li><a class="menu-item" href="documentation-bootstrap-tables.html">Tables</a>
+              </li>
+              <li><a class="menu-item" href="documentation-datatables.html">Data Tables</a>
+              </li>
+              <li><a class="menu-item" href="documentation-aggrid.html">AgGrid</a>
+              </li>
+            </ul>
+          </li>
+          <li class=" nav-item"><a href="#.html"><i class="feather icon-pie-chart"></i><span class="menu-title" data-i18n="">Charts</span></a>
+            <ul class="menu-content">
+              <li><a class="menu-item" href="documentation-charts-apex.html">Apex Chart</a>
+              </li>
+              <li><a class="menu-item" href="documentation-charts-chartjs.html">Chart JS</a>
+              </li>
+              <li><a class="menu-item" href="documentation-charts-echart.html">Echarts</a>
+              </li>
+            </ul>
+          </li>
+          <li class=" nav-item"><a href="documentation-maps.html"><i class="feather icon-map"></i><span class="menu-title" data-i18n="">Maps</span></a>
+          </li>
+          <li class=" nav-item"><a href="documentation-extensions.html"><i class="feather icon-edit"></i><span class="menu-title" data-i18n="">Extensions</span></a>
+          </li>
+          <li class=" nav-item"><a href="#"><i class="feather icon-layers"></i><span class="menu-title" data-i18n="">Other</span></a>
+            <ul class="menu-content">
+              <li><a class="menu-item" href="documentation-sources-credits.html">Sources &amp; Credits</a>
+              </li>
+              <li><a class="menu-item" href="documentation-changelog.html">Changelog</a>
+              </li>
+              <li><a class="menu-item" href="documentation-notes.html">Notes</a>
+              </li>
+              <li><a class="menu-item" href="https://pixinvent.ticksy.com/">Support</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- /main menu content-->
+      <!-- main menu footer-->
+      <!-- main menu footer-->
+    </div>
+    <!-- / main menu-->
+
+    <div class="app-content content">
+      <div class="sidebar-right sidebar-sticky">
+        <div class="sidebar"><div class="pt-2 pr-2">
+  <div class="sidebar-content component-sidebar p-1" data-spy="affix" data-offset-top="-77">
+    <div class="card">
+      <div class="card-header">
+        <h6 class="card-title">Components Navigation</h6>
+      </div>
+      <div class="card-content" aria-expanded="true">
+        <div class="card-body">
+          <nav id="sidebar-page-navigation">
+            <ul id="page-navigation-list" class="nav">
+              <li class="nav-item"><a class="nav-link active" href="#alert">Alert</a></li>
+              <li class="nav-item"><a class="nav-link" href="#buttons">Buttons</a>
+              <li class="nav-item"><a class="nav-link" href="#breadcrumbs">Breadcrumbs</a>
+              <li class="nav-item"><a class="nav-link" href="#carousel">Carousel</a></li>
+              <li class="nav-item"><a class="nav-link" href="#collapse">Collapse</a></li>
+              <li class="nav-item"><a class="nav-link" href="#dropdown">Dropdown</a></li>
+              <li class="nav-item"><a class="nav-link" href="#listgroup">List Group</a></li>
+              <li class="nav-item"><a class="nav-link" href="#modal">Modal</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pagination">Pagination</a></li>
+              <li class="nav-item"><a class="nav-link" href="#navs">Navs</a></li>
+              <li class="nav-item"><a class="nav-link" href="#tabs">Tabs</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pills">Pills</a></li>
+              <li class="nav-item"><a class="nav-link" href="#tooltips">Tooltips</a></li>
+              <li class="nav-item"><a class="nav-link" href="#popovers">Popovers</a></li>
+              <li class="nav-item"><a class="nav-link" href="#badges">Badges</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pill-badges">Pill badges</a></li>
+              <li class="nav-item"><a class="nav-link" href="#progress">Progress</a></li>
+              <li class="nav-item"><a class="nav-link" href="#media-object">Media Object</a></li>
+              <li class="nav-item"><a class="nav-link" href="#spinners">Spinners</a></li>
+              <li class="nav-item"><a class="nav-link" href="#toast">Toasts</a></li>
+            </ul>
+          </nav>
+        </div>
+        <h6 class="border-top-grey border-top-lighten-2 p-1 mt-1 mb-0">
+          <a class="nav-link display-block text-muted" href="#top">Back to top
+            <i class="float-right fa fa-arrow-circle-o-up font-medium-3"></i>
+          </a>
+        </h6>
+      </div>
+    </div>
+  </div>
+</div>
+
+        </div>
+      </div>
+      <div class="content-detached content-left">
+        <div class="content-wrapper">
+          <div class="content-header row">
+            <div class="content-header-left col-12 mb-2">
+              <div class="row breadcrumbs-top">
+                <div class="col-12">
+                  <h2 class="content-header-title float-left mb-0">Component Documetation</h2>
+                  <div class="breadcrumb-wrapper">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="index.html">Home</a>
+                      </li>
+                      <li class="breadcrumb-item active">Component Documetation
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content-body"><!-- Alert -->
+<div class="card">
+  <div class="card-header">
+    <h4 id="alert" class="card-title">Alert</h4>
+    <div class="heading-elements">
+      <ul class="list-inline mb-0">
+        <li><a data-action="collapse"><i class="feather icon-chevron-down"></i></a></li>
+        <li><a data-action="expand"><i class="feather icon-maximize"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="card-content collapse show" aria-expanded="true">
+    <div class="card-body">
+      <div class="card-text">
+        <p>Provide contextual feedback messages for typical user actions with the handful of available and flexible
+          alert messages.</p>
+      </div>
+      <h6 class="text-semibold">Start using alerts with no worries!</h6>
+      <p class="content-group">Check below table to use alerts with different types and designs.</p>
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Alert Type</th>
+            <th>Class</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Default alert</strong></td>
+            <td><code>.alert.alert-*</code></td>
+            <td>Use any template color from <a href="documentation-colors.html">COLOR PALETTE</a> that you like to add
+              for alert.</td>
+          </tr>
+          <tr>
+            <td><strong>Alert Title</strong></td>
+            <td><code>.alert-heading</code></td>
+            <td>add this class inside of alert to create alert with title.</td>
+          </tr>
+          <tr>
+            <td><strong>Dismissible Alerts</strong></td>
+            <td><code>.alert-dismissible</code></td>
+            <td>Adds extra padding to the right of the alert and positions the .close button. You can use the
+              data-dismiss="alert" attribute also.</td>
+          </tr>
+          <tr>
+            <td><strong>Alerts with icons</strong></td>
+            <td>N/A</td>
+            <td>Just add icon before your alert text to create a alert with icon.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><strong>Referrals :</strong></p>
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>URL</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Bootstrap Link</strong></td>
+            <td><a href="https://getbootstrap.com/docs/4.3/components/alerts/"
+                target="_blank">https://getbootstrap.com/docs/4.3/components/alerts/</a></td>
+          </tr>
+          <tr>
+            <td><strong>Template Page</strong></td>
+            <td><a
+                href="https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/component-alerts.html"
+                target="_blank">https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/component-alerts.html</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<!--/ Alert -->
+<!-- Buttons -->
+<div class="card">
+  <div class="card-header">
+    <h4 id="buttons" class="card-title">Buttons</h4>
+    <div class="heading-elements">
+      <ul class="list-inline mb-0">
+        <li><a data-action="collapse"><i class="feather icon-chevron-down"></i></a></li>
+        <li><a data-action="expand"><i class="feather icon-maximize"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="card-content collapse show" aria-expanded="true">
+    <div class="card-body">
+      <p class="content-group">Buttons include support for a handful of contextual variations, sizes, states, and more.
+        Group a series of buttons together on a single line with the button group.</p>
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Buttons options</th>
+            <th>Class</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Basic button</strong></td>
+            <td><code>.btn.btn-*</code></td>
+            <td>Use any template color from <a href="documentation-colors.html">COLOR PALETTE</a> that you like
+              to use for button.</td>
+          </tr>
+          <tr>
+            <td><strong>Outline button</strong></td>
+            <td><code>.btn-outline-*</code></td>
+            <td>For outline buttons.</td>
+          </tr>
+          <tr>
+            <td><strong>Flat button</strong></td>
+            <td><code>.btn-flat-*</code></td>
+            <td>For flat buttons.</td>
+          </tr>
+          <tr>
+            <td><strong>Gradient button</strong></td>
+            <td><code>.btn-flat-*</code></td>
+            <td>For gradient buttons.</td>
+          </tr>
+          <tr>
+            <td><strong>Relief button</strong></td>
+            <td><code>.btn-relief-*</code></td>
+            <td>For relief buttons.</td>
+          </tr>
+          <tr>
+            <td><strong>Square button</strong></td>
+            <td><code>.btn-square</code></td>
+            <td>For square button.</td>
+          </tr>
+          <tr>
+            <td><strong>Round button</strong></td>
+            <td><code>.btn-round</code></td>
+            <td>For round button.</td>
+          </tr>
+          <tr>
+            <td><strong>Text color</strong></td>
+            <td><code>.text-*</code></td>
+            <td>For button text color.</td>
+          </tr>
+          <tr>
+            <td><strong>Button with icon</strong></td>
+            <td>N/A</td>
+            <td>Just add icon before your button text for button with icons.</td>
+          </tr>
+          <tr>
+            <td><strong>Button with icon only</strong></td>
+            <td><code>.btn-icon</code></td>
+            <td>Adds icon to button <br>
+              <strong>Note:</strong> you can only use <code>.btn-icon</code> when you want icon without text in your
+              button
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Button group</strong></td>
+            <td><code>.btn-group</code></td>
+            <td>Group a series of buttons together on a single line with the button group.</td>
+          </tr>
+          <tr>
+            <td><strong>Button Size</strong></td>
+            <td><code>.btn{lg | sm}</code></td>
+            <td>For fancy larger or smaller buttons size.</td>
+          </tr>
+          <tr>
+            <td><strong>Button block</strong></td>
+            <td><code>.btn-block</code></td>
+            <td>Create block level buttons—those that span the full width of a parent.</td>
+          </tr>
+          <tr>
+            <td><strong>Vertical button group</strong></td>
+            <td><code>.btn-group-vertical</code></td>
+            <td>To create vertical button group.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><strong>Referrals :</strong></p>
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>URL</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Bootstrap Buttons</strong></td>
+            <td><a href="https://getbootstrap.com/docs/4.3/components/buttons/"
+                target="_blank">https://getbootstrap.com/docs/4.3/components/buttons/</a></td>
+          </tr>
+          <tr>
+            <td><strong>Button Groups</strong></td>
+            <td><a href="https://getbootstrap.com/docs/4.3/components/button-group/"
+                target="_blank">https://getbootstrap.com/docs/4.3/components/button-group/</a></td>
+          </tr>
+          <tr>
+            <td><strong>Template Page</strong></td>
+            <td><a
+                href="https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/component-buttons-basic.html"
+                target="_blank">https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/component-buttons-basic.html</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<!--/ Buttons -->
+<!-- Breadcrumbs -->
+<div class="card">
+  <div class="card-header">
+    <h4 id="breadcrumbs" class="card-title">Breadcrumbs</h4>
+    <div class="heading-elements">
+      <ul class="list-inline mb-0">
+        <li><a data-action="collapse"><i class="feather icon-chevron-down"></i></a></li>
+        <li><a data-action="expand"><i class="feather icon-maximize"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="card-content collapse show" aria-expanded="true">
+    <div class="card-body">
+      <p>
+        Indicate the current page’s location within a navigational hierarchy that automatically adds separators via CSS.
+      </p>
+      <p>
+        Separators are automatically added in CSS through ::before and content. They can be changed by changing
+        <code>$breadcrumb-divider</code>. The quote function is needed to generate the quotes around a string, so if you
+        want > as
+        separator, you can use this
+      </p>
+      <pre class="language-html">
+        <code class="language-html">
+&lt;nav aria-label=&quot;breadcrumb&quot;&gt;
+  &lt;ol class=&quot;breadcrumb&quot;&gt;
+    &lt;li class=&quot;breadcrumb-item active&quot; aria-current=&quot;page&quot;&gt;Home&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/nav&gt;
+
+&lt;nav aria-label=&quot;breadcrumb&quot;&gt;
+  &lt;ol class=&quot;breadcrumb&quot;&gt;
+    &lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;breadcrumb-item active&quot; aria-current=&quot;page&quot;&gt;Library&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/nav&gt;
+
+&lt;nav aria-label=&quot;breadcrumb&quot;&gt;
+  &lt;ol class=&quot;breadcrumb&quot;&gt;
+    &lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Library&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;breadcrumb-item active&quot; aria-current=&quot;page&quot;&gt;Data&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/nav&gt;
+        </code>
+      </pre>
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>URL</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Bootstrap Page</strong></td>
+            <td><a href="https://getbootstrap.com/docs/4.3/components/breadcrumb/"
+                target="_blank">https://getbootstrap.com/docs/4.3/components/breadcrumb/</a></td>
+          </tr>
+          <tr>
+            <td><strong>Template Page</strong></td>
+            <td><a
+                href="https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/component-breadcrumbs.html"
+                target="_blank">https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/component-breadcrumbs.html</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<!--/ Breadcrumbs -->
+<!-- Carousel -->
+<div class="card">
+  <div class="card-header">
+    <h4 id="carousel" class="card-title">Carousel</h4>
+    <div class="heading-elements">
+      <ul class="list-inline mb-0">
+        <li><a data-action="collapse"><i class="feather icon-chevron-down"></i></a></li>
+        <li><a data-action="expand"><i class="feather icon-maximize"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="card-content collapse show" aria-expanded="true">
+    <div class="card-body">
+      <p class="content-group">A slideshow component for cycling through elements—images or slides of text—like a
+        carousel. In browsers where the Page Visibility API is supported, the carousel will avoid sliding when the
+        webpage is not visible to the user (such as when the browser tab is inactive, the browser window is minimized,
+        etc.).</p>
+      <p><strong>Nested carousels are not supported.</strong></p>
+      <p>Below have options that you can use with carousel :</p>
+      <ul type="i">
+        <li>Carousel with caption</li>
+        <li>Interval Options</li>
+        <li>Disable on hover Pause</li>
+        <li>Crossfade effect, etc..</li>
+      </ul>
+      <p><strong>Referrals :</strong></p>
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>URL</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Bootstrap Page</strong></td>
+            <td><a href="https://getbootstrap.com/docs/4.3/components/carousel/"
+                target="_blank">https://getbootstrap.com/docs/4.3/components/carousel/</a></td>
+          </tr>
+          <tr>
+            <td><strong>Template Page</strong></td>
+            <td><a
+                href="https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/component-carousel.html"
+                target="_blank">https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/component-carousel.html</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<!--/ Carousel -->
+<!-- Collapse -->
+<div class="card">
+  <div class="card-header">
+    <h4 id="collapse" class="card-title">Collapse</h4>
+    <div class="heading-elements">
+      <ul class="list-inline mb-0">
+        <li><a data-action="collapse"><i class="feather icon-chevron-down"></i></a></li>
+        <li><a data-action="expand"><i class="feather icon-maximize"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="card-content collapse show" aria-expanded="true">
+    <div class="card-body">
+      <p class="content-group">The Bootstrap collapse plugin allows you to toggle content on your pages with a few
+        classes thanks to some helpful JavaScript.</p>
+      <p>You can use a link with the <code>href</code> attribute, or a button with the <code>data-target</code>
+        attribute.</p>
+      <p><strong>In all cases, the <code>data-toggle="collapse"</code> is required.</strong></p>
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Collapse Options</th>
+            <th>Class</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Collapse with bottom border</td>
+            <td><code>.collapse-bordered</code></td>
+            <td>
+              Adds border bottom to collapse header
+            </td>
+          </tr>
+          <tr>
+            <td>Collapse Icons</td>
+            <td><code>.collapse-icon</code></td>
+            <td>
+              Adds icon at the right side of collpase
+            </td>
+          </tr>
+          <tr>
+            <td>Animated Collapse Icons</td>
+            <td><code>.accordion-icon-rotate</code></td>
+            <td>
+              Adds animation to collapse icons
+            </td>
+          </tr>
+          <tr>
+            <td>Collapse Shadow</td>
+            <td><code>.accordion-shadow</code></td>
+            <td>
+              Adds shadow to your collapse/accordion
+            </td>
+          </tr>
+          <tr>
+            <td>Collapse Border</td>
+            <td><code>.collapse-border</code></td>
+            <td>
+              Adds border around collapse
+            </td>
+          </tr>
+          <tr>
+            <td>Collapse Margin</td>
+            <td><code>.collapse-margin</code></td>
+            <td>
+              Adds margin to collapse
+            </td>
+          </tr>
+          <tr>
+            <td>Collapse Hover</td>
+            <td><code>data-open-hover="true"</code></td>
+            <td>
+              Makes your collapse open on hover
+              <strong>Note: </strong> <code>data-open-hover="true"</code> is not a class it's an attribute
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p><strong>Referrals :</strong></p>
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>URL</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Bootstrap Page</strong></td>
+            <td><a href="https://getbootstrap.com/docs/4.3/components/collapse/"
+                target="_blank">https://getbootstrap.com/docs/4.3/components/collapse/</a></td>
+          </tr>
+          <tr>
+            <td><strong>Template Page</strong></td>
+            <td><a
+                href="https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/component-collapse.html"
+                target="_blank">https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/component-collapse.html</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<!--/ Collapse -->
+<!-- Dropdown -->
+<div class="card">
+  <div class="card-header">
+    <h4 id="dropdown" class="card-title">Dropdown</h4>
+    <div class="heading-elements">
+      <ul class="list-inline mb-0">
+        <li><a data-action="collapse"><i class="feather icon-chevron-down"></i></a></li>
+        <li><a data-action="expand"><i class="feather icon-maximize"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="card-content collapse show" aria-expanded="true">
+    <div class="card-body">
+      <p class="content-group">Dropdowns are toggleable, contextual overlays for displaying lists of links and more.
+        They’re made interactive with the included Bootstrap dropdown JavaScript plugin.</p>
+      <h6>Example Code:</h6>
+      <pre class="language-HTML">
+<code class="language-HTML">
+  &lt;div class="dropdown open"&gt;
+      &lt;a class="btn btn-secondary dropdown-toggle" href="https://example.com" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"&gt;
+          Dropdown link
+      &lt;/a&gt;
+
+      &lt;div class="dropdown-menu" aria-labelledby="dropdownMenuLink"&gt;
+          &lt;a class="dropdown-item" href="#"&gt;Action&lt;/a&gt;
+          &lt;a class="dropdown-item" href="#"&gt;Another action&lt;/a&gt;
+          &lt;a class="dropdown-item" href="#"&gt;Something else here&lt;/a&gt;
+      &lt;/div&gt;
+  &lt;/div&gt;
+</code>
+            </pre>
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Dropdown Options</th>
+            <th>Class</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Active State</strong></td>
+            <td><code>.active</code></td>
+            <td>Dropdown Button's selected/active state.</td>
+          </tr>
+          <tr>
+            <td><strong>Directions</strong></td>
+            <td><code>.dropdown-{up | right | left}</code></td>
+            <td>Changes drop direction.</td>
+          </tr>
+          <tr>
+            <td><strong>Dropdown menu direction</strong></td>
+            <td><code>.dropdown-menu-right</code></td>
+            <td>Changes dropdown menu's drop direction.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><strong>Referrals :</strong></p>
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>URL</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Bootstrap Page</strong></td>
+            <td><a href="https://getbootstrap.com/docs/4.3/components/dropdowns/"
+                target="_blank">https://getbootstrap.com/docs/4.3/components/dropdowns/</a></td>
+          </tr>
+          <tr>
+            <td><strong>Template Page</strong></td>
+            <td><a
+                href="https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/component-dropdowns.html"
+                target="_blank">https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/component-dropdowns.html</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<!--/ Dropdown -->
+<!-- List Group -->
+<div class="card">
+  <div class="card-header">
+    <h4 id="listgroup" class="card-title">List Group</h4>
+    <div class="heading-elements">
+      <ul class="list-inline mb-0">
+        <li><a data-action="collapse"><i class="feather icon-chevron-down"></i></a></li>
+        <li><a data-action="expand"><i class="feather icon-maximize"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="card-content collapse show" aria-expanded="true">
+    <div class="card-body">
+      <p class="content-group">List groups are a flexible and powerful component for displaying not only simple lists of
+        elements, but complex ones with custom content.</p>
+      <p>The most basic list group is simply an unordered list with list items, and the proper classes. Build upon it
+        with the options that follow, or your own CSS as needed.</p>
+      <h6>Example Code:</h6>
+      <pre class="language-HTML">
+  <code class="language-HTML">
+      &lt;ul class="list-group"&gt;
+          &lt;li class="list-group-item"&gt;Cras justo odio&lt;/li&gt;
+          &lt;li class="list-group-item"&gt;Dapibus ac facilisis in&lt;/li&gt;
+          &lt;li class="list-group-item"&gt;Morbi leo risus&lt;/li&gt;
+          &lt;li class="list-group-item"&gt;Porta ac consectetur ac&lt;/li&gt;
+          &lt;li class="list-group-item"&gt;Vestibulum at eros&lt;/li&gt;
+      &lt;/ul&gt;
+  </code>
+            </pre>
+      <p><strong>Referrals :</strong></p>
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>URL</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Bootstrap Page</strong></td>
+            <td><a href="https://getbootstrap.com/docs/4.3/components/list-group/"
+                target="_blank">https://getbootstrap.com/docs/4.3/components/list-group/</a></td>
+          </tr>
+          <tr>
+            <td><strong>Template Page</strong></td>
+            <td><a
+                href="https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/component-list-group.html"
+                target="_blank">https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/component-list-group.html</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<!--/ List Group -->
+<!-- Modals -->
+<div class="card">
+  <div class="card-header">
+    <h4 id="modal" class="card-title">Modal</h4>
+    <div class="heading-elements">
+      <ul class="list-inline mb-0">
+        <li><a data-action="collapse"><i class="feather icon-chevron-down"></i></a></li>
+        <li><a data-action="expand"><i class="feather icon-maximize"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="card-content collapse show" aria-expanded="true">
+    <div class="card-body">
+      <p class="content-group">Modals are streamlined, but flexible, dialog prompts with the minimum required
+        functionality and smart defaults.</p>
+      <h6>Example Code:</h6>
+      <pre class="language-HTML">
+<code class="language-HTML">
+    &lt;div class="modal fade"&gt;
+      &lt;div class="modal-dialog" role="document"&gt;
+        &lt;div class="modal-content"&gt;
+          &lt;div class="modal-header"&gt;
+            &lt;button type="button" class="close" data-dismiss="modal" aria-label="Close"&gt;
+              &lt;span aria-hidden="true"&gt;&times;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;h4 class="modal-title"&gt;Modal title&lt;/h4&gt;
+          &lt;/div&gt;
+          &lt;div class="modal-body"&gt;
+            &lt;p&gt;One fine body&hellip;&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div class="modal-footer"&gt;
+            &lt;button type="button" class="btn btn-secondary" data-dismiss="modal"&gt;Close&lt;/button&gt;
+            &lt;button type="button" class="btn btn-primary"&gt;Save changes&lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- /.modal-content --&gt;
+      &lt;/div&gt;&lt;!-- /.modal-dialog --&gt;
+    &lt;/div&gt;&lt;!-- /.modal --&gt;
+</code>
+            </pre>
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Modal options</th>
+            <th>Class</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Background modal color</strong></td>
+            <td><code>.bg-*</code></td>
+            <td>Use any template color from <a href="documentation-colors.html">COLOR PALETTE</a> that you like
+              to use for modal background.</td>
+          </tr>
+          <tr>
+            <td><strong>Modal sizes</strong></td>
+            <td><code>.modal-{xs|sm|lg|xl]</code></td>
+            <td>Different sizes of modal that can be used for different examples.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><strong>Referrals :</strong></p>
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>URL</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Bootstrap Modal</strong></td>
+            <td><a href="https://getbootstrap.com/docs/4.3/components/modal/"
+                target="_blank">https://getbootstrap.com/docs/4.3/components/modal/</a></td>
+          </tr>
+          <tr>
+            <td><strong>Template Page</strong></td>
+            <td><a
+                href="https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/component-modals.html"
+                target="_blank">https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/component-modals.html</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<!--/ Modals -->
+<!-- Pagination -->
+<div class="card">
+  <div class="card-header">
+    <h4 id="pagination" class="card-title">Pagination</h4>
+    <div class="heading-elements">
+      <ul class="list-inline mb-0">
+        <li><a data-action="collapse"><i class="feather icon-chevron-down"></i></a></li>
+        <li><a data-action="expand"><i class="feather icon-maximize"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="card-content collapse show" aria-expanded="true">
+    <div class="card-body">
+      <p class="content-group">Documentation and examples for showing pagination to indicate a series of related content
+        exists across multiple pages.</h5>
+        <p>The pagination component should be wrapped in a <code>&lt;nav&gt;</code> element to identify it as a
+          navigation
+          section to screen readers and other assistive technologies. For example, if the pagination component is used
+          to
+          navigate between a set of search results, an appropriate label could be <code>aria-label="previous"</code>.
+        </p>
+        <p>Below have options that you can use with pagination :</p>
+        <table class="table table-bordered table-striped">
+          <thead>
+            <tr>
+              <th>Pagination options</th>
+              <th>Class</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Separated Pagination</strong></td>
+              <td><code>.prev-item</code>, <code>.next-item</code></td>
+              <td>To create sperated pagination arrows, use this classes for previous and next list item.</td>
+            </tr>
+            <tr>
+              <td><strong>Pagination with arrows</strong></td>
+              <td><code>.prev</code>, <code>.next</code></td>
+              <td>To create pagination with arrows, use this classes for previous and next item.</td>
+            </tr>
+            <tr>
+              <td><strong>Pagination Colors</strong></td>
+              <td><code>pagination-*</code></td>
+              <td>Use any template color from <a href="documentation-colors.html">COLOR PALETTE</a> that you like to use
+                for pagination theme.</td>
+            </tr>
+          </tbody>
+        </table>
+        <p><strong>Referrals :</strong></p>
+        <table class="table table-bordered table-striped">
+          <thead>
+            <tr>
+              <th>Type</th>
+              <th>URL</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Bootstrap Page</strong></td>
+              <td><a href="https://getbootstrap.com/docs/4.3/components/pagination/"
+                  target="_blank">https://getbootstrap.com/docs/4.3/components/pagination/</a></td>
+            </tr>
+            <tr>
+              <td><strong>Template Page</strong></td>
+              <td><a
+                  href="https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/component-pagination.html"
+                  target="_blank">https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/component-pagination.html</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+  </div>
+</div>
+<!--/ Pagination -->
+<!-- Navs -->
+<div class="card">
+  <div class="card-header">
+    <h4 id="navs" class="card-title">Navs</h4>
+    <div class="heading-elements">
+      <ul class="list-inline mb-0">
+        <li><a data-action="collapse"><i class="feather icon-chevron-down"></i></a></li>
+        <li><a data-action="expand"><i class="feather icon-maximize"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="card-content collapse show" aria-expanded="true">
+    <div class="card-body">
+      <p class="content-group">Roll your own navigation style by extending the base <code>.nav</code> component. All
+        Bootstrap’s nav components are built on top of this by specifying additional styles. Includes styles for the
+        disabled state, but <strong>not the active state.</strong></p>
+      <p>Below have options that you can use with navs :</p>
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Navs options</th>
+            <th>Class</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Border wrapper</strong></td>
+            <td><code>.wrap-border</code></td>
+            <td>Wrap with border to nav.</td>
+          </tr>
+          <tr>
+            <td><strong>Square Border</strong></td>
+            <td><code>.square-border</code></td>
+            <td>For square navs border.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><strong>Referrals :</strong></p>
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>URL</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Bootstrap Page</strong></td>
+            <td><a href="https://getbootstrap.com/docs/4.3/components/navs/#base-nav"
+                target="_blank">https://getbootstrap.com/docs/4.3/components/navs/#base-nav</a></td>
+          </tr>
+          <tr>
+            <td><strong>Template Page</strong></td>
+            <td><a
+                href="https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/component-navs-component.html"
+                target="_blank">https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/component-navs-component.html</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<!--/ Navs -->
+<!-- Tabs -->
+<div class="card">
+  <div class="card-header">
+    <h4 id="tabs" class="card-title">Tabs</h4>
+    <div class="heading-elements">
+      <ul class="list-inline mb-0">
+        <li><a data-action="collapse"><i class="feather icon-chevron-down"></i></a></li>
+        <li><a data-action="expand"><i class="feather icon-maximize"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="card-content" aria-expanded="true">
+    <div class="card-body">
+      <p class="content-group">Takes the basic nav from above and adds the <code>
+            .nav-tabs</code> class to generate a tabbed interface. Use them to create tabbable regions and to extend
+        navigational tabs.</p>
+      <p>Below have options that you can use with tabs :</p>
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Tabs options</th>
+            <th>Class</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Basic Tabs</strong></td>
+            <td><code>.nav-tabs</code></td>
+            <td>Simple basic nav tabs</td>
+          </tr>
+          <tr>
+          <tr>
+            <td><strong>Filled Tabs</strong></td>
+            <td><code>.nav-fill</code></td>
+            <td>Proportionately fill all available space with your <code>.nav-items</code>.</td>
+          </tr>
+          <tr>
+            <td><strong>Justified Tabs</strong></td>
+            <td><code>.nav-justified</code></td>
+            <td>For justified tabs with equal width.</td>
+          </tr>
+          <tr>
+            <td><strong>Vertical Tabs</strong></td>
+            <td><code>.nav-vertical</code></td>
+            <td>For vertical style of the tabs.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><strong>Referrals :</strong></p>
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>URL</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Bootstrap Page</strong></td>
+            <td><a href="https://getbootstrap.com/docs/4.3/components/navs/#tabs"
+                target="_blank">https://getbootstrap.com/docs/4.3/components/navs/#tabs</a></td>
+          </tr>
+          <tr>
+            <td><strong>Template Page</strong></td>
+            <td><a
+                href="https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/component-tabs-component.html"
+                target="_blank">https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/component-tabs-component.html</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<!--/ Tabs -->
+<!-- Pills -->
+<div class="card">
+  <div class="card-header">
+    <h4 id="pills" class="card-title">Pills</h4>
+    <div class="heading-elements">
+      <ul class="list-inline mb-0">
+        <li><a data-action="collapse"><i class="feather icon-chevron-down"></i></a></li>
+        <li><a data-action="expand"><i class="feather icon-maximize"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="card-content collapse show" aria-expanded="true">
+    <div class="card-body">
+      <p class="content-group">Navigation available in Bootstrap share general markup and styles, from the base
+        <code>.nav</code> class to the active and disabled states. Swap modifier classes to switch between each style.
+      </p>
+      <p>Below have options that you can use with pills :</p>
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Pills options</th>
+            <th>Class</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Basic Pills</strong></td>
+            <td><code>.nav-pills</code></td>
+            <td>Simple basic nav pills</td>
+          </tr>
+          <tr>
+            <td><strong>Active Border Pills</strong></td>
+            <td><code>.nav-active-bordered-pill</code></td>
+            <td>Active border pill style.</td>
+          </tr>
+          <tr>
+            <td><strong>Justified Pills</strong></td>
+            <td><code>.nav-justified</code></td>
+            <td>For justified pills with equal width.</td>
+          </tr>
+          <tr>
+            <td><strong>Vertical Pills</strong></td>
+            <td><code>.flex-column</code></td>
+            <td>For vertical style of the pills.</td>
+          </tr>
+          <tr>
+            <td><strong>Pills Colors</strong></td>
+            <td><code>.nav-pill-color*</code></td>
+            <td>Use any template color from <a href="documentation-colors.html">COLOR PALETTE</a> that you like to use
+              for pills theme.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><strong>Referrals :</strong></p>
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>URL</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Bootstrap Page</strong></td>
+            <td><a href="https://getbootstrap.com/docs/4.3/components/navs/#pills"
+                target="_blank">https://getbootstrap.com/docs/4.3/components/navs/#pills</a></td>
+          </tr>
+          <tr>
+            <td><strong>Template Page</strong></td>
+            <td><a
+                href="https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/component-pills-component.html"
+                target="_blank">https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/component-pills-component.html</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<!--/ Pills -->
+<!-- Tooltips -->
+<div class="card">
+  <div class="card-header">
+    <h4 id="tooltips" class="card-title">Tooltips</h4>
+    <div class="heading-elements">
+      <ul class="list-inline mb-0">
+        <li><a data-action="collapse"><i class="feather icon-chevron-down"></i></a></li>
+        <li><a data-action="expand"><i class="feather icon-maximize"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="card-content collapse show" aria-expanded="true">
+    <div class="card-body">
+      <p class="content-group">Tooltips are an updated version, which don’t rely on images, use CSS3 for animations, and
+        data-attributes for local title storage.</p>
+      <p><strong>Tooltip requires <code>data-toggle="tooltip"</code>.</strong></p>
+      <p>To add tooltip text, use <code>data-original-title="Tooltip title"</code>.</p>
+      <p>Below have options that you can use with Tooltip :</p>
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Tooltip options</th>
+            <th>Class</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Tooltip Positions</strong></td>
+            <td><code>data-placement</code></td>
+            <td>Default: top. Options are top,right,bottom,left.</td>
+          </tr>
+          <tr>
+            <td><strong>Tooltip Triggers</strong></td>
+            <td><code>data-trigger</code></td>
+            <td>By default, tooltip triggers onhover. Trigger options are <code>click, hover, focus &amp; manual</code>.
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Delay Show/Hide Tooltip</strong></td>
+            <td><code>data-delay</code></td>
+            <td>Delay showing and hiding the tooltip <code>(ms)</code> - <strong>does not apply to manual trigger
+                type.</strong></td>
+          </tr>
+          <td><strong>Supports HTML</strong></td>
+          <td><code>data-html</code></td>
+          <td>If this value is <em>true</em>, you can use html in <code>data-original-title</code> text.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><strong>Referrals :</strong></p>
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>URL</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Bootstrap Page</strong></td>
+            <td><a href="https://getbootstrap.com/docs/4.3/components/navs/#pills"
+                target="_blank">https://getbootstrap.com/docs/4.3/components/tooltips/</a></td>
+          </tr>
+          <tr>
+            <td><strong>Template Page</strong></td>
+            <td><a
+                href="https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/component-tooltips.html"
+                target="_blank">https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/component-tooltips.html</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<!--/ Tooltips -->
+<!-- Popovers -->
+<div class="card">
+  <div class="card-header">
+    <h4 id="popovers" class="card-title">Popovers</h4>
+    <div class="heading-elements">
+      <ul class="list-inline mb-0">
+        <li><a data-action="collapse"><i class="feather icon-chevron-down"></i></a></li>
+        <li><a data-action="expand"><i class="feather icon-maximize"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="card-content collapse show" aria-expanded="true">
+    <div class="card-body">
+      <p class="content-group">Add small overlay content, like those found in iOS, to any element for housing secondary
+        information.</p>
+      <p><strong>Popovers requires <code>data-toggle="popover"</code>.</strong></p>
+      <p>To add popover text, use <code>data-content="Popovers text"</code>.</p>
+      <p>Below have options that you can use with Popovers :</p>
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Popovers options</th>
+            <th>Class</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Popovers Positions</strong></td>
+            <td><code>data-placement</code></td>
+            <td>Default: top. Options are top,right,bottom,left.</td>
+          </tr>
+          <tr>
+            <td><strong>Popovers Triggers</strong></td>
+            <td><code>data-trigger</code></td>
+            <td>By default, popover triggers onhover. Trigger options are <code>click, hover, focus &amp; manual</code>.
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Delay Show/Hide Popovers</strong></td>
+            <td><code>data-delay</code></td>
+            <td>Delay showing and hiding the popover <code>(ms)</code> - <strong>does not apply to manual trigger
+                type.</strong></td>
+          </tr>
+          <tr>
+            <td><strong>Supports HTML</strong></td>
+            <td><code>data-html</code></td>
+            <td>If this value is <em>true</em>, you can use html in <code>data-content</code> text.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><strong>Referrals :</strong></p>
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>URL</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Bootstrap Page</strong></td>
+            <td><a href="https://getbootstrap.com/docs/4.3/components/popovers/"
+                target="_blank">https://getbootstrap.com/docs/4.3/components/popovers/</a></td>
+          </tr>
+          <tr>
+            <td><strong>Template Page</strong></td>
+            <td><a
+                href="https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/component-popovers.html"
+                target="_blank">https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/component-popovers.html</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<!--/ Popovers -->
+<!-- Badges -->
+<div class="card">
+  <div class="card-header">
+    <h4 id="badges" class="card-title">Badges</h4>
+    <div class="heading-elements">
+      <ul class="list-inline mb-0">
+        <li><a data-action="collapse"><i class="feather icon-chevron-down"></i></a></li>
+        <li><a data-action="expand"><i class="feather icon-maximize"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="card-content collapse show" aria-expanded="true">
+    <div class="card-body">
+      <p class="content-group">Small and adaptive badge for adding context to just about any content.</p>
+      <p>Below have options that you can use with Badges :</p>
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Badges options</th>
+            <th>Class</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Basic Badges</strong></td>
+            <td><code>.badge-*</code></td>
+            <td>Use any template color from <a href="documentation-colors.html">COLOR PALETTE</a> that you like
+              to add for badge.</td>
+          </tr>
+          <tr>
+            <td><strong>Square badges</strong></td>
+            <td><code>.badge-square</code></td>
+            <td>For square style badges.</td>
+          </tr>
+          <tr>
+            <td><strong>Badge Sizes</strong></td>
+            <td><code>.badge-{xl|lg|md|sm}</code></td>
+            <td>Use this class for block badges.</td>
+          </tr>
+          <tr>
+            <td><strong>Block Badges</strong></td>
+            <td><code>.block</code></td>
+            <td>Use this class for block badges.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><strong>Referrals :</strong></p>
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>URL</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Bootstrap Page</strong></td>
+            <td><a href="https://getbootstrap.com/docs/4.3/components/badge"
+                target="_blank">https://getbootstrap.com/docs/4.3/components/badge</a></td>
+          </tr>
+          <tr>
+            <td><strong>Template Page</strong></td>
+            <td><a
+                href="https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/component-badges.html"
+                target="_blank">https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/component-badges.html</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<!--/ Badges -->
+<!-- Pill badges -->
+<div class="card">
+  <div class="card-header">
+    <h4 id="pill-badges" class="card-title">Pill badges</h4>
+    <div class="heading-elements">
+      <ul class="list-inline mb-0">
+        <li><a data-action="collapse"><i class="feather icon-chevron-down"></i></a></li>
+        <li><a data-action="expand"><i class="feather icon-maximize"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="card-content collapse show" aria-expanded="true">
+    <div class="card-body">
+      <p class="content-group">Use the <code>.badge-pill</code> modifier class with <code>.badge</code> class to make
+        pill badges.</p>
+      <p>Below have options that you can use with Pill badges :</p>
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Pill badges options</th>
+            <th>Class</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Basic Pill badges</strong></td>
+            <td><code>.badge-*</code></td>
+            <td>Use any template color from <a href="documentation-colors.html">COLOR PALETTE</a> that you like
+              to add for pill badge.</td>
+          </tr>
+          <tr>
+            <td><strong>Pill Tags With Glow</strong></td>
+            <td><code>.badge-glow</code></td>
+            <td>To create glow styled pill badge.</td>
+          </tr>
+          <tr>
+            <td><strong>Pill Tags as Notification</strong></td>
+            <td><code>.badge-up</code></td>
+            <td>To set pill badge to higher than other text. So that it can work with notifications also.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><strong>Referrals :</strong></p>
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>URL</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Bootstrap Page</strong></td>
+            <td><a href="https://getbootstrap.com/docs/4.3/components/badge/#pill-badges"
+                target="_blank">https://getbootstrap.com/docs/4.3/components/badge/#pill-badges</a></td>
+          </tr>
+          <tr>
+            <td><strong>Template Page</strong></td>
+            <td><a
+                href="https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/component-pill-badges.html"
+                target="_blank">https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/component-pill-badges.html</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<!--/ Pill badges -->
+<!-- Progress -->
+<div class="card">
+  <div class="card-header">
+    <h4 id="progress" class="card-title">Progress</h4>
+    <div class="heading-elements">
+      <ul class="list-inline mb-0">
+        <li><a data-action="collapse"><i class="feather icon-chevron-down"></i></a></li>
+        <li><a data-action="expand"><i class="feather icon-maximize"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="card-content collapse show" aria-expanded="true">
+    <div class="card-body">
+      <p class="content-group">Stylize the HTML5 <code>&lt;progress&gt;</code> element.</p>
+      <p>Below have options that you can use with Progress :</p>
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Progress options</th>
+            <th>Class</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Basic Progress</strong></td>
+            <td><code>.progress</code></td>
+            <td>Basic progress bars using this class.</td>
+          </tr>
+          <tr>
+            <td><strong>Colored Progress</strong></td>
+            <td><code>.progress-bar-*</code></td>
+            <td>Use <a href="documentation-colors.html">COLOR PALETTE</a> for progress color.</td>
+          </tr>
+          <tr>
+            <td><strong>Progress Sizes</strong></td>
+            <td><code>.progress-{xl|lg|sm}</code></td>
+            <td>For Extra Large, Large, Small and Extra Small sized progress.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><strong>Referrals :</strong></p>
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>URL</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Bootstrap Page</strong></td>
+            <td><a href="https://getbootstrap.com/docs/4.3/components/progress"
+                target="_blank">https://getbootstrap.com/docs/4.3/components/progress</a></td>
+          </tr>
+          <tr>
+            <td><strong>Template Page</strong></td>
+            <td><a
+                href="https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/component-progress.html"
+                target="_blank">https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/component-progress.html</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<!--/ Progress -->
+<!-- Media Objects -->
+<div class="card">
+  <div class="card-header">
+    <h4 id="media-object" class="card-title">Media Objects</h4>
+    <div class="heading-elements">
+      <ul class="list-inline mb-0">
+        <li><a data-action="collapse"><i class="feather icon-chevron-down"></i></a></li>
+        <li><a data-action="expand"><i class="feather icon-maximize"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="card-content collapse show" aria-expanded="true">
+    <div class="card-body">
+      <p class="content-group">The media object is an abstract element used as the basis for building more complex and
+        repetitive components.</p>
+      <p><strong>Example Code :</strong></p>
+      <pre class="language-HTML">
+<code class="language-HTML">
+    &lt;div class="media"&gt;
+        &lt;a class="media-left" href="#"&gt;
+            &lt;img class="media-object" src="..." alt="Generic placeholder image"&gt;
+        &lt;/a&gt;
+        &lt;div class="media-body"&gt;
+            &lt;h4 class="media-heading"&gt;Media heading&lt;/h4&gt;
+            Media Text
+        &lt;/div&gt;
+    &lt;/div&gt;
+</code>
+            </pre>
+      <p><strong>Referrals :</strong></p>
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>URL</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Bootstrap Page</strong></td>
+            <td><a href="https://getbootstrap.com/docs/4.3/components/media-object/"
+                target="_blank">https://getbootstrap.com/docs/4.3/components/media-object/</a></td>
+          </tr>
+          <tr>
+            <td><strong>Template Page</strong></td>
+            <td><a
+                href="https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/component-media-objects.html"
+                target="_blank">https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/component-media-objects.html</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<!--/ Media Objects -->
+<!-- Spinners -->
+<div class="card">
+  <div class="card-header">
+    <h4 id="spinners" class="card-title">Spinners</h4>
+    <div class="heading-elements">
+      <ul class="list-inline mb-0">
+        <li><a data-action="collapse"><i class="feather icon-chevron-down"></i></a></li>
+        <li><a data-action="expand"><i class="feather icon-maximize"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="card-content collapse show" aria-expanded="true">
+    <div class="card-body">
+      <p>Spinners contains Icon spinners with different styles. use below mentioned code to create a basic spinner</p>
+      <pre class="language-markup">
+    <code class="language-markup">
+        &lt;div class=&quot;spinner-border&quot; role=&quot;status&quot;&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+      &lt;/div&gt;
+    </code>
+      </pre>
+      <p><strong>Referrals :</strong></p>
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>URL</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Bootstrap Page</strong></td>
+            <td><a href="https://getbootstrap.com/docs/4.3/components/spinners/"
+                target="_blank">https://getbootstrap.com/docs/4.3/components/spinners/</a></td>
+          </tr>
+          <tr>
+            <td><strong>Template Page</strong></td>
+            <td><a
+                href="https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/component-spinner.html"
+                target="_blank">https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/component-spinner.html</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<!--/ Spinners -->
+<!-- Toast -->
+<div class="card">
+  <div class="card-header">
+    <h4 id="toast" class="card-title">Toast</h4>
+    <div class="heading-elements">
+      <ul class="list-inline mb-0">
+        <li><a data-action="collapse"><i class="feather icon-chevron-down"></i></a></li>
+        <li><a data-action="expand"><i class="feather icon-maximize"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="card-content collapse show" aria-expanded="true">
+    <div class="card-body">
+      <p>Push notifications to your visitors with a toast, a lightweight and easily customizable alert message.</p>
+      <p><strong>Note:</strong> Because proper JS is not provided by bootstrap we have modified toasts for proper
+        functionality.You have to use below mentioned classes for toast to work.</p>
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <td>Toast Type</td>
+            <td>Class</td>
+            <td>Description</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              Toast Conatiner
+            </td>
+            <td>
+              <code>.toast-bs-container</code>
+            </td>
+            <td>
+              Works as container for toast
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Toast Position
+            </td>
+            <td>
+              <code>.toast-positions</code>
+            </td>
+            <td>
+              Positions toast at desired place
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p><strong>Referrals :</strong></p>
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>URL</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Bootstrap Page</strong></td>
+            <td><a href="https://getbootstrap.com/docs/4.3/components/toasts/"
+                target="_blank">https://getbootstrap.com/docs/4.3/components/toasts/</a></td>
+          </tr>
+          <tr>
+            <td><strong>Template Page</strong></td>
+            <td><a
+                href="https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/component-bs-toast.html"
+                target="_blank">https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/component-bs-toast.html</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<!--/ Toasts -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ////////////////////////////////////////////////////////////////////////////-->
+
+
+    <footer class="footer footer-static footer-light">
+      <p class="clearfix blue-grey lighten-2 mb-0"><span class="float-md-left d-block d-md-inline-block">COPYRIGHT  &copy; 2019<a class="text-bold-800 grey darken-2" href="https://1.envato.market/pixinvent_portfolio" target="_blank">Pixinvent,</a>All rights Reserved</span><span class="float-md-right d-none d-md-block">Hand-crafted & Made with<i class="feather icon-heart pink"></i></span></p>
+    </footer>
+
+    <script src="../app-assets/vendors/js/vendors.min.js"></script>
+    <script src="../app-assets/js/core/app-menu.js"></script>
+    <script src="../app-assets/js/core/app.js"></script>
+    <script src="../app-assets/js/scripts/customizer.js"></script>
+    <script src="../app-assets/js/scripts/documentation.js" type="text/javascript"></script>
+    <script src="../app-assets/vendors/js/ui/prism.min.js" type="text/javascript"></script>
+    <script src="../app-assets/vendors/js/ui/affix.js" type="text/javascript"></script>
+  </body>
+</html>

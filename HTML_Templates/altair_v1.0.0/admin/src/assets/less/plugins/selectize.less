@@ -1,0 +1,86 @@
+/* selectize */
+@import (less) "../../../bower_components/selectize/dist/css/selectize.css";
+
+.selectize-input {
+    border-color: @border_color;
+    line-height: 21px;
+    padding: 6px 8px;
+    &,
+    &.focus {
+        border-radius: 0;
+        box-shadow: none;
+        &:before {
+            display: none;
+        }
+    }
+    .md-input-danger & {
+        border-color: @danger_color;
+    }
+}
+.selectize-dropdown {
+    margin-top: -36px;
+    .boxShadowHelper(2);
+    color: @text_primary_color;
+    z-index: 1210;
+    [data-selectable] {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    .active {
+        background: @background_color_default;
+        color: inherit;
+    }
+    .optgroup-header {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 11px;
+    }
+    &.multi {
+        .item-icon {
+            margin-right: 4px;
+        }
+    }
+}
+.selectize-control {
+    &.multi {
+        .selectize-input {
+            min-height: 40px;
+            > div {
+                border-radius: 18px;
+                padding: 3px 8px 2px;
+                font-size: 14px;
+            }
+            .selectize-input.has-items {
+                padding: 4px;
+            }
+            .item-icon {
+                margin-right: 4px;
+            }
+            input {
+                height: 26px;
+            }
+        }
+    }
+    &.plugin-remove_button [data-value] {
+        padding-right: 32px !important;
+        .remove {
+            border: none;
+            width: auto;
+            padding: 4px 5px 0 0;
+            &:hover {
+                background: none;
+            }
+            &:after {
+                color: @text_secondary_color;
+                content: '\e5cd';
+                font-family: "Material Icons";
+                font-size: 18px;
+            }
+        }
+    }
+}
+.selectize_fix {
+    overflow: hidden;
+    height: 0;
+    width: 100%;
+}

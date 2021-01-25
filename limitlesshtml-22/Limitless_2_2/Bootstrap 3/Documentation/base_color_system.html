@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/core.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script type="text/javascript" src="assets/js/plugins/ui/prism.min.js"></script>
+	
+	<script type="text/javascript" src="assets/js/core/app.js"></script>
+	<script type="text/javascript" src="assets/js/pages/sidebar_detached_sticky_native.js"></script>
+	<!-- /theme JS files -->
+
+	<style type="text/css">
+		.color-list {
+			list-style: none;
+			margin: -1px;
+			padding: 0;
+		}
+
+		.color-list > li {
+			padding: 15px;
+			color: #fff;
+		}
+
+		.color-list > li:first-child {
+			border-radius: 3px 3px 0 0;
+		}
+
+		.color-list > li > span {
+			float: right;
+		}
+	</style>
+
+</head>
+
+<body data-spy="scroll" data-target=".sidebar-detached" class="has-detached-right">
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-default navbar-lg header-highlight">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="index.html"><img src="assets/images/logo_light.png" alt=""></a>
+
+			<ul class="nav navbar-nav pull-right visible-xs-block">
+				<li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+				<li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+				<li><a class="sidebar-mobile-detached-toggle"><i class="icon-grid7"></i></a></li>
+			</ul>
+		</div>
+
+		<div class="navbar-collapse collapse" id="navbar-mobile">
+			<ul class="nav navbar-nav">
+				<li><a class="sidebar-control sidebar-main-hide hidden-xs"><i class="icon-paragraph-justify3"></i></a></li>
+				<li><a class="sidebar-control sidebar-detached-hide hidden-xs"><i class="icon-drag-right"></i></a></li>
+			</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="other_changelog.html">Changelog <span class="label label-inline bg-warning-400 position-right">v. 2.0</span></a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page container -->
+	<div class="page-container">
+
+		<!-- Page content -->
+		<div class="page-content">
+
+			<!-- Main sidebar -->
+			<div class="sidebar sidebar-main">
+				<div class="sidebar-content">
+
+	        		<!-- Support -->
+					<div class="sidebar-category no-margin">
+						<div class="category-title">
+							<span>Have questions?</span>
+							<i class="icon-help text-muted pull-right"></i>
+						</div>
+
+						<div class="category-content">
+							<a href="http://kopyov.ticksy.com" class="btn bg-success-400 btn-block" target="_blank"><i class="icon-lifebuoy position-left"></i> Limitless support</a>
+						</div>
+					</div>
+					<!-- /support -->
+
+
+					<!-- Main navigation -->
+					<div class="sidebar-category">
+						<div class="category-title">
+							<span>Navigation</span>
+							<i class="icon-menu7 text-muted pull-right"></i>
+						</div>
+
+						<div class="category-content no-padding">
+							<ul class="navigation navigation-main navigation-accordion">
+
+								<!-- Main -->
+								<li class="navigation-header">Main</li>
+								<li><a href="index.html">Introduction</a></li>
+								<li><a href="main_getting_started.html">Getting started</a></li>
+								<li><a href="main_starter_kit.html">Starter kit</a></li>
+								<li><a href="main_rtl.html">RTL layout</a></li>
+
+								<li class="navigation-header">Basic functionality</li>								
+								<li><a href="base_less_css.html">LESS and CSS</a></li>
+								<li><a href="base_less_compile.html">Compiling LESS</a></li>
+								<li><a href="base_less_compile_rtl.html">Compiling LESS for RTL version</a></li>
+								<li>
+									<a href="#">Plugins</a>
+									<ul>
+										<li><a href="plugins_forms.html">Forms</a></li>
+										<li><a href="plugins_forms_styling.html">Form styling</a></li>
+										<li><a href="plugins_selects.html">Selects</a></li>
+										<li><a href="plugins_editors.html">Editors</a></li>
+										<li><a href="plugins_uploaders.html">Uploaders</a></li>
+										<li><a href="plugins_wizards.html">Wizards</a></li>
+										<li><a href="plugins_extensions.html">Extensions</a></li>
+										<li><a href="plugins_notifications.html">Notifications</a></li>
+										<li><a href="plugins_pickers.html">Pickers</a></li>
+										<li><a href="plugins_tables.html">Tables</a></li>
+										<li><a href="plugins_ui.html">UI</a></li>
+										<li><a href="plugins_vis.html">Visualization</a></li>
+									</ul>
+								</li>
+								<li><a href="base_bootstrap.html">Bootstrap</a></li>
+								<li class="active"><a href="base_color_system.html">Color system</a></li>
+								<li><a href="base_helpers.html">Helpers</a></li>
+								<li><a href="base_themes.html">Themes</a></li>
+
+								<li class="navigation-header">Layout options</li>
+								<li><a href="layout_markup.html">Markup</a></li>
+								<li><a href="layout_sidebars.html">Sidebars</a></li>
+								<li><a href="layout_navbars.html">Navbars</a></li>
+								<li><a href="layout_v_nav.html">Vertical navigation</a></li>
+								<li><a href="layout_h_nav.html">Horizontal navigation</a></li>
+								<li><a href="layout_page_header.html">Page header</a></li>
+								<li><a href="layout_footer.html">Footer</a></li>
+
+								<li class="navigation-header">Other</li>
+								<li><a href="other_credits.html">Sources and credits</a></li>
+								<li><a href="other_changelog.html">Changelog <span class="label bg-warning-400">version 2.0</span></a></li>
+								<!-- /main -->
+
+							</ul>
+						</div>
+					</div>
+					<!-- /main navigation -->
+
+				</div>
+			</div>
+			<!-- /main sidebar -->
+
+
+			<!-- Main content -->
+			<div class="content-wrapper">
+
+				<!-- Page header -->
+				<div class="page-header">
+					<div class="page-header-content">
+						<div class="page-title">
+							<h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold">Limitless</span> - Color System</h4>
+						</div>
+
+						<div class="heading-elements">
+							<ul class="breadcrumb">
+								<li><a href="index.html"><i class="icon-home2 position-left"></i> Home</a></li>
+								<li class="active">Color system</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- /page header -->
+				
+
+				<!-- Content area -->
+				<div class="content">
+
+					<!-- Detached content -->
+					<div class="container-detached">
+						<div class="content-detached">
+
+							<!-- Overview -->
+							<div class="panel panel-flat" id="overview">
+								<div class="panel-heading">
+									<h5 class="panel-title">System overview</h5>
+									<div class="heading-elements">
+										<ul class="icons-list">
+					                		<li><a data-action="collapse"></a></li>
+					                		<li><a data-action="close"></a></li>
+					                	</ul>
+				                	</div>
+								</div>
+
+								<div class="panel-body">
+									<div class="content-group-lg">
+										<h6 class="text-semibold" id="overview_intro">Overview</h6>
+										<p>Custom colors system - a set of CSS classes that allow you to change colors on-the-fly directly in markup by changing class name. All colors correspond to <a href="https://www.google.com/design/spec/style/color.html#color-color-palette" target="_blank">Material design palette</a> and includes 16 color palettes: 5 contextual (primary, danger, success, warning and info) and 11 alternative. The system is completely optional and moved to a separate <code>colors.min.css</code> minified CSS file.</p>
+
+										<p>Basically color system is supported by almost all layout elements and components: sidebar, navbar, content panels, links, text, icons, alerts, dropdown menus, form components, tables, tabs, progress bars, buttons, notifications, popovers, tooltips etc. The system consists of 16 color palettes, each palette includes 1 main color and 5 alternate colors that are darker and lighter than the main one.</p>
+
+										<p>Available color palettes:</p>
+										<ul class="list">
+											<li>Primary palette</li>
+											<li>Danger palette</li>
+											<li>Success palette</li>
+											<li>Warning palette</li>
+											<li>Info palette</li>
+											<li>Pink palette</li>
+											<li>Violet palette</li>
+											<li>Purple palette</li>
+											<li>Indigo palette</li>
+											<li>Blue palette</li>
+											<li>Teal palette</li>
+											<li>Green palette</li>
+											<li>Orange palette</li>
+											<li>Brown palette</li>
+											<li>Grey palette</li>
+											<li>Slate palette</li>
+										</ul>
+									</div>
+
+									<div class="content-group-lg">
+										<h6 class="text-semibold" id="overview_usage">Basic usage</h6>
+										<p>Usage is very simple, all you need to do is to add one of the color CSS classes to the element. Limitless template includes a bunch of pages with color palette usage demonstration - in components, elements and layout parts. Depending on what part of element you want to change, available classes are (<code>primary</code> palette is an example):</p>
+										<div class="table-responsive">
+											<table class="table table-bordered">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Class</th>
+														<th style="width: 250px;">Prefixes</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th colspan="3" class="active">Background</th>
+													</tr>
+													<tr>
+														<td><code>.bg-primary</code></td>
+														<td class="text-semibold">*-300, *-400, *-600, *-700, *-800</td>
+														<td>Background color. Can be added to dropdown menus, sidebar, navbar, alerts, inputs, panels, selects etc.</td>
+													</tr>
+
+													<tr>
+														<th colspan="3" class="active">Borders</th>
+													</tr>
+													<tr>
+														<td><code>.border-primary</code></td>
+														<td rowspan="5" class="text-semibold">*-300, *-400, *-600, *-700, *-800</td>
+														<td>4 sides border color. Any element that contains border</td>
+													</tr>
+													<tr>
+														<td><code>border-top-primary</code></td>
+														<td>Top border only. Any element that contains all sides border or <strong>top</strong> border only</td>
+													</tr>
+													<tr>
+														<td><code>border-bottom-primary</code></td>
+														<td>Bottom border only. Any element that contains all sides border or <strong>bottom</strong> border only</td>
+													</tr>
+													<tr>
+														<td><code>border-left-primary</code></td>
+														<td>Left border only. Any element that contains all sides border or <strong>left</strong> border only</td>
+													</tr>
+													<tr>
+														<td><code>border-right-primary</code></td>
+														<td>Right border only. Any element that contains all sides border or <strong>right</strong> border only</td>
+													</tr>
+
+													<tr>
+														<th colspan="3" class="active">Text</th>
+													</tr>
+													<tr>
+														<td><code>.text-primary</code></td>
+														<td class="text-semibold">*-300, *-400, *-600, *-700, *-800</td>
+														<td>Text color. Can be used in text, icons and links</td>
+													</tr>
+
+													<tr>
+														<th colspan="3" class="active">Alpha</th>
+													</tr>
+													<tr>
+														<td><code>.alpha-primary</code></td>
+														<td class="text-semibold"><i>none</i></td>
+														<td>Light background or text color. Useful when you need to use lighter color variations, in alerts for example</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="content-group-lg">
+										<h6 class="text-semibold" id="overview_colors">Colors</h6>
+										<p>Color system uses <a href="https://www.google.com/design/spec/style/color.html#color-color-palette" target="_blank">Material design palette</a> colors with limitations: only 7 colors of 14 are used. I just tried to keep only main colors and drop unnecessary ones. Colored blocks below demonstrate all color codes and variables used in the template:</p>
+
+										<div class="row">
+											<div class="col-lg-3">
+												<div class="panel">
+													<ul class="color-list">
+														<li style="background-color: #64B5F6;">300 <span>#64B5F6</span></li>
+														<li style="background-color: #42A5F5;">400 <span>#42A5F5</span></li>
+														<li style="background-color: #2196F3;">500 <span>#2196F3</span></li>
+														<li style="background-color: #1E88E5;">600 <span>#1E88E5</span></li>
+														<li style="background-color: #1976D2;">700 <span>#1976D2</span></li>
+														<li style="background-color: #1565C0;">800 <span>#1565C0</span></li>
+													</ul>
+													<div class="p-15">
+														<div class="media-body">
+															<div class="text-semibold text-uppercase text-size-small mt-5">Primary palette</div>
+															<div class="text-muted mt-5">@color-primary-*</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-lg-3">
+												<div class="panel">
+													<ul class="color-list">
+														<li style="background-color: #E57373;">300 <span>#E57373</span></li>
+														<li style="background-color: #EF5350;">400 <span>#EF5350</span></li>
+														<li style="background-color: #F44336;">500 <span>#F44336</span></li>
+														<li style="background-color: #E53935;">600 <span>#E53935</span></li>
+														<li style="background-color: #D32F2F;">700 <span>#D32F2F</span></li>
+														<li style="background-color: #C62828;">800 <span>#C62828</span></li>
+													</ul>
+													<div class="p-15">
+														<div class="media-body">
+															<div class="text-semibold text-uppercase text-size-small mt-5">Danger palette</div>
+															<div class="text-muted mt-5">@color-danger-*</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-lg-3">
+												<div class="panel">
+													<ul class="color-list">
+														<li style="background-color: #81C784;">300 <span>#81C784</span></li>
+														<li style="background-color: #66BB6A;">400 <span>#66BB6A</span></li>
+														<li style="background-color: #4CAF50;">500 <span>#4CAF50</span></li>
+														<li style="background-color: #43A047;">600 <span>#43A047</span></li>
+														<li style="background-color: #388E3C;">700 <span>#388E3C</span></li>
+														<li style="background-color: #2E7D32;">800 <span>#2E7D32</span></li>
+													</ul>
+													<div class="p-15">
+														<div class="media-body">
+															<div class="text-semibold text-uppercase text-size-small mt-5">Success palette</div>
+															<div class="text-muted mt-5">@color-success-*</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-lg-3">
+												<div class="panel">
+													<ul class="color-list">
+														<li style="background-color: #FF8A65;">300 <span>#FF8A65</span></li>
+														<li style="background-color: #FF7043;">400 <span>#FF7043</span></li>
+														<li style="background-color: #FF5722;">500 <span>#FF5722</span></li>
+														<li style="background-color: #F4511E;">600 <span>#F4511E</span></li>
+														<li style="background-color: #E64A19;">700 <span>#E64A19</span></li>
+														<li style="background-color: #D84315;">800 <span>#D84315</span></li>
+													</ul>
+													<div class="p-15">
+														<div class="media-body">
+															<div class="text-semibold text-uppercase text-size-small mt-5">Warning palette</div>
+															<div class="text-muted mt-5">@color-warning-*</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="col-lg-3">
+												<div class="panel">
+													<ul class="color-list">
+														<li style="background-color: #4DD0E1;">300 <span>#4DD0E1</span></li>
+														<li style="background-color: #26C6DA;">400 <span>#26C6DA</span></li>
+														<li style="background-color: #00BCD4;">500 <span>#00BCD4</span></li>
+														<li style="background-color: #00ACC1;">600 <span>#00ACC1</span></li>
+														<li style="background-color: #0097A7;">700 <span>#0097A7</span></li>
+														<li style="background-color: #00838F;">800 <span>#00838F</span></li>
+													</ul>
+													<div class="p-15">
+														<div class="media-body">
+															<div class="text-semibold text-uppercase text-size-small mt-5">Info palette</div>
+															<div class="text-muted mt-5">@color-info-*</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-lg-3">
+												<div class="panel">
+													<ul class="color-list">
+														<li style="background-color: #F06292;">300 <span>#F06292</span></li>
+														<li style="background-color: #EC407A;">400 <span>#EC407A</span></li>
+														<li style="background-color: #E91E63;">500 <span>#E91E63</span></li>
+														<li style="background-color: #D81B60;">600 <span>#D81B60</span></li>
+														<li style="background-color: #C2185B;">700 <span>#C2185B</span></li>
+														<li style="background-color: #AD1457;">800 <span>#AD1457</span></li>
+													</ul>
+													<div class="p-15">
+														<div class="media-body">
+															<div class="text-semibold text-uppercase text-size-small mt-5">Pink palette</div>
+															<div class="text-muted mt-5">@color-pink-*</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-lg-3">
+												<div class="panel">
+													<ul class="color-list">
+														<li style="background-color: #BA68C8;">300 <span>#BA68C8</span></li>
+														<li style="background-color: #AB47BC;">400 <span>#AB47BC</span></li>
+														<li style="background-color: #9C27B0;">500 <span>#9C27B0</span></li>
+														<li style="background-color: #8E24AA;">600 <span>#8E24AA</span></li>
+														<li style="background-color: #7B1FA2;">700 <span>#7B1FA2</span></li>
+														<li style="background-color: #6A1B9A;">800 <span>#6A1B9A</span></li>
+													</ul>
+													<div class="p-15">
+														<div class="media-body">
+															<div class="text-semibold text-uppercase text-size-small mt-5">Violet palette</div>
+															<div class="text-muted mt-5">@color-violet-*</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-lg-3">
+												<div class="panel">
+													<ul class="color-list">
+														<li style="background-color: #9575CD;">300 <span>#9575CD</span></li>
+														<li style="background-color: #7E57C2;">400 <span>#7E57C2</span></li>
+														<li style="background-color: #673AB7;">500 <span>#673AB7</span></li>
+														<li style="background-color: #5E35B1;">600 <span>#5E35B1</span></li>
+														<li style="background-color: #512DA8;">700 <span>#512DA8</span></li>
+														<li style="background-color: #4527A0;">800 <span>#4527A0</span></li>
+													</ul>
+													<div class="p-15">
+														<div class="media-body">
+															<div class="text-semibold text-uppercase text-size-small mt-5">Purple palette</div>
+															<div class="text-muted mt-5">@color-purple-*</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="col-lg-3">
+												<div class="panel">
+													<ul class="color-list">
+														<li style="background-color: #7986CB;">300 <span>#7986CB</span></li>
+														<li style="background-color: #5C6BC0;">400 <span>#5C6BC0</span></li>
+														<li style="background-color: #3F51B5;">500 <span>#3F51B5</span></li>
+														<li style="background-color: #3949AB;">600 <span>#3949AB</span></li>
+														<li style="background-color: #303F9F;">700 <span>#303F9F</span></li>
+														<li style="background-color: #283593;">800 <span>#283593</span></li>
+													</ul>
+													<div class="p-15">
+														<div class="media-body">
+															<div class="text-semibold text-uppercase text-size-small mt-5">Indigo palette</div>
+															<div class="text-muted mt-5">@color-indigo-*</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-lg-3">
+												<div class="panel">
+													<ul class="color-list">
+														<li style="background-color: #4FC3F7;">300 <span>#4FC3F7</span></li>
+														<li style="background-color: #29B6F6;">400 <span>#29B6F6</span></li>
+														<li style="background-color: #03A9F4;">500 <span>#03A9F4</span></li>
+														<li style="background-color: #039BE5;">600 <span>#039BE5</span></li>
+														<li style="background-color: #0288D1;">700 <span>#0288D1</span></li>
+														<li style="background-color: #0277BD;">800 <span>#0277BD</span></li>
+													</ul>
+													<div class="p-15">
+														<div class="media-body">
+															<div class="text-semibold text-uppercase text-size-small mt-5">Blue palette</div>
+															<div class="text-muted mt-5">@color-blue-*</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-lg-3">
+												<div class="panel">
+													<ul class="color-list">
+														<li style="background-color: #4DB6AC;">300 <span>#4DB6AC</span></li>
+														<li style="background-color: #26A69A;">400 <span>#26A69A</span></li>
+														<li style="background-color: #009688;">500 <span>#009688</span></li>
+														<li style="background-color: #00897B;">600 <span>#00897B</span></li>
+														<li style="background-color: #00796B;">700 <span>#00796B</span></li>
+														<li style="background-color: #00695C;">800 <span>#00695C</span></li>
+													</ul>
+													<div class="p-15">
+														<div class="media-body">
+															<div class="text-semibold text-uppercase text-size-small mt-5">Teal palette</div>
+															<div class="text-muted mt-5">@color-teal-*</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-lg-3">
+												<div class="panel">
+													<ul class="color-list">
+														<li style="background-color: #AED581;">300 <span>#AED581</span></li>
+														<li style="background-color: #9CCC65;">400 <span>#9CCC65</span></li>
+														<li style="background-color: #8BC34A;">500 <span>#8BC34A</span></li>
+														<li style="background-color: #7CB342;">600 <span>#7CB342</span></li>
+														<li style="background-color: #689F38;">700 <span>#689F38</span></li>
+														<li style="background-color: #558B2F;">800 <span>#558B2F</span></li>
+													</ul>
+													<div class="p-15">
+														<div class="media-body">
+															<div class="text-semibold text-uppercase text-size-small mt-5">Green palette</div>
+															<div class="text-muted mt-5">@color-green-*</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="col-lg-3">
+												<div class="panel">
+													<ul class="color-list">
+														<li style="background-color: #FFB74D;">300 <span>#FFB74D</span></li>
+														<li style="background-color: #FFA726;">400 <span>#FFA726</span></li>
+														<li style="background-color: #FF9800;">500 <span>#FF9800</span></li>
+														<li style="background-color: #FB8C00;">600 <span>#FB8C00</span></li>
+														<li style="background-color: #F57C00;">700 <span>#F57C00</span></li>
+														<li style="background-color: #EF6C00;">800 <span>#EF6C00</span></li>
+													</ul>
+													<div class="p-15">
+														<div class="media-body">
+															<div class="text-semibold text-uppercase text-size-small mt-5">Orange palette</div>
+															<div class="text-muted mt-5">@color-orange-*</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-lg-3">
+												<div class="panel">
+													<ul class="color-list">
+														<li style="background-color: #A1887F;">300 <span>#A1887F</span></li>
+														<li style="background-color: #8D6E63;">400 <span>#8D6E63</span></li>
+														<li style="background-color: #795548;">500 <span>#795548</span></li>
+														<li style="background-color: #6D4C41;">600 <span>#6D4C41</span></li>
+														<li style="background-color: #5D4037;">700 <span>#5D4037</span></li>
+														<li style="background-color: #4E342E;">800 <span>#4E342E</span></li>
+													</ul>
+													<div class="p-15">
+														<div class="media-body">
+															<div class="text-semibold text-uppercase text-size-small mt-5">Brown palette</div>
+															<div class="text-muted mt-5">@color-brown-*</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-lg-3">
+												<div class="panel">
+													<ul class="color-list">
+														<li style="background-color: #999;">300 <span>#999</span></li>
+														<li style="background-color: #888;">400 <span>#888</span></li>
+														<li style="background-color: #777;">500 <span>#777</span></li>
+														<li style="background-color: #666;">600 <span>#666</span></li>
+														<li style="background-color: #555;">700 <span>#555</span></li>
+														<li style="background-color: #444;">800 <span>#444</span></li>
+													</ul>
+													<div class="p-15">
+														<div class="media-body">
+															<div class="text-semibold text-uppercase text-size-small mt-5">Grey palette</div>
+															<div class="text-muted mt-5">@color-grey-*</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-lg-3">
+												<div class="panel">
+													<ul class="color-list">
+														<li style="background-color: #90A4AE;">300 <span>#90A4AE</span></li>
+														<li style="background-color: #78909C;">400 <span>#78909C</span></li>
+														<li style="background-color: #607D8B;">500 <span>#607D8B</span></li>
+														<li style="background-color: #546E7A;">600 <span>#546E7A</span></li>
+														<li style="background-color: #455A64;">700 <span>#455A64</span></li>
+														<li style="background-color: #37474F;">800 <span>#37474F</span></li>
+													</ul>
+													<div class="p-15">
+														<div class="media-body">
+															<div class="text-semibold text-uppercase text-size-small mt-5">Slate palette</div>
+															<div class="text-muted mt-5">@color-slate-*</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<h6 class="text-semibold" id="overview_compile">LESS and CSS</h6>
+									<div class="content-group-lg">
+										<p>Color system includes 2 source LESS files - <code>colors.less</code> and <code>palette.less</code> located in <code>assets/less/core/colors/</code> folder. The first one includes class names and styles for them: background, borders, text and alpha colors. The second one includes list of all color variables.</p>
+
+										<p>Less folder root contains one more <code>colors.less</code> file. This file is needed for <code>colors.min.css</code> CSS file compile. Basically it includes paths to main LESS files, so when you compile CSS files, use this file:</p>
+										<pre><code class="language-css">// Core										
+// ------------------------------
+
+// Import variables and mixins
+@import "bootstrap/variables.less";
+@import "bootstrap/mixins.less";
+
+// Import overrides
+@import "core/variables/variables.less";
+@import "core/variables/core-variables.less";
+
+
+
+// Color system, always load last
+// ------------------------------
+
+// Color palettes
+@import "core/colors/palette.less";
+
+// System itself
+@import "core/colors/colors.less";
+</code></pre>
+									</div>
+
+									<p>If you want to use color system in your project, i suggest to use minified <code>colors.min.css</code> file included to the package, since basically this file won't be changed often, except if you may want to change colors in <code>palette.less</code> file. But if you don't want to use the system, feel free to remove compiled CSS file, but don't remove any paths to <code>palette.less</code> file in any LESS files, because color variables are used in different components and layout options.</p>
+								</div>
+							</div>
+							<!-- /overview -->
+
+						</div>
+					</div>
+					<!-- /detached content -->
+
+
+					<!-- Detached sidebar -->
+					<div class="sidebar-detached">
+			        	<div class="sidebar sidebar-default">
+							<div class="sidebar-content">
+
+				        		<!-- Contact author -->
+								<div class="sidebar-category no-margin">
+									<div class="category-title">
+										<span>Page navigation</span>
+										<i class="icon-menu7 text-muted pull-right"></i>
+									</div>
+
+									<div class="category-content">
+										<a href="http://themeforest.net/user/kopyov" class="btn bg-blue btn-block" target="_blank"><i class="icon-reading position-left"></i> Contact author</a>
+									</div>
+								</div>
+								<!-- /contact author -->
+
+			        			
+			        			<!-- Navigation -->
+								<div class="sidebar-category">
+									<div class="category-content no-padding">
+										<ul class="nav navigation no-padding-top">
+											<li class="navigation-header"><i class="icon-history pull-right"></i> Navigation</li>
+											<li><a href="#overview_intro">Overview</a></li>
+											<li><a href="#overview_usage">Basic Usage</a></li>
+											<li><a href="#overview_colors">Colors</a></li>
+											<li><a href="#overview_compile">LESS and CSS</a></li>
+											<li class="navigation-divider"></li>
+											<li><a href="#">Go to top <i class="icon-circle-up2 pull-right"></i></a></li>
+							            </ul>
+						            </div>
+					            </div>
+					            <!-- /navigation -->
+
+				            </div>
+			            </div>
+		            </div>
+		            <!-- /detached sidebar -->
+
+
+					<!-- Footer -->
+					<div class="footer text-muted">
+						&copy; 2015. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
+					</div>
+					<!-- /footer -->
+
+				</div>
+				<!-- /content area -->
+
+			</div>
+			<!-- /main content -->
+
+		</div>
+		<!-- /page content -->
+
+	</div>
+	<!-- /page container -->
+
+</body>
+</html>

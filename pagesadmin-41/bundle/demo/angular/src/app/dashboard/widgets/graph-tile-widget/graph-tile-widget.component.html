@@ -1,0 +1,21 @@
+<pgcard TimeOut="3000" ProgressType="bar" AdditionalClasses="widget-4 card no-border  no-margin widget-loader-bar full-height" Maximize="false" Toggle="false" Close="false" BodyClass="no-padding">
+  <ng-template #CardTitle>
+      <span class="font-montserrat fs-11 all-caps">
+          Product revenue <i class="fa fa-chevron-right"></i>
+      </span>
+  </ng-template>  
+  <div class="container-sm-height full-height d-flex flex-column">
+			<div class="p-l-20 p-r-20">
+				<h5 class="no-margin p-b-5 pull-left hint-text">Pages</h5>
+
+				<p class="pull-right no-margin bold hint-text">2,563</p>
+
+				<div class="clearfix"></div>
+			</div>
+			<div class="widget-4-chart line-chart mt-auto" data-line-color="success"
+		     data-area-color="success-light" data-y-grid="false" data-points="false"
+		     data-stroke-width="2" id="widget-4-container">
+			 <nvd3 [options]="nvd3LineOptions" [data]="nvd3LineData"></nvd3>
+			</div>
+	</div>
+</pgcard>

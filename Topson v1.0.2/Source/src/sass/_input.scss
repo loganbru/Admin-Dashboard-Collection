@@ -1,0 +1,111 @@
+.input {
+    @apply py-2 px-3 rounded-md appearance-none;
+    &:not(textarea) {
+        &.input--sm {
+            @apply py-1 px-2;
+        }
+        &.input--lg {
+            @apply py-3 px-4;
+        }
+    }
+    &:focus {
+        @apply outline-none shadow-outline;
+    }
+    &[type="radio"] {
+        width: 16px;
+        height: 16px;
+        @apply relative rounded-full overflow-hidden cursor-pointer;
+        &:before {
+            content: "";
+            width: 10px;
+            height: 10px;
+            transition: all 0.2s ease-in-out;
+            @apply bg-light-1 absolute rounded-full inset-0 m-auto opacity-0;
+        }
+        &:checked {
+            @apply border-light-1;
+            &:before {
+                @apply opacity-100;
+            }
+        }
+    }
+    &[type="checkbox"]:not(.input--switch) {
+        width: 16px;
+        height: 16px;
+        border-radius: 0.2em;
+        @apply relative overflow-hidden cursor-pointer;
+        &:before {
+            content: "";
+            transition: all 0.2s ease-in-out;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' class='feather feather-check'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");
+            background-size: 80%;
+            @apply w-full h-full absolute text-white flex items-center justify-center opacity-0 bg-no-repeat bg-center;
+        }
+        &:checked {
+            @apply bg-light-1 border-light-1;
+            &:before {
+                @apply opacity-100;
+            }
+        }
+    }
+    &.input--switch[type="checkbox"] {
+        width: 38px;
+        height: 24px;
+        padding: 1px;
+        @apply outline-none rounded-full relative cursor-pointer;
+        &:before {
+            content: "";
+            width: 22px;
+            height: 22px;
+            transition: all 0.2s ease-in-out;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+            @apply absolute inset-y-0 my-auto rounded-full;
+        }
+        &:checked {
+            @apply bg-light-1 border-light-1;
+            &::before {
+                margin-left: 13px;
+                @apply bg-white;
+            }
+        }
+    }
+}
+.input-group-info {
+    @apply text-gray-600 bg-gray-100;
+}
+select.input {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='rgb(74, 85, 104)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevron-down'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+    background-size: 15px;
+    background-position: center right 0.60rem;
+    @apply bg-white bg-no-repeat pr-8;
+    &.input--sm {
+        @apply pr-8;
+    }
+    &.input--lg {
+        @apply pr-8;
+    }
+}
+
+.dark {
+    .input {
+        @apply bg-dark-2 border-dark-4;
+        &[type="checkbox"]:not(.input--switch) {
+            @apply bg-dark-5 border-dark-5;
+            &:checked {
+                @apply bg-light-1 border-light-1;
+            }
+        }
+        &.input--switch[type="checkbox"] {
+            @apply bg-dark-5 border-dark-5;
+            &:before {
+                @apply bg-dark-1;
+            }
+            &:checked {
+                @apply bg-light-1;
+            }
+        }
+    }
+    .input-group-info {
+        @apply text-gray-300 bg-dark-2 border-dark-4;
+    }
+}

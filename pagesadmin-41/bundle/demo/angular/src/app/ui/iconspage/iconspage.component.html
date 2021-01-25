@@ -1,0 +1,387 @@
+        <!-- START JUMBOTRON -->
+        <div class="jumbotron lg vertical center bg-white column-w4 vertical-bottom">
+          <pg-container extraClass="sm-p-l-0 sm-p-r-0 full-height" extraHorizontalClass="sm-p-l-0 sm-p-r-0 full-height">
+            <div class="inner text-center p-t-50 m-t-80 full-height"  pg-parallax>
+              <img class="sm-image-responsive-height" src="assets/img/demo/icons_hero.png" pgRetina src1x="assets/img/demo/icons_hero.png" src2x="assets/img/demo/icons_hero2x.png" alt="" width="612" height="69">
+              <div class="m-b-10">
+                <h2 class=" p-t-10 inline">Carefully hand crafted icons exclusively only on pages</h2>
+              </div>
+              <div class="input-group transparent col-lg-4 center-margin">
+                <input type="text" class="form-control" [(ngModel)]="iconFilter.label" (input)="onSearch($event.target.value)" placeholder="Search for icon - home, camera, world etc." id="icon-filter" name="icon-filter">
+                <div class="input-group-append">
+                    <span class="input-group-text transparent"><i class="pg pg-search"></i></span>
+                </div>
+              </div>
+              <div class="m-t-20 m-b-40 ">
+                <p class="small hint-text">Pages Pixel perfect icons / Font awesome / line icons</p>
+              </div>
+              <div class="input-group col-lg-4 center-margin ">
+                <div class="col-lg-7 b-grey b-r">
+                  <p class="hinted-text text-left p-t-15 p-b-t-15">Built upon a 14x14px Grid System.
+                    <br>Vector Font icons</p>
+                </div>
+                <div class="col-lg-5">
+                  <p class="hinted-text text-left p-t-15 p-b-t-15 p-l-10">Svg files available
+                    <br>Pixel Perfect</p>
+                </div>
+              </div>
+            </div>
+        </pg-container>
+        </div>
+        <!-- END JUMBOTRON -->
+        <pg-container extraClass="container">
+          <br>
+          <div class="row icon-set-preview" [style.opacity]="searchHidden == true ? '1' : '0'">
+            <div class="col-lg-6">
+              <div class="card card-default">
+                <div class="card-header ">
+                  <div class="card-title">Pages icon
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="icon-preview m-t-10">
+                    <div class="row center-margin m-b-10">
+                      <div class="col-2 text-center">
+                        <i class="fs-14 pg pg-charts"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 pg pg-comment"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 pg pg-desktop"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 pg pg-bag"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 pg pg-calender"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 pg pg-camera"></i>
+                      </div>
+                    </div>
+                    <div class="row center-margin m-b-10">
+                      <div class="col-2 text-center">
+                        <i class="fs-14 pg pg-centeralign"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 pg pg-clock"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 pg pg-close"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 pg pg-refresh_new"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 pg pg-comment"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 pg pg-credit_card_line"></i>
+                      </div>
+                    </div>
+                    <div class="row center-margin m-b-10">
+                      <div class="col-2 text-center">
+                        <i class="fs-14 pg pg-menu_justify"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 pg pg-grid"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 pg pg-menu"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 pg pg-desktop"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 pg pg-minus"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 pg pg-plus"></i>
+                      </div>
+                    </div>
+                    <div class="row center-margin m-b-10">
+                      <div class="col-2 text-center">
+                        <i class="fs-14 pg pg-search"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 pg pg-power"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 pg pg-refresh"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 pg pg-tables"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 pg pg-ui"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 pg pg-video"></i>
+                      </div>
+                    </div>
+                    <div class="row center-margin m-b-10">
+                      <div class="col-2 text-center">
+                        <i class="fs-14 pg pg-mail"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 pg pg-map"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 pg pg-cupboard"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 pg pg-download"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 pg pg-home"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 pg pg-laptop"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="card card-default">
+                <div class="card-header ">
+                  <div class="card-title">Fontawesome
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="icon-preview m-t-10">
+                    <div class="row center-margin m-b-10">
+                      <div class="col-2 text-center">
+                        <i class="fs-14 fa fa-cloud"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 fa fa-cloud-download"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 fa fa-code-fork"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 fa fa-dashboard"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 fa fa-cube"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 fa fa-cubes"></i>
+                      </div>
+                    </div>
+                    <div class="row center-margin m-b-10">
+                      <div class="col-2 text-center">
+                        <i class="fs-14 fa fa-heart"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 fa fa-lock"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 fa fa-rss"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 fa fa-signal"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 fa fa-magic"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 fa fa-question"></i>
+                      </div>
+                    </div>
+                    <div class="row center-margin m-b-10">
+                      <div class="col-2 text-center">
+                        <i class="fs-14 fa fa-paint-brush"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 fa fa-terminal"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 fa fa-tag"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 fa fa-wifi"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 fa fa-tablet"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 pg pg-plus"></i>
+                      </div>
+                    </div>
+                    <div class="row center-margin m-b-10">
+                      <div class="col-2 text-center">
+                        <i class="fs-14 fa fa-bars"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 fa fa-search"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 fa fa-phone"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 fa fa-share-alt"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 fa fa-phone"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 fa fa-bolt"></i>
+                      </div>
+                    </div>
+                    <div class="row center-margin m-b-10">
+                      <div class="col-2 text-center">
+                        <i class="fs-14 fa fa-adjust"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 fa fa-check"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 fa fa-font"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 fa fa-th"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 fa fa-repeat"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 fa fa-folder-o"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="col-lg-4">
+              <div class="card card-default">
+                <div class="card-header ">
+                  <div class="card-title">Line Icon
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="icon-preview m-t-10">
+                    <div class="row center-margin m-b-10">
+                      <div class="col-2 text-center">
+                        <i class="fs-14 sl-user-follow"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 sl-screen-desktop"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 sl-mouse"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 sl-energy"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 sl-disc"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 sl-crop"></i>
+                      </div>
+                    </div>
+                    <div class="row center-margin m-b-10">
+                      <div class="col-2 text-center">
+                        <i class="fs-14 sl-crop"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 sl-user"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 sl-speedometer"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 sl-shield"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 sl-magic-wand"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 sl-bell"></i>
+                      </div>
+                    </div>
+                    <div class="row center-margin m-b-10">
+                      <div class="col-2 text-center">
+                        <i class="fs-14 sl-wallet"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 sl-printer"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 sl-map"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 sl-playlist"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 sl-handbag"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 sl-film"></i>
+                      </div>
+                    </div>
+                    <div class="row center-margin m-b-10">
+                      <div class="col-2 text-center">
+                        <i class="fs-14 sl-feed"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 sl-docs"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 sl-directions"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 sl-calculator"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 sl-bag"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 sl-tag"></i>
+                      </div>
+                    </div>
+                    <div class="row center-margin m-b-10">
+                      <div class="col-2 text-center">
+                        <i class="fs-14 sl-microphone"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 sl-loop"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 sl-login"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 sl-list"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 sl-like"></i>
+                      </div>
+                      <div class="col-2 text-center">
+                        <i class="fs-14 sl-calendar"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+          <!-- END GRID -->
+          <div id="icon-list"[ngStyle]="showIconResults()"  [class.hidden]=searchHidden>
+            <div class="card card-transparent">
+              <div class="card-header ">
+                <div class="card-title">Search Results
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="row margin-bottom-20 icon-list">
+                  <div class="fa-item col-lg-3 col-md-4" *ngFor="let font of fontawesome | filterBy: iconFilter"><i class="{{font.class}}"></i>{{font.class}}</div>
+                </div>
+              </div>
+              <!-- END FONT AWEOMSE -->
+            </div>
+          </div>
+        </pg-container>

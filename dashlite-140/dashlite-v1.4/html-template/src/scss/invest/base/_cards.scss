@@ -1,0 +1,28 @@
+//////////////////////////////////
+/// WIDGET CARD 
+//////////////////////////////////
+.nk-wg-card {
+	&.is-dark {
+		background: $accent-dark;
+		color: $white;
+	}
+	&:after {
+		content: "";
+		position: absolute;
+		height: 0.25rem;
+		background-color: transparent;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		border-radius: 0 0 $border-radius-sm $border-radius-sm;
+	}
+	&.is-s1:after {
+		background-color: $base-color;
+	}
+	&.is-s2:after {
+		background-color: $accent-color;
+	}
+	&.is-s3:after {
+		background-color: $success;
+	}
+}

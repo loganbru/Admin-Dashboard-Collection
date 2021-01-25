@@ -1,0 +1,33 @@
+
+{   "username":"John Smith",
+    "status":"Online",
+    "img": "assets/img/profiles/avatar_small.jpg",
+    "img2x": "assets/img/profiles/avatar_small2x.jpg",
+    "log":[
+        {
+        "from":"me",
+        "message":"Hello there",
+        "date":""
+    },
+    {
+        "from":"John",
+        "message":"Hey",
+        "date":""
+    },
+    {
+        "from":"me",
+        "message":"Did you check out Pages framework ?",
+        "date":""
+    },
+    {
+        "from":"me",
+        "message":"Its an awesome chat",
+        "date":""
+    },
+    {
+        "from":"John",
+        "message":"Yea",
+        "date":""
+    }
+    ]
+}

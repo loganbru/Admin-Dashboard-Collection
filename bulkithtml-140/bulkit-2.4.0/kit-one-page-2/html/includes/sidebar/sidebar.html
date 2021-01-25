@@ -1,0 +1,31 @@
+<!-- Side navigation -->
+<div class="side-navigation-menu">
+    <!-- Categories menu -->
+    <div class="category-menu-wrapper">
+        <!-- Menu -->
+        <ul class="categories">
+            <li class="square-logo"><img src="assets/images/logo/square-white.svg" alt=""></li>
+            <li class="category-link is-active" data-navigation-menu="demo-pages"><i class="sl sl-icon-layers"></i></li>
+            <li class="category-link" data-navigation-menu="onepagers"><i class="sl sl-icon-energy"></i></li>
+            <li class="category-link" data-navigation-menu="components"><i class="sl sl-icon-grid"></i></li>
+        </ul>
+        <!-- Menu -->
+
+        <ul class="author">
+            <li>
+                <!-- Theme author -->
+                <a href="https://cssninja.io" target="_blank">
+                    <img class="main-menu-author" src="assets/images/logo/cssninja.svg" alt="">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- /Categories menu -->
+
+    {{> pages-menu}}
+
+    {{> onepagers-menu}}
+
+    {{> components-menu}}
+</div>
+<!-- /Side navigation -->

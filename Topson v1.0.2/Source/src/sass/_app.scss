@@ -1,0 +1,10 @@
+.app {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    &.app--backdrop:before {
+        content: "";
+        z-index: 50;
+        background: #0000001a;
+        @apply w-full h-full fixed top-0 left-0;
+    }
+}

@@ -1,0 +1,384 @@
+/* ------------------------------------------------------------------------------
+*
+*  # Bootstrap multiselect
+*
+*  Styles for multiselect.js - custom multiple select plugin
+*
+* ---------------------------------------------------------------------------- */
+
+
+// Core
+// ------------------------------
+
+// Wrapper
+.multiselect-native-select {
+    position: relative;
+
+    // Hide original select
+    select {
+        border: 0 !important;
+        clip: rect(0 0 0 0) !important;
+        height: 0 !important;
+        margin: 0 !important;
+        overflow: hidden !important;
+        padding: 0 !important;
+        position: absolute !important;
+        width: 0 !important;
+        left: 0;
+        top: 0;
+    }
+}
+
+// Main button
+.multiselect {
+    width: 100%;
+    min-width: 100%;
+    text-align: left;
+    padding-right: (@padding-base-horizontal + @icon-font-size);
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    // Default button overrides
+    &.btn-default {
+        border-width: 1px 0;
+        padding: @padding-base-vertical 0;
+        padding-right: (@icon-font-size * 1.5);
+        border-radius: 0;
+        text-transform: none;
+        font-weight: 400;
+
+        // States
+        &,
+        &:hover,
+        &:focus,
+        &:active,
+        .btn-group.open > &.dropdown-toggle {
+            border-color: transparent transparent @input-border;
+            background-color: @input-bg;
+            .box-shadow(none);
+        }
+
+        // When opened, change bottom border color
+        &:focus,
+        .btn-group.open > &.dropdown-toggle {
+            border-bottom-color: @input-border-highlight-color;
+            .box-shadow(0 1px 0 @input-border-highlight-color);
+        }
+
+        // Disabled
+        &.disabled {
+            border-bottom-style: dashed;
+        }
+
+        // Stick caret to far right
+        .caret {
+            right: 0;
+        }
+    }
+
+    // Caret
+    .caret {
+        position: absolute;
+        top: 50%;
+        right: @padding-base-horizontal;
+        margin-top: -(@icon-font-size / 2);
+        width: @icon-font-size;
+        text-align: right;
+    }
+
+
+    //
+    // Make it as an input instead of button
+    //
+
+    // Large
+    &.btn-lg {
+        padding-right: (@padding-large-horizontal * 2);
+
+        &.btn-default {
+            padding-right: (@padding-large-horizontal + @padding-large-vertical);
+        }
+    }
+
+    // Small
+    &.btn-sm {
+        padding-right: (@padding-small-horizontal * 2);
+
+        &.btn-default {
+            padding-right: (@padding-small-horizontal + @padding-small-vertical);
+        }
+    }
+
+    // Mini
+    &.btn-xs {
+        padding-right: (@padding-xs-horizontal * 2);
+
+        &.btn-default {
+            padding-right: (@padding-xs-horizontal + @padding-xs-vertical);
+        }
+    }
+}
+
+// Light theme
+.page-header-inverse .form-group,
+.navbar-inverse .navbar-form {
+    .multiselect.btn-default {
+        border-bottom-color: fade(#fff, 30%);
+        color: #fff;
+    }
+
+    // Opened dropdown
+    .btn-group.open > .multiselect.btn-default,
+    .multiselect.btn-default:focus {
+        color: #fff;
+        border-bottom-color: #fff;
+        .box-shadow(0 1px 0 #fff);
+    }
+}
+
+
+// Container
+// ------------------------------
+
+// Base
+.multiselect-container {
+    min-width: 180px;
+    width: 100%;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+// Menu item
+.multiselect-item {
+
+    // Hide original inputs
+    input[type=checkbox],
+    input[type=radio] {
+        border: 0;
+        background: none;
+        display: block;
+        margin: 0;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        left: @content-padding-base;
+        margin-top: -(@checkbox-size / 2);
+        width: @checkbox-size;
+        height: @checkbox-size;
+        z-index: 2;
+        .opacity(0);
+
+        &:disabled {
+            cursor: @cursor-disabled;
+        }
+    }
+
+    // Checkbox and radio have some common styles
+    input[type=checkbox],
+    input[type=radio] {
+        ~ .form-check-control-indicator {
+            position: absolute;
+            left: @content-padding-base;
+            top: 50%;
+            margin-top: -(@checkbox-size / 2);
+            width: @checkbox-size;
+            height: @checkbox-size;
+            border: @checkbox-border-width solid @color-slate-500;
+        }
+    }
+
+    // Checkbox indicator
+    input[type=checkbox] {
+        ~ .form-check-control-indicator {
+            @multiselect-checkbox-transition: border-color ease-in-out 0.15s, color ease-in-out 0.15s;
+            color: @color-slate-700;
+            border: @checkbox-border-width solid @color-slate-500;
+            display: inline-block;
+            text-align: center;
+            border-radius: @border-radius-small;
+            .transition(@multiselect-checkbox-transition);
+
+            // Use icon
+            &:after {
+                content: "\e600";
+                font-family: 'icomoon';
+                font-size: @icon-font-size;
+                line-height: 1;
+                position: absolute;
+                top: (@checkbox-size - @icon-font-size - (@checkbox-border-width * 2)) / 2;
+                left: (@checkbox-size - @icon-font-size - (@checkbox-border-width * 2)) / 2;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                .opacity(0);
+                .transition(opacity ease-in-out 0.15s);
+            }
+        }
+    }
+
+    // Radio indicator
+    input[type=radio] {
+        ~ .form-check-control-indicator {
+            border-radius: 100%;
+            .transition(border-color ease-in-out 0.15s);
+
+            // Use circle
+            &:after {
+                content: "";
+                position: absolute;
+                top: ((@checkbox-size / 2) - @checkbox-border-width - ((@checkbox-size - 10) / 2));
+                left: ((@checkbox-size / 2) - @checkbox-border-width - ((@checkbox-size - 10) / 2));
+                border: ((@checkbox-size - 10) / 2) solid;
+                border-color: inherit;
+                width: 0;
+                height: 0;
+                border-radius: 100%;
+                .opacity(0);
+                .transition(all ease-in-out 0.15s);
+            }
+        }
+    }
+
+    // Checked state
+    input[type=checkbox],
+    input[type=radio] {
+        &:checked ~ .form-check-control-indicator {
+            &:after {
+                .opacity(1);
+            }
+        }
+    }
+
+    // Remove padding from links
+    &.dropdown-item {
+        > a {
+            padding: 0;
+        }
+    }
+    
+    // Label
+    label {
+        display: block;
+        margin: 0;
+        height: 100%;
+        cursor: pointer;
+        padding: (@padding-base-vertical + 1) @padding-base-horizontal;
+        padding-left: ((@padding-base-horizontal * 2) + @checkbox-size);
+
+        // Inside navbar form
+        .navbar-form & {
+            display: block;
+        }
+    }
+
+    // Select all link
+    &.multiselect-all label {
+        font-weight: 500;
+    }
+
+    // Active state
+    &.active:not(.disabled) {
+        input[type=checkbox] ~ .form-check-control-indicator {
+            border-color: @dropdown-link-active-color;
+            color: @dropdown-link-active-color;
+        }
+        input[type=radio] ~ .form-check-control-indicator {
+            border-color: @dropdown-link-active-color;
+        }
+    }
+
+    // Disabled item
+    &.disabled > a {
+        background-color: transparent;
+
+        > label {
+            cursor: @cursor-disabled;
+        }
+    }
+}
+
+// Optgroup title
+.dropdown-menu > .multiselect-group {
+    > label,
+    &.active > label {
+        margin: 0;
+        font-weight: 500;
+        margin-top: (@list-spacing * 2);
+
+        // If item has no checkbox
+        &:not(.multiselect-group-label) {
+            padding-left: @content-padding-base;
+            cursor: default;
+
+            // Remove backgrounds
+            &,
+            &:hover,
+            &:focus {
+                background-color: transparent;
+            }
+        }
+    }
+
+    // Disabled color
+    &.disabled {
+        color: @text-muted;
+    }
+
+    // First item
+    &:first-child {
+        > label,
+        &.active > label {
+            margin-top: @list-spacing;
+        }
+    }
+
+    // Clickable group
+    &.multiselect-group-clickable > label {
+        cursor: pointer;
+    }
+
+    // Disabled group
+    &.disabled {
+        &,
+        &:hover,
+        &:focus {
+            label {
+                background-color: transparent;
+                cursor: @cursor-disabled;
+            }
+        }
+    }
+}
+
+
+// Misc
+// ------------------------------
+
+// Filter
+.multiselect-filter {
+    position: relative;
+    padding: (@padding-base-horizontal - @list-spacing) @padding-base-horizontal;
+    padding-left: ((@padding-base-horizontal * 2) + @font-size-small);
+    margin-bottom: (@padding-base-horizontal - @list-spacing) !important;
+
+    // Center icon vertically
+    i {
+        font-size: @font-size-large;
+        position: absolute;
+        left: @padding-base-horizontal;
+        top: 50%;
+        margin-top: -(@font-size-large / 2);
+    }
+}
+
+// Button group styles
+.btn-group-multiselect {
+    width: 100%;
+
+    .btn {
+        float: none;
+    }
+
+    .multiselect {
+        min-width: 0;
+    }
+}

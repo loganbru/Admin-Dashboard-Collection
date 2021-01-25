@@ -1,0 +1,69 @@
+//
+// Header
+//
+
+
+
+// Desktop mode(1024px and above)
+@include kt-desktop {
+	.kt-header {
+		display: flex;
+		align-items: stretch;
+		transition: height 0.3s ease;
+		position: relative;
+    	z-index: 2;
+    	height: kt-get($kt-header-config, base, desktop, default, height);
+    	border-bottom: 1px solid rgba(#fff, 0.1);
+
+		.kt-container {
+			display: flex;
+			justify-content: space-between;
+			align-items: stretch;
+
+			&:before,
+			&:after {
+				display: none !important;
+			}
+
+			.kt-header__brand-logo-default {
+				display: inline-block;
+			}
+
+			.kt-header__brand-logo-sticky {
+				display: none;
+			}
+		}
+
+		// Fixed
+		.kt-header--fixed.kt-header--minimize & {
+			position: fixed;
+			top: 0;
+			right: 0;
+			left: 0;
+			transition: height 0.3s ease;
+			z-index: kt-get($kt-header-config, base, desktop, fixed, zindex);
+			box-shadow: 0px 0px 40px 0px rgba(82,63,105,0.1);
+			height: kt-get($kt-header-config, base, desktop, fixed, height);
+			background: #fff;
+			border-bottom: 0;
+		}
+
+		// Animations
+		.kt-header--minimize & {
+			animation: kt-header-minimize .5s ease 1;
+
+			.kt-header__brand-logo-default {
+				display: none;
+			}
+
+			.kt-header__brand-logo-sticky {
+				display: inline-block;
+			}
+		}
+	}
+}
+
+@keyframes kt-header-minimize {
+    from   { top: -(kt-get($kt-header-config, base, desktop, fixed, height)); }
+    to { top: 0; }
+}

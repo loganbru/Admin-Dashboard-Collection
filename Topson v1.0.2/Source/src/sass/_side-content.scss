@@ -1,0 +1,9 @@
+.side-content {
+    @apply hidden;
+    @media (max-width: $xl) {
+        max-height: 95vh;
+    }
+    &.side-content--active {
+        @apply flex;
+    }
+}

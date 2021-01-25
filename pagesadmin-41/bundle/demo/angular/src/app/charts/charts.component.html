@@ -1,0 +1,175 @@
+<pg-container>
+<pg-breadcrumb>
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
+    <li class="breadcrumb-item active">Charts</li>
+  </ol>
+</pg-breadcrumb>
+  <!-- END BREADCRUMB -->
+  <!-- START card -->
+  <div class="card card-transparent">
+    <div class="card-header  ">
+      <div class="card-title">Echarts Charts
+      </div>
+    </div>
+    <div class="card-body d-flex flex-wrap">
+      <div class="col-lg-4 no-padding">
+        <div class="p-r-30">
+          <h3>Talk less, show more</h3>
+          <br>
+          <p>Echarts is a JavaScript toolkit for creating interactive time series graphs. Echarts provides the elements you need to create interactive graphs: renderers, legends, hovers, range selectors, etc. You put the pieces together.</p>
+          <br>
+          <div class="inline">
+            <p class="small hint-text">Echarts: JavaScript toolkit for creating interactive time series graphs.
+              <br> <a href="https://ecomfe.github.io/echarts-doc/public/en/index.html">View the official
+        documentation</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-8 sm-no-padding">
+          <pgcard Type="transparent" Maximize="false" Close="false" Refresh="false" Toggle="false">
+              <ng-template #CardTitle></ng-template>
+              <pg-tabset tabAnimation="slide-left" Type="linetriangle" extraTabClass="no-border" extraTabContentClass="no-padding b-t b-light">
+                <pg-tab>
+                  <ng-template #TabHeading>
+                    Realtime Charts
+                  </ng-template>
+                <div class="tab-rickshaw-realtime full-width" #realTimeChartWrapper>
+					        <div echarts class="realtimeChart" [merge]="realtimeChartUpdate" [options]="realtimeChartOptions" [initOpts]="realtimeChartInitOptions" (chartInit)="onRealtimeChartInit($event)" (window:resize)="onRealtimeChartResize($event)"></div>				
+                </div>
+                </pg-tab> 
+                <pg-tab>
+                    <ng-template #TabHeading>
+                      Stacked Bar Charts
+                    </ng-template>
+                    <div class="sample-bar-chart">
+                      <nvd3 [options]="barChartOptions" [data]="barChartData"></nvd3>
+                    </div>
+                  </pg-tab>
+                  <pg-tab>
+                      <ng-template #TabHeading>
+                        Area Chart with Slider
+                      </ng-template>
+                      <div #areaSliderChartWrapper class="relative rickshaw-slider">
+					              <div echarts class="areaSliderChart" [merge]="areaSliderChartUpdate" [options]="areaSliderChartOptions" [initOpts]="areaSliderChartInitOptions" (window:resize)="onAreaSliderChartResize($event)"></div>				
+                      </div>
+                    </pg-tab>
+              </pg-tabset>
+          </pgcard>
+      </div>
+    </div>
+    <!-- END card -->
+  </div>
+  <!-- END CONTAINER FLUID -->
+  <!-- START CONTAINER FLUID -->
+  <div class="p-l-30 p-r-30 sm-no-padding bg-white">
+    <!-- START card -->
+    <pgcard Type="transparent" BodyClass="d-flex flex-wrap" Maximize="false" Close="false" Refresh="false" Toggle="false">
+        <ng-template #CardTitle>NVD3 Charts</ng-template>
+        <div class="col-lg-4 no-padding">
+            <div class="p-r-30">
+              <h3>Talk less, show more</h3>
+              <br>
+              <p>This project is an attempt to build re-usable charts and chart components for d3.js without taking away the power that d3.js gives you. This is a very young collection of components, with the goal of keeping these components very customizeable, staying away from your standard cookie cutter solutions.</p>
+              <br>
+              <div class="inline">
+                <p class="small hint-text">NVD3: Re-usable charts for d3.js
+                  <br> <a href="http://nvd3.org/examples/index.html">View the official
+            documentation</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 sm-no-padding">
+            <pg-tabset tabAnimation="slide-left" Type="linetriangle"  extraTabClass="no-border" extraTabContentClass="no-padding b-t b-light">
+                <pg-tab>
+                  <ng-template #TabHeading>
+                      Line Chart
+                  </ng-template>
+                  <div class="line-chart text-center p-t-20" data-x-grid="false">
+                  <nvd3 [options]="nvd3LineOptions" [data]="nvd3LineData"></nvd3>
+                  </div>
+                </pg-tab>
+                <pg-tab>
+                    <ng-template #TabHeading>
+                        Stacked Area Charts
+                    </ng-template>
+                    <div class="line-chart text-center  p-t-20" data-x-grid="false">
+                    <nvd3 [options]="options" [data]="data"></nvd3>
+                    </div>
+                  </pg-tab>
+                  <pg-tab>
+                      <ng-template #TabHeading>
+                          Line Charts with area
+                      </ng-template>
+                      <div class="line-chart text-center  p-t-20" data-x-grid="false">
+                        <nvd3 [options]="nvd3LineAreaOptions" [data]="nvd3LineAreaData"></nvd3>
+                      </div>
+                    </pg-tab>
+              </pg-tabset>
+          </div>
+    </pgcard>
+    <!-- END card -->
+  </div>
+  <!-- END CONTAINER FLUID -->
+  <!-- START CONTAINER FLUID -->
+  <div class="p-l-30 p-r-30 sm-no-padding">
+    <!-- START card -->
+    <div class="card card-transparent">
+      <div class="card-header  ">
+        <div class="card-title">Sparkline Charts
+        </div>
+      </div>
+      <div class="card-body d-flex flex-wrap">
+        <div class="col-lg-4 no-padding">
+          <div class="p-r-30">
+            <h3>Lighter but Smarter</h3>
+            <br>
+            <p>
+              Echarts plugin generates sparklines (small inline charts) directly in the browser using data supplied either inline in the HTML, or via typescript. The plugin is compatible with most modern browsers and has been tested with Firefox 2+, Safari 3+, Opera 9, Google Chrome and Internet Explorer 9 & 10 as well as iOS and Android.
+            </p>
+            <br>
+            <div class="inline">
+              <p class="small hint-text">Echarts Sparkline
+                <br> <a href="https://ecomfe.github.io/echarts-doc/public/en/index.html">View the official
+          documentation</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="card card-transparent">
+            <div class="card-header  ">
+              <div class="card-controls">
+                <ul>
+                  <li><a href="javascript:void(0)" class="card-collapse" data-toggle="collapse"><i
+              class="pg pg-arrow_maximize"></i></a>
+                  </li>
+                  <li><a href="javascript:void(0)" class="card-refresh" data-toggle="refresh"><i
+              class="pg pg-refresh_new"></i></a>
+                  </li>
+                  <li><a href="javascript:void(0)" class="card-close" data-toggle="close"><i
+              class="pg pg-close"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-sm-6 text-center">
+                    <div echarts [options]="optionsLineStack" [initOpts]="initOptionsLineStack" class="demo-chart"></div>
+                </div>
+                <div class="col-sm-6 text-center" #pieChartContainer>
+                    <div echarts [options]="optionsPie" [initOpts]="initOptionsPie" class="demo-chart" (chartInit)="onChartInit($event)" (window:resize)="onResize($event)"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END card -->
+    </div>
+    <!-- END CONTAINER FLUID -->
+  </div>
+</pg-container>

@@ -1,0 +1,85 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Responsive Bootstrap 4 Admin Dashboard</title>
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="Themesbrand" name="author" />
+
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="~/assets/images/favicon.ico">
+
+    <!-- App Css-->
+    @RenderSection("styles", required: false)
+
+
+    <link href="~/assets/css/bootstrap.min.css" id="bootstrap-light" rel="stylesheet" type="text/css" />
+    <link href="~/assets/css/bootstrap-dark.min.css" id="bootstrap-dark" rel="stylesheet" type="text/css" />
+
+    <link href="~/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+
+    <link href="~/assets/css/app-dark.min.css" id="app-dark" rel="stylesheet" type="text/css" />
+    <link href="~/assets/css/app-rtl.min.css" id="app-rtl" rel="stylesheet" type="text/css" />
+    <link href="~/assets/css/app.min.css" id="app-light" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body data-sidebar="dark">
+    <!-- Loader -->
+    <div id="preloader">
+        <div id="status">
+            <div class="spinner-chase">
+                <div class="chase-dot"></div>
+                <div class="chase-dot"></div>
+                <div class="chase-dot"></div>
+                <div class="chase-dot"></div>
+                <div class="chase-dot"></div>
+                <div class="chase-dot"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+        @Html.Partial("~/Views/Shared/_topbar.cshtml")
+
+        <!-- Left Sidebar Start -->
+        @Html.Partial("~/Views/Shared/_sidebar.cshtml")
+        <!-- Left Sidebar End -->
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+
+            @RenderBody()
+
+            @Html.Partial("~/Views/Shared/_footer.cshtml")
+
+        </div>
+        <!-- end main content-->
+
+    </div>
+    <!-- END layout-wrapper -->
+    <!-- Right Sidebar -->
+    @Html.Partial("~/Views/Shared/_right_sidebar.cshtml")
+
+    <!-- /Right-bar -->
+    <!-- Right bar overlay-->
+    <div class="rightbar-overlay"></div>
+
+    <!-- JAVASCRIPT -->
+    <script src="~/assets/libs/jquery/jquery.min.js"></script>
+    <script src="~/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/assets/libs/metismenu/metisMenu.min.js"></script>
+    <script src="~/assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="~/assets/libs/node-waves/waves.min.js"></script>
+
+    @RenderSection("scripts", required: false)
+
+    <script src="~/assets/js/app.js?@DateTime.Now.Ticks"></script>
+    <script src="~/assets/js/pages/authentication.init.js?@DateTime.Now.Ticks"></script>
+
+</body>
+</html>

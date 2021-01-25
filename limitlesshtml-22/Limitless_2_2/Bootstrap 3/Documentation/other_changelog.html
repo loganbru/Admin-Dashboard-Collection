@@ -1,0 +1,3922 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/core.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script type="text/javascript" src="assets/js/plugins/ui/prism.min.js"></script>
+	
+	<script type="text/javascript" src="assets/js/core/app.js"></script>
+	<script type="text/javascript" src="assets/js/pages/sidebar_detached_sticky_native.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body data-spy="scroll" data-target=".sidebar-detached" class="has-detached-right">
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-default navbar-lg header-highlight">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="index.html"><img src="assets/images/logo_light.png" alt=""></a>
+
+			<ul class="nav navbar-nav pull-right visible-xs-block">
+				<li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+				<li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+				<li><a class="sidebar-mobile-detached-toggle"><i class="icon-grid7"></i></a></li>
+			</ul>
+		</div>
+
+		<div class="navbar-collapse collapse" id="navbar-mobile">
+			<ul class="nav navbar-nav">
+				<li><a class="sidebar-control sidebar-main-hide hidden-xs"><i class="icon-paragraph-justify3"></i></a></li>
+				<li><a class="sidebar-control sidebar-detached-hide hidden-xs"><i class="icon-drag-right"></i></a></li>
+			</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="other_changelog.html">Changelog <span class="label label-inline bg-warning-400 position-right">v. 2.0</span></a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page container -->
+	<div class="page-container">
+
+		<!-- Page content -->
+		<div class="page-content">
+
+			<!-- Main sidebar -->
+			<div class="sidebar sidebar-main">
+				<div class="sidebar-content">
+
+	        		<!-- Support -->
+					<div class="sidebar-category no-margin">
+						<div class="category-title">
+							<span>Have questions?</span>
+							<i class="icon-help text-muted pull-right"></i>
+						</div>
+
+						<div class="category-content">
+							<a href="http://kopyov.ticksy.com" class="btn bg-success-400 btn-block" target="_blank"><i class="icon-lifebuoy position-left"></i> Limitless support</a>
+						</div>
+					</div>
+					<!-- /support -->
+
+
+					<!-- Main navigation -->
+					<div class="sidebar-category">
+						<div class="category-title">
+							<span>Navigation</span>
+							<i class="icon-menu7 text-muted pull-right"></i>
+						</div>
+
+						<div class="category-content no-padding">
+							<ul class="navigation navigation-main navigation-accordion">
+
+								<!-- Main -->
+								<li class="navigation-header">Main</li>
+								<li><a href="index.html">Introduction</a></li>
+								<li><a href="main_getting_started.html">Getting started</a></li>
+								<li><a href="main_starter_kit.html">Starter kit</a></li>
+								<li><a href="main_rtl.html">RTL layout</a></li>
+
+								<li class="navigation-header">Basic functionality</li>								
+								<li><a href="base_less_css.html">LESS and CSS</a></li>
+								<li><a href="base_less_compile.html">Compiling LESS</a></li>
+								<li><a href="base_less_compile_rtl.html">Compiling LESS for RTL version</a></li>
+								<li>
+									<a href="#">Plugins</a>
+									<ul>
+										<li><a href="plugins_forms.html">Forms</a></li>
+										<li><a href="plugins_forms_styling.html">Form styling</a></li>
+										<li><a href="plugins_selects.html">Selects</a></li>
+										<li><a href="plugins_editors.html">Editors</a></li>
+										<li><a href="plugins_uploaders.html">Uploaders</a></li>
+										<li><a href="plugins_wizards.html">Wizards</a></li>
+										<li><a href="plugins_extensions.html">Extensions</a></li>
+										<li><a href="plugins_notifications.html">Notifications</a></li>
+										<li><a href="plugins_pickers.html">Pickers</a></li>
+										<li><a href="plugins_tables.html">Tables</a></li>
+										<li><a href="plugins_ui.html">UI</a></li>
+										<li><a href="plugins_vis.html">Visualization</a></li>
+									</ul>
+								</li>
+								<li><a href="base_bootstrap.html">Bootstrap</a></li>
+								<li><a href="base_color_system.html">Color system</a></li>
+								<li><a href="base_helpers.html">Helpers</a></li>
+								<li><a href="base_themes.html">Themes</a></li>
+
+								<li class="navigation-header">Layout options</li>
+								<li><a href="layout_markup.html">Markup</a></li>
+								<li><a href="layout_sidebars.html">Sidebars</a></li>
+								<li><a href="layout_navbars.html">Navbars</a></li>
+								<li><a href="layout_v_nav.html">Vertical navigation</a></li>
+								<li><a href="layout_h_nav.html">Horizontal navigation</a></li>
+								<li><a href="layout_page_header.html">Page header</a></li>
+								<li><a href="layout_footer.html">Footer</a></li>
+
+								<li class="navigation-header">Other</li>
+								<li><a href="other_credits.html">Sources and credits</a></li>
+								<li class="active"><a href="other_changelog.html">Changelog <span class="label bg-warning-400">version 2.0</span></a></li>
+								<!-- /main -->
+
+							</ul>
+						</div>
+					</div>
+					<!-- /main navigation -->
+
+				</div>
+			</div>
+			<!-- /main sidebar -->
+
+
+			<!-- Main content -->
+			<div class="content-wrapper">
+
+				<!-- Page header -->
+				<div class="page-header">
+					<div class="page-header-content">
+						<div class="page-title">
+							<h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold">Limitless</span> - Changelog</h4>
+						</div>
+
+						<div class="heading-elements">
+							<ul class="breadcrumb">
+								<li><a href="index.html"><i class="icon-home2 position-left"></i> Home</a></li>
+								<li class="active">Changelog</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- /page header -->
+				
+
+				<!-- Content area -->
+				<div class="content">
+
+					<!-- Detached content -->
+					<div class="container-detached">
+						<div class="content-detached">
+
+							<!-- Version 2.0 -->
+							<div class="panel panel-flat" id="v_2_0">
+								<div class="panel-heading">
+									<h5 class="panel-title">Version 2.0</h5>
+									<div class="heading-elements">
+										<span class="text-muted heading-text">July 20, 2018</span>
+										<span class="label bg-blue heading-text">v. 2.0</span>
+					            	</div>
+								</div>
+
+								<div class="panel-body">
+									<div class="content-group-lg">
+									<p class="content-group">New 2.0 version includes a lot of bug fixes, improvements and updates. But the most important thing is a new Bootstrap 4 version! It took a while, but it definitely worth all efforts - completely new file structure, advanced theming support, SCSS pre-processors, latest versions of all libraries, based on flexbox, clean code, modular JS pattern, single sources for all layouts etc etc. Bootstrap 3 version is still supported, but for certain period. If you still need &lt;IE10 support and earlier versions of modern browsers, Bootstrap 3 is still in trend. Please note - there are still a few things that need update (main navigation improvement and a few components), those will be added in 2.1. Below is the list of changes:</p>
+
+<pre class="language-javascript"><code>// # List of new stuff
+// ------------------------------
+
+[new]  Bootstrap 4 version!
+
+
+
+// # List of updated plugins
+// ------------------------------
+
+[updated]  jquery.min.js - to 3.3.1
+[updated]  uniform.min.js - to latest version
+[updated]  autosize.min.js - to 4.0.2
+[updated]  maxlength.min.js - to 1.7.0
+[updated]  select2.min.js - to 4.0.5
+[updated]  bootstrap_multiselect.js - to the latest version
+[updated]  bootstrap_select.min.js - to 1.12.4 (removed in BS4 version)
+[updated]  validate.min.js and related files - to 1.17.0
+[updated]  alpaca.min.js - to 1.5.23
+[updated]  summernote.min.js - to 0.8.7
+[updated]  jquery_ui files - to 1.12.1
+[updated]  form_wizard.min.js - to 3.0.8 (removed in BS4 version)
+[updated]  prism.min.js - to 1.8.4
+[updated]  jgrowl.min.js - 1.4.4
+[updated]  ladda.min.js - to 1.0.6
+[updated]  spin.min.js - to 2.3.2
+[updated]  pnotify.min.js - to 3.2.0
+[updated]  noty.min.js - to 3.1.2
+[updated]  moment.min.js and related - to 2.21.0
+[updated]  bs_pagination.min.js - to 1.4.1
+[updated]  fancybox.min.js - to 2.1.7
+[updated]  ion_rangeslider.min.js - to 2.2.0
+[updated]  headroom.min.js and related - to 0.9.4
+[updated]  echarts.min.js - to 4.1.0 (including all examples)
+[updated]  c3.min.js - to 0.4.21
+[updated]  cropper.min.js - to 3.1.4
+[updated]  dragula.min.js - to 3.7.2
+[updated]  fileinput.min.js and related - to 4.4.3
+[updated]  plupload.min.js and related - to 2.3.1
+[updated]  dropzone.min.js - to latest
+[updated]  fullcalendar.min.js - to 3.9.0
+[updated]  I18next and related files - to 10.0.0
+[updated]  datatables.min.js - to 1.10.18
+[updated]  autofill.min.js - to 2.3.0
+[updated]  buttons.min.js - to 1.5.2
+[updated]  col_reorder.min.js - to 1.5.0
+[updated]  fixed_columns.min.js - to 3.2.5 
+[updated]  key_table.min.js - to 2.4.0
+[updated]  responsive.min.js - to 2.2.2 
+[updated]  row_reorder.min.js - to 1.2.4
+[updated]  select.min.js - to 1.2.2 
+[updated]  scroller.min.js - tp 1.5.0
+
+
+
+// # List of fixed
+// ------------------------------
+
+[fixed]  Alpaca and typeahead integration - wrong results in typeahead suggestions
+[fixed]  tokenfield.min.js - removed deprecation warning in Chrome browser
+[fixed]  datepaginator.min.js - fixed moment.js warnings
+[fixed]  Images in thumbnail captions are hidden
+[fixed]  Removed radioClass option from all Uniform configs and updated uniform.js code
+[fixed]  Session and idle timeout tool generates wrong markup for modal
+[fixed]  Bootstrap multi select in horizontal form: checkboxes have incorrect vertical alignment (by removing uniform dependency)
+[fixed]  Data tables individual columns filtering with select - doesn’t work if table cell contains html
+[fixed]  navbar.less has invalid selector :not(.disabled > a), which causes problems during compilation
+[fixed]  Steps wizard with validation - when 4th step is not validated and Prev button is clicked, it jumps to 2nd step instead of 3rd
+[fixed]  Summernote editor - Save button throws error when clicked
+[fixed]  Fullcalendar - agenda view time axis height is messed up
+[fixed]  Datatables fixed columns extension - table cells are misaligned when cell content is too long
+[fixed]  Add new .table-scrollable class for scrollable table - current .pre-scrollable class is broken on mobile if used with tables
+[fixed]  Alpaca with radios have unwanted left margin
+[fixed]  Google charts warnings
+[fixed]  Google maps warnings
+[fixed]  Validation: select2 and bootstrap switch state doesn’t change on click, only after form resubmission
+[fixed]  Navbar components have incorrect id’s in navbar components examples
+[fixed]  Draggable cards - move action has wrong cursor
+[fixed]  Sidebar components page - fancy tree throws error when collapsing/expanding nodes
+[fixed]  Full calendar selected event has wrong background color
+[fixed]  Daterangepicker in modal appears behind overlay
+[fixed]  Autocomplete in modal appears behind overlay
+[fixed]  jQuery UI Datepicker in modal appears behind overlay
+[fixed]  Anytime in modal appears behind overlay
+[fixed]  Pickadate and pickatime inside input group - form control has incorrect border radius
+[fixed]  Modal events getting fired multiple times
+[fixed]  Badges and labels in collapsed sidebar navigation have incorrect colours 
+[fixed]  Bootstrap switch in RTL layout isn’t animated
+[fixed]  In RTL version color picker has wrong color range direction
+[fixed]  Material layout - multiple navbars: in the first navbar all dropdown appear behind the second navbar
+[fixed]  Daterange picker direction styles
+
+
+
+// # List of improvements
+// ------------------------------
+
+[improved]  Removed .breadcrumb-liquid class as unused
+[improved]  Removed .has-margin classes in form labels in floating labels page, in default theme only, no use
+[improved]  Bootbox code and examples
+[improved]  Added @images-path variable to variables-custom.less for image path. All images in LESS files are now using it.
+[improved]  Bootstrap multiselect now uses CSS checkboxes instead of Uniform
+[improved]  Removed path to bootstrap_multiselect.min.js and initialisation code from form_validation.html/js as no use
+[improved]  components_notifications_others.html - removed path to pnotify.min.js
+[improved]  Pnotify with type: ‘warning’ in basic theme doesn’t exist, removed in HTML
+[improved]  Removed .modal-subtitle from the markup (html)
+[improved]  .label-icon-xlg in labels.less as it’s similar to .btn-xs
+[improved]  Flag images
+[improved]  Added option for dropdown submenus to open on click
+[improved]  Added  tabindex="-1" to all modals to enable Close on Escape press functionality
+[improved]  Improved file structure
+[improved]  Now all layouts use single set of JS files and images
+[improved]  Significantly reduced package size
+</code></pre>
+								</div>
+
+									<h6 class="text-semibold">New files added</h6>
+									This section displays a list of new files from assets categories: less, css, js and others. Each update includes something new, so it's really important to make the whole update process as easy as possible. All files listed below include direct paths, so you'll be able to quickly locate where new files need to be placed.
+								</div>
+
+								<div class="table-responsive">
+									<table class="table table-bordered table-striped table-sm">
+										<thead>
+											<tr>
+												<th style="width: 320px;">File</th>
+												<th style="width: 320px;">Location</th>
+												<th>Description</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th colspan="4" class="active">New LESS files</th>
+											</tr>
+											<tr>
+												<td><code>noty.less</code></td>
+												<td>/components/plugins/notifications/</td>
+												<td>Styles for ecommerce kit</td>
+											</tr>
+
+											<tr>
+												<th colspan="3" class="active">New demo JS files</th>
+											</tr>
+											<tr>
+												<td><code>layout_navbar_secondary_fixed_page_header.js</code></td>
+												<td>/js/demo_pages/</td>
+												<td>Specific file for 5th layout - sticky secondary navbar</td>
+											</tr>
+											<tr>
+												<td><code>layout_navbar_secondary_hideable_page_header.js</code></td>
+												<td>/js/demo_pages/</td>
+												<td>Specific file for 5th layout - hideable secondary navbar</td>
+											</tr>
+											<tr>
+												<td><code>navigation_horizontal_mega_no_nav.js</code></td>
+												<td>/js/demo_pages/</td>
+												<td>Mega menu without drilldown initialization code. For 4th and 5th layouts</td>
+											</tr>
+											<tr>
+												<td><code>picker_date_rtl.js</code></td>
+												<td>/js/demo_pages/</td>
+												<td>Date pickers for RTL version</td>
+											</tr>
+											<tr>
+												<td><code>editor_ckeditor_rtl.js</code></td>
+												<td>/js/demo_pages/</td>
+												<td>CKEditor configuration for RTL version</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+
+								<div class="panel-body">
+									<h6 class="text-semibold">LESS files to update</h6>
+									This section displays a list of updated LESS files. Includes file name, path to this file and general description about changes. All list items are grouped in categories. Groups along with file paths allow you to quickly find and replace necessary files. Please keep your copies of LESS files always up-to-date to avoid upgrading issues.
+								</div>
+
+								<div class="table-responsive">
+									<table class="table table-bordered table-striped table-sm">
+										<thead>
+											<tr>
+												<th style="width: 320px;">File</th>
+												<th style="width: 320px;">Location</th>
+												<th>Description</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th colspan="4" class="active">Updated core files</th>
+											</tr>
+											<tr>
+												<td><code>dropdowns.less</code></td>
+												<td>/less/bootstrap-limitless/</td>
+												<td>Bug fixes, added submenu on click, added <code>.dropdown-submenu-hover</code> class for opening submenu on hover, which is now required in markup</td>
+											</tr>
+											<tr>
+												<td><code>alerts.less</code></td>
+												<td>/less/bootstrap-limitless/</td>
+												<td>Allow light background classes in alert containers: <code>.bg-white</code> and <code>.bg-transparent</code></td>
+											</tr>
+											<tr>
+												<td><code>type.less</code></td>
+												<td>/less/bootstrap-limitless/</td>
+												<td>Replaced paths to images with <code>@images-path</code> LESS variable</td>
+											</tr>
+											<tr>
+												<td><code>panels.less</code></td>
+												<td>/less/bootstrap-limitless/</td>
+												<td>Minor changes and bug fixes, updated cursor in sortable panel action</td>
+											</tr>
+											<tr>
+												<td><code>navbar.less</code></td>
+												<td>/less/bootstrap-limitless/</td>
+												<td>Removed <code>:not(.disabled > a)</code> selector</td>
+											</tr>
+											<tr>
+												<td><code>tables.less</code></td>
+												<td>/less/bootstrap-limitless/</td>
+												<td>Added <code>.table-scrollable</code> for scrollable tables</td>
+											</tr>
+
+											<tr>
+												<td><code>sidebar.less</code></td>
+												<td>/less/core/layout/</td>
+												<td>Minor fixes</td>
+											</tr>
+											<tr>
+												<td><code>variables-custom.less</code></td>
+												<td>/less/core/variables/</td>
+												<td>Added new variables for noty.js notifications, new variable for images path (<code>@images-path</code>), updated <code>@summernote-font-path</code> variable according to a few file structure</td>
+											</tr>
+
+											<tr>
+												<th colspan="4" class="active">Updated components</th>
+											</tr>
+											<tr class="border-top-solid">
+												<td><code>widgets.less</code></td>
+												<td>/less/components/extensions/jquery_ui/</td>
+												<td>Added correct z-index to <code>.ui-datepicker</code> class, changed styles for selectpicker, updated menu styles and other changes according to a new markup changes in latest version</td>
+											</tr>
+											<tr>
+												<td><code>multiselect.less</code></td>
+												<td>/less/components/plugins/forms/menus/</td>
+												<td>Added a new set of styles for custom checkboxes, no more uniform.js checkers.</td>
+											</tr>
+											<tr>
+												<td><code>login.less</code></td>
+												<td>/less/components/pages/</td>
+												<td>Replaced image paths with @images-path LESS variable</td>
+											</tr>
+											<tr>
+												<td><code>datatables_fixed_columns.less</code></td>
+												<td>/less/components/plugins/tables/datatables/</td>
+												<td>Added <code>white-space: nowrap;</code> to prevent text from wrapping in headers, other improvements</td>
+											</tr>
+											<tr>
+												<td><code>fullcalendar.less</code></td>
+												<td>/less/components/plugins/ui/</td>
+												<td>A few fixes for axis container</td>
+											</tr>
+											<tr>
+												<td><code>bootstrap-switch.less</code></td>
+												<td>/less/components/plugins/forms/checkboxes/</td>
+												<td>Changed transition property from <code>margin-left</code> to <code>margin</code>, this fixes animation bugs</td>
+											</tr>
+											<tr>
+												<td><code>anytime.less</code></td>
+												<td>/less/components/plugins/pickers/</td>
+												<td>Changed z-index in picker container to fix multiple bugs with displaying picker in various containers</td>
+											</tr>
+											<tr>
+												<td><code>daterange.less</code></td>
+												<td>/less/components/plugins/pickers/</td>
+												<td>Changed z-index in picker container to fix multiple bugs with displaying picker in various containers</td>
+											</tr>
+											<tr>
+												<td><code>time.less</code></td>
+												<td>/less/components/plugins/pickers/pickadate/</td>
+												<td>Changed z-index in picker container to fix multiple bugs with displaying picker in various containers</td>
+											</tr>
+											<tr>
+												<td><code>date.less</code></td>
+												<td>/less/components/plugins/pickers/pickadate/</td>
+												<td>Changed z-index in picker container to fix multiple bugs with displaying picker in various containers</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+
+								<div class="panel-body">
+									<h6 class="text-semibold">JS files to update</h6>
+									These are all JS files that have been changed during update process. It can be a library, plugin or a sample JS file with charts or specific page configuration - everything matters. Also includes file name, path to the file and brief description about changes made. Since JS files are responsible for template's functionality, it is required to keep them up-to-date.
+								</div>
+
+								<div class="table-responsive">
+									<table class="table table-bordered table-striped">
+										<thead>
+											<tr>
+												<th style="width: 320px;">File</th>
+												<th style="width: 320px;">Location</th>
+												<th>Description</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th colspan="3" class="active">Components</th>
+											</tr>
+											<tr>
+												<td><code>bootstrap_select.min.js</code></td>
+												<td>/plugins/forms/selects/</td>
+												<td>Bootstrap Select library</td>
+											</tr>
+											<tr>
+												<td><code>uniform.min.js</code></td>
+												<td>/plugins/forms/styling/</td>
+												<td>Uniform.js library (styled inputs)</td>
+											</tr>
+											<tr>
+												<td><code>autosize.min.js</code></td>
+												<td>/plugins/forms/inputs/</td>
+												<td>Auto growing textarea</td>
+											</tr>
+											<tr>
+												<td><code>maxlength.min.js</code></td>
+												<td>/plugins/forms/inputs/</td>
+												<td>Inputs with characters counter</td>
+											</tr>
+											<tr>
+												<td><code>select2.min.js</code></td>
+												<td>/plugins/forms/selects/</td>
+												<td>Select2 library</td>
+											</tr>
+											<tr>
+												<td><code>bootstrap-multiselect.js</code></td>
+												<td>/plugins/forms/selects/</td>
+												<td>Select2 library</td>
+											</tr>
+											<tr>
+												<td><code>validate.min.js</code></td>
+												<td>/plugins/forms/validation/</td>
+												<td>Form validation library</td>
+											</tr>
+											<tr>
+												<td><code>alpaca.min.js</code></td>
+												<td>/plugins/forms/inputs/</td>
+												<td>JSON forms</td>
+											</tr>
+											<tr>
+												<td><code>summernote.min.js</code></td>
+												<td>/plugins/editors/</td>
+												<td>Rich text editor</td>
+											</tr>
+											<tr>
+												<td><code>jQuery UI files</code></td>
+												<td>/core/libraries/jquery_ui/</td>
+												<td>JSON forms</td>
+											</tr>
+											<tr>
+												<td><code>form_wizard.min.js</code></td>
+												<td>/plugins/forms/wizards/form_wizards/</td>
+												<td>Form wizard library</td>
+											</tr>
+											<tr class="border-top-solid">
+												<td><code>jgrowl.min.js</code></td>
+												<td>/plugins/notifications/</td>
+												<td>jGrowl notifications library</td>
+											</tr>
+											<tr>
+												<td><code>pnotify.min.js</code></td>
+												<td>/plugins/notifications/</td>
+												<td>PNotify notifications library</td>
+											</tr>
+											<tr>
+												<td><code>noty.min.js</code></td>
+												<td>/plugins/notifications/</td>
+												<td>Noty.js notifications library</td>
+											</tr>
+											<tr class="border-top-solid">
+												<td><code>ladda.min.js</code></td>
+												<td>/plugins/buttons/</td>
+												<td>Buttons with progress bars and loading spinner</td>
+											</tr>
+											<tr>
+												<td><code>spin.min.js</code></td>
+												<td>/plugins/buttons/</td>
+												<td>Spinner extension for ladda.min.js</td>
+											</tr>
+											<tr>
+												<td><code>moment.min.js</code>, <code>moment_locales.min.js</code></td>
+												<td>/plugins/ui/moment/</td>
+												<td>Parse, validate, manipulate, and display dates in JavaScript</td>
+											</tr>
+											<tr>
+												<td><code>bs_pagination.min.js</code></td>
+												<td>/plugins/pagination/</td>
+												<td>Dynamic pagination</td>
+											</tr>
+											<tr>
+												<td><code>fancybox.min.js</code></td>
+												<td>/plugins/media/</td>
+												<td>Lightbox plugin</td>
+											</tr>
+											<tr>
+												<td><code>cropper.min.js</code></td>
+												<td>/plugins/media/</td>
+												<td>Image cropper plugin</td>
+											</tr>
+											<tr>
+												<td><code>prism.min.js</code></td>
+												<td>/plugins/ui/</td>
+												<td>Syntax highlighter</td>
+											</tr>
+											<tr class="border-top-solid">
+												<td><code>/plupload/*.js</code></td>
+												<td>/plugins/uploaders/plupload/</td>
+												<td>Plupload file upload library</td>
+											</tr>
+											<tr>
+												<td><code>dropzone.min.js</code></td>
+												<td>/plugins/uploaders/</td>
+												<td>Dropzone drag&drop file upload library</td>
+											</tr>
+											<tr>
+												<td><code>fileinput.min.js</code></td>
+												<td>/plugins/uploaders/</td>
+												<td>Bootstrap Fileinput library</td>
+											</tr>
+											<tr class="border-top-solid">
+												<td><code>jquery.min.js</code></td>
+												<td>/core/libraries/</td>
+												<td>jQuery library</td>
+											</tr>
+											<tr>
+												<td><code>jquery_ui/*.js</code></td>
+												<td>/core/libraries/</td>
+												<td>jQuery UI components and interactions</td>
+											</tr>
+
+											<tr class="border-top-solid">
+												<td><code>ion_rangelider.min.js</code></td>
+												<td>/plugins/sliders/</td>
+												<td>ION Range Slider</td>
+											</tr>
+											<tr>
+												<td><code>headroom.min.js</code>, <code>headroom_jquery.min.js</code></td>
+												<td>/plugins/ui/headroom/</td>
+												<td>Extension for hideable navbars</td>
+											</tr>
+											<tr>
+												<td><code>dragula.min.js</code></td>
+												<td>/plugins/ui/</td>
+												<td>Dragula drag and drop library</td>
+											</tr>
+											<tr>
+												<td><code>fullcalendar.min.js</code></td>
+												<td>/plugins/ui/fullcalendar/</td>
+												<td>Fullcalendar library</td>
+											</tr>
+											<tr>
+												<td><code>i18next.min.js</code></td>
+												<td>/plugins/internationalization/</td>
+												<td>i18next internationalization library</td>
+											</tr>
+
+											<tr class="border-top-solid">
+												<td><code>echarts.min.js</code></td>
+												<td>/plugins/visualization/echarts/</td>
+												<td>ECharts charting library</td>
+											</tr>
+											<tr>
+												<td><code>c3.min.js</code></td>
+												<td>/plugins/visualization/c3/</td>
+												<td>C3 charting library</td>
+											</tr>
+											<tr class="border-top-solid">
+												<td><code>datatables.min.js</code></td>
+												<td>/plugins/tables/datatables/</td>
+												<td>Datatables library</td>
+											</tr>
+											<tr>
+												<td><code>autofill.min.js</code></td>
+												<td>/plugins/tables/datatables/extensions</td>
+												<td>Autofill DT extension</td>
+											</tr>
+											<tr>
+												<td><code>buttons.min.js</code></td>
+												<td>/plugins/tables/datatables/extensions</td>
+												<td>Buttons DT extension</td>
+											</tr>
+											<tr>
+												<td><code>col_reorder.min.js</code></td>
+												<td>/plugins/tables/datatables/extensions</td>
+												<td>Columns Reorder DT extension</td>
+											</tr>
+											<tr>
+												<td><code>fixed_columns.min.js</code></td>
+												<td>/plugins/tables/datatables/extensions</td>
+												<td>Fixed Columns DT extension</td>
+											</tr>
+											<tr>
+												<td><code>fixed_header.min.js</code></td>
+												<td>/plugins/tables/datatables/extensions</td>
+												<td>Fixed Header DT extension</td>
+											</tr>
+											<tr>
+												<td><code>key_table.min.js</code></td>
+												<td>/plugins/tables/datatables/extensions</td>
+												<td>Key Table DT extension</td>
+											</tr>
+											<tr>
+												<td><code>responsive.min.js</code></td>
+												<td>/plugins/tables/datatables/extensions</td>
+												<td>Responsive DT extension</td>
+											</tr>
+											<tr>
+												<td><code>row_reorder.min.js</code></td>
+												<td>/plugins/tables/datatables/extensions</td>
+												<td>Row Reorder DT extension</td>
+											</tr>
+											<tr>
+												<td><code>scroller.min.js</code></td>
+												<td>/plugins/tables/datatables/extensions</td>
+												<td>Scroller DT extension</td>
+											</tr>
+											<tr>
+												<td><code>select.min.js</code></td>
+												<td>/plugins/tables/datatables/extensions</td>
+												<td>Select DT extension</td>
+											</tr>
+
+											<tr>
+												<th colspan="3" class="active">Pages files</th>
+											</tr>
+											<tr>
+												<td><code>all</code></td>
+												<td>/js/pages/</td>
+												<td>Almost all JS files with demo pages configuration have been updated - some of them include bug fixes and improvements, others have very minor updates. The most important highlights: removed <code>radioClass</code> option from all uniform.js initializations; removed uniform.js inits from multiselect plugins; added LTR/RTL options for daterangepickers, datatables pagination, sliders and other components and a lot of other improvements.</td>
+											</tr>
+											<tr>
+												<td><code>app.js</code></td>
+												<td>assets/js/</td>
+												<td>Improved calculations in <code>.page-container</code> container, prepared for jQuery 3, added clickable dropdown submenus</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<!-- /version 2.0 -->
+
+
+							<!-- Version 1.6 -->
+							<div class="panel panel-flat" id="v_1_6">
+								<div class="panel-heading">
+									<h5 class="panel-title">Version 1.6</h5>
+									<div class="heading-elements">
+										<span class="text-muted heading-text">April 20, 2017</span>
+										<span class="label bg-blue heading-text">v. 1.6</span>
+					            	</div>
+								</div>
+
+								<div class="panel-body">
+									<div class="content-group-lg">
+										<p class="content-group">Version 1.6 is the final release of 1.* versions and includes important bug fixes, improvements and a couple of new pages - Ecommerce set, Pricing tables and Statistics widgets. Also includes 10 updated plugins, some of them were planned for previous version, but included in 1.6 for some reasons. Next version will have major improvements, Bootstrap 4.0 version and will be available for download withint next few months.</p>
+
+<pre class="language-javascript"><code>// # List of new components
+// ------------------------------
+
+[new]  Ecommerce - Product list (ecommerce_product_list.html)
+[new]  Ecommerce - Product grid (ecommerce_product_grid.html)
+[new]  Ecommerce - Orders history (ecommerce_orders_history.html)
+[new]  Ecommerce - Customers list (ecommerce_customers.html)
+[new]  Ecommerce - Pricing tables (ecommerce_pricing.html)
+
+[new]  General pages - Statistics widgets (general_widgets_stats.html)
+
+
+
+// # List of updated plugins
+// ------------------------------
+
+[updated]  Bootstrap Select - bootstrap_select.min.js - to 1.12.2
+[updated]  Image Cropper - cropper.min.js - to 3.0.0
+[updated]  Fullcalendar - fullcalendar.min.js - to 3.3.1
+[updated]  Dual Listbox - duallistbox.min.js - to 3.0.6
+[updated]  Bootstrap Switch - switch.min.js - to 3.3.4
+[updated]  Form Validation - validate.min.js and related files - to 1.16.0
+[updated]  Anytime picker - anytime.min.js - to 5.2.0
+[updated]  ION Range Slider - ion_rangelider.min.js - to 2.1.7
+[updated]  NoUI Slider - nouislider.min.js - to 9.2.0
+[updated]  Bootstrap File Input - fileinput.min.js - to 4.4.0
+[updated]  Fancytree - fancytree_all.min.js, fancytree_childcounter.js - to 2.22.1
+
+
+
+// # List of fixed
+// ------------------------------
+
+[fixed]  Daterangepicker doesn’t update values and dates in calendar entered manually in date range input fields
+[fixed]  .media-annotation, .task-details list and .timeline-time classes - dot separator has incorrect HTML value
+[fixed]  Wrong paths to locales in internationalization examples
+[fixed]  Added missed .no-shadow class to helpers.less in default theme
+[fixed]  Links with .text-muted class should have default text color on hover and focus
+[fixed]  Fixed .media-body width bug if used inside tables
+[fixed]  jQuery UI datepicker has wrong z-index and displays behind form group
+[fixed]  Removed path to user_pages_team.js in user_pages_cards.html and removed file itself from assets/js/pages/
+[fixed]  Deprecation warning about date formats everywhere where daterangepicker is used
+[fixed]  Bootstrap file input - can’t remove thumb
+[fixed]  Bootstrap file input - thumbnails are not draggable
+[fixed]  Ripple throws JS error when used in dragging handler in bootstrap file input
+[fixed]  Panel body should not inherit background color from panel
+[fixed]  In coloured panel multiple panel bodies have wrong top border color
+
+[fixed]  RTL layout - Bootstrap switch in RTL doesn’t work
+
+
+
+// # List of improvements
+// ------------------------------
+
+[improved]  Added responsive text alignment helper classes (.text-right-xs, .text-right-sm, .text-right-md, .text-right-lg)
+[improved]  Added opacity helper classes (.opacity-75, .opacity-50, .opacity-25, .opacity-0)
+[improved]  Removed all styles for images inside .stack-media-on-mobile container
+[improved]  Added .img-md to helpers.less and changed fixed image size in .media-left/.media-right elements
+[improved]  Added .datatable-header-accent and .datatable-footer-accent classes to highlight datatable header/footer
+[improved]  Added scrollable block to sidebar
+[improved]  Removed custom JS code for datatables filter field placeholder and replaced with DT searchPlaceholder option
+[improved]  Added an option to panel to use background image in background
+[improved]  Image sizing in thumbnails
+</code></pre>
+								</div>
+
+									<h6 class="text-semibold">New files added</h6>
+									This section displays a list of new files from assets categories: less, css, js and others. Each update includes something new, so it's really important to make the whole update process as easy as possible. All files listed below include direct paths, so you'll be able to quickly locate where new files need to be placed.
+								</div>
+
+								<div class="table-responsive">
+									<table class="table table-bordered table-striped table-sm">
+										<thead>
+											<tr>
+												<th style="width: 320px;">File</th>
+												<th style="width: 320px;">Location</th>
+												<th>Description</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th colspan="4" class="active">New LESS files</th>
+											</tr>
+											<tr>
+												<td><code>ecommerce.less</code></td>
+												<td>/components/pages/</td>
+												<td>Styles for ecommerce kit</td>
+											</tr>
+
+											<tr>
+												<th colspan="3" class="active">New demo JS files</th>
+											</tr>
+											<tr>
+												<td><code>ecommerce_customers.js</code></td>
+												<td>/js/pages/</td>
+												<td>Ecommerce - customers list</td>
+											</tr>
+											<tr>
+												<td><code>ecommerce_orders_history.js</code></td>
+												<td>/js/pages/</td>
+												<td>Ecommerce - orders history</td>
+											</tr>
+											<tr>
+												<td><code>ecommerce_product_list.js</code></td>
+												<td>/js/pages/</td>
+												<td>Ecommerce - product list and grid</td>
+											</tr>
+											<tr>
+												<td><code>general_widgets_stats.js</code></td>
+												<td>/js/pages/</td>
+												<td>Statistics widgets</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+
+								<div class="panel-body">
+									<h6 class="text-semibold">LESS files to update</h6>
+									This section displays a list of updated LESS files. Includes file name, path to this file and general description about changes. All list items are grouped in categories. Groups along with file paths allow you to quickly find and replace necessary files. Please keep your copies of LESS files always up-to-date to avoid upgrading issues.
+								</div>
+
+								<div class="table-responsive">
+									<table class="table table-bordered table-striped table-sm">
+										<thead>
+											<tr>
+												<th style="width: 320px;">File</th>
+												<th style="width: 320px;">Location</th>
+												<th>Description</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th colspan="4" class="active">Updated core files</th>
+											</tr>
+											<tr>
+												<td><code>media.less</code></td>
+												<td>/less/bootstrap-limitless/</td>
+												<td>Updated <code>.media-annotation</code> class, images in <code>.stack-media-on-mobile</code> class, images in <code>.media-left</code>/<code>.media-right</code> classes</td>
+											</tr>
+											<tr>
+												<td><code>panels.less</code></td>
+												<td>/less/bootstrap-limitless/</td>
+												<td>Removed styles in <code>.panel[class*=bg-]</code> for <code>.panel-body</code> to prevent background color inheritance; added additional styles to <code>.panel-body</code> that sets semi-transparent border color to multiple bodies if used inside colored panel; added new <code>.has-bg-image</code> class</td>
+											</tr>
+											<tr>
+												<td><code>thumbnails.less</code></td>
+												<td>/less/bootstrap-limitless/</td>
+												<td>Updated <code>.thumb</code> class styles</code></td>
+											</tr>
+											<tr>
+												<td><code>type.less</code></td>
+												<td>/less/bootstrap-limitless/</td>
+												<td>Added some new stuff for <code>.text-muted</code> class</td>
+											</tr>
+
+											<tr>
+												<td><code>sidebar.less</code></td>
+												<td>/less/core/layout/</td>
+												<td>Added scrollable block to sidebar - <code>.has-scroll</code> class</td>
+											</tr>
+
+											<tr>
+												<th colspan="4" class="active">Updated components</th>
+											</tr>
+											<tr class="border-top-solid">
+												<td><code>widgets.less</code></td>
+												<td>/less/components/extensions/jquery_ui/</td>
+												<td>Added correct z-index to <code>.ui-datepicker</code> class</td>
+											</tr>
+											<tr>
+												<td><code>helpers.less</code></td>
+												<td>/less/components/ui/</td>
+												<td>Added missed <code>.no-shadow</code> class to default layout; added responsive text aligning helper classes; added opacity helper classes</td>
+											</tr>
+											<tr>
+												<td><code>datatables.less</code></td>
+												<td>/less/components/plugins/tables/datatables/</td>
+												<td>Added <code>.datatable-header-accent</code> and <code>.datatable-footer-accent</code> classes to highlight datatable header/footer; added specific styles for <code>.media-body</code> class</td>
+											</tr>
+											<tr>
+												<td><code>anytime.less</code></td>
+												<td>/less/components/plugins/pickers/</td>
+												<td>Event highlight colors - updated class names</td>
+											</tr>
+											<tr>
+												<td><code>fullcalendar.less</code></td>
+												<td>/less/components/plugins/ui/</td>
+												<td>Complete rewrite</td>
+											</tr>
+											<tr>
+												<td><code>bootstrap-switch.less</code></td>
+												<td>/less/components/plugins/forms/checkboxes/</td>
+												<td>Complete rewrite for RTL version</td>
+											</tr>
+											<tr>
+												<td><code>noui-slider.less</code></td>
+												<td>/less/components/plugins/sliders/</td>
+												<td>Complete rewrite</td>
+											</tr>
+											<tr>
+												<td><code>file-input.less</code></td>
+												<td>/less/components/plugins/uploaders/</td>
+												<td>Complete rewrite</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+
+								<div class="panel-body">
+									<h6 class="text-semibold">JS files to update</h6>
+									These are all JS files that have been changed during update process. It can be a library, plugin or a sample JS file with charts or specific page configuration - everything matters. Also includes file name, path to the file and brief description about changes made. Since JS files are responsible for template's functionality, it is required to keep them up-to-date.
+								</div>
+
+								<div class="table-responsive">
+									<table class="table table-bordered table-striped">
+										<thead>
+											<tr>
+												<th style="width: 320px;">File</th>
+												<th style="width: 320px;">Location</th>
+												<th>Description</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th colspan="3" class="active">Components</th>
+											</tr>
+											<tr>
+												<td><code>bootstrap_select.min.js</code></td>
+												<td>/plugins/forms/selects/</td>
+												<td>Bootstrap Select library</td>
+											</tr>
+											<tr>
+												<td><code>duallistbox.min.js</code></td>
+												<td>/plugins/forms/inputs/</td>
+												<td>Dual Listbox library</td>
+											</tr>
+											<tr>
+												<td><code>switch.min.js</code></td>
+												<td>/plugins/forms/styling/</td>
+												<td>Bootstrap Switch</td>
+											</tr>
+											<tr>
+												<td><code>validate.min.js</code></td>
+												<td>/plugins/forms/validation/</td>
+												<td>Form validation library</td>
+											</tr>
+
+											<tr class="border-top-solid">
+												<td><code>cropper.min.js</code></td>
+												<td>/plugins/media/</td>
+												<td>Image cropper</td>
+											</tr>
+											<tr>
+												<td><code>fileinput.min.js</code></td>
+												<td>/plugins/uploaders/</td>
+												<td>Bootstrap Fileinput library</td>
+											</tr>
+											<tr>
+												<td><code>fullcalendar.min.js</code></td>
+												<td>/plugins/ui/fullcalendar/</td>
+												<td>Fullcalendar library</td>
+											</tr>
+											<tr>
+												<td>
+													<code>fancytree_all.min.js</code><br>
+													<code>fancytree_childcounter.js</code>
+												</td>
+												<td>/plugins/trees/</td>
+												<td>Fancytree library</td>
+											</tr>
+											<tr>
+												<td><code>anytime.min.js</code></td>
+												<td>/plugins/pickers/</td>
+												<td>Anytime date and time picker</td>
+											</tr>
+											<tr>
+												<td><code>daterangepicker.js</code></td>
+												<td>/plugins/pickers/</td>
+												<td>Daterangepicker library</td>
+											</tr>
+											<tr>
+												<td><code>ion_rangelider.min.js</code></td>
+												<td>/plugins/sliders/</td>
+												<td>ION Range Slider</td>
+											</tr>
+											<tr>
+												<td><code>nouislider.min.js</code></td>
+												<td>/plugins/sliders/</td>
+												<td>NoUI Sliders</td>
+											</tr>
+											<tr>
+												<td><code>ripple.min.js</code></td>
+												<td>/plugins/ui/</td>
+												<td>In Material theme</td>
+											</tr>
+
+											<tr>
+												<th colspan="3" class="active">Pages files</th>
+											</tr>
+											<tr>
+												<td><code>dashboard.js</code></td>
+												<td>/js/pages/</td>
+												<td>Fixed JS warning</td>
+											</tr>
+											<tr>
+												<td><code>dashboard_boxed_full.js</code></td>
+												<td>/js/pages/</td>
+												<td>Fixed JS warning</td>
+											</tr>
+											<tr>
+												<td><code>pickers_date.js</code></td>
+												<td>/js/pages/</td>
+												<td>Fixed JS warning</td>
+											</tr>
+											<tr>
+												<td>
+													All <code>datatables_*.js</code> files<br>
+													<code>ecommerce_customers.js</code><br>
+													<code>ecommerce_orders_history.js</code><br>
+													<code>gallery_library.js</code><br>
+													<code>invoice_archive.js</code><br>
+													<code>tasks_list.js</code><br>
+												</td>
+												<td>/js/pages/</td>
+												<td>Updated datatables filter input placeholder</td>
+											</tr>
+											<tr>
+												<td><code>uploaders_bootstrap.js</code></td>
+												<td>/js/pages/</td>
+												<td>Added paths to 2 plugins</td>
+											</tr>
+											<tr>
+												<td><code>user_pages_team.js</code></td>
+												<td>/js/pages/</td>
+												<td>Removed file</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<!-- /version 1.6 -->
+
+
+							<!-- Version 1.5 -->
+							<div class="panel panel-flat" id="v_1_5">
+								<div class="panel-heading">
+									<h5 class="panel-title">Version 1.5</h5>
+									<div class="heading-elements">
+										<span class="text-muted heading-text">January 15, 2017</span>
+										<span class="label bg-blue heading-text">v. 1.5</span>
+					            	</div>
+								</div>
+
+								<div class="panel-body">
+									<div class="content-group-lg">
+										<p class="content-group">Version 1.5 is a second part of version 1.4, which includes 22 new pages from 7 categories, various improvements and bug fixes. Please check documentation for a full list of changes and files that need to be updated.</p>
+
+<pre class="language-javascript"><code>// # List of new components
+// ------------------------------
+
+[new]  Blog - Vertical layout (blog_classic_v.html)
+[new]  Blog - Horizontal layout (blog_classic_h.html)
+[new]  Blog - Grid layout (blog_grid.html)
+[new]  Blog - Single post (blog_single.html)
+[new]  Blog - With left sidebar (blog_sidebar_left.html)
+[new]  Blog - With right sidebar (blog_sidebar_right.html)
+
+[new]  General pages - Feed layouts (general_feed.html)
+[new]  General pages - Content widgets (general_widgets_content.html)
+[new]  General pages - Responsive embeds (general_embeds.html)
+
+[new]  Service pages - Sitemap (service_sitemap.html)
+
+[new]  User pages - Tabbed profile (user_pages_profile_tabbed.html)
+
+[new]  Mailbox - Mail list (mail_list.html)
+[new]  Mailbox - List with detached sidebar (layout 1 and 2) (mail_list_detached.html)
+[new]  Mailbox - Read mail (mail_read.html)
+[new]  Mailbox - Write mail (mail_write.html)
+
+[new]  Job search - Cards view (job_list_cards.html)
+[new]  Job search - Panel view (job_list_panel.html)
+[new]  Job search - Detailed view (job_detailed.html)
+[new]  Job search - Apply (job_apply.html)
+
+[new]  Learning kit - List view (learning_list.html)
+[new]  Learning kit - Grid view (learning_grid.html)
+[new]  Learning kit - Detailed view (learning_detailed.html)
+
+
+
+// # List of updated plugins
+// ------------------------------
+
+[updated]  Switchery library - switchery.min.js - to 0.8.2
+[updated]  Touchspin spinners - touchspin.min.js - to 3.1.2
+[updated]  Autosize extension - autosize.min.js - to 3.0.20
+[updated]  Bootstrap Select - bootstrap_select.min.js to 1.12.1
+[updated]  Moment.js - moment.min.js, moment_locales.min.js - to 2.17.1
+
+[updated]  Image Cropper - cropper.min.js - to 2.3.4
+[updated]  Plupload file uploader - plupload bundle - to 2.2.1
+[updated]  Bootstrap File Input library - fileinput.min.js to 4.3.7
+
+[updated]  Datatables library - datatables.min.js - to 1.10.13
+[updated]  Autofill DT extention - autofill.min.js - to 2.1.3
+[updated]  Buttons DT extention - buttons.min.js - to 1.2.4
+[updated]  Key Table DT extention - key_table.min.js - to 2.2.0
+[updated]  Row Reorder DT extention - row_reorder.min.js - to 1.2.0
+
+
+
+// # List of fixed
+// ------------------------------
+
+[fixed]  Button with icon doesn't support checkboxes/radios
+[fixed]  Float button - if text is too long, it wraps on the second line
+[fixed]  Mini sidebar - in collapsed more, items with child levels have wrong right padding
+[fixed]  Sidebar container bottom spacing fixes
+[fixed]  In separate sidebar, panels and categories have double bottom spacing
+[fixed]  Badge and label are transparent in active navigation item in default sidebar
+[fixed]  Login and registration pages - password fields have wrong input types
+[fixed]  Dropzone uploader - if uploader is not inside panel, background and border colors don't match
+[fixed]  If responsive table goes after panel heading, table container and table itself need top border
+[fixed]  Panel title doesn’t respect font size classes
+[fixed]  Mini sidebar - children level dropdown in main navigation appears behind footer
+[fixed]  Stacked media lists don't respect text alignment classes
+[fixed]  If media object is displayed as panel body, it has extra top margin
+[fixed]  Datatables fixed header - when click click sidebar control button, headers do not adjust to a new width
+[fixed]  Anytime picker - empty cells are hidden in date grid
+[fixed]  In material layout, multiple navbar buttons don't have horizontal spacing
+[fixed]  FAB button in 5th layout has extra border
+
+[fixed]  RTL layout - Dropzone uploader adds extra horizontal space to body and scrollbar appears
+[fixed]  RTL layout - default pace theme doesn't show up
+
+
+
+// # List of improvements
+// ------------------------------
+
+[improved]  @table-cell-padding variable does not use padding variable
+[improved]  Removed unused .icons-list-vertical class from html pages
+[improved]  Removed unused .btn-slide class from html files
+[improved]  Added inline list with vertical borders (.list-inline-bordered)
+[improved]  Added group of block buttons (.btn-block-group)
+[improved]  Added seamless row option which doesn't page spacing between columns (.row-seamless)
+[improved]  Added border radius helpers (helpers.less)
+[improved]  Added no-border option for jQuery UI datepicker if used inside panel
+[improved]  Added class name for scrollable panel to limit panel viewport (.has-scroll)
+[improved]  Added top border if panel has multiple bodies
+[improved]  Added class name for slightly darker panel body (.panel-body-accent)
+[improved]  Added nav tabs toolbar with grey background (.nav-tabs-toolbar)
+[improved]  Improved navigation and file naming
+</code></pre>
+									</div>
+
+									<h6 class="text-semibold">New files added</h6>
+									This section displays a list of new files from assets categories: less, css, js and others. Each update includes something new, so it's really important to make the whole update process as easy as possible. All files listed below include direct paths, so you'll be able to quickly locate where new files need to be placed.
+								</div>
+
+								<div class="table-responsive">
+									<table class="table table-bordered table-striped table-sm">
+										<thead>
+											<tr>
+												<th style="width: 320px;">File</th>
+												<th style="width: 320px;">Location</th>
+												<th>Description</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th colspan="4" class="active">New LESS files</th>
+											</tr>
+											<tr>
+												<td><code>toolbar.less</code></td>
+												<td>/components/ui/</td>
+												<td>Styles for toolbars</td>
+											</tr>
+											<tr>
+												<td><code>inbox.less</code></td>
+												<td>/components/ui/</td>
+												<td>Styles for mailbox</td>
+											</tr>
+											<tr>
+												<td><code>blog.less</code></td>
+												<td>/components/pages/</td>
+												<td>Styles for blog layouts</td>
+											</tr>
+
+											<tr>
+												<th colspan="3" class="active">New demo JS files</th>
+											</tr>
+											<tr>
+												<td><code>general_widgets_content.js</code></td>
+												<td>/js/pages/</td>
+												<td>Content widgets examples</td>
+											</tr>
+											<tr>
+												<td><code>learning.js</code></td>
+												<td>/js/pages/</td>
+												<td>Learning page kit - list and grid</td>
+											</tr>
+											<tr>
+												<td><code>learning_detailed.js</code></td>
+												<td>/js/pages/</td>
+												<td>Learning page kit - detailed view</td>
+											</tr>
+											<tr>
+												<td><code>mail_list_read.js</code></td>
+												<td>/js/pages/</td>
+												<td>Mailbox - read mail example</td>
+											</tr>
+											<tr>
+												<td><code>mail_list_write.js</code></td>
+												<td>/js/pages/</td>
+												<td>Mailbox - write mail example</td>
+											</tr>
+											<tr>
+												<td><code>mail_list.js</code></td>
+												<td>/js/pages/</td>
+												<td>Mailbox - list of emails</td>
+											</tr>
+											<tr>
+												<td><code>user_profile_tabbed.js</code></td>
+												<td>/js/pages/</td>
+												<td>User profile with vertical tabs</td>
+											</tr>
+											<tr>
+												<td><code>blog_single.js</code></td>
+												<td>/js/pages/</td>
+												<td>Single blog post layout</td>
+											</tr>
+											<tr>
+												<td><code>job_list.js</code></td>
+												<td>/js/pages/</td>
+												<td>Job search - list of positions</td>
+											</tr>
+											<tr>
+												<td><code>job_apply.js</code></td>
+												<td>/js/pages/</td>
+												<td>Job search - apply layout</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+
+								<div class="panel-body">
+									<h6 class="text-semibold">LESS files to update</h6>
+									This section displays a list of updated LESS files. Includes file name, path to this file and general description about changes. All list items are grouped in categories. Groups along with file paths allow you to quickly find and replace necessary files. Please keep your copies of LESS files always up-to-date to avoid upgrading issues.
+								</div>
+
+								<div class="table-responsive">
+									<table class="table table-bordered table-striped table-sm">
+										<thead>
+											<tr>
+												<th style="width: 320px;">File</th>
+												<th style="width: 320px;">Location</th>
+												<th>Description</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th colspan="4" class="active">Updated core files</th>
+											</tr>
+											<tr>
+												<td><code>variables-core.less</code></td>
+												<td>/less/core/variables/</td>
+												<td>Updated <code>@table-cell-padding</code> variable</td>
+											</tr>
+											<tr>
+												<td><code>variables-custom.less</code></td>
+												<td>/less/core/variables/</td>
+												<td>Added set of variables for feed list, at the bottom</td>
+											</tr>
+											<tr>
+												<td><code>buttons.less</code></td>
+												<td>/less/bootstrap-limitless/</td>
+												<td>Added checkbox/radio support for <code>.btn-icon</code>, fixed <code>.btn-float</code> styles, added group of block buttons (<code>.btn-block-group</code>)</td>
+											</tr>
+											<tr>
+												<td><code>scaffolding.less</code></td>
+												<td>/less/bootstrap-limitless/</td>
+												<td>Added seamless row option - <code>.row-seamless</code></td>
+											</tr>
+											<tr>
+												<td><code>type.less</code></td>
+												<td>/less/bootstrap-limitless/</td>
+												<td>Added inline list with vertical borders - <code>.list-inline-bordered</code>, added feed styling</td>
+											</tr>
+											<tr>
+												<td><code>panels.less</code></td>
+												<td>/less/bootstrap-limitless/</td>
+												<td>added <code>.has-scroll</code> option, added top border if panel has multiple bodies, added <code>.panel-body-accent</code> class for slightly darker body background, updated <code>.panel-title</code> styles, added specific styles for <code>.panel-flat</code></td>
+											</tr>
+											<tr>
+												<td><code>navbar.less</code></td>
+												<td>/less/bootstrap-limitless/</td>
+												<td>Minor fix in <code>.navbar-btn</code> styles</td>
+											</tr>
+											<tr>
+												<td><code>media.less</code></td>
+												<td>/less/bootstrap-limitless/</td>
+												<td>Updates in <code>.stack-media-on-mobile</code> styles, removed  top margin if <code>.media</code> class has <code>.panel-body</code> class</td>
+											</tr>
+											<tr>
+												<td><code>navs.less</code></td>
+												<td>/less/bootstrap-limitless/</td>
+												<td>Added new <code>.nav-tabs-toolbar</code> styles</td>
+											</tr>
+
+											<tr>
+												<td><code>sidebar.less</code></td>
+												<td>/less/core/layout/</td>
+												<td>Fixed some minor things in <code>.sidebar-xs</code> class, fixed transparent badge and label in active nav item in default sidebar, updated <code>.sidebar-separate</code> styles</td>
+											</tr>
+											<tr class="border-top-solid">
+												<td><code>footer.less</code></td>
+												<td>/less/core/layout/</td>
+												<td>Removed z-index from <code>.footer</code> class</td>
+											</tr>
+
+											<tr>
+												<th colspan="4" class="active">Updated components</th>
+											</tr>
+											<tr class="border-top-solid">
+												<td><code>widgets.less</code></td>
+												<td>/less/components/extensions/jquery_ui/</td>
+												<td>Added <code>.no-border</code> option to <code>.ui-datepicker</code> class</td>
+											</tr>
+											<tr>
+												<td><code>helpers.less</code></td>
+												<td>/less/components/ui/</td>
+												<td>Added border radius helpers</td>
+											</tr>
+											<tr>
+												<td><code>default.less</code></td>
+												<td>/less/components/pace/</td>
+												<td>Added <code>/*rtl:ignore*/</code> to fix loading direction, in RTL only</td>
+											</tr>
+											<tr>
+												<td><code>anytime.less</code></td>
+												<td>/less/components/plugins/pickers/</td>
+												<td>Removed <code>.AnyTime-dom-btn-empty</code> class with styles</td>
+											</tr>
+											<tr>
+												<td><code>dropzone.less</code></td>
+												<td>/less/components/plugins/uploaders/</td>
+												<td>Updated background color if inside or outside panel, updated border color, in RTL version default behaviour is overridden with <code>!important</code> rule</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+
+								<div class="panel-body">
+									<h6 class="text-semibold">JS files to update</h6>
+									These are all JS files that have been changed during update process. It can be a library, plugin or a sample JS file with charts or specific page configuration - everything matters. Also includes file name, path to the file and brief description about changes made. Since JS files are responsible for template's functionality, it is required to keep them up-to-date.
+								</div>
+
+								<div class="table-responsive">
+									<table class="table table-bordered table-striped">
+										<thead>
+											<tr>
+												<th style="width: 320px;">File</th>
+												<th style="width: 320px;">Location</th>
+												<th>Description</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th colspan="3" class="active">Components</th>
+											</tr>
+											<tr>
+												<td><code>switchery.min.js</code></td>
+												<td>/plugins/forms/styling/</td>
+												<td>Switchery plugin</td>
+											</tr>
+											<tr>
+												<td><code>touchspin.min.js</code></td>
+												<td>/plugins/forms/inputs/</td>
+												<td>Spinner inputs for Bootstrap</td>
+											</tr>
+											<tr>
+												<td><code>autosize.min.js</code></td>
+												<td>/plugins/forms/inputs/</td>
+												<td>Auto growing textarea</td>
+											</tr>
+											<tr>
+												<td><code>bootstrap_select.min.js</code></td>
+												<td>/plugins/forms/selects/</td>
+												<td>Select2 library</td>
+											</tr>
+
+											<tr class="border-top-solid">
+												<td><code>cropper.min.js</code></td>
+												<td>/plugins/media/</td>
+												<td>Image cropper</td>
+											</tr>
+											<tr>
+												<td><code>moment.min.js</code>, <code>moment_locales.min.js</code></td>
+												<td>/plugins/ui/moment/</td>
+												<td>Parse, validate, manipulate, and display dates in JavaScript</td>
+											</tr>
+											<tr>
+												<td><code>/plupload/*.js</code></td>
+												<td>/plugins/uploaders/plupload/</td>
+												<td>Plupload library</td>
+											</tr>
+											<tr>
+												<td><code>fileinput.min.js</code></td>
+												<td>/plugins/uploaders/</td>
+												<td>Bootstrap Fileinput library</td>
+											</tr>
+
+											<tr class="border-top-solid">
+												<td><code>datatables.min.js</code></td>
+												<td>/plugins/tables/datatables/</td>
+												<td>Datatables library</td>
+											</tr>
+											<tr>
+												<td><code>autofill.min.js</code></td>
+												<td>/plugins/tables/datatables/extensions</td>
+												<td>Autofill DT extension</td>
+											</tr>
+											<tr>
+												<td><code>buttons.min.js</code></td>
+												<td>/plugins/tables/datatables/extensions</td>
+												<td>Buttons DT extension</td>
+											</tr>
+											<tr>
+												<td><code>key_table.min.js</code></td>
+												<td>/plugins/tables/datatables/extensions</td>
+												<td>Key Table DT extension</td>
+											</tr>
+											<tr>
+												<td><code>row_reorder.min.js</code></td>
+												<td>/plugins/tables/datatables/extensions</td>
+												<td>Row Reorder DT extension</td>
+											</tr>
+
+											<tr>
+												<th colspan="3" class="active">Pages files</th>
+											</tr>
+											<tr>
+												<td><code>datatables_extension_fixed_header.js</code></td>
+												<td>/js/pages/</td>
+												<td>Added adjustments for fixed datatable header when sidebar control button is clicked</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<!-- /version 1.5 -->
+
+
+							<!-- Version 1.4 -->
+							<div class="panel panel-flat" id="v_1_4">
+								<div class="panel-heading">
+									<h5 class="panel-title">Version 1.4</h5>
+									<div class="heading-elements">
+										<span class="text-muted heading-text">September 1, 2016</span>
+										<span class="label bg-blue heading-text">v. 1.4</span>
+					            	</div>
+								</div>
+
+								<div class="panel-body">
+									<div class="content-group-lg">
+										<p class="content-group">Version 1.4 consists of 2 parts - first part contains updated libraries to the latest stable versions, fixed reported bugs and general template improvements; second part will include new pages and new components only. Custom pages are still in development and will be out within next couple of weeks. In general, this update doesn't include critical changes, but some of the features were completely re-thought: hiding panel heading and page header elements is now optional and file structure in Starter Kit has been slightly changed: now each layout uses common LESS and JS files for both main and starters layouts.</p>
+
+<pre class="language-javascript"><code>// # List of updated plugins
+// ------------------------------
+
+[updated]  Bootstrap library - bootstrap.min.js, bootstrap LESS files - to 3.3.7
+[updated]  Font Awesome icon set - bundle - to 4.6.3
+
+[updated]  Hover Dropdown extension - hover_dropdown.min.js - to 2.2.1
+[updated]  Typeahead engine - typeahead.bundle.min.js to 0.11.1
+[updated]  Dual Listbox - duallistbox.min.js - to 3.0.5
+[updated]  Select2 library - select2.min.js - to 4.0.3
+[updated]  Bootstrap Select library - bootstrap_select.min.js - to 1.11.1
+[updated]  Uniform library - uniform.min.js - to 3.0
+[updated]  Summernote editor - summernote.min.js - to 0.8.2
+
+[updated]  Ladda extensions - ladda.min.js - to 1.0.0
+[updated]  Bootstrap Progress Bars - progressbar.min.js - to 0.9.0
+[updated]  Bootbox dialogs extension - bootbox.min.js to 4.4.0
+[updated]  Bootpag pagination - bootpag.min.js - to 1.0.7
+[updated]  Bootstrap pagination extension - bs_pagination.min.js - to 1.4
+
+[updated]  Spectrum color picker - spectrum.js - to 1.8.0
+[updated]  Pickadate pickers - pickadate.js bundle - to 3.5.6
+[updated]  Anytime picker - anytime.min.js - to 5.1.2
+[updated]  Bootstrap daterange picker - daterangepicker.js - to 2.1.23
+[updated]  Moment.js library - moment.min.js and moment_locales.min.js - to 2.14.1
+
+[updated]  ION Range sliders - ion_rangeslider.min.js - to 2.1.4
+[updated]  NoUI sliders - nouislider.min.js - to 8.5.1
+[updated]  jQuery UI slider pips - slider_pips.min.js - to 1.11.3 (in LTR only)
+
+[updated]  Datatables library - datatables.min.js - to 1.10.12
+[updated]  Autofill DT extention - autofill.min.js - to 2.1.2
+[updated]  Buttons DT extention - buttons.min.js - to 1.2.1
+[updated]  Column Reorder DT extention - col_reorder.min.js - to 1.3.2
+[updated]  Fixed Columns DT extention - fixed_columns.min.js - to 3.2.2
+[updated]  Fixed Header DT extention - fixed_header.min.js - to 3.1.2
+[updated]  Key Table DT extention - key_table.min.js - to 2.1.2
+[updated]  Responsive DT extention - responsive.min.js - to 2.1.0
+[updated]  Row Reorder DT extention - row_reorder.min.js - to 1.1.2
+[updated]  Scroller DT extention - scroller.min.js - to 1.4.2
+[updated]  Select DT extention - select.min.js - to 1.2.0
+[updated]  Handsontable library - handsontable.min.js - to 0.26.0
+
+[updated]  Image Cropper - cropper.min.js to 2.3.3
+[updated]  Typeahead Addresspicker - typeahead_addresspicker.js to the latest version
+[updated]  Fancytree library - fancytree.min.js - to 2.18.0
+[updated]  Fullcalendar library - fullcalendar.min.js - to 2.9.1
+[updated]  Headroom.js extension - headroom.min.js and headroom_jquery.min.js - to 0.9.3
+[updated]  Nicescroll custom scrollbar - nicescroll.min.js - to 3.6.8
+[updated]  D3.js charting library - d3.min.js - to 3.5.17
+
+[updated]  Plupload file uploader - plupload bundle - to 2.1.9
+[updated]  Bootstrap File Input library - fileinput.min.js to 4.3.5
+
+
+
+// # List of fixed
+// ------------------------------
+
+[fixed]  Wrong horizontal padding in typeahead suggestions menu items in material layout
+[fixed]  WYSIHTML5 text editor color picker doesn’t work and doesn't respect text styles
+[fixed]  Fullcalendar table overflow is visible on small screens and some responsive issues
+[fixed]  Datatable buttons collection dropdown has wrong horizontal padding
+[fixed]  Alpaca horizontal selects extra gap between selects
+[fixed]  Fancytree Child Counter extension missing styles
+[fixed]  Pager has negative bottom margin
+[fixed]  Tabs inside panel don’t have padding on mobile
+[fixed]  Nested tabs in vertical tabs layout are also vertical
+[fixed]  Styled single file input doesn’t respect width if file name is too long
+[fixed]  Mega menu isn’t scrollable on mobile if inside fixed secondary navbar
+[fixed]  jQuery UI datepicker is hidden if inside jQuery UI dialog
+[fixed]  Dropdown menu in material layout inside breadcrumb elements has wrong placement
+[fixed]  Bootstrap file input loading indicator has wrong position when loading begins
+[fixed]  jQuery UI Select with icons - icons don’t have horizontal spacing
+[fixed]  Steps wizard content overflow is hidden, so components inside wizard are partially hidden
+[fixed]  Bootstrap select in panel heading elements triggers native select on click
+[fixed]  Dropdown submenus on Android don’t open
+[fixed]  Breadcrumb line component inside page header in material layout displayed incorrectly
+[fixed]  Single styled file inputs are displayed inline on drag&amp;drop page, in material layout
+[fixed]  Search field in search and knowledgebase has background color in material layout
+[fixed]  Contextual panels don't have background color on mobile, if heading elements are collapsed
+[fixed]  Image cropper in Summernote editor has wrong position and appears behind image
+
+[fixed]  RTL layout - typeahead inputs in material layout have wrong direction
+[fixed]  RTL layout - fancy box has incorrect position
+[fixed]  RTL layout - handsontable tables have wrong styles
+[fixed]  RTL layout - daterangepicker is missing RTL direction in plugin configurations
+
+
+
+// # List of improvements
+// ------------------------------
+
+[improved]  Improved file structure in Starter Kits
+[improved]  Removed paths to extra JS files in Handsontable pages
+[improved]  gulpfile.js - minifycss replaced with clean-css due to deprecation
+[improved]  Improved Typeahead initializations accross JS files
+[improved]  Added missing badges component to panel and page header components list
+[improved]  Added 3 new examples of Bootbox dialog extension
+[improved]  Added option to disable collapsing of heading elements on mobile (using .not-collapsible class added to .heading-elements container)
+[improved]  Now heading elements on mobile push content down instead of covering elements below, so that all responsive containers have consistent appearance
+[improved]  Panel heading elements now have background color different from panel background color on mobiles
+[improved]  Each layout now uses 1 gulp file for main layout and Starter Kits
+</code></pre>
+
+									</div>
+
+									<h6 class="text-semibold">LESS files to update</h6>
+									This section displays a list of updated LESS files. Includes file name, path to this file and general description about changes. All list items are grouped in categories. Groups along with file paths allow you to quickly find and replace necessary files. Please keep your copies of LESS files always up-to-date to avoid upgrading issues.
+								</div>
+
+								<div class="table-responsive">
+									<table class="table table-bordered table-striped table-sm">
+										<thead>
+											<tr>
+												<th style="width: 320px;">File</th>
+												<th style="width: 320px;">Location</th>
+												<th>Description</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th colspan="4" class="active">Updated core files</th>
+											</tr>
+											<tr>
+												<td><code>*.less</code></td>
+												<td>/less/bootstrap/</td>
+												<td>Updated all LESS files from Bootstrap core to version 3.3.7</td>
+											</tr>
+											<tr>
+												<td><code>dropdowns.less</code></td>
+												<td>/less/bootstrap-limitless/</td>
+												<td>Changed dropdown submenu visibility on mobiles</td>
+											</tr>
+											<tr>
+												<td><code>navs.less</code></td>
+												<td>/less/bootstrap-limitless/</td>
+												<td>Updated vertical tabs code, added padding for panel tab content</td>
+											</tr>
+											<tr>
+												<td><code>pager.less</code></td>
+												<td>/less/bootstrap-limitless/</td>
+												<td>Removed bottom margin from pager container</td>
+											</tr>
+											<tr>
+												<td><code>panels.less</code></td>
+												<td>/less/bootstrap-limitless/</td>
+												<td>Updated styles for panel footer, mobile view</td>
+											</tr>
+											<tr>
+												<td><code>breadcrumbs.less</code></td>
+												<td>/less/bootstrap-limitless/</td>
+												<td>Updated breadcrumb components visibility and dropdown menu position in material version</td>
+											</tr>
+											<tr>
+												<td><code>navbar.less</code></td>
+												<td>/less/bootstrap-limitless/</td>
+												<td>Updated styles for <code>.affix</code> class on mobiles</td>
+											</tr>
+
+											<tr>
+												<th colspan="4" class="active">Updated components</th>
+											</tr>
+											<tr class="border-top-solid">
+												<td><code>file-input.less</code></td>
+												<td>/less/components/plugins/uploaders/</td>
+												<td>Added styles for modal and changed styles for lodaing indicator</td>
+											</tr>
+											<tr>
+												<td><code>typeahead.less</code></td>
+												<td>/less/components/plugins/forms/extensions/</td>
+												<td>Changed menu items horizontal padding and renamed classes according to a new version</td>
+											</tr>
+											<tr>
+												<td><code>alpaca.less</code></td>
+												<td>/less/components/plugins/forms/extensions/</td>
+												<td>Added <code>:empty</code> styles to hide empty containers that have horizontal spacing</td>
+											</tr>
+											<tr>
+												<td><code>uniform.less</code></td>
+												<td>/less/components/plugins/forms/checkboxes/</td>
+												<td>Changed styles for <code>.uploader</code> class</td>
+											</tr>
+											<tr>
+												<td><code>bootstrap-select.less</code></td>
+												<td>/less/components/plugins/forms/menus/</td>
+												<td>Added missing styles for <code>.selected</code> class. Actually renamed <code>active</code> to <code>selected</code></td>
+											</tr>
+											<tr>
+												<td><code>dual-listbox.less</code></td>
+												<td>/less/components/plugins/forms/plugins/</td>
+												<td>Minor updates - added negative horizontal margin for new arrows in buttons</td>
+											</tr>
+											<tr>
+												<td><code>steps.less</code></td>
+												<td>/less/components/plugins/forms/wizards/</td>
+												<td>Removed <code>overflow: hidden;</code> from <code>.wizard</code> and <code>.content</code> containers</td>
+											</tr>
+											<tr>
+												<td><code>pickadate/base.less</code></td>
+												<td>/less/components/plugins/pickers/pickadate/</td>
+												<td>Removed focus highlight from main dropdown</td>
+											</tr>
+											<tr class="border-top-solid">
+												<td><code>fancytree.less</code></td>
+												<td>/less/components/plugins/ui/</td>
+												<td>Added missing styles for child counter</td>
+											</tr>
+											<tr>
+												<td><code>wysihtml5.less</code></td>
+												<td>/less/components/plugins/forms/editors/</td>
+												<td>Removed parents from color classes and other minor fixes</td>
+											</tr>
+											<tr>
+												<td><code>summernote.less</code></td>
+												<td>/less/components/plugins/forms/editors/</td>
+												<td>Changed styles for image crop</td>
+											</tr>
+											<tr>
+												<td><code>fullcalendar.less</code></td>
+												<td>/less/components/plugins/ui/</td>
+												<td>Updated styles for mobile view, changed horizontal borders in main table</td>
+											</tr>
+											<tr>
+												<td><code>widgets.less</code></td>
+												<td>/less/components/extensions/jquery_ui/</td>
+												<td>Added horizontal spacing for icons inside <code>selectmenu</code> and removed <code>!important</code> from z-index property in datepicker</td>
+											</tr>
+											<tr>
+												<td><code>heading-elements.less</code></td>
+												<td>/less/components/ui/</td>
+												<td>Major update of elements visibility on mobile. Replace your current file with updated one</td>
+											</tr>
+											<tr class="border-top-solid">
+												<td><code>image-cropper.less</code></td>
+												<td>/less/components/plugins/images/</td>
+												<td>Complete rewrite of plugin styles according to the latest version</td>
+											</tr>
+											<tr>
+												<td><code>fancybox.less</code></td>
+												<td>[RTL]/less/components/plugins/images/</td>
+												<td>Added <code>:ignore</code> to the main container, fix for modal position in RTL version</td>
+											</tr>
+											<tr class="border-top-solid">
+												<td><code>datatable-buttons.less</code></td>
+												<td>/less/components/plugins/tables/datatables/</td>
+												<td>Updated horizontal padding in dropdown menu items</td>
+											</tr>
+											<tr>
+												<td><code>handsontable.less</code></td>
+												<td>[RTL]/less/components/plugins/tables/handsontable/</td>
+												<td>Placed plugin code inside <code>:ignore</code> to keep LTR version in RTL direction</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+
+								<div class="panel-body">
+									<h6 class="text-semibold">JS files to update</h6>
+									These are all JS files that have been changed during update process. It can be a library, plugin or a sample JS file with charts or specific page configuration - everything matters. Also includes file name, path to the file and brief description about changes made. Since JS files are responsible for template's functionality, it is required to keep them up-to-date.
+								</div>
+
+								<div class="table-responsive">
+									<table class="table table-bordered table-striped">
+										<thead>
+											<tr>
+												<th style="width: 320px;">File</th>
+												<th style="width: 320px;">Location</th>
+												<th>Description</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th colspan="3" class="active">Core</th>
+											</tr>
+											<tr>
+												<td><code>bootstrap.min.js</code></td>
+												<td>/js/core/libraries/</td>
+												<td>Core Bootstrap file to the latest 3.3.7 version</td>
+											</tr>
+											<tr>
+												<td><code>app.js</code></td>
+												<td>/js/core/</td>
+												<td>In all layouts changed bits of code, responsible for heading elements toggles. Added <code>mouseenter</code> and <code>mouseleave</code> events for dropdown submenus on mobile.</td>
+											</tr>
+
+											<tr>
+												<th colspan="3" class="active">Components</th>
+											</tr>
+											<tr>
+												<td><code>ladda.min.js</code></td>
+												<td>/plugins/buttons/</td>
+												<td>Bootstrap buttons extension</td>
+											</tr>
+											<tr>
+												<td><code>hover_dropdown.min.js</code></td>
+												<td>/plugins/buttons/</td>
+												<td>Extension that allows you to open bootstrap dropdown on hover</td>
+											</tr>
+											<tr>
+												<td><code>d3.min.js</code></td>
+												<td>/plugins/visualization/d3/</td>
+												<td>D3.js charting library</td>
+											</tr>
+
+											<tr class="border-top-solid">
+												<td><code>select2.min.js</code></td>
+												<td>/plugins/forms/selects/</td>
+												<td>Select2 library</td>
+											</tr>
+											<tr>
+												<td><code>bootstrap_select.min.js</code></td>
+												<td>/plugins/forms/selects/</td>
+												<td>Select2 library</td>
+											</tr>
+											<tr>
+												<td><code>uniform.min.js</code></td>
+												<td>/plugins/forms/styling/</td>
+												<td>Uniform.js library (styled inputs)</td>
+											</tr>
+											<tr>
+												<td><code>typeahead.bundle.min.js</code></td>
+												<td>/plugins/forms/inputs/typeahead/</td>
+												<td>Typeahead bundle</td>
+											</tr>
+											<tr>
+												<td><code>duallistbox.min.js</code></td>
+												<td>/plugins/forms/inputs/</td>
+												<td>Dual Listbox plugin</td>
+											</tr>
+											<tr>
+												<td><code>duallistbox.min.js</code></td>
+												<td>/plugins/forms/inputs/</td>
+												<td>Dual Listbox plugin</td>
+											</tr>
+
+											<tr class="border-top-solid">
+												<td><code>pickadate/*.js</code></td>
+												<td>/plugins/pickers/pickadate/</td>
+												<td>Pickadate date and time pickers</td>
+											</tr>
+											<tr>
+												<td><code>anytime.min.js</code></td>
+												<td>/plugins/pickers/</td>
+												<td>Anytime date and time pickers</td>
+											</tr>
+											<tr>
+												<td><code>daterangepicker.js</code></td>
+												<td>/plugins/pickers/</td>
+												<td>Daterange picker for Bootstrap</td>
+											</tr>
+											<tr>
+												<td><code>typeahead_addresspicker.js</code></td>
+												<td>/plugins/pickers/location/</td>
+												<td>Addresspicker with Typeahead support</td>
+											</tr>
+											<tr>
+												<td><code>spectrum.js</code></td>
+												<td>/plugins/pickers/color/</td>
+												<td>Spectrum color picker</td>
+											</tr>
+											<tr>
+												<td><code>moment.min.js</code>, <code>moment_locales.min.js</code></td>
+												<td>/plugins/ui/moment/</td>
+												<td>Spectrum color picker</td>
+											</tr>
+
+											<tr class="border-top-solid">
+												<td><code>ion_rangeslider.min.js</code></td>
+												<td>/plugins/sliders/</td>
+												<td>ION Range slider</td>
+											</tr>
+											<tr>
+												<td><code>nouislider.min.js</code></td>
+												<td>/plugins/sliders/</td>
+												<td>NoUI sliders</td>
+											</tr>
+											<tr>
+												<td><code>slider_pips.min.js</code></td>
+												<td>/plugins/sliders/</td>
+												<td>Slider Pips for jQuery UI slider. LTR version only</td>
+											</tr>
+
+
+											<tr class="border-top-solid">
+												<td><code>cropper.min.js</code></td>
+												<td>/plugins/media/</td>
+												<td>Image cropper</td>
+											</tr>
+											<tr>
+												<td><code>nouislider.min.js</code></td>
+												<td>/plugins/sliders/</td>
+												<td>NoUI sliders</td>
+											</tr>
+											<tr>
+												<td><code>progressbar.min.js</code></td>
+												<td>/plugins/loaders/</td>
+												<td>Enhanced Bootstrap progress bars</td>
+											</tr>
+											<tr>
+												<td><code>fullcalendar.min.js</code></td>
+												<td>/plugins/ui/fullcalendar/</td>
+												<td>Fullcalendar library</td>
+											</tr>
+											<tr>
+												<td><code>headroom.min.js</code>, <code>headroom_jquery.min.js</code></td>
+												<td>/plugins/ui/headroom/</td>
+												<td>Headroom.js library</td>
+											</tr>
+											<tr>
+												<td><code>nicescroll.min.js</code></td>
+												<td>/plugins/ui/</td>
+												<td>Nicescroll.js library for custom scrollbars</td>
+											</tr>
+											<tr>
+												<td><code>fancytree_all.min.js</code></td>
+												<td>/plugins/trees/</td>
+												<td>Nicescroll.js library for custom scrollbars</td>
+											</tr>
+
+
+											<tr class="border-top-solid">
+												<td><code>datatables.min.js</code></td>
+												<td>/plugins/tables/datatables/</td>
+												<td>Datatables library</td>
+											</tr>
+											<tr>
+												<td><code>autofill.min.js</code></td>
+												<td>/plugins/tables/datatables/extensions</td>
+												<td>Autofill DT extension</td>
+											</tr>
+											<tr>
+												<td><code>buttons.min.js</code></td>
+												<td>/plugins/tables/datatables/extensions</td>
+												<td>Buttons DT extension</td>
+											</tr>
+											<tr>
+												<td><code>col_reorder.min.js</code></td>
+												<td>/plugins/tables/datatables/extensions</td>
+												<td>Columns Reorder DT extension</td>
+											</tr>
+											<tr>
+												<td><code>fixed_columns.min.js</code></td>
+												<td>/plugins/tables/datatables/extensions</td>
+												<td>Fixed Columns DT extension</td>
+											</tr>
+											<tr>
+												<td><code>fixed_header.min.js</code></td>
+												<td>/plugins/tables/datatables/extensions</td>
+												<td>Fixed Header DT extension</td>
+											</tr>
+											<tr>
+												<td><code>key_table.min.js</code></td>
+												<td>/plugins/tables/datatables/extensions</td>
+												<td>Key Table DT extension</td>
+											</tr>
+											<tr>
+												<td><code>responsive.min.js</code></td>
+												<td>/plugins/tables/datatables/extensions</td>
+												<td>Responsive DT extension</td>
+											</tr>
+											<tr>
+												<td><code>row_reorder.min.js</code></td>
+												<td>/plugins/tables/datatables/extensions</td>
+												<td>Row Reorder DT extension</td>
+											</tr>
+											<tr>
+												<td><code>scroller.min.js</code></td>
+												<td>/plugins/tables/datatables/extensions</td>
+												<td>Scroller DT extension</td>
+											</tr>
+											<tr>
+												<td><code>select.min.js</code></td>
+												<td>/plugins/tables/datatables/extensions</td>
+												<td>Select DT extension</td>
+											</tr>
+
+											<tr>
+												<td><code>handsontable.min.js</code></td>
+												<td>/plugins/tables/handsontable</td>
+												<td>Handsontable library</td>
+											</tr>
+
+											<tr class="border-top-solid">
+												<td><code>/plupload/*.js</code></td>
+												<td>/plugins/uploaders/plupload/</td>
+												<td>Plupload library</td>
+											</tr>
+											<tr>
+												<td><code>fileinput.min.js</code></td>
+												<td>/plugins/uploaders/</td>
+												<td>Bootstrap Fileinput library</td>
+											</tr>
+
+											<tr>
+												<th colspan="3" class="active">Pages files</th>
+											</tr>
+											<tr>
+												<td><code>Most of them</code></td>
+												<td>/js/pages/</td>
+												<td>A lot of JS files with examples have been changed during this update. Just follow a specific file if you need to update anything.</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+
+							</div>
+							<!-- /version 1.4 -->
+
+
+							<!-- Version 1.3 -->
+							<div class="panel panel-flat" id="v_1_3">
+								<div class="panel-heading">
+									<h5 class="panel-title">Version 1.3</h5>
+									<div class="heading-elements">
+										<span class="text-muted heading-text">April 1, 2016</span>
+										<span class="label bg-blue heading-text">v. 1.3</span>
+					            	</div>
+								</div>
+
+								<div class="panel-body">
+									<div class="content-group-lg">
+										<p class="content-group">Version 1.3 is another massive update, which has been in development over the past 3 months. This version includes bug fixing for reported issues, new components, new layout, new theme and updated plugins/libraries to the latest stable versions. Also includes significant improvements of LESS files structure and RTL layout logic - switched to gulp task, which automatically generates CSS files for RTL version, so now both layout directions use same set of LESS files with a few exceptions. The only benefit - very easy to track changes and update files, downside - requires gulp task runner. But documentation and myself help to solve any kind of issues related to upgrade.</p>
+
+<pre class="language-javascript"><code>// # List of new components
+// ------------------------------
+
+[new]  New layout
+[new]  Material design theme for all layouts
+[new]  Alpaca forms - JSON driven form generator
+[new]  Floating Action Menu - material style floating action button with menu, supports 4 positions
+[new]  Panel footer components - a great addition to panel component to display panel header components in panel footer
+[new]  Floating labels - display hidden labels on input fields
+[new]  New heading components - image thumbnails and inline lists
+[new]  New page header options - transparent, light, dark, light image and dark image
+[new]  New tabs - vertical left/right, with top icons
+[new]  Modal with remote source - configuration example
+[new]  Navbar navigation - added status mark support
+[new]  Forms - added large and extra large input sizes
+[new]  Footer - now footer can be either text or navbar component (static and fixed)
+[new]  Components animation - added optional transitions to all components, now they are animated by default
+
+
+
+// # List of updated plugins
+// ------------------------------
+
+[updated]  PNotify notifications - pnotify.min.js - to 3.0.0
+[updated]  Noty notifications - noty.min.js - to 2.3.8
+
+[updated]  Datatables library - datatables.min.js - to 1.10.11 and extensions
+[updated]  Autofill extension - autofill.min.js - to 2.1.1
+[updated]  Buttons extension - buttons.min.js - to 1.1.2
+[updated]  Column reorder extension - col_reorder.min.js - to 1.3.1
+[updated]  Fixed columns extension - fixed_columns.min.js - to 3.2.1
+[updated]  Fixed header extension - fixed_header.min.js - to 3.1.1
+[updated]  Key table extension - key_table.min.js - to 2.1.1
+[updated]  Responsive extension - responsive.min.js - to 2.0.2
+[updated]  Row reorder extension - row_reorder.min.js - to 1.1.1
+[updated]  Scroller extension - scroller.min.js - to 1.4.1
+[updated]  Select extension - select.min.js - to 1.1.2
+
+[updated]  Select2 library - select2.min.js - to 4.0.2
+[updated]  ECharts charting library - echarts.js - to 2.2.7
+[updated]  FullCalendar - fullcalendar.min.js - to 2.6.1
+[updated]  Dropzone file uploader - dropzone.min.js - to 4.3.0 (done, replace dropzone.less everywhere)
+[updated]  Plupload file uploader - plupload.full.min.js - to 2.1.8
+[updated]  D3.js visualization library - d3.min.js -  to 3.5.16
+[updated]  Noui slider - nouislider.min - to 8.3.0 (done)
+[updated]  BlockUI extension - blockui.min.js - to 2.7.0
+[updated]  Jasny Bootstrap - jasny_bootstrap.min.js - to 3.1.3
+[updated]  Passy - passy.js - to the latest version
+[updated]  Auto growing textarea - autosize.js - to 3.0.15 (requires fixes in form_controls_extended.js) (done)
+[updated]  Bootstrap selects - bootstrap_select.min.js - to 1.10.0 (requires fixes in bootstrap-select.less) (done)
+[updated]  Touchspin spinners - touchspin.min.js - to 3.1.1
+[updated]  Bootstrap tags input - bootstrap_tagsinput.min.js - to 0.8.0
+[updated]  Form validation - validate.min.js - to 1.15.0 (also needs to be updated form_validation.js - replace card with creditcard)
+[updated]  Summernote editor - summernote.min.js - to 0.8.1 (needs new font files to be added)
+[updated]  Hideable navbar - headroom.min.js - to 0.8.0
+[updated]  Bootstrap file input - file-input.min.js - to 4.3.1
+[updated]  Handlebars - handlebars.min.js - to 4.0.5
+
+
+
+// # List of fixed
+// ------------------------------
+
+[fixed]  Extra horizontal scrollbar in Fullcalendar in Firefox
+[fixed]  Multiple Select2 - wrong cross icon placement in FF
+[fixed]  Container height hack for FF caused footer issues on mobile
+[fixed]  Select2 multiple select with custom bg color - wrong placeholder color
+[fixed]  Typo in navbar.less, which caused compilation warnings
+[fixed]  When collapsing/expanding sidebar category, class name is added to a wrong item
+[fixed]  Panel heading - incorrect vertical alignment in icons and text (wrong calculation) 
+[fixed]  Descriptions list have incorrect titles on mobiles
+[fixed]  If badges have border, border radius is too small to make them rounded
+[fixed]  Panel heading - wrong position of tabs and pills
+[fixed]  Incorrect height of ION range slider
+[fixed]  noUI vertical slider has wrong range width
+[fixed]  Color picker overflows fixed navbar
+[fixed]  Growl notification generated by BlockUI has double border
+[fixed]  jQuery UI selects - long text overlaps arrow icon
+[fixed]  Dropzone icon marks appear on the left side overflowing thumb
+[fixed]  In 3rd and 4th layout, collapsed sidebar has extra top spacing
+[fixed]  Links with default bootstrap contextual background colors have wrong colors on hover/focus
+[fixed]  If panel is collapsed by default, arrow icon isn’t rotated
+[fixed]  Single daterange picker with time picker - empty calendars container shows up
+[fixed]  Floating button inside page header (link buttons) don’t have vertical padding
+[fixed]  On mobiles, flat button inside navbar has wrong color text color
+[fixed]  Invoice template first row has wrong breakpoint
+[fixed]  Datatables doesn’t have horizontal spacing in header/footer if table is inside form
+[fixed]  Hideable navbar doesn’t support optional navbar sizes
+[fixed]  Border radius inconsistency in input elements
+[fixed]  In RTL version page title subtitle has wrong position
+[fixed]  Icon inside input group disappears when input is focused
+[fixed]  Default and flat labels/badges heights are inconsistent
+[fixed]  Pagination and pager have extra bottom spacing
+[fixed]  Datatables fixed columns extension - complex header example not resizable
+[fixed]  Dual list boxes inconsistent border radiuses
+
+
+
+// # List of improvements
+// ------------------------------
+
+[improved]  Improved *-sm and *-xs styles in inputs, buttons, selects and input groups
+[improved]  Additional placements of labels/badges in dropdown (badges/labels are always on the far right)
+[improved]  Fancy box close button position
+[improved]  Added horizontal spacing to images inside user dropdown menu
+[improved]  Single styled file input (supports text and icons with all available button styles)
+[improved]  Use buttons instead of inputs in steps actions
+[improved]  Label/badge and flat label/badge size inconsistency
+[improved]  Increased caret width
+[improved]  Added .no-shadow helper class - removes shadow from element
+[improved]  Tabs inside panel header
+[improved]  Add direction: ltr; to all tags to avoid issues in RTL version
+[improved]  Removed input highlights in contextual feedback states
+[improved]  Look and feel of CKEditor toolbar
+[improved]  Added multiselect dropdown support to navbar
+[improved]  Sidebar navigation appearance
+[improved]  RTL version - switched to gulp task, that automatically generates RTL version from LTR, to avoid problems with updates
+[improved]  Significantly improved LESS file structure
+</code></pre>
+
+									</div>
+
+									<h6 class="text-semibold">LESS files to update</h6>
+									This section displays a list of updated LESS files. Includes file name, path to this file and general description about changes. All list items are grouped in categories. Groups along with file paths allow you to quickly find and replace necessary files. Please keep your copies of LESS files always up-to-date to avoid upgrading issues.
+								</div>
+
+								<div class="table-responsive">
+									<table class="table table-bordered table-striped table-sm">
+										<thead>
+											<tr>
+												<th style="width: 320px;">File</th>
+												<th style="width: 320px;">Location</th>
+												<th>Description</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th colspan="4" class="active">Updated core files</th>
+											</tr>
+											<tr>
+												<td><code>dropdowns.less.less</code></td>
+												<td>/less/bootstrap-limitless/</td>
+												<td>Updated caret width, updated link styles, updated dropdown sizes to better match text sizes, replaced number with variable in submenu, combined header icon styles with general ones</td>
+											</tr>
+											<tr>
+												<td><code>navs.less</code></td>
+												<td>/less/bootstrap-limitless/</td>
+												<td>Added status msrk support, icons are now using right floating, removed unused <code>.page-tabs</code>, added vertical tabs abd tabs with top icons, completely changed styles for tabs variations to match material theme</td>
+											</tr>
+											<tr>
+												<td><code>list-group.less</code></td>
+												<td>/less/bootstrap-limitless/</td>
+												<td>Removed styles for <code>.list-group-borderless</code> class which does the same as <code>.no-border</code>; removed top margin from labels and badges</td>
+											</tr>
+											<tr>
+												<td><code>buttons.less</code></td>
+												<td>/less/bootstrap-limitless/</td>
+												<td>Completely changed calculations for labeled button, updated styles for button with single icon, updated button sizes, added support of images in floating button - needed for FAB component</td>
+											</tr>
+											<tr>
+												<td><code>alerts.less</code></td>
+												<td>/less/bootstrap-limitless/</td>
+												<td>Removed styles for PNotify library, new version doesn't require style duplicates</td>
+											</tr>
+											<tr>
+												<td><code>pagination.less</code></td>
+												<td>/less/bootstrap-limitless/</td>
+												<td>Updated sizing, removed extra bottom space</td>
+											</tr>
+											<tr>
+												<td><code>pager.less</code></td>
+												<td>/less/bootstrap-limitless/</td>
+												<td>Updated sizing, removed extra bottom space</td>
+											</tr>
+											<tr>
+												<td><code>labels.less</code></td>
+												<td>/less/bootstrap-limitless/</td>
+												<td>Increased default height to match computed line height, changed padding in <code>.label-flat</code>, updated styles of <code>.label-icon</code></td>
+											</tr>
+											<tr>
+												<td><code>badges.less</code></td>
+												<td>/less/bootstrap-limitless/</td>
+												<td>Increased default height; fixed incorrect rounded border radius; changed padding in <code>.badge-flat</code></td>
+											</tr>
+											<tr>
+												<td><code>thumbnails.less</code></td>
+												<td>/less/bootstrap-limitless/</td>
+												<td>Added border radius to thumb image and <code>.caption-overflow</code></td>
+											</tr>
+											<tr>
+												<td><code>type.less</code></td>
+												<td>/less/bootstrap-limitless/</td>
+												<td>Completely changed styles for <code>.page-header</code> - added support of background images; changed contextual background styles; updated styles for <code>.dl-horizontal</code> - horizontal description lists</td>
+											</tr>
+											<tr>
+												<td><code>breadcrumbs.less</code></td>
+												<td>/less/bootstrap-limitless/</td>
+												<td>Complete rewrite - added 1 single style for all layouts</td>
+											</tr>
+											<tr>
+												<td><code>media.less</code></td>
+												<td>/less/bootstrap-limitless/</td>
+												<td>Changed line height in <code>.media-annotation</code>; changed font weight in <code>.media-header</code></td>
+											</tr>
+											<tr>
+												<td><code>close.less</code></td>
+												<td>/less/bootstrap-limitless/</td>
+												<td>Removed font size from <code>.close</code> class</td>
+											</tr>
+											<tr>
+												<td><code>wells.less</code></td>
+												<td>/less/bootstrap-limitless/</td>
+												<td>Added <code>[class*=border-]</code> classes - now supports custom border colors</td>
+											</tr>
+											<tr>
+												<td><code>panels.less</code></td>
+												<td>/less/bootstrap-limitless/</td>
+												<td>Completely changed styles for <code>.panel-footer</code></td>
+											</tr>
+											<tr>
+												<td><code>navbar.less</code></td>
+												<td>/less/bootstrap-limitless/</td>
+												<td>Minor changes in default theme</td>
+											</tr>
+											<tr>
+												<td><code>forms.less</code></td>
+												<td>/less/bootstrap-limitless/</td>
+												<td>Changed bottom margin in <code>label</code> to match vertical input padding; add styles for floating labels (<code>.form-group-material</code>); updated left padding for labels in <code>.checkbox</code> and <code>.radio</code> classes; replaced styles for <code>.label-inline</code> for proper spacing calculation; removed shadow from contextual inputs</td>
+											</tr>
+
+											<tr class="border-top-solid">
+												<td><code>sidebar.less</code></td>
+												<td>/less/code/layout/</td>
+												<td>Changed a lot - completely changed styles for <code>.sidebar-xs</code>; updated styles for <code>.navigation</code>; added new variables for sidebar color identification. Suggest to replace the whole file</td>
+											</tr>
+											<tr>
+												<td><code>variables-core.less</code></td>
+												<td>/less/code/variables/</td>
+												<td>Renamed <code>variables.less</code> to <code>variables-core.less</code> and <code>core-variables.less</code> to <code>variables-custom.less</code>; changed existing and added new variables needed for material theme</td>
+											</tr>
+											<tr>
+												<td><code>global.less</code></td>
+												<td>/less/_global/</td>
+												<td>New file - includes all necessary imports used across the files</td>
+											</tr>
+											<tr>
+												<td><code>components.less</code>, <code>bootstrap.less</code>, <code>core.less</code></td>
+												<td>/less/_main/</td>
+												<td>Replaced paths to files with variable, defined in <code>global.less</code></td>
+											</tr>
+
+											<tr>
+												<th colspan="4" class="active">Updated components</th>
+											</tr>
+											<tr>
+												<td><code>noui-slider.less.less</code></td>
+												<td>/components/plugins/sliders/</td>
+												<td>Removed transitions from <code>.noUi-origin</code> and <code>.noUi-connect</code> classes, updated styles for disabled mode, removed margin from <code>.noUi-connect</code></td>
+											</tr>
+											<tr>
+												<td><code>ion-range-slider.less</code></td>
+												<td>/components/plugins/sliders/</td>
+												<td>Updated calculations in multiple classes, suggest to replace the whole file</td>
+											</tr>
+
+											<tr class="border-top-solid">
+												<td><code>uniform.less</code></td>
+												<td>/components/plugins/forms/checkboxes/</td>
+												<td>Added new styles for inputs within dark navbars and page header; replaced displays with opacity in checkbox and radoi to allow animation; updated <code>.uploader</code> styles to allow usage of basic button styles</td>
+											</tr>
+											<tr>
+												<td><code>passy.less</code></td>
+												<td>/components/plugins/forms/extensions/</td>
+												<td>Repositioned label inside input, <code>.password-indicator-label-absolute</code> class</td>
+											</tr>
+
+											<tr class="border-top-solid">
+												<td><code>tokenfield.less</code></td>
+												<td>/components/plugins/forms/tags/</td>
+												<td>Changed all styles to a new version</td>
+											</tr>
+											<tr>
+												<td><code>tags-input.less</code></td>
+												<td>/components/plugins/forms/tags/</td>
+												<td>Complete rewrite</td>
+											</tr>
+
+											<tr class="border-top-solid">
+												<td><code>dual-listbox.less</code></td>
+												<td>/components/plugins/forms/plugins/</td>
+												<td>Fixed inconsistent border radiuses</td>
+											</tr>
+											<tr>
+												<td><code>editable.less</code></td>
+												<td>/components/plugins/forms/extensions/</td>
+												<td>Increased min width for <code>.editableform</code>; changed horizontal spacing in <code>.editable-buttons</code></td>
+											</tr>
+
+											<tr class="border-top-solid">
+												<td><code>select2.less</code></td>
+												<td>/components/plugins/forms/menus/</td>
+												<td>Minor changes</td>
+											</tr>
+											<tr>
+												<td><code>selectbox.less</code></td>
+												<td>/components/plugins/forms/menus/</td>
+												<td>Complete rewrite according to a new version</td>
+											</tr>
+											<tr>
+												<td><code>bootstrap-select.less</code></td>
+												<td>/components/plugins/forms/menus/</td>
+												<td>Complete rewrite according to a new version</td>
+											</tr>
+
+											<tr class="border-top-solid">
+												<td><code>steps.less</code></td>
+												<td>/components/plugins/forms/wizards/</td>
+												<td>Minor updates</td>
+											</tr>
+											<tr>
+												<td><code>stepy.less</code></td>
+												<td>/components/plugins/forms/wizards/</td>
+												<td>Minor updates</td>
+											</tr>
+											<tr>
+												<td><code>form.less</code></td>
+												<td>/components/plugins/forms/wizards/</td>
+												<td>Minor updates</td>
+											</tr>
+
+											<tr class="border-top-solid">
+												<td><code>daterange.less</code></td>
+												<td>/components/plugins/pickers/</td>
+												<td>Updated styles for single picker; added shadow to the dropdown; removed min width from table header; changed padding in <code>.daterangepicker_input</code>; added styles for <code>.available</code> and table headers</td>
+											</tr>
+											<tr>
+												<td><code>pickadate.less</code></td>
+												<td>/components/plugins/pickers/</td>
+												<td>All files, minor updates</td>
+											</tr>
+											<tr>
+												<td><code>anytime.less</code></td>
+												<td>/components/plugins/pickers/</td>
+												<td>Added shadow to the dropdown; minor changes</td>
+											</tr>
+											<tr>
+												<td><code>bootstrap-datepicker.less</code></td>
+												<td>/components/plugins/pickers/</td>
+												<td>Updated dropdown styles</td>
+											</tr>
+											<tr>
+												<td><code>spectrum.less</code></td>
+												<td>/components/plugins/pickers/</td>
+												<td>Changed <code>z-index</code> in container and dropdown background color</td>
+											</tr>
+
+											<tr class="border-top-solid">
+												<td><code>summernote.less</code></td>
+												<td>/components/plugins/forms/editors/</td>
+												<td>Complete rewrite</td>
+											</tr>
+											<tr>
+												<td><code>wysihtml5.less</code></td>
+												<td>/components/plugins/forms/editors/</td>
+												<td>Fixed wrong variables</td>
+											</tr>
+											<tr>
+												<td><code>CKEditor</code></td>
+												<td>/ckeditor/</td>
+												<td>Updated CSS files</td>
+											</tr>
+
+											<tr class="border-top-solid">
+												<td><code>typeahead.less</code></td>
+												<td>/components/plugins/forms/extensions/</td>
+												<td>Minor changes (changed variables)</td>
+											</tr>
+											<tr>
+												<td><code>fancybox.less</code></td>
+												<td>/components/plugins/images/</td>
+												<td>Updated close button position</td>
+											</tr>
+											<tr>
+												<td><code>headroom.less</code></td>
+												<td>/components/plugins/ui/</td>
+												<td>Complete rewrite</td>
+											</tr>
+											<tr>
+												<td><code>interactions.less</code></td>
+												<td>/components/extensions/jquery_ui/</td>
+												<td>Fixed typo on line 74 (<code>.sidebar-category.sortable-helper</code>)</td>
+											</tr>
+
+											<tr class="border-top-solid">
+												<td><code>plupload.less</code></td>
+												<td>/components/plugins/uploaders/</td>
+												<td>Updated button styles for hover/active/disabled states</td>
+											</tr>
+											<tr>
+												<td><code>file-input.less</code></td>
+												<td>/components/plugins/uploaders/</td>
+												<td>Minor changes for thumbnails</td>
+											</tr>
+											<tr>
+												<td><code>dropzone.less</code></td>
+												<td>/components/plugins/uploaders/</td>
+												<td>Minor changes for icons</td>
+											</tr>
+											<tr>
+												<td><code>fullcalendar.less</code></td>
+												<td>/components/plugins/ui/</td>
+												<td>Removed <code>max-width</code> and <code>overflow</code> from <code>.fc-view</code> - fixes FF issue; rename <code>.fc button</code> to <code>.fc-button</code></td>
+											</tr>
+											<tr>
+												<td><code>pnotify.less</code></td>
+												<td>/components/plugins/notifications/</td>
+												<td>Complete rewrite</td>
+											</tr>
+
+											<tr class="border-top-solid">
+												<td><code>datatables.less</code></td>
+												<td>/components/plugins/tables/datatables/</td>
+												<td>Minor changes for borders</td>
+											</tr>
+											<tr>
+												<td><code>datatable-buttons.less</code></td>
+												<td>/components/plugins/tables/datatables/</td>
+												<td>Complete rewrite according to a new version</td>
+											</tr>
+											<tr>
+												<td><code>datatable-autofill.less</code></td>
+												<td>/components/plugins/tables/datatables/</td>
+												<td>Minor changes</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+
+								<div class="panel-body">
+									<h6 class="text-semibold">JS files to update</h6>
+									These are all JS files that have been changed during update process. It can be a library, plugin or a sample JS file with charts or specific page configuration - everything matters. Also includes file name, path to the file and brief description about changes made. Since JS files are responsible for template's functionality, it is required to keep them up-to-date.
+								</div>
+
+								<div class="table-responsive">
+									<table class="table table-bordered table-striped">
+										<thead>
+											<tr>
+												<th style="width: 320px;">File</th>
+												<th style="width: 320px;">Location</th>
+												<th>Description</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th colspan="3" class="active">Core</th>
+											</tr>
+											<tr>
+												<td><code>app.js</code></td>
+												<td>/js/core/</td>
+												<td>In all layouts changed page height calculations, finally. Also fixed a couple of minor bugs related to collapsible elements.</td>
+											</tr>
+
+											<tr>
+												<th colspan="3" class="active">Components</th>
+											</tr>
+											<tr>
+												<td><code>pnotify.min.js</code></td>
+												<td>/plugins/notifications/</td>
+												<td>PNotify notifications</td>
+											</tr>
+											<tr>
+												<td><code>noty.min.js</code></td>
+												<td>/plugins/plugins/notifications/</td>
+												<td>Noty notifications</td>
+											</tr>
+
+											<tr class="border-top-solid">
+												<td><code>datatables.min.js</code></td>
+												<td>/plugins/tables/datatables/</td>
+												<td>Datatables library</td>
+											</tr>
+											<tr>
+												<td><code>autofill.min.js</code></td>
+												<td>/plugins/tables/datatables/extensions/</td>
+												<td>Autofill extension</td>
+											</tr>
+											<tr>
+												<td><code>buttons.min.js</code></td>
+												<td>/plugins/tables/datatables/extensions/</td>
+												<td>Buttons extension</td>
+											</tr>
+											<tr>
+												<td><code>col_reorder.min.js</code></td>
+												<td>/plugins/tables/datatables/extensions/</td>
+												<td>Column reorder extension</td>
+											</tr>
+											<tr>
+												<td><code>fixed_columns.min.js</code></td>
+												<td>/plugins/tables/datatables/extensions/</td>
+												<td>Fixed columns extension</td>
+											</tr>
+											<tr>
+												<td><code>fixed_header.min.js</code></td>
+												<td>/plugins/tables/datatables/extensions/</td>
+												<td>Fixed header extension</td>
+											</tr>
+											<tr>
+												<td><code>key_table.min.js</code></td>
+												<td>/plugins/tables/datatables/extensions/</td>
+												<td>Key table extension</td>
+											</tr>
+											<tr>
+												<td><code>responsive.min.js</code></td>
+												<td>/plugins/tables/datatables/extensions/</td>
+												<td>Responsive extension</td>
+											</tr>
+											<tr>
+												<td><code>row_reorder.min.js</code></td>
+												<td>/plugins/tables/datatables/extensions/</td>
+												<td>Row reorder extension</td>
+											</tr>
+											<tr>
+												<td><code>scroller.min.js</code></td>
+												<td>/plugins/tables/datatables/extensions/</td>
+												<td>Scroller extension</td>
+											</tr>
+											<tr>
+												<td><code>select.min.js</code></td>
+												<td>/plugins/tables/datatables/extensions/</td>
+												<td>Select extension</td>
+											</tr>
+
+											<tr class="border-top-solid">
+												<td><code>select2.min.js</code></td>
+												<td>/plugins/forms/selects/</td>
+												<td>Select2 library</td>
+											</tr>
+											<tr>
+												<td><code>echarts.js</code></td>
+												<td>/plugins/visualization/echarts/</td>
+												<td>ECharts charting library</td>
+											</tr>
+											<tr>
+												<td><code>fullcalendar.min.js</code></td>
+												<td>/plugins/ui/fullcalendar/</td>
+												<td>FullCalendar</td>
+											</tr>
+
+											<tr class="border-top-solid">
+												<td><code>dropzone.min.js</code></td>
+												<td>/plugins/uploaders/</td>
+												<td>Dropzone file uploader</td>
+											</tr>
+											<tr>
+												<td><code>plupload.full.min.js</code></td>
+												<td>/plugins/uploaders/</td>
+												<td>Plupload file uploader</td>
+											</tr>
+
+											<tr class="border-top-solid">
+												<td><code>d3.min.js</code></td>
+												<td>/plugins/visualization/d3/</td>
+												<td>D3.js visualization library</td>
+											</tr>
+											<tr>
+												<td><code>nouislider.min.js</code></td>
+												<td>/plugins/sliders/</td>
+												<td>Noui slider</td>
+											</tr>
+											<tr>
+												<td><code>blockui.min.js</code></td>
+												<td>/plugins/loaders/</td>
+												<td>BlockUI extension</td>
+											</tr>
+											<tr>
+												<td><code>jasny_bootstrap.min.js</code></td>
+												<td>/plugins/core/libraries/</td>
+												<td>Jasny Bootstrap</td>
+											</tr>
+											<tr>
+												<td><code>passy.js</code></td>
+												<td>/plugins/forms/inputs/</td>
+												<td>Passy</td>
+											</tr>
+											<tr>
+												<td><code>autosize.min.js</code></td>
+												<td>/plugins/forms/inputs/</td>
+												<td>Auto growing textarea</td>
+											</tr>
+											<tr>
+												<td><code>bootstrap_select.min.js</code></td>
+												<td>/plugins/forms/selects/</td>
+												<td>Bootstrap selects</td>
+											</tr>
+											<tr>
+												<td><code>touchspin.min.js</code></td>
+												<td>/plugins/forms/inputs/</td>
+												<td>Touchspin spinners</td>
+											</tr>
+											<tr>
+												<td><code>bootstrap_tagsinput.min.js</code></td>
+												<td>/plugins/forms/tags/</td>
+												<td>Bootstrap tags input</td>
+											</tr>
+											<tr>
+												<td><code>validate.min.js</code></td>
+												<td>/plugins/forms/validation/</td>
+												<td>Form validation</td>
+											</tr>
+											<tr>
+												<td><code>summernote.min.js</code></td>
+												<td>/plugins/forms/editors/</td>
+												<td>Summernote editor</td>
+											</tr>
+											<tr>
+												<td><code>headroom.min.js</code></td>
+												<td>/plugins/ui/headroom/</td>
+												<td>Hideable navbar</td>
+											</tr>
+											<tr>
+												<td><code>file-input.min.js</code></td>
+												<td>/plugins/uploaders/</td>
+												<td>Bootstrap file input</td>
+											</tr>
+											<tr>
+												<td><code>handlebars.min.js</code></td>
+												<td>/plugins/forms/inputs/typeahead/</td>
+												<td>Handlebars</td>
+											</tr>
+
+											<tr>
+												<th colspan="3" class="active">Pages files</th>
+											</tr>
+											<tr>
+												<td><code>Most of them</code></td>
+												<td>/js/pages/</td>
+												<td>A lot of JS files with examples have been changed during this update. Just follow a specific file if you need to update anything.</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+
+							</div>
+							<!-- /version 1.3 -->
+
+
+							<!-- Version 1.2.1 -->
+							<div class="panel panel-flat" id="v_1_2_1">
+								<div class="panel-heading">
+									<h5 class="panel-title">Version 1.2.1</h5>
+									<div class="heading-elements">
+										<span class="text-muted heading-text">December 15, 2015</span>
+										<span class="label bg-blue heading-text">v. 1.2.1</span>
+					            	</div>
+								</div>
+
+								<div class="panel-body">
+									<div class="content-group-lg">
+										<p class="content-group">Version 1.2.1 is a quick update that contains some reported bugs fixes and plugins update. Nothing new is added since this is an addition to global 1.2 version. Important milestone for 1.2.1 version is footer and container height enhancements - jquery solution for calculating minimum container height will be replaced with pure CSS.</p>
+
+<pre class="language-javascript"><code>// # List of updated plugins
+// ------------------------------
+
+[updated]  Bootstrap file input - to the latest version
+[updated]  Select2 - from RC1 to stable 4.0.1 version
+
+
+// # List of fixed bugs
+// ------------------------------
+
+// Core fixes
+[fixed]  Documentation - correct release date on main page, fixed path to globalize/ library, gulp plugins to install
+[fixed]  Navbar - added sticky sidebar top spacing if used with fixed top single navbar. To be enhanced in 1.2.1
+[fixed]  Fixed sidebar and navbar - removed unnecessary affix code from the page
+
+// Components fixes
+[fixed]  Centered timeline - extra dots on desktop
+[fixed]  Datatables Select extension - checkboxes are not selectable
+[fixed]  Datatables Autofill and Select - wrong columns sorting in examples with checkboxes
+[fixed]  Select2 selects - selected text overlaps arrow in single select
+[fixed]  Select2 selects validation - wrong error/success label placement
+
+</code></pre>
+
+									</div>
+
+									<h6 class="text-semibold">LESS files to update</h6>
+									This section displays a list of updated LESS files. Includes file name, path to this file and general description about changes. All list items are grouped in categories. Groups along with file paths allow you to quickly find and replace necessary files. Please keep your copies of LESS files always up-to-date to avoid upgrading issues.
+								</div>
+
+								<div class="table-responsive">
+									<table class="table table-bordered table-striped table-sm">
+										<thead>
+											<tr>
+												<th style="width: 320px;">File</th>
+												<th style="width: 320px;">Location</th>
+												<th>Description</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th colspan="4" class="active">Updated core files</th>
+											</tr>
+											<tr>
+												<td><code>navbar.less</code></td>
+												<td>/less/bootstrap-limitless/</td>
+												<td>Updated <code>navbar-top</code> and <code>navbar-top-*</code> classes - added <code>.sidebar-detached.affix</code> classes to add correct top spacing for fixed sidebar if used with fixed top single navbar. Please keep in mind that you still need to specify correct top offset for affix component in JS which is 20px (computed line height) + navbar height.</td>
+											</tr>
+
+											<tr>
+												<th colspan="4" class="active">Updated components</th>
+											</tr>
+											<tr>
+												<td><code>select2.less</code></td>
+												<td>/components/plugins/forms/menus/</td>
+												<td>Changed styles for arrow in single select (<code>.select2-selection__arrow</code>, line ~ 124) and right spacing for text (<code>.select2-selection__rendered</code>, line  ~ 78). Feel free to replace your current select2.less file with an updated one.</td>
+											</tr>
+											<tr>
+												<td><code>file-input.less</code></td>
+												<td>/components/plugins/uploaders/</td>
+												<td>A complete rewrite according to the latest library version. To replace</td>
+											</tr>
+											<tr>
+												<td><code>datatable-select.less</code></td>
+												<td>/components/plugins/tables/datatables/</td>
+												<td>Better to replace files, because the code structure has been changed.</td>
+											</tr>
+											<tr>
+												<td><code>timelines.less</code></td>
+												<td>/components/plugins/pickers/</td>
+												<td>If you didn't make any changes here, replace the files. If you did, replace the code for <code>.timeline-time</code> class.</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+
+								<div class="panel-body">
+									<h6 class="text-semibold">JS files to update</h6>
+									These are all JS files that have been changed during update process. It can be a library, plugin or a sample JS file with charts or specific page configuration - everything matters. Also includes file name, path to the file and brief description about changes made. Since JS files are responsible for template's functionality, it is required to keep them up-to-date.
+								</div>
+
+								<div class="table-responsive">
+									<table class="table table-bordered table-striped">
+										<thead>
+											<tr>
+												<th style="width: 320px;">File</th>
+												<th style="width: 320px;">Location</th>
+												<th>Description</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th colspan="3" class="active">Core</th>
+											</tr>
+											<tr>
+												<td><code>app.js</code></td>
+												<td>/js/core/</td>
+												<td>In all layouts changed containers to exclude from calculating page height. In version 1.2.1 will be replaced with CSS solution.</td>
+											</tr>
+
+											<tr>
+												<th colspan="3" class="active">Components</th>
+											</tr>
+											<tr>
+												<td><code>select2.min.js</code></td>
+												<td>/plugins/forms/selects/</td>
+												<td>Select2 selects library - updated version from Release Candidate to stable 4.0.1 version</td>
+											</tr>
+											<tr>
+												<td><code>fileinput.min.js</code></td>
+												<td>/plugins/uploaders/</td>
+												<td>Updated to the latest 4.2.8 version</td>
+											</tr>
+
+											<tr>
+												<th colspan="3" class="active">Pages files</th>
+											</tr>
+											<tr>
+												<td><code>datatables_extension_autofill.js</code></td>
+												<td>/js/pages/</td>
+												<td>In all layouts - updated columns sorting in table with select checkboxes</td>
+											</tr>
+											<tr>
+												<td><code>datatables_extension_select.js</code></td>
+												<td>/js/pages/</td>
+												<td>In all layouts - updated columns sorting in table with select checkboxes</td>
+											</tr>
+											<tr>
+												<td><code>uploader_bootstrap.js</code></td>
+												<td>/js/pages/</td>
+												<td>Updated all examples</td>
+											</tr>
+											<tr>
+												<td><code>form_validation.js</code></td>
+												<td>/js/pages/</td>
+												<td>Updated error placement for Select2 selects according to markup changes, updated select2 search class name to be ignored by validation</td>
+											</tr>
+											<tr>
+												<td><code>login_validation.js</code></td>
+												<td>/js/pages/</td>
+												<td>Updated error placement for Select2 selects according to markup changes, updated select2 search class name to be ignored by validation</td>
+											</tr>
+											<tr>
+												<td><code>wizard_stepy.js</code></td>
+												<td>/js/pages/</td>
+												<td>Updated error placement for Select2 selects according to markup changes, updated select2 search class name to be ignored by validation</td>
+											</tr>
+											<tr>
+												<td><code>wizard_steps.js</code></td>
+												<td>/js/pages/</td>
+												<td>Updated error placement for Select2 selects according to markup changes, updated select2 search class name to be ignored by validation</td>
+											</tr>
+											<tr>
+												<td><code>wizard_form.js</code></td>
+												<td>/js/pages/</td>
+												<td>Updated error placement for Select2 selects according to markup changes, updated select2 search class name to be ignored by validation</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+
+							</div>
+							<!-- /version 1.2.1 -->
+
+
+							<!-- Version 1.2 -->
+							<div class="panel panel-flat" id="v_1_2">
+								<div class="panel-heading">
+									<h5 class="panel-title">Version 1.2</h5>
+									<div class="heading-elements">
+										<span class="text-muted heading-text">December 2, 2015</span>
+										<span class="label bg-blue heading-text">v. 1.2</span>
+					            	</div>
+								</div>
+
+								<div class="panel-body">
+									<div class="content-group-lg">
+										<p class="content-group">Version 1.2 includes bug fixing for reported issues, new components and updated plugins/libraries to the latest stable versions. Also i've included <code>gulp</code> file to simplify development process, including <code>package.json</code> file. New components added: <strong>Handsontable</strong> library, <strong>Dragula</strong> drag and drop library, full set of jQuery UI components, new <strong>Select2</strong> version and updated examples, full set of <strong>Datatables</strong> extensions and new <strong>login</strong> pages. Changes in this update affect all layouts, both LTR and RTL directions.</p>
+
+<pre class="language-javascript"><code>// # List of new components
+// ------------------------------
+
+[new]  Handsontable - excel-like spreadsheet for apps
+[new]  Dragula - drag and drop library
+[new]  jQuery UI - full set of components
+[new]  Row Reorder - Datatables extension
+[new]  Fixed Header - Datatables extension
+[new]  Auto Fill - Datatables extension
+[new]  Key Table - Datatables extension
+[new]  Select - Datatables extension
+[new]  Buttons - Datatables extension
+[new]  Login/registration form with validation
+[new]  Login/registration forms inside modals
+[new]  Login/registration form inside tabs
+[new]  Vertical navigation with labels and badges
+[new]  Ion Range Sliders - responsive range slider library
+[new]  gulpfile.js and package.json for Gulp task runner
+
+
+// # List of updated plugins
+// ------------------------------
+
+[updated]  Bootstrap library - to version 3.3.6
+[updated]  jQuery UI library - to the latest version (1.11.4)
+[updated]  Select2 - to version 4.0.1, including examples
+[updated]  Sweet Alerts - to the latest version, including examples
+[updated]  Datatables - to the latest version (1.10.10)
+[updated]  Daterangepicker - to the latest version (2.1.13)
+[updated]  NoUI sliders library - to the latest version (8.1.0)
+[updated]  Velocity animations library - to the latest version (1.2.3 and 5.0.4)
+[updated]  i18next internationalization library - to the latest version (1.11.1)
+
+
+// # List of fixed bugs
+// ------------------------------
+
+// Core fixes
+[fixed]  Filled page header - extra scroll when content height is smaller than page height (2nd, 3rd and 4th layouts)
+[fixed]  Vertical navigation sizing in Mini sidebar mode (wrong top spacing in sub menu)
+[fixed]  Added missing margin and padding helper classes to the helpers table
+
+// Components fixes
+[fixed]  Login/registration and error pages - jump on page load
+[fixed]  Removed modals with remote source as deprecated in 3.3.0 version (to be replaced with AJAX modals)
+[fixed]  Badges now have transparent background color by default - no dependency on parent container bg color
+[fixed]  Form wizard with validation - doesn’t go to the second step when all inputs filled
+[fixed]  Daterangepicker picker - invisible text in selects
+[fixed]  Incorrect date format in daterangepicker in RTL version
+[fixed]  Daterange single date picker extra horizontal spacing
+[fixed]  Fancybox lightbox jumps to the top of the page on button click
+[fixed]  Fancybox loading icon doesn't show up
+[fixed]  Blockquote footer overlapping
+[fixed]  NoUI slider RTL direction support
+[fixed]  Bootstrap tags input RTL Typeahead input direction (appears in LTR direction)
+[fixed]  jQuery UI datepicker selects wrong margin that causes stacking
+[fixed]  Form control feedback icon inside input group is hidden on focus
+[fixed]  Horizontal multi level menu with nice scroll causes js error, because initialized twice
+
+
+// # List of enhancements
+// ------------------------------
+
+[enhanced]  Added extra styles for syntax highlighter, doesn't look so boring with stripes
+[enhanced]  Re-structured less files for tables, now they more organized
+[enhanced]  Changed structure of jQuery UI components and less files - grouped by widgets, effects, core and interactions
+[enhanced]  jQueryUI and NoUI sliders default color changed from grey to dark blue
+
+
+// # List of new pages
+// ------------------------------
+
+[new page] navigation_vertical_labels_badges.html
+[new page] jqueryui_interactions.html
+[new page] jqueryui_forms.html
+[new page] jqueryui_components.html
+[new page] jqueryui_navigation.html
+[new page] extension_dnd.html
+[new page] datatable_extension_row_reorder.html
+[new page] datatable_extension_fixed_header.html
+[new page] datatable_extension_autofill.html
+[new page] datatable_extension_key_table.html
+[new page] datatable_extension_select.html
+[new page] datatable_extension_buttons_init.html
+[new page] datatable_extension_buttons_flash.html
+[new page] datatable_extension_buttons_print.html
+[new page] datatable_extension_buttons_html5.html
+[new page] handsontable_basic.html
+[new page] handsontable_advanced.html
+[new page] handsontable_cols.html
+[new page] handsontable_cells.html
+[new page] handsontable_types.html
+[new page] handsontable_custom_checks.html
+[new page] handsontable_ac_password.html
+[new page] handsontable_search.html
+[new page] handsontable_context.html
+[new page] login_validation.html
+[new page] login_tabbed.html
+[new page] login_modals.html
+
+
+// # List of removed components
+// ------------------------------
+
+[removed] TableTools - Datatables extension
+[removed] ColVis - Datatables extension
+</code></pre>
+
+									</div>
+
+									<h6 class="text-semibold">New files added</h6>
+									This section displays a list of new files from assets categories: less, css, js and others. Each update includes something new, so it's really important to make the whole update process as easy as possible. All files listed below include direct paths, so you'll be able to quickly locate where new files need to be placed.
+								</div>
+
+								<div class="table-responsive">
+									<table class="table table-bordered table-striped table-sm">
+										<thead>
+											<tr>
+												<th style="width: 320px;">File</th>
+												<th style="width: 320px;">Location</th>
+												<th>Description</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th colspan="4" class="active">New LESS files</th>
+											</tr>
+											<tr>
+												<td><code>ion-range-slider.less</code></td>
+												<td>/components/plugins/sliders/</td>
+												<td>Styles for ION range sliders</td>
+											</tr>
+											<tr>
+												<td><code>datatable-autofill.less</code></td>
+												<td>/components/plugins/tables/datatables/</td>
+												<td>Styles for Autofill datatables extension</td>
+											</tr>
+											<tr>
+												<td><code>datatable-buttons.less</code></td>
+												<td>/components/plugins/tables/datatables/</td>
+												<td>Styles for Buttons datatables extension</td>
+											</tr>
+											<tr>
+												<td><code>datatable-fixed-header.less</code></td>
+												<td>/components/plugins/tables/datatables/</td>
+												<td>Styles for Fixed header datatables extension</td>
+											</tr>
+											<tr>
+												<td><code>datatable-keytable.less</code></td>
+												<td>/components/plugins/tables/datatables/</td>
+												<td>Styles for KeyTable datatables extension</td>
+											</tr>
+											<tr>
+												<td><code>datatable-rows-reorder.less</code></td>
+												<td>/components/plugins/tables/datatables/</td>
+												<td>Styles for Row Reorder datatables extension</td>
+											</tr>
+											<tr>
+												<td><code>datatable-select.less</code></td>
+												<td>/components/plugins/tables/datatables/</td>
+												<td>Styles for Select datatables extension</td>
+											</tr>
+											<tr>
+												<td><code>handsontable.less</code></td>
+												<td>/components/plugins/tables/handsontable/</td>
+												<td>Styles for Handsontable library</td>
+											</tr>
+											<tr>
+												<td><code>dragula.less</code></td>
+												<td>/components/plugins/ui/</td>
+												<td>Styles for Dragula drag and drop library</td>
+											</tr>
+											<tr>
+												<td><code>widgets.less</code></td>
+												<td>/components/extensions/jquery_ui/</td>
+												<td>Combined file with jQuery UI widgets styles</td>
+											</tr>
+											<tr>
+												<td><code>interactions.less</code></td>
+												<td>/components/extensions/jquery_ui/</td>
+												<td>Combined file with jQuery UI interactions styles</td>
+											</tr>
+
+											<tr>
+												<th colspan="3" class="active">New JS files</th>
+											</tr>
+											<tr>
+												<td><code>mousewheel.min.js</code></td>
+												<td>/js/plugins/extensions/</td>
+												<td>Mousewheel extension for jQuery UI spinners</td>
+											</tr>
+											<tr>
+												<td><code>globalize/</code></td>
+												<td>/js/core/libraries/jquery_ui/</td>
+												<td>Globalize extension for jQuery UI widgets</td>
+											</tr>
+											<tr>
+												<td><code>handsontable/</code></td>
+												<td>/plugins/tables/</td>
+												<td>Handsontable excel-like spreadsheet library</td>
+											</tr>
+											<tr>
+												<td><code>dragula.min.js</code></td>
+												<td>/plugins/ui/</td>
+												<td>Dragula drag and drop library</td>
+											</tr>
+											<tr>
+												<td><code>jquery_ui/</code></td>
+												<td>/core/libraries/</td>
+												<td>jQuery UI components and interactions</td>
+											</tr>
+											<tr>
+												<td><code>row_reorder.min.js</code></td>
+												<td>/plugins/tables/datatables/extensions/</td>
+												<td>Row Reorder datatables extension</td>
+											</tr>
+											<tr>
+												<td><code>fixed_header.min.js</code></td>
+												<td>/plugins/tables/datatables/extensions/</td>
+												<td>Fixed Header datatables extension</td>
+											</tr>
+											<tr>
+												<td><code>autofill.min.js</code></td>
+												<td>/plugins/tables/datatables/extensions/</td>
+												<td>Auto Fill datatables extension</td>
+											</tr>
+											<tr>
+												<td><code>key_table.min.js</code></td>
+												<td>/plugins/tables/datatables/extensions/</td>
+												<td>Key Table datatables extension</td>
+											</tr>
+											<tr>
+												<td><code>select.min.js</code></td>
+												<td>/plugins/tables/datatables/extensions/</td>
+												<td>Select datatables extension</td>
+											</tr>
+											<tr>
+												<td><code>buttons.min.js</code></td>
+												<td>/plugins/tables/datatables/extensions/</td>
+												<td>Buttons datatables extension</td>
+											</tr>
+											<tr>
+												<td><code>jszip/</code></td>
+												<td>/plugins/tables/datatables/extensions/</td>
+												<td>JSzip addition for Buttons extension</td>
+											</tr>
+											<tr>
+												<td><code>pdfmake/</code></td>
+												<td>/plugins/tables/datatables/extensions/</td>
+												<td>PdfMake addition for Buttons extension</td>
+											</tr>
+
+											<tr>
+												<th colspan="3" class="active">New pages JS files</th>
+											</tr>
+											<tr>
+												<td><code>login_validation.js</code></td>
+												<td>/js/pages/</td>
+												<td>Login page with validation setup</td>
+											</tr>
+											<tr>
+												<td><code>datatables_extension_***.js</code></td>
+												<td>/js/pages/</td>
+												<td>Set of Datatables extensions examples</td>
+											</tr>
+											<tr>
+												<td><code>extension_dnd.js</code></td>
+												<td>/js/pages/</td>
+												<td>Dragula drag and drop library examples</td>
+											</tr>
+											<tr>
+												<td><code>extra_sliders_ion.js</code></td>
+												<td>/js/pages/</td>
+												<td>Ion range slider examples</td>
+											</tr>
+											<tr>
+												<td><code>handsontable_***.js</code></td>
+												<td>/js/pages/</td>
+												<td>Set of Handsontable example configurations</td>
+											</tr>
+											<tr>
+												<td><code>jqueryui_***.js</code></td>
+												<td>/js/pages/</td>
+												<td>Set of jQuery UI examples</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+
+								<div class="panel-body">
+									<h6 class="text-semibold">LESS files to update</h6>
+									This section displays a list of updated LESS files. Includes file name, path to this file and general description about changes. All list items are grouped in categories. Groups along with file paths allow you to quickly find and replace necessary files. Please keep your copies of LESS files always up-to-date to avoid upgrading issues.
+								</div>
+
+								<div class="table-responsive">
+									<table class="table table-bordered table-striped table-sm">
+										<thead>
+											<tr>
+												<th style="width: 320px;">File</th>
+												<th style="width: 320px;">Location</th>
+												<th>Description</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th colspan="4" class="active">Updated core files</th>
+											</tr>
+											<tr>
+												<td><code>***.less</code></td>
+												<td>/less/bootstrap/</td>
+												<td>Update all less files as per new Bootstrap <code>3.3.6</code> version</td>
+											</tr>
+											<tr>
+												<td><code>code.less</code></td>
+												<td>/less/bootstrap-limitless/</td>
+												<td>Added <code>word-wrap: break-word;</code> to the inline code element</td>
+											</tr>
+											<tr>
+												<td><code>type.less</code></td>
+												<td>/less/bootstrap-limitless/</td>
+												<td>
+													Added styles for content divider inside modal (<code>.content-divider</code>)<br>
+													Changed styles for small and footer in block quote (<code>blockquote</code>)<br>
+													Page header filled - removed margin (<code>.page-header-filled</code>) - 2nd, 3rd and 4th layouts
+												</td>
+											</tr>
+											<tr>
+												<td><code>badges.less</code></td>
+												<td>/less/bootstrap-limitless/</td>
+												<td>Added <code>background-color: transparent;</code> to the .<code>.badge</code> element to remove background color from basic badge</td>
+											</tr>
+											<tr>
+												<td><code>scaffolding.less</code></td>
+												<td>/less/bootstrap-limitless/</td>
+												<td>Changed <code>min-height: 100%;</code> to <code>height: 100%;</code> in body element and combined with html element. Needed for login page jump fix</td>
+											</tr>
+											<tr>
+												<td><code>navbar.less</code></td>
+												<td>/less/bootstrap-limitless/</td>
+												<td>Removed overflow and max-height from children lists in <code>.menu-list</code>, desktop view</td>
+											</tr>
+
+											<tr class="border-solid">
+												<td><code>sidebar.less</code></td>
+												<td>/core/layout/</td>
+												<td>
+													Added label/badge styles for <code>.navigation</code><br>
+													New <code>.label-transparent</code> styles for transparent labels<br>
+													Fixed submenu heights for different sizes in mini size (applied to <code>.sidebar-xs</code> styles)<br>
+													Added horizontal margin to icons inside <code>.navigation-icons-right</code> class
+												</td>
+											</tr>
+											<tr>
+												<td><code>components.less</code></td>
+												<td>/</td>
+												<td>Updated components list</td>
+											</tr>
+											<tr>
+												<td><code>demo.less</code></td>
+												<td>/components/</td>
+												<td>Added new demo styles for jQuery UI components</td>
+											</tr>
+
+											<tr>
+												<th colspan="4" class="active">Updated components</th>
+											</tr>
+											<tr>
+												<td><code>login.less</code></td>
+												<td>/components/pages/</td>
+												<td>Added new styles for 3 new pages (tabs, image cover) and fixed login container jumping on page load (applied to <code>.login-container</code>)</td>
+											</tr>
+											<tr>
+												<td><code>select2.less</code></td>
+												<td>/components/plugins/forms/menus/</td>
+												<td>A complete rewrite of the old file, according to the new Select2 version</td>
+											</tr>
+											<tr>
+												<td><code>fancybox.less</code></td>
+												<td>/components/plugins/images/</td>
+												<td>Fixed loading icon (replace <code>#fancybox-loading {}</code>) styles</td>
+											</tr>
+											<tr>
+												<td><code>sweet-alerts.less</code></td>
+												<td>/components/plugins/notifications/</td>
+												<td>A complete rewrite according to the latest library version</td>
+											</tr>
+											<tr>
+												<td><code>daterange.less</code></td>
+												<td>/components/plugins/pickers/</td>
+												<td>Some minor updates, removed horizontal padding from selects</td>
+											</tr>
+											<tr>
+												<td><code>noui-slider.less</code></td>
+												<td>/components/plugins/sliders/</td>
+												<td>Added pips and scales</td>
+											</tr>
+											<tr>
+												<td><code>datatables.less</code></td>
+												<td>/components/plugins/tables/datatables/</td>
+												<td>A few minor changes. Better to replace your current file</td>
+											</tr>
+											<tr>
+												<td><code>prism.less</code></td>
+												<td>/components/plugins/ui/</td>
+												<td>Added new styles for stripes</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+
+								<div class="panel-body">
+									<h6 class="text-semibold">JS files to update</h6>
+									These are all JS files that have been changed during update process. It can be a library, plugin or a sample JS file with charts or specific page configuration - everything matters. Also includes file name, path to the file and brief description about changes made. Since JS files are responsible for template's functionality, it is required to keep them up-to-date.
+								</div>
+
+								<div class="table-responsive">
+									<table class="table table-bordered table-striped">
+										<thead>
+											<tr>
+												<th style="width: 320px;">File</th>
+												<th style="width: 320px;">Location</th>
+												<th>Description</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th colspan="3" class="active">Core</th>
+											</tr>
+											<tr>
+												<td><code>bootstrap.min.js</code></td>
+												<td>/js/core/libraries/</td>
+												<td>Bootstrap library update to <code>3.3.6</code></td>
+											</tr>
+											<tr>
+												<td><code>jquery_ui/</code></td>
+												<td>/js/core/libraries/</td>
+												<td>jQuery UI library update to the latest version</td>
+											</tr>
+											<tr>
+												<td><code>app.js</code></td>
+												<td>/js/core/</td>
+												<td>In 3rd and 4th layouts changed niceScroll initialization</td>
+											</tr>
+
+											<tr>
+												<th colspan="3" class="active">Components</th>
+											</tr>
+											<tr>
+												<td><code>select2.min.js</code></td>
+												<td>/plugins/forms/selects/</td>
+												<td>Select2 selects library</td>
+											</tr>
+											<tr>
+												<td><code>i18next.min.js</code></td>
+												<td>/plugins/internationalization/</td>
+												<td>i18next internationalization library</td>
+											</tr>
+											<tr>
+												<td><code>sweet_alert.min.js</code></td>
+												<td>/plugins/notifications/</td>
+												<td>Sweet Alerts notificationw library</td>
+											</tr>
+											<tr>
+												<td><code>daterangepicker.js</code></td>
+												<td>/plugins/pickers/</td>
+												<td>Date range picker library</td>
+											</tr>
+											<tr>
+												<td><code>nouislider.min.js</code></td>
+												<td>/plugins/sliders/</td>
+												<td>NoUI sliders library</td>
+											</tr>
+											<tr>
+												<td><code>datatables.min.js</code></td>
+												<td>/plugins/tables/datatables/</td>
+												<td>Datatables library</td>
+											</tr>
+											<tr>
+												<td><code>velocity/</code></td>
+												<td>/plugins/</td>
+												<td>Velocity animations library</td>
+											</tr>
+
+											<tr>
+												<th colspan="3" class="active">Pages files</th>
+											</tr>
+											<tr>
+												<td><code>pages/</code></td>
+												<td>/js/</td>
+												<td>Depending on the layout, a lot of JS files with configuration examples were changed. For example, new Select2 library version changed default values, so all pages that have this option were updated. Just follow updated JS files with examples</td>
+											</tr>
+											<tr>
+												<td><code>navigation_horizontal_mega.js</code></td>
+												<td>/js/pages/</td>
+												<td>In 1st and 2nd layouts, updated niceScroll initialization</td>
+											</tr>
+											<tr>
+												<td><code>forms_select2.js</code></td>
+												<td>/js/pages/</td>
+												<td>Completely changed examples configuration according to a new version</td>
+											</tr>
+											<tr>
+												<td><code>extra_sliders_noui.js</code></td>
+												<td>/js/pages/</td>
+												<td>Completely changed examples configuration according to a new version</td>
+											</tr>
+											<tr>
+												<td><code>picker_date.js</code></td>
+												<td>/js/pages/</td>
+												<td>Removed jQuery UI date picker configs and moved to separate jQuery ui related files</td>
+											</tr>
+											<tr>
+												<td><code>wizard_form.js</code></td>
+												<td>/js/pages/</td>
+												<td>Updated example with validation</td>
+											</tr>
+											<tr>
+												<td><code>components_modals.js</code></td>
+												<td>/js/pages/</td>
+												<td>Added sweet alert examples</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+
+							</div>
+							<!-- /version 1.2 -->
+
+
+							<!-- Version 1.1 -->
+							<div class="panel panel-flat" id="v_1_1">
+								<div class="panel-heading">
+									<h5 class="panel-title">Version 1.1</h5>
+									<div class="heading-elements">
+										<span class="text-muted heading-text">October 21, 2015</span>
+										<span class="label bg-blue heading-text">v. 1.1</span>
+					            	</div>
+								</div>
+
+								<div class="panel-body">
+									<div class="content-group-lg">
+										<p class="content-group">First update is the most simplified and includes urgent bug fixes of core components, plugins and libraries. Also version 1.1 includes updates of some components to the latest stable versions. The only new thing here is RTL version of all 4 layouts, that support almost all available components and layout features. Below you can find general list of all changes and details about upgrading.</p>
+
+<pre class="language-javascript"><code>// Newly added
+[new] RTL layout for all 4 main layout variations
+[new] bootbox.less - new LESS file for extended Bootstrap modal dialogs
+
+// Updated components
+[updated] CKEditor - latest version
+[updated] Select2 - latest 3.5.x version, 4.0 is coming
+[updated] Bootstrap Multiselect - latest version
+[updated] Datatables - latest version
+
+// Core fixes
+[fixed] Sidebar - side border overlaped content in light sidebar (layout 1 and 2)
+[fixed] Breadcrumbs - in colored version links had wrong background color on hover/active
+[fixed] Breadcrumbs - dropdown menu didn't have borders in breadcrumb line component
+[fixed] Labels - striped labels didn't have right border variation as supposed to
+[fixed] Navbars - unnecessary dropdown menu re-position in navbar component
+[fixed] Button groups - extra space between buttons in toolbar
+[fixed] Tables - extra border in framed table in responsive table container
+
+// Components fixes
+[fixed] Bootstrap Select - wrong rounded corners inside input group
+[fixed] Bootstrap Select - no styling of dropdown menu
+[fixed] SelectBox - wrong rounded corners inside input group
+[fixed] Tags Input - input field didn't have bottom spacing
+[fixed] Typeahead - small menu width if text options are too short
+[fixed] Sweet alerts - title was too big for motification size
+[fixed] Anytime picker - wrong title margin and unnecessary close button
+[fixed] jQuery UI Datepicker - extra RTL-related code in less file
+[fixed] Fullcalendar - extra RTL-related code in less file
+[fixed] Chats - wrong variables in LESS file
+[fixed] Dropzone Uploader - success/error markers moved down in thumbnails is name is visible
+[fixed] Colors - default BS styles overrided text hover state
+[fixed] SelectBox page - extra panel control buttons
+</code></pre>
+									</div>
+
+									<h6 class="text-semibold">Updated plugins and libraries</h6>
+									This section displays a list of components, that have been updated to the latest stable versions. Includes file or directory name and descriptions with details. To keep your version up-to-date, i strongly recommend to replace your current copies to the updated ones, because all future updates of main and related files will be based on latest versions of these files.
+								</div>
+
+								<div class="table-responsive">
+									<table class="table table-bordered table-striped">
+										<thead>
+											<tr>
+												<th class="col-xs-3">What</th>
+												<th>File</th>
+												<th>Description</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>CKEditor</td>
+												<td><code>ckeditor/</code></td>
+												<td>Updated to the latest version and added additional languages with new configuration file</td>
+											</tr>
+											<tr>
+												<td>Select2</td>
+												<td><code>select2.min.js</code></td>
+												<td>Updated to the latest 3.5.x version. Version 4.0 will be added in the next update</td>
+											</tr>
+											<tr>
+												<td>Bootstrap Multiselect</td>
+												<td><code>bootstrap_multiselect.js</code></td>
+												<td>Updated to the latest version, also updated related <code>form_multiselect.js</code> file</td>
+											</tr>
+											<tr>
+												<td>Datatables</td>
+												<td><code>datatables.min.js</code></td>
+												<td>Updated to the latest version (1.10.9)</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+
+								<div class="panel-body">
+									<h6 class="text-semibold">LESS files to update</h6>
+									This section displays a list of updated LESS files. Includes file name, path to this file and general description about changes. All list items are grouped in categories. Groups along with file paths allow you to quickly find and replace necessary files. Please keep your copies of LESS files always up-to-date to avoid upgrading issues.
+								</div>
+
+								<div class="table-responsive">
+									<table class="table table-bordered table-striped">
+										<thead>
+											<tr>
+												<th style="width: 320px;">File</th>
+												<th style="width: 320px;">Location</th>
+												<th>Description</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th colspan="3" class="active">Core files</th>
+											</tr>
+											<tr>
+												<td><code>type.less</code></td>
+												<td>/less/bootstrap-limitless/</td>
+												<td>Blockquote styling improvement, variables instead of values in page title and mark</td>
+											</tr>
+											<tr>
+												<td><code>navs.less</code></td>
+												<td>/less/bootstrap-limitless/</td>
+												<td>Fixed extra bottom space in justified tabs and pills</td>
+											</tr>
+											<tr>
+												<td><code>breadcrumbs.less</code></td>
+												<td>/less/bootstrap-limitless/</td>
+												<td>Fixed link hover state background in colored breadcrumb line, added border to dropdown menu in breadcrumb line component in 1st layout</td>
+											</tr>
+											<tr>
+												<td><code>labels.less</code></td>
+												<td>/less/bootstrap-limitless/</td>
+												<td>Added missed right border option in striped labels</td>
+											</tr>
+											<tr>
+												<td><code>navbar.less</code></td>
+												<td>/less/bootstrap-limitless/</td>
+												<td>Removed extra dropdown menu positioning in navbar component</td>
+											</tr>
+											<tr>
+												<td><code>button-groups.less</code></td>
+												<td>/less/bootstrap-limitless/</td>
+												<td>Removed extra spacing between buttons in button toolbar</td>
+											</tr>
+											<tr>
+												<td><code>tables.less</code></td>
+												<td>/less/bootstrap-limitless/</td>
+												<td>Removed border in framed table on mobile, if used inside BS's responsive table container</td>
+											</tr>
+											<tr class="border-solid">
+												<td><code>colors.less</code></td>
+												<td>/less/core/colors/</td>
+												<td>Fixed BS overrides of text color if used in label/badges or links on hover</td>
+											</tr>
+											<tr>
+												<td><code>sidebar.less</code></td>
+												<td>/less/core/layout/</td>
+												<td>Fixed fixed light sidebar issue, when content overlapped the border in 1st and 2nd layouts; removed extra border from tabs inside sidebar on mobile; improved dropdown position in justified tabs used in sidebar</td>
+											</tr>
+
+											<tr>
+												<th colspan="3" class="active">Forms</th>
+											</tr>
+											<tr>
+												<td><code>bootstrap-select.less</code></td>
+												<td>/less/components/plugins/forms/menus/</td>
+												<td>Fixed wrong round corners if used inside input group; added styles for menu header</td>
+											</tr>
+											<tr>
+												<td><code>select2.less</code></td>
+												<td>/less/components/plugins/forms/menus/</td>
+												<td>Removed unnecessary RTL-related code; fixed text color in search field (menu with custom color)</td>
+											</tr>
+											<tr>
+												<td><code>selectbox.less</code></td>
+												<td>/less/components/plugins/forms/menus/</td>
+												<td>Removed extra border radius from main container; fixed wrong round corners if used inside input group</td>
+											</tr>
+											<tr>
+												<td><code>bootstrap-switch.less</code></td>
+												<td>/less/components/plugins/forms/checkboxes/</td>
+												<td>Variables instead of values</td>
+											</tr>
+											<tr>
+												<td><code>tags-input.less</code></td>
+												<td>/less/components/plugins/forms/tags/</td>
+												<td>Fixed issue when empty input had smaller height</td>
+											</tr>
+											<tr>
+												<td><code>typeahead.less</code></td>
+												<td>/less/components/plugins/forms/extensions/</td>
+												<td>Added minimum width to menu, so it won't be too narrow if option text is short</td>
+											</tr>
+
+											<tr>
+												<th colspan="3" class="active">Pickers</th>
+											</tr>
+											<tr>
+												<td><code>daterange.less</code></td>
+												<td>/less/components/plugins/pickers/</td>
+												<td>Minor improvements</td>
+											</tr>
+											<tr>
+												<td><code>bootstrap-datepicker.less</code></td>
+												<td>/less/components/plugins/pickers/</td>
+												<td>Minor improvements</td>
+											</tr>
+											<tr>
+												<td><code>anytime.less</code></td>
+												<td>/less/components/plugins/pickers/</td>
+												<td>Removed close button and improved visibility of title</td>
+											</tr>
+											<tr>
+												<td><code>datepicker.less</code></td>
+												<td>/less/components/extensions/jquery_ui/</td>
+												<td>Fixed trigger image appearance; added correct spacing between year and month; fixed inline picker width if used inside popover</td>
+											</tr>
+
+											<tr>
+												<th colspan="3" class="active">Other</th>
+											</tr>
+											<tr>
+												<td><code>sweet-alert.less</code></td>
+												<td>/less/components/plugins/notifications/</td>
+												<td>Improved notification title</td>
+											</tr>
+											<tr>
+												<td><code>fullcalendar.less</code></td>
+												<td>/less/components/plugins/ui/</td>
+												<td>Removed RTL-related code, which has its own version in RTL layout version</td>
+											</tr>
+											<tr>
+												<td><code>dropzone.less</code></td>
+												<td>/less/components/plugins/uploaders/</td>
+												<td>Fixed success/error marks position, when thumbnail name is visible</td>
+											</tr>
+											<tr>
+												<td><code>chats.less</code></td>
+												<td>/less/components/pages/</td>
+												<td>Fixed wrong variables in chats list</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+
+								<div class="panel-body">
+									<h6 class="text-semibold">HTML files to update</h6>
+									List of updated HTML files. . Since static HTML files aren't used much in the end product, this list isn't really a mandatory thing and isn't as important as LESS or JS files updates, this is more for information about changes in features and content. Keeping HTML files isn't required, but recommended.
+								</div>
+
+								<div class="table-responsive">
+									<table class="table table-bordered table-striped">
+										<thead>
+											<tr>
+												<th style="width: 320px;">File</th>
+												<th style="width: 320px;">Location</th>
+												<th>Description</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th colspan="3" class="active">HTML files</th>
+											</tr>
+											<tr>
+												<td><code>extension_velocity_basic.html</code></td>
+												<td>/</td>
+												<td>Removed unnecessary <code>.bg-sky</code> class from markup</td>
+											</tr>
+											<tr>
+												<td><code>form_validation.html</code></td>
+												<td>/</td>
+												<td>Added validation of input field with icons</td>
+											</tr>
+											<tr>
+												<td><code>form_select_box_it.html</code></td>
+												<td>/</td>
+												<td>Removed extra icons from panel control buttons in 1 panel</td>
+											</tr>
+											<tr>
+												<td><code>navigation_horizontal_disabled.html</code></td>
+												<td>/</td>
+												<td>Removed unnecesssary <code>.border-left-lg</code> from syntax highlighter</td>
+											</tr>
+											<tr>
+												<td><code>components_sliders.html</code></td>
+												<td>/</td>
+												<td>Removed repeated path to <code>touch punch</code> extension</td>
+											</tr>
+											<tr>
+												<td><code>tables_responsive.html</code></td>
+												<td>/</td>
+												<td>Fixed table header issue in <strong>Header groups</strong> table</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+
+								<div class="panel-body">
+									<h6 class="text-semibold">JS files to update</h6>
+									These are all JS files that have been changed during update process. It can be a library, plugin or a sample JS file with charts or specific page configuration - everything matters. Also includes file name, path to the file and brief description about changes made. Since JS files are responsible for template's functionality, it is required to keep the up-to-date.
+								</div>
+
+								<div class="table-responsive">
+									<table class="table table-bordered table-striped">
+										<thead>
+											<tr>
+												<th style="width: 320px;">File</th>
+												<th style="width: 320px;">Location</th>
+												<th>Description</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th colspan="3" class="active">To update</th>
+											</tr>
+											<tr>
+												<td><code>form_multiselect.js</code></td>
+												<td>/js/pages/</td>
+												<td>Removed unnecessary <code>.bg-sky</code> class from markup</td>
+											</tr>
+											<tr>
+												<td><code>form_validation.js</code></td>
+												<td>/js/pages/</td>
+												<td>Added additional error placement rule for input with icon validation</td>
+											</tr>
+											<tr>
+												<td><code>touch_punch.min.js</code></td>
+												<td>/js/plugins/sliders/</td>
+												<td>Removed from the folder as a repeated file</td>
+											</tr>
+											<tr>
+												<td><code>sidebar-components.js</code></td>
+												<td>/js/pages/</td>
+												<td>Removed extra jQuery UI slider configuration</td>
+											</tr>
+											<tr>
+												<td><code>app.js</code></td>
+												<td>/js/core</td>
+												<td>Excluded language selection dropdown menu from dynamically added <code>.active</code> class</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<!-- /version 1.1 -->
+
+
+							<!-- Initial release -->
+							<div class="panel panel-flat" id="release">
+								<div class="panel-heading">
+									<h5 class="panel-title">Initial release</h5>
+									<div class="heading-elements">
+										<span class="heading-text text-muted">October 1, 2015</span>
+										<ul class="icons-list">
+					                		<li><a data-action="collapse"></a></li>
+					                		<li><a data-action="close"></a></li>
+					                	</ul>
+					            	</div>
+								</div>
+
+								<div class="panel-body">
+									Limitless is in active development. All updates will be properly documented and explained, to make your upgrade process as easy as possible. In all new updates will be included: bug fixing, new functionality, plugins version control and code improvement. Feel free to contact me if you have any suggestions or requests!
+								</div>
+
+								<div class="table-responsive">
+									<table class="table table-bordered table-striped">
+										<thead>
+											<tr>
+												<th class="col-xs-3">What</th>
+												<th>Quantity</th>
+												<th>Description</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th colspan="3" class="active">Core files</th>
+											</tr>
+											<tr>
+												<td>Folders</td>
+												<td>268</td>
+												<td>Folders with files, excluding CKEditor and Starter kit folders</td>
+											</tr>
+											<tr>
+												<td>HTML files</td>
+												<td>249</td>
+												<td>Depending on layout, around 249 main HTML files in each layout</td>
+											</tr>
+											<tr>
+												<td>CSS files</td>
+												<td>7</td>
+												<td>4 main CSS files, 2 CSS for icon fonts and 1 <code>animate.min.css</code> animation library</td>
+											</tr>
+											<tr>
+												<td>LESS files</td>
+												<td>203</td>
+												<td>All LESS files, including Bootstrap core</td>
+											</tr>
+											<tr>
+												<td>JS files</td>
+												<td>896</td>
+												<td>All JS files, excluding starter kit and CKEditor folders</td>
+											</tr>
+											<tr>
+												<td>Image files</td>
+												<td>256</td>
+												<td>Logos, flag icons and notification icons</td>
+											</tr>
+											<tr>
+												<th colspan="3" class="active">Other files</th>
+											</tr>
+											<tr>
+												<td>JSON files</td>
+												<td>23</td>
+												<td>Different demo data sources. For demo purposes</td>
+											</tr>
+											<tr>
+												<td>CSV files</td>
+												<td>11</td>
+												<td>Mainly for charts based on <code>D3.js</code> library. For demo purposes</td>
+											</tr>
+											<tr>
+												<td>TSV files</td>
+												<td>13</td>
+												<td>Mainly for charts based on <code>D3.js</code> library. For demo purposes</td>
+											</tr>
+											<tr>
+												<td>SWF files</td>
+												<td>3</td>
+												<td>Additional files for datatables TableTools extension and Plupload file uploader</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<!-- /initial release -->
+
+						</div>
+					</div>
+					<!-- /detached content -->
+
+
+					<!-- Detached sidebar -->
+					<div class="sidebar-detached">
+			        	<div class="sidebar sidebar-default">
+							<div class="sidebar-content">
+
+				        		<!-- Contact author -->
+								<div class="sidebar-category no-margin">
+									<div class="category-title">
+										<span>Page navigation</span>
+										<i class="icon-menu7 text-muted pull-right"></i>
+									</div>
+
+									<div class="category-content">
+										<a href="http://themeforest.net/user/kopyov" class="btn bg-blue btn-block" target="_blank"><i class="icon-reading position-left"></i> Contact author</a>
+									</div>
+								</div>
+								<!-- /contact author -->
+
+			        			
+			        			<!-- Navigation -->
+								<div class="sidebar-category">
+									<div class="category-content no-padding">
+										<ul class="nav navigation no-padding-top">
+											<li class="navigation-header"><i class="icon-history pull-right"></i> Version history</li>
+											<li><a href="#v_2_0">Version 2.0 <span class="text-muted text-regular pull-right">20.06.2018</span></a></li>
+											<li><a href="#v_1_6">Version 1.6 <span class="text-muted text-regular pull-right">20.04.2017</span></a></li>
+											<li><a href="#v_1_5">Version 1.5 <span class="text-muted text-regular pull-right">15.01.2017</span></a></li>
+											<li><a href="#v_1_4">Version 1.4 <span class="text-muted text-regular pull-right">01.09.2016</span></a></li>
+											<li><a href="#v_1_3">Version 1.3 <span class="text-muted text-regular pull-right">01.04.2016</span></a></li>
+											<li>
+												<a href="#v_1_2_1">Version 1.2 <span class="text-muted text-regular pull-right">16.12.2015</span></a>
+												<ul>
+													<li><a href="#v_1_2_1">Version 1.2.1 <span class="text-muted text-regular pull-right">16.12.2015</span></a></li>
+													<li><a href="#v_1_2">Version 1.2 <span class="text-muted text-regular pull-right">02.12.2015</span></a></li>
+												</ul>
+											</li>
+											<li><a href="#v_1_1">Version 1.1 <span class="text-muted text-regular pull-right">21.10.2015</span></a></li>
+											<li><a href="#release">Initial release <span class="text-muted text-regular pull-right">01.10.2015</span></a></li>
+											<li><a href="#roadmap">Roadmap</a></li>
+											<li class="navigation-divider"></li>
+											<li><a href="#">Go to top <i class="icon-circle-up2 pull-right"></i></a></li>
+							            </ul>
+						            </div>
+					            </div>
+					            <!-- /navigation -->
+
+				            </div>
+			            </div>
+		            </div>
+		            <!-- /detached sidebar -->
+
+
+					<!-- Footer -->
+					<div class="footer text-muted">
+						&copy; 2015. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
+					</div>
+					<!-- /footer -->
+
+				</div>
+				<!-- /content area -->
+
+			</div>
+			<!-- /main content -->
+
+		</div>
+		<!-- /page content -->
+
+	</div>
+	<!-- /page container -->
+
+</body>
+</html>

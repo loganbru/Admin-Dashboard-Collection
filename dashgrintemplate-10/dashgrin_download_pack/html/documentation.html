@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<!-- 
+Template Name: dashgrin - Responsive Bootstrap 4 Admin Dashboard Template
+Author: Hencework
+
+License: You must have a valid license purchased only from themeforest to legally use the template for your project.
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>dashgrin I CRM Dashboard</title>
+    <meta name="description" content="A responsive bootstrap 4 admin dashboard template by hencework" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+	
+	<!-- vector map CSS -->
+    <link href="vendors/vectormap/jquery-jvectormap-2.0.3.css" rel="stylesheet" type="text/css" />
+
+    <!-- Toggles CSS -->
+    <link href="vendors/jquery-toggles/css/toggles.css" rel="stylesheet" type="text/css">
+    <link href="vendors/jquery-toggles/css/themes/toggles-light.css" rel="stylesheet" type="text/css">
+	
+	<!-- Toastr CSS -->
+    <link href="vendors/jquery-toast-plugin/dist/jquery.toast.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom CSS -->
+    <link href="dist/css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    
+	
+	<!-- HK Wrapper -->
+	<div class="hk-wrapper hk-vertical-nav">
+
+        <!-- Top Navbar -->
+        <nav class="navbar navbar-expand-xl navbar-dark fixed-top hk-navbar">
+            <a class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" href="javascript:void(0);"><span class="feather-icon"><i data-feather="more-vertical"></i></span></a>
+			<a id="navbar_toggle_btn" class="navbar-toggle-btn nav-link-hover" href="javascript:void(0);"><span class="feather-icon"><i data-feather="menu"></i></span></a>
+            <a class="navbar-brand" href="index.html">
+                <img class="brand-img d-inline-block" src="dist/img/logo-dark.png" alt="brand" />
+            </a>
+			<ul class="navbar-nav hk-navbar-content order-xl-2">
+				<li class="nav-item">
+                    <a id="navbar_search_btn" class="nav-link nav-link-hover" href="javascript:void(0);"><span class="feather-icon"><i data-feather="search"></i></span></a>
+                </li>
+                <li class="nav-item">
+                    <a id="settings_toggle_btn" class="nav-link nav-link-hover" href="javascript:void(0);"><span class="feather-icon"><i data-feather="settings"></i></span></a>
+                </li>
+                <li class="nav-item dropdown dropdown-notifications">
+                    <a class="nav-link dropdown-toggle no-caret" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="feather-icon bell"><i data-feather="bell"></i></span></a>
+                    <div class="dropdown-menu dropdown-menu-right" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                        <h6 class="dropdown-header">Notifications <a href="javascript:void(0);" class="">View all</a></h6>
+                        <div class="notifications-nicescroll-bar">
+                            <a href="javascript:void(0);" class="dropdown-item">
+                                <div class="media">
+                                    <div class="media-img-wrap">
+                                        <div class="avatar avatar-sm">
+                                            <img src="dist/img/avatar1.jpg" alt="user" class="avatar-img rounded-circle">
+                                        </div>
+                                    </div>
+                                    <div class="media-body">
+                                        <div>
+                                            <div class="notifications-text"><span class="text-dark text-capitalize">Evie Ono</span> accepted your invitation to join the team</div>
+                                            <div class="notifications-time">12m</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="javascript:void(0);" class="dropdown-item">
+                                <div class="media">
+                                    <div class="media-img-wrap">
+                                        <div class="avatar avatar-sm">
+                                            <img src="dist/img/avatar2.jpg" alt="user" class="avatar-img rounded-circle">
+                                        </div>
+                                    </div>
+                                    <div class="media-body">
+                                        <div>
+                                            <div class="notifications-text">New message received from <span class="text-dark text-capitalize">Misuko Heid</span></div>
+                                            <div class="notifications-time">1h</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="javascript:void(0);" class="dropdown-item">
+                                <div class="media">
+                                    <div class="media-img-wrap">
+                                        <div class="avatar avatar-sm">
+                                            <span class="avatar-text avatar-text-primary rounded-circle">
+													<span class="initial-wrap"><span><i class="zmdi zmdi-account font-18"></i></span></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="media-body">
+                                        <div>
+                                            <div class="notifications-text">You have a follow up with<span class="text-dark text-capitalize"> dashgrin head</span> on <span class="text-dark text-capitalize">friday, dec 19</span> at <span class="text-dark">10.00 am</span></div>
+                                            <div class="notifications-time">2d</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="javascript:void(0);" class="dropdown-item">
+                                <div class="media">
+                                    <div class="media-img-wrap">
+                                        <div class="avatar avatar-sm">
+                                            <span class="avatar-text avatar-text-success rounded-circle">
+													<span class="initial-wrap"><span>A</span></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="media-body">
+                                        <div>
+                                            <div class="notifications-text">Application of <span class="text-dark text-capitalize">Sarah Williams</span> is waiting for your approval</div>
+                                            <div class="notifications-time">1w</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="javascript:void(0);" class="dropdown-item">
+                                <div class="media">
+                                    <div class="media-img-wrap">
+                                        <div class="avatar avatar-sm">
+                                            <span class="avatar-text avatar-text-warning rounded-circle">
+													<span class="initial-wrap"><span><i class="zmdi zmdi-notifications font-18"></i></span></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="media-body">
+                                        <div>
+                                            <div class="notifications-text">Last 2 days left for the project</div>
+                                            <div class="notifications-time">15d</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown dropdown-authentication">
+                    <a class="nav-link dropdown-toggle no-caret" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="media">
+                            <div class="media-img-wrap">
+                                <div class="avatar">
+                                    <img src="dist/img/avatar12.jpg" alt="user" class="avatar-img rounded-circle">
+                                </div>
+                                <span class="badge badge-success badge-indicator"></span>
+                            </div>
+                            <div class="media-body">
+                                <span>Madelyn Shane<i class="zmdi zmdi-chevron-down"></i></span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" data-dropdown-in="flipInX" data-dropdown-out="flipOutX">
+                        <a class="dropdown-item" href="profile.html"><i class="dropdown-icon zmdi zmdi-account"></i><span>Profile</span></a>
+                        <a class="dropdown-item" href="#"><i class="dropdown-icon zmdi zmdi-card"></i><span>My balance</span></a>
+                        <a class="dropdown-item" href="inbox.html"><i class="dropdown-icon zmdi zmdi-email"></i><span>Inbox</span></a>
+                        <a class="dropdown-item" href="#"><i class="dropdown-icon zmdi zmdi-settings"></i><span>Settings</span></a>
+                        <div class="dropdown-divider"></div>
+                        <div class="sub-dropdown-menu show-on-hover">
+                            <a href="#" class="dropdown-toggle dropdown-item no-caret"><i class="zmdi zmdi-check text-success"></i>Online</a>
+                            <div class="dropdown-menu open-left-side">
+                                <a class="dropdown-item" href="#"><i class="dropdown-icon zmdi zmdi-check text-success"></i><span>Online</span></a>
+                                <a class="dropdown-item" href="#"><i class="dropdown-icon zmdi zmdi-circle-o text-warning"></i><span>Busy</span></a>
+                                <a class="dropdown-item" href="#"><i class="dropdown-icon zmdi zmdi-minus-circle-outline text-danger"></i><span>Offline</span></a>
+                            </div>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"><i class="dropdown-icon zmdi zmdi-power"></i><span>Log out</span></a>
+                    </div>
+                </li>
+            </ul>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-0">
+					<li class="nav-item">
+						<a href="#" class="nav-link active">Marketing</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sales</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<a class="dropdown-item" href="#">Something else here</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Separated link</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">Help Desk</a>
+					</li>
+					<li class="nav-item">
+						<a href="calendar.html" class="nav-link">Calendar</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">Email</a>
+					</li>
+					<li class="nav-item">
+						<a href="file-manager.html" class="nav-link">File Manager</a>
+					</li>
+				</ul>
+            </div>
+            
+		</nav>
+        <form role="search" class="navbar-search">
+            <div class="position-relative">
+                <a href="javascript:void(0);" class="navbar-search-icon"><span class="feather-icon"><i data-feather="search"></i></span></a>
+                <input type="text" name="example-input1-group2" class="form-control" placeholder="Type here to Search">
+                <a id="navbar_search_close" class="navbar-search-close" href="#"><span class="feather-icon"><i data-feather="x"></i></span></a>
+            </div>
+        </form>
+        <!-- /Top Navbar -->
+
+        <!-- Vertical Nav -->
+        <nav class="hk-nav hk-nav-light">
+            <a href="javascript:void(0);" id="hk_nav_close" class="hk-nav-close"><span class="feather-icon"><i data-feather="x"></i></span></a>
+            <div class="nicescroll-bar">
+                <div class="navbar-nav-wrap">
+                    <ul class="navbar-nav flex-column">
+                       <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                <i class="ion ion-md-analytics"></i>
+                                <span class="nav-link-text">CRM</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-with-badge" href="javascript:void(0);" data-toggle="collapse" data-target="#app_drp">
+                                <i class="ion ion-md-appstore"></i>
+                                <span class="nav-link-text">Application</span>
+                                <span class="badge badge-success badge-pill">Hot</span>
+                            </a>
+                            <ul id="app_drp" class="nav flex-column collapse collapse-level-1">
+                                <li class="nav-item">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="chats.html">Chat</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="calendar.html">Calendar</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="email.html">Email</a>
+                                        </li>
+										<li class="nav-item">
+                                            <a class="nav-link" href="file-manager.html">File Manager</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0);" data-toggle="collapse" data-target="#auth_drp">
+                                <i class="ion ion-md-contact"></i>
+                                <span class="nav-link-text">Authentication</span>
+                            </a>
+                            <ul id="auth_drp" class="nav flex-column collapse collapse-level-1">
+                                <li class="nav-item">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="javascript:void(0);" data-toggle="collapse" data-target="#signup_drp">
+													Sign Up
+												</a>
+                                            <ul id="signup_drp" class="nav flex-column collapse collapse-level-2">
+                                                <li class="nav-item">
+                                                    <ul class="nav flex-column">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="signup.html">Cover</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="signup-simple.html">Simple</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="javascript:void(0);" data-toggle="collapse" data-target="#signin_drp">
+													Login
+												</a>
+                                            <ul id="signin_drp" class="nav flex-column collapse collapse-level-2">
+                                                <li class="nav-item">
+                                                    <ul class="nav flex-column">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="login.html">Cover</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="login-simple.html">Simple</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="javascript:void(0);" data-toggle="collapse" data-target="#recover_drp">
+													Recover Password
+												</a>
+                                            <ul id="recover_drp" class="nav flex-column collapse collapse-level-2">
+                                                <li class="nav-item">
+                                                    <ul class="nav flex-column">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="forgot-password.html">Forgot Password</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="reset-password.html">Reset Password</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="lock-screen.html">Lock Screen</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="404.html">Error 404</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="maintenance.html">Maintenance</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0);" data-toggle="collapse" data-target="#pages_drp">
+                                <i class="ion ion-md-document"></i>
+                                <span class="nav-link-text">Pages</span>
+                            </a>
+                            <ul id="pages_drp" class="nav flex-column collapse collapse-level-1">
+                                <li class="nav-item">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="profile.html">Profile</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="invoice.html">Invoice</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="gallery.html">Gallery</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="activity.html">Activity</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="faq.html">Faq</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <hr class="nav-separator">
+                    <div class="nav-header">
+                        <span>User Interface</span>
+                        <span>UI</span>
+                    </div>
+                    <ul class="navbar-nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0);" data-toggle="collapse" data-target="#Components_drp">
+                                <i class="ion ion-md-outlet"></i>
+                                <span class="nav-link-text">Components</span>
+                            </a>
+                            <ul id="Components_drp" class="nav flex-column collapse collapse-level-1">
+                                <li class="nav-item">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="alerts.html">Alerts</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="avatar.html">Avatar</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="badge.html">Badge</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="buttons.html">Buttons</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="cards.html">Cards</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="carousel.html">Carousel</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="collapse.html">Collapse</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="dropdowns.html">Dropdown</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="list-group.html">List Group</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="modal.html">Modal</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="nav.html">Nav</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="navbar.html">Navbar</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="nestable.html">Nestable</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pagination.html">Pagination</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="popovers.html">Popovers</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="progress.html">Progress</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="tooltip.html">Tooltip</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0);" data-toggle="collapse" data-target="#content_drp">
+                                <i class="ion ion-md-clipboard"></i>
+                                <span class="nav-link-text">Content</span>
+                            </a>
+                            <ul id="content_drp" class="nav flex-column collapse collapse-level-1">
+                                <li class="nav-item">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="typography.html">Typography</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="images.html">Images</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="media-object.html">Media Object</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0);" data-toggle="collapse" data-target="#utilities_drp">
+                                <i class="ion ion-md-git-branch"></i>
+                                <span class="nav-link-text">Utilities</span>
+                            </a>
+                            <ul id="utilities_drp" class="nav flex-column collapse collapse-level-1">
+                                <li class="nav-item">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="background.html">Background</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="border.html">Border</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="colors.html">Colors</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="embeds.html">Embeds</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="icons.html">Icons</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="shadow.html">Shadow</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="sizing.html">Sizing</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="spacing.html">Spacing</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0);" data-toggle="collapse" data-target="#forms_drp">
+                                <i class="ion ion-md-calculator"></i>
+                                <span class="nav-link-text">Forms</span>
+                            </a>
+                            <ul id="forms_drp" class="nav flex-column collapse collapse-level-1">
+                                <li class="nav-item">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="form-element.html">Form Elements</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="input-groups.html">Input Groups</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="form-layout.html">Form Layout</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="form-mask.html">Form Mask</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="form-validation.html">Form Validation</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="form-wizard.html">Form Wizard</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="file-upload.html">File Upload</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="editor.html">Editor</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0);" data-toggle="collapse" data-target="#tables_drp">
+                                <i class="ion ion-md-grid"></i>
+                                <span class="nav-link-text">Tables</span>
+                            </a>
+                            <ul id="tables_drp" class="nav flex-column collapse collapse-level-1">
+                                <li class="nav-item">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="basic-table.html">Basic Table</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="data-table.html">Data Table</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="responsive-table.html">Responsive Table</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="editable-table.html">Editable Table</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0);" data-toggle="collapse" data-target="#charts_drp">
+                                <i class="ion ion-md-stats"></i>
+                                <span class="nav-link-text">Charts</span>
+                            </a>
+                            <ul id="charts_drp" class="nav flex-column collapse collapse-level-1">
+                                <li class="nav-item">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="line-charts.html">Line Chart</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="area-charts.html">Area Chart</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="bar-charts.html">Bar Chart</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pie-charts.html">Pie Chart</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="realtime-charts.html">Realtime Chart</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="mini-charts.html">Mini Chart</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0);" data-toggle="collapse" data-target="#maps_drp">
+                                <i class="ion ion-md-map"></i>
+                                <span class="nav-link-text">Maps</span>
+                            </a>
+                            <ul id="maps_drp" class="nav flex-column collapse collapse-level-1">
+                                <li class="nav-item">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="google-map.html">Google Map</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="vector-map.html">Vector Map</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <hr class="nav-separator">
+                    <div class="nav-header">
+                        <span>Getting Started</span>
+                        <span>GS</span>
+                    </div>
+                    <ul class="navbar-nav flex-column">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="documentation.html">
+                                <i class="ion ion-md-bookmarks"></i>
+                                <span class="nav-link-text">Documentation</span>
+                            </a>
+                        </li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="hk_nav_backdrop" class="hk-nav-backdrop"></div>
+        <!-- /Vertical Nav -->
+
+        <!-- Setting Panel -->
+        <div class="hk-settings-panel">
+            <div class="nicescroll-bar position-relative">
+                <div class="settings-panel-wrap">
+                    <div class="settings-panel-head">
+                        <img class="brand-img d-inline-block align-top" src="dist/img/logo-light.png" alt="brand" />
+                        <a href="javascript:void(0);" id="settings_panel_close" class="settings-panel-close"><span class="feather-icon"><i data-feather="x"></i></span></a>
+                    </div>
+                    
+                    <hr>
+                    <h6 class="mb-5">Navigation</h6>
+                    <p class="font-14">Menu comes in two modes: dark & light</p>
+                    <div class="button-list hk-nav-select mb-10">
+                        <button type="button" id="nav_light_select" class="btn btn-outline-success btn-sm btn-wth-icon icon-wthot-bg"><span class="icon-label"><i class="fa fa-sun-o"></i> </span><span class="btn-text">Light Mode</span></button>
+                        <button type="button" id="nav_dark_select" class="btn btn-outline-light btn-sm btn-wth-icon icon-wthot-bg"><span class="icon-label"><i class="fa fa-moon-o"></i> </span><span class="btn-text">Dark Mode</span></button>
+                    </div>
+                    <hr>
+                    <h6 class="mb-5">Top Nav</h6>
+                    <p class="font-14">Choose your liked color mode</p>
+                    <div class="button-list hk-navbar-select mb-10">
+                        <button type="button" id="navtop_light_select" class="btn btn-outline-light btn-sm btn-wth-icon icon-wthot-bg"><span class="icon-label"><i class="fa fa-sun-o"></i> </span><span class="btn-text">Light Mode</span></button>
+                        <button type="button" id="navtop_dark_select" class="btn btn-outline-success btn-sm btn-wth-icon icon-wthot-bg"><span class="icon-label"><i class="fa fa-moon-o"></i> </span><span class="btn-text">Dark Mode</span></button>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h6>Scrollable Header</h6>
+                        <div class="toggle toggle-sm toggle-simple toggle-light toggle-bg-success scroll-nav-switch"></div>
+                    </div>
+                    <button id="reset_settings" class="btn btn-success btn-block btn-reset mt-30">Reset</button>
+                </div>
+            </div>
+            <img class="d-none" src="dist/img/logo-light.png" alt="brand" />
+            <img class="d-none" src="dist/img/logo-dark.png" alt="brand" />
+        </div>
+        <!-- /Setting Panel -->
+
+        <!-- Main Content -->
+        <div class="hk-pg-wrapper">
+			<!-- Container -->
+            <div class="container-fluid mt-xl-50 mt-sm-30 mt-15 px-xxl-65 px-xl-20">
+				<!-- Row -->
+                <div class="row">
+					<div class="col-xl-12">
+                        <section class="hk-sec-wrapper">
+                            <h5 class="hk-sec-title">Introduction</h5>
+                            <p>Dashgrin is a Bootstrap 4.X.X & Sass based solid core framework that works well for all screen sizes and modern browsers.  HTML5 validated clean code is focused - keeping it simple and orderly. With Dashgrin's UI components library, you can actually get more time on building stuff, rather than editing pixel distances. 
+
+							Dashgrin - HTML template and Admin UI kit can be used for any type of web application: CRM, Project Management, Statistics, Analytics or any custom admin dashboard.
+
+							This documentation will guide you through installing the template and exploring the various components that are bundled with the template.</p>
+						</section>
+						<section class="hk-sec-wrapper">
+                            <h5 class="hk-sec-title">File Structure</h5>
+							<pre class="bg-violet-light-5 pt-25">
+							HTML
+							  ├── 
+							  │   └── dist
+							  │     └── css
+							  │     └── fonts
+							  │     └── img
+							  │     └── js
+							  │   └── src
+							  │     └──scss
+							  │    	  └── colors.scss
+							  │    	  └── mixins.scss
+							  │    	  └── navbar.scss
+							  │    	  └── style.scss
+							  │   └── vendors
+							  │       └── All Required plugins files
+							  │   └── All Html Pages
+							  │   └── .jshintrc
+							  │   └── Gruntfile.js
+							  │   └── package.json
+							  │   └── package-lock.json
+							  └── 
+							</pre>							  
+						</section>
+						<section class="hk-sec-wrapper">
+                            <h5 class="hk-sec-title">Installation & Configuration (Install Node.js,Grunt)</h5>
+							<p class="mb-20">Use of these tools are completely optional.</p>
+									<ul class="list-ul mt-20 mb-20 pl-15">
+										<li class="mb-10 txt-dark">Node.js and NPM. You can download Node.js from here <a href="https://nodejs.org." target="_blank">https://nodejs.org.</a> Npm comes bundled with Node.js</li>
+										<li class="mb-10 txt-dark">Next you need to install bower.</li>
+										<li class="txt-dark" >At last install grunt using <code>npm install -g grunt-cli</code> and <code>npm install grunt --save-dev</code></li>
+									</ul>
+									<p>After installing all the required frameworks, components and dependencies, go to the root folder of and run the following commands from the command line:</p>
+									<ul class="list-ul mt-20 mb-20 pl-15">
+										<li class="mb-10 txt-dark">npm install</li>
+										<li class="mb-10 txt-dark">grunt dist</li>
+										<li class="txt-dark" >grunt</li>
+									</ul>
+									<p>If everything was installed correctly, you should see the jQuery version of Dashgrin running in <strong>http://localhost:9000/</strong></p>
+									<br/>
+									<p><strong>Above all procedures are optional you can directly use the compiled file which we provided you.</strong></p>
+						</section>
+						<section class="hk-sec-wrapper">
+                            <h5 class="hk-sec-title">Menu Style</h5>
+							<p class="mb-20">For vertical navigation you have to first add <code>hk-vertical-nav</code> class with <code>hk-wrapper</code>.</p>
+							<p class="mb-20">For Horizontal navigation you have to first add <code>hk-horizontal-nav</code> class with <code>hk-wrapper</code>.</p>
+							<p class="mb-20">For vertical alt navigation you have to first add <code>hk-alt-nav</code> class with <code>hk-wrapper</code>.</p>
+							<p class="mb-20">For this menu style you have to add <code>hk-navbar-alt</code> class with <code>navbar</code></p>
+							<p class="mb-20">For light & dark menu you can add <code>hk-nav-light</code> or <code>hk-nav-dark</code> with <code>hk-nav</code> class.</p>
+							<p class="">For Scrollable Navigation please add <code>scrollable-nav</code> class with <code>hk-wrapper</code>.</p>
+						</section>
+						<section class="hk-sec-wrapper">
+                            <h5 class="hk-sec-title">Font</h5>
+							<p class="mb-20">We implemented Inter font. Inter is a typeface carefully crafted & designed for computer screens.</p>
+							<h6 class="mb-30">How to Setup</h6>
+							<h6 class="mb-10">Using Inter is as easy as downloading & installing the font files. If you're making a web thing, you can simply use this CSS</h6>
+							<pre class="bg-violet-light-5 pt-25">
+								@import url('https://rsms.me/inter/inter.css');
+								html { font-family: 'Inter', sans-serif; }
+								@supports (font-variation-settings: normal) {
+								  html { font-family: 'Inter var', sans-serif; }
+								}
+							</pre>
+							<h6 class="mt-15">Note:- You can add other fonts like google font by replacing above css with respective one.</h6>
+						</section>
+						<section class="hk-sec-wrapper">
+                            <h5 class="hk-sec-title">Twitter Feed</h5>
+							<p class="mb-20">We implemented live Twitter Feed on Dashgrin, for that we used <a href="http://jasonmayes.com/projects/twitterApi/#sthash.4KiphcTH.dpbs" target="_blank">twitterFetcher</a> third party plugin.</p>
+							<h6 class="mb-30">How to Setup</h6>
+							<h6 class="mb-10">HTML Structure</h6>
+							<pre class="bg-violet-light-5 pt-25">
+								&lt;div class="card bg-primary text-center"&gt;
+									&lt;div class="twitter-slider-wrap card-body"&gt;
+										&lt;div class="twitter-icon text-center mb-15"&gt;
+											&lt;i class="fa fa-twitter"&gt;&lt;/i&gt;
+										&lt;/div&gt;
+										&lt;div id="tweets_fetch" class="owl-carousel owl-theme"&gt;&lt;/div&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+							</pre>
+							<h6 class="mt-30 mb-10">CSS</h6>
+							<pre class="bg-violet-light-5 pt-25">
+								&lt;!-- Lightgallery CSS --&gt;
+								&lt;link href="../HTML/vendors/lightgallery/dist/css/lightgallery.min.css" rel="stylesheet" type="text/css"&gt;
+							</pre>
+							<h6 class="mt-30 mb-10">JS</h6>
+							<pre class="bg-violet-light-5 pt-25">
+								&lt;!-- twitter JavaScript --&gt;
+								&lt;script src="../HTML/dist/js/twitterFetcher.js"&gt;&lt;/script&gt;
+								&lt;script src="../HTML/dist/js/widgets-data.js"&gt;&lt;/script&gt;
+								​
+								&lt;!-- Owl JavaScript --&gt;
+								&lt;script src="../HTML/vendors/owl.carousel/dist/owl.carousel.min.js"&gt;&lt;/script&gt;
+								​
+								&lt;!-- Owl Init JavaScript --&gt;
+								&lt;script src="../HTML/dist/js/owl-data.js"&gt;&lt;/script&gt;
+								​
+							</pre>
+							<h6 class="mt-30 mb-10">Initialize Twitter Feed</h6>
+							<pre class="bg-violet-light-5 pt-25">
+								if( $('#tweets_fetch').length > 0 ){
+										var configList = {
+										  "profile": {"screenName": 'envato'},
+										  "domId": 'tweets_fetch',		 
+										  "maxTweets": 2,
+										  "enableLinks": true, 
+										  "showUser": false,
+										  "showTime": true,
+										  "showImages": false,
+										  "showInteraction":false,
+										  "lang": 'en'
+										};
+										twitterFetcher.fetch(configList);
+									}	
+								});
+								​
+								$(window).on('load', function () {
+									setTimeout(function(){
+										$('#tweets_fetch').owlCarousel({
+											loop:true,
+											margin:0,
+											autoplay:true,
+											responsiveClass:true,
+											autoHeight:true,
+											autoplayTimeout:4000,
+											responsive:{
+												0:{
+													items:1
+												}
+											}
+										});
+									},2000);
+								});
+								​
+							</pre>
+						</section>
+						<section class="hk-sec-wrapper">
+                            <h5 class="hk-sec-title">Chat</h5>
+							<p class="mb-20">Chat spp is exclusive design for Dashgrin users , it provide you rich user experience.There are no external plugin dependencies.</p>
+							<h6 class="mb-30">How to Setup</h6>
+							<h6 class="mb-10">HTML Structure</h6>
+							<pre class="bg-violet-light-5 pt-25">
+								&lt;div class="chatapp-wrap"&gt;
+									&lt;div class="chatapp-left"&gt;
+										&lt;header&gt;
+											 &lt;!--Chat app left header content--&gt;
+										&lt;/header&gt;
+										&lt;form role="search" class="chat-search"&gt;
+											 &lt;!--Chat app search form--&gt;
+										&lt;/form&gt;
+										&lt;div class="chatapp-users-list"&gt;
+										   &lt;!--Chat app user list--&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+									&lt;div class="chatapp-right"&gt;
+										&lt;header&gt;
+											&lt;!--Chat app right header content--&gt;
+										&lt;/header&gt;
+										&lt;div class="chat-body"&gt;
+											&lt;!--Chat body--&gt;
+										&lt;/div&gt;
+										&lt;footer&gt;
+											&lt;!--Chat Input field--&gt;
+										&lt;/footer&gt;
+									&lt;/div&gt;
+								 &lt;/div&gt;  
+							</pre>
+						</section>
+						<section class="hk-sec-wrapper">
+                            <h5 class="hk-sec-title">Calendar</h5>
+							<p class="mb-20">Calendar app is based on Fullcallendar js https://fullcalendar.io/. We have customized it a bit to give more interactive experience.</p>
+							<h6 class="mb-30">How to Setup</h6>
+							<h6 class="mb-10">HTML Structure</h6>
+							<pre class="bg-violet-light-5 pt-25">
+								&lt;div class="calendar-wrap"&gt;
+									 &lt;div id="calendar"&gt;&lt;/div&gt;
+								&lt;/div&gt;
+							</pre>
+							<h6 class="mt-30 mb-10">CSS</h6>
+							<pre class="bg-violet-light-5 pt-25">
+								&lt;!-- Calendar CSS --&gt;
+								&lt;link href="../HTML/vendors/fullcalendar/dist/fullcalendar.min.css" rel="stylesheet" type="text/css" /&gt;
+							</pre>
+							<h6 class="mt-30 mb-10">JS</h6>
+							<pre class="bg-violet-light-5 pt-25">
+								&lt;!-- Fullcalendar JavaScript --&gt;
+								&lt;script src="../HTML/vendors/moment/min/moment.min.js"&gt;&lt;/script&gt;
+								&lt;script src="../HTML/vendors/jquery-ui.min.js"&gt;&lt;/script&gt;
+								&lt;script src="../HTML/vendors/fullcalendar/dist/fullcalendar.min.js"&gt;&lt;/script&gt;
+								&lt;script src="../HTML/dist/js/fullcalendar-data.js"&gt;&lt;/script&gt;
+								​
+							</pre>
+							<h6 class="mt-30 mb-10">Initialize</h6>
+							<pre class="bg-violet-light-5 pt-25">
+								$('#calendar').fullCalendar({
+									----
+								});
+							</pre>
+						</section>
+						<section class="hk-sec-wrapper">
+                            <h5 class="hk-sec-title">Email</h5>
+							<p class="mb-20">Dashgrin Email app is a web-based email client designed and developed exclusively for Dashgrin framework. It has a responsive design to work flawlessly across many devices. </p>
+							<h6 class="mb-30">How to Setup</h6>
+							<h6 class="mb-10">HTML Structure</h6>
+							<pre class="bg-violet-light-5 pt-25">
+								&lt;div class="emailapp-wrap"&gt;
+								&lt;div class="emailapp-sidebar"&gt;
+									&lt;div class="nicescroll-bar"&gt;
+										&lt;div class="emailapp-nav-wrap"&gt;
+											&lt;!--Email app sidebar content--&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+								&lt;div class="email-box"&gt;
+									&lt;div class="emailapp-left"&gt;
+										&lt;header&gt;
+											&lt;!--Email app left content--&gt;
+										&lt;/header&gt;
+										&lt;form role="search" class="email-search"&gt;
+											&lt;!--Email app left content--&gt;
+										&lt;/form&gt;
+										&lt;div class="emailapp-emails-list"&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+									&lt;div class="emailapp-right"&gt;
+										&lt;header&gt;
+											&lt;!--Email app right content--&gt;
+										&lt;/header&gt;
+										&lt;div class="email-body"&gt;
+											&lt;!--Email app body content--&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+								&lt;!-- Compose email --&gt;
+								&lt;div class="modal fade" id="exampleModalEmail" tabindex="-1" role="dialog" aria-labelledby="exampleModalEmail" aria-hidden="true"&gt;
+									&lt;!--Email app compose email content--&gt;
+								&lt;/div&gt;
+								&lt;!-- /Compose email --&gt;
+							&lt;/div&gt;
+							</pre>
+							<h6 class="mt-30 mb-10">JS</h6>
+							<pre class="bg-violet-light-5 pt-25">
+								&lt;!-- Tinymce JavaScript --&gt;
+								&lt;script src="../HTML/vendors/tinymce/tinymce.min.js"&gt;&lt;/script&gt;
+								​
+								&lt;!-- Tinymce Wysuhtml5 Init JavaScript --&gt;
+								&lt;script src="../HTML/dist/js/tinymce-data.js"&gt;&lt;/script&gt;
+							</pre>
+						</section>
+						<section class="hk-sec-wrapper">
+                            <h5 class="hk-sec-title">Charts</h5>
+							<p class="mb-20">In Dashgrin we used different charts mainly e charts, morris charts, sparkline, peity charts. For detail documentation of every chart you can go through cradit URLs.</p>
+						</section>
+						
+						<section class="hk-sec-wrapper">
+                            <h5 class="hk-sec-title">Credits</h5>
+							<ul class="list-ul">
+								<li>Bootstrap framework</li>
+								<li><a href="http://getbootstrap.com/">http://getbootstrap.com/</a></li>
+								<li>Jquery</li>
+								<li><a href="https://jquery.com/">https://jquery.com/</a></li>
+								<li>Material Design Iconic Font</li>
+								<li><a href="http://zavoloklom.github.io/material-design-iconic-font/icons.html">http://zavoloklom.github.io/material-design-iconic-font/icons.html</a></li>
+								<li>Font-Awesome</li>
+								<li><a href="http://fortawesome.github.io/Font-Awesome/">http://fortawesome.github.io/Font-Awesome/</a></li>
+								<li>Themify</li>
+								<li><a href="https://themify.me/themify-icons">https://themify.me/themify-icons</a></li>
+								<li>linea-icon</li>
+								<li><a href="http://linea.io/">http://linea.io/</a></li>
+								<li>Simple line icons</li>
+								<li><a href="simplelineicons.com">simplelineicons.com</a></li>
+								
+								<li>Pe-7 icons</li>
+								<li><a href="http://themes-pixeden.com/font-demos/7-stroke/">http://themes-pixeden.com/font-demos/7-stroke/</a></li>
+								
+								<li>Sweet-Alert</li>
+								<li><a href="http://tristanedwards.me/sweetalert">http://tristanedwards.me/sweetalert</a></li>
+								<li>Nestable</li>
+								<li><a href="http://dbushell.com/">http://dbushell.com/</a></li>
+								<li>Slimscroll</li>
+								<li><a href="http://rocha.la/jQuery-slimScroll">http://rocha.la/jQuery-slimScroll</a></li>
+								<li>Full Calendar</li>
+								<li><a href="http://arshaw.com/fullcalendar/">http://arshaw.com/fullcalendar/</a></li>
+								
+								<li>Bootstrap-timepicker</li>
+								<li><a href="http://jdewit.github.com/bootstrap-timepicker">http://jdewit.github.com/bootstrap-timepicker</a></li>
+								<li>Bootstrap Colorpicker</li>
+								<li><a href="http://www.eyecon.ro/bootstrap-colorpicker">http://www.eyecon.ro/bootstrap-colorpicker</a></li>
+								<li>Multi-select</li>
+								<li><a href="http://loudev.com/">http://loudev.com/</a></li>
+								<li>Select2</li>
+								<li><a href="https://select2.github.io/">https://select2.github.io/</a></li>
+								<li>Wysihtml5</li>
+								<li><a href="https://github.com/xing/wysihtml5">https://github.com/xing/wysihtml5</a></li>
+								<li>Datatables</li>
+								<li><a href="https://www.datatables.net/">https://www.datatables.net/</a></li>
+								<li>Jsgrid</li>
+								<li><a href="http://js-grid.com/">http://js-grid.com/</a></li>
+								<li>Morris</li>
+								<li><a href="http://morrisjs.github.io/morris.js/">http://morrisjs.github.io/morris.js/</a></li>
+								<li>Echart</li>
+								<li><a href="https://echarts.apache.org/examples/en/">https://echarts.apache.org/examples/en/</a></li>
+								<li>Chartjs</li>
+								<li><a href="http://chartjs.org/">http://chartjs.org/</a></li>
+								<li>Sparkline</li>
+								<li><a href="http://omnipotent.net/jquery.sparkline/">http://omnipotent.net/jquery.sparkline/</a>
+								</li>
+								<li>Google maps</li>
+								<li><a href="https://hpneo.github.io/gmaps/">https://hpneo.github.io/gmaps/</a></li>
+								<li>Vector Maps</li>
+								<li><a href="http://jqvmap.com/">http://jqvmap.com/</a></li>
+								<li>Pexels (images)</li>
+								<li><a href="https://pexels.com/">https://pexels.com/</a></li>
+								<li>Flot-charts</li>
+								<li><a href="http://www.flotcharts.org/">http://www.flotcharts.org/</a></li>
+								<li>Owl carousel</li>
+								<li><a href="http://owlgraphic.com/owlcarousel/"> http://owlgraphic.com/owlcarousel/</a></li>
+								<li>Switchery</li>
+								<li><a href="https://github.com/abpetkov/switchery"> https://github.com/abpetkov/switchery</a></li>
+								<li>Bootstrap select</li>
+								<li><a href="https://github.com/silviomoreto/bootstrap-select"> https://github.com/silviomoreto/bootstrap-select</a></li>
+								<li>Wysiwig Editor</li>
+								<li><a href="http://www.tinymce.com/">http://www.tinymce.com/</a></li>
+								<li>Chartist chart</li>
+								<li><a href="https://gionkunz.github.io/chartist-js/"> https://gionkunz.github.io/chartist-js/</a></li>
+							  </ul>
+						</section>
+					</div>
+				</div>
+                <!-- /Row -->
+            </div>
+            <!-- /Container -->
+			
+            <!-- Footer -->
+            <div class="hk-footer-wrap container-fluid px-xxl-65 px-xl-20">
+                <footer class="footer">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <p>Pampered by<a href="https://hencework.com/" class="text-dark" target="_blank">Hencework</a> © 2019</p>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <p class="d-inline-block">Follow us</p>
+                            <a href="#" class="d-inline-block btn btn-icon btn-icon-only btn-indigo btn-icon-style-4"><span class="btn-icon-wrap"><i class="fa fa-facebook"></i></span></a>
+                            <a href="#" class="d-inline-block btn btn-icon btn-icon-only btn-indigo btn-icon-style-4"><span class="btn-icon-wrap"><i class="fa fa-twitter"></i></span></a>
+                            <a href="#" class="d-inline-block btn btn-icon btn-icon-only btn-indigo btn-icon-style-4"><span class="btn-icon-wrap"><i class="fa fa-google-plus"></i></span></a>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+            <!-- /Footer -->
+        </div>
+        <!-- /Main Content -->
+
+    </div>
+    <!-- /HK Wrapper -->
+
+    <!-- jQuery -->
+    <script src="vendors/jquery/dist/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendors/popper.js/dist/umd/popper.min.js"></script>
+    <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Slimscroll JavaScript -->
+    <script src="dist/js/jquery.slimscroll.js"></script>
+
+    <!-- Fancy Dropdown JS -->
+    <script src="dist/js/dropdown-bootstrap-extended.js"></script>
+
+    <!-- FeatherIcons JavaScript -->
+    <script src="dist/js/feather.min.js"></script>
+
+    <!-- Toggles JavaScript -->
+    <script src="vendors/jquery-toggles/toggles.min.js"></script>
+    <script src="dist/js/toggle-data.js"></script>
+	
+	<!-- Counter Animation JavaScript -->
+	<script src="vendors/waypoints/lib/jquery.waypoints.min.js"></script>
+	<script src="vendors/jquery.counterup/jquery.counterup.min.js"></script>
+	
+	<!-- EChartJS JavaScript -->
+    <script src="vendors/echarts/dist/echarts-en.min.js"></script>
+    
+	<!-- Sparkline JavaScript -->
+    <script src="vendors/jquery.sparkline/dist/jquery.sparkline.min.js"></script>
+	
+	<!-- Vector Maps JavaScript -->
+    <script src="vendors/vectormap/jquery-jvectormap-2.0.3.min.js"></script>
+    <script src="vendors/vectormap/jquery-jvectormap-world-mill-en.js"></script>
+    <script src="dist/js/vectormap-data.js"></script>
+
+	<!-- Owl JavaScript -->
+    <script src="vendors/owl.carousel/dist/owl.carousel.min.js"></script>
+	
+	<!-- Toastr JS -->
+    <script src="vendors/jquery-toast-plugin/dist/jquery.toast.min.js"></script>
+    
+    <!-- Init JavaScript -->
+    <script src="dist/js/init.js"></script>
+	<script src="dist/js/dashboard-data.js"></script>
+	
+</body>
+
+</html>

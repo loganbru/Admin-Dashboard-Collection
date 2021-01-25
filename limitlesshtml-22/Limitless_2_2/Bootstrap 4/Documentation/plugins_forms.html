@@ -1,0 +1,3254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/layout.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script src="assets/js/main/jquery.min.js"></script>
+	<script src="assets/js/main/bootstrap.bundle.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script src="assets/js/plugins/prism.min.js"></script>
+	<script src="assets/js/plugins/sticky.min.js"></script>
+	
+	<script src="assets/js/main/app.js"></script>
+	<script src="assets/js/pages/components_scrollspy.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body data-spy="scroll" data-target=".sidebar-component-right">
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-expand-md navbar-light">
+		<div class="navbar-header navbar-dark d-none d-md-flex align-items-md-center">
+			<div class="navbar-brand navbar-brand-md">
+				<a href="index.html" class="d-inline-block">
+					<img src="assets/images/logo_light.png" alt="">
+				</a>
+			</div>
+	
+			<div class="navbar-brand navbar-brand-xs">
+				<a href="index.html" class="d-inline-block">
+					<img src="assets/images/logo_icon_light.png" alt="">
+				</a>
+			</div>
+		</div>
+
+		<div class="d-flex flex-1 d-md-none">
+			<div class="navbar-brand mr-auto">
+				<a href="index.html" class="d-inline-block">
+					<img src="assets/images/logo_dark.png" alt="">
+				</a>
+			</div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile">
+				<i class="icon-tree5"></i>
+			</button>
+			<button class="navbar-toggler sidebar-mobile-main-toggle" type="button">
+				<i class="icon-paragraph-justify3"></i>
+			</button>
+			<button class="navbar-toggler sidebar-mobile-component-toggle" type="button">
+				<i class="icon-unfold"></i>
+			</button>
+		</div>
+
+		<div class="collapse navbar-collapse" id="navbar-mobile">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a href="#" class="navbar-nav-link sidebar-control sidebar-main-hide d-none d-md-block">
+						<i class="icon-paragraph-justify3"></i>
+					</a>
+				</li>
+
+				<li class="nav-item">
+					<a href="#" class="navbar-nav-link sidebar-control sidebar-component-toggle d-none d-md-block">
+						<i class="icon-transmission"></i>
+					</a>
+				</li>
+			</ul>
+
+			<ul class="navbar-nav ml-md-auto">
+				<li class="nav-item dropdown">
+					<a href="other_changelog.html" class="navbar-nav-link">
+						<i class="icon-history mr-2"></i>
+						Changelog
+						<span class="badge bg-warning-400 badge-pill position-static ml-md-2">2.2</span>
+					</a>					
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page content -->
+	<div class="page-content">
+
+		<!-- Main sidebar -->
+		<div class="sidebar sidebar-dark sidebar-main sidebar-expand-md">
+
+			<!-- Sidebar mobile toggler -->
+			<div class="sidebar-mobile-toggler text-center">
+				<a href="#" class="sidebar-mobile-main-toggle">
+					<i class="icon-arrow-left8"></i>
+				</a>
+				Navigation
+				<a href="#" class="sidebar-mobile-expand">
+					<i class="icon-screen-full"></i>
+					<i class="icon-screen-normal"></i>
+				</a>
+			</div>
+			<!-- /sidebar mobile toggler -->
+
+
+			<!-- Sidebar content -->
+			<div class="sidebar-content">
+
+        		<!-- Support -->
+				<div class="card card-body">
+					<a href="http://kopyov.ticksy.com" class="btn bg-success-400 btn-block" target="_blank"><i class="icon-lifebuoy mr-2"></i> Limitless support</a>
+				</div>
+				<!-- /support -->
+
+
+				<!-- Main navigation -->
+				<div class="card card-sidebar-mobile">
+					<ul class="nav nav-sidebar" data-nav-type="accordion">
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Main</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="index.html" class="nav-link">Introduction</a></li>
+						<li class="nav-item"><a href="main_getting_started.html" class="nav-link">Getting started</a></li>
+						<li class="nav-item"><a href="main_starter_kit.html" class="nav-link">Starter kit</a></li>
+						<li class="nav-item"><a href="main_rtl.html" class="nav-link">RTL layout</a></li>
+
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Basic functionality</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="base_scss_css.html" class="nav-link">SCSS and CSS</a></li>
+						<li class="nav-item"><a href="base_scss_compile.html" class="nav-link">Compiling SCSS</a></li>
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+							<a href="#" class="nav-link">Plugins</a>
+							<ul class="nav nav-group-sub" data-submenu-title="Plugins">
+								<li class="nav-item"><a href="plugins_forms.html" class="nav-link active">Forms</a></li>
+								<li class="nav-item"><a href="plugins_forms_styling.html" class="nav-link">Form styling</a></li>
+								<li class="nav-item"><a href="plugins_editors.html" class="nav-link">Editors</a></li>
+								<li class="nav-item"><a href="plugins_uploaders.html" class="nav-link">Uploaders</a></li>
+								<li class="nav-item"><a href="plugins_extensions.html" class="nav-link">Extensions</a></li>
+								<li class="nav-item"><a href="plugins_notifications.html" class="nav-link">Notifications</a></li>
+								<li class="nav-item"><a href="plugins_pickers.html" class="nav-link">Pickers</a></li>
+								<li class="nav-item"><a href="plugins_tables.html" class="nav-link">Tables</a></li>
+								<li class="nav-item"><a href="plugins_ui.html" class="nav-link">UI</a></li>
+								<li class="nav-item"><a href="plugins_vis.html" class="nav-link">Visualization</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a href="base_icons.html" class="nav-link">Icons</a></li>
+
+						<li class="nav-item"><a href="base_bootstrap.html" class="nav-link">Bootstrap</a></li>
+						<li class="nav-item"><a href="base_color_system.html" class="nav-link">Color system</a></li>
+						<li class="nav-item"><a href="base_helpers.html" class="nav-link">Helpers</a></li>
+						<li class="nav-item"><a href="base_themes.html" class="nav-link">Themes</a></li>
+
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Layout options</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="layout_overview.html" class="nav-link">Layouts</a></li>
+						<li class="nav-item"><a href="layout_sidebars.html" class="nav-link">Sidebars</a></li>
+						<li class="nav-item"><a href="layout_navbars.html" class="nav-link">Navbars</a></li>
+						<li class="nav-item"><a href="layout_v_nav.html" class="nav-link">Vertical navigation</a></li>
+						<li class="nav-item"><a href="layout_h_nav.html" class="nav-link">Horizontal navigation</a></li>
+						<li class="nav-item"><a href="layout_page_header.html" class="nav-link">Page header</a></li>
+
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Other</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="other_credits.html" class="nav-link">Sources and credits</a></li>
+						<li class="nav-item"><a href="other_changelog.html" class="nav-link">Changelog <span class="badge badge-pill bg-warning-400 ml-auto">version 2.2</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /main navigation -->
+
+		</div>
+		<!-- /main sidebar -->
+
+
+		<!-- Main content -->
+		<div class="content-wrapper">
+
+			<!-- Page header -->
+			<div class="page-header">
+				<div class="page-header-content header-elements-md-inline">
+					<div class="page-title d-flex">
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Limitless</span> - Form Plugins</h4>
+						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+					</div>
+
+					<div class="header-elements d-none py-0 mb-3 mb-md-0">
+						<div class="breadcrumb">
+							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
+							<span class="breadcrumb-item active">Form plugins</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /page header -->
+			
+
+			<!-- Content area -->
+			<div class="content pt-0">
+
+				<!-- Inner container -->
+				<div class="d-flex align-items-start flex-column flex-md-row">
+
+					<!-- Left content -->
+					<div class="order-2 order-md-1">
+
+							<!-- Textarea autosize -->
+							<div class="card" id="autosize">
+								<div class="card-header header-elements-md-inline">
+									<h5 class="card-title">Textarea autosize</h5>
+									<div class="header-elements d-flex justify-content-between">
+										<span class="badge bg-slate">Extension</span>
+										<span class="text-muted mx-3">autosize.min.js</span>
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+									</div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Overview</h6>
+										<p>Autosize is a small, stand-alone script to automatically adjust textarea height to fit text. Use CSS to specify a <code>min-height</code> and <code>max-height</code> for the textarea element. Once the height exceeds the <code>max-height</code>, autosize will re-enable the vertical scrollbar.<br>
+										The rows attribute can also be used to specify a minimum height. The rows attribute has a default value of 2, so to make the textarea smaller than that you'll need to set the value to 1. Example: <code>&lt;textarea rows='1'>&lt;/textarea></code>.</p>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Usage</h6>
+										<div class="mb-3">
+											<p>The autosize function accepts a single textarea element, or an array or array-like object (such as a NodeList or jQuery collection) of textarea elements:</p>
+											<pre><code class="language-javascript">// From a NodeList
+autosize(document.querySelectorAll('textarea'));
+
+// from a single Node
+autosize(document.querySelector('textarea'));
+
+// from a jQuery collection
+autosize($('textarea'));
+</code></pre>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Life-cycle events</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Event</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>autosize:update</code></td>
+														<td>
+															<p>Once you've assigned autosize to an element, you can manually trigger the resize event by using the 'autosize:update' event. Autosize has no way of knowing when a script has changed the value of a textarea element, or when the textarea element styles have changed, so this event would be used instruct autosize to resize the textarea</p>
+
+															<pre><code class="language-javascript">// 'Update' event
+var ta = document.querySelector('textarea');
+
+autosize(ta);
+
+ta.value = "Some new value";
+
+// Dispatch a 'autosize:update' event to trigger a resize:
+var evt = document.createEvent('Event');
+evt.initEvent('autosize:update', true, false);
+ta.dispatchEvent(evt);																
+</code></pre>
+														</td>
+													</tr>
+													<tr>
+														<td><code>autosize:autosize:destroy</code></td>
+														<td>
+															<pre><code class="language-javascript">// 'Destroy' event
+var ta = document.querySelector('textarea');
+
+// assign autosize to ta
+autosize(ta);
+
+// remove autosize from ta
+var evt = document.createEvent('Event');
+evt.initEvent('autosize:destroy', true, false);
+ta.dispatchEvent(evt);																
+</code></pre>
+														</td>
+													</tr>
+													<tr>
+														<td><code>autosize:resized</code></td>
+														<td>
+															<div class="mb-3">
+																<p>This event is fired every time autosize adjusts the textarea height.</p>
+
+																<pre><code class="language-javascript">// 'Resized' event
+var ta = document.querySelector('textarea');
+
+ta.addEventListener('autosize:resized', function(){
+    console.log('textarea height updated');
+});															
+</code></pre>
+															</div>
+
+															<div class="mb-3">
+																<p>If you are using jQuery, you can use the on/off methods to listen to this event:</p>
+
+																<pre><code class="language-javascript">// 'Resized' event
+$('textarea').each(function(){
+    autosize(this);
+}).on('autosize:resized', function(){
+    console.log('textarea height updated');
+});														
+</code></pre>
+															</div>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Methods</h6>
+										<p>These methods are provided as an alternative to using the life-cycle events</p>
+
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Method</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>autosize.update(elements)</code></td>
+														<td>
+															<p>For manually recalculating the height for a textarea element, array, or array-like object</p>
+															<pre><code class="language-javascript">// 'Update' method
+var ta = document.querySelector('textarea');
+
+autosize(ta);
+
+ta.value = "Some new value";
+
+autosize.update(ta);															
+</code></pre>
+														</td>
+													</tr>
+													<tr>
+														<td><code>autosize.destroy(elements)</code></td>
+														<td>
+															<p>Removes autosize and reverts it's changes from a textarea element, array, or array-like object</p>
+															<pre><code class="language-javascript">// 'Destroy' method
+autosize.destroy(document.querySelectorAll('textarea'));															
+</code></pre>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div>
+										<h6 class="font-weight-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="font-weight-semibold">File name</td>
+														<td>autosize.min.js</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Location</td>
+														<td>global_assets/js/plugins/forms/inputs/</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Links</td>
+														<td>
+															<p>
+																<a href="http://www.jacklmoore.com/autosize/" class="btn bg-danger-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+
+															<a href="https://github.com/jackmoore/autosize/tree/master" class="btn bg-blue btn-labeled btn-labeled-left" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /textarea autosize -->
+
+
+							<!-- Dual listbox -->
+							<div class="card" id="listbox">
+								<div class="card-header header-elements-md-inline">
+									<h5 class="card-title">Dual listbox</h5>
+									<div class="header-elements d-flex justify-content-between">
+										<span class="badge bg-slate">Extension</span>
+										<span class="text-muted mx-3">duallistbox.min.js</span>
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+									</div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Overview</h6>
+										<p>Bootstrap Dual Listbox is a responsive dual listbox widget optimized for Twitter Bootstrap. It works on all modern browsers and on touch devices. The dual listbox is created from a select multiple by calling <code>.bootstrapDualListbox(settings);</code> on a selector. The selector can be any element, not just selects. When the method is called on a selector other than a select, then all select childrens are converted into dual list boxes.</p>
+									</div>
+
+									<div class="mb-3">
+										<h6 class="font-weight-semibold">Usage</h6>
+										<p>First you need to load jQuery library as Dual listbox plugin is jQuery dependent. Then add a path to the plugin file:</p>
+
+										<div class="mb-3">
+											<pre><code class="language-markup">&lt;!-- Load plugin -->
+&lt;script src="../../../../global_assets/js/plugins/forms/inputs/duallistbox/duallistbox.min.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Then initialize via JavaScript:</p>
+											<pre><code class="language-javascript">// Multiple selection
+$('.listbox-no-selection').bootstrapDualListbox({
+    preserveSelectionOnMove: 'moved',
+    moveOnSelect: false
+});
+</code></pre>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Options</h6>
+										<p>When calling <code>$("#element").bootstrapDualListbox()</code> you can pass a parameters object with zero or more of the following:</p>
+
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Option</th>
+														<th>Default</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>bootstrap2Compatible</code></td>
+														<td class="font-weight-semibold">false</td>
+														<td>Set this to <code>true</code> if you want graphic compatibility with Bootstrap 2</td>
+													</tr>
+													<tr>
+														<td><code>filterTextClear</code></td>
+														<td class="font-weight-semibold">'show all'</td>
+														<td>The text for the "Show All" button</td>
+													</tr>
+													<tr>
+														<td><code>filterPlaceHolder</code></td>
+														<td class="font-weight-semibold">'Filter'</td>
+														<td>The placeholder for the <code>input</code> element for filtering elements</td>
+													</tr>
+													<tr>
+														<td><code>moveSelectedLabel</code></td>
+														<td class="font-weight-semibold">'Move selected'</td>
+														<td>The label for the "Move Selected" button</td>
+													</tr>
+													<tr>
+														<td><code>moveAllLabel</code></td>
+														<td class="font-weight-semibold">'Move all'</td>
+														<td>The label for the "Move All" button</td>
+													</tr>
+													<tr>
+														<td><code>removeSelectedLabel</code></td>
+														<td class="font-weight-semibold">'Remove selected'</td>
+														<td>The label for the "Remove Selected" button</td>
+													</tr>
+													<tr>
+														<td><code>removeAllLabel</code></td>
+														<td class="font-weight-semibold">'Remove all'</td>
+														<td>The label for the "Remove All" button</td>
+													</tr>
+													<tr>
+														<td><code>moveOnSelect</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>Determines whether to move options upon selection. This option is forced to <code>true</code> on the Android browser</td>
+													</tr>
+													<tr>
+														<td><code>preserveSelectionOnMove</code></td>
+														<td class="font-weight-semibold">false</td>
+														<td>Can be <code>'all'</code> (for selecting both moved elements and the already selected ones in the target list) or <code>'moved'</code> (for selecting moved elements only)</td>
+													</tr>
+													<tr>
+														<td><code>selectedListLabel</code></td>
+														<td class="font-weight-semibold">false</td>
+														<td>Can be a string specifying the name of the selected list</td>
+													</tr>
+													<tr>
+														<td><code>nonSelectedListLabel</code></td>
+														<td class="font-weight-semibold">false</td>
+														<td>Can be a string specifying the name of the non selected list</td>
+													</tr>
+													<tr>
+														<td><code>helperSelectNamePostfix</code></td>
+														<td class="font-weight-semibold">'_helper'</td>
+														<td>The added selects will have the same name as the original one, concatenated with this string and 1 (for the non selected list, e.g. element_helper1) or 2 (for the selected list, e.g. element_helper2)</td>
+													</tr>
+													<tr>
+														<td><code>selectorMinimalHeight</code></td>
+														<td class="font-weight-semibold">100</td>
+														<td>Represents the minimal height of the generated dual listbox</td>
+													</tr>
+													<tr>
+														<td><code>showFilterInputs</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>Whether to show filter inputs</td>
+													</tr>
+													<tr>
+														<td><code>nonSelectedFilter</code></td>
+														<td class="font-weight-semibold">''</td>
+														<td>Initializes the dual listbox with a filter for the non selected elements. This is applied only if <code>showFilterInputs</code> is set to <code>true</code></td>
+													</tr>
+													<tr>
+														<td><code>selectedFilter</code></td>
+														<td class="font-weight-semibold">''</td>
+														<td>Initializes the dual listbox with a filter for the selected elements. This is applied only if <code>showFilterInputs</code> is set to <code>true</code></td>
+													</tr>
+													<tr>
+														<td><code>infoText</code></td>
+														<td class="font-weight-semibold">'Showing all {0}'</td>
+														<td>Determines which string format to use when all options are visible. Set this to <code>false</code> to hide this information. Remember to insert the <code>{0}</code> placeholder.</td>
+													</tr>
+													<tr>
+														<td><code>infoTextFiltered</code></td>
+														<td class="font-weight-semibold">'&lt;span class="badge badge-warning">Filtered&lt;/span> {0} from {1}'</td>
+														<td>Determines which element format to use when some element is filtered. Remember to insert the <code>{0}</code> and <code>{1}</code> placeholders</td>
+													</tr>
+													<tr>
+														<td><code>infoTextEmpty</code></td>
+														<td class="font-weight-semibold">'Empty list'</td>
+														<td>Determines the string to use when there are no options in the list</td>
+													</tr>
+													<tr>
+														<td><code>filterOnValues</code></td>
+														<td class="font-weight-semibold">false</td>
+														<td>Set this to <code>true</code> to filter the options according to their values and not their HTML contents</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="mb-3">
+										<h6 class="font-weight-semibold">Methods</h6>
+										<p>You can modify the behavior and aspect of the dual listbox by calling its methods, all of which accept a <code>value</code> and a <code>refresh</code> option. The <code>value</code> determines the new parameter value, while <code>refresh</code> (optional, defaults to <code>false</code>) tells whether to update the plugin UI or not. </p>
+
+										<p><strong>Note:</strong> when making multiple chained calls to the plugin, set <code>refresh</code> to <code>true</code> to the last call only, in order to make a unique UI change; alternatively, you can also call the <code>refresh</code> method as your last one.</p>
+
+										<p>To call methods on the dual listbox instance, use the following syntax:</p>
+
+										<pre class="mb-3"><code class="language-javascript">// Syntax
+$(selector).bootstrapDualListbox(methodName, parameter);
+</code></pre>
+
+										<p>Here are the available methods:</p>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 400px;">Method</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>refresh()</code></td>
+														<td>Update the plugin element UI</td>
+													</tr>
+													<tr>
+														<td><code>destroy()</code></td>
+														<td>Restore the original <code>select</code> element and delete the plugin element</td>
+													</tr>
+													<tr>
+														<td><code>getContainer()</code></td>
+														<td>Get the container element</td>
+													</tr>
+													<tr>
+														<td><code>setBootstrap2Compatible(value, refresh)</code></td>
+														<td>Change the <code>bootstrap2Compatible</code> parameter</td>
+													</tr>
+													<tr>
+														<td><code>setFilterTextClear(value, refresh)</code></td>
+														<td>Change the <code>filterTextClear</code> parameter</td>
+													</tr>
+													<tr>
+														<td><code>setFilterPlaceHolder(value, refresh)</code></td>
+														<td>Change the <code>filterPlaceHolder</code> parameter</td>
+													</tr>
+													<tr>
+														<td><code>setMoveSelectedLabel(value, refresh)</code></td>
+														<td>Change the <code>moveSelectedLabel</code> parameter</td>
+													</tr>
+													<tr>
+														<td><code>setMoveAllLabel(value, refresh)</code></td>
+														<td>Change the <code>moveAllLabel</code> parameter</td>
+													</tr>
+													<tr>
+														<td><code>setRemoveSelectedLabel(value, refresh)</code></td>
+														<td>Change the <code>removeSelectedLabel</code> parameter</td>
+													</tr>
+													<tr>
+														<td><code>setRemoveAllLabel(value, refresh)</code></td>
+														<td>Change the <code>removeAllLabel</code> parameter</td>
+													</tr>
+													<tr>
+														<td><code>setMoveOnSelect(value, refresh)</code></td>
+														<td>Change the <code>moveOnSelect</code> parameter</td>
+													</tr>
+													<tr>
+														<td><code>setPreserveSelectionOnMove(value, refresh)</code></td>
+														<td>Change the <code>preserveSelectionOnMove</code> parameter</td>
+													</tr>
+													<tr>
+														<td><code>setSelectedListLabel(value, refresh)</code></td>
+														<td>Change the <code>selectedListLabel</code> parameter</td>
+													</tr>
+													<tr>
+														<td><code>setNonSelectedListLabel(value, refresh)</code></td>
+														<td>Change the <code>nonSelectedListLabel</code> parameter</td>
+													</tr>
+													<tr>
+														<td><code>setHelperSelectNamePostfix(value, refresh)</code></td>
+														<td>Change the <code>helperSelectNamePostfix</code> parameter</td>
+													</tr>
+													<tr>
+														<td><code>setSelectOrMinimalHeight(value, refresh)</code></td>
+														<td>Change the <code>selectOrMinimalHeight</code> parameter</td>
+													</tr>
+													<tr>
+														<td><code>setShowFilterInputs(value, refresh)</code></td>
+														<td>Change the <code>showFilterInputs</code> parameter</td>
+													</tr>
+													<tr>
+														<td><code>setNonSelectedFilter(value, refresh)</code></td>
+														<td>Change the <code>nonSelectedFilter</code> parameter</td>
+													</tr>
+													<tr>
+														<td><code>setSelectedFilter(value, refresh)</code></td>
+														<td>Change the <code>selectedFilter</code> parameter</td>
+													</tr>
+													<tr>
+														<td><code>setInfoText(value, refresh)</code></td>
+														<td>Change the <code>infoText</code> parameter</td>
+													</tr>
+													<tr>
+														<td><code>setInfoTextFiltered(value, refresh)</code></td>
+														<td>Change the <code>infoTextFiltered</code> parameter</td>
+													</tr>
+													<tr>
+														<td><code>setInfoTextEmpty(value, refresh)</code></td>
+														<td>Change the <code>infoTextEmpty</code> parameter</td>
+													</tr>
+													<tr>
+														<td><code>setFilterOnValues(value, refresh)</code></td>
+														<td>Change the <code>filterOnValues</code> parameter</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div>
+										<h6 class="font-weight-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="font-weight-semibold">File name</td>
+														<td>duallistbox.min.js</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Location</td>
+														<td>global_assets/js/plugins/forms/inputs/duallistbox/</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Links</td>
+														<td>
+															<p>
+																<a href="http://www.virtuosoft.eu/code/bootstrap-duallistbox/" class="btn bg-danger-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+
+															<a href="https://github.com/istvan-ujjmeszaros/bootstrap-duallistbox" class="btn bg-blue btn-labeled btn-labeled-left" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /dual listbox -->
+
+
+							<!-- Input formatter -->
+							<div class="card" id="formatter">
+								<div class="card-header header-elements-md-inline">
+									<h5 class="card-title">Input formatter</h5>
+									<div class="header-elements d-flex justify-content-between">
+										<span class="badge bg-slate">Extension</span>
+										<span class="text-muted mx-3">formatter.min.js</span>
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+									</div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Overview</h6>
+										<p>Sometimes it is useful to format user input as they type. Existing libraries lacked proper functionality / flexibility. Formatter was built from the ground up with no dependencies. There is however a jquery wrapper version for quick use.</p>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Usage</h6>
+										<p>First you need to load jQuery library as Input formatter plugin is jQuery dependent. Then add a path to the plugin file:</p>
+
+										<div class="mb-3">
+											<pre><code class="language-markup">&lt;!-- Load plugin -->
+&lt;script src="../../../../global_assets/js/plugins/forms/inputs/formatter.min.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Then initialize via JavaScript:</p>
+											<pre><code class="language-javascript">// Initialize
+$('#credit-input').formatter({
+	'pattern': '{{999}}-{{999}}-{{999}}-{{9999}}',
+	'persistent': true
+});
+</code></pre>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Options</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Option</th>
+														<th>Value</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>pattern</code></td>
+														<td class="font-weight-semibold">''</td>
+														<td>
+															<p>Required. String representing the pattern of your formatted input. User input areas begin with <code>{{</code> and end with <code>}}</code>. For example, a phone number may be represented: <code>({{999}}) {{999}}-{{999}}</code>. You can specify numbers, letters, or numbers and letters:</p>
+
+															<ul class="list">
+																<li>9: <strong>[0-9]</strong></li>
+																<li>a: <strong>[A-Za-z]</strong></li>
+																<li>*: <strong>[A-Za-z0-9]</strong></li>
+															</ul>
+														</td>
+													</tr>
+													<tr>
+														<td><code>persistent</code></td>
+														<td class="font-weight-semibold">false</td>
+														<td>Boolean representing if the formatted characters are always visible (persistent), or if they appear as you type</td>
+													</tr>
+													<tr>
+														<td><code>patterns</code></td>
+														<td class="font-weight-semibold">'Filter'</td>
+														<td>The placeholder for the <code>input</code> element for filtering elements</td>
+													</tr>
+													<tr>
+														<td><code>moveSelectedLabel</code></td>
+														<td class="font-weight-semibold">''</td>
+														<td>
+															<p>Optional, replaces <code>pattern</code>. Array representing a priority ordered set of patterns that may apply dynamically based on the current input value. Each value in the array is an object, whose key is a regular expression string and value is a pattern (see above). The regular expression is tested against the unformatted input value. You may use the special key <code>'*'</code> to catch all input values:</p>
+
+															<pre><code class="language-javascript">// Syntax
+[
+	{ '^\d{5}$': 'zip: {{99999}}' },
+	{ '^.{6,8}$: 'postal code: {{********}}' },
+	{ '*': 'unknown: {{**********}}' }
+]
+</code></pre>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Methods</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 400px;">Method</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th colspan="3" class="active">Class methods</th>
+													</tr>
+													<tr>
+														<td><code>addInptType(char, regexp)</code></td>
+														<td>
+															<p>Add regular expressions for different input types.</p>
+
+															<pre><code class="language-javascript">// Class methods
+$.fn.formatter.addInptType('L', /[A-Z]/);
+</code></pre>
+														</td>
+													</tr>
+
+													<tr>
+														<th colspan="3" class="active">Instance methods</th>
+													</tr>
+													<tr>
+														<td><code>resetPattern(pattern)</code></td>
+														<td>
+															<p>Fairly self explanatory here :) reset the pattern on an existing Formatter instance. Assuming you already initiated formatter on <code>#selector</code></p>
+															<pre><code class="language-javascript">// Instance methods
+$('#selector').formatter().resetPattern();
+</code></pre>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div>
+										<h6 class="font-weight-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="font-weight-semibold">File name</td>
+														<td>formatter.min.js</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Location</td>
+														<td>global_assets/js/plugins/forms/inputs/</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Links</td>
+														<td>
+															<p>
+																<a href="http://firstopinion.github.io/formatter.js/index.html" class="btn bg-danger-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+
+															<a href="https://github.com/firstopinion/formatter.js" class="btn bg-blue btn-labeled btn-labeled-left" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /input formatter -->
+
+
+							<!-- Bootstrap maxlength -->
+							<div class="card" id="maxlength">
+								<div class="card-header header-elements-md-inline">
+									<h5 class="card-title">Bootstrap maxlength</h5>
+									<div class="header-elements d-flex justify-content-between">
+										<span class="badge bg-slate">Extension</span>
+										<span class="text-muted mx-3">maxlength.min.js</span>
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+									</div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Overview</h6>
+										<p>This plugin integrates by default with Twitter bootstrap using badges to display the maximum length of the field where the user is inserting text. This plugin uses the HTML5 attribute <code>maxlength</code> to work. The indicator badge shows up on focusing on the element, and disappears when the focus is lost.</p>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Usage</h6>
+										<p>First you need to load jQuery library as Bootstrap maxlength plugin is jQuery dependent. Then add a path to the plugin file:</p>
+
+										<div class="mb-3">
+											<pre><code class="language-markup">&lt;!-- Load plugin -->
+&lt;script src="../../../../global_assets/js/plugins/forms/inputs/maxlength.min.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Then initialize via JavaScript:</p>
+											<pre><code class="language-javascript">// Initialize
+$('input[maxlength]').maxlength({
+	// options
+});
+</code></pre>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Options</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Option</th>
+														<th style="width: 200px;">Default</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>alwaysShow</code></td>
+														<td class="font-weight-semibold">false</td>
+														<td>If <code>true</code> the threshold will be ignored and the remaining length indication will be always showing up while typing or on focus on the input</td>
+													</tr>
+													<tr>
+														<td><code>threshold</code></td>
+														<td class="font-weight-semibold">10</td>
+														<td>This is a number indicating how many chars are left to start displaying the indications</td>
+													</tr>
+													<tr>
+														<td><code>warningClass</code></td>
+														<td class="font-weight-semibold">badge badge-success</td>
+														<td>It's the class of the element with the indicator. By default is the bootstrap <code>badge badge-success</code> but can be changed to anything you'd like</td>
+													</tr>
+													<tr>
+														<td><code>limitReachedClass</code></td>
+														<td class="font-weight-semibold">badge badge-danger</td>
+														<td>It's the class the element gets when the limit is reached</td>
+													</tr>
+													<tr>
+														<td><code>separator</code></td>
+														<td class="font-weight-semibold">'/'</td>
+														<td>Represents the separator between the number of typed chars and total number of available chars</td>
+													</tr>
+													<tr>
+														<td><code>preText</code></td>
+														<td class="font-weight-semibold">''</td>
+														<td>String of text that can be outputted in front of the indicator</td>
+													</tr>
+													<tr>
+														<td><code>postText</code></td>
+														<td class="font-weight-semibold">''</td>
+														<td>String outputted after the indicator</td>
+													</tr>
+													<tr>
+														<td><code>showMaxLength</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>If <code>false</code>, will display just the number of typed characters, e.g. will not display the max length</td>
+													</tr>
+													<tr>
+														<td><code>showCharsTyped</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>If <code>false</code>, will display just the remaining length, e.g. will display remaining lenght instead of number of typed characters</td>
+													</tr>
+													<tr>
+														<td><code>placement</code></td>
+														<td class="font-weight-semibold">'bottom'</td>
+														<td>String, define where to output the counter. Possible values are: bottom, left, top, right, bottom-right, top-right, top-left, bottom-left and centered-right</td>
+													</tr>
+													<tr>
+														<td><code>appendToParent</code></td>
+														<td class="font-weight-semibold">''</td>
+														<td>Appends the maxlength indicator badge to the parent of the input rather than to the body</td>
+													</tr>
+													<tr>
+														<td><code>message</code></td>
+														<td class="font-weight-semibold">''</td>
+														<td>An alternative way to provide the message text, i.e. 'You have typed %charsTyped% chars, %charsRemaining% of %charsTotal% remaining'. %charsTyped%, %charsRemaining% and %charsTotal% will be replaced by the actual values. This overrides the options <code>separator</code>, <code>preText</code>, <code>postText</code> and <code>showMaxLength</code>. Alternatively you may supply a function that the current text and max length and returns the string to be displayed</td>
+													</tr>
+													<tr>
+														<td><code>utf8</code></td>
+														<td class="font-weight-semibold">false</td>
+														<td>If <code>true</code> the input will count using utf8 bytesize/encoding. For example: the <code>'£'</code> character is counted as two characters</td>
+													</tr>
+													<tr>
+														<td><code>twoCharLinebreak</code></td>
+														<td class="font-weight-semibold">''</td>
+														<td>Count linebreak as 2 characters to match IE/Chrome textarea validation</td>
+													</tr>
+													<tr>
+														<td><code>customMaxAttribute</code></td>
+														<td class="font-weight-semibold">''</td>
+														<td>Allows a custom attribute to display indicator without triggering native maxlength behaviour. Ignored if value greater than a native maxlength attribute. <code>'overmax'</code> class gets added when exceeded to allow user to implement form validation</td>
+													</tr>
+													<tr>
+														<td><code>placement</code></td>
+														<td class="font-weight-semibold">this</td>
+														<td>
+															<p>String, object, or function, to define where to output the counter.</p>
+															<ul class="list">
+																<li>Possible <code>string</code> values are: bottom (default option), left, top, right, bottom-right, top-right, top-left, bottom-left and centered-right.</li>
+																<li>Custom placements can be passed as an <code>object</code>, with keys top, right, bottom, left, and position. These are passed to <code>$.fn.css</code></li>
+																<li>A custom <code>function</code> may also be passed. This method is invoked with the <code>{$element}</code> Current Input, the <code>{$element}</code> MaxLength Indicator, and the Current Input's Position {bottom height left right top width}</li>
+															</ul>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Events</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Event</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>maxlength.reposition</code></td>
+														<td>On an input element triggers re-placing of its indicator. Useful if textareas are resized by an external trigger</td>
+													</tr>
+													<tr>
+														<td><code>maxlength.shown</code></td>
+														<td>Triggered when the indicator is displayed</td>
+													</tr>
+													<tr>
+														<td><code>maxlength.hidden</code></td>
+														<td>Triggered when the indicator is removed from view</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div>
+										<h6 class="font-weight-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="font-weight-semibold">File name</td>
+														<td>maxlength.min.js</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Location</td>
+														<td>global_assets/js/plugins/forms/inputs/</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Links</td>
+														<td>
+															<p>
+																<a href="http://mimo84.github.io/bootstrap-maxlength/" class="btn bg-danger-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+
+															<a href="https://github.com/mimo84/bootstrap-maxlength/" class="btn bg-blue btn-labeled btn-labeled-left" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /bootstrap maxlength -->
+
+
+							<!-- Passy -->
+							<div class="card" id="passy">
+								<div class="card-header header-elements-md-inline">
+									<h5 class="card-title">Passy</h5>
+									<div class="header-elements d-flex justify-content-between">
+										<span class="badge bg-slate">Extension</span>
+										<span class="text-muted mx-3">passy.js</span>
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+									</div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Overview</h6>
+										<p>You cant emphasize the importance of good passwords. Passy plugin was created to make it easier for developers to give good feedback on a password. Passy is a jQuery plugin to rate and generate passwords.</p>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Usage</h6>
+										<p>First you need to load jQuery library as Passy plugin is jQuery dependent. Then add a path to the plugin file:</p>
+
+										<div class="mb-3">
+											<pre><code class="language-markup">&lt;!-- Load plugin -->
+&lt;script src="../../../../global_assets/js/plugins/forms/inputs/passy.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Then initialize via JavaScript:</p>
+											<pre><code class="language-javascript">// Initialization example
+$('input').passy(function( strength, valid ) {
+
+	// Set color based on validness and strength
+	if(valid) {
+		if( strength &lt; $.passy.strength.HIGH) {
+			color = 'orange';
+		} else {
+			color = 'green';
+		}
+	} else {
+		color = 'red';
+	}
+
+	$(this).css('background-color', color);
+});
+</code></pre>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Configuration</h6>
+										<p>Before calling .passy(), you can alter these settings:</p>
+
+										<pre><code class="language-javascript">// Requirements a inserted password should meet
+$.passy.requirements = {
+
+	// Character types a password should contain
+	characters: [
+		$.passy.character.DIGIT,
+		$.passy.character.LOWERCASE,
+		$.passy.character.UPPERCASE,
+		$.passy.character.PUNCTUATION
+	],
+
+	// A minimum and maximum length
+	length: {
+		min: 8,
+		max: Infinity
+	}
+};
+
+
+// Thresholds are numeric values representing
+// the estimated amount of days for a single computer
+// to brute force the password, assuming it processes
+// about 1,000,000 passwords per second
+
+$.passy.threshold = {
+	medium: 365,
+	high: Math.pow( 365, 2 ),
+	extreme: Math.pow( 365, 5 )
+};
+</code></pre>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Methods</h6>
+
+										<div class="mb-3">
+											<p>Generate a password of a specific length:</p>
+
+											<pre><code class="language-javascript">// 'Generate method'
+$('input').passy('generate', 16);
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Check if a field’s content is valid:</p>
+
+											<pre><code class="language-javascript">// 'Valid' method
+if (
+	$('input').passy('valid')
+)
+{ ... }
+</code></pre>
+										</div>
+									</div>
+
+									<div>
+										<h6 class="font-weight-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="font-weight-semibold">File name</td>
+														<td>passy.js</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Location</td>
+														<td>global_assets/js/plugins/forms/inputs/</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Links</td>
+														<td>
+															<p>
+																<a href="https://timseverien.com/passy/" class="btn bg-danger-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+
+															<a href="https://github.com/timseverien/passy" class="btn bg-blue btn-labeled btn-labeled-left" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /passy -->
+
+
+							<!-- Touchspin spinners -->
+							<div class="card" id="touchspin">
+								<div class="card-header header-elements-md-inline">
+									<h5 class="card-title">Touchspin spinners</h5>
+									<div class="header-elements d-flex justify-content-between">
+										<span class="badge bg-slate">Extension</span>
+										<span class="text-muted mx-3">touchspin.min.js</span>
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+									</div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Overview</h6>
+										<p>A mobile and touch friendly input spinner component for Bootstrap 3. It supports the mousewheel and the up/down keys.</p>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Usage</h6>
+
+										<div class="mb-3">
+											<p>First you need to load jQuery library as Touchspin plugin is jQuery dependent. Then add a path to the plugin file:</p>
+											<pre><code class="language-markup">&lt;!-- Load plugin -->
+&lt;script src="../../../../global_assets/js/plugins/forms/inputs/touchspin.min.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Create element:</p>
+											<pre><code class="language-markup">&lt;!-- Touchspin element -->
+&lt;input id="demo1" type="text" value="55" name="demo1">
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Then initialize via JavaScript:</p>
+											<pre><code class="language-javascript">// Initialization example
+$("input[name='demo1']").TouchSpin({
+    min: 0,
+    max: 100,
+    step: 0.1,
+    decimals: 2,
+    boostat: 5,
+    maxboostedstep: 10,
+    postfix: '%'
+});
+</code></pre>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Touchspin options</h6>
+										<div class="table-responsive">
+											<table class="table table-striped table-bordered">
+												<thead>
+													<tr>
+														<th>Option</th>
+														<th>Default</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>initval</code></td>
+														<td class="font-weight-semibold">""</td>
+														<td>Applied when no explicit value is set on the input with the <code>value</code> attribute. Empty string means that the value remains empty on initialization.</td>
+													</tr>
+													<tr>
+														<td><code>min</code></td>
+														<td class="font-weight-semibold">0</td>
+														<td>Minimum value.</td>
+													</tr>
+													<tr>
+														<td><code>max</code></td>
+														<td class="font-weight-semibold">100</td>
+														<td>Maximum value.</td>
+													</tr>
+													<tr>
+														<td><code>step</code></td>
+														<td class="font-weight-semibold">1</td>
+														<td>Incremental/decremental step on up/down change.</td>
+													</tr>
+													<tr>
+														<td><code>forcestepdivisibility</code></td>
+														<td class="font-weight-semibold">'round'</td>
+														<td>How to force the value to be divisible by step value: <code>'none'</code> | <code>'round'</code> | <code>'floor'</code> | <code>'ceil'</code></td>
+													</tr>
+													<tr>
+														<td><code>decimals</code></td>
+														<td class="font-weight-semibold">0</td>
+														<td>Number of decimal points.</td>
+													</tr>
+													<tr>
+														<td><code>stepinterval</code></td>
+														<td class="font-weight-semibold">100</td>
+														<td>Refresh rate of the spinner in milliseconds.</td>
+													</tr>
+													<tr>
+														<td><code>stepintervaldelay</code></td>
+														<td class="font-weight-semibold">500</td>
+														<td>Time in milliseconds before the spinner starts to spin.</td>
+													</tr>
+													<tr>
+														<td><code>verticalbuttons</code></td>
+														<td class="font-weight-semibold">false</td>
+														<td>Enables the traditional up/down buttons.</td>
+													</tr>
+													<tr>
+														<td><code>verticalupclass</code></td>
+														<td class="font-weight-semibold">'glyphicon glyphicon-chevron-up'</td>
+														<td>Class of the up button with vertical buttons mode enabled.</td>
+													</tr>
+													<tr>
+														<td><code>verticaldownclass</code></td>
+														<td class="font-weight-semibold">'glyphicon glyphicon-chevron-down'</td>
+														<td>Class of the down button with vertical buttons mode enabled.</td>
+													</tr>
+													<tr>
+														<td><code>prefix</code></td>
+														<td class="font-weight-semibold">""</td>
+														<td>Text before the input.</td>
+													</tr>
+													<tr>
+														<td><code>postfix</code></td>
+														<td class="font-weight-semibold">""</td>
+														<td>Text after the input.</td>
+													</tr>
+													<tr>
+														<td><code>prefix_extraclass</code></td>
+														<td class="font-weight-semibold">""</td>
+														<td>Extra class(es) for prefix.</td>
+													</tr>
+													<tr>
+														<td><code>postfix_extraclass</code></td>
+														<td class="font-weight-semibold">""</td>
+														<td>Extra class(es) for postfix.</td>
+													</tr>
+													<tr>
+														<td><code>booster</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>If enabled, the the spinner is continually becoming faster as holding the button.</td>
+													</tr>
+													<tr>
+														<td><code>boostat</code></td>
+														<td class="font-weight-semibold">10</td>
+														<td>Boost at every nth step.</td>
+													</tr>
+													<tr>
+														<td><code>maxboostedstep</code></td>
+														<td class="font-weight-semibold">false</td>
+														<td>Maximum step when boosted.</td>
+													</tr>
+													<tr>
+														<td><code>mousewheel</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>Enables the mouse wheel to change the value of the input.</td>
+													</tr>
+													<tr>
+														<td><code>buttondown_class</code></td>
+														<td class="font-weight-semibold">'btn btn-default'</td>
+														<td>Class(es) of down button.</td>
+													</tr>
+													<tr>
+														<td><code>buttonup_class</code></td>
+														<td class="font-weight-semibold">'btn btn-default'</td>
+														<td>Class(es) of up button.</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold mb-3">Touchspin events</h6>
+
+										<div class="mb-4">
+											<p class="font-weight-bold text-uppercase font-size-sm">Triggered events</p>
+											<p>The following events are triggered on the original input by the plugin and can be listened on.</p>
+
+											<div class="table-responsive">
+												<table class="table table-striped table-bordered">
+													<thead>
+														<tr>
+															<th>Event</th>
+															<th>Description</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td><code>change</code></td>
+															<td>Triggered when the value is changed with one of the buttons (but not triggered when the spinner hits the limit set by <code>settings.min</code> or <code>settings.max</code>.</td>
+														</tr>
+														<tr>
+															<td><code>touchspin.on.startspin</code></td>
+															<td>Triggered when the spinner starts spinning upwards or downwards.</td>
+														</tr>
+														<tr>
+															<td><code>touchspin.on.startupspin</code></td>
+															<td>Triggered when the spinner starts spinning upwards.</td>
+														</tr>
+														<tr>
+															<td><code>touchspin.on.startdownspin</code></td>
+															<td>Triggered when the spinner starts spinning downwards.</td>
+														</tr>
+														<tr>
+															<td><code>touchspin.on.stopspin</code></td>
+															<td>Triggered when the spinner stops spinning.</td>
+														</tr>
+														<tr>
+															<td><code>touchspin.on.stopupspin</code></td>
+															<td>Triggered when the spinner stops upspinning.</td>
+														</tr>
+														<tr>
+															<td><code>touchspin.on.stopdownspin</code></td>
+															<td>Triggered when the spinner stops downspinning.</td>
+														</tr>
+														<tr>
+															<td><code>touchspin.on.min</code></td>
+															<td>Triggered when the spinner hits the limit set by <code>settings.min</code>.</td>
+														</tr>
+														<tr>
+															<td><code>touchspin.on.max</code></td>
+															<td>Triggered when the spinner hits the limit set by <code>settings.max</code>.</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+
+										<div class="mb-3">
+											<p class="font-weight-bold text-uppercase font-size-sm">Callable events</p>
+											<p>The following events can be triggered on the original input. Example usage:</p>
+											<pre class="mb-3"><code class="language-javascript">// 'upOnce' event
+$("input").trigger("touchspin.uponce");
+
+// 'updateSettings' event
+$("input").trigger("touchspin.updatesettings", {
+	max: 1000
+});
+</code></pre>
+
+											<div class="table-responsive">
+												<table class="table table-striped table-bordered">
+													<thead>
+														<tr>
+															<th>Event</th>
+															<th>Description</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td><code>change</code></td>
+															<td>Triggered when the value is changed with one of the buttons (but not triggered when the spinner hits the limit set by <code>settings.min</code> or <code>settings.max</code>.</td>
+														</tr>
+														<tr>
+															<td><code>touchspin.on.startspin</code></td>
+															<td>Triggered when the spinner starts spinning upwards or downwards.</td>
+														</tr>
+														<tr>
+															<td><code>touchspin.on.startupspin</code></td>
+															<td>Triggered when the spinner starts spinning upwards.</td>
+														</tr>
+														<tr>
+															<td><code>touchspin.on.startdownspin</code></td>
+															<td>Triggered when the spinner starts spinning downwards.</td>
+														</tr>
+														<tr>
+															<td><code>touchspin.on.stopspin</code></td>
+															<td>Triggered when the spinner stops spinning.</td>
+														</tr>
+														<tr>
+															<td><code>touchspin.on.stopupspin</code></td>
+															<td>Triggered when the spinner stops upspinning.</td>
+														</tr>
+														<tr>
+															<td><code>touchspin.on.stopdownspin</code></td>
+															<td>Triggered when the spinner stops downspinning.</td>
+														</tr>
+														<tr>
+															<td><code>touchspin.on.min</code></td>
+															<td>Triggered when the spinner hits the limit set by <code>settings.min</code>.</td>
+														</tr>
+														<tr>
+															<td><code>touchspin.on.max</code></td>
+															<td>Triggered when the spinner hits the limit set by <code>settings.max</code>.</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+
+									<div>
+										<h6 class="font-weight-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="font-weight-semibold">File name</td>
+														<td>touchspin.min.js</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Location</td>
+														<td>global_assets/js/plugins/forms/inputs/</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Links</td>
+														<td>
+															<p>
+																<a href="http://www.virtuosoft.eu/code/bootstrap-touchspin/" class="btn bg-danger-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+
+															<a href="https://github.com/istvan-ujjmeszaros/bootstrap-touchspin" class="btn bg-blue btn-labeled btn-labeled-left" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /touchspin spinners -->
+
+
+							<!-- Twitter typeahead -->
+							<div class="card" id="typeahead">
+								<div class="card-header header-elements-md-inline">
+									<h5 class="card-title">Twitter typeahead</h5>
+									<div class="header-elements d-flex justify-content-between">
+										<span class="badge bg-slate">Extension</span>
+										<span class="text-muted mx-3">/forms/inputs/typeahead/</span>
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+									</div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Overview</h6>
+										<p>Typeahead is a flexible JavaScript library that provides a strong foundation for building robust typeaheads. The <code>typeahead.js</code> library consists of 2 components: the suggestion engine - Bloodhound, and the UI view - Typeahead. The suggestion engine is responsible for computing suggestions for a given query. The UI view is responsible for rendering suggestions and handling DOM interactions. Both components can be used separately, but when used together, they can provide a rich typeahead experience.</p>
+
+										<p>Main Typeahead features:</p>
+										<ul class="list">
+											<li>Displays suggestions to end-users as they type</li>
+											<li>Shows top suggestion as a hint (i.e. background text)</li>
+											<li>Supports custom templates to allow for UI flexibility</li>
+											<li>Works well with RTL languages and input method editors</li>
+											<li>Highlights query matches within the suggestion</li>
+											<li>Triggers custom events to encourage extensibility</li>
+										</ul>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Usage</h6>
+
+										<div class="mb-3">
+											<p>Load library itself, Bloodhound engine is already integrated to the main file:</p>
+											<pre><code class="language-markup">&lt;!-- Load library -->
+&lt;script src="../../../../global_assets/js/plugins/forms/inputs/typeahead/typeahead.bundle.min.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Create element:</p>
+											<pre><code class="language-markup">&lt;!-- Typeahead element -->
+&lt;div id="the-basics">
+  &lt;input class="typeahead" type="text" placeholder="States of USA">
+&lt;/div>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Then initialize via JavaScript:</p>
+											<pre><code class="language-javascript">// Initialization example
+$('.typeahead').typeahead({
+	minLength: 3,
+	highlight: true
+},
+{
+	name: 'my-dataset',
+	source: mySource
+});
+</code></pre>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Typeahead options</h6>
+										<div class="table-responsive">
+											<table class="table table-striped table-bordered">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Option</th>
+														<th>Default</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>highlight</code></td>
+														<td class="font-weight-semibold">false</td>
+														<td>If <code>true</code>, when suggestions are rendered, pattern matches for the current query in text nodes will be wrapped in a strong element with its class set to <code>{{classNames.highlight}}</code></td>
+													</tr>
+													<tr>
+														<td><code>hint</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>If <code>false</code>, the typeahead will not show a hint</td>
+													</tr>
+													<tr>
+														<td><code>minLength</code></td>
+														<td class="font-weight-semibold">1</td>
+														<td>The minimum character length needed before suggestions start getting rendered</td>
+													</tr>
+													<tr>
+														<td><code>classNames</code></td>
+														<td class="font-weight-semibold">''</td>
+														<td>For overriding the default class names used</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Typeahead datasets</h6>
+										<div class="mb-3">
+											<p>A typeahead is composed of one or more datasets. When an end-user modifies the value of a typeahead, each dataset will attempt to render suggestions for the new value.</p>
+
+											<p>For most use cases, one dataset should suffice. It's only in the scenario where you want rendered suggestions to be grouped based on some sort of categorical relationship that you'd need to use multiple datasets. For example, on twitter.com, the search typeahead groups results into recent searches, trends, and accounts – that would be a great use case for using multiple datasets.</p>
+										</div>
+
+										<p>Datasets can be configured using the following options:</p>
+										<div class="table-responsive">
+											<table class="table table-striped table-bordered">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Option</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>source</code></td>
+														<td><strong>[Required]</strong>. The backing data source for suggestions. Expected to be a function with the signature (<code>query</code>, <code>syncResults</code>, <code>asyncResults</code>). <code>syncResults</code> should be called with suggestions computed synchronously and asyncResults should be called with suggestions computed asynchronously (e.g. suggestions that come for an AJAX request). <code>source</code> can also be a Bloodhound instance</td>
+													</tr>
+													<tr>
+														<td><code>async</code></td>
+														<td>Lets the dataset know if async suggestions should be expected. If not set, this information is inferred from the signature of <code>source</code> i.e. if the <code>source</code> function expects 3 arguments, <code>async</code> will be set to <code>true</code></td>
+													</tr>
+													<tr>
+														<td><code>name</code></td>
+														<td>The name of the dataset. This will be appended to <code>{{classNames.dataset}}</code> - to form the class name of the containing DOM element. Must only consist of underscores, dashes, letters (<code>a-z</code>), and numbers. Defaults to a random number</td>
+													</tr>
+													<tr>
+														<td><code>limit</code></td>
+														<td>The max number of suggestions to be displayed. Defaults to <code>5</code></td>
+													</tr>
+													<tr>
+														<td><code>display</code></td>
+														<td>For a given suggestion, determines the string representation of it. This will be used when setting the value of the input control after a suggestion is selected. Can be either a key string or a function that transforms a suggestion object into a string. Defaults to stringifying the suggestion</td>
+													</tr>
+													<tr>
+														<td><code>templates</code></td>
+														<td>A hash of templates to be used when rendering the dataset. Note a precompiled template is a function that takes a JavaScript object as its first argument and returns a HTML string</td>
+													</tr>
+													<tr>
+														<td><code>[templates] notFound</code></td>
+														<td>Rendered when <code>0</code> suggestions are available for the given query. Can be either a HTML string or a precompiled template. If it's a precompiled template, the passed in context will contain <code>query</code></td>
+													</tr>
+													<tr>
+														<td><code>[template] pending</code></td>
+														<td>Rendered when 0 synchronous suggestions are available but asynchronous suggestions are expected. Can be either a HTML string or a precompiled template. If it's a precompiled template, the passed in context will contain <code>query</code></td>
+													</tr>
+													<tr>
+														<td><code>[template] header</code></td>
+														<td>Rendered at the top of the dataset when suggestions are present. Can be either a HTML string or a precompiled template. If it's a precompiled template, the passed in context will contain <code>query</code> and <code>suggestions</code></td>
+													</tr>
+													<tr>
+														<td><code>[template] footer</code></td>
+														<td>Rendered at the bottom of the dataset when suggestions are present. Can be either a HTML string or a precompiled template. If it's a precompiled template, the passed in context will contain <code>query</code> and <code>suggestions</code></td>
+													</tr>
+													<tr>
+														<td><code>[template] suggestion</code></td>
+														<td>Used to render a single suggestion. If set, this has to be a precompiled template. The associated suggestion object will serve as the context. Defaults to the value of <code>display</code> wrapped in a div tag i.e. <code>&lt;div>{{value}}&lt;/div></code></td>
+													</tr>
+
+
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Custom events</h6>
+										<p>The following events get triggered on the input element during the life-cycle of a typeahead. <strong>Note</strong>: Every event does not supply the same arguments. See the event descriptions below for details on each event's argument list.</p>
+
+										<div class="table-responsive mb-3">
+											<table class="table table-striped table-bordered">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Event</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>typeahead:active</code></td>
+														<td>Fired when the typeahead moves to active state</td>
+													</tr>
+													<tr>
+														<td><code>typeahead:idle</code></td>
+														<td>Fired when the typeahead moves to idle state</td>
+													</tr>
+													<tr>
+														<td><code>typeahead:open</code></td>
+														<td>Fired when the results container is opened</td>
+													</tr>
+													<tr>
+														<td><code>typeahead:close</code></td>
+														<td>Fired when the results container is closed</td>
+													</tr>
+													<tr>
+														<td><code>typeahead:change</code></td>
+														<td>Normalized version of the native <code>change</code> event. Fired when input loses focus and the value has changed since it originally received focus</td>
+													</tr>
+													<tr>
+														<td><code>typeahead:render</code></td>
+														<td>Fired when suggestions are rendered for a dataset. The event handler will be invoked with 4 arguments: the jQuery event object, the suggestions that were rendered, a flag indicating whether the suggestions were fetched asynchronously, and the name of the dataset the rendering occurred in</td>
+													</tr>
+													<tr>
+														<td><code>typeahead:select</code></td>
+														<td>Fired when a suggestion is selected. The event handler will be invoked with 2 arguments: the jQuery event object and the suggestion object that was selected</td>
+													</tr>
+													<tr>
+														<td><code>typeahead:autocomplete</code></td>
+														<td>Fired when a autocompletion occurs. The event handler will be invoked with 2 arguments: the jQuery event object and the suggestion object that was used for autocompletion</td>
+													</tr>
+													<tr>
+														<td><code>typeahead:cursorchange</code></td>
+														<td>Fired when the results container cursor moves. The event handler will be invoked with 2 arguments: the jQuery event object and the suggestion object that was moved to</td>
+													</tr>
+													<tr>
+														<td><code>typeahead:asyncrequest</code></td>
+														<td>Fired when an async request for suggestions is sent. The event handler will be invoked with 3 arguments: the jQuery event object, the current query, and the name of the dataset the async request belongs to</td>
+													</tr>
+													<tr>
+														<td><code>typeahead:asynccancel</code></td>
+														<td>Fired when an async request is cancelled. The event handler will be invoked with 3 arguments: the jQuery event object, the current query, and the name of the dataset the async request belonged to</td>
+													</tr>
+													<tr>
+														<td><code>typeahead:asyncreceive</code></td>
+														<td>Fired when an async request completes. The event handler will be invoked with 3 arguments: the jQuery event object, the current query, and the name of the dataset the async request belongs to</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+
+										<p>Example usage:</p>
+										<pre><code class="language-javascript">// Events usage
+$('.typeahead').bind('typeahead:select', function(ev, suggestion) {
+	console.log('Selection: ' + suggestion);
+});
+</code></pre>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Class Names</h6>
+										<div class="table-responsive mb-3">
+											<table class="table table-striped table-bordered">
+												<thead>
+													<tr>
+														<th>Class</th>
+														<th>Defaults</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>input</code></td>
+														<td class="font-weight-semibold">.tt-input</td>
+														<td>Added to input that's initialized into a typeahead</td>
+													</tr>
+													<tr>
+														<td><code>hint</code></td>
+														<td class="font-weight-semibold">.tt-hint</td>
+														<td>Added to hint input</td>
+													</tr>
+													<tr>
+														<td><code>menu</code></td>
+														<td class="font-weight-semibold">.tt-menu</td>
+														<td>Added to menu element</td>
+													</tr>
+													<tr>
+														<td><code>dataset</code></td>
+														<td class="font-weight-semibold">tt-dataset</td>
+														<td>Added to dataset elements</td>
+													</tr>
+													<tr>
+														<td><code>suggestion</code></td>
+														<td class="font-weight-semibold">tt-suggestion</td>
+														<td>Added to suggestion elements</td>
+													</tr>
+													<tr>
+														<td><code>empty</code></td>
+														<td class="font-weight-semibold">.tt-empty</td>
+														<td>Added to menu element when it contains no content</td>
+													</tr>
+													<tr>
+														<td><code>open</code></td>
+														<td class="font-weight-semibold">.tt-open</td>
+														<td>Added to menu element when it is opened</td>
+													</tr>
+													<tr>
+														<td><code>cursor</code></td>
+														<td class="font-weight-semibold">.tt-cursor</td>
+														<td>Added to suggestion element when menu cursor moves to said suggestion</td>
+													</tr>
+													<tr>
+														<td><code>highlight</code></td>
+														<td class="font-weight-semibold">.tt-highlight</td>
+														<td>Added to the element that wraps highlighted text</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+
+										<p>To override any of these defaults, you can use the <code>classNames</code> option:</p>
+										<pre><code class="language-javascript">// Override class names
+$('.typeahead').typeahead({
+	classNames: {
+		input: 'Typeahead-input',
+		hint: 'Typeahead-hint',
+		selectable: 'Typeahead-selectable'
+	}
+});
+</code></pre>
+									</div>
+
+									<div>
+										<h6 class="font-weight-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="font-weight-semibold">File name</td>
+														<td>typeahead.bundle.min.js, handlebars.js</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Location</td>
+														<td>global_assets/js/plugins/forms/inputs/typeahead/</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Links</td>
+														<td>
+															<p>
+																<a href="https://twitter.github.io/typeahead.js/" class="btn btn-sm bg-danger-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+
+															<p>
+																<a href="https://github.com/twitter/typeahead.js/blob/master/doc/jquery_typeahead.md#class-names" class="btn btn-sm bg-slate btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-file-text2"></i></b>
+																	Typeahead documentation
+																</a>
+															</p>
+
+															<p>
+																<a href="https://github.com/twitter/typeahead.js/blob/master/doc/bloodhound.md" class="btn btn-sm bg-slate btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-file-text2"></i></b>
+																	Bloodhound documentation
+																</a>
+															</p>
+
+															<a href="https://github.com/twitter/typeahead.js" class="btn btn-sm bg-blue btn-labeled btn-labeled-left" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /twitter typeahead -->
+
+
+							<!-- Form validation -->
+							<div class="card" id="validation">
+								<div class="card-header header-elements-md-inline">
+									<h5 class="card-title">Form validation</h5>
+									<div class="header-elements d-flex justify-content-between">
+										<span class="badge bg-slate">Validation</span>
+										<span class="text-muted mx-3">/forms/validation/</span>
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+									</div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Overview</h6>
+										<p>This jQuery plugin makes simple clientside form validation easy, whilst still offering plenty of customization options. It makes a good choice if you’re building something new from scratch, but also when you’re trying to integrate something into an existing application with lots of existing markup.</p>
+										<p>The plugin comes bundled with a useful set of validation methods, including URL and email validation, while providing an API to write your own methods. All bundled methods come with default error messages in english and translations into 37 other languages</p>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Usage</h6>
+										<div class="mb-3">
+											<p>Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+											<pre><code class="language-markup">&lt;!-- Load jQuery -->
+&lt;script src="../../../../global_assets/js/main/jquery.min.js">&lt;/script>
+
+&lt;!-- Load plugin -->
+&lt;script src="../../../../global_assets/js/plugins/forms/validation/validate.min.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Select a form to validate and call the validate method:</p>
+											<pre><code class="language-markup">&lt;!-- Create form -->
+&lt;form class="validate" id="commentForm" method="get" action="">
+	&lt;fieldset>
+		&lt;legend>Please provide your name, email address (won't be published) and a comment&lt;/legend>
+		&lt;p>
+			&lt;label for="cname">Name (required, at least 2 characters)&lt;/label>
+			&lt;input id="cname" name="name" minlength="2" type="text" required="required'">
+		&lt;/p>
+	&lt;/fieldset>
+&lt;/form>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Finally call the plugin via JavaScript:</p>
+											<pre><code class="language-javascript">// Basic initialization
+$("#commentForm").validate({
+	// options
+});
+</code></pre>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Validate options</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 200px;">Name</th>
+														<th style="width: 250px;">Default</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>debug</code></td>
+														<td class="font-weight-semibold">false</td>
+														<td>Enables debug mode. If true, the form is not submitted and certain errors are displayed on the console (will check if a <code>window.console</code> property exists). Try to enable when a form is just submitted instead of validation stopping the submit</td>
+													</tr>
+													<tr>
+														<td><code>submitHandler</code></td>
+														<td class="font-weight-semibold">native form submit</td>
+														<td>Callback for handling the actual submit when the form is valid. Gets the form as the only argument. Replaces the default submit. The right place to submit a form via Ajax after it is validated</td>
+													</tr>
+													<tr>
+														<td><code>invalidHandler</code></td>
+														<td class="font-weight-semibold">{}</td>
+														<td>Callback for custom code when an invalid form is submitted. Called with an event object as the first argument, and the validator as the second</td>
+													</tr>
+													<tr>
+														<td><code>ignore</code></td>
+														<td class="font-weight-semibold">":hidden"</td>
+														<td>Elements to ignore when validating, simply filtering them out. jQuery's not-method is used, therefore everything that is accepted by <code>not()</code> can be passed as this option. Inputs of type submit and reset are always ignored, so are disabled elements</td>
+													</tr>
+													<tr>
+														<td><code>rules</code></td>
+														<td class="font-weight-semibold">read from markup (classes, attributes, data)</td>
+														<td>Key/value pairs defining custom rules. Key is the name of an element (or a group of checkboxes/radio buttons), value is an <code>object</code> consisting of rule/parameter pairs or a plain <code>String</code>. Can be combined with class/attribute/data rules. Each rule can be specified as having a depends-property to apply the rule only in certain conditions</td>
+													</tr>
+													<tr>
+														<td><code>messages</code></td>
+														<td class="font-weight-semibold">Default message for the method used</td>
+														<td>Key/value pairs defining custom messages. Key is the name of an element, value the message to display for that element. Instead of a plain message, another map with specific messages for each rule can be used. Overrides the title attribute of an element or the default message for the method (in that order). Each message can be a <code>String</code> or a <code>Callback</code>. The <code>callback</code> is called in the scope of the validator, with the rule's parameters as the first argument and the element as the second, and must return a <code>String</code> to display as the message</td>
+													</tr>
+													<tr>
+														<td><code>groups</code></td>
+														<td class="font-weight-semibold">[]</td>
+														<td>Specify grouping of error messages. A group consists of an arbitrary group name as the key and a space separated list of element names as the value. Use <code>errorPlacement</code> to control where the group message is placed</td>
+													</tr>
+													<tr>
+														<td><code>onsubmit</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>Validate the form on submit. Set to <code>false</code> to use only other events for validation. Set to a <code>Function</code> to decide for yourself when to run validation. A boolean <code>true</code> is not a valid value</td>
+													</tr>
+													<tr>
+														<td><code>onfocusout</code></td>
+														<td class="font-weight-semibold">{}</td>
+														<td>Validate elements (except checkboxes/radio buttons) on <code>blur</code>. If nothing is entered, all rules are skipped, except when the field was already marked as invalid. Set to a <code>Function</code> to decide for yourself when to run validation. A boolean <code>true</code> is not a valid value</td>
+													</tr>
+													<tr>
+														<td><code>onkeyup</code></td>
+														<td class="font-weight-semibold">{}</td>
+														<td>Validate elements on <code>keyup</code>. As long as the field is not marked as invalid, nothing happens. Otherwise, all rules are checked on each key up event. Set to <code>false</code> to disable. Set to a <code>Function</code> to decide for yourself when to run validation. A boolean <code>true</code> is not a valid value</td>
+													</tr>
+													<tr>
+														<td><code>onclick</code></td>
+														<td class="font-weight-semibold">{}</td>
+														<td>Validate checkboxes and radio buttons on <code>click</code>. Set to <code>false</code> to disable. Set to a <code>Function</code> to decide for yourself when to run validation. A boolean <code>true</code> is not a valid value</td>
+													</tr>
+													<tr>
+														<td><code>focusInvalid</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>Focus the last active or first invalid element on submit via <code>validator.focusInvalid()</code>. The last active element is the one that had focus when the form was submitted, avoiding stealing its focus. If there was no element focused, the first one in the form gets it, unless this option is turned off</td>
+													</tr>
+													<tr>
+														<td><code>focusCleanup</code></td>
+														<td class="font-weight-semibold">false</td>
+														<td>If enabled, removes the <code>errorClass</code> from the invalid elements and hides all error messages whenever the element is focused. Avoid combination with <code>focusInvalid</code></td>
+													</tr>
+													<tr>
+														<td><code>errorClass</code></td>
+														<td class="font-weight-semibold">'error'</td>
+														<td>Use this class to create error labels, to look for existing error labels and to add it to invalid elements</td>
+													</tr>
+													<tr>
+														<td><code>validClass</code></td>
+														<td class="font-weight-semibold">'valid'</td>
+														<td>This class is added to an element after it was validated and considered valid</td>
+													</tr>
+													<tr>
+														<td><code>errorElement</code></td>
+														<td class="font-weight-semibold">'label'</td>
+														<td>Use this element type to create error messages and to look for existing error messages. The default, <code>"label"</code>, has the advantage of creating a meaningful link between error message and invalid field using the for attribute (which is always used, regardless of element type)</td>
+													</tr>
+													<tr>
+														<td><code>wrapper</code></td>
+														<td class="font-weight-semibold">'window'</td>
+														<td>Wrap error labels with the specified element. Useful in combination with <code>errorLabelContainer</code> to create a list of error messages</td>
+													</tr>
+													<tr>
+														<td><code>errorLabelContainer</code></td>
+														<td class="font-weight-semibold">-</td>
+														<td>Hide and show this container when validating</td>
+													</tr>
+													<tr>
+														<td><code>errorContainer</code></td>
+														<td class="font-weight-semibold">-</td>
+														<td>Hide and show this container when validating</td>
+													</tr>
+													<tr>
+														<td><code>showErrors</code></td>
+														<td class="font-weight-semibold">{}</td>
+														<td>A custom message display handler. Gets the map of errors as the first argument and an array of errors as the second, called in the context of the validator object. The arguments contain only those elements currently validated, which can be a single element when doing validation onblur/keyup. You can trigger (in addition to your own messages) the default behaviour by calling <code>this.defaultShowErrors()</code></td>
+													</tr>
+													<tr>
+														<td><code>errorPlacement</code></td>
+														<td class="font-weight-semibold">After the invalid element</td>
+														<td>Customize placement of created error labels. First argument: The created error label as a jQuery object. Second argument: The invalid element as a jQuery object</td>
+													</tr>
+													<tr>
+														<td><code>success</code></td>
+														<td class="font-weight-semibold">-</td>
+														<td>If specified, the error label is displayed to show a valid element. If a <code>String</code> is given, it is added as a class to the label. If a <code>Function</code> is given, it is called with the label (as a jQuery object) and the validated input (as a DOM element). The label can be used to add a text like <code>"ok!"</code></td>
+													</tr>
+													<tr>
+														<td><code>highlight</code></td>
+														<td class="font-weight-semibold">Adds errorClass to the element</td>
+														<td>How to highlight invalid fields. Override to decide which fields and how to highlight</td>
+													</tr>
+													<tr>
+														<td><code>unhighlight</code></td>
+														<td class="font-weight-semibold">Removes the errorClass</td>
+														<td>Called to revert changes made by option <code>highlight</code>, same arguments as highlight</td>
+													</tr>
+													<tr>
+														<td><code>ignoreTitle</code></td>
+														<td class="font-weight-semibold">false</td>
+														<td>Set to skip reading messages from the <code>title</code> attribute, helps to avoid issues with Google Toolbar; default is <code>false</code> for compability, the message-from-title is likely to be completely removed in a future release</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Plugin methods</h6>
+										<p>This library adds three jQuery plugin methods, the main entry point being the <code>validate</code> method:</p>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Method</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>validate()</code></td>
+														<td>Validates the selected form</td>
+													</tr>
+													<tr>
+														<td><code>valid()</code></td>
+														<td>Checks whether the selected form or selected elements are valid</td>
+													</tr>
+													<tr>
+														<td><code>rules()</code></td>
+														<td>Read, add and remove rules for an element</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Custom selectors</h6>
+										<p>This library also extends jQuery with three custom selectors:</p>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Method</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>:blank</code></td>
+														<td>Selects all elements with a blank value</td>
+													</tr>
+													<tr>
+														<td><code>:filled</code></td>
+														<td>Selects all elements with a filled value</td>
+													</tr>
+													<tr>
+														<td><code>:unchecked</code></td>
+														<td>Selects all elements that are unchecked</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Validator</h6>
+										<p>The validate method returns a Validator object that has a few public methods that you can use to trigger validation programmatically or change the contents of the form. The validator object has more methods, but only those documented here are intended for usage.</p>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Method</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>Validator.form()</code></td>
+														<td>Validates the form</td>
+													</tr>
+													<tr>
+														<td><code>Validator.element()</code></td>
+														<td>Validates a single element</td>
+													</tr>
+													<tr>
+														<td><code>Validator.resetForm()</code></td>
+														<td>Resets the controlled form</td>
+													</tr>
+													<tr>
+														<td><code>Validator.showErrors()</code></td>
+														<td>Show the specified messages</td>
+													</tr>
+													<tr>
+														<td><code>Validator.numberOfInvalids()</code></td>
+														<td>Returns the number of invalid fields</td>
+													</tr>
+													<tr class="border-solid">
+														<td><code>jQuery.validator.addMethod()</code></td>
+														<td>Add a custom validation method</td>
+													</tr>
+													<tr>
+														<td><code>jQuery.validator.format()</code></td>
+														<td>Replaces {n} placeholders with arguments</td>
+													</tr>
+													<tr>
+														<td><code>jQuery.validator.setDefaults()</code></td>
+														<td>Modify default settings for validation</td>
+													</tr>
+													<tr>
+														<td><code>jQuery.validator.addClassRules()</code></td>
+														<td>Add a compound class method</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Built-in Validation methods</h6>
+										<p>A set of standard validation methods is provided:</p>
+										<div class="table-responsive mb-3">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Method</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>required</code></td>
+														<td>Makes the element required</td>
+													</tr>
+													<tr>
+														<td><code>remote</code></td>
+														<td>Requests a resource to check the element for validity</td>
+													</tr>
+													<tr>
+														<td><code>minlength</code></td>
+														<td>Makes the element require a given minimum length</td>
+													</tr>
+													<tr>
+														<td><code>maxlength</code></td>
+														<td>Makes the element require a given maxmimum length</td>
+													</tr>
+													<tr>
+														<td><code>rangelength</code></td>
+														<td>Makes the element require a given value range</td>
+													</tr>
+													<tr>
+														<td><code>min</code></td>
+														<td>Makes the element require a given minimum</td>
+													</tr>
+													<tr>
+														<td><code>max</code></td>
+														<td>Makes the element require a given maximum</td>
+													</tr>
+													<tr>
+														<td><code>range</code></td>
+														<td>Makes the element require a given value range</td>
+													</tr>
+													<tr>
+														<td><code>email</code></td>
+														<td>Makes the element require a valid email</td>
+													</tr>
+													<tr>
+														<td><code>url</code></td>
+														<td>Makes the element require a valid url</td>
+													</tr>
+													<tr>
+														<td><code>date</code></td>
+														<td>Makes the element require a date</td>
+													</tr>
+													<tr>
+														<td><code>dateISO</code></td>
+														<td>Makes the element require an ISO date</td>
+													</tr>
+													<tr>
+														<td><code>number</code></td>
+														<td>Makes the element require a decimal number</td>
+													</tr>
+													<tr>
+														<td><code>digits</code></td>
+														<td>Makes the element require digits only</td>
+													</tr>
+													<tr>
+														<td><code>creditcard</code></td>
+														<td>Makes the element require a credit card number</td>
+													</tr>
+													<tr>
+														<td><code>equalTo</code></td>
+														<td>Requires the element to be the same as another one</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+
+										<p>Some more methods are provided as add-ons, and are currently included in additional-methods.js in the download package. Not all of them are documented here:</p>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Method</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>accept</code></td>
+														<td>Makes a file upload accept only specified mime-types</td>
+													</tr>
+													<tr>
+														<td><code>extension</code></td>
+														<td>Makes the element require a certain file extension</td>
+													</tr>
+													<tr>
+														<td><code>phoneUS</code></td>
+														<td>Validate for valid US phone number</td>
+													</tr>
+													<tr>
+														<td><code>require_from_group</code></td>
+														<td>Ensures a given number of fields in a group are complete</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div>
+										<h6 class="font-weight-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="font-weight-semibold">File name</td>
+														<td>validate.min.js</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Location</td>
+														<td>global_assets/js/plugins/forms/validation/</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Links</td>
+														<td>
+															<p>
+																<a href="http://jqueryvalidation.org/" class="btn btn-sm bg-danger-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+
+															<p>
+																<a href="http://jqueryvalidation.org/documentation/" class="btn btn-sm bg-slate btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-file-text2"></i></b>
+																	Full documentation
+																</a>
+															</p>
+
+															<p>
+																<a href="http://jqueryvalidation.org/files/demo/" class="btn btn-sm bg-teal-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-file-eye"></i></b>
+																	Demonstration
+																</a>
+															</p>
+
+															<a href="https://github.com/jzaefferer/jquery-validation" class="btn btn-sm bg-blue btn-labeled btn-labeled-left" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /form validation -->
+
+
+							<!-- Bootstrap tagsinput -->
+							<div class="card" id="tagsinput">
+								<div class="card-header header-elements-md-inline">
+									<h5 class="card-title">Bootstrap tagsinput</h5>
+									<div class="header-elements d-flex justify-content-between">
+										<span class="badge bg-slate">Tags</span>
+										<span class="text-muted mx-3">tagsinput.min.js</span>
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+									</div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Overview</h6>
+										<p class="mb-3">Bootstrap Tags Input is a jQuery plugin providing a Twitter Bootstrap user interface for managing tags. Integrates with Twitter Bootstraps' 2.3.2 typeahead, or use custom typeahead when using Bootstrap 3.</p>
+
+										<p>Main features:</p>
+										<ul class="list">
+											<li>Objects as tags</li>
+											<li>True multi value</li>
+											<li>Typeahead</li>
+											<li>Designed for Bootstrap 2.3.2 and 3</li>
+										</ul>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Usage</h6>
+										<div class="mb-3">
+											<p>The plugin is jQuery and Bootstrap dependent. Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+											<pre><code class="language-markup">&lt;!-- Load jQuery -->
+&lt;script src="../../../../global_assets/js/main/jquery.min.js">&lt;/script>
+
+&lt;!-- Load Bootstrap -->
+&lt;script src="../../../../global_assets/js/main/bootstrap.min.js">&lt;/script>
+
+&lt;!-- Load plugin -->
+&lt;script src="../../../../global_assets/js/plugins/forms/tags/tagsinput.min.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Create an HTML element with <code>id</code>, <code>class</code>, or <code>name</code> attributes:</p>
+											<pre><code class="language-markup">&lt;!-- Create element -->
+&lt;input type="text" value="Amsterdam, Washington, Sydney, Beijing" class="tags-input">
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Finally call the plugin via JavaScript:</p>
+											<pre><code class="language-javascript">// Basic initialization
+$('.tags-input').tagsinput({
+	// options
+});
+</code></pre>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Plugin options</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Name</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>tagClass</code></td>
+														<td>Classname for the tags, or a function returning a classname</td>
+													</tr>
+													<tr>
+														<td><code>itemValue</code></td>
+														<td>When adding objects as tags, <code>itemValue</code> must be set to the name of the property containing the item's value, or a function returning an item's value</td>
+													</tr>
+													<tr>
+														<td><code>itemText</code></td>
+														<td>When adding objects as tags, you can set <code>itemText</code> to the name of the property of item to use for a its tag's text. You may also provide a function which returns an item's value. When this options is not set, the value of <code>itemValue</code> will be used</td>
+													</tr>
+													<tr>
+														<td><code>confirmKeys</code></td>
+														<td>Array of keycodes which will add a tag when typing in the input. (default: <code>[13, 188]</code>, which are <kbd>ENTER</kbd> and comma)</td>
+													</tr>
+													<tr>
+														<td><code>maxTags</code></td>
+														<td>When set, no more than the given number of tags are allowed to add (default: <code>undefined</code>). When <code>maxTags</code> is reached, a class <code>'bootstrap-tagsinput-max'</code> is placed on the tagsinput element</td>
+													</tr>
+													<tr>
+														<td><code>maxChars</code></td>
+														<td>Defines the maximum length of a single tag. (default: <code>undefined</code>)</td>
+													</tr>
+													<tr>
+														<td><code>trimValue</code></td>
+														<td>When <code>true</code>, automatically removes all whitespace around tags. (default: <code>false</code>)</td>
+													</tr>
+													<tr>
+														<td><code>allowDuplicates</code></td>
+														<td>When <code>true</code>, the same tag can be added multiple times. (default: <code>false</code>)</td>
+													</tr>
+													<tr>
+														<td><code>freeInput</code></td>
+														<td>Allow creating tags which are not returned by typeahead's source (default: <code>true</code>). This is only possible when using string as tags. When itemValue option is set, this option will be ignored</td>
+													</tr>
+													<tr>
+														<td><code>typeahead</code></td>
+														<td>Object containing typeahead specific options</td>
+													</tr>
+													<tr>
+														<td><code>[typeahead] source</code></td>
+														<td>An array (or function returning a promise or array), which will be used as source for a typeahead</td>
+													</tr>
+													<tr>
+														<td><code>onTagExists</code></td>
+														<td>Function invoked when trying to add an item which allready exists. By default, the existing tag hides and fades in</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Plugin methods</h6>
+										<div class="mb-3">
+											<p>Example usage:</p>
+											<pre><code class="language-javascript">// Method usage example
+$('input').tagsinput('add', 'some tag');
+</code></pre>
+
+										</div>
+
+										<p>Available methods</p>										
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Method</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>add</code></td>
+														<td>Adds a tag</td>
+													</tr>
+													<tr>
+														<td><code>remove</code></td>
+														<td>Removes a tag</td>
+													</tr>
+													<tr>
+														<td><code>removeAll</code></td>
+														<td>Removes all tags</td>
+													</tr>
+													<tr>
+														<td><code>focus</code></td>
+														<td>Sets focus in the tagsinput</td>
+													</tr>
+													<tr>
+														<td><code>input</code></td>
+														<td>Returns the tagsinput's internal <code>&lt;input /></code>, which is used for adding tags. You could use this to add your own typeahead behaviour for example</td>
+													</tr>
+													<tr>
+														<td><code>refresh</code></td>
+														<td>Refreshes the tags input UI. This might be usefull when you're adding objects as tags. When an object's text changes, you'll have to refresh to update the matching tag's text</td>
+													</tr>
+													<tr>
+														<td><code>destroy</code></td>
+														<td>Removes tagsinput behaviour</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Plugin events</h6>
+										<div class="mb-3">
+											<p>Example usage:</p>
+											<pre><code class="language-javascript">// Event usage example
+$('input').on('beforeItemAdd', function(event) {
+	// event.item: contains the item
+	// event.cancel: set to true to prevent the item getting added
+});
+</code></pre>
+
+										</div>
+
+										<p>Available events</p>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Method</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>beforeItemAdd</code></td>
+														<td>Triggered just before an item gets added</td>
+													</tr>
+													<tr>
+														<td><code>itemAdded</code></td>
+														<td>Triggered just after an item got added</td>
+													</tr>
+													<tr>
+														<td><code>beforeItemRemove</code></td>
+														<td>Triggered just before an item gets removed</td>
+													</tr>
+													<tr>
+														<td><code>itemRemoved</code></td>
+														<td>Triggered just after an item got removed</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div>
+										<h6 class="font-weight-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="font-weight-semibold">File name</td>
+														<td>tagsinput.min.js</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Location</td>
+														<td>global_assets/js/plugins/forms/tags/</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Links</td>
+														<td>
+															<p>
+																<a href="http://bootstrap-tagsinput.github.io/bootstrap-tagsinput/examples/" class="btn btn-sm bg-danger-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+
+															<a href="https://github.com/bootstrap-tagsinput/bootstrap-tagsinput" class="btn btn-sm bg-blue btn-labeled btn-labeled-left" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /bootstrap tagsinput -->
+
+
+
+
+							<!-- Tokenfield -->
+							<div class="card" id="tokenfield">
+								<div class="card-header header-elements-md-inline">
+									<h5 class="card-title">Tokenfield</h5>
+									<div class="header-elements d-flex justify-content-between">
+										<span class="badge bg-slate">Tags</span>
+										<span class="text-muted mx-3">tokenfield.min.js</span>
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+									</div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Overview</h6>
+										<p class="mb-3">Advanced tagging/tokenizing plugin for jQuery and Twitter Bootstrap with a focus on keyboard and copy-paste support. Also supports validation states, typeahead implementation, different sizes and states, form layouts, directions, copy and paste, width options and other features.</p>
+
+										<p>Core features:</p>
+										<ul>
+											<li>Copy &amp; paste tokens with <kbd>Ctrl+C</kbd> and <kbd>Ctrl+V</kbd></li>
+											<li>Keyboard navigation, delete tokens with keyboard (<kbd>arrow</kbd> keys, <kbd>Shift + arrow</kbd> keys)</li>
+											<li>Select specific tokens with <kbd>Ctrl + click</kbd> and <kbd>Shift + click</kbd></li>
+											<li>Twitter Typeahead and jQuery UI Autocomplete support</li>
+										</ul>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Usage</h6>
+										<div class="mb-3">
+											<p>The plugin is jQuery and Bootstrap (CSS only) dependent. Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+											<pre><code class="language-markup">&lt;!-- Load jQuery -->
+&lt;script src="../../../../global_assets/js/main/jquery.min.js">&lt;/script>
+
+&lt;!-- Load plugin -->
+&lt;script src="../../../../global_assets/js/plugins/forms/tags/tagsinput.min.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Create an HTML element:</p>
+											<pre><code class="language-markup">&lt;!-- Create element -->
+&lt;input type="text" class="form-control" id="tokenfield-typeahead" value="red,green,blue">
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Finally call the plugin via JavaScript:</p>
+											<pre><code class="language-javascript">// Basic initialization
+$('.tokenfield').tokenfield({
+	// options
+});
+</code></pre>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Plugin options</h6>
+										<p>Options for individual tokenfields can alternatively be specified through the use of data attributes, as explained below:</p>
+
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Name</th>
+														<th>Default</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>tokens</code></td>
+														<td class="font-weight-semibold">[]</td>
+														<td>Tokens (or tags). Can be a string with comma-separated values, an array of strings or an array of objects</td>
+													</tr>
+													<tr>
+														<td><code>limit</code></td>
+														<td class="font-weight-semibold">0</td>
+														<td>Maximum number of tokens allowed. 0 = unlimited</td>
+													</tr>
+													<tr>
+														<td><code>minLength</code></td>
+														<td class="font-weight-semibold">0</td>
+														<td>Minimum length required for token value</td>
+													</tr>
+													<tr>
+														<td><code>minWidth</code></td>
+														<td class="font-weight-semibold">60</td>
+														<td>Minimum input field width. In pixels</td>
+													</tr>
+													<tr>
+														<td><code>autocomplete</code></td>
+														<td class="font-weight-semibold">{}</td>
+														<td>jQuery UI Autocomplete options</td>
+													</tr>
+													<tr>
+														<td><code>showAutocompleteOnFocus</code></td>
+														<td class="font-weight-semibold">false</td>
+														<td>Whether to show autocomplete suggestions menu on focus or not. Works only for jQuery UI Autocomplete, as Typeahead has no support for this kind of behavior</td>
+													</tr>
+													<tr>
+														<td><code>typeahead</code></td>
+														<td class="font-weight-semibold">[]</td>
+														<td>Arguments for Twitter Typeahead. The first argument should be an <code>options</code> hash (or null if you want to use the defaults). The second argument should be a <code>dataset</code>. Multiple datasets are also supported</td>
+													</tr>
+													<tr>
+														<td><code>createTokensOnBlur</code></td>
+														<td class="font-weight-semibold">false</td>
+														<td>Whether to turn input into tokens when tokenfield loses focus or not</td>
+													</tr>
+													<tr>
+														<td><code>delimiter</code></td>
+														<td class="font-weight-semibold">','</td>
+														<td>A character or an array of characters that will trigger token creation on keypress event. Defaults to <code>','</code> (comma). Note - this does not affect <kbd>Enter</kbd> or <kbd>Tab</kbd> keys, as they are handled in the keydown event. The first delimiter will be used as a separator when getting the list of tokens or copy-pasting tokens</td>
+													</tr>
+													<tr>
+														<td><code>beautify</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>Whether to insert spaces after each token when getting a comma-separated list of tokens</td>
+													</tr>
+													<tr>
+														<td><code>inputType</code></td>
+														<td class="font-weight-semibold">'text'</td>
+														<td>HTML type attribute for the token input. This is useful for specifying an HTML5 input type like <code>'email'</code>, <code>'url'</code> or <code>'tel'</code> which allows mobile browsers to show a specialized virtual keyboard optimized for different types of input. This only sets the type of the visible token input, but does not touch the original input field. So you may set the original input to have <code>type="text"</code> but set this inputType option to <code>'email'</code> if you only want to take advantage of the email style keyboard on mobile, but don't want to enable HTML5 native email validation on the original hidden input</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Plugin methods</h6>
+										<div class="mb-3">
+											<p>Example usage:</p>
+											<pre><code class="language-javascript">// Method usage example
+$('#myField').tokenfield('createToken', {
+	value: 'violet',
+	label: 'Violet'
+});
+</code></pre>
+
+										</div>
+
+										<p>Available methods</p>										
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Method</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>.tokenfield(options)</code></td>
+														<td>Initializes an input with a tokenfield</td>
+													</tr>
+													<tr>
+														<td><code>.tokenfield('setTokens', tokens)</code></td>
+														<td>Manually set the tokenfield content (replacing the old content)</td>
+													</tr>
+													<tr>
+														<td><code>.tokenfield('createToken', token)</code></td>
+														<td>Manually create a token and append it to the input</td>
+													</tr>
+													<tr>
+														<td><code>.tokenfield('getTokens', active)</code></td>
+														<td>Get an array of tokens from the input. Set <code>active</code> to <code>true</code> to return only selected tokens</td>
+													</tr>
+													<tr>
+														<td><code>.tokenfield('getTokensList', delimiter, beautify, active)</code></td>
+														<td>Get a comma-separated list of the tokens from the input. You can use an alternative separator by supplying also a <code>delimiter</code> argument. Setting <code>beautify</code> to <code>false</code> will prevent adding a space after each token. Set <code>active</code> to <code>true</code> to return only selected tokens</td>
+													</tr>
+													<tr>
+														<td><code>.tokenfield('disable')</code></td>
+														<td>Disable tokenfield (just like a normal input field)</td>
+													</tr>
+													<tr>
+														<td><code>.tokenfield('enable')</code></td>
+														<td>Enable tokenfield (just like a normal input field)</td>
+													</tr>
+													<tr>
+														<td><code>.tokenfield('readonly')</code></td>
+														<td>Make tokenfield a readonly field (just like a normal input field)</td>
+													</tr>
+													<tr>
+														<td><code>.tokenfield('writeable')</code></td>
+														<td>Make tokenfield writeable (just like a normal input field)</td>
+													</tr>
+													<tr>
+														<td><code>.tokenfield('destroy')</code></td>
+														<td>Destroy tokenfield and restore original input</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Plugin events</h6>
+										<div class="mb-3">
+											<p>Tokenfield exposes a few events for hooking into it's functionality. Example usage:</p>
+											<pre><code class="language-javascript">// Event usage example
+$('#tokenfield').on('tokenfield:createtoken', function (e) {
+	var data = e.attrs.value.split('|')
+	e.attrs.value = data[1] || data[0]
+	e.attrs.label = data[1] ? data[0] + ' (' + data[1] + ')' : data[0]
+});
+</code></pre>
+
+										</div>
+
+										<p>Available events</p>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Method</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>tokenfield:initialize</code></td>
+														<td>Fires after Tokenfield has been initialized</td>
+													</tr>
+													<tr>
+														<td><code>tokenfield:createtoken</code></td>
+														<td>This event fires when a token is all set up to be created, but before it is inserted into the DOM and event listeners are attached. You can use this event to manipulate token value and label by changing the appropriate values of <code>attrs</code> property of the event. Calling <code>event.preventDefault()</code> or doing <code>return false</code> in the event handler will prevent the token from being created</td>
+													</tr>
+													<tr>
+														<td><code>tokenfield:createdtoken</code></td>
+														<td>This event is fired after the token has been created. Here, <code>attrs</code> property of the event is also available, but is basically read-only. You can also get a direct reference to the token DOM object via e.relatedTarget</td>
+													</tr>
+													<tr>
+														<td><code>tokenfield:edittoken</code></td>
+														<td>This event is fired just before a token is about to be edited. This allows you to manipluate the input field value before it is created. Again, to do this, manipluate the <code>attrs</code> property of the event. Here you can also access the token DOM object with <code>e.relatedTarget</code>. Calling <code>event.preventDefault()</code> or doing <code>return false</code> in the event handler will prevent the token from being edited</td>
+													</tr>
+													<tr>
+														<td><code>tokenfield:editedtoken</code></td>
+														<td>This event is fired when a token is ready for being edited. It means that the token has been replaced by an input field</td>
+													</tr>
+													<tr>
+														<td><code>tokenfield:removetoken</code></td>
+														<td>This event is fired right before a token is removed. Here you can also access the token DOM object with <code>e.relatedTarget</code>. Calling <code>event.preventDefault()</code> or doing return false in the event handler will prevent the token from being removed. You can access token label and value by checking the <code>attrs</code> property of the event. Also, <code>e.relatedTarget</code> is a reference to the token DOM object</td>
+													</tr>
+													<tr>
+														<td><code>tokenfield:removedtoken</code></td>
+														<td>This event is fired right after a token is removed from the DOM. You can access token label and value by checking the <code>attrs</code> property of the event</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div>
+										<h6 class="font-weight-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="font-weight-semibold">File name</td>
+														<td>tokenfield.min.js</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Location</td>
+														<td>global_assets/js/plugins/forms/tags/</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Links</td>
+														<td>
+															<p>
+																<a href="http://sliptree.github.io/bootstrap-tokenfield/" class="btn btn-sm bg-danger-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+
+															<a href="https://github.com/sliptree/bootstrap-tokenfield" class="btn btn-sm bg-blue btn-labeled btn-labeled-left" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /tokenfield -->
+
+
+
+
+
+							<!-- Tokenfield -->
+							<div class="card" id="alpaca">
+								<div class="card-header header-elements-md-inline">
+									<h5 class="card-title">Alpaca forms</h5>
+									<div class="header-elements d-flex justify-content-between">
+										<span class="badge bg-slate">Extensions</span>
+										<span class="text-muted mx-3">alpaca.min.js</span>
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+									</div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Overview</h6>
+										<p>Alpaca provides the easiest way to generate interactive HTML5 forms for web and mobile applications. It uses JSON Schema and simple Handlebars templates to generate great looking user interfaces on top of Twitter Bootstrap, jQuery UI, jQuery Mobile and HTML5.</p>
+
+										<p>Everything you need is provided out of the box. Alpaca comes pre-stocked with a large library of controls, templates, layouts and features to make rendering JSON-driven forms easy. It is designed around an extensible object-oriented pattern, allowing you to implement new controls, templates, I18N bundles and custom data persistence for your projects.</p>
+
+										<p>lpaca is open-source and provided to you under the Apache 2.0 license. It is supported by Cloud CMS and is in use by organizations and within projects all around the world.</p>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Usage</h6>
+										<div class="mb-3">
+											<p>The plugin is jQuery and Bootstrap (CSS only) dependent. Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+											<pre><code class="language-markup">&lt;!-- dependencies (jquery, handlebars and bootstrap) -->
+&lt;script src="../../../../global_assets/js/main/jquery.min.js">&lt;/script>
+&lt;script src="../../../../global_assets/js/main/bootstrap.min.js">&lt;/script>
+ 
+&lt;script src="../../../../global_assets/js/plugins/forms/inputs/alpaca/alpaca.min.js">&lt;/script></code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Create an HTML element:</p>
+											<pre><code class="language-markup">&lt;!-- Create element -->
+&lt;div id="form1">&lt;/div>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Finally call <code>$.alpaca()</code> with your form schema and any configuration:</p>
+											<pre><code class="language-javascript">// Basic initialization
+$("#form1").alpaca({
+    "schema": {
+        "title": "What do you think of Alpaca?",
+        "type": "object",
+        "properties": {
+            "name": {
+                "type": "string",
+                "title": "Name"
+            },
+            "ranking": {
+                "type": "string",
+                "title": "Ranking",
+                "enum": ['excellent', 'not too shabby', 'alpaca built my hotrod']
+            }
+        }
+    }
+});
+</code></pre>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Alpaca documentation</h6>
+										Full Alpaca documentation can be found online on <a href="http://www.alpacajs.org/index.html">Official library website</a>. It's quite big, with a lot of options, examples, events and methods. I find it useless to copy them all and paste to the Limitless documentation, nobody can represent and describe library features better than its creators. Below you can find additional links related to Alpaca library.
+									</div>
+
+									<div>
+										<h6 class="font-weight-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="font-weight-semibold">File name</td>
+														<td>alpaca.min.js</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Location</td>
+														<td>global_assets/js/plugins/forms/inputs/alpaca/</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Links</td>
+														<td>
+															<p>
+																<a href="http://www.alpacajs.org/index.html" class="btn btn-sm bg-danger-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+
+															<p>
+																<a href="http://www.alpacajs.org/documentation.html" class="btn btn-sm bg-slate btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-file-text2"></i></b>
+																	Full documentation
+																</a>
+															</p>
+
+															<a href="https://github.com/gitana/alpaca" class="btn btn-sm bg-blue btn-labeled btn-labeled-left" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /tokenfield -->
+
+					</div>
+					<!-- /left content -->
+
+
+					<!-- Right sidebar component -->
+					<div class="sidebar-sticky w-100 w-md-auto order-1 order-md-2">
+						<div class="sidebar sidebar-light sidebar-component sidebar-component-right sidebar-expand-md mb-3">
+							<div class="sidebar-content">
+								<div class="card">
+									<div class="card-header bg-transparent header-elements-inline">
+										<span class="text-uppercase font-size-sm font-weight-semibold">Page navigation</span>
+										<div class="header-elements">
+											<div class="list-icons">
+						                		<a class="list-icons-item" data-action="collapse"></a>
+					                		</div>
+				                		</div>
+									</div>
+
+									<div class="card-body">
+										<a href="http://themeforest.net/user/kopyov" class="btn bg-blue btn-block" target="_blank"><i class="icon-reading mr-2"></i> Contact author</a>
+									</div>
+
+									<ul class="nav nav-sidebar nav-scrollspy" data-nav-type="accordion">
+										<li class="nav-item-header pt-0"><div class="text-uppercase font-size-xs line-height-xs">Sections</div> <i class="icon-menu"></i></li>
+										<li class="nav-item"><a href="#autosize" class="nav-link">Autosize</a></li>
+										<li class="nav-item"><a href="#listbox" class="nav-link">Dual Listbox</a></li>
+										<li class="nav-item"><a href="#formatter" class="nav-link">Input Formatter</a></li>
+										<li class="nav-item"><a href="#maxlength" class="nav-link">Bootstrap Maxlength</a></li>
+										<li class="nav-item"><a href="#passy" class="nav-link">Passy</a></li>
+										<li class="nav-item"><a href="#touchspin" class="nav-link">Bootstrap Touchspin</a></li>
+										<li class="nav-item"><a href="#typeahead" class="nav-link">Twitter Typeahead</a></li>
+										<li class="nav-item"><a href="#validation" class="nav-link">Form Validation</a></li>
+										<li class="nav-item"><a href="#tagsinput" class="nav-link">Bootstrap Tags Input</a></li>
+										<li class="nav-item"><a href="#tokenfield" class="nav-link">Tokenfield</a></li>
+										<li class="nav-item"><a href="#alpaca" class="nav-link">Alpaca</a></li>
+										<li class="nav-item-divider"></li>
+										<li class="nav-item"><a href="#" class="nav-link">Go to top <i class="icon-circle-up2 mr-0 ml-auto"></i></a></li>
+									</ul>
+								</div>
+				            </div>
+						</div>
+					</div>
+					<!-- /right sidebar component -->
+
+				</div>
+				<!-- /inner container -->
+
+			</div>
+			<!-- /content area -->
+
+
+			<!-- Footer -->
+			<div class="navbar navbar-expand-lg navbar-light">
+				<div class="text-center d-lg-none w-100">
+					<button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse" data-target="#navbar-footer">
+						<i class="icon-unfold mr-2"></i>
+						Footer
+					</button>
+				</div>
+
+				<div class="navbar-collapse collapse" id="navbar-footer">
+					<span class="navbar-text">
+						&copy; 2015 - 2018. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
+					</span>
+
+					<ul class="navbar-nav ml-lg-auto">
+						<li class="nav-item"><a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov" class="navbar-nav-link font-weight-semibold"><span class="text-pink-400"><i class="icon-cart2 mr-2"></i> Purchase</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /footer -->
+
+		</div>
+		<!-- /main content -->
+
+	</div>
+	<!-- /page content -->
+
+</body>
+</html>

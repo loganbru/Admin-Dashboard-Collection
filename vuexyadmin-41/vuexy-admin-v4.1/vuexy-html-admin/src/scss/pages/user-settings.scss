@@ -1,0 +1,32 @@
+// ================================================================================================
+//  File Name: user-settings.scss
+//  Description: Page User Settings Content
+//  ----------------------------------------------------------------------------------------------
+//  Item Name: Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template
+//  Author: PIXINVENT
+//  Author URL: http://www.themeforest.net/user/pixinvent
+// ================================================================================================
+
+// Core variables and mixins overrides
+@import "../bootstrap/functions";
+@import "../core/variables/variables";
+@import "../bootstrap/variables";
+
+// Overrides user variable
+@import "../core/variables/components-variables";
+
+
+// scss for profile picture upload
+.user-form{
+    .dropzone{
+      min-height: 200px;
+      width: 200px;
+      .dz-message{
+        font-size: 1rem;
+        height: auto;
+        &:before{
+          font-size: 2rem;
+        }
+      }
+    }
+}

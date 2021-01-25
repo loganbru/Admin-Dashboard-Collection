@@ -1,0 +1,52 @@
+//
+// Header Brand
+//
+
+
+
+// Header brand
+.kt-header__brand {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	align-content: flex-begin;
+	flex-direction: row;
+	padding: 0;
+	position: relative;
+
+	// Brand logo
+	.kt-header__brand-logo {
+		display: flex;
+		justify-content: flex-begin;
+		align-items: flex-end;
+	}
+
+	// Brand nav
+	.kt-header__brand-nav {
+		display: flex;
+		margin: 0.25rem 0 0 2.5rem;
+
+		// Dropdown
+		.dropdown {
+			.btn {
+				border-color: rgba(#fff, 0.1);
+				padding-left: 1.5rem;
+				padding-right: 1.5rem;
+			}
+		}
+
+		// Header minimize mode
+		.kt-header--minimize & {
+			margin-left: 1.75rem;		
+		}
+	}
+}
+
+// Tablet and mobile mode(1024px and below)
+@include kt-tablet-and-mobile() {
+	.kt-header__brand {
+		.kt-header__brand-nav {
+			display: none;
+		}
+	}
+}

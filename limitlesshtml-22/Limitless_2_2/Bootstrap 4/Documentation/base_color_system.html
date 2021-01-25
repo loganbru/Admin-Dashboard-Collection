@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/layout.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script src="assets/js/main/jquery.min.js"></script>
+	<script src="assets/js/main/bootstrap.bundle.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script src="assets/js/plugins/prism.min.js"></script>
+	<script src="assets/js/plugins/sticky.min.js"></script>
+	
+	<script src="assets/js/main/app.js"></script>
+	<script src="assets/js/pages/components_scrollspy.js"></script>
+	<!-- /theme JS files -->
+
+	<style type="text/css">
+		.color-list {
+			list-style: none;
+			margin: -1px;
+			padding: 0;
+		}
+
+		.color-list > li {
+			padding: 15px;
+			color: #fff;
+		}
+
+		.color-list > li:first-child {
+			border-radius: 3px 3px 0 0;
+		}
+
+		.color-list > li > span {
+			float: right;
+		}
+	</style>
+
+</head>
+
+<body data-spy="scroll" data-target=".sidebar-component-right">
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-expand-md navbar-light">
+		<div class="navbar-header navbar-dark d-none d-md-flex align-items-md-center">
+			<div class="navbar-brand navbar-brand-md">
+				<a href="index.html" class="d-inline-block">
+					<img src="assets/images/logo_light.png" alt="">
+				</a>
+			</div>
+	
+			<div class="navbar-brand navbar-brand-xs">
+				<a href="index.html" class="d-inline-block">
+					<img src="assets/images/logo_icon_light.png" alt="">
+				</a>
+			</div>
+		</div>
+
+		<div class="d-flex flex-1 d-md-none">
+			<div class="navbar-brand mr-auto">
+				<a href="index.html" class="d-inline-block">
+					<img src="assets/images/logo_dark.png" alt="">
+				</a>
+			</div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile">
+				<i class="icon-tree5"></i>
+			</button>
+			<button class="navbar-toggler sidebar-mobile-main-toggle" type="button">
+				<i class="icon-paragraph-justify3"></i>
+			</button>
+			<button class="navbar-toggler sidebar-mobile-component-toggle" type="button">
+				<i class="icon-unfold"></i>
+			</button>
+		</div>
+
+		<div class="collapse navbar-collapse" id="navbar-mobile">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a href="#" class="navbar-nav-link sidebar-control sidebar-main-hide d-none d-md-block">
+						<i class="icon-paragraph-justify3"></i>
+					</a>
+				</li>
+
+				<li class="nav-item">
+					<a href="#" class="navbar-nav-link sidebar-control sidebar-component-toggle d-none d-md-block">
+						<i class="icon-transmission"></i>
+					</a>
+				</li>
+			</ul>
+
+			<ul class="navbar-nav ml-md-auto">
+				<li class="nav-item dropdown">
+					<a href="other_changelog.html" class="navbar-nav-link">
+						<i class="icon-history mr-2"></i>
+						Changelog
+						<span class="badge bg-warning-400 badge-pill position-static ml-md-2">2.2</span>
+					</a>					
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page content -->
+	<div class="page-content">
+
+		<!-- Main sidebar -->
+		<div class="sidebar sidebar-dark sidebar-main sidebar-expand-md">
+
+			<!-- Sidebar mobile toggler -->
+			<div class="sidebar-mobile-toggler text-center">
+				<a href="#" class="sidebar-mobile-main-toggle">
+					<i class="icon-arrow-left8"></i>
+				</a>
+				Navigation
+				<a href="#" class="sidebar-mobile-expand">
+					<i class="icon-screen-full"></i>
+					<i class="icon-screen-normal"></i>
+				</a>
+			</div>
+			<!-- /sidebar mobile toggler -->
+
+
+			<!-- Sidebar content -->
+			<div class="sidebar-content">
+
+        		<!-- Support -->
+				<div class="card card-body">
+					<a href="http://kopyov.ticksy.com" class="btn bg-success-400 btn-block" target="_blank"><i class="icon-lifebuoy mr-2"></i> Limitless support</a>
+				</div>
+				<!-- /support -->
+
+
+				<!-- Main navigation -->
+				<div class="card card-sidebar-mobile">
+					<ul class="nav nav-sidebar" data-nav-type="accordion">
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Main</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="index.html" class="nav-link">Introduction</a></li>
+						<li class="nav-item"><a href="main_getting_started.html" class="nav-link">Getting started</a></li>
+						<li class="nav-item"><a href="main_starter_kit.html" class="nav-link">Starter kit</a></li>
+						<li class="nav-item"><a href="main_rtl.html" class="nav-link">RTL layout</a></li>
+
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Basic functionality</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="base_scss_css.html" class="nav-link">SCSS and CSS</a></li>
+						<li class="nav-item"><a href="base_scss_compile.html" class="nav-link">Compiling SCSS</a></li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link">Plugins</a>
+							<ul class="nav nav-group-sub" data-submenu-title="Plugins">
+								<li class="nav-item"><a href="plugins_forms.html" class="nav-link">Forms</a></li>
+								<li class="nav-item"><a href="plugins_forms_styling.html" class="nav-link">Form styling</a></li>
+								<li class="nav-item"><a href="plugins_editors.html" class="nav-link">Editors</a></li>
+								<li class="nav-item"><a href="plugins_uploaders.html" class="nav-link">Uploaders</a></li>
+								<li class="nav-item"><a href="plugins_extensions.html" class="nav-link">Extensions</a></li>
+								<li class="nav-item"><a href="plugins_notifications.html" class="nav-link">Notifications</a></li>
+								<li class="nav-item"><a href="plugins_pickers.html" class="nav-link">Pickers</a></li>
+								<li class="nav-item"><a href="plugins_tables.html" class="nav-link">Tables</a></li>
+								<li class="nav-item"><a href="plugins_ui.html" class="nav-link">UI</a></li>
+								<li class="nav-item"><a href="plugins_vis.html" class="nav-link">Visualization</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a href="base_icons.html" class="nav-link">Icons</a></li>
+
+						<li class="nav-item"><a href="base_bootstrap.html" class="nav-link">Bootstrap</a></li>
+						<li class="nav-item"><a href="base_color_system.html" class="nav-link active">Color system</a></li>
+						<li class="nav-item"><a href="base_helpers.html" class="nav-link">Helpers</a></li>
+						<li class="nav-item"><a href="base_themes.html" class="nav-link">Themes</a></li>
+
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Layout options</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="layout_overview.html" class="nav-link">Layouts</a></li>
+						<li class="nav-item"><a href="layout_sidebars.html" class="nav-link">Sidebars</a></li>
+						<li class="nav-item"><a href="layout_navbars.html" class="nav-link">Navbars</a></li>
+						<li class="nav-item"><a href="layout_v_nav.html" class="nav-link">Vertical navigation</a></li>
+						<li class="nav-item"><a href="layout_h_nav.html" class="nav-link">Horizontal navigation</a></li>
+						<li class="nav-item"><a href="layout_page_header.html" class="nav-link">Page header</a></li>
+
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Other</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="other_credits.html" class="nav-link">Sources and credits</a></li>
+						<li class="nav-item"><a href="other_changelog.html" class="nav-link">Changelog <span class="badge badge-pill bg-warning-400 ml-auto">version 2.2</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /main navigation -->
+
+		</div>
+		<!-- /main sidebar -->
+
+
+		<!-- Main content -->
+		<div class="content-wrapper">
+
+			<!-- Page header -->
+			<div class="page-header">
+				<div class="page-header-content header-elements-md-inline">
+					<div class="page-title d-flex">
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Limitless</span> - Color System</h4>
+						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+					</div>
+
+					<div class="header-elements d-none py-0 mb-3 mb-md-0">
+						<div class="breadcrumb">
+							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
+							<span class="breadcrumb-item active">Color system</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /page header -->
+			
+
+			<!-- Content area -->
+			<div class="content pt-0">
+
+				<!-- Inner container -->
+				<div class="d-flex align-items-start flex-column flex-md-row">
+
+					<!-- Left content -->
+					<div class="order-2 order-md-1">
+
+							<!-- Overview -->
+							<div class="card" id="overview">
+								<div class="card-header header-elements-inline">
+									<h5 class="card-title">System overview</h5>
+									<div class="header-elements">
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+					                </div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="font-weight-semibold" id="overview_intro">Overview</h6>
+										<p>Custom colors system - a set of CSS classes that allow you to change colors on-the-fly directly in markup by changing class name. All colors correspond to <a href="https://www.google.com/design/spec/style/color.html#color-color-palette" target="_blank">Material design palette</a> and includes 16 color palettes: 5 contextual (primary, danger, success, warning and info) and 11 alternative. The system is completely optional and moved to a separate <code>colors.min.css</code> minified CSS file.</p>
+
+										<p>Basically color system is supported by almost all layout elements and components: sidebar, navbar, content panels, links, text, icons, alerts, dropdown menus, form components, tables, tabs, progress bars, buttons, notifications, popovers, tooltips etc. The system consists of 16 color palettes, each palette includes 1 main color and 5 alternate colors that are darker and lighter than the main one.</p>
+
+										<p>Available color palettes:</p>
+										<ul class="list">
+											<li>Primary palette</li>
+											<li>Danger palette</li>
+											<li>Success palette</li>
+											<li>Warning palette</li>
+											<li>Info palette</li>
+											<li>Pink palette</li>
+											<li>Violet palette</li>
+											<li>Purple palette</li>
+											<li>Indigo palette</li>
+											<li>Blue palette</li>
+											<li>Teal palette</li>
+											<li>Green palette</li>
+											<li>Orange palette</li>
+											<li>Brown palette</li>
+											<li>Grey palette</li>
+											<li>Slate palette</li>
+										</ul>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold" id="overview_usage">Basic usage</h6>
+										<p>Usage is very simple, all you need to do is to add one of the color CSS classes to the element. Limitless template includes a bunch of pages with color palette usage demonstration - in components, elements and layout parts. Depending on what part of element you want to change, available classes are (<code>primary</code> palette is an example):</p>
+										<div class="table-responsive">
+											<table class="table table-bordered">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Class</th>
+														<th style="width: 250px;">Prefixes</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th colspan="3" class="table-active">Background</th>
+													</tr>
+													<tr>
+														<td><code>.bg-primary</code></td>
+														<td class="font-weight-semibold">*-300, *-400, *-600, *-700, *-800</td>
+														<td>Background color. Can be added to dropdown menus, sidebar, navbar, alerts, inputs, panels, selects etc.</td>
+													</tr>
+
+													<tr>
+														<th colspan="3" class="table-active">Borders</th>
+													</tr>
+													<tr>
+														<td><code>.border-primary</code></td>
+														<td rowspan="5" class="font-weight-semibold">*-300, *-400, *-600, *-700, *-800</td>
+														<td>4 sides border color. Any element that contains border</td>
+													</tr>
+													<tr>
+														<td><code>border-top-primary</code></td>
+														<td>Top border only. Any element that contains all sides border or <strong>top</strong> border only</td>
+													</tr>
+													<tr>
+														<td><code>border-bottom-primary</code></td>
+														<td>Bottom border only. Any element that contains all sides border or <strong>bottom</strong> border only</td>
+													</tr>
+													<tr>
+														<td><code>border-left-primary</code></td>
+														<td>Left border only. Any element that contains all sides border or <strong>left</strong> border only</td>
+													</tr>
+													<tr>
+														<td><code>border-right-primary</code></td>
+														<td>Right border only. Any element that contains all sides border or <strong>right</strong> border only</td>
+													</tr>
+
+													<tr>
+														<th colspan="3" class="table-active">Text</th>
+													</tr>
+													<tr>
+														<td><code>.text-primary</code></td>
+														<td class="font-weight-semibold">*-300, *-400, *-600, *-700, *-800</td>
+														<td>Text color. Can be used in text, icons and links</td>
+													</tr>
+
+													<tr>
+														<th colspan="3" class="table-active">Alpha</th>
+													</tr>
+													<tr>
+														<td><code>.alpha-primary</code></td>
+														<td class="font-weight-semibold"><i>none</i></td>
+														<td>Light background or text color. Useful when you need to use lighter color variations, in alerts for example</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold" id="overview_colors">Colors</h6>
+										<p>Color system uses <a href="https://www.google.com/design/spec/style/color.html#color-color-palette" target="_blank">Material design palette</a> colors with limitations: only 7 colors of 14 are used. I just tried to keep only main colors and drop unnecessary ones. But if you want to add them back, it's relatively easy to do in SCSS files. Colored blocks below demonstrate all color codes and variables used in the template:</p>
+
+										<div class="row">
+											<div class="col-lg-3">
+												<div class="card">
+													<ul class="color-list">
+														<li style="background-color: #64B5F6;">300 <span>#64B5F6</span></li>
+														<li style="background-color: #42A5F5;">400 <span>#42A5F5</span></li>
+														<li style="background-color: #2196F3;">500 <span>#2196F3</span></li>
+														<li style="background-color: #1E88E5;">600 <span>#1E88E5</span></li>
+														<li style="background-color: #1976D2;">700 <span>#1976D2</span></li>
+														<li style="background-color: #1565C0;">800 <span>#1565C0</span></li>
+													</ul>
+													<div class="p-3">
+														<div class="font-weight-semibold text-uppercase font-size-sm">Primary palette</div>
+														<div class="text-muted">@color-primary-*</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-lg-3">
+												<div class="card">
+													<ul class="color-list">
+														<li style="background-color: #E57373;">300 <span>#E57373</span></li>
+														<li style="background-color: #EF5350;">400 <span>#EF5350</span></li>
+														<li style="background-color: #F44336;">500 <span>#F44336</span></li>
+														<li style="background-color: #E53935;">600 <span>#E53935</span></li>
+														<li style="background-color: #D32F2F;">700 <span>#D32F2F</span></li>
+														<li style="background-color: #C62828;">800 <span>#C62828</span></li>
+													</ul>
+													<div class="p-3">
+														<div class="font-weight-semibold text-uppercase font-size-sm">Danger palette</div>
+														<div class="text-muted">@color-danger-*</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-lg-3">
+												<div class="card">
+													<ul class="color-list">
+														<li style="background-color: #81C784;">300 <span>#81C784</span></li>
+														<li style="background-color: #66BB6A;">400 <span>#66BB6A</span></li>
+														<li style="background-color: #4CAF50;">500 <span>#4CAF50</span></li>
+														<li style="background-color: #43A047;">600 <span>#43A047</span></li>
+														<li style="background-color: #388E3C;">700 <span>#388E3C</span></li>
+														<li style="background-color: #2E7D32;">800 <span>#2E7D32</span></li>
+													</ul>
+													<div class="p-3">
+														<div class="font-weight-semibold text-uppercase font-size-sm">Success palette</div>
+														<div class="text-muted">@color-success-*</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-lg-3">
+												<div class="card">
+													<ul class="color-list">
+														<li style="background-color: #FF8A65;">300 <span>#FF8A65</span></li>
+														<li style="background-color: #FF7043;">400 <span>#FF7043</span></li>
+														<li style="background-color: #FF5722;">500 <span>#FF5722</span></li>
+														<li style="background-color: #F4511E;">600 <span>#F4511E</span></li>
+														<li style="background-color: #E64A19;">700 <span>#E64A19</span></li>
+														<li style="background-color: #D84315;">800 <span>#D84315</span></li>
+													</ul>
+													<div class="p-3">
+														<div class="font-weight-semibold text-uppercase font-size-sm">Warning palette</div>
+														<div class="text-muted">@color-warning-*</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="col-lg-3">
+												<div class="card">
+													<ul class="color-list">
+														<li style="background-color: #4DD0E1;">300 <span>#4DD0E1</span></li>
+														<li style="background-color: #26C6DA;">400 <span>#26C6DA</span></li>
+														<li style="background-color: #00BCD4;">500 <span>#00BCD4</span></li>
+														<li style="background-color: #00ACC1;">600 <span>#00ACC1</span></li>
+														<li style="background-color: #0097A7;">700 <span>#0097A7</span></li>
+														<li style="background-color: #00838F;">800 <span>#00838F</span></li>
+													</ul>
+													<div class="p-3">
+														<div class="font-weight-semibold text-uppercase font-size-sm">Info palette</div>
+														<div class="text-muted">@color-info-*</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-lg-3">
+												<div class="card">
+													<ul class="color-list">
+														<li style="background-color: #F06292;">300 <span>#F06292</span></li>
+														<li style="background-color: #EC407A;">400 <span>#EC407A</span></li>
+														<li style="background-color: #E91E63;">500 <span>#E91E63</span></li>
+														<li style="background-color: #D81B60;">600 <span>#D81B60</span></li>
+														<li style="background-color: #C2185B;">700 <span>#C2185B</span></li>
+														<li style="background-color: #AD1457;">800 <span>#AD1457</span></li>
+													</ul>
+													<div class="p-3">
+														<div class="font-weight-semibold text-uppercase font-size-sm">Pink palette</div>
+														<div class="text-muted">@color-pink-*</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-lg-3">
+												<div class="card">
+													<ul class="color-list">
+														<li style="background-color: #BA68C8;">300 <span>#BA68C8</span></li>
+														<li style="background-color: #AB47BC;">400 <span>#AB47BC</span></li>
+														<li style="background-color: #9C27B0;">500 <span>#9C27B0</span></li>
+														<li style="background-color: #8E24AA;">600 <span>#8E24AA</span></li>
+														<li style="background-color: #7B1FA2;">700 <span>#7B1FA2</span></li>
+														<li style="background-color: #6A1B9A;">800 <span>#6A1B9A</span></li>
+													</ul>
+													<div class="p-3">
+														<div class="font-weight-semibold text-uppercase font-size-sm">Violet palette</div>
+														<div class="text-muted">@color-violet-*</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-lg-3">
+												<div class="card">
+													<ul class="color-list">
+														<li style="background-color: #9575CD;">300 <span>#9575CD</span></li>
+														<li style="background-color: #7E57C2;">400 <span>#7E57C2</span></li>
+														<li style="background-color: #673AB7;">500 <span>#673AB7</span></li>
+														<li style="background-color: #5E35B1;">600 <span>#5E35B1</span></li>
+														<li style="background-color: #512DA8;">700 <span>#512DA8</span></li>
+														<li style="background-color: #4527A0;">800 <span>#4527A0</span></li>
+													</ul>
+													<div class="p-3">
+														<div class="font-weight-semibold text-uppercase font-size-sm">Purple palette</div>
+														<div class="text-muted">@color-purple-*</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="col-lg-3">
+												<div class="card">
+													<ul class="color-list">
+														<li style="background-color: #7986CB;">300 <span>#7986CB</span></li>
+														<li style="background-color: #5C6BC0;">400 <span>#5C6BC0</span></li>
+														<li style="background-color: #3F51B5;">500 <span>#3F51B5</span></li>
+														<li style="background-color: #3949AB;">600 <span>#3949AB</span></li>
+														<li style="background-color: #303F9F;">700 <span>#303F9F</span></li>
+														<li style="background-color: #283593;">800 <span>#283593</span></li>
+													</ul>
+													<div class="p-3">
+														<div class="font-weight-semibold text-uppercase font-size-sm">Indigo palette</div>
+														<div class="text-muted">@color-indigo-*</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-lg-3">
+												<div class="card">
+													<ul class="color-list">
+														<li style="background-color: #4FC3F7;">300 <span>#4FC3F7</span></li>
+														<li style="background-color: #29B6F6;">400 <span>#29B6F6</span></li>
+														<li style="background-color: #03A9F4;">500 <span>#03A9F4</span></li>
+														<li style="background-color: #039BE5;">600 <span>#039BE5</span></li>
+														<li style="background-color: #0288D1;">700 <span>#0288D1</span></li>
+														<li style="background-color: #0277BD;">800 <span>#0277BD</span></li>
+													</ul>
+													<div class="p-3">
+														<div class="font-weight-semibold text-uppercase font-size-sm">Blue palette</div>
+														<div class="text-muted">@color-blue-*</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-lg-3">
+												<div class="card">
+													<ul class="color-list">
+														<li style="background-color: #4DB6AC;">300 <span>#4DB6AC</span></li>
+														<li style="background-color: #26A69A;">400 <span>#26A69A</span></li>
+														<li style="background-color: #009688;">500 <span>#009688</span></li>
+														<li style="background-color: #00897B;">600 <span>#00897B</span></li>
+														<li style="background-color: #00796B;">700 <span>#00796B</span></li>
+														<li style="background-color: #00695C;">800 <span>#00695C</span></li>
+													</ul>
+													<div class="p-3">
+														<div class="font-weight-semibold text-uppercase font-size-sm">Teal palette</div>
+														<div class="text-muted">@color-teal-*</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-lg-3">
+												<div class="card">
+													<ul class="color-list">
+														<li style="background-color: #AED581;">300 <span>#AED581</span></li>
+														<li style="background-color: #9CCC65;">400 <span>#9CCC65</span></li>
+														<li style="background-color: #8BC34A;">500 <span>#8BC34A</span></li>
+														<li style="background-color: #7CB342;">600 <span>#7CB342</span></li>
+														<li style="background-color: #689F38;">700 <span>#689F38</span></li>
+														<li style="background-color: #558B2F;">800 <span>#558B2F</span></li>
+													</ul>
+													<div class="p-3">
+														<div class="font-weight-semibold text-uppercase font-size-sm">Green palette</div>
+														<div class="text-muted">@color-green-*</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="col-lg-3">
+												<div class="card">
+													<ul class="color-list">
+														<li style="background-color: #FFB74D;">300 <span>#FFB74D</span></li>
+														<li style="background-color: #FFA726;">400 <span>#FFA726</span></li>
+														<li style="background-color: #FF9800;">500 <span>#FF9800</span></li>
+														<li style="background-color: #FB8C00;">600 <span>#FB8C00</span></li>
+														<li style="background-color: #F57C00;">700 <span>#F57C00</span></li>
+														<li style="background-color: #EF6C00;">800 <span>#EF6C00</span></li>
+													</ul>
+													<div class="p-3">
+														<div class="font-weight-semibold text-uppercase font-size-sm">Orange palette</div>
+														<div class="text-muted">@color-orange-*</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-lg-3">
+												<div class="card">
+													<ul class="color-list">
+														<li style="background-color: #A1887F;">300 <span>#A1887F</span></li>
+														<li style="background-color: #8D6E63;">400 <span>#8D6E63</span></li>
+														<li style="background-color: #795548;">500 <span>#795548</span></li>
+														<li style="background-color: #6D4C41;">600 <span>#6D4C41</span></li>
+														<li style="background-color: #5D4037;">700 <span>#5D4037</span></li>
+														<li style="background-color: #4E342E;">800 <span>#4E342E</span></li>
+													</ul>
+													<div class="p-3">
+														<div class="font-weight-semibold text-uppercase font-size-sm">Brown palette</div>
+														<div class="text-muted">@color-brown-*</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-lg-3">
+												<div class="card">
+													<ul class="color-list">
+														<li style="background-color: #999;">300 <span>#999</span></li>
+														<li style="background-color: #888;">400 <span>#888</span></li>
+														<li style="background-color: #777;">500 <span>#777</span></li>
+														<li style="background-color: #666;">600 <span>#666</span></li>
+														<li style="background-color: #555;">700 <span>#555</span></li>
+														<li style="background-color: #444;">800 <span>#444</span></li>
+													</ul>
+													<div class="p-3">
+														<div class="font-weight-semibold text-uppercase font-size-sm">Grey palette</div>
+														<div class="text-muted">@color-grey-*</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-lg-3">
+												<div class="card">
+													<ul class="color-list">
+														<li style="background-color: #90A4AE;">300 <span>#90A4AE</span></li>
+														<li style="background-color: #78909C;">400 <span>#78909C</span></li>
+														<li style="background-color: #607D8B;">500 <span>#607D8B</span></li>
+														<li style="background-color: #546E7A;">600 <span>#546E7A</span></li>
+														<li style="background-color: #455A64;">700 <span>#455A64</span></li>
+														<li style="background-color: #37474F;">800 <span>#37474F</span></li>
+													</ul>
+													<div class="p-3">
+														<div class="font-weight-semibold text-uppercase font-size-sm">Slate palette</div>
+														<div class="text-muted">@color-slate-*</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<h6 class="font-weight-semibold" id="overview_compile">SCSS and CSS</h6>
+									<div class="mb-4">
+										<p>Color system includes 2 source SCSS files - <code>colors.scss</code> and <code>palette.scss</code> located in <code>global_assets/scss/themes/[theme]/colors/</code> folders. The first file includes class names and styles for them: background, borders, text and alpha colors. The second file includes list of all color variables. Each theme contains its own color palette, however they are the same in all themes, but prepared for changes.</p>
+
+										<p>SCSS folder in <code>global_assets/scss/layouts/[layout]/[theme]/compile/</code> contains one more <code>colors.scss</code> file. This file is needed for <code>colors.min.css</code> CSS file compile. Basically it includes paths to main SCSS files, so when you compile CSS files, use this file:</p>
+										<pre><code class="language-css">// Import custom template config
+@import "../../../../config";
+@import "../../../../shared/utils/ll-functions";
+@import "../../../../shared/utils/ll-mixins";
+@import "../../../../themes/default/colors/palette";
+
+// Core variables and mixins
+@import "../../../../_bootstrap/functions";
+@import "../../../../_bootstrap/variables";
+@import "../../../../_bootstrap/mixins";
+
+// Import template's variables
+@import "../variables/variables-core";
+@import "../variables/variables-custom";
+@import "../../../../themes/default/bootstrap_limitless/mixins";
+
+// Color system, always load last
+@import "../../../../themes/default/colors/colors";
+
+</code></pre>
+									</div>
+
+									<div class="mb-4">
+										<p class="mb-3">File <code>colors.scss</code> includes a color map and a set of SCSS mixins defined in <code>ll-mixins.scss</code> and <code>ll-functions.scss</code> files. If you want to add a new color shade, simply add a new color or variable to <code>$ll-theme-colors</code> map. If you want to remove any color from CSS, remove it from the map. In both cases you need to re-compile SCSS files.</p>
+
+										<p>Each color has a base class and 6 shades. Naming is the following: base class is omitted and doesn't have any suffix (e.g. <code>.bg-primary</code>); shade 50 has different class suffix for CSS targeting purpose (e.g. <code>.alpha-primary</code>); other shades have suffix that corresponds to map (e.g. 400 means <code>.bg-primary-400</code>). So if you need to add a new color - lighter for example - just add a new line in color map with name and color itself: <code>lighter: lighten($color-primary-500, 10%)</code>, where "lighter" will be a class name suffix (<code>.bg-primary-lighter</code>) in generated CSS file. SCSS color map looks like this:</p>
+										<pre><code class="language-css">//
+// Create color map
+//
+
+$ll-theme-colors: (
+    primary: (
+        base: $color-primary-500,
+        50: $color-primary-50,
+        300: $color-primary-300,
+        400: $color-primary-400,
+        600: $color-primary-600,
+        700: $color-primary-700,
+        800: $color-primary-800
+    ),
+    danger: (
+        base: $color-danger-500,
+        50: $color-danger-50,
+        300: $color-danger-300,
+        400: $color-danger-400,
+        600: $color-danger-600,
+        700: $color-danger-700,
+        800: $color-danger-800
+    ),
+    ...
+)
+</code></pre>
+									</div>
+
+									<p>If you want to use color system in your project, i suggest to use minified <code>colors.min.css</code> file included to the package, since basically this file won't be changed often, except if you may want to change colors in <code>palette.scss</code> file. But if you don't want to use the system, feel free to remove compiled CSS file, but don't remove any paths to <code>palette.scss</code> file in any SCSS files, because color variables are used in different components and layout options.</p>
+								</div>
+							</div>
+							<!-- /overview -->
+
+					</div>
+					<!-- /left content -->
+
+
+					<!-- Right sidebar component -->
+					<div class="sidebar-sticky w-100 w-md-auto order-1 order-md-2">
+						<div class="sidebar sidebar-light sidebar-component sidebar-component-right sidebar-expand-md mb-3">
+							<div class="sidebar-content">
+								<div class="card">
+									<div class="card-header bg-transparent header-elements-inline">
+										<span class="text-uppercase font-size-sm font-weight-semibold">Page navigation</span>
+										<div class="header-elements">
+											<div class="list-icons">
+						                		<a class="list-icons-item" data-action="collapse"></a>
+					                		</div>
+				                		</div>
+									</div>
+
+									<div class="card-body">
+										<a href="http://themeforest.net/user/kopyov" class="btn bg-blue btn-block" target="_blank"><i class="icon-reading mr-2"></i> Contact author</a>
+									</div>
+
+									<ul class="nav nav-sidebar nav-scrollspy" data-nav-type="accordion">
+										<li class="nav-item-header pt-0"><div class="text-uppercase font-size-xs line-height-xs">Sections</div> <i class="icon-menu"></i></li>
+										<li class="nav-item"><a href="#overview_intro" class="nav-link">Overview</a></li>
+										<li class="nav-item"><a href="#overview_usage" class="nav-link">Basic Usage</a></li>
+										<li class="nav-item"><a href="#overview_colors" class="nav-link">Colors</a></li>
+										<li class="nav-item"><a href="#overview_compile" class="nav-link">SCSS and CSS</a></li>
+										<li class="nav-item-divider"></li>
+										<li class="nav-item"><a href="#" class="nav-link">Go to top <i class="icon-circle-up2 mr-0 ml-auto"></i></a></li>
+									</ul>
+								</div>
+				            </div>
+						</div>
+					</div>
+					<!-- /right sidebar component -->
+
+				</div>
+				<!-- /inner container -->
+
+			</div>
+			<!-- /content area -->
+
+
+			<!-- Footer -->
+			<div class="navbar navbar-expand-lg navbar-light">
+				<div class="text-center d-lg-none w-100">
+					<button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse" data-target="#navbar-footer">
+						<i class="icon-unfold mr-2"></i>
+						Footer
+					</button>
+				</div>
+
+				<div class="navbar-collapse collapse" id="navbar-footer">
+					<span class="navbar-text">
+						&copy; 2015 - 2018. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
+					</span>
+
+					<ul class="navbar-nav ml-lg-auto">
+						<li class="nav-item"><a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov" class="navbar-nav-link font-weight-semibold"><span class="text-pink-400"><i class="icon-cart2 mr-2"></i> Purchase</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /footer -->
+
+		</div>
+		<!-- /main content -->
+
+	</div>
+	<!-- /page content -->
+
+</body>
+</html>

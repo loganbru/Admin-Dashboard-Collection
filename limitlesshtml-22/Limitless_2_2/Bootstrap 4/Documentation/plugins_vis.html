@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/layout.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script src="assets/js/main/jquery.min.js"></script>
+	<script src="assets/js/main/bootstrap.bundle.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script src="assets/js/plugins/prism.min.js"></script>
+	<script src="assets/js/plugins/sticky.min.js"></script>
+	
+	<script src="assets/js/main/app.js"></script>
+	<script src="assets/js/pages/components_scrollspy.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body data-spy="scroll" data-target=".sidebar-component-right">
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-expand-md navbar-light">
+		<div class="navbar-header navbar-dark d-none d-md-flex align-items-md-center">
+			<div class="navbar-brand navbar-brand-md">
+				<a href="index.html" class="d-inline-block">
+					<img src="assets/images/logo_light.png" alt="">
+				</a>
+			</div>
+	
+			<div class="navbar-brand navbar-brand-xs">
+				<a href="index.html" class="d-inline-block">
+					<img src="assets/images/logo_icon_light.png" alt="">
+				</a>
+			</div>
+		</div>
+
+		<div class="d-flex flex-1 d-md-none">
+			<div class="navbar-brand mr-auto">
+				<a href="index.html" class="d-inline-block">
+					<img src="assets/images/logo_dark.png" alt="">
+				</a>
+			</div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile">
+				<i class="icon-tree5"></i>
+			</button>
+			<button class="navbar-toggler sidebar-mobile-main-toggle" type="button">
+				<i class="icon-paragraph-justify3"></i>
+			</button>
+			<button class="navbar-toggler sidebar-mobile-component-toggle" type="button">
+				<i class="icon-unfold"></i>
+			</button>
+		</div>
+
+		<div class="collapse navbar-collapse" id="navbar-mobile">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a href="#" class="navbar-nav-link sidebar-control sidebar-main-hide d-none d-md-block">
+						<i class="icon-paragraph-justify3"></i>
+					</a>
+				</li>
+
+				<li class="nav-item">
+					<a href="#" class="navbar-nav-link sidebar-control sidebar-component-toggle d-none d-md-block">
+						<i class="icon-transmission"></i>
+					</a>
+				</li>
+			</ul>
+
+			<ul class="navbar-nav ml-md-auto">
+				<li class="nav-item dropdown">
+					<a href="other_changelog.html" class="navbar-nav-link">
+						<i class="icon-history mr-2"></i>
+						Changelog
+						<span class="badge bg-warning-400 badge-pill position-static ml-md-2">2.2</span>
+					</a>					
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page content -->
+	<div class="page-content">
+
+		<!-- Main sidebar -->
+		<div class="sidebar sidebar-dark sidebar-main sidebar-expand-md">
+
+			<!-- Sidebar mobile toggler -->
+			<div class="sidebar-mobile-toggler text-center">
+				<a href="#" class="sidebar-mobile-main-toggle">
+					<i class="icon-arrow-left8"></i>
+				</a>
+				Navigation
+				<a href="#" class="sidebar-mobile-expand">
+					<i class="icon-screen-full"></i>
+					<i class="icon-screen-normal"></i>
+				</a>
+			</div>
+			<!-- /sidebar mobile toggler -->
+
+
+			<!-- Sidebar content -->
+			<div class="sidebar-content">
+
+        		<!-- Support -->
+				<div class="card card-body">
+					<a href="http://kopyov.ticksy.com" class="btn bg-success-400 btn-block" target="_blank"><i class="icon-lifebuoy mr-2"></i> Limitless support</a>
+				</div>
+				<!-- /support -->
+
+
+				<!-- Main navigation -->
+				<div class="card card-sidebar-mobile">
+					<ul class="nav nav-sidebar" data-nav-type="accordion">
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Main</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="index.html" class="nav-link">Introduction</a></li>
+						<li class="nav-item"><a href="main_getting_started.html" class="nav-link">Getting started</a></li>
+						<li class="nav-item"><a href="main_starter_kit.html" class="nav-link">Starter kit</a></li>
+						<li class="nav-item"><a href="main_rtl.html" class="nav-link">RTL layout</a></li>
+
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Basic functionality</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="base_scss_css.html" class="nav-link">SCSS and CSS</a></li>
+						<li class="nav-item"><a href="base_scss_compile.html" class="nav-link">Compiling SCSS</a></li>
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+							<a href="#" class="nav-link">Plugins</a>
+							<ul class="nav nav-group-sub" data-submenu-title="Plugins">
+								<li class="nav-item"><a href="plugins_forms.html" class="nav-link">Forms</a></li>
+								<li class="nav-item"><a href="plugins_forms_styling.html" class="nav-link">Form styling</a></li>
+								<li class="nav-item"><a href="plugins_editors.html" class="nav-link">Editors</a></li>
+								<li class="nav-item"><a href="plugins_uploaders.html" class="nav-link">Uploaders</a></li>
+								<li class="nav-item"><a href="plugins_extensions.html" class="nav-link">Extensions</a></li>
+								<li class="nav-item"><a href="plugins_notifications.html" class="nav-link">Notifications</a></li>
+								<li class="nav-item"><a href="plugins_pickers.html" class="nav-link">Pickers</a></li>
+								<li class="nav-item"><a href="plugins_tables.html" class="nav-link">Tables</a></li>
+								<li class="nav-item"><a href="plugins_ui.html" class="nav-link">UI</a></li>
+								<li class="nav-item"><a href="plugins_vis.html" class="nav-link active">Visualization</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a href="base_icons.html" class="nav-link">Icons</a></li>
+
+						<li class="nav-item"><a href="base_bootstrap.html" class="nav-link">Bootstrap</a></li>
+						<li class="nav-item"><a href="base_color_system.html" class="nav-link">Color system</a></li>
+						<li class="nav-item"><a href="base_helpers.html" class="nav-link">Helpers</a></li>
+						<li class="nav-item"><a href="base_themes.html" class="nav-link">Themes</a></li>
+
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Layout options</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="layout_overview.html" class="nav-link">Layouts</a></li>
+						<li class="nav-item"><a href="layout_sidebars.html" class="nav-link">Sidebars</a></li>
+						<li class="nav-item"><a href="layout_navbars.html" class="nav-link">Navbars</a></li>
+						<li class="nav-item"><a href="layout_v_nav.html" class="nav-link">Vertical navigation</a></li>
+						<li class="nav-item"><a href="layout_h_nav.html" class="nav-link">Horizontal navigation</a></li>
+						<li class="nav-item"><a href="layout_page_header.html" class="nav-link">Page header</a></li>
+
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Other</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="other_credits.html" class="nav-link">Sources and credits</a></li>
+						<li class="nav-item"><a href="other_changelog.html" class="nav-link">Changelog <span class="badge badge-pill bg-warning-400 ml-auto">version 2.2</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /main navigation -->
+
+		</div>
+		<!-- /main sidebar -->
+
+
+		<!-- Main content -->
+		<div class="content-wrapper">
+
+			<!-- Page header -->
+			<div class="page-header">
+				<div class="page-header-content header-elements-md-inline">
+					<div class="page-title d-flex">
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Limitless</span> - Visualization</h4>
+						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+					</div>
+
+					<div class="header-elements d-none py-0 mb-3 mb-md-0">
+						<div class="breadcrumb">
+							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
+							<span class="breadcrumb-item active">Visualization</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /page header -->
+			
+
+			<!-- Content area -->
+			<div class="content pt-0">
+
+				<!-- Inner container -->
+				<div class="d-flex align-items-start flex-column flex-md-row">
+
+					<!-- Left content -->
+					<div class="order-2 order-md-1">
+
+							<!-- Vector maps -->
+							<div class="card" id="maps">
+								<div class="card-header header-elements-md-inline">
+									<h5 class="card-title">Vector maps</h5>
+									<div class="header-elements d-flex justify-content-between">
+										<span class="badge bg-slate">Maps</span>
+										<span class="text-muted mx-3">/maps/jvectormap/</span>
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+									</div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="fontweight-semibold">Overview</h6>
+										<p>jVectorMap is a vector-based, cross-browser and cross-platform component for interactive geography-related data visualization on the web. It provides numerious features like smooth zooming and panning, fully-customizable styling, markers, labels and tooltips.</p>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="fontweight-semibold">Usage</h6>
+										<div class="mb-3">
+											<p>Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+											<pre><code class="language-markup">&lt;!-- Load jQuery -->
+&lt;script src="../../../../global_assets/js/main/jquery.min.js">&lt;/script>
+
+&lt;!-- Load plugin -->
+&lt;script src="../../../../global_assets/js/plugins/maps/jvectormap/jvectormap.min.js">&lt;/script>
+
+&lt;!-- Load map(s) -->
+&lt;script src="../../../../global_assets/js/plugins/maps/jvectormap/map_files/world.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Create element with attributes:</p>
+											<pre><code class="language-markup">// Basic markup
+&lt;div class="map-container map-world">&lt;/div>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Finally call the plugin via JavaScript:</p>
+											<pre><code class="language-javascript">// World map
+$('.map-world').vectorMap({
+    map: 'world_mill_en',
+    backgroundColor: 'transparent',
+    regionStyle: {
+        initial: {
+            fill: '#93D389'
+        }
+    }
+});
+</code></pre>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="fontweight-semibold">Plugin options</h6>
+										<div class="table-responsive mb-3">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Option</th>
+														<th style="width: 200px;">Type</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>map</code></td>
+														<td class="fontweight-semibold">String</td>
+														<td>Name of the map in the format <code>territory_proj_lang</code> where <code>territory</code> is a unique code or name of the territory which the map represents (ISO 3166 standard is used where possible), <code>proj</code> is a name of projection used to generate representation of the map on the plane (projections are named according to the conventions of proj4 utility) and <code>lang</code> is a code of the language, used for the names of regions</td>
+													</tr>
+													<tr>
+														<td><code>backgroundColor</code></td>
+														<td class="fontweight-semibold">String</td>
+														<td>Background color of the map in CSS format</td>
+													</tr>
+													<tr>
+														<td><code>zoomOnScroll</code></td>
+														<td class="fontweight-semibold">Boolean</td>
+														<td>When set to true map could be zoomed using mouse scroll. Default value is <code>true</code></td>
+													</tr>
+													<tr>
+														<td><code>zoomOnScrollSpeed</code></td>
+														<td class="fontweight-semibold">Boolean</td>
+														<td>Mouse scroll speed. Number from <code>1</code> to <code>10</code>. Default value is <code>3</code></td>
+													</tr>
+													<tr>
+														<td><code>panOnDrag</code></td>
+														<td class="fontweight-semibold">Boolean</td>
+														<td>When set to <code>true</code>, the map pans when being dragged. Default value is <code>true</code></td>
+													</tr>
+													<tr>
+														<td><code>zoomMax</code></td>
+														<td class="fontweight-semibold">Number</td>
+														<td>Indicates the maximum zoom ratio which could be reached zooming the map. Default value is <code>8</code></td>
+													</tr>
+													<tr>
+														<td><code>zoomMin</code></td>
+														<td class="fontweight-semibold">Number</td>
+														<td>Indicates the minimum zoom ratio which could be reached zooming the map. Default value is <code>1</code></td>
+													</tr>
+													<tr>
+														<td><code>zoomStep</code></td>
+														<td class="fontweight-semibold">Number</td>
+														<td>Indicates the multiplier used to zoom map with +/- buttons. Default value is <code>1.6</code></td>
+													</tr>
+													<tr>
+														<td><code>zoomAnimate</code></td>
+														<td class="fontweight-semibold">Boolean</td>
+														<td>Indicates whether or not to animate changing of map zoom with zoom buttons</td>
+													</tr>
+													<tr>
+														<td><code>regionsSelectable</code></td>
+														<td class="fontweight-semibold">Boolean</td>
+														<td>When set to <code>true</code> regions of the map could be selected. Default value is <code>false</code></td>
+													</tr>
+													<tr>
+														<td><code>regionsSelectableOne</code></td>
+														<td class="fontweight-semibold">Boolean</td>
+														<td>Allow only one region to be selected at the moment. Default value is <code>false</code></td>
+													</tr>
+													<tr>
+														<td><code>markersSelectable</code></td>
+														<td class="fontweight-semibold">Boolean</td>
+														<td>When set to <code>true</code> markers on the map could be selected. Default value is <code>false</code></td>
+													</tr>
+													<tr>
+														<td><code>markersSelectableOne</code></td>
+														<td class="fontweight-semibold">Boolean</td>
+														<td>Allow only one marker to be selected at the moment. Default value is <code>false</code></td>
+													</tr>
+													<tr>
+														<td><code>regionStyle</code></td>
+														<td class="fontweight-semibold">Object</td>
+														<td>Set the styles for the map's regions. Each region or marker has four states: <code>initial</code> (default state), <code>hover</code> (when the mouse cursor is over the region or marker), <code>selected</code> (when region or marker is selected), <code>selectedHover</code> (when the mouse cursor is over the region or marker and it's selected simultaneously)</td>
+													</tr>
+													<tr>
+														<td><code>regionLabelStyle</code></td>
+														<td class="fontweight-semibold">Object</td>
+														<td>Set the styles for the regions' labels. Each region or marker has four states: <code>initial</code> (default state), <code>hover</code> (when the mouse cursor is over the region or marker), <code>selected</code> (when region or marker is selected), <code>selectedHover</code> (when the mouse cursor is over the region or marker and it's selected simultaneously)</td>
+													</tr>
+													<tr>
+														<td><code>markerStyle</code></td>
+														<td class="fontweight-semibold">Object</td>
+														<td>Set the styles for the map's markers. Any parameter suitable for <code>regionStyle</code> could be used as well as numeric parameter <code>r</code> to set the marker's radius</td>
+													</tr>
+													<tr>
+														<td><code>markerLabelStyle</code></td>
+														<td class="fontweight-semibold">Object</td>
+														<td>Set the styles for the markers' labels</td>
+													</tr>
+													<tr>
+														<td><code>markers</code></td>
+														<td class="fontweight-semibold">Object | Array</td>
+														<td>Set of markers to add to the map during initialization. In case of array is provided, codes of markers will be set as string representations of array indexes. Each marker is represented by <code>latLng</code> (array of two numeric values), <code>name</code> (string which will be show on marker's tip) and any marker <code>styles</code></td>
+													</tr>
+													<tr>
+														<td><code>series</code></td>
+														<td class="fontweight-semibold">Object</td>
+														<td>Object with two keys: <code>markers</code> and <code>regions</code>. Each of which is an array of series configs to be applied to the respective map elements</td>
+													</tr>
+													<tr>
+														<td><code>focusOn</code></td>
+														<td class="fontweight-semibold">Object | String</td>
+														<td>This parameter sets the initial position and scale of the map viewport</td>
+													</tr>
+													<tr>
+														<td><code>labels</code></td>
+														<td class="fontweight-semibold">Object</td>
+														<td>Defines parameters for rendering static labels. Object could contain two keys: <code>regions</code> and <code>markers</code>. Each key value defines configuration object with the following possible options: <code>render</code> (function) and <code>offsets</code> (Object | Function)</td>
+													</tr>
+													<tr>
+														<td><code>selectedRegions</code></td>
+														<td class="fontweight-semibold">Array | Object | String</td>
+														<td>Set initially selected regions</td>
+													</tr>
+													<tr>
+														<td><code>selectedMarkers</code></td>
+														<td class="fontweight-semibold">Array | Object | String</td>
+														<td>Set initially selected markers</td>
+													</tr>
+													<tr>
+														<td><code>onRegionTipShow</code></td>
+														<td class="fontweight-semibold">Function</td>
+														<td>(Event e, Object tip, String code). Will be called right before the region tip is going to be shown</td>
+													</tr>
+													<tr>
+														<td><code>onRegionOver</code></td>
+														<td class="fontweight-semibold">Function</td>
+														<td>(Event e, String code). Will be called on region mouse over event</td>
+													</tr>
+													<tr>
+														<td><code>onRegionOut</code></td>
+														<td class="fontweight-semibold">Function</td>
+														<td>(Event e, String code). Will be called on region mouse out event</td>
+													</tr>
+													<tr>
+														<td><code>onRegionClick</code></td>
+														<td class="fontweight-semibold">Function</td>
+														<td>(Event e, String code). Will be called on region click event.</td>
+													</tr>
+													<tr>
+														<td><code>onRegionSelected</code></td>
+														<td class="fontweight-semibold">Function</td>
+														<td>(Event e, String code, Boolean isSelected, Array selectedRegions). Will be called when region is (de)selected. <code>isSelected</code> parameter of the callback indicates whether region is selected or not. <code>selectedRegions</code> contains codes of all currently selected regions</td>
+													</tr>
+													<tr>
+														<td><code>onMarkerTipShow</code></td>
+														<td class="fontweight-semibold">Function</td>
+														<td>(Event e, Object tip, String code). Will be called right before the marker tip is going to be shown</td>
+													</tr>
+													<tr>
+														<td><code>onMarkerOver</code></td>
+														<td class="fontweight-semibold">Function</td>
+														<td>(Event e, String code). Will be called on marker mouse over event</td>
+													</tr>
+													<tr>
+														<td><code>onMarkerOut</code></td>
+														<td class="fontweight-semibold">Function</td>
+														<td>(Event e, String code). Will be called on marker mouse out event</td>
+													</tr>
+													<tr>
+														<td><code>onMarkerClick</code></td>
+														<td class="fontweight-semibold">Function</td>
+														<td>(Event e, String code). Will be called on marker click event</td>
+													</tr>
+													<tr>
+														<td><code>onMarkerSelected</code></td>
+														<td class="fontweight-semibold">Function</td>
+														<td>(Event e, String code, Boolean isSelected, Array selectedMarkers). Will be called when marker is (de)selected. <code>isSelected</code> parameter of the callback indicates whether marker is selected or not. <code>selectedMarkers</code> contains codes of all currently selected markers</td>
+													</tr>
+													<tr>
+														<td><code>onViewportChange</code></td>
+														<td class="fontweight-semibold">Function</td>
+														<td>(Event e, Number scale). Triggered when the map's viewport is changed (map was panned or zoomed)</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div>
+										<h6 class="fontweight-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="fontweight-semibold">File name</td>
+														<td>jvectormap.min.js</td>
+													</tr>
+													<tr>
+														<td class="fontweight-semibold">Location</td>
+														<td>global_assets/js/plugins/maps/jvectormap/</td>
+													</tr>
+													<tr>
+														<td class="fontweight-semibold">Links</td>
+														<td>
+															<p>
+																<a href="http://jvectormap.com/" class="btn btn-sm bg-danger-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+
+															<p>
+																<a href="http://jvectormap.com/documentation/javascript-api/jvm-map/" class="btn btn-sm bg-slate btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-file-text2"></i></b>
+																	Full documentation
+																</a>
+															</p>
+
+															<a href="https://github.com/bjornd/jvectormap" class="btn btn-sm bg-blue btn-labeled btn-labeled-left" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /vector maps -->
+
+
+							<!-- D3.js -->
+							<div class="card" id="d3">
+								<div class="card-header header-elements-md-inline">
+									<h5 class="card-title">D3.js library</h5>
+									<div class="header-elements d-flex justify-content-between">
+										<span class="badge bg-slate">Charts</span>
+										<span class="text-muted mx-3">/visualization/d3/</span>
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+									</div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="fontweight-semibold">Overview</h6>
+										<p>D3.js is a JavaScript library for manipulating documents based on data. D3 helps you bring data to life using HTML, SVG, and CSS. D3’s emphasis on web standards gives you the full capabilities of modern browsers without tying yourself to a proprietary framework, combining powerful visualization components and a data-driven approach to DOM manipulation.</p>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="fontweight-semibold">Introduction</h6>
+										<p>D3 allows you to bind arbitrary data to a Document Object Model (DOM), and then apply data-driven transformations to the document. For example, you can use D3 to generate an HTML table from an array of numbers. Or, use the same data to create an interactive SVG bar chart with smooth transitions and interaction.</p>
+
+										<p>D3 is not a monolithic framework that seeks to provide every conceivable feature. Instead, D3 solves the crux of the problem: efficient manipulation of documents based on data. This avoids proprietary representation and affords extraordinary flexibility, exposing the full capabilities of web standards such as HTML, SVG, and CSS. With minimal overhead, D3 is extremely fast, supporting large datasets and dynamic behaviors for interaction and animation. D3’s functional style allows code reuse through a diverse collection of components and plugins.</p>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="fontweight-semibold">Usage</h6>
+										<div class="mb-3">
+											<p>Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+											<pre><code class="language-markup">&lt;!-- Load jQuery -->
+&lt;script src="../../../../global_assets/js/main/jquery.min.js">&lt;/script>
+
+&lt;!-- Load library -->
+&lt;script src="../../../../global_assets/js/plugins/visualization/d3/d3.min.js">&lt;/script>
+
+&lt;!-- Load tooltip -->
+&lt;script src="../../../../global_assets/js/plugins/visualization/d3/d3_tooltip.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Add element with attributes:</p>
+											<pre><code class="language-markup">&lt;!-- Basic markup -->
+&lt;div class="chart-container">
+	&lt;div class="chart" id="d3-streamgraph">&lt;/div>
+&lt;/div>
+
+&lt;!-- With minimum width and scrolling -->
+&lt;div class="chart-container has-scroll">
+	&lt;div class="chart has-minimum-width" id="d3-waterfall">&lt;/div>
+&lt;/div>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Basically there's nothing to call in JS. You just need to create a chart using <a href="https://github.com/mbostock/d3/wiki/API-Reference" target="_blank">D3.js API</a> and attach to the DOM element.</p>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="fontweight-semibold">Selections</h6>
+										<div class="mb-3">
+											<p>Modifying documents using the W3C DOM API is tedious: the method names are verbose, and the imperative approach requires manual iteration and bookkeeping of temporary state. For example, to change the text color of paragraph elements:</p>
+											<pre><code class="language-javascript">// Selection example
+var paragraphs = document.getElementsByTagName("p");
+for (var i = 0; i &lt; paragraphs.length; i++) {
+	var paragraph = paragraphs.item(i);
+	paragraph.style.setProperty("color", "white", null);
+}
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>D3 employs a declarative approach, operating on arbitrary sets of nodes called <strong>selections</strong>. For example, you can rewrite the above loop as:</p>
+											<pre><code class="language-javascript">// Selection example
+d3.selectAll("p").style("color", "white");
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Yet, you can still manipulate individual nodes as needed:</p>
+											<pre><code class="language-javascript">// Selection example
+d3.select("body").style("background-color", "black");
+</code></pre>
+										</div>
+
+										<p>Selectors are defined by the <a href="https://www.w3.org/TR/selectors-api/" target="_blank">W3C Selectors API</a> and supported natively by modern browsers. Backwards-compatibility for older browsers can be provided by <a href="http://sizzlejs.com/" target="_blank">Sizzle</a>. The above examples select nodes by tag name (<code>"p"</code> and <code>"body"</code>, respectively). Elements may be selected using a variety of predicates, including containment, attribute values, class and ID.</p>
+
+										<p>D3 provides numerous methods for mutating nodes: setting attributes or styles; registering event listeners; adding, removing or sorting nodes; and changing HTML or text content. These suffice for the vast majority of needs. Direct access to the underlying DOM is also possible, as each D3 selection is simply an array of nodes.</p>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="fontweight-semibold">Dynamic properties</h6>
+										<div class="mb-3">
+											<p>Readers familiar with other DOM frameworks such as jQuery or Prototype should immediately recognize similarities with D3. Yet <code>styles</code>, <code>attributes</code>, and other properties can be specified as <code>functions</code> of data in D3, not just simple constants. Despite their apparent simplicity, these functions can be surprisingly powerful; the <code>d3.geo.path</code> function, for example, projects geographic coordinates into SVG path data. D3 provides many built-in reusable functions and function factories, such as graphical primitives for area, line and pie charts.</p>
+
+											<p>For example, to randomly color paragraphs:</p>
+											<pre><code class="language-javascript">// Selection example
+d3.selectAll("p").style("color", function() {
+	return "hsl(" + Math.random() * 360 + ",100%,50%)";
+});
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>D3 employs a declarative approach, operating on arbitrary sets of nodes called <strong>selections</strong>. For example, you can rewrite the above loop as:</p>
+											<pre><code class="language-javascript">// Selection example
+d3.selectAll("p").style("color", "white");
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>To alternate shades of gray for even and odd nodes:</p>
+											<pre><code class="language-javascript">// Selection example
+d3.selectAll("p").style("color", function(d, i) {
+	return i % 2 ? "#fff" : "#eee";
+});
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Computed properties often refer to bound data. Data is specified as an array of values, and each value is passed as the first argument (d) to selection functions. With the default join-by-index, the first element in the data array is passed to the first node in the selection, the second element to the second node, and so on. For example, if you bind an array of numbers to paragraph elements, you can use these numbers to compute dynamic font sizes:</p>
+											<pre><code class="language-javascript">// Selection example
+d3.selectAll("p")
+    .data([4, 8, 15, 16, 23, 42])
+    .style("font-size", function(d) { return d + "px"; });
+</code></pre>
+										</div>
+
+										<p>Once the data has been bound to the document, you can omit the data operator; D3 will retrieve the previously-bound data. This allows you to recompute properties without rebinding.</p>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="fontweight-semibold">Enter and Exit</h6>
+										<div class="mb-3">
+											<p>Using D3’s <code>enter</code> and <code>exit</code> selections, you can create new nodes for incoming data and remove outgoing nodes that are no longer needed.</p>
+
+											<p>When data is bound to a selection, each element in the data array is paired with the corresponding node in the selection. If there are fewer nodes than data, the extra data elements form the enter selection, which you can instantiate by appending to the enter selection. For example:</p>
+
+											<pre><code class="language-javascript">// Enter and exit
+d3.select("body").selectAll("p")
+    .data([4, 8, 15, 16, 23, 42])
+	.enter().append("p")
+		.text(function(d) { return "I’m number " + d + "!"; });
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Updating nodes are the default selection—the result of the data operator. Thus, if you forget about the enter and exit selections, you will automatically select only the elements for which there exists corresponding data. A common pattern is to break the initial selection into three parts: the updating nodes to modify, the entering nodes to add, and the exiting nodes to remove.</p>
+											<pre><code class="language-javascript">// Update…
+var p = d3.select("body").selectAll("p")
+    .data([4, 8, 15, 16, 23, 42])
+    .text(String);
+
+// Enter…
+p.enter().append("p")
+    .text(String);
+
+// Exit…
+p.exit().remove();
+</code></pre>
+										</div>
+
+										<p>By handling these three cases separately, you specify precisely which operations run on which nodes. This improves performance and offers greater control over transitions. For example, with a bar chart you might initialize entering bars using the old scale, and then transition entering bars to the new scale along with the updating and exiting bars.</p>
+
+										<p>D3 lets you transform documents based on data; this includes both creating and destroying elements. D3 allows you to change an existing document in response to user interaction, animation over time, or even asynchronous notification from a third-party. A hybrid approach is even possible, where the document is initially rendered on the server, and updated on the client via D3.</p>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="fontweight-semibold">Handling transitions</h6>
+										<div class="mb-3">
+											<p>D3’s focus on transformation extends naturally to animated transitions. Transitions gradually interpolate styles and attributes over time. Tweening can be controlled via easing functions such as <code>“elastic”</code>, <code>“cubic-in-out”</code> and <code>“linear”</code>. D3’s interpolators support both primitives, such as numbers and numbers embedded within strings (font sizes, path data, etc.), and compound values. You can even extend D3’s interpolator registry to support complex properties and data structures.</p>
+
+											<p>For example, to fade the background of the page to black:</p>
+
+											<pre><code class="language-javascript">// Transition example
+d3.select("body").transition()
+    .style("background-color", "black");
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Or, to resize circles in a symbol map with a staggered delay:</p>
+											<pre><code class="language-javascript">// Transition example
+d3.selectAll("circle").transition()
+    .duration(750)
+    .delay(function(d, i) { return i * 10; })
+    .attr("r", function(d) { return Math.sqrt(d * scale); });
+</code></pre>
+										</div>
+
+										<p>By modifying only the attributes that actually change, D3 reduces overhead and allows greater graphical complexity at high frame rates. D3 also allows sequencing of complex transitions via events. And, you can still use CSS3 transitions; D3 does not replace the browser’s toolbox, but exposes it in a way that is easier to use.</p>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="fontweight-semibold">Complete D3.js documentation</h6>
+										<p>All D3.js features and API are completely explained in <a href="https://github.com/mbostock/d3/wiki" target="_blank">online library documentation</a>. Also you'll find a full <a href="https://github.com/mbostock/d3/wiki/API-Reference" target="_blank">API documentation</a> on Github project page. Also check out <a href="https://github.com/mbostock/d3/wiki/Gallery" target="_blank">gallery with examples</a>. Please use these links for a full documentation. Below you'll find additional links related to D3.js library</p>
+									</div>
+
+									<div>
+										<h6 class="fontweight-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="fontweight-semibold">File name</td>
+														<td>d3.min.js, d3_tooltip.js, venn.js</td>
+													</tr>
+													<tr>
+														<td class="fontweight-semibold">Location</td>
+														<td>global_assets/js/plugins/visualization/d3/</td>
+													</tr>
+													<tr>
+														<td class="fontweight-semibold">Links</td>
+														<td>
+															<p>
+																<a href="http://d3js.org/" class="btn btn-sm bg-danger-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+
+															<p>
+																<a href="https://github.com/mbostock/d3/wiki" class="btn btn-sm bg-slate btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-file-text2"></i></b>
+																	Full documentation
+																</a>
+															</p>
+															
+															<p>
+																<a href="https://github.com/mbostock/d3/wiki/Gallery" class="btn btn-sm bg-teal-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-file-eye"></i></b>
+																	Demonstration
+																</a>
+															</p>
+
+															<a href="https://github.com/mbostock/d3" class="btn btn-sm bg-blue btn-labeled btn-labeled-left" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /D3.js -->
+
+
+							<!-- C3.js -->
+							<div class="card" id="c3">
+								<div class="card-header header-elements-md-inline">
+									<h5 class="card-title">C3.js library</h5>
+									<div class="header-elements d-flex justify-content-between">
+										<span class="badge bg-slate">Charts</span>
+										<span class="text-muted mx-3">c3.min.js</span>
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+									</div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="fontweight-semibold">Overview</h6>
+										<p>C3.js is a D3-based reusable chart library that enables deeper integration of charts into web applications. C3 makes it easy to generate D3-based charts by wrapping the code required to construct the entire chart. We don't need to write D3 code any more. C3 provides a variety of APIs and callbacks to access the state of the chart. By using them, you can update the chart even after it's rendered.</p>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="fontweight-semibold">Usage</h6>
+										<div class="mb-3">
+											<p>Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+											<pre><code class="language-markup">&lt;!-- Load jQuery -->
+&lt;script src="../../../../global_assets/js/main/jquery.min.js">&lt;/script>
+
+&lt;!-- Load D3.js library -->
+&lt;script src="../../../../global_assets/js/plugins/visualization/d3/d3.min.js">&lt;/script>
+
+&lt;!-- Load C3.js  -->
+&lt;script src="../../../../global_assets/js/plugins/visualization/c3/c3.min.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Add element with attributes:</p>
+											<pre><code class="language-markup">&lt;!-- Basic markup -->
+&lt;div class="chart-container">
+	&lt;div class="chart" id="c3-line-chart">&lt;/div>
+&lt;/div>
+</code></pre>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="fontweight-semibold">Generate chart</h6>
+										<p>C3 generates a chart by calling <code>generate()</code> with the argument object, and an element including the chart will insert into the element specified as a selector in that argument as <code>bindto</code>. Prepare the element to bind the chart and call <code>generate()</code> with arguments:</p>
+										<pre><code class="language-javascript">// Generate chart
+var chart = c3.generate({
+    bindto: '#c3-line-chart',
+    data: {
+		columns: [
+			['data1', 30, 200, 100, 400, 150, 250],
+			['data2', 50, 20, 10, 40, 15, 25]
+		]
+    }
+});
+</code></pre>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="fontweight-semibold">Complete C3.js documentation</h6>
+										<p>All C3.js features and API are completely explained in <a href="http://c3js.org/reference.html" target="_blank">online library documentation</a> and <a href="http://c3js.org/gettingstarted.html" target="_blank">Getting started</a> section. Also you'll find a <a href="https://groups.google.com/forum/#!forum/c3js" target="_blank">forums</a> on Google Group pages. Also check out <a href="http://c3js.org/examples.html" target="_blank">examples explained</a>. Please use these links for a full documentation. Below you'll find additional links related to C3.js library</p>
+									</div>
+
+									<div>
+										<h6 class="fontweight-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="fontweight-semibold">File name</td>
+														<td>c3.min.js</td>
+													</tr>
+													<tr>
+														<td class="fontweight-semibold">Location</td>
+														<td>global_assets/js/plugins/visualization/c3/</td>
+													</tr>
+													<tr>
+														<td class="fontweight-semibold">Links</td>
+														<td>
+															<p>
+																<a href="http://c3js.org/" class="btn btn-sm bg-danger-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+
+															<p>
+																<a href="http://c3js.org/reference.html" class="btn btn-sm bg-slate btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-file-text2"></i></b>
+																	Full documentation
+																</a>
+															</p>
+															
+															<p>
+																<a href="http://c3js.org/examples.html" class="btn btn-sm bg-teal-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-file-eye"></i></b>
+																	Demonstration
+																</a>
+															</p>
+															
+															<a href="https://github.com/masayuki0812/c3" class="btn btn-sm bg-blue btn-labeled btn-labeled-left" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /C3.js -->
+
+
+							<!-- Dimple.js -->
+							<div class="card" id="dimple">
+								<div class="card-header header-elements-md-inline">
+									<h5 class="card-title">Dimple.js library</h5>
+									<div class="header-elements d-flex justify-content-between">
+										<span class="badge bg-slate">Charts</span>
+										<span class="text-muted mx-3">dimple.min.js</span>
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+									</div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="fontweight-semibold">Overview</h6>
+										<p>Dimple is an object-oriented API allowing you to create flexible axis-based charts using d3.js. The intention of this project is to allow analysts who are not necessarily expert JavaScript programmers to create standard (and some not-so-standard) business analytics. The API will also expose the core d3 objects where possible so that as users gain confidence they can extend the base functionality in whatever way they wish.</p>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="fontweight-semibold">Usage</h6>
+										<div class="mb-3">
+											<p>Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+											<pre><code class="language-markup">&lt;!-- Load jQuery -->
+&lt;script src="../../../../global_assets/js/main/jquery.min.js">&lt;/script>
+
+&lt;!-- Load D3.js library -->
+&lt;script src="../../../../global_assets/js/plugins/visualization/d3/d3.min.js">&lt;/script>
+
+&lt;!-- Load dimple.js  -->
+&lt;script src="../../../../global_assets/js/plugins/visualization/dimple/dimple.min.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Add element with attributes:</p>
+											<pre><code class="language-markup">&lt;!-- Basic markup -->
+&lt;div class="chart-container">
+	&lt;div class="chart" id="dimple-chart">&lt;/div>
+&lt;/div>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>That's it, you're ready to get creative! If you don't know where to start, why not create a blank text document, drop the following in and save it as an html.</p>
+											<pre><code class="language-javascript">// Create chart
+var svg = dimple.newSvg("#dimple-chart", 800, 600);
+    var data = [
+		{ "Word":"Hello", "Awesomeness":2000 },
+		{ "Word":"World", "Awesomeness":3000 }
+    ];
+
+    // Add elements
+    var chart = new dimple.chart(svg, data);
+    chart.addCategoryAxis("x", "Word");
+    chart.addMeasureAxis("y", "Awesomeness");
+    chart.addSeries(null, dimple.plot.bar);
+
+    // Finally draw the chart
+    chart.draw();
+</code></pre>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="fontweight-semibold">Complete dimple.js documentation</h6>
+										<p>All dimple.js features and API are completely explained in <a href="https://github.com/PMSI-AlignAlytics/dimple/wiki" target="_blank">online library documentation</a>. Also check out <a href="http://dimplejs.org/examples_index.html" target="_blank">examples with description</a>. Please use these links for a full documentation. Below you'll find additional links related to C3.js library</p>
+									</div>
+
+									<div>
+										<h6 class="fontweight-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="fontweight-semibold">File name</td>
+														<td>dimple.min.js</td>
+													</tr>
+													<tr>
+														<td class="fontweight-semibold">Location</td>
+														<td>global_assets/js/plugins/visualization/dimple/</td>
+													</tr>
+													<tr>
+														<td class="fontweight-semibold">Links</td>
+														<td>
+															<p>
+																<a href="http://dimplejs.org/" class="btn btn-sm bg-danger-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+
+															<p>
+																<a href="https://github.com/PMSI-AlignAlytics/dimple/wiki" class="btn btn-sm bg-slate btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-file-text2"></i></b>
+																	Full documentation
+																</a>
+															</p>
+															
+															<p>
+																<a href="http://dimplejs.org/examples_index.html" class="btn btn-sm bg-teal-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-file-eye"></i></b>
+																	Demonstration
+																</a>
+															</p>
+															
+															<a href="https://github.com/PMSI-AlignAlytics/dimple" class="btn btn-sm bg-blue btn-labeled btn-labeled-left" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /dimple.js -->
+
+
+							<!-- Echarts -->
+							<div class="card" id="echarts">
+								<div class="card-header header-elements-md-inline">
+									<h5 class="card-title">Echarts library</h5>
+									<div class="header-elements d-flex justify-content-between">
+										<span class="badge bg-slate">Charts</span>
+										<span class="text-muted mx-3">visualizatoin/echarts/</span>
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+									</div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="fontweight-semibold">Overview</h6>
+										<p>ECharts (Enterprise Charts), written in pure JavaScript and based on <a href="http://ecomfe.github.io/zrender/" target="_blank">ZRender</a> (a whole new lightweight canvas library), is a comprehensive charting library offering an easy way of adding intuitive, interactive, and highly customizable charts to your commercial products. It works with all your web and mobile applications, including IE6/7/8/9/10/11, Chrome, Firefox, Safari and Opera. With original features like Drag-Recalculate, Data View and Scale Roaming, ECharts lets you mine and integrate data in ways you didn't think possible.</p>
+
+										<p>ECharts currently supports the following tpes: line (area), column (bar), scatter (bubble), pie (doughnut), radar (filled radar), candlestick, chord, gauge, funnel, map, eventRiver, calendar, force-directed chart etc. Each and every chart is equipped with 7 interactive components: title, tooltip, legend, scale, data area, timeline, and toolbox. Many of these components and charts can be combined in one chart.</p>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="fontweight-semibold">Usage</h6>
+										<div class="mb-3">
+											<p>Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+											<pre><code class="language-markup">&lt;!-- Load jQuery -->
+&lt;script src="../../../../global_assets/js/main/jquery.min.js">&lt;/script>
+
+&lt;!-- Load Echarts library -->
+&lt;script src="../../../../global_assets/js/plugins/visualization/echarts/echarts.min.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Add element with attributes:</p>
+											<pre><code class="language-markup">&lt;!-- Basic markup -->
+&lt;div class="chart-container">
+	&lt;div class="chart has-fixed-height" id="basic_lines">&lt;/div>
+&lt;/div>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Basically there's nothing to call in JS. You just need to create a chart using <a href="http://echarts.baidu.com/doc/doc-en.html" target="_blank">echarts.js API</a> and attach to the DOM element.</p>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="fontweight-semibold">Complete ECharts library documentation</h6>
+										<p>All ECharts library features and API are completely explained in <a href="http://echarts.baidu.com/doc/doc-en.html" target="_blank">online library documentation</a>. Also check out <a href="http://echarts.baidu.com/doc/example-en.html" target="_blank">examples with description</a> or template pages. Also on official website you can find <a href="http://echarts.baidu.com/doc/feature-en.html" target="_blank">features</a> with images and descriptions. Please use these links for a full documentation. Below you'll find additional links related to echarts.js library.</p>
+										<p>By default, Limitless template includes a default theme called <code>limitless.js</code>, located in <code>echarts/theme/</code> folder. You can use it as a base if you need to adjust theme elements and styles to your needs, all default styling options are located in this file.</p>
+									</div>
+
+									<div>
+										<h6 class="fontweight-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="fontweight-semibold">File name</td>
+														<td>echarts.min.js</td>
+													</tr>
+													<tr>
+														<td class="fontweight-semibold">Location</td>
+														<td>global_assets/js/plugins/visualization/echarts/</td>
+													</tr>
+													<tr>
+														<td class="fontweight-semibold">Links</td>
+														<td>
+															<p>
+																<a href="https://ecomfe.github.io/echarts-doc/public/en/index.html" class="btn btn-sm bg-danger-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+
+															<p>
+																<a href="https://ecomfe.github.io/echarts-doc/public/en/api.html#echarts" class="btn btn-sm bg-slate btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-file-text2"></i></b>
+																	Full documentation
+																</a>
+															</p>
+															
+															<p>
+																<a href="https://ecomfe.github.io/echarts-examples/public/index.html" class="btn btn-sm bg-teal-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-file-eye"></i></b>
+																	Demonstration
+																</a>
+															</p>
+															
+															<a href="https://github.com/apache/incubator-echarts" class="btn btn-sm bg-blue btn-labeled btn-labeled-left" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /echarts -->
+
+
+							<!-- Google charts -->
+							<div class="card" id="google">
+								<div class="card-header header-elements-md-inline">
+									<h5 class="card-title">Google Charts library</h5>
+									<div class="header-elements d-flex justify-content-between">
+										<span class="badge bg-slate">Charts</span>
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+									</div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="fontweight-semibold">Overview</h6>
+										<p>Google Charts provides a perfect way to visualize data on your website. From simple line charts to complex hierarchical tree maps, the chart gallery provides a large number of ready-to-use chart types. The most common way to use Google Charts is with simple JavaScript that you embed in your web page. You load some Google Chart libraries, list the data to be charted, select options to customize your chart, and finally create a chart object with an id that you choose. Then, later in the web page, you create a <code>&lt;div></code> with that id to display the Google Chart.</p>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="fontweight-semibold">Usage</h6>
+										<div class="mb-3">
+											<p>Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+											<pre><code class="language-markup">&lt;!-- Load the AJAX API -->
+&lt;script src="https://www.google.com/jsapi">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Add element with attributes:</p>
+											<pre><code class="language-markup">&lt;!-- Div that will hold the pie chart -->
+&lt;div class="chart-container">
+	&lt;div class="chart" id="google_pie_chart">&lt;/div>
+&lt;/div>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Add element with attributes:</p>
+											<pre><code class="language-javascript">// Load the Visualization API and the piechart package.
+google.load('visualization', '1.0', {'packages':['corechart']});
+
+// Set a callback to run when the Google Visualization API is loaded.
+google.setOnLoadCallback(drawChart);
+
+// Callback that creates and populates a data table,
+// instantiates the pie chart, passes in the data and
+// draws it.
+function drawChart() {
+
+// Create the data table.
+var data = new google.visualization.DataTable();
+data.addColumn('string', 'Topping');
+data.addColumn('number', 'Slices');
+data.addRows([
+	['Mushrooms', 3],
+	['Onions', 1],
+	['Olives', 1],
+	['Zucchini', 1],
+	['Pepperoni', 2]
+]);
+
+// Set chart options
+var options = {'title':'How Much Pizza I Ate Last Night',
+               'width':400,
+               'height':300};
+
+// Instantiate and draw our chart, passing in some options.
+var chart = new google.visualization.PieChart(document.getElementById('google_pie_chart'));
+	chart.draw(data, options);
+}
+</code></pre>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="fontweight-semibold">Complete Google Charts documentation</h6>
+										<p>Google Charts library has a very detailed <a href="https://developers.google.com/chart/interactive/docs/" target="_blank">online documentation</a>. It includes <a href="https://google-developers.appspot.com/chart/interactive/docs/gallery" target="_blank">all possible chart types</a> with examples and a complete list of options for each chart type. Also you can find there a <a href="https://google-developers.appspot.com/chart/interactive/docs/reference" target="_blank">full API reference</a>. Also Google Charts library has a great <a href="https://groups.google.com/forum/#!forum/google-visualization-api" target="_blank">Google Groups community</a> where you can ask questions and browse already resolved issues. Please use these links for a full documentation. Below you'll find additional links related to Google Charts library.</p>
+									</div>
+
+									<div>
+										<h6 class="fontweight-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="fontweight-semibold">Links</td>
+														<td>
+															<p>
+																<a href="https://google-developers.appspot.com/chart/" class="btn btn-sm bg-danger-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official website
+																</a>
+															</p>
+
+															<p>
+																<a href="https://google-developers.appspot.com/chart/interactive/docs/" class="btn btn-sm bg-slate btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-file-text2"></i></b>
+																	Full documentation
+																</a>
+															</p>
+															
+															<p>
+																<a href="https://google-developers.appspot.com/chart/interactive/docs/reference" class="btn btn-sm bg-slate btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-file-text2"></i></b>
+																	API reference
+																</a>
+															</p>
+
+															<p>
+																<a href="https://groups.google.com/forum/#!forum/google-visualization-api" class="btn btn-sm bg-teal-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-google"></i></b>
+																	Google Groups
+																</a>
+															</p>
+															
+															<a href="https://github.com/google/google-visualization-issues/issues" class="btn btn-sm bg-blue btn-labeled btn-labeled-left" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github issue tracker
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /google charts -->
+
+					</div>
+					<!-- /left content -->
+
+
+					<!-- Right sidebar component -->
+					<div class="sidebar-sticky w-100 w-md-auto order-1 order-md-2">
+						<div class="sidebar sidebar-light sidebar-component sidebar-component-right sidebar-expand-md mb-3">
+							<div class="sidebar-content">
+								<div class="card">
+									<div class="card-header bg-transparent header-elements-inline">
+										<span class="text-uppercase font-size-sm font-weight-semibold">Page navigation</span>
+										<div class="header-elements">
+											<div class="list-icons">
+						                		<a class="list-icons-item" data-action="collapse"></a>
+					                		</div>
+				                		</div>
+									</div>
+
+									<div class="card-body">
+										<a href="http://themeforest.net/user/kopyov" class="btn bg-blue btn-block" target="_blank"><i class="icon-reading mr-2"></i> Contact author</a>
+									</div>
+
+									<ul class="nav nav-sidebar nav-scrollspy" data-nav-type="accordion">
+										<li class="nav-item-header pt-0"><div class="text-uppercase font-size-xs line-height-xs">Sections</div> <i class="icon-menu"></i></li>
+										<li class="nav-item"><a href="#maps" class="nav-link">Vector Maps</a></li>
+										<li class="nav-item"><a href="#d3" class="nav-link">D3 Library</a></li>
+										<li class="nav-item"><a href="#c3" class="nav-link">C3 Library</a></li>
+										<li class="nav-item"><a href="#dimple" class="nav-link">Dimple Library</a></li>
+										<li class="nav-item"><a href="#echarts" class="nav-link">ECharts Library</a></li>
+										<li class="nav-item"><a href="#google" class="nav-link">Google Charts</a></li>
+										<li class="nav-item-divider"></li>
+										<li class="nav-item"><a href="#" class="nav-link">Go to top <i class="icon-circle-up2 mr-0 ml-auto"></i></a></li>
+									</ul>
+								</div>
+				            </div>
+						</div>
+					</div>
+					<!-- /right sidebar component -->
+
+				</div>
+				<!-- /inner container -->
+
+			</div>
+			<!-- /content area -->
+
+
+			<!-- Footer -->
+			<div class="navbar navbar-expand-lg navbar-light">
+				<div class="text-center d-lg-none w-100">
+					<button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse" data-target="#navbar-footer">
+						<i class="icon-unfold mr-2"></i>
+						Footer
+					</button>
+				</div>
+
+				<div class="navbar-collapse collapse" id="navbar-footer">
+					<span class="navbar-text">
+						&copy; 2015 - 2018. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
+					</span>
+
+					<ul class="navbar-nav ml-lg-auto">
+						<li class="nav-item"><a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov" class="navbar-nav-link font-weight-semibold"><span class="text-pink-400"><i class="icon-cart2 mr-2"></i> Purchase</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /footer -->
+
+		</div>
+		<!-- /main content -->
+
+	</div>
+	<!-- /page content -->
+
+</body>
+</html>

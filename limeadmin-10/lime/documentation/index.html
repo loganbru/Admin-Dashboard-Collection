@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Responsive Admin Dashboard Template">
+        <meta name="keywords" content="admin,dashboard">
+        <meta name="author" content="stacks">
+        <!-- The above 6 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        
+        <!-- Title -->
+        <title>Lime - Responsive Admin Dashboard Template</title>
+
+        <!-- Styles -->
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="../theme/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../theme/assets/plugins/font-awesome/css/all.min.css" rel="stylesheet">
+        <link href="google-code-prettify/prettify.css" rel="stylesheet">
+
+      
+        <!-- Theme Styles -->
+        <link href="../theme/assets/css/lime.min.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        
+        <div class="lime-sidebar">
+            <div class="lime-sidebar-inner slimscroll">
+                <ul class="accordion-menu">
+                    <li class="sidebar-title">
+                        Apps
+                    </li>
+                    <li>
+                        <a href="#introduction"><i class="material-icons">home</i>Introduction</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="material-icons">text_format</i>Structure<i class="material-icons has-sub-menu">keyboard_arrow_left</i></a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#folder">Folder Structure</a>
+                            </li>
+                            <li>
+                                <a href="#html">HTML Structure</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="material-icons">text_format</i>Customization<i class="material-icons has-sub-menu">keyboard_arrow_left</i></a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#code">Code</a>
+                            </li>
+                            <li>
+                                <a href="#fonts">Fonts</a>
+                            </li>
+                            <li>
+                                <a href="#css">CSS Utilities</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#newpage"><i class="material-icons">bookmark_border</i>New Page</a>
+                    </li>
+                    <li>
+                        <a href="#references"><i class="material-icons">access_time</i>References</a>
+                    </li>
+                    <li>
+                        <a href="#support"><i class="material-icons">access_time</i>Support</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        
+        <div class="theme-settings-sidebar">
+            <div class="theme-settings-inner">
+                <h3 class="theme-sidebar-title">Themes</h3>
+                <p class="themes-info">Select a demo</p>
+                
+                <a class="theme-item active" href="#">
+                    <img src="../../assets/images/themes/1.png" alt="">
+                    <h4 class="theme-title">Classic</h4>
+                </a>
+                <a class="theme-item" href="#">
+                    <img src="../../assets/images/themes/1.png" alt="">
+                    <h4 class="theme-title">Corporate</h4>
+                </a>
+                <a class="theme-item" href="#">
+                    <img src="../../assets/images/themes/1.png" alt="">
+                    <h4 class="theme-title">Push Sidebar</h4>
+                </a>
+            </div>
+        </div>
+        
+        <div class="lime-header">
+            <nav class="navbar navbar-expand-lg">
+                <section class="material-design-hamburger navigation-toggle">
+                    <a href="javascript:void(0)" class="button-collapse material-design-hamburger__icon">
+                        <span class="material-design-hamburger__layer"></span>
+                    </a>
+                </section>
+                <a class="navbar-brand" href="#">Lime</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="material-icons">keyboard_arrow_down</i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="form-inline my-2 my-lg-0 search">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search for projects, apps, pages..." aria-label="Search">
+                    </form>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle theme-settings-link" href="#">
+                                <i class="material-icons">layers</i>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="material-icons">more_vert</i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a class="dropdown-item" href="#">Account</a></li>
+                                <li><a class="dropdown-item" href="#">Settings</a></li>
+                                <li class="divider"></li>
+                                <li><a class="dropdown-item" href="#">Log Out</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="lime-container">
+            <div class="lime-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="page-title">
+                                <h3>Documentation</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card" id="introduction">
+                                <div class="card-body">
+                                    <h5 class="card-title">Introduction</h5>
+                                    <p>The Lime UI Framework is a premium Web Application Admin Dashboard built on top of MaterializeCSS Framework. It was created to be the most functional, clean and well designed theme for any types of backend applications. We have carefully designed all common elements.<br><br>We love when all updates are free. Once you’ve purchased Lime, you’ll be able to download all future updates. If you like our theme don’t forget to rate us five stars. Good rating provides more and better updates in future!<br><br>If you have any questions that are beyond the scope of this help file, please feel free to email via our user page contact form <a href="https://themeforest.net/user/stacks" target="_blank">here</a>. Thanks so much!</p>
+                                </div>
+                            </div>
+                            <div class="card" id="folder">
+                                <div class="card-body">
+                                    <h5 class="card-title">Folder Structure</h5>
+                                    <pre class="no-m">
+theme/
+├─ assets/
+│    ├─ css/
+│    ├─ images/
+│    ├─ js/
+│    │    └─ pages/
+│    └─ plugins/
+└─ templates/
+        └─ admin1/</pre>
+                                </div>
+                            </div>
+                            <div class="card" id="html">
+                                <div class="card-body">
+                                    <h5 class="card-title">HTML Structure</h5>
+                                    <p>Head</p>
+                                    <pre class="no-m">
+&lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+    &lt;meta name="description" content="Responsive Admin Dashboard Template"&gt;
+    &lt;meta name="keywords" content="admin,dashboard"&gt;
+    &lt;meta name="author" content="stacks"&gt;
+    &lt;!-- The above 6 meta tags *must* come first in the head; any other head content must come *after* these tags --&gt;
+
+    &lt;!-- Title --&gt;
+    &lt;title&gt;Lime - Responsive Admin Dashboard Template&lt;/title&gt;
+
+    &lt;!-- Styles --&gt;
+    &lt;link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap" rel="stylesheet"&gt;
+    &lt;link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"&gt;
+    &lt;link href="../../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet"&gt;
+    &lt;link href="../../assets/plugins/font-awesome/css/all.min.css" rel="stylesheet"&gt;
+
+
+    &lt;!-- Theme Styles --&gt;
+    &lt;link href="../../assets/css/lime.min.css" rel="stylesheet"&gt;
+    &lt;link href="../../assets/css/custom.css" rel="stylesheet"&gt;
+
+    &lt;!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries --&gt;
+    &lt;!-- WARNING: Respond.js doesn't work if you view the page via file:// --&gt;
+    &lt;!--[if lt IE 9]&gt;
+    &lt;script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"&gt;&lt;/script&gt;
+    &lt;script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"&gt;&lt;/script&gt;
+    &lt;![endif]--&gt;
+&lt;/head&gt;</pre>
+                                    <p class="m-t-lg">Body</p>
+                                    <pre class="no-m">
+&lt;body&gt;
+
+    &lt;div class="lime-sidebar"&gt;
+        &lt;div class="lime-sidebar-inner slimscroll"&gt;
+            &lt;ul class="accordion-menu"&gt;
+                &lt;li class="sidebar-title"&gt;
+                    Apps
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href="index.html" class="active"&gt;&lt;i class="material-icons"&gt;dashboard&lt;/i&gt;Dashboard&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href="profile.html"&gt;&lt;i class="material-icons"&gt;person_outline&lt;/i&gt;Profile&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href="mailbox.html"&gt;&lt;i class="material-icons"&gt;inbox&lt;/i&gt;Mailbox&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href="todo.html"&gt;&lt;i class="material-icons"&gt;done_all&lt;/i&gt;Todo&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href="file-manager.html"&gt;&lt;i class="material-icons"&gt;cloud_queue&lt;/i&gt;File Manager&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="sidebar-title"&gt;
+                    UI Elements
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href="#"&gt;&lt;i class="material-icons"&gt;text_format&lt;/i&gt;Styles&lt;i class="material-icons has-sub-menu"&gt;keyboard_arrow_left&lt;/i&gt;&lt;/a&gt;
+                    &lt;ul class="sub-menu"&gt;
+                        &lt;li&gt;
+                            &lt;a href="styles-typography.html"&gt;Typography&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href="styles-code.html"&gt;Code&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href="styles-tables.html"&gt;Tables&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href="styles-icons.html"&gt;Icons&lt;/a&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=""&gt;&lt;i class="material-icons"&gt;apps&lt;/i&gt;Components&lt;i class="material-icons has-sub-menu"&gt;keyboard_arrow_left&lt;/i&gt;&lt;/a&gt;
+                    &lt;ul class="sub-menu"&gt;
+                        &lt;li&gt;
+                            &lt;a href="ui-alerts.html"&gt;Alerts&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href="ui-badge.html"&gt;Badge&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href="ui-breadcrumb.html"&gt;Breadcrumb&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href="ui-buttons.html"&gt;Buttons&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href="ui-button-group.html"&gt;Button Group&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href="ui-card.html"&gt;Card&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href="ui-collapse.html"&gt;Collapse&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href="ui-dropdowns.html"&gt;Dropdowns&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href="ui-list-group.html"&gt;List Group&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href="ui-media-object.html"&gt;Media Object&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href="ui-modal.html"&gt;Modal&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href="ui-navs.html"&gt;Navs&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href="ui-pagination.html"&gt;Pagination&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href="ui-popovers.html"&gt;Popovers&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href="ui-progress.html"&gt;Progress&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href="ui-spinners.html"&gt;Spinners&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href="ui-toast.html"&gt;Toast&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href="ui-tooltips.html"&gt;Tooltips&lt;/a&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=""&gt;&lt;i class="material-icons"&gt;code&lt;/i&gt;Plugins&lt;i class="material-icons has-sub-menu"&gt;keyboard_arrow_left&lt;/i&gt;&lt;/a&gt;
+                    &lt;ul class="sub-menu"&gt;
+                        &lt;li&gt;
+                            &lt;a href="plugins-crop.html"&gt;Image Crop&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href="plugins-zoom.html"&gt;Image Zoom&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href="plugins-select2.html"&gt;Select2&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href="plugins-plupload.html"&gt;Plupload&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href="plugins-toastr.html"&gt;Toastr&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href="plugins-sliders.html"&gt;Range Sliders&lt;/a&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href="charts.html"&gt;&lt;i class="material-icons"&gt;bar_chart&lt;/i&gt;Charts&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href="forms.html"&gt;&lt;i class="material-icons"&gt;input&lt;/i&gt;Forms&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="sidebar-title"&gt;
+                    Other
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=""&gt;&lt;i class="material-icons"&gt;star_border&lt;/i&gt;Pages&lt;i class="material-icons has-sub-menu"&gt;keyboard_arrow_left&lt;/i&gt;&lt;/a&gt;
+                    &lt;ul class="sub-menu"&gt;
+                        &lt;li&gt;
+                            &lt;a href="404.html"&gt;404&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href="500.html"&gt;500&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href="sign-in.html"&gt;Sign In&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href="sign-up.html"&gt;Sign Up&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href="lock-screen.html"&gt;Lock Screen&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href="coming-soon.html"&gt;Coming Soon&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href="invoice.html"&gt;Invoice&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href="pricing-tables.html"&gt;Pricing Tables&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href="help-center.html"&gt;Help Center&lt;/a&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href="#"&gt;&lt;i class="material-icons"&gt;bookmark_border&lt;/i&gt;Documentation&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href="#"&gt;&lt;i class="material-icons"&gt;access_time&lt;/i&gt;Change Log&lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+
+    &lt;div class="theme-settings-sidebar"&gt;
+        &lt;div class="theme-settings-inner"&gt;
+            &lt;h3 class="theme-sidebar-title"&gt;Themes&lt;/h3&gt;
+            &lt;p class="themes-info"&gt;Select a demo&lt;/p&gt;
+
+            &lt;a class="theme-item active" href="#"&gt;
+                &lt;img src="../../assets/images/themes/1.png" alt=""&gt;
+                &lt;h4 class="theme-title"&gt;Classic&lt;/h4&gt;
+            &lt;/a&gt;
+            &lt;a class="theme-item" href="#"&gt;
+                &lt;div class="coming-theme"&gt;Coming Soon&lt;/div&gt;
+                &lt;img src="../../assets/images/themes/2.png" alt=""&gt;
+                &lt;h4 class="theme-title"&gt;Dark Theme&lt;/h4&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="lime-header"&gt;
+        &lt;nav class="navbar navbar-expand-lg"&gt;
+            &lt;section class="material-design-hamburger navigation-toggle"&gt;
+                &lt;a href="javascript:void(0)" class="button-collapse material-design-hamburger__icon"&gt;
+                    &lt;span class="material-design-hamburger__layer"&gt;&lt;/span&gt;
+                &lt;/a&gt;
+            &lt;/section&gt;
+            &lt;a class="navbar-brand" href="#"&gt;Lime&lt;/a&gt;
+            &lt;button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"&gt;
+                &lt;i class="material-icons"&gt;keyboard_arrow_down&lt;/i&gt;
+            &lt;/button&gt;
+
+            &lt;div class="collapse navbar-collapse" id="navbarSupportedContent"&gt;
+                &lt;form class="form-inline my-2 my-lg-0 search"&gt;
+                    &lt;input class="form-control mr-sm-2" type="search" placeholder="Search for projects, apps, pages..." aria-label="Search"&gt;
+                &lt;/form&gt;
+                &lt;ul class="navbar-nav ml-auto"&gt;
+                    &lt;li class="nav-item dropdown"&gt;
+                        &lt;a class="nav-link dropdown-toggle theme-settings-link" href="#"&gt;
+                            &lt;i class="material-icons"&gt;layers&lt;/i&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class="nav-item dropdown"&gt;
+                        &lt;a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"&gt;
+                            &lt;i class="material-icons"&gt;more_vert&lt;/i&gt;
+                        &lt;/a&gt;
+                        &lt;ul class="dropdown-menu dropdown-menu-right"&gt;
+                            &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Account&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Settings&lt;/a&gt;&lt;/li&gt;
+                            &lt;li class="divider"&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Log Out&lt;/a&gt;&lt;/li&gt;
+
+                        &lt;/ul&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/nav&gt;
+    &lt;/div&gt;
+    &lt;div class="lime-container"&gt;
+        &lt;div class="lime-body"&gt;
+            &lt;div class="container"&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="lime-footer"&gt;
+            &lt;div class="container"&gt;
+                &lt;div class="row"&gt;
+                    &lt;div class="col-md-12"&gt;
+                        &lt;span class="footer-text"&gt;2019 © stacks&lt;/span&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+
+    &lt;!-- Javascripts --&gt;
+    &lt;script src="../../assets/plugins/jquery/jquery-3.1.0.min.js"&gt;&lt;/script&gt;
+    &lt;script src="../../assets/plugins/bootstrap/popper.min.js"&gt;&lt;/script&gt;
+    &lt;script src="../../assets/plugins/bootstrap/js/bootstrap.min.js"&gt;&lt;/script&gt;
+    &lt;script src="../../assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js"&gt;&lt;/script&gt;
+    &lt;script src="../../assets/js/lime.min.js"&gt;&lt;/script&gt;
+&lt;/body&gt;</pre>
+                                </div>
+                            </div>
+                            <div class="card" id="code">
+                                <div class="card-body">
+                                    <h5 class="card-title">Code</h5>
+                                    <p class="no-m">All theme CSS files are located in <code>theme/assets/css</code> folder. For your CSS customization you can use <code>theme/assets/css/custom.css</code>. Keep your custom CSS separate it makes more easier when updating the theme in future.<br><br>All Javascript files are located in <code>source/assets/js/</code> folder. Also Page-level Javascript files are located in <code>theme/assets/js/pages/</code> folder and each page has its own Javascript file. For your Javascripts you can use <code>theme/assets/js/custom.js</code>. Keep your custom Javascript separate it makes more easier when updating the theme in future.</p>
+                                </div>
+                            </div>
+                            <div class="card" id="fonts">
+                                <div class="card-body">
+                                    <h5 class="card-title">Fonts</h5>
+                                    <p>Lime uses Poppins font. It must be loaded in HTML Head before other CSS files.<br>
+
+                                        Font code example:</p>
+                                        <pre>&lt;link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&amp;display=swap" rel="stylesheet"&gt;</pre>
+                                    <p class="no-m">Lime also uses Material and Fontawesome icons.</p>
+                                </div>
+                            </div>
+                            <div class="card" id="css">
+                                <div class="card-body">
+                                    <h5 class="card-title">CSS Utilities</h5>
+                                    <p>All available Helper Classes in Lime:</p>
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th></th>
+                                                    <th>Prefix</th>
+                                                    <th>Second Prefix (side)</th>
+                                                    <th>third Prefix</th>
+                                                    <th>Suffix (value)</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Margin</td>
+                                                    <td>m</td>
+                                                    <td>t,r,b,l</td>
+                                                    <td>n (only for negative values)</td>
+                                                    <td>xxs, xs, sm, md, lg, xxl</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Padding</td>
+                                                    <td>p</td>
+                                                    <td>v,h (top &amp; bottom, left &amp; right)</td>
+                                                    <td></td>
+                                                    <td>xxs, xs, sm, md, lg, xxl</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <p><code>.no-s</code> Removes margins &amp; paddings</p>
+                                    <p><code>.no-m</code> Removes margins</p>
+                                    <p><code>.no-p</code> Removes paddings</p>
+                                    <p><code>.no-p-h</code> Removes paddings from left &amp; right</p>
+                                    <p><code>.no-p-v</code> Removes Paddings from top &amp; bottom</p>
+                                    <hr>
+                                    <p><code>.no-b</code> Removes borders</p>
+                                    <p><code>.b</code> Adds border from all sides</p>
+                                    <p><code>.b-t</code>, <code>.b-r</code>, <code>.b-b</code>, <code>.b-l</code> Adds border from top, right, bottom, left</p>
+                                    <p><code>.b-default</code>, <code>.b-primary</code>, <code>.b-success</code>, <code>.b-info</code>, <code>.b-warning</code>, <code>.b-danger</code> Adds border by contextual colors, see <a href="#colors">colors</a> doc.</p>
+                                    <p><code>.b-2</code>, <code>.b-3</code>, <code>.b-4</code> Border size</p>
+                                    <p><code>.b-n-t</code>, <code>.b-n-r</code>, <code>.b-n-b</code>, <code>.b-n-l</code> Removes border from  top, right, bottom, left</p>
+                                    <hr>
+                                    <p><code>.no-r</code> Removes border radius</p>
+                                    <p><code>.r</code> Adds border radius</p>
+                                    <p><code>.r-t-l</code>, <code>.r-t-r</code>, <code>.r-b-l</code>, <code>.r-b-r</code> Adds border radius From top-left, top-right, bottom-left, bottom-right sides.</p>
+                                    <p class="no-m"><code>.no-r-t-l</code>, <code>.no-r-t-r</code>, <code>.no-r-b-l</code>, <code>.no-r-b-r</code> Removes border radius From top-left, top-right, bottom-left, bottom-right sides.</p>
+                                </div>
+                            </div>
+                            <div class="card" id="newpage">
+                                <div class="card-body">
+                                    <h5 class="card-title">New Page</h5>
+                                    <p class="no-m">It's very easy to create a new page with Lime.<br><br>You can use all components that are shown in the live preview. Note, all content should be placed in <code>.lime-body</code> to fit the page correctly.<br><br>If you will use component that needs some JS codes which are included in component demo page at the end of the HTML body tag, you can just include the same JS file. If you will use component that needs an extra plugin to work, you have to include files of this plugins as they are included in the preview page.</p>
+                                </div>
+                            </div>
+                            <div class="card" id="references">
+                                <div class="card-body">
+                                    <h5 class="card-title">References</h5>
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Plugin</th>
+                                                    <th>Official Website</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Apex Charts</td>
+                                                    <td><a href="https://apexcharts.com/">https://apexcharts.com/</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Bootstrap</td>
+                                                    <td><a href="http://getbootstrap.com/">http://getbootstrap.com/</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Chartjs</td>
+                                                    <td><a href="http://www.chartjs.org/">http://www.chartjs.org/</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>jQuery elevateZoom</td>
+                                                    <td><a href="www.elevateweb.co.uk/image-zoom/">www.elevateweb.co.uk/image-zoom/</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>FontAwesome</td>
+                                                    <td><a href="http://fontawesome.io/">http://fontawesome.io/</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Image Cropper</td>
+                                                    <td><a href="http://fengyuanchen.github.io/cropper/">http://fengyuanchen.github.io/cropper/</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Ion-slider</td>
+                                                    <td><a href="http://ionden.com/a/plugins/ion.rangeSlider/">http://ionden.com/a/plugins/ion.rangeSlider/</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Jquery</td>
+                                                    <td><a href="https://jquery.com/">https://jquery.com/</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Modernizr</td>
+                                                    <td><a href="https://modernizr.com/">https://modernizr.com/</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Plupload</td>
+                                                    <td><a href="https://www.plupload.com/">https://www.plupload.com/</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Slimscroll</td>
+                                                    <td><a href="http://rocha.la/jQuery-slimScroll/">http://rocha.la/jQuery-slimScroll/</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Select2</td>
+                                                    <td><a href="https://select2.org/">https://select2.org/</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Toastr</td>
+                                                    <td><a href="https://github.com/CodeSeven/toastr/">https://github.com/CodeSeven/toastr/</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" id="support">
+                                <div class="card-body">
+                                    <h5 class="card-title">Support</h5>
+                                    <p class="no-m">Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>       
+                </div>
+            </div>
+            <div class="lime-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <span class="footer-text">2019 © stacks</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <!-- Javascripts -->
+        <script src="../theme/assets/plugins/jquery/jquery-3.1.0.min.js"></script>
+        <script src="../theme/assets/plugins/bootstrap/popper.min.js"></script>
+        <script src="../theme/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+        <script src="../theme/assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+        <script src="google-code-prettify/prettify.js"></script>
+        <script src="../theme/assets/js/lime.min.js"></script>
+        <script src="docs.js"></script>
+    </body>
+</html>

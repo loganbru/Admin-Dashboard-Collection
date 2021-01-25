@@ -1,0 +1,74 @@
+<pgcard TimeOut="3000" AdditionalClasses="widget-15 card card-condensed  no-margin no-border widget-loader-circle" Maximize="false" Toggle="false"
+ Close="false" BodyClass="no-padding" HeaderClass="top-right">
+	<pg-tabset tabAnimation="slide-left" Type="simple" ShowPagination="true">
+		<pg-tab>
+			<ng-template #TabHeading>
+				APPL
+				<br> 22.23
+				<br>
+				<span class="text-success">+60.223%</span>
+			</ng-template>
+			<div class="row column-seperation">
+				<div class="full-width">
+					<div class="full-width" #chartContainer>
+						<div class="widget-15-chart">
+							<nvd3 [options]="chartOptions" [data]="chartData"></nvd3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</pg-tab>
+		<pg-tab>
+			<ng-template #TabHeading>
+				FB
+				<br> 45.97
+				<br>
+				<span class="text-danger">-06.56%</span>
+			</ng-template>
+			<div class="row column-seperation">
+				<div class="full-width">
+					<div class="full-width" #chartContainer>
+						<div class="widget-15-chart">
+							<nvd3 [options]="chartOptions" [data]="chartData"></nvd3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</pg-tab>
+		<pg-tab>
+			<ng-template #TabHeading>
+				GOOG
+				<br> 22.23
+				<br>
+				<span class="text-success">+60.223%</span>
+			</ng-template>
+			<div class="row column-seperation">
+				<div class="full-width">
+					<div class="full-width" #chartContainer>
+						<div class="widget-15-chart">
+							<nvd3 [options]="chartOptions" [data]="chartData"></nvd3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</pg-tab>
+	</pg-tabset>
+	<div class="p-t-10 p-l-20 p-r-20 p-b-30">
+		<div class="row">
+			<div class="col-md-9">
+				<p class="fs-16 text-black">Apple’s Motivation - Innovation
+					<br>distinguishes between A leader and a follower.
+				</p>
+
+				<p class="small hint-text p-b-10">VIA Apple Store (Consumer and Education Individuals)
+					<br>(800) MY-APPLE (800-692-7753)
+				</p>
+			</div>
+			<div class="col-md-3 text-right">
+				<p class="font-montserrat bold text-success fs-16">+0.94</p>
+
+				<p class="font-montserrat bold text-danger fs-16">-0.63</p>
+			</div>
+		</div>
+	</div>
+</pgcard>

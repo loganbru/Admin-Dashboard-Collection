@@ -1,0 +1,219 @@
+[
+    {
+        "author": {
+            "name" : "",
+            "avatar": "",
+            "avatar2x": ""
+        },
+        "post" : {
+            "type": "intro",
+            "location": "",
+            "activity": "",                                    
+            "body": "",
+            "caption" : "",
+            "image": "",
+            "timestamp": "",
+            "likes": "",
+            "comments": ""
+        }
+    },
+    {
+        "author": {
+            "name" : "",
+            "avatar": "",
+            "avatar2x": ""
+            
+        },
+        "post" : {
+            "type": "status",
+            "location": "",
+            "activity": "",                                    
+            "body": "",
+            "caption" : "",
+            "image": "",
+            "timestamp": "",
+            "likes": "",
+            "comments": ""
+        }
+    },
+    {
+        "author": {
+            "name" : "David Nester",
+            "avatar": "assets/img/profiles/5.jpg",
+            "avatar2x": "assets/img/profiles/5x.jpg"
+        },
+        "post" : {
+            "type": "self",
+            "location": "NYC, New York",
+            "activity": "updated his status",                        
+            "body": "Earned my first salary bonus for the best design of the year award.",
+            "caption" : "",
+            "image": "",
+            "timestamp": "few seconds ago",
+            "likes": "23K",
+            "comments": "5,345"
+        }
+    },
+    {
+        "author": {
+            "name" : "Shannon Williams",
+            "avatar": "assets/img/profiles/5.jpg",
+            "avatar2x": "assets/img/profiles/5x.jpg"
+        },
+        "post" : {
+            "type": "text_image",
+            "location": "NYC, New York",
+            "activity": "Shared a photo",            
+            "body": "Inspired by : good design is obvious, great design is transparent",
+            "caption" : "via themeforest",
+            "image": "assets/img/social-post-image.png",
+            "timestamp": "few seconds ago",
+            "likes": "23K",
+            "comments": "5,345"
+        }
+    },
+    {
+        "author": {
+            "name" : "Jeff Curtis",
+            "avatar": "assets/img/profiles/8.jpg",
+            "avatar2x": "assets/img/profiles/8x.jpg"
+        },
+        "post" : {
+            "type": "text",
+            "location": "SF, California",
+            "activity": "Shared a Tweet",
+            "body": "What you think, you become. What you feel, you attract. What you imagine, you create - Buddha. #quote",
+            "caption" : "via Twitter",
+            "image": "",
+            "timestamp": "few seconds ago",
+            "likes": "",
+            "comments": ""
+        }
+    },
+    {
+        "author": {
+            "name" : "Andy Young",
+            "avatar": "assets/img/profiles/4.jpg",
+            "avatar2x": "assets/img/profiles/4x.jpg"
+        },
+        "post" : {
+            "type": "text",
+            "location": "NYC, New York",
+            "activity": "Updated his status",
+            "body": "What a lovely day! I think I should go and play outside.",
+            "caption" : "",
+            "image": "",
+            "timestamp": "few seconds ago",
+            "likes": "",
+            "comments": ""
+        }
+    },
+    {
+        "author": {
+            "name" : "Tracy Brooks",
+            "avatar": "assets/img/profiles/7.jpg",
+            "avatar2x": "assets/img/profiles/7x.jpg"
+        },
+        "post" : {
+            "type": "image_text",
+            "location": "NYC, New York",
+            "activity": "Shared a photo on your wall",
+            "body": "Like if you agree",
+            "caption" : "",
+            "image": "assets/img/social/quote.jpg",
+            "timestamp": "few seconds ago",
+            "likes": "23K",
+            "comments": "5,345"
+        }
+    },
+    {
+        "author": {
+            "name" : "David Nester",
+            "avatar": "assets/img/profiles/avatar.jpg",
+            "avatar2x": "assets/img/profiles/avatar_small2x.jpg"
+        },
+        "post" : {
+            "type": "image_text",
+            "location": "NYC, New York",
+            "activity": "Shared a photo on your wall",
+            "body": "#TBT :D",
+            "caption" : "",
+            "image": "assets/img/social/person-1.jpg",
+            "timestamp": "few seconds ago",
+            "likes": "23K",
+            "comments": "5,345"
+        }
+    },
+    {
+        "author": {
+            "name" : "Nathaniel Hamilton",
+            "avatar": "assets/img/profiles/6.jpg",
+            "avatar2x": "assets/img/profiles/6x.jpg"
+        },
+        "post" : {
+            "type": "text",
+            "location": "NYC, New York",
+            "activity": "Shared a Tweet",
+            "body": "Testing can show the presense of bugs, but not their absence.",
+            "caption" : "",
+            "image": "",
+            "timestamp": "few seconds ago",
+            "likes": "",
+            "comments": ""
+        }
+    },
+    {
+        "author": {
+            "name" : "Nathaniel Hamilton",
+            "avatar": "assets/img/profiles/6.jpg",
+            "avatar2x": "assets/img/profiles/6x.jpg"
+        },
+        "post" : {
+            "type": "text",
+            "location": "NYC, New York",
+            "activity": "Shared a Tweet",
+            "body": "There is nothing new under the sun, but there are lots of old things we don't know yet.",
+            "caption" : "",
+            "image": "",
+            "timestamp": "few seconds ago",
+            "likes": "",
+            "comments": ""
+        }
+    },
+    {
+        "author": {
+            "name" : "",
+            "avatar": "",
+            "avatar2x": ""
+        },
+        "post" : {
+            "type": "news",
+            "location": "",
+            "activity": "CNN",
+            "body": "Ebola outbreak: Clinical drug trials to start next month as death toll mounts.",
+            "caption" : "",
+            "image": "",
+            "timestamp": "Apr 23",
+            "likes": "239",
+            "comments": "31"
+        }
+    },
+    {
+        "author": {
+            "name" : "John Smith",
+            "avatar": "",
+            "avatar2x": ""
+        },
+        "post" : {
+            "type": "stocks",
+            "location": "",
+            "activity": "Apple Inc.",
+            "body": "111.25  0.15 (0.13%)",
+            "caption" : "NASDAQ: AAPL - Nov 13 8:37 AM ET",
+            "image": "",
+            "timestamp": "Apr 23",
+            "likes": "239",
+            "comments": "31"
+        }
+    }
+]

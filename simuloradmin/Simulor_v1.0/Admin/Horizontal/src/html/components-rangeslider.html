@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Simulor - Responsive Bootstrap 4 Admin Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+        <meta content="Coderthemes" name="author" />
+
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- ION Slider -->
+        <link href="css/vendor/ion.rangeSlider.css" rel="stylesheet" type="text/css"/>
+        <link href="css/vendor/ion.rangeSlider.skinModern.css" rel="stylesheet" type="text/css"/>
+
+        <!-- App css -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/app.min.css" rel="stylesheet" type="text/css" />
+
+    </head>
+
+    <body>
+
+        @@include('./partials/topbar.html')
+
+        <div class="wrapper">
+            <div class="container-fluid">
+
+                <!-- start page title -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="page-title-box">
+                            <div class="page-title-right">
+                                <ol class="breadcrumb m-0">
+                                    <li class="breadcrumb-item"><a href="#">Simulor</a></li>
+                                    <li class="breadcrumb-item"><a href="#">Components</a></li>
+                                    <li class="breadcrumb-item active">Range Slider</li>
+                                </ol>
+                            </div>
+                            <h4 class="page-title">Range Slider</h4>
+                        </div>
+                    </div>
+                </div>     
+                <!-- end page title --> 
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+
+                                <h4 class="header-title m-t-0">Modern skin</h4>
+    
+                                <p class="text-muted mb-4 font-13">
+                                    Cool, comfortable, responsive and easily customizable range slider
+                                </p>
+    
+                                <form class="form-horizontal">
+                                    <div class="form-group row">
+                                        <label for="range_01" class="col-sm-2 control-label">
+                                            <span>Default</span>
+                                            <span class="font-13 font-weight-normal d-block text-muted clearfix">Start without params</span>
+                                        </label>
+                                        <div class="col-sm-10">
+                                            <input type="text" id="range_01">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="range_02" class="col-sm-2 control-label">
+                                            <span>Min-Max</span>
+                                            <span class="font-13 font-weight-normal d-block text-muted clearfix">Set min value, max value and start point</span>
+                                        </label>
+                                        <div class="col-sm-10">
+                                            <input type="text" id="range_02">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="range_03" class="col-sm-2 control-label">
+                                            <span>Prefix</span>
+                                            <span class="font-13 font-weight-normal d-block text-muted clearfix">showing grid and adding prefix "$"</span>
+                                        </label>
+                                        <div class="col-sm-10">
+                                            <input type="text" id="range_03">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="range_04" class="col-sm-2 control-label">
+                                            <span>Range</span>
+                                            <span class="d-block font-weight-normal font-13 text-muted clearfix">Set up range with negative values</span>
+                                        </label>
+                                        <div class="col-sm-10">
+                                            <input type="text" id="range_04">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="range_05" class="col-sm-2 control-label">
+                                            <span>Step</span>
+                                            <span class="d-block font-13 font-weight-normal text-muted clearfix">Using step 250</span>
+                                        </label>
+                                        <div class="col-sm-10">
+                                            <input type="text" id="range_05">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="range_06" class="col-sm-2 control-label">
+                                            <span>Custom Values</span>
+                                            <span class="d-block font-weight-normal font-13 text-muted clearfix">Using any strings as values</span>
+                                        </label>
+                                        <div class="col-sm-10">
+                                            <input type="text" id="range_06">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="range_07" class="col-sm-2 control-label">
+                                            <span>Prettify Numbers</span>
+                                            <span class="d-block font-weight-normal font-13 text-muted clearfix">Prettify enabled. Much better!</span>
+                                        </label>
+                                        <div class="col-sm-10">
+                                            <input type="text" id="range_07">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="range_08" class="col-sm-2 control-label">
+                                            <span>Disabled</span>
+                                            <span class="d-block font-13 font-weight-normal text-muted clearfix">Lock slider by using disable option</span>
+                                        </label>
+                                        <div class="col-sm-10">
+                                            <input type="text" id="range_08">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="range_09" class="col-sm-2 control-label">
+                                            <span>Extra Example</span>
+                                            <span class="d-block font-13 font-weight-normal text-muted clearfix">Whant to show that max number is not the biggest one?</span>
+                                        </label>
+                                        <div class="col-sm-10">
+                                            <input type="text" id="range_09">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="range_10" class="col-sm-2 control-label">
+                                            <span>Use decorate_both option</span>
+                                            <span class="d-block font-13 font-weight-normal text-muted clearfix">Use decorate_both option</span>
+                                        </label>
+                                        <div class="col-sm-10">
+                                            <input type="text" id="range_10">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="range_11" class="col-sm-2 control-label">
+                                            <span>Postfixes</span>
+                                            <span class="d-block font-weight-normal font-13 text-muted clearfix">Using postfixes</span>
+                                        </label>
+                                        <div class="col-sm-10">
+                                            <input type="text" id="range_11">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="range_12" class="col-sm-2 control-label">
+                                            <span>Hide</span>
+                                            <span class="d-block font-13 font-weight-normal text-muted clearfix">Or hide any part you wish</span>
+                                        </label>
+                                        <div class="col-sm-10">
+                                            <input type="text" id="range_12">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div> <!-- end card-box -->
+                        </div>
+                        
+                    </div><!-- end col -->
+                </div><!-- Row -->
+
+                
+            </div> <!-- end container -->
+        </div>
+        <!-- end wrapper -->
+
+
+        @@include('./partials/footer.html')
+
+
+        <!-- App js -->
+        <script src="js/vendor.min.js"></script>
+        <script src="js/app.min.js"></script>
+
+        <!-- Ion Range Slider-->
+        <script src="js/vendor/ion.rangeSlider.min.js"></script>
+        <script src="js/pages/range-sliders.init.js"></script>
+
+    </body>
+</html>

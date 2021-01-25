@@ -1,0 +1,15 @@
+//
+// Footer
+//
+
+.footer {
+  border-top: 1px solid $gray-300;
+  bottom: 0;
+  padding: 18px 30px 19px;
+  position: absolute;
+  width: 100%;
+  color: $gray-600;
+  span{
+    float: right !important;
+  }
+}

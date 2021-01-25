@@ -1,0 +1,79 @@
+.icon-wpb-quickload,
+.icon-wpb-themeton{
+    background-image: url(images/quick-load.png) !important;
+    background-position: 0 0 !important;
+}
+
+
+/* Widget title color */
+#widget-list > div[id*="_tt_"] .widget-title h4 {color:#0096ff;}
+
+.widget-content ul.tt-widget-categories {
+  list-style:none;
+  padding-left:20px;
+}
+.widget-content ul.tt-widget-categories ul.children{
+  padding:5px 0 0 15px;
+}
+
+.page_option_fieldset label{
+	font-weight: bold;
+	display: inline-block;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+
+.page_option_field{
+    position: relative;
+}
+.page_option_field .wp-picker-holder{
+    position: absolute;
+    z-index: 10;
+}
+
+
+
+/* Font Dialog */
+
+#themeton_modal_font_selector{
+    padding: 10px 20px;
+    padding-left: 25px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+#themeton_modal_font_selector a{
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-right: 20px;
+    padding-right: 20px;
+    border-right: 1px solid #ccc;
+    font-weight: bold;
+}
+#themeton_modal_font_selector input{
+    width: 100%;
+    box-shadow: none;
+    font-size: 12px;
+    padding: 8px;
+}
+#themeton_modal_font{
+    text-align: left;
+}
+#themeton_modal_font a{
+    font-size: 30px;
+    display: inline-block;
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    color: #444;
+    width: 32px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+#themeton_modal_font a:hover{
+    background-color: #eee;
+    color: #d54e21;
+}

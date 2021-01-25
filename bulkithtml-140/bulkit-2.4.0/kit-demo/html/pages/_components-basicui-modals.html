@@ -1,0 +1,1521 @@
+---
+layout: components
+title: Modals
+---
+
+<!-- Hero and nav -->
+<div class="hero is-relative is-theme-info">
+
+    {{> navbar-static-light}}
+
+    <!-- Hero image -->
+    <div id="main-hero" class="hero-body">
+        <div class="container has-text-centered">
+            <div class="columns is-vcentered">
+                <div class="column is-4 is-offset-1 has-text-left">
+                    <h1 class="title components-title is-1">
+                        Modals
+                    </h1>
+                    <h2 class="subtitle is-4 components-subtitle">
+                        Modal dialogs styles and variations.
+                    </h2>
+                    <p class="components-cta">
+                        <a href="#simple-modals" class="button button-cta btn-align light-btn btn-outlined is-bold rounded">
+                            Get Started
+                        </a>
+                    </p>
+                </div>
+                <div class="column is-offset-1 has-text-centered is-hidden-mobile">
+                    <div id="modals-ill" class="vivus-svg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Hero image -->
+</div>
+<!-- /Hero and nav -->
+
+<!-- Scrollnav -->
+<div id="scrollnav" class="scroll-nav-wrapper">
+    <div class="container">
+        <div class="tabs scrollnav-tabs is-centered">
+            <ul>
+                <li class="scrollnav-item is-active"><a href="#simple-modals">Modal sizes</a></li>
+                <li class="scrollnav-item"><a href="#image-modals">Image modals</a></li>
+                <li class="scrollnav-item"><a href="#form-modals">Modal forms</a></li>
+                <li class="scrollnav-item"><a href="#message-modals">Message modals</a></li>
+                <li class="scrollnav-item"><a href="#overlay-colors">Overlay colors</a></li>
+            </ul>
+        </div>
+    </div>  
+</div>
+<!-- /Scrollnav -->
+
+<section class="section is-medium">
+    <div class="container">
+        <div id="simple-modals" class="section-title-wrapper has-text-centered">
+            <div class="bg-number">1</div>
+            <h2 class="title section-title has-text-centered dark-text text-bold">
+                Modal sizes
+            </h2>
+        </div>
+
+        <!-- Basic modal trigger-->
+        <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Basic modal</h4>
+                    <p class="no-padding">Bulma modals are a flexible component. It acts like a container that can hold any type of content. This is a basic implementation displaying a simple flex card. To use, add the class <code>.modal-trigger</code> to the element that is supposed to trigger the modal after being clicked. Add <code>data-modal="MyModalID"</code> to the same element to target the appropriate modal.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="has-text-centered">
+            <a class="button button-cta btn-align primary-btn raised modal-trigger" data-modal="basic-modal">Open modal</a>
+        </div>
+
+        <!-- Code section -->
+        <div class="columns is-vcentered">
+            <div class="column is-8 is-offset-2">
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <figure class="highlight highlight-block">
+                                <pre><code class="html code-highlight">
+&#x3C;!-- Modal trigger --&#x3E;
+&#x3C;a class=&#x22;button button-cta btn-align primary-btn raised modal-trigger&#x22; data-modal=&#x22;basic-modal&#x22;&#x3E;Open modal&#x3C;/a&#x3E;
+&#x3C;!-- /Modal trigger --&#x3E;
+
+&#x3C;!-- Modal Markup --&#x3E;
+&#x3C;div id=&#x22;basic-modal&#x22; class=&#x22;modal&#x22;&#x3E;
+    &#x3C;div class=&#x22;modal-background&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;modal-content&#x22;&#x3E;
+        &#x3C;div class=&#x22;flex-card simple-shadow&#x22;&#x3E;
+            &#x3C;div class=&#x22;card-body&#x22;&#x3E;
+                &#x3C;div class=&#x22;content&#x22;&#x3E;
+                    &#x3C;h2 class=&#x22;has-text-centered pb-20&#x22;&#x3E;Hello from modal !&#x3C;/h2&#x3E;
+                    &#x3C;p class=&#x22;pb-20&#x22;&#x3E;Lorem ipsum dolor sit amet, has vero libris melius ea, omnis velit comprehensam duo an, meis ornatus eam ad. Ius ut labores scaevola.&#x3C;/p&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;  
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;button class=&#x22;modal-close is-large is-hidden&#x22; aria-label=&#x22;close&#x22;&#x3E;&#x3C;/button&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;!-- /Modal Markup --&#x3E;
+                                        </code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Code section -->
+        <!-- /Basic modal trigger-->
+
+        <!-- Small modal trigger-->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered pb-20">
+                    <h4>Small modal</h4>
+                    <p class="no-padding">Bulma ships only with a predefined modal size. Bulkit adds two more sizes : small modals and large modals. To create a small modal, add the <code>.modal-sm</code> to the <code>.modal</code> wrapper.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="has-text-centered">
+            <a class="button button-cta btn-align primary-btn raised modal-trigger" data-modal="basic-small-modal">Open modal</a>
+        </div>
+
+        <!-- Code section -->
+        <div class="columns is-vcentered mt-20">
+            <div class="column is-8 is-offset-2">
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <figure class="highlight highlight-block">
+                                <pre><code class="html code-highlight">
+&#x3C;!-- Modal trigger --&#x3E;
+&#x3C;a class=&#x22;button button-cta btn-align primary-btn raised modal-trigger&#x22; data-modal=&#x22;basic-small-modal&#x22;&#x3E;Open modal&#x3C;/a&#x3E;
+&#x3C;!-- /Modal trigger --&#x3E;
+
+&#x3C;!-- Modal Markup --&#x3E;
+&#x3C;div id=&#x22;basic-small-modal&#x22; class=&#x22;modal modal-sm&#x22;&#x3E;
+    &#x3C;div class=&#x22;modal-background&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;modal-content&#x22;&#x3E;
+        &#x3C;div class=&#x22;flex-card simple-shadow&#x22;&#x3E;
+            &#x3C;div class=&#x22;card-body&#x22;&#x3E;
+                &#x3C;div class=&#x22;content&#x22;&#x3E;
+                    &#x3C;h2 class=&#x22;has-text-centered pb-20&#x22;&#x3E;Hello from small modal !&#x3C;/h2&#x3E;
+                    &#x3C;p class=&#x22;pb-20&#x22;&#x3E;Lorem ipsum dolor sit amet, has vero libris melius ea, omnis velit comprehensam duo an, meis ornatus eam ad. Ius ut labores scaevola.&#x3C;/p&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;  
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;button class=&#x22;modal-close is-large is-hidden&#x22; aria-label=&#x22;close&#x22;&#x3E;&#x3C;/button&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;!-- /Modal Markup --&#x3E;
+                                        </code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Code section -->
+        <!-- /Small modal trigger-->
+
+        <!-- Large modal trigger-->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Large modal</h4>
+                    <p class="no-padding">Bulma ships only with a predefined modal size. Bulkit adds two more sizes : small modals and large modals. To create a large modal, add the <code>.modal-lg</code> to the <code>.modal</code> wrapper.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="has-text-centered">
+            <a class="button button-cta btn-align primary-btn raised modal-trigger" data-modal="basic-large-modal">Open modal</a>
+        </div>
+
+        <!-- Code section -->
+        <div class="columns is-vcentered">
+            <div class="column is-8 is-offset-2">
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <figure class="highlight highlight-block">
+                                <pre><code class="html code-highlight">
+&#x3C;!-- Modal trigger --&#x3E;
+&#x3C;a class=&#x22;button button-cta btn-align primary-btn raised modal-trigger&#x22; data-modal=&#x22;basic-large-modal&#x22;&#x3E;Open modal&#x3C;/a&#x3E;
+&#x3C;!-- /Modal trigger --&#x3E;
+
+&#x3C;!-- Modal Markup --&#x3E;
+&#x3C;div id=&#x22;basic-large-modal&#x22; class=&#x22;modal modal-lg&#x22;&#x3E;
+    &#x3C;div class=&#x22;modal-background&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;modal-content&#x22;&#x3E;
+        &#x3C;div class=&#x22;flex-card simple-shadow&#x22;&#x3E;
+            &#x3C;div class=&#x22;card-body&#x22;&#x3E;
+                &#x3C;div class=&#x22;content&#x22;&#x3E;
+                    &#x3C;h2 class=&#x22;has-text-centered pb-20&#x22;&#x3E;Hello from large modal !&#x3C;/h2&#x3E;
+                    &#x3C;p class=&#x22;pb-20&#x22;&#x3E;Lorem ipsum dolor sit amet, has vero libris melius ea, omnis velit comprehensam duo an, meis ornatus eam ad. Ius ut labores scaevola.&#x3C;/p&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;  
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;button class=&#x22;modal-close is-large is-hidden&#x22; aria-label=&#x22;close&#x22;&#x3E;&#x3C;/button&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;!-- /Modal Markup --&#x3E;
+                                        </code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Code section -->
+        <!-- /Large modal trigger-->
+
+        <!-- Card modal trigger-->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Card modal</h4>
+                    <p class="no-padding">If you want to display more complex content in your modal, card modals might be a good option. Modal sizes are still relevant and will resize your card according to the chosen size. Just add the <code>.modal-card</code> class to the <code>.modal-content </code> element. You can then set a header (<code>.modal-card-head</code>), a body (<code>.modal-card-body</code>) and a footer (<code>.modal-card-footer</code>).</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="has-text-centered">
+            <a class="button button-cta btn-align primary-btn raised modal-trigger" data-modal="card-modal">Open modal</a>
+        </div>
+        <!-- /Card modal trigger-->
+
+        <!-- Code section -->
+        <div class="columns is-vcentered">
+            <div class="column is-8 is-offset-2">
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <figure class="highlight highlight-block">
+                                <pre><code class="html code-highlight">
+&#x3C;!-- Modal trigger --&#x3E;
+&#x3C;a class=&#x22;button button-cta btn-align primary-btn raised modal-trigger&#x22; data-modal=&#x22;basic-large-modal&#x22;&#x3E;Open modal&#x3C;/a&#x3E;
+&#x3C;!-- /Modal trigger --&#x3E;
+
+&#x3C;!-- Modal Markup --&#x3E;
+&#x3C;div id=&#x22;card-modal&#x22; class=&#x22;modal modal-sm&#x22;&#x3E;
+    &#x3C;div class=&#x22;modal-background&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;modal-card modal-content&#x22;&#x3E;
+        &#x3C;header class=&#x22;modal-card-head&#x22;&#x3E;
+            &#x3C;p class=&#x22;modal-card-title&#x22;&#x3E;Select users&#x3C;/p&#x3E;
+            &#x3C;button class=&#x22;delete is-medium modal-dismiss&#x22; aria-label=&#x22;close&#x22;&#x3E;&#x3C;/button&#x3E;
+        &#x3C;/header&#x3E;
+        &#x3C;section class=&#x22;modal-card-body&#x22;&#x3E;
+            &#x3C;!-- User --&#x3E;
+            &#x3C;div class=&#x22;flex-card light-bordered hover-inset padding-10 mb-10&#x22;&#x3E;
+                &#x3C;div class=&#x22;content content-flex&#x22;&#x3E;
+                    &#x3C;div class=&#x22;card-avatar&#x22;&#x3E;
+                        &#x3C;img src=&#x22;assets/images/avatars/ben.jpg&#x22;&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;div class=&#x22;card-name&#x22;&#x3E;
+                        &#x3C;div class=&#x22;name&#x22;&#x3E;Kevin Smith&#x3C;/div&#x3E;
+                        &#x3C;div class=&#x22;position&#x22;&#x3E;Software Engineer&#x3C;/div&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;div class=&#x22;card-select ml-auto&#x22;&#x3E;
+                        &#x3C;i class=&#x22;material-icons&#x22;&#x3E;done&#x3C;/i&#x3E;
+                    &#x3C;/div&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;!-- /User --&#x3E;
+            &#x3C;!-- User --&#x3E;
+            &#x3C;div class=&#x22;flex-card light-bordered hover-inset padding-10 mb-10&#x22;&#x3E;
+                &#x3C;div class=&#x22;content content-flex&#x22;&#x3E;
+                    &#x3C;div class=&#x22;card-avatar&#x22;&#x3E;
+                        &#x3C;img src=&#x22;assets/images/avatars/carolin.png&#x22;&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;div class=&#x22;card-name&#x22;&#x3E;
+                        &#x3C;div class=&#x22;name&#x22;&#x3E;Marjory Cambell&#x3C;/div&#x3E;
+                        &#x3C;div class=&#x22;position&#x22;&#x3E;Sales Representative&#x3C;/div&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;div class=&#x22;card-select ml-auto&#x22;&#x3E;
+                        &#x3C;i class=&#x22;material-icons&#x22;&#x3E;done&#x3C;/i&#x3E;
+                    &#x3C;/div&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;!-- /User --&#x3E;
+            &#x3C;!-- User --&#x3E;
+            &#x3C;div class=&#x22;flex-card light-bordered hover-inset padding-10 mb-10&#x22;&#x3E;
+                &#x3C;div class=&#x22;content content-flex&#x22;&#x3E;
+                    &#x3C;div class=&#x22;card-avatar&#x22;&#x3E;
+                        &#x3C;img src=&#x22;assets/images/avatars/kareem.jpg&#x22;&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;div class=&#x22;card-name&#x22;&#x3E;
+                        &#x3C;div class=&#x22;name&#x22;&#x3E;Kareem Jabbar&#x3C;/div&#x3E;
+                        &#x3C;div class=&#x22;position&#x22;&#x3E;Accountant&#x3C;/div&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;div class=&#x22;card-select ml-auto&#x22;&#x3E;
+                        &#x3C;i class=&#x22;material-icons&#x22;&#x3E;done&#x3C;/i&#x3E;
+                    &#x3C;/div&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;!-- /User --&#x3E;
+            &#x3C;!-- User --&#x3E;
+            &#x3C;div class=&#x22;flex-card light-bordered hover-inset padding-10 mb-10&#x22;&#x3E;
+                &#x3C;div class=&#x22;content content-flex&#x22;&#x3E;
+                    &#x3C;div class=&#x22;card-avatar&#x22;&#x3E;
+                        &#x3C;img src=&#x22;assets/images/avatars/melany.jpg&#x22;&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;div class=&#x22;card-name&#x22;&#x3E;
+                        &#x3C;div class=&#x22;name&#x22;&#x3E;Melany Rogers&#x3C;/div&#x3E;
+                        &#x3C;div class=&#x22;position&#x22;&#x3E;Software Engineer&#x3C;/div&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;div class=&#x22;card-select ml-auto&#x22;&#x3E;
+                        &#x3C;i class=&#x22;material-icons&#x22;&#x3E;done&#x3C;/i&#x3E;
+                    &#x3C;/div&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;!-- /User --&#x3E;
+            &#x3C;!-- User --&#x3E;
+            &#x3C;div class=&#x22;flex-card light-bordered hover-inset padding-10 mb-10&#x22;&#x3E;
+                &#x3C;div class=&#x22;content content-flex&#x22;&#x3E;
+                    &#x3C;div class=&#x22;card-avatar&#x22;&#x3E;
+                        &#x3C;img src=&#x22;assets/images/avatars/jeffrey.jpg&#x22;&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;div class=&#x22;card-name&#x22;&#x3E;
+                        &#x3C;div class=&#x22;name&#x22;&#x3E;Jared Blight&#x3C;/div&#x3E;
+                        &#x3C;div class=&#x22;position&#x22;&#x3E;CTO&#x3C;/div&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;div class=&#x22;card-select ml-auto&#x22;&#x3E;
+                        &#x3C;i class=&#x22;material-icons&#x22;&#x3E;done&#x3C;/i&#x3E;
+                    &#x3C;/div&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;!-- /User --&#x3E;
+        &#x3C;/section&#x3E;
+        &#x3C;footer class=&#x22;modal-card-foot&#x22;&#x3E;
+            &#x3C;button class=&#x22;button is-link modal-dismiss&#x22;&#x3E;Close&#x3C;/button&#x3E;
+            &#x3C;button class=&#x22;button btn-align raised accent-btn no-lh modal-dismiss save-btn is-disabled&#x22;&#x3E;Save&#x3C;/button&#x3E; 
+        &#x3C;/footer&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;!-- /Modal Markup --&#x3E;
+                                        </code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Code section -->
+    </div>
+</section>
+
+<section class="section section-feature-grey is-medium">
+    <div class="container">
+        <div id="image-modals" class="section-title-wrapper has-text-centered">
+            <div class="bg-number">2</div>
+            <h2 class="title section-title has-text-centered dark-text text-bold">
+                Image modals
+            </h2>
+        </div>
+
+        <!-- Single image modal trigger-->
+        <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Single image modal</h4>
+                    <p class="no-padding">Modals can be used to display images. Add the <code>.image-modal</code> to the <code>.modal</code> container. Then insert an image inside the <code>.modal-content</code> tag. See the code example for more details about html structure.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="has-text-centered">
+            <a class="button button-cta btn-align primary-btn modal-trigger" data-modal="single-image-modal">Open modal</a>
+        </div>
+
+        <!-- Code section -->
+        <div class="columns is-vcentered">
+            <div class="column is-8 is-offset-2">
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <figure class="highlight highlight-block">
+                                <pre><code class="html code-highlight">
+&#x3C;!-- Modal trigger --&#x3E;
+&#x3C;a class=&#x22;button button-cta btn-align primary-btn raised modal-trigger&#x22; data-modal=&#x22;single-image-modal&#x22;&#x3E;Open modal&#x3C;/a&#x3E;
+&#x3C;!-- /Modal trigger --&#x3E;
+
+&#x3C;!-- Modal Markup --&#x3E;
+&#x3C;div id=&#x22;single-image-modal&#x22; class=&#x22;modal image-modal&#x22;&#x3E;
+    &#x3C;div class=&#x22;modal-background&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;modal-content&#x22;&#x3E;
+        &#x3C;div class=&#x22;image-grid&#x22;&#x3E;
+            &#x3C;figure class=&#x22;image is-4by3 cornered&#x22;&#x3E;
+                &#x3C;img src=&#x22;assets/images/photos/woman-glasses-back.jpeg&#x22; alt=&#x22;&#x22;&#x3E;
+                &#x3C;figcaption&#x3E;
+                    &#x3C;h2&#x3E;Woman with &#x3C;span&#x3E;Glasses&#x3C;/span&#x3E;&#x3C;/h2&#x3E;
+                    &#x3C;p&#x3E;Lorem ipsum sit dolor amet os ludicrum alea jacta est. &#x3C;br&#x3E;&#x3C;span&#x3E;Credits : @Unsplash&#x3C;/span&#x3E;&#x3C;/p&#x3E;
+                    &#x3C;a href=&#x22;#&#x22;&#x3E;View more&#x3C;/a&#x3E;
+                &#x3C;/figcaption&#x3E;
+            &#x3C;/figure&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;button class=&#x22;modal-close is-large is-hidden&#x22; aria-label=&#x22;close&#x22;&#x3E;&#x3C;/button&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;!-- /Modal Markup --&#x3E;
+                                        </code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Code section -->
+        <!-- Single image trigger-->
+
+        <!-- Gallery modal trigger-->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Carousel modal</h4>
+                    <p class="no-padding">A carousel can be embeded inside an image modal to display more elements. See the markup for more details. Don't forget to initialize the carousel with javascript.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="has-text-centered">
+            <a class="button button-cta btn-align primary-btn modal-trigger gallery-trigger" data-modal="carousel-modal">Open modal</a>
+        </div>
+
+        <!-- Code section -->
+        <div class="columns is-vcentered">
+            <div class="column is-8 is-offset-2">
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <figure class="highlight highlight-block">
+                                <pre><code class="html code-highlight">
+&#x3C;!-- Modal trigger --&#x3E;
+&#x3C;a class=&#x22;button button-cta btn-align primary-btn raised modal-trigger&#x22; data-modal=&#x22;carousel-modal&#x22;&#x3E;Open modal&#x3C;/a&#x3E;
+&#x3C;!-- /Modal trigger --&#x3E;
+
+&#x3C;!-- Modal Markup --&#x3E;
+&#x3C;div id=&#x22;carousel-modal&#x22; class=&#x22;modal image-modal&#x22;&#x3E;
+    &#x3C;div class=&#x22;modal-background&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;modal-content&#x22;&#x3E;
+
+        &#x3C;div class=&#x22;image-grid&#x22;&#x3E;
+            &#x3C;div class=&#x22;slick-gallery&#x22;&#x3E;
+                &#x3C;div class=&#x22;gallery-item&#x22;&#x3E;
+                    &#x3C;figure class=&#x22;image is-4by3 cornered&#x22;&#x3E;
+                        &#x3C;img src=&#x22;assets/images/photos/woman-glasses-back.jpeg&#x22; alt=&#x22;&#x22;&#x3E;
+                        &#x3C;figcaption&#x3E;
+                            &#x3C;h2&#x3E;Woman with &#x3C;span&#x3E;Glasses&#x3C;/span&#x3E;&#x3C;/h2&#x3E;
+                            &#x3C;p&#x3E;Lorem ipsum sit dolor amet os ludicrum alea jacta est. &#x3C;br&#x3E;&#x3C;span&#x3E;Credits : @Unsplash&#x3C;/span&#x3E;&#x3C;/p&#x3E;
+                            &#x3C;a href=&#x22;#&#x22;&#x3E;View more&#x3C;/a&#x3E;
+                        &#x3C;/figcaption&#x3E;
+                    &#x3C;/figure&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;gallery-item&#x22;&#x3E;
+                    &#x3C;figure class=&#x22;image is-4by3 cornered&#x22;&#x3E;
+                        &#x3C;img src=&#x22;assets/images/photos/woman-glasses.jpeg&#x22; alt=&#x22;&#x22;&#x3E;
+                        &#x3C;figcaption&#x3E;
+                            &#x3C;h2&#x3E;Woman with &#x3C;span&#x3E;Glasses&#x3C;/span&#x3E;&#x3C;/h2&#x3E;
+                            &#x3C;p&#x3E;Lorem ipsum sit dolor amet os ludicrum alea jacta est. &#x3C;br&#x3E;&#x3C;span&#x3E;Credits : @Unsplash&#x3C;/span&#x3E;&#x3C;/p&#x3E;
+                            &#x3C;a href=&#x22;#&#x22;&#x3E;View more&#x3C;/a&#x3E;
+                        &#x3C;/figcaption&#x3E;
+                    &#x3C;/figure&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;gallery-item&#x22;&#x3E;
+                    &#x3C;figure class=&#x22;image is-4by3 cornered&#x22;&#x3E;
+                        &#x3C;img src=&#x22;assets/images/photos/adam_bradley.jpg&#x22; alt=&#x22;&#x22;&#x3E;
+                        &#x3C;figcaption&#x3E;
+                            &#x3C;h2&#x3E;Keynote &#x3C;span&#x3E;Speaker&#x3C;/span&#x3E;&#x3C;/h2&#x3E;
+                            &#x3C;p&#x3E;Lorem ipsum sit dolor amet os ludicrum alea jacta est. &#x3C;br&#x3E;&#x3C;span&#x3E;Credits : @Unsplash&#x3C;/span&#x3E;&#x3C;/p&#x3E;
+                            &#x3C;a href=&#x22;#&#x22;&#x3E;View more&#x3C;/a&#x3E;
+                        &#x3C;/figcaption&#x3E;
+                    &#x3C;/figure&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;gallery-item&#x22;&#x3E;
+                    &#x3C;figure class=&#x22;image is-4by3 cornered&#x22;&#x3E;
+                        &#x3C;img src=&#x22;assets/images/photos/joel_zimmerman.jpg&#x22; alt=&#x22;&#x22;&#x3E;
+                        &#x3C;figcaption&#x3E;
+                            &#x3C;h2&#x3E;Keynote &#x3C;span&#x3E;Speaker&#x3C;/span&#x3E;&#x3C;/h2&#x3E;
+                            &#x3C;p&#x3E;Lorem ipsum sit dolor amet os ludicrum alea jacta est. &#x3C;br&#x3E;&#x3C;span&#x3E;Credits : @Unsplash&#x3C;/span&#x3E;&#x3C;/p&#x3E;
+                            &#x3C;a href=&#x22;#&#x22;&#x3E;View more&#x3C;/a&#x3E;
+                        &#x3C;/figcaption&#x3E;
+                    &#x3C;/figure&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;button class=&#x22;modal-close is-large is-hidden&#x22; aria-label=&#x22;close&#x22;&#x3E;&#x3C;/button&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;!-- /Modal Markup --&#x3E;
+                                        </code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Code section -->
+        <!-- Gallery trigger-->
+    </div>
+</section>
+
+<section class="section is-medium">
+    <div class="container">
+        <div id="form-modals" class="section-title-wrapper has-text-centered">
+            <div class="bg-number">3</div>
+            <h2 class="title section-title has-text-centered dark-text text-bold">
+                Modal forms
+            </h2>
+        </div>
+
+        <!-- Vertical form modal trigger-->
+        <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Vertical form layout</h4>
+                    <p class="no-padding">You can embed any type of form inside a modal. Just add your form inside the <code>.modal-content</code> element.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="has-text-centered">
+            <a class="button button-cta btn-align primary-btn raised modal-trigger" data-modal="vertical-form-modal">Open modal</a>
+        </div>
+
+        <!-- Code section -->
+        <div class="columns is-vcentered">
+            <div class="column is-8 is-offset-2">
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <figure class="highlight highlight-block">
+                                <pre><code class="html code-highlight">
+&#x3C;!-- Modal trigger --&#x3E;
+&#x3C;a class=&#x22;button button-cta btn-align primary-btn raised modal-trigger&#x22; data-modal=&#x22;vertical-form-modal&#x22;&#x3E;Open modal&#x3C;/a&#x3E;
+&#x3C;!-- /Modal trigger --&#x3E;
+
+&#x3C;!-- Modal Markup --&#x3E;
+&#x3C;div id=&#x22;vertical-form-modal&#x22; class=&#x22;modal modal-sm&#x22;&#x3E;
+    &#x3C;div class=&#x22;modal-background&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;modal-content&#x22;&#x3E;
+        &#x3C;div class=&#x22;flex-card simple-shadow&#x22;&#x3E;
+            &#x3C;div class=&#x22;card-body&#x22;&#x3E;
+                &#x3C;h2 class=&#x22;title has-text-centered is-3 mb-40&#x22;&#x3E;Login&#x3C;/h2&#x3E;
+                &#x3C;div class=&#x22;control-material is-accent&#x22;&#x3E;      
+                    &#x3C;input class=&#x22;material-input&#x22; type=&#x22;text&#x22; required&#x3E;
+                    &#x3C;span class=&#x22;material-highlight&#x22;&#x3E;&#x3C;/span&#x3E;
+                    &#x3C;span class=&#x22;bar&#x22;&#x3E;&#x3C;/span&#x3E;
+                    &#x3C;label&#x3E;Name *&#x3C;/label&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;control-material is-accent&#x22;&#x3E;      
+                    &#x3C;input class=&#x22;material-input&#x22; type=&#x22;text&#x22; required&#x3E;
+                    &#x3C;span class=&#x22;material-highlight&#x22;&#x3E;&#x3C;/span&#x3E;
+                    &#x3C;span class=&#x22;bar&#x22;&#x3E;&#x3C;/span&#x3E;
+                    &#x3C;label&#x3E;Password *&#x3C;/label&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;p class=&#x22;has-text-left mt-30&#x22;&#x3E;
+                    &#x3C;a class=&#x22;no-account is-accent&#x22; href=&#x22;#&#x22;&#x3E;Dont have an account?&#x3C;/a&#x3E;
+                &#x3C;/p&#x3E;
+                &#x3C;div class=&#x22;mt-20&#x22;&#x3E;
+                    &#x3C;button class=&#x22;button button-cta btn-align accent-btn raised is-fullwidth no-lh&#x22;&#x3E;Login&#x3C;/button&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;  
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;button class=&#x22;modal-close is-large is-hidden&#x22; aria-label=&#x22;close&#x22;&#x3E;&#x3C;/button&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;!-- /Modal Markup --&#x3E;
+                                        </code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Code section -->
+        <!-- /Vertical form modal trigger -->
+
+        <!-- Horizontal form modal trigger-->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Horizontal form layout</h4>
+                    <p class="no-padding">You can embed any type of form inside a modal. Just add your form inside the <code>.modal-content</code> element.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="has-text-centered">
+            <a class="button button-cta btn-align primary-btn raised modal-trigger" data-modal="horizontal-form-modal">Open modal</a>
+        </div>
+        <!-- Horizontal form modal trigger-->
+
+        <!-- Code section -->
+        <div class="columns is-vcentered">
+            <div class="column is-8 is-offset-2">
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <figure class="highlight highlight-block">
+                                <pre><code class="html code-highlight">
+&#x3C;!-- Modal trigger --&#x3E;
+&#x3C;a class=&#x22;button button-cta btn-align primary-btn raised modal-trigger&#x22; data-modal=&#x22;horizontal-form-modal&#x22;&#x3E;Open modal&#x3C;/a&#x3E;
+&#x3C;!-- /Modal trigger --&#x3E;
+
+&#x3C;!-- Modal Markup --&#x3E;
+&#x3C;div id=&#x22;horizontal-form-modal&#x22; class=&#x22;modal modal-lg&#x22;&#x3E;
+    &#x3C;div class=&#x22;modal-background&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;modal-content&#x22;&#x3E;
+        &#x3C;div class=&#x22;flex-card simple-shadow&#x22;&#x3E;
+            &#x3C;div class=&#x22;card-body&#x22;&#x3E;
+                &#x3C;h2 class=&#x22;title is-4 text-bold mb-40&#x22;&#x3E;Create project&#x3C;/h2&#x3E;
+                &#x3C;form&#x3E;
+                    &#x3C;div class=&#x22;columns mt-40&#x22;&#x3E;
+                        &#x3C;div class=&#x22;column&#x22;&#x3E;
+                            &#x3C;div class=&#x22;control&#x22;&#x3E;
+                                &#x3C;label&#x3E;Project ID&#x3C;/label&#x3E;
+                                &#x3C;input class=&#x22;input is-medium mt-5&#x22; type=&#x22;text&#x22;&#x3E;
+                            &#x3C;/div&#x3E;
+                            &#x3C;div class=&#x22;control&#x22;&#x3E;
+                                &#x3C;label&#x3E;Project name&#x3C;/label&#x3E;
+                                &#x3C;input class=&#x22;input is-medium mt-5&#x22; type=&#x22;text&#x22;&#x3E;
+                            &#x3C;/div&#x3E;
+                        &#x3C;/div&#x3E;
+                        &#x3C;div class=&#x22;column&#x22;&#x3E;
+                            &#x3C;div class=&#x22;control&#x22;&#x3E;
+                                &#x3C;label&#x3E;Project category&#x3C;/label&#x3E;
+                                &#x3C;input class=&#x22;input is-medium mt-5&#x22; type=&#x22;text&#x22;&#x3E;
+                            &#x3C;/div&#x3E;
+                            &#x3C;div class=&#x22;control&#x22;&#x3E;
+                                &#x3C;label&#x3E;Project type&#x3C;/label&#x3E;
+                                &#x3C;input class=&#x22;input is-medium mt-5&#x22; type=&#x22;text&#x22;&#x3E;
+                            &#x3C;/div&#x3E;
+                        &#x3C;/div&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;div class=&#x22;columns&#x22;&#x3E;
+                        &#x3C;div class=&#x22;column&#x22;&#x3E;
+                            &#x3C;div class=&#x22;control&#x22;&#x3E;
+                                &#x3C;textarea class=&#x22;textarea is-grow&#x22; rows=&#x22;5&#x22; placeholder=&#x22;Enter a project description ...&#x22;&#x3E;&#x3C;/textarea&#x3E;
+                            &#x3C;/div&#x3E;
+                        &#x3C;/div&#x3E;   
+                    &#x3C;/div&#x3E;
+                    &#x3C;div class=&#x22;mt-10&#x22;&#x3E;  
+                        &#x3C;button class=&#x22;button btn-align no-lh raised accent-btn modal-dismiss&#x22;&#x3E;Create&#x3C;/button&#x3E;
+                        &#x3C;button class=&#x22;button is-link no-lh modal-dismiss&#x22;&#x3E;Cancel&#x3C;/button&#x3E;
+                    &#x3C;/div&#x3E;
+                &#x3C;/form&#x3E; 
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;button class=&#x22;modal-close is-large is-hidden&#x22; aria-label=&#x22;close&#x22;&#x3E;&#x3C;/button&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;!-- /Modal Markup --&#x3E;
+                                        </code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Code section -->
+    </div>
+</section>
+
+<section class="section section-feature-grey is-medium">
+    <div class="container">
+        <div id="message-modals" class="section-title-wrapper has-text-centered">
+            <div class="bg-number">4</div>
+            <h2 class="title section-title has-text-centered dark-text text-bold">
+                Message modals
+            </h2>
+        </div>
+
+        <!-- Success modal trigger-->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Success modal</h4>
+                    <p class="no-padding">You can create message modals wich are useful when you want to return a status. Message modals icons animation rely on <code>vivus js</code> library. Every modal type is controled by a javascript snippet. The following is a success modal, check the code examples for more details.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="has-text-centered">
+            <a class="button button-cta btn-align primary-btn raised modal-trigger success-trigger" data-modal="success-modal">Open modal</a>
+        </div>
+        <!-- Success modal trigger-->
+
+        <!-- Error modal trigger-->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered pb-20">
+                    <h4>Error modal</h4>
+                    <p class="no-padding">You can create message modals wich are useful when you want to return a status. Message modals icons animation rely on <code>vivus js</code> library. Every modal type is controled by a javascript snippet. The following is an error modal, check the code examples for more details.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="has-text-centered">
+            <a class="button button-cta btn-align primary-btn raised modal-trigger error-trigger" data-modal="error-modal">Open modal</a>
+        </div>
+        <!-- Error modal trigger-->
+
+        <!-- Warning modal trigger-->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered pb-20">
+                    <h4>Warning modal</h4>
+                    <p class="no-padding">You can create message modals wich are useful when you want to return a status. Message modals icons animation rely on <code>vivus js</code> library. Every modal type is controled by a javascript snippet. The following is a warning modal, check the code examples for more details.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="has-text-centered">
+            <a class="button button-cta btn-align primary-btn raised modal-trigger warning-trigger" data-modal="warning-modal">Open modal</a>
+        </div>
+        <!-- Warning modal trigger-->
+
+        <!-- Info modal trigger-->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered pb-20">
+                    <h4>Info modal</h4>
+                    <p class="no-padding">You can create message modals wich are useful when you want to return a status. Message modals icons animation rely on <code>vivus js</code> library. Every modal type is controled by a javascript snippet. The following is an info modal, check the code examples for more details.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="has-text-centered">
+            <a class="button button-cta btn-align primary-btn raised modal-trigger info-trigger" data-modal="info-modal">Open modal</a>
+        </div>
+        <!-- Info modal trigger-->
+
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-8 is-offset-2">
+                <!-- Code section -->
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <div class="navigation-tabs animated-tabs simple-tabs mb-40">
+                                <div class="tabs is-right">
+                                    <ul>
+                                        <li class="tab-link is-active" data-tab="success"><a>Success</a></li>
+                                        <li class="tab-link" data-tab="error"><a>Error</a></li>
+                                        <li class="tab-link" data-tab="warning"><a>Warning</a></li>
+                                        <li class="tab-link" data-tab="info"><a>Info</a></li>
+                                    </ul>
+                                </div>
+                                <div id="success" class="navtab-content is-active">
+                                    <figure class="highlight highlight-block"><pre><code class="html code-highlight">
+&#x3C;!-- Modal trigger --&#x3E;
+&#x3C;a class=&#x22;button button-cta btn-align primary-btn raised modal-trigger success-trigger&#x22; data-modal=&#x22;success-modal&#x22;&#x3E;Open modal&#x3C;/a&#x3E;
+&#x3C;!-- /Modal trigger --&#x3E;
+
+&#x3C;!-- Modal Markup --&#x3E;
+&#x3C;div id=&#x22;success-modal&#x22; class=&#x22;modal modal-sm&#x22;&#x3E;
+    &#x3C;div class=&#x22;modal-background&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;modal-content&#x22;&#x3E;
+        &#x3C;div class=&#x22;flex-card simple-shadow&#x22;&#x3E;
+            &#x3C;div class=&#x22;card-body has-text-centered&#x22;&#x3E;
+                &#x3C;div class=&#x22;content has-text-centered&#x22;&#x3E;
+                    &#x3C;div class=&#x22;pb-20&#x22;&#x3E;
+                        &#x3C;div id=&#x22;success-icon&#x22; class=&#x22;vivus-svg modal-svg&#x22;&#x3E;&#x3C;/div&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;h2 class=&#x22;title is-3 no-margin&#x22;&#x3E;Success !&#x3C;/h2&#x3E;
+                    &#x3C;p class=&#x22;pt-20&#x22;&#x3E;Things went as expected.&#x3C;/p&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;mt-20&#x22;&#x3E;
+                    &#x3C;a class=&#x22;button success-btn raised btn-align modal-dismiss&#x22;&#x3E;Proceed&#x3C;/a&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;button class=&#x22;modal-close is-large is-hidden&#x22; aria-label=&#x22;close&#x22;&#x3E;&#x3C;/button&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;!-- /Modal Markup --&#x3E;
+                                            </code></pre></figure>
+                                </div>
+                                <div id="error" class="navtab-content">
+                                    <figure class="highlight highlight-block"><pre><code class="html code-highlight">
+&#x3C;!-- Modal trigger --&#x3E;
+&#x3C;a class=&#x22;button button-cta btn-align primary-btn raised modal-trigger error-trigger&#x22; data-modal=&#x22;error-modal&#x22;&#x3E;Open modal&#x3C;/a&#x3E;
+&#x3C;!-- /Modal trigger --&#x3E;
+
+&#x3C;!-- Modal Markup --&#x3E;
+&#x3C;div id=&#x22;error-modal&#x22; class=&#x22;modal modal-sm&#x22;&#x3E;
+    &#x3C;div class=&#x22;modal-background&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;modal-content&#x22;&#x3E;
+        &#x3C;div class=&#x22;flex-card simple-shadow&#x22;&#x3E;
+            &#x3C;div class=&#x22;card-body has-text-centered&#x22;&#x3E;
+                &#x3C;div class=&#x22;content has-text-centered&#x22;&#x3E;
+                    &#x3C;div class=&#x22;pb-20&#x22;&#x3E;
+                        &#x3C;div id=&#x22;error-icon&#x22; class=&#x22;vivus-svg modal-svg&#x22;&#x3E;&#x3C;/div&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;h2 class=&#x22;title is-3 no-margin&#x22;&#x3E;Oops !&#x3C;/h2&#x3E;
+                    &#x3C;p class=&#x22;pt-20&#x22;&#x3E;Something went wrong.&#x3C;/p&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;mt-20&#x22;&#x3E;
+                    &#x3C;a class=&#x22;button danger-btn raised btn-align modal-dismiss&#x22;&#x3E;Go back&#x3C;/a&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;button class=&#x22;modal-close is-large is-hidden&#x22; aria-label=&#x22;close&#x22;&#x3E;&#x3C;/button&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;!-- /Modal Markup --&#x3E;
+                                            </code></pre></figure>
+                                </div>
+                                <div id="warning" class="navtab-content">
+                                    <figure class="highlight highlight-block"><pre><code class="html code-highlight">
+&#x3C;!-- Modal trigger --&#x3E;
+&#x3C;a class=&#x22;button button-cta btn-align primary-btn raised modal-trigger warning-trigger&#x22; data-modal=&#x22;warning-modal&#x22;&#x3E;Open modal&#x3C;/a&#x3E;
+&#x3C;!-- /Modal trigger --&#x3E;
+
+&#x3C;!-- Modal Markup --&#x3E;
+&#x3C;div id=&#x22;warning-modal&#x22; class=&#x22;modal modal-sm&#x22;&#x3E;
+    &#x3C;div class=&#x22;modal-background&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;modal-content&#x22;&#x3E;
+        &#x3C;div class=&#x22;flex-card simple-shadow&#x22;&#x3E;
+            &#x3C;div class=&#x22;card-body has-text-centered&#x22;&#x3E;
+                &#x3C;div class=&#x22;content has-text-centered&#x22;&#x3E;
+                    &#x3C;div class=&#x22;pb-20&#x22;&#x3E;
+                        &#x3C;div id=&#x22;warning-icon&#x22; class=&#x22;vivus-svg modal-svg&#x22;&#x3E;&#x3C;/div&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;h2 class=&#x22;title is-3 no-margin&#x22;&#x3E;Warning !&#x3C;/h2&#x3E;
+                    &#x3C;p class=&#x22;pt-20&#x22;&#x3E;Are you sure to do this?&#x3C;/p&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;mt-20&#x22;&#x3E;
+                    &#x3C;a class=&#x22;button is-link btn-align modal-dismiss&#x22;&#x3E;Cancel&#x3C;/a&#x3E;
+                    &#x3C;a class=&#x22;button warning-btn raised btn-align modal-dismiss&#x22;&#x3E;Do it&#x3C;/a&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;button class=&#x22;modal-close is-large is-hidden&#x22; aria-label=&#x22;close&#x22;&#x3E;&#x3C;/button&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;!-- /Modal Markup --&#x3E;
+                                            </code></pre></figure>
+                                </div>
+                                <div id="info" class="navtab-content">
+                                    <figure class="highlight highlight-block"><pre><code class="html code-highlight">
+&#x3C;!-- Modal trigger --&#x3E;
+&#x3C;a class=&#x22;button button-cta btn-align primary-btn raised modal-trigger info-trigger&#x22; data-modal=&#x22;info-modal&#x22;&#x3E;Open modal&#x3C;/a&#x3E;
+&#x3C;!-- /Modal trigger --&#x3E;
+
+&#x3C;!-- Modal Markup --&#x3E;
+&#x3C;div id=&#x22;info-modal&#x22; class=&#x22;modal modal-sm&#x22;&#x3E;
+    &#x3C;div class=&#x22;modal-background&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;modal-content&#x22;&#x3E;
+        &#x3C;div class=&#x22;flex-card simple-shadow&#x22;&#x3E;
+            &#x3C;div class=&#x22;card-body has-text-centered&#x22;&#x3E;
+                &#x3C;div class=&#x22;content has-text-centered&#x22;&#x3E;
+                    &#x3C;div class=&#x22;pb-20&#x22;&#x3E;
+                        &#x3C;div id=&#x22;info-icon&#x22; class=&#x22;vivus-svg modal-svg&#x22;&#x3E;&#x3C;/div&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;h2 class=&#x22;title is-3 no-margin&#x22;&#x3E;Info&#x3C;/h2&#x3E;
+                    &#x3C;p class=&#x22;pt-20&#x22;&#x3E;Read the hints to learn faster.&#x3C;/p&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;mt-20&#x22;&#x3E;
+                    &#x3C;a class=&#x22;button info-btn raised btn-align modal-dismiss&#x22;&#x3E;Go back&#x3C;/a&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;button class=&#x22;modal-close is-large is-hidden&#x22; aria-label=&#x22;close&#x22;&#x3E;&#x3C;/button&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;!-- /Modal Markup --&#x3E;
+                                            </code></pre></figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Code section -->
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="section is-medium">
+    <div class="container">
+        <div id="overlay-colors" class="section-title-wrapper has-text-centered">
+            <div class="bg-number">5</div>
+            <h2 class="title section-title has-text-centered dark-text text-bold">
+                Overlay colors
+            </h2>
+        </div>
+
+        <!-- Default overlay -->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Default overlay</h4>
+                    <p class="no-padding">Several modal overlay colors are available. The default one is a light grey.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="has-text-centered">
+            <a class="button button-cta btn-align primary-btn raised modal-trigger" data-modal="default-overlay">Open modal</a>
+        </div>
+        <!-- Default overlay -->
+
+        <!-- Hero overlay -->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Hero overlay</h4>
+                    <p class="no-padding">The hero overlay takes the color of your main hero gradient, predefined in the currently active color scheme. To activate it, add the <code>.modal-hero</code> class to the <code>.modal</code> parent container.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="has-text-centered">
+            <a class="button button-cta btn-align primary-btn raised modal-trigger" data-modal="hero-overlay">Open modal</a>
+        </div>
+        <!-- Hero overlay -->
+
+        <!-- Success overlay -->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Success overlay</h4>
+                    <p class="no-padding">You can display a success overlay. To activate it, add the <code>.modal-success</code> class to the <code>.modal</code> parent container.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="has-text-centered">
+            <a class="button button-cta btn-align primary-btn raised modal-trigger" data-modal="success-overlay">Open modal</a>
+        </div>
+        <!-- Success overlay -->
+
+        <!-- Error overlay -->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered pb-20">
+                    <h4>Error overlay</h4>
+                    <p class="no-padding">You can display a error overlay. To activate it, add the <code>.modal-error</code> class to the <code>.modal</code> parent container.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="has-text-centered">
+            <a class="button button-cta btn-align primary-btn raised modal-trigger" data-modal="error-overlay">Open modal</a>
+        </div>
+        <!-- Error overlay -->
+
+        <!-- Warning overlay -->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Warning overlay</h4>
+                    <p class="no-padding">You can display a warning overlay. To activate it, add the <code>.modal-warning</code> class to the <code>.modal</code> parent container.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="has-text-centered">
+            <a class="button button-cta btn-align primary-btn raised modal-trigger" data-modal="warning-overlay">Open modal</a>
+        </div>
+        <!-- Warning overlay -->
+
+        <!-- Info overlay -->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered pb-20">
+                    <h4>Info overlay</h4>
+                    <p class="no-padding">You can display a info overlay. To activate it, add the <code>.modal-info</code> class to the <code>.modal</code> parent container.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="has-text-centered">
+            <a class="button button-cta btn-align primary-btn raised modal-trigger" data-modal="info-overlay">Open modal</a>
+        </div>
+        <!-- Info overlay -->
+
+    </div>
+</section>
+
+{{> footer-dark}}
+
+<!-- MODALS -->
+
+<!-- Basic modal -->
+<div id="basic-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="flex-card simple-shadow">
+            <div class="card-body">
+                <div class="content">
+                    <h2 class="has-text-centered pb-20">Hello from modal !</h2>
+                    <p class="pb-20">Lorem ipsum dolor sit amet, has vero libris melius ea, omnis velit comprehensam duo an, meis ornatus eam ad. Ius ut labores scaevola.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="modal-close is-large is-hidden" aria-label="close"></button>
+</div>
+<!-- Basic modal -->
+
+<!-- Basic small -->
+<div id="basic-small-modal" class="modal modal-sm">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="flex-card simple-shadow">
+            <div class="card-body">
+                <div class="content">
+                    <h2 class="has-text-centered pb-20">Hello from small modal !</h2>
+                    <p class="pb-20">Lorem ipsum dolor sit amet, has vero libris melius ea, omnis velit comprehensam duo an, meis ornatus eam ad. Ius ut labores scaevola.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="modal-close is-large is-hidden" aria-label="close"></button>
+</div>
+<!-- Basic small -->
+
+<!-- Basic large -->
+<div id="basic-large-modal" class="modal modal-lg">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="flex-card simple-shadow">
+            <div class="card-body">
+                <div class="content">
+                    <h2 class="has-text-centered pb-20">Hello from large modal !</h2>
+                    <p class="pb-20">Lorem ipsum dolor sit amet, has vero libris melius ea, omnis velit comprehensam duo an, meis ornatus eam ad. Ius ut labores scaevola.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="modal-close is-large is-hidden" aria-label="close"></button>
+</div>
+<!-- Basic large -->
+
+<!-- Card modal -->
+<div id="card-modal" class="modal modal-sm">
+    <div class="modal-background"></div>
+    <div class="modal-card modal-content z-index-101">
+        <header class="modal-card-head">
+            <p class="modal-card-title">Select users</p>
+            <button class="delete is-medium modal-dismiss" aria-label="close"></button>
+        </header>
+        <div class="modal-card-body">
+            <!-- User -->
+            <div class="flex-card light-bordered hover-inset padding-10 mb-10">
+                <div class="content content-flex">
+                    <div class="card-avatar">
+                        <img src="https://via.placeholder.com/250x250" alt=""
+                            data-demo-src="assets/images/avatars/ben.jpg">
+                    </div>
+                    <div class="card-name">
+                        <div class="name">Kevin Smith</div>
+                        <div class="position">Software Engineer</div>
+                    </div>
+                    <div class="card-select ml-auto">
+                        <i class="material-icons">done</i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- User -->
+            <div class="flex-card light-bordered hover-inset padding-10 mb-10">
+                <div class="content content-flex">
+                    <div class="card-avatar">
+                        <img src="https://via.placeholder.com/250x250" alt=""
+                            data-demo-src="assets/images/avatars/carolin.png">
+                    </div>
+                    <div class="card-name">
+                        <div class="name">Marjory Cambell</div>
+                        <div class="position">Sales Representative</div>
+                    </div>
+                    <div class="card-select ml-auto">
+                        <i class="material-icons">done</i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- User -->
+            <div class="flex-card light-bordered hover-inset padding-10 mb-10">
+                <div class="content content-flex">
+                    <div class="card-avatar">
+                        <img src="https://via.placeholder.com/250x250" alt=""
+                            data-demo-src="assets/images/avatars/kareem.jpg">
+                    </div>
+                    <div class="card-name">
+                        <div class="name">Kareem Jabbar</div>
+                        <div class="position">Accountant</div>
+                    </div>
+                    <div class="card-select ml-auto">
+                        <i class="material-icons">done</i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- User -->
+            <div class="flex-card light-bordered hover-inset padding-10 mb-10">
+                <div class="content content-flex">
+                    <div class="card-avatar">
+                        <img src="https://via.placeholder.com/250x250" alt=""
+                            data-demo-src="assets/images/avatars/melany.jpg">
+                    </div>
+                    <div class="card-name">
+                        <div class="name">Melany Rogers</div>
+                        <div class="position">Software Engineer</div>
+                    </div>
+                    <div class="card-select ml-auto">
+                        <i class="material-icons">done</i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- User -->
+            <div class="flex-card light-bordered hover-inset padding-10 mb-10">
+                <div class="content content-flex">
+                    <div class="card-avatar">
+                        <img src="https://via.placeholder.com/250x250" alt=""
+                            data-demo-src="assets/images/avatars/barry.jpg">
+                    </div>
+                    <div class="card-name">
+                        <div class="name">Jared Blight</div>
+                        <div class="position">CTO</div>
+                    </div>
+                    <div class="card-select ml-auto">
+                        <i class="material-icons">done</i>
+                    </div>
+                </div>
+            </div>
+            <!-- /User -->
+        </div>
+        <footer class="modal-card-foot">
+            <button class="button is-link modal-dismiss">Close</button>
+            <button class="button btn-align raised accent-btn no-lh modal-dismiss save-btn is-disabled">Save</button> 
+        </footer>
+    </div>
+</div>
+<!-- /Card modal -->
+
+<!-- Single image modal -->
+<div id="single-image-modal" class="modal image-modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="image-grid">
+            <figure class="image is-4by3 cornered">
+                <img src="https://via.placeholder.com/1280x960" alt=""
+                    data-demo-src="assets/images/demo/woman-glasses.jpeg">
+                <figcaption>
+                    <h2>Woman with <span>Glasses</span></h2>
+                    <p>Lorem ipsum sit dolor amet os ludicrum alea jacta est. <br><span>Credits : @Unsplash</span></p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+    <button class="modal-close is-large is-hidden" aria-label="close"></button>
+</div>
+<!-- Single image modal -->
+
+<!-- Gallery modal -->
+<div id="carousel-modal" class="modal image-modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+
+        <div class="image-grid">
+            <div class="slick-gallery">
+                <div class="gallery-item">
+                    <figure class="image is-4by3 cornered">
+                        <img src="https://via.placeholder.com/1280x960" alt=""
+                            data-demo-src="assets/images/demo/woman-glasses.jpeg">
+                        <figcaption>
+                            <h2>Woman with <span>Glasses</span></h2>
+                            <p>Lorem ipsum sit dolor amet os ludicrum alea jacta est. <br><span>Credits : @Unsplash</span></p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="gallery-item">
+                    <figure class="image is-4by3 cornered">
+                        <img src="https://via.placeholder.com/1280x960" alt=""
+                            data-demo-src="assets/images/demo/woman-glasses-back.jpeg">
+                        <figcaption>
+                            <h2>Woman with <span>Glasses</span></h2>
+                            <p>Lorem ipsum sit dolor amet os ludicrum alea jacta est. <br><span>Credits : @Unsplash</span></p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="gallery-item">
+                    <figure class="image is-4by3 cornered">
+                        <img src="https://via.placeholder.com/1280x960" alt=""
+                            data-demo-src="assets/images/demo/adam_bradley.jpg">
+                        <figcaption>
+                            <h2>Keynote <span>Speaker</span></h2>
+                            <p>Lorem ipsum sit dolor amet os ludicrum alea jacta est. <br><span>Credits : @Unsplash</span></p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="gallery-item">
+                    <figure class="image is-4by3 cornered">
+                        <img src="https://via.placeholder.com/1280x960" alt=""
+                            data-demo-src="assets/images/demo/joel_zimmerman.jpg">
+                        <figcaption>
+                            <h2>Keynote <span>Speaker</span></h2>
+                            <p>Lorem ipsum sit dolor amet os ludicrum alea jacta est. <br><span>Credits : @Unsplash</span></p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="modal-close is-large is-hidden" aria-label="close"></button>
+</div>
+<!-- Gallery modal -->
+
+<!-- Vertical form modal -->
+<div id="vertical-form-modal" class="modal modal-sm">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="flex-card simple-shadow">
+            <div class="card-body">
+                <h2 class="title has-text-centered is-3 mb-40">Login</h2>
+                <div class="control-material is-accent">
+                    <input class="material-input" type="text" required>
+                    <span class="material-highlight"></span>
+                    <span class="bar"></span>
+                    <label>Name *</label>
+                </div>
+                <div class="control-material is-accent">      
+                    <input class="material-input" type="text" required>
+                    <span class="material-highlight"></span>
+                    <span class="bar"></span>
+                    <label>Password *</label>
+                </div>
+                <p class="has-text-left mt-30">
+                    <a class="no-account is-accent" href="#">Dont have an account?</a>
+                </p>
+                <div class="mt-20">
+                    <button class="button button-cta btn-align accent-btn raised is-fullwidth no-lh">Login</button>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <button class="modal-close is-large is-hidden" aria-label="close"></button>
+</div>
+<!-- /Vertical form modal -->
+
+<!-- Horizontal form modal -->
+<div id="horizontal-form-modal" class="modal modal-lg">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="flex-card simple-shadow">
+            <div class="card-body">
+                <h2 class="title is-4 text-bold mb-20">Create project</h2>
+                <form>
+                    <div class="columns mt-50">
+                        <div class="column">
+                            <div class="control">
+                                <label>Project ID</label>
+                                <input class="input is-medium mt-5" type="text">
+                            </div>
+                            <div class="control">
+                                <label>Project category</label>
+                                <div class="mt-5"></div>
+                                <select class="chosen-select" data-placeholder="Project category">
+                                    <option label="Project category"></option>
+                                    <option>Marketing</option>
+                                    <option>Sales</option>
+                                    <option>Support</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="control">
+                                <label>Project name</label>
+                                <input class="input is-medium mt-5" type="text">
+                            </div>
+                            <div class="control">
+                                <label>Project type</label>
+                                <div class="mt-5"></div>
+                                <select class="chosen-select" data-placeholder="Project type">
+                                    <option label="Project type"></option>
+                                    <option>Kanban</option>
+                                    <option>Scrum</option>
+                                    <option>List</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columns">
+                        <div class="column">
+                            <div class="control">
+                                <textarea class="textarea is-grow" rows="5" placeholder="Enter a project description ..."></textarea>
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="mt-30">  
+                        <button class="button btn-align no-lh raised accent-btn modal-dismiss">Create</button>
+                        <button class="button is-link no-lh modal-dismiss">Cancel</button>
+                    </div>
+                </form> 
+            </div>
+        </div>
+    </div>
+    <button class="modal-close is-large is-hidden" aria-label="close"></button>
+</div>
+<!-- /Horizontal form modal -->
+
+<!-- Success modal -->
+<div id="success-modal" class="modal modal-sm">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="flex-card simple-shadow">
+            <div class="card-body has-text-centered">
+                <div class="content has-text-centered">
+                    <div class="pb-20">
+                        <div id="success-icon" class="vivus-svg modal-svg"></div>
+                    </div>
+                    <h2 class="title is-3 no-margin">Success !</h2>
+                    <p class="pt-20">Things went as expected.</p>
+                </div>
+                <div class="mt-20">
+                    <a class="button success-btn raised btn-align modal-dismiss">Proceed</a>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <button class="modal-close is-large is-hidden" aria-label="close"></button>
+</div>
+<!-- /Success modal -->
+
+<!-- Error modal -->
+<div id="error-modal" class="modal modal-sm">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="flex-card simple-shadow">
+            <div class="card-body has-text-centered">
+                <div class="content has-text-centered">
+                    <div class="pb-20">
+                        <div id="error-icon" class="vivus-svg modal-svg"></div>
+                    </div>
+                    <h2 class="title is-3 no-margin">Oops !</h2>
+                    <p class="pt-20">Something went wrong.</p>
+                </div>
+                <div class="mt-20">
+                    <a class="button danger-btn raised btn-align modal-dismiss">Go back</a>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <button class="modal-close is-large is-hidden" aria-label="close"></button>
+</div>
+<!-- /Error modal -->
+
+<!-- Warning modal -->
+<div id="warning-modal" class="modal modal-sm">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="flex-card simple-shadow">
+            <div class="card-body has-text-centered">
+                <div class="content has-text-centered">
+                    <div class="pb-20">
+                        <div id="warning-icon" class="vivus-svg modal-svg"></div>
+                    </div>
+                    <h2 class="title is-3 no-margin">Warning !</h2>
+                    <p class="pt-20">Are you sure to do this?</p>
+                </div>
+                <div class="mt-20">
+                    <a class="button is-link modal-dismiss">Cancel</a>
+                    <a class="button warning-btn raised btn-align modal-dismiss">Do it</a>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <button class="modal-close is-large is-hidden" aria-label="close"></button>
+</div>
+<!-- /Warning modal -->
+
+<!-- Info modal -->
+<div id="info-modal" class="modal modal-sm">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="flex-card simple-shadow">
+            <div class="card-body has-text-centered">
+                <div class="content has-text-centered">
+                    <div class="pb-20">
+                        <div id="info-icon" class="vivus-svg modal-svg"></div>
+                    </div>
+                    <h2 class="title is-3 no-margin">Info</h2>
+                    <p class="pt-20">Read the hints to learn faster.</p>
+                </div>
+                <div class="mt-20">
+                    <a class="button info-btn raised btn-align modal-dismiss">Got it</a>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <button class="modal-close is-large is-hidden" aria-label="close"></button>
+</div>
+<!-- /Info modal -->
+
+<!-- Default overlay -->
+<div id="default-overlay" class="modal modal-sm">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="flex-card simple-shadow">
+            <div class="card-body">
+                <div class="content">
+                    <h2 class="has-text-centered pb-20">Default overlay</h2>
+                    <p class="pb-20">Lorem ipsum dolor sit amet, has vero libris melius ea, omnis velit comprehensam duo an, meis ornatus eam ad. Ius ut labores scaevola.</p>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <button class="modal-close is-large is-hidden" aria-label="close"></button>
+</div>
+<!-- /Default overlay -->
+
+<!-- Hero overlay -->
+<div id="hero-overlay" class="modal modal-sm modal-hero">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="flex-card simple-shadow">
+            <div class="card-body">
+                <div class="content">
+                    <h2 class="has-text-centered pb-20">Hero overlay</h2>
+                    <p class="pb-20">Lorem ipsum dolor sit amet, has vero libris melius ea, omnis velit comprehensam duo an, meis ornatus eam ad. Ius ut labores scaevola.</p>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <button class="modal-close is-large is-hidden" aria-label="close"></button>
+</div>
+<!-- /Hero overlay -->
+
+<!-- Hero overlay -->
+<div id="success-overlay" class="modal modal-sm modal-success">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="flex-card simple-shadow">
+            <div class="card-body">
+                <div class="content">
+                    <h2 class="has-text-centered pb-20">Success overlay</h2>
+                    <p class="pb-20">Lorem ipsum dolor sit amet, has vero libris melius ea, omnis velit comprehensam duo an, meis ornatus eam ad. Ius ut labores scaevola.</p>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <button class="modal-close is-large is-hidden" aria-label="close"></button>
+</div>
+<!-- /Hero overlay -->
+
+<!-- Hero overlay -->
+<div id="error-overlay" class="modal modal-sm modal-error">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="flex-card simple-shadow">
+            <div class="card-body">
+                <div class="content">
+                    <h2 class="has-text-centered pb-20">Error overlay</h2>
+                    <p class="pb-20">Lorem ipsum dolor sit amet, has vero libris melius ea, omnis velit comprehensam duo an, meis ornatus eam ad. Ius ut labores scaevola.</p>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <button class="modal-close is-large is-hidden" aria-label="close"></button>
+</div>
+<!-- /Hero overlay -->
+
+<!-- Hero overlay -->
+<div id="warning-overlay" class="modal modal-sm modal-warning">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="flex-card simple-shadow">
+            <div class="card-body">
+                <div class="content">
+                    <h2 class="has-text-centered pb-20">Warning overlay</h2>
+                    <p class="pb-20">Lorem ipsum dolor sit amet, has vero libris melius ea, omnis velit comprehensam duo an, meis ornatus eam ad. Ius ut labores scaevola.</p>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <button class="modal-close is-large is-hidden" aria-label="close"></button>
+</div>
+<!-- /Hero overlay -->
+
+<!-- Hero overlay -->
+<div id="info-overlay" class="modal modal-sm modal-info">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="flex-card simple-shadow">
+            <div class="card-body">
+                <div class="content">
+                    <h2 class="has-text-centered pb-20">Info overlay</h2>
+                    <p class="pb-20">Lorem ipsum dolor sit amet, has vero libris melius ea, omnis velit comprehensam duo an, meis ornatus eam ad. Ius ut labores scaevola.</p>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <button class="modal-close is-large is-hidden" aria-label="close"></button>
+</div>
+<!-- /Hero overlay -->
+
+<!-- /MODALS -->

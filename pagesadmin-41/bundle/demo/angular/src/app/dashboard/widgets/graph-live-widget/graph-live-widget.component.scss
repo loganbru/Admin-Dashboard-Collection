@@ -1,0 +1,38 @@
+pgcard{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    &:after{
+      position: absolute;
+      background: transparent;
+      content:"";
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 1;
+    }
+}
+:host /deep/ .widget-7 {
+    .slide-back{
+      .row-sm-height:nth-child(1){
+        height: 60%;
+      }
+      .row-sm-height:nth-child(2){
+        height: 40%;
+      }
+    }
+    .slide-front > div {
+      display: flex;
+    }
+    p,
+    .face{
+      display: block;
+      font-size: 1em;
+      line-height: 1.2em;
+      margin: 0;
+    }
+  }

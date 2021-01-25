@@ -1,0 +1,92 @@
+//
+// components-rtl.scss
+//
+
+// widgets
+
+.mini-stat {
+  .mini-stat-label{
+      left: 0;
+      right: auto;
+      padding: 2px 32px 2px 10px;
+      clip-path: polygon(0% 0%, 94% 0, 76% 50%, 100% 100%, 0% 100%);
+  }
+}
+
+// Chat
+
+
+.conversation-list {
+
+  .chat-avatar {
+      float: left;
+  }
+  .conversation-text {
+      float: left;
+      margin-left: 12px;
+      text-align: left;
+  }
+  .ctext-wrap {
+      &:after {
+          right: 100%;
+          border-right-color: lighten($primary, 32%);
+        }
+  }
+  .odd {
+      .chat-avatar {
+          float: right !important;
+      }
+      .conversation-text {
+          margin-right: 12px;
+          text-align: right;
+          float: right !important;
+      }
+      .ctext-wrap {
+          border-radius: 7px 0px 7px 7px;
+          &:after {
+              left: 100% !important;
+              border-left-color: lighten($gray-200, 2%) !important;
+          }
+      }
+  }
+}
+
+
+
+// dropdown
+
+.dropdown-megamenu{
+  &.show{
+    left: 20px!important;
+  }
+}
+
+
+// icons
+
+.icon-list-demo{
+  i{
+    margin-left: 12px;
+    margin-right: 0;
+  }
+}
+
+
+
+
+// Invoice
+
+@media print {
+  .content-page,
+  .content,
+  body {
+      margin-right: 0;
+  }
+}
+
+// Demos button 
+.demos-show-btn {
+  left: 0;
+  right: auto;
+  border-radius: 0 6px 6px 0;
+}

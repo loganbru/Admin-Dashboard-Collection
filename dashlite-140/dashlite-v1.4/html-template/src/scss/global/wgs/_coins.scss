@@ -1,0 +1,36 @@
+// Coin Item
+.coin{
+    &-item{
+        display: flex;
+        align-items: center;
+        padding: 16px 20px;
+    }
+    &-icon{
+        display: inline-flex;
+        flex-shrink: 0;
+        .icon{
+            font-size: 31px;
+            height: 32px;
+            width: 32px;
+            color: $base-light;
+            .coin-btc &{
+                color:$brand-color-bitcoin;
+            }
+        }
+    }
+    &-info{
+        .coin-icon + &{
+            margin-left: 12px;
+        }
+    }
+    &-name{
+        font-size: $fx-sz-14;
+        color: $base-color;
+        display: block;
+    }
+    &-text{
+        font-size: $fx-sz-12;
+        color: $base-light;
+        display: block;
+    }
+}

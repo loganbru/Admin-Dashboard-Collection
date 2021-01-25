@@ -1,0 +1,17 @@
+//
+// Aside Menu
+//
+
+
+
+
+// Desktop mode
+@include kt-desktop {
+	.kt-aside-menu {
+		margin: 15px 0;
+	}
+}
+
+// Build menu
+@include kt-menu-ver-build-layout(kt-get($kt-aside-config, menu));
+@include kt-menu-ver-build-skin(kt-get($kt-aside-config, menu), default);

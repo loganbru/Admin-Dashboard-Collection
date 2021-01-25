@@ -1,0 +1,328 @@
+/*! one-page-1.scss | Bulkit | CSS Ninja */
+
+/* ==========================================================================
+General Layout
+========================================================================== */
+
+/***
+TABLE OF CONTENTS
+=============================================================================
+0. Hero
+1. Section
+2. Columns
+3. Titles
+4. Footer
+=============================================================================
+***/
+
+/* ==========================================================================
+0. Hero
+========================================================================== */
+
+body {
+    overflow-x: hidden;
+}
+
+.hero {
+    position: relative;
+    max-height: 90vh;
+
+    .is-hero-caption {
+        position: relative;
+        z-index: 1;
+
+        .title {
+            margin-bottom: 10px !important;
+        }
+
+        .subtitle {
+            max-width: 450px;
+            margin: 0 auto;
+        }
+
+        .button-wrap {
+            margin-top: 16px;
+        }
+    }
+
+    .hero-shape {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        min-height: 500px;
+        object-fit: cover;
+        z-index: 0;
+
+        &.is-1v {
+            min-height: 595px;
+        }
+
+        &.is-2v {
+            min-height: 600px;
+        }
+
+        &.is-3v {
+            min-height: 595px;
+        }
+
+        &.is-4v {
+            min-height: 550px;
+        }
+    }
+}
+
+/* ==========================================================================
+1. Section
+========================================================================== */
+
+.section {
+    &.is-grey {
+        background: $section-grey;
+    }
+
+    &.is-reversed {
+        .columns {
+            flex-direction: row-reverse;
+        }
+    }
+
+    &.has-triangle-right {
+        position: relative;
+
+        .triangle-right {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: auto;
+            z-index: 0;
+        }
+    }
+
+    &.has-triangle-left {
+        position: relative;
+
+        .triangle-left {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: auto;
+            z-index: 0;
+        }
+    }
+
+    &.has-circles {
+        position: relative;
+
+        .primary-circle {
+            position: absolute;
+            right: 35%;
+            top: 5%;
+            height: 250px;
+            width: 250px;
+            border-radius: 50%;
+            background: $primary;
+            z-index: 1;
+        }
+
+        .primary-bold-circle {
+            position: absolute;
+            left: 15%;
+            bottom: 10%;
+            height: 210px;
+            width: 210px;
+            border-radius: 50%;
+            background: $primary-bold;
+            z-index: 1;
+        }
+
+        .accent-circle {
+            position: absolute;
+            right: 65%;
+            top: 18%;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background: $accent;
+        }
+    }
+
+    &.is-pricing {
+        background-image: url(../images/shapes/circles-and-shapes.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .section-title {
+        img {
+            display: block;
+            width: 40px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            margin: 10px auto;
+            text-align: center;
+        }
+
+        h3 {
+            color: $muted-grey;
+        }
+    }
+
+    .side-title {
+        position: relative;
+
+        .title-number {
+            position: absolute;
+            top: -70px;
+            left: 0;
+            font-size: 7rem;
+            font-family: 'Nexa Bold', sans-serif;
+            font-weight: 700;
+            color: $dark-text;
+            opacity: .1;
+        }
+    }
+
+    .side-paragraph {
+        color: $muted-grey;
+        font-size: 1.3rem;
+        max-width: 450px;
+
+        &.is-small {
+            font-size: 1rem;
+        }
+
+        &.has-margin {
+            margin-top: 20px;
+        }
+    }
+
+    .side-image {
+        position: relative;
+        z-index: 2;
+        transition: all .5s;
+        transform: translateX(0);
+
+        &.is-pulled {
+            transform: translateX(-80px);
+        }
+    }
+
+    .shadow-side-image {
+        position: absolute;
+        top: 10px;
+        left: 0;
+        display: block;
+        height: calc(100% - 20px);
+        z-index: 1;
+        transform: translateX(60px);
+        transition: all .5s;
+
+        &.is-active {
+            transform: translateX(-30px);
+        }
+    }
+
+    .content-wrapper {
+        margin-top: 60px;
+
+        &.has-margin-bottom {
+            margin-bottom: 60px;
+        }
+    }
+}
+
+/* ==========================================================================
+2. Columns
+========================================================================== */
+
+.columns {
+    .column {
+        &.is-relative {
+            position: relative;
+        }
+    }
+}
+
+/* ==========================================================================
+3. Titles
+========================================================================== */
+
+.title {
+    font-family: 'Nexa Bold', sans-serif;
+    color: $dark-text;
+
+    &.is-light {
+        color: $smoke-white;
+    }
+
+    &.primary-title {
+        color: $primary;
+    }
+
+    &.grey-title {
+        color: $med-grey;
+    }
+}
+
+.subtitle {
+    font-family: 'Open Sans', sans-serif;
+
+    &.is-light {
+        color: $smoke-white;
+    }
+}
+
+/* ==========================================================================
+4. Footer
+========================================================================== */
+
+.footer {
+    //background: $primary;
+    background: $sidebar;
+    padding: 8rem 1.5rem 4rem 1.5rem;
+
+    .footer-logo {
+        max-width: 40px;
+    }
+
+    .footer-logo-text {
+        margin-top: 16px;
+        color: $smoke-white;
+        padding-right: 20px;
+    }
+
+    .footer-menu {
+        li {
+            padding: 8px 0;
+            color: $smoke-white;
+
+            a {
+                color: $smoke-white;
+            }
+        }
+    }
+
+    .copyright {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 8rem;
+
+        .copyright-logo {
+            display: block;
+            max-width: 70px;
+        }
+
+        .copyright-text {
+            font-weight: 500;
+            font-size: .9rem;
+            color: $smoke-white;
+        }
+    }
+}

@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Frogetor - Responsive Bootstrap 4 Admin Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="A premium admin dashboard template by themesbrand" name="description" />
+        <meta content="Mannatthemes" name="author" />
+
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- App css -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/metismenu.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+
+    </head>
+
+    <body>
+
+        <!-- Top Bar Start -->
+        <div class="topbar">
+             <!-- Navbar -->
+             <nav class="navbar-custom">
+
+                <!-- LOGO -->
+                <div class="topbar-left">
+                    <a href="index.html" class="logo">
+                        <span>
+                            <img src="assets/images/logo-sm.png" alt="logo-small" class="logo-sm">
+                        </span>
+                        <span>
+                            <img src="assets/images/logo-dark.png" alt="logo-large" class="logo-lg">
+                        </span>
+                    </a>
+                </div>
+    
+                <ul class="list-unstyled topbar-nav float-right mb-0">
+
+                    <li class="dropdown">
+                        <a class="nav-link dropdown-toggle arrow-none waves-light waves-effect" data-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="false" aria-expanded="false">
+                            <i class="mdi mdi-bell-outline nav-icon"></i>
+                            <span class="badge badge-danger badge-pill noti-icon-badge">2</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-lg">
+                            <!-- item-->
+                            <h6 class="dropdown-item-text">
+                                Notifications (258)
+                            </h6>
+                            <div class="slimscroll notification-list">
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item active">
+                                    <div class="notify-icon bg-success"><i class="mdi mdi-cart-outline"></i></div>
+                                    <p class="notify-details">Your order is placed<small class="text-muted">Dummy text of the printing and typesetting industry.</small></p>
+                                </a>
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <div class="notify-icon bg-warning"><i class="mdi mdi-message"></i></div>
+                                    <p class="notify-details">New Message received<small class="text-muted">You have 87 unread messages</small></p>
+                                </a>
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <div class="notify-icon bg-info"><i class="mdi mdi-glass-cocktail"></i></div>
+                                    <p class="notify-details">Your item is shipped<small class="text-muted">It is a long established fact that a reader will</small></p>
+                                </a>
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <div class="notify-icon bg-primary"><i class="mdi mdi-cart-outline"></i></div>
+                                    <p class="notify-details">Your order is placed<small class="text-muted">Dummy text of the printing and typesetting industry.</small></p>
+                                </a>
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <div class="notify-icon bg-danger"><i class="mdi mdi-message"></i></div>
+                                    <p class="notify-details">New Message received<small class="text-muted">You have 87 unread messages</small></p>
+                                </a>
+                            </div>
+                            <!-- All-->
+                            <a href="javascript:void(0);" class="dropdown-item text-center text-primary">
+                                View all <i class="fi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="nav-link dropdown-toggle waves-effect waves-light nav-user" data-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="false" aria-expanded="false">
+                            <img src="assets/images/users/user-1.jpg" alt="profile-user" class="rounded-circle" /> 
+                            <span class="ml-1 nav-user-name hidden-sm"> <i class="mdi mdi-chevron-down"></i> </span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="#"><i class="dripicons-user text-muted mr-2"></i> Profile</a>
+                            <a class="dropdown-item" href="#"><i class="dripicons-wallet text-muted mr-2"></i> My Wallet</a>
+                            <a class="dropdown-item" href="#"><i class="dripicons-gear text-muted mr-2"></i> Settings</a>
+                            <a class="dropdown-item" href="#"><i class="dripicons-lock text-muted mr-2"></i> Lock screen</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"><i class="dripicons-exit text-muted mr-2"></i> Logout</a>
+                        </div>
+                    </li>
+                </ul>
+    
+                <ul class="list-unstyled topbar-nav mb-0">
+                        
+                    <li>
+                        <button class="button-menu-mobile nav-link waves-effect waves-light">
+                            <i class="mdi mdi-menu nav-icon"></i>
+                        </button>
+                    </li>
+
+                    <li class="hide-phone app-search">
+                        <form role="search" class="">
+                            <input type="text" placeholder="Search..." class="form-control">
+                            <a href=""><i class="fas fa-search"></i></a>
+                        </form>
+                    </li>
+                    
+                </ul>
+
+            </nav>
+            <!-- end navbar-->
+        </div>
+        <!-- Top Bar End -->
+        <div class="page-wrapper-img">
+            <div class="page-wrapper-img-inner">
+                <div class="sidebar-user media">                    
+                    <img src="assets/images/users/user-1.jpg" alt="user" class="rounded-circle img-thumbnail mb-1">
+                    <span class="online-icon"><i class="mdi mdi-record text-success"></i></span>
+                    <div class="media-body">
+                        <h5 class="text-light">Mr. Michael Hill </h5>
+                        <ul class="list-unstyled list-inline mb-0 mt-2">
+                            <li class="list-inline-item">
+                                <a href="#" class=""><i class="mdi mdi-account text-light"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class=""><i class="mdi mdi-settings text-light"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class=""><i class="mdi mdi-power text-danger"></i></a>
+                            </li>
+                        </ul>
+                    </div>                    
+                </div>
+                <!-- Page-Title -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="page-title-box">
+                            <div class="float-right align-item-center mt-2">
+                                <button class="btn btn-info px-4 align-self-center report-btn">Creat Report</button>
+                            </div>
+                            <h4 class="page-title mb-2"><i class="mdi mdi-script-text-outline mr-2"></i>Scrollspy</h4>  
+                            <div class="">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="javascript:void(0);">Frogetor</a></li>
+                                    <li class="breadcrumb-item"><a href="javascript:void(0);">UI Kit</a></li>
+                                    <li class="breadcrumb-item active">Scrollspy</li>
+                                </ol>
+                            </div>                                      
+                        </div><!--end page title box-->
+                    </div><!--end col-->
+                </div><!--end row-->
+                <!-- end page title end breadcrumb -->
+            </div><!--end page-wrapper-img-inner-->
+        </div><!--end page-wrapper-img-->
+        
+        <div class="page-wrapper">
+            <div class="page-wrapper-inner">
+
+                <!-- Left Sidenav -->
+                <div class="left-sidenav">
+                    
+                    <ul class="metismenu left-sidenav-menu" id="side-nav">
+
+                        <li class="menu-title">Main</li>
+
+                        <li>
+                            <a href="javascript: void(0);"><i class="mdi mdi-monitor"></i><span>Dashboards</span><span class="badge badge-danger badge-pill float-right">9+</span></a>
+                            <ul class="nav-second-level" aria-expanded="false">
+                                <li><a href="index.html">Dashboard 1</a></li>
+                                <li><a href="index-2.html">Dashboard 2</a></li>
+                                <li><a href="index-3.html">Dashboard 3</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);"><i class="mdi mdi-apps"></i><span>App</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                            <ul class="nav-second-level" aria-expanded="false">
+                                <li><a href="app-chat.html"><span>Chat</span></a></li>
+                                <li><a href="app-calendar.html"><span>Calendar</span></a></li> 
+
+                                <li>
+                                    <a href="javascript: void(0);">ECommerce <span class="menu-arrow left-has-menu"><i class="mdi mdi-chevron-right"></i></span></a>
+                                    <ul class="nav-second-level" aria-expanded="false">
+                                        <li><a href="app-ecommerce-product.html">Product</a></li>
+                                        <li><a href="app-ecommerce-product-list.html">Product List</a></li>
+                                        <li><a href="app-ecommerce-product-detail.html">Product Detail</a></li>
+                                        <li><a href="app-ecommerce-cart.html">Cart</a></li>
+                                        <li><a href="app-ecommerce-checkout.html">Checkout</a></li>
+                                    </ul>
+                                </li>                                
+                                <li><a href="app-contact-list.html"><span>Contact List</span></a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);"><i class="mdi mdi-email-variant"></i><span>Email</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                            <ul class="nav-second-level" aria-expanded="false">
+                                <li><a href="email-inbox.html">Inbox</a></li>
+                                <li><a href="email-read.html">Read Email</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="menu-title">Components</li>
+
+                        <li>
+                            <a href="javascript: void(0);"><i class="mdi mdi-cards-playing-outline"></i><span>UI Elements</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                            <ul class="nav-second-level" aria-expanded="false">
+                                
+                                <li><a href="ui-alerts.html">Alerts</a></li>                                
+                                <li><a href="ui-buttons.html">Buttons</a></li>
+                                <li><a href="ui-cards.html">Cards</a></li>                                
+                                <li><a href="ui-dropdowns.html">Dropdowns</a></li>
+                                <li><a href="ui-modals.html">Modals</a></li>
+                                <li><a href="ui-typography.html">Typography</a></li>
+                                <li><a href="ui-progress.html">Progress</a></li>
+                                <li><a href="ui-tabs-accordions.html">Tabs & Accordions</a></li>
+                                <li><a href="ui-tooltips-popovers.html">Tooltips & Popover</a></li>
+                                <li><a href="ui-carousel.html">Carousel</a></li>
+                                <li><a href="ui-pagination.html">Pagination</a></li>
+                                <li><a href="ui-grid.html">Grid System</a></li>
+                                <li><a href="ui-scrollspy.html">Scrollspy</a></li>
+                                <li><a href="ui-spinners.html">Spinners</a></li>
+                                <li><a href="ui-toasts.html">Toasts</a></li>
+                                
+                                
+                                <li>
+                                    <a href="javascript: void(0);">Oter Components <span class="menu-arrow left-has-menu"><i class="mdi mdi-chevron-right"></i></span></a>
+                                    <ul class="nav-second-level" aria-expanded="false">
+                                        <li><a href="ui-other-animation.html">Animation</a></li>
+                                        <li><a href="ui-other-avatar.html">Avatar</a></li>
+                                        <li><a href="ui-other-clipboard.html">Clip Board</a></li>
+                                        <li><a href="ui-other-files.html">File Meneger</a></li>
+                                        <li><a href="ui-other-ribbons.html">Ribbons</a></li>
+                                        <li><a href="ui-other-dragula.html"><span>Dragula</span></a></li>
+                                        <li><a href="ui-other-check-radio.html"><span>Check & Radio Buttons</span></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a href="javascript: void(0);"><i class="mdi mdi-buffer"></i><span>Advanced UI</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                            <ul class="nav-second-level" aria-expanded="false">
+                                <li><a href="advanced-rangeslider.html">Range Slider</a></li>
+                                <li><a href="advanced-sweetalerts.html">Sweet Alerts</a></li>
+                                <li><a href="advanced-nestable.html">Nestable List</a></li>
+                                <li><a href="advanced-ratings.html">Ratings</a></li>
+                                <li><a href="advanced-highlight.html">Highlight</a></li>
+                                <li><a href="advanced-session.html">Session Timeout</a></li>
+                                <li><a href="advanced-idle-timer.html">Idle Timer</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);"><i class="mdi mdi-clipboard-outline"></i><span class="badge badge-info float-right">8</span><span>Forms</span></a>
+                            <ul class="nav-second-level" aria-expanded="false">
+                                <li><a href="forms-elements.html">Basic Elements</a></li>
+                                <li><a href="forms-advanced.html">Advance Elements</a></li>
+                                <li><a href="forms-validation.html">Validation</a></li>
+                                <li><a href="forms-wizard.html">Wizard</a></li>
+                                <li><a href="forms-editors.html">Editors</a></li>
+                                <li><a href="forms-repeater.html">Repeater</a></li>
+                                <li><a href="forms-x-editable.html">X Editable</a></li>
+                                <li><a href="forms-uploads.html">File Upload</a></li>
+                                <li><a href="forms-img-crop.html">Image Crop</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);"><i class="mdi mdi-poll"></i><span>Charts</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                            <ul class="nav-second-level" aria-expanded="false">
+                                <li><a href="charts-apex.html">Apex</a></li>
+                                <li><a href="charts-morris.html">Morris</a></li>
+                                <li><a href="charts-chartist.html">Chartist</a></li>
+                                <li><a href="charts-flot.html">Flot</a></li>
+                                <li><a href="charts-peity.html">Peity</a></li>
+                                <li><a href="charts-chartjs.html">Chartjs</a></li>
+                                <li><a href="charts-sparkline.html">Sparkline</a></li>
+                                <li><a href="charts-knob.html">Jquery Knob</a></li>
+                                <li><a href="charts-justgage.html">JustGage</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);"><i class="mdi mdi-format-list-bulleted-type"></i><span>Tables</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                            <ul class="nav-second-level" aria-expanded="false">
+                                <li><a href="tables-basic.html">Basic</a></li>
+                                <li><a href="tables-datatable.html">Datatables</a></li>
+                                <li><a href="tables-responsive.html">Responsive</a></li>
+                                <li><a href="tables-footable.html">Footable</a></li>
+                                <li><a href="tables-jsgrid.html">Jsgrid</a></li>
+                                <li><a href="tables-editable.html">Editable</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);"><i class="mdi mdi-diamond-stone"></i><span>Icons</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                            <ul class="nav-second-level" aria-expanded="false">
+                                <li><a href="icons-materialdesign.html">Material Design</a></li>
+                                <li><a href="icons-dripicons.html">Dripicons</a></li>
+                                <li><a href="icons-fontawesome.html">Font awesome</a></li>
+                                <li><a href="icons-themify.html">Themify</a></li>
+                                <li><a href="icons-typicons.html">Typicons</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="menu-title">More</li>
+
+                        <li>
+                            <a href="javascript: void(0);"><i class="mdi mdi-map"></i><span>Maps</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                            <ul class="nav-second-level" aria-expanded="false">
+                                <li><a href="maps-google.html">Google Maps</a></li>
+                                <li><a href="maps-vector.html">Vector Maps</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);"><i class="mdi mdi-lock-outline"></i><span>Authentication</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                            <ul class="nav-second-level" aria-expanded="false">
+                                <li><a href="auth-login.html">Login</a></li>
+                                <li><a href="auth-register.html">Register</a></li>
+                                <li><a href="auth-recoverpw.html">Recover Password</a></li>
+                                <li><a href="auth-lock-screen.html">Lock Screen</a></li>
+                                <li><a href="auth-404.html">Error 404</a></li>
+                                <li><a href="auth-500.html">Error 500</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);"><i class="mdi mdi-book-open-page-variant"></i><span>Pages</span><span class="badge badge-success float-right">Hot</span></a>
+                            <ul class="nav-second-level" aria-expanded="false">
+                                <li><a href="page-tour.html">Tour</a></li>
+                                <li><a href="page-timeline.html">Timeline</a></li>
+                                <li><a href="page-invoice.html">Invoice</a></li>
+                                <li><a href="page-treeview.html">Treeview</a></li>
+                                <li><a href="page-profile.html">Profile</a></li>
+                                <li><a href="page-starter.html">Starter Page</a></li>
+                                <li><a href="page-pricing.html">Pricing</a></li>
+                                <li><a href="page-blogs.html"><span>Blogs</span></a></li>
+                                <li><a href="page-faq.html">FAQs</a></li>
+                                <li><a href="page-gallery.html">Gallery</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript:void(0);"><i class="mdi mdi-contact-mail"></i><span>Email Templates</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                            <ul class="nav-second-level" aria-expanded="false">
+                                <li><a href="email-templates-basic.html">Basic Action Email</a></li>
+                                <li><a href="email-templates-alert.html">Alert Email</a></li>
+                                <li><a href="email-templates-billing.html">Billing Email</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- end left-sidenav-->
+
+                <!-- Page Content-->
+                <div class="page-content">
+                    <div class="container-fluid"> 
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body">        
+                                        <h4 class="mt-0 header-title">Example in navbar</h4>
+                                        <p class="text-muted mb-4">Scroll the area below the navbar and watch the active class change. The dropdown items will be highlighted as well.</p>
+                                        <nav id="navbar-example2" class="navbar navbar-light bg-light">
+                                            <a class="navbar-brand pt-0" href="#"><img src="assets/images/logo-sm.png" alt="" height="22" class="mr-2"><img src="assets/images/logo-dark.png" alt="" height="12"></a>
+                                            <ul class="nav nav-pills">
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#ScrollyHome">Home</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#ScrollyAbout">About</a>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <i class="mdi mdi-chevron-down"></i></a>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item" href="#one">one</a>
+                                                    <a class="dropdown-item" href="#two">two</a>
+                                                    <div role="separator" class="dropdown-divider"></div>
+                                                    <a class="dropdown-item active" href="#three">three</a>
+                                                </div>
+                                            </li>
+                                            </ul>
+                                        </nav>
+                                        <div data-spy="scroll" data-target="#navbar-example2" data-offset="0" class="scrollspy-example">
+                                            <h5 id="ScrollyHome">Home</h5>
+                                            <p class="text-muted">Ad leggings keytar, brunch id art party dolor labore. 
+                                                Pitchfork yr enim lo-fi before they sold out qui. 
+                                                Tumblr farm-to-table bicycle rights whatever. 
+                                                Anim keffiyeh carles cardigan. Velit seitan mcsweeney's 
+                                                photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, 
+                                                williamsburg hoodie minim qui you probably haven't heard of them 
+                                                et cardigan trust fund culpa biodiesel wes anderson aesthetic. 
+                                                Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.
+                                            </p>
+                                            <h5 id="ScrollyAbout">About</h5>
+                                            <p class="text-muted">Veniam marfa mustache skateboard, adipisicing fugiat velit pitchfork beard. 
+                                                Freegan beard aliqua cupidatat mcsweeney's vero. Cupidatat four loko nisi, 
+                                                ea helvetica nulla carles. Tattooed cosby sweater food truck, mcsweeney's 
+                                                quis non freegan vinyl. Lo-fi wes anderson +1 sartorial. Carles non aesthetic 
+                                                exercitation quis gentrify. Brooklyn adipisicing craft beer vice keytar deserunt.
+                                            </p>
+                                            <h5 id="one">one</h5>
+                                            <p class="text-muted">Occaecat commodo aliqua delectus. Fap craft beer deserunt skateboard ea. 
+                                                Lomo bicycle rights adipisicing banh mi, velit ea sunt next level locavore 
+                                                single-origin coffee in magna veniam. High life id vinyl, echo park consequat 
+                                                quis aliquip banh mi pitchfork. Vero VHS est adipisicing. Consectetur nisi DIY 
+                                                minim messenger bag. Cred ex in, sustainable delectus consectetur fanny pack iphone.
+                                            </p>
+                                            <h5 id="two">two</h5>
+                                            <p class="text-muted">In incididunt echo park, officia deserunt mcsweeney's proident master 
+                                                cleanse thundercats sapiente veniam. Excepteur VHS elit, proident shoreditch 
+                                                +1 biodiesel laborum craft beer. Single-origin coffee wayfarers irure four loko, 
+                                                cupidatat terry richardson master cleanse. Assumenda you probably haven't heard of 
+                                                them art party fanny pack, tattooed nulla cardigan tempor ad. Proident wolf nesciunt 
+                                                sartorial keffiyeh eu banh mi sustainable. Elit wolf voluptate, lo-fi ea portland before 
+                                                they sold out four loko. Locavore enim nostrud mlkshk brooklyn nesciunt.
+                                            </p>
+                                            <h5 id="three">three</h5>
+                                            <p class="text-muted">Ad leggings keytar, brunch id art party dolor labore. 
+                                                Pitchfork yr enim lo-fi before they sold out qui. Tumblr 
+                                                farm-to-table bicycle rights whatever. Anim keffiyeh carles 
+                                                . Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby 
+                                                sweater lomo jean shorts, williamsburg hoodie minim qui you probably 
+                                                haven't heard of them et cardigan trust fund culpa biodiesel wes anderson 
+                                                . Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat
+                                            </p>
+                                            <p class="text-muted">Keytar twee blog, culpa messenger bag marfa whatever delectus food truck. 
+                                                Sapiente synth id assumenda. Locavore sed helvetica cliche irony, thundercats 
+                                                you probably haven't heard of them consequat hoodie gluten-free lo-fi fap aliquip. 
+                                                Labore elit placeat before they sold out, terry richardson proident brunch nesciunt quis 
+                                                cosby sweater pariatur keffiyeh ut helvetica artisan. Cardigan craft beer seitan readymade velit.
+                                                    VHS chambray laboris tempor veniam. Anim mollit minim commodo ullamco thundercats.
+                                            </p>
+                                        </div>                                           
+                                    </div><!--end card-body-->
+                                </div><!--end card-->
+                            </div> <!-- end col -->                                 
+                        </div> <!-- end row -->
+
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body">        
+                                        <h4 class="mt-0 header-title">Example with nested nav</h4>
+                                        <p class="text-muted mb-4">Scrollspy also works with nested 
+                                            <code class="highlighter-rouge">.nav</code>s. If a nested 
+                                            <code class="highlighter-rouge">.nav</code> is 
+                                            <code class="highlighter-rouge">.active</code>, 
+                                            its parents will also be <code class="highlighter-rouge">.
+                                                active</code>. Scroll the area next to the navbar and watch 
+                                                the active class change.
+                                        </p>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <nav id="navbar-example3" class="navbar navbar-light bg-light flex-column">
+                                                    <a class="navbar-brand navbar-scroll-brand py-3" href="#"><img src="assets/images/logo-sm.png" alt="" height="22" class="mr-2"><img src="assets/images/logo-dark.png" alt="" height="12"></a>
+                                                    <nav class="nav nav-pills flex-column">
+                                                    <a class="nav-link active" href="#item-1">Item 1</a>
+                                                    <nav class="nav nav-pills flex-column">
+                                                        <a class="nav-link ml-3 my-1" href="#item-1-1">Item 1-1</a>
+                                                        <a class="nav-link ml-3 my-1" href="#item-1-2">Item 1-2</a>
+                                                    </nav>
+                                                    <a class="nav-link" href="#item-2">Item 2</a>
+                                                    <a class="nav-link" href="#item-3">Item 3</a>
+                                                    <nav class="nav nav-pills flex-column">
+                                                        <a class="nav-link ml-3 my-1" href="#item-3-1">Item 3-1</a>
+                                                        <a class="nav-link ml-3 my-1" href="#item-3-2">Item 3-2</a>
+                                                    </nav>
+                                                    </nav>
+                                                </nav>
+                                            </div><!-- end col --> 
+                                            <div class="col-md-8">
+                                                <div data-spy="scroll" data-target="#navbar-example3" data-offset="0" class="scrollspy-example-2">
+                                                    <h5 id="item-1">Item 1</h5>
+                                                    <p class="text-muted">Ex consequat commodo adipisicing exercitation aute excepteur occaecat ullamco 
+                                                        duis aliqua id magna ullamco eu. Do aute ipsum ipsum ullamco cillum consectetur 
+                                                            et aute consectetur labore. Fugiat laborum incididunt tempor eu consequat enim 
+                                                            dolore proident. Qui laborum do non excepteur nulla magna eiusmod consectetur in. 
+                                                            et aliqua officia quis et incididunt voluptate non anim reprehenderit adipisicing 
+                                                            ut consequat deserunt mollit dolore. Aliquip nulla enim veniam non fugiat id cupidatat 
+                                                            nulla elit cupidatat commodo velit ut eiusmod cupidatat elit dolore.
+                                                        </p>
+                                                    <h5 id="item-1-1">Item 1-1</h5>
+                                                    <p class="text-muted">Amet tempor mollit aliquip pariatur excepteur commodo do ea 
+                                                        cillum commodo Lorem et occaecat elit qui et. Aliquip labore 
+                                                        ex ex esse voluptate occaecat Lorem ullamco deserunt. Aliqua 
+                                                        cillum excepteur irure consequat id quis ea. Sit proident ullamco 
+                                                        aute magna pariatur nostrud labore. Reprehenderit aliqua commodo eiusmod 
+                                                        aliquip est do duis amet proident magna consectetur consequat eu commodo 
+                                                        fugiat non quis. Enim aliquip exercitation ullamco adipisicing voluptate excepteur 
+                                                        minim exercitation minim minim commodo adipisicing exercitation officia nisi adipisicing.
+                                                            Anim id duis qui consequat labore adipisicing sint dolor elit cillum anim et fugiat.
+                                                    </p>
+                                                    <h5 id="item-1-2">Item 1-2</h5>
+                                                    <p class="text-muted">Cillum nisi deserunt magna eiusmod qui eiusmod velit voluptate pariatur 
+                                                        laborum sunt enim. Irure laboris mollit consequat incididunt sint et culpa 
+                                                            incididunt adipisicing magna magna occaecat. Nulla ipsum cillum eiusmod sint 
+                                                            elit excepteur ea labore enim consectetur in labore anim. Proident ullamco ipsum 
+                                                            esse elit ut Lorem eiusmod dolor et eiusmod. Anim occaecat nulla in non consequat 
+                                                            eiusmod velit incididunt.
+                                                    </p>
+                                                    <h5 id="item-2">Item 2</h5>
+                                                    <p class="text-muted">Quis magna Lorem anim amet ipsum do mollit sit cillum voluptate 
+                                                        ex nulla tempor. Laborum consequat non elit enim exercitation 
+                                                        cillum aliqua consequat id aliqua. Esse ex consectetur mollit 
+                                                        voluptate est in duis laboris ad sit ipsum anim Lorem. Incididunt 
+                                                        veniam velit elit elit veniam Lorem aliqua quis ullamco deserunt sit 
+                                                        enim elit aliqua esse irure. Laborum nisi sit est tempor laborum mollit 
+                                                        labore officia laborum excepteur commodo non commodo dolor excepteur commodo. 
+                                                        Ipsum fugiat ex est consectetur ipsum commodo tempor sunt in proident.
+                                                    </p>
+                                                    <h5 id="item-3">Item 3</h5>
+                                                    <p class="text-muted">Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. 
+                                                        Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute 
+                                                        tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat 
+                                                        mollit culpa irure ullamco est ex ullamco excepteur.
+                                                    </p>
+                                                    <h5 id="item-3-1">Item 3-1</h5>
+                                                    <p class="text-muted">Deserunt quis elit Lorem eiusmod amet enim enim amet minim Lorem proident nostrud. 
+                                                            id dolore anim exercitation aute fugiat labore voluptate cillum do laboris labore. 
+                                                            Ex velit exercitation nisi enim labore reprehenderit labore nostrud ut ut. Esse officia 
+                                                            sunt duis aliquip ullamco tempor eiusmod deserunt irure nostrud irure. Ullamco proident 
+                                                            veniam laboris ea consectetur magna sunt ex exercitation aliquip minim enim culpa occaecat 
+                                                            exercitation. Est tempor excepteur aliquip laborum consequat do deserunt laborum esse 
+                                                            eiusmod irure proident ipsum esse qui.
+                                                        </p>
+                                                    <h5 id="item-3-2">Item 3-2</h5>
+                                                    <p class="text-muted">Labore sit culpa commodo elit adipisicing
+                                                            sit aliquip elit proident voluptate minim mollit 
+                                                            nostrud aute reprehenderit do. Mollit excepteur eu Lorem 
+                                                            ipsum anim commodo sint labore Lorem in exercitation velit 
+                                                            incididunt. Occaecat consectetur nisi in occaecat proident minim 
+                                                            enim sunt reprehenderit exercitation cupidatat et do officia. Aliquip 
+                                                            consequat ad labore labore mollit ut amet. Sit pariatur tempor proident 
+                                                            in veniam culpa aliqua excepteur elit magna fugiat eiusmod amet officia.
+                                                    </p>
+                                                </div><!--end scroll-->
+                                            </div> <!-- end col -->                                 
+                                        </div> <!-- end row -->                                        
+                                    </div><!--end card-body-->
+                                </div><!--end card-->
+                            </div> <!-- end col -->                                 
+                        </div> <!-- end row -->
+
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body">        
+                                        <h4 class="mt-0 header-title">Example with list-group</h4>
+                                        <p class="text-muted mb-4">Scrollspy also works with <code class="highlighter-rouge">.list-group</code>s. Scroll the area next to the list group and watch the active class change.</p>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div id="list-example" class="list-group">
+                                                    <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
+                                                    <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
+                                                    <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+                                                    <a class="list-group-item list-group-item-action active" href="#list-item-4">Item 4</a>
+                                                </div>
+                                            </div><!--end col-->
+                                            <div class="col-md-8">
+                                                <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
+                                                    <h5 id="list-item-1">Item 1</h5>
+                                                    <p class="text-muted">Ex consequat commodo adipisicing exercitation aute excepteur 
+                                                        occaecat ullamco duis aliqua id magna ullamco eu. Do aute 
+                                                            ipsum ullamco cillum consectetur ut et aute consectetur labore. 
+                                                            Fugiat laborum incididunt tempor eu consequat enim dolore proident. 
+                                                            Qui laborum do non excepteur nulla magna eiusmod consectetur in. Aliqua 
+                                                            et aliqua officia quis et incididunt voluptate non anim reprehenderit adipisicing 
+                                                            dolore ut consequat deserunt mollit dolore. Aliquip nulla enim veniam non fugiat id 
+                                                            cupidatat nulla elit cupidatat commodo velit ut eiusmod cupidatat elit dolore.
+                                                    </p>
+                                                    <h5 id="list-item-2">Item 2</h5>
+                                                    <p class="text-muted">Quis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. 
+                                                        Laborum consequat non elit enim exercitation cillum aliqua consequat id aliqua. 
+                                                        Esse ex consectetur mollit voluptate est in duis laboris ad sit ipsum anim Lorem. 
+                                                        Incididunt veniam velit elit elit veniam Lorem aliqua quis ullamco deserunt sit enim 
+                                                        elit aliqua esse irure. Laborum nisi sit est tempor laborum mollit labore officia laborum 
+                                                        excepteur commodo non commodo dolor excepteur commodo. Ipsum fugiat ex est consectetur ipsum 
+                                                        commodo tempor sunt in proident.
+                                                    </p>
+                                                    <h5 id="list-item-3">Item 3</h5>
+                                                    <p class="text-muted">Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis.
+                                                            Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute
+                                                            tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat
+                                                            mollit culpa irure ullamco est ex ullamco excepteur.
+                                                    </p>
+                                                    <h5 id="list-item-4">Item 4</h5>
+                                                    <p class="text-muted">Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. 
+                                                        Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute 
+                                                        tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat 
+                                                        mollit culpa irure ullamco est ex ullamco excepteur.
+                                                    </p>
+                                                </div><!--end scroll-->
+                                            </div> <!-- end col -->                                 
+                                        </div> <!-- end row -->                                        
+                                    </div><!--end card-body-->
+                                </div><!--end card-->
+                            </div> <!-- end col -->                                 
+                        </div> <!-- end row -->
+                    </div><!-- container -->
+
+                    <footer class="footer text-center text-sm-left">
+                        &copy; 2019 Frogetor <span class="text-muted d-none d-sm-inline-block float-right">Crafted with <i class="mdi mdi-heart text-danger"></i> by Mannatthemes</span>
+                    </footer>
+                </div>
+                <!-- end page content -->
+            </div>
+            <!--end page-wrapper-inner -->
+        </div>
+        <!-- end page-wrapper -->
+
+        <!-- jQuery  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/metisMenu.min.js"></script>
+        <script src="assets/js/waves.min.js"></script>
+        <script src="assets/js/jquery.slimscroll.min.js"></script>
+
+        <!-- App js -->
+        <script src="assets/js/app.js"></script>
+
+    </body>
+</html>

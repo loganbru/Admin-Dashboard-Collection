@@ -1,0 +1,51 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700);
+/*Theme Colors*/
+/**
+ * Table Of Content
+ *
+ * 	1. Color system
+ *	2. Options
+ *	3. Body
+ *	4. Typography
+ *	5. Breadcrumbs
+ *	6. Cards
+ *	7. Dropdowns
+ *	8. Buttons
+ *	9. Typography
+ *	10. Progress bars
+ *	11. Tables
+ *	12. Forms
+ *	14. Component
+ */
+/*============================================================== 
+ Common changes done in the variable.scss 
+ ============================================================== */
+html body .page-titles, html body .footer, html body .footable-odd, html body .footable .pagination li.disabled a, html body .mega-dropdown .nav-accordion .card-header, html body .myadmin-dd .dd-list .dd-item .dd-handle,
+html body .myadmin-dd-empty .dd-list .dd3-content, html body .myadmin-dd-empty .dd-list .dd3-handle, html body .page-item.disabled .page-link, html body .daterangepicker td.off, html body .daterangepicker td.off, html body .dropify-wrapper input, html body .jsgrid-row > .jsgrid-cell, html body .jsgrid-filter-row > .jsgrid-cell {
+  background: #303641; }
+
+html body select, html body .fc-button, html body .footable .pagination li a, html body .dropzone, html body .page-link, html body .breadcrumb, html body .bootstrap-switch .bootstrap-switch-label, html body .grid-stack-item-content,
+html body .fileinput .input-group-addon, html body .select2-container--default .select2-selection--multiple, html body .select2-container--default .select2-selection--single, html body .select2-dropdown,
+html body .bootstrap-tagsinput, html body .ms-container .ms-selectable, html body .ms-container .ms-selection, html body .daterangepicker .calendar-table, html body .dropify-wrapper, html body .wizard-content .wizard.wizard-circle > .steps .step,
+html body .wizard-content .wizard > .steps .step, html body .note-editor.note-frame .note-editing-area .note-editable, html body .jsgrid-header-row > .jsgrid-header-cell, html body .jsgrid-grid-header, html body .jsgrid-alt-row > .jsgrid-cell {
+  background: #272c36; }
+
+html body .bootstrap-switch .bootstrap-switch-label, html body .list-group-item, html body .select2-container--default .select2-selection--single .select2-selection__rendered, html body .ms-container .ms-selectable li.ms-elem-selectable, html body .ms-container .ms-selection li.ms-elem-selection, html body select {
+  color: #adb5bd; }
+
+/*============================================================== 
+ Card background  
+ ============================================================== */
+html body .fc-day, html body .btn-outline-secondary, html body .customvtab .tabs-vertical li .nav-link.active, html body .customvtab .tabs-vertical li .nav-link:hover, html body .customvtab .tabs-vertical li .nav-link:focus, html body .form-control-line .form-control, html body .floating-labels .form-control {
+  background: #353c48; }
+
+/*============================================================== 
+ borders  
+ ============================================================== */
+html body .calendar-events:hover, html body .footable .pagination li.disabled a, html body .footable .pagination li a, html body .dropzone, html body ul.wysihtml5-toolbar, html body .tabcontent-border, html body .bootstrap-switch,
+html body .select2-container--default .select2-selection--multiple, html body .select2-container--default .select2-selection--single, html body .bootstrap-tagsinput, html body .ms-container .ms-selectable li.ms-elem-selectable, html body .ms-container .ms-selection li.ms-elem-selection, html body .ms-container .ms-list, html body .daterangepicker .calendar-table, html body .dropify-wrapper, html body .jsgrid-cell, html body .jsgrid-edit-row > .jsgrid-cell, html body .jsgrid-filter-row > .jsgrid-cell, html body .jsgrid-grid-body, html body .jsgrid-grid-header, html body .jsgrid-header-row > .jsgrid-header-cell, html body .jsgrid-insert-row > .jsgrid-cell, html body .jsgrid-pager-current-page, html body .jsgrid-pager-nav-button a, html body .jsgrid-pager-page a,
+html body .bootstrap-table .table, html body .bootstrap-table .table > thead > tr > th, html body .fixed-table-container {
+  border-color: #4F5467; }
+
+.calendar-events {
+  border-color: transparent; }

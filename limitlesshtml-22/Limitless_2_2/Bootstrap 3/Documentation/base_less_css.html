@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/core.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script type="text/javascript" src="assets/js/plugins/ui/prism.min.js"></script>
+	
+	<script type="text/javascript" src="assets/js/core/app.js"></script>
+	<script type="text/javascript" src="assets/js/pages/sidebar_detached_sticky_native.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body data-spy="scroll" data-target=".sidebar-detached" class="has-detached-right">
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-default navbar-lg header-highlight">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="index.html"><img src="assets/images/logo_light.png" alt=""></a>
+
+			<ul class="nav navbar-nav pull-right visible-xs-block">
+				<li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+				<li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+				<li><a class="sidebar-mobile-detached-toggle"><i class="icon-grid7"></i></a></li>
+			</ul>
+		</div>
+
+		<div class="navbar-collapse collapse" id="navbar-mobile">
+			<ul class="nav navbar-nav">
+				<li><a class="sidebar-control sidebar-main-hide hidden-xs"><i class="icon-paragraph-justify3"></i></a></li>
+				<li><a class="sidebar-control sidebar-detached-hide hidden-xs"><i class="icon-drag-right"></i></a></li>
+			</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="other_changelog.html">Changelog <span class="label label-inline bg-warning-400 position-right">v. 2.0</span></a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page container -->
+	<div class="page-container">
+
+		<!-- Page content -->
+		<div class="page-content">
+
+			<!-- Main sidebar -->
+			<div class="sidebar sidebar-main">
+				<div class="sidebar-content">
+
+	        		<!-- Support -->
+					<div class="sidebar-category no-margin">
+						<div class="category-title">
+							<span>Have questions?</span>
+							<i class="icon-help text-muted pull-right"></i>
+						</div>
+
+						<div class="category-content">
+							<a href="http://kopyov.ticksy.com" class="btn bg-success-400 btn-block" target="_blank"><i class="icon-lifebuoy position-left"></i> Limitless support</a>
+						</div>
+					</div>
+					<!-- /support -->
+
+
+					<!-- Main navigation -->
+					<div class="sidebar-category">
+						<div class="category-title">
+							<span>Navigation</span>
+							<i class="icon-menu7 text-muted pull-right"></i>
+						</div>
+
+						<div class="category-content no-padding">
+							<ul class="navigation navigation-main navigation-accordion">
+
+								<!-- Main -->
+								<li class="navigation-header">Main</li>
+								<li><a href="index.html">Introduction</a></li>
+								<li><a href="main_getting_started.html">Getting started</a></li>
+								<li><a href="main_starter_kit.html">Starter kit</a></li>
+								<li><a href="main_rtl.html">RTL layout</a></li>
+
+								<li class="navigation-header">Basic functionality</li>								
+								<li class="active"><a href="base_less_css.html">LESS and CSS</a></li>
+								<li><a href="base_less_compile.html">Compiling LESS</a></li>
+								<li><a href="base_less_compile_rtl.html">Compiling LESS for RTL version</a></li>
+								<li>
+									<a href="#">Plugins</a>
+									<ul>
+										<li><a href="plugins_forms.html">Forms</a></li>
+										<li><a href="plugins_forms_styling.html">Form styling</a></li>
+										<li><a href="plugins_selects.html">Selects</a></li>
+										<li><a href="plugins_editors.html">Editors</a></li>
+										<li><a href="plugins_uploaders.html">Uploaders</a></li>
+										<li><a href="plugins_wizards.html">Wizards</a></li>
+										<li><a href="plugins_extensions.html">Extensions</a></li>
+										<li><a href="plugins_notifications.html">Notifications</a></li>
+										<li><a href="plugins_pickers.html">Pickers</a></li>
+										<li><a href="plugins_tables.html">Tables</a></li>
+										<li><a href="plugins_ui.html">UI</a></li>
+										<li><a href="plugins_vis.html">Visualization</a></li>
+									</ul>
+								</li>
+								<li><a href="base_bootstrap.html">Bootstrap</a></li>
+								<li><a href="base_color_system.html">Color system</a></li>
+								<li><a href="base_helpers.html">Helpers</a></li>
+								<li><a href="base_themes.html">Themes</a></li>
+
+								<li class="navigation-header">Layout options</li>
+								<li><a href="layout_markup.html">Markup</a></li>
+								<li><a href="layout_sidebars.html">Sidebars</a></li>
+								<li><a href="layout_navbars.html">Navbars</a></li>
+								<li><a href="layout_v_nav.html">Vertical navigation</a></li>
+								<li><a href="layout_h_nav.html">Horizontal navigation</a></li>
+								<li><a href="layout_page_header.html">Page header</a></li>
+								<li><a href="layout_footer.html">Footer</a></li>
+
+								<li class="navigation-header">Other</li>
+								<li><a href="other_credits.html">Sources and credits</a></li>
+								<li><a href="other_changelog.html">Changelog <span class="label bg-warning-400">version 2.0</span></a></li>
+								<!-- /main -->
+
+							</ul>
+						</div>
+					</div>
+					<!-- /main navigation -->
+
+				</div>
+			</div>
+			<!-- /main sidebar -->
+
+
+			<!-- Main content -->
+			<div class="content-wrapper">
+
+				<!-- Page header -->
+				<div class="page-header">
+					<div class="page-header-content">
+						<div class="page-title">
+							<h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold">Limitless</span> - LESS and CSS</h4>
+						</div>
+
+						<div class="heading-elements">
+							<ul class="breadcrumb">
+								<li><a href="index.html"><i class="icon-home2 position-left"></i> Home</a></li>
+								<li class="active">LESS and CSS</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- /page header -->
+				
+
+				<!-- Content area -->
+				<div class="content">
+
+					<!-- Detached content -->
+					<div class="container-detached">
+						<div class="content-detached">
+
+							<!-- LESS overview -->
+							<div class="panel panel-flat" id="less">
+								<div class="panel-heading">
+									<h5 class="panel-title">LESS overview</h5>
+									<div class="heading-elements">
+										<ul class="icons-list">
+					                		<li><a data-action="collapse"></a></li>
+					                		<li><a data-action="close"></a></li>
+					                	</ul>
+				                	</div>
+								</div>
+
+								<div class="panel-body">
+									<div class="content-group-lg">
+										<div class="content-group">
+											<h6 class="text-semibold" id="less_overview">Overview</h6>
+											<p>All Limitless styles are based on LESS pre-processor - it extends the CSS language, adding features that allow variables, mixins, functions and many other techniques that allow you to make CSS that is more maintainable, themable and extendable. In total there are 203 fully commented LESS files in each template layout. Basically, the all are the same, except some files with changes according to the layout type. Among them - Bootstrap components core, overrides for them, layout and components related files. All files are properly divided into categories and placed inside nested folders:</p>
+										</div>
+
+										<p class="text-muted text-size-small">Screenshot - less structure</p>
+										<img src="assets/images/screenshots/u/less_structure.png" alt="" class="img-thumbnail img-responsive">
+									</div>
+
+									<div class="content-group-lg">
+										<h6 class="text-semibold" id="less_edit">Editing</h6>
+
+										<div class="content-group-lg">
+											<div class="content-group">
+												<p>To edit LESS files, use any code editor that supports <code>.less</code> file types. I prefer to use Sublime Text editor with additional LESS syntax highlight package, it's very flexible and works really fast. Another good one is Visual Studio Code, which has built-in terminal. To include or exclude components from your project, edit 4 main files located in <code>assets/less/_main_full/</code> or <code>assets/less/_main_seed/</code> folder if you use starter kit.</p>
+											</div>
+											<p class="text-muted text-size-small">Screenshot - main files to edit</p>
+											<img src="assets/images/screenshots/u/less_editing.png" alt="" class="img-thumbnail img-responsive">
+										</div>
+
+
+										<div class="content-group-lg">
+											<div class="content-group">
+												<div class="heading-divided text-semibold text-uppercase text-size-small">Main files</div>
+												<p>When a new Bootstrap version comes out, it's very important to keep upgrading process as simple as possible. That was the main reason why i've decided to go this way - all core Bootstrap files remain untouched, all necessary changes need to be done in separate file with the same name in <code>/bootstrap-limitless/</code> folder. This allows us to override default bootstrap CSS file after compiling.</p>
+												<p>I strongly recommend not to make any changes in default Bootstrap LESS files, but use files from <code>/bootstrap-limitless/</code> folder. This will simplify your upgrading process in the future. But, of course, feel free to update any of template files if necessary.</p>
+											</div>
+
+											<p class="text-muted text-size-small">Screenshot - Bootstrap overrides</p>
+											<img src="assets/images/screenshots/u/less_overrides.png" alt="" class="img-thumbnail img-responsive">
+										</div>
+
+										<div>
+											<div class="content-group">
+												<div class="heading-divided text-semibold text-uppercase text-size-small">Variables</div>
+												<p>If you need to change a default theme, you can edit template's variables - all main colors, spacings and other styles are located there. Main template's variables are stored in 2 files: <code>variables-core.less</code> and <code>variables-custom.less</code>, located in <code>assets/less/core/variables/</code> folder.</p>
+												<p><code>variables-core.less</code> contains default Bootstrap variables overrides only. <code>variables-custom.less</code> contains all other variables used in the template. Feel free to edit both these files.</p>
+											</div>
+
+											<p class="text-muted text-size-small">Screenshot - variables</p>
+											<img src="assets/images/screenshots/u/less_variables.png" alt="" class="img-thumbnail img-responsive">
+										</div>
+									</div>
+
+									<div>
+										<h6 class="text-semibold" id="less_compile">Compiling</h6>
+										<p>There are tons of different applications and extensions available for LESS compiling, i prefer to use Gulp (gulpfile.js is included) in the package. It has a bunch of configuration options, works very fast and effectively.</p>
+										<p class="content-group">By default, Limitless template uses 4 separate compiled CSS files - bootstrap.css, core.css, colors.css and component.css (both compressed and uncompressed versions). As you may notice, files have same names as 4 main less files located in <code>assets/less/</code> folder root. Actually these 4 css files are compiled main less files. In fact, to compile CSS files, you need to use only these 4 main less files:</p>
+
+										<ul class="list content-group">
+											<li><code>bootstrap.less</code> - Bootstrap core</li>
+											<li><code>core.less</code> - Bootstrap core overrides</li>
+											<li><code>components.less</code> - all template components and plugins, except Bootstrap ones</li>
+											<li><code>colors.less</code> - color system (optional)</li>
+										</ul>
+
+										<p>The reason why they were divider into 4 files is older versions of IE don't support css files with 10k+ properties. If you don't use some of them or don't care much about IE, feel free to combine those 4 files into 2, try to keep bootstrap.css separately. Color system is completely optional, if you've setup your primary theme, you can exclude this file and re-compile your CSS.</p>
+
+										<p class="text-muted text-size-small">Screenshot - colors.less file</p>
+										<img src="assets/images/screenshots/u/less_colors.png" alt="" class="img-thumbnail img-responsive">
+									</div>
+								</div>
+							</div>
+							<!-- /LESS overview -->
+
+
+							<!-- LESS files -->
+							<div class="panel panel-flat" id="less_files">
+								<div class="panel-heading">
+									<h5 class="panel-title">LESS files</h5>
+									<div class="heading-elements">
+										<ul class="icons-list">
+					                		<li><a data-action="collapse"></a></li>
+					                		<li><a data-action="close"></a></li>
+					                	</ul>
+				                	</div>
+								</div>
+
+								<div class="panel-body">
+									<div class="content-group-lg">
+										<p>LESS folder includes all files responsible for template styling - core, layout, components, plugins, page kits etc. All files are properly structured according to the category: <code>bootstrap</code> - Bootstrap framework core styling; <code>bootstrap-limitless</code> - Limitless overrides of Bootstrap core styling loaded on top of original ones; <code>components</code> - main template components, custom pages and plugins; <code>core</code> - layout structure, Bootstrap variables overrides and additional custom core variables.</p>
+										<p class="content-group">4 main files that load all others are in folder root - bootstrap.less, colors.less, components.less and core.less. If you need to include or exclude any files or components, edit one of these files. Below is the table with categorized LESS files used in the template:</p>
+									</div>
+
+									<div class="content-group-lg">
+										<h6 class="text-semibold" id="less_files_bs">Bootstrap core</h6>
+										<p class="content-group">Contains 41 main files and 30 mixins. File <code>bootstrap.less</code> is actually a part of Bootstrap core, but it was moved to the parent folder for easy access. If you don't want to wait until my updates and want to update Bootstrap versions manually, you need to compile <code>bootstrap.less</code> file separately. But i will do my best to keep it up to date. Also i don't recommend to edit any of these files as new updates will be much painful.</p>
+										
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th class="col-xs-3">File name</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th colspan="3" class="active" id="files_main">Main files</th>
+													</tr>
+													<tr class="border-double">
+														<td><code>alerts.less</code></td>
+														<td>Alert components</td>
+													</tr>
+													<tr>
+														<td><code>badges.less</code></td>
+														<td>Badges component</td>
+													</tr>
+													<tr>
+														<td><code>breadcrumbs.less</code></td>
+														<td>Breadcrumbs component</td>
+													</tr>
+													<tr>
+														<td><code>button-groups.less</code></td>
+														<td>Button groups</td>
+													</tr>
+													<tr>
+														<td><code>buttons.less</code></td>
+														<td>Button stylings</td>
+													</tr>
+													<tr>
+														<td><code>carousel.less</code></td>
+														<td>Carousel component</td>
+													</tr>
+													<tr>
+														<td><code>close.less</code></td>
+														<td>Close button</td>
+													</tr>
+													<tr>
+														<td><code>code.less</code></td>
+														<td>Inline and blocks of code</td>
+													</tr>
+													<tr>
+														<td><code>component-animations.less</code></td>
+														<td>Animations</td>
+													</tr>
+													<tr>
+														<td><code>dropdowns.less</code></td>
+														<td>Dropdown menus</td>
+													</tr>
+													<tr>
+														<td><code>forms.less</code></td>
+														<td>Basic form components styling</td>
+													</tr>
+													<tr>
+														<td><code>glyphicons.less</code></td>
+														<td>Glyphicons icon font</td>
+													</tr>
+													<tr>
+														<td><code>grid.less</code></td>
+														<td>Responsive mobile-first grid</td>
+													</tr>
+													<tr>
+														<td><code>input-groups.less</code></td>
+														<td>Input groups component</td>
+													</tr>
+													<tr>
+														<td><code>jumbotron.less</code></td>
+														<td>Jumbotron component</td>
+													</tr>
+													<tr>
+														<td><code>labels.less</code></td>
+														<td>Labels component</td>
+													</tr>
+													<tr>
+														<td><code>list-group.less</code></td>
+														<td>List group nav component</td>
+													</tr>
+													<tr>
+														<td><code>media.less</code></td>
+														<td>Media lists</td>
+													</tr>
+													<tr>
+														<td><code>mixins.less</code></td>
+														<td>Mixins loading file</td>
+													</tr>
+													<tr>
+														<td><code>modals.less</code></td>
+														<td>Modal dialogs</td>
+													</tr>
+													<tr>
+														<td><code>navbar.less</code></td>
+														<td>Navbar</td>
+													</tr>
+													<tr>
+														<td><code>navs.less</code></td>
+														<td>Tab, pill and other navs</td>
+													</tr>
+													<tr>
+														<td><code>normalize.less</code></td>
+														<td>General reset</td>
+													</tr>
+													<tr>
+														<td><code>pager.less</code></td>
+														<td>Pager component</td>
+													</tr>
+													<tr>
+														<td><code>pagination.less</code></td>
+														<td>Pagination component</td>
+													</tr>
+													<tr>
+														<td><code>panels.less</code></td>
+														<td>Content panels</td>
+													</tr>
+													<tr>
+														<td><code>popovers.less</code></td>
+														<td>Popovers component</td>
+													</tr>
+													<tr>
+														<td><code>print.less</code></td>
+														<td>Print styles</td>
+													</tr>
+													<tr>
+														<td><code>progress-bars.less</code></td>
+														<td>Progress bars component</td>
+													</tr>
+													<tr>
+														<td><code>responsive-embed.less</code></td>
+														<td>Responsive embeds</td>
+													</tr>
+													<tr>
+														<td><code>responsive-utilities.less</code></td>
+														<td>Responsive utility classes</td>
+													</tr>
+													<tr>
+														<td><code>scaffolding.less</code></td>
+														<td>General scaffolding</td>
+													</tr>
+													<tr>
+														<td><code>tables.less</code></td>
+														<td>Tables styling</td>
+													</tr>
+													<tr>
+														<td><code>theme.less</code></td>
+														<td>Optional theme file</td>
+													</tr>
+													<tr>
+														<td><code>thumbnails.less</code></td>
+														<td>Thumbnails component</td>
+													</tr>
+													<tr>
+														<td><code>tooltip.less</code></td>
+														<td>Tooltip component</td>
+													</tr>
+													<tr>
+														<td><code>type.less</code></td>
+														<td>Typography, page header and contextual backgrounds</td>
+													</tr>
+													<tr>
+														<td><code>utilities.less</code></td>
+														<td>Utilities</td>
+													</tr>
+													<tr>
+														<td><code>variables.less</code></td>
+														<td>Main variables</td>
+													</tr>
+													<tr>
+														<td><code>wells.less</code></td>
+														<td>Well blocks component</td>
+													</tr>
+
+													<tr>
+														<th colspan="3" class="active" id="files_main">Bootstrap mixins</th>
+													</tr>
+													<tr class="border-double">
+														<td><code>alerts.less</code></td>
+														<td>Alerts with color options</td>
+													</tr>
+													<tr>
+														<td><code>background-variant.less</code></td>
+														<td>Contextual backgrounds</td>
+													</tr>
+													<tr>
+														<td><code>border-radius.less</code></td>
+														<td>Border radius: top, bottom, left, right</td>
+													</tr>
+													<tr>
+														<td><code>buttons.less</code></td>
+														<td>Buttons with color and sizing options</td>
+													</tr>
+													<tr>
+														<td><code>center-block.less</code></td>
+														<td>Centered blocks</td>
+													</tr>
+													<tr>
+														<td><code>clearfix.less</code></td>
+														<td>Clear and reset floating</td>
+													</tr>
+													<tr>
+														<td><code>forms.less</code></td>
+														<td>Form control validation</td>
+													</tr>
+													<tr>
+														<td><code>gradients.less</code></td>
+														<td>Gradient options</td>
+													</tr>
+													<tr>
+														<td><code>grid-framework.less</code></td>
+														<td>Responsive grid system</td>
+													</tr>
+													<tr>
+														<td><code>grid.less</code></td>
+														<td>Grid columns, container and offsets</td>
+													</tr>
+													<tr>
+														<td><code>hide-text.less</code></td>
+														<td>Text visibility</td>
+													</tr>
+													<tr>
+														<td><code>image.less</code></td>
+														<td>Responsive and retina images</td>
+													</tr>
+													<tr>
+														<td><code>labels.less</code></td>
+														<td>Label color options</td>
+													</tr>
+													<tr>
+														<td><code>list-group.less</code></td>
+														<td>List group color variants</td>
+													</tr>
+													<tr>
+														<td><code>nav-divider.less</code></td>
+														<td>Navigation divider</td>
+													</tr>
+													<tr>
+														<td><code>nav-vertical-align.less</code></td>
+														<td>Vertical navigation alignment</td>
+													</tr>
+													<tr>
+														<td><code>opacity.less</code></td>
+														<td>Opacity mixin</td>
+													</tr>
+													<tr>
+														<td><code>pagination.less</code></td>
+														<td>Pagination sizes</td>
+													</tr>
+													<tr>
+														<td><code>panels.less</code></td>
+														<td>Panels with contextual variants</td>
+													</tr>
+													<tr>
+														<td><code>progress-bar.less</code></td>
+														<td>Progress bars colors</td>
+													</tr>
+													<tr>
+														<td><code>reset-filter.less</code></td>
+														<td>Gradient reset for IE</td>
+													</tr>
+													<tr>
+														<td><code>reset-text.less</code></td>
+														<td>Text reset</td>
+													</tr>
+													<tr>
+														<td><code>resize.less</code></td>
+														<td>Resize elements</td>
+													</tr>
+													<tr>
+														<td><code>responsive-visibility.less</code></td>
+														<td>Responsive utilities</td>
+													</tr>
+													<tr>
+														<td><code>size.less</code></td>
+														<td>Sizing shortcuts</td>
+													</tr>
+													<tr>
+														<td><code>tab-focus.less</code></td>
+														<td>WebKit-style focus</td>
+													</tr>
+													<tr>
+														<td><code>table-row.less</code></td>
+														<td>Table row styling variants</td>
+													</tr>
+													<tr>
+														<td><code>text-emphasis.less</code></td>
+														<td>Text colors</td>
+													</tr>
+													<tr>
+														<td><code>text-overflow.less</code></td>
+														<td>Text overflow</td>
+													</tr>
+													<tr>
+														<td><code>vendor-prefixes.less</code></td>
+														<td>Animations, box shadow, transitions and other vendor prefixes</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="content-group-lg">
+										<h6 class="text-semibold" id="less_files_overrides">Template overrides</h6>
+										<p class="content-group">Contains 28 modified <code>.less</code> files from <code>/less/bootstrap/</code> folder. I don't remember what exactly has been changed as it took pretty much time, but i've described briefly what was changed and where. Most of the files include extended components functionality, options and styles. If you want to make any changes in these files, go ahead. If you don't use any of these components, exclude them in <code>core.less</code> file.</p>
+
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th class="col-xs-3">File name</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th colspan="3" class="active" id="files_main">Main files</th>
+													</tr>
+													<tr class="border-double">
+														<td><code>alerts.less</code></td>
+														<td>Alert component - color and other options</td>
+													</tr>
+													<tr>
+														<td><code>badges.less</code></td>
+														<td>Badges component - size and color options</td>
+													</tr>
+													<tr>
+														<td><code>breadcrumbs.less</code></td>
+														<td>Breadcrumbs component - added new options, changed default styles and added new</td>
+													</tr>
+													<tr>
+														<td><code>button-groups.less</code></td>
+														<td>Button groups - styling changes</td>
+													</tr>
+													<tr>
+														<td><code>buttons.less</code></td>
+														<td>Button styles - added button layouts and changed defaults</td>
+													</tr>
+													<tr>
+														<td><code>close.less</code></td>
+														<td>Close button - updated close button size and position</td>
+													</tr>
+													<tr>
+														<td><code>code.less</code></td>
+														<td>Inline and blocks of code - slightly modified default styles</td>
+													</tr>
+													<tr>
+														<td><code>dropdowns.less</code></td>
+														<td>Dropdown menus - sizes, colors, components</td>
+													</tr>
+													<tr>
+														<td><code>forms.less</code></td>
+														<td>Basic form components styling - general form components updates</td>
+													</tr>
+													<tr>
+														<td><code>glyphicons.less</code></td>
+														<td>Glyphicons icon font - changed paths to font files</td>
+													</tr>
+													<tr>
+														<td><code>input-groups.less</code></td>
+														<td>Input groups component - Added options and sizes, changed defaults</td>
+													</tr>
+													<tr>
+														<td><code>labels.less</code></td>
+														<td>Labels component - sizes, styles and additinoal options</td>
+													</tr>
+													<tr>
+														<td><code>list-group.less</code></td>
+														<td>List group nav component - changed colors, sizes, default options</td>
+													</tr>
+													<tr>
+														<td><code>media.less</code></td>
+														<td>Media lists - added and changed a lot of different stuff</td>
+													</tr>
+													<tr>
+														<td><code>modals.less</code></td>
+														<td>Modal dialogs - additional styling options</td>
+													</tr>
+													<tr>
+														<td><code>navbar.less</code></td>
+														<td>Navbar - oh, a lot of things, almost re-coded</td>
+													</tr>
+													<tr>
+														<td><code>navs.less</code></td>
+														<td>Tab, pill and other navs - here as well, completely changed tabs and pills layouts and default options</td>
+													</tr>
+													<tr>
+														<td><code>pager.less</code></td>
+														<td>Pager component - added sizes and updated default options</td>
+													</tr>
+													<tr>
+														<td><code>pagination.less</code></td>
+														<td>Pagination component - additional pagination styles with differnet options</td>
+													</tr>
+													<tr>
+														<td><code>panels.less</code></td>
+														<td>Content panels - extended defaults, updated general look and feel</td>
+													</tr>
+													<tr>
+														<td><code>popovers.less</code></td>
+														<td>Popovers component - additional styles and changed defaults</td>
+													</tr>
+													<tr>
+														<td><code>progress-bars.less</code></td>
+														<td>Progress bars component - added sizes and slightly changed defaults</td>
+													</tr>
+													<tr>
+														<td><code>scaffolding.less</code></td>
+														<td>General scaffolding - a couple of changes</td>
+													</tr>
+													<tr>
+														<td><code>tables.less</code></td>
+														<td>Tables styling - extended default views and styles, added a lot of different options</td>
+													</tr>
+													<tr>
+														<td><code>thumbnails.less</code></td>
+														<td>Thumbnails component - extended default functionality</td>
+													</tr>
+													<tr>
+														<td><code>tooltip.less</code></td>
+														<td>Tooltip component - extended default functionality and added new styles</td>
+													</tr>
+													<tr>
+														<td><code>type.less</code></td>
+														<td>Typography, page header and contextual backgrounds - a LOT of new code</td>
+													</tr>
+													<tr>
+														<td><code>wells.less</code></td>
+														<td>Well blocks component - background colors, paddings, colors etc.</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div>
+										<h6 class="text-semibold" id="less_files_components">Components</h6>
+										<p class="content-group">Contains 105 <code>.less</code> files. In fact, all these files are responsible for template layout, styling and functionality: plugins, extensions, custom page kits, charts, layout, core, variables etc. Feel free to edit any of these files, in future releases i'll provide detailed explanations in changelog about edited files and pieces of code that needs to be updated.</p>
+
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th class="col-xs-3">File name</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th colspan="3" class="active" id="files_main">Charts</th>
+													</tr>
+													<tr class="border-double">
+														<td><code>charts.less</code></td>
+														<td>Charts base</td>
+													</tr>
+													<tr>
+														<td><code>c3.less</code></td>
+														<td>C3.js visualization library</td>
+													</tr>
+													<tr>
+														<td><code>d3.less</code></td>
+														<td>D3.js visualization library</td>
+													</tr>
+													<tr>
+														<td><code>sparklines.less</code></td>
+														<td>Sparklines library</td>
+													</tr>
+
+													<tr>
+														<th colspan="3" class="active" id="files_main">jQuery UI</th>
+													</tr>
+													<tr class="border-double">
+														<td><code>autocomplete.less</code></td>
+														<td>Autocomplete extension</td>
+													</tr>
+													<tr>
+														<td><code>datepicker.less</code></td>
+														<td>Datepicker extension</td>
+													</tr>
+													<tr>
+														<td><code>menu.less</code></td>
+														<td>Menu extension</td>
+													</tr>
+													<tr>
+														<td><code>sliders.less</code></td>
+														<td>Vertical and horizontal sliders</td>
+													</tr>
+													<tr>
+														<td><code>sortable.less</code></td>
+														<td>Sortable and draggable extensions</td>
+													</tr>
+
+													<tr>
+														<th colspan="3" class="active" id="files_main">Maps</th>
+													</tr>
+													<tr class="border-double">
+														<td><code>google-maps.less</code></td>
+														<td>Google maps</td>
+													</tr>
+													<tr>
+														<td><code>jvectormap.less</code></td>
+														<td>Vector maps</td>
+													</tr>
+													<tr>
+														<td><code>maps.less</code></td>
+														<td>Maps base</td>
+													</tr>
+
+													<tr>
+														<th colspan="3" class="active" id="files_main">Pace loader</th>
+													</tr>
+													<tr class="border-double">
+														<td><code>default.less</code></td>
+														<td>Default thin line</td>
+													</tr>
+													<tr>
+														<td><code>pace-demo.less</code></td>
+														<td>Pace demonstration</td>
+													</tr>
+													<tr>
+														<td><code>theme-bar-sm.less</code></td>
+														<td>Small progress bar theme</td>
+													</tr>
+													<tr>
+														<td><code>theme-bar-xs.less</code></td>
+														<td>Mini progress bar theme</td>
+													</tr>
+													<tr>
+														<td><code>theme-bar.less</code></td>
+														<td>Default progress bar theme</td>
+													</tr>
+													<tr>
+														<td><code>theme-corners.less</code></td>
+														<td>Corners theme</td>
+													</tr>
+													<tr>
+														<td><code>theme-perspective.less</code></td>
+														<td>Perspective theme</td>
+													</tr>
+													<tr>
+														<td><code>theme-radar.less</code></td>
+														<td>Radar theme</td>
+													</tr>
+													<tr>
+														<td><code>theme-squares.less</code></td>
+														<td>Rotating squares theme</td>
+													</tr>
+													<tr>
+														<td><code>theme-tail-circle.less</code></td>
+														<td>Tail and background circle theme</td>
+													</tr>
+													<tr>
+														<td><code>theme-tail.less</code></td>
+														<td>Tail theme</td>
+													</tr>
+													<tr>
+														<td><code>theme-xbox-sm.less</code></td>
+														<td>Small Xbox theme</td>
+													</tr>
+													<tr>
+														<td><code>theme-xbox-xs.less</code></td>
+														<td>Mini Xbox theme</td>
+													</tr>
+													<tr>
+														<td><code>theme-xbox.less</code></td>
+														<td>Default Xbox theme</td>
+													</tr>
+
+													<tr>
+														<th colspan="3" class="active" id="files_main">Page kits</th>
+													</tr>
+													<tr class="border-double">
+														<td><code>chats.less</code></td>
+														<td>Chat layouts and options</td>
+													</tr>
+													<tr>
+														<td><code>error.less</code></td>
+														<td>Error pages</td>
+													</tr>
+													<tr>
+														<td><code>invoice.less</code></td>
+														<td>Invoice template</td>
+													</tr>
+													<tr>
+														<td><code>login.less</code></td>
+														<td>Login and registration pages</td>
+													</tr>
+													<tr>
+														<td><code>profile.less</code></td>
+														<td>User profiles</td>
+													</tr>
+													<tr>
+														<td><code>search.less</code></td>
+														<td>Search pages with options</td>
+													</tr>
+													<tr>
+														<td><code>task-manager.less</code></td>
+														<td>Task manager grid and detailed view</td>
+													</tr>
+													<tr>
+														<td><code>timelines.less</code></td>
+														<td>Timeline directions and styles</td>
+													</tr>
+													<tr>
+														<td><code>user-list.less</code></td>
+														<td>User list</td>
+													</tr>
+
+													<tr>
+														<th colspan="3" class="active" id="files_main">Plugins</th>
+													</tr>
+													<tr class="border-double">
+														<td><code>bootstrap-switch.less</code></td>
+														<td>Bootstrap toggle switches</td>
+													</tr>
+													<tr>
+														<td><code>switchery.less</code></td>
+														<td>Switchery toggles</td>
+													</tr>
+													<tr>
+														<td><code>uniform.less</code></td>
+														<td>Custom checkboxes, radios and file input styling</td>
+													</tr>
+													<tr class="border-solid">
+														<td><code>ace.less</code></td>
+														<td>Ace code editor</td>
+													</tr>
+													<tr>
+														<td><code>summernote.less</code></td>
+														<td>Summernote text editor</td>
+													</tr>
+													<tr>
+														<td><code>wysihtml5.less</code></td>
+														<td>WYSIHTML5 text editor</td>
+													</tr>
+													<tr class="border-solid">
+														<td><code>typeahead.less</code></td>
+														<td>Typeahead extension</td>
+													</tr>
+													<tr>
+														<td><code>validation.less</code></td>
+														<td>Form validation</td>
+													</tr>
+													<tr>
+														<td><code>passy.less</code></td>
+														<td>Password checker and generator</td>
+													</tr>
+													<tr>
+														<td><code>editable.less</code></td>
+														<td>Editable form elements</td>
+													</tr>
+													<tr>
+														<td><code>dual-listbox.less</code></td>
+														<td>Dual multiple select boxes</td>
+													</tr>
+													<tr>
+														<td><code>touchspin.less</code></td>
+														<td>Touchspin spinners for Bootstrap</td>
+													</tr>
+													<tr class="border-solid">
+														<td><code>bootstrap-select.less</code></td>
+														<td>Bootstrap single and multiple selects</td>
+													</tr>
+													<tr>
+														<td><code>selectbox.less</code></td>
+														<td>SelectBoxIt selects</td>
+													</tr>
+													<tr>
+														<td><code>select2.less</code></td>
+														<td>Single and multiple Select2 selects</td>
+													</tr>
+													<tr>
+														<td><code>multiselect.less</code></td>
+														<td>Bootstrap multiselect</td>
+													</tr>
+													<tr class="border-solid">
+														<td><code>tokenfield.less</code></td>
+														<td>Tokenfield for Bootstrap</td>
+													</tr>
+													<tr>
+														<td><code>tags-input.less</code></td>
+														<td>Tags input plugin</td>
+													</tr>
+													<tr class="border-solid">
+														<td><code>form.less</code></td>
+														<td>Form wizard</td>
+													</tr>
+													<tr>
+														<td><code>steps.less</code></td>
+														<td>Steps wizard</td>
+													</tr>
+													<tr>
+														<td><code>stepy.less</code></td>
+														<td>Stepy wizard</td>
+													</tr>
+													<tr class="border-solid">
+														<td><code>fancybox.less</code></td>
+														<td>Lightbox plugin</td>
+													</tr>
+													<tr>
+														<td><code>image-cropper.less</code></td>
+														<td>Image cropper extension</td>
+													</tr>
+													<tr>
+														<td><code>progress-buttons.less</code></td>
+														<td>Ladda - buttons with spinner and progress bar</td>
+													</tr>
+													<tr>
+														<td><code>fullcalendar.less</code></td>
+														<td>Fullcalendar - event calendar extension</td>
+													</tr>
+													<tr>
+														<td><code>fancytree.less</code></td>
+														<td>Fancytree - dynamic multi level tree view</td>
+													</tr>
+													<tr>
+														<td><code>prism.less</code></td>
+														<td>Prism - syntax highlighter</td>
+													</tr>
+													<tr>
+														<td><code>headroom.less</code></td>
+														<td>Headroom - hideable navbars</td>
+													</tr>
+													<tr class="border-solid">
+														<td><code>sweet-alerts.less</code></td>
+														<td>Nice looking alerts and dialogs</td>
+													</tr>
+													<tr>
+														<td><code>jgrowl.less</code></td>
+														<td>jGrowl - growl-like notifications</td>
+													</tr>
+													<tr>
+														<td><code>noty.less</code></td>
+														<td>Noty - yet another notification library</td>
+													</tr>
+													<tr>
+														<td><code>pnotify.less</code></td>
+														<td>PNotify - powerful notification library</td>
+													</tr>
+													<tr class="border-solid">
+														<td><code>noui-slider.less</code></td>
+														<td>NoUI slider library</td>
+													</tr>
+													<tr>
+														<td><code>slider-pips.less</code></td>
+														<td>Pips and tooltip for jQuery UI sliders</td>
+													</tr>
+													<tr class="border-solid">
+														<td><code>anytime.less</code></td>
+														<td>Anytime - date and time picker</td>
+													</tr>
+													<tr>
+														<td><code>bootstrap-datepicker.less</code></td>
+														<td>Datepicker for Bootstrap</td>
+													</tr>
+													<tr>
+														<td><code>date-paginator.less</code></td>
+														<td>Date paginator - dates with date picker</td>
+													</tr>
+													<tr>
+														<td><code>daterange.less</code></td>
+														<td>Date range picker</td>
+													</tr>
+													<tr>
+														<td><code>spectrum.less</code></td>
+														<td>Spectrum - color picker</td>
+													</tr>
+													<tr>
+														<td><code>pickadate/base.less</code></td>
+														<td>Pick-a-date - basic styling</td>
+													</tr>
+													<tr>
+														<td><code>pickadate/date.less</code></td>
+														<td>Pick-a-date - date picker</td>
+													</tr>
+													<tr>
+														<td><code>pickadate/time.less</code></td>
+														<td>Pick-a-date - time picker</td>
+													</tr>
+													<tr class="border-solid">
+														<td><code>dropzone.less</code></td>
+														<td>Dropzone - HTML5 single and multiple file uploader</td>
+													</tr>
+													<tr>
+														<td><code>file-input.less</code></td>
+														<td>Bootstrap file input - single and multiple file uploader</td>
+													</tr>
+													<tr>
+														<td><code>plupload.less</code></td>
+														<td>Plupload - file uploader with multiple runtimes</td>
+													</tr>
+													<tr class="border-solid">
+														<td><code>datatable-columns-reorder.less</code></td>
+														<td>Datatable extension - columns reorder</td>
+													</tr>
+													<tr>
+														<td><code>datatable-columns-visibility.less</code></td>
+														<td>Datatable extension - columns visibility</td>
+													</tr>
+													<tr>
+														<td><code>datatable-fixed-columns.less</code></td>
+														<td>Datatable extension - fixed columns</td>
+													</tr>
+													<tr>
+														<td><code>datatable-responsive.less</code></td>
+														<td>Datatable extension - responsive table</td>
+													</tr>
+													<tr>
+														<td><code>datatable-scroller.less</code></td>
+														<td>Datatable extension - scroller</td>
+													</tr>
+													<tr>
+														<td><code>datatable-tabletools.less</code></td>
+														<td>Datatable extension - tabletools</td>
+													</tr>
+													<tr>
+														<td><code>datatables.less</code></td>
+														<td>Datatables base</td>
+													</tr>
+													<tr>
+														<td><code>footable.less</code></td>
+														<td>Footable - responsive static tables</td>
+													</tr>
+													<tr class="border-solid">
+														<td><code>heading-elements.less</code></td>
+														<td>Page and panel heading components</td>
+													</tr>
+													<tr>
+														<td><code>helpers.less</code></td>
+														<td>Helper classes</td>
+													</tr>
+													<tr>
+														<td><code>snippets.less</code></td>
+														<td>Different snippets</td>
+													</tr>
+													<tr>
+														<td><code>demo.less</code></td>
+														<td>Styles used in live preview</td>
+													</tr>
+
+													<tr>
+														<th colspan="3" class="active" id="files_main">Core</th>
+													</tr>
+													<tr class="border-double">
+														<td><code>variables.less</code></td>
+														<td>Bootstrap variables overrides</td>
+													</tr>
+													<tr>
+														<td><code>core-variables.less</code></td>
+														<td>Additional core variables</td>
+													</tr>
+													<tr class="border-solid">
+														<td><code>nav-vertical-align.less</code></td>
+														<td>Extended vertical nav alignment mixin</td>
+													</tr>
+													<tr class="border-solid">
+														<td><code>palette.less</code></td>
+														<td>Color palette</td>
+													</tr>
+													<tr>
+														<td><code>colors.less</code></td>
+														<td>Color classes</td>
+													</tr>
+													<tr class="border-solid">
+														<td><code>content.less</code></td>
+														<td>Template content's base</td>
+													</tr>
+													<tr>
+														<td><code>footer.less</code></td>
+														<td>Footer</td>
+													</tr>
+													<tr>
+														<td><code>boxed.less</code></td>
+														<td>Boxed layout</td>
+													</tr>
+													<tr>
+														<td><code>sidebar.less</code></td>
+														<td>Sidebars with navigation</td>
+													</tr>
+													<tr>
+														<td><code>utils.less</code></td>
+														<td>Utilities</td>
+													</tr>
+
+													<tr>
+														<th colspan="3" class="active" id="files_main">Main files for compile</th>
+													</tr>
+													<tr class="border-double">
+														<td><code>bootstrap.less</code></td>
+														<td>Main bootstrap LESS file, moved from <code>/bootstrap/</code> folder</td>
+													</tr>
+													<tr>
+														<td><code>colors.less</code></td>
+														<td>Color system</td>
+													</tr>
+													<tr>
+														<td><code>components.less</code></td>
+														<td>Template components</td>
+													</tr>
+													<tr>
+														<td><code>core.less</code></td>
+														<td>Bootstrap overrides</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /LESS files -->
+
+
+							<!-- CSS files -->
+							<div class="panel panel-flat" id="css">
+								<div class="panel-heading">
+									<h5 class="panel-title">CSS files</h5>
+									<div class="heading-elements">
+										<ul class="icons-list">
+					                		<li><a data-action="collapse"></a></li>
+					                		<li><a data-action="close"></a></li>
+					                	</ul>
+				                	</div>
+								</div>
+
+								<div class="panel-body">
+									<div class="content-group-lg">
+										<div class="content-group">
+											<h6 class="text-semibold" id="css_overview">Files overview</h6>
+											<p class="content-group">Limitless template includes 3 main and 1 optional compiled CSS files included in all pages. All files have commented sections with information about dates of latest update, version and brief description. All other comments that can be found in LESS files are removed during compilation to reduce the size of CSS files. <code>bootstrap.css</code> is always minified, because i didn't make any changes in Bootstrap core. <code>colors.css</code> is also minified, because there is actually nothing to change inside, all color values can be found in <code>palette.less</code> file. Minified files are included as well.</p>
+
+											<ul class="list">
+												<li><code>bootstrap.css</code>, <code>*.min.css</code> - Bootstrap core, always use minified</li>
+												<li><code>core.css</code>, <code>*.min.css</code> - Bootstrap core overrides</li>
+												<li><code>components.css</code>, <code>*.min.css</code> - all template components and plugins</li>
+												<li><code>colors.css</code>, <code>*.min.css</code> - color classes, always use minified</li>
+											</ul>
+										</div>
+
+										<div class="content-group">
+											<p class="content-group"><strong>Note:</strong> both minified and unminified CSS files are inside same folder, because paths to images and font files are equal in both versions. If you want to place source or minified files into different folders, don't forget to change those paths. Also feel free to remove unnecessary CSS files if you don't use them. I strongly suggest not to make changes directly in CSS, but do it in LESS files instead to avoid difficulties in upgrade to newer versions. If you need any help with compiling CSS, let me know and i'll help you out.</p>
+										</div>
+
+										<p class="text-muted text-size-small">Screenshot</p>
+										<img src="assets/images/screenshots/u/css_structure.png" alt="" class="img-thumbnail img-responsive">
+									</div>
+
+									<div>
+										<div class="content-group-lg">
+											<h6 class="text-semibold" id="css_edit">CSS editing</h6>
+											<p>Since main styling source is LESS files kit, i strongly recommend to use minified versions of all CSS files, that are included to the package and not to change CSS files directly. Edit LESS files instead, it will help you to keep all your changes in future updates, because i will add changes to LESS files first, re-compile all CSS and provide a detailed instructions about what needs to be changed and where it should be done in LESS files only.</p>
+										</div>
+
+										<div>
+											<div class="content-group">
+												<div class="heading-divided text-semibold text-uppercase text-size-small">Icon fonts</div>
+												<p>Although main files editing is not recommended, icon font files can be edited. I didn't convert them to LESS files, as there is no need actually, because there are quite few CSS properties for them - general font reset and icon codes. If you need to add any changes to the icon <code>styles.css</code> files, feel free to do it. In all future updates i'll do my best to update icon package and main file with styles if necessary.</p>
+											</div>
+
+											<p class="text-muted text-size-small">Screenshot</p>
+											<img src="assets/images/screenshots/u/css_icons.png" alt="" class="img-thumbnail img-responsive">
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /CSS files -->
+
+						</div>
+					</div>
+					<!-- /detached content -->
+
+
+					<!-- Detached sidebar -->
+					<div class="sidebar-detached">
+			        	<div class="sidebar sidebar-default">
+							<div class="sidebar-content">
+
+				        		<!-- Contact author -->
+								<div class="sidebar-category no-margin">
+									<div class="category-title">
+										<span>Page navigation</span>
+										<i class="icon-menu7 text-muted pull-right"></i>
+									</div>
+
+									<div class="category-content">
+										<a href="http://themeforest.net/user/kopyov" class="btn bg-blue btn-block" target="_blank"><i class="icon-reading position-left"></i> Contact author</a>
+									</div>
+								</div>
+								<!-- /contact author -->
+
+			        			
+			        			<!-- Navigation -->
+								<div class="sidebar-category">
+									<div class="category-content no-padding">
+										<ul class="nav navigation no-padding-top">
+											<li class="navigation-header"><i class="icon-history pull-right"></i> Navigation</li>
+											<li>
+												<a href="#less">LESS overview</a>
+												<ul>
+													<li><a href="#less_overview">Overview</a></li>
+													<li><a href="#less_edit">Edit LESS files</a></li>
+													<li><a href="#less_compile">Compile LESS files</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#less_files">LESS files</a>
+												<ul>
+													<li><a href="#less_files_bs">Bootstrap core</a></li>
+													<li><a href="#less_files_overrides">Bootstrap core overrides</a></li>
+													<li><a href="#less_files_components">Components</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#css">CSS files</a>
+												<ul>
+													<li><a href="#css_overview">Overview</a></li>
+													<li><a href="#css_edit">Edit CSS files</a></li>
+												</ul>
+											</li>
+											<li class="navigation-divider"></li>
+											<li><a href="#">Go to top <i class="icon-circle-up2 pull-right"></i></a></li>
+							            </ul>
+						            </div>
+					            </div>
+					            <!-- /navigation -->
+
+				            </div>
+			            </div>
+		            </div>
+		            <!-- /detached sidebar -->
+
+
+					<!-- Footer -->
+					<div class="footer text-muted">
+						&copy; 2015. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
+					</div>
+					<!-- /footer -->
+
+				</div>
+				<!-- /content area -->
+
+			</div>
+			<!-- /main content -->
+
+		</div>
+		<!-- /page content -->
+
+	</div>
+	<!-- /page container -->
+
+</body>
+</html>

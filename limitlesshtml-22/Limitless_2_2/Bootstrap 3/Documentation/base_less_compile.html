@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/core.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script type="text/javascript" src="assets/js/plugins/ui/prism.min.js"></script>
+	
+	<script type="text/javascript" src="assets/js/core/app.js"></script>
+	<script type="text/javascript" src="assets/js/pages/sidebar_detached_sticky_native.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body data-spy="scroll" data-target=".sidebar-detached" class="has-detached-right">
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-default navbar-lg header-highlight">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="index.html"><img src="assets/images/logo_light.png" alt=""></a>
+
+			<ul class="nav navbar-nav pull-right visible-xs-block">
+				<li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+				<li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+				<li><a class="sidebar-mobile-detached-toggle"><i class="icon-grid7"></i></a></li>
+			</ul>
+		</div>
+
+		<div class="navbar-collapse collapse" id="navbar-mobile">
+			<ul class="nav navbar-nav">
+				<li><a class="sidebar-control sidebar-main-hide hidden-xs"><i class="icon-paragraph-justify3"></i></a></li>
+				<li><a class="sidebar-control sidebar-detached-hide hidden-xs"><i class="icon-drag-right"></i></a></li>
+			</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="other_changelog.html">Changelog <span class="label label-inline bg-warning-400 position-right">v. 2.0</span></a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page container -->
+	<div class="page-container">
+
+		<!-- Page content -->
+		<div class="page-content">
+
+			<!-- Main sidebar -->
+			<div class="sidebar sidebar-main">
+				<div class="sidebar-content">
+
+	        		<!-- Support -->
+					<div class="sidebar-category no-margin">
+						<div class="category-title">
+							<span>Have questions?</span>
+							<i class="icon-help text-muted pull-right"></i>
+						</div>
+
+						<div class="category-content">
+							<a href="http://kopyov.ticksy.com" class="btn bg-success-400 btn-block" target="_blank"><i class="icon-lifebuoy position-left"></i> Limitless support</a>
+						</div>
+					</div>
+					<!-- /support -->
+
+
+					<!-- Main navigation -->
+					<div class="sidebar-category">
+						<div class="category-title">
+							<span>Navigation</span>
+							<i class="icon-menu7 text-muted pull-right"></i>
+						</div>
+
+						<div class="category-content no-padding">
+							<ul class="navigation navigation-main navigation-accordion">
+
+								<!-- Main -->
+								<li class="navigation-header">Main</li>
+								<li><a href="index.html">Introduction</a></li>
+								<li><a href="main_getting_started.html">Getting started</a></li>
+								<li><a href="main_starter_kit.html">Starter kit</a></li>
+								<li><a href="main_rtl.html">RTL layout</a></li>
+
+								<li class="navigation-header">Basic functionality</li>								
+								<li><a href="base_less_css.html">LESS and CSS</a></li>
+								<li class="active"><a href="base_less_compile.html">Compiling LESS</a></li>
+								<li><a href="base_less_compile_rtl.html">Compiling LESS for RTL version</a></li>
+								<li>
+									<a href="#">Plugins</a>
+									<ul>
+										<li><a href="plugins_forms.html">Forms</a></li>
+										<li><a href="plugins_forms_styling.html">Form styling</a></li>
+										<li><a href="plugins_selects.html">Selects</a></li>
+										<li><a href="plugins_editors.html">Editors</a></li>
+										<li><a href="plugins_uploaders.html">Uploaders</a></li>
+										<li><a href="plugins_wizards.html">Wizards</a></li>
+										<li><a href="plugins_extensions.html">Extensions</a></li>
+										<li><a href="plugins_notifications.html">Notifications</a></li>
+										<li><a href="plugins_pickers.html">Pickers</a></li>
+										<li><a href="plugins_tables.html">Tables</a></li>
+										<li><a href="plugins_ui.html">UI</a></li>
+										<li><a href="plugins_vis.html">Visualization</a></li>
+									</ul>
+								</li>
+								<li><a href="base_bootstrap.html">Bootstrap</a></li>
+								<li><a href="base_color_system.html">Color system</a></li>
+								<li><a href="base_helpers.html">Helpers</a></li>
+								<li><a href="base_themes.html">Themes</a></li>
+
+								<li class="navigation-header">Layout options</li>
+								<li><a href="layout_markup.html">Markup</a></li>
+								<li><a href="layout_sidebars.html">Sidebars</a></li>
+								<li><a href="layout_navbars.html">Navbars</a></li>
+								<li><a href="layout_v_nav.html">Vertical navigation</a></li>
+								<li><a href="layout_h_nav.html">Horizontal navigation</a></li>
+								<li><a href="layout_page_header.html">Page header</a></li>
+								<li><a href="layout_footer.html">Footer</a></li>
+
+								<li class="navigation-header">Other</li>
+								<li><a href="other_credits.html">Sources and credits</a></li>
+								<li><a href="other_changelog.html">Changelog <span class="label bg-warning-400">version 2.0</span></a></li>
+								<!-- /main -->
+
+							</ul>
+						</div>
+					</div>
+					<!-- /main navigation -->
+
+				</div>
+			</div>
+			<!-- /main sidebar -->
+
+
+			<!-- Main content -->
+			<div class="content-wrapper">
+
+				<!-- Page header -->
+				<div class="page-header">
+					<div class="page-header-content">
+						<div class="page-title">
+							<h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold">Limitless</span> - Compiling LESS</h4>
+						</div>
+
+						<div class="heading-elements">
+							<ul class="breadcrumb">
+								<li><a href="index.html"><i class="icon-home2 position-left"></i> Home</a></li>
+								<li class="active">Compiling LESS</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- /page header -->
+				
+
+				<!-- Content area -->
+				<div class="content">
+
+					<!-- Detached content -->
+					<div class="container-detached">
+						<div class="content-detached">
+
+							<!-- Using Gulp -->
+							<div class="panel panel-flat" id="gulp">
+								<div class="panel-heading">
+									<h5 class="panel-title">Using Gulp</h5>
+									<div class="heading-elements">
+										<ul class="icons-list">
+					                		<li><a data-action="collapse"></a></li>
+					                		<li><a data-action="close"></a></li>
+					                	</ul>
+				                	</div>
+								</div>
+
+								<div class="panel-body">
+									<div class="content-group-lg">
+										<h5 class="text-semibold" id="gulp_overview">Overview</h5>
+										<p>Starting from version 1.2 Limitless includes <code>gulpfile.js</code> and <code>package.json</code> files for Gulp task runner. By default it contains basic tasks that are already configured. If you know how to use it - go for it, if you don't - here is a simple instruction how you can setup everything and get your tasks done right.</p>
+									</div>
+
+									<div class="content-group-lg">
+										<h5 class="text-semibold" id="installing_node">Step 1 - Install Node.js</h5>
+										<p>First - we need our most important requirement, Node. To install Node - simply visit <a href="http://nodejs.org" target="_blank">http://nodejs.org</a> and then click that big green “Install” button. Once your download completes, run that application and you should be all ready to go. The Node installer also includes npm, which we will come back to a little later.</p>
+									</div>
+
+									<div class="content-group-lg">
+										<h5 class="text-semibold" id="command">Step 2 - Command line</h5>
+										<p class="content-group">Now, you may not be very familiar with your command-line interface (Terminal for OSX, Command Prompt for Windows) but you should be! It may seem intimidating at first, but once you get the hang of it you will have the ability to run many different command line applications such as Sass, Yeoman and Git. All of which are very useful tools that your workflow could benefit from!</p>
+
+										<div class="content-group">
+											<p>As a quick example, open up your command line and we will throw a couple commands at it to ensure that Node is properly installed. Type that and then hit enter and you should get a response on the next line with the version number of Node that you have installed:</p>
+											<pre><code class="language-javascript">node -v</code></pre>
+										</div>
+
+										<div class="content-group">
+											<p>Now, let’s do the same for npm:</p>
+											<pre><code class="language-javascript">npm -v</code></pre>
+										</div>
+
+										If you didn’t get a response, then it may mean that Node didn’t install correctly or you may need to restart your command line application. If this still isn’t working after restarting, then simply jump back up the top and try the first step again.
+									</div>
+
+									<div class="content-group-lg">
+										<h5 class="text-semibold" id="installing_gulp">Step 3 - Install Gulp</h5>
+										<p class="content-group">You’ve met your command-line and you know how to talk to it - you even know your way around your file system. Now, it’s time to get to the good stuff. Let’s meet npm and install gulp!</p>
+
+										<div class="content-group">
+											<p>NPM stands for Node Package Manager and it is a command line tool that will allow you to install additional Node packages to your projects. It even comes with a <a href="http://npmjs.org/">nifty</a> site that allows you to browse and search through all of the available packages.</p>
+											<p>In your command-line application, type:</p>
+
+											<pre class="content-group"><code class="language-javascript">sudo npm install -g gulp</code></pre>
+
+											<div class="content-group">
+												<p>Let’s quickly break this down.</p>
+												<ol class="list">
+													<li><strong>sudo</strong> is the command to grant you administrator access so you can properly install files globally. It will prompt you for your computer password before it continues. This is usually needed for global installation, but should not be required when installing plugins in your local project directory.</li>
+													<li><strong>npm</strong> is the application we are using to install our package.</li>
+													<li>We are running the <strong>install</strong> command on that application.</li>
+													<li>The <strong>-g</strong> is an <em>optional</em> flag used to signify that we want to install this package globally so that any project can use it.</li>
+													<li>And finally, <strong>gulp</strong> is the name of the package we would like to install.</li>
+												</ol>
+											</div>
+
+											<div class="content-group">
+												<p>Once that has run it’s course check your command-line to ensure that there are no error messages. If there are none to be seen, then congratulations! You just installed gulp! Just to double check, let’s refer back to our versioning commands we used above for Node and npm.</p>
+
+												<pre class="content-group"><code class="language-javascript">gulp -v</code></pre>
+
+												<p>Like before, this should return the version number on the next line of your command-line.</p>
+											</div>
+
+											<div class="content-group">
+												<p>Next, we also need to install gulp locally.</p>
+
+												<pre class="content-group"><code class="language-javascript">npm install --save-dev gulp</code></pre>
+											</div>
+										</div>
+									</div>
+
+									<div class="content-group-lg">
+										<h5 class="text-semibold" id="navigate">Step 4 - Navigate to your project directory</h5>
+										<p class="content-group">Now that we have met our command-line interface and know how to communicate with it, our next step will be navigating it. Luckily, it only takes two commands to change directories and take a look at what is inside them. These commands are <kbd>ls</kbd> (or <kbd>dir</kbd>, for Windows) to list what is in a directory and <kbd>cd</kbd> to change directories.</p>
+
+										<div class="content-group">
+											<p>Once you are comfortable with the ls and cd commands, we need to navigate to our project folder. This will likely be different for each person, but as an example this is what I would type to navigate to my local project:</p>
+											<pre><code class="language-javascript">// Path to Limitless layout folder
+cd /Applications/MAMP/htdocs/Limitless/Bootstrap\ 3/Layout\ 1/LTR/default/full
+</code></pre>
+										</div>
+									</div>
+
+									<div>
+										<h5 class="text-semibold" id="tasks">Step 5 - Running tasks</h5>
+										<p class="content-group">Once gulp is installed we have to give it some instruction so it knows what tasks for perform for us. But, first, we need to figure out exactly what tasks we need to run in our project.</p>
+
+										<div class="content-group">
+											<p>Gulp plugins you'll need:</p>
+											<ul class="list">
+												<li><strong>gulp-jshint</strong> - lint JavaScript</li>
+												<li><strong>gulp-less</strong> - Less files compiler</li>
+												<li><strong>gulp-clean-css</strong> - CSS compression</li>
+												<li><strong>gulp-concat</strong> - concatenate our JavaScript</li>
+												<li><strong>gulp-uglify</strong> - minify files</li>
+												<li><strong>gulp-rename</strong> - rename files</li>
+											</ul>
+										</div>
+
+										<div class="content-group">
+											<p>Install required plugins:</p>
+											<pre class="content-group"><code class="language-javascript">npm install gulp-jshint jshint gulp-less gulp-clean-css gulp-concat gulp-uglify gulp-rename --save-dev</code></pre>
+
+											<p>If you are getting permissions errors installing these plugins you may have some issues with the permissions in your local project directory. You can prepend those commands with sudo, but it is not advised as it can lead to more problematic issues later. The best course of action is to ensure the permissions of your directories are setup properly.</p>
+										</div>
+
+										<div class="content-group">
+											<p class="content-group">it’s very important to mention that gulp only has 5 methods. These methods are as follows: task, run, watch, src, and dest. These are all you will need to write your tasks.</p>
+
+											<div class="content-group">
+												<h6 class="text-semibold">Gulp file</h6>
+												<pre class="content-group"><code class="language-javascript">
+// Include gulp
+var gulp = require('gulp'); 
+
+
+// Include our plugins
+var jshint = require('gulp-jshint');
+var less = require('gulp-less');
+var minifyCss = require('gulp-clean-css');
+var concat = require('gulp-concat');
+var uglify = require('gulp-uglify');
+var rename = require('gulp-rename');
+
+
+// Lint task
+gulp.task('lint', function() {
+    return gulp
+        .src('assets/js/app.js')
+        .pipe(jshint())
+        .pipe(jshint.reporter('default'));
+});
+
+
+// Compile less files of a full version
+gulp.task('less_full', function() {
+    return gulp
+        .src('assets/less/_main_full/*.less')
+        .pipe(less())
+        .pipe(gulp.dest('assets/css'))
+        .pipe(minifyCss({
+            keepSpecialComments: 0
+        }))
+        .pipe(rename({
+            suffix: ".min"
+        }))
+        .pipe(gulp.dest('assets/css'));
+});
+
+
+// Compile less files of starter kit
+gulp.task('less_seed', function() {
+    return gulp
+        .src('assets/less/_main_seed/*.less')
+        .pipe(less())
+        .pipe(gulp.dest('../seed/assets/css'))
+        .pipe(minifyCss({
+            keepSpecialComments: 0
+        }))
+        .pipe(rename({
+            suffix: ".min"
+        }))
+        .pipe(gulp.dest('../seed/assets/css'));
+});
+
+
+// Watch task
+gulp.task('watch', function() {
+    gulp.watch('assets/less/**/*.less', ['less_full', 'less_seed']);
+});
+
+
+// Default task
+gulp.task('default', [
+    'lint',
+    'less_full',
+    'less_seed',
+    'watch'
+]);
+
+
+// Compile LESS files only task
+gulp.task('compile', [
+    'less_full',
+    'less_seed'
+]);
+</code></pre>
+												<p>Now, let’s break this down and review what each part does.</p>
+											</div>
+
+											<div class="content-group">
+												<h6 class="text-semibold">Core &amp; plugins</h6>
+												<pre class="content-group"><code class="language-javascript">// Include our plugins
+var jshint = require('gulp-jshint');
+var less = require('gulp-less');
+var minifyCss = require('gulp-clean-css');
+var concat = require('gulp-concat');
+var uglify = require('gulp-uglify');
+var rename = require('gulp-rename');
+</code></pre>
+												This includes the gulp core and plugins associated with the tasks that we will be performing. The available tasks are lint, less, compress and default.
+											</div>
+
+											<div class="content-group">
+												<h6 class="text-semibold">Link task</h6>
+												<pre class="content-group"><code class="language-javascript">// Lint Task
+gulp.task('lint', function() {
+    return gulp
+        .src('assets/js/app.js')  // lint core JS file. Or specify another path
+        .pipe(jshint())
+        .pipe(jshint.reporter('default'));
+});
+</code></pre>
+												Lint task checks any JavaScript file in our js/ directory and makes sure there are no errors in our code.
+											</div>
+
+											<div class="content-group">
+												<h6 class="text-semibold">Less task for full version</h6>
+												<pre class="content-group"><code class="language-javascript">// Compile less files of a full version
+gulp.task('less_full', function() {
+    return gulp
+        .src('assets/less/_main_full/*.less')         // locate /less/ folder root to grab 4 main files
+        .pipe(less())                                 // compile
+        .pipe(gulp.dest('assets/css'))                // destination path for normal CSS
+        .pipe(minifyCss({                             // minify CSS
+            keepSpecialComments: 0                    // remove all comments
+        }))
+        .pipe(rename({                                // rename file
+            suffix: ".min"                            // add *.min suffix
+        }))
+        .pipe(gulp.dest('assets/css'));               // destination path for minified CSS
+});
+</code></pre>
+												The less task compiles any of our Less files in our less/ directory into <code>.css</code> and saves the compiled <code>.css</code> file in our <code>/full/assets/css/</code> directory. By default less files compile into normal and minified css files. If you have changed files location, make sure you have updated paths here as well. By default <code>watch</code> command runs both full and seed tasks. If that's not a desired behaviour, edit <code>watch</code> task.
+											</div>
+
+
+											<div class="content-group">
+												<h6 class="text-semibold">Less task for seed version</h6>
+												<pre class="content-group"><code class="language-javascript">// Compile less files of a seed version
+gulp.task('less_seed', function() {
+    return gulp
+        .src('assets/less/_main_seed/*.less')		  // locate /less/ folder root to grab 4 main files
+        .pipe(less())								  // compile
+        .pipe(gulp.dest('../seed/assets/css'))		  // destination path for normal CSS
+        .pipe(minifyCss({							  // minify CSS
+            keepSpecialComments: 0					  // remove all comments
+        }))
+        .pipe(rename({								  // rename file
+            suffix: ".min"							  // add *.min suffix
+        }))
+        .pipe(gulp.dest('../seed/assets/css'));		  // destination path for minified CSS
+});
+</code></pre>
+												The less task compiles any of our Less files in our less/ directory into <code>.css</code> and saves the compiled <code>.css</code> file in our <code>/seed/assets/css/</code> directory. By default less files compile into normal and minified css files. If you have changed files location, make sure you have updated paths here as well. By default <code>watch</code> command runs both full and seed tasks. If that's not a desired behaviour, edit <code>watch</code> task.
+											</div>
+
+											<div class="content-group">
+												<h6 class="text-semibold">Watch task</h6>
+												<pre class="content-group"><code class="language-javascript">// Watch Files For Changes
+gulp.task('watch', function() {
+    gulp.watch('assets/js/core/app.js', [             // listen for changes in app.js file and automatically compress
+        'lint',                                       // lint
+        'minify_core'                                 // compress app.js
+    ]); 
+    gulp.watch('assets/less/**/*.less', ['less_full', 'less_starters']);    // listen for changes in all LESS files and automatically re-compile
+});
+</code></pre>
+												The watch task is used to run tasks as we make changes to our files. As you write code and modify your files, the gulp.watch() method will listen for changes and automatically run our tasks again so we don't have to continuously jump back to our command-line and run the gulp command each time.
+											</div>
+
+											<div class="content-group">
+												<h6 class="text-semibold">Default task</h6>
+												<pre class="content-group"><code class="language-javascript">// Default tasks
+// Default task
+gulp.task('default', [                                // list of default tasks
+    'lint',                                           // lint
+    'less_full',                                      // full version less compile
+    'less_seed',                                  	  // starter kit less compile
+]);
+</code></pre>
+												Finally, we have our default task which is basically a wrapper to our other tasks. This will be the task that is ran upon entering gulp into the command line without any additional parameters.
+											</div>
+										</div>
+
+										<div class="content-group-lg">
+											<h5 class="text-semibold">Running tasks:</h5>
+
+											<p>Now, all we have left to do is run gulp. Switch back over to your command-line and type:</p>
+											<pre class="content-group"><code class="language-javascript">gulp</code></pre>
+
+											<p>This will call gulp and run everything we have defined in our default task. So, in other words It’s the same thing as running:</p>
+											<pre class="content-group"><code class="language-javascript">gulp default</code></pre>
+
+											<div class="content-group">
+												<p>Additionally, we don’t have to run the default task. We could run any of the tasks we defined at any time. Simply call gulp and then specify the task you would like to run directly afterward. For example, we can run our sass task manually at any time like so:</p>
+
+												<pre class="content-group"><code class="language-javascript">// Full version
+gulp less_full
+
+// Seed version
+gulp less_seed
+</code></pre>
+
+												<p>or to watch changes and re-run task when file changes:</p>
+
+												<pre class="content-group"><code class="language-javascript">gulp watch</code></pre>
+											</div>
+										</div>
+
+										<div>
+											<h5 class="text-semibold">Credit</h5>
+
+											Many thanks to Travis Maynard for the great article <a href="https://travismaynard.com/writing/getting-started-with-gulp" target="_blank">Getting started with Gulp</a>.
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<!-- /using gulp -->
+
+						</div>
+					</div>
+					<!-- /detached content -->
+
+
+					<!-- Detached sidebar -->
+					<div class="sidebar-detached">
+			        	<div class="sidebar sidebar-default">
+							<div class="sidebar-content">
+
+				        		<!-- Contact author -->
+								<div class="sidebar-category no-margin">
+									<div class="category-title">
+										<span>Page navigation</span>
+										<i class="icon-menu7 text-muted pull-right"></i>
+									</div>
+
+									<div class="category-content">
+										<a href="http://themeforest.net/user/kopyov" class="btn bg-blue btn-block" target="_blank"><i class="icon-reading position-left"></i> Contact author</a>
+									</div>
+								</div>
+								<!-- /contact author -->
+
+			        			
+			        			<!-- Navigation -->
+								<div class="sidebar-category">
+									<div class="category-content no-padding">
+										<ul class="nav navigation no-padding-top">
+											<li class="navigation-header"><i class="icon-history pull-right"></i> Navigation</li>
+											<li><a href="#desktop">Desktop apps</a></li>
+											<li>
+												<a href="#gulp">Using Gulp</a>
+												<ul>
+													<li><a href="#gulp_overview">Overview</a></li>
+													<li><a href="#installing_node">Install Node.js</a></li>
+													<li><a href="#command">Command line</a></li>
+													<li><a href="#installing_gulp">Install Gulp</a></li>
+													<li><a href="#navigate">Navigate</a></li>
+													<li><a href="#tasks">Running tasks</a></li>
+												</ul>
+											</li>
+											<li class="navigation-divider"></li>
+											<li><a href="#">Go to top <i class="icon-circle-up2 pull-right"></i></a></li>
+							            </ul>
+						            </div>
+					            </div>
+					            <!-- /navigation -->
+
+				            </div>
+			            </div>
+		            </div>
+		            <!-- /detached sidebar -->
+
+
+					<!-- Footer -->
+					<div class="footer text-muted">
+						&copy; 2015. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
+					</div>
+					<!-- /footer -->
+
+				</div>
+				<!-- /content area -->
+
+			</div>
+			<!-- /main content -->
+
+		</div>
+		<!-- /page content -->
+
+	</div>
+	<!-- /page container -->
+
+</body>
+</html>

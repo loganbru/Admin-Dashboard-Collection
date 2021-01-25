@@ -1,0 +1,9 @@
+.box {
+    @apply bg-white rounded-md;
+}
+
+.dark {
+    .box {
+        @apply bg-dark-3;
+    }
+}

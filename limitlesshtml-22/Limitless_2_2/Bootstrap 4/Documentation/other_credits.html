@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/layout.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script src="assets/js/main/jquery.min.js"></script>
+	<script src="assets/js/main/bootstrap.bundle.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script src="assets/js/plugins/prism.min.js"></script>
+	<script src="assets/js/plugins/sticky.min.js"></script>
+	
+	<script src="assets/js/main/app.js"></script>
+	<script src="assets/js/pages/components_scrollspy.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body data-spy="scroll" data-target=".sidebar-component-right">
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-expand-md navbar-light">
+		<div class="navbar-header navbar-dark d-none d-md-flex align-items-md-center">
+			<div class="navbar-brand navbar-brand-md">
+				<a href="index.html" class="d-inline-block">
+					<img src="assets/images/logo_light.png" alt="">
+				</a>
+			</div>
+	
+			<div class="navbar-brand navbar-brand-xs">
+				<a href="index.html" class="d-inline-block">
+					<img src="assets/images/logo_icon_light.png" alt="">
+				</a>
+			</div>
+		</div>
+
+		<div class="d-flex flex-1 d-md-none">
+			<div class="navbar-brand mr-auto">
+				<a href="index.html" class="d-inline-block">
+					<img src="assets/images/logo_dark.png" alt="">
+				</a>
+			</div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile">
+				<i class="icon-tree5"></i>
+			</button>
+			<button class="navbar-toggler sidebar-mobile-main-toggle" type="button">
+				<i class="icon-paragraph-justify3"></i>
+			</button>
+			<button class="navbar-toggler sidebar-mobile-component-toggle" type="button">
+				<i class="icon-unfold"></i>
+			</button>
+		</div>
+
+		<div class="collapse navbar-collapse" id="navbar-mobile">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a href="#" class="navbar-nav-link sidebar-control sidebar-main-hide d-none d-md-block">
+						<i class="icon-paragraph-justify3"></i>
+					</a>
+				</li>
+
+				<li class="nav-item">
+					<a href="#" class="navbar-nav-link sidebar-control sidebar-component-toggle d-none d-md-block">
+						<i class="icon-transmission"></i>
+					</a>
+				</li>
+			</ul>
+
+			<ul class="navbar-nav ml-md-auto">
+				<li class="nav-item dropdown">
+					<a href="other_changelog.html" class="navbar-nav-link">
+						<i class="icon-history mr-2"></i>
+						Changelog
+						<span class="badge bg-warning-400 badge-pill position-static ml-md-2">2.2</span>
+					</a>					
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page content -->
+	<div class="page-content">
+
+		<!-- Main sidebar -->
+		<div class="sidebar sidebar-dark sidebar-main sidebar-expand-md">
+
+			<!-- Sidebar mobile toggler -->
+			<div class="sidebar-mobile-toggler text-center">
+				<a href="#" class="sidebar-mobile-main-toggle">
+					<i class="icon-arrow-left8"></i>
+				</a>
+				Navigation
+				<a href="#" class="sidebar-mobile-expand">
+					<i class="icon-screen-full"></i>
+					<i class="icon-screen-normal"></i>
+				</a>
+			</div>
+			<!-- /sidebar mobile toggler -->
+
+
+			<!-- Sidebar content -->
+			<div class="sidebar-content">
+
+        		<!-- Support -->
+				<div class="card card-body">
+					<a href="http://kopyov.ticksy.com" class="btn bg-success-400 btn-block" target="_blank"><i class="icon-lifebuoy mr-2"></i> Limitless support</a>
+				</div>
+				<!-- /support -->
+
+
+				<!-- Main navigation -->
+				<div class="card card-sidebar-mobile">
+					<ul class="nav nav-sidebar" data-nav-type="accordion">
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Main</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="index.html" class="nav-link">Introduction</a></li>
+						<li class="nav-item"><a href="main_getting_started.html" class="nav-link">Getting started</a></li>
+						<li class="nav-item"><a href="main_starter_kit.html" class="nav-link">Starter kit</a></li>
+						<li class="nav-item"><a href="main_rtl.html" class="nav-link">RTL layout</a></li>
+
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Basic functionality</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="base_scss_css.html" class="nav-link">SCSS and CSS</a></li>
+						<li class="nav-item"><a href="base_scss_compile.html" class="nav-link">Compiling SCSS</a></li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link">Plugins</a>
+							<ul class="nav nav-group-sub" data-submenu-title="Plugins">
+								<li class="nav-item"><a href="plugins_forms.html" class="nav-link">Forms</a></li>
+								<li class="nav-item"><a href="plugins_forms_styling.html" class="nav-link">Form styling</a></li>
+								<li class="nav-item"><a href="plugins_editors.html" class="nav-link">Editors</a></li>
+								<li class="nav-item"><a href="plugins_uploaders.html" class="nav-link">Uploaders</a></li>
+								<li class="nav-item"><a href="plugins_extensions.html" class="nav-link">Extensions</a></li>
+								<li class="nav-item"><a href="plugins_notifications.html" class="nav-link">Notifications</a></li>
+								<li class="nav-item"><a href="plugins_pickers.html" class="nav-link">Pickers</a></li>
+								<li class="nav-item"><a href="plugins_tables.html" class="nav-link">Tables</a></li>
+								<li class="nav-item"><a href="plugins_ui.html" class="nav-link">UI</a></li>
+								<li class="nav-item"><a href="plugins_vis.html" class="nav-link">Visualization</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a href="base_icons.html" class="nav-link">Icons</a></li>
+
+						<li class="nav-item"><a href="base_bootstrap.html" class="nav-link">Bootstrap</a></li>
+						<li class="nav-item"><a href="base_color_system.html" class="nav-link">Color system</a></li>
+						<li class="nav-item"><a href="base_helpers.html" class="nav-link">Helpers</a></li>
+						<li class="nav-item"><a href="base_themes.html" class="nav-link">Themes</a></li>
+
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Layout options</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="layout_overview.html" class="nav-link">Layouts</a></li>
+						<li class="nav-item"><a href="layout_sidebars.html" class="nav-link">Sidebars</a></li>
+						<li class="nav-item"><a href="layout_navbars.html" class="nav-link">Navbars</a></li>
+						<li class="nav-item"><a href="layout_v_nav.html" class="nav-link">Vertical navigation</a></li>
+						<li class="nav-item"><a href="layout_h_nav.html" class="nav-link">Horizontal navigation</a></li>
+						<li class="nav-item"><a href="layout_page_header.html" class="nav-link">Page header</a></li>
+
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Other</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="other_credits.html" class="nav-link active">Sources and credits</a></li>
+						<li class="nav-item"><a href="other_changelog.html" class="nav-link">Changelog <span class="badge badge-pill bg-warning-400 ml-auto">version 2.2</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /main navigation -->
+
+		</div>
+		<!-- /main sidebar -->
+
+
+		<!-- Main content -->
+		<div class="content-wrapper">
+
+			<!-- Page header -->
+			<div class="page-header">
+				<div class="page-header-content header-elements-md-inline">
+					<div class="page-title d-flex">
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Limitless</span> - Sources and Credits</h4>
+						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+					</div>
+
+					<div class="header-elements d-none py-0 mb-3 mb-md-0">
+						<div class="breadcrumb">
+							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
+							<span class="breadcrumb-item active">Sources and Credits</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /page header -->
+			
+
+			<!-- Content area -->
+			<div class="content pt-0">
+
+				<!-- Inner container -->
+				<div class="d-flex align-items-start flex-column flex-md-row">
+
+					<!-- Left content -->
+					<div class="order-2 order-md-1">
+
+							<!-- Credits -->
+							<div class="card">
+								<div class="card-header header-elements-inline">
+									<h5 class="card-title">Sources and credits</h5>
+									<div class="header-elements">
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+					                </div>
+								</div>
+
+								<div class="card-body">
+									<h6 class="font-weight-semibold" id="overview">Overview</h6>
+									<p>Limitless web application kit includes 100+ different components, libraries, plugins and extensions. Major part of these components are released under MIT license and can be used in both commercial and non-commercial projects. All rights belong to and are the property of their respective owners. Below you'll find a list of components used in the template, with links to their websites.</p>
+
+									<div class="table-responsive">
+										<table class="table table-bordered">
+											<thead>
+												<tr>
+													<th style="width: 400px;">Category</th>
+													<th>Button id</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<th colspan="2" class="table-active" id="libraries">Main libraries</th>
+												</tr>
+												<tr>
+													<td><a href="http://jquery.com/" target="_blank">http://jquery.com/</a></td>
+													<td>jQuery library</td>
+												</tr>
+												<tr>
+													<td><a href="http://getbootstrap.com/" target="_blank">http://getbootstrap.com/</a></td>
+													<td>Bootstrap library</td>
+												</tr>
+												<tr>
+													<td><a href="https://jqueryui.com/" target="_blank">https://jqueryui.com/</a></td>
+													<td>jQuery UI library</td>
+												</tr>
+												<tr>
+													<td><a href="http://www.jasny.net/bootstrap/" target="_blank">http://www.jasny.net/bootstrap/</a></td>
+													<td>Jasny Bootstrap library</td>
+												</tr>
+
+												<tr>
+													<th colspan="2" class="table-active" id="forms">Forms</th>
+												</tr>
+												<tr>
+													<td><a href="http://www.jacklmoore.com/autosize/" target="_blank">http://www.jacklmoore.com/autosize/</a></td>
+													<td>Textarea autosize</td>
+												</tr>
+												<tr>
+													<td><a href="http://www.virtuosoft.eu/code/bootstrap-duallistbox/" target="_blank">http://www.virtuosoft.eu/code/bootstrap-duallistbox/</a></td>
+													<td>Dual listbox plugin for multiple selects</td>
+												</tr>
+												<tr>
+													<td><a href="http://firstopinion.github.io/formatter.js/index.html" target="_blank">http://firstopinion.github.io/formatter.js/index.html</a></td>
+													<td>Form input formatter</td>
+												</tr>
+												<tr>
+													<td><a href="http://mimo84.github.io/bootstrap-maxlength/" target="_blank">http://mimo84.github.io/bootstrap-maxlength/</a></td>
+													<td>Bootstrap maxlength extension</td>
+												</tr>
+												<tr>
+													<td><a href="https://timseverien.com/projects/passy/" target="_blank">https://timseverien.com/projects/passy/</a></td>
+													<td>Passy password generator and checker</td>
+												</tr>
+												<tr>
+													<td><a href="http://www.virtuosoft.eu/code/bootstrap-touchspin/" target="_blank">http://www.virtuosoft.eu/code/bootstrap-touchspin/</a></td>
+													<td>Touchspin spinners library</td>
+												</tr>
+												<tr>
+													<td><a href="https://twitter.github.io/typeahead.js/" target="_blank">https://twitter.github.io/typeahead.js/</a></td>
+													<td>Twitter typeahead library</td>
+												</tr>
+												<tr>
+													<td><a href="http://jqueryvalidation.org/" target="_blank">http://jqueryvalidation.org/</a></td>
+													<td>Form inputs validation</td>
+												</tr>
+												<tr>
+													<td><a href="http://timschlechter.github.io/bootstrap-tagsinput/examples/" target="_blank">http://timschlechter.github.io/bootstrap-tagsinput/examples/</a></td>
+													<td>Bootstrap tagsinput</td>
+												</tr>
+												<tr>
+													<td><a href="http://sliptree.github.io/bootstrap-tokenfield/" target="_blank">http://sliptree.github.io/bootstrap-tokenfield/</a></td>
+													<td>Tokenfield for Bootstrap</td>
+												</tr>
+												<tr>
+													<td><a href="http://www.jquery-steps.com/" target="_blank">http://www.jquery-steps.com/</a></td>
+													<td>Steps wizard</td>
+												</tr>
+
+												<tr>
+													<th colspan="2" class="table-active" id="form_styling">Form styling</th>
+												</tr>
+												<tr>
+													<td><a href="http://www.bootstrap-switch.org/" target="_blank">http://www.bootstrap-switch.org/</a></td>
+													<td>Bootstrap switch</td>
+												</tr>
+												<tr>
+													<td><a href="http://abpetkov.github.io/switchery/" target="_blank">http://abpetkov.github.io/switchery/</a></td>
+													<td>Switchery toggles</td>
+												</tr>
+												<tr>
+													<td><a href="http://uniformjs.com/" target="_blank">http://uniformjs.com/</a></td>
+													<td>Uniform - form components styling library</td>
+												</tr>
+
+												<tr>
+													<th colspan="2" class="table-active" id="selects">Selects</th>
+												</tr>
+												<tr>
+													<td><a href="http://select2.github.io/" target="_blank">http://select2.github.io/</a></td>
+													<td>Select2 selects</td>
+												</tr>
+												<tr>
+													<td><a href="http://davidstutz.github.io/bootstrap-multiselect/" target="_blank">http://davidstutz.github.io/bootstrap-multiselect/</a></td>
+													<td>Bootstrap multiselect</td>
+												</tr>
+
+												<tr>
+													<th colspan="2" class="table-active" id="editors">Editors</th>
+												</tr>
+												<tr>
+													<td><a href="http://ace.c9.io/#nav=about" target="_blank">http://ace.c9.io/#nav=about</a></td>
+													<td>Ace code editor</td>
+												</tr>
+												<tr>
+													<td><a href="http://summernote.org/#/" target="_blank">http://summernote.org/#/</a></td>
+													<td>Summernote editor</td>
+												</tr>
+												<tr>
+													<td><a href="https://alex-d.github.io/Trumbowyg/" target="_blank">https://alex-d.github.io/Trumbowyg/</a></td>
+													<td>Trumbowyg editor</td>
+												</tr>
+												<tr>
+													<td><a href="http://ckeditor.com/" target="_blank">http://ckeditor.com/</a></td>
+													<td>CKEditor text editor</td>
+												</tr>
+
+												<tr>
+													<th colspan="2" class="table-active" id="uploaders">Uploaders</th>
+												</tr>
+												<tr>
+													<td><a href="http://www.dropzonejs.com/" target="_blank">http://www.dropzonejs.com/</a></td>
+													<td>Dropzone single and multiple file uploader</td>
+												</tr>
+												<tr>
+													<td><a href="http://www.plupload.com/" target="_blank">http://www.plupload.com/</a></td>
+													<td>Plupload multiple file uploader</td>
+												</tr>
+												<tr>
+													<td><a href="http://plugins.krajee.com/file-input" target="_blank">http://plugins.krajee.com/file-input</a></td>
+													<td>Bootstrap file upload</td>
+												</tr>
+
+												<tr>
+													<th colspan="2" class="table-active" id="extensions">Extensions</th>
+												</tr>
+												<tr>
+													<td><a href="http://julian.com/research/velocity/" target="_blank">http://julian.com/research/velocity/</a></td>
+													<td>Velocity animations</td>
+												</tr>
+												<tr>
+													<td><a href="http://prismjs.com/" target="_blank">http://prismjs.com/</a></td>
+													<td>Prism syntax highlighter</td>
+												</tr>
+												<tr>
+													<td><a href="http://momentjs.com/" target="_blank">http://momentjs.com/</a></td>
+													<td>Moment.js library</td>
+												</tr>
+												<tr>
+													<td><a href="http://touchpunch.furf.com/" target="_blank">http://touchpunch.furf.com/</a></td>
+													<td>Touch punch extension for jQuery UI</td>
+												</tr>
+												<tr>
+													<td><a href="http://simeydotme.github.io/jQuery-ui-Slider-Pips/" target="_blank">http://simeydotme.github.io/jQuery-ui-Slider-Pips/</a></td>
+													<td>jQuery UI slider pips</td>
+												</tr>
+												<tr>
+													<td><a href="http://github.hubspot.com/pace/docs/welcome/" target="_blank">http://github.hubspot.com/pace/docs/welcome/</a></td>
+													<td>Pace - page loader</td>
+												</tr>
+												<tr>
+													<td><a href="http://malsup.com/jquery/block/#overview" target="_blank">http://malsup.com/jquery/block/#overview</a></td>
+													<td>BlockUI extension</td>
+												</tr>
+												<tr>
+													<td><a href="http://i18next.com/" target="_blank">http://i18next.com/</a></td>
+													<td>i18next - internationalization library</td>
+												</tr>
+												<tr>
+													<td><a href="https://github.com/orangehill/bootstrap-session-timeout" target="_blank">https://github.com/orangehill/bootstrap-session-timeout</a></td>
+													<td>Session and idle timeout</td>
+												</tr>
+												<tr>
+													<td><a href="https://github.com/carhartl/jquery-cookie" target="_blank">https://github.com/carhartl/jquery-cookie</a></td>
+													<td>jQuery Cookie</td>
+												</tr>
+												<tr>
+													<td><a href="https://github.com/sydcanem/bootstrap-contextmenu" target="_blank">https://github.com/sydcanem/bootstrap-contextmenu</a></td>
+													<td>Bootstrap context menu</td>
+												</tr>
+												<tr>
+													<td><a href="https://cameronspear.com/blog/bootstrap-dropdown-on-hover-plugin/" target="_blank">https://cameronspear.com/blog/bootstrap-dropdown-on-hover-plugin/</a></td>
+													<td>Bootstrap Hover dropdown</td>
+												</tr>
+												<tr>
+													<td><a href="http://esimakin.github.io/twbs-pagination/" target="_blank">http://esimakin.github.io/twbs-pagination/</a></td>
+													<td>Bootstrap dynamic pagination</td>
+												</tr>
+
+												<tr>
+													<th colspan="2" class="table-active" id="notifications">Notifications</th>
+												</tr>
+												<tr>
+													<td><a href="http://bootboxjs.com/" target="_blank">http://bootboxjs.com/</a></td>
+													<td>Bootbox dialogs</td>
+												</tr>
+												<tr>
+													<td><a href="https://github.com/stanlemon/jGrowl" target="_blank">https://github.com/stanlemon/jGrowl</a></td>
+													<td>jGrowl notifications</td>
+												</tr>
+												<tr>
+													<td><a href="http://ned.im/noty/#/about" target="_blank">http://ned.im/noty/#/about</a></td>
+													<td>Noty notifications</td>
+												</tr>
+												<tr>
+													<td><a href="http://sciactive.com/pnotify/" target="_blank">http://sciactive.com/pnotify/</a></td>
+													<td>PNotify notifications</td>
+												</tr>
+												<tr>
+													<td><a href="https://sweetalert2.github.io/" target="_blank">https://sweetalert2.github.io/</a></td>
+													<td>SweetAlert 2</td>
+												</tr>
+
+												<tr>
+													<th colspan="2" class="table-active" id="pickers">Pickers</th>
+												</tr>
+												<tr>
+													<td><a href="http://bgrins.github.io/spectrum" target="_blank">http://bgrins.github.io/spectrum</a></td>
+													<td>Spectrum - color picker</td>
+												</tr>
+												<tr>
+													<td><a href="http://logicify.github.io/jquery-locationpicker-plugin/" target="_blank">http://logicify.github.io/jquery-locationpicker-plugin/</a></td>
+													<td>Location picker</td>
+												</tr>
+												<tr>
+													<td><a href="http://xilinus.com/jquery-addresspicker/demos/index.html" target="_blank">http://xilinus.com/jquery-addresspicker/demos/index.html</a></td>
+													<td>Address picker</td>
+												</tr>
+												<tr>
+													<td><a href="http://www.ama3.com/anytime/" target="_blank">http://www.ama3.com/anytime/</a></td>
+													<td>Anytime picker</td>
+												</tr>
+												<tr>
+													<td><a href="http://www.daterangepicker.com/" target="_blank">http://www.daterangepicker.com/</a></td>
+													<td>Date range picker</td>
+												</tr>
+												<tr>
+													<td><a href="http://amsul.ca/pickadate.js/" target="_blank">http://amsul.ca/pickadate.js/</a></td>
+													<td>Pick-a-date pickers</td>
+												</tr>
+
+												<tr>
+													<th colspan="2" class="table-active" id="tables">Tables</th>
+												</tr>
+												<tr>
+													<td><a href="http://datatables.net/" target="_blank">http://datatables.net/</a></td>
+													<td>Data tables</td>
+												</tr>
+												<tr>
+													<td><a href="https://handsontable.com/" target="_blank">https://handsontable.com/</a></td>
+													<td>Handsontable</td>
+												</tr>
+												<tr>
+													<td><a href="http://fooplugins.com/plugins/footable-jquery/" target="_blank">http://fooplugins.com/plugins/footable-jquery/</a></td>
+													<td>Footable library</td>
+												</tr>
+
+												<tr>
+													<th colspan="2" class="table-active" id="ui">UI</th>
+												</tr>
+												<tr>
+													<td><a href="http://fooplugins.com/plugins/footable-jquery/" target="_blank">http://fooplugins.com/plugins/footable-jquery/</a></td>
+													<td>Fancy tree</td>
+												</tr>
+												<tr>
+													<td><a href="http://fullcalendar.io/" target="_blank">http://fullcalendar.io/</a></td>
+													<td>Full calendar</td>
+												</tr>
+												<tr>
+													<td><a href="http://wicky.nillia.ms/headroom.js/" target="_blank">http://wicky.nillia.ms/headroom.js/</a></td>
+													<td>Headroom.js library</td>
+												</tr>
+												<tr>
+													<td><a href="https://github.com/alizahid/slinky" target="_blank">https://github.com/alizahid/slinky</a></td>
+													<td>Slinky.js multi level navigation for mega menu</td>
+												</tr>
+												<tr>
+													<td><a href="https://github.com/utatti/perfect-scrollbar" target="_blank">https://github.com/utatti/perfect-scrollbar</a></td>
+													<td>Perfect scrollbar - custom scrollbar</td>
+												</tr>
+												<tr>
+													<td><a href="http://refreshless.com/nouislider/" target="_blank">http://refreshless.com/nouislider/</a></td>
+													<td>NoUI slider library</td>
+												</tr>
+												<tr>
+													<td><a href="http://fengyuanchen.github.io/cropper/" target="_blank">http://fengyuanchen.github.io/cropper/</a></td>
+													<td>Image cropper</td>
+												</tr>
+												<tr>
+													<td><a href="http://fancyapps.com/fancybox/" target="_blank">http://fancyapps.com/fancybox/</a></td>
+													<td>Fancybox - image lightbox</td>
+												</tr>
+												<tr>
+													<td><a href="http://www.minddust.com/project/bootstrap-progressbar/" target="_blank">http://www.minddust.com/project/bootstrap-progressbar/</a></td>
+													<td>Bootstrap progress bar extension</td>
+												</tr>
+												<tr>
+													<td><a href="http://lab.hakim.se/ladda/" target="_blank">http://lab.hakim.se/ladda/</a></td>
+													<td>Ladda - buttons with loading indicators and progress bars</td>
+												</tr>
+
+												<tr>
+													<th colspan="2" class="table-active" id="visualization">Visualization</th>
+												</tr>
+												<tr>
+													<td><a href="http://jvectormap.com/" target="_blank">http://jvectormap.com/</a></td>
+													<td>Vector maps</td>
+												</tr>
+												<tr>
+													<td><a href="http://d3js.org/" target="_blank">http://d3js.org/</a></td>
+													<td>D3.js library</td>
+												</tr>
+												<tr>
+													<td><a href="http://c3js.org/" target="_blank">http://c3js.org/</a></td>
+													<td>C3.js library</td>
+												</tr>
+												<tr>
+													<td><a href="http://dimplejs.org/" target="_blank">http://dimplejs.org/</a></td>
+													<td>Dimple.js library</td>
+												</tr>
+												<tr>
+													<td><a href="https://ecomfe.github.io/echarts-doc/public/en/index.html" target="_blank">https://ecomfe.github.io/echarts-doc/public/en/index.html</a></td>
+													<td>Echarts library</td>
+												</tr>
+												<tr>
+													<td><a href="https://google-developers.appspot.com/chart/" target="_blank">https://google-developers.appspot.com/chart/</a></td>
+													<td>Google Charts library</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<!-- /credits -->
+
+					</div>
+					<!-- /left content -->
+
+
+					<!-- Right sidebar component -->
+					<div class="sidebar-sticky w-100 w-md-auto order-1 order-md-2">
+						<div class="sidebar sidebar-light sidebar-component sidebar-component-right sidebar-expand-md mb-3">
+							<div class="sidebar-content">
+								<div class="card">
+									<div class="card-header bg-transparent header-elements-inline">
+										<span class="text-uppercase font-size-sm font-weight-semibold">Page navigation</span>
+										<div class="header-elements">
+											<div class="list-icons">
+						                		<a class="list-icons-item" data-action="collapse"></a>
+					                		</div>
+				                		</div>
+									</div>
+
+									<div class="card-body">
+										<a href="http://themeforest.net/user/kopyov" class="btn bg-blue btn-block" target="_blank"><i class="icon-reading mr-2"></i> Contact author</a>
+									</div>
+
+									<ul class="nav nav-sidebar nav-scrollspy" data-nav-type="accordion">
+										<li class="nav-item-header pt-0"><div class="text-uppercase font-size-xs line-height-xs">Sections</div> <i class="icon-menu"></i></li>
+										<li class="nav-item"><a href="#overview" class="nav-link">Overview</a></li>
+										<li class="nav-item"><a href="#libraries" class="nav-link">Main libraries</a></li>
+										<li class="nav-item"><a href="#forms" class="nav-link">Forms</a></li>
+										<li class="nav-item"><a href="#form_styling" class="nav-link">Form styling</a></li>
+										<li class="nav-item"><a href="#selects" class="nav-link">Selects</a></li>
+										<li class="nav-item"><a href="#editors" class="nav-link">Editors</a></li>
+										<li class="nav-item"><a href="#uploaders" class="nav-link">Uploaders</a></li>
+										<li class="nav-item"><a href="#extensions" class="nav-link">Extensions</a></li>
+										<li class="nav-item"><a href="#notifications" class="nav-link">Notifications</a></li>
+										<li class="nav-item"><a href="#pickers" class="nav-link">Pickers</a></li>
+										<li class="nav-item"><a href="#tables" class="nav-link">Tables</a></li>
+										<li class="nav-item"><a href="#ui" class="nav-link">UI</a></li>
+										<li class="nav-item"><a href="#visualization" class="nav-link">Visualization</a></li>
+										<li class="nav-item-divider"></li>
+										<li class="nav-item"><a href="#" class="nav-link">Go to top <i class="icon-circle-up2 mr-0 ml-auto"></i></a></li>
+									</ul>
+								</div>
+				            </div>
+						</div>
+					</div>
+					<!-- /right sidebar component -->
+
+				</div>
+				<!-- /inner container -->
+
+			</div>
+			<!-- /content area -->
+
+
+			<!-- Footer -->
+			<div class="navbar navbar-expand-lg navbar-light">
+				<div class="text-center d-lg-none w-100">
+					<button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse" data-target="#navbar-footer">
+						<i class="icon-unfold mr-2"></i>
+						Footer
+					</button>
+				</div>
+
+				<div class="navbar-collapse collapse" id="navbar-footer">
+					<span class="navbar-text">
+						&copy; 2015 - 2018. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
+					</span>
+
+					<ul class="navbar-nav ml-lg-auto">
+						<li class="nav-item"><a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov" class="navbar-nav-link font-weight-semibold"><span class="text-pink-400"><i class="icon-cart2 mr-2"></i> Purchase</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /footer -->
+
+		</div>
+		<!-- /main content -->
+
+	</div>
+	<!-- /page content -->
+
+</body>
+</html>

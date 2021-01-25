@@ -1,0 +1,70 @@
+/* ------------------------------------------------------------------------------
+*
+*  # Main content layout
+*
+*  Styles for main structure of content area
+*
+*  Version: 1.1
+*  Latest update: Mar 10, 2016
+*
+* ---------------------------------------------------------------------------- */
+
+
+// Main wrapper
+.page-container {
+    position: relative;
+    padding: @line-height-computed @grid-gutter-width;
+    padding-bottom: (@line-height-computed * 3);
+
+    // Change bottom spacing if footer is navbar
+    .navbar-bottom &,
+    .navbar-bottom-lg &,
+    .navbar-bottom-sm &,
+    .navbar-bottom-xs & {
+        padding-bottom: @line-height-computed;
+    }
+
+    // Desktop view
+    @media (min-width: @grid-float-breakpoint) {
+        width: 100%;
+        display: table;
+        table-layout: fixed;
+
+        // Min-height doesn't work in FF, bug. So we set 1px height which is overriden with min-height
+        @-moz-document url-prefix() {
+            height: 1px;
+        }
+    }
+}
+
+// Add horizontal spacing to main containers
+.page-container,
+.page-header-content,
+.navbar {
+    @media (min-width: @grid-float-breakpoint) {
+        padding-left: (@content-padding-horizontal / 2);
+        padding-right: (@content-padding-horizontal / 2);
+    }
+
+    @media (min-width: @screen-laptop-min) {
+        padding-left: @content-padding-horizontal;
+        padding-right: @content-padding-horizontal;
+    }
+}
+
+// Main container
+.page-content {
+    @media (min-width: @grid-float-breakpoint) {
+        display: table-row;
+    }
+}
+
+// Content wrapper
+.content-wrapper {
+    width: 100%;
+    
+    @media (min-width: @grid-float-breakpoint) {
+        display: table-cell;
+        vertical-align: top;
+    }
+}

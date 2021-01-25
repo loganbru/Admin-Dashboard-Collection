@@ -1,0 +1,389 @@
+---
+layout: default
+title: Post with sidebar
+---
+
+<!-- Hero (Parallax) and nav -->
+<div class="hero is-cover is-relative is-theme-primary">
+
+    {{> navbar-fade}}
+
+    <!-- Hero image -->
+    <div id="main-hero" class="hero-body blog-hero">
+        <div class="container has-text-centered">
+            <h1 class="title flex-title main-title text-bold is-2">
+                <!-- Previous post arrow -->
+                <span class="material-icons is-hidden-mobile" data-toggle="tooltip" data-placement="right" data-title="Previous post">keyboard_arrow_left</span>
+                <span class="subpage-title">ECOMMERCE</span>
+                <!-- Next post arrow -->
+                <span class="material-icons is-hidden-mobile" data-toggle="tooltip" data-placement="left" data-title="Next post">keyboard_arrow_right</span>
+            </h1>
+        </div>
+    </div>
+    <!-- /Hero image -->
+</div>
+<!-- /Hero and nav -->
+
+<!-- Post section -->
+<section class="section blog-section section-light-grey">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-8">
+                <!-- Post -->
+                <div class="flex-card is-full-post has-sidebar light-bordered">
+                    <!-- Post meta -->
+                    <div class="post-meta content">
+                        <!-- Author avatar -->
+                        <img class="author-avatar is-hidden-mobile" src="https://via.placeholder.com/250x250" alt=""
+                            data-demo-src="assets/images/agency/avatars/marc.jpg">
+                        <!-- Title -->
+                        <div class="title-block">
+                            <h2>5 Things you should know when planning for a new online store</h2>
+                            <h4>Pieces of advice that will help your business grow</h4>
+                            <!-- Like button -->
+                            <button class="like fab-btn mini is-single" data-toggle="tooltip" data-placement="left" data-title="Liked by 64 persons">
+                                <span class="like-wrapper">
+                                    <i class="material-icons unliked">favorite_border</i>
+                                    <i class="material-icons liked">favorite</i>
+                                    <span class="like-overlay"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Post body -->
+                    <div class="post-body content">
+                        <!-- More meta -->
+                        <div class="author-name">by <b><a href="#">Marc Walters</a></b>, <span>Ecommerce consultant</span></div>
+                        <div class="timestamp"><i class="sl sl-icon-clock"></i> oct 16 2018, 4:12pm</div>
+
+                        <!-- Post content -->
+                        <h5>Framing is your best friend</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. </p>
+
+                        <h5>Hosting a store can be tricky</h5>
+                        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna. </p>
+
+                        <h5>Don't neglate product photography</h5>
+                        <p>Cras metus. Sed aliquet risus a tortor. Integer id quam. Morbi mi. Quisque nisl felis, venenatis tristique, dignissim in, ultrices sit amet, augue. Proin sodales libero eget ante. Nulla quam. Aenean laoreet. Vestibulum nisi lectus, commodo ac, facilisis ac, ultricies eu, pede. Ut orci risus, accumsan porttitor, cursus quis, aliquet eget, justo. Sed pretium blandit orci. Ut eu diam at pede suscipit sodales. Aenean lectus elit, fermentum non, convallis id, sagittis at, neque. </p>
+                        <img class="post-image" src="https://via.placeholder.com/1954x1178" alt=""
+                            data-demo-src="assets/images/agency/posts/post-image.png">
+
+                        <h5>Customer conversion is the key</h5>
+                        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna. </p>
+
+                        <h5>Implement an abandonned cart workflow</h5>
+                        <p>Cras metus. Sed aliquet risus a tortor. Integer id quam. Morbi mi. Quisque nisl felis, venenatis tristique, dignissim in, ultrices sit amet, augue. Proin sodales libero eget ante. Nulla quam. Aenean laoreet. Vestibulum nisi lectus, commodo ac, facilisis ac, ultricies eu, pede. Ut orci risus, accumsan porttitor, cursus quis, aliquet eget, justo. Sed pretium blandit orci. Ut eu diam at pede suscipit sodales. Aenean lectus elit, fermentum non, convallis id, sagittis at, neque. </p>
+                        <hr>
+
+                        <!-- Share Post -->
+                        <div class="share-post">
+                            <div class="share-text">
+                                Share:
+                            </div>
+                            <!-- Sharing icons -->
+                            <div class="sharing-options">
+                                <i class="fa fa-envelope"></i>
+                                <i class="fa fa-facebook"></i>
+                                <i class="fa fa-twitter"></i>
+                                <i class="fa fa-linkedin"></i>
+                                <i class="fa fa-google-plus"></i>
+                                <i class="fa fa-reddit"></i>
+                                <i class="fa fa-tumblr"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Show comments box -->
+                <div class="flex-card comment-count light-bordered">
+                    <i class="im im-icon-Speach-Bubble11"></i>
+                    <div class="text"><span class="count-number">3</span> <span class="is-hidden-mobile">comments</span></div>
+                    <button id="show-comments" class="button is-link primary-text">Show all</button>
+                </div>
+                <!-- /Show comments box -->
+
+                <!-- Comments list -->
+                <div class="flex-card comments-list light-bordered animated preFadeInUp fadeInUp is-hidden">
+                    <!-- Comment -->
+                    <div class="media">
+                        <figure class="media-left">
+                            <p class="image is-48x48">
+                                <img src="https://via.placeholder.com/250x250" alt=""
+                                    data-demo-src="assets/images/agency/avatars/elie.jpg">
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <strong>Barbara Middleton</strong>
+                                <span class="timestamp">2 hours ago</span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.</p>
+                                <small>
+                                    <a><i class="fa fa-heart"></i></a>
+                                    <span class="count">9</span>
+                                    <span class="reply"><a href="#">Reply</a></span>
+                                </small>
+                            </div>
+
+                            <!-- Nested answer 1 -->
+                            <div class="media">
+                                <figure class="media-left">
+                                    <p class="image is-32x32">
+                                        <img src="https://via.placeholder.com/250x250" alt=""
+                                            data-demo-src="assets/images/agency/avatars/thomas.jpg">
+                                    </p>
+                                </figure>
+                                <div class="media-content">
+                                    <div class="content">
+                                        <strong>Sean Brown</strong>
+                                        <span class="timestamp">30 minutes ago</span>
+                                        <p>Donec sollicitudin urna eget eros malesuada sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam blandit nisl a nulla sagittis, a lobortis leo feugiat.</p>
+                                        <small>
+                                            <a><i class="fa fa-heart"></i></a>
+                                            <span class="count">5</span>
+                                            <span class="reply"><a href="#">Reply</a></span>
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Nested answer 2 -->
+                            <div class="media">
+                                <figure class="media-left">
+                                    <p class="image is-32x32">
+                                        <img src="https://via.placeholder.com/250x250" alt=""
+                                            data-demo-src="assets/images/agency/avatars/sally.jpg">
+                                    </p>
+                                </figure>
+                                <div class="media-content">
+                                    <div class="content">
+                                        <strong>Kayli Eunice </strong>
+                                        <span class="timestamp">15 minutes ago</span>
+                                        <p>Sed convallis scelerisque mauris, non pulvinar nunc mattis vel. Maecenas varius felis sit amet magna vestibulum euismod malesuada cursus libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus lacinia non nisl id feugiat.</p>
+                                        <small>
+                                            <a><i class="fa fa-heart"></i></a>
+                                            <span class="count">2</span>
+                                            <span class="reply"><a href="#">Reply</a></span>
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Comments -->
+                </div>
+                <!-- /Comments list -->
+
+                <!-- Write comment textarea -->
+                <div class="flex-card compose-card light-bordered">
+                    <figure class="avatar image is-64x64 is-hidden-mobile">
+                        <img class="img-circle" src="https://via.placeholder.com/250x250" alt=""
+                            data-demo-src="assets/images/agency/avatars/helen.jpg">
+                    </figure>
+                    <!-- textarea -->
+                    <div class="control-wrapper">
+                        <div class="control">
+                            <textarea class="textarea is-button" placeholder="Write something..."></textarea>
+                            <div class="textarea-button">
+                                <button class="button primary-btn btn-align raised">Publish</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Textarea -->
+                </div>
+                <!-- /Write comment textarea -->
+            </div>
+
+            <!-- Blog sidebar -->
+            <div class="column">
+                <!-- Search blog -->
+                <div class="control is-blog-search">
+                    <input type="text" placeholder="Search blog">
+                    <i class="sl sl-icon-magnifier"></i>
+                </div>
+
+                <!-- Recent posts -->
+                <div class="flex-card light-bordered">
+                    <div class="card-header">Recent posts</div>
+                    <div class="card-panel">
+                        <!-- Posts -->
+                        <div class="recent-posts">
+                            <!-- Post -->
+                            <div class="recent-post">
+                                <div class="post-title">
+                                    <a href="#">How design has become critical</a>
+                                </div>
+                                <div class="post-meta">
+                                    <span>oct 18 2017</span>
+                                    <img src="https://via.placeholder.com/250x250" alt=""
+                                        data-demo-src="assets/images/agency/avatars/alan.jpg">
+                                </div>
+                            </div>
+                            <!-- Post -->
+                            <div class="recent-post">
+                                <div class="post-title">
+                                    <a href="#">Power up your SPA developments</a>
+                                </div>
+                                <div class="post-meta">
+                                    <span>oct 12 2017</span>
+                                    <img src="https://via.placeholder.com/250x250" alt=""
+                                        data-demo-src="assets/images/agency/avatars/kareem.jpg">
+                                </div>
+                            </div>
+                            <!-- Post -->
+                            <div class="recent-post">
+                                <div class="post-title">
+                                    <a href="#">What branding strategy ?</a>
+                                </div>
+                                <div class="post-meta">
+                                    <span>oct 11 2017</span>
+                                    <img src="https://via.placeholder.com/250x250" alt=""
+                                        data-demo-src="assets/images/agency/avatars/elie.jpg">
+                                </div>
+                            </div>
+                            <!-- Post -->
+                            <div class="recent-post">
+                                <div class="post-title">
+                                    <a href="#">Create customer engagement</a>
+                                </div>
+                                <div class="post-meta">
+                                    <span>sep 28 2017</span>
+                                    <img src="https://via.placeholder.com/250x250" alt=""
+                                        data-demo-src="assets/images/agency/avatars/janet.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Posts -->
+                    </div>
+                </div>
+
+                <!-- Latest comments -->
+                <div class="flex-card light-bordered">
+                    <div class="card-header">Latest comments</div>
+                    <div class="card-panel">
+                        <!-- Comments -->
+                        <div class="latest-comments">
+                            <!-- Comment -->
+                            <div class="latest-comment">
+                                <img src="https://via.placeholder.com/250x250" alt=""
+                                    data-demo-src="assets/images/agency/avatars/alan.jpg">
+                                <div class="comment-info">
+                                    <span class="name"><a href="#">Alan Maynard</a> commented in <span class="post-ref"><a href="#">Power up your SPA developments by using Vue js</a></span></span>
+                                </div>
+                            </div>
+                            <!-- Comment -->
+                            <div class="latest-comment">
+                                <img src="https://via.placeholder.com/250x250" alt=""
+                                    data-demo-src="assets/images/agency/avatars/lakisha.jpg">
+                                <div class="comment-info">
+                                    <span class="name"><a href="#">Lakisha Jackson</a> commented in <span class="post-ref"><a href="#">What branding strategy to choose for an online store ?</a></span></span>
+                                </div>
+                            </div>
+                            <!-- Comment -->
+                            <div class="latest-comment">
+                                <img src="https://via.placeholder.com/250x250" alt=""
+                                    data-demo-src="assets/images/agency/avatars/marc.jpg">
+                                <div class="comment-info">
+                                    <span class="name"><a href="#">Marc Walters</a> commented in <span class="post-ref"><a href="#">How design has become critical in business Projects</a></span></span>
+                                </div>
+                            </div>
+                            <!-- Comment -->
+                            <div class="latest-comment">
+                                <img src="https://via.placeholder.com/250x250" alt=""
+                                    data-demo-src="assets/images/agency/avatars/helen.jpg">
+                                <div class="comment-info">
+                                    <span class="name"><a href="#">Helen Miller</a> commented in <span class="post-ref"><a href="#">Power up your SPA developments by using Vue js</a></span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Comments -->
+                    </div>
+                </div>
+
+                <!-- Blog archives -->
+                <div class="flex-card light-bordered">
+                    <div class="card-header">Archives</div>
+                    <div class="card-panel">
+                        <div class="archives">
+                            <!-- Month -->
+                            <div class="archived-month">
+                                <span><a href="#">June 2017</a></span>
+                                <span class="b-badge badge-outlined rounded">3</span>
+                            </div>
+                            <!-- Month -->
+                            <div class="archived-month">
+                                <span><a href="#">July 2017</a></span>
+                                <span class="b-badge badge-outlined rounded">6</span>
+                            </div>
+                            <!-- Month -->
+                            <div class="archived-month">
+                                <span><a href="#">August 2017</a></span>
+                                <span class="b-badge badge-outlined rounded">2</span>
+                            </div>
+                            <!-- Month -->
+                            <div class="archived-month">
+                                <span><a href="#">September 2017</a></span>
+                                <span class="b-badge badge-outlined rounded">7</span>
+                            </div>
+                            <!-- Month -->
+                            <div class="archived-month">
+                                <span><a href="#">October 2017</a></span>
+                                <span class="b-badge badge-outlined rounded">5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog categories -->
+                <div class="flex-card light-bordered">
+                    <div class="card-header">Categories</div>
+                    <div class="card-panel">
+                        <!-- Categories -->
+                        <div class="post-categories">
+                            <!-- Category -->
+                            <div class="post-category">
+                                <span><a href="#">Webdesign</a></span>
+                                <span class="b-badge badge-outlined rounded is-primary">131</span>
+                            </div>
+                            <!-- Category -->
+                            <div class="post-category">
+                                <span><a href="#">Ecommerce</a></span>
+                                <span class="b-badge badge-outlined rounded is-primary">78</span>
+                            </div>
+                            <!-- Category -->
+                            <div class="post-category">
+                                <span><a href="#">Javascript</a></span>
+                                <span class="b-badge badge-outlined rounded is-primary">49</span>
+                            </div>
+                            <!-- Category -->
+                            <div class="post-category">
+                                <span><a href="#">Email design</a></span>
+                                <span class="b-badge badge-outlined rounded is-primary">12</span>
+                            </div>
+                            <!-- Category -->
+                            <div class="post-category">
+                                <span><a href="#">Business</a></span>
+                                <span class="b-badge badge-outlined rounded is-primary">61</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post tags -->
+                <div class="flex-card light-bordered">
+                    <div class="card-header">Tags</div>
+                    <div class="card-panel padding-20">
+                        <span class="tag is-outlined is-primary">Ecommerce</span>
+                        <span class="tag is-outlined is-primary">Online store</span>
+                        <span class="tag is-outlined is-primary">Product photography</span>
+                        <span class="tag is-outlined is-primary">Abandonned cart</span>
+                    </div>
+                </div>
+            </div>
+            <!-- /Blog sidebar -->
+        </div>
+    </div>
+</section>
+<!-- /Post section -->
+
+{{> footer-dark}}

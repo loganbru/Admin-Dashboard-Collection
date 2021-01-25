@@ -1,0 +1,224 @@
+﻿<!-- ========== Left Sidebar Start ========== -->
+<div class="vertical-menu">
+    <div data-simplebar class="h-100">
+        <!--- Sidemenu -->
+        <div id="sidebar-menu">
+            <!-- Left Menu Start -->
+            <ul class="metismenu list-unstyled" id="side-menu">
+                <li class="menu-title">Main</li>
+                <li>
+                    <a href="@Url.Action("Index","Dashboard")" class="waves-effect">
+                        <i class="ti-home"></i><span class="badge badge-pill badge-primary float-right">2</span>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Index","Calendar")" class=" waves-effect">
+                        <i class="ti-calendar"></i>
+                        <span>Calendar</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <i class="ti-email"></i>
+                        <span>Email</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="@Url.Action("email-inbox","Email")">Inbox</a></li>
+                        <li><a href="@Url.Action("email-read","Email")">Email Read</a></li>
+                        <li><a href="@Url.Action("email-compose","Email")">Email Compose</a></li>
+                    </ul>
+                </li>
+                <li class="menu-title">Components</li>
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <i class="ti-package"></i>
+                        <span>UI Elements</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="@Url.Action("ui-alerts","UI")">Alerts</a></li>
+                        <li><a href="@Url.Action("ui-buttons","UI")">Buttons</a></li>
+                        <li><a href="@Url.Action("ui-cards","UI")">Cards</a></li>
+                        <li><a href="@Url.Action("ui-carousel","UI")">Carousel</a></li>
+                        <li><a href="@Url.Action("ui-dropdowns","UI")">Dropdowns</a></li>
+                        <li><a href="@Url.Action("ui-grid","UI")">Grid</a></li>
+                        <li><a href="@Url.Action("ui-images","UI")">Images</a></li>
+                        <li><a href="@Url.Action("ui-lightbox","UI")">Lightbox</a></li>
+                        <li><a href="@Url.Action("ui-modals","UI")">Modals</a></li>
+                        <li><a href="@Url.Action("ui-rangeslider","UI")">Range Slider</a></li>
+                        <li><a href="@Url.Action("ui-session-timeout","UI")">Session Timeout</a></li>
+                        <li><a href="@Url.Action("ui-progressbars","UI")">Progress Bars</a></li>
+                        <li><a href="@Url.Action("ui-sweet-alert","UI")">Sweet-Alert</a></li>
+                        <li><a href="@Url.Action("ui-tabs-accordions","UI")">Tabs &amp; Accordions</a></li>
+                        <li><a href="@Url.Action("ui-typography","UI")">Typography</a></li>
+                        <li><a href="@Url.Action("ui-video","UI")">Video</a></li>
+                        <li><a href="@Url.Action("ui-general","UI")">General</a></li>
+                        <li><a href="@Url.Action("ui-colors","UI")">Colors</a></li>
+                        <li><a href="@Url.Action("ui-rating","UI")">Rating</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="javascript: void(0);" class="waves-effect">
+                        <i class="ti-receipt"></i>
+                        <span class="badge badge-pill badge-success float-right">6</span>
+                        <span>Forms</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="@Url.Action("form-elements","Form")">Form Elements</a></li>
+                        <li><a href="@Url.Action("form-validation","Form")">Form Validation</a></li>
+                        <li><a href="@Url.Action("form-advanced","Form")">Form Advanced</a></li>
+                        <li><a href="@Url.Action("form-editors","Form")">Form Editors</a></li>
+                        <li><a href="@Url.Action("form-uploads","Form")">Form File Upload</a></li>
+                        <li><a href="@Url.Action("form-xeditable","Form")">Form Xeditable</a></li>
+                        <li><a href="@Url.Action("form-repeater","Form")">Form Repeater</a></li>
+                        <li><a href="@Url.Action("form-wizard","Form")">Form Wizard</a></li>
+                        <li><a href="@Url.Action("form-mask","Form")">Form Mask</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <i class="ti-pie-chart"></i>
+                        <span>Charts</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="@Url.Action("charts-morris","Charts")">Morris Chart</a></li>
+                        <li><a href="@Url.Action("charts-chartist","Charts")">Chartist Chart</a></li>
+                        <li><a href="@Url.Action("charts-chartjs","Charts")">Chartjs Chart</a></li>
+                        <li><a href="@Url.Action("charts-flot","Charts")">Flot Chart</a></li>
+                        <li><a href="@Url.Action("charts-knob","Charts")">Jquery Knob Chart</a></li>
+                        <li><a href="@Url.Action("charts-sparkline","Charts")">Sparkline Chart</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <i class="ti-view-grid"></i>
+                        <span>Tables</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="@Url.Action("tables-basic","Tables")">Basic Tables</a></li>
+                        <li><a href="@Url.Action("tables-datatable","Tables")">Data Table</a></li>
+                        <li><a href="@Url.Action("tables-responsive","Tables")">Responsive Table</a></li>
+                        <li><a href="@Url.Action("tables-editable","Tables")">Editable Table</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <i class="ti-face-smile"></i>
+                        <span>Icons</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="@Url.Action("icons-material","Icons")">Material Design</a></li>
+                        <li><a href="@Url.Action("icons-fontawesome","Icons")">Font Awesome</a></li>
+                        <li><a href="@Url.Action("icons-ion","Icons")">Ion Icons</a></li>
+                        <li><a href="@Url.Action("icons-themify","Icons")">Themify Icons</a></li>
+                        <li><a href="@Url.Action("icons-dripicons","Icons")">Dripicons</a></li>
+                        <li><a href="@Url.Action("icons-typicons","Icons")">Typicons Icons</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="javascript: void(0);" class="waves-effect">
+                        <i class="ti-location-pin"></i>
+                        <span class="badge badge-pill badge-danger float-right">2</span>
+                        <span>Maps</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="@Url.Action("maps-google","Maps")">Google Map</a></li>
+                        <li><a href="@Url.Action("maps-vector","Maps")">Vector Map</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu-title">Extras</li>
+
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <i class="ti-layout"></i>
+                        <span> Layouts </span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="@Url.Action("layouts-vertical","Layouts")">Vertical</a></li>
+                        <li><a href="@Url.Action("layouts-horizontal","Layouts")">Horizontal</a></li>
+                        <li><a href="@Url.Action("layouts-compact-sidebar","Layouts")">Compact Sidebar</a></li>
+                        <li><a href="@Url.Action("layouts-icon-sidebar","Layouts")">Icon Sidebar</a></li>
+                        <li><a href="@Url.Action("layouts-boxed","Layouts")">Boxed Layout</a></li>
+                    </ul>
+                </li>
+
+
+
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <i class="ti-archive"></i>
+                        <span> Authentication </span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="@Url.Action("pages-login","Pages")">Login 1</a></li>
+                        <li><a href="@Url.Action("pages-login-2","Pages")">Login 2</a></li>
+                        <li><a href="@Url.Action("pages-register","Pages")">Register 1</a></li>
+                        <li><a href="@Url.Action("pages-register-2","Pages")">Register 2</a></li>
+                        <li><a href="@Url.Action("pages-recoverpw","Pages")">Recover Password 1</a></li>
+                        <li><a href="@Url.Action("pages-recoverpw-2","Pages")">Recover Password 2</a></li>
+                        <li><a href="@Url.Action("pages-lock-screen","Pages")">Lock Screen 1</a></li>
+                        <li><a href="@Url.Action("pages-lock-screen-2","Pages")">Lock Screen 2</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <i class="ti-support"></i>
+                        <span>  Extra Pages  </span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="@Url.Action("pages-timeline","Pages")">Timeline</a></li>
+                        <li><a href="@Url.Action("pages-invoice","Pages")">Invoice</a></li>
+                        <li><a href="@Url.Action("pages-directory","Pages")">Directory</a></li>
+                        <li><a href="@Url.Action("pages-blank","Pages")">Blank Page</a></li>
+                        <li><a href="@Url.Action("pages-404","Pages")">Error 404</a></li>
+                        <li><a href="@Url.Action("pages-500","Pages")">Error 500</a></li>
+                        <li><a href="@Url.Action("pages-pricing","Pages")">Pricing</a></li>
+                        <li><a href="@Url.Action("pages-gallery","Pages")">Gallery</a></li>
+                        <li><a href="@Url.Action("pages-maintenance","Pages")">Maintenance</a></li>
+                        <li><a href="@Url.Action("pages-comingsoon","Pages")">Coming Soon</a></li>
+                        <li><a href="@Url.Action("pages-faq","Pages")">FAQs</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <i class="ti-bookmark-alt"></i>
+                        <span>  Email Templates  </span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="@Url.Action("email-template-basic","EmailTemplates")">Basic Action Email</a></li>
+                        <li><a href="@Url.Action("email-template-Alert","EmailTemplates")">Alert Email</a></li>
+                        <li><a href="@Url.Action("email-template-Billing","EmailTemplates")">Billing Email</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <i class="ti-more"></i>
+                        <span>Multi Level</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="true">
+                        <li><a href="javascript: void(0);">Level 1.1</a></li>
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow">Level 1.2</a>
+                            <ul class="sub-menu" aria-expanded="true">
+                                <li><a href="javascript: void(0);">Level 2.1</a></li>
+                                <li><a href="javascript: void(0);">Level 2.2</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+        <!-- Sidebar -->
+    </div>
+</div>
+<!-- Left Sidebar End -->

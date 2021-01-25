@@ -1,0 +1,309 @@
+<div [ngSwitch]="contentType">
+    <!-- START Standard Page -->
+    <ng-template [ngIf]="contentType == 'plainContent'">
+        <!-- START PAGE COVER -->
+        <div class=" container-fluid   container-fixed-lg">
+          <ul class="breadcrumb p-l-0">
+            <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a>
+            </li>
+            <li class="breadcrumb-item active">Plain Template
+            </li>`
+          </ul>
+          <!-- END BREADCRUMB --> 
+          <h3 class="page-title">Page Title</h3>
+        </div>
+        <div class=" container-fluid   container-fixed-lg">
+          <!-- YOU CAN REMOVE .container-fixed-lg TO DISABLE THE FEATURE WHERE THE CONTENT
+              ALIGNS TO THE CENTER WITHOUT STRECTHING UNGLY ON 1800PX(1080P & 4/5K MONITORS) UP WORDS SCREEN
+                -->
+          <!-- CONTENT GOES HERE-->
+        </div>
+    </ng-template>
+    <!-- END Standard Page -->
+  
+    <!-- START Parallax Cover Page -->
+    <ng-template [ngIf]="contentType == 'parallaxCoverpage'">
+      <!-- START JUMBOTRON -->
+      <div class="jumbotron page-cover">
+          <div class=" container-fluid   container-fixed-lg">
+            <div class="inner" pg-parallax>
+              <!-- START BREADCRUMB -->
+                <ol class="breadcrumb p-l-0">
+                <li class="breadcrumb-item"><a href="javascript:void(0)">UI Elements</a></li>
+                <li class="breadcrumb-item active">Typography</li>
+              </ol>
+              <!-- END BREADCRUMB --> 
+              <div class="container-md-height m-b-20">
+                <div class="row m-lg-0">
+                  <div class="col-xl-7 col-lg-6 bg-white">
+                    <!-- START card -->
+                    <div class="full-height">
+                      <div class="card-body text-center">
+                        <img class="image-responsive-height demo-mw-500" src="assets/img/demo/typography_hero.gif" alt="">
+                      </div>
+                    </div>
+                    <!-- END card -->
+                  </div>
+                  <div class="col-xl-5 col-lg-6">
+                    <!-- START card -->
+                    <div class="card card-transparent">
+                      <div class="card-header ">
+                        <div class="card-title">Getting started
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <h3>One of the most underestimated elements of design is typography. However, it’s critical in both print and web media. We Made it Perfect in both.</h3>
+                        <p>This feature in our product specifically creates hinted fonts for various OS browsers; whether its Windows, Mac OSx, or ubuntu, it does it for all.</p>
+                        <br>
+                        <div>
+                          <div class="profile-img-wrapper m-t-5 inline">
+                            <img width="35" height="35" src="assets/img/profiles/avatar_small.jpg" alt="" pgRetina src1x="assets/img/profiles/avatar_small.jpg" src2x="assets/img/profiles/avatar_small2x.jpg">
+                            <div class="chat-status available">
+                            </div>
+                          </div>
+                          <div class="inline m-l-10">
+                            <p class="small hint-text m-t-5">VIA senior product manage
+                              <br> for fonts and typography at REVOX</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- END card -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <!-- END JUMBOTRON -->
+          <div class=" container-fluid   container-fixed-lg demo-container">
+            <!-- PLEASE REMOVE demo-container CLASS FROM THIS DIV, ITS ONLY FOR DEMO PUPPOSE
+                    TO SHOW THE PARRALAX EFFECT
+                  -->
+          </div>
+    </ng-template>
+    <!-- END Parallax Cover Page -->
+  
+    <!-- START Full Height Parallax Page -->
+    <ng-template [ngIf]="contentType == 'fullheightParallax'">
+    <!-- START JUMBOTRON -->
+    <div class="jumbotron full-height no-padding">
+        <div class=" container-fluid   container-fixed-lg sm-p-l-0 sm-p-r-0 full-height">
+          <div class="inner full-height d-flex align-items-center" pg-parallax>
+            <div class="row justify-content-center full-width">
+                <div class="col-md-6 text-center">
+                  <h2 class="text-center">
+                                <img src="assets/img/logo.png" alt="logo">
+                                    makes it super-easy to create your
+                                    dashboard Without a designer.
+                                </h2>
+                  <button class="btn btn-success btn-rounded">Live Preview</button>
+                  <button class="btn btn-link text-white">Watch Video</button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END JUMBOTRON -->
+      <div class=" container-fluid   container-fixed-lg demo-container">
+        <!-- PLEASE REMOVE THE HEIGHT STYLE FROM THIS DIV, ITS ONLY FOR DEMO PUPPOSE
+                    TO SHOW THE PARRALAX EFFECT
+                  -->
+      </div>
+    </ng-template>
+    <!-- END Full Height Parallax Page -->
+  
+    <!-- START Title Parallax -->
+    <ng-template [ngIf]="contentType == 'titleParallax'">
+        <!-- START JUMBOTRON -->
+        <div class="jumbotron  no-margin">
+          <div class=" container-fluid   container-fixed-lg sm-p-l-0 sm-p-r-0">
+            <div class="inner" pg-parallax>
+              <h3 class="">Page Title</h3>
+            </div>
+          </div>
+        </div>
+        <!-- END JUMBOTRON -->
+        <div class=" container-fluid   container-fixed-lg demo-container">
+          <!-- START BREADCRUMB -->
+            <ul class="breadcrumb p-l-0">
+            <li class="breadcrumb-item">
+              <a href="javascript:void(0)">Home</a>
+            </li>
+            <li class="breadcrumb-item active">Parallax for page title
+            </li>
+          </ul>
+          <!-- END BREADCRUMB --> 
+          <!-- PLEASE REMOVE demo-container CLASS ABOVE, ITS ONLY FOR DEMO PUPPOSE
+                  TO SHOW THE PARRALAX EFFECT
+                -->
+        </div>
+    </ng-template>
+    <!-- END Title Parallax -->
+  
+    <!-- START Column Layout -->
+    <ng-template [ngIf]="contentType == 'columns-3-9'">
+        <div class="container-fluid full-height no-padding">
+          <div class="row full-height no-margin">
+            <div class="col-md-3 no-padding b-r b-grey sm-b-b full-height">
+              <div class="bg-white full-height">
+                <!-- YOU CAN REMOVE FULL-HEIGHT IN ALL PARENT ELEMENTS TO EXPEND TO CONTENT HEIGHT
+                          YOU CAN ALSO CHANGE THE BACKGROUN COLOR BY ADDING THE BG CLASSES
+                          EXAMPLE : bg-success
+                        -->
+              </div>
+            </div>
+            <div class="col-md-9 no-padding full-height">
+              <div class="placeholder full-height">
+                <!-- YOU CAN REMOVE FULL-HEIGHT IN ALL PARENT ELEMENTS TO EXPEND TO CONTENT HEIGHT
+                          YOU CAN ALSO CHANGE THE BACKGROUN COLOR BY ADDING THE BG CLASSES
+                          EXAMPLE : bg-success
+                        -->
+              </div>
+            </div>
+          </div>
+        </div>
+    </ng-template>
+    <!-- END Column Layout -->
+  
+    <!-- START Column Layout -->
+    <ng-template [ngIf]="contentType == 'columns-9-3'">
+        <div class="container-fluid full-height no-padding">
+            <div class="row full-height no-margin">
+              <div class="col-md-9 no-padding b-r b-grey full-height">
+                <div class="full-height placeholder">
+                  <!-- YOU CAN REMOVE FULL-HEIGHT IN ALL PARENT ELEMENTS TO EXPEND TO CONTENT HEIGHT
+                              YOU CAN ALSO CHANGE THE BACKGROUN COLOR BY ADDING THE BG CLASSES
+                              EXAMPLE : bg-success
+                            -->
+                </div>
+              </div>
+              <div class="col-md-3 no-padding full-height">
+                <div class="bg-white  full-height">
+                  <!-- YOU CAN REMOVE FULL-HEIGHT IN ALL PARENT ELEMENTS TO EXPEND TO CONTENT HEIGHT
+                              YOU CAN ALSO CHANGE THE BACKGROUN COLOR BY ADDING THE BG CLASSES
+                              EXAMPLE : bg-success
+                            -->
+                </div>
+              </div>
+            </div>
+          </div>
+    </ng-template>
+    <!-- END Column Layout -->
+  
+    <!-- START Column Layout -->
+  <ng-template [ngIf]="contentType == 'columns-6-6'">
+        <div class="container-fluid full-height no-padding">
+            <div class="row full-height no-margin">
+              <div class="col-md-6 no-padding b-r b-grey full-height">
+                <div class="bg-white full-height">
+                  <!-- YOU CAN REMOVE FULL-HEIGHT IN ALL PARENT ELEMENTS TO EXPEND TO CONTENT HEIGHT
+                          YOU CAN ALSO CHANGE THE BACKGROUN COLOR BY ADDING THE BG CLASSES
+                          EXAMPLE : bg-success
+                        -->
+                </div>
+              </div>
+              <div class="col-md-6 no-padding full-height">
+                <div class="bg-white full-height">
+                  <!-- YOU CAN REMOVE FULL-HEIGHT IN ALL PARENT ELEMENTS TO EXPEND TO CONTENT HEIGHT
+                          YOU CAN ALSO CHANGE THE BACKGROUN COLOR BY ADDING THE BG CLASSES
+                          EXAMPLE : bg-success
+                        -->
+                </div>
+              </div>
+            </div>
+        </div>
+  </ng-template>
+    <!-- END Column Layout -->
+  </div>
+  <div class="quickview-wrapper  builder hidden-sm hidden-xs" [class.open]="viewOpen">
+      <div class="p-l-30 p-r-30 m-t-10">
+        <a class="builder-close quickview-toggle pg pg-close" (click)="closeView()" href="javascript:void(0)"></a>
+        <a class="builder-toggle" (click)="toggleView()"><i class="pg pg-theme"></i></a>
+        <pg-tabset tabAnimation="slide-left" Type="simple" ShowPagination="true" extraTabContentClass="p-l-30">
+            <pg-tab>
+              <ng-template #TabHeading>
+                  Layouts
+              </ng-template>
+              <div class="scrollable">
+                  <div class="p-l-10 p-r-50">
+                    <h5 class="semi-bold">
+                      Layout options
+                    </h5>
+                    <p class="no-margin">
+                      Builder make it easier
+                    </p>
+                    <p class="small hint-text m-b-20">
+                      Customize and Preview your dashboard.
+                    </p>
+                    <div class="row p-b-35">
+                      <div class="col-6 ">
+                        <a class="btn-toggle-layout fs-12 " [class.active]="layoutType =='headerBelow'" href="javascript:void(0)" (click)="headerBelow()">
+                          <img alt="Menu divided icon" class="m-b-15" src="assets/img/demo/menu_divided.png" pgRetina src1x="assets/img/demo/menu_divided.png" src2x="assets/img/demo/menu_divided_2x.png" width="126" height="95">
+                          <span class="m-t-5">Divided Header & Condensed / Quick Menu</span></a>
+                      </div>
+                      <div class="col-6">
+                        <a class="btn-toggle-layout fs-12" [class.active]="layoutType ==='headerTop'"  href="javascript:void(0)" (click)="headerTop()">
+                          <img alt="Full header icon" class="m-b-15 " src="assets/img/demo/full_header.png" src2x="assets/img/demo/full_header_2x.png" width="126" height="95"> 
+                          <span class="m-t-5">Full Width Header & Condensed/ Quick
+                Menu</span></a>
+                      </div>
+                    </div>
+      
+                  </div>
+                </div>
+            </pg-tab>
+            <pg-tab>
+                <ng-template #TabHeading>
+                    Content
+                </ng-template>
+                <div class="scrollable" perfectScrollbar>
+                    <div class="p-l-10 p-r-50">
+                      <h5 class="semi-bold">
+                        Content
+                      </h5>
+                      <p class=" hint-text no-margin">
+                        Builder make it easier
+                      </p>
+                      <p class="small hint-text m-b-20">
+                        Customize and Preview your dashboard.
+                      </p>
+                      <ul class="">
+                        <li class="full-width m-b-30">
+                          <a class="btn-toggle-content content-select" [class.active]="contentType =='plainContent'" href="javascript:void(0)" (click)="selectContent(0)">
+                            <img alt="Blank" class="m-b-10 image-responsive-height" src="assets/img/demo/blank.svg"> Plain
+                          </a>
+                        </li>
+                        <li class="full-width m-b-30">
+                          <a class="btn-toggle-content content-select" [class.active]="contentType =='parallaxCoverpage'" href="javascript:void(0)" (click)="selectContent(1)">
+                            <img alt="Parallax cover" class="m-b-10 image-responsive-height" src="assets/img/demo/paralax_cover.gif"> Coverpage with parallax</a>
+                        </li>
+                        <li class="full-width m-b-30">
+                          <a class="btn-toggle-content content-select" [class.active]="contentType =='fullheightParallax'" href="javascript:void(0)" (click)="selectContent(2)">
+                            <img alt="Parallax full" class="m-b-10 image-responsive-height" src="assets/img/demo/paralax_full.gif"> Full height coverpage with parallax</a>
+                        </li>
+                        <li class="full-width m-b-30">
+                          <a class="btn-toggle-content content-select" [class.active]="contentType =='titleParallax'" href="javascript:void(0)" (click)="selectContent(3)">
+                            <img alt="Parallax title" class="m-b-10 image-responsive-height" src="assets/img/demo/paralax_title.gif"> Page title parallax
+                          </a>
+                        </li>
+                        <li class="full-width m-b-30">
+                          <a class="btn-toggle-content content-select" [class.active]="contentType =='columns-3-9'" href="javascript:void(0)" (click)="selectContent(4)">
+                            <img alt="3_9" class="m-b-10 image-responsive-height" src="assets/img/demo/3_9.svg"> Column view (3 : 9)</a>
+                        </li>
+                        <li class="full-width m-b-30">
+                          <a class="btn-toggle-content content-select" [class.active]="contentType =='columns-9-3'" href="javascript:void(0)" (click)="selectContent(5)">
+                            <img alt="9_3" class="m-b-10 image-responsive-height" src="assets/img/demo/9_3.svg"> Column view (9 : 3)</a>
+                        </li>
+                        <li class="full-width m-b-30">
+                          <a class="btn-toggle-content content-select" [class.active]="contentType =='columns-6-6'" href="javascript:void(0)" (click)="selectContent(6)">
+                            <img alt="6_6" class="m-b-10 image-responsive-height" src="assets/img/demo/6_6.svg"> Column view (6 : 6)</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+            </pg-tab>
+        </pg-tabset>
+  
+      </div>
+  </div>

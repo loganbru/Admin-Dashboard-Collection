@@ -1,0 +1,29 @@
+{
+  "name": "is-shallow-equal",
+  "version": "1.0.1",
+  "description": "Shallowly compares two objects",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": "vesparny/is-shallow-equal",
+  "keywords": [
+    "compare",
+    "shallow",
+    "equal",
+    "objects"
+  ],
+  "homepage": "https://github.com/vesparny/is-shallow-equal",
+  "authors": [
+    "Alessandro Arnodo <alessandro@arnodo.net>"
+  ],
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "test.js"
+  ],
+  "devDependencies": {
+    
+  },
+  "dependencies": {}
+}

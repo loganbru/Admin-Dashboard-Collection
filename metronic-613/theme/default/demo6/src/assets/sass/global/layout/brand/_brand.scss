@@ -1,0 +1,36 @@
+//
+// Aside Brand
+//
+
+
+
+.kt-header__brand {
+	display: flex;
+	flex-direction: row;
+	padding: 0 kt-get($kt-page-padding, desktop);
+	height: kt-get($kt-header-config, base, desktop, default, height);
+	background-color: $kt-secondary-brand-color;
+	justify-content: center;
+	align-self: center;
+	width: 100%;
+	
+	.kt-header__brand-logo {
+		display: flex;
+		align-self: center;
+		justify-content: center;
+	}
+}
+
+@include kt-desktop {
+	.kt-header__brand {
+		width: kt-get($kt-aside-config, base, minimize, width);
+		transition: kt-get($kt-aside-config, base, minimize, transition);
+	}
+}
+
+// Tablet and mobile mode
+@include kt-tablet-and-mobile {
+	.kt-header__brand {
+		display: none;
+	}
+}

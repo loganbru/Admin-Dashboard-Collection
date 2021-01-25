@@ -1,0 +1,449 @@
+/*
+ * Dashforge Page Components
+ *
+ * This style is use for demo purpose only.
+ *
+ */
+
+// Variables
+@import "../variables";
+@import "../bootstrap/variables";
+
+// Mixins
+@import "../mixins";
+@import "../bootstrap/mixins";
+
+// Bootsrap
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+
+.content-components {
+  font-size: 16px;
+  padding: 20px;
+  position: relative;
+  color: $color-text-02;
+  letter-spacing: -0.2px;
+
+  @include media-breakpoint-up(lg) {
+    padding: 25px;
+    margin-top: $height-header;
+    margin-left: $width-sidebar;
+  }
+
+  @include media-breakpoint-up(xl) {
+    padding: 30px;
+    margin-right: $width-sidebar;
+  }
+
+  .container {
+    padding: 0;
+    max-width: 780px;
+  }
+
+  pre[class*="language-"],
+  code[class*="language-"] {
+    border-color: $border-color;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 12px;
+    letter-spacing: normal;
+    background-color: lighten($color-ui-01,1%);
+  }
+}
+
+.df-breadcrumbs {
+  padding: 0;
+  background-color: transparent;
+
+  .breadcrumb-item {
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: $font-weight-semibold;
+    font-family: $font-family-system;
+
+    @include media-breakpoint-up(sm) { letter-spacing: .5px; }
+
+    a {
+      color: $color-text-02;
+      @include transition($transition-base);
+    }
+
+    &.active {
+      color: $color-brand-01;
+    }
+
+    + .breadcrumb-item {
+      padding-left: 8px;
+
+      &::before {
+        color: $color-ui-03;
+        padding-right: 8px;
+        font-weight: $font-weight-medium;
+      }
+    }
+  }
+}
+
+.df-title {
+  font-size: 32px;
+  font-weight: $font-weight-base;
+  color: $color-text-01;
+  letter-spacing: -.5px;
+  margin-bottom: 20px;
+  text-indent: -2px;
+
+  @include media-breakpoint-up(sm) { font-size: 36px; }
+  @include media-breakpoint-up(lg) {
+    font-size: 40px;
+    margin-bottom: 35px;
+  }
+}
+
+.df-lead {
+  color: $color-text-01;
+  letter-spacing: normal;
+
+  @include media-breakpoint-up(sm) {
+    font-size: 18px;
+    font-weight: $font-weight-light;
+    margin-bottom: 45px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: 20px;
+  }
+}
+
+.df-example {
+  font-size: $font-size-base;
+  letter-spacing: normal;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid $border-color;
+  position: relative;
+
+  @include media-breakpoint-up(lg) {
+    padding: 20px;
+  }
+
+  @include media-breakpoint-up(xl) { padding: 25px; }
+
+  &::before {
+    content: attr(data-label);
+    display: block;
+    position: absolute;
+    top: -6px;
+    left: 5px;
+    font-size: 8px;
+    font-weight: 600;
+    font-family: $font-family-system;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: inherit;
+    color: $color-text-03;
+    padding: 0 5px;
+  }
+
+  &.df-inverse {
+    background-color: $gray-900;
+    color: rgba(#fff, .7);
+    border-width: 0;
+
+    &::before {
+      background-color: $gray-800;
+      top: -16px;
+      left: 0;
+    }
+  }
+}
+
+.section-nav {
+  position: fixed;
+  top: $height-header;
+  bottom: 0;
+  right: 0;
+  width: $width-sidebar;
+  padding: 30px;
+  display: none;
+
+  @include media-breakpoint-up(xl) {
+    display: block;
+    border-left: 1px solid $border-color;
+  }
+
+
+  .nav-label {
+    font-size: 10px;
+    font-weight: 500;
+    font-family: $font-family-system;
+    text-transform: uppercase;
+    letter-spacing: .7px;
+    color: $color-text-03;
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  .nav-link {
+    color: $color-text-02;
+    padding: 0;
+    display: block;
+    position: relative;
+    white-space: nowrap;
+    font-size: 13px;
+
+    @include hover() { color: $color-brand-01; }
+
+    + .nav-link { margin-top: 5px; }
+
+    &.active {
+      color: $color-brand-01;
+      font-weight: $font-weight-medium;
+      letter-spacing: -.12px;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: -31px;
+        margin-top: -.5px;
+        background-color: $color-brand-01;
+        height: 1px;
+        width: 30px;
+      }
+    }
+  }
+}
+
+// el-avatar.html
+.demo-avatar-group {
+  display: flex;
+  align-items: center;
+
+  .avatar {
+    flex-shrink: 0;
+
+    + .avatar {
+      margin-left: 5px;
+      @include media-breakpoint-up(sm) { margin-left: 10px; }
+    }
+  }
+}
+
+
+// any components pages
+.table-components {
+  border: 1px solid $border-color;
+
+  thead th {
+    font-size: 10px;
+    font-family: $font-family-system;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-bottom: 0;
+    border-color: $border-color;
+    background-color: $color-ui-01;
+    white-space: nowrap;
+  }
+
+  tbody td {
+    padding: 8px 10px;
+    border-color: $border-color;
+    font-size: $font-size-base;
+
+    code,
+    &:first-child {
+      color: $red;
+      font-size: 12px;
+      font-family: 'Roboto Mono', monospace;
+    }
+  }
+}
+
+// el-buttons.html
+.demo-btn-group {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .btn {
+    margin-top: 5px;
+    margin-right: 5px;
+
+    @include media-breakpoint-up(lg) { margin-top: 0; }
+  }
+}
+
+// el-icons.html
+.demo-icons-group {
+  i {
+    font-size: 26px;
+    line-height: .5;
+
+    &.far { font-size: 24px; }
+  }
+}
+
+.demo-modal-static {
+  background-color: $gray-500;
+
+  .modal {
+    display: block;
+    position: static;
+  }
+}
+
+.demo-modal-btn {
+  padding: 10px;
+  border: 1px solid $border-color;
+  background-color: darken($gray-100, 1%);
+
+  @include media-breakpoint-up(sm) {
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 500;
+    font-family: $font-family-system;
+    letter-spacing: 1px;
+
+    + .btn {
+      margin-top: 5px;
+
+      @include media-breakpoint-up(sm) {
+        margin-top: 0;
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
+// el-popovers.html
+.navbar-header-popover {
+  @include media-breakpoint-up(lg) { z-index: 1080; }
+}
+
+.content-popovers {
+  @include media-breakpoint-up(lg) {
+    height: calc(100vh - $height-header);
+    overflow-y: auto;
+    margin-right: 0;
+    position: relative;
+  }
+
+  @include media-breakpoint-up(xl) { padding-right: 285px; }
+}
+
+.section-nav-popovers {
+  bottom: 0;
+  z-index: 1000;
+  background-color: #fff;
+  border-left: 1px solid rgba($gray-900, .06);
+}
+
+// el-toast.html
+.demo-static-toast {
+  .toast { opacity: 1; }
+}
+
+// el-table-basic-html
+.demo-table {
+  .table {
+    th,
+    td { white-space: nowrap; }
+  }
+}
+
+// util-animation.html
+.demo-animate-media {
+  flex-direction: column;
+  align-items: stretch;
+
+  @include media-breakpoint-up(sm) {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .media-body {
+    background-color: $color-ui-01;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    order: 1;
+  }
+}
+
+.demo-animate-list {
+  padding-top: 10px;
+  order: 2;
+
+  @include media-breakpoint-up(sm) {
+    order: 1;
+    padding-top: 0;
+    padding-right: 1px;
+  }
+
+  .nav-link {
+    padding: 7px 10px;
+    background-color: $color-ui-02;
+
+    @include media-breakpoint-up(sm) {
+      width: 150px;
+    }
+
+    @include hover() {
+      background-color: $color-ui-03;
+      color: inherit;
+    }
+
+    + .nav-link { margin-top: 1px; }
+
+    &.active {
+      background-color: $color-brand-01;
+      color: #fff;
+    }
+  }
+}
+
+.demo-animate-item {
+  background-color: $gray-800;
+  padding: 15px 20px;
+  width: 175px;
+  @include border-radius();
+
+  .df-logo {
+    color: #fff;
+    letter-spacing: -1px;
+
+    &::before { flex-shrink: 0; }
+  }
+}
+
+// form-elements.html
+.demo-forms {
+  .form-control,
+  .input-group-text { font-size: inherit; }
+}
+
+//chart-morris.html
+.morris-wrapper-demo {
+  height: 200px;
+  position: relative;
+  margin-left: -15px;
+  margin-right: -15px;
+
+  @include media-breakpoint-up(sm) { height: 300px; }
+}
+
+.morris-donut-wrapper-demo {
+  height: 200px;
+  @include media-breakpoint-up(sm) { height: 250px; }
+}

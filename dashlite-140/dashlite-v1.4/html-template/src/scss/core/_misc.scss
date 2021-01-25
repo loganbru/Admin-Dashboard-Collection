@@ -1,0 +1,48 @@
+// Shadow on card 
+.has-shadow {
+    &.bg-lighter {
+        .card, .sp-pdl-item, .invoice-wrap, .accordion {
+            box-shadow: 0 0 8px -3px rgba($shadow-color-light, 0.15);
+        }
+    }
+    .card, .sp-pdl-item, .invoice-wrap, .accordion {
+        box-shadow: 0 0 6px -2px rgba($shadow-color-light, 0.2);
+    }
+    .data-head, .data-item {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .card .data-head:not(.is-plain) {
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
+        padding-left: 0.75rem;
+    }
+    .nav-tabs {
+        box-shadow: 0 2px 0 -1px rgba($shadow-color-light, 0.06);
+    }
+    .nk-header {
+        box-shadow: 0 3px 0 -1px rgba($shadow-color-light, 0.04);
+    }
+}
+
+.nio-version {
+    text-transform: uppercase;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    position: absolute;
+    right: -1px;
+    bottom: -3px;
+}
+
+.code {
+    &-tag {
+        color: $purple;
+    }
+    &-class {
+        color: $pink;
+    }
+    &-fnc {
+        color: $cyan;
+    }
+}

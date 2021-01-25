@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/core.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script type="text/javascript" src="assets/js/plugins/ui/prism.min.js"></script>
+	
+	<script type="text/javascript" src="assets/js/core/app.js"></script>
+	<script type="text/javascript" src="assets/js/pages/sidebar_detached_sticky_native.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body data-spy="scroll" data-target=".sidebar-detached" class="has-detached-right">
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-default navbar-lg header-highlight">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="index.html"><img src="assets/images/logo_light.png" alt=""></a>
+
+			<ul class="nav navbar-nav pull-right visible-xs-block">
+				<li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+				<li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+				<li><a class="sidebar-mobile-detached-toggle"><i class="icon-grid7"></i></a></li>
+			</ul>
+		</div>
+
+		<div class="navbar-collapse collapse" id="navbar-mobile">
+			<ul class="nav navbar-nav">
+				<li><a class="sidebar-control sidebar-main-hide hidden-xs"><i class="icon-paragraph-justify3"></i></a></li>
+				<li><a class="sidebar-control sidebar-detached-hide hidden-xs"><i class="icon-drag-right"></i></a></li>
+			</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="other_changelog.html">Changelog <span class="label label-inline bg-warning-400 position-right">v. 2.0</span></a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page container -->
+	<div class="page-container">
+
+		<!-- Page content -->
+		<div class="page-content">
+
+			<!-- Main sidebar -->
+			<div class="sidebar sidebar-main">
+				<div class="sidebar-content">
+
+	        		<!-- Support -->
+					<div class="sidebar-category no-margin">
+						<div class="category-title">
+							<span>Have questions?</span>
+							<i class="icon-help text-muted pull-right"></i>
+						</div>
+
+						<div class="category-content">
+							<a href="http://kopyov.ticksy.com" class="btn bg-success-400 btn-block" target="_blank"><i class="icon-lifebuoy position-left"></i> Limitless support</a>
+						</div>
+					</div>
+					<!-- /support -->
+
+
+					<!-- Main navigation -->
+					<div class="sidebar-category">
+						<div class="category-title">
+							<span>Navigation</span>
+							<i class="icon-menu7 text-muted pull-right"></i>
+						</div>
+
+						<div class="category-content no-padding">
+							<ul class="navigation navigation-main navigation-accordion">
+
+								<!-- Main -->
+								<li class="navigation-header">Main</li>
+								<li><a href="index.html">Introduction</a></li>
+								<li><a href="main_getting_started.html">Getting started</a></li>
+								<li><a href="main_starter_kit.html">Starter kit</a></li>
+								<li><a href="main_rtl.html">RTL layout</a></li>
+
+								<li class="navigation-header">Basic functionality</li>								
+								<li><a href="base_less_css.html">LESS and CSS</a></li>
+								<li><a href="base_less_compile.html">Compiling LESS</a></li>
+								<li><a href="base_less_compile_rtl.html">Compiling LESS for RTL version</a></li>
+								<li>
+									<a href="#">Plugins</a>
+									<ul>
+										<li><a href="plugins_forms.html">Forms</a></li>
+										<li><a href="plugins_forms_styling.html">Form styling</a></li>
+										<li><a href="plugins_selects.html">Selects</a></li>
+										<li><a href="plugins_editors.html">Editors</a></li>
+										<li><a href="plugins_uploaders.html">Uploaders</a></li>
+										<li><a href="plugins_wizards.html">Wizards</a></li>
+										<li><a href="plugins_extensions.html">Extensions</a></li>
+										<li><a href="plugins_notifications.html">Notifications</a></li>
+										<li><a href="plugins_pickers.html">Pickers</a></li>
+										<li><a href="plugins_tables.html">Tables</a></li>
+										<li><a href="plugins_ui.html">UI</a></li>
+										<li><a href="plugins_vis.html">Visualization</a></li>
+									</ul>
+								</li>
+								<li><a href="base_bootstrap.html">Bootstrap</a></li>
+								<li><a href="base_color_system.html">Color system</a></li>
+								<li class="active"><a href="base_helpers.html">Helpers</a></li>
+								<li><a href="base_themes.html">Themes</a></li>
+
+								<li class="navigation-header">Layout options</li>
+								<li><a href="layout_markup.html">Markup</a></li>
+								<li><a href="layout_sidebars.html">Sidebars</a></li>
+								<li><a href="layout_navbars.html">Navbars</a></li>
+								<li><a href="layout_v_nav.html">Vertical navigation</a></li>
+								<li><a href="layout_h_nav.html">Horizontal navigation</a></li>
+								<li><a href="layout_page_header.html">Page header</a></li>
+								<li><a href="layout_footer.html">Footer</a></li>
+
+								<li class="navigation-header">Other</li>
+								<li><a href="other_credits.html">Sources and credits</a></li>
+								<li><a href="other_changelog.html">Changelog <span class="label bg-warning-400">version 2.0</span></a></li>
+								<!-- /main -->
+
+							</ul>
+						</div>
+					</div>
+					<!-- /main navigation -->
+
+				</div>
+			</div>
+			<!-- /main sidebar -->
+
+
+			<!-- Main content -->
+			<div class="content-wrapper">
+
+				<!-- Page header -->
+				<div class="page-header">
+					<div class="page-header-content">
+						<div class="page-title">
+							<h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold">Limitless</span> - Helpers</h4>
+						</div>
+
+						<div class="heading-elements">
+							<ul class="breadcrumb">
+								<li><a href="index.html"><i class="icon-home2 position-left"></i> Home</a></li>
+								<li class="active">Helpers</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- /page header -->
+				
+
+				<!-- Content area -->
+				<div class="content">
+
+					<!-- Detached content -->
+					<div class="container-detached">
+						<div class="content-detached">
+
+							<!-- Helpers -->
+							<div class="panel panel-flat">
+								<div class="panel-heading">
+									<h5 class="panel-title">Helper classes</h5>
+									<div class="heading-elements">
+										<ul class="icons-list">
+					                		<li><a data-action="collapse"></a></li>
+					                		<li><a data-action="close"></a></li>
+					                	</ul>
+				                	</div>
+								</div>
+
+								<div class="panel-body">
+									Besides basic typography classes, helper classes are an extra set of additional predefined classes, that can be applied to different content or layout elements and components. Helper classes are custom additions mostly, written especially for current layout, except common BS helpers. Below is a summarized table with all available classes, descriptions and content type.
+								</div>
+
+								<div class="table-responsive">
+									<table class="table table">
+										<tbody>
+											<tr class="border-double active" id="styling">
+												<td colspan="3"><span class="text-semibold">Styling</span></td>
+											</tr>
+											<tr>
+												<td style="width: 350px;"><code>.cursor-move</code></td>
+												<td class="text-muted" style="width: 200px;">Any element</td>
+												<td>Changes cursor style to <code>move</code>. Mostly used in sortable components</td>
+											</tr>
+											<tr>
+												<td><code>.cursor-pointer</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Changes cursor style to <code>pointer</code>. Useful for user interaction feedback</td>
+											</tr>
+											<tr>
+												<td><code>.cursor-default</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Changes cursor style to <code>default</code></td>
+											</tr>
+											<tr>
+												<td><code>.border-*</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Adds <code>1px</code> border to the element, if it doesn't have it already. Available in 4 positions: top, bottom, left, right</td>
+											</tr>
+											<tr>
+												<td><code>.border-lg</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Changes border width to <code>2px</code></td>
+											</tr>
+											<tr>
+												<td><code>.border-*-lg</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Does the same as <code>.border-lg</code>, but here you can specify border position: left, right, top and bottom</td>
+											</tr>
+											<tr>
+												<td><code>.border-xlg</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Changes border width to <code>3px</code></td>
+											</tr>
+											<tr>
+												<td><code>.border-*-xlg</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Does the same as <code>.border-xlg</code>, but here you can specify border position: left, right, top and bottom</td>
+											</tr>
+											<tr>
+												<td><code>.no-border-radius</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Removes border radius from the element. Supports 4 sidebar separately, to use add <code>.*-top (bottom, left, right)</code> suffix</td>
+											</tr>
+											<tr>
+												<td><code>.text-highlight</code></td>
+												<td class="text-muted">Text only</td>
+												<td>Highlights inline element, background class is required</td>
+											</tr>
+											<tr>
+												<td><code>.heading-divided</code></td>
+												<td class="text-muted">Headings only</td>
+												<td>Adds bottom border to the heading with proper spacing</td>
+											</tr>
+
+											<tr class="border-double active" id="transformations">
+												<td colspan="3"><span class="text-semibold">Transformations</span></td>
+											</tr>
+											<tr>
+												<td><code>.rotate-45</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Rotates element <code>45</code> degreees clockwise</td>
+											</tr>
+											<tr>
+												<td><code>.rotate-45-inverse</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Rotates element <code>45</code> degreees counterclockwise</td>
+											</tr>
+											<tr>
+												<td><code>.rotate-90</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Rotates element <code>90</code> degreees clockwise</td>
+											</tr>
+											<tr>
+												<td><code>.rotate-90-inverse</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Rotates element <code>90</code> degreees counterclockwise</td>
+											</tr>
+											<tr>
+												<td><code>.rotate-180</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Rotates element <code>180</code> degreees clockwise</td>
+											</tr>
+											<tr>
+												<td><code>.rotate-180-inverse</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Rotates element <code>180</code> degreees counterclockwise</td>
+											</tr>
+											<tr>
+												<td><code>.spinner</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Adds infinite clockwise rotation</td>
+											</tr>
+											<tr>
+												<td><code>.spinner-inverse</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Adds infinite counterclockwise rotation</td>
+											</tr>
+
+											<tr class="border-double active" id="positioning">
+												<td colspan="3"><span class="text-semibold">Positioning</span></td>
+											</tr>
+											<tr>
+												<td><code>.center-block</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Set an element to <code>display: block</code> and center via margin</td>
+											</tr>
+											<tr>
+												<td><code>.position-relative</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Changes element's positiion to <code>relative</code></td>
+											</tr>
+											<tr>
+												<td><code>.position-static</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Changes element's positiion to <code>static</code></td>
+											</tr>
+											<tr>
+												<td><code>.pull-left</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Float an element to the <code>left</code> with a class</td>
+											</tr>
+											<tr>
+												<td><code>.pull-right</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Float an element to the <code>right</code> with a class</td>
+											</tr>
+											<tr>
+												<td><code>.pull-right-xs</code><br><code>*-sm, *-md, *-lg</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Float an element to the <code>right</code> on specified screen sizes only</td>
+											</tr>
+											<tr>
+												<td>
+													<code>.valign-top</code><br>
+													<code>*-middle, *-bottom, *-baseline</code><br>
+													<code>*-text-top, *-text-bottom</code>
+												</td>
+												<td class="text-muted">Any element</td>
+												<td>Helper classes for vertical element alignment</td>
+											</tr>
+											<tr>
+												<td><code>.clearfix</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Easily clear floats by adding <code>.clearfix</code> to the parent element</td>
+											</tr>
+
+											<tr class="border-double active" id="images">
+												<td colspan="3"><span class="text-semibold">Images</span></td>
+											</tr>
+											<tr>
+												<td><code>.img-responsive</code></td>
+												<td class="text-muted">Images only</td>
+												<td>Applies max-width: 100%; and height: auto; to the image so that it scales nicely to the parent element</td>
+											</tr>
+											<tr>
+												<td><code>.img-rounded</code></td>
+												<td class="text-muted">Images only</td>
+												<td>Adds rounded <code>3px</code> border radius to the image</td>
+											</tr>
+											<tr>
+												<td><code>.img-circle</code></td>
+												<td class="text-muted">Images only</td>
+												<td>Makes image fully rounded</td>
+											</tr>
+											<tr>
+												<td><code>.img-thumbnail</code></td>
+												<td class="text-muted">Images only</td>
+												<td>Adds grey frame with white background color</td>
+											</tr>
+											<tr>
+												<td><code>.img-lg (*-sm, *-xs)</code></td>
+												<td class="text-muted">Images only</td>
+												<td>Optional custom sizing. Added specially for media lists</td>
+											</tr>
+
+											<tr class="border-double active" id="appearance">
+												<td colspan="3"><span class="text-semibold">Appearance</span></td>
+											</tr>
+											<tr>
+												<td><code>.width-100</code><br><code>*-200, *-300 ... *-800</code></td>
+												<td class="text-muted">Dropdown menus</td>
+												<td>Sets a fixed width of the dropdown menu in pixels</td>
+											</tr>
+											<tr>
+												<td><code>.pre-scrollable</code></td>
+												<td class="text-muted">Containers</td>
+												<td>Sets a max-height of 350px and provide a y-axis scrollbar</td>
+											</tr>
+											<tr>
+												<td><code>.overflow-hidden</code></td>
+												<td class="text-muted">Containers</td>
+												<td>Clips content overflow, makes the rest of the content invisible</td>
+											</tr>
+											<tr>
+												<td><code>.overflow-visible</code></td>
+												<td class="text-muted">Containers</td>
+												<td>Shows content overflow, makes the rest of the content visible</td>
+											</tr>
+											<tr>
+												<td><code>.overflow-auto</code></td>
+												<td class="text-muted">Containers</td>
+												<td>Clips content overflow, makes the rest of the content scrollable</td>
+											</tr>
+											<tr>
+												<td><code>.display-block</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Displays an element as a block element</td>
+											</tr>
+											<tr>
+												<td><code>.display-inline-block</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Displays an element as an inline-level block container</td>
+											</tr>
+											<tr>
+												<td><code>.show</code></td>
+												<td class="text-muted">Block element</td>
+												<td>Force an element to be shown. Available for block level toggling only</td>
+											</tr>
+											<tr>
+												<td><code>.hidden</code></td>
+												<td class="text-muted">Block element</td>
+												<td>Force an element to be hidden. Available for block level toggling only</td>
+											</tr>
+											<tr>
+												<td><code>.invisible</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Can be used to toggle only the visibility of an element, meaning its display is not modified and the element can still affect the flow of the document</td>
+											</tr>
+											<tr>
+												<td><code>.text-hide</code></td>
+												<td class="text-muted">Text only</td>
+												<td>Helps replace an element's text content with a background image</td>
+											</tr>
+											<tr>
+												<td><code>.sr-only</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Hides an element to all devices except screen readers</td>
+											</tr>
+
+											<tr class="active" id="spacing">
+												<td colspan="3"><span class="text-semibold">Spacing</span></td>
+											</tr>
+											<tr>
+												<td><code>.content-group</code><br><code>*-lg, *-sm</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Wrap any component in <code>.content-group</code> to add <code>10px</code>, <code>20px</code> or <code>30px</code> bottom margin</td>
+											</tr>
+											<tr>
+												<td><code>.position-left</code></td>
+												<td class="text-muted">Inline elements</td>
+												<td>Add extra <code>right</code> margin to the element</td>
+											</tr>
+											<tr>
+												<td><code>.position-right</code></td>
+												<td class="text-muted">Inline elements</td>
+												<td>Add extra <code>left</code> margin to the element</td>
+											</tr>
+											<tr>
+												<td><code>.no-edge-top</code><br><code>(*-bottom, *-left, *-right)</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Removes the top edge of the elements, works with absolute, fixed and relative positioned elements</td>
+											</tr>
+											<tr class="border-solid">
+												<td><code>.mt-5</code><br><code>(*-10, *-15, *-20)</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Add <code>5</code>, <code>10</code>, <code>15</code> and <code>20</code> px <span class="text-semibold">top</span> margin to the element</td>
+											</tr>
+											<tr>
+												<td><code>.mb-5</code><br><code>(*-10, *-15, *-20)</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Add <code>5</code>, <code>10</code>, <code>15</code> and <code>20</code> px <span class="text-semibold">bottom</span> margin to the element</td>
+											</tr>
+											<tr>
+												<td><code>.ml-5</code><br><code>(*-10, *-15, *-20)</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Add <code>5</code>, <code>10</code>, <code>15</code> and <code>20</code> px <span class="text-semibold">left</span> margin to the element</td>
+											</tr>
+											<tr>
+												<td><code>.mr-5</code><br><code>(*-10, *-15, *-20)</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Add <code>5</code>, <code>10</code>, <code>15</code> and <code>20</code> px <span class="text-semibold">right</span> margin to the element</td>
+											</tr>
+											<tr>
+												<td><code>.no-margin</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Removes element's margin</td>
+											</tr>
+											<tr>
+												<td><code>.no-margin-top</code><br><code>(*-bottom, *-left, *-right)</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Removes margin of the specified side</td>
+											</tr>
+
+											<tr class="border-solid">
+												<td><code>.pt-5</code><br><code>(*-10, *-15, *-20)</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Add <code>5</code>, <code>10</code>, <code>15</code> and <code>20</code> px <span class="text-semibold">top</span> padding to the element</td>
+											</tr>
+											<tr>
+												<td><code>.pb-5</code><br><code>(*-10, *-15, *-20)</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Add <code>5</code>, <code>10</code>, <code>15</code> and <code>20</code> px <span class="text-semibold">bottom</span> padding to the element</td>
+											</tr>
+											<tr>
+												<td><code>.pl-5</code><br><code>(*-10, *-15, *-20)</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Add <code>5</code>, <code>10</code>, <code>15</code> and <code>20</code> px <span class="text-semibold">left</span> padding to the element</td>
+											</tr>
+											<tr>
+												<td><code>.pr-5</code><br><code>(*-10, *-15, *-20)</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Add <code>5</code>, <code>10</code>, <code>15</code> and <code>20</code> px <span class="text-semibold">right</span> padding to the element</td>
+											</tr>
+											<tr>
+												<td><code>.no-padding</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Removes element's padding</td>
+											</tr>
+											<tr>
+												<td><code>.no-padding-top</code><br><code>(*-bottom, *-left, *-right)</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Removes padding of the specified side</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<!-- /helpers -->
+
+						</div>
+					</div>
+					<!-- /detached content -->
+
+
+					<!-- Detached sidebar -->
+					<div class="sidebar-detached">
+			        	<div class="sidebar sidebar-default">
+							<div class="sidebar-content">
+
+				        		<!-- Contact author -->
+								<div class="sidebar-category no-margin">
+									<div class="category-title">
+										<span>Page navigation</span>
+										<i class="icon-menu7 text-muted pull-right"></i>
+									</div>
+
+									<div class="category-content">
+										<a href="http://themeforest.net/user/kopyov" class="btn bg-blue btn-block" target="_blank"><i class="icon-reading position-left"></i> Contact author</a>
+									</div>
+								</div>
+								<!-- /contact author -->
+
+			        			
+			        			<!-- Navigation -->
+								<div class="sidebar-category">
+									<div class="category-content no-padding">
+										<ul class="nav navigation no-padding-top">
+											<li class="navigation-header"><i class="icon-history pull-right"></i> Navigation</li>
+											<li><a href="#styling">Styling</a></li>
+											<li><a href="#transformations">Transformations</a></li>
+											<li><a href="#positioning">Positioning</a></li>
+											<li><a href="#images">Images</a></li>
+											<li><a href="#appearance">Appearance</a></li>
+											<li><a href="#spacing">Spacing</a></li>
+											<li class="navigation-divider"></li>
+											<li><a href="#">Go to top <i class="icon-circle-up2 pull-right"></i></a></li>
+							            </ul>
+						            </div>
+					            </div>
+					            <!-- /navigation -->
+
+				            </div>
+			            </div>
+		            </div>
+		            <!-- /detached sidebar -->
+
+
+					<!-- Footer -->
+					<div class="footer text-muted">
+						&copy; 2015. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
+					</div>
+					<!-- /footer -->
+
+				</div>
+				<!-- /content area -->
+
+			</div>
+			<!-- /main content -->
+
+		</div>
+		<!-- /page content -->
+
+	</div>
+	<!-- /page container -->
+
+</body>
+</html>

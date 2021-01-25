@@ -1,0 +1,70 @@
+// 
+// pages-rtl.scss
+//
+
+// email
+
+.message-list {
+    li {
+        .col-mail{
+            float: right;
+        }
+        .col-mail-1{
+            .star-toggle, .checkbox-wrapper-mail, .dot{
+                float: right
+            }
+            .checkbox-wrapper-mail {
+                margin: 15px 20px 0 10px;
+            }
+            
+            .title {
+                right: 110px;
+                left: 0;
+            }
+        }
+        .col-mail-2{
+            right: 320px;
+            left: 0;
+
+            .subject {
+                right: 0;
+                left: 200px;
+            }
+
+            .date {
+                left: 0;
+                right: auto;
+                padding-right: 80px;
+                padding-left: 0px;
+            }
+        
+        }
+    }
+    .checkbox-wrapper-mail {
+        label{
+            &:before{
+                right: 4px;
+            }
+        }
+    }
+}
+
+
+// authentication
+
+.home-btn {
+    position: absolute;
+    left: 25px;
+    right: auto;
+}
+
+
+.form-group-custom {
+    .form-control{
+        &:focus, &:valid{
+            + label{
+                transform: translate(0.25em,-96%) scale(.8);
+            }
+        }
+    }
+}

@@ -1,0 +1,209 @@
+// 
+// topbar.scss
+//
+
+.navbar-custom {
+    padding: 0 25px;
+    background-color: $bg-topbar-dark;
+    box-shadow: $shadow;
+    margin: -5px -20px 0;
+    
+    .topbar-right-menu {
+        li {
+            float: left;
+        }
+        .nav-link {
+            padding: 0;
+            color: $gray-200;
+            min-width: 32px;
+            display: block;
+            line-height: 70px;
+            border-radius: 50%;
+            text-align: center;
+            margin: 0 8px;
+            max-height: 70px;
+        }
+    }
+
+    /* Search */
+    .app-search {
+        padding: 16px 0;
+        overflow: hidden;
+        form {
+            max-width: 320px;
+        }
+        .form-control {
+            border: none;
+            height: 38px;
+            padding-left: 20px;
+            padding-right: 20px;
+            color: $white;
+            background-color: lighten($bg-topbar-dark,5%);
+            box-shadow: none;
+        }
+        .input-group-append {
+            margin-left: 0;
+            z-index: 4;
+        }
+    }
+
+    .button-menu-mobile {
+        border: none;
+        color: $white;
+        display: inline-block;
+        height: 70px;
+        line-height: 70px;
+        width: 60px;
+        background-color: transparent;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    
+    .button-menu-mobile.disable-btn {
+        display: none;
+    }
+}
+
+.navbar-custom-light {
+    background-color: $bg-topbar-light;
+    
+    .topbar-right-menu {
+        .nav-link {
+            color: $gray-700;
+        }
+    }
+
+    .button-menu-mobile {
+        color: $dark;
+    }
+
+    /* Search */
+    .app-search {
+        .form-control {
+            color: $dark;
+            background-color: darken($bg-topbar-light,5%);
+        }
+    }
+}
+
+
+/* Notification */
+.noti-scroll {
+    max-height: 230px;
+}
+
+.notification-list {
+    margin-left: 0;
+
+    .dropdown-menu.dropdown-menu-right {
+        transform: none !important;
+        top: 100% !important;
+        right: 0 !important;
+        left: auto !important;
+    }
+
+    .noti-title {
+        background-color: $white;
+        padding: 15px 20px;
+    }
+
+    .noti-icon {
+        font-size: 21px;
+        vertical-align: middle;
+    }
+
+    .noti-icon-badge {
+        display: inline-block;
+        position: absolute;
+        top: 16px;
+        right: 10px;
+    }
+
+    .notify-item {
+        padding: 12px 20px;
+
+        .notify-icon {
+            float: left;
+            height: 36px;
+            width: 36px;
+            font-size: 18px;
+            line-height: 36px;
+            text-align: center;
+            margin-right: 10px;
+            border-radius: 50%;
+        }
+
+        .notify-details {
+            margin-bottom: 5px;
+            overflow: hidden;
+            margin-left: 45px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            b {
+                font-weight: 500;
+            }
+            small {
+                display: block;
+            }
+            span {
+                display: block;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                font-size: 13px;
+            }
+        }
+        
+        .user-msg {
+            margin-left: 45px;
+            white-space: normal;
+            line-height: 16px;
+        }
+    }
+    .profile-dropdown {
+        .notify-item {
+            padding: 7px 20px;
+        }
+    }
+}
+
+.profile-dropdown {
+    width: 170px;
+    i {
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+    span {
+        vertical-align: middle;
+    }
+}
+
+.nav-user {
+    padding: 0 12px !important;
+    img {
+        height: 32px;
+        width: 32px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .navbar-custom {
+        left: 70px;
+        right: 0;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .app-search {
+        display: none;
+    }
+    .navbar-custom {
+        left: 0;
+        padding: 0 10px;
+        margin: -5px -10px 0;
+
+        .button-menu-mobile.disable-btn {
+            display: inline-block;
+        }
+    }
+}

@@ -1,0 +1,324 @@
+---
+layout: components
+title: Calendar
+---
+
+<!-- Hero and nav -->
+<div class="hero is-relative is-theme-info">
+
+    {{> navbar-static-light}}
+
+    <!-- Hero image -->
+    <div id="main-hero" class="hero-body">
+        <div class="container has-text-centered">
+            <div class="columns is-vcentered">
+                <div class="column is-4 is-offset-1 has-text-left">
+                    <h1 class="title components-title is-1">
+                        Calendar
+                    </h1>
+                    <h2 class="subtitle is-4 components-subtitle">
+                        Calendar extension.
+                    </h2>
+                    <p class="components-cta">
+                        <a href="#basic-calendar" class="button button-cta btn-align light-btn btn-outlined is-bold rounded">
+                            Get Started
+                        </a>
+                    </p>
+                </div>
+                <div class="column is-offset-1 has-text-centered is-hidden-mobile">
+                    <div id="calendar-ill" class="vivus-svg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Hero image -->
+</div>
+<!-- /Hero and nav -->
+
+<section class="section is-medium">
+
+    <div id="basic-calendar" class="section-title-wrapper has-text-centered">
+        <div class="bg-number">1</div>
+        <h2 class="title section-title has-text-centered dark-text text-bold">
+            Calendar <span class="tag is-info is-outlined is-bold no-margin">New</span>
+        </h2>
+    </div>
+
+    <!-- Inline Calendar block -->
+    <div class="columns is-vcentered">
+        <div class="column is-6 is-offset-3">
+            <div class="info-block">
+                <h4>Inline Calendar</h4>
+                <p>Bulkit comes with a calendar extension that can be used in different flavours. The first one is an inline and small multipurpose calendar UI that you can use in your own pages and components. Edit the initial variables to change the calendar colors.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="columns is-vcentered">
+        <div class="column is-6 is-offset-3">
+            <!-- Inline Calendar -->
+            <div class="calendar is-centered is-custom">
+                <!-- Header -->
+                <div class="calendar-nav">
+                    <!-- Next month -->
+                    <div class="calendar-nav-previous-month">
+                        <button class="button is-text">
+                            <i class="fa fa-chevron-left"></i>
+                        </button>
+                    </div>
+                    <div>March 2017</div>
+                    <!-- Previous month -->
+                    <div class="calendar-nav-next-month">
+                        <button class="button is-text">
+                            <i class="fa fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- Container -->
+                <div class="calendar-container">
+                    <!-- Days -->
+                    <div class="calendar-header">
+                        <div class="calendar-date">Sun</div>
+                        <div class="calendar-date">Mon</div>
+                        <div class="calendar-date">Tue</div>
+                        <div class="calendar-date">Wed</div>
+                        <div class="calendar-date">Thu</div>
+                        <div class="calendar-date">Fri</div>
+                        <div class="calendar-date">Sat</div>
+                    </div>
+                    <!-- Body -->
+                    <div class="calendar-body">
+                        <div class="calendar-date is-disabled"><button class="date-item">26</button></div>
+                        <div class="calendar-date is-disabled"><button class="date-item">27</button></div>
+                        <div class="calendar-date is-disabled"><button class="date-item">28</button></div>
+                        <div class="calendar-date"><button class="date-item">1</button></div>
+                        <div class="calendar-date"><button class="date-item">2</button></div>
+                        <div class="calendar-date"><button class="date-item">3</button></div>
+                        <div class="calendar-date tooltip" data-tooltip="Today"><button class="date-item is-today">4</button></div>
+                        <div class="calendar-date tooltip" data-tooltip="Not available" disabled=""><button class="date-item">5</button></div>
+                        <div class="calendar-date"><button class="date-item">6</button></div>
+                        <div class="calendar-date"><button class="date-item">7</button></div>
+                        <div class="calendar-date tooltip" data-tooltip="You have appointments"><button class="date-item">8</button></div>
+                        <div class="calendar-date"><button class="date-item">9</button></div>
+                        <div class="calendar-date"><button class="date-item">10</button></div>
+                        <div class="calendar-date"><button class="date-item">11</button></div>
+                        <div class="calendar-date"><button class="date-item">12</button></div>
+                        <div class="calendar-date"><button class="date-item">13</button></div>
+                        <div class="calendar-date"><button class="date-item">14</button></div>
+                        <div class="calendar-date"><button class="date-item">15</button></div>
+                        <div class="calendar-date calendar-range calendar-range-start"><button class="date-item is-active">16</button></div>
+                        <div class="calendar-date calendar-range"><button class="date-item">17</button></div>
+                        <div class="calendar-date calendar-range"><button class="date-item">18</button></div>
+                        <div class="calendar-date calendar-range"><button class="date-item">19</button></div>
+                        <div class="calendar-date calendar-range calendar-range-end"><button class="date-item is-active">20</button></div>
+                        <div class="calendar-date"><button class="date-item">21</button></div>
+                        <div class="calendar-date"><button class="date-item">22</button></div>
+                        <div class="calendar-date"><button class="date-item">23</button></div>
+                        <div class="calendar-date"><button class="date-item">24</button></div>
+                        <div class="calendar-date"><button class="date-item">25</button></div>
+                        <div class="calendar-date"><button class="date-item">26</button></div>
+                        <div class="calendar-date"><button class="date-item">27</button></div>
+                        <div class="calendar-date"><button class="date-item">28</button></div>
+                        <div class="calendar-date"><button class="date-item">29</button></div>
+                        <div class="calendar-date"><button class="date-item">30</button></div>
+                        <div class="calendar-date"><button class="date-item">31</button></div>
+                        <div class="calendar-date is-disabled"><button class="date-item">1</button></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="section section-feature-grey is-medium">
+
+    <div class="section-title-wrapper has-text-centered">
+        <div class="bg-number">2</div>
+        <h2 class="title section-title has-text-centered dark-text text-bold">
+            Large Calendar <span class="tag is-info is-outlined is-bold no-margin">New</span>
+        </h2>
+    </div>
+
+    <!-- Large Calendar block -->
+    <div class="columns is-vcentered">
+        <div class="column is-6 is-offset-3">
+            <div class="info-block">
+                <h4>Large Calendar</h4>
+                <p>You can make the calendar bigger by adding the <code>.is-large</code> class to the <code>.calendar</code> element. It also supports events.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="columns is-vcentered">
+        <div class="column is-8 is-offset-2">
+            <!-- Large Calendar -->
+            <div class="calendar is-large is-centered is-custom">
+                <!-- Header -->
+                <div class="calendar-nav">
+                    <!-- Previous -->
+                    <div class="calendar-nav-previous-month">
+                        <button class="button is-text">
+                            <i class="fa fa-chevron-left"></i>
+                        </button>
+                    </div>
+                    <div>March 2017</div>
+                    <!-- Next -->
+                    <div class="calendar-nav-next-month">
+                        <button class="button is-text">
+                            <i class="fa fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- Container -->
+                <div class="calendar-container">
+                    <!-- Days -->
+                    <div class="calendar-header">
+                        <div class="calendar-date">Sun</div>
+                        <div class="calendar-date">Mon</div>
+                        <div class="calendar-date">Tue</div>
+                        <div class="calendar-date">Wed</div>
+                        <div class="calendar-date">Thu</div>
+                        <div class="calendar-date">Fri</div>
+                        <div class="calendar-date">Sat</div>
+                    </div>
+                    <!-- Body -->
+                    <div class="calendar-body">
+                        <div class="calendar-date is-disabled"><button class="date-item">26</button></div>
+                        <div class="calendar-date is-disabled">
+                            <button class="date-item">27</button>
+                            <div class="calendar-events">
+                                <a class="calendar-event">Default event</a>
+                            </div>
+                        </div>
+                        <div class="calendar-date is-disabled"><button class="date-item">28</button></div>
+                        <div class="calendar-date"><button class="date-item">1</button></div>
+                        <div class="calendar-date"><button class="date-item">2</button></div>
+                        <div class="calendar-date"><button class="date-item">3</button></div>
+                        <div class="calendar-date tooltip" data-tooltip="Today"><button class="date-item is-today">4</button></div>
+                        <div class="calendar-date" disabled=""><button class="date-item">5</button></div>
+                        <div class="calendar-date"><button class="date-item">6</button></div>
+                        <div class="calendar-date"><button class="date-item">7</button></div>
+                        <div class="calendar-date tooltip" data-tooltip="You have appointments">
+                            <button class="date-item badge">8</button>
+                            <div class="calendar-events">
+                                <a class="calendar-event is-primary">Primary event</a>
+                                <a class="calendar-event is-warning">Warning event</a>
+                                <a class="calendar-event is-danger">Danger event</a>
+                            </div>
+                        </div>
+                        <div class="calendar-date"><button class="date-item">9</button></div>
+                        <div class="calendar-date"><button class="date-item">10</button></div>
+                        <div class="calendar-date"><button class="date-item">11</button></div>
+                        <div class="calendar-date">
+                            <button class="date-item">12</button>
+                            <div class="calendar-events">
+                                <a class="calendar-event">Default event</a>
+                            </div>
+                        </div>
+                        <div class="calendar-date"><button class="date-item">13</button></div>
+                        <div class="calendar-date"><button class="date-item">14</button></div>
+                        <div class="calendar-date"><button class="date-item">15</button></div>
+                        <div class="calendar-date calendar-range calendar-range-start"><button class="date-item is-active">16</button></div>
+                        <div class="calendar-date calendar-range"><button class="date-item">17</button></div>
+                        <div class="calendar-date calendar-range"><button class="date-item">18</button></div>
+                        <div class="calendar-date calendar-range"><button class="date-item">19</button></div>
+                        <div class="calendar-date calendar-range calendar-range-end">
+                            <button class="date-item is-active">20</button>
+                            <div class="calendar-events">
+                                <a class="calendar-event is-success">Success event</a>
+                            </div>
+                        </div>
+                        <div class="calendar-date"><button class="date-item">21</button></div>
+                        <div class="calendar-date"><button class="date-item">22</button></div>
+                        <div class="calendar-date"><button class="date-item">23</button></div>
+                        <div class="calendar-date"><button class="date-item">24</button></div>
+                        <div class="calendar-date"><button class="date-item">25</button></div>
+                        <div class="calendar-date"><button class="date-item">26</button></div>
+                        <div class="calendar-date"><button class="date-item">27</button></div>
+                        <div class="calendar-date"><button class="date-item">28</button></div>
+                        <div class="calendar-date"><button class="date-item">29</button></div>
+                        <div class="calendar-date"><button class="date-item">30</button></div>
+                        <div class="calendar-date"><button class="date-item">31</button></div>
+                        <div class="calendar-date is-disabled">
+                            <button class="date-item">1</button>
+                            <div class="calendar-events">
+                                <a class="calendar-event">Second default event</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="section is-medium">
+
+    <div class="section-title-wrapper has-text-centered">
+        <div class="bg-number">3</div>
+        <h2 class="title section-title has-text-centered dark-text text-bold">
+            Calendar Picker <span class="tag is-info is-outlined is-bold no-margin">New</span>
+        </h2>
+    </div>
+
+    <!-- Datepicker block -->
+    <div class="columns is-vcentered">
+        <div class="column is-6 is-offset-3">
+            <div class="info-block">
+                <h4>Calendar Datepicker</h4>
+                <p>The Calendar can behave like a datepicker when wired to a text input. It has to be initialized with Javascript. </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="columns is-vcentered">
+        <div class="column is-6 is-offset-3">
+            <!-- Datepicker -->
+            <input id="datepickerDemo" class="input width-250" type="text">
+        </div>
+    </div>
+    
+    <!-- Datepicker block -->
+    <div class="columns is-vcentered">
+        <div class="column is-6 is-offset-3">
+            <div class="info-block">
+                <h4>Datepicker Modal</h4>
+                <p>The Datepicker can be displayed as a modal, with an opaque overlay. The <code>overlay</code> option has to be set to <code>true</code>. </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="columns is-vcentered">
+        <div class="column is-6 is-offset-3">
+            <!-- Datepicker -->
+            <input id="datepickerDemo2" class="input width-250" type="text" value="11-02-2018">
+        </div>
+    </div>
+</section>
+
+{{> footer-light}}
+
+<script>
+    document.addEventListener( 'DOMContentLoaded', function () {
+        var datePicker = new bulmaCalendar( document.getElementById( 'datepickerDemo' ), {
+            startDate: new Date(), // Date selected by default
+            dateFormat: 'yyyy-mm-dd', // the date format `field` value
+            lang: 'en', // internationalization
+            overlay: false,
+            closeOnOverlayClick: true,
+            closeOnSelect: true,
+            // callback functions
+            onSelect: null,
+            onOpen: null,
+            onClose: null,
+            onRender: null
+        } );
+        var datePicker = new bulmaCalendar( document.getElementById( 'datepickerDemo2' ), {
+            startDate: new Date(), // Date selected by default
+            dateFormat: 'yyyy-mm-dd', // the date format `field` value
+            overlay: true
+        } );
+    } );
+</script>

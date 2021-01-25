@@ -1,0 +1,161 @@
+---
+layout: default
+title: Contact
+---
+
+<!-- Hero (Parallax) and nav -->
+<div class="hero parallax is-cover is-relative is-default is-bold" data-background="https://via.placeholder.com/1920x1080" data-color="#000" data-color-opacity="0.3"
+    data-demo-background="assets/images/agency/agency3.jpg">
+
+    {{> navbar-fade}}
+
+    <!-- Hero image -->
+    <div id="main-hero" class="hero-body ">
+        <div class="container has-text-centered">
+            <div class="columns is-vcentered">
+                <!-- Page Heading -->
+                <div class="column is-6 is-offset-3 has-text-centered is-header-caption">
+                    <h1 class="title main-title subpage-title text-bold is-2">
+                        CONTACT US
+                    </h1>
+                    <h2 class="subtitle is-4 light-text pt-20">
+                        Wether you want to start a project with us or just ask us a question, we are here for you.
+                    </h2>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Hero image -->
+</div>
+<!-- /Hero and nav -->
+
+<!-- Contact details section -->
+<div class="section is-medium">
+    <div class="container">
+        <div class="columns has-text-centered">
+            <div class="column is-hidden-mobile"></div>
+            <!-- Icon box -->
+            <div class="column is-3">
+                <div class="shadow-icon-box">
+                    <span><i class="fa fa-map fa-lg"></i></span>
+                </div>
+                <div class="shadow-title dark-text">
+                    Address
+                </div>
+                <div class="description shadow-description">
+                    <b>48, Church Street, First district
+                        <br>59852 New York, USA</b>
+                </div>
+            </div>
+            <!-- Icon box -->
+            <div class="column is-3">
+                <div class="shadow-icon-box">
+                    <span><i class="fa fa-envelope fa-lg"></i></span>
+                </div>
+                <div class="shadow-title dark-text">
+                    Email
+                </div>
+                <div class="description shadow-description">
+                    <b>hello@bulkit.io</b>
+                    <br>
+                </div>
+            </div>
+            <!-- Icon box -->
+            <div class="column is-3">
+                <div class="shadow-icon-box">
+                    <span><i class="fa fa-phone-square fa-lg"></i></span>
+                </div>
+                <div class="shadow-title dark-text">
+                    Phone
+                </div>
+                <div class="description shadow-description">
+                    <b>+1 555 306 87</b>
+                    <br>
+                </div>
+            </div>
+            <div class="column is-hidden-mobile"></div>
+        </div>
+    </div>
+</div>
+<!-- /Contact details section -->
+
+<!-- Map and contact form section -->
+<div class="section no-padding">
+    <div class="container is-fluid no-margin">
+        <div class="columns is-gapless is-not-tablet-portrait">
+            <!-- Contact form -->
+            <div class="column is-6">
+                <div class="contact-form-wrapper">
+                    <div>
+                        <h2 class="form-title has-text-centered">Say Hello !</h2>
+                        <form class="pl-20 pr-20">
+                            <div class="columns">
+                                <div class="column is-8 is-offset-2">
+                                    <div class="columns is-vcentered">
+                                        <div class="column is-4">
+                                            <!-- Form field -->
+                                            <div class="control-material is-primary">
+                                                <input class="material-input" type="text" required="">
+                                                <span class="material-highlight"></span>
+                                                <span class="bar"></span>
+                                                <label>Name *</label>
+                                            </div>
+                                            <!-- /Form field -->
+                                        </div>
+                                        <div class="column is-4">
+                                            <!-- /Form field -->
+                                            <div class="control-material is-primary">
+                                                <input class="material-input" type="text" required="">
+                                                <span class="material-highlight"></span>
+                                                <span class="bar"></span>
+                                                <label>Email *</label>
+                                            </div>
+                                            <!-- /Form field -->
+                                        </div>
+                                        <div class="column is-4">
+                                            <!-- Form field -->
+                                            <div class="control-material is-primary">
+                                                <input class="material-input" type="text" required="">
+                                                <span class="material-highlight"></span>
+                                                <span class="bar"></span>
+                                                <label>Company</label>
+                                            </div>
+                                            <!-- /Form field -->
+                                        </div>
+                                    </div>
+                                    <!-- Form field -->
+                                    <div class="control-material is-primary">
+                                        <textarea rows="2"></textarea>
+                                        <span class="material-highlight"></span>
+                                        <span class="bar"></span>
+                                        <label>Message *</label>
+                                    </div>
+                                    <!-- /Form field -->
+                                    <div class="mb-20">
+                                        <!-- Form submit -->
+                                        <button type="submit" class="button button-cta btn-align primary-btn btn-outlined is-bold is-fullwidth rounded no-lh">Send message</button>
+                                        <!-- /Form submit -->
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- /Contact form -->
+
+            <!-- Google map -->
+            <div class="column">
+                <div id="half-map" class="half-map"></div>
+            </div>
+            <!-- /Google map -->
+        </div>
+    </div>
+</div>
+<!-- /Map and contact form section -->
+
+{{> footer-dark}}
+
+<!-- Google maps api call with api key -->
+<script src="https://maps.google.com/maps/api/js?key=AIzaSyAGLO_M5VT7BsVdjMjciKoH1fFJWWdhDPU"></script>

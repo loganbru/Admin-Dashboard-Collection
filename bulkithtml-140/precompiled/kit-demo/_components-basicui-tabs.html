@@ -1,0 +1,1693 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required Meta Tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <title> Bulkit :: Tabs</title>
+        <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+
+        <!--Core CSS -->
+        <link rel="stylesheet" href="assets/css/bulma.css">
+        <link rel="stylesheet" href="assets/css/app.css">
+        <link rel="stylesheet" href="assets/css/core_demo.css">
+        <link rel="stylesheet" href="assets/css/icons.min.css">
+
+    </head>
+    <body>
+        <div class="pageloader"></div>
+        <div class="infraloader is-active"></div>        
+        <!-- Hero and nav -->
+        <div class="hero is-relative is-theme-info">
+            
+            <nav class="navbar navbar-wrapper navbar-light is-transparent is-static">
+                <div class="container">
+                    <!-- Brand -->
+                    <div class="navbar-brand">
+                        <a class="navbar-item" href="/">
+                            <img src="assets/images/logos/bulkit-white.svg" alt="">
+                        </a>
+            
+                        <!-- Sidebar Trigger -->
+                        <a id="navigation-trigger" class="navbar-item hamburger-btn" href="javascript:void(0);">
+                            <span class="menu-toggle">
+                                <span class="icon-box-toggle">
+                                    <span class="rotate">
+                                        <i class="icon-line-top"></i>
+                                        <i class="icon-line-center"></i>
+                                        <i class="icon-line-bottom"></i>
+                                    </span>
+                                </span>
+                            </span>
+                        </a>
+            
+                        <!-- Responsive toggle -->
+                        <div class="custom-burger" data-target="">
+                            <a id="" class="responsive-btn" href="javascript:void(0);">
+                                <span class="menu-toggle">
+                                    <span class="icon-box-toggle">
+                                        <span class="rotate">
+                                            <i class="icon-line-top"></i>
+                                            <i class="icon-line-center"></i>
+                                            <i class="icon-line-bottom"></i>
+                                        </span>
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
+                        <!-- /Responsive toggle -->
+                    </div>
+            
+                    <!-- Navbar menu -->
+                    <div class="navbar-menu">
+                        <!-- Navbar Start -->
+                        <div class="navbar-start">
+                            <!-- Dropdown -->
+                            <div class="navbar-item has-dropdown is-hoverable is-hidden-mobile">
+                                <a class="navbar-link" href="#demos">
+                                    Demos
+                                </a>
+                                <div class="navbar-dropdown is-boxed is-medium">
+                                    <!-- Dropdown item -->
+                                    <a class="navbar-item is-menu" href="/agency/index.html">
+                                        <i class="material-icons">weekend</i>
+                                        <span>Agency Kit</span>
+                                    </a>
+                                    <!-- Dropdown item -->
+                                    <a class="navbar-item is-menu" href="/startup/index.html">
+                                        <i class="material-icons">wb_incandescent</i>
+                                        <span>Startup Kit</span>
+                                    </a>
+                                    <!-- Dropdown item -->
+                                    <a class="navbar-item is-menu" href="/landing-kits/kit-1/index.html">
+                                        <i class="material-icons">looks</i>
+                                        <span>Landing Kit 1</span>
+                                    </a>
+                                    <!-- Dropdown item -->
+                                    <a class="navbar-item is-menu" href="/landing-kits/kit-2/index.html">
+                                        <i class="material-icons">invert_colors</i>
+                                        <span>Landing Kit 2</span>
+                                    </a>
+                                    <!-- Dropdown item -->
+                                    <a class="navbar-item is-menu" href="/landing-kits/kit-3/index.html">
+                                        <i class="material-icons">bubble_chart</i>
+                                        <span>Landing Kit 3</span>
+                                    </a>
+                                    <!-- Dropdown item -->
+                                    <a class="navbar-item is-menu" href="/landing-kits/kit-4/index.html">
+                                        <i class="material-icons">business</i>
+                                        <span>Landing Kit 4</span>
+                                    </a>
+                                    <!-- Dropdown item -->
+                                    <a class="navbar-item is-menu" href="/landing-kits/kit-5/index.html">
+                                        <i class="material-icons">face</i>
+                                        <span>Landing Kit 5</span>
+                                    </a>
+                                    <!-- Dropdown item -->
+                                    <a class="navbar-item is-menu" href="/landing-kits/kit-6/index.html">
+                                        <i class="material-icons">cloud</i>
+                                        <span>Landing Kit 6</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Mobile dropdown -->
+                            <div class="mobile-drop is-hidden-desktop">
+                                <div class="mobile-drop-trigger">
+                                    Demos <i class="material-icons">keyboard_arrow_right</i>
+                                </div>
+                                <div class="child-menu">
+                                    <ul>
+                                        <li>
+                                            <a href="/agency/index.html">Agency kit</a>
+                                        </li>
+                                        <li>
+                                            <a href="/startup/index.html">Startup kit</a>
+                                        </li>
+                                        <li>
+                                            <a href="/landing-kits/kit-1/index.html">Landing kit 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="/landing-kits/kit-2/index.html">Landing kit 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="/landing-kits/kit-3/index.html">Landing kit 3</a>
+                                        </li>
+                                        <li>
+                                            <a href="/landing-kits/kit-4/index.html">Landing kit 4</a>
+                                        </li>
+                                        <li>
+                                            <a href="/landing-kits/kit-5/index.html">Landing kit 5</a>
+                                        </li>
+                                        <li>
+                                            <a href="/landing-kits/kit-6/index.html">Landing kit 6</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Navbar item -->
+                            <a class="navbar-item is-slide" href="https://docs.bulkit.cssninja.io/" target="_blank">
+                                Docs
+                            </a>
+                            <!-- Navbar item -->
+                            <a class="navbar-item is-slide" href="https://cssninja.io/" target="_blank">
+                                Support
+                            </a>
+                        </div>
+            
+                        <!-- Navbar end -->
+                        <div class="navbar-end">
+                            <!-- Signup button -->
+                            <div class="navbar-item">
+                                <a id="#signup-btn" href="https://themeforest.net/item/bulkit-agency-startup-and-saas-template/21278677?ref=cssninjaStudio" class="button button-cta btn-outlined is-bold btn-align light-btn rounded raised">
+                                    Buy now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- Hero image -->
+            <div id="main-hero" class="hero-body">
+                <div class="container has-text-centered">
+                    <div class="columns is-vcentered">
+                        <div class="column is-4 is-offset-1 has-text-left">
+                            <h1 class="title components-title is-1">
+                                Tabs & pills
+                            </h1>
+                            <h2 class="subtitle is-4 components-subtitle">
+                                Tabs and pills styles.
+                            </h2>
+                            <p class="components-cta">
+                                <a href="#basic-tabs" class="button button-cta btn-align light-btn btn-outlined is-bold rounded">
+                                    Get Started
+                                </a>
+                            </p>
+                        </div>
+                        <div class="column is-offset-1 has-text-centered is-hidden-mobile">
+                            <div id="tabs-ill" class="vivus-svg"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Hero image -->
+        </div>
+        <!-- /Hero and nav -->
+        
+        <div id="scrollnav" class="scroll-nav-wrapper">
+            <div class="container">
+                <div class="tabs scrollnav-tabs is-centered">
+                    <ul>
+                        <li class="scrollnav-item is-active"><a href="#basic-tabs">Basic tabs</a></li>
+                        <li class="scrollnav-item"><a href="#boxed-tabs">Boxed</a></li>
+                        <li class="scrollnav-item"><a href="#animated-tabs">Animated</a></li>
+                        <li class="scrollnav-item"><a href="#full-pills">Full pills</a></li>
+                        <li class="scrollnav-item"><a href="#light-pills">Light pills</a></li>
+                        <li class="scrollnav-item"><a href="#card-tabs">In cards</a></li>
+                        <li class="scrollnav-item"><a href="#special-pills">Special pills</a></li>
+                    </ul>
+                </div>
+            </div>  
+        </div>
+        
+        <section class="section is-medium">
+        
+            <div id="basic-tabs" class="section-title-wrapper has-text-centered">
+                <div class="bg-number">1</div>
+                <h2 class="title section-title has-text-centered dark-text text-bold">
+                    Basic tabs
+                </h2>
+            </div>
+        
+            <!-- Left aligned tabs -->
+            <div class="columns is-vcentered pt-60">
+                <div class="column is-6 is-offset-3">
+                    <!-- Demo section -->
+                    <div class="info-block">
+                        <h4>Left aligned tabs</h4>
+                        <p>Use the this standard structure to display <code>.simple-tabs</code>. Tabs are left aligned by default. Note that there are 3 tabs sizes available. Simply add <code>.is-small</code>, <code>.is-medium</code> or <code>.is-large</code> to the <code>.tabs</code> container.</p>
+                    </div>
+        
+                    <div class="navigation-tabs simple-tabs">
+                        <div class="tabs">
+                            <ul>
+                                <li class="tab-link is-active" data-tab="tab-1"><a>First tab</a></li>
+                                <li class="tab-link" data-tab="tab-2"><a>Second tab</a></li>
+                                <li class="tab-link" data-tab="tab-3"><a>Third tab</a></li>
+                            </ul>
+                        </div>
+                        <div id="tab-1" class="navtab-content is-active">
+                            <p>Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam, eligendi oportere honestatis sed id. Persius volumus has no, ex pro nisl commodo dissentias, at sed appareat consequat consectetuer.</p>
+                        </div>
+                        <div id="tab-2" class="navtab-content">
+                            <p>Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam.</p>
+                        </div>
+                        <div id="tab-3" class="navtab-content">
+                            <p>Nam cibo consul insolens ei, at commune perfecto qui, ad vel summo vivendo. Ea est nostrum urbanitas accommodare. Ne mea esse possim quaerendum, sumo nullam disputando sit cu. Ridens labore dicunt mea id</p>
+                        </div>
+                    </div>
+                    <!-- /Demo section -->
+        
+                    <!-- Code section -->
+                    <div class="accordion-wrapper">
+                        <div class="toggle-wrap">
+                            <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                            <div class="toggle-container">
+                                <figure class="highlight highlight-block">
+                                    <pre><code class="html code-highlight">
+        &#x3C;div class=&#x22;navigation-tabs simple-tabs&#x22;&#x3E;
+            &#x3C;div class=&#x22;tabs&#x22;&#x3E;
+                &#x3C;ul&#x3E;
+                    &#x3C;li class=&#x22;tab-link is-active&#x22; data-tab=&#x22;tab-1&#x22;&#x3E;&#x3C;a&#x3E;First tab&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li class=&#x22;tab-link&#x22; data-tab=&#x22;tab-2&#x22;&#x3E;&#x3C;a&#x3E;Second tab&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li class=&#x22;tab-link&#x22; data-tab=&#x22;tab-3&#x22;&#x3E;&#x3C;a&#x3E;Third tab&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                &#x3C;/ul&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div id=&#x22;tab-1&#x22; class=&#x22;navtab-content is-active&#x22;&#x3E;
+                &#x3C;p&#x3E;Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam, eligendi oportere honestatis sed id. Persius volumus has no, ex pro nisl commodo dissentias, at sed appareat consequat consectetuer.&#x3C;/p&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div id=&#x22;tab-2&#x22; class=&#x22;navtab-content&#x22;&#x3E;
+                &#x3C;p&#x3E;Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam.&#x3C;/p&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div id=&#x22;tab-3&#x22; class=&#x22;navtab-content&#x22;&#x3E;
+                &#x3C;p&#x3E;Nam cibo consul insolens ei, at commune perfecto qui, ad vel summo vivendo. Ea est nostrum urbanitas accommodare. Ne mea esse possim quaerendum, sumo nullam disputando sit cu. Ridens labore dicunt mea id&#x3C;/p&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+                                            </code></pre>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Code section -->
+                </div>
+            </div>
+            <!-- /Left aligned tabs -->
+        
+            <!-- Center aligned tabs -->
+            <div class="columns is-vcentered pt-60">
+                <div class="column is-6 is-offset-3">
+                    <!-- Demo section -->
+                    <div class="info-block">
+                        <h4>Center aligned tabs</h4>
+                        <p>Add the <code>.is-centered</code> class to the <code>.tabs</code> div to center the tabs.</p>
+                    </div>
+        
+                    <div class="navigation-tabs simple-tabs">
+                        <div class="tabs is-centered">
+                            <ul>
+                                <li class="tab-link is-active" data-tab="tab-a1"><a>First tab</a></li>
+                                <li class="tab-link" data-tab="tab-a2"><a>Second tab</a></li>
+                                <li class="tab-link" data-tab="tab-a3"><a>Third tab</a></li>
+                            </ul>
+                        </div>
+                        <div id="tab-a1" class="navtab-content is-active">
+                            <p>Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam, eligendi oportere honestatis sed id. Persius volumus has no, ex pro nisl commodo dissentias, at sed appareat consequat consectetuer.</p>
+                        </div>
+                        <div id="tab-a2" class="navtab-content">
+                            <p>Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam.</p>
+                        </div>
+                        <div id="tab-a3" class="navtab-content">
+                            <p>Nam cibo consul insolens ei, at commune perfecto qui, ad vel summo vivendo. Ea est nostrum urbanitas accommodare. Ne mea esse possim quaerendum, sumo nullam disputando sit cu. Ridens labore dicunt mea id</p>
+                        </div>
+                    </div>
+                    <!-- /Demo section -->
+        
+                    <!-- Code section -->
+                    <div class="accordion-wrapper">
+                        <div class="toggle-wrap">
+                            <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                            <div class="toggle-container">
+                                <figure class="highlight highlight-block">
+                                    <pre><code class="html code-highlight">
+        &#x3C;div class=&#x22;navigation-tabs simple-tabs&#x22;&#x3E;
+            &#x3C;div class=&#x22;tabs is-centered&#x22;&#x3E;
+                &#x3C;ul&#x3E;
+                    &#x3C;li class=&#x22;tab-link is-active&#x22; data-tab=&#x22;tab-a1&#x22;&#x3E;&#x3C;a&#x3E;First tab&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li class=&#x22;tab-link&#x22; data-tab=&#x22;tab-a2&#x22;&#x3E;&#x3C;a&#x3E;Second tab&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li class=&#x22;tab-link&#x22; data-tab=&#x22;tab-a3&#x22;&#x3E;&#x3C;a&#x3E;Third tab&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                &#x3C;/ul&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div id=&#x22;tab-a1&#x22; class=&#x22;navtab-content is-active&#x22;&#x3E;
+                &#x3C;p&#x3E;Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam, eligendi oportere honestatis sed id. Persius volumus has no, ex pro nisl commodo dissentias, at sed appareat consequat consectetuer.&#x3C;/p&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div id=&#x22;tab-a2&#x22; class=&#x22;navtab-content&#x22;&#x3E;
+                &#x3C;p&#x3E;Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam.&#x3C;/p&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div id=&#x22;tab-a3&#x22; class=&#x22;navtab-content&#x22;&#x3E;
+                &#x3C;p&#x3E;Nam cibo consul insolens ei, at commune perfecto qui, ad vel summo vivendo. Ea est nostrum urbanitas accommodare. Ne mea esse possim quaerendum, sumo nullam disputando sit cu. Ridens labore dicunt mea id&#x3C;/p&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+                                            </code></pre>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Code section -->
+                </div>
+            </div>
+            <!-- /Center aligned tabs -->
+        
+            <!-- Right aligned tabs -->
+            <div class="columns is-vcentered pt-60">
+                <div class="column is-6 is-offset-3">
+                    <!-- Demo section -->
+                    <div class="info-block">
+                        <h4>Right aligned tabs</h4>
+                        <p>Add the <code>.is-right</code> class to the <code>.tabs</code> div to center the tabs.</p>
+                    </div>
+        
+                    <div class="navigation-tabs simple-tabs">
+                        <div class="tabs is-right">
+                            <ul>
+                                <li class="tab-link is-active" data-tab="tab-b1"><a>First tab</a></li>
+                                <li class="tab-link" data-tab="tab-b2"><a>Second tab</a></li>
+                                <li class="tab-link" data-tab="tab-b3"><a>Third tab</a></li>
+                            </ul>
+                        </div>
+                        <div id="tab-b1" class="navtab-content is-active">
+                            <p>Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam, eligendi oportere honestatis sed id. Persius volumus has no, ex pro nisl commodo dissentias, at sed appareat consequat consectetuer.</p>
+                        </div>
+                        <div id="tab-b2" class="navtab-content">
+                            <p>Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam.</p>
+                        </div>
+                        <div id="tab-b3" class="navtab-content">
+                            <p>Nam cibo consul insolens ei, at commune perfecto qui, ad vel summo vivendo. Ea est nostrum urbanitas accommodare. Ne mea esse possim quaerendum, sumo nullam disputando sit cu. Ridens labore dicunt mea id</p>
+                        </div>
+                    </div>
+                    <!-- /Demo section -->
+        
+                    <!-- Code section -->
+                    <div class="accordion-wrapper">
+                        <div class="toggle-wrap">
+                            <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                            <div class="toggle-container">
+                                <figure class="highlight highlight-block">
+                                    <pre><code class="html code-highlight">
+        &#x3C;div class=&#x22;navigation-tabs simple-tabs&#x22;&#x3E;
+            &#x3C;div class=&#x22;tabs is-centered&#x22;&#x3E;
+                &#x3C;ul&#x3E;
+                    &#x3C;li class=&#x22;tab-link is-active&#x22; data-tab=&#x22;tab-b1&#x22;&#x3E;&#x3C;a&#x3E;First tab&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li class=&#x22;tab-link&#x22; data-tab=&#x22;tab-b2&#x22;&#x3E;&#x3C;a&#x3E;Second tab&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li class=&#x22;tab-link&#x22; data-tab=&#x22;tab-b3&#x22;&#x3E;&#x3C;a&#x3E;Third tab&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                &#x3C;/ul&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div id=&#x22;tab-b1&#x22; class=&#x22;navtab-content is-active&#x22;&#x3E;
+                &#x3C;p&#x3E;Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam, eligendi oportere honestatis sed id. Persius volumus has no, ex pro nisl commodo dissentias, at sed appareat consequat consectetuer.&#x3C;/p&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div id=&#x22;tab-b2&#x22; class=&#x22;navtab-content&#x22;&#x3E;
+                &#x3C;p&#x3E;Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam.&#x3C;/p&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div id=&#x22;tab-b3&#x22; class=&#x22;navtab-content&#x22;&#x3E;
+                &#x3C;p&#x3E;Nam cibo consul insolens ei, at commune perfecto qui, ad vel summo vivendo. Ea est nostrum urbanitas accommodare. Ne mea esse possim quaerendum, sumo nullam disputando sit cu. Ridens labore dicunt mea id&#x3C;/p&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+                                            </code></pre>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Code section -->
+                </div>
+            </div>
+            <!-- /Right aligned tabs -->
+        
+            <!-- Icon tabs -->
+            <div class="columns is-vcentered pt-60">
+                <div class="column is-6 is-offset-3">
+                    <!-- Demo section -->
+                    <div class="info-block">
+                        <h4>With icons</h4>
+                        <p>Add a <code>span</code> with class <code>.icon</code> inside a tab link to add an icon before it.</p>
+                    </div>
+        
+                    <div class="navigation-tabs simple-tabs">
+                        <div class="tabs">
+                            <ul>
+                                <li class="is-active" data-tab="tab-c1"><a><span class="icon"><i class="sl sl-icon-user"></i></span> <span>First tabs</span></a></li>
+                                <li data-tab="tab-c2"><a><span class="icon"><i class="sl sl-icon-lock"></i></span> <span>Second tab</span></a></li>
+                                <li data-tab="tab-c3"><a><span class="icon"><i class="sl sl-icon-heart"></i></span> <span>Third tab</span></a></li>
+                            </ul>
+                        </div>
+                        <div id="tab-c1" class="navtab-content is-active">
+                            <p>Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam, eligendi oportere honestatis sed id. Persius volumus has no, ex pro nisl commodo dissentias, at sed appareat consequat consectetuer.</p>
+                        </div>
+                        <div id="tab-c2" class="navtab-content">
+                            <p>Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam.</p>
+                        </div>
+                        <div id="tab-c3" class="navtab-content">
+                            <p>Nam cibo consul insolens ei, at commune perfecto qui, ad vel summo vivendo. Ea est nostrum urbanitas accommodare. Ne mea esse possim quaerendum, sumo nullam disputando sit cu. Ridens labore dicunt mea id</p>
+                        </div>
+                    </div>
+                    <!-- /Demo section -->
+        
+                    <!-- Code section -->
+                    <div class="accordion-wrapper">
+                        <div class="toggle-wrap">
+                            <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                            <div class="toggle-container">
+                                <figure class="highlight highlight-block">
+                                    <pre><code class="html code-highlight">
+        &#x3C;div class=&#x22;navigation-tabs simple-tabs&#x22;&#x3E;
+            &#x3C;div class=&#x22;tabs&#x22;&#x3E;
+                &#x3C;ul&#x3E;
+                    &#x3C;li class=&#x22;is-active&#x22; data-tab=&#x22;tab-c1&#x22;&#x3E;&#x3C;a&#x3E;&#x3C;span class=&#x22;icon&#x22;&#x3E;&#x3C;i class=&#x22;sl sl-icon-user&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/span&#x3E; &#x3C;span&#x3E;First tabs&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li data-tab=&#x22;tab-c2&#x22;&#x3E;&#x3C;a&#x3E;&#x3C;span class=&#x22;icon&#x22;&#x3E;&#x3C;i class=&#x22;sl sl-icon-lock&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/span&#x3E; &#x3C;span&#x3E;Second tab&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li data-tab=&#x22;tab-c3&#x22;&#x3E;&#x3C;a&#x3E;&#x3C;span class=&#x22;icon&#x22;&#x3E;&#x3C;i class=&#x22;sl sl-icon-heart&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/span&#x3E; &#x3C;span&#x3E;Third tab&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                &#x3C;/ul&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div id=&#x22;tab-c1&#x22; class=&#x22;navtab-content is-active&#x22;&#x3E;
+                &#x3C;p&#x3E;Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam, eligendi oportere honestatis sed id. Persius volumus has no, ex pro nisl commodo dissentias, at sed appareat consequat consectetuer.&#x3C;/p&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div id=&#x22;tab-c2&#x22; class=&#x22;navtab-content&#x22;&#x3E;
+                &#x3C;p&#x3E;Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam.&#x3C;/p&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div id=&#x22;tab-c3&#x22; class=&#x22;navtab-content&#x22;&#x3E;
+                &#x3C;p&#x3E;Nam cibo consul insolens ei, at commune perfecto qui, ad vel summo vivendo. Ea est nostrum urbanitas accommodare. Ne mea esse possim quaerendum, sumo nullam disputando sit cu. Ridens labore dicunt mea id&#x3C;/p&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+                                            </code></pre>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Code section -->
+                </div>
+            </div>
+            <!-- /Icon tabs -->
+        </section>
+        
+        <section class="section section-feature-grey is-medium">
+        
+            <div id="boxed-tabs" class="section-title-wrapper has-text-centered pt-60">
+                <div class="bg-number">2</div>
+                <h2 class="title section-title has-text-centered dark-text text-bold">
+                    Boxed tabs
+                </h2>
+            </div>
+        
+            <!-- Boxed tabs -->
+            <div class="columns is-vcentered">
+                <div class="column is-6 is-offset-3">
+                    <!-- Demo section -->
+                    <div class="info-block">
+                        <h4>Boxed tabs</h4>
+                        <p>Add a class the <code>.is-boxed</code> modifier to make the navigation tabs boxed.</p>
+                    </div>
+        
+                    <div class="navigation-tabs boxed-tabs">
+                        <div class="tabs is-boxed">
+                            <ul>
+                                <li class="is-active" data-tab="tab-d1"><a><span>First tab</span></a></li>
+                                <li data-tab="tab-d2"><a><span>Second tab</span></a></li>
+                                <li data-tab="tab-d3"><a><span>Third tab</span></a></li>
+                            </ul>
+                        </div>
+                        <div id="tab-d1" class="navtab-content is-active">
+                            <p>Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam, eligendi oportere honestatis sed id. Persius volumus has no, ex pro nisl commodo dissentias, at sed appareat consequat consectetuer.</p>
+                        </div>
+                        <div id="tab-d2" class="navtab-content">
+                            <p>Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam.</p>
+                        </div>
+                        <div id="tab-d3" class="navtab-content">
+                            <p>Nam cibo consul insolens ei, at commune perfecto qui, ad vel summo vivendo. Ea est nostrum urbanitas accommodare. Ne mea esse possim quaerendum, sumo nullam disputando sit cu. Ridens labore dicunt mea id</p>
+                        </div>
+                    </div>
+                    <!-- /Demo section -->
+        
+                    <!-- Code section -->
+                    <div class="accordion-wrapper">
+                        <div class="toggle-wrap">
+                            <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                            <div class="toggle-container">
+                                <figure class="highlight highlight-block">
+                                    <pre><code class="html code-highlight">
+        &#x3C;div class=&#x22;navigation-tabs boxed-tabs&#x22;&#x3E;
+            &#x3C;div class=&#x22;tabs is-boxed&#x22;&#x3E;
+                &#x3C;ul&#x3E;
+                    &#x3C;li class=&#x22;is-active&#x22; data-tab=&#x22;tab-d1&#x22;&#x3E;&#x3C;a&#x3E;&#x3C;span&#x3E;First tab&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li data-tab=&#x22;tab-d2&#x22;&#x3E;&#x3C;a&#x3E;&#x3C;span&#x3E;Second tab&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li data-tab=&#x22;tab-d3&#x22;&#x3E;&#x3C;a&#x3E;&#x3C;span&#x3E;Third tab&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                &#x3C;/ul&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div id=&#x22;tab-d1&#x22; class=&#x22;navtab-content is-active&#x22;&#x3E;
+                &#x3C;p&#x3E;Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam, eligendi oportere honestatis sed id. Persius volumus has no, ex pro nisl commodo dissentias, at sed appareat consequat consectetuer.&#x3C;/p&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div id=&#x22;tab-d2&#x22; class=&#x22;navtab-content&#x22;&#x3E;
+                &#x3C;p&#x3E;Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam.&#x3C;/p&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div id=&#x22;tab-d3&#x22; class=&#x22;navtab-content&#x22;&#x3E;
+                &#x3C;p&#x3E;Nam cibo consul insolens ei, at commune perfecto qui, ad vel summo vivendo. Ea est nostrum urbanitas accommodare. Ne mea esse possim quaerendum, sumo nullam disputando sit cu. Ridens labore dicunt mea id&#x3C;/p&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+                                            </code></pre>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Code section -->
+                </div>
+            </div>
+            <!-- /Boxed tabs -->
+        </section>
+        
+        <section class="section is-medium">
+        
+            <div id="animated-tabs" class="section-title-wrapper has-text-centered pt-60">
+                <div class="bg-number">3</div>
+                <h2 class="title section-title has-text-centered dark-text text-bold">
+                    Animated tabs
+                </h2>
+            </div>
+        
+            <!-- Animated tabs -->
+            <div class="columns is-vcentered">
+                <div class="column is-6 is-offset-3">
+                    <!-- Demo section -->
+                    <div class="info-block">
+                        <h4>Animated tabs</h4>
+                        <p>Add the <code>.animated-tabs</code> class to the <code>.navigation-tabs</code> wrapper to add an animation to the transitions.</p>
+                    </div>
+        
+                    <div class="navigation-tabs animated-tabs simple-tabs">
+                        <div class="tabs">
+                            <ul>
+                                <li class="is-active" data-tab="tab-e1"><a>First tab</a></li>
+                                <li data-tab="tab-e2"><a>Second tab</a></li>
+                                <li data-tab="tab-e3"><a>Third tab</a></li>
+                            </ul>
+                        </div>
+                        <div id="tab-e1" class="navtab-content is-active">
+                            <p>Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam, eligendi oportere honestatis sed id. Persius volumus has no, ex pro nisl commodo dissentias, at sed appareat consequat consectetuer.</p>
+                        </div>
+                        <div id="tab-e2" class="navtab-content">
+                            <p>Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam.</p>
+                        </div>
+                        <div id="tab-e3" class="navtab-content">
+                            <p>Nam cibo consul insolens ei, at commune perfecto qui, ad vel summo vivendo. Ea est nostrum urbanitas accommodare. Ne mea esse possim quaerendum, sumo nullam disputando sit cu. Ridens labore dicunt mea id</p>
+                        </div>
+                    </div>
+                    <!-- /Demo section -->
+        
+                    <!-- Code section -->
+                    <div class="accordion-wrapper">
+                        <div class="toggle-wrap">
+                            <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                            <div class="toggle-container">
+                                <figure class="highlight highlight-block">
+                                    <pre><code class="html code-highlight">
+        &#x3C;div class=&#x22;navigation-tabs animated-tabs simple-tabs&#x22;&#x3E;
+            &#x3C;div class=&#x22;tabs&#x22;&#x3E;
+                &#x3C;ul&#x3E;
+                    &#x3C;li class=&#x22;is-active&#x22; data-tab=&#x22;tab-e1&#x22;&#x3E;&#x3C;a&#x3E;First tab&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li data-tab=&#x22;tab-e2&#x22;&#x3E;&#x3C;a&#x3E;Second tab&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li data-tab=&#x22;tab-e3&#x22;&#x3E;&#x3C;a&#x3E;Third tab&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                &#x3C;/ul&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div id=&#x22;tab-e1&#x22; class=&#x22;navtab-content is-active&#x22;&#x3E;
+                &#x3C;p&#x3E;Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam, eligendi oportere honestatis sed id. Persius volumus has no, ex pro nisl commodo dissentias, at sed appareat consequat consectetuer.&#x3C;/p&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div id=&#x22;tab-e2&#x22; class=&#x22;navtab-content&#x22;&#x3E;
+                &#x3C;p&#x3E;Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam.&#x3C;/p&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div id=&#x22;tab-e3&#x22; class=&#x22;navtab-content&#x22;&#x3E;
+                &#x3C;p&#x3E;Nam cibo consul insolens ei, at commune perfecto qui, ad vel summo vivendo. Ea est nostrum urbanitas accommodare. Ne mea esse possim quaerendum, sumo nullam disputando sit cu. Ridens labore dicunt mea id&#x3C;/p&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+                                            </code></pre>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Code section -->
+                </div>
+            </div>
+            <!-- /Animated tabs -->
+        
+            <!-- Translated tabs -->
+            <div class="columns is-vcentered pt-60">
+                <div class="column is-6 is-offset-3">
+                    <!-- Demo section -->
+                    <div class="info-block">
+                        <h4>Translated tabs</h4>
+                        <p>Add the <code>.translated-tabs</code> class to the <code>.navigation-tabs</code> wrapper to add an animation to the transitions.</p>
+                    </div>
+        
+                    <div class="navigation-tabs translated-tabs simple-tabs">
+                        <div class="tabs">
+                            <ul>
+                                <li class="is-active" data-tab="tab-f1"><a>First tab</a></li>
+                                <li data-tab="tab-f2"><a>Second tab</a></li>
+                                <li data-tab="tab-f3"><a>Third tab</a></li>
+                            </ul>
+                        </div>
+                        <div id="tab-f1" class="navtab-content is-active">
+                            <p>Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam, eligendi oportere honestatis sed id. Persius volumus has no, ex pro nisl commodo dissentias, at sed appareat consequat consectetuer.</p>
+                        </div>
+                        <div id="tab-f2" class="navtab-content">
+                            <p>Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam.</p>
+                        </div>
+                        <div id="tab-f3" class="navtab-content">
+                            <p>Nam cibo consul insolens ei, at commune perfecto qui, ad vel summo vivendo. Ea est nostrum urbanitas accommodare. Ne mea esse possim quaerendum, sumo nullam disputando sit cu. Ridens labore dicunt mea id</p>
+                        </div>
+                    </div>
+                    <!-- /Demo section -->
+        
+                    <!-- Code section -->
+                    <div class="accordion-wrapper">
+                        <div class="toggle-wrap">
+                            <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                            <div class="toggle-container">
+                                <figure class="highlight highlight-block">
+                                    <pre><code class="html code-highlight">
+        &#x3C;div class=&#x22;navigation-tabs translated-tabs simple-tabs&#x22;&#x3E;
+            &#x3C;div class=&#x22;tabs&#x22;&#x3E;
+                &#x3C;ul&#x3E;
+                    &#x3C;li class=&#x22;is-active&#x22; data-tab=&#x22;tab-e1&#x22;&#x3E;&#x3C;a&#x3E;First tab&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li data-tab=&#x22;tab-e2&#x22;&#x3E;&#x3C;a&#x3E;Second tab&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li data-tab=&#x22;tab-e3&#x22;&#x3E;&#x3C;a&#x3E;Third tab&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                &#x3C;/ul&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div id=&#x22;tab-e1&#x22; class=&#x22;navtab-content is-active&#x22;&#x3E;
+                &#x3C;p&#x3E;Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam, eligendi oportere honestatis sed id. Persius volumus has no, ex pro nisl commodo dissentias, at sed appareat consequat consectetuer.&#x3C;/p&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div id=&#x22;tab-e2&#x22; class=&#x22;navtab-content&#x22;&#x3E;
+                &#x3C;p&#x3E;Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam.&#x3C;/p&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div id=&#x22;tab-e3&#x22; class=&#x22;navtab-content&#x22;&#x3E;
+                &#x3C;p&#x3E;Nam cibo consul insolens ei, at commune perfecto qui, ad vel summo vivendo. Ea est nostrum urbanitas accommodare. Ne mea esse possim quaerendum, sumo nullam disputando sit cu. Ridens labore dicunt mea id&#x3C;/p&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+                                            </code></pre>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Code section -->
+                </div>
+            </div>
+            <!-- /Translated tabs -->
+        </section>
+        
+        <section class="section section-feature-grey is-medium">
+        
+            <div id="full-pills" class="section-title-wrapper has-text-centered pt-60">
+                <div class="bg-number">4</div>
+                <h2 class="title section-title has-text-centered dark-text text-bold">
+                    Full pills
+                </h2>
+            </div>
+        
+            <!-- Full pills -->
+            <div class="columns is-vcentered">
+                <div class="column is-6 is-offset-3">
+                    <!-- Demo section -->
+                    <div class="info-block">
+                        <h4>Full pills</h4>
+                        <p>Add the <code>.full-pills</code> class to the <code>.navigation-tabs</code> wrapper to setup navigation pills. It is mandatory that you add a color in the same wrapper. Choose between <code>.primary</code>, <code>.secondary</code>, or <code>.accent</code>, according to your theme colors.</p>
+                    </div>
+        
+                    <div class="navigation-tabs full-pills primary animated-tabs">
+                        <div class="tabs is-centered">
+                            <ul>
+                                <li class="tab-link is-active" data-tab="tab-g1"><a>First tab</a></li>
+                                <li class="tab-link" data-tab="tab-g2"><a>Second tab</a></li>
+                                <li class="tab-link" data-tab="tab-g3"><a>Third tab</a></li>
+                            </ul>
+                        </div>
+                        <div id="tab-g1" class="navtab-content is-active">
+                            <p>Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam, eligendi oportere honestatis sed id. Persius volumus has no, ex pro nisl commodo dissentias, at sed appareat consequat consectetuer.</p>
+                        </div>
+                        <div id="tab-g2" class="navtab-content">
+                            <p>Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam.</p>
+                        </div>
+                        <div id="tab-g3" class="navtab-content">
+                            <p>Nam cibo consul insolens ei, at commune perfecto qui, ad vel summo vivendo. Ea est nostrum urbanitas accommodare. Ne mea esse possim quaerendum, sumo nullam disputando sit cu. Ridens labore dicunt mea id</p>
+                        </div>
+                    </div>
+        
+                    <div class="navigation-tabs full-pills secondary animated-tabs">
+                        <div class="tabs">
+                            <ul>
+                                <li class="tab-link is-active" data-tab="tab-h1"><a>First tab</a></li>
+                                <li class="tab-link" data-tab="tab-h2"><a>Second tab</a></li>
+                                <li class="tab-link" data-tab="tab-h3"><a>Third tab</a></li>
+                            </ul>
+                        </div>
+                        <div id="tab-h1" class="navtab-content is-active">
+                            <p>Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam, eligendi oportere honestatis sed id. Persius volumus has no, ex pro nisl commodo dissentias, at sed appareat consequat consectetuer.</p>
+                        </div>
+                        <div id="tab-h2" class="navtab-content">
+                            <p>Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam.</p>
+                        </div>
+                        <div id="tab-h3" class="navtab-content">
+                            <p>Nam cibo consul insolens ei, at commune perfecto qui, ad vel summo vivendo. Ea est nostrum urbanitas accommodare. Ne mea esse possim quaerendum, sumo nullam disputando sit cu. Ridens labore dicunt mea id</p>
+                        </div>
+                    </div>
+        
+                    <div class="navigation-tabs full-pills accent animated-tabs">
+                        <div class="tabs is-right">
+                            <ul>
+                                <li class="tab-link is-active" data-tab="tab-i1"><a>First tab</a></li>
+                                <li class="tab-link" data-tab="tab-i2"><a>Second tab</a></li>
+                                <li class="tab-link" data-tab="tab-i3"><a>Third tab</a></li>
+                            </ul>
+                        </div>
+                        <div id="tab-i1" class="navtab-content is-active">
+                            <p>Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam, eligendi oportere honestatis sed id. Persius volumus has no, ex pro nisl commodo dissentias, at sed appareat consequat consectetuer.</p>
+                        </div>
+                        <div id="tab-i2" class="navtab-content">
+                            <p>Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam.</p>
+                        </div>
+                        <div id="tab-i3" class="navtab-content">
+                            <p>Nam cibo consul insolens ei, at commune perfecto qui, ad vel summo vivendo. Ea est nostrum urbanitas accommodare. Ne mea esse possim quaerendum, sumo nullam disputando sit cu. Ridens labore dicunt mea id</p>
+                        </div>
+                    </div>
+                    <!-- /Demo section -->
+        
+                    <!-- Code section -->
+                    <div class="accordion-wrapper">
+                        <div class="toggle-wrap">
+                            <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                            <div class="toggle-container">
+                                <figure class="highlight highlight-block">
+                                    <pre><code class="html code-highlight">
+        &#x3C;div class=&#x22;navigation-tabs full-pills primary animated-tabs&#x22;&#x3E;
+            &#x3C;div class=&#x22;tabs is-centered&#x22;&#x3E;
+                &#x3C;ul&#x3E;
+                    &#x3C;li class=&#x22;tab-link is-active&#x22; data-tab=&#x22;tab-g1&#x22;&#x3E;&#x3C;a&#x3E;First tab&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li class=&#x22;tab-link&#x22; data-tab=&#x22;tab-g2&#x22;&#x3E;&#x3C;a&#x3E;Second tab&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li class=&#x22;tab-link&#x22; data-tab=&#x22;tab-g3&#x22;&#x3E;&#x3C;a&#x3E;Third tab&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                &#x3C;/ul&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div id=&#x22;tab-g1&#x22; class=&#x22;navtab-content is-active&#x22;&#x3E;
+                &#x3C;p&#x3E;Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam, eligendi oportere honestatis sed id. Persius volumus has no, ex pro nisl commodo dissentias, at sed appareat consequat consectetuer.&#x3C;/p&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div id=&#x22;tab-g2&#x22; class=&#x22;navtab-content&#x22;&#x3E;
+                &#x3C;p&#x3E;Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam.&#x3C;/p&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div id=&#x22;tab-g3&#x22; class=&#x22;navtab-content&#x22;&#x3E;
+                &#x3C;p&#x3E;Nam cibo consul insolens ei, at commune perfecto qui, ad vel summo vivendo. Ea est nostrum urbanitas accommodare. Ne mea esse possim quaerendum, sumo nullam disputando sit cu. Ridens labore dicunt mea id&#x3C;/p&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+                                            </code></pre>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Code section -->
+                </div>
+            </div>
+            <!-- /Full pills -->
+        
+            <!-- Full rounded pills -->
+            <div class="columns is-vcentered pt-60">
+                <div class="column is-6 is-offset-3">
+                    <!-- Demo section -->
+                    <div class="info-block">
+                        <h4>Full rounded pills</h4>
+                        <p>Add the <code>.full-pills.rounded</code> class to the <code>.navigation-tabs</code> wrapper to setup navigation pills. It is mandatory that you add a color in the same wrapper. Choose between <code>.primary</code>, <code>.secondary</code>, or <code>.accent</code>, according to your theme colors.</p>
+                    </div>
+        
+                    <div class="navigation-tabs full-pills rounded primary animated-tabs">
+                        <div class="tabs is-centered">
+                            <ul>
+                                <li class="tab-link is-active" data-tab="tab-j1"><a>First tab</a></li>
+                                <li class="tab-link" data-tab="tab-j2"><a>Second tab</a></li>
+                                <li class="tab-link" data-tab="tab-j3"><a>Third tab</a></li>
+                            </ul>
+                        </div>
+                        <div id="tab-j1" class="navtab-content is-active">
+                            <p>Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam, eligendi oportere honestatis sed id. Persius volumus has no, ex pro nisl commodo dissentias, at sed appareat consequat consectetuer.</p>
+                        </div>
+                        <div id="tab-j2" class="navtab-content">
+                            <p>Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam.</p>
+                        </div>
+                        <div id="tab-j3" class="navtab-content">
+                            <p>Nam cibo consul insolens ei, at commune perfecto qui, ad vel summo vivendo. Ea est nostrum urbanitas accommodare. Ne mea esse possim quaerendum, sumo nullam disputando sit cu. Ridens labore dicunt mea id</p>
+                        </div>
+                    </div>
+                    <!-- /Demo section -->
+        
+                    <!-- Code section -->
+                    <div class="accordion-wrapper">
+                        <div class="toggle-wrap">
+                            <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                            <div class="toggle-container">
+                                <figure class="highlight highlight-block">
+                                    <pre><code class="html code-highlight">
+        &#x3C;div class=&#x22;navigation-tabs full-pills rounded primary animated-tabs&#x22;&#x3E;
+            &#x3C;div class=&#x22;tabs is-centered&#x22;&#x3E;
+                &#x3C;ul&#x3E;
+                    &#x3C;li class=&#x22;tab-link is-active&#x22; data-tab=&#x22;tab-j1&#x22;&#x3E;&#x3C;a&#x3E;First tab&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li class=&#x22;tab-link&#x22; data-tab=&#x22;tab-j2&#x22;&#x3E;&#x3C;a&#x3E;Second tab&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li class=&#x22;tab-link&#x22; data-tab=&#x22;tab-j3&#x22;&#x3E;&#x3C;a&#x3E;Third tab&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                &#x3C;/ul&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div id=&#x22;tab-j1&#x22; class=&#x22;navtab-content is-active&#x22;&#x3E;
+                &#x3C;p&#x3E;Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam, eligendi oportere honestatis sed id. Persius volumus has no, ex pro nisl commodo dissentias, at sed appareat consequat consectetuer.&#x3C;/p&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div id=&#x22;tab-j2&#x22; class=&#x22;navtab-content&#x22;&#x3E;
+                &#x3C;p&#x3E;Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam.&#x3C;/p&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div id=&#x22;tab-j3&#x22; class=&#x22;navtab-content&#x22;&#x3E;
+                &#x3C;p&#x3E;Nam cibo consul insolens ei, at commune perfecto qui, ad vel summo vivendo. Ea est nostrum urbanitas accommodare. Ne mea esse possim quaerendum, sumo nullam disputando sit cu. Ridens labore dicunt mea id&#x3C;/p&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+                                            </code></pre>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Code section -->
+                </div>
+            </div>
+            <!-- Full rounded pills -->
+        </section>
+        
+        <section class="section is-medium">
+        
+            <div id="light-pills" class="section-title-wrapper has-text-centered pt-60">
+                <div class="bg-number">5</div>
+                <h2 class="title section-title has-text-centered dark-text text-bold">
+                    Light pills
+                </h2>
+            </div>
+        
+            <!-- Light pills -->
+            <div class="columns is-vcentered">
+                <div class="column is-6 is-offset-3">
+                    <!-- Demo section -->
+                    <div class="info-block">
+                        <h4>Outlined pills</h4>
+                        <p>Add the <code>.outlined-pills</code> class to the <code>.navigation-tabs</code> wrapper to setup navigation pills.</p>
+                    </div>
+        
+                    <div class="navigation-tabs outlined-pills animated-tabs">
+                        <div class="tabs">
+                            <ul>
+                                <li class="tab-link is-active" data-tab="tab-k1"><a>First tab</a></li>
+                                <li class="tab-link" data-tab="tab-k2"><a>Second tab</a></li>
+                                <li class="tab-link" data-tab="tab-k3"><a>Third tab</a></li>
+                            </ul>
+                        </div>
+                        <div id="tab-k1" class="navtab-content is-active">
+                            <p>Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam, eligendi oportere honestatis sed id. Persius volumus has no, ex pro nisl commodo dissentias, at sed appareat consequat consectetuer.</p>
+                        </div>
+                        <div id="tab-k2" class="navtab-content">
+                            <p>Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam.</p>
+                        </div>
+                        <div id="tab-k3" class="navtab-content">
+                            <p>Nam cibo consul insolens ei, at commune perfecto qui, ad vel summo vivendo. Ea est nostrum urbanitas accommodare. Ne mea esse possim quaerendum, sumo nullam disputando sit cu. Ridens labore dicunt mea id</p>
+                        </div>
+                    </div>
+                    <!-- /Demo section -->
+        
+                    <!-- Code section -->
+                    <div class="accordion-wrapper">
+                        <div class="toggle-wrap">
+                            <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                            <div class="toggle-container">
+                                <figure class="highlight highlight-block">
+                                    <pre><code class="html code-highlight">
+        &#x3C;div class=&#x22;navigation-tabs outlined-pills animated-tabs&#x22;&#x3E;
+            &#x3C;div class=&#x22;tabs&#x22;&#x3E;
+                &#x3C;ul&#x3E;
+                    &#x3C;li class=&#x22;tab-link is-active&#x22; data-tab=&#x22;tab-k1&#x22;&#x3E;&#x3C;a&#x3E;First tab&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li class=&#x22;tab-link&#x22; data-tab=&#x22;tab-k2&#x22;&#x3E;&#x3C;a&#x3E;Second tab&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li class=&#x22;tab-link&#x22; data-tab=&#x22;tab-k3&#x22;&#x3E;&#x3C;a&#x3E;Third tab&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                &#x3C;/ul&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div id=&#x22;tab-k1&#x22; class=&#x22;navtab-content is-active&#x22;&#x3E;
+                &#x3C;p&#x3E;Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam, eligendi oportere honestatis sed id. Persius volumus has no, ex pro nisl commodo dissentias, at sed appareat consequat consectetuer.&#x3C;/p&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div id=&#x22;tab-k2&#x22; class=&#x22;navtab-content&#x22;&#x3E;
+                &#x3C;p&#x3E;Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam.&#x3C;/p&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div id=&#x22;tab-k3&#x22; class=&#x22;navtab-content&#x22;&#x3E;
+                &#x3C;p&#x3E;Nam cibo consul insolens ei, at commune perfecto qui, ad vel summo vivendo. Ea est nostrum urbanitas accommodare. Ne mea esse possim quaerendum, sumo nullam disputando sit cu. Ridens labore dicunt mea id&#x3C;/p&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+                                            </code></pre>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Code section -->
+                </div>
+            </div>
+            <!-- Light pills -->
+        
+            <!-- Light rounded pills -->
+            <div class="columns is-vcentered pt-60">
+                <div class="column is-6 is-offset-3">
+                    <!-- Demo section -->
+                    <div class="info-block">
+                        <h4>Outlined rounded pills</h4>
+                        <p>Add the <code>.outlined-pills</code> class to the <code>.navigation-tabs</code> wrapper to setup navigation pills.</p>
+                    </div>
+        
+                    <div class="navigation-tabs outlined-pills rounded-pills animated-tabs">
+                        <div class="tabs">
+                            <ul>
+                                <li class="tab-link is-active" data-tab="tab-l1"><a>First tab</a></li>
+                                <li class="tab-link" data-tab="tab-l2"><a>Second tab</a></li>
+                                <li class="tab-link" data-tab="tab-l3"><a>Third tab</a></li>
+                            </ul>
+                        </div>
+                        <div id="tab-l1" class="navtab-content is-active">
+                            <p>Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam, eligendi oportere honestatis sed id. Persius volumus has no, ex pro nisl commodo dissentias, at sed appareat consequat consectetuer.</p>
+                        </div>
+                        <div id="tab-l2" class="navtab-content">
+                            <p>Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam.</p>
+                        </div>
+                        <div id="tab-l3" class="navtab-content">
+                            <p>Nam cibo consul insolens ei, at commune perfecto qui, ad vel summo vivendo. Ea est nostrum urbanitas accommodare. Ne mea esse possim quaerendum, sumo nullam disputando sit cu. Ridens labore dicunt mea id</p>
+                        </div>
+                    </div>
+                    <!-- /Demo section -->
+        
+                    <!-- Code section -->
+                    <div class="accordion-wrapper">
+                        <div class="toggle-wrap">
+                            <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                            <div class="toggle-container">
+                                <figure class="highlight highlight-block">
+                                    <pre><code class="html code-highlight">
+        &#x3C;div class=&#x22;navigation-tabs outlined-pills rounded animated-tabs&#x22;&#x3E;
+            &#x3C;div class=&#x22;tabs&#x22;&#x3E;
+                &#x3C;ul&#x3E;
+                    &#x3C;li class=&#x22;tab-link is-active&#x22; data-tab=&#x22;tab-k1&#x22;&#x3E;&#x3C;a&#x3E;First tab&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li class=&#x22;tab-link&#x22; data-tab=&#x22;tab-k2&#x22;&#x3E;&#x3C;a&#x3E;Second tab&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li class=&#x22;tab-link&#x22; data-tab=&#x22;tab-k3&#x22;&#x3E;&#x3C;a&#x3E;Third tab&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                &#x3C;/ul&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div id=&#x22;tab-k1&#x22; class=&#x22;navtab-content is-active&#x22;&#x3E;
+                &#x3C;p&#x3E;Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam, eligendi oportere honestatis sed id. Persius volumus has no, ex pro nisl commodo dissentias, at sed appareat consequat consectetuer.&#x3C;/p&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div id=&#x22;tab-k2&#x22; class=&#x22;navtab-content&#x22;&#x3E;
+                &#x3C;p&#x3E;Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam.&#x3C;/p&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div id=&#x22;tab-k3&#x22; class=&#x22;navtab-content&#x22;&#x3E;
+                &#x3C;p&#x3E;Nam cibo consul insolens ei, at commune perfecto qui, ad vel summo vivendo. Ea est nostrum urbanitas accommodare. Ne mea esse possim quaerendum, sumo nullam disputando sit cu. Ridens labore dicunt mea id&#x3C;/p&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+                                            </code></pre>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Code section -->
+                </div>
+            </div>
+            <!-- Light rounded pills -->
+        </section>
+        
+        <section class="section section-feature-grey is-medium">
+        
+            <div id="card-tabs" class="section-title-wrapper has-text-centered pt-60">
+                <div class="bg-number">6</div>
+                <h2 class="title section-title has-text-centered dark-text text-bold">
+                    In cards
+                </h2>
+            </div>
+        
+            <div class="columns is-vcentered">
+        
+                <div class="column is-6 is-offset-3">
+                    <!-- Rounded Pills in Card -->
+                    <div class="info-block">
+                        <h4>Pills in Card</h4>
+                    </div>
+                    <!-- Tabs block -->
+                    <div class="flex-card raised">
+                        <div class="navigation-tabs outlined-pills rounded-pills animated-tabs">
+                            <div class="tabs is-centered">
+                                <ul>
+                                    <li class="tab-link is-active" data-tab="tab-m1"><a>Deals</a></li>
+                                    <li class="tab-link" data-tab="tab-m2"><a>Customers</a></li>
+                                    <li class="tab-link" data-tab="tab-m3"><a>Abstracts</a></li>
+                                </ul>
+                            </div>
+                            <div id="tab-m1" class="navtab-content is-active">
+                                <p>Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam, eligendi oportere honestatis sed id. Persius volumus has no, ex pro nisl commodo dissentias, at sed appareat consequat consectetuer.</p>
+                            </div>
+                            <div id="tab-m2" class="navtab-content">
+                                <p>Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam.</p>
+                            </div>
+                            <div id="tab-m3" class="navtab-content">
+                                <p>Nam cibo consul insolens ei, at commune perfecto qui, ad vel summo vivendo. Ea est nostrum urbanitas accommodare. Ne mea esse possim quaerendum, sumo nullam disputando sit cu. Ridens labore dicunt mea id</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Tabs block -->
+                    <!-- /Rounded Pills in Card -->
+        
+                    <!-- Primary header -->
+                    <div class="info-block mt-40 mb-40">
+                        <h4>Primary header</h4>
+                    </div>
+                    <!-- Tabs block -->
+                    <div class="flex-card raised">
+                        <div class="navigation-tabs outlined-pills rounded-pills animated-tabs">
+                            <div class="tabs tabs-header primary is-centered">
+                                <ul>
+                                    <li class="tab-link is-active" data-tab="tab-n1"><a>Deals</a></li>
+                                    <li class="tab-link" data-tab="tab-n2"><a>Customers</a></li>
+                                    <li class="tab-link" data-tab="tab-n3"><a>Abstracts</a></li>
+                                </ul>
+                            </div>
+                            <div id="tab-n1" class="navtab-content is-active">
+                                <p>Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam, eligendi oportere honestatis sed id. Persius volumus has no, ex pro nisl commodo dissentias, at sed appareat consequat consectetuer.</p>
+                            </div>
+                            <div id="tab-n2" class="navtab-content">
+                                <p>Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam.</p>
+                            </div>
+                            <div id="tab-n3" class="navtab-content">
+                                <p>Nam cibo consul insolens ei, at commune perfecto qui, ad vel summo vivendo. Ea est nostrum urbanitas accommodare. Ne mea esse possim quaerendum, sumo nullam disputando sit cu. Ridens labore dicunt mea id</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Tabs block -->
+                    <!-- /Primary header -->
+        
+                    <!-- Secondary header -->
+                    <div class="info-block mt-40 mb-40">
+                        <h4>Secondary header</h4>
+                    </div>
+                    <!-- Tabs block -->
+                    <div class="flex-card raised">
+                        <div class="navigation-tabs outlined-pills rounded-pills animated-tabs">
+                            <div class="tabs tabs-header secondary is-centered">
+                                <ul>
+                                    <li class="tab-link is-active" data-tab="tab-o1"><a>Deals</a></li>
+                                    <li class="tab-link" data-tab="tab-o2"><a>Customers</a></li>
+                                    <li class="tab-link" data-tab="tab-o3"><a>Abstracts</a></li>
+                                </ul>
+                            </div>
+                            <div id="tab-o1" class="navtab-content is-active">
+                                <p>Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam, eligendi oportere honestatis sed id. Persius volumus has no, ex pro nisl commodo dissentias, at sed appareat consequat consectetuer.</p>
+                            </div>
+                            <div id="tab-o2" class="navtab-content">
+                                <p>Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam.</p>
+                            </div>
+                            <div id="tab-o3" class="navtab-content">
+                                <p>Nam cibo consul insolens ei, at commune perfecto qui, ad vel summo vivendo. Ea est nostrum urbanitas accommodare. Ne mea esse possim quaerendum, sumo nullam disputando sit cu. Ridens labore dicunt mea id</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Tabs block -->
+                    <!-- /Secondary header -->
+        
+                    <!-- Accent header -->
+                    <div class="info-block mt-40 mb-40">
+                        <h4>Accent header</h4>
+                    </div>
+                    <!-- Tabs block -->
+                    <div class="flex-card raised">
+                        <div class="navigation-tabs outlined-pills rounded-pills animated-tabs">
+                            <div class="tabs tabs-header accent is-centered">
+                                <ul>
+                                    <li class="tab-link is-active" data-tab="tab-p1"><a>Deals</a></li>
+                                    <li class="tab-link" data-tab="tab-p2"><a>Customers</a></li>
+                                    <li class="tab-link" data-tab="tab-p3"><a>Abstracts</a></li>
+                                </ul>
+                            </div>
+                            <div id="tab-p1" class="navtab-content is-active">
+                                <p>Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam, eligendi oportere honestatis sed id. Persius volumus has no, ex pro nisl commodo dissentias, at sed appareat consequat consectetuer.</p>
+                            </div>
+                            <div id="tab-p2" class="navtab-content">
+                                <p>Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam.</p>
+                            </div>
+                            <div id="tab-p3" class="navtab-content">
+                                <p>Nam cibo consul insolens ei, at commune perfecto qui, ad vel summo vivendo. Ea est nostrum urbanitas accommodare. Ne mea esse possim quaerendum, sumo nullam disputando sit cu. Ridens labore dicunt mea id</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Tabs block -->
+                    <!-- /Accent header -->
+        
+                    <!-- Tabs in Card -->
+                    <div class="info-block mt-40 mb-40">
+                        <h4>Tabs in Card</h4>
+                    </div>
+                    <!-- Tabs block -->
+                    <div class="flex-card raised">
+                        <div class="navigation-tabs simple-tabs animated-tabs">
+                            <div class="tabs">
+                                <ul>
+                                    <li class="tab-link is-active" data-tab="tab-q1"><a>Deals</a></li>
+                                    <li class="tab-link" data-tab="tab-q2"><a>Customers</a></li>
+                                    <li class="tab-link" data-tab="tab-q3"><a>Abstracts</a></li>
+                                </ul>
+                            </div>
+                            <div id="tab-q1" class="navtab-content is-active">
+                                <p>Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam, eligendi oportere honestatis sed id. Persius volumus has no, ex pro nisl commodo dissentias, at sed appareat consequat consectetuer.</p>
+                            </div>
+                            <div id="tab-q2" class="navtab-content">
+                                <p>Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam.</p>
+                            </div>
+                            <div id="tab-q3" class="navtab-content">
+                                <p>Nam cibo consul insolens ei, at commune perfecto qui, ad vel summo vivendo. Ea est nostrum urbanitas accommodare. Ne mea esse possim quaerendum, sumo nullam disputando sit cu. Ridens labore dicunt mea id</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Tabs block -->
+                    <!-- /Tabs in Card -->
+        
+                    <!-- On the right -->
+                    <div class="info-block mt-40 mb-40">
+                        <h4>On the right side</h4>
+                    </div>
+                    <!-- Tabs block -->
+                    <div class="flex-card raised">
+                        <div class="navigation-tabs simple-tabs animated-tabs">
+                            <div class="tabs is-right">
+                                <ul>
+                                    <li class="tab-link is-active" data-tab="tab-r1"><a>Deals</a></li>
+                                    <li class="tab-link" data-tab="tab-r2"><a>Customers</a></li>
+                                    <li class="tab-link" data-tab="tab-r3"><a>Abstracts</a></li>
+                                </ul>
+                            </div>
+                            <div id="tab-r1" class="navtab-content is-active">
+                                <p>Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam, eligendi oportere honestatis sed id. Persius volumus has no, ex pro nisl commodo dissentias, at sed appareat consequat consectetuer.</p>
+                            </div>
+                            <div id="tab-r2" class="navtab-content">
+                                <p>Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam.</p>
+                            </div>
+                            <div id="tab-r3" class="navtab-content">
+                                <p>Nam cibo consul insolens ei, at commune perfecto qui, ad vel summo vivendo. Ea est nostrum urbanitas accommodare. Ne mea esse possim quaerendum, sumo nullam disputando sit cu. Ridens labore dicunt mea id</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Tabs block -->
+                    <!-- /On the right -->
+        
+                </div>
+            </div>
+        </section>
+        
+        <section class="section is-medium">
+        
+            <div id="special-pills" class="section-title-wrapper has-text-centered">
+                <div class="bg-number">7</div>
+                <h2 class="title section-title has-text-centered dark-text text-bold huge-pb">
+                    Special pills
+                </h2>
+            </div>
+        
+            <!-- Square icon pills -->
+            <div class="columns is-vcentered pt-60">
+                <div class="column is-6 is-offset-3">
+                    <!-- Demo section -->
+                    <div class="info-block">
+                        <h4>Square icon pills</h4>
+                        <p>Add the <code>.full-pills</code> class to the <code>.navigation-tabs</code> wrapper to setup navigation pills. It is mandatory that you add a color in the same wrapper. Choose between <code>.primary</code>, <code>.secondary</code>, or <code>.accent</code>, according to your theme colors.</p>
+                    </div>
+        
+                    <div class="navigation-tabs animated-tabs square-pills">
+                        <div class="tabs is-centered">
+                            <ul>
+                                <li class="is-active" data-tab="tab-s1"><a><span class="icon"><i class="sl sl-icon-drop"></i></span></a></li>
+                                <li data-tab="tab-s2"><a><span class="icon"><i class="sl sl-icon-user"></i></span></a></li>
+                                <li data-tab="tab-s3"><a><span class="icon"><i class="sl sl-icon-cup"></i></span></a></li>
+                            </ul>
+                        </div>
+                        <div id="tab-s1" class="navtab-content is-active">
+                            <p>Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam, eligendi oportere honestatis sed id. Persius volumus has no, ex pro nisl commodo dissentias, at sed appareat consequat consectetuer.</p>
+                        </div>
+                        <div id="tab-s2" class="navtab-content">
+                            <p>Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam.</p>
+                        </div>
+                        <div id="tab-s3" class="navtab-content">
+                            <p>Nam cibo consul insolens ei, at commune perfecto qui, ad vel summo vivendo. Ea est nostrum urbanitas accommodare. Ne mea esse possim quaerendum, sumo nullam disputando sit cu. Ridens labore dicunt mea id</p>
+                        </div>
+                    </div>
+                    <!-- /Demo section -->
+        
+                    <!-- Code section -->
+                    <div class="accordion-wrapper">
+                        <div class="toggle-wrap">
+                            <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                            <div class="toggle-container">
+                                <figure class="highlight highlight-block">
+                                    <pre><code class="html code-highlight">
+        &#x3C;div class=&#x22;navigation-tabs animated-tabs square-pills&#x22;&#x3E;
+            &#x3C;div class=&#x22;tabs is-centered&#x22;&#x3E;
+                &#x3C;ul&#x3E;
+                    &#x3C;li class=&#x22;is-active&#x22; data-tab=&#x22;tab-s1&#x22;&#x3E;&#x3C;a&#x3E;&#x3C;span class=&#x22;icon&#x22;&#x3E;&#x3C;i class=&#x22;sl sl-icon-drop&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li data-tab=&#x22;tab-s2&#x22;&#x3E;&#x3C;a&#x3E;&#x3C;span class=&#x22;icon&#x22;&#x3E;&#x3C;i class=&#x22;sl sl-icon-user&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li data-tab=&#x22;tab-s3&#x22;&#x3E;&#x3C;a&#x3E;&#x3C;span class=&#x22;icon&#x22;&#x3E;&#x3C;i class=&#x22;sl sl-icon-cup&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                &#x3C;/ul&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div id=&#x22;tab-s1&#x22; class=&#x22;navtab-content is-active&#x22;&#x3E;
+                &#x3C;p&#x3E;Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam, eligendi oportere honestatis sed id. Persius volumus has no, ex pro nisl commodo dissentias, at sed appareat consequat consectetuer.&#x3C;/p&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div id=&#x22;tab-s2&#x22; class=&#x22;navtab-content&#x22;&#x3E;
+                &#x3C;p&#x3E;Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam.&#x3C;/p&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div id=&#x22;tab-s3&#x22; class=&#x22;navtab-content&#x22;&#x3E;
+                &#x3C;p&#x3E;Nam cibo consul insolens ei, at commune perfecto qui, ad vel summo vivendo. Ea est nostrum urbanitas accommodare. Ne mea esse possim quaerendum, sumo nullam disputando sit cu. Ridens labore dicunt mea id&#x3C;/p&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+                                            </code></pre>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Code section -->
+                </div>
+            </div>
+            <!-- /Square icon pills -->
+        
+            <!-- Circle icon pills -->
+            <div class="columns is-vcentered pt-60">
+                <div class="column is-6 is-offset-3">
+                    <!-- Demo section -->
+                    <div class="info-block">
+                        <h4>Circle icon pills</h4>
+                        <p>Add the <code>.full-pills</code> class to the <code>.navigation-tabs</code> wrapper to setup navigation pills. It is mandatory that you add a color in the same wrapper. Choose between <code>.primary</code>, <code>.secondary</code>, or <code>.accent</code>, according to your theme colors.</p>
+                    </div>
+        
+                    <div class="navigation-tabs animated-tabs square-pills circle-pills">
+                        <div class="tabs is-centered">
+                            <ul>
+                                <li class="is-active" data-tab="tab-t1"><a><span class="icon"><i class="sl sl-icon-drop"></i></span></a></li>
+                                <li data-tab="tab-t2"><a><span class="icon"><i class="sl sl-icon-user"></i></span></a></li>
+                                <li data-tab="tab-t3"><a><span class="icon"><i class="sl sl-icon-cup"></i></span></a></li>
+                            </ul>
+                        </div>
+                        <div id="tab-t1" class="navtab-content is-active">
+                            <p>Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam, eligendi oportere honestatis sed id. Persius volumus has no, ex pro nisl commodo dissentias, at sed appareat consequat consectetuer.</p>
+                        </div>
+                        <div id="tab-t2" class="navtab-content">
+                            <p>Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam.</p>
+                        </div>
+                        <div id="tab-t3" class="navtab-content">
+                            <p>Nam cibo consul insolens ei, at commune perfecto qui, ad vel summo vivendo. Ea est nostrum urbanitas accommodare. Ne mea esse possim quaerendum, sumo nullam disputando sit cu. Ridens labore dicunt mea id</p>
+                        </div>
+                    </div>
+                    <!-- /Demo section -->
+        
+                    <!-- Code section -->
+                    <div class="accordion-wrapper">
+                        <div class="toggle-wrap">
+                            <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                            <div class="toggle-container">
+                                <figure class="highlight highlight-block">
+                                    <pre><code class="html code-highlight">
+        &#x3C;div class=&#x22;navigation-tabs animated-tabs square-pills circle-pills&#x22;&#x3E;
+            &#x3C;div class=&#x22;tabs is-centered&#x22;&#x3E;
+                &#x3C;ul&#x3E;
+                    &#x3C;li class=&#x22;is-active&#x22; data-tab=&#x22;tab-s1&#x22;&#x3E;&#x3C;a&#x3E;&#x3C;span class=&#x22;icon&#x22;&#x3E;&#x3C;i class=&#x22;sl sl-icon-drop&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li data-tab=&#x22;tab-s2&#x22;&#x3E;&#x3C;a&#x3E;&#x3C;span class=&#x22;icon&#x22;&#x3E;&#x3C;i class=&#x22;sl sl-icon-user&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li data-tab=&#x22;tab-s3&#x22;&#x3E;&#x3C;a&#x3E;&#x3C;span class=&#x22;icon&#x22;&#x3E;&#x3C;i class=&#x22;sl sl-icon-cup&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/span&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                &#x3C;/ul&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div id=&#x22;tab-s1&#x22; class=&#x22;navtab-content is-active&#x22;&#x3E;
+                &#x3C;p&#x3E;Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam, eligendi oportere honestatis sed id. Persius volumus has no, ex pro nisl commodo dissentias, at sed appareat consequat consectetuer.&#x3C;/p&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div id=&#x22;tab-s2&#x22; class=&#x22;navtab-content&#x22;&#x3E;
+                &#x3C;p&#x3E;Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne. Ea utamur tacimates reprehendunt est, ut ponderum abhorreant pri, facete regione cotidieque cu mea. Vis at duis veritus incorrupte, saperet propriae corrumpit cu eam.&#x3C;/p&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div id=&#x22;tab-s3&#x22; class=&#x22;navtab-content&#x22;&#x3E;
+                &#x3C;p&#x3E;Nam cibo consul insolens ei, at commune perfecto qui, ad vel summo vivendo. Ea est nostrum urbanitas accommodare. Ne mea esse possim quaerendum, sumo nullam disputando sit cu. Ridens labore dicunt mea id&#x3C;/p&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+                                            </code></pre>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Code section -->
+                </div>
+            </div>
+            <!-- /Circle icon pills -->
+        
+        </section>
+        
+        <!-- Dark footer -->
+        <footer id="dark-footer" class="footer footer-dark">
+            <div class="container">
+                <div class="columns">
+                    <div class="column">
+                        <div class="footer-column">
+                            <div class="footer-header">
+                                <h3>Product</h3>
+                            </div>
+                            <ul class="link-list">
+                                <li><a href="#">Discover features</a></li>
+                                <li><a href="#">CMS integration</a></li>
+                                <li><a href="#">Customers</a></li>
+                                <li><a href="#">Weekly sessions</a></li>
+                                <li><a href="#">Free trials and demo</a></li>
+                                <li><a href="#">What's next ?</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="footer-column">
+                            <div class="footer-header">
+                                <h3>Company</h3>
+                            </div>
+                            <ul class="link-list">
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">About security</a></li>
+                                <li><a href="#">User guide</a></li>
+                                <li><a href="#">Terms of service</a></li>
+                                <li><a href="#">Terms of website use</a></li>
+                                <li><a href="#">Privacy policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="footer-column">
+                            <div class="footer-header">
+                                <h3>Learning</h3>
+                            </div>
+                            <ul class="link-list">
+                                <li><a href="#">Resources</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">API documentation</a></li>
+                                <li><a href="#">Admin guide</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="footer-column">
+                            <div class="footer-logo">
+                                <img src="assets/images/logos/bulkit-sky.svg" alt="">
+                            </div>
+                            <div class="footer-header">
+                                <nav class="level is-mobile">
+                                    <div class="level-left level-social">
+                                        <a href="#" class="level-item">
+                                            <span class="icon"><i class="fa fa-facebook"></i></span>
+                                        </a>
+                                        <a href="#" class="level-item">
+                                            <span class="icon"><i class="fa fa-twitter"></i></span>
+                                        </a>
+                                        <a href="#" class="level-item">
+                                            <span class="icon"><i class="fa fa-linkedin"></i></span>
+                                        </a>
+                                        <a href="#" class="level-item">
+                                            <span class="icon"><i class="fa fa-dribbble"></i></span>
+                                        </a>
+                                        <a href="#" class="level-item">
+                                            <span class="icon"><i class="fa fa-github"></i></span>
+                                        </a>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="copyright">
+                                <span class="moto light-text">Designed and coded with <i class="fa fa-heart color-red"></i> by CSS Ninja.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- /Dark footer -->        <!-- Side navigation -->
+        <div class="side-navigation-menu">
+            <!-- Categories menu -->
+            <div class="category-menu-wrapper">
+                <!-- Menu -->
+                <ul class="categories">
+                    <li class="square-logo"><img src="assets/images/logos/square-white.svg" alt=""></li>
+                    <li class="category-link is-active" data-navigation-menu="demo-pages"><i class="sl sl-icon-layers"></i></li>
+                    <li class="category-link" data-navigation-menu="onepagers"><i class="sl sl-icon-energy"></i></li>
+                    <li class="category-link" data-navigation-menu="components"><i class="sl sl-icon-grid"></i></li>
+                </ul>
+                <!-- Menu -->
+        
+                <ul class="author">
+                    <li>
+                        <!-- Theme author -->
+                        <a href="https://cssninja.io" target="_blank">
+                            <img class="main-menu-author" src="assets/images/logos/cssninja.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /Categories menu -->
+        
+            <!-- Navigation menu -->
+            <div id="demo-pages" class="navigation-menu-wrapper animated preFadeInRight fadeInRight">
+                <!-- Navigation Header -->
+                <div class="navigation-menu-header">
+                    <span>Demo pages</span>
+                    <a class="ml-auto hamburger-btn navigation-close" href="javascript:void(0);">
+                        <span class="menu-toggle">
+                            <span class="icon-box-toggle">
+                                <span class="rotate">
+                                    <i class="icon-line-top"></i>
+                                    <i class="icon-line-center"></i>
+                                    <i class="icon-line-bottom"></i>
+                                </span>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <!-- Navigation Body -->
+                <ul class="navigation-menu">
+                    <li class="has-children"><a class="parent-link" href="#"><span class="material-icons">weekend</span>Agency kit</a>
+                        <ul>
+                            <li><a class="is-submenu" href="/agency/index.html">Homepage</a></li>
+                            <li><a class="is-submenu" href="/agency/agency-about.html">About</a></li>
+                            <li><a class="is-submenu" href="/agency/agency-portfolio.html">Portfolio</a></li>
+                            <li><a class="is-submenu" href="/agency/agency-contact.html">Contact</a></li>
+                            <li><a class="is-submenu" href="/agency/agency-blog.html">Blog</a></li>
+                            <li><a class="is-submenu" href="/agency/agency-post-sidebar.html">Post sidebar</a></li>
+                            <li><a class="is-submenu" href="/agency/agency-post-nosidebar.html">Post no sidebar</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children"><a class="parent-link" href="#"><span class="material-icons">wb_incandescent</span>Startup kit</a>
+                        <ul>
+                            <li><a class="is-submenu" href="/startup/index.html">Homepage</a></li>
+                            <li><a class="is-submenu" href="/startup/startup-about.html">About</a></li>
+                            <li><a class="is-submenu" href="/startup/startup-product.html">Product</a></li>
+                            <li><a class="is-submenu" href="/startup/startup-contact.html">Contact</a></li>
+                            <li><a class="is-submenu" href="/startup/startup-login.html">Login</a></li>
+                            <li><a class="is-submenu" href="/startup/startup-signup.html">Sign up</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children"><a class="parent-link" href="#"><span class="material-icons">looks</span>Landing kit v1</a>
+                        <ul>
+                            <li><a class="is-submenu" href="/landing-kits/kit-1/index.html">Landing page</a></li>
+                            <li><a class="is-submenu" href="/landing-kits/kit-1/landing-features.html">Feature page</a></li>
+                            <li><a class="is-submenu" href="/landing-kits/kit-1/landing-pricing.html">Pricing page</a></li>
+                            <li><a class="is-submenu" href="/landing-kits/kit-1/landing-login.html">Login page</a></li>
+                            <li><a class="is-submenu" href="/landing-kits/kit-1/landing-signup.html">Signup page</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children"><a class="parent-link" href="#"><span class="material-icons">invert_colors</span>Landing kit v2</a>
+                        <ul>
+                            <li><a class="is-submenu" href="/landing-kits/kit-2/index.html">Landing page</a></li>
+                            <li><a class="is-submenu" href="/landing-kits/kit-2/landing-v1-features.html">Feature page</a></li>
+                            <li><a class="is-submenu" href="/landing-kits/kit-2/landing-v1-pricing.html">Pricing page</a></li>
+                            <li><a class="is-submenu" href="/landing-kits/kit-2/landing-v1-login.html">Login page</a></li>
+                            <li><a class="is-submenu" href="/landing-kits/kit-2/landing-v1-signup.html">Signup page</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children"><a class="parent-link" href="#"><span class="material-icons">chat_bubble</span>Landing kit v3</a>
+                        <ul>
+                            <li><a class="is-submenu" href="/landing-kits/kit-3/index.html">Landing page</a></li>
+                            <li><a class="is-submenu" href="/landing-kits/kit-3/landing-v2-features.html">Feature page</a></li>
+                            <li><a class="is-submenu" href="/landing-kits/kit-3/landing-v2-pricing.html">Pricing page</a></li>
+                            <li><a class="is-submenu" href="/landing-kits/kit-3/landing-v2-login.html">Login page</a></li>
+                            <li><a class="is-submenu" href="/landing-kits/kit-3/landing-v2-signup.html">Signup page</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children"><a class="parent-link" href="#"><span class="material-icons">business</span>Landing kit v4</a>
+                        <ul>
+                            <li><a class="is-submenu" href="/landing-kits/kit-4/index.html">Landing page</a></li>
+                            <li><a class="is-submenu" href="/landing-kits/kit-4/landing-v3-pricing.html">Pricing page</a></li>
+                            <li><a class="is-submenu" href="/landing-kits/kit-4/landing-v3-help.html">Help center</a></li>
+                            <li><a class="is-submenu" href="/landing-kits/kit-4/landing-v3-help-category.html">Help category</a></li>
+                            <li><a class="is-submenu" href="/landing-kits/kit-4/landing-v3-help-article.html">Help article</a></li>
+                            <li><a class="is-submenu" href="/landing-kits/kit-4/landing-v3-signup.html">Login</a></li>
+                            <li><a class="is-submenu" href="/landing-kits/kit-4/landing-v3-login.html">Sign up</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children"><a class="parent-link" href="#"><span class="material-icons">face</span>Landing kit v5</a>
+                        <ul>
+                            <li><a class="is-submenu has-new-feature" href="/landing-kits/kit-5/index.html">Landing page</a></li>
+                            <li><a class="is-submenu has-new-feature" href="/landing-kits/kit-5/landing-v4-features.html">Feature page</a></li>
+                            <li><a class="is-submenu has-new-feature" href="/landing-kits/kit-5/landing-v4-pricing.html">Pricing Page</a></li>
+                            <li><a class="is-submenu has-new-feature" href="/landing-kits/kit-5/landing-v4-login.html">Login / Signup</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children"><a class="parent-link" href="#"><span class="material-icons">cloud</span>Landing kit v6</a>
+                        <ul>
+                            <li><a class="is-submenu has-new-update" href="/landing-kits/kit-6/index.html">Landing page</a></li>
+                            <li><a class="is-submenu has-new-update" href="/landing-kits/kit-6/landing-v5-home.html">Landing page v2</a></li>
+                            <li><a class="is-submenu has-new-update" href="/landing-kits/kit-6/landing-v5-login.html">Login page</a></li>
+                            <li><a class="is-submenu has-new-update" href="/landing-kits/kit-6/landing-v5-signup.html">Signup page</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children"><a class="parent-link has-new" href="#"><span class="material-icons">backspace</span>Error
+                            Kit</a>
+                        <ul>
+                            <li><a class="is-submenu has-new-update is-2_4" href="/landing-kits/kit-error/index.html">Error 404 (V1)</a></li>
+                            <li><a class="is-submenu has-new-update is-2_4" href="/landing-kits/kit-error/error-2.html">Error 404 (V2)</a></li>
+                            <li><a class="is-submenu has-new-update is-2_4" href="/landing-kits/kit-error/error-3.html">Error 404 (V3)</a></li>
+                            <li><a class="is-submenu has-new-update is-2_4" href="/landing-kits/kit-error/error-4.html">Error 404 (V4)</a></li>
+                            <li><a class="is-submenu has-new-update is-2_4" href="/landing-kits/kit-error/error-5.html">Error 404 (V5)</a></li>
+                            <li><a class="is-submenu has-new-update is-2_4" href="/landing-kits/kit-error/error-6.html">Error 404 (V6)</a></li>
+                            <li><a class="is-submenu has-new-update is-2_4" href="/landing-kits/kit-error/error-7.html">Error 500 (V1)</a></li>
+                            <li><a class="is-submenu has-new-update is-2_4" href="/landing-kits/kit-error/error-8.html">Error 500 (V2)</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /Navigation menu -->
+            <!-- Navigation menu -->
+            <div id="onepagers" class="navigation-menu-wrapper animated preFadeInRight fadeInRight is-hidden">
+                <!-- Navigation Header -->
+                <div class="navigation-menu-header">
+                    <span>One Pagers</span>
+                    <a class="ml-auto hamburger-btn navigation-close" href="javascript:void(0);">
+                        <span class="menu-toggle">
+                            <span class="icon-box-toggle">
+                                <span class="rotate">
+                                    <i class="icon-line-top"></i>
+                                    <i class="icon-line-center"></i>
+                                    <i class="icon-line-bottom"></i>
+                                </span>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <!-- Navigation body -->
+                <ul class="navigation-menu">
+                    <li class="has-children"><a class="parent-link has-new" href="#"><span class="material-icons">dashboard</span>One Pager 1</a>
+                        <ul>
+                            <li><a class="is-submenu has-new-update is-2_3" href="/one-pager-1/">Header 1</a></li>
+                            <li><a class="is-submenu has-new-update is-2_3" href="/one-pager-1/op1-2.html">Header 2</a></li>
+                            <li><a class="is-submenu has-new-update is-2_3" href="/one-pager-1/op1-3.html">Header 3</a></li>
+                            <li><a class="is-submenu has-new-update is-2_3" href="/one-pager-1/op1-4.html">Header 4</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children"><a class="parent-link has-new" href="#">
+                            <span class="material-icons">markunread_mailbox</span>One Pager 2</a>
+                        <ul>
+                            <li><a class="is-submenu has-new-update is-2_4" href="/one-pager-2/">Landing Page</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- Navigation menu -->
+            <div id="components" class="navigation-menu-wrapper animated preFadeInRight fadeInRight is-hidden">
+                <!-- Navigation Header -->
+                <div class="navigation-menu-header">
+                    <span>Components</span>
+                    <a class="ml-auto hamburger-btn navigation-close" href="javascript:void(0);">
+                        <span class="menu-toggle">
+                            <span class="icon-box-toggle">
+                                <span class="rotate">
+                                    <i class="icon-line-top"></i>
+                                    <i class="icon-line-center"></i>
+                                    <i class="icon-line-bottom"></i>
+                                </span>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <!-- Navigation body -->
+                <ul class="navigation-menu">
+                    <li class="has-children"><a class="parent-link" href="#"><span class="material-icons">view_quilt</span>Layout</a>
+                        <ul>
+                            <li><a class="is-submenu has-new-feature" href="/_components-layout-grid.html">Grid system</a></li>
+                            <li><a class="is-submenu" href="/_components-layout-video.html">Video background</a></li>
+                            <li><a class="is-submenu" href="/_components-layout-parallax.html">Parallax</a></li>
+                            <li><a class="is-submenu" href="/_components-layout-headers.html">Headers</a></li>
+                            <li><a class="is-submenu" href="/_components-layout-footers.html">Footers</a></li>
+                            <li><a class="is-submenu has-new-feature" href="/_components-layout-typography.html">Typography</a></li>
+                            <li><a class="is-submenu" href="/_components-layout-colors.html">Colors</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children"><a class="parent-link" href="#"><span class="material-icons">subject</span>Navbars</a>
+                        <ul>
+                            <li><a class="is-submenu has-new-feature" href="/_components-layout-navbar-fade-light.html">Fade light</a></li>
+                            <li><a class="is-submenu has-new-feature" href="/_components-layout-navbar-fade-dark.html">Fade dark</a></li>
+                            <li><a class="is-submenu has-new-feature" href="/_components-layout-navbar-static-light.html">Static light</a></li>
+                            <li><a class="is-submenu has-new-feature" href="/_components-layout-navbar-static-dark.html">Static dark</a></li>
+                            <li><a class="is-submenu has-new-feature" href="/_components-layout-navbar-static-solid.html">Static solid</a></li>
+                            <li><a class="is-submenu has-new-feature" href="/_components-layout-navbar-double-dark.html">Double dark</a></li>
+                            <li><a class="is-submenu has-new-feature" href="/_components-layout-navbar-double-light.html">Double light</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children"><a class="parent-link" href="#"><span class="material-icons">view_stream</span>Sections</a>
+                        <ul>
+                            <li><a class="is-submenu" href="/_components-sections-features.html">Features</a></li>
+                            <li><a class="is-submenu" href="/_components-sections-pricing.html">Pricing</a></li>
+                            <li><a class="is-submenu" href="/_components-sections-team.html">Team</a></li>
+                            <li><a class="is-submenu" href="/_components-sections-testimonials.html">Testimonials</a></li>
+                            <li><a class="is-submenu" href="/_components-sections-clients.html">Clients</a></li>
+                            <li><a class="is-submenu" href="/_components-sections-counters.html">Counters</a></li>
+                            <li><a class="is-submenu" href="/_components-sections-carousel.html">Carousel</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children"><a class="parent-link" href="#"><span class="material-icons">playlist_add_check</span>Basic UI</a>
+                        <ul>
+                            <li><a class="is-submenu" href="/_components-basicui-cards.html">Cards</a></li>
+                            <li><a class="is-submenu" href="/_components-basicui-buttons.html">Buttons</a></li>
+                            <li><a class="is-submenu" href="/_components-basicui-dropdowns.html">Dropdowns</a></li>
+                            <li><a class="is-submenu" href="/_components-basicui-lists.html">Lists</a></li>
+                            <li><a class="is-submenu" href="/_components-basicui-modals.html">Modals</a></li>
+                            <li><a class="is-submenu" href="/_components-basicui-tabs.html">Tabs & pills</a></li>
+                            <li><a class="is-submenu" href="/_components-basicui-accordion.html">Accordions</a></li>
+                            <li><a class="is-submenu" href="/_components-basicui-badges.html">Badges & labels</a></li>
+                            <li><a class="is-submenu" href="/_components-basicui-popups.html">Popups</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children"><a class="parent-link" href="#"><span class="material-icons">playlist_add</span>Advanced UI</a>
+                        <ul>
+                            <li><a class="is-submenu" href="/_components-advancedui-tables.html">Tables</a></li>
+                            <li><a class="is-submenu" href="/_components-advancedui-timeline.html">Timeline</a></li>
+                            <li><a class="is-submenu" href="/_components-advancedui-boxes.html">Boxes</a></li>
+                            <li><a class="is-submenu" href="/_components-advancedui-messages.html">Messages</a></li>
+                            <li><a class="is-submenu has-new-feature" href="/_components-advancedui-megamenu.html">Megamenu</a></li>
+                            <li><a class="is-submenu has-new-feature" href="/_components-advancedui-calendar.html">Calendar</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children"><a class="parent-link has-new" href="#"><span class="material-icons">check_box</span>Forms</a>
+                        <ul>
+                            <li><a class="is-submenu has-new-feature is-2_2" href="/_components-forms-inputs.html">Inputs</a></li>
+                            <li><a class="is-submenu" href="/_components-forms-controls.html">Controls</a></li>
+                            <li><a class="is-submenu" href="/_components-forms-layouts.html">Form layouts</a></li>
+                            <li><a class="is-submenu has-new-feature" href="/_components-forms-steps.html">Step forms</a></li>
+                            <li><a class="is-submenu" href="/_components-forms-uploader.html">Uploader</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children"><a class="parent-link" href="#"><span class="material-icons">adjust</span>Icons</a>
+                        <ul>
+                            <li><a class="is-submenu" href="/_components-icons-im.html">Icons Mind</a></li>
+                            <li><a class="is-submenu" href="/_components-icons-sl.html">Simple Line Icons</a></li>
+                            <li><a class="is-submenu" href="/_components-icons-fa.html">Font Awesome</a></li>
+                            <li><a class="is-submenu" href="https://material.io/icons/" target="_blank">Material Icons</a></li>
+                            <li><a class="is-submenu has-new-feature" href="/_components-extensions-iconpicker.html">Icon Picker</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /Navigation menu --></div>
+        <!-- /Side navigation -->        <!-- Back To Top Button -->
+        <div id="backtotop"><a href="#"></a></div>        <!-- Concatenated jQuery and plugins -->
+        <script src="assets/js/app.js"></script>
+        
+        <!-- Bulkit js -->
+        <script src="assets/js/components-modals.js"></script>
+        <script src="assets/js/components-inputs.js"></script>
+        <script src="assets/js/components-accordion.js"></script>
+        <script src="assets/js/components-toasts.js"></script>
+        <script src="assets/js/components-range.js"></script>
+        <script src="assets/js/components-fileinput.js"></script>
+        <script src="assets/js/components-uploader.js"></script>
+        
+        <script src="assets/js/extensions/bulma-iconpicker.js"></script>
+        
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/demo.js"></script>    </body>  
+</html>

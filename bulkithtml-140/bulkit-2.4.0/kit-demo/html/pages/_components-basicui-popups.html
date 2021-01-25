@@ -1,0 +1,431 @@
+---
+layout: components
+title: Popups
+---
+
+<!-- Hero and nav -->
+<div class="hero is-relative is-theme-info">
+    
+    {{> navbar-static-light}}
+
+    <!-- Hero image -->
+    <div id="main-hero" class="hero-body">
+        <div class="container has-text-centered">
+            <div class="columns is-vcentered">
+                <div class="column is-4 is-offset-1 has-text-left">
+                    <h1 class="title components-title is-1">
+                        Popovers 
+                    </h1>
+                    <h2 class="subtitle is-4 components-subtitle">
+                        Tooltips and popover styles
+                    </h2>
+                    <p class="components-cta">
+                        <a href="#popovers" class="button button-cta btn-align light-btn btn-outlined is-bold rounded">
+                            Get Started
+                        </a>
+                    </p>
+                </div>
+                <div class="column is-offset-1 has-text-centered is-hidden-mobile">
+                    <div id="popups-ill" class="vivus-svg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Hero image -->
+</div>
+<!-- /Hero and nav -->
+
+<!-- Scrollnav -->
+<div id="scrollnav" class="scroll-nav-wrapper">
+    <div class="container">
+        <div class="tabs scrollnav-tabs is-centered">
+            <ul>
+                <li class="scrollnav-item is-active"><a href="#popovers">Popovers</a></li>
+                <li class="scrollnav-item"><a href="#tooltips">Tooltips</a></li>
+            </ul>
+        </div>
+    </div>  
+</div>
+<!-- /Scrollnav -->
+
+<section id="popovers" class="section is-medium">
+    <div class="container">
+        <div id="popovers" class="section-title-wrapper has-text-centered">
+            <div class="bg-number">1</div>
+            <h2 class="title section-title has-text-centered dark-text text-bold">
+                Popovers
+            </h2>
+        </div>
+
+        <!-- Basic popovers -->
+        <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Popover triggers</h4>
+                    <p class="no-padding">Popovers can be triggered by click, on hover and on focus. To set up a popover on an element, use the data attribute <code>data-toggle="popover"</code>. You can then pass other options with data attributes, like <code>data-trigger=""</code>, <code>data-placement=""</code>, <code>data-title=""</code> and <code>data-content=""</code> for the popover content.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered has-text-centered">
+            <div class="column is-3 is-offset-3">
+                <div class="button btn-align" data-toggle="popover"
+                     data-placement="top"
+                     title="Click popover"
+                     data-content="And here's some amazing content. It's very engaging. Right?">
+                    Click me</div>
+            </div>
+            <div class="column is-3">
+                <div class="button btn-align" data-toggle="popover"
+                     data-placement="top"
+                     title="Hover Popover"
+                     data-trigger="hover"
+                     data-content="And here's some amazing content. It's very engaging. Right?">
+                    Hover me</div>
+            </div>
+        </div>
+
+        <div class="columns">
+            <div class="column is-6 is-offset-3">
+                <!-- Code section -->
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <div class="navigation-tabs animated-tabs simple-tabs mb-40">
+                                <div class="tabs is-right">
+                                    <ul>
+                                        <li class="tab-link is-active" data-tab="click"><a>click</a></li>
+                                        <li class="tab-link" data-tab="hover"><a>hover</a></li>
+                                        <li class="tab-link" data-tab="focus"><a>focus</a></li>
+                                    </ul>
+                                </div>
+                                <div id="click" class="navtab-content is-active">
+                                    <figure class="highlight highlight-block"><pre><code class="html code-highlight">
+&#x3C;div class=&#x22;button btn-align&#x22; data-toggle=&#x22;popover&#x22;
+     data-placement=&#x22;top&#x22;
+     title=&#x22;Click popover&#x22;
+     data-content=&#x22;And here&#x27;s some amazing content. It&#x27;s very engaging. Right?&#x22;&#x3E;
+    Click me&#x3C;/div&#x3E;
+                            </code></pre></figure>
+                                </div>
+                                <div id="hover" class="navtab-content">
+                                    <figure class="highlight highlight-block"><pre><code class="html code-highlight">
+&#x3C;div class=&#x22;button btn-align&#x22; data-toggle=&#x22;popover&#x22;
+     data-placement=&#x22;top&#x22;
+     title=&#x22;Click popover&#x22;
+     data-trigger=&#x22;hover&#x22;
+     data-content=&#x22;And here&#x27;s some amazing content. It&#x27;s very engaging. Right?&#x22;&#x3E;
+    Click me&#x3C;/div&#x3E;
+                            </code></pre></figure>
+                                </div>
+                                <div id="focus" class="navtab-content">
+                                    <figure class="highlight highlight-block"><pre><code class="html code-highlight">
+&#x3C;div class=&#x22;button btn-align&#x22; data-toggle=&#x22;popover&#x22;
+     data-placement=&#x22;top&#x22;
+     title=&#x22;Click popover&#x22;
+     data-trigger=&#x22;focus&#x22;
+     data-content=&#x22;And here&#x27;s some amazing content. It&#x27;s very engaging. Right?&#x22;&#x3E;
+    Focus me&#x3C;/div&#x3E;
+                            </code></pre></figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Code section -->
+            </div>
+        </div>
+        <!-- Basic popovers -->
+
+        <!-- Popover positions -->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Popover positions</h4>
+                    <p class="no-padding">Use the <code>data-placement=""</code> attribute to position a popover. Available values are <code>top</code>, <code>bottom</code>, <code>left</code> and <code>right</code>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered has-text-centered">
+            <div class="column is-3">
+                <div class="button btn-align" data-toggle="popover"
+                     data-placement="right"
+                     title="Right"
+                     data-trigger="hover"
+                     data-content="A right aligned popover is a really boring thing in the real life.">
+                    Right</div>
+            </div>
+            <div class="column is-3">
+                <div class="button btn-align" data-toggle="popover"
+                     data-placement="top"
+                     title="Top"
+                     data-trigger="hover"
+                     data-content="A top aligned popover is a really boring thing in the real life.">
+                    Top</div>
+            </div>
+            <div class="column is-3">
+                <div class="button btn-align" data-toggle="popover"
+                     data-placement="bottom"
+                     title="Bottom"
+                     data-trigger="hover"
+                     data-arrowcolor="#f7f7f7"
+                     data-content="A bottom aligned popover is a really boring thing in the real life.">
+                    Bottom</div>
+            </div>
+            <div class="column is-3">
+                <div class="button btn-align" data-toggle="popover"
+                     data-placement="left"
+                     title="Left"
+                     data-trigger="hover"
+                     data-content="A left aligned popover is a really boring thing in the real life.">
+                    Left</div>
+            </div>
+        </div>
+        <!-- Popover positions -->
+
+        <!-- Custom examples -->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Custom examples</h4>
+                    <p class="no-padding">You can customize header colors with more data attributes. Use <code>data-title-backcolor=""</code>, <code>data-title-textcolor=""</code> and <code>data-arrowcolor=""</code> to customize your popover. Check the code examples.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered has-text-centered">
+            <div class="column is-3">
+                <div class="button btn-align" data-toggle="popover"
+                     data-placement="right"
+                     title="Right"
+                     data-trigger="hover"
+                     data-title-backcolor="#eda514"
+                     data-title-textcolor="#fff"
+                     data-content="A right aligned popover is a really boring thing in the real life.">
+                    Right</div>
+            </div>
+            <div class="column is-3">
+                <div class="button btn-align" data-toggle="popover"
+                     data-placement="top"
+                     title="Top"
+                     data-trigger="hover"
+                     data-title-backcolor="#fff"
+                     data-content="A top aligned popover is a really boring thing in the real life.">
+                    Top</div>
+            </div>
+            <div class="column is-3">
+                <div class="button btn-align" data-toggle="popover"
+                     data-placement="bottom"
+                     title="Bottom"
+                     data-trigger="hover"
+                     data-arrowcolor="#00b289"
+                     data-title-backcolor="#00b289"
+                     data-title-textcolor="#fff"
+                     data-content="A bottom aligned popover is a really boring thing in the real life.">
+                    Bottom</div>
+            </div>
+            <div class="column is-3">
+                <div class="button btn-align" data-toggle="popover"
+                     data-placement="left"
+                     title="Left"
+                     data-trigger="hover"
+                     data-title-backcolor="#039BE5"
+                     data-title-textcolor="#fff"
+                     data-content="A left aligned popover is a really boring thing in the real life.">
+                    Left</div>
+            </div>
+        </div>
+
+        <div class="columns">
+            <div class="column is-6 is-offset-3">
+                <!-- Code section -->
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <div class="navigation-tabs animated-tabs simple-tabs mb-40">
+                                <div class="tabs is-right">
+                                    <ul>
+                                        <li class="tab-link is-active" data-tab="orange"><a>orange</a></li>
+                                        <li class="tab-link" data-tab="white"><a>white</a></li>
+                                        <li class="tab-link" data-tab="green"><a>green</a></li>
+                                    </ul>
+                                </div>
+                                <div id="orange" class="navtab-content is-active">
+                                    <figure class="highlight highlight-block"><pre><code class="html code-highlight">
+&#x3C;div class=&#x22;button btn-align&#x22; data-toggle=&#x22;popover&#x22;
+         data-placement=&#x22;right&#x22;
+         title=&#x22;Right&#x22;
+         data-trigger=&#x22;hover&#x22;
+         data-title-backcolor=&#x22;#eda514&#x22;
+         data-title-textcolor=&#x22;#fff&#x22;
+         data-content=&#x22;A right aligned popover is a really boring thing in the real life.&#x22;&#x3E;
+        Right&#x3C;/div&#x3E;
+                            </code></pre></figure>
+                                </div>
+                                <div id="white" class="navtab-content">
+                                    <figure class="highlight highlight-block"><pre><code class="html code-highlight">
+&#x3C;div class=&#x22;button btn-align&#x22; data-toggle=&#x22;popover&#x22;
+         data-placement=&#x22;top&#x22;
+         title=&#x22;Top&#x22;
+         data-trigger=&#x22;hover&#x22;
+         data-title-backcolor=&#x22;#fff&#x22;
+         data-content=&#x22;A top aligned popover is a really boring thing in the real life.&#x22;&#x3E;
+        Top&#x3C;/div&#x3E;
+                            </code></pre></figure>
+                                </div>
+                                <div id="green" class="navtab-content">
+                                    <figure class="highlight highlight-block"><pre><code class="html code-highlight">
+&#x3C;div class=&#x22;button btn-align&#x22; data-toggle=&#x22;popover&#x22;
+         data-placement=&#x22;bottom&#x22;
+         title=&#x22;Bottom&#x22;
+         data-trigger=&#x22;hover&#x22;
+         data-title-backcolor=&#x22;#00b289&#x22;
+         data-title-textcolor=&#x22;#fff&#x22;
+         data-arrowcolor=&#x22;#00b289&#x22;
+         data-content=&#x22;A bottom aligned popover is a really boring thing in the real life.&#x22;&#x3E;
+        Bottom&#x3C;/div&#x3E;
+                            </code></pre></figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Code section -->
+            </div>
+        </div>
+        <!-- /Custom examples -->
+
+    </div>
+</section>
+
+<section class="section section-feature-grey is-medium">
+    <div class="container">
+        <div id="tooltips" class="section-title-wrapper has-text-centered">
+            <div class="bg-number">2</div>
+            <h2 class="title section-title has-text-centered dark-text text-bold">
+                Tooltips
+            </h2>
+        </div>
+
+        <!-- Basic tooltips -->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Tooltip triggers</h4>
+                    <p>Tooltips can be triggered by click, on hover and on focus. To set up a tooltip on an element, use the data attribute <code>data-toggle="popover"</code>. You can then pass other options with data attributes, like <code>data-trigger=""</code>, <code>data-placement=""</code>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered has-text-centered">
+            <div class="column is-3 is-offset-3">
+                <div class="button btn-align" data-toggle="tooltip"
+                     data-placement="top"
+                     data-trigger="click"
+                     data-title="Top tooltip">
+                    Click tooltip</div>
+            </div>
+            <div class="column is-3">
+                <div class="button btn-align" data-toggle="tooltip"
+                     data-placement="top"
+                     data-title="Top tooltip">
+                    Hover tooltip</div>
+            </div>
+        </div>
+
+        <div class="columns">
+            <div class="column is-6 is-offset-3">
+                <!-- Code section -->
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <div class="navigation-tabs animated-tabs simple-tabs mb-40">
+                                <div class="tabs is-right">
+                                    <ul>
+                                        <li class="tab-link is-active" data-tab="tooltip-click"><a>click</a></li>
+                                        <li class="tab-link" data-tab="tooltip-hover"><a>hover</a></li>
+                                        <li class="tab-link" data-tab="tooltip-focus"><a>focus</a></li>
+                                    </ul>
+                                </div>
+                                <div id="tooltip-click" class="navtab-content is-active">
+                                    <figure class="highlight highlight-block"><pre><code class="html code-highlight">
+&#x3C;div class=&#x22;button btn-align&#x22; data-toggle=&#x22;tooltip&#x22;
+     data-placement=&#x22;top&#x22;
+     data-title=&#x22;Top tooltip&#x22;
+     data-trigger=&#x22;click&#x22;
+    Click me&#x3C;/div&#x3E;
+                            </code></pre></figure>
+                                </div>
+                                <div id="tooltip-hover" class="navtab-content">
+                                    <figure class="highlight highlight-block"><pre><code class="html code-highlight">
+&#x3C;div class=&#x22;button btn-align&#x22; data-toggle=&#x22;tooltip&#x22;
+     data-placement=&#x22;top&#x22;
+     data-title=&#x22;Top tooltip&#x22;
+     data-trigger=&#x22;hover&#x22;
+    Hover me&#x3C;/div&#x3E;
+                            </code></pre></figure>
+                                </div>
+                                <div id="tooltip-focus" class="navtab-content">
+                                    <figure class="highlight highlight-block"><pre><code class="html code-highlight">
+&#x3C;div class=&#x22;button btn-align&#x22; data-toggle=&#x22;tooltip&#x22;
+     data-placement=&#x22;top&#x22;
+     data-title=&#x22;Top tooltip&#x22;
+     data-trigger=&#x22;focus&#x22;
+    Focus me&#x3C;/div&#x3E;
+                            </code></pre></figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Code section -->
+            </div>
+        </div>
+        <!-- Basic tooltips -->
+
+        <!-- Basic tooltips -->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Tooltip positions</h4>
+                    <p class="no-padding">Use the <code>data-placement=""</code> attribute to position a tooltip. Available values are <code>top</code>, <code>bottom</code>, <code>left</code> and <code>right</code>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered has-text-centered">
+            <div class="column is-3">
+                <div class="button btn-align" data-toggle="tooltip"
+                     data-placement="right"
+                     data-title="Right tooltip">
+                    Right</div>
+            </div>
+            <div class="column is-3">
+                <div class="button btn-align" data-toggle="tooltip"
+                     data-placement="left"
+                     data-title="Left tooltip">
+                    Left</div>
+            </div>
+            <div class="column is-3">
+                <div class="button btn-align" data-toggle="tooltip"
+                     data-placement="top"
+                     data-title="Top tooltip">
+                    Top</div>
+            </div>
+            <div class="column is-3">
+                <div class="button btn-align" data-toggle="tooltip"
+                     data-placement="bottom"
+                     data-title="Bottom tooltip">
+                    Bottom</div>
+            </div>
+        </div>
+        <!-- Basic tooltips -->
+
+    </div>
+</section>
+
+{{> footer-dark}}

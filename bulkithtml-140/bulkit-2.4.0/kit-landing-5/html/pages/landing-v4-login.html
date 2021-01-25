@@ -1,0 +1,87 @@
+---
+layout: auth
+title: Login / register
+---
+
+<!-- Wrapper -->
+<div class="login-register-wrapper">
+    <!-- Paper canvas background -->
+    <div id="back">
+        <canvas id="canvas" class="canvas-back"></canvas>
+        <!-- Right Side -->
+        <div class="backRight"></div>
+        <!-- Left Side -->
+        <div class="backLeft"></div>
+    </div>
+
+    <!-- Sliding box -->
+    <div id="slideBox">
+        <!-- Top Layer -->
+        <div class="topLayer">
+            <!-- Left form -->
+            <div class="left">
+                <div class="content">
+                    <!-- Brand -->
+                    <div class="brand">
+                        <a href="index.html">
+                            <img src="assets/images/logos/bulkit-sky.svg" alt="">
+                        </a>
+                    </div>
+                    <!-- Form title -->
+                    <h2>Sign Up</h2>
+                    <!-- Form -->
+                    <form id="form-signup" class="pt-40 pb-40">
+                        <div class="control pb-10">
+                            <label>Email</label>
+                            <input class="input is-large" type="email">
+                        </div>
+                        <div class="control pb-10">
+                            <label>Username</label>
+                            <input class="input is-large" type="text">
+                        </div>
+                        <div class="control">
+                            <label>Password</label>
+                            <input class="input is-large" type="password">
+                        </div>
+                        <!-- Submit and switch -->
+                        <div class="form-element form-submit">
+                            <button id="signUp" class="signup" type="submit">Sign up</button>
+                            <a href="javascript:void(0);" id="goLeft" class="signup off is-trigger">Log In</a> 
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- Right form -->
+            <div class="right">
+                <div class="content">
+                    <!-- Brand -->
+                    <div class="brand">
+                        <a href="index.html">
+                            <img src="assets/images/logos/bulkit-green-flash.svg" alt="">
+                        </a>
+                    </div>
+                    <!-- Form title -->
+                    <h2>Login</h2>
+                    <!-- Form -->
+                    <form id="form-login" class="pt-40 pb-40">
+                        <div class="control pb-10">
+                            <label>Username</label>
+                            <input class="input is-large" type="text">
+                        </div>
+                        <div class="control">
+                            <label>Password</label>
+                            <input class="input is-large" type="password">
+                        </div>
+                        <!-- Submit and Switch -->
+                        <div class="form-element form-submit">
+                            <button id="logIn" class="login" type="submit" name="login">Log In</button>
+                            <a href="javascript:void(0);" id="goRight" class="login off is-trigger">Sign Up</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Wrapper -->
+

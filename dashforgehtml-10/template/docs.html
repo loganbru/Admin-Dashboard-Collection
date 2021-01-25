@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Twitter -->
+    <meta name="twitter:site" content="@themepixels">
+    <meta name="twitter:creator" content="@themepixels">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="DashForge">
+    <meta name="twitter:description" content="Responsive Bootstrap 4 Dashboard Template">
+    <meta name="twitter:image" content="http://themepixels.me/dashforge/img/dashforge-social.png">
+
+    <!-- Facebook -->
+    <meta property="og:url" content="http://themepixels.me/dashforge">
+    <meta property="og:title" content="DashForge">
+    <meta property="og:description" content="Responsive Bootstrap 4 Dashboard Template">
+
+    <meta property="og:image" content="http://themepixels.me/dashforge/img/dashforge-social.png">
+    <meta property="og:image:secure_url" content="http://themepixels.me/dashforge/img/dashforge-social.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="600">
+
+    <!-- Meta -->
+    <meta name="description" content="Responsive Bootstrap 4 Dashboard Template">
+    <meta name="author" content="ThemePixels">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+
+    <title>DashForge Documentation</title>
+
+    <!-- vendor css -->
+    <link href="lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/prismjs/themes/prism-vs.css" rel="stylesheet">
+
+    <!-- DashForge CSS -->
+    <link rel="stylesheet" href="assets/css/dashforge.css">
+    <link rel="stylesheet" href="assets/css/dashforge.landing.css">
+
+  </head>
+  <body data-spy="scroll" data-target="#navDocs" data-offset="120">
+
+    <div id="sidebarMenu" class="sidebar sidebar-fixed wd-250 t-0">
+      <div class="sidebar-body pd-x-25 pd-y-20">
+        <h3 class="docs-logo">dash<span>forge</span></h3>
+        <p class="docs-slogan">Responsive Dashboard Template</p>
+        <nav id="navDocs" class="nav nav-docs">
+          <span class="nav-label mg-b-5">Browse Components</span>
+          <a href="#introduction" class="nav-link">Introduction</a>
+          <a href="#whatsincluded" class="nav-link">What's Included</a>
+          <a href="#nodejs" class="nav-link">NodeJS</a>
+          <a href="#gulp" class="nav-link">Gulp</a>
+          <a href="#sass" class="nav-link">SASS</a>
+          <a href="#runninglocal" class="nav-link">Running local</a>
+          <span class="nav-label mg-t-20 mg-b-5">Template Structure</span>
+          <a href="#stylesheet" class="nav-link">Stylesheet</a>
+          <a href="#scripts" class="nav-link">Scripts</a>
+          <span class="nav-label mg-t-20 mg-b-5">Layout Structure</span>
+          <a href="#dashboardstructure" class="nav-link">Dashboard</a>
+          <a href="#appstructure" class="nav-link">Apps</a>
+          <a href="#pagestructure" class="nav-link">Pages</a>
+          <span class="nav-label mg-t-20 mg-b-5">Other Information</span>
+          <a href="#knownissue" class="nav-link">Known Issue</a>
+          <a href="#references" class="nav-link">References</a>
+          <a href="#customersupport" class="nav-link">Customer Support</a>
+        </nav>
+      </div><!-- sidebar-body -->
+    </div><!-- sidebar -->
+
+    <div class="content mg-l-250">
+      <div class="container tx-color-03">
+        <h4 class="tx-semibold mg-b-15">Dashforge Documentation <span class="tx-normal tx-sans tx-spacing--2">v1.0.0</span></h4>
+        <p>Thank you so much for purchasing our theme. If you have any questions that are beyond the scope of this help file, please feel free to <a href="https://themeforest.net/user/themepixels">email us</a> or submit a comment to this template. Thanks so much!</p>
+
+        <hr class="mg-y-40">
+
+        <h4 id="introduction" class="mg-b-20">Introduction</h4>
+        <p>Dashforge, a premium quality modern and clean Bootstrap 4 dashboard template using simplicity and minimal design. It is fully responsive built using SASS preprocessor, HTML5, CSS3 and jQuery plugins. It uses most of the helper/utilities classes which are reusable class that makes the page faster and increases the speed of page time load. It can be used for most type of dashboard and app templates like analytics, admin or messenger app for your desktpo or mobile applications. Amazing flexibility and reusability. See the demo.</p>
+
+        <p>This part of the doc will help you to quick start your project and will give you a basic idea about how this template work. For you to get start open the template download package.</p>
+
+        <hr class="mg-y-40">
+
+        <h4 id="whatsincluded" class="mg-b-20">What's Included</h4>
+        <div class="pd-20 bd mg-b-30">
+          <ul class="file-structure">
+            <li>
+              <span>Dashforge/</span>
+              <ul>
+                <li>
+                  <span>assets/</span>
+                  <ul>
+                    <li>css/</li>
+                    <li>data/</li>
+                    <li>fonts/</li>
+                    <li>img/</li>
+                    <li>js/</li>
+                  </ul>
+                </li>
+                <li>collections/</li>
+                <li>components/</li>
+                <li>lib/</li>
+                <li>
+                  <span>scss/</span>
+                  <ul>
+                    <li>bootstrap/</li>
+                    <li>dashforge/</li>
+                    <li>fonts/</li>
+                    <li>lib/</li>
+                    <li>pages/</li>
+                    <li>panels/</li>
+                    <li>skins/</li>
+                    <li>util/</li>
+                    <li>_mixins.scss</li>
+                    <li>_variables.scss</li>
+                    <li>dashforge.scss</li>
+                  </ul>
+                </li>
+                <li>template/</li>
+                <li>gulpfile.js</li>
+                <li>index.html</li>
+                <li>package.json</li>
+                <li>settings.html</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <table class="table table-docs table-bordered tx-13">
+          <thead>
+            <tr>
+              <th colspan="2">File Reference</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="wd-30p">index.html</td>
+              <td class="wd-70p">The landing page</td>
+            </tr>
+            <tr>
+              <td>settings.html</td>
+              <td>The skin customizer</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <hr class="mg-y-40">
+        <h4 id="nodejs" class="mg-b-20">Node JS</h4>
+
+        <p>Before installing gulp and sass first you must have NodeJs installed, NodeJS will have npm (node packaged modules).</p>
+
+        <p>Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js' package ecosystem, npm, is the largest ecosystem of open source libraries in the world.</p>
+        <p class="mg-b-25">Online Reference: <a href="https://nodejs.org/en/">https://nodejs.org/en/</a></p>
+
+        <h6>Installing in Mac</h6>
+        <p>Simply download the <a href="https://nodejs.org/en/#download" target="_blank">Macintosh Installer</a> direct from the nodejs.org web site.</p>
+        <p>If you want to download the package with bash:</p>
+        <pre class="pd-10 bg-ui-01">curl "https://nodejs.org/dist/latest/node-${VERSION:-$(wget -qO- https://nodejs.org/dist/latest/ | sed -nE 's|.*>node-(.*)\.pkg.*|\1|p')}.pkg" > "$HOME/Downloads/node-latest.pkg" && sudo installer -store -pkg "$HOME/Downloads/node-latest.pkg" -target "/"</pre>
+        <p>Using Homebrew:</p>
+        <pre class="bg-ui-01 pd-10 mg-b-25">brew install node</pre>
+        <h6>Installing in Windows</h6>
+        <p>Simply download the <a href="https://nodejs.org/en/#download" target="_blank">Windows Installer</a> direct from the nodejs.org web site.</p>
+
+        <hr class="mg-y-40">
+        <h4 id="gulp" class="mg-b-20">Gulp JS</h4>
+        <p>Before installing gulp first you must have NodeJs installed, NodeJS will have npm (node packaged modules).</p>
+        <p>Gulp is a toolkit for automating painful or time-consuming tasks in your development workflow, so you can stop messing around and build something.</p>
+        <p class="mg-b-25">Online Reference: <a href="https://gruntjs.com/">https://gruntjs.com/</a></p>
+        <h6>Installing the CLI</h6>
+        <p>If you have previously installed a version of gulp globally, please run npm rm --global gulp to make sure your old version doesn't collide with gulp-cli.</p>
+        <pre class="pd-10 bg-ui-01">$ npm install -g gulp-cli</pre>
+        <p>Verify that gulp is successfully installed, and version of installed gulp will appear.</p>
+        <pre class="pd-10 bg-ui-01">$ gulp --version</pre>
+
+        <hr class="mg-y-40">
+        <h4 id="sass" class="mg-b-20">SASS</h4>
+        <p>Before running grunt first you must check if you have sass installed in your machine. You can verify that sass is already installed by running the command.</p>
+        <pre class="pd-10 bg-ui-01">$ sass --version</pre>
+        <p>If version appear, it means sass already installed in your machine and proceed to the next topic, otherwise follow the instructions below on installing sass.</p>
+        <h6>Installing in Windows</h6>
+        <p>Before you start using Sass you will need to install Ruby. The fastest way to get Ruby on your Windows computer is to use <a href="http://rubyinstaller.org/" target="_blank">Ruby Installer</a>. It's a single-click installer that will get everything set up for you super fast. </p>
+        <h6>Installing in Mac</h6>
+        <p>If you prefer the command line over an application then getting Sass set up is a fairly quick process. Sass has a Ruby dependency but if you're using a Mac, congratulations, Ruby comes pre-installed. </p>
+        <h6>Install SASS</h6>
+        <p>Ruby uses Gems to manage its various packages of code like Sass. In your open terminal or cmd window: </p>
+        <pre class="pd-10 bg-ui-01">$ gem install sass</pre>
+        <p>You should now have Sass installed, but it never hurts to double-check.</p>
+        <pre class="pd-10 bg-ui-01">$ sass --version</pre>
+        <p>Online Reference: <a href="http://sass-lang.com/install">http://sass-lang.com/install</a></p>
+
+        <hr class="mg-y-40">
+        <h4 id="runninglocal" class="mg-b-20">Running local</h4>
+        <p>You're moments away to see the dashboard template up and running in your local machine. First, go to the root folder where the package.json located. In your download package it should be in the root folder. Please run the following command below.</p>
+        <p>Note: Running this template to you local machine is not a requirements for you to see the template. You can directly browse to the template folder and choose any html file you want to open by opening it directly to the browser.</p>
+        <pre class="pd-10 bg-ui-01">$ npm install</pre>
+        <p>This will download all dependencies defined in package.json file. Once it finished running the command, it will generate a folder name node_modules/ where you see downloaded files.Next, run another command below.</p>
+        <pre class="pd-10 bg-ui-01">$ gulp npm-lib</pre>
+        <p>This will extract all dependencies defined in package.json file. Once it finished running the command, it will generate a folder name lib/ where you see extracted files.</p>
+
+        <h6>Running in Browser</h6>
+        <p>Now you're good to go in running the template and preview it in browser by running the command below.</p>
+        <pre class="pd-10 bg-ui-01">$ gulp serve</pre>
+        <p>The template is now up and running in your browser. Feel free to visit each page and familiarize the flow of it.</p>
+
+        <hr class="mg-y-40">
+        <h4 id="stylesheet" class="mg-b-20">Stylesheet</h4>
+        <p>Include the following stylesheet into the head of your page. This must be present in all of your pages.</p>
+        <pre><code class="language-html">&lt;!-- vendor css --&gt;
+&lt;link href=&quot;../lib/@fortawesome/fontawesome-free/css/all.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link href=&quot;../lib/ionicons/css/ionicons.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+
+&lt;!-- DashForge CSS --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;../assets/css/dashforge.css&quot;&gt;
+&lt;!-- some additional css here --&gt;</code></pre>
+
+        <hr class="mg-y-40">
+        <h4 id="scripts" class="mg-b-20">Scripts</h4>
+        <p>Include the following scripts into the end of the body your page. This must be present in all of your pages.</p>
+        <pre><code class="language-html">&lt;script src=&quot;../lib/jquery/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;../lib/bootstrap/js/bootstrap.bundle.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;../lib/feather-icons/feather.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;script src=&quot;../assets/js/dashforge.js&quot;&gt;&lt;/script&gt;</code></pre>
+
+        <hr class="mg-y-40">
+        <h4 id="dashboardstructure" class="mg-b-20">Dashboard</h4>
+        <p>Below is the starter template structure that you can use in creating a new dashboard page.</p>
+        <pre><code class="language-html">&lt;header class=&quot;navbar navbar-header navbar-header-fixed&quot;&gt;
+  &lt;a href=&quot;&quot; id=&quot;mainMenuOpen&quot; class=&quot;burger-menu&quot;&gt;&lt;i data-feather=&quot;menu&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+  &lt;div class=&quot;navbar-brand&quot;&gt;
+    &lt;a href=&quot;../index.html&quot; class=&quot;df-logo&quot;&gt;dash&lt;span&gt;forge&lt;/span&gt;&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div id=&quot;navbarMenu&quot; class=&quot;navbar-menu-wrapper&quot;&gt;
+    &lt;div class=&quot;navbar-menu-header&quot;&gt;
+      &lt;a href=&quot;../index.html&quot; class=&quot;df-logo&quot;&gt;dash&lt;span&gt;forge&lt;/span&gt;&lt;/a&gt;
+      &lt;a id=&quot;mainMenuClose&quot; href=&quot;&quot;&gt;&lt;i data-feather=&quot;x&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;ul class=&quot;nav navbar-menu&quot;&gt;...&lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;navbar-right&quot;&gt;...&lt;/div&gt;
+&lt;/header&gt;
+
+&lt;div class=&quot;content content-fixed&quot;&gt;
+  &lt;div class=&quot;container pd-x-0 pd-lg-x-10 pd-xl-x-0&quot;&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;footer class=&quot;footer&quot;&gt;...&lt;/footer&gt;</code></pre>
+
+
+        <hr class="mg-y-40">
+        <h4 id="appstructure" class="mg-b-20">Apps</h4>
+        <p>Below is the starter template structure that you can use in creating a new app page.</p>
+        <pre><code class="language-html">&lt;header class=&quot;navbar navbar-header navbar-header-fixed&quot;&gt;...&lt;/header&gt;
+
+&lt;!-- app-wrapper is a custom class that you can add in the style (ie. contact-wrapper, chat-wrapper)--&gt;
+&lt;!-- check app pages for references --&gt;
+&lt;div class=&quot;app-wrapper&quot;&gt;...&lt;/div&gt;</code></pre>
+
+
+        <hr class="mg-y-40">
+        <h4 id="pafestructure" class="mg-b-20">Pages</h4>
+        <p>Below is the starter template structure that you can use in creating a new page other than dashboard and apps.</p>
+        <pre><code class="language-html">&lt;header class=&quot;navbar navbar-header navbar-header-fixed&quot;&gt;...&lt;/header&gt;
+
+&lt;div class=&quot;content content-fixed bd-b&quot;&gt;
+  &lt;div class=&quot;container pd-x-0 pd-lg-x-10 pd-xl-x-0&quot;&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;footer class=&quot;footer&quot;&gt;...&lt;/footer&gt;</code></pre>
+
+        <hr class="mg-y-40">
+        <h4 id="knownissue" class="mg-b-20">Known Issue</h4>
+
+        <h6>Not displaying font icons in opening the html files directly in a browser.</h6>
+        <p>A page loaded from a file:// URI, only files in (or below) the same directory of the filesystem are considered to be "same origin", and so putting the font in a different subtree (../font/) means it will be blocked by security policy restrictions. Most browser disables cross-domain fonts "by default. By fixing this, you need to put the file in a remote or local server. Anyway, that what where we're going.</p>
+
+        <br>
+
+        <h6>Missing images in download package</h6>
+        <p>The images you see in the demo are use only for demo purposes only and is not allowed to be included in the download package.</p>
+
+        <hr class="mg-y-40">
+        <h4 id="references" class="mg-b-20">References</h4>
+
+        <table class="table table-docs">
+          <thead>
+            <tr>
+              <th class="wd-30p">Plugins</th>
+              <th class="wd-70p">Link</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Bootstrap</td>
+              <td><a href="https://getbootstrap.com/">https://getbootstrap.com/</a></td>
+            </tr>
+            <tr>
+              <td>Chart JS</td>
+              <td><a href="http://www.chartjs.org/">http://www.chartjs.org/</a></td>
+            </tr>
+            <tr>
+              <td>CryptoFont</td>
+              <td><a href="http://cryptofont.com">@AMPoellmann</a></td>
+            </tr>
+            <tr>
+              <td>DataTables</td>
+              <td><a href="https://datatables.net/">https://datatables.net/</a></td>
+            </tr>
+            <tr>
+              <td>Flag Icon CSS</td>
+              <td><a href="https://github.com/lipis/flag-icon-css">https://github.com/lipis/flag-icon-css</a></td>
+            </tr>
+            <tr>
+              <td>Flot</td>
+              <td><a href="http://www.flotcharts.org/">http://www.flotcharts.org/</a></td>
+            </tr>
+            <tr>
+              <td>Flot CurvedLines</td>
+              <td><a href="http://curvedlines.michaelzinsmaier.de/">Michael Zinsmaier and nergal.dev</a></td>
+            </tr>
+            <tr>
+              <td>FontAwesome</td>
+              <td><a href="http://fontawesome.io/">http://fontawesome.io/</a></td>
+            </tr>
+            <tr>
+              <td>FullCalendar</td>
+              <td><a href="https://fullcalendar.io/">https://fullcalendar.io/</a></td>
+            </tr>
+            <tr>
+              <td>GMaps</td>
+              <td><a href="https://hpneo.github.io/gmaps/">https://hpneo.github.io/gmaps/</a></td>
+            </tr>
+            <tr>
+              <td>IonRangeSlider</td>
+              <td><a href="https://ionden.com">IonDen.com</a></td>
+            </tr>
+            <tr>
+              <td>Ionicons</td>
+              <td><a href="http://ionicons.com/">http://ionicons.com/</a></td>
+            </tr>
+            <tr>
+              <td>jQuery</td>
+              <td><a href="https://jquery.com/">https://jquery.com/</a></td>
+            </tr>
+            <tr>
+              <td>jQuery Sparkline</td>
+              <td><a href="http://digitalbush.com/projects/masked-input-plugin/">http://digitalbush.com/projects/masked-input-plugin/</a></td>
+            </tr>
+            <tr>
+              <td>jQuery Steps</td>
+              <td><a href="http://www.jquery-steps.com/">http://www.jquery-steps.com/</a></td>
+            </tr>
+            <tr>
+              <td>jQuery UI</td>
+              <td><a href="https://jqueryui.com/">https://jqueryui.com/</a></td>
+            </tr>
+            <tr>
+              <td>jQuery MaskedInput</td>
+              <td><a href="https://digitalbush.com/projects/masked-input-plugin/">https://digitalbush.com/projects/masked-input-plugin/</a></td>
+            </tr>
+            <tr>
+              <td>jQVMap</td>
+              <td><a href="http://jqvmap.com">http://jqvmap.com</a></td>
+            </tr>
+            <tr>
+              <td>Leaflet</td>
+              <td><a href="http://leafletjs.com">http://leafletjs.com</a></td>
+            </tr>
+            <tr>
+              <td>LightSlider</td>
+              <td><a href="https://github.com/sachinchoolur/lightslider">https://github.com/sachinchoolur/lightslider</a></td>
+            </tr>
+            <tr>
+              <td>LineAwesome</td>
+              <td><a href="https://icons8.com/line-awesome">https://icons8.com/line-awesome</a></td>
+            </tr>
+            <tr>
+              <td>Moment JS</td>
+              <td><a href="https://momentjs.com/">https://momentjs.com/</a></td>
+            </tr>
+            <tr>
+              <td>Morris JS</td>
+              <td><a href="http://morrisjs.github.io/morris.js/">http://morrisjs.github.io/morris.js/</a></td>
+            </tr>
+            <tr>
+              <td>Parsley JS</td>
+              <td><a href="http://parsleyjs.org">http://parsleyjs.org</a></td>
+            </tr>
+            <tr>
+              <td>Peity</td>
+              <td><a href="http://benpickles.github.io/peity">http://benpickles.github.io/peity</a></td>
+            </tr>
+            <tr>
+              <td>Perfect Scrollbar</td>
+              <td><a href="http://utatti.github.io/perfect-scrollbar/">http://utatti.github.io/perfect-scrollbar/</a></td>
+            </tr>
+            <tr>
+              <td>Popper JS</td>
+              <td><a href="https://popper.js.org/">https://popper.js.org/</a></td>
+            </tr>
+            <tr>
+              <td>Quill</td>
+              <td><a href="https://quilljs.com/">https://quilljs.com/</a></td>
+            </tr>
+            <tr>
+              <td>Raphael</td>
+              <td><a href="http://dmitrybaranovskiy.github.io/raphael/">http://dmitrybaranovskiy.github.io/raphael/</a></td>
+            </tr>
+            <tr>
+              <td>Select2</td>
+              <td><a href="https://select2.org/">https://select2.org/</a></td>
+            </tr>
+            <tr>
+              <td>Spectrum</td>
+              <td><a href="https://bgrins.github.io/spectrum/">https://bgrins.github.io/spectrum/</a></td>
+            </tr>
+            <tr>
+              <td>Typicons</td>
+              <td><a href="https://www.s-ings.com/typicons/">https://www.s-ings.com/typicons/</a></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <hr class="mg-y-40">
+        <h4 id="customersupport" class="mg-b-20">Customer Support</h4>
+        <p>You can request for support via email or themeforest item comments.</p>
+        <p>We will assist you any problem you encounter while buidling your dashboard via this template</p>
+        <p>We use request help form in comments and email to manage customer support. Soon, as we grow, we will invest and find the best customer support system we can use to serve you better. For the meantime, submit a help request to the link given for any issues and concerns that you have. Don't worry, we will respond to you as quickly as we can. Thank you.</p>
+
+        <hr class="mg-y-40">
+        <p>&copy; 2019. Dashforge Documentation v1.0.0. All Rights Reserved. Created by: ThemePixels</p>
+      </div>
+    </div><!-- content -->
+
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/feather-icons/feather.min.js"></script>
+    <script src="lib/prismjs/prism.js"></script>
+
+    <script src="assets/js/dashforge.js"></script>
+    <script>
+      $(function(){
+        'use strict'
+
+      });
+    </script>
+  </body>
+</html>

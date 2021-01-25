@@ -1,0 +1,242 @@
+<div class="container-fluid container-fixed-lg p-l-0 p-r-0">
+    <pg-container>
+      <isotope-grid class="gallery" [options]="galleryOptions" [@enterAnimation]="_isLoading == true ?'loading':'ready'">
+          <div class="gallery-filters p-t-20 p-b-10">
+              <ul class="list-inline text-right">
+                <li class="hint-text">Sort by: </li>&nbsp;
+                <li><a href="javascript:void(0)" class="active text-master p-r-5 p-l-5">Name</a></li>&nbsp;
+                <li><a href="javascript:void(0)" class="text-master hint-text p-r-5 p-l-5">Views</a></li>&nbsp;
+                <li><a href="javascript:void(0)" class="text-master hint-text p-r-5 p-l-5">Cost</a></li>&nbsp;
+                <li>
+                  <button class="btn btn-primary m-l-10" (click)="slideRight.show()">More filters</button>
+                </li>
+              </ul>
+            </div>
+          <isotope-item *ngFor="let item of feed; let isFirst = first" class="">
+            <div class="gallery-item"  [class.first] = "isFirst" [attr.data-width]="item.featured ? 2 : 1" [attr.data-height]="item.featured ? 2 : 1" (click)="toggleModal()">
+              <!-- START PREVIEW -->
+              <img *ngIf="item.thumbnail.length === 1" src="{{item.thumbnail}}" alt="" class="image-responsive-height">
+
+              <div *ngIf="item.thumbnail.length > 1" class="swiper-container full-height" [swiper]="config" [(index)]="index">
+                  <div class="swiper-wrapper full-height">
+                      <div class="swiper-slide slide-front full-height" [ngStyle] = "{'background-image': 'url('+item.thumbnail[0]+')'}">
+                        </div>
+                        <div class=" swiper-slide  slide-back full-height" [ngStyle] = "{'background-image': 'url('+item.thumbnail[1]+')'}">
+                        </div>
+                  </div>
+              </div>
+              
+              <!-- END PREVIEW -->
+              <!-- START ITEM OVERLAY DESCRIPTION -->
+              <div class="overlayer bottom-left full-width">
+                <div class="overlayer-wrapper item-info ">
+                  <div class="gradient-grey p-l-20 p-r-20 p-t-20 p-b-5">
+                    <div *ngIf="item.featured !== true">
+                      <p class="pull-left bold text-white fs-14 p-t-10">{{item.title}}</p>
+                      <h5 class="pull-right semi-bold text-white font-montserrat bold">{{item.price}}</h5>
+                      <div class="clearfix"></div>
+                    </div>
+
+                    <div *ngIf="item.featured === true">
+                        <h3 class="pull-left bold text-white no-margin">{{item.title}}</h3>
+                        <h3 class="pull-right semi-bold text-white font-montserrat bold no-margin">{{item.price}}</h3>
+                        <div class="clearfix"></div>
+                        <span class="hint-text pull-left text-white">{{item.caption}}</span>
+                        <div class="clearfix"></div>
+                      </div>
+                      <div class="">
+                        <h5 class="text-white light">{{item.description}}</h5>
+                      </div>
+
+
+                    <div class="m-t-10">
+                      <div class="thumbnail-wrapper d32 circular m-t-5">
+                        <img width="40" height="40" src="{{item.author.avatar}}" data-src="{{item.author.avatar}}" pgRetina src2x="{{item.author.avatar2x}}" alt="">
+                      </div>
+                      <div class="inline m-l-10">
+                        <p class="no-margin text-white fs-12">Designed by {{item.author.name}}</p>
+                        <p class="rating">
+                          <i class="fa fa-star rated"></i>&nbsp;
+                          <i class="fa fa-star rated"></i>&nbsp;
+                          <i class="fa fa-star rated"></i>&nbsp;
+                          <i class="fa fa-star rated"></i>&nbsp;
+                          <i class="fa fa-star"></i>
+                        </p>
+                      </div>
+                      <div class="pull-right m-t-10">
+                        <button class="btn btn-white btn-xs btn-mini bold fs-14" type="button">+</button>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- END PRODUCT OVERLAY DESCRIPTION -->
+            </div>
+          </isotope-item>
+      </isotope-grid>
+    </pg-container>
+  </div>
+  
+  <!-- Modal -->
+  <div bsModal #fadInModal="bs-modal" class="modal item-modal fade fill-in" tabindex="-1" role="dialog" aria-hidden="true">
+
+      <div class="modal-dialog ">
+        <div class="modal-content">
+          <div class="modal-body">
+              <div class="container-fluid">
+                  <div class="row dialog__overview">
+                    <div class="col-md-7 no-padding item-slideshow-wrapper full-height">
+     
+                      <div class="swiper-container full-height" [swiper]="configModal" [(index)]="index2">
+                          <div class="swiper-wrapper full-height">
+                              <div class="swiper-slide slide-front full-height" [ngStyle] = "{'background-image': 'url(assets/img/gallery/item-square.jpg)'}">
+                                </div>
+                                <div class=" swiper-slide  slide-back full-height" [ngStyle] = "{'background-image': 'url(assets/img/gallery/item-square.jpg)'}">
+                                </div>
+                          </div>
+                        
+                          <div class="swiper-pagination"></div>
+                        
+                          <div class="swiper-button swiper-button-prev" (click)="prevSlide()">
+                            <i class="fa fa-chevron-left"></i>
+                          </div>
+                          <div class="swiper-button swiper-button-next" (click)="nextSlide()">
+                            <i class="fa fa-chevron-right"></i>
+                          </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-12 d-md-none d-lg-none d-xl-none bg-info-dark">
+                      <div class="container-xs-height">
+                        <div class="row row-xs-height">
+                          <div class="col-8 col-xs-height col-middle no-padding">
+                            <div class="thumbnail-wrapper d32 circular inline">
+                              <img width="32" height="32" src="assets/img/profiles/2.jpg" data-src="assets/img/profiles/2.jpg" data-src-retina="assets/img/profiles/2x.jpg" alt="">
+                            </div>
+                            <div class="inline m-l-15">
+                              <p class="text-white no-margin">Alex Nester</p>
+                              <p class="hint-text text-white no-margin fs-12">Senior UI/UX designer</p>
+                            </div>
+                          </div>
+                          <div class="col-4 col-xs-height col-middle text-right  no-padding">
+                            <h2 class="bold text-white price font-montserrat">$20.00</h2>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-5 p-r-35 p-t-35 p-l-35 full-height item-description">
+                      <h2 class="semi-bold no-margin font-montserrat">Happy Ninja</h2>
+                      <p class="rating fs-12 m-t-5">
+                        <i class="fa fa-star "></i>&nbsp;
+                        <i class="fa fa-star "></i>&nbsp;
+                        <i class="fa fa-star "></i>&nbsp;
+                        <i class="fa fa-star-o"></i>&nbsp;
+                        <i class="fa fa-star-o"></i>&nbsp;
+                      </p>
+                      <p class="fs-13">When it comes to digital design, the lines between functionality, aesthetics, and psychology are inseparably blurred. Without the constraints of the physical world, there’s no natural form to fall back on, and every bit of constraint and affordance must be introduced intentionally. Good design makes a product useful.
+                      </p>
+                      <div class="row m-b-20 m-t-20">
+                        <div class="col-6"><span class="font-montserrat all-caps fs-11">Price ranges</span>
+                        </div>
+                        <div class="col-6 text-right">$20.00 - $40.00</div>
+                      </div>
+                      <div class="row m-t-20 m-b-10">
+                        <div class="col-6"><span class="font-montserrat all-caps fs-11">Paint sizes</span>
+                        </div>
+                      </div>
+                      <button class="btn btn-white">S</button>&nbsp;
+                      <button class="btn btn-white">M</button>&nbsp;
+                      <button class="btn btn-white">L</button>&nbsp;
+                      <button class="btn btn-white">XL</button>&nbsp;
+                      <br>
+                      <button class="btn btn-primary buy-now">Buy Now</button>
+                    </div>
+                  </div>
+                  <div class="row dialog__footer bg-info-dark d-sm-none d-none d-sm-flex d-lg-flex d-xl-flex">
+                    <div class="col-md-7 full-height separator">
+                      <div class="container-xs-height">
+                        <div class="row row-xs-height">
+                          <div class="col-7 col-xs-height col-middle no-padding">
+                            <div class="thumbnail-wrapper d48 circular inline">
+                              <img width="48" height="48" src="assets/img/profiles/2.jpg" data-src="assets/img/profiles/2.jpg" data-src-retina="assets/img/profiles/2x.jpg" alt="">
+                            </div>
+                            <div class="inline m-l-15">
+                              <p class="text-white no-margin">Alex Nester</p>
+                              <p class="hint-text text-white no-margin fs-12">Senior UI/UX designer</p>
+                            </div>
+                          </div>
+                          <div class="col-5 col-xs-height col-middle text-right  no-padding">
+                            <h2 class="bold text-white price font-montserrat">$20.00</h2>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-5 full-height">
+                      <ul class="recommended list-inline pull-right m-t-10 m-b-0">
+                        <li>
+                          <a href="javascript:void(0)"><img src="assets/img/gallery/thumb-1.jpg"></a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)"><img src="assets/img/gallery/thumb-2.jpg"></a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)"><img src="assets/img/gallery/thumb-3.jpg"></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <button class="close action top-right" (click)="fadInModal.hide()"><i class="pg pg-close fs-14"></i>
+                </button>
+                
+          </div>
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+
+
+    <!-- MODAL STICK UP SMALL ALERT -->
+    <div bsModal #slideRight="bs-modal" class="modal filters-modal fade slide-right" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content-wrapper">
+          <div class="modal-content">
+            
+            <div class="padding-40 ">
+              <a (click)="slideRight.hide()" class="filter-close quickview-toggle pg pg-close" href="javascript:void(0)"></a>
+              <form class="" role="form">
+                <h5 class="all-caps font-montserrat fs-12 m-b-20">Advance filters</h5>
+                <div class="form-group form-group-default " pgFormGroupDefault>
+                  <label>Project</label>
+                  <input type="email" class="form-control" placeholder="Type of select a label">
+                </div>
+                <h5 class="all-caps font-montserrat fs-12 m-b-20 m-t-25">Advance filters</h5>
+                <div class="radio radio-danger">
+                  <input type="radio" checked="checked" value="1" name="filter" id="asc">
+                  <label for="asc">Ascending order</label>
+                  <br>
+                  <input type="radio" value="2" name="filter" id="views">
+                  <label for="views">Most viewed</label>
+                  <br>
+                  <input type="radio" value="3" name="filter" id="cost">
+                  <label for="cost">Cost</label>
+                  <br>
+                  <input type="radio" value="4" name="filter" id="latest">
+                  <label for="latest">Latest</label>
+                </div>
+                <h5 class="all-caps font-montserrat fs-12 m-b-20 m-t-25">Price range</h5>
+                <pg-slider name="filter-slider" Range [Color]="'danger'" [(ngModel)]="rangeValue" [Step]="10" [DefaultValue]="[20, 50]"></pg-slider>
+                <button (click)="slideRight.hide()" class="pull-right btn btn-danger btn-cons m-t-40">Apply</button>
+              </form>
+            </div>
+
+          </div>
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+    <!-- END MODAL STICK UP SMALL ALERT -->

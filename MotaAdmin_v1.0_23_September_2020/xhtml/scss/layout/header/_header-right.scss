@@ -1,0 +1,242 @@
+.header-right {
+    height: 100%;
+    .nav-item {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        .nav-link {
+            color: $l-ctd;
+            font-size: 18px;
+        }
+    }
+	.right-sidebar{
+		margin-right:-30px;
+		a{
+			height: 80px;
+			width: 80px;
+			text-align: center;
+			justify-content: center;
+			display: flex;
+			align-items: center;
+			border-left: 1px solid $light;
+		}
+	}
+    &>li {
+        &:not(:first-child) {
+            padding-left: 0.75rem;
+        }
+    }
+    .notification_dropdown {
+        @include respond('phone-land') {
+            position: static;
+        }
+        .nav-link {
+            position: relative;
+            color: $l-ctd;
+			background: $body-bg;
+			border-radius: 4px;
+			padding: 10px;
+			line-height: 1;
+			
+            i {
+                font-size: 18px;
+                font-weight: 700;
+            }
+            .badge {
+                position: absolute;
+                font-size: 0.625rem;
+                border-radius: 50%;
+                right: 0;
+                top: 0;
+                font-weight: normal;
+                height: 17px;
+                width: 17px;
+                line-height: 6px;
+                text-align: center;
+                padding: 5px;
+            }
+        }
+        .dropdown-item {
+            &:focus,
+            &:active {
+                a {
+                    color: $white;
+                }
+            }
+            a {
+                color: $dark;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .dropdown-menu {
+        border-width:0;
+        box-shadow: 0 0 37px rgba(8,21,66,0.05);
+        @at-root [data-theme-version="dark"] & {
+            box-shadow: none;
+        }
+    }
+    .header-profile {
+        &>a.nav-link {
+			padding:0;
+			display: flex;
+			
+            i {
+                font-weight: 700;
+            }
+			.header-info{
+				padding-left:10px;
+				span{
+					font-size:16px;
+					color:$muted;
+					display: block;
+				}
+				strong{
+					color:$dark;
+				}
+				small{
+					display:block;
+					font-size: 13px;
+					color:$muted;
+					font-weight:400;
+					line-height: 1.2;
+				}
+			}
+        }
+        .dropdown-menu {
+            padding: 15px 0;
+            min-width: 12.5rem;
+            a {
+                &:hover,
+                &:focus,
+                &.active {
+                    color: $primary;
+                }
+            }
+        }
+        img {
+            width: 40px;
+            height: 40px;
+            border-radius: $radius;
+        }
+        .dropdown-toggle {
+            i {
+                font-size: 1.25rem;
+            }
+            span {
+                @include respond('phone') {
+                    display: none;
+                }
+            }
+        }
+        .profile_title {
+            background: $primary;
+            color: $white;
+            padding: 10px 20px;
+            h5 {
+                color: $white;
+                margin-bottom: 3px;
+            }
+        }
+        // .dropdown-toggle::after{
+        //     display: none;
+        // }
+        .dropdown-item {
+            padding: 8px 24px;
+        }
+    }
+}
+.dz-fullscreen{
+	#icon-minimize{
+		display:none;
+	}
+	&.active{
+		#icon-full{
+			display:none;
+		}
+		#icon-minimize{
+			display:inline-block;
+		}
+	}
+}
+.notification_dropdown {
+    .dropdown-menu-right {
+        min-width: 310px;
+        padding: 0rem 0 1rem;
+        top: 60px;
+        .notification_title {
+            background: $primary;
+            color: $white;
+            padding: 10px 20px;
+            h5 {
+                color: $white;
+                margin-bottom: 3px;
+            }
+        }
+        .media {
+			width: 45px !important;
+			height: 45px !important;
+			font-size: 18px !important;
+			
+            // &:last-child{
+            //     border-bottom: 0px;
+            // }
+            @at-root [data-theme-version="dark"] & {
+                border-color: $d-border;
+            }
+            &>span {
+                width: 35px;
+                height: 35px;
+                border-radius: 50px;
+                display: inline-block;
+                padding: 7px 9px;
+                margin-right: 10px;
+				@at-root [direction="rtl"]#{&} {
+					 margin-right: 0;
+					 margin-left: 10px
+				}
+                &.success {
+                    background: $success-light;
+                    color: $success;
+                }
+                &.primary {
+                    background: $primary-light;
+                    color: $primary;
+                }
+                &.danger {
+                    background: $danger-light;
+                    color: $danger;
+                }
+            }
+            .notify-time {
+                width: 100%!important;
+                margin-right: 0!important;
+                color: $l-ctl;
+            }
+            p {
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+                max-width: 200px;
+                margin-bottom: 0;
+                margin-top: 5px;
+				@include respond('phone') {
+				    max-width: 100px;
+				}
+            }
+        }
+        .all-notification {
+            display: block;
+            padding: 15px 30px 0;
+            // color: $dark;
+            text-align: center;
+			border-top: 1px solid $light;
+				
+            i {
+                margin-left: 10px;
+            }
+        }
+    }
+}

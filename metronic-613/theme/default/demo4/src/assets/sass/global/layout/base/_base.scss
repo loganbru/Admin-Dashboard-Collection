@@ -1,0 +1,226 @@
+//
+// Page
+//
+
+
+
+
+// Page body
+body {
+	background-color: $kt-page-body-bg-color;
+	background-position: auto top;
+	background-repeat: no-repeat;
+
+	// Container
+	.kt-container {
+		.kt-container {
+			width: 100%;
+		}
+	}
+}
+
+// Subheader
+.kt-subheader {
+	padding: kt-get($kt-page-padding, desktop) 0 !important;
+	height: 120px;
+
+	.kt-aside--enabled & {
+		margin-left: kt-get($kt-page-padding, desktop);
+	}
+
+	// Title
+	.kt-subheader__title {
+		// Mobile Toggler
+		.kt-subheader__mobile-toggle {
+			display: none;
+		}
+	}
+
+	// Main
+	.kt-subheader__main {
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+
+		// Light style
+		.kt-subheader--transparent & {
+			// Title
+			.kt-subheader__title {
+				font-size: 1.8rem;
+				margin-bottom: 0.5rem;
+				color: #fff;
+			}
+
+			// Desc
+			.kt-subheader__desc {
+				font-size: 1.2rem;
+				color: rgba(#fff, 0.5);
+			}
+
+			// Breadcrumbs
+			.kt-subheader__breadcrumbs {
+				.kt-subheader__breadcrumbs-home {
+					> i {
+						color: rgba(#fff, 0.6);
+					}
+
+					&:hover {
+						> i {
+							color: #fff;
+						}
+					}
+
+					&.kt-subheader__breadcrumbs-home--active {
+						> i {
+							color: #fff;
+						}
+					}
+				}
+
+				.kt-subheader__breadcrumbs-link {
+					color: rgba(#fff, 0.7);
+
+					&:hover {
+						color: #fff;
+					}
+
+					&.kt-subheader__breadcrumbs-link--active {
+						color: #fff;
+					}
+				}
+
+				.kt-subheader__breadcrumbs-separator {
+					&:after {
+						background: rgba(#fff, 0.6);
+					}
+				}
+			}
+		}
+	}
+
+	// Toolbar
+	.kt-subheader__toolbar {
+		// Primary button
+		.btn.kt-subheader__btn-secondary {
+			height: auto;
+			padding: 1.5rem 2rem;
+			border: 0;
+			background-color: rgba(#fff, 0.1);
+			color: rgba(#fff, 0.8);
+
+			@include kt-rounded {
+				border-radius: $kt-border-radius;
+			}
+
+			&:hover,
+			&:active,
+			&.active,
+			.show &,
+			&:focus {
+				border: 0;
+				background-color: rgba(#fff, 0.3);
+				color: #fff;
+			}
+		}
+
+		// Options button
+		.btn.kt-subheader__btn-options {
+			height: auto;
+			padding: 1.5rem 2rem;
+
+			@include kt-rounded {
+				border-radius: $kt-border-radius;
+			}
+		}
+	}
+}
+
+// Desktop(1024px and above)
+@include kt-desktop() {
+	// Container
+	.kt-container {
+		padding: 0 kt-get($kt-page-padding, desktop);
+	}
+
+	// Body
+	.kt-body {
+		// fixed & minimized header
+		.kt-header--fixed.kt-header--minimize & {
+			padding-top: kt-get($kt-header-config, base, desktop, default, height);
+		}
+
+		> .kt-container {
+			padding-right: 0 !important;
+		}
+	}
+
+	// Support Center/FAQ 3
+	.kt-sc-faq-3 {
+		.kt-sc__title {
+			color:#fff;
+			margin-bottom: 0.5rem;
+		}
+
+		.kt-sc__subtitle {
+			color: rgba(#fff, 0.7);
+		}
+
+		.kt-sc__bg {
+			margin-top: 4rem;
+		}
+	}
+}
+
+// Page fluid mode(below $kt-page-container-width)
+@media (min-width: #{$kt-page-container-width + (2 * $kt-page-fluid-container-padding) - 1px}) {
+	// Page container
+	.kt-container.kt-container--fluid {
+		padding: 0 $kt-page-fluid-container-padding;
+	}
+}
+
+// Fixed container width change to fluid
+@include kt-media-range( lg, $kt-page-container-width + (2 * kt-get($kt-page-padding, desktop)) ) {
+	.kt-container:not(.kt-container--fluid) {
+		width: 100%;
+	}
+}
+
+// Tablet & mobile mode(1024px and below)
+@include kt-tablet-and-mobile() {
+	// Page container
+	.kt-container {
+		padding: 0 kt-get($kt-page-padding, mobile);
+	}
+
+	// Page wrapper
+	.kt-wrapper {
+		// Fixed Header
+		.kt-header-mobile--fixed & {
+			padding-top: kt-get($kt-header-config, base, mobile, self, default, height);
+		}
+	}
+
+	// Subheader
+	.kt-subheader {
+		padding: kt-get($kt-page-padding, mobile) 0 !important;
+		height: auto;
+
+		// Main
+		.kt-subheader__main {
+			// Title
+			.kt-subheader__title {
+				display: flex;
+				align-items: center;
+
+				// Mobile Toggler
+				@include kt-burger-icon-build(kt-subheader__mobile-toggle, kt-get($kt-subheader, toggle));
+				@include kt-burger-icon-skin(kt-subheader__mobile-toggle, kt-get($kt-subheader, toggle, color));
+
+				.kt-subheader__mobile-toggle {
+					margin-right: 1rem;
+				}
+			}
+		}
+	}
+}

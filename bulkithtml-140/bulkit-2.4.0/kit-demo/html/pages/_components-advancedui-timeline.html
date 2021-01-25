@@ -1,0 +1,409 @@
+---
+layout: components
+title: Timeline
+---
+
+<!-- Hero and nav -->
+<div class="hero is-relative is-theme-info">
+
+    {{> navbar-static-light}}
+
+    <!-- Hero image -->
+    <div id="main-hero" class="hero-body">
+        <div class="container has-text-centered">
+            <div class="columns is-vcentered">
+                <div class="column is-4 is-offset-1 has-text-left">
+                    <h1 class="title components-title is-1">
+                        Timelines
+                    </h1>
+                    <h2 class="subtitle is-4 components-subtitle">
+                        Timeline and activity feed variations.
+                    </h2>
+                    <p class="components-cta">
+                        <a href="#responsive" class="button button-cta btn-align light-btn btn-outlined is-bold rounded">
+                            Get Started
+                        </a>
+                    </p>
+                </div>
+                <div class="column is-offset-1 has-text-centered is-hidden-mobile">
+                    <div id="timeline-ill" class="vivus-svg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Hero image -->
+</div>
+<!-- /Hero and nav -->
+
+<!-- Responsive timelines -->
+<section class="section is-medium">
+    <div class="container">
+        <div id="reponsive" class="section-title-wrapper has-text-centered">
+            <div class="bg-number">1</div>
+            <h2 class="title section-title has-text-centered dark-text text-bold">
+                Responsive Timeline
+            </h2>
+        </div>
+
+        <!-- Notification Timeline -->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Notification timeline</h4>
+                    <p class="no-padding">Use timelines if you want to display chronological information. This timeline features timeline icons and user avatars. It is responsive by default.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered pt-30">
+            <div class="column is-10 is-offset-1">
+                <!-- Timeline -->
+                <div class="timeline">
+                    <!-- Timeline item -->
+                    <div class="timeline-item">
+                        <div class="timeline-icon g-item">
+                            <i class="sl sl-icon-lock"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="content-body">
+                                <img class="timeline-avatar" src="https://via.placeholder.com/250x250" alt=""
+                                    data-demo-src="assets/images/avatars/carolin.png">
+                                <div class="timeline-text">
+                                    <div>Marjory Cambell</div>
+                                    <div>Has locked a set of business documents</div>
+                                    <span class="timestamp">30 minutes ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Timeline item -->
+                    <div class="timeline-item">
+                        <div class="timeline-icon g-item">
+                            <i class="sl sl-icon-wallet"></i>
+                        </div>
+                        <div class="timeline-content right">
+                            <div class="content-body">
+                                <img class="timeline-avatar" src="https://via.placeholder.com/250x250" alt=""
+                                    data-demo-src="assets/images/avatars/henry.jpg">
+                                <div class="timeline-text">
+                                    <div>Henry Rodstein</div>
+                                    <div>Has marked <a href="#">4 invoices</a> as processed and paid.</div>
+                                    <span class="timestamp">2 hours ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Timeline item -->
+                    <div class="timeline-item">
+                        <div class="timeline-icon g-item">
+                            <i class="sl sl-icon-cloud-upload"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="content-body">
+                                <img class="timeline-avatar" src="https://via.placeholder.com/250x250" alt=""
+                                    data-demo-src="assets/images/avatars/helen.jpg">
+                                <div class="timeline-text">
+                                    <div>Helen Miller</div>
+                                    <div>Has uploaded <a href="#">17 invoices</a> to the processing queue.</div>
+                                    <span class="timestamp">Yesterday</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Timeline -->
+            </div>
+        </div>
+        <!-- /Notification Timeline -->
+
+        <!-- Doted Timeline -->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered pb-20">
+                    <h4>Doted timeline</h4>
+                    <p class="no-padding">You can display small dots instead of icons if you prefer a lighter layout. Inspect the source to see the markup details</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered pt-30">
+            <div class="column is-10 is-offset-1">
+                <!-- Timeline -->
+                <div class="timeline doted">
+                    <div class="timeline-item">
+                        <!-- Timeline item -->
+                        <div class="timeline-icon g-item"></div>
+                        <div class="timeline-content">
+                            <div class="content-body">
+                                <img class="timeline-avatar" src="https://via.placeholder.com/250x250" alt=""
+                                    data-demo-src="assets/images/avatars/carolin.png">
+                                <div class="timeline-text">
+                                    <div>Marjory Cambell</div>
+                                    <div>Has locked a set of business documents</div>
+                                    <span class="timestamp">30 minutes ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Timeline item -->
+                    <div class="timeline-item">
+                        <div class="timeline-icon g-item"></div>
+                        <div class="timeline-content right">
+                            <div class="content-body">
+                                <img class="timeline-avatar" src="https://via.placeholder.com/250x250" alt=""
+                                    data-demo-src="assets/images/avatars/henry.jpg">
+                                <div class="timeline-text">
+                                    <div>Henry Rodstein</div>
+                                    <div>Has marked <a href="#">4 invoices</a> as processed and paid.</div>
+                                    <span class="timestamp">2 hours ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Timeline item -->
+                    <div class="timeline-item">
+                        <div class="timeline-icon g-item"></div>
+                        <div class="timeline-content">
+                            <div class="content-body">
+                                <img class="timeline-avatar" src="https://via.placeholder.com/250x250" alt=""
+                                    data-demo-src="assets/images/avatars/helen.jpg">
+                                <div class="timeline-text">
+                                    <div>Helen Miller</div>
+                                    <div>Has uploaded <a href="#">17 invoices</a> to the processing queue.</div>
+                                    <span class="timestamp">Yesterday</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Timeline -->
+            </div>
+        </div>
+        <!-- /Notification Timeline -->
+
+        <!-- Conversation Timeline -->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Conversation timeline</h4>
+                    <p class="no-padding">Timelines can also be used to display message conversations, like inside a support ticket UI for example.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered pt-30">
+            <div class="column is-10 is-offset-1">
+                <!-- Timeline -->
+                <div class="timeline">
+                    <!-- Timeline item -->
+                    <div class="timeline-item">
+                        <div class="timeline-icon g-item">
+                            <img class="timeline-avatar" src="https://via.placeholder.com/250x250" alt=""
+                                data-demo-src="assets/images/avatars/carolin.png">
+                        </div>
+                        <div class="timeline-content">
+                            <div class="content-body">
+                                <div class="timeline-text">
+                                    <div>Marjory Cambell</div>
+                                    <div>Lorem ipsum dolor sit amet, vel option latine alterum ut, sed ad ludus saperet nominavi. Te exerci libris blandit qui, quo ei lucilius vulputate. </div>
+                                    <span class="timestamp">30 minutes ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Timeline item -->
+                    <div class="timeline-item">
+                        <div class="timeline-icon g-item">
+                            <img class="timeline-avatar" src="https://via.placeholder.com/250x250" alt=""
+                                data-demo-src="assets/images/avatars/henry.jpg">
+                        </div>
+                        <div class="timeline-content right">
+                            <div class="content-body">
+                                <div class="timeline-text">
+                                    <div>Henry Rodstein</div>
+                                    <div>Lorem ipsum dolor sit amet, vel option latine alterum ut, sed ad ludus saperet nominavi. Te exerci libris blandit qui.</div>
+                                    <span class="timestamp">2 hours ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Timeline item -->
+                    <div class="timeline-item">
+                        <div class="timeline-icon g-item">
+                            <img class="timeline-avatar" src="https://via.placeholder.com/250x250" alt=""
+                                data-demo-src="assets/images/avatars/helen.jpg">
+                        </div>
+                        <div class="timeline-content">
+                            <div class="content-body">
+                                <div class="timeline-text">
+                                    <div>Helen Miller</div>
+                                    <div>Lorem ipsum dolor sit amet, vel option latine alterum ut, sed ad ludus saperet nominavi. Te exerci libris blandit qui, quo ei lucilius vulputate. </div>
+                                    <span class="timestamp">Yesterday</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Timeline -->
+            </div>
+        </div>
+        <!-- /Conversation Timeline -->
+    </div>
+</section>
+<!-- /Responsive timelines -->
+
+<!-- Simple feeds -->
+<section class="section section-feature-grey is-medium">
+    <div class="container">
+        <div class="section-title-wrapper has-text-centered">
+            <div class="bg-number">2</div>
+            <h2 class="title section-title has-text-centered dark-text text-bold">
+                Simple Feed
+            </h2>
+        </div>
+
+        <!-- Notification Feed -->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Notification Feed</h4>
+                    <p class="no-padding">If timelines dont suit your needs, you can use de the simple activity feed to display notifications or whatever chronological content.</p>
+                </div>
+            </div>
+        </div>
+        <div class="columns is-vcentered pt-30">
+            <div class="column is-8 is-offset-2">
+                <!-- Feed -->
+                <ol class="simple-feed">
+                    <!-- Feed item -->
+                    <li class="feed-item">
+                        <img class="feed-avatar" src="https://via.placeholder.com/250x250" alt=""
+                            data-demo-src="assets/images/avatars/henry.jpg">
+                        <div class="feed-item-text">
+                            <span class="date">2 minutes ago</span>
+                            <span class="text"><span class="name">Henry Rodstein</span> has marked <a href="#">4 invoices</a> as processed and paid.</span>
+                        </div>
+                    </li>
+                    <!-- Feed item -->
+                    <li class="feed-item">
+                        <img class="feed-avatar" src="https://via.placeholder.com/250x250" alt=""
+                            data-demo-src="assets/images/avatars/carolin.png">
+                        <div class="feed-item-text">
+                            <span class="date">3 hours ago</span>
+                            <span class="text"><span class="name">Marjory Cambell</span> has locked and archived <a href="#">2 invoices</a></span>
+                        </div>
+                    </li>
+                    <!-- Feed item -->
+                    <li class="feed-item">
+                        <img class="feed-avatar" src="https://via.placeholder.com/250x250" alt=""
+                            data-demo-src="assets/images/avatars/anthony.jpg">
+                        <div class="feed-item-text">
+                            <span class="date">5 hours ago</span>
+                            <span class="text"><span class="name">Anthony Kowalsky</span> created <a href="#">2 new opportunities</a></span>
+                        </div>
+                    </li>
+                    <!-- Feed item -->
+                    <li class="feed-item">
+                        <img class="feed-avatar" src="https://via.placeholder.com/250x250" alt=""
+                            data-demo-src="assets/images/avatars/kareem.jpg">
+                        <div class="feed-item-text">
+                            <span class="date">Yesterday</span>
+                            <span class="text"><span class="name">Kareem Jabbar</span> has marked <a href="#">3 invoices</a> with issues and set their priority to urgent.</span>
+                        </div>
+                    </li>
+                    <!-- Feed item -->
+                    <li class="feed-item">
+                        <img class="feed-avatar" src="https://via.placeholder.com/250x250" alt=""
+                            data-demo-src="assets/images/avatars/marge.jpg">
+                        <div class="feed-item-text">
+                            <span class="date">Monday</span>
+                            <span class="text"><span class="name">Eleanor Briggs</span> uploaded <a href="#">5 new invoices</a>.</span>
+                        </div>
+                    </li>
+                    <!-- Feed item -->
+                    <li class="feed-item">
+                        <img class="feed-avatar" src="https://via.placeholder.com/250x250" alt=""
+                            data-demo-src="assets/images/avatars/ben.jpg">
+                        <div class="feed-item-text">
+                            <span class="date">Last week</span>
+                            <span class="text"><span class="name">Kevin Smith</span> has marked <a href="#">9 invoices</a> as processed and paid.</span>
+                        </div>
+                    </li>
+                </ol>
+                <!-- /Feed -->
+            </div>
+        </div>
+        <!-- /Notification Feed -->
+
+        <!-- Activity Feed -->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Activity Feed</h4>
+                    <p class="no-padding">Avatars can also easily replaced by icons to emphasize your feed content design.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered pt-30">
+            <div class="column is-8 is-offset-2">
+                <!-- Feed -->
+                <ol class="simple-feed">
+                    <!-- Feed item -->
+                    <li class="feed-item">
+                        <i class="im im-icon-Speach-Bubble2 is-icon-2x accent-text"></i>
+                        <div class="feed-item-text">
+                            <span class="date">2 minutes ago</span>
+                            <span class="text"><span class="name">Henry Rodstein</span> sent you a <a href="#">Message</a>.</span>
+                        </div>
+                    </li>
+                    <!-- Feed item -->
+                    <li class="feed-item">
+                        <i class="im im-icon-Envelope is-icon-2x accent-text"></i>
+                        <div class="feed-item-text">
+                            <span class="date">3 hours ago</span>
+                            <span class="text">You have <a href="#">5 new messages</a> in your inbox.</span>
+                        </div>
+                    </li>
+                    <!-- Feed item -->
+                    <li class="feed-item">
+                        <i class="im im-icon-Yes is-icon-2x accent-text"></i>
+                        <div class="feed-item-text">
+                            <span class="date">5 hours ago</span>
+                            <span class="text"><a href="#">3 more users</a> are now following you.</span>
+                        </div>
+                    </li>
+                    <!-- Feed item -->
+                    <li class="feed-item">
+                        <i class="im im-icon-File-Lock is-icon-2x accent-text"></i>
+                        <div class="feed-item-text">
+                            <span class="date">Yesterday</span>
+                            <span class="text">You have <a href="#">3 overdue invoices</a> pending.</span>
+                        </div>
+                    </li>
+                    <!-- Feed item -->
+                    <li class="feed-item">
+                        <i class="im im-icon-Heart-2 is-icon-2x accent-text"></i>
+                        <div class="feed-item-text">
+                            <span class="date">Monday</span>
+                            <span class="text"><span class="name">Eleanor Briggs</span> liked your <a href="#">Publication</a>.</span>
+                        </div>
+                    </li>
+                    <!-- Feed item -->
+                    <li class="feed-item">
+                        <i class="im im-icon-Folders is-icon-2x accent-text"></i>
+                        <div class="feed-item-text">
+                            <span class="date">Last week</span>
+                            <span class="text"><span class="name">Kevin Smith</span> added <a href="#">a new Folder</a> to an ongoing <a href="#">Project</a>.</span>
+                        </div>
+                    </li>
+                </ol>
+                <!-- Feed -->
+            </div>
+        </div>
+        <!-- Activity Feed --> 
+    </div>
+</section>
+<!-- /Simple feeds -->
+
+{{> footer-dark}}

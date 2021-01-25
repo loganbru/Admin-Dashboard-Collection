@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>Documentation - Forum HTML Template</title>
+      <link rel="shortcut icon" href="favicon.ico">
+
+      <!-- stylesheet -->
+      <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/jasny-bootstrap.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/doc.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/shDocumenter.css">
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+      <![endif]-->
+   </head>
+   <body>
+      <header id="header">
+         <div class="container-full">
+            <div class="row">
+               <div class="col-sm-2 visible-xs">
+                  <div class="navbar-mobile navbar-default">
+                     <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-recalc="false" data-target=".navmenu" data-canvas=".canvas"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                  </div>
+               </div>
+               <div class="col-sm-3 col-lg-3">
+                  <div id="logo"> <span><a href="doc.html"><img src="images/Logo_Forum.svg"  alt="" class="img-responsive" /></a></span> </div>
+               </div>
+               <div class="col-sm-4 col-lg-5">
+                  <div id="slogan"> <span>Documentation for <span class="color">Forum HTML Template</span></span> </div>
+               </div>
+               <div class="col-sm-5 col-lg-4">
+
+               </div>
+            </div>
+         </div>
+      </header>
+      <div class="canvas">
+         <div id="content">
+            <div class="navmenu navmenu-default navmenu-fixed-left offcanvas-xs" id="navmenu">
+               <ul class="nav navmenu-nav">
+                  <li><a href="#documenter_cover"></span>Getting Started</a></li>
+                  <li><a href="#folder_structure"></span>Folder Structure</a></li>
+                  <li><a href="#html_structure"></span>HTML Structure</a></li>
+                  <li><a href="#css_files_and_structure"></span>CSS Files and Structure</a></li>
+                   <li><a href="#less">Less Files and Structure</a></li>
+                  <li><a href="#javascript"><span class="icon icon-lg  flaticon-add139"></span>JavaScript</a></li>
+                  <li><a href="#icons"></span>Icons</a></li>
+                  <li><a href="#fonts"></span>Fonts</a></li>
+                  <li><a href="#psd_files"></span>PSD Files</a></li>
+                  <li><a href="#sources_and_credits"></span>Sources and Credits</a></li>
+               </ul>
+            </div>
+            <div id="page-content">
+               <section class="chapter" id="documenter_cover">
+                  <h1>Forum HTML Template</h1>
+                  <ul>
+                     <li>Created: 2018</li>
+                     <li>Front-end developer: <strong>cokolloo</strong> <a href="https://themeforest.net/user/cokolloo"> Themeforest Profile </a></li>
+                     <li>Designer: <strong>azyrusmax</strong> <a href="https://themeforest.net/user/azyrusmax"> Themeforest Profile </a></li>
+                  </ul>
+                  <p>Thank you for purchasing our theme. If you have any questions that are beyond the scope of this help file, please feel free to contact us <a href="https://themeforest.net/user/azyrusmax">here</a>. Thank you very much! <br>
+                     <br>
+                     <strong>Forum HTML Template</strong> is Html5 + CSS3 Website template and works fine in all major browsers and IE from version 9. It's powered by jQuery and you'll find nice and discreet interactivity.  The code is clearly written and you will find comments for each considerable parts. <br>
+                     <br>
+                     Lets take a closer look at the structure of Html, Css, JavaScript.
+                  </p>
+               </section>
+               <section class="chapter" id="folder_structure">
+                  <h3>Folder Structure</h3>
+                  <p>Here they are, sorted alphabetically:</p>
+                  <ol>
+                     <li><strong>Documentation</strong> - Documentation for Forum HTML site template</li>
+                     <li><strong>HTML</strong> - Main folder for template</li>
+                  </ol>
+                  <h4>HTML folder structure:</h4>
+                  <ul>
+                     <li>
+                        <strong>/HTML</strong>
+                        <ul>
+                           <li><strong>/css</strong> (Template CSS)</li>
+                           <li><strong>/less</strong> (Template Less)</li>
+                           <li><strong>/fonts</strong> (Font Awesome)</li>
+                           <li><strong>/js</strong> (Template initialization js)</li>
+                            <li><strong>/images</strong> (All Images)</li>
+                            <li><strong>/vendor</strong> (All Plugins)</li>
+                        </ul>
+                     </li>
+                  </ul>
+                  <h4>CONTENT </h4>
+                  <p>Content divided on pages:</p>
+                  <ul class="marked-list">
+                      <li>index.html - <strong>Main page</strong></li>
+                      <li>single-topic.html - <strong>Single topic page</strong></li>
+                      <li>create-topic.html - <strong>Create topic page</strong></li>
+                      <li>simple-signup.html - <strong>Simple signup page</strong></li>
+                  </ul>
+               </section>
+               <section class="chapter" id="html_structure">
+                  <h3>HTML Structure</h3>              
+                           
+                  <h4>Grid:</h4>
+                  <p>Based on Bootstrap, a sleek, intuitive, and powerful front-end framework.</p>
+                  <p>Bootstrap makes use of certain HTML elements and CSS properties that require the use of the HTML5 doctype. Include it at the beginning of all your projects.</p>
+                  <pre class="brush: html">
+    &lt;!DOCTYPE html&gt;
+        &lt;html lang="en"&gt;
+            ...
+        &lt;/html&gt;</pre>
+                  <p>The default Bootstrap grid system utilizes 12 columns.</p>
+                  <p>For a simple two column layout, create a <code>.row</code> and add the appropriate number of <code>.col-lg-*</code> columns. As this is a 12-column grid, each <code>.col-lg-*</code> spans a number of those 12 columns, and should always add up to 12 for each row (or the number of columns in the parent).</p>
+                  <pre class="brush: html">
+    &lt;div class="row"&gt;
+        &lt;div class="col-lg-4"&gt;...&lt;/div&gt;
+        &lt;div class="col-lg-8"&gt;...&lt;/div&gt;
+    &lt;/div&gt;</pre>
+                  <p>Given this example, we have .col-lg-4 and .col-lg-8, making for 12 total columns and a complete row.</p>
+                  <p>Move columns to the right using <code>.col-lg-offset-*</code> classes. Each class increases the left margin of a column by a whole column. For example, <code>.col-lg-offset-4</code> moves <code>.col-lg-4</code> over four columns.</p>
+                  <pre class="brush: html">
+    &lt;div class="row"&gt;
+            &lt;div class="col-lg-4"&gt;...&lt;/div&gt;
+            &lt;div class="col-lg-4 col-lg-offset-2"&gt;...&lt;/div&gt;
+        &lt;/div&gt;</pre>
+                  <br>
+                  <p>If you need more information, please visit this site: http://getbootstrap.com/css/#grid</p>
+               </section>
+               <section class="chapter" id="css_files_and_structure">
+                  <h3>CSS Files</h3>
+                  <p>Css file located at <strong>css</strong> folder.</p>
+                  <ul>
+                     <li><strong>style.css</strong> - Theme main CSS file.</li>                    
+                  </ul>
+               </section>
+               <section class="chapter" id="less">
+                  <h3>Less Files</h3>
+                  <p>All Less files located at <strong>less</strong> folder.</p>
+                  <ul>
+                      <li><strong>style.less</strong> - Theme main less file.</li>
+                      <li><strong>general/_variables.less</strong> - Variables less file.</li>
+                      <li><strong>general/_mixin.less</strong> - Mixins less file.</li>
+                      <li><strong>general/_modifiers.less</strong> - Modifiers less file.</li>
+                      <li><strong>general/_typography.less</strong> - Typography less file.</li>
+                      <li><strong>blocks/</strong> - Blocks less folder</li>
+                      <li><strong>colorize/</strong> - Colorize less folder</li>
+                  </ul>
+               </section>
+               <section class="chapter" id="javascript">
+                  <h3>JavaScript</h3>
+                  <p>All JS files located at <strong>js</strong> folder.</p>
+                  <ul>
+                     <li><strong>js/app.js</strong> - Theme main JS file.</li>
+                     <li><strong>vendor/</strong> - vendor plugins JS files</li>
+                  </ul>
+                  
+                  <p>and other. </p>
+                  <p>If you need more information, please visit plugins official sites.</p>
+               </section>
+               <section class="chapter" id="icons">
+                  <h3>Icons</h3>
+                  <p>FlatIcons is a free @font-face iconset. You can see all demo icons in file fonts/font-icon/demo.html.<br>
+                     Use the icon class on "display:inline" elements:
+                  </p>
+                  <pre class="brush: html">
+          ...
+          &lt;i class="icon-Search">&lt;/i&gt;
+            ...
+        </pre>
+                  or
+                  <pre class="brush: html">
+          ...
+          &lt;span class="icon-Menu_Icon">&lt;/span&gt;
+            ...
+        </pre>
+                  <br>
+               </section>
+               <section class="chapter" id="fonts">
+                  <h3>Fonts</h3>
+                  To change the custom font, please take a look in the Forum.css:
+                  <pre class="brush: css">
+  /* Google font */
+  <link href='https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
+</pre>
+                  To change fonts, go to http://www.google.com/webfonts, choose new fonts and use the generated code.
+               </section>
+               <section class="chapter" id="psd_files">
+                  <h3>PSD Files</h3>
+                  <p>You can purchase PSD files <a href="https://themeforest.net/item/forum-website-psd-template/6211151">here</a>.</p>
+               </section>
+               <section class="chapter" id="sources_and_credits">
+                  <h3>Sources and Credits</h3>
+                  <p>We have used the following  files as listed.</p>
+                  <ul class="marked-list">
+                      <li><a href="http://jquery.com/">jQuery</a> - JavaScript Library</li>
+                      <li><a href="http://getbootstrap.com/">Bootstrap</a> - Bootstrap by Twitter</li>
+                      <li><a href="#">Velocity</a> - Velocity animations plugin</li>
+                  </ul>
+                  <hr />
+                  <p>Hope that you will enjoy in Forum HTML as much as we've enjoyed making this template.</p>
+               </section>
+            </div>
+         </div>
+      </div>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+      <script type="text/javascript" src="assets/js/bootstrap.js"></script> 
+      <script type="text/javascript" src="assets/js/jasny-bootstrap.min.js"></script> 
+      <script src="assets/js/shCore.js"></script> 
+      <script src="assets/js/shBrushCss.js"></script> 
+      <script src="assets/js/shBrushXml.js"></script> 
+      <script src="assets/js/shBrushJScript.js"></script> 
+      <script>SyntaxHighlighter.defaults['toolbar'] = false;
+         SyntaxHighlighter.all();
+      </script> 
+      <script> 
+         $(document).ready(function() {
+          $('.nav.navmenu-nav a').click(function(){
+            $('.nav.navmenu-nav a').removeClass('active');
+            $(this).addClass('active');
+            $('html, body').animate({
+              scrollTop: $( $(this).attr('href') ).offset().top - 100
+            }, 500);
+            return false;
+          });
+           $('.dropdown').on('show.bs.dropdown', function(e){
+             $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+           });
+           $('.dropdown').on('hide.bs.dropdown', function(e){
+             $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+           });
+         });
+      </script>
+   </body>
+</html>

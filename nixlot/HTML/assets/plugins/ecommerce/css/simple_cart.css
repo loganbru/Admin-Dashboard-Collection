@@ -1,0 +1,130 @@
+/*Cart*/
+
+.cart-heading{
+    display: flex;
+    background: #ffffff !important;
+    padding: 15px;
+    border-top: 2px solid #5646ff;
+    text-transform: uppercase;
+    font-weight: 500;
+    overflow: hidden;
+    border-radius: 3px 3px 0 0;
+}
+.cart-body{
+    text-align: center;
+}
+.cart-summary-container{
+    border-top: 1px solid hsla(0,0%,59%,.16);
+}
+.cart-total-amount{
+    font-weight: 700;
+    padding:20px;
+    font-size: 1rem;
+    display: flex;
+    border-bottom: 1px solid hsla(0,0%,59%,.16);
+}
+.cart-total-amount .total-cart-cost:before{
+	content: "\f155";
+    position: absolute;
+    font-family: 'Font Awesome 5 Free';
+    padding-left: 0;
+    margin-left: -12px;
+}
+.cart-products-list h4{
+	margin:10px;
+}
+.cart-heading .total-cart-cost{
+	font-size: 16px;
+    font-weight: bold;
+}
+.cart-checkout{
+    padding:30px;
+}
+.cart-checkout .btn{
+	display:block;
+	width:100%;
+}
+.spacer{
+    flex-grow:1;
+    visibility: hidden;
+}
+
+.quantityContainer{
+    display: flex;
+    align-items: center;
+	    width: 120px;
+}
+.quantityContainer input{
+	padding:0;
+}
+.quantity{
+    width: 5rem;
+    height: 2rem;
+    margin: 0 .5rem;
+    text-align: center;
+    padding: 0;	
+    font-weight: bold;
+}
+.quantity-am {
+    align-items: center;
+    padding: 0;
+    width: 8rem;
+	line-height:3;
+    font-size: 14px;
+    font-weight: 500;
+    float: right;
+    text-align: right;
+    margin-left: auto;
+}
+.name{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    padding: 0rem 0;
+}
+.cart-each-product {
+    display: flex;
+    color: #2d2d2d;
+    justify-content: space-between;
+    padding: 9px 20px;
+    border-top: 1px solid #e3e3e3;
+}
+
+/*//Cart*/
+
+/* Products */
+.product-container{
+}
+.menu-item-container {
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.16);
+    position: relative;
+}
+.item-name {
+    font-size: 1.4rem;
+    color: #6b412f;
+    letter-spacing: .42px;
+    font-weight: 700;
+    padding-bottom: .5rem;
+    padding-right: 1.7rem;
+}
+.item-price-container {
+    margin-top: .5rem;
+    display: flex;
+    align-items: center;
+}
+.nonveg{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 9;
+    color: red;
+}
+.veg{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 9;
+    color: #2baf2b;
+}

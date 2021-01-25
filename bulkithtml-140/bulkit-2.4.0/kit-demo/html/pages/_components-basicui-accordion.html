@@ -1,0 +1,660 @@
+---
+layout: components
+title: Accordion
+---
+
+<!-- Hero and nav -->
+<div class="hero is-relative is-theme-info">
+    
+    {{> navbar-static-light}}
+
+    <!-- Hero image -->
+    <div id="main-hero" class="hero-body">
+        <div class="container has-text-centered">
+            <div class="columns is-vcentered">
+                <div class="column is-4 is-offset-1 has-text-left">
+                    <h1 class="title components-title is-1">
+                        Accordions
+                    </h1>
+                    <h2 class="subtitle is-4 components-subtitle">
+                        Available accordion variations.
+                    </h2>
+                    <p class="components-cta">
+                        <a href="#basic-accordion" class="button button-cta btn-align light-btn btn-outlined is-bold rounded">
+                            Get Started
+                        </a>
+                    </p>
+                </div>
+                <div class="column is-offset-1 has-text-centered is-hidden-mobile">
+                    <div id="accordion-ill" class="vivus-svg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Hero image -->
+</div>
+<!-- /Hero and nav -->
+
+<!-- Scrollnav -->
+<div id="scrollnav" class="scroll-nav-wrapper">
+    <div class="container">
+        <div class="tabs scrollnav-tabs is-centered">
+            <ul>
+                <li class="scrollnav-item is-active"><a href="#accordion">Accordion</a></li>
+                <li class="scrollnav-item"><a href="#multi-toggle">Multi toggle</a></li>
+                <li class="scrollnav-item"><a href="#single-toggle">Single toggle</a></li>
+            </ul>
+        </div>
+    </div>  
+</div>
+<!-- /Scrollnav -->
+
+<section id="basic-accordion" class="section is-medium">
+    <div class="container">
+        <div id="accordion" class="section-title-wrapper has-text-centered">
+            <div class="bg-number">1</div>
+            <h2 class="title section-title has-text-centered dark-text text-bold">
+                Simple Accordion
+            </h2>
+        </div>
+
+        <!-- Simple Accordion -->
+        <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Basic example</h4>
+                    <p class="no-padding">Accordions let you display more data in a compact and axpandable layout. Only one section can be opened at a time. Check out the code to learn more about structure. Simple accordion is controled with <code>javascript</code>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-3">
+
+                <div class="simple-accordion-wrapper">
+                    <div class="accordion-section">
+                        <a href="javascript:void(0)">
+                            Section 1 
+                            <i class="fa fa-plus"></i>
+                        </a>
+                        <div class="accordion-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Ea eum aliquip praesent, timeam referrentur vel cu, pri sint dissentiet ut.molestie.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-section">
+                        <a href="javascript:void(0)">
+                            Section 2 
+                            <i class="fa fa-plus"></i>
+                        </a>
+                        <div class="accordion-content">
+                            <p> Aliquam cursus vitae nulla non rhoncus. Nunc condimentum erat nec dictum tempus. Suspendisse aliquam erat hendrerit vehicula vestibulum. Ea eum aliquip praesent, timeam referrentur vel cu, pri sint dissentiet ut.molestie.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-section">
+                        <a href="javascript:void(0)">
+                            Section 3 
+                            <i class="fa fa-plus"></i>
+                        </a>
+                        <div class="accordion-content">
+                            <p>Pellentesque aliquam ligula libero, vitae imperdiet diam porta vitae. sed do eiusmod tempor incididunt ut labore et dolore magna. Ea eum aliquip praesent, timeam referrentur vel cu, pri sint dissentiet ut.molestie.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-section">
+                        <a href="javascript:void(0)">
+                            Section 4 
+                            <i class="fa fa-plus"></i> 
+                        </a>
+                        <div class="accordion-content">
+                            <p> Donec tincidunt consectetur orci at dignissim. Proin auctor aliquam justo, vitae luctus odio pretium scelerisque. Ea eum aliquip praesent, timeam referrentur vel cu, pri sint dissentiet ut.molestie.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-8 is-offset-2">
+                <!-- Code section -->
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <figure class="highlight highlight-block">
+                                <pre><code class="html code-highlight">
+&#x3C;div class=&#x22;simple-accordion-wrapper&#x22;&#x3E;
+    &#x3C;div class=&#x22;accordion-section&#x22;&#x3E;
+        &#x3C;a href=&#x22;javascript:void(0)&#x22;&#x3E;
+            Section 1 
+            &#x3C;i class=&#x22;fa fa-plus&#x22;&#x3E;&#x3C;/i&#x3E;
+        &#x3C;/a&#x3E;
+        &#x3C;div class=&#x22;accordion-content&#x22;&#x3E;
+            &#x3C;p&#x3E;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Ea eum aliquip praesent, timeam referrentur vel cu, pri sint dissentiet ut.molestie.&#x3C;/p&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;accordion-section&#x22;&#x3E;
+        &#x3C;a href=&#x22;javascript:void(0)&#x22;&#x3E;
+            Section 2 
+            &#x3C;i class=&#x22;fa fa-plus&#x22;&#x3E;&#x3C;/i&#x3E;
+        &#x3C;/a&#x3E;
+        &#x3C;div class=&#x22;accordion-content&#x22;&#x3E;
+            &#x3C;p&#x3E; Aliquam cursus vitae nulla non rhoncus. Nunc condimentum erat nec dictum tempus. Suspendisse aliquam erat hendrerit vehicula vestibulum. Ea eum aliquip praesent, timeam referrentur vel cu, pri sint dissentiet ut.molestie.&#x3C;/p&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;accordion-section&#x22;&#x3E;
+        &#x3C;a href=&#x22;javascript:void(0)&#x22;&#x3E;
+            Section 3 
+            &#x3C;i class=&#x22;fa fa-plus&#x22;&#x3E;&#x3C;/i&#x3E;
+        &#x3C;/a&#x3E;
+        &#x3C;div class=&#x22;accordion-content&#x22;&#x3E;
+            &#x3C;p&#x3E;Pellentesque aliquam ligula libero, vitae imperdiet diam porta vitae. sed do eiusmod tempor incididunt ut labore et dolore magna. Ea eum aliquip praesent, timeam referrentur vel cu, pri sint dissentiet ut.molestie.&#x3C;/p&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;accordion-section&#x22;&#x3E;
+        &#x3C;a href=&#x22;javascript:void(0)&#x22;&#x3E;
+            Section 4 
+            &#x3C;i class=&#x22;fa fa-plus&#x22;&#x3E;&#x3C;/i&#x3E; 
+        &#x3C;/a&#x3E;
+        &#x3C;div class=&#x22;accordion-content&#x22;&#x3E;
+            &#x3C;p&#x3E; Donec tincidunt consectetur orci at dignissim. Proin auctor aliquam justo, vitae luctus odio pretium scelerisque. Ea eum aliquip praesent, timeam referrentur vel cu, pri sint dissentiet ut.molestie.&#x3C;/p&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+                                        </code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Code section -->
+            </div>
+        </div>
+        <!-- Simple Accordion -->
+
+        <!-- Accordion colors -->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Accordion colors</h4>
+                    <p class="no-padding">Active sections can have different colors. Available color classes are <code>.is-primary</code>, <code>.is-secondary</code>, <code>.is-accent</code>, <code>.is-success</code> and <code>.is-info</code>. The color class has to be added to the <code>.simple-accordion-wrapper</code> parent element.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-3">
+                <!-- Code section -->
+
+                <div class="navigation-tabs animated-tabs simple-tabs mb-40">
+                    <div class="tabs is-right">
+                        <ul>
+                            <li class="tab-link is-active" data-tab="primary"><a>Primary</a></li>
+                            <li class="tab-link" data-tab="secondary"><a>Secondary</a></li>
+                            <li class="tab-link" data-tab="accent"><a>Accent</a></li>
+                            <li class="tab-link" data-tab="success"><a>Success</a></li>
+                            <li class="tab-link" data-tab="info"><a>Info</a></li>
+                        </ul>
+                    </div>
+
+                    <div id="primary" class="navtab-content is-active">
+                        <div class="columns is-vcentered">
+                            <div class="column">
+                                <!-- primary -->
+                                <div class="simple-accordion-wrapper is-primary">
+                                    <div class="accordion-section">
+                                        <a href="javascript:void(0)">
+                                            Section 1 
+                                            <i class="fa fa-plus"></i>
+                                        </a>
+                                        <div class="accordion-content">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Ea eum aliquip praesent, timeam referrentur vel cu, pri sint dissentiet ut.molestie.</p>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-section">
+                                        <a href="javascript:void(0)">
+                                            Section 2 
+                                            <i class="fa fa-plus"></i>
+                                        </a>
+                                        <div class="accordion-content">
+                                            <p> Aliquam cursus vitae nulla non rhoncus. Nunc condimentum erat nec dictum tempus. Suspendisse aliquam erat hendrerit vehicula vestibulum. Ea eum aliquip praesent, timeam referrentur vel cu, pri sint dissentiet ut.molestie.</p>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-section">
+                                        <a href="javascript:void(0)">
+                                            Section 3 
+                                            <i class="fa fa-plus"></i>
+                                        </a>
+                                        <div class="accordion-content">
+                                            <p>Pellentesque aliquam ligula libero, vitae imperdiet diam porta vitae. sed do eiusmod tempor incididunt ut labore et dolore magna. Ea eum aliquip praesent, timeam referrentur vel cu, pri sint dissentiet ut.molestie.</p>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-section">
+                                        <a href="javascript:void(0)">
+                                            Section 4 
+                                            <i class="fa fa-plus"></i> 
+                                        </a>
+                                        <div class="accordion-content">
+                                            <p> Donec tincidunt consectetur orci at dignissim. Proin auctor aliquam justo, vitae luctus odio pretium scelerisque. Ea eum aliquip praesent, timeam referrentur vel cu, pri sint dissentiet ut.molestie.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /primary -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="secondary" class="navtab-content">
+                        <div class="columns is-vcentered">
+                            <div class="column">
+                                <!-- secondary -->
+                                <div class="simple-accordion-wrapper is-secondary">
+                                    <div class="accordion-section">
+                                        <a href="javascript:void(0)">
+                                            Section 1 
+                                            <i class="fa fa-plus"></i>
+                                        </a>
+                                        <div class="accordion-content">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Ea eum aliquip praesent, timeam referrentur vel cu, pri sint dissentiet ut.molestie.</p>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-section">
+                                        <a href="javascript:void(0)">
+                                            Section 2 
+                                            <i class="fa fa-plus"></i>
+                                        </a>
+                                        <div class="accordion-content">
+                                            <p> Aliquam cursus vitae nulla non rhoncus. Nunc condimentum erat nec dictum tempus. Suspendisse aliquam erat hendrerit vehicula vestibulum. Ea eum aliquip praesent, timeam referrentur vel cu, pri sint dissentiet ut.molestie.</p>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-section">
+                                        <a href="javascript:void(0)">
+                                            Section 3 
+                                            <i class="fa fa-plus"></i>
+                                        </a>
+                                        <div class="accordion-content">
+                                            <p>Pellentesque aliquam ligula libero, vitae imperdiet diam porta vitae. sed do eiusmod tempor incididunt ut labore et dolore magna. Ea eum aliquip praesent, timeam referrentur vel cu, pri sint dissentiet ut.molestie.</p>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-section">
+                                        <a href="javascript:void(0)">
+                                            Section 4 
+                                            <i class="fa fa-plus"></i> 
+                                        </a>
+                                        <div class="accordion-content">
+                                            <p> Donec tincidunt consectetur orci at dignissim. Proin auctor aliquam justo, vitae luctus odio pretium scelerisque. Ea eum aliquip praesent, timeam referrentur vel cu, pri sint dissentiet ut.molestie.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /secondary -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="accent" class="navtab-content">
+                        <div class="columns is-vcentered">
+                            <div class="column">
+                                <!-- accent -->
+                                <div class="simple-accordion-wrapper is-accent">
+                                    <div class="accordion-section">
+                                        <a href="javascript:void(0)">
+                                            Section 1 
+                                            <i class="fa fa-plus"></i>
+                                        </a>
+                                        <div class="accordion-content">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Ea eum aliquip praesent, timeam referrentur vel cu, pri sint dissentiet ut.molestie.</p>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-section">
+                                        <a href="javascript:void(0)">
+                                            Section 2 
+                                            <i class="fa fa-plus"></i>
+                                        </a>
+                                        <div class="accordion-content">
+                                            <p> Aliquam cursus vitae nulla non rhoncus. Nunc condimentum erat nec dictum tempus. Suspendisse aliquam erat hendrerit vehicula vestibulum. Ea eum aliquip praesent, timeam referrentur vel cu, pri sint dissentiet ut.molestie.</p>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-section">
+                                        <a href="javascript:void(0)">
+                                            Section 3 
+                                            <i class="fa fa-plus"></i>
+                                        </a>
+                                        <div class="accordion-content">
+                                            <p>Pellentesque aliquam ligula libero, vitae imperdiet diam porta vitae. sed do eiusmod tempor incididunt ut labore et dolore magna. Ea eum aliquip praesent, timeam referrentur vel cu, pri sint dissentiet ut.molestie.</p>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-section">
+                                        <a href="javascript:void(0)">
+                                            Section 4 
+                                            <i class="fa fa-plus"></i> 
+                                        </a>
+                                        <div class="accordion-content">
+                                            <p> Donec tincidunt consectetur orci at dignissim. Proin auctor aliquam justo, vitae luctus odio pretium scelerisque. Ea eum aliquip praesent, timeam referrentur vel cu, pri sint dissentiet ut.molestie.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /accent -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="success" class="navtab-content">
+                        <div class="columns is-vcentered">
+                            <div class="column">
+                                <!-- success -->
+                                <div class="simple-accordion-wrapper is-success">
+                                    <div class="accordion-section">
+                                        <a href="javascript:void(0)">
+                                            Section 1 
+                                            <i class="fa fa-plus"></i>
+                                        </a>
+                                        <div class="accordion-content">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Ea eum aliquip praesent, timeam referrentur vel cu, pri sint dissentiet ut.molestie.</p>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-section">
+                                        <a href="javascript:void(0)">
+                                            Section 2 
+                                            <i class="fa fa-plus"></i>
+                                        </a>
+                                        <div class="accordion-content">
+                                            <p> Aliquam cursus vitae nulla non rhoncus. Nunc condimentum erat nec dictum tempus. Suspendisse aliquam erat hendrerit vehicula vestibulum. Ea eum aliquip praesent, timeam referrentur vel cu, pri sint dissentiet ut.molestie.</p>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-section">
+                                        <a href="javascript:void(0)">
+                                            Section 3 
+                                            <i class="fa fa-plus"></i>
+                                        </a>
+                                        <div class="accordion-content">
+                                            <p>Pellentesque aliquam ligula libero, vitae imperdiet diam porta vitae. sed do eiusmod tempor incididunt ut labore et dolore magna. Ea eum aliquip praesent, timeam referrentur vel cu, pri sint dissentiet ut.molestie.</p>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-section">
+                                        <a href="javascript:void(0)">
+                                            Section 4 
+                                            <i class="fa fa-plus"></i> 
+                                        </a>
+                                        <div class="accordion-content">
+                                            <p> Donec tincidunt consectetur orci at dignissim. Proin auctor aliquam justo, vitae luctus odio pretium scelerisque. Ea eum aliquip praesent, timeam referrentur vel cu, pri sint dissentiet ut.molestie.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /success -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="info" class="navtab-content">
+                        <div class="columns is-vcentered">
+                            <div class="column">
+                                <!-- info -->
+                                <div class="simple-accordion-wrapper is-info">
+                                    <div class="accordion-section">
+                                        <a href="javascript:void(0)">
+                                            Section 1 
+                                            <i class="fa fa-plus"></i>
+                                        </a>
+                                        <div class="accordion-content">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Ea eum aliquip praesent, timeam referrentur vel cu, pri sint dissentiet ut.molestie.</p>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-section">
+                                        <a href="javascript:void(0)">
+                                            Section 2 
+                                            <i class="fa fa-plus"></i>
+                                        </a>
+                                        <div class="accordion-content">
+                                            <p> Aliquam cursus vitae nulla non rhoncus. Nunc condimentum erat nec dictum tempus. Suspendisse aliquam erat hendrerit vehicula vestibulum. Ea eum aliquip praesent, timeam referrentur vel cu, pri sint dissentiet ut.molestie.</p>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-section">
+                                        <a href="javascript:void(0)">
+                                            Section 3 
+                                            <i class="fa fa-plus"></i>
+                                        </a>
+                                        <div class="accordion-content">
+                                            <p>Pellentesque aliquam ligula libero, vitae imperdiet diam porta vitae. sed do eiusmod tempor incididunt ut labore et dolore magna. Ea eum aliquip praesent, timeam referrentur vel cu, pri sint dissentiet ut.molestie.</p>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-section">
+                                        <a href="javascript:void(0)">
+                                            Section 4 
+                                            <i class="fa fa-plus"></i> 
+                                        </a>
+                                        <div class="accordion-content">
+                                            <p> Donec tincidunt consectetur orci at dignissim. Proin auctor aliquam justo, vitae luctus odio pretium scelerisque. Ea eum aliquip praesent, timeam referrentur vel cu, pri sint dissentiet ut.molestie.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /info -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Accordion colors -->
+    </div>
+</section>
+
+<section class="section section-feature-grey is-medium">
+    <div class="container">
+        <div id="multi-toggle" class="section-title-wrapper has-text-centered">
+            <div class="bg-number">2</div>
+            <h2 class="title section-title has-text-centered dark-text text-bold">
+                Multi toggle
+            </h2>
+        </div>
+
+        <!-- Multi toggles -->
+        <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Multiple toggles</h4>
+                    <p class="no-padding">If you want to create a toggle list in wich multiple elements can be opened at the same time, you can use multi toggles. Multi toggles dont need any <code>javascript</code>. Check the code example for more details.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-3">
+                <div class="multi-toggle-wrapper">
+                    <div class="mt-item">
+                        <input id="mt-item-1" class="mt-item-input" type="checkbox" name="mt1">
+                        <label for="mt-item-1" class="mt-item-label"><span>Section 1</span></label>
+                        <div class="mt-item-content">
+                            <p>Lorem ipsum dolor sit amet, cu ius oratio appareat partiendo. Solet civibus nam te. Eu vel veri putent. Et suas reprimique adversarium duo, ex vel ridens graecis. Mel ipsum oratio voluptatum et.</p>
+                        </div>
+                    </div>
+                    <div class="mt-item">
+                        <input id="mt-item-2" class="mt-item-input" type="checkbox" name="mt2">
+                        <label for="mt-item-2" class="mt-item-label"><span>Section 2</span></label>
+                        <div class="mt-item-content">
+                            <p>Lorem ipsum dolor sit amet, cu ius oratio appareat partiendo. Solet civibus nam te. Eu vel veri putent. Et suas reprimique adversarium duo, ex vel ridens graecis. Mel ipsum oratio voluptatum et.</p>
+                        </div>
+                    </div>
+                    <div class="mt-item">
+                        <input id="mt-item-3" class="mt-item-input" type="checkbox" name="mt3">
+                        <label for="mt-item-3" class="mt-item-label"><span>Section 3</span></label>
+                        <div class="mt-item-content">
+                            <p>Lorem ipsum dolor sit amet, cu ius oratio appareat partiendo. Solet civibus nam te. Eu vel veri putent. Et suas reprimique adversarium duo, ex vel ridens graecis. Mel ipsum oratio voluptatum et.</p>
+                        </div>
+                    </div>
+                    <div class="mt-item">
+                        <input id="mt-item-4" class="mt-item-input" type="checkbox" name="mt4">
+                        <label for="mt-item-4" class="mt-item-label"><span>Section 4</span></label>
+                        <div class="mt-item-content">
+                            <p>Lorem ipsum dolor sit amet, cu ius oratio appareat partiendo. Solet civibus nam te. Eu vel veri putent. Et suas reprimique adversarium duo, ex vel ridens graecis. Mel ipsum oratio voluptatum et.</p>
+                        </div>
+                    </div>
+                    <div class="mt-item">
+                        <input id="mt-item-5" class="mt-item-input" type="checkbox" name="mt5">
+                        <label for="mt-item-5" class="mt-item-label"><span>Section 5</span></label>
+                        <div class="mt-item-content">
+                            <p>Lorem ipsum dolor sit amet, cu ius oratio appareat partiendo. Solet civibus nam te. Eu vel veri putent. Et suas reprimique adversarium duo, ex vel ridens graecis. Mel ipsum oratio voluptatum et.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-8 is-offset-2">
+                <!-- Code section -->
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <figure class="highlight highlight-block">
+                                <pre><code class="html code-highlight">
+&#x3C;div class=&#x22;multi-toggle-wrapper&#x22;&#x3E;
+    &#x3C;div class=&#x22;mt-item&#x22;&#x3E;
+        &#x3C;input id=&#x22;mt-item-1&#x22; class=&#x22;mt-item-input&#x22; type=&#x22;checkbox&#x22; name=&#x22;mt1&#x22;&#x3E;
+        &#x3C;label for=&#x22;mt-item-1&#x22; class=&#x22;mt-item-label&#x22;&#x3E;&#x3C;span&#x3E;Section 1&#x3C;/span&#x3E;&#x3C;/label&#x3E;
+        &#x3C;div class=&#x22;mt-item-content&#x22;&#x3E;
+            &#x3C;p&#x3E;Lorem ipsum dolor sit amet, cu ius oratio appareat partiendo. Solet civibus nam te. Eu vel veri putent. Et suas reprimique adversarium duo, ex vel ridens graecis. Mel ipsum oratio voluptatum et.&#x3C;/p&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;mt-item&#x22;&#x3E;
+        &#x3C;input id=&#x22;mt-item-2&#x22; class=&#x22;mt-item-input&#x22; type=&#x22;checkbox&#x22; name=&#x22;mt2&#x22;&#x3E;
+        &#x3C;label for=&#x22;mt-item-2&#x22; class=&#x22;mt-item-label&#x22;&#x3E;&#x3C;span&#x3E;Section 2&#x3C;/span&#x3E;&#x3C;/label&#x3E;
+        &#x3C;div class=&#x22;mt-item-content&#x22;&#x3E;
+            &#x3C;p&#x3E;Lorem ipsum dolor sit amet, cu ius oratio appareat partiendo. Solet civibus nam te. Eu vel veri putent. Et suas reprimique adversarium duo, ex vel ridens graecis. Mel ipsum oratio voluptatum et.&#x3C;/p&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;mt-item&#x22;&#x3E;
+        &#x3C;input id=&#x22;mt-item-3&#x22; class=&#x22;mt-item-input&#x22; type=&#x22;checkbox&#x22; name=&#x22;mt3&#x22;&#x3E;
+        &#x3C;label for=&#x22;mt-item-3&#x22; class=&#x22;mt-item-label&#x22;&#x3E;&#x3C;span&#x3E;Section 3&#x3C;/span&#x3E;&#x3C;/label&#x3E;
+        &#x3C;div class=&#x22;mt-item-content&#x22;&#x3E;
+            &#x3C;p&#x3E;Lorem ipsum dolor sit amet, cu ius oratio appareat partiendo. Solet civibus nam te. Eu vel veri putent. Et suas reprimique adversarium duo, ex vel ridens graecis. Mel ipsum oratio voluptatum et.&#x3C;/p&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;mt-item&#x22;&#x3E;
+        &#x3C;input id=&#x22;mt-item-4&#x22; class=&#x22;mt-item-input&#x22; type=&#x22;checkbox&#x22; name=&#x22;mt4&#x22;&#x3E;
+        &#x3C;label for=&#x22;mt-item-4&#x22; class=&#x22;mt-item-label&#x22;&#x3E;&#x3C;span&#x3E;Section 4&#x3C;/span&#x3E;&#x3C;/label&#x3E;
+        &#x3C;div class=&#x22;mt-item-content&#x22;&#x3E;
+            &#x3C;p&#x3E;Lorem ipsum dolor sit amet, cu ius oratio appareat partiendo. Solet civibus nam te. Eu vel veri putent. Et suas reprimique adversarium duo, ex vel ridens graecis. Mel ipsum oratio voluptatum et.&#x3C;/p&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;mt-item&#x22;&#x3E;
+        &#x3C;input id=&#x22;mt-item-5&#x22; class=&#x22;mt-item-input&#x22; type=&#x22;checkbox&#x22; name=&#x22;mt5&#x22;&#x3E;
+        &#x3C;label for=&#x22;mt-item-5&#x22; class=&#x22;mt-item-label&#x22;&#x3E;&#x3C;span&#x3E;Section 5&#x3C;/span&#x3E;&#x3C;/label&#x3E;
+        &#x3C;div class=&#x22;mt-item-content&#x22;&#x3E;
+            &#x3C;p&#x3E;Lorem ipsum dolor sit amet, cu ius oratio appareat partiendo. Solet civibus nam te. Eu vel veri putent. Et suas reprimique adversarium duo, ex vel ridens graecis. Mel ipsum oratio voluptatum et.&#x3C;/p&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+                                        </code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Code section -->
+            </div>
+        </div>
+        <!-- /Multi toggles -->
+    </div>
+</section>
+
+<section class="section is-medium">
+    <div class="container">
+        <div id="single-toggle" class="section-title-wrapper has-text-centered">
+            <div class="bg-number">3</div>
+            <h2 class="title section-title has-text-centered dark-text text-bold">
+                Single toggle
+            </h2>
+        </div>
+
+        <!-- Single toggle -->
+        <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Basic example</h4>
+                    <p class="no-padding">Single toggle lets you save space and hide content chunks. Single toggle is controled with <code>javascript</code>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-3">
+                <div class="single-toggle-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#">TOGGLE SECTION<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <p class="no-padding mt-10">Lorem ipsum dolor sit amet, cu ius oratio appareat partiendo. Solet civibus nam te. Eu vel veri putent. Et suas reprimique adversarium duo, ex vel ridens graecis. Mel ipsum oratio voluptatum et.</p>
+                            <p class="no-padding mt-10">Errem latine pro id, sea ei dolor legendos constituam. Ut pri decore persius concludaturque, et magna omittam vituperatoribus per. Et cetero eripuit his. Eum rebum moderatius appellantur ea.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="columns is-vcentered">
+            <div class="column is-8 is-offset-2">
+                <!-- Code section -->
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <figure class="highlight highlight-block">
+                                <pre><code class="html code-highlight">
+&#x3C;div class=&#x22;single-toggle-wrapper&#x22;&#x3E;
+    &#x3C;div class=&#x22;toggle-wrap&#x22;&#x3E;
+        &#x3C;span class=&#x22;trigger&#x22;&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;TOGGLE SECTION&#x3C;i class=&#x22;im im-icon-Add&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/a&#x3E;&#x3C;/span&#x3E;
+        &#x3C;div class=&#x22;toggle-container&#x22;&#x3E;
+            &#x3C;p class=&#x22;no-padding mt-10&#x22;&#x3E;Lorem ipsum dolor sit amet, cu ius oratio appareat partiendo. Solet civibus nam te. Eu vel veri putent. Et suas reprimique adversarium duo, ex vel ridens graecis. Mel ipsum oratio voluptatum et.&#x3C;/p&#x3E;
+            &#x3C;p class=&#x22;no-padding mt-10&#x22;&#x3E;Errem latine pro id, sea ei dolor legendos constituam. Ut pri decore persius concludaturque, et magna omittam vituperatoribus per. Et cetero eripuit his. Eum rebum moderatius appellantur ea.&#x3C;/p&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+                                        </code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Code section -->
+            </div>
+        </div>
+        <!-- /Single toggle -->
+
+        <!-- With tabs -->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>With tabs inside</h4>
+                    <p class="no-padding">Single toggles can contain any type of content, with the appropriate styles. This is an example with navigation tabs.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-3">
+                <div class="single-toggle-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#">TOGGLE SECTION WITH TABS<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <div class="navigation-tabs animated-tabs simple-tabs mb-40">
+                                <div class="tabs">
+                                    <ul>
+                                        <li class="tab-link is-active" data-tab="first"><a>First tab</a></li>
+                                        <li class="tab-link" data-tab="second"><a>Second tab</a></li>
+                                    </ul>
+                                </div>
+                                <div id="first" class="navtab-content is-active">
+                                    <p class="no-padding mt-10">Lorem ipsum dolor sit amet, cu ius oratio appareat partiendo. Solet civibus nam te. Eu vel veri putent. Et suas reprimique adversarium duo, ex vel ridens graecis. Mel ipsum oratio voluptatum et.</p>
+                                    <p class="no-padding mt-10">Errem latine pro id, sea ei dolor legendos constituam. Ut pri decore persius concludaturque, et magna omittam vituperatoribus per. Et cetero eripuit his. Eum rebum moderatius appellantur ea. Vel ex porro definiebas neglegentur.</p>
+                                </div>
+                                <div id="second" class="navtab-content">
+                                    <p class="no-padding mt-10">At sale causae scribentur ius, pri ea mollis laboramus. Soluta antiopam ad mea, in maiorum accusamus eam. At mea tantas audiam deterruisset, probo etiam efficiendi qui te. Similique cotidieque at vim, sonet dignissim pertinacia his ea. Pro te harum officiis pericula.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!-- /With tabs -->
+
+    </div>
+</section>
+
+{{> footer-dark}}

@@ -1,0 +1,811 @@
+<!doctype html>
+<!--[if lte IE 9]> <html class="lte-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="icon" type="image/png" href="assets/img/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="assets/img/favicon-32x32.png" sizes="32x32">
+
+    <title>Altair Admin v1.0.0</title>
+
+    <!-- additional styles for plugins -->
+    <!-- htmleditor (codeMirror) -->
+    <link rel="stylesheet" href="bower_components/codemirror/lib/codemirror.css">
+    
+    <!-- uikit -->
+    <link rel="stylesheet" href="bower_components/uikit/css/uikit.almost-flat.min.css" media="all">
+
+    <!-- flag icons -->
+    <link rel="stylesheet" href="assets/icons/flags/flags.min.css" media="all">
+
+    <!-- altair admin -->
+    <link rel="stylesheet" href="assets/css/main.min.css" media="all">
+
+</head>
+<body class="sidebar_main_open">
+    <!-- main header -->
+    <header id="header_main">
+        <div class="header_main_content">
+            <nav class="uk-navbar">
+                <!-- main sidebar switch -->
+                <a href="#" id="sidebar_main_toggle" class="sSwitch sSwitch_left">
+                    <span class="sSwitchIcon"></span>
+                </a>
+                <!-- secondary sidebar switch -->
+                <a href="#" id="sidebar_secondary_toggle" class="sSwitch sSwitch_right sidebar_secondary_check">
+                    <span class="sSwitchIcon"></span>
+                </a>
+                <div class="uk-navbar-flip">
+                    <ul class="uk-navbar-nav user_actions">
+                        <li><a href="#" id="main_search_btn" class="user_action_icon"><i class="material-icons md-24 md-light">&#xE8B6;</i></a></li>
+                        <li data-uk-dropdown="{mode:'click'}" class="uk-hidden-small">
+                            <a href="#" class="user_action_icon"><i class="material-icons md-24 md-light">&#xE0BE;</i><span class="uk-badge">12</span></a>
+                            <div class="uk-dropdown uk-dropdown-xlarge uk-dropdown-flip uk-dropdown-scrollable">
+                                <ul class="md-list md-list-addon">
+                                    <li>
+                                        <div class="md-list-addon-element">
+                                            <span class="md-user-letters md-bg-cyan">bk</span>
+                                        </div>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading"><a href="pages_mailbox.html">Aspernatur ipsam praesentium.</a></span>
+                                            <span class="uk-text-small uk-text-muted">Odit quia voluptatem porro reprehenderit sint perspiciatis itaque deserunt.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-addon-element">
+                                            <img class="md-user-image md-list-addon-avatar" src="assets/img/avatars/avatar_07_tn.png" alt=""/>
+                                        </div>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading"><a href="pages_mailbox.html">Cupiditate sint.</a></span>
+                                            <span class="uk-text-small uk-text-muted">Veniam tempore iusto corrupti autem quam amet et.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-addon-element">
+                                            <span class="md-user-letters md-bg-light-green">ay</span>
+                                        </div>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading"><a href="pages_mailbox.html">Officia id.</a></span>
+                                            <span class="uk-text-small uk-text-muted">Inventore ducimus perspiciatis consequuntur quisquam corrupti et velit voluptas commodi.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-addon-element">
+                                            <img class="md-user-image md-list-addon-avatar" src="assets/img/avatars/avatar_02_tn.png" alt=""/>
+                                        </div>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading"><a href="pages_mailbox.html">Ad adipisci.</a></span>
+                                            <span class="uk-text-small uk-text-muted">Quas optio id ratione inventore et quis fuga officia ducimus molestiae.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-addon-element">
+                                            <img class="md-user-image md-list-addon-avatar" src="assets/img/avatars/avatar_09_tn.png" alt=""/>
+                                        </div>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading"><a href="pages_mailbox.html">Ut ea.</a></span>
+                                            <span class="uk-text-small uk-text-muted">Temporibus provident voluptatem debitis laudantium est deserunt iusto qui.</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <a href="page_mailbox.html" class="md-btn md-btn-flat md-btn-flat-primary md-btn-block js-uk-prevent uk-margin-small-top">Show All</a>
+                            </div>
+                        </li>
+                        <li data-uk-dropdown="{mode:'click'}">
+                            <a href="#" class="user_action_icon"><i class="material-icons md-24 md-light">&#xE7F4;</i><span class="uk-badge">4</span></a>
+                            <div class="uk-dropdown uk-dropdown-xlarge uk-dropdown-flip uk-dropdown-scrollable">
+                                <ul class="md-list md-list-addon">
+                                    <li>
+                                        <div class="md-list-addon-element">
+                                            <i class="md-list-addon-icon material-icons uk-text-warning">&#xE8B2;</i>
+                                        </div>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Sint eos.</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate">Aliquid omnis provident id animi veniam dolores.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-addon-element">
+                                            <i class="md-list-addon-icon material-icons uk-text-success">&#xE88F;</i>
+                                        </div>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Corporis consequatur delectus.</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate">Quis voluptatem quia molestias nostrum.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-addon-element">
+                                            <i class="md-list-addon-icon material-icons uk-text-danger">&#xE001;</i>
+                                        </div>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Tenetur sint.</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate">Aspernatur molestiae porro quos suscipit voluptates non qui.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-addon-element">
+                                            <i class="md-list-addon-icon material-icons uk-text-primary">&#xE8FD;</i>
+                                        </div>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Non et.</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate">Blanditiis amet molestiae deserunt nostrum qui.</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li data-uk-dropdown="{mode:'click'}">
+                            <a href="#" class="user_action_image"><img class="md-user-image" src="assets/img/avatars/avatar_11_tn.png" alt=""/></a>
+                            <div class="uk-dropdown uk-dropdown-small uk-dropdown-flip">
+                                <ul class="uk-nav js-uk-prevent">
+                                    <li><a href="page_user_profile.html">My profile</a></li>
+                                    <li><a href="page_settings.html">Settings</a></li>
+                                    <li><a href="login.html">Logout</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="header_main_search_form">
+            <i class="md-icon header_main_search_close material-icons">&#xE5CD;</i>
+            <form class="uk-form">
+                <input type="text" class="header_main_search_input" />
+                <button class="header_main_search_btn uk-button-link"><i class="md-icon material-icons">&#xE8B6;</i></button>
+            </form>
+        </div>
+    </header><!-- main header end -->
+
+    <!-- main sidebar -->
+    <aside id="sidebar_main">
+        <a href="#" class="uk-close sidebar_main_close_button"></a>
+        <div class="sidebar_main_header">
+            <div class="sidebar_logo"><a href="index.html"><img src="assets/img/logo_main.png" alt="" height="15" width="71"/></a></div>
+            <div class="sidebar_actions">
+                <select id="lang_switcher" name="lang_switcher">
+                    <option value="gb" selected>English</option>
+                </select>
+            </div>
+        </div>
+        <div class="menu_section">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <span class="menu_icon uk-icon-th-large"></span>
+                        Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a href="page_mailbox.html">
+                        <span class="menu_icon uk-icon-envelope-o"></span>
+                        Mailbox
+                    </a>
+                </li>
+                <li>
+                    <a href="page_invoices.html">
+                        <span class="menu_icon uk-icon-usd"></span>
+                        Invoices
+                    </a>
+                </li>
+                <li class="act_section">
+                    <a href="page_snippets.html">
+                        <span class="menu_icon uk-icon-code"></span>
+                        Snippets
+                    </a>
+                </li>
+                <li>
+                    <a href="page_user_profile.html">
+                        <span class="menu_icon uk-icon-user"></span>
+                        User Profile
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="menu_icon uk-icon-list-alt"></span>
+                        Forms
+                    </a>
+                    <ul>
+                        <li><a href="forms_regular.html">Regular Elements</a></li>
+                        <li><a href="forms_advanced.html">Advanced Elements</a></li>
+                        <li><a href="forms_file_upload.html">File Upload</a></li>
+                        <li><a href="forms_validation.html">Validation</a></li>
+                    </ul>
+                </li>
+                                <li>
+                    <a href="#">
+                        <span class="menu_icon uk-icon-flask"></span>
+                        Kendo UI Widgets
+                    </a>
+                    <ul>
+                        <li><a href="kendoui_autocomplete.html">Autocomplete</a></li>
+                        <li><a href="kendoui_calendar.html">Calendar</a></li>
+                        <li><a href="kendoui_colorpicker.html">ColorPicker</a></li>
+                        <li><a href="kendoui_combobox.html">ComboBox</a></li>
+                        <li><a href="kendoui_datepicker.html">DatePicker</a></li>
+                        <li><a href="kendoui_datetimepicker.html">DateTimePicker</a></li>
+                        <li><a href="kendoui_dropdown_list.html">DropDownList</a></li>
+                        <li><a href="kendoui_masked_input.html">Masked Input</a></li>
+                        <li><a href="kendoui_menu.html">Menu</a></li>
+                        <li><a href="kendoui_multiselect.html">MultiSelect</a></li>
+                        <li><a href="kendoui_numeric_textbox.html">Numeric TextBox</a></li>
+                        <li><a href="kendoui_panelbar.html">PanelBar</a></li>
+                        <li><a href="kendoui_timepicker.html">TimePicker</a></li>
+                        <li><a href="kendoui_toolbar.html">Toolbar</a></li>
+                        <li><a href="kendoui_window.html">Window</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="menu_icon uk-icon-newspaper-o"></span>
+                        Components
+                    </a>
+                    <ul>
+                        <li><a href="components_accordion.html">Accordions</a></li>
+                        <li><a href="components_buttons.html">Buttons</a></li>
+                        <li><a href="components_cards.html">Cards</a></li>
+                        <li><a href="components_common.html">Common</a></li>
+                        <li><a href="components_dropdowns.html">Dropdowns</a></li>
+                        <li><a href="components_dynamic_grid.html">Dynamic Grid</a></li>
+                        <li><a href="components_grid.html">Grid</a></li>
+                        <li><a href="components_icons.html">Icons</a></li>
+                        <li><a href="components_modal.html">Lightbox/Modal</a></li>
+                        <li><a href="components_lists.html">Lists</a></li>
+                        <li><a href="components_nestable.html">Nestable</a></li>
+                        <li><a href="components_notifications.html">Notifications</a></li>
+                        <li><a href="components_preloaders.html">Preloaders</a></li>
+                        <li><a href="components_sortable.html">Sortable</a></li>
+                        <li><a href="components_tables.html">Tables</a></li>
+                        <li><a href="components_tooltips.html">Tooltips</a></li>
+                        <li><a href="components_tabs.html">Tabs</a></li>
+                    </ul>
+                </li>
+                <li >
+                    <a href="#">
+                        <span class="menu_icon uk-icon-shopping-cart"></span>
+                        E-commerce
+                    </a>
+                    <ul>
+                        <li><a href="ecommerce_product_details.html">Product Details</a></li>
+                        <li><a href="ecommerce_product_edit.html">Product Edit</a></li>
+                        <li><a href="ecommerce_products_grid.html">Products Grid</a></li>
+                        <li><a href="ecommerce_products_list.html">Products List</a></li>
+                    </ul>
+                </li>
+                <li >
+                    <a href="#">
+                        <span class="menu_icon uk-icon-plug"></span>
+                        Plugins
+                    </a>
+                    <ul>
+                        <li><a href="plugins_calendar.html">Calendar</a></li>
+                        <li><a href="plugins_charts.html">Charts</a></li>
+                        <li><a href="plugins_datatables.html">Datatables</a></li>
+                        <li><a href="plugins_gantt_chart.html">Gantt Chart</a></li>
+                        <li><a href="plugins_google_maps.html">Google Maps</a></li>
+                        <li><a href="plugins_vector_maps.html">Vector Maps</a></li>
+                    </ul>
+                </li>
+                <li >
+                    <a href="#">
+                        <span class="menu_icon uk-icon-folder-o"></span>
+                        Pages
+                    </a>
+                    <ul>
+                        <li><a href="page_blank.html">Blank</a></li>
+                        <li><a href="page_contact_list.html">Contact List</a></li>
+                        <li><a href="error_404.html">Error 404</a></li>
+                        <li><a href="error_500.html">Error 500</a></li>
+                        <li><a href="page_help.html">Help/Faq</a></li>
+                        <li><a href="login.html">Login Page</a></li>
+                        <li><a href="page_notes.html"> Notes </a> </li>
+                        <li><a href="page_settings.html">Settings</a></li>
+                        <li><a href="page_user_edit.html">User edit</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </aside><!-- main sidebar end -->
+
+    <div id="top_bar">
+        <div class="md-top-bar">
+            <div class="uk-width-large-8-10 uk-container-center">
+                <ul class="top_bar_nav" id="snippets_grid_filter">
+                    <li class="uk-active" data-uk-filter="">
+                        <a href="#">All</a>
+                    </li>
+                    <li data-uk-filter="snippets-lang-php">
+                        <a href="#">PHP</a>
+                    </li>
+                    <li data-uk-filter="snippets-lang-css">
+                        <a href="#">CSS</a>
+                    </li>
+                    <li data-uk-filter="snippets-lang-javascript">
+                        <a href="#">jQuery</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="page_content">
+        <div id="page_content_inner">
+
+            <div class="uk-width-large-8-10 uk-container-center">
+                <div id="snippets">
+                    <div class="uk-grid uk-grid-small uk-grid-width-1 uk-grid-width-medium-1-2 uk-grid-width-large-1-2 uk-grid-width-xlarge-1-3 hierarchical_show" data-uk-grid="{ gutter: 16, controls: '#snippets_grid_filter' }">
+                        <div data-uk-filter="snippets-lang-javascript">
+                            <div class="md-card md-card-hover md-card-overlay" data-snippet-title="Smooth scrolling to top of page">
+                                <div class="md-card-content">
+<pre class="line-numbers"><code class="language-javascript">$("a[href='#top']").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
+});</code></pre>
+                                </div>
+                                <div class="md-card-overlay-content">
+                                    <div class="uk-clearfix md-card-overlay-header">
+                                        <i class="md-icon md-icon material-icons md-card-overlay-toggler">&#xE5D4;</i>
+                                        <h4>Smooth scrolling to top of page</h4>
+                                    </div>
+                                    <div class="md-card-overlay-content-inner">
+                                        <p class="uk-margin-bottom truncate-text" style="height: 88px">
+                                            Repudiandae explicabo ut amet eos sit quia est et porro iusto omnis architecto vitae totam animi illum assumenda eum asperiores occaecati iusto in qui quo eum repellat dolores labore exercitationem deleniti vero sunt impedit non expedita.                                        </p>
+                                        <p><span class="uk-badge uk-badge-success">javascript</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-uk-filter="snippets-lang-php">
+                            <div class="md-card md-card-hover md-card-overlay" data-snippet-title="Get Image Information">
+                                <div class="md-card-content">
+<pre class="line-numbers"><code class="language-php">function getImageinfo($file, $query) {
+  if (!realpath($file)) {
+    $file = $_SERVER[&quot;DOCUMENT_ROOT&quot;].$file;
+  }
+  $image = getimagesize($file);
+  return $image[$query];
+}</code></pre>
+                                </div>
+                                <div class="md-card-overlay-content">
+                                    <div class="uk-clearfix md-card-overlay-header">
+                                        <i class="md-icon md-icon material-icons md-card-overlay-toggler">&#xE5D4;</i>
+                                        <h4>Get Image Information</h4>
+                                    </div>
+                                    <div class="md-card-overlay-content-inner">
+                                        <p class="uk-margin-bottom truncate-text" style="height: 88px">
+                                            Dolor omnis saepe illum ratione magnam adipisci dolorem qui vero id fugit dolor et cum blanditiis hic hic aut doloremque numquam omnis.                                        </p>
+                                        <p><span class="uk-badge uk-badge-primary">php</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-uk-filter="snippets-lang-javascript">
+                            <div class="md-card md-card-hover md-card-overlay" data-snippet-title="Equal height columns">
+                                <div class="md-card-content">
+<pre class="line-numbers"><code class="language-javascript">var maxheight = 0;
+$("div.col").each(function(){
+  if($(this).height() > maxheight) { maxheight = $(this).height(); }
+});
+
+$("div.col").height(maxheight);</code></pre>
+                                </div>
+                                <div class="md-card-overlay-content">
+                                    <div class="uk-clearfix md-card-overlay-header">
+                                        <i class="md-icon md-icon material-icons md-card-overlay-toggler">&#xE5D4;</i>
+                                        <h4>Equal height columns</h4>
+                                    </div>
+                                    <div class="md-card-overlay-content-inner">
+                                        <p class="uk-margin-bottom truncate-text" style="height: 88px">
+                                            Quos aperiam at accusantium quos eaque repudiandae minus et earum sapiente qui aliquam aliquid omnis suscipit minus dolorem nemo necessitatibus nulla aut ex inventore accusamus incidunt eos qui nulla impedit aut.                                        </p>
+                                        <p><span class="uk-badge uk-badge-success">javascript</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-uk-filter="snippets-lang-css">
+                            <div class="md-card md-card-hover md-card-overlay" data-snippet-title="Border radius">
+                                <div class="md-card-content">
+<pre class="line-numbers"><code class="language-css">.border-radius {
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}</code></pre>
+                                </div>
+                                <div class="md-card-overlay-content">
+                                    <div class="uk-clearfix md-card-overlay-header">
+                                        <i class="md-icon md-icon material-icons md-card-overlay-toggler">&#xE5D4;</i>
+                                        <h4>Border radius</h4>
+                                    </div>
+                                    <div class="md-card-overlay-content-inner">
+                                        <p class="uk-margin-bottom truncate-text" style="height: 88px">
+                                            Ipsam quae temporibus quidem est fugiat iure placeat a omnis quod non autem quo inventore sint est voluptate ea ut harum.                                        </p>
+                                        <p><span class="uk-badge uk-badge-danger">css</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-uk-filter="snippets-lang-javascript">
+                            <div class="md-card md-card-hover md-card-overlay" data-snippet-title="Check if an image is loaded">
+                                <div class="md-card-content">
+<pre class="line-numbers"><code class="language-javascript">var imgsrc = 'img/image1.png';
+$('<img/>').load(function () {
+    alert('image loaded');
+}).error(function () {
+    alert('error loading image');
+}).attr('src', imgsrc);</code></pre>
+                                </div>
+                                <div class="md-card-overlay-content">
+                                    <div class="uk-clearfix md-card-overlay-header">
+                                        <i class="md-icon md-icon material-icons md-card-overlay-toggler">&#xE5D4;</i>
+                                        <h4>Check if an image is loaded</h4>
+                                    </div>
+                                    <div class="md-card-overlay-content-inner">
+                                        <p class="uk-margin-bottom truncate-text" style="height: 88px">
+                                            Mollitia est quo dolor doloremque modi eum voluptatem eveniet sit qui sed doloribus quasi quasi dolorem maxime ut qui ea totam voluptatem aut quia ut iusto nemo optio consectetur iure placeat beatae error soluta.                                        </p>
+                                        <p><span class="uk-badge uk-badge-success">javascript</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-uk-filter="snippets-lang-javascript">
+                            <div class="md-card md-card-hover md-card-overlay" data-snippet-title="Broken Image Handling">
+                                <div class="md-card-content">
+<pre class="line-numbers"><code class="language-javascript">// Replace source
+$('img').error(function(){
+  $(this).attr('src', 'missing.png');
+});
+
+// Or, hide them
+$("img").error(function(){
+  $(this).hide();
+});</code></pre>
+                                </div>
+                                <div class="md-card-overlay-content">
+                                    <div class="uk-clearfix md-card-overlay-header">
+                                        <i class="md-icon md-icon material-icons md-card-overlay-toggler">&#xE5D4;</i>
+                                        <h4>Broken Image Handling</h4>
+                                    </div>
+                                    <div class="md-card-overlay-content-inner">
+                                        <p class="uk-margin-bottom truncate-text" style="height: 88px">
+                                            Eligendi iure sint blanditiis id excepturi et iusto nobis enim alias et repellat et occaecati sed laborum enim occaecati et veritatis reprehenderit quasi eius unde.                                        </p>
+                                        <p><span class="uk-badge uk-badge-success">javascript</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-uk-filter="snippets-lang-php">
+                            <div class="md-card md-card-hover md-card-overlay" data-snippet-title="Applying Even/Odd Classes">
+                                <div class="md-card-content">
+<pre class="line-numbers"><code class="language-php">&lt;?php for($i=0;$i&lt;10;$i++) { ?&gt;
+  &lt;div class=&quot;class_&lt;?php if($i%2){ echo &quot;odd&quot;; } else { echo &quot;even&quot;; } ?&gt;&quot;&gt;123&lt;/div&gt;
+&lt;?php }; ?&gt;</code></pre>
+                                </div>
+                                <div class="md-card-overlay-content">
+                                    <div class="uk-clearfix md-card-overlay-header">
+                                        <i class="md-icon md-icon material-icons md-card-overlay-toggler">&#xE5D4;</i>
+                                        <h4>Applying Even/Odd Classes</h4>
+                                    </div>
+                                    <div class="md-card-overlay-content-inner">
+                                        <p class="uk-margin-bottom truncate-text" style="height: 88px">
+                                            Est dolor consectetur adipisci aut minima quibusdam quam laborum consequatur distinctio reprehenderit porro quia facere suscipit tempore qui dicta dignissimos ducimus excepturi neque cupiditate dolorem ipsum aut expedita est.                                        </p>
+                                        <p><span class="uk-badge uk-badge-primary">php</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-uk-filter="snippets-lang-css">
+                            <div class="md-card md-card-hover md-card-overlay" data-snippet-title="Border Box">
+                                <div class="md-card-content">
+<pre class="line-numbers"><code class="language-css">.border-box {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}</code></pre>
+                                </div>
+                                <div class="md-card-overlay-content">
+                                    <div class="uk-clearfix md-card-overlay-header">
+                                        <i class="md-icon md-icon material-icons md-card-overlay-toggler">&#xE5D4;</i>
+                                        <h4>Border Box</h4>
+                                    </div>
+                                    <div class="md-card-overlay-content-inner">
+                                        <p class="uk-margin-bottom truncate-text" style="height: 88px">
+                                            Dolores nulla cum ad non at sunt omnis et sed deserunt beatae ut iusto nihil sint hic quae voluptate necessitatibus.                                        </p>
+                                        <p><span class="uk-badge uk-badge-danger">css</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-uk-filter="snippets-lang-css">
+                            <div class="md-card md-card-hover md-card-overlay" data-snippet-title="Rotate -90deg">
+                                <div class="md-card-content">
+<pre class="line-numbers"><code class="language-css">.rotate90_ccw {
+  -moz-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}</code></pre>
+                                </div>
+                                <div class="md-card-overlay-content">
+                                    <div class="uk-clearfix md-card-overlay-header">
+                                        <i class="md-icon md-icon material-icons md-card-overlay-toggler">&#xE5D4;</i>
+                                        <h4>Rotate -90deg</h4>
+                                    </div>
+                                    <div class="md-card-overlay-content-inner">
+                                        <p class="uk-margin-bottom truncate-text" style="height: 88px">
+                                            Perspiciatis qui explicabo deserunt non dolor iure amet aut qui inventore ex ut aut non quas accusantium non sit magni dolores inventore.                                        </p>
+                                        <p><span class="uk-badge uk-badge-danger">css</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-uk-filter="snippets-lang-php">
+                            <div class="md-card md-card-hover md-card-overlay" data-snippet-title="Anti-SQL Injection Function">
+                                <div class="md-card-content">
+<pre class="line-numbers"><code class="language-php">function cleanuserinput($dirty){
+  if (get_magic_quotes_gpc()) {
+    $clean = mysql_real_escape_string(stripslashes($dirty));	 
+  }else{
+    $clean = mysql_real_escape_string($dirty);	
+  } 
+  return $clean;
+}</code></pre>
+                                </div>
+                                <div class="md-card-overlay-content">
+                                    <div class="uk-clearfix md-card-overlay-header">
+                                        <i class="md-icon md-icon material-icons md-card-overlay-toggler">&#xE5D4;</i>
+                                        <h4>Anti-SQL Injection Function</h4>
+                                    </div>
+                                    <div class="md-card-overlay-content-inner">
+                                        <p class="uk-margin-bottom truncate-text" style="height: 88px">
+                                            Recusandae dolores et officiis voluptatem est ut nisi enim sed sequi voluptate asperiores et voluptatum aut natus qui fugit exercitationem sed impedit quis dolor reprehenderit natus nemo.                                        </p>
+                                        <p><span class="uk-badge uk-badge-primary">php</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-uk-filter="snippets-lang-javascript">
+                            <div class="md-card md-card-hover md-card-overlay" data-snippet-title="Serialize Form to JSON">
+                                <div class="md-card-content">
+<pre class="line-numbers"><code class="language-javascript">$.fn.serializeObject = function() {
+  var o = {};
+  var a = this.serializeArray();
+  $.each(a, function() {
+    if (o[this.name]) {
+      if (!o[this.name].push) {
+        o[this.name] = [o[this.name]];
+      }
+        o[this.name].push(this.value || '');
+      } else {
+        o[this.name] = this.value || '';
+      }
+    });
+    return o;
+};</code></pre>
+                                </div>
+                                <div class="md-card-overlay-content">
+                                    <div class="uk-clearfix md-card-overlay-header">
+                                        <i class="md-icon md-icon material-icons md-card-overlay-toggler">&#xE5D4;</i>
+                                        <h4>Serialize Form to JSON</h4>
+                                    </div>
+                                    <div class="md-card-overlay-content-inner">
+                                        <p class="uk-margin-bottom truncate-text" style="height: 88px">
+                                            Sapiente ut sint libero odio odit sit ea et unde excepturi et accusantium architecto ipsam aut quod et quas iste est deleniti non accusamus et facere.                                        </p>
+                                        <p><span class="uk-badge uk-badge-success">javascript</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-uk-filter="snippets-lang-php">
+                            <div class="md-card md-card-hover md-card-overlay" data-snippet-title="SEO-friendly title for URL">
+                                <div class="md-card-content">
+<pre class="line-numbers"><code class="language-php">function make_seo_name($title) {
+  return preg_replace('/[^a-z0-9_-]/i', '', strtolower(str_replace(' ', '-', trim($title))));
+}</code></pre>
+                                </div>
+                                <div class="md-card-overlay-content">
+                                    <div class="uk-clearfix md-card-overlay-header">
+                                        <i class="md-icon md-icon material-icons md-card-overlay-toggler">&#xE5D4;</i>
+                                        <h4>SEO-friendly title for URL</h4>
+                                    </div>
+                                    <div class="md-card-overlay-content-inner">
+                                        <p class="uk-margin-bottom truncate-text" style="height: 88px">
+                                            Saepe eos sint eum magnam ut reprehenderit quidem consequatur reprehenderit sit nesciunt fuga magnam eligendi non quis molestiae voluptates laborum dolorem occaecati.                                        </p>
+                                        <p><span class="uk-badge uk-badge-primary">php</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-uk-filter="snippets-lang-css">
+                            <div class="md-card md-card-hover md-card-overlay" data-snippet-title="Retina Display Media Query">
+                                <div class="md-card-content">
+<pre class="line-numbers"><code class="language-css">@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  /* Retina-specific stuff here */
+}</code></pre>
+                                </div>
+                                <div class="md-card-overlay-content">
+                                    <div class="uk-clearfix md-card-overlay-header">
+                                        <i class="md-icon md-icon material-icons md-card-overlay-toggler">&#xE5D4;</i>
+                                        <h4>Retina Display Media Query</h4>
+                                    </div>
+                                    <div class="md-card-overlay-content-inner">
+                                        <p class="uk-margin-bottom truncate-text" style="height: 88px">
+                                            In ipsa beatae aliquam repellendus iure minus vitae reiciendis voluptatem possimus et odio animi labore quo consequatur fugiat iste suscipit et tempore qui amet quia placeat et dicta facere quo laboriosam hic ipsam assumenda ratione rerum.                                        </p>
+                                        <p><span class="uk-badge uk-badge-danger">css</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-uk-filter="snippets-lang-javascript">
+                            <div class="md-card md-card-hover md-card-overlay" data-snippet-title="Done Resizing Event">
+                                <div class="md-card-content">
+<pre class="line-numbers"><code class="language-javascript">var resizeTimer;
+$(window).on('resize', function(e) {
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(function() {
+    // Run code here, resizing has &quot;stopped&quot;
+  }, 250);
+});</code></pre>
+                                </div>
+                                <div class="md-card-overlay-content">
+                                    <div class="uk-clearfix md-card-overlay-header">
+                                        <i class="md-icon md-icon material-icons md-card-overlay-toggler">&#xE5D4;</i>
+                                        <h4>Done Resizing Event</h4>
+                                    </div>
+                                    <div class="md-card-overlay-content-inner">
+                                        <p class="uk-margin-bottom truncate-text" style="height: 88px">
+                                            Quia excepturi dignissimos iste quod ratione tempora aut aperiam accusamus voluptate vel repellat quis soluta eum nobis numquam dolores autem enim saepe adipisci.                                        </p>
+                                        <p><span class="uk-badge uk-badge-success">javascript</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-uk-filter="snippets-lang-css">
+                            <div class="md-card md-card-hover md-card-overlay" data-snippet-title="A new micro clearfix hack">
+                                <div class="md-card-content">
+<pre class="line-numbers"><code class="language-css">.cf:before,
+.cf:after {
+    content: &quot; &quot;;
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}</code></pre>
+                                </div>
+                                <div class="md-card-overlay-content">
+                                    <div class="uk-clearfix md-card-overlay-header">
+                                        <i class="md-icon md-icon material-icons md-card-overlay-toggler">&#xE5D4;</i>
+                                        <h4>A new micro clearfix hack</h4>
+                                    </div>
+                                    <div class="md-card-overlay-content-inner">
+                                        <p class="uk-margin-bottom truncate-text" style="height: 88px">
+                                            Ratione quia nobis at labore rem nulla sequi animi corporis qui repellat fuga quia modi facilis unde aliquid ut non earum vitae quae nihil autem quod sapiente.                                        </p>
+                                        <p><span class="uk-badge uk-badge-danger">css</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-uk-filter="snippets-lang-css">
+                            <div class="md-card md-card-hover md-card-overlay" data-snippet-title="Custom Text Selection">
+                                <div class="md-card-content">
+<pre class="line-numbers"><code class="language-css">::selection { background: #e2eae2; }
+::-moz-selection { background: #e2eae2; }
+::-webkit-selection { background: #e2eae2; }</code></pre>
+                                </div>
+                                <div class="md-card-overlay-content">
+                                    <div class="uk-clearfix md-card-overlay-header">
+                                        <i class="md-icon md-icon material-icons md-card-overlay-toggler">&#xE5D4;</i>
+                                        <h4>Custom Text Selection</h4>
+                                    </div>
+                                    <div class="md-card-overlay-content-inner">
+                                        <p class="uk-margin-bottom truncate-text" style="height: 88px">
+                                            Placeat rerum provident fuga quod ducimus ab expedita distinctio vero corrupti et quasi molestiae reprehenderit sed illum voluptatum soluta aut odio ut dignissimos assumenda autem.                                        </p>
+                                        <p><span class="uk-badge uk-badge-danger">css</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="md-fab-wrapper">
+        <a class="md-fab md-fab-accent" href="#snippet_new" data-uk-modal="{center:true,bgclose:false,modal:false}">
+            <i class="material-icons">&#xE150;</i>
+        </a>
+    </div>
+
+    <div class="uk-modal" id="snippet_new" >
+        <div class="uk-modal-dialog">
+            <div class="uk-modal-header">
+                <h3 class="uk-modal-title">New Snippet</h3>
+            </div>
+            <form class="uk-form-stacked">
+                <div class="uk-margin-medium-bottom">
+                    <label for="snippet_title">Title</label>
+                    <input type="text" class="md-input" id="snippet_title" name="snippet_title"/>
+                </div>
+                <div class="uk-margin-medium-bottom">
+                    <label for="snippet_language" class="uk-form-label">Language</label>
+                    <select class="uk-form-width-medium" name="snippet_language" id="snippet_language" data-md-selectize-inline>
+                        <option value="javascript">Javascript</option>
+                        <option value="php">PHP</option>
+                        <option value="css">CSS</option>
+                    </select>
+                </div>
+                <textarea id="snippet_content" name="snippet_content" data-uk-htmleditor="{'toolbar':'','height': '240'}"></textarea>
+                <span class="uk-form-help-block">Don't wrap your snippets in &lt;pre&gt;&lt;/pre&gt; or &lt;code&gt;&lt;/code&gt; tags.</span>
+                <div class="uk-modal-footer uk-text-right">
+                    <button type="button" class="md-btn md-btn-flat uk-modal-close">Close</button><button type="button" class="md-btn md-btn-flat md-btn-flat-primary" id="snippet_new_save">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- google web fonts -->
+    <script>
+        WebFontConfig = {
+            google: {
+                families: [
+                    'Source+Code+Pro:400,700:latin',
+                    'Roboto:400,300,500,700,400italic:latin'
+                ]
+            }
+        };
+        (function() {
+            var wf = document.createElement('script');
+            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+            '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })();
+    </script>
+
+    <!-- momentJS date library -->
+    <script src="bower_components/moment/min/moment.min.js"></script>
+
+    <!-- common functions -->
+    <script src="assets/js/common.min.js"></script>
+    <!-- uikit functions -->
+    <script src="assets/js/uikit_custom.min.js"></script>
+    <!-- altair common functions/helpers -->
+    <script src="assets/js/altair_admin_common.min.js"></script>
+
+    <!-- page specific plugins -->
+    <!-- htmleditor (codeMirror) -->
+    <script src="assets/js/uikit_htmleditor_custom.min.js"></script>
+
+    <!--  snippets functions -->
+    <script src="assets/js/pages/page_snippets.min.js"></script>
+    
+    <!-- enable hires images -->
+    <script>
+        $(function() {
+            altair_helpers.retina_images();
+        });
+    </script>
+
+</body>
+</html>

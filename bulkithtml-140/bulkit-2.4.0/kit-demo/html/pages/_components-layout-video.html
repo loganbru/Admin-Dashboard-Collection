@@ -1,0 +1,48 @@
+---
+layout: components
+title: Video
+---
+
+<!-- Hero and nav -->
+<div class="hero is-relative is-fullheight">
+    
+    {{> navbar-static-dark}}
+
+    <!-- Video Wrapper -->
+    <div class="covervid-wrapper">
+        <!-- Uncomment the video overlay if you want to use it, dont forget to set your color in the CSS -->
+        <!--div class="videobg-overlay"></div-->
+        <div class="video-caption">
+            <div class="content">
+                <h1>Hello, Iam Bulkit.</h1>
+                <p>Iam a nice website template. Let's work together !</p>
+                <a class="button button-cta btn-align secondary-btn raised rounded">Get started</a>
+            </div>
+        </div>
+        <video class="covervid-video" autoplay loop poster="https://via.placeholder.com/1920x1280">
+            <source src="assets/images/video/hands.webm" type="video/webm">
+            <source src="assets/images/video/hands.mp4" type="video/mp4">
+        </video>
+    </div>
+    <!-- /Video Wrapper -->
+
+</div>
+<!-- /Hero and nav -->
+
+<!-- Clients -->
+<div class="hero-foot pt-10 pb-10 light-bg">
+    <div class="container">
+        <div class="tabs partner-tabs is-centered">
+            <ul>
+                <li><a><img class="partner-logo" src="assets/images/logos/custom/covenant.svg" alt=""></a></li>
+                <li><a><img class="partner-logo" src="assets/images/logos/custom/bitbreaker.svg" alt=""></a></li>
+                <li><a><img class="partner-logo" src="assets/images/logos/custom/phasekit.svg" alt=""></a></li>
+                <li><a><img class="partner-logo" src="assets/images/logos/custom/grubspot.svg" alt=""></a></li>
+                <li><a><img class="partner-logo" src="assets/images/logos/custom/infinite.svg" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- /Clients -->
+
+{{> footer-light}}

@@ -1,0 +1,30 @@
+//
+// Header Brand
+//
+
+
+
+// Header brand
+.kt-header__brand {
+	display: flex;
+	align-items: center;
+	align-content: flex-begin;
+	padding: 0;
+	flex-grow: 1;
+	flex-basis: 0;
+	max-width: 100%;
+	justify-content: center;
+
+	.kt-header__brand-logo {
+		display: flex;
+		justify-content: flex-begin;
+		align-items: flex-end;
+	}
+}
+
+// Tablet and mobile mode(1024px and below)
+@include kt-tablet-and-mobile() {
+	.kt-header__brand {
+		display: none;
+	}
+}

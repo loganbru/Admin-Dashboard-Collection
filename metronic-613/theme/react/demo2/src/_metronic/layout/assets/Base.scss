@@ -1,0 +1,29 @@
+// load base demo styles. for demo purpose, the style will be loaded here
+// for production, include the demo base style in /src/index.html file to load the css earlier
+
+kt-base {
+  opacity: 0;
+  height: 100%;
+
+  .kt-grid--root {
+    height: 100%;
+  }
+}
+
+.kt-page--loaded {
+  kt-base {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+  }
+}
+
+.kt-grid--animateContent {
+  transform: translateY(-5%);
+  opacity: 0;
+  position: static;
+  &-finished {
+    transform: translate(0);
+    transition: 0.2s ease-in-out;
+    opacity: 1;
+  }
+}

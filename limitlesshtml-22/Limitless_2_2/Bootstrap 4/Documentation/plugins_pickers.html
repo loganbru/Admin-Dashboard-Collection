@@ -1,0 +1,1829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/layout.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script src="assets/js/main/jquery.min.js"></script>
+	<script src="assets/js/main/bootstrap.bundle.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script src="assets/js/plugins/prism.min.js"></script>
+	<script src="assets/js/plugins/sticky.min.js"></script>
+	
+	<script src="assets/js/main/app.js"></script>
+	<script src="assets/js/pages/components_scrollspy.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body data-spy="scroll" data-target=".sidebar-component-right">
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-expand-md navbar-light">
+		<div class="navbar-header navbar-dark d-none d-md-flex align-items-md-center">
+			<div class="navbar-brand navbar-brand-md">
+				<a href="index.html" class="d-inline-block">
+					<img src="assets/images/logo_light.png" alt="">
+				</a>
+			</div>
+	
+			<div class="navbar-brand navbar-brand-xs">
+				<a href="index.html" class="d-inline-block">
+					<img src="assets/images/logo_icon_light.png" alt="">
+				</a>
+			</div>
+		</div>
+
+		<div class="d-flex flex-1 d-md-none">
+			<div class="navbar-brand mr-auto">
+				<a href="index.html" class="d-inline-block">
+					<img src="assets/images/logo_dark.png" alt="">
+				</a>
+			</div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile">
+				<i class="icon-tree5"></i>
+			</button>
+			<button class="navbar-toggler sidebar-mobile-main-toggle" type="button">
+				<i class="icon-paragraph-justify3"></i>
+			</button>
+			<button class="navbar-toggler sidebar-mobile-component-toggle" type="button">
+				<i class="icon-unfold"></i>
+			</button>
+		</div>
+
+		<div class="collapse navbar-collapse" id="navbar-mobile">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a href="#" class="navbar-nav-link sidebar-control sidebar-main-hide d-none d-md-block">
+						<i class="icon-paragraph-justify3"></i>
+					</a>
+				</li>
+
+				<li class="nav-item">
+					<a href="#" class="navbar-nav-link sidebar-control sidebar-component-toggle d-none d-md-block">
+						<i class="icon-transmission"></i>
+					</a>
+				</li>
+			</ul>
+
+			<ul class="navbar-nav ml-md-auto">
+				<li class="nav-item dropdown">
+					<a href="other_changelog.html" class="navbar-nav-link">
+						<i class="icon-history mr-2"></i>
+						Changelog
+						<span class="badge bg-warning-400 badge-pill position-static ml-md-2">2.2</span>
+					</a>					
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page content -->
+	<div class="page-content">
+
+		<!-- Main sidebar -->
+		<div class="sidebar sidebar-dark sidebar-main sidebar-expand-md">
+
+			<!-- Sidebar mobile toggler -->
+			<div class="sidebar-mobile-toggler text-center">
+				<a href="#" class="sidebar-mobile-main-toggle">
+					<i class="icon-arrow-left8"></i>
+				</a>
+				Navigation
+				<a href="#" class="sidebar-mobile-expand">
+					<i class="icon-screen-full"></i>
+					<i class="icon-screen-normal"></i>
+				</a>
+			</div>
+			<!-- /sidebar mobile toggler -->
+
+
+			<!-- Sidebar content -->
+			<div class="sidebar-content">
+
+        		<!-- Support -->
+				<div class="card card-body">
+					<a href="http://kopyov.ticksy.com" class="btn bg-success-400 btn-block" target="_blank"><i class="icon-lifebuoy mr-2"></i> Limitless support</a>
+				</div>
+				<!-- /support -->
+
+
+				<!-- Main navigation -->
+				<div class="card card-sidebar-mobile">
+					<ul class="nav nav-sidebar" data-nav-type="accordion">
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Main</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="index.html" class="nav-link">Introduction</a></li>
+						<li class="nav-item"><a href="main_getting_started.html" class="nav-link">Getting started</a></li>
+						<li class="nav-item"><a href="main_starter_kit.html" class="nav-link">Starter kit</a></li>
+						<li class="nav-item"><a href="main_rtl.html" class="nav-link">RTL layout</a></li>
+
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Basic functionality</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="base_scss_css.html" class="nav-link">SCSS and CSS</a></li>
+						<li class="nav-item"><a href="base_scss_compile.html" class="nav-link">Compiling SCSS</a></li>
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+							<a href="#" class="nav-link">Plugins</a>
+							<ul class="nav nav-group-sub" data-submenu-title="Plugins">
+								<li class="nav-item"><a href="plugins_forms.html" class="nav-link">Forms</a></li>
+								<li class="nav-item"><a href="plugins_forms_styling.html" class="nav-link">Form styling</a></li>
+								<li class="nav-item"><a href="plugins_editors.html" class="nav-link">Editors</a></li>
+								<li class="nav-item"><a href="plugins_uploaders.html" class="nav-link">Uploaders</a></li>
+								<li class="nav-item"><a href="plugins_extensions.html" class="nav-link">Extensions</a></li>
+								<li class="nav-item"><a href="plugins_notifications.html" class="nav-link">Notifications</a></li>
+								<li class="nav-item"><a href="plugins_pickers.html" class="nav-link active">Pickers</a></li>
+								<li class="nav-item"><a href="plugins_tables.html" class="nav-link">Tables</a></li>
+								<li class="nav-item"><a href="plugins_ui.html" class="nav-link">UI</a></li>
+								<li class="nav-item"><a href="plugins_vis.html" class="nav-link">Visualization</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a href="base_icons.html" class="nav-link">Icons</a></li>
+
+						<li class="nav-item"><a href="base_bootstrap.html" class="nav-link">Bootstrap</a></li>
+						<li class="nav-item"><a href="base_color_system.html" class="nav-link">Color system</a></li>
+						<li class="nav-item"><a href="base_helpers.html" class="nav-link">Helpers</a></li>
+						<li class="nav-item"><a href="base_themes.html" class="nav-link">Themes</a></li>
+
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Layout options</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="layout_overview.html" class="nav-link">Layouts</a></li>
+						<li class="nav-item"><a href="layout_sidebars.html" class="nav-link">Sidebars</a></li>
+						<li class="nav-item"><a href="layout_navbars.html" class="nav-link">Navbars</a></li>
+						<li class="nav-item"><a href="layout_v_nav.html" class="nav-link">Vertical navigation</a></li>
+						<li class="nav-item"><a href="layout_h_nav.html" class="nav-link">Horizontal navigation</a></li>
+						<li class="nav-item"><a href="layout_page_header.html" class="nav-link">Page header</a></li>
+
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Other</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="other_credits.html" class="nav-link">Sources and credits</a></li>
+						<li class="nav-item"><a href="other_changelog.html" class="nav-link">Changelog <span class="badge badge-pill bg-warning-400 ml-auto">version 2.2</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /main navigation -->
+
+		</div>
+		<!-- /main sidebar -->
+
+
+		<!-- Main content -->
+		<div class="content-wrapper">
+
+			<!-- Page header -->
+			<div class="page-header">
+				<div class="page-header-content header-elements-md-inline">
+					<div class="page-title d-flex">
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Limitless</span> - Pickers</h4>
+						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+					</div>
+
+					<div class="header-elements d-none py-0 mb-3 mb-md-0">
+						<div class="breadcrumb">
+							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
+							<span class="breadcrumb-item active">Pickers</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /page header -->
+			
+
+			<!-- Content area -->
+			<div class="content pt-0">
+
+				<!-- Inner container -->
+				<div class="d-flex align-items-start flex-column flex-md-row">
+
+					<!-- Left content -->
+					<div class="order-2 order-md-1">
+
+							<!-- Color picker -->
+							<div class="card" id="spectrum">
+								<div class="card-header header-elements-md-inline">
+									<h5 class="card-title">Spectrum - color picker</h5>
+									<div class="header-elements d-flex justify-content-between">
+										<span class="badge bg-slate">Color</span>
+										<span class="text-muted mx-3">spectrum.js</span>
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+									</div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Overview</h6>
+										<p>Spectrum is a jQuery Colorpicker plugin. It is easy to skin and customize the plugin with CSS, and there are a wide range of modes and options to explore. Uses a polyfill for the <code>input[type=color]</code> HTML5 control. This mode needs to work without JavaScript enabled - and fallback to an <code>input[type=text]</code> like other HTML5 inputs. If you don't want this behavior to happen, but still want to use spectrum elsewhere on the page, you can set <code>$.fn.spectrum.load = false;</code> right after loading the script file.</p>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Usage</h6>
+										<div class="mb-3">
+											<p>Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+											<pre><code class="language-markup">&lt;!-- Load jQuery -->
+&lt;script type="text/javascript" src="global_assets/js/main/jquery.min.js">&lt;/script>
+
+&lt;!-- Load plugin -->
+&lt;script type="text/javascript" src="global_assets/js/plugins/pickers/color/spectrum.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Add input element with attributes:</p>
+											<pre><code class="language-markup">&lt;!-- Markup example -->
+&lt;input type="text" class="form-control colorpicker-basic" value="#20BF7E">
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<div class="mb-3">
+												<p>Call the plugin via JavaScript:</p>
+												<pre><code class="language-javascript">// Basic initialization
+$(".colorpicker-basic").spectrum({
+	// options
+});
+</code></pre>
+											</div>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Spectrum options and documentation</h6>
+										Full Spectrum documentation can be found online on <a href="http://bgrins.github.io/spectrum/" target="_blank">Official library website</a>. It's quite big, with a lot of <a href="http://bgrins.github.io/spectrum/#options" target="_blank">options</a>, <a href="http://bgrins.github.io/spectrum/#events" target="_blank">events</a> and <a href="http://bgrins.github.io/spectrum/#methods" target="_blank">methods</a>. I find it useless to copy them all and paste to the Limitless documentation, nobody can represent and describe library features better than its creators. Below you can find additional links related to Spectrum library.
+									</div>
+
+									<div>
+										<h6 class="font-weight-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="font-weight-semibold">File name</td>
+														<td>spectrum.js</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Location</td>
+														<td>global_assets/js/plugins/pickers/color/</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Links</td>
+														<td>
+															<p>
+																<a href="http://bgrins.github.io/spectrum" class="btn btn-sm bg-danger-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+															
+															<p>
+																<a href="http://bgrins.github.io/spectrum/#modes" class="btn btn-sm bg-slate btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-file-text2"></i></b>
+																	Full documentation
+																</a>
+															</p>
+
+															<a href="https://github.com/bgrins/spectrum" class="btn btn-sm bg-blue btn-labeled btn-labeled-left" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /color picker -->
+
+
+							<!-- Location picker -->
+							<div class="card" id="location">
+								<div class="card-header header-elements-md-inline">
+									<h5 class="card-title">Location picker</h5>
+									<div class="header-elements d-flex justify-content-between">
+										<span class="badge bg-slate">Location</span>
+										<span class="text-muted mx-3">location.js</span>
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+									</div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Overview</h6>
+										<p>This plug-in allows to easily find and select a location on the Google map. Along with a single point selection, it allows to choose an area by providing its center and the radius. All the data can be saved to any HTML input element automatically as well as be processed by Javascript (callback support).</p>
+										<p>The other feature of the plug-in is automatic address resolver which allows to get address line from the selected latitude and longitude. The plug-in also supports searching by address typed into the bound input element which uses auto-complete feature from Google API to make the search process easier. In this case the marker will be automatically positioned on the map after successful address resolution</p>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Usage</h6>
+										<div class="mb-3">
+											<p>Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+											<pre><code class="language-markup">&lt;!-- Load jQuery -->
+&lt;script type="text/javascript" src="global_assets/js/main/jquery.min.js">&lt;/script>
+
+&lt;!-- Load Google Maps -->
+&lt;script type="text/javascript" src='https://maps.google.com/maps/api/js?key=[...KEY...]&amp;libraries=places'>&lt;/script>
+
+&lt;!-- Load plugin -->
+&lt;script type="text/javascript" src="global_assets/js/plugins/pickers/location/location.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Add element with attributes:</p>
+											<pre><code class="language-markup">&lt;!-- Markup example -->
+&lt;div id="locationpicker-default" class="map-container">&lt;/div>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<div class="mb-3">
+												<p>Call the plugin via JavaScript:</p>
+												<pre><code class="language-javascript">// Basic initialization
+$('#locationpicker-default').locationpicker({
+    radius: 150,
+    scrollwheel: false,
+    zoom: 10
+});
+</code></pre>
+											</div>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Plugin options</h6>
+										<p>Options and default values:</p>
+
+										<pre><code class="language-javascript">// Options with default values
+{
+    location: {latitude: 40.7324319, longitude: -73.82480799999996},
+    locationName: "",
+    radius: 500,
+    zoom: 15,
+    scrollwheel: true,
+    inputBinding: {
+        latitudeInput: null,
+        longitudeInput: null,
+        radiusInput: null,
+        locationNameInput: null
+    },
+    enableAutocomplete: false,
+    enableReverseGeocode: true,
+}
+</code></pre>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Plugin callbacks</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 350px;">Callback</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>onchanged(currentLocation, radius, isMarkerDropped)</code></td>
+														<td>Will be fired once location has been changed. Parameter <code>isMarkerDropped</code> will be set to <code>true</code> in case when location has been set by dropping the marker on map. In case when position was set from test input or using API it will be set to <code>false</code></td>
+													</tr>
+													<tr>
+														<td><code>onlocationnotfound: function(locationName)</code></td>
+														<td>Will be fired when it is impossible that resolve address from user input to coordinates</td>
+													</tr>
+													<tr>
+														<td><code>oninitialized: function (component)</code></td>
+														<td>Will be fired after initialization and positioning marker to the initial location</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div>
+										<h6 class="font-weight-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="font-weight-semibold">File name</td>
+														<td>location.js</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Location</td>
+														<td>global_assets/js/plugins/pickers/location/</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Links</td>
+														<td>
+															<p>
+																<a href="http://logicify.github.io/jquery-locationpicker-plugin/" class="btn btn-sm bg-danger-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+															
+															<a href="https://github.com/Logicify/jquery-locationpicker-plugin" class="btn btn-sm bg-blue btn-labeled btn-labeled-left" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /location picker -->
+
+
+							<!-- Address picker -->
+							<div class="card" id="address">
+								<div class="card-header header-elements-md-inline">
+									<h5 class="card-title">Address picker</h5>
+									<div class="header-elements d-flex justify-content-between">
+										<span class="badge bg-slate">Location</span>
+										<span class="text-muted mx-3">/pickers/location/</span>
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+									</div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Overview</h6>
+										<p>Address picker built with typeahead autocomplete from twitter. It's not an extension of typeahead plugin itself, but a new data source for twitter typeahead. The <code>AddressPicker</code> is a subclass of a <code>Bloodhound</code> class. It connects suggestions to Google Map <code>AutocompleteService</code>. But it's much more than a simple suggestion engine because it can be linked to a google map to display/edit location.</p>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Usage</h6>
+										<div class="mb-3">
+											<p>Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+											<pre><code class="language-markup">&lt;!-- Load jQuery -->
+&lt;script type="text/javascript" src="global_assets/js/main/jquery.min.js">&lt;/script>
+
+&lt;!-- Load Typeahead library -->
+&lt;script type="text/javascript" src="global_assets/js/plugins/forms/inputs/typeahead/typeahead.bundle.min.js">&lt;/script>
+
+&lt;!-- Load Typeahead picker extension -->
+&lt;script type="text/javascript" src="global_assets/js/plugins/pickers/location/typeahead_addresspicker.js">&lt;/script>
+
+&lt;!-- Load plugin -->
+&lt;script type="text/javascript" src="global_assets/js/plugins/pickers/location/autocomplete_addresspicker.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Add element with attributes:</p>
+											<pre><code class="language-markup">&lt;!-- Add input field -->
+&lt;input id="address" class="form-control typeahead" type="text" placeholder="Enter an address">
+
+&lt;!-- Add element -->
+&lt;div id="map" class="map-wrapper">&lt;/div>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<div class="mb-3">
+												<p>Instantiate an <code>AddressPicker</code> with the google map div element or ID and connect typeahead events:</p>
+												<pre><code class="language-javascript">// Basic initialization, based on Bloodhound
+var addressPicker = new AddressPicker({
+	map: {
+		id: '#map'
+	}
+});
+
+// instantiate the typeahead UI
+$('#address').typeahead(null, {
+	displayKey: 'description',
+	source: addressPicker.ttAdapter()
+});
+
+// Bind some event to update map on autocomplete selection
+$('#address').bind('typeahead:selected', addressPicker.updateMap);
+$('#address').bind('typeahead:cursorchanged', addressPicker.updateMap);
+</code></pre>
+											</div>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Plugin options</h6>
+										<p>When you instantiate a new <code>AddressPicker</code> you can pass a list of options new <code>AddressPicker(options)</code>. Available options:</p>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Option</th>
+														<th style="width: 200px;">Default</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>map</code></td>
+														<td class="font-weight-semibold">none</td>
+														<td>Map id and options to link typeahead to a goggle map</td>
+													</tr>
+													<tr>
+														<td><code>marker</code></td>
+														<td class="font-weight-semibold">{draggable: true, visible: false, position: MAP_CENTER}</td>
+														<td>Marker options display on the map</td>
+													</tr>
+													<tr>
+														<td><code>autocompleteService</code></td>
+														<td class="font-weight-semibold">{types: ['geocode']}</td>
+														<td>Options passed to <code>google.maps.places.AutocompleteService#getPlacePredictions</code>. You can add a lot of options, like get only address for a country, or get only cities etc.</td>
+													</tr>
+													<tr>
+														<td><code>zoomForLocation</code></td>
+														<td class="font-weight-semibold">16</td>
+														<td>Number. Zoom value when an accurate address is selected</td>
+													</tr>
+													<tr>
+														<td><code>reverseGeocoding</code></td>
+														<td class="font-weight-semibold">false</td>
+														<td>Boolean. Reverse geocoding when marker is dragged on map</td>
+													</tr>
+													<tr>
+														<td><code>placeDetails</code></td>
+														<td class="font-weight-semibold">false</td>
+														<td>Boolean. If not using with a map, you can skip the getDetails portion to speed up the query</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Plugin events</h6>
+										<div class="mb-3">
+											Only one event is trigger by AddressPicker object: addresspicker:selected. The event is fired when an address is selected or when the marker is dragged. If reverseGeocoding is activated, a full response is trigger, otherwise only lat/lng.
+										</div>
+
+										<div class="mb-3">
+											<p>To simplify google response parsing, we fire an object of type AddressPickerResult with some accessors:</p>
+
+											<ul class="list">
+												<li><code>lat()</code></li>
+												<li><code>lng()</code></li>
+												<li><code>addressTypes()</code></li>
+												<li><code>addressComponents()</code></li>
+												<li><code>nameForType: (type, shortName = false)</code></li>
+											</ul>
+										</div>
+
+										<div class="mb-3">
+											<p>Listen that event to get values you need and store them in your form. Here is an example:</p>
+
+											<pre><code class="language-javascript">// Proxy inputs typeahead events to addressPicker
+addressPicker.bindDefaultTypeaheadEvent($('#address'))
+
+// Listen for selected places result
+$(addressPicker).on('addresspicker:selected', function (event, result) {
+	$('#your_lat_input').val(result.lat());
+	$('#your_lng_input').val(result.lng());
+	$('#your_city_input').val(result.nameForType('locality'));
+});
+</code></pre>
+										</div>
+									</div>
+
+									<div>
+										<h6 class="font-weight-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="font-weight-semibold">File name</td>
+														<td>autocomplete_addresspicker.js, typeahead_addresspicker.js</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Location</td>
+														<td>global_assets/js/plugins/pickers/location/</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Links</td>
+														<td>
+															<p>
+																<a href="http://sgruhier.github.io/typeahead-addresspicker/" class="btn btn-sm bg-danger-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+															
+															<a href="https://github.com/sgruhier/typeahead-addresspicker" class="btn btn-sm bg-blue btn-labeled btn-labeled-left" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /address picker -->
+
+
+							<!-- Anytime picker -->
+							<div class="card" id="anytime">
+								<div class="card-header header-elements-md-inline">
+									<h5 class="card-title">Anytime picker</h5>
+									<div class="header-elements d-flex justify-content-between">
+										<span class="badge bg-slate">Date/Time</span>
+										<span class="text-muted mx-3">anytime.min.js</span>
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+									</div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Overview</h6>
+										<p>The Any+Time™ JavaScript Library includes a highly-customizable, jQuery-compatible datepicker/ timepicker (calendar/ clock widget) and a powerful Date/String parse/format utility. Any+Time™ is different from other pickers. More powerful, yes, but more importantly, designed with speed and ease-of-use in mind. And not only can it create a date/time picker with advanced features and options not found in other calendar/clock widgets, it also allows you to format dates and times the way you want them. Or your database wants them. Or, better yet, the way your users want them.</p>
+
+										<div class="mb-3">
+											<p>For starters, take a look at these <code>DATE/TIME ALTERNATIVES</code>:</p>
+											<ul class="list">
+												<li>12-hour or 24-hour clock</li>
+												<li>custom date/time format (countless possibilities, including JSON and XML)</li>
+												<li>date-only, time-only, or specific fields!</li>
+												<li>date/time range limits</li>
+												<li>era-selection (BCE/CE, BC/AD, etc.)</li>
+												<li>start week on any day (Sunday, Monday, etc.)</li>
+												<li>custom base for 2-digit years (1900, 2000, etc.)</li>
+												<li>UTC offsets and time zones</li>
+											</ul>
+										</div>
+
+										<div class="mb-3">
+											<p>It's also <code>PROGRAMMER-FRIENDLY</code>:</p>
+											<ul class="list">
+												<li>easy to implement</li>
+												<li>easy AJAX validation</li>
+												<li>easy Date/String conversion, including JSON and XML</li>
+												<li>create multiple pickers at once</li>
+												<li>easy removal</li>
+												<li>easy to extend</li>
+											</ul>
+										</div>
+
+										<div class="mb-3">
+											<p>And let's not forget those <code>USABILITY FEATURES</code>:</p>
+											<ul class="list">
+												<li>single-click value selection</li>
+												<li>double-click select-and-dismiss</li>
+												<li>WAI-ARIA 1.0 keyboard accessibility</li>
+												<li>em-based relative-size</li>
+											</ul>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Usage</h6>
+										<div class="mb-3">
+											<p>Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+											<pre><code class="language-markup">&lt;!-- Load jQuery -->
+&lt;script type="text/javascript" src="global_assets/js/main/jquery.min.js">&lt;/script>
+
+&lt;!-- Load plugin -->
+&lt;script type="text/javascript" src="global_assets/js/plugins/pickers/anytime.min.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Add element with attributes:</p>
+											<pre><code class="language-markup">&lt;!-- Add input field -->
+&lt;input type="text" class="form-control" id="anytime-date" value="Sunday, July 30th in the Year 1967 CE">
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<div class="mb-3">
+												<p>Call the plugin via JavaScript:</p>
+												<pre><code class="language-javascript">// Basic initialization
+$("#anytime-date").AnyTime_picker({
+    format: "%W, %M %D in the Year %z %E",
+    firstDOW: 1
+});
+</code></pre>
+											</div>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Plugin options</h6>
+										<p>When creating a picker with <code>AnyTime.picker()</code> or <code>$.AnyTime_picker()</code>, the following members may be specified as part of the options argument:</p>
+
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Option</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>ajaxOptions</code></td>
+														<td>Options to pass to jQuery's <code>$.ajax()</code> method whenever the user dismisses a popup picker or selects a value in an inline picker. The input's <code>name</code> (or id) and <code>value</code> are passed to the server (appended to <code>ajaxOptions.data</code>, if present), and the "success" handler sets the input's value to the <code>responseText</code>. Therefore, the text returned by the server must be valid for the input's date/time format, and the server must either echo or correct the value chosen by the user</td>
+													</tr>
+													<tr>
+														<td><code>askEra</code></td>
+														<td>If <code>true</code>, buttons to select the era (BCE/CE) are shown on the year selector popup, even if the format specifier does not include the era. If <code>false</code>, buttons to select the era are NOT shown, even if the format specifier includes the era. Normally, era buttons are only shown if the format string specifies the era</td>
+													</tr>
+													<tr>
+														<td><code>askSecond</code></td>
+														<td>If <code>false</code>, buttons for number-of-seconds are not shown on the year selector popup, even if the format specifier includes seconds. Normally, the buttons are shown if the format string specifies seconds</td>
+													</tr>
+													<tr>
+														<td><code>baseYear</code></td>
+														<td>The <code>number</code> to add to two-digit years if the <code>"%y"</code> format specifier is used. By default, the MySQL convention that two-digit years are in the range 1970 to 2069 is used. The most common alternatives are 1900 and 2000. When using this option, you should also specify the earliest and latest options to the first and last dates in the century, respectively.</td>
+													</tr>
+													<tr>
+														<td><code>dayAbbreviations</code></td>
+														<td>An <code>array</code> of day abbreviations to replace Sun, Mon, etc. Note: if a different first day-of-week is specified by option <code>firstDOW</code>, this array should nonetheless start with the desired abbreviation for Sunday</td>
+													</tr>
+													<tr>
+														<td><code>dayNames</code></td>
+														<td>An <code>array</code> of day names to replace Sunday, Monday, etc. Note: if a different first day-of-week is specified by option <code>firstDOW</code>, this array should nonetheless start with the desired name for Sunday</td>
+													</tr>
+													<tr>
+														<td><code>earliest</code></td>
+														<td><code>String</code> or <code>Date object</code> representing the earliest date/time that a user can select. If a <code>String</code> is specified, it is expected to match the format specifier. For best results if the field is only used to specify a date, be sure to set the time to <strong>00:00:00</strong></td>
+													</tr>
+													<tr>
+														<td><code>eraAbbreviations</code></td>
+														<td>An array of era abbreviations to replace <strong>BCE</strong> and <strong>CE</strong>. The most common replacements are the obsolete: <strong>BC</strong> and <strong>AD</strong></td>
+													</tr>
+													<tr>
+														<td><code>firstDOW</code></td>
+														<td>A value from <code>0</code> (Sunday) to <code>6</code> (Saturday) stating which day should appear at the beginning of the week. The default is <code>0</code> (Sunday). The most common substitution is <code>1</code> (Monday). Note: if custom arrays are specified for <code>dayAbbreviations</code> and <code>dayNames</code>, they should nonetheless begin with the desired value for Sunday</td>
+													</tr>
+													<tr>
+														<td><code>formatUtcOffset</code></td>
+														<td>String specifying the format of the UTC offset choices displayed in the picker. Although all specifiers used by the format option are recognized, only those pertaining to UTC offsets (namely <code>%#</code>, <code>%+</code>, <code>%-</code>, <code>%:</code>, <code>%;</code> and <code>%@</code>) should be used. By default, the picker will extrapolate a format by scanning the format option for appropriate specifiers and their surrounding characters</td>
+													</tr>
+													<tr>
+														<td><code>hideInput</code></td>
+														<td>If <code>true</code>, the <code>&lt;input></code> is "hidden" (the picker appears in its place). This actually sets the border, height, margin, padding and width of the field as small as possible, so it can still get focus. Note: if you try to hide the field using traditional techniques (such as setting <code>display: none</code>), the picker will not behave correctly. This option should only be used with <code>placement: "inline"</code>; otherwise, a popup will only appear (seemingly from nowhere) if the user tabs to the hidden field</td>
+													</tr>
+													<tr>
+														<td><code>init</code></td>
+														<td>The initial value for the input field. This can be a <code>Date</code> object, a <code>Number</code> representing the time (in milliseconds), or a <code>String</code> in the correct format. If the field already contains a value, it will be replaced with this value when the picker is initialized</td>
+													</tr>
+													<tr>
+														<td><code>labelDayOfMonth</code></td>
+														<td>HTML to replace the <strong>Day of Month</strong> label</td>
+													</tr>
+													<tr>
+														<td><code>labelDismiss</code></td>
+														<td>HTML to replace the dismiss popup button's <strong>X</strong> label</td>
+													</tr>
+													<tr>
+														<td><code>labelHour</code></td>
+														<td>HTML to replace the <strong>Hour</strong> label</td>
+													</tr>
+													<tr>
+														<td><code>labelMinute</code></td>
+														<td>HTML to replace the <strong>Minute</strong> label</td>
+													</tr>
+													<tr>
+														<td><code>labelMonth</code></td>
+														<td>HTML to replace the <strong>Month</strong> label</td>
+													</tr>
+													<tr>
+														<td><code>labelSecond</code></td>
+														<td>HTML to replace the <strong>Second</strong> label</td>
+													</tr>
+													<tr>
+														<td><code>labelTimeZone</code></td>
+														<td>HTML to replace the <strong>Time Zone</strong> label</td>
+													</tr>
+													<tr>
+														<td><code>labelTitle</code></td>
+														<td>HTML for the <strong>title</strong> of the picker. If not specified, the picker automatically selects a title based on the format specifier fields</td>
+													</tr>
+													<tr>
+														<td><code>labelYear</code></td>
+														<td>HTML to replace the <strong>Year</strong> label</td>
+													</tr>
+													<tr>
+														<td><code>latest</code></td>
+														<td><code>String</code> or <code>Date</code> object representing the latest date/time that a user can select. If a <code>String</code> is specified, it is expected to match the format specifier. For best results if the field is only used to specify a date, be sure to set the time to <strong>23:59:59</strong></td>
+													</tr>
+													<tr>
+														<td><code>monthAbbreviations</code></td>
+														<td>An <code>array</code> of month abbreviations to replace Jan, Feb, etc. Note: do not use an HTML entity reference (such as <code>&auml;</code>) in a month name or abbreviation; embed the actual character (such as <code>ä</code>) instead. Be careful to save your source files under the correct encoding, or the character may not display correctly in all browsers; this often happens when a character code from UTF-8 is saved with ISO-8859-1 encoding (or vice-versa)</td>
+													</tr>
+													<tr>
+														<td><code>monthNames</code></td>
+														<td>An <code>array</code> of month names to replace January, February, etc</td>
+													</tr>
+													<tr>
+														<td><code>placement</code></td>
+														<td>
+															<p>One of the following strings:</p>
+															<ul class="list">
+																<li><strong>popup</strong> - the picker appears above its input when the input receives focus, and disappears when it is dismissed. This is the default behavior</li>
+																<li><strong>inline</strong> - the picker follows the <code>&lt;input></code> and remains visible at all times. When choosing this placement, you might prefer to hide the input field using the hideInput option (the correct value will still be submitted with the form)</li>
+															</ul>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Format options</h6>
+										<p><code>format</code> option - string specifying the date/time format. The following format specifiers are recognized:</p>
+
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 150px;">Option</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>%a</code></td>
+														<td>Abbreviated weekday name <strong>(Sun...Sat)</strong></td>
+													</tr>
+													<tr>
+														<td><code>%B</code></td>
+														<td>Abbreviation for Before Common Era <strong>(if year&lt;1)</strong>*</td>
+													</tr>
+													<tr>
+														<td><code>%b</code></td>
+														<td>Abbreviated month name <strong>(Jan...Dec)</strong></td>
+													</tr>
+													<tr>
+														<td><code>%C</code></td>
+														<td>Abbreviation for Common Era <strong>(if year&rt;=1)</strong>*</td>
+													</tr>
+													<tr>
+														<td><code>%c</code></td>
+														<td>Month, numeric <strong>(1..12)</strong></td>
+													</tr>
+													<tr>
+														<td><code>%D</code></td>
+														<td>Day of the month with English suffix <strong>(1st, 2nd, ...)</strong></td>
+													</tr>
+													<tr>
+														<td><code>%d</code></td>
+														<td>Day of the month, numeric <strong>(00...31)</strong></td>
+													</tr>
+													<tr>
+														<td><code>%E</code></td>
+														<td><strong>Era</strong> abbreviation*</td>
+													</tr>
+													<tr>
+														<td><code>%e</code></td>
+														<td>Day of the month, numeric <strong>(0...31)</strong></td>
+													</tr>
+													<tr>
+														<td><code>%H</code></td>
+														<td>Hour <strong>(00...23)</strong></td>
+													</tr>
+													<tr>
+														<td><code>%h</code></td>
+														<td>Hour <strong>(01...12)</strong></td>
+													</tr>
+													<tr>
+														<td><code>%I</code></td>
+														<td>Hour <strong>(01...12)</strong></td>
+													</tr>
+													<tr>
+														<td><code>%i</code></td>
+														<td>Minutes, numeric <strong>(00...59)</strong></td>
+													</tr>
+													<tr>
+														<td><code>%k</code></td>
+														<td>Hour <strong>(0...23)</strong></td>
+													</tr>
+													<tr>
+														<td><code>%l</code></td>
+														<td>Hour <strong>(1...12)</strong></td>
+													</tr>
+													<tr>
+														<td><code>%M</code></td>
+														<td>Month name <strong>(January...December)</strong></td>
+													</tr>
+													<tr>
+														<td><code>%m</code></td>
+														<td>Month, numeric <strong>(01...12)</strong></td>
+													</tr>
+													<tr>
+														<td><code>%p</code></td>
+														<td><strong>AM</strong> or <strong>PM</strong></td>
+													</tr>
+													<tr>
+														<td><code>%r</code></td>
+														<td>Time, 12-hour (<strong>hh:mm:ss</strong> followed by <strong>AM</strong> or <strong>PM</strong>)</td>
+													</tr>
+													<tr>
+														<td><code>%S</code></td>
+														<td>Seconds <strong>(00...59)</strong></td>
+													</tr>
+													<tr>
+														<td><code>%s</code></td>
+														<td>Seconds <strong>(00...59)</strong></td>
+													</tr>
+													<tr>
+														<td><code>%T</code></td>
+														<td>Time, 24-hour <strong>(hh:mm:ss)</strong></td>
+													</tr>
+													<tr>
+														<td><code>%W</code></td>
+														<td>Weekday name <strong>(Sunday...Saturday)</strong></td>
+													</tr>
+													<tr>
+														<td><code>%w</code></td>
+														<td>Day of the week <strong>(0=Sunday...6=Saturday)</strong></td>
+													</tr>
+													<tr>
+														<td><code>%Y</code></td>
+														<td>Year, numeric, four digits <strong>(possibly signed)</strong></td>
+													</tr>
+													<tr>
+														<td><code>%y</code></td>
+														<td>Year, numeric, two digits <strong>(possibly signed)</strong></td>
+													</tr>
+													<tr>
+														<td><code>%Z</code></td>
+														<td>Year, numeric, four digits <strong>(no sign)</strong>*</td>
+													</tr>
+													<tr>
+														<td><code>%z</code></td>
+														<td>Year, numeric, variable length <strong>(no sign)</strong>*</td>
+													</tr>
+													<tr>
+														<td><code>%#</code></td>
+														<td>Signed UTC offset in minutes*</td>
+													</tr>
+													<tr>
+														<td><code>%+</code></td>
+														<td>Signed UTC offset in <code>%h%i</code> format*</td>
+													</tr>
+													<tr>
+														<td><code>%-</code></td>
+														<td>Signed UTC offset in <code>%l%i</code> format*</td>
+													</tr>
+													<tr>
+														<td><code>%:</code></td>
+														<td>Signed UTC offset in <code>%h:%i</code> format*</td>
+													</tr>
+													<tr>
+														<td><code>%;</code></td>
+														<td>Signed UTC offset in <code>%l:%i</code> format*</td>
+													</tr>
+													<tr>
+														<td><code>%@</code></td>
+														<td>UTC offset time zone label*</td>
+													</tr>
+													<tr>
+														<td><code>%%</code></td>
+														<td>A literal <code>%</code> character</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div>
+										<h6 class="font-weight-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="font-weight-semibold">File name</td>
+														<td>anytime.min.js</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Location</td>
+														<td>global_assets/js/plugins/pickers/</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Links</td>
+														<td>
+															<a href="http://www.ama3.com/anytime/" class="btn btn-sm bg-danger-400 btn-labeled btn-labeled-left" target="_blank">
+																<b><i class="icon-mention"></i></b>
+																Official plugin website
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /anytime picker -->
+
+
+							<!-- Date range picker -->
+							<div class="card" id="daterange">
+								<div class="card-header header-elements-md-inline">
+									<h5 class="card-title">Date range picker</h5>
+									<div class="header-elements d-flex justify-content-between">
+										<span class="badge bg-slate">Date/Time</span>
+										<span class="text-muted mx-3">daterangepicker.js</span>
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+									</div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Overview</h6>
+										<p>This date range picker component for Bootstrap creates a dropdown menu from which a user can select a range of dates. Features include limiting the selectable date range, localizable strings and date formats, a single date picker mode, optional time picker (for e.g. making appointments or reservations), and styles that match the default Bootstrap 3 theme</p>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Usage</h6>
+										<div class="mb-3">
+											<p>Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+											<pre><code class="language-markup">&lt;!-- Load jQuery -->
+&lt;script type="text/javascript" src="global_assets/js/main/jquery.min.js">&lt;/script>
+
+&lt;!-- Load Moment.js extension -->
+&lt;script type="text/javascript" src="global_assets/js/plugins/ui/moment/moment.min.js">&lt;/script>
+
+&lt;!-- Load plugin -->
+&lt;script type="text/javascript" src="global_assets/js/plugins/pickers/daterangepicker.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Add element with attributes:</p>
+											<pre><code class="language-markup">&lt;!-- Add input field -->
+&lt;input type="text" class="form-control daterange-basic" value="01/01/2015 - 01/31/2015"> 
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<div class="mb-3">
+												<p>Call the plugin via JavaScript:</p>
+												<pre><code class="language-javascript">// Basic initialization
+$('.daterange-basic').daterangepicker({
+    applyClass: 'bg-slate-600',
+    cancelClass: 'btn-default'
+});
+</code></pre>
+											</div>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Plugin options</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Option</th>
+														<th style="width: 200px;">Type</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>startDate</code></td>
+														<td class="font-weight-semibold">Date object, moment object or string</td>
+														<td>The start of the initially selected date range</td>
+													</tr>
+													<tr>
+														<td><code>endDate</code></td>
+														<td class="font-weight-semibold">Date object, moment object or string</td>
+														<td>The end of the initially selected date range</td>
+													</tr>
+													<tr>
+														<td><code>minDate</code></td>
+														<td class="font-weight-semibold">Date object, moment object or string</td>
+														<td>The earliest date a user may select</td>
+													</tr>
+													<tr>
+														<td><code>maxDate</code></td>
+														<td class="font-weight-semibold">Date object, moment object or string</td>
+														<td>The latest date a user may select</td>
+													</tr>
+													<tr>
+														<td><code>dateLimit</code></td>
+														<td class="font-weight-semibold">object</td>
+														<td>The maximum span between the selected start and end dates. Can have any property you can add to a moment object (i.e. days, months)</td>
+													</tr>
+													<tr>
+														<td><code>timeZone</code></td>
+														<td class="font-weight-semibold">string or number</td>
+														<td>The timezone that will be used to display the <code>startDate</code> and <code>endDate</code> in the calendar. This may be a string such as "08:00" or an offset in minutes from Greenwich Mean Time. Uses <strong>Moment.js</strong> #utcOffset. If the <code>timeZone</code> option is not set, the calendar will use the time zone set on the <code>startDate</code> that has been passed in through the options, if it has one. Defaults to the local time zone</td>
+													</tr>
+													<tr>
+														<td><code>showDropdowns</code></td>
+														<td class="font-weight-semibold">boolean</td>
+														<td>Show year and month select boxes above calendars to jump to a specific month and year</td>
+													</tr>
+													<tr>
+														<td><code>showWeekNumbers</code></td>
+														<td class="font-weight-semibold">boolean</td>
+														<td>Show week numbers at the start of each week on the calendars</td>
+													</tr>
+													<tr>
+														<td><code>timePicker</code></td>
+														<td class="font-weight-semibold">boolean</td>
+														<td>Allow selection of dates with times, not just dates</td>
+													</tr>
+													<tr>
+														<td><code>timePickerIncrement</code></td>
+														<td class="font-weight-semibold">number</td>
+														<td>Increment of the minutes selection list for times (i.e. 30 to allow only selection of times ending in 0 or 30)</td>
+													</tr>
+													<tr>
+														<td><code>timePicker24Hour</code></td>
+														<td class="font-weight-semibold">boolean</td>
+														<td>Use 24-hour instead of 12-hour times, removing the AM/PM selection</td>
+													</tr>
+													<tr>
+														<td><code>timePickerSeconds</code></td>
+														<td class="font-weight-semibold">boolean</td>
+														<td>Show seconds in the <code>timePicker</code></td>
+													</tr>
+													<tr>
+														<td><code>ranges</code></td>
+														<td class="font-weight-semibold">object</td>
+														<td>Set predefined date ranges the user can select from. Each key is the label for the range, and its value an array with two dates representing the bounds of the range</td>
+													</tr>
+													<tr>
+														<td><code>opens</code></td>
+														<td class="font-weight-semibold">string</td>
+														<td>Whether the picker appears aligned to the left, to the right, or centered under the HTML element it's attached to. Available <code>left</code>, <code>right</code> and <code>center</code></td>
+													</tr>
+													<tr>
+														<td><code>drops</code></td>
+														<td class="font-weight-semibold">string</td>
+														<td>Whether the picker appears below (default) or above the HTML element it's attached to. Available <code>up</code> and <code>down</code></td>
+													</tr>
+													<tr>
+														<td><code>buttonClasses</code></td>
+														<td class="font-weight-semibold">array</td>
+														<td>CSS class names that will be added to <strong>all</strong> buttons in the picker</td>
+													</tr>
+													<tr>
+														<td><code>applyClass</code></td>
+														<td class="font-weight-semibold">string</td>
+														<td>CSS class string that will be added to the <strong>apply</strong> button</td>
+													</tr>
+													<tr>
+														<td><code>cancelClass</code></td>
+														<td class="font-weight-semibold">string</td>
+														<td>CSS class string that will be added to the <strong>cancel</strong> button</td>
+													</tr>
+													<tr>
+														<td><code>locale</code></td>
+														<td class="font-weight-semibold">object</td>
+														<td>Allows you to provide localized strings for buttons and labels, customize the date display format, and change the first day of week for the calendars</td>
+													</tr>
+													<tr>
+														<td><code>singleDatePicker</code></td>
+														<td class="font-weight-semibold">boolean</td>
+														<td>Show only a single calendar to choose one date, instead of a range picker with two calendars; the <code>start</code> and <code>end</code> dates provided to your callback will be the same single date chosen</td>
+													</tr>
+													<tr>
+														<td><code>autoApply</code></td>
+														<td class="font-weight-semibold">boolean</td>
+														<td>Hide the apply and cancel buttons, and automatically apply a new date range as soon as two dates or a predefined range is selected</td>
+													</tr>
+													<tr>
+														<td><code>linkedCalendars</code></td>
+														<td class="font-weight-semibold">boolean</td>
+														<td>When enabled, the two calendars displayed will always be for two sequential months (i.e. January and February), and both will be advanced when clicking the left or right arrows above the calendars. When disabled, the two calendars can be individually advanced and display any month/year</td>
+													</tr>
+													<tr>
+														<td><code>parentEl</code></td>
+														<td class="font-weight-semibold">string</td>
+														<td>jQuery selector of the parent element that the date range picker will be added to, if not provided this will be <code>'body'</code></td>
+													</tr>
+													<tr>
+														<td><code>isInvalidDate</code></td>
+														<td class="font-weight-semibold">function</td>
+														<td>A function that is passed each date in the two calendars before they are displayed, and may return true or false to indicate whether that date should be available for selection or not</td>
+													</tr>
+													<tr>
+														<td><code>autoUpdateInput</code></td>
+														<td class="font-weight-semibold">boolean</td>
+														<td>Indicates whether the date range picker should automatically update the value of an <code>&lt;input></code> element it's attached to at initialization and when the selected dates change</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Plugin methods</h6>
+										<div class="mb-3">
+											<p>You can programmatically update the <code>startDate</code> and <code>endDate</code> in the picker using the <code>setStartDate</code> and <code>setEndDate</code> methods. You can access the Date Range Picker object and its functions and properties through data properties of the element you attached it to.</p>
+
+											<p>Example usage:</p>
+											<pre><code class="language-javascript">// Create a new date range picker
+$('#daterange').daterangepicker({ startDate: '2014-03-05', endDate: '2014-03-06' });
+
+// Change the selected date range of that picker
+$('#daterange').data('daterangepicker').setStartDate('2014-03-01');
+$('#daterange').data('daterangepicker').setEndDate('2014-03-31');
+</code></pre>
+
+										</div>
+
+										<p>Available methods</p>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Option</th>
+														<th>Type</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>setStartDate()</code></td>
+														<td class="font-weight-semibold">Date/moment/string</td>
+														<td>Sets the date range picker's currently selected start date to the provided date</td>
+													</tr>
+													<tr>
+														<td><code>setEndDate()</code></td>
+														<td class="font-weight-semibold">Date/moment/string</td>
+														<td>Sets the date range picker's currently selected end date to the provided date</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Plugin events</h6>
+										<div class="mb-3">
+											<p>Several events are triggered on the element you attach the picker to, which you can listen for.</p>
+
+											<p>Example usage:</p>
+											<pre><code class="language-javascript">// Event example
+$('#daterange').on('apply.daterangepicker', function(ev, picker) {
+	console.log(picker.startDate.format('YYYY-MM-DD'));
+	console.log(picker.endDate.format('YYYY-MM-DD'));
+});
+</code></pre>
+
+										</div>
+
+										<p>Available events</p>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Event</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>show.daterangepicker</code></td>
+														<td>Triggered when the picker is shown</td>
+													</tr>
+													<tr>
+														<td><code>hide.daterangepicker</code></td>
+														<td>Triggered when the picker is hidden</td>
+													</tr>
+													<tr>
+														<td><code>showCalendar.daterangepicker</code></td>
+														<td>Triggered when the calendar(s) are shown</td>
+													</tr>
+													<tr>
+														<td><code>hideCalendar.daterangepicker</code></td>
+														<td>Triggered when the calendar(s) are hidden</td>
+													</tr>
+													<tr>
+														<td><code>apply.daterangepicker</code></td>
+														<td>Triggered when the apply button is clicked, or when a predefined range is clicked</td>
+													</tr>
+													<tr>
+														<td><code>cancel.daterangepicker</code></td>
+														<td>Triggered when the cancel button is clicked</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div>
+										<h6 class="font-weight-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="font-weight-semibold">File name</td>
+														<td>daterangepicker.js</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Location</td>
+														<td>global_assets/js/plugins/pickers/</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Links</td>
+														<td>
+															<p>
+																<a href="http://www.daterangepicker.com/" class="btn btn-sm bg-danger-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+
+															<a href="https://github.com/dangrossman/bootstrap-daterangepicker" class="btn btn-sm bg-blue btn-labeled btn-labeled-left" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /date range picker -->
+
+
+							<!-- Pick-a date pickers -->
+							<div class="card" id="pickadate">
+								<div class="card-header header-elements-md-inline">
+									<h5 class="card-title">Pick-a-date pickers</h5>
+									<div class="header-elements d-flex justify-content-between">
+										<span class="badge bg-slate">Date/Time</span>
+										<span class="text-muted mx-3">/pickers/pickadate/</span>
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+									</div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Overview</h6>
+										<p>The mobile-friendly, responsive, and lightweight jQuery date &amp; time input picker. There’s a tonne of options to customize the date and time pickers, such as month/year selectors, time intervals, etc. There’s also a rich API to extend the functionality of the picker.</p>
+
+										<ul class="list">
+											<li>Supports jQuery 1.7 and up</li>
+											<li>Is ARIA-enabled to be WCAG 2.0 compliant</li>
+											<li>Loads a tiny JS and CSS footprint</li>
+											<li>Comes with translations for over 40 languages</li>
+											<li>Has touch &amp; keyboard friendliness</li>
+											<li>Follows BEM style class naming</li>
+											<li>Utilizes LESS based stylesheets</li>
+										</ul>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Usage</h6>
+										<div class="mb-3">
+											<p>Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+											<pre><code class="language-markup">&lt;!-- Load jQuery -->
+&lt;script type="text/javascript" src="global_assets/js/main/jquery.min.js">&lt;/script>
+
+&lt;!-- Load base -->
+&lt;script type="text/javascript" src="global_assets/js/plugins/pickers/pickadate/picker.js">&lt;/script>
+
+&lt;!-- Load date picker -->
+&lt;script type="text/javascript" src="global_assets/js/plugins/pickers/pickadate/picker.date.js">&lt;/script>
+
+&lt;!-- Load time picker -->
+&lt;script type="text/javascript" src="global_assets/js/plugins/pickers/pickadate/picker.time.js">&lt;/script>
+
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Add element with attributes:</p>
+											<pre><code class="language-markup">&lt;!-- Add input field -->
+&lt;input type="text" class="form-control pickadate" placeholder="Try me">
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<div class="mb-3">
+												<p>Call the plugin via JavaScript:</p>
+												<pre><code class="language-javascript">// Date picker
+$('.pickadate').pickadate({
+	// options
+});
+
+// Time picker
+$('.pickatime').pickatime({
+	// options
+});
+</code></pre>
+											</div>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Date picker options</h6>
+										<p>These are the default settings of a date picker:</p>
+										<pre><code class="language-javascript">// Strings and translations
+monthsFull: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+monthsShort: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+weekdaysFull: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+weekdaysShort: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+showMonthsShort: undefined,
+showWeekdaysFull: undefined,
+
+// Buttons
+today: 'Today',
+clear: 'Clear',
+close: 'Close',
+
+// Accessibility labels
+labelMonthNext: 'Next month',
+labelMonthPrev: 'Previous month',
+labelMonthSelect: 'Select a month',
+labelYearSelect: 'Select a year',
+
+// Formats
+format: 'd mmmm, yyyy',
+formatSubmit: undefined,
+hiddenPrefix: undefined,
+hiddenSuffix: '_submit',
+hiddenName: undefined,
+
+// Editable input
+editable: undefined,
+
+// Dropdown selectors
+selectYears: undefined,
+selectMonths: undefined,
+
+// First day of the week
+firstDay: undefined,
+
+// Date limits
+min: undefined,
+max: undefined,
+
+// Disable dates
+disable: undefined,
+
+// Root picker container
+container: undefined,
+
+// Hidden input container
+containerHidden: undefined,
+
+// Close on a user action
+closeOnSelect: true,
+closeOnClear: true,
+
+// Events
+onStart: undefined,
+onRender: undefined,
+onOpen: undefined,
+onClose: undefined,
+onSet: undefined,
+onStop: undefined,
+
+// Classes
+klass: {
+
+	// The element states
+	input: 'picker__input',
+	active: 'picker__input--active',
+
+	// The root picker and states *
+	picker: 'picker',
+	opened: 'picker--opened',
+	focused: 'picker--focused',
+
+	// The picker holder
+	holder: 'picker__holder',
+
+	// The picker frame, wrapper, and box
+	frame: 'picker__frame',
+	wrap: 'picker__wrap',
+	box: 'picker__box',
+
+	// The picker header
+	header: 'picker__header',
+
+	// Month navigation
+	navPrev: 'picker__nav--prev',
+	navNext: 'picker__nav--next',
+	navDisabled: 'picker__nav--disabled',
+
+	// Month &amp; year labels
+	month: 'picker__month',
+	year: 'picker__year',
+
+	// Month &amp; year dropdowns
+	selectMonth: 'picker__select--month',
+	selectYear: 'picker__select--year',
+
+	// Table of dates
+	table: 'picker__table',
+
+	// Weekday labels
+	weekdays: 'picker__weekday',
+
+	// Day states
+	day: 'picker__day',
+	disabled: 'picker__day--disabled',
+	selected: 'picker__day--selected',
+	highlighted: 'picker__day--highlighted',
+	now: 'picker__day--today',
+	infocus: 'picker__day--infocus',
+	outfocus: 'picker__day--outfocus',
+
+	// The picker footer
+	footer: 'picker__footer',
+
+	// Today, clear, &amp; close buttons
+	buttonClear: 'picker__button--clear',
+	buttonClose: 'picker__button--close',
+	buttonToday: 'picker__button--today'
+}
+</code></pre>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Time picker options</h6>
+										<p>These are the default settings of a time picker:</p>
+										<pre><code class="language-javascript">// Translations and clear button
+clear: 'Clear',
+
+// Formats
+format: 'h:i A',
+formatLabel: undefined,
+formatSubmit: undefined,
+hiddenPrefix: undefined,
+hiddenSuffix: '_submit',
+
+// Editable input
+editable: undefined,
+
+// Time intervals
+interval: 30,
+
+// Time limits
+min: undefined,
+max: undefined,
+
+// Root picker container
+container: undefined,
+
+// Hidden input container
+containerHidden: undefined,
+
+// Close on a user action
+closeOnSelect: true,
+closeOnClear: true,
+
+// Events
+onStart: undefined,
+onRender: undefined,
+onOpen: undefined,
+onClose: undefined,
+onSet: undefined,
+onStop: undefined,
+
+// Classes
+klass: {
+
+	// The element states
+	input: 'picker__input',
+	active: 'picker__input--active',
+
+	// The root picker and states *
+	picker: 'picker picker--time',
+	opened: 'picker--opened',
+	focused: 'picker--focused',
+
+	// The picker holder
+	holder: 'picker__holder',
+
+	// The picker frame, wrapper, and box
+	frame: 'picker__frame',
+	wrap: 'picker__wrap',
+	box: 'picker__box',
+
+	// List of times
+	list: 'picker__list',
+	listItem: 'picker__list-item',
+
+	// Time states
+	disabled: 'picker__list-item--disabled',
+	selected: 'picker__list-item--selected',
+	highlighted: 'picker__list-item--highlighted',
+	viewset: 'picker__list-item--viewset',
+	now: 'picker__list-item--now',
+
+	// Clear button
+	buttonClear: 'picker__button--clear',
+}
+</code></pre>
+									</div>
+
+									<div>
+										<h6 class="font-weight-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="font-weight-semibold">File name</td>
+														<td>picker.js, picker.date.js, picker.time.js, legacy.js</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Location</td>
+														<td>global_assets/js/plugins/pickers/pickadate/</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Links</td>
+														<td>
+															<p>
+																<a href="http://amsul.ca/pickadate.js/" class="btn btn-sm bg-danger-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+
+															<p>
+																<a href="http://amsul.ca/pickadate.js/date/" class="btn btn-sm bg-slate btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-calendar3"></i></b>
+																	Date picker docs
+																</a>
+															</p>
+
+															<p>
+																<a href="http://amsul.ca/pickadate.js/time/" class="btn btn-sm bg-slate btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-watch"></i></b>
+																	Time picker docs
+																</a>
+															</p>
+
+															<p>
+																<a href="http://amsul.ca/pickadate.js/api/" class="btn btn-sm bg-slate btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-file-text2"></i></b>
+																	API documentation
+																</a>
+															</p>
+
+															<a href="https://github.com/amsul/pickadate.js" class="btn btn-sm bg-blue btn-labeled btn-labeled-left" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /pick-a-date pickers -->
+
+					</div>
+					<!-- /left content -->
+
+
+					<!-- Right sidebar component -->
+					<div class="sidebar-sticky w-100 w-md-auto order-1 order-md-2">
+						<div class="sidebar sidebar-light sidebar-component sidebar-component-right sidebar-expand-md mb-3">
+							<div class="sidebar-content">
+								<div class="card">
+									<div class="card-header bg-transparent header-elements-inline">
+										<span class="text-uppercase font-size-sm font-weight-semibold">Page navigation</span>
+										<div class="header-elements">
+											<div class="list-icons">
+						                		<a class="list-icons-item" data-action="collapse"></a>
+					                		</div>
+				                		</div>
+									</div>
+
+									<div class="card-body">
+										<a href="http://themeforest.net/user/kopyov" class="btn bg-blue btn-block" target="_blank"><i class="icon-reading mr-2"></i> Contact author</a>
+									</div>
+
+									<ul class="nav nav-sidebar nav-scrollspy" data-nav-type="accordion">
+										<li class="nav-item-header pt-0"><div class="text-uppercase font-size-xs line-height-xs">Sections</div> <i class="icon-menu"></i></li>
+										<li class="nav-item"><a href="#spectrum" class="nav-link">Spectrum Color Picker</a></li>
+										<li class="nav-item"><a href="#location" class="nav-link">Location Picker</a></li>
+										<li class="nav-item"><a href="#address" class="nav-link">Address Picker</a></li>
+										<li class="nav-item"><a href="#anytime" class="nav-link">Anytime Picker</a></li>
+										<li class="nav-item"><a href="#daterange" class="nav-link">Date Range Picker</a></li>
+										<li class="nav-item"><a href="#pickadate" class="nav-link">Pick-a-date Pickers</a></li>
+										<li class="nav-item-divider"></li>
+										<li class="nav-item"><a href="#" class="nav-link">Go to top <i class="icon-circle-up2 mr-0 ml-auto"></i></a></li>
+									</ul>
+								</div>
+				            </div>
+						</div>
+					</div>
+					<!-- /right sidebar component -->
+
+				</div>
+				<!-- /inner container -->
+
+			</div>
+			<!-- /content area -->
+
+
+			<!-- Footer -->
+			<div class="navbar navbar-expand-lg navbar-light">
+				<div class="text-center d-lg-none w-100">
+					<button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse" data-target="#navbar-footer">
+						<i class="icon-unfold mr-2"></i>
+						Footer
+					</button>
+				</div>
+
+				<div class="navbar-collapse collapse" id="navbar-footer">
+					<span class="navbar-text">
+						&copy; 2015 - 2018. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
+					</span>
+
+					<ul class="navbar-nav ml-lg-auto">
+						<li class="nav-item"><a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov" class="navbar-nav-link font-weight-semibold"><span class="text-pink-400"><i class="icon-cart2 mr-2"></i> Purchase</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /footer -->
+
+		</div>
+		<!-- /main content -->
+
+	</div>
+	<!-- /page content -->
+
+</body>
+</html>

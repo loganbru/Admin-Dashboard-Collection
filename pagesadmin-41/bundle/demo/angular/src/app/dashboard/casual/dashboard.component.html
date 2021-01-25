@@ -1,0 +1,83 @@
+<!-- START CONTAINER FLUID -->
+<div class="container sm-padding-10 p-t-20 p-l-0 p-r-0 sm-gutter">
+  <!-- START ROW -->
+  <div class="row">
+    <div class="col-lg-3 col-sm-6 d-flex flex-column">
+      <!-- START WIDGET -->
+      <!-- START ITEM -->
+      <pgcardsocial Type="widget" AdditionalClasses="full-width m-b-10 no-border" Title="News" TitleClass="text-complete" Comments="5,345"
+        Body="Ebola outbreak: Clinical drug trials to start next month as death toll mounts" Source="CNN" Timestamp="Jul 24">
+      </pgcardsocial>
+      <!-- END ITEM -->
+      <!-- END WIDGET -->
+      <!-- START WIDGET -->
+      <weekly-sales-widget></weekly-sales-widget>
+      <!-- END WIDGET -->
+      <!-- START WIDGET -->
+      <quick-stats-widget></quick-stats-widget>
+      <!-- END WIDGET -->
+    </div>
+    <div class="col-lg-3 col-sm-6 d-flex flex-column">
+      <!-- START ITEM -->
+      <pgcardsocial Type="widget" AdditionalClasses="full-width m-b-10 no-border" Title="Stock Market" TitleClass="text-success"
+        Comments="5,345" Source="John Smith" Timestamp="Apr 24">
+        <ng-template #CustomBody>
+          <h5 class='hint-text no-margin'>Apple Inc.</h5>
+          <h5 class="small hint-text no-margin">NASDAQ: AAPL - Nov 13 8:37 AM ET</h5>
+          <h3 class="m-b-0">111.25
+            <span class="text-success">
+              <i class="fa fa-sort-up small text-success"></i> 0.15</span>
+          </h3>
+        </ng-template>
+      </pgcardsocial>
+      <!-- END ITEM -->
+      <!-- START ITEM -->
+      <pgcardsocial Type="image" AdditionalClasses="share-other full-width m-b-10 d-flex flex-1 full-height no-border"
+        Comments="5,345" Likes="23K" Source="John Smith" Image="assets/img/dashboard/social_new.jpg" Timestamp="few seconds ago"
+        Author="David Nester" Activity="Shared a link on your wall">
+        <ng-template #CustomBody>
+          <p>
+            <a href="javascript:void(0)">#TBT</a> :D</p>
+        </ng-template>
+        <ng-template #AuthorAvatar>
+          <img alt="Avatar" width="33" height="33" pgRetina src2x="assets/img/profiles/avatar_small2x.jpg" src1x="assets/img/profiles/avatar.jpg"
+            src="assets/img/profiles/avatar_small2x.jpg">
+        </ng-template>
+      </pgcardsocial>
+      <!-- END ITEM -->
+    </div>
+    <div class="col-lg-6 m-b-10 d-flex">
+      <!-- START WIDGET -->
+      <graph-widget-basic></graph-widget-basic>
+      <!-- END WIDGET -->
+    </div>
+  </div>
+  <!-- END ROW -->
+  <!-- START ROW -->
+  <div class="row m-b-30">
+    <div class="col-lg-7">
+      <!-- START ROW -->
+      <div class="row d-flex align-items-stretch">
+        <div class="col-sm-6 md-p-b-10">
+          <!-- START WIDGET -->
+          <project-progress-widget></project-progress-widget>
+
+          <!-- END WIDGET -->
+        </div>
+        <div class="col-sm-6 sm-m-t-10 md-p-b-10 d-flex">
+          <!-- START WIDGET -->
+          <todo-list-widget></todo-list-widget>
+          <!-- END WIDGET -->
+        </div>
+      </div>
+      <!-- END ROW -->
+    </div>
+    <div class="col-lg-5 sm-m-t-10 d-flex">
+      <!-- START WIDGET -->
+      <table-basic-widget></table-basic-widget>
+      <!-- END WIDGET -->
+    </div>
+  </div>
+  <!-- END ROW -->
+</div>
+<!-- END CONTAINER FLUID -->

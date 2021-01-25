@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required Meta Tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <title> Bulkit :: Popups</title>
+        <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+
+        <!--Core CSS -->
+        <link rel="stylesheet" href="assets/css/bulma.css">
+        <link rel="stylesheet" href="assets/css/app.css">
+        <link rel="stylesheet" href="assets/css/core_demo.css">
+        <link rel="stylesheet" href="assets/css/icons.min.css">
+
+    </head>
+    <body>
+        <div class="pageloader"></div>
+        <div class="infraloader is-active"></div>        
+        <!-- Hero and nav -->
+        <div class="hero is-relative is-theme-info">
+            
+            <nav class="navbar navbar-wrapper navbar-light is-transparent is-static">
+                <div class="container">
+                    <!-- Brand -->
+                    <div class="navbar-brand">
+                        <a class="navbar-item" href="/">
+                            <img src="assets/images/logos/bulkit-white.svg" alt="">
+                        </a>
+            
+                        <!-- Sidebar Trigger -->
+                        <a id="navigation-trigger" class="navbar-item hamburger-btn" href="javascript:void(0);">
+                            <span class="menu-toggle">
+                                <span class="icon-box-toggle">
+                                    <span class="rotate">
+                                        <i class="icon-line-top"></i>
+                                        <i class="icon-line-center"></i>
+                                        <i class="icon-line-bottom"></i>
+                                    </span>
+                                </span>
+                            </span>
+                        </a>
+            
+                        <!-- Responsive toggle -->
+                        <div class="custom-burger" data-target="">
+                            <a id="" class="responsive-btn" href="javascript:void(0);">
+                                <span class="menu-toggle">
+                                    <span class="icon-box-toggle">
+                                        <span class="rotate">
+                                            <i class="icon-line-top"></i>
+                                            <i class="icon-line-center"></i>
+                                            <i class="icon-line-bottom"></i>
+                                        </span>
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
+                        <!-- /Responsive toggle -->
+                    </div>
+            
+                    <!-- Navbar menu -->
+                    <div class="navbar-menu">
+                        <!-- Navbar Start -->
+                        <div class="navbar-start">
+                            <!-- Dropdown -->
+                            <div class="navbar-item has-dropdown is-hoverable is-hidden-mobile">
+                                <a class="navbar-link" href="#demos">
+                                    Demos
+                                </a>
+                                <div class="navbar-dropdown is-boxed is-medium">
+                                    <!-- Dropdown item -->
+                                    <a class="navbar-item is-menu" href="/agency/index.html">
+                                        <i class="material-icons">weekend</i>
+                                        <span>Agency Kit</span>
+                                    </a>
+                                    <!-- Dropdown item -->
+                                    <a class="navbar-item is-menu" href="/startup/index.html">
+                                        <i class="material-icons">wb_incandescent</i>
+                                        <span>Startup Kit</span>
+                                    </a>
+                                    <!-- Dropdown item -->
+                                    <a class="navbar-item is-menu" href="/landing-kits/kit-1/index.html">
+                                        <i class="material-icons">looks</i>
+                                        <span>Landing Kit 1</span>
+                                    </a>
+                                    <!-- Dropdown item -->
+                                    <a class="navbar-item is-menu" href="/landing-kits/kit-2/index.html">
+                                        <i class="material-icons">invert_colors</i>
+                                        <span>Landing Kit 2</span>
+                                    </a>
+                                    <!-- Dropdown item -->
+                                    <a class="navbar-item is-menu" href="/landing-kits/kit-3/index.html">
+                                        <i class="material-icons">bubble_chart</i>
+                                        <span>Landing Kit 3</span>
+                                    </a>
+                                    <!-- Dropdown item -->
+                                    <a class="navbar-item is-menu" href="/landing-kits/kit-4/index.html">
+                                        <i class="material-icons">business</i>
+                                        <span>Landing Kit 4</span>
+                                    </a>
+                                    <!-- Dropdown item -->
+                                    <a class="navbar-item is-menu" href="/landing-kits/kit-5/index.html">
+                                        <i class="material-icons">face</i>
+                                        <span>Landing Kit 5</span>
+                                    </a>
+                                    <!-- Dropdown item -->
+                                    <a class="navbar-item is-menu" href="/landing-kits/kit-6/index.html">
+                                        <i class="material-icons">cloud</i>
+                                        <span>Landing Kit 6</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Mobile dropdown -->
+                            <div class="mobile-drop is-hidden-desktop">
+                                <div class="mobile-drop-trigger">
+                                    Demos <i class="material-icons">keyboard_arrow_right</i>
+                                </div>
+                                <div class="child-menu">
+                                    <ul>
+                                        <li>
+                                            <a href="/agency/index.html">Agency kit</a>
+                                        </li>
+                                        <li>
+                                            <a href="/startup/index.html">Startup kit</a>
+                                        </li>
+                                        <li>
+                                            <a href="/landing-kits/kit-1/index.html">Landing kit 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="/landing-kits/kit-2/index.html">Landing kit 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="/landing-kits/kit-3/index.html">Landing kit 3</a>
+                                        </li>
+                                        <li>
+                                            <a href="/landing-kits/kit-4/index.html">Landing kit 4</a>
+                                        </li>
+                                        <li>
+                                            <a href="/landing-kits/kit-5/index.html">Landing kit 5</a>
+                                        </li>
+                                        <li>
+                                            <a href="/landing-kits/kit-6/index.html">Landing kit 6</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Navbar item -->
+                            <a class="navbar-item is-slide" href="https://docs.bulkit.cssninja.io/" target="_blank">
+                                Docs
+                            </a>
+                            <!-- Navbar item -->
+                            <a class="navbar-item is-slide" href="https://cssninja.io/" target="_blank">
+                                Support
+                            </a>
+                        </div>
+            
+                        <!-- Navbar end -->
+                        <div class="navbar-end">
+                            <!-- Signup button -->
+                            <div class="navbar-item">
+                                <a id="#signup-btn" href="https://themeforest.net/item/bulkit-agency-startup-and-saas-template/21278677?ref=cssninjaStudio" class="button button-cta btn-outlined is-bold btn-align light-btn rounded raised">
+                                    Buy now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- Hero image -->
+            <div id="main-hero" class="hero-body">
+                <div class="container has-text-centered">
+                    <div class="columns is-vcentered">
+                        <div class="column is-4 is-offset-1 has-text-left">
+                            <h1 class="title components-title is-1">
+                                Popovers 
+                            </h1>
+                            <h2 class="subtitle is-4 components-subtitle">
+                                Tooltips and popover styles
+                            </h2>
+                            <p class="components-cta">
+                                <a href="#popovers" class="button button-cta btn-align light-btn btn-outlined is-bold rounded">
+                                    Get Started
+                                </a>
+                            </p>
+                        </div>
+                        <div class="column is-offset-1 has-text-centered is-hidden-mobile">
+                            <div id="popups-ill" class="vivus-svg"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Hero image -->
+        </div>
+        <!-- /Hero and nav -->
+        
+        <!-- Scrollnav -->
+        <div id="scrollnav" class="scroll-nav-wrapper">
+            <div class="container">
+                <div class="tabs scrollnav-tabs is-centered">
+                    <ul>
+                        <li class="scrollnav-item is-active"><a href="#popovers">Popovers</a></li>
+                        <li class="scrollnav-item"><a href="#tooltips">Tooltips</a></li>
+                    </ul>
+                </div>
+            </div>  
+        </div>
+        <!-- /Scrollnav -->
+        
+        <section id="popovers" class="section is-medium">
+            <div class="container">
+                <div id="popovers" class="section-title-wrapper has-text-centered">
+                    <div class="bg-number">1</div>
+                    <h2 class="title section-title has-text-centered dark-text text-bold">
+                        Popovers
+                    </h2>
+                </div>
+        
+                <!-- Basic popovers -->
+                <div class="columns is-vcentered">
+                    <div class="column is-6 is-offset-3">
+                        <div class="info-block has-text-centered">
+                            <h4>Popover triggers</h4>
+                            <p class="no-padding">Popovers can be triggered by click, on hover and on focus. To set up a popover on an element, use the data attribute <code>data-toggle="popover"</code>. You can then pass other options with data attributes, like <code>data-trigger=""</code>, <code>data-placement=""</code>, <code>data-title=""</code> and <code>data-content=""</code> for the popover content.</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="columns is-vcentered has-text-centered">
+                    <div class="column is-3 is-offset-3">
+                        <div class="button btn-align" data-toggle="popover"
+                             data-placement="top"
+                             title="Click popover"
+                             data-content="And here's some amazing content. It's very engaging. Right?">
+                            Click me</div>
+                    </div>
+                    <div class="column is-3">
+                        <div class="button btn-align" data-toggle="popover"
+                             data-placement="top"
+                             title="Hover Popover"
+                             data-trigger="hover"
+                             data-content="And here's some amazing content. It's very engaging. Right?">
+                            Hover me</div>
+                    </div>
+                </div>
+        
+                <div class="columns">
+                    <div class="column is-6 is-offset-3">
+                        <!-- Code section -->
+                        <div class="accordion-wrapper">
+                            <div class="toggle-wrap">
+                                <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                                <div class="toggle-container">
+                                    <div class="navigation-tabs animated-tabs simple-tabs mb-40">
+                                        <div class="tabs is-right">
+                                            <ul>
+                                                <li class="tab-link is-active" data-tab="click"><a>click</a></li>
+                                                <li class="tab-link" data-tab="hover"><a>hover</a></li>
+                                                <li class="tab-link" data-tab="focus"><a>focus</a></li>
+                                            </ul>
+                                        </div>
+                                        <div id="click" class="navtab-content is-active">
+                                            <figure class="highlight highlight-block"><pre><code class="html code-highlight">
+        &#x3C;div class=&#x22;button btn-align&#x22; data-toggle=&#x22;popover&#x22;
+             data-placement=&#x22;top&#x22;
+             title=&#x22;Click popover&#x22;
+             data-content=&#x22;And here&#x27;s some amazing content. It&#x27;s very engaging. Right?&#x22;&#x3E;
+            Click me&#x3C;/div&#x3E;
+                                    </code></pre></figure>
+                                        </div>
+                                        <div id="hover" class="navtab-content">
+                                            <figure class="highlight highlight-block"><pre><code class="html code-highlight">
+        &#x3C;div class=&#x22;button btn-align&#x22; data-toggle=&#x22;popover&#x22;
+             data-placement=&#x22;top&#x22;
+             title=&#x22;Click popover&#x22;
+             data-trigger=&#x22;hover&#x22;
+             data-content=&#x22;And here&#x27;s some amazing content. It&#x27;s very engaging. Right?&#x22;&#x3E;
+            Click me&#x3C;/div&#x3E;
+                                    </code></pre></figure>
+                                        </div>
+                                        <div id="focus" class="navtab-content">
+                                            <figure class="highlight highlight-block"><pre><code class="html code-highlight">
+        &#x3C;div class=&#x22;button btn-align&#x22; data-toggle=&#x22;popover&#x22;
+             data-placement=&#x22;top&#x22;
+             title=&#x22;Click popover&#x22;
+             data-trigger=&#x22;focus&#x22;
+             data-content=&#x22;And here&#x27;s some amazing content. It&#x27;s very engaging. Right?&#x22;&#x3E;
+            Focus me&#x3C;/div&#x3E;
+                                    </code></pre></figure>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Code section -->
+                    </div>
+                </div>
+                <!-- Basic popovers -->
+        
+                <!-- Popover positions -->
+                <div class="columns is-vcentered pt-60">
+                    <div class="column is-6 is-offset-3">
+                        <div class="info-block has-text-centered">
+                            <h4>Popover positions</h4>
+                            <p class="no-padding">Use the <code>data-placement=""</code> attribute to position a popover. Available values are <code>top</code>, <code>bottom</code>, <code>left</code> and <code>right</code>.</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="columns is-vcentered has-text-centered">
+                    <div class="column is-3">
+                        <div class="button btn-align" data-toggle="popover"
+                             data-placement="right"
+                             title="Right"
+                             data-trigger="hover"
+                             data-content="A right aligned popover is a really boring thing in the real life.">
+                            Right</div>
+                    </div>
+                    <div class="column is-3">
+                        <div class="button btn-align" data-toggle="popover"
+                             data-placement="top"
+                             title="Top"
+                             data-trigger="hover"
+                             data-content="A top aligned popover is a really boring thing in the real life.">
+                            Top</div>
+                    </div>
+                    <div class="column is-3">
+                        <div class="button btn-align" data-toggle="popover"
+                             data-placement="bottom"
+                             title="Bottom"
+                             data-trigger="hover"
+                             data-arrowcolor="#f7f7f7"
+                             data-content="A bottom aligned popover is a really boring thing in the real life.">
+                            Bottom</div>
+                    </div>
+                    <div class="column is-3">
+                        <div class="button btn-align" data-toggle="popover"
+                             data-placement="left"
+                             title="Left"
+                             data-trigger="hover"
+                             data-content="A left aligned popover is a really boring thing in the real life.">
+                            Left</div>
+                    </div>
+                </div>
+                <!-- Popover positions -->
+        
+                <!-- Custom examples -->
+                <div class="columns is-vcentered pt-60">
+                    <div class="column is-6 is-offset-3">
+                        <div class="info-block has-text-centered">
+                            <h4>Custom examples</h4>
+                            <p class="no-padding">You can customize header colors with more data attributes. Use <code>data-title-backcolor=""</code>, <code>data-title-textcolor=""</code> and <code>data-arrowcolor=""</code> to customize your popover. Check the code examples.</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="columns is-vcentered has-text-centered">
+                    <div class="column is-3">
+                        <div class="button btn-align" data-toggle="popover"
+                             data-placement="right"
+                             title="Right"
+                             data-trigger="hover"
+                             data-title-backcolor="#eda514"
+                             data-title-textcolor="#fff"
+                             data-content="A right aligned popover is a really boring thing in the real life.">
+                            Right</div>
+                    </div>
+                    <div class="column is-3">
+                        <div class="button btn-align" data-toggle="popover"
+                             data-placement="top"
+                             title="Top"
+                             data-trigger="hover"
+                             data-title-backcolor="#fff"
+                             data-content="A top aligned popover is a really boring thing in the real life.">
+                            Top</div>
+                    </div>
+                    <div class="column is-3">
+                        <div class="button btn-align" data-toggle="popover"
+                             data-placement="bottom"
+                             title="Bottom"
+                             data-trigger="hover"
+                             data-arrowcolor="#00b289"
+                             data-title-backcolor="#00b289"
+                             data-title-textcolor="#fff"
+                             data-content="A bottom aligned popover is a really boring thing in the real life.">
+                            Bottom</div>
+                    </div>
+                    <div class="column is-3">
+                        <div class="button btn-align" data-toggle="popover"
+                             data-placement="left"
+                             title="Left"
+                             data-trigger="hover"
+                             data-title-backcolor="#039BE5"
+                             data-title-textcolor="#fff"
+                             data-content="A left aligned popover is a really boring thing in the real life.">
+                            Left</div>
+                    </div>
+                </div>
+        
+                <div class="columns">
+                    <div class="column is-6 is-offset-3">
+                        <!-- Code section -->
+                        <div class="accordion-wrapper">
+                            <div class="toggle-wrap">
+                                <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                                <div class="toggle-container">
+                                    <div class="navigation-tabs animated-tabs simple-tabs mb-40">
+                                        <div class="tabs is-right">
+                                            <ul>
+                                                <li class="tab-link is-active" data-tab="orange"><a>orange</a></li>
+                                                <li class="tab-link" data-tab="white"><a>white</a></li>
+                                                <li class="tab-link" data-tab="green"><a>green</a></li>
+                                            </ul>
+                                        </div>
+                                        <div id="orange" class="navtab-content is-active">
+                                            <figure class="highlight highlight-block"><pre><code class="html code-highlight">
+        &#x3C;div class=&#x22;button btn-align&#x22; data-toggle=&#x22;popover&#x22;
+                 data-placement=&#x22;right&#x22;
+                 title=&#x22;Right&#x22;
+                 data-trigger=&#x22;hover&#x22;
+                 data-title-backcolor=&#x22;#eda514&#x22;
+                 data-title-textcolor=&#x22;#fff&#x22;
+                 data-content=&#x22;A right aligned popover is a really boring thing in the real life.&#x22;&#x3E;
+                Right&#x3C;/div&#x3E;
+                                    </code></pre></figure>
+                                        </div>
+                                        <div id="white" class="navtab-content">
+                                            <figure class="highlight highlight-block"><pre><code class="html code-highlight">
+        &#x3C;div class=&#x22;button btn-align&#x22; data-toggle=&#x22;popover&#x22;
+                 data-placement=&#x22;top&#x22;
+                 title=&#x22;Top&#x22;
+                 data-trigger=&#x22;hover&#x22;
+                 data-title-backcolor=&#x22;#fff&#x22;
+                 data-content=&#x22;A top aligned popover is a really boring thing in the real life.&#x22;&#x3E;
+                Top&#x3C;/div&#x3E;
+                                    </code></pre></figure>
+                                        </div>
+                                        <div id="green" class="navtab-content">
+                                            <figure class="highlight highlight-block"><pre><code class="html code-highlight">
+        &#x3C;div class=&#x22;button btn-align&#x22; data-toggle=&#x22;popover&#x22;
+                 data-placement=&#x22;bottom&#x22;
+                 title=&#x22;Bottom&#x22;
+                 data-trigger=&#x22;hover&#x22;
+                 data-title-backcolor=&#x22;#00b289&#x22;
+                 data-title-textcolor=&#x22;#fff&#x22;
+                 data-arrowcolor=&#x22;#00b289&#x22;
+                 data-content=&#x22;A bottom aligned popover is a really boring thing in the real life.&#x22;&#x3E;
+                Bottom&#x3C;/div&#x3E;
+                                    </code></pre></figure>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Code section -->
+                    </div>
+                </div>
+                <!-- /Custom examples -->
+        
+            </div>
+        </section>
+        
+        <section class="section section-feature-grey is-medium">
+            <div class="container">
+                <div id="tooltips" class="section-title-wrapper has-text-centered">
+                    <div class="bg-number">2</div>
+                    <h2 class="title section-title has-text-centered dark-text text-bold">
+                        Tooltips
+                    </h2>
+                </div>
+        
+                <!-- Basic tooltips -->
+                <div class="columns is-vcentered pt-60">
+                    <div class="column is-6 is-offset-3">
+                        <div class="info-block has-text-centered">
+                            <h4>Tooltip triggers</h4>
+                            <p>Tooltips can be triggered by click, on hover and on focus. To set up a tooltip on an element, use the data attribute <code>data-toggle="popover"</code>. You can then pass other options with data attributes, like <code>data-trigger=""</code>, <code>data-placement=""</code>.</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="columns is-vcentered has-text-centered">
+                    <div class="column is-3 is-offset-3">
+                        <div class="button btn-align" data-toggle="tooltip"
+                             data-placement="top"
+                             data-trigger="click"
+                             data-title="Top tooltip">
+                            Click tooltip</div>
+                    </div>
+                    <div class="column is-3">
+                        <div class="button btn-align" data-toggle="tooltip"
+                             data-placement="top"
+                             data-title="Top tooltip">
+                            Hover tooltip</div>
+                    </div>
+                </div>
+        
+                <div class="columns">
+                    <div class="column is-6 is-offset-3">
+                        <!-- Code section -->
+                        <div class="accordion-wrapper">
+                            <div class="toggle-wrap">
+                                <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                                <div class="toggle-container">
+                                    <div class="navigation-tabs animated-tabs simple-tabs mb-40">
+                                        <div class="tabs is-right">
+                                            <ul>
+                                                <li class="tab-link is-active" data-tab="tooltip-click"><a>click</a></li>
+                                                <li class="tab-link" data-tab="tooltip-hover"><a>hover</a></li>
+                                                <li class="tab-link" data-tab="tooltip-focus"><a>focus</a></li>
+                                            </ul>
+                                        </div>
+                                        <div id="tooltip-click" class="navtab-content is-active">
+                                            <figure class="highlight highlight-block"><pre><code class="html code-highlight">
+        &#x3C;div class=&#x22;button btn-align&#x22; data-toggle=&#x22;tooltip&#x22;
+             data-placement=&#x22;top&#x22;
+             data-title=&#x22;Top tooltip&#x22;
+             data-trigger=&#x22;click&#x22;
+            Click me&#x3C;/div&#x3E;
+                                    </code></pre></figure>
+                                        </div>
+                                        <div id="tooltip-hover" class="navtab-content">
+                                            <figure class="highlight highlight-block"><pre><code class="html code-highlight">
+        &#x3C;div class=&#x22;button btn-align&#x22; data-toggle=&#x22;tooltip&#x22;
+             data-placement=&#x22;top&#x22;
+             data-title=&#x22;Top tooltip&#x22;
+             data-trigger=&#x22;hover&#x22;
+            Hover me&#x3C;/div&#x3E;
+                                    </code></pre></figure>
+                                        </div>
+                                        <div id="tooltip-focus" class="navtab-content">
+                                            <figure class="highlight highlight-block"><pre><code class="html code-highlight">
+        &#x3C;div class=&#x22;button btn-align&#x22; data-toggle=&#x22;tooltip&#x22;
+             data-placement=&#x22;top&#x22;
+             data-title=&#x22;Top tooltip&#x22;
+             data-trigger=&#x22;focus&#x22;
+            Focus me&#x3C;/div&#x3E;
+                                    </code></pre></figure>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Code section -->
+                    </div>
+                </div>
+                <!-- Basic tooltips -->
+        
+                <!-- Basic tooltips -->
+                <div class="columns is-vcentered pt-60">
+                    <div class="column is-6 is-offset-3">
+                        <div class="info-block has-text-centered">
+                            <h4>Tooltip positions</h4>
+                            <p class="no-padding">Use the <code>data-placement=""</code> attribute to position a tooltip. Available values are <code>top</code>, <code>bottom</code>, <code>left</code> and <code>right</code>.</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="columns is-vcentered has-text-centered">
+                    <div class="column is-3">
+                        <div class="button btn-align" data-toggle="tooltip"
+                             data-placement="right"
+                             data-title="Right tooltip">
+                            Right</div>
+                    </div>
+                    <div class="column is-3">
+                        <div class="button btn-align" data-toggle="tooltip"
+                             data-placement="left"
+                             data-title="Left tooltip">
+                            Left</div>
+                    </div>
+                    <div class="column is-3">
+                        <div class="button btn-align" data-toggle="tooltip"
+                             data-placement="top"
+                             data-title="Top tooltip">
+                            Top</div>
+                    </div>
+                    <div class="column is-3">
+                        <div class="button btn-align" data-toggle="tooltip"
+                             data-placement="bottom"
+                             data-title="Bottom tooltip">
+                            Bottom</div>
+                    </div>
+                </div>
+                <!-- Basic tooltips -->
+        
+            </div>
+        </section>
+        
+        <!-- Dark footer -->
+        <footer id="dark-footer" class="footer footer-dark">
+            <div class="container">
+                <div class="columns">
+                    <div class="column">
+                        <div class="footer-column">
+                            <div class="footer-header">
+                                <h3>Product</h3>
+                            </div>
+                            <ul class="link-list">
+                                <li><a href="#">Discover features</a></li>
+                                <li><a href="#">CMS integration</a></li>
+                                <li><a href="#">Customers</a></li>
+                                <li><a href="#">Weekly sessions</a></li>
+                                <li><a href="#">Free trials and demo</a></li>
+                                <li><a href="#">What's next ?</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="footer-column">
+                            <div class="footer-header">
+                                <h3>Company</h3>
+                            </div>
+                            <ul class="link-list">
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">About security</a></li>
+                                <li><a href="#">User guide</a></li>
+                                <li><a href="#">Terms of service</a></li>
+                                <li><a href="#">Terms of website use</a></li>
+                                <li><a href="#">Privacy policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="footer-column">
+                            <div class="footer-header">
+                                <h3>Learning</h3>
+                            </div>
+                            <ul class="link-list">
+                                <li><a href="#">Resources</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">API documentation</a></li>
+                                <li><a href="#">Admin guide</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="footer-column">
+                            <div class="footer-logo">
+                                <img src="assets/images/logos/bulkit-sky.svg" alt="">
+                            </div>
+                            <div class="footer-header">
+                                <nav class="level is-mobile">
+                                    <div class="level-left level-social">
+                                        <a href="#" class="level-item">
+                                            <span class="icon"><i class="fa fa-facebook"></i></span>
+                                        </a>
+                                        <a href="#" class="level-item">
+                                            <span class="icon"><i class="fa fa-twitter"></i></span>
+                                        </a>
+                                        <a href="#" class="level-item">
+                                            <span class="icon"><i class="fa fa-linkedin"></i></span>
+                                        </a>
+                                        <a href="#" class="level-item">
+                                            <span class="icon"><i class="fa fa-dribbble"></i></span>
+                                        </a>
+                                        <a href="#" class="level-item">
+                                            <span class="icon"><i class="fa fa-github"></i></span>
+                                        </a>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="copyright">
+                                <span class="moto light-text">Designed and coded with <i class="fa fa-heart color-red"></i> by CSS Ninja.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- /Dark footer -->        <!-- Side navigation -->
+        <div class="side-navigation-menu">
+            <!-- Categories menu -->
+            <div class="category-menu-wrapper">
+                <!-- Menu -->
+                <ul class="categories">
+                    <li class="square-logo"><img src="assets/images/logos/square-white.svg" alt=""></li>
+                    <li class="category-link is-active" data-navigation-menu="demo-pages"><i class="sl sl-icon-layers"></i></li>
+                    <li class="category-link" data-navigation-menu="onepagers"><i class="sl sl-icon-energy"></i></li>
+                    <li class="category-link" data-navigation-menu="components"><i class="sl sl-icon-grid"></i></li>
+                </ul>
+                <!-- Menu -->
+        
+                <ul class="author">
+                    <li>
+                        <!-- Theme author -->
+                        <a href="https://cssninja.io" target="_blank">
+                            <img class="main-menu-author" src="assets/images/logos/cssninja.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /Categories menu -->
+        
+            <!-- Navigation menu -->
+            <div id="demo-pages" class="navigation-menu-wrapper animated preFadeInRight fadeInRight">
+                <!-- Navigation Header -->
+                <div class="navigation-menu-header">
+                    <span>Demo pages</span>
+                    <a class="ml-auto hamburger-btn navigation-close" href="javascript:void(0);">
+                        <span class="menu-toggle">
+                            <span class="icon-box-toggle">
+                                <span class="rotate">
+                                    <i class="icon-line-top"></i>
+                                    <i class="icon-line-center"></i>
+                                    <i class="icon-line-bottom"></i>
+                                </span>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <!-- Navigation Body -->
+                <ul class="navigation-menu">
+                    <li class="has-children"><a class="parent-link" href="#"><span class="material-icons">weekend</span>Agency kit</a>
+                        <ul>
+                            <li><a class="is-submenu" href="/agency/index.html">Homepage</a></li>
+                            <li><a class="is-submenu" href="/agency/agency-about.html">About</a></li>
+                            <li><a class="is-submenu" href="/agency/agency-portfolio.html">Portfolio</a></li>
+                            <li><a class="is-submenu" href="/agency/agency-contact.html">Contact</a></li>
+                            <li><a class="is-submenu" href="/agency/agency-blog.html">Blog</a></li>
+                            <li><a class="is-submenu" href="/agency/agency-post-sidebar.html">Post sidebar</a></li>
+                            <li><a class="is-submenu" href="/agency/agency-post-nosidebar.html">Post no sidebar</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children"><a class="parent-link" href="#"><span class="material-icons">wb_incandescent</span>Startup kit</a>
+                        <ul>
+                            <li><a class="is-submenu" href="/startup/index.html">Homepage</a></li>
+                            <li><a class="is-submenu" href="/startup/startup-about.html">About</a></li>
+                            <li><a class="is-submenu" href="/startup/startup-product.html">Product</a></li>
+                            <li><a class="is-submenu" href="/startup/startup-contact.html">Contact</a></li>
+                            <li><a class="is-submenu" href="/startup/startup-login.html">Login</a></li>
+                            <li><a class="is-submenu" href="/startup/startup-signup.html">Sign up</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children"><a class="parent-link" href="#"><span class="material-icons">looks</span>Landing kit v1</a>
+                        <ul>
+                            <li><a class="is-submenu" href="/landing-kits/kit-1/index.html">Landing page</a></li>
+                            <li><a class="is-submenu" href="/landing-kits/kit-1/landing-features.html">Feature page</a></li>
+                            <li><a class="is-submenu" href="/landing-kits/kit-1/landing-pricing.html">Pricing page</a></li>
+                            <li><a class="is-submenu" href="/landing-kits/kit-1/landing-login.html">Login page</a></li>
+                            <li><a class="is-submenu" href="/landing-kits/kit-1/landing-signup.html">Signup page</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children"><a class="parent-link" href="#"><span class="material-icons">invert_colors</span>Landing kit v2</a>
+                        <ul>
+                            <li><a class="is-submenu" href="/landing-kits/kit-2/index.html">Landing page</a></li>
+                            <li><a class="is-submenu" href="/landing-kits/kit-2/landing-v1-features.html">Feature page</a></li>
+                            <li><a class="is-submenu" href="/landing-kits/kit-2/landing-v1-pricing.html">Pricing page</a></li>
+                            <li><a class="is-submenu" href="/landing-kits/kit-2/landing-v1-login.html">Login page</a></li>
+                            <li><a class="is-submenu" href="/landing-kits/kit-2/landing-v1-signup.html">Signup page</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children"><a class="parent-link" href="#"><span class="material-icons">chat_bubble</span>Landing kit v3</a>
+                        <ul>
+                            <li><a class="is-submenu" href="/landing-kits/kit-3/index.html">Landing page</a></li>
+                            <li><a class="is-submenu" href="/landing-kits/kit-3/landing-v2-features.html">Feature page</a></li>
+                            <li><a class="is-submenu" href="/landing-kits/kit-3/landing-v2-pricing.html">Pricing page</a></li>
+                            <li><a class="is-submenu" href="/landing-kits/kit-3/landing-v2-login.html">Login page</a></li>
+                            <li><a class="is-submenu" href="/landing-kits/kit-3/landing-v2-signup.html">Signup page</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children"><a class="parent-link" href="#"><span class="material-icons">business</span>Landing kit v4</a>
+                        <ul>
+                            <li><a class="is-submenu" href="/landing-kits/kit-4/index.html">Landing page</a></li>
+                            <li><a class="is-submenu" href="/landing-kits/kit-4/landing-v3-pricing.html">Pricing page</a></li>
+                            <li><a class="is-submenu" href="/landing-kits/kit-4/landing-v3-help.html">Help center</a></li>
+                            <li><a class="is-submenu" href="/landing-kits/kit-4/landing-v3-help-category.html">Help category</a></li>
+                            <li><a class="is-submenu" href="/landing-kits/kit-4/landing-v3-help-article.html">Help article</a></li>
+                            <li><a class="is-submenu" href="/landing-kits/kit-4/landing-v3-signup.html">Login</a></li>
+                            <li><a class="is-submenu" href="/landing-kits/kit-4/landing-v3-login.html">Sign up</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children"><a class="parent-link" href="#"><span class="material-icons">face</span>Landing kit v5</a>
+                        <ul>
+                            <li><a class="is-submenu has-new-feature" href="/landing-kits/kit-5/index.html">Landing page</a></li>
+                            <li><a class="is-submenu has-new-feature" href="/landing-kits/kit-5/landing-v4-features.html">Feature page</a></li>
+                            <li><a class="is-submenu has-new-feature" href="/landing-kits/kit-5/landing-v4-pricing.html">Pricing Page</a></li>
+                            <li><a class="is-submenu has-new-feature" href="/landing-kits/kit-5/landing-v4-login.html">Login / Signup</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children"><a class="parent-link" href="#"><span class="material-icons">cloud</span>Landing kit v6</a>
+                        <ul>
+                            <li><a class="is-submenu has-new-update" href="/landing-kits/kit-6/index.html">Landing page</a></li>
+                            <li><a class="is-submenu has-new-update" href="/landing-kits/kit-6/landing-v5-home.html">Landing page v2</a></li>
+                            <li><a class="is-submenu has-new-update" href="/landing-kits/kit-6/landing-v5-login.html">Login page</a></li>
+                            <li><a class="is-submenu has-new-update" href="/landing-kits/kit-6/landing-v5-signup.html">Signup page</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children"><a class="parent-link has-new" href="#"><span class="material-icons">backspace</span>Error
+                            Kit</a>
+                        <ul>
+                            <li><a class="is-submenu has-new-update is-2_4" href="/landing-kits/kit-error/index.html">Error 404 (V1)</a></li>
+                            <li><a class="is-submenu has-new-update is-2_4" href="/landing-kits/kit-error/error-2.html">Error 404 (V2)</a></li>
+                            <li><a class="is-submenu has-new-update is-2_4" href="/landing-kits/kit-error/error-3.html">Error 404 (V3)</a></li>
+                            <li><a class="is-submenu has-new-update is-2_4" href="/landing-kits/kit-error/error-4.html">Error 404 (V4)</a></li>
+                            <li><a class="is-submenu has-new-update is-2_4" href="/landing-kits/kit-error/error-5.html">Error 404 (V5)</a></li>
+                            <li><a class="is-submenu has-new-update is-2_4" href="/landing-kits/kit-error/error-6.html">Error 404 (V6)</a></li>
+                            <li><a class="is-submenu has-new-update is-2_4" href="/landing-kits/kit-error/error-7.html">Error 500 (V1)</a></li>
+                            <li><a class="is-submenu has-new-update is-2_4" href="/landing-kits/kit-error/error-8.html">Error 500 (V2)</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /Navigation menu -->
+            <!-- Navigation menu -->
+            <div id="onepagers" class="navigation-menu-wrapper animated preFadeInRight fadeInRight is-hidden">
+                <!-- Navigation Header -->
+                <div class="navigation-menu-header">
+                    <span>One Pagers</span>
+                    <a class="ml-auto hamburger-btn navigation-close" href="javascript:void(0);">
+                        <span class="menu-toggle">
+                            <span class="icon-box-toggle">
+                                <span class="rotate">
+                                    <i class="icon-line-top"></i>
+                                    <i class="icon-line-center"></i>
+                                    <i class="icon-line-bottom"></i>
+                                </span>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <!-- Navigation body -->
+                <ul class="navigation-menu">
+                    <li class="has-children"><a class="parent-link has-new" href="#"><span class="material-icons">dashboard</span>One Pager 1</a>
+                        <ul>
+                            <li><a class="is-submenu has-new-update is-2_3" href="/one-pager-1/">Header 1</a></li>
+                            <li><a class="is-submenu has-new-update is-2_3" href="/one-pager-1/op1-2.html">Header 2</a></li>
+                            <li><a class="is-submenu has-new-update is-2_3" href="/one-pager-1/op1-3.html">Header 3</a></li>
+                            <li><a class="is-submenu has-new-update is-2_3" href="/one-pager-1/op1-4.html">Header 4</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children"><a class="parent-link has-new" href="#">
+                            <span class="material-icons">markunread_mailbox</span>One Pager 2</a>
+                        <ul>
+                            <li><a class="is-submenu has-new-update is-2_4" href="/one-pager-2/">Landing Page</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- Navigation menu -->
+            <div id="components" class="navigation-menu-wrapper animated preFadeInRight fadeInRight is-hidden">
+                <!-- Navigation Header -->
+                <div class="navigation-menu-header">
+                    <span>Components</span>
+                    <a class="ml-auto hamburger-btn navigation-close" href="javascript:void(0);">
+                        <span class="menu-toggle">
+                            <span class="icon-box-toggle">
+                                <span class="rotate">
+                                    <i class="icon-line-top"></i>
+                                    <i class="icon-line-center"></i>
+                                    <i class="icon-line-bottom"></i>
+                                </span>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <!-- Navigation body -->
+                <ul class="navigation-menu">
+                    <li class="has-children"><a class="parent-link" href="#"><span class="material-icons">view_quilt</span>Layout</a>
+                        <ul>
+                            <li><a class="is-submenu has-new-feature" href="/_components-layout-grid.html">Grid system</a></li>
+                            <li><a class="is-submenu" href="/_components-layout-video.html">Video background</a></li>
+                            <li><a class="is-submenu" href="/_components-layout-parallax.html">Parallax</a></li>
+                            <li><a class="is-submenu" href="/_components-layout-headers.html">Headers</a></li>
+                            <li><a class="is-submenu" href="/_components-layout-footers.html">Footers</a></li>
+                            <li><a class="is-submenu has-new-feature" href="/_components-layout-typography.html">Typography</a></li>
+                            <li><a class="is-submenu" href="/_components-layout-colors.html">Colors</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children"><a class="parent-link" href="#"><span class="material-icons">subject</span>Navbars</a>
+                        <ul>
+                            <li><a class="is-submenu has-new-feature" href="/_components-layout-navbar-fade-light.html">Fade light</a></li>
+                            <li><a class="is-submenu has-new-feature" href="/_components-layout-navbar-fade-dark.html">Fade dark</a></li>
+                            <li><a class="is-submenu has-new-feature" href="/_components-layout-navbar-static-light.html">Static light</a></li>
+                            <li><a class="is-submenu has-new-feature" href="/_components-layout-navbar-static-dark.html">Static dark</a></li>
+                            <li><a class="is-submenu has-new-feature" href="/_components-layout-navbar-static-solid.html">Static solid</a></li>
+                            <li><a class="is-submenu has-new-feature" href="/_components-layout-navbar-double-dark.html">Double dark</a></li>
+                            <li><a class="is-submenu has-new-feature" href="/_components-layout-navbar-double-light.html">Double light</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children"><a class="parent-link" href="#"><span class="material-icons">view_stream</span>Sections</a>
+                        <ul>
+                            <li><a class="is-submenu" href="/_components-sections-features.html">Features</a></li>
+                            <li><a class="is-submenu" href="/_components-sections-pricing.html">Pricing</a></li>
+                            <li><a class="is-submenu" href="/_components-sections-team.html">Team</a></li>
+                            <li><a class="is-submenu" href="/_components-sections-testimonials.html">Testimonials</a></li>
+                            <li><a class="is-submenu" href="/_components-sections-clients.html">Clients</a></li>
+                            <li><a class="is-submenu" href="/_components-sections-counters.html">Counters</a></li>
+                            <li><a class="is-submenu" href="/_components-sections-carousel.html">Carousel</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children"><a class="parent-link" href="#"><span class="material-icons">playlist_add_check</span>Basic UI</a>
+                        <ul>
+                            <li><a class="is-submenu" href="/_components-basicui-cards.html">Cards</a></li>
+                            <li><a class="is-submenu" href="/_components-basicui-buttons.html">Buttons</a></li>
+                            <li><a class="is-submenu" href="/_components-basicui-dropdowns.html">Dropdowns</a></li>
+                            <li><a class="is-submenu" href="/_components-basicui-lists.html">Lists</a></li>
+                            <li><a class="is-submenu" href="/_components-basicui-modals.html">Modals</a></li>
+                            <li><a class="is-submenu" href="/_components-basicui-tabs.html">Tabs & pills</a></li>
+                            <li><a class="is-submenu" href="/_components-basicui-accordion.html">Accordions</a></li>
+                            <li><a class="is-submenu" href="/_components-basicui-badges.html">Badges & labels</a></li>
+                            <li><a class="is-submenu" href="/_components-basicui-popups.html">Popups</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children"><a class="parent-link" href="#"><span class="material-icons">playlist_add</span>Advanced UI</a>
+                        <ul>
+                            <li><a class="is-submenu" href="/_components-advancedui-tables.html">Tables</a></li>
+                            <li><a class="is-submenu" href="/_components-advancedui-timeline.html">Timeline</a></li>
+                            <li><a class="is-submenu" href="/_components-advancedui-boxes.html">Boxes</a></li>
+                            <li><a class="is-submenu" href="/_components-advancedui-messages.html">Messages</a></li>
+                            <li><a class="is-submenu has-new-feature" href="/_components-advancedui-megamenu.html">Megamenu</a></li>
+                            <li><a class="is-submenu has-new-feature" href="/_components-advancedui-calendar.html">Calendar</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children"><a class="parent-link has-new" href="#"><span class="material-icons">check_box</span>Forms</a>
+                        <ul>
+                            <li><a class="is-submenu has-new-feature is-2_2" href="/_components-forms-inputs.html">Inputs</a></li>
+                            <li><a class="is-submenu" href="/_components-forms-controls.html">Controls</a></li>
+                            <li><a class="is-submenu" href="/_components-forms-layouts.html">Form layouts</a></li>
+                            <li><a class="is-submenu has-new-feature" href="/_components-forms-steps.html">Step forms</a></li>
+                            <li><a class="is-submenu" href="/_components-forms-uploader.html">Uploader</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children"><a class="parent-link" href="#"><span class="material-icons">adjust</span>Icons</a>
+                        <ul>
+                            <li><a class="is-submenu" href="/_components-icons-im.html">Icons Mind</a></li>
+                            <li><a class="is-submenu" href="/_components-icons-sl.html">Simple Line Icons</a></li>
+                            <li><a class="is-submenu" href="/_components-icons-fa.html">Font Awesome</a></li>
+                            <li><a class="is-submenu" href="https://material.io/icons/" target="_blank">Material Icons</a></li>
+                            <li><a class="is-submenu has-new-feature" href="/_components-extensions-iconpicker.html">Icon Picker</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /Navigation menu --></div>
+        <!-- /Side navigation -->        <!-- Back To Top Button -->
+        <div id="backtotop"><a href="#"></a></div>        <!-- Concatenated jQuery and plugins -->
+        <script src="assets/js/app.js"></script>
+        
+        <!-- Bulkit js -->
+        <script src="assets/js/components-modals.js"></script>
+        <script src="assets/js/components-inputs.js"></script>
+        <script src="assets/js/components-accordion.js"></script>
+        <script src="assets/js/components-toasts.js"></script>
+        <script src="assets/js/components-range.js"></script>
+        <script src="assets/js/components-fileinput.js"></script>
+        <script src="assets/js/components-uploader.js"></script>
+        
+        <script src="assets/js/extensions/bulma-iconpicker.js"></script>
+        
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/demo.js"></script>    </body>  
+</html>

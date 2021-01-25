@@ -1,0 +1,127 @@
+//
+// Header
+//
+
+
+
+// Desktop mode(1024px and above)
+@include kt-desktop() {
+	// Header
+	.kt-header {
+		display: flex;
+		flex-direction: column;
+		transition: height 0.3s ease;
+    	position: relative;
+    	z-index: 2;
+
+    	// Header top
+		.kt-header__top {
+			height: kt-get($kt-header-config, base, desktop, default, height, top);
+			display: flex;
+			align-items: stretch;
+			transition: height 0.3s ease;
+
+			// Header container
+			.kt-container {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+
+				&:before,
+				&:after {
+					display: none !important;
+				}
+
+				// Default logo
+				.kt-header__brand-logo-default {
+					display: inline-block;
+				}
+
+				// Sticky logo
+				.kt-header__brand-logo-sticky {
+					display: none;
+				}
+			}			
+		}
+
+		// Header bottom
+		.kt-header__bottom {
+			display: flex;
+			align-items: stretch;
+			height: kt-get($kt-header-config, base, desktop, default, height, bottom);
+
+			// Header container
+			.kt-container {
+				display: flex;
+				align-items: stretch;
+
+				&:before,
+				&:after {
+					display: none !important;
+				}
+			}
+		}
+	}
+
+	// Fixed and minimize mode
+	.kt-header--fixed.kt-header--minimize {
+		// Body padding
+		.kt-wrapper {
+			padding-top: kt-get($kt-header-config, base, desktop, fixed, height);
+		}
+		
+		// Header
+		.kt-header {
+			position: fixed;
+			top: 0;
+			right: 0;
+			left: 0;
+			z-index: kt-get($kt-header-config, base, desktop, fixed, zindex);
+			background: #fff;
+			box-shadow: 0px 0px 40px 0px rgba(82,63,105,0.25);
+			animation: kt-header-minimize .3s ease 1;
+			
+			// Header top
+			.kt-header__top {
+				height: kt-get($kt-header-config, base, desktop, fixed, height);
+				transition: height 0.3s ease;
+
+				// Default logo
+				.kt-header__brand-logo-default {
+					display: none;
+				}
+
+				// Sticky logo
+				.kt-header__brand-logo-sticky {
+					display: inline-block;
+				}
+			}
+
+			// Header bottom
+			.kt-header__bottom {
+				display: none;
+			}
+		}
+	}
+}
+
+// Mobile mode(1024px and below)
+@include kt-tablet-and-mobile() {
+	// Header
+	.kt-header {
+		// Header top
+		.kt-header__top {
+			// Default and sticky logos
+			.kt-header__brand-logo-default,
+			.kt-header__brand-logo-sticky {
+				display: none;
+			}
+		}
+	}
+}
+
+// Header minimize scroll animation
+@keyframes kt-header-minimize {
+    from   { top: -(kt-get($kt-header-config, base, desktop, fixed, height)); }
+    to { top: 0; }
+}

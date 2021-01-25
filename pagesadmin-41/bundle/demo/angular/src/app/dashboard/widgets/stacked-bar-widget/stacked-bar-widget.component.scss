@@ -1,0 +1,13 @@
+.widget-15{
+  .widget-15-chart{
+    height: 180px !important;
+  }
+  //Overide for widget only
+  .card-body.no-padding .row{
+    margin-left: -5px !important;
+    margin-right: -5px !important;
+  }
+  .tab-content-wrapper {
+    padding-top: 10px;
+  }
+}

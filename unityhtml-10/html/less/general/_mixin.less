@@ -1,0 +1,116 @@
+.squre(@arguments) {
+  width: @arguments;
+  height: @arguments;
+}
+
+.transform(@transform) {
+  -webkit-transform: @transform;
+  -moz-transform: @transform;
+  -ms-transform: @transform;
+  transform: @transform;
+}
+
+.translate(@x, @y) {
+  -webkit-transform: translate(@x, @y);
+  -ms-transform: translate(@x, @y);
+  -o-transform: translate(@x, @y);
+  transform: translate(@x, @y);
+}
+.translateX(@x) {
+  -webkit-transform: translateX(@x);
+  -ms-transform: translateX(@x);
+  -o-transform: translateX(@x);
+  transform: translateX(@x);
+}
+.translateY(@y) {
+  -webkit-transform: translateY(@y);
+  -ms-transform: translateY(@y);
+  -o-transform: translateY(@y);
+  transform: translateY(@y);
+}
+
+.rotate(@deg) {
+  -webkit-transform: rotate(@deg);
+  -ms-transform: rotate(@deg);
+  -o-transform: rotate(@deg);
+  transform: rotate(@deg);
+}
+
+.filter(@arguments) {
+  -webkit-filter: @arguments;
+  -moz-filter: @arguments;
+  -ms-filter: @arguments;
+  -o-filter: @arguments;
+  filter: @arguments;
+}
+
+.transition(@arguments) {
+  -webkit-transition: @arguments;
+  -moz-transition: @arguments;
+  -ms-transition: @arguments;
+  -o-transition: @arguments;
+  transition: @arguments;
+}
+
+.backface-visibility(@arguments) {
+  -webkit-backface-visibility: @arguments;
+  -moz-backface-visibility: @arguments;
+  -ms-backface-visibility: @arguments;
+  backface-visibility: @arguments;
+}
+
+.flex(@flex) {
+  -webkit-flex: @flex;
+  -ms-flex: @flex;
+  flex: @flex;
+}
+.display-flex() {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.display-inline-flex() {
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+}
+
+._flex-center() {
+  justify-content: center;
+  align-items: center;
+}
+
+._stretch-block() {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+._center-block-abs() {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  .translate(-50%, -50%);
+}
+
+._link-color(@color) {
+  &,
+  &:visited,
+  &:active,
+  &:link {
+    color: @color;
+  }
+}
+
+._flex-width(@width) {
+  width: @width;
+  min-width: @width;
+}
+
+

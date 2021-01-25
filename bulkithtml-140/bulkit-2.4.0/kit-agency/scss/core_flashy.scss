@@ -1,0 +1,49 @@
+/*! core_flashy.scss | Bulkit | CSS Ninja */
+
+/* ==========================================================================
+Agency theme core 
+========================================================================== */
+
+/***
+TABLE OF CONTENTS
+=============================================================================
+0. CSS Imports
+=============================================================================
+***/
+
+/* ==========================================================================
+0. CSS Imports
+========================================================================== */
+
+@import 'partials/layout-colors';
+@import 'partials/themes-flashy';
+@import 'partials/layout-navbar';
+@import 'partials/layout-sections';
+@import 'partials/layout-hero';
+@import 'partials/layout-footer';
+@import 'partials/layout-animations';
+@import 'partials/layout-navigation';
+@import 'partials/layout-pageloader';
+@import 'partials/components-buttons';
+@import 'partials/components-cards';
+@import 'partials/components-boxes';
+@import 'partials/components-tabs';
+@import 'partials/components-testimonials';
+@import 'partials/components-dialogs';
+@import 'partials/components-forms';
+@import 'partials/components-tables';
+@import 'partials/components-lists';
+@import 'partials/components-labels';
+@import 'partials/components-dropdowns';
+@import 'partials/components-pricing';
+@import 'partials/components-messages';
+@import 'partials/extensions-checkboxes';
+@import 'partials/extensions-wallop';
+@import 'partials/pages-details';
+@import 'partials/pages-auth';
+@import 'partials/pages-agency';
+@import 'partials/layout-utils';
+@import 'partials/layout-helpers';
+@import 'partials/layout-responsive';
+
+

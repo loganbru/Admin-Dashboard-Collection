@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Simulor - Responsive Bootstrap 4 Admin Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+        <meta content="Coderthemes" name="author" />
+
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- Notification css (Toastr) -->
+        <link href="css/vendor/toastr.min.css" rel="stylesheet" type="text/css" />
+
+        <!-- App css -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/app.min.css" rel="stylesheet" type="text/css" />
+
+    </head>
+
+    <body>
+
+        <!-- Navigation Bar-->
+        <header id="topnav">
+            <nav class="navbar-custom">
+
+                <div class="container-fluid">
+                    <ul class="list-unstyled topbar-right-menu float-right mb-0">
+
+                        <li class="dropdown notification-list">
+                            <!-- Mobile menu toggle-->
+                            <a class="navbar-toggle nav-link">
+                                <div class="lines">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </a>
+                            <!-- End mobile menu toggle-->
+                        </li>
+
+                        <li class="dropdown notification-list">
+                            <a class="nav-link dropdown-toggle arrow-none" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                <i class="fe-bell noti-icon"></i>
+                                <span class="badge badge-danger noti-icon-badge">2</span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-animated dropdown-lg">
+
+                                <!-- item-->
+                                <div class="dropdown-item noti-title">
+                                    <h5 class="m-0">
+                                        <span class="float-right">
+                                            <a href="" class="text-dark">
+                                                <small>Clear All</small>
+                                            </a>
+                                        </span>Notification</h5>
+                                </div>
+
+                                <div class="slimscroll noti-scroll">
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item active">
+                                        <div class="notify-icon">
+                                            <img src="assets/images/users/avatar-2.jpg" class="img-fluid rounded-circle" alt="" /> </div>
+                                        <p class="notify-details">Cristina Pride</p>
+                                        <p class="text-muted mb-0 user-msg">
+                                            <small>Hi, How are you? What about our next meeting</small>
+                                        </p>
+                                    </a>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-light">
+                                            <i class="mdi mdi-comment-account-outline"></i>
+                                        </div>
+                                        <p class="notify-details">Caleb Flakelar commented on Admin
+                                            <small class="text-muted">1 min ago</small>
+                                        </p>
+                                    </a>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon">
+                                            <img src="assets/images/users/avatar-4.jpg" class="img-fluid rounded-circle" alt="" /> </div>
+                                        <p class="notify-details">Karen Robinson</p>
+                                        <p class="text-muted mb-0 user-msg">
+                                            <small>Wow ! this admin looks good and awesome design</small>
+                                        </p>
+                                    </a>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-light">
+                                            <i class="mdi mdi-account-plus"></i>
+                                        </div>
+                                        <p class="notify-details">New user registered.
+                                            <small class="text-muted">5 hours ago</small>
+                                        </p>
+                                    </a>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-light">
+                                            <i class="mdi mdi-comment-account-outline"></i>
+                                        </div>
+                                        <p class="notify-details">Caleb Flakelar commented on Admin
+                                            <small class="text-muted">4 days ago</small>
+                                        </p>
+                                    </a>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-light">
+                                            <i class="mdi mdi-heart"></i>
+                                        </div>
+                                        <p class="notify-details">Carlos Crouch liked
+                                            <b>Admin</b>
+                                            <small class="text-muted">13 days ago</small>
+                                        </p>
+                                    </a>
+                                </div>
+
+                                <!-- All-->
+                                <a href="javascript:void(0);" class="dropdown-item text-center text-primary notify-item notify-all">
+                                    View all
+                                    <i class="fi-arrow-right"></i>
+                                </a>
+
+                            </div>
+                        </li>
+
+                        <li class="dropdown notification-list">
+                            <a class="nav-link dropdown-toggle nav-user mr-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                <img src="assets/images/users/avatar-1.jpg" alt="user-image" class="rounded-circle">
+                                <small class="pro-user-name ml-1">
+                                    Morgan K
+                                </small>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-animated profile-dropdown ">
+                                <!-- item-->
+                                <div class="dropdown-header noti-title">
+                                    <h6 class="text-overflow m-0">Welcome !</h6>
+                                </div>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <i class="fe-user"></i>
+                                    <span>My Account</span>
+                                </a>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <i class="fe-settings"></i>
+                                    <span>Settings</span>
+                                </a>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <i class="fe-lock"></i>
+                                    <span>Lock Screen</span>
+                                </a>
+
+                                <div class="dropdown-divider"></div>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <i class="fe-log-out"></i>
+                                    <span>Logout</span>
+                                </a>
+
+                            </div>
+                        </li>
+
+                    </ul>
+
+                    <ul class="list-inline menu-left mb-0">
+                        <li class="float-left">
+                            <a href="index.html" class="logo">
+                                <span class="logo-lg">
+                                    <img src="assets/images/logo.png" alt="" height="18">
+                                </span>
+                                <span class="logo-sm">
+                                    <img src="assets/images/logo-sm.png" alt="" height="28">
+                                </span>
+                            </a>
+                        </li>
+                        <li class="app-search">
+                            <form>
+                                <input type="text" placeholder="Search..." class="form-control">
+                                <button type="submit" class="sr-only"></button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+            <!-- end topbar-main -->
+
+            <div class="topbar-menu">
+                <div class="container-fluid">
+                    <div id="navigation">
+                        <!-- Navigation Menu-->
+                        <ul class="navigation-menu">
+
+                            <li class="has-submenu">
+                                <a href="index.html">
+                                    <i class="fe-airplay"></i>Dashboard</a>
+                            </li>
+
+                            <li class="has-submenu">
+                                <a href="#">
+                                    <i class="fe-layers"></i>Components</a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a href="components-elements.html">UI Elements</a>
+                                    </li>
+                                    <li>
+                                        <a href="components-rangeslider.html">Range Slider</a>
+                                    </li>
+                                    <li>
+                                        <a href="components-alerts.html">Alerts</a>
+                                    </li>
+                                    <li>
+                                        <a href="components-ribbons.html">Ribbons</a>
+                                    </li>
+                                    <li>
+                                        <a href="components-sweet-alerts.html">Sweet Alerts</a>
+                                    </li>
+                                    <li>
+                                        <a href="components-typography.html">Typography</a>
+                                    </li>
+                                    <li>
+                                        <a href="components-charts.html">Charts</a>
+                                    </li>
+                                    <li>
+                                        <a href="components-maps.html">Maps</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="has-submenu">
+                                <a href="#"> <i class="fe-bookmark"></i>Forms</a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a href="form-elements.html">General Elements</a>
+                                    </li>
+                                    <li>
+                                        <a href="form-advanced.html">Advanced Form</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="has-submenu">
+                                <a href="#"> <i class="fe-grid"></i>Tables</a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a href="tables-basic.html">Basic Tables</a>
+                                    </li>
+                                    <li>
+                                        <a href="tables-advanced.html">Advanced Tables</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="has-submenu">
+                                <a href="#"> <i class="fe-cpu"></i>Icons</a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a href="icons-feather.html">Feather Icons</a>
+                                    </li>
+                                    <li>
+                                        <a href="icons-mdi.html">Material Design Icons</a>
+                                    </li>
+                                    <li>
+                                        <a href="icons-dripicons.html">Dripicons</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="has-submenu">
+                                <a href="#"> <i class="fe-package"></i>Pages</a>
+                                <ul class="submenu megamenu">
+                                    <li>
+                                        <ul>
+                                            <li>
+                                                <a href="pages-calendar.html">Calendar</a>
+                                            </li>
+                                            <li>
+                                                <a href="pages-timeline.html">Timeline</a>
+                                            </li>
+                                            <li>
+                                                <a href="pages-invoice.html">Invoice</a>
+                                            </li>
+                                            <li>
+                                                <a href="pages-contacts.html">Contacts</a>
+                                            </li>
+                                            <li>
+                                                <a href="pages-starter.html">Starter</a>
+                                            </li>
+                                            <li>
+                                                <a href="pages-topbar-light.html">Topbar Light</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li>
+                                                <a href="pages-login.html">Login</a>
+                                            </li>
+                                            <li>
+                                                <a href="pages-register.html">Register</a>
+                                            </li>
+                                            <li>
+                                                <a href="pages-recoverpw.html">Recover Password</a>
+                                            </li>
+                                            <li>
+                                                <a href="pages-lock-screen.html">Lock Screen</a>
+                                            </li>
+                                            <li>
+                                                <a href="pages-404.html">Error 404</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                            
+                                </ul>
+                            </li>
+
+                        </ul>
+                        <!-- End navigation menu -->
+
+                        <div class="clearfix"></div>
+                    </div>
+                    <!-- end #navigation -->
+                </div>
+                <!-- end container -->
+            </div>
+            <!-- end navbar-custom -->
+        </header>
+        <!-- End Navigation Bar-->
+
+        <div class="wrapper">
+            <div class="container-fluid">
+
+                <!-- start page title -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="page-title-box">
+                            <div class="page-title-right">
+                                <ol class="breadcrumb m-0">
+                                    <li class="breadcrumb-item"><a href="#">Simulor</a></li>
+                                    <li class="breadcrumb-item"><a href="#">Components</a></li>
+                                    <li class="breadcrumb-item active">Alerts</li>
+                                </ol>
+                            </div>
+                            <h4 class="page-title">Alerts</h4>
+                        </div>
+                    </div>
+                </div>     
+                <!-- end page title --> 
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="header-title mb-3">Default Alert</h4>
+
+                                <div class="alert alert-primary" role="alert">
+                                    This is a <strong>primary</strong> alert—check it out!
+                                </div>
+                                <div class="alert alert-secondary" role="alert">
+                                    This is a <strong>secondary</strong> alert—check it out!
+                                </div>
+                                <div class="alert alert-success" role="alert">
+                                    This is a <strong>success</strong> alert—check it out!
+                                </div>
+                                <div class="alert alert-danger" role="alert">
+                                    This is a <strong>danger</strong> alert—check it out!
+                                </div>
+                                <div class="alert alert-warning bg-warning text-white border-0" role="alert">
+                                    This is a <strong>warning</strong> alert—check it out!
+                                </div>
+                                <div class="alert alert-info bg-info text-white border-0" role="alert">
+                                    This is a <strong>info</strong> alert—check it out!
+                                </div>
+                                <div class="alert alert-light bg-light text-dark border-0" role="alert">
+                                    This is a <strong>light</strong> alert—check it out!
+                                </div>
+                                <div class="alert alert-dark bg-dark text-white border-0 mb-0" role="alert">
+                                    This is a <strong>dark</strong> alert—check it out!
+                                </div>
+                            </div> <!-- end card-body-->
+                        </div> <!-- end card-->
+                    </div> <!-- end col-->
+
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="header-title mb-3">Dismissing Alerts</h4>
+
+                                <div class="alert alert-primary alert-dismissible bg-primary text-white border-0 fade show" role="alert">
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    This is a primary alert—check it out!
+                                </div>
+                                <div class="alert alert-secondary alert-dismissible bg-secondary text-white border-0 fade show" role="alert">
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    This is a secondary alert—check it out!
+                                </div>
+                                <div class="alert alert-success alert-dismissible bg-success text-white border-0 fade show" role="alert">
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    This is a success alert—check it out!
+                                </div>
+                                <div class="alert alert-danger alert-dismissible bg-danger text-white border-0 fade show" role="alert">
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    This is a danger alert—check it out!
+                                </div>
+                                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    This is a warning alert—check it out!
+                                </div>
+                                <div class="alert alert-info alert-dismissible fade show" role="alert">
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    This is a info alert—check it out!
+                                </div>
+                                <div class="alert alert-light alert-dismissible fade show" role="alert">
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    This is a light alert—check it out!
+                                </div>
+                                <div class="alert alert-dark alert-dismissible fade show mb-0" role="alert">
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    This is a dark alert—check it out!
+                                </div>
+                                
+                            </div> <!-- end card-body-->
+                        </div> <!-- end card-->
+                    </div> <!-- end col-->
+                </div>
+                <!-- end row -->
+
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="header-title mb-3">Toastr Alerts</h4>
+                                <div class="row">
+                                    <div class="col-xl-4 col-md-6">
+                                        <div class="form-group">
+                                            <label>Title</label>
+                                            <input id="title" type="text" class="form-control" placeholder="Enter a title ..." />
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Message</label>
+                                            <textarea class="form-control" id="message1" rows="3" placeholder="Enter a message ..."></textarea>
+                                        </div>
+
+                                        <div class="checkbox mb-1">
+                                            <input id="closeButton" type="checkbox" value="checked" class="input-mini" />
+                                            <label for="closeButton">
+                                                Close Button
+                                            </label>
+                                        </div>
+
+                                        <div class="checkbox mb-2">
+                                            <input id="addBehaviorOnToastClick" type="checkbox" value="checked" class="input-mini" />
+                                            <label for="addBehaviorOnToastClick">
+                                                Add behavior on toast click
+                                            </label>
+                                        </div>
+
+                                        <div class="checkbox mb-1">
+                                            <input id="debugInfo" type="checkbox" value="checked" class="input-mini" />
+                                            <label for="debugInfo">
+                                                Debug
+                                            </label>
+                                        </div>
+
+                                        <div class="checkbox mb-1">
+                                            <input id="progressBar" type="checkbox" value="checked" class="input-mini" />
+                                            <label for="progressBar">
+                                                Progress Bar
+                                            </label>
+                                        </div>
+
+                                        <div class="checkbox mb-1">
+                                            <input id="preventDuplicates" type="checkbox" value="checked" class="input-mini" />
+                                            <label for="preventDuplicates">
+                                                Prevent Duplicates
+                                            </label>
+                                        </div>
+
+                                        <div class="checkbox mb-1">
+                                            <input id="addClear" type="checkbox" value="checked" class="input-mini" />
+                                            <label for="addClear">
+                                                Add button to force clearing a toast, ignoring focus
+                                            </label>
+                                        </div>
+
+                                        <div class="checkbox mb-1">
+                                            <input id="newestOnTop" type="checkbox" value="checked" class="input-mini" />
+                                            <label for="newestOnTop">
+                                                Newest on top
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-2 col-md-6">
+                                        <div class="control-group" id="toastTypeGroup">
+
+                                            <div class="controls">
+                                                <label class="mb-2">Toast Type</label>
+                                                <div class="radio radio-success mb-1">
+                                                    <input type="radio" name="radio" id="radio1" value="success"
+                                                            checked>
+                                                    <label for="radio1">
+                                                        Success
+                                                    </label>
+                                                </div>
+
+                                                <div class="radio radio-info mb-1">
+                                                    <input type="radio" name="radio" id="radio2" value="info">
+                                                    <label for="radio2">
+                                                        Info
+                                                    </label>
+                                                </div>
+
+                                                <div class="radio radio-warning mb-1">
+                                                    <input type="radio" name="radio" id="radio3" value="warning">
+                                                    <label for="radio3">
+                                                        Warning
+                                                    </label>
+                                                </div>
+
+                                                <div class="radio radio-danger mb-1">
+                                                    <input type="radio" name="radio" id="radio4" value="error">
+                                                    <label for="radio4">
+                                                        Error
+                                                    </label>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="control-group" id="positionGroup">
+                                            <label class="mt-2 mb-2">Position</label>
+
+                                            <div class="radio mb-1">
+                                                <input type="radio" name="positions" id="radio5" value="toast-top-right" checked />
+                                                <label for="radio5">
+                                                    Top Right
+                                                </label>
+                                            </div>
+
+                                            <div class="radio mb-1">
+                                                <input type="radio" name="positions" id="radio6" value="toast-bottom-right" />
+                                                <label for="radio6">
+                                                    Bottom Right
+                                                </label>
+                                            </div>
+
+                                            <div class="radio mb-1">
+                                                <input type="radio" name="positions" id="radio7" value="toast-bottom-left" />
+                                                <label for="radio7">
+                                                    Bottom Left
+                                                </label>
+                                            </div>
+
+                                            <div class="radio mb-1">
+                                                <input type="radio" name="positions" id="radio8" value="toast-top-left" />
+                                                <label for="radio8">
+                                                    Top Left
+                                                </label>
+                                            </div>
+
+                                            <div class="radio mb-1">
+                                                <input type="radio" name="positions" id="radio9" value="toast-top-full-width" />
+                                                <label for="radio9">
+                                                    Top Full Width
+                                                </label>
+                                            </div>
+
+                                            <div class="radio mb-1">
+                                                <input type="radio" name="positions" id="radio10" value="toast-bottom-full-width" />
+                                                <label for="radio10">
+                                                    Bottom Full Width
+                                                </label>
+                                            </div>
+
+                                            <div class="radio mb-1">
+                                                <input type="radio" name="positions" id="radio11" value="toast-top-center" />
+                                                <label for="radio11">
+                                                    Top Center
+                                                </label>
+                                            </div>
+
+                                            <div class="radio mb-1">
+                                                <input type="radio" name="positions" id="radio12" value="toast-bottom-center" />
+                                                <label for="radio12">
+                                                    Bottom Center
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-3 col-md-6">
+
+                                        <div class="form-group">
+                                            <label for="showEasing">Show Easing</label>
+                                            <input id="showEasing" type="text" placeholder="swing, linear" class="form-control" value="swing" />
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="hideEasing">Hide Easing</label>
+                                            <input id="hideEasing" type="text" placeholder="swing, linear" class="form-control" value="linear" />
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="showMethod">Show Method</label>
+                                            <input id="showMethod" type="text" placeholder="show, fadeIn, slideDown" class="form-control" value="fadeIn" />
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="hideMethod">Hide Method</label>
+                                            <input id="hideMethod" type="text" placeholder="hide, fadeOut, slideUp" class="form-control" value="fadeOut" />
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-xl-3 col-md-6">
+
+                                        <div class="form-group">
+                                            <label for="showDuration">Show Duration</label>
+                                            <input id="showDuration" type="text" placeholder="ms" class="input-mini form-control" value="300" />
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="hideDuration" class="m-t-10">Hide Duration</label>
+                                            <input id="hideDuration" type="text" placeholder="ms" class="input-mini form-control" value="1000" />
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="timeOut" class="m-t-10">Time out</label>
+                                            <input id="timeOut" type="text" placeholder="ms" class="input-mini form-control" value="5000" />
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="extendedTimeOut" class="m-t-10">Extended time out</label>
+                                            <input id="extendedTimeOut" type="text" placeholder="ms" class="input-mini form-control" value="1000" />
+                                        </div>
+                                        
+                                    </div>
+                                </div><!-- end row -->
+
+                                <div class="row mt-3">
+                                    <div class="col-md-12">
+                                        <button type="button" class="btn btn-primary btn-sm" id="showtoast">Show Toast</button>
+                                        <button type="button" class="btn btn-danger btn-sm" id="cleartoasts">Clear Toasts</button>
+                                        <button type="button" class="btn btn-danger btn-sm" id="clearlasttoast">Clear Last Toast</button>
+                                    </div>
+                                </div>
+
+                                <div class="row m-t-30">
+                                    <div class="col-md-12">
+                                        <pre id='toastrOptions' class="p-3 bg-light mt-3 mb-0"><h5 class="m-0">Example Code</h5></pre>
+                                    </div>
+                                </div>
+                            </div> <!-- end card-body-->
+                        </div> <!-- end card-->
+                    </div><!-- end col -->
+                </div>
+                <!-- end row -->
+
+                
+            </div> <!-- end container -->
+        </div>
+        <!-- end wrapper -->
+
+
+        <!-- Footer Start -->
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        Simulor Admin &copy; 2018 - Coderthemes.com
+                    </div>
+                    <div class="col-md-6">
+                        <div class="text-md-right footer-links d-none d-sm-block">
+                            <a href="#">About Us</a>
+                            <a href="#">Help</a>
+                            <a href="#">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end Footer -->
+
+
+        <!-- App js -->
+        <script src="js/vendor.min.js"></script>
+        <script src="js/app.min.js"></script>
+
+        <!-- Toaster js -->
+        <script src="js/vendor/toastr.min.js"></script>
+        <script src="js/pages/toastr.init.js"></script>
+
+    </body>
+</html>

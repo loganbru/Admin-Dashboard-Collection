@@ -1,0 +1,14 @@
+.pending-projects-widget{
+    .nav-wrap{
+        &:after{
+            display: none;
+        }
+    }
+    .nav-tabs > li > a{
+        padding: 8px 7px
+    }
+    .tab-content-wrapper{
+        padding-left:0;
+        padding-right:0;
+    }
+}

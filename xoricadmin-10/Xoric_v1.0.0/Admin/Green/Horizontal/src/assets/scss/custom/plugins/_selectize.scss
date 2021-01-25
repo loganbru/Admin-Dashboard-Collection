@@ -1,0 +1,68 @@
+
+//
+// Selectize
+//
+
+.selectize-input{
+  box-shadow: none !important;
+  border-color: $input-border-color;
+  background-color: $input-bg;
+  > div{
+    
+    margin-right: 7px !important;
+    border-radius: 4px;
+  }
+  &:focus{
+    outline: 0;
+  }
+}
+
+.selectize-control {
+  &.multi{
+    .selectize-input{
+      > div{
+        background-color: $primary;
+        color: $white;
+      }
+    }
+  }
+}
+
+.selectize-dropdown, .selectize-input, .selectize-input input{
+  color: $body-color;
+}
+
+.selectize-dropdown{
+  background-color: $dropdown-bg;
+  border-color: $dropdown-border-color;
+  .optgroup-header{
+    background-color: $gray-300;
+    color: $body-color;
+  }
+
+  .active{
+    background-color: $gray-300;
+    color: $gray-600;
+  }
+}
+
+.selectize-input{
+  &.full{
+    background-color: $input-bg;
+  }
+
+  &.dropdown-active{
+    &::before{
+      background-color: $gray-300;
+    }
+  }
+}
+
+.selectize-input,
+.selectize-control.single .selectize-input.input-active {
+  background-color: $input-bg;
+}
+
+.selectize-control.plugin-drag_drop.multi > .selectize-input > div.ui-sortable-placeholder {
+  box-shadow: none;
+}

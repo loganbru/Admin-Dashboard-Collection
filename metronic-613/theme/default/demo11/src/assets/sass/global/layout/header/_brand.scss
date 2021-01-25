@@ -1,0 +1,51 @@
+//
+// Header Brand
+//
+
+
+
+// Header brand
+.kt-header__brand {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	align-content: flex-begin;
+	flex-direction: row;
+	padding: 0;
+	position: relative;
+
+	// Brand logo
+	.kt-header__brand-logo {
+		display: flex;
+		justify-content: flex-begin;
+		align-items: flex-end;
+	}
+
+	// Brand nav
+	.kt-header__brand-nav {
+		display: flex;
+		margin-left: 50px;
+
+		.btn {
+			border-color: rgba(#fff, 0.1);
+			padding-left: 1.5rem;
+			padding-right: 1.5rem;
+			background-color: transparent;	
+			color: rgba(#fff, 0.4);
+		}
+
+		.show .btn,
+		.btn:hover {
+			border-color: kt-brand-color();
+			background-color: kt-brand-color();
+			color: kt-brand-color(inverse);
+		}
+	}
+}
+
+// Tablet and mobile mode(1024px and below)
+@include kt-tablet-and-mobile() {
+	.kt-header__brand {
+		display: none;
+	}
+}

@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/layout.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script src="assets/js/main/jquery.min.js"></script>
+	<script src="assets/js/main/bootstrap.bundle.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script src="assets/js/plugins/prism.min.js"></script>
+	<script src="assets/js/plugins/sticky.min.js"></script>
+	
+	<script src="assets/js/main/app.js"></script>
+	<script src="assets/js/pages/components_scrollspy.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body data-spy="scroll" data-target=".sidebar-component-right">
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-expand-md navbar-light">
+		<div class="navbar-header navbar-dark d-none d-md-flex align-items-md-center">
+			<div class="navbar-brand navbar-brand-md">
+				<a href="index.html" class="d-inline-block">
+					<img src="assets/images/logo_light.png" alt="">
+				</a>
+			</div>
+	
+			<div class="navbar-brand navbar-brand-xs">
+				<a href="index.html" class="d-inline-block">
+					<img src="assets/images/logo_icon_light.png" alt="">
+				</a>
+			</div>
+		</div>
+
+		<div class="d-flex flex-1 d-md-none">
+			<div class="navbar-brand mr-auto">
+				<a href="index.html" class="d-inline-block">
+					<img src="assets/images/logo_dark.png" alt="">
+				</a>
+			</div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile">
+				<i class="icon-tree5"></i>
+			</button>
+			<button class="navbar-toggler sidebar-mobile-main-toggle" type="button">
+				<i class="icon-paragraph-justify3"></i>
+			</button>
+			<button class="navbar-toggler sidebar-mobile-component-toggle" type="button">
+				<i class="icon-unfold"></i>
+			</button>
+		</div>
+
+		<div class="collapse navbar-collapse" id="navbar-mobile">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a href="#" class="navbar-nav-link sidebar-control sidebar-main-hide d-none d-md-block">
+						<i class="icon-paragraph-justify3"></i>
+					</a>
+				</li>
+
+				<li class="nav-item">
+					<a href="#" class="navbar-nav-link sidebar-control sidebar-component-toggle d-none d-md-block">
+						<i class="icon-transmission"></i>
+					</a>
+				</li>
+			</ul>
+
+			<ul class="navbar-nav ml-md-auto">
+				<li class="nav-item dropdown">
+					<a href="other_changelog.html" class="navbar-nav-link">
+						<i class="icon-history mr-2"></i>
+						Changelog
+						<span class="badge bg-warning-400 badge-pill position-static ml-md-2">2.2</span>
+					</a>					
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page content -->
+	<div class="page-content">
+
+		<!-- Main sidebar -->
+		<div class="sidebar sidebar-dark sidebar-main sidebar-expand-md">
+
+			<!-- Sidebar mobile toggler -->
+			<div class="sidebar-mobile-toggler text-center">
+				<a href="#" class="sidebar-mobile-main-toggle">
+					<i class="icon-arrow-left8"></i>
+				</a>
+				Navigation
+				<a href="#" class="sidebar-mobile-expand">
+					<i class="icon-screen-full"></i>
+					<i class="icon-screen-normal"></i>
+				</a>
+			</div>
+			<!-- /sidebar mobile toggler -->
+
+
+			<!-- Sidebar content -->
+			<div class="sidebar-content">
+
+        		<!-- Support -->
+				<div class="card card-body">
+					<a href="http://kopyov.ticksy.com" class="btn bg-success-400 btn-block" target="_blank"><i class="icon-lifebuoy mr-2"></i> Limitless support</a>
+				</div>
+				<!-- /support -->
+
+
+				<!-- Main navigation -->
+				<div class="card card-sidebar-mobile">
+					<ul class="nav nav-sidebar" data-nav-type="accordion">
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Main</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="index.html" class="nav-link">Introduction</a></li>
+						<li class="nav-item"><a href="main_getting_started.html" class="nav-link">Getting started</a></li>
+						<li class="nav-item"><a href="main_starter_kit.html" class="nav-link">Starter kit</a></li>
+						<li class="nav-item"><a href="main_rtl.html" class="nav-link">RTL layout</a></li>
+
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Basic functionality</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="base_scss_css.html" class="nav-link">SCSS and CSS</a></li>
+						<li class="nav-item"><a href="base_scss_compile.html" class="nav-link active">Compiling SCSS</a></li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link">Plugins</a>
+							<ul class="nav nav-group-sub" data-submenu-title="Plugins">
+								<li class="nav-item"><a href="plugins_forms.html" class="nav-link">Forms</a></li>
+								<li class="nav-item"><a href="plugins_forms_styling.html" class="nav-link">Form styling</a></li>
+								<li class="nav-item"><a href="plugins_editors.html" class="nav-link">Editors</a></li>
+								<li class="nav-item"><a href="plugins_uploaders.html" class="nav-link">Uploaders</a></li>
+								<li class="nav-item"><a href="plugins_extensions.html" class="nav-link">Extensions</a></li>
+								<li class="nav-item"><a href="plugins_notifications.html" class="nav-link">Notifications</a></li>
+								<li class="nav-item"><a href="plugins_pickers.html" class="nav-link">Pickers</a></li>
+								<li class="nav-item"><a href="plugins_tables.html" class="nav-link">Tables</a></li>
+								<li class="nav-item"><a href="plugins_ui.html" class="nav-link">UI</a></li>
+								<li class="nav-item"><a href="plugins_vis.html" class="nav-link">Visualization</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a href="base_icons.html" class="nav-link">Icons</a></li>
+
+						<li class="nav-item"><a href="base_bootstrap.html" class="nav-link">Bootstrap</a></li>
+						<li class="nav-item"><a href="base_color_system.html" class="nav-link">Color system</a></li>
+						<li class="nav-item"><a href="base_helpers.html" class="nav-link">Helpers</a></li>
+						<li class="nav-item"><a href="base_themes.html" class="nav-link">Themes</a></li>
+
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Layout options</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="layout_overview.html" class="nav-link">Layouts</a></li>
+						<li class="nav-item"><a href="layout_sidebars.html" class="nav-link">Sidebars</a></li>
+						<li class="nav-item"><a href="layout_navbars.html" class="nav-link">Navbars</a></li>
+						<li class="nav-item"><a href="layout_v_nav.html" class="nav-link">Vertical navigation</a></li>
+						<li class="nav-item"><a href="layout_h_nav.html" class="nav-link">Horizontal navigation</a></li>
+						<li class="nav-item"><a href="layout_page_header.html" class="nav-link">Page header</a></li>
+
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Other</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="other_credits.html" class="nav-link">Sources and credits</a></li>
+						<li class="nav-item"><a href="other_changelog.html" class="nav-link">Changelog <span class="badge badge-pill bg-warning-400 ml-auto">version 2.2</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /main navigation -->
+
+		</div>
+		<!-- /main sidebar -->
+
+
+		<!-- Main content -->
+		<div class="content-wrapper">
+
+			<!-- Page header -->
+			<div class="page-header">
+				<div class="page-header-content header-elements-md-inline">
+					<div class="page-title d-flex">
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Limitless</span> - Compiling SCSS</h4>
+						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+					</div>
+
+					<div class="header-elements d-none py-0 mb-3 mb-md-0">
+						<div class="breadcrumb">
+							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
+							<span class="breadcrumb-item active">Compiling SCSS</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /page header -->
+			
+
+			<!-- Content area -->
+			<div class="content pt-0">
+
+				<!-- Inner container -->
+				<div class="d-flex align-items-start flex-column flex-md-row">
+
+					<!-- Left content -->
+					<div class="order-2 order-md-1">
+
+						<!-- Using Gulp -->
+						<div class="card" id="gulp">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">Using Gulp</h5>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+				                </div>
+							</div>
+
+							<div class="card-body">
+								<div class="mb-4">
+									<h5 class="font-weight-semibold" id="gulp_overview">Overview</h5>
+									<p>Gulp is a very powerful yet simple toolkit. It allows you to automate SCSS compilation using configured <code>gulpfile.js</code> that comes in the package. If you know how to use it - navigate to template folder and start doing stuff, if you don't - here is a simple instruction how you can setup everything and get your tasks done right.</p>
+								</div>
+
+								<div class="mb-4">
+									<h5 class="font-weight-semibold" id="installing_node">Step 1 - Install Node.js</h5>
+									<p>First - we need our most important requirement, Node. To install Node - simply visit <a href="http://nodejs.org" target="_blank">http://nodejs.org</a> and then click that big green “Install” button. Once your download completes, run that application and you should be all ready to go. The Node installer also includes npm, which we will come back to a little later.</p>
+								</div>
+
+								<div class="mb-4">
+									<h5 class="font-weight-semibold" id="command">Step 2 - Command line</h5>
+									<p class="mb-3">Now, you may not be very familiar with your command-line interface (Terminal for OSX, Command Prompt for Windows) but you should be! It may seem intimidating at first, but once you get the hang of it you will have the ability to run many different command line applications such as Sass, Yeoman and Git. All of which are very useful tools that your workflow could benefit from!</p>
+
+									<div class="mb-3">
+										<p>As a quick example, open up your command line and we will throw a couple commands at it to ensure that Node is properly installed. Type that and then hit enter and you should get a response on the next line with the version number of Node that you have installed:</p>
+										<pre><code class="language-javascript">node -v</code></pre>
+									</div>
+
+									<div class="mb-3">
+										<p>Now, let’s do the same for npm:</p>
+										<pre><code class="language-javascript">npm -v</code></pre>
+									</div>
+
+									If you didn’t get a response, then it may mean that Node didn’t install correctly or you may need to restart your command line application. If this still isn’t working after restarting, then simply jump back up the top and try the first step again.
+								</div>
+
+								<div class="mb-4">
+									<h5 class="font-weight-semibold" id="installing_gulp">Step 3 - Install Gulp</h5>
+									<p class="mb-3">You’ve met your command-line and you know how to talk to it - you even know your way around your file system. Now, it’s time to get to the good stuff. Let’s meet npm and install gulp!</p>
+
+									<div class="mb-3">
+										<p>NPM stands for Node Package Manager and it is a command line tool that will allow you to install additional Node packages to your projects. It even comes with a <a href="http://npmjs.org/">nifty</a> site that allows you to browse and search through all of the available packages.</p>
+										<p>In your command-line application, type:</p>
+
+										<pre class="mb-3"><code class="language-javascript">sudo npm install -g gulp</code></pre>
+
+										<div class="mb-3">
+											<p>Let’s quickly break this down.</p>
+											<ol class="list">
+												<li><strong>sudo</strong> is the command to grant you administrator access so you can properly install files globally. It will prompt you for your computer password before it continues. This is usually needed for global installation, but should not be required when installing plugins in your local project directory.</li>
+												<li><strong>npm</strong> is the application we are using to install our package.</li>
+												<li>We are running the <strong>install</strong> command on that application.</li>
+												<li>The <strong>-g</strong> is an <em>optional</em> flag used to signify that we want to install this package globally so that any project can use it.</li>
+												<li>And finally, <strong>gulp</strong> is the name of the package we would like to install.</li>
+											</ol>
+										</div>
+
+										<div class="mb-3">
+											<p>Once that has run it’s course check your command-line to ensure that there are no error messages. If there are none to be seen, then congratulations! You just installed gulp! Just to double check, let’s refer back to our versioning commands we used above for Node and npm.</p>
+
+											<pre class="mb-3"><code class="language-javascript">gulp -v</code></pre>
+
+											<p>Like before, this should return the version number on the next line of your command-line.</p>
+										</div>
+
+										<div class="mb-3">
+											<p>Next, we also need to install gulp locally.</p>
+
+											<pre class="mb-3"><code class="language-javascript">npm install --save-dev gulp</code></pre>
+										</div>
+									</div>
+								</div>
+
+								<div class="mb-4">
+									<h5 class="font-weight-semibold" id="navigate">Step 4 - Navigate to your project directory</h5>
+									<p class="mb-3">Now that we have met our command-line interface and know how to communicate with it, our next step will be navigating it. Luckily, it only takes two commands to change directories and take a look at what is inside them. These commands are <kbd>ls</kbd> (or <kbd>dir</kbd>, for Windows) to list what is in a directory and <kbd>cd</kbd> to change directories.</p>
+
+									<div class="mb-3">
+										<p>Once you are comfortable with the <kbd>ls</kbd> and <kbd>cd</kbd> commands, we need to navigate to our project folder. This will likely be different for each person, but as an example this is what I would type to navigate to my local project:</p>
+										<pre><code class="language-javascript">// Path to Limitless layout folder
+cd [path to local web server]/Limitless/BS4/Template/
+</code></pre>
+									</div>
+								</div>
+
+								<div>
+									<h5 class="font-weight-semibold" id="tasks">Step 5 - Running tasks</h5>
+									<p class="mb-3">Once gulp is installed we have to give it some instruction so it knows what tasks for perform for us. But, first, we need to figure out exactly what tasks we need to run in our project.</p>
+
+									<div class="mb-3">
+										<p>Gulp plugins we need:</p>
+										<ul class="list">
+											<li><strong>gulp-postcss</strong> - tool for transforming styles</li>
+											<li><strong>autoprefixer</strong> - postCSS plugin that parses CSS and adds vendor prefixes to CSS rules</li>
+											<li><strong>gulp-jshint</strong> - lint JavaScript</li>
+											<li><strong>gulp-sass</strong> - compile SASS files</li>
+											<li><strong>gulp-clean-css</strong> - fast and efficient CSS optimizer</li>
+											<li><strong>gulp-concat</strong> - concatenate our JavaScript</li>
+											<li><strong>gulp-uglify</strong> - minify files</li>
+											<li><strong>gulp-rename</strong> - rename files</li>
+											<li><strong>gulp-rtlcss</strong> - generate RTL version of CSS files. Do not use it with LTR layout</li>
+										</ul>
+									</div>
+
+									<div class="mb-3">
+										<p>Install required plugins:</p>
+										<pre class="mb-3"><code class="language-javascript">npm install gulp-postcss autoprefixer gulp-jshint jshint gulp-sass gulp-clean-css gulp-concat gulp-uglify gulp-rename gulp-rtlcss --save-dev</code></pre>
+
+										<p>If you are getting permissions errors installing these plugins you may have some issues with the permissions in your local project directory. You can prepend those commands with <strong>sudo</strong>, but it is not advised as it can lead to more problematic issues later. The best course of action is to ensure the permissions of your directories are setup properly.</p>
+									</div>
+
+									<div class="mb-3">
+										<p class="mb-3">It’s very important to mention that gulp only has 5 methods. These methods are as follows: task, run, watch, src, and dest. These are all you will need to write your tasks.</p>
+
+										<div class="mb-3">
+											<h6 class="font-weight-semibold">Gulp file</h6>
+											<pre class="mb-3"><code class="language-javascript">/* ------------------------------------------------------------------------------
+ *
+ *  # Gulp file
+ *
+ *  Gulp tasks for Limitless template
+ *
+ *  Includes following tasks:
+ *  # gulp lint - lints core JS files, excluding libraries
+ *  # gulp sass - compiles SCSS files. Depends on variables defined below
+ *  # gulp watch - watches for changes in all SCSS files and automatically recompiles them
+ *  # gulp default - runs default set of tasks. Configurable by user
+ *
+ * ---------------------------------------------------------------------------- */
+
+
+// Configuration
+// ------------------------------
+
+// Define variables
+var layout = 'layout_1',  		// 'layout_1', 'layout_2', 'layout_3', 'layout_4', 'layout_5'
+    theme = 'default',    		// 'default' or 'material'
+    direction = 'LTR',    		// 'LTR' or 'RTL'
+    type = 'full',        		// 'full' or 'seed'
+    iconset = 'icomoon';        // 'icomoon' (default), 'fontawesome', 'material'
+
+// Define plugins
+var gulp = require('gulp'),
+    postcss = require('gulp-postcss'),
+    autoprefixer = require('autoprefixer'),
+    jshint = require('gulp-jshint'),
+    sass = require('gulp-sass'),
+    minifyCss = require('gulp-clean-css'),
+    concat = require('gulp-concat'),
+    uglify = require('gulp-uglify'),
+    rename = require('gulp-rename'),
+    rtlcss = require('gulp-rtlcss');
+
+
+// Setup tasks
+// ------------------------------
+
+// Lint
+gulp.task('lint', function() {
+    return gulp
+        .src('layout_1/LTR/default/full/assets/js/core/app.js')
+        .pipe(jshint())
+        .pipe(jshint.reporter('default'));
+});
+
+
+//
+// SCSS compilation
+//
+
+// Autoprefixer config
+var processors = [
+  autoprefixer({browsers: ['> 1%', 'last 2 versions', 'Firefox >= 20', 'iOS >=7'], map: false})
+];
+
+// Make it dynamic by changing core variables. Sensitive to location: make sure
+// the paths are correct if you need to use a custom assets location
+if(direction == 'LTR') {
+    gulp.task('sass', function() {
+        return gulp
+            .src('global_assets/scss/layouts/' + layout + '/' + theme + '/compile/*.scss')
+            .pipe(sass())
+            .pipe(postcss(processors))
+            .pipe(gulp.dest(layout + '/' + direction + '/' + theme + '/' + type + '/assets/css'))
+            .pipe(minifyCss({
+                level: {1: {specialComments: 0}}
+            }))
+            .pipe(rename({
+                suffix: ".min"
+            }))
+            .pipe(gulp.dest(layout + '/' + direction + '/' + theme + '/' + type + '/assets/css'));
+    });
+}
+else {
+    gulp.task('sass', function() {
+        return gulp
+            .src('global_assets/scss/layouts/' + layout + '/' + theme + '/compile/*.scss')
+            .pipe(sass())
+            .pipe(postcss(processors))
+            .pipe(gulp.dest(layout + '/' + direction + '/' + theme + '/' + type + '/assets/css'))
+            .pipe(rtlcss())
+            .pipe(gulp.dest(layout + '/' + direction + '/' + theme + '/' + type + '/assets/css'))
+            .pipe(minifyCss({
+                level: {1: {specialComments: 0}}
+            }))
+            .pipe(rename({
+                suffix: ".min"
+            }))
+            .pipe(gulp.dest(layout + '/' + direction + '/' + theme + '/' + type + '/assets/css'));
+    });
+}
+
+// Icons
+gulp.task('iconset:' + iconset, function() {
+    return gulp
+        .src('global_assets/scss/shared/icons/' + iconset + '/compile/*.scss')
+        .pipe(sass())
+        .pipe(postcss(processors))
+        .pipe(minifyCss({
+            level: {1: {specialComments: 0}}
+        }))
+        .pipe(rename({
+            suffix: ".min"
+        }))
+        .pipe(gulp.dest('global_assets/css/icons/' + iconset));
+});
+
+
+//
+// Watch files for changes
+//
+
+// Listen for changes in all SCSS files and automatically re-compile
+gulp.task('watch', function() {
+    gulp.watch('global_assets/scss/**/*.scss', ['sass']);
+});
+
+
+//
+// Default task
+//
+
+gulp.task('default', [
+    'lint',
+    'sass',
+    'watch'
+]);
+
+</code></pre>
+											<p>Now, let’s break this down and review what each part does.</p>
+										</div>
+
+										<div class="mb-3">
+											<h6 class="font-weight-semibold">Variables</h6>
+											<pre class="mb-3"><code class="language-javascript">// Define variables
+var layout = 'layout_1',  		// 'layout_1', 'layout_2', 'layout_3', 'layout_4', 'layout_5'
+    theme = 'default',    		// 'default' or 'material'
+    direction = 'LTR',    		// 'LTR' or 'RTL'
+    type = 'full';        			// 'full' or 'seed'
+    iconset = 'icomoon';        // 'icomoon' (default), 'fontawesome', 'material'
+</code></pre>
+											Variables define folder names and construct the paths for CSS files. They also provide an option for running different tasks in different directions (LTR and RTL). They are connected with SCSS variables in <code>_config.scss</code> file, they should always match: if you need to compile SCSS files for material theme in 1st layout in LTR direction, make sure <code>theme</code>, <code>layout</code> and <code>direction</code> variables match in both gulpfile.js and _config.scss files.
+										</div>
+
+										<div class="mb-3">
+											<h6 class="font-weight-semibold">Core &amp; plugins</h6>
+											<pre class="mb-3"><code class="language-javascript">// Include our plugins
+var gulp = require('gulp'),
+    postcss = require('gulp-postcss'),
+    autoprefixer = require('autoprefixer'),
+    jshint = require('gulp-jshint'),
+    sass = require('gulp-sass'),
+    minifyCss = require('gulp-clean-css'),
+    concat = require('gulp-concat'),
+    uglify = require('gulp-uglify'),
+    rename = require('gulp-rename'),
+    rtlcss = require('gulp-rtlcss');
+</code></pre>
+											This includes the gulp core and plugins associated with the tasks that we will be performing. The available tasks are lint, sass, compress and default.
+										</div>
+
+										<div class="mb-3">
+											<h6 class="font-weight-semibold">Lint task</h6>
+											<pre class="mb-3"><code class="language-javascript">// Lint Task
+gulp.task('lint', function() {
+    return gulp
+        .src(layout + '/' + direction + '/' + theme + '/' + type + '/assets/js/*.js')
+        .pipe(jshint())
+        .pipe(jshint.reporter('default'));
+});
+</code></pre>
+											Lint task checks any JavaScript file in our js/ directory and makes sure there are no errors in our core JS code.
+										</div>
+
+										<div class="mb-3">
+											<h6 class="font-weight-semibold">SASS task</h6>
+											<pre class="mb-3"><code class="language-javascript">// Autoprefixer config
+var processors = [
+  autoprefixer({browsers: ['> 1%', 'last 2 versions', 'Firefox >= 20', 'iOS >=7'], map: false})
+];
+
+// Make it dynamic by changing core variables. Sensitive to location: make sure
+// the paths are correct if you need to use a custom assets location
+if(direction == 'LTR') {
+    gulp.task('sass', function() {
+        return gulp
+            .src('global_assets/scss/layouts/' + layout + '/' + theme + '/compile/*.scss')
+            .pipe(sass())
+            .pipe(postcss(processors))
+            .pipe(gulp.dest(layout + '/' + direction + '/' + theme + '/' + type + '/assets/css'))
+            .pipe(minifyCss({
+                level: {1: {specialComments: 0}}
+            }))
+            .pipe(rename({
+                suffix: ".min"
+            }))
+            .pipe(gulp.dest(layout + '/' + direction + '/' + theme + '/' + type + '/assets/css'));
+    });
+}
+else {
+    gulp.task('sass', function() {
+        return gulp
+            .src('global_assets/scss/layouts/' + layout + '/' + theme + '/compile/*.scss')
+            .pipe(sass())
+            .pipe(postcss(processors))
+            .pipe(gulp.dest(layout + '/' + direction + '/' + theme + '/' + type + '/assets/css'))
+            .pipe(rtlcss())
+            .pipe(gulp.dest(layout + '/' + direction + '/' + theme + '/' + type + '/assets/css'))
+            .pipe(minifyCss({
+                level: {1: {specialComments: 0}}
+            }))
+            .pipe(rename({
+                suffix: ".min"
+            }))
+            .pipe(gulp.dest(layout + '/' + direction + '/' + theme + '/' + type + '/assets/css'));
+    });
+}
+</code></pre>
+											We have 2 options for <code>sass</code> task here - for LTR and RTL layouts. The difference is <code>rtlcss()</code> thingy, which mirrors all CSS rules for RTL layout. Both options are very sensitive to variables, because they construct the paths for generated CSS files. Make sure there's no typo in variables. Also I would recommend not to change autoprefixer settings without specific need.
+										</div>
+
+										<div class="mb-3">
+											<h6 class="font-weight-semibold">Iconset task</h6>
+											<pre class="mb-3"><code class="language-javascript">// Icons
+gulp.task('iconset:' + iconset, function() {
+    return gulp
+        .src('global_assets/scss/shared/icons/' + iconset + '/compile/*.scss')
+        .pipe(sass())
+        .pipe(postcss(processors))
+        .pipe(minifyCss({
+            level: {1: {specialComments: 0}}
+        }))
+        .pipe(rename({
+            suffix: ".min"
+        }))
+        .pipe(gulp.dest('global_assets/css/icons/' + iconset));
+});
+</code></pre>
+											3 icon sets: icomoon, font awesome and material design icons. Depending on variable value, correct task would be <code>iconset:icomoon</code>, <code>iconset:fontawesome</code> and <code>iconset:material</code>.
+										</div>
+
+										<div class="mb-3">
+											<h6 class="font-weight-semibold">Watch task</h6>
+											<pre class="mb-3"><code class="language-javascript">// Listen for changes in all SCSS files and automatically re-compile
+gulp.task('watch', function() {
+    gulp.watch('global_assets/scss/**/*.scss', ['sass']);
+});
+</code></pre>
+											The watch task is used to run tasks as we make changes to our files. As you write code and modify your files, the gulp.watch() method will listen for changes and automatically run our tasks again so we don't have to continuously jump back to our command-line and run the gulp command each time.
+										</div>
+
+										<div class="mb-3">
+											<h6 class="font-weight-semibold">Default task</h6>
+											<pre class="mb-3"><code class="language-javascript">// Default tasks
+gulp.task('default', [
+    'lint',
+    'sass',
+    'watch'
+]);
+</code></pre>
+											Finally, we have our default task which is basically a wrapper to our other tasks. This will be the task that is ran upon entering gulp into the command line without any additional parameters.
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h5 class="font-weight-semibold">Running tasks:</h5>
+
+										<p>Now, all we have left to do is run gulp. Switch back over to your command-line and type:</p>
+										<pre class="mb-3"><code class="language-javascript">gulp</code></pre>
+
+										<p>This will call gulp and run everything we have defined in our default task. So, in other words It’s the same thing as running:</p>
+										<pre class="mb-3"><code class="language-javascript">gulp default</code></pre>
+
+										<div class="mb-3">
+											<p>Additionally, we don’t have to run the default task. We could run any of the tasks we defined at any time. Simply call gulp and then specify the task you would like to run directly afterward. For example, we can run our sass task manually at any time like so:</p>
+
+											<pre class="mb-3"><code class="language-javascript">gulp sass</code></pre>
+
+											<p>or to watch changes and re-run task when file changes:</p>
+
+											<pre class="mb-3"><code class="language-javascript">gulp watch</code></pre>
+										</div>
+									</div>
+
+									<div>
+										<h5 class="font-weight-semibold">Credit</h5>
+
+										Many thanks to Travis Maynard for the great article <a href="https://travismaynard.com/writing/getting-started-with-gulp" target="_blank">Getting started with Gulp</a>.
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<!-- /using gulp -->
+
+					</div>
+					<!-- /left content -->
+
+
+					<!-- Right sidebar component -->
+					<div class="sidebar-sticky w-100 w-md-auto order-1 order-md-2">
+						<div class="sidebar sidebar-light sidebar-component sidebar-component-right sidebar-expand-md mb-3">
+							<div class="sidebar-content">
+								<div class="card">
+									<div class="card-header bg-transparent header-elements-inline">
+										<span class="text-uppercase font-size-sm font-weight-semibold">Page navigation</span>
+										<div class="header-elements">
+											<div class="list-icons">
+						                		<a class="list-icons-item" data-action="collapse"></a>
+					                		</div>
+				                		</div>
+									</div>
+
+									<div class="card-body">
+										<a href="http://themeforest.net/user/kopyov" class="btn bg-blue btn-block" target="_blank"><i class="icon-reading mr-2"></i> Contact author</a>
+									</div>
+
+									<ul class="nav nav-sidebar nav-scrollspy" data-nav-type="accordion">
+										<li class="nav-item-header pt-0"><div class="text-uppercase font-size-xs line-height-xs">Navigation</div> <i class="icon-menu"></i></li>
+										<li class="nav-item"><a href="#gulp_overview" class="nav-link">Overview</a></li>
+										<li class="nav-item"><a href="#installing_node" class="nav-link">Install Node.js</a></li>
+										<li class="nav-item"><a href="#command" class="nav-link">Command line</a></li>
+										<li class="nav-item"><a href="#installing_gulp" class="nav-link">Install Gulp</a></li>
+										<li class="nav-item"><a href="#navigate" class="nav-link">Navigate</a></li>
+										<li class="nav-item"><a href="#tasks" class="nav-link">Running tasks</a></li>
+										<li class="nav-item-divider"></li>
+										<li class="nav-item"><a href="#" class="nav-link">Go to top <i class="icon-circle-up2 mr-0 ml-auto"></i></a></li>
+									</ul>
+								</div>
+				            </div>
+						</div>
+					</div>
+					<!-- /right sidebar component -->
+
+				</div>
+				<!-- /inner container -->
+
+			</div>
+			<!-- /content area -->
+
+
+			<!-- Footer -->
+			<div class="navbar navbar-expand-lg navbar-light">
+				<div class="text-center d-lg-none w-100">
+					<button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse" data-target="#navbar-footer">
+						<i class="icon-unfold mr-2"></i>
+						Footer
+					</button>
+				</div>
+
+				<div class="navbar-collapse collapse" id="navbar-footer">
+					<span class="navbar-text">
+						&copy; 2015 - 2018. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
+					</span>
+
+					<ul class="navbar-nav ml-lg-auto">
+						<li class="nav-item"><a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov" class="navbar-nav-link font-weight-semibold"><span class="text-pink-400"><i class="icon-cart2 mr-2"></i> Purchase</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /footer -->
+
+		</div>
+		<!-- /main content -->
+
+	</div>
+	<!-- /page content -->
+
+</body>
+</html>

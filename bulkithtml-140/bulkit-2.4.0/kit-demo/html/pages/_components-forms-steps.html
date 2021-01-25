@@ -1,0 +1,964 @@
+---
+layout: components
+title: Steps
+---
+
+<!-- Hero and nav -->
+<div class="hero is-relative is-theme-info">
+
+    {{> navbar-static-light}}
+
+    <!-- Hero image -->
+    <div id="main-hero" class="hero-body">
+        <div class="container has-text-centered">
+            <div class="columns is-vcentered">
+                <div class="column is-4 is-offset-1 has-text-left">
+                    <h1 class="title components-title is-1">
+                        Step Forms
+                    </h1>
+                    <h2 class="subtitle is-4 components-subtitle">
+                        Multi step forms
+                    </h2>
+                    <p class="components-cta">
+                        <a href="#step-form" class="button button-cta btn-align light-btn btn-outlined is-bold rounded">
+                            Get Started
+                        </a>
+                    </p>
+                </div>
+                <div class="column is-offset-1 has-text-centered is-hidden-mobile">
+                    <div id="steps-ill" class="vivus-svg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Hero image -->
+</div>
+<!-- /Hero and nav -->
+
+<!-- Bulma steps -->
+<section class="section is-medium">
+    <div class="container">
+        <div id="step-form" class="section-title-wrapper has-text-centered">
+            <div class="bg-number">1</div>
+            <h2 class="title section-title has-text-centered dark-text text-bold">
+                Bulma Steps   <span class="tag is-info is-outlined is-bold no-margin">New</span>
+            </h2>
+        </div>
+
+        <!-- Rounded Step Form -->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Rounded step form</h4> 
+                    <p class="no-padding">Bulkit comes with the Steps Bulma extension. This way, you can easily build a step form for your registration, checkout or whatever process you want to build. Step forms navigation is controlled with javascript.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns mt-20">
+            <div class="column is-8 is-offset-2">
+                <!-- Wrapper -->
+                <div class="steps-wrapper">
+                    <!-- Indicators -->
+                    <div class="steps" id="stepsDemo">
+                        <!-- Indicator -->
+                        <div class="step-item is-active">
+                            <div class="step-marker">1</div>
+                            <div class="step-details">
+                                <p class="step-title">Account</p>
+                            </div>
+                        </div>
+                        <!-- Indicator -->
+                        <div class="step-item">
+                            <div class="step-marker">2</div>
+                            <div class="step-details">
+                                <p class="step-title">Profile</p>
+                            </div>
+                        </div>
+                        <!-- Indicator -->
+                        <div class="step-item">
+                            <div class="step-marker">3</div>
+                            <div class="step-details">
+                                <p class="step-title">Social</p>
+                            </div>
+                        </div>
+                        <!-- Indicator -->
+                        <div class="step-item">
+                            <div class="step-marker">4</div>
+                            <div class="step-details">
+                                <p class="step-title">Finish</p>
+                            </div>
+                        </div>
+                        <!-- Steps content wrapper -->
+                        <div class="steps-content">
+                             <!-- Step content -->
+                            <div class="step-content has-text-centered is-active">
+                                <!-- Field -->
+                                <div class="field">
+                                    <div class="field-label is-normal">
+                                        <label class="label">Username</label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <div class="control">
+                                                <input class="input" name="username" id="username" type="text" placeholder="Username" autofocus data-validate="require">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Field -->
+                                <div class="field">
+                                    <div class="field-label is-normal">
+                                        <label class="label">Password</label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <div class="control has-icon has-icon-right">
+                                                <input class="input" type="password" name="password" id="password" placeholder="Password" data-validate="require">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Field -->
+                                <div class="field">
+                                    <div class="field-label is-normal">
+                                        <label class="label">Confirm password</label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <div class="control has-icon has-icon-right">
+                                                <input class="input" type="password" name="password_confirm" id="password_confirm" placeholder="Confirm password" data-validate="require">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Step content -->
+                            <div class="step-content has-text-centered">
+                                <!-- Field -->
+                                <div class="field">
+                                    <div class="field-label is-normal">
+                                        <label class="label">First name</label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <div class="control">
+                                                <input class="input" name="firstname" id="firstname" type="text" placeholder="Firstname" autofocus data-validate="require">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Field -->
+                                <div class="field">
+                                    <div class="field-label is-normal">
+                                        <label class="label">Last name</label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <div class="control has-icon has-icon-right">
+                                                <input class="input" type="text" name="lastname" id="lastname" placeholder="Last name" data-validate="require">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Field -->
+                                <div class="field">
+                                    <div class="field-label is-normal">
+                                        <label class="label">Email</label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <div class="control has-icon has-icon-right">
+                                                <input class="input" type="email" name="email" id="email" placeholder="Email" data-validate="require">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Step content -->
+                            <div class="step-content has-text-centered">
+                                <!-- Field -->
+                                <div class="field">
+                                    <div class="field-label is-normal">
+                                        <label class="label">Facebook account</label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <div class="control">
+                                                <input class="input" name="facebook" id="facebook" type="text" placeholder="Facebook account url" autofocus data-validate="require">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Field -->
+                                <div class="field">
+                                    <div class="field-label is-normal">
+                                        <label class="label">Twitter account</label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <div class="control">
+                                                <input class="input" name="twitter" id="twitter" type="text" placeholder="Twitter account url" autofocus data-validate="require">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Field -->
+                                <div class="field">
+                                    <div class="field-label is-normal">
+                                        <label class="label">Dribbble account</label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <div class="control">
+                                                <input class="input" name="dribbble" id="dribbble" type="text" placeholder="Dribbble account url" autofocus data-validate="require">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Step content -->
+                            <div class="step-content has-text-centered">
+                                <img class="confirm-image" src="assets/images/illustrations/icons/account.svg">
+                                <h1 class="title is-5">Your account is now created!</h1>
+                                <p class="pt-10 pb-10 is-muted">You can now login with your credentials and start using the App</p>
+                            </div>
+                        </div>
+                        <!-- Steps Navigation -->
+                        <div class="steps-actions">
+                            <div class="steps-action">
+                                <a href="#" data-nav="previous" class="button secondary-btn raised btn-align">Back</a>
+                            </div>
+                            <div class="steps-action">
+                                <a href="#" data-nav="next" class="button secondary-btn raised btn-align">Next</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Wrapper -->
+            </div>
+        </div>
+
+        <!-- Squared Step Form -->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Squared step form</h4>
+                    <p class="no-padding">You can make the edges of the steps indicators squared. Add the <code>.is-squared</code> class to the <code>.steps-wrapper</code> parent element to make the indicators squared.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns mt-20">
+            <div class="column is-8 is-offset-2">
+                <!-- Wrapper -->
+                <div class="steps-wrapper is-squared">
+                    <!-- Steps Indicators -->
+                    <div class="steps" id="stepsDemo2">
+                        <!-- Indicator -->
+                        <div class="step-item is-active">
+                            <div class="step-marker">1</div>
+                            <div class="step-details">
+                                <p class="step-title">Account</p>
+                            </div>
+                        </div>
+                        <!-- Indicator -->
+                        <div class="step-item">
+                            <div class="step-marker">2</div>
+                            <div class="step-details">
+                                <p class="step-title">Profile</p>
+                            </div>
+                        </div>
+                        <!-- Indicator -->
+                        <div class="step-item">
+                            <div class="step-marker">3</div>
+                            <div class="step-details">
+                                <p class="step-title">Social</p>
+                            </div>
+                        </div>
+                        <!-- Indicator -->
+                        <div class="step-item">
+                            <div class="step-marker">4</div>
+                            <div class="step-details">
+                                <p class="step-title">Finish</p>
+                            </div>
+                        </div>
+                        <!-- Steps content wrapper -->
+                        <div class="steps-content">
+                            <!-- Step content -->
+                            <div class="step-content has-text-centered is-active">
+                                <!-- Field -->
+                                <div class="field">
+                                    <div class="field-label is-normal">
+                                        <label class="label">Username</label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <div class="control">
+                                                <input class="input" name="username2" id="username2" type="text" placeholder="Username" autofocus data-validate="require">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Field -->
+                                <div class="field">
+                                    <div class="field-label is-normal">
+                                        <label class="label">Password</label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <div class="control has-icon has-icon-right">
+                                                <input class="input" type="password" name="password2" id="password2" placeholder="Password" data-validate="require">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Field -->
+                                <div class="field">
+                                    <div class="field-label is-normal">
+                                        <label class="label">Confirm password</label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <div class="control has-icon has-icon-right">
+                                                <input class="input" type="password" name="password_confirm2" id="password_confirm2" placeholder="Confirm password" data-validate="require">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Step content -->
+                            <div class="step-content has-text-centered">
+                                <!-- Field -->
+                                <div class="field">
+                                    <div class="field-label is-normal">
+                                        <label class="label">First name</label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <div class="control">
+                                                <input class="input" name="firstname2" id="firstname2" type="text" placeholder="Firstname" autofocus data-validate="require">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Field -->
+                                <div class="field">
+                                    <div class="field-label is-normal">
+                                        <label class="label">Last name</label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <div class="control has-icon has-icon-right">
+                                                <input class="input" type="text" name="lastname2" id="lastname2" placeholder="Last name" data-validate="require">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Field -->
+                                <div class="field">
+                                    <div class="field-label is-normal">
+                                        <label class="label">Email</label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <div class="control has-icon has-icon-right">
+                                                <input class="input" type="email" name="email2" id="email2" placeholder="Email" data-validate="require">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Step content -->
+                            <div class="step-content has-text-centered">
+                                <!-- Field -->
+                                <div class="field">
+                                    <div class="field-label is-normal">
+                                        <label class="label">Facebook account</label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <div class="control">
+                                                <input class="input" name="facebook2" id="facebook2" type="text" placeholder="Facebook account url" autofocus data-validate="require">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Field -->
+                                <div class="field">
+                                    <div class="field-label is-normal">
+                                        <label class="label">Twitter account</label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <div class="control">
+                                                <input class="input" name="twitter2" id="twitter2" type="text" placeholder="Twitter account url" autofocus data-validate="require">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Field -->
+                                <div class="field">
+                                    <div class="field-label is-normal">
+                                        <label class="label">Dribbble account</label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <div class="control">
+                                                <input class="input" name="dribbble2" id="dribbble2" type="text" placeholder="Dribbble account url" autofocus data-validate="require">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Step content -->
+                            <div class="step-content has-text-centered">
+                                <img class="confirm-image" src="assets/images/illustrations/icons/account.svg">
+                                <h1 class="title is-5">Your account is now created!</h1>
+                                <p class="pt-10 pb-10 is-muted">You can now login with your credentials and start using the App</p>
+                            </div>
+                        </div>
+                        <!-- Steps navigation -->
+                        <div class="steps-actions">
+                            <div class="steps-action">
+                                <a href="#" data-nav="previous" class="button secondary-btn raised btn-align">Back</a>
+                            </div>
+                            <div class="steps-action">
+                                <a href="#" data-nav="next" class="button secondary-btn raised btn-align">Next</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Animated Step Form -->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Animated step form</h4>
+                    <p class="no-padding">You can easily animate a step form by adding animation classes to the <code>.steps-content</code> element. For example, the form below uses the <code>.fadeInUp</code> animation.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns mt-20">
+            <div class="column is-8 is-offset-2">
+                <!-- Wrapper -->
+                <div class="steps-wrapper">
+                    <!-- Steps Indicators -->
+                    <div class="steps" id="stepsDemo3">
+                        <!-- Indicator -->
+                        <div class="step-item is-active">
+                            <div class="step-marker">1</div>
+                            <div class="step-details">
+                                <p class="step-title">Account</p>
+                            </div>
+                        </div>
+                        <!-- Indicator -->
+                        <div class="step-item">
+                            <div class="step-marker">2</div>
+                            <div class="step-details">
+                                <p class="step-title">Profile</p>
+                            </div>
+                        </div>
+                        <!-- Indicator -->
+                        <div class="step-item">
+                            <div class="step-marker">3</div>
+                            <div class="step-details">
+                                <p class="step-title">Social</p>
+                            </div>
+                        </div>
+                        <!-- Indicator -->
+                        <div class="step-item">
+                            <div class="step-marker">4</div>
+                            <div class="step-details">
+                                <p class="step-title">Finish</p>
+                            </div>
+                        </div>
+                        <!-- Steps content wrapper -->
+                        <div class="steps-content">
+                            <!-- Step content -->
+                            <div class="step-content has-text-centered is-active animated preFadeInUp fadeInUp">
+                                <!-- Field -->
+                                <div class="field">
+                                    <div class="field-label is-normal">
+                                        <label class="label">Username</label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <div class="control">
+                                                <input class="input" name="username3" id="username3" type="text" placeholder="Username" autofocus data-validate="require">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Field -->
+                                <div class="field">
+                                    <div class="field-label is-normal">
+                                        <label class="label">Password</label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <div class="control has-icon has-icon-right">
+                                                <input class="input" type="password" name="password3" id="password3" placeholder="Password" data-validate="require">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Field -->
+                                <div class="field">
+                                    <div class="field-label is-normal">
+                                        <label class="label">Confirm password</label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <div class="control has-icon has-icon-right">
+                                                <input class="input" type="password" name="password_confirm3" id="password_confirm3" placeholder="Confirm password" data-validate="require">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Step content -->
+                            <div class="step-content has-text-centered animated preFadeInUp fadeInUp">
+                                <!-- Field -->
+                                <div class="field">
+                                    <div class="field-label is-normal">
+                                        <label class="label">First name</label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <div class="control">
+                                                <input class="input" name="firstname3" id="firstname3" type="text" placeholder="Firstname" autofocus data-validate="require">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Field -->
+                                <div class="field">
+                                    <div class="field-label is-normal">
+                                        <label class="label">Last name</label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <div class="control has-icon has-icon-right">
+                                                <input class="input" type="text" name="lastname3" id="lastname3" placeholder="Last name" data-validate="require">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Field -->
+                                <div class="field">
+                                    <div class="field-label is-normal">
+                                        <label class="label">Email</label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <div class="control has-icon has-icon-right">
+                                                <input class="input" type="email" name="email3" id="email3" placeholder="Email" data-validate="require">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Step content -->
+                            <div class="step-content has-text-centered animated preFadeInUp fadeInUp">
+                                <!-- Field -->
+                                <div class="field">
+                                    <div class="field-label is-normal">
+                                        <label class="label">Facebook account</label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <div class="control">
+                                                <input class="input" name="facebook3" id="facebook3" type="text" placeholder="Facebook account url" autofocus data-validate="require">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Field -->
+                                <div class="field">
+                                    <div class="field-label is-normal">
+                                        <label class="label">Twitter account</label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <div class="control">
+                                                <input class="input" name="twitter3" id="twitter3" type="text" placeholder="Twitter account url" autofocus data-validate="require">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Field -->
+                                <div class="field">
+                                    <div class="field-label is-normal">
+                                        <label class="label">Dribbble account</label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <div class="control">
+                                                <input class="input" name="dribbble3" id="dribbble3" type="text" placeholder="Dribbble account url" autofocus data-validate="require">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Step content -->
+                            <div class="step-content has-text-centered animated preFadeInUp fadeInUp">
+                                <img class="confirm-image" src="assets/images/illustrations/icons/account.svg">
+                                <h1 class="title is-5">Your account is now created!</h1>
+                                <p class="pt-10 pb-10 is-muted">You can now login with your credentials and start using the App</p>
+                            </div>
+                        </div>
+                        <!-- Steps Navigation -->
+                        <div class="steps-actions">
+                            <div class="steps-action">
+                                <a href="#" data-nav="previous" class="button secondary-btn raised btn-align">Back</a>
+                            </div>
+                            <div class="steps-action">
+                                <a href="#" data-nav="next" class="button secondary-btn raised btn-align">Next</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Double column Step Form -->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Double Columns steps</h4>
+                    <p class="no-padding">You can organize fields with the bulma grid inside a step form. Just create a grid and place the fields inside columns.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns mt-20">
+            <div class="column is-8 is-offset-2">
+                <!-- Wrapper -->
+                <div class="steps-wrapper is-double-column">
+                    <!-- Steps Indicators -->
+                    <div class="steps" id="stepsDemo3">
+                        <!-- Indicator -->
+                        <div class="step-item is-active">
+                            <div class="step-marker">1</div>
+                            <div class="step-details">
+                                <p class="step-title">Account</p>
+                            </div>
+                        </div>
+                        <!-- Indicator -->
+                        <div class="step-item">
+                            <div class="step-marker">2</div>
+                            <div class="step-details">
+                                <p class="step-title">Profile</p>
+                            </div>
+                        </div>
+                        <!-- Indicator -->
+                        <div class="step-item">
+                            <div class="step-marker">3</div>
+                            <div class="step-details">
+                                <p class="step-title">Social</p>
+                            </div>
+                        </div>
+                        <!-- Indicator -->
+                        <div class="step-item">
+                            <div class="step-marker">4</div>
+                            <div class="step-details">
+                                <p class="step-title">Finish</p>
+                            </div>
+                        </div>
+                        <!-- Steps content wrapper -->
+                        <div class="steps-content">
+                            <!-- Step content -->
+                            <div class="step-content has-text-centered is-active animated preFadeInUp fadeInUp">
+                                <div class="columns">
+                                     <!-- Column -->
+                                    <div class="column is-6">
+                                        <!-- Field -->
+                                        <div class="field">
+                                            <div class="field-label is-normal">
+                                                <label class="label">Username</label>
+                                            </div>
+                                            <div class="field-body">
+                                                <div class="field">
+                                                    <div class="control">
+                                                        <input class="input" name="username4" id="username4" type="text" placeholder="Username" autofocus data-validate="require">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Field -->
+                                        <div class="field">
+                                            <div class="field-label is-normal">
+                                                <label class="label">Password</label>
+                                            </div>
+                                            <div class="field-body">
+                                                <div class="field">
+                                                    <div class="control has-icon has-icon-right">
+                                                        <input class="input" type="password" name="password4" id="password4" placeholder="Password" data-validate="require">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Field -->
+                                        <div class="field">
+                                            <div class="field-label is-normal">
+                                                <label class="label">Confirm password</label>
+                                            </div>
+                                            <div class="field-body">
+                                                <div class="field">
+                                                    <div class="control has-icon has-icon-right">
+                                                        <input class="input" type="password" name="password_confirm4" id="password_confirm4" placeholder="Confirm password" data-validate="require">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                     <!-- Column -->
+                                    <div class="column is-6">
+                                        <!-- Field -->
+                                        <div class="field">
+                                            <div class="field-label is-normal">
+                                                <label class="label">Company</label>
+                                            </div>
+                                            <div class="field-body">
+                                                <div class="field">
+                                                    <div class="control">
+                                                        <input class="input" name="company" id="company" type="text" placeholder="Company name" autofocus data-validate="require">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Field -->
+                                        <div class="field">
+                                            <div class="field-label is-normal">
+                                                <label class="label">Department</label>
+                                            </div>
+                                            <div class="field-body">
+                                                <div class="field">
+                                                    <div class="control has-icon has-icon-right">
+                                                        <input class="input" type="text" name="department" id="department" placeholder="Department" data-validate="require">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Field -->
+                                        <div class="field">
+                                            <div class="field-label is-normal">
+                                                <label class="label">Location</label>
+                                            </div>
+                                            <div class="field-body">
+                                                <div class="field">
+                                                    <div class="control has-icon has-icon-right">
+                                                        <input class="input" type="text" name="location" id="location" placeholder="Location" data-validate="require">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>      
+                            </div>
+                            <!-- Step content -->
+                            <div class="step-content has-text-centered animated preFadeInUp fadeInUp">
+                                <div class="columns">
+                                    <!-- Column -->
+                                    <div class="column is-6">
+                                        <!-- Field -->
+                                        <div class="field">
+                                            <div class="field-label is-normal">
+                                                <label class="label">First name</label>
+                                            </div>
+                                            <div class="field-body">
+                                                <div class="field">
+                                                    <div class="control">
+                                                        <input class="input" name="firstname4" id="firstname4" type="text" placeholder="First name" autofocus data-validate="require">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Field -->
+                                        <div class="field">
+                                            <div class="field-label is-normal">
+                                                <label class="label">Last name</label>
+                                            </div>
+                                            <div class="field-body">
+                                                <div class="field">
+                                                    <div class="control has-icon has-icon-right">
+                                                        <input class="input" type="text" name="lastname4" id="lastname4" placeholder="Last name" data-validate="require">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Field -->
+                                        <div class="field">
+                                            <div class="field-label is-normal">
+                                                <label class="label">Email</label>
+                                            </div>
+                                            <div class="field-body">
+                                                <div class="field">
+                                                    <div class="control has-icon has-icon-right">
+                                                        <input class="input" type="email" name="email4" id="email4" placeholder="Email" data-validate="require">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                     <!-- Column -->
+                                    <div class="column is-6">
+                                        <!-- Field -->
+                                        <div class="field">
+                                            <div class="field-label is-normal">
+                                                <label class="label">Position</label>
+                                            </div>
+                                            <div class="field-body">
+                                                <div class="field">
+                                                    <div class="control">
+                                                        <input class="input" name="position" id="position" type="text" placeholder="Position" autofocus data-validate="require">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Field -->
+                                        <div class="field">
+                                            <div class="field-label is-normal">
+                                                <label class="label">Recruited since</label>
+                                            </div>
+                                            <div class="field-body">
+                                                <div class="field">
+                                                    <div class="control has-icon has-icon-right">
+                                                        <input class="input" type="text" name="joined" id="joined" placeholder="Joined on" data-validate="require">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Field -->
+                                        <div class="field">
+                                            <div class="field-label is-normal">
+                                                <label class="label">Completed Projects</label>
+                                            </div>
+                                            <div class="field-body">
+                                                <div class="field">
+                                                    <div class="control has-icon has-icon-right">
+                                                        <input class="input" type="number" name="projects" id="projects" placeholder="Number of completed projects" data-validate="require">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Step content -->
+                            <div class="step-content has-text-centered animated preFadeInUp fadeInUp">
+                                <div class="columns">
+                                     <!-- Column -->
+                                    <div class="column is-6">
+                                        <!-- Field -->
+                                        <div class="field">
+                                            <div class="field-label is-normal">
+                                                <label class="label">Facebook account</label>
+                                            </div>
+                                            <div class="field-body">
+                                                <div class="field">
+                                                    <div class="control">
+                                                        <input class="input" name="facebook4" id="facebook4" type="text" placeholder="Facebook account url" autofocus data-validate="require">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Field -->
+                                        <div class="field">
+                                            <div class="field-label is-normal">
+                                                <label class="label">Twitter account</label>
+                                            </div>
+                                            <div class="field-body">
+                                                <div class="field">
+                                                    <div class="control">
+                                                        <input class="input" name="twitter4" id="twitter4" type="text" placeholder="Twitter account url" autofocus data-validate="require">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Field -->
+                                        <div class="field">
+                                            <div class="field-label is-normal">
+                                                <label class="label">Dribbble account</label>
+                                            </div>
+                                            <div class="field-body">
+                                                <div class="field">
+                                                    <div class="control">
+                                                        <input class="input" name="dribbble4" id="dribbble4" type="text" placeholder="Dribbble account url" autofocus data-validate="require">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                     <!-- Column -->
+                                    <div class="column is-6">
+                                        <!-- Field -->
+                                        <div class="field">
+                                            <div class="field-label is-normal">
+                                                <label class="label">Linkedin account</label>
+                                            </div>
+                                            <div class="field-body">
+                                                <div class="field">
+                                                    <div class="control">
+                                                        <input class="input" name="linkedin" id="linkedin" type="text" placeholder="Linkedin account url" autofocus data-validate="require">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Field -->
+                                        <div class="field">
+                                            <div class="field-label is-normal">
+                                                <label class="label">Behance account</label>
+                                            </div>
+                                            <div class="field-body">
+                                                <div class="field">
+                                                    <div class="control">
+                                                        <input class="input" name="behance" id="behance" type="text" placeholder="Behance account url" autofocus data-validate="require">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Field -->
+                                        <div class="field">
+                                            <div class="field-label is-normal">
+                                                <label class="label">Reddit account</label>
+                                            </div>
+                                            <div class="field-body">
+                                                <div class="field">
+                                                    <div class="control">
+                                                        <input class="input" name="reddit" id="reddit" type="text" placeholder="Reddit account url" autofocus data-validate="require">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Step content -->
+                            <div class="step-content has-text-centered animated preFadeInUp fadeInUp">
+                                <img class="confirm-image" src="assets/images/illustrations/icons/account.svg">
+                                <h1 class="title is-5">Your account is now created!</h1>
+                                <p class="pt-10 pb-10 is-muted">You can now login with your credentials and start using the App</p>
+                            </div>
+                        </div>
+                        <!-- Steps Navigation -->
+                        <div class="steps-actions">
+                            <div class="steps-action">
+                                <a href="#" data-nav="previous" class="button secondary-btn raised btn-align">Back</a>
+                            </div>
+                            <div class="steps-action">
+                                <a href="#" data-nav="next" class="button secondary-btn raised btn-align">Next</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{> footer-light}}

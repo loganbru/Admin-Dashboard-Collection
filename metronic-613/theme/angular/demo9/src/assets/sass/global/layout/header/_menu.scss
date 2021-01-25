@@ -1,0 +1,91 @@
+//
+// Header Menu
+//
+
+
+
+
+// Build desktop menu
+@include kt-menu-hor-build-layout(kt-get($kt-header-config, menu, desktop));
+@include kt-menu-hor-build-skin(kt-get($kt-header-config, menu, desktop), default);
+
+// Build mobile menu
+@include kt-menu-ver-build-layout(kt-get($kt-header-config, menu, tablet-and-mobile));
+@include kt-menu-ver-build-skin(kt-get($kt-header-config, menu, tablet-and-mobile), default);
+
+// Header menu mobile offcanvas
+@include kt-offcanvas-build(kt-header-menu-wrapper, tablet-and-mobile, kt-get($kt-header-config, menu, offcanvas-mobile));
+
+// Desktop mode(1024px and above)
+@include kt-desktop() {
+	// Header default mode
+	.kt-header-menu-wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		flex-grow: 1;
+		flex-basis: 0;
+		max-width: 100%;
+		
+		// Header menu
+		.kt-header-menu {
+			// Menu nav
+			.kt-menu__nav {
+				// Menu item
+				> .kt-menu__item {
+					&:first-child {
+						padding-left: 0;
+					}
+
+					// Menu link
+					> .kt-menu__link {
+						padding: 0.75rem 1.1rem;
+
+						@include kt-rounded {
+							border-radius: $kt-border-radius;
+						}
+
+						.kt-menu__link-text {
+							color: #6c7293;
+							font-weight: 500;
+						}
+
+						.kt-menu__hor-arrow {
+							color: #c8cde8;
+						}
+
+						.kt-menu__hor-icon {
+							color: #c8cde8;
+						}					
+					}
+
+					// Menu link states
+					&.kt-menu__item--here,
+					&.kt-menu__item--active {
+						> .kt-menu__link {
+							background-color: $kt-brand-hover-color;
+									
+							.kt-menu__link-text {
+								color: kt-brand-color();
+							}
+
+							.kt-menu__hor-arrow {
+								color: kt-brand-color();
+							}
+
+							.kt-menu__hor-icon {
+								color: kt-brand-color();
+							}
+						}	
+					}
+
+					// Menu submenu
+					> .kt-menu__submenu {
+						border-top-left-radius: 0;
+						border-top-right-radius: 0;
+					}				
+				}
+			}
+		}
+	}	
+}

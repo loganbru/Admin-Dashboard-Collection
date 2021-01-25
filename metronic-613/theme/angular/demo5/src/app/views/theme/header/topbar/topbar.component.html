@@ -1,0 +1,31 @@
+<!-- begin:: Header Topbar -->
+<div class="kt-header__topbar">
+	<!--begin: Notifications -->
+	<kt-notification [type]="'brand'" [iconType]="'success'" [skin]="'light'" [icon]="'./assets/media/icons/svg/General/Notification2.svg'" [useSVG]="true"></kt-notification>
+	<!--end: Notifications -->
+
+	<!--begin: Quick actions -->
+	<kt-quick-action [iconType]="'warning'" [icon]="'./assets/media/icons/svg/Media/Equalizer.svg'" [useSVG]="true"></kt-quick-action>
+	<!--end: Quick actions -->
+
+	<!--begin: My Cart -->
+	<kt-cart [iconType]="'brand'" [bgImage]="'./assets/media/misc/bg-1.jpg'" [icon]="'./assets/media/icons/svg/Shopping/Cart3.svg'" [useSVG]="true"></kt-cart>
+	<!--end: My Cart -->
+
+	<!--begin: Quick panel toggler -->
+	<div class="kt-header__topbar-item kt-header__topbar-item--quick-panel" data-placement="left" ngbTooltip="Quick panel">
+		<div class="kt-header__topbar-wrapper">
+			<span class="kt-header__topbar-icon kt-header__topbar-icon--danger" id="kt_quick_panel_toggler_btn">
+			<span class="kt-svg-icon kt-svg-icon--danger" [inlineSVG]="'./assets/media/icons/svg/Layout/Layout-4-blocks.svg'"></span>
+			</span>
+		</div>
+	</div>
+	<!--end: Quick panel toggler -->
+	<!--begin: Language bar -->
+	<kt-language-selector [iconType]="'brand'"></kt-language-selector>
+	<!--end: Language bar -->
+	<!--begin: User bar -->
+	<kt-user-profile [greeting]="false"></kt-user-profile>
+	<!--end: User bar -->
+</div>
+<!-- end:: Header Topbar -->

@@ -1,0 +1,366 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Admin Dashboard">
+    <meta name="author" content="Mannat-themes">
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <title>Frogetor - Responsive Admin Dashboard Template</title>
+
+	<!-- Google-Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+
+	<!-- Bootstrap Core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="css/prettify.css" />
+
+	<!-- Custom CSS -->
+	<link href="css/styles.css" rel="stylesheet">
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+
+	<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+     
+      <a class="navbar-brand" href="#"><img src="logo.png" alt="" height="30" style="display: inline-block; margin-right: 10px; margin-bottom: 4px;">Frogetor - <small>Documentation 1.0</small></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+	<div id="wrapper">
+
+		<!-- Page Content -->
+		<div id="page-content-wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="right-bar">
+
+							<div id="intro" class="com-container">
+
+								<div id="structure" class="com-container">
+									<h3 class="text-center">Thank you very much for your purchase!</h3>
+									<div class="p-t-20">
+											<div class="alert alert-success alert-dismissable">
+												<p>If you have any questions that are beyond the scope of this documentation, please feel free to email or contact us via my page.</p>
+											</div>
+									</div>
+								</div>
+
+								<h4 class="page-header">Introduction</h4>
+
+								<p>Frogetor is a Bootstrap 4 admin dashboard, It is fully responsive and included awesome features to help build web applications fast and easy. The tones of well designed and developed layouts, components, elements, widgets and pages allows you to create any saas based interface, custom admin panel or dashboard application. The clean and flexible code enable you to easily customize it.
+								</p>
+								<p>
+									You are important for us and so please feel free to get back to me with any question or feedback.
+								</p>
+								
+
+
+
+									<div id="structure" class="com-container">
+										<h4 class="page-header">Structure</h4>
+										<p>I have tried my best to have standards and modular structure while developing the theme. Following sections are explaining the theme File &amp; Folder, structure, html file struture and plugins.</p>
+
+										<div class="row p-t-20">
+											<div class="col-sm-12">
+												<h4>File &amp; Folder Structure</h4>
+												<hr/>
+
+												<pre class="prettyprint">
+Theme Directory
+├── html files
+assets/
+├── css/
+│   └── All css files.
+├── fonts/
+├── pages/
+│   └── All the pages related scripts
+├── images/
+│   └── All images
+├── plugins/
+│   └── The plugins files - which are not available through bower
+├── js/
+│   └── All common Javascripts files 
+└── scss/
+    └── All scss files
+
+
+</pre>
+										
+
+											<div class="row">
+												<div class="col-sm-12 p-t-30">
+													<h4>HTML Structure</h4>
+													<hr/>
+													<p>
+														<img src="html.jpg" alt="" class="img-responsive">
+													</p>
+												</div>
+											</div>
+
+											<div class="col-sm-12 p-t-30">
+												<h4>CSS</h4>
+												<hr/>
+												
+                                                <p>Files are explained below: </p>
+
+                                                <table class="table table-bordered m-0">
+													<thead>
+														<tr>
+															<th style="width: 20%;"><i class="ti-file"></i> File</th>
+															<th>Description</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>
+                                                                <code>bootstrap.min.css</code>
+                                                            </td>
+                                                            <td>
+                                                                Frogetor uses the bootstrap v4.3.1. The core bootstrap file is being used in all the pages.
+                                                            </td>
+														</tr>
+
+                                                         <tr>
+															<td>
+                                                                <code>icons.css</code>
+                                                            </td>
+                                                            <td>
+                                                                Combines various font icons. You should remove the fonts you don't plan to use from this file and recompile it.
+                                                            </td>
+														</tr>
+														<tr>
+															<td>
+                                                                <code>style.css</code>
+                                                            </td>
+                                                            <td>
+                                                                The main stylesheet file, it's being generated from less and contains all the css styles combined.
+                                                            </td>
+														</tr>
+                                                    </tbody>
+                                                </table>
+
+                                               
+											</div>
+										</div>
+
+										<div class="col-sm-12 p-t-30">
+											<h4>Javascript</h4>
+											<hr/>
+											<p class="m-t-20">
+                                                Frogetor uses jQuery, Bootstrap JS framework(at its core) and some of the third-party plugins. There are may more third party plugin which you can use according to your needs. The css is already containing matching style for these plugins so you will not need to do anything around it.
+                                            </p>
+
+                                            <p>They are explained below: </p>
+
+                                            <table class="table table-bordered m-0">
+												<thead>
+													<tr>
+														<th style="width: 20%;"><i class="ti-file"></i> File</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>
+                                                            <code>jquery.js</code>, <code>bootstrap.bundle.min.js</code>, etc.
+                                                            <!-- TODO -->
+                                                        </td>
+                                                        <td>
+                                                            These files are used at core of the theme.
+                                                        </td>
+													</tr>
+                                                    <tr>
+														<td>
+                                                            <code>app.js</code>
+                                                        </td>
+                                                        <td>
+                                                            This is a main js file. It contains the custom JS code needed for features including
+                                                            layout, sidebar, etc.
+                                                        </td>
+													</tr>
+
+                                                    <tr>
+														<td>
+                                                            <code>pages/*.js</code>
+                                                        </td>
+                                                        <td>
+                                                            These are the files containing pages specific code. They are mainly used for demo purpose.
+                                                        </td>
+													</tr>
+
+                                                    <tr>
+														<td>
+                                                            <code>plugins/**.js</code>
+                                                        </td>
+                                                        <td>
+                                                            All supported and integrated third-party plugins are included in here.
+                                                        </td>
+													</tr>
+                                                </tbody>
+                                            </table>
+										</div>
+									</div>
+
+
+										<div id="credits" class="com-container">
+											<h4 class="page-header">Credits &amp; Official Documentation</h4>
+											<p>I've used the following resources as listed. These are some awesome creation and I am really thankful to the respective community.</p>
+
+											<ul class="">
+								                <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
+								                <li><a href="https://jquery.com/">Jquery</a></li>								                
+								                <li><a href="https://github.com/jessepollak/card">Card js</a></li>
+								                <li><a href="https://github.com/jessepollak/card">Custombox</a></li>
+								                <li><a href="https://arshaw.com/fullcalendar/">Full Calendar</a></li>
+								                <li><a href="https://github.com/PhilippStein/ng2-ion-range-slider">Range-slider</a></li>
+								                <li><a href="https://github.com/abpetkov/powerange">Powerange</a></li>
+								                <li><a href="https://github.com/sweetalert2/sweetalert2">Sweet-Alert2</a></li>
+								                <li><a href="https://github.com/dbushell/Nestable">Nestable</a></li>
+								                <li><a href="https://github.com/antennaio/jquery-bar-rating">Rating</a></li>
+								                <li><a href="https://github.com/PrismJS/prism">Prism</a></li>
+								                <li><a href="https://github.com/orangehill/bootstrap-session-timeout">Timeout</a></li>
+								                <li><a href="https://github.com/thorst/jquery-idletimer">Idletimer</a></li>
+								                <li><a href="https://github.com/atomiks/tippyjs">Tippy</a></li>
+								                <li><a href="https://github.com/kenwheeler/slick">Slick</a></li>
+								                <li><a href="https://daneden.github.io/animate.css/">Animate.css</a></li>
+								                <li><a href="https://github.com/zenorocha/clipboard.js">Clipboard</a></li>
+								                <li><a href="https://github.com/bevacqua/dragula">Dragula</a></li>
+								                <li><a href="https://fortawesome.github.io/Font-Awesome/">Font-Awesome</a></li>
+								                <li><a href="https://themify.me/themify-icons">Thimify</a></li>
+								                <li><a href="https://github.com/stephenhutchings/typicons.font">Typicons</a></li>
+								                <li><a href="https://github.com/google/material-design-icons">MD-icons</a></li>
+								                <li><a href="https://github.com/amitjakhu/dripicons">Dripicons</a></li>
+								                <li><a href="https://www.datatables.net">Datatables</a></li>
+								                <li><a href="https://github.com/nadangergeo/RWD-Table-Patterns">RWD-Table</a></li>
+								                <li><a href="https://github.com/fooplugins/FooTable">Foo-Table</a></li>
+								                <li><a href="https://github.com/tabalinas/jsgrid">JsGrid</a></li>
+								                <li><a href="https://github.com/mindmup/editable-table">Tiny-editable</a></li>
+								                <li><a href="https://github.com/markcell/jquery-tabledit">Tabledit</a></li>
+								                <li><a href="https://github.com/Eonasdan/bootstrap-datetimepicker">Bootstrap Datetimepicker</a></li>
+								                <li><a href="https://github.com/mimo84/bootstrap-maxlength">Bootstrap Maxlength</a></li>								                
+								                <li><a href="https://github.com/istvan-ujjmeszaros/bootstrap-touchspin">Bootstrap Touchspin</a></li>
+								                <li><a href="https://jdewit.github.com/bootstrap-timepicker">Bootstrap Timepicker</a></li>
+								                <li><a href="https://github.com/farbelous/bootstrap-colorpicker">Bootstrap Colorpicker</a></li>
+								                <li><a href="https://github.com/weareoutman/clockpicker">Clockpicker</a></li>
+								                <li><a href="https://github.com/thecreation/jquery-asColorPicker">ColorPicker</a></li>
+								                <li><a href="https://github.com/dio-el-claire/jquery-multiselect">Multiselect</a></li>
+								                <li><a href="https://github.com/select2/select2">Select2</a></li>
+								                <li><a href="https://github.com/xoxco/jQuery-Tags-Input">Tags-Input</a></li>
+								                <li><a href="https://github.com/RobinHerbots/Inputmask">Bootstrap-Inputmask</a></li>
+								                <li><a href="https://github.com/silviomoreto/bootstrap-select">Bootstrap-select</a></li>
+								                <li><a href="https://github.com/vitalets/x-editable">Bootstrap-X-editable</a></li>
+
+								                <li><a href="https://github.com/xing/wysihtml5">Wysihtml5</a></li>
+								                <li><a href="https://github.com/summernote/summernote">Summernote</a></li>					                
+								                <li><a href="https://github.com/JeremyFagis/dropify">Dropify</a></li>
+								                <li><a href="https://parsleyjs.org/">Validation</a></li>
+								                <li><a href="https://github.com/tinymce/tinymce">Tinymce</a></li>
+								                <li><a href="https://github.com/mstratman/jQuery-Smart-Wizard">Wizard</a></li>
+								                <li><a href="https://github.com/DubFriend/jquery.repeater">Repeater</a></li>
+								                <li><a href="https://github.com/fengyuanchen/cropper">Cropper</a></li>
+								                
+								                <li><a href="https://github.com/jquery/jquery-ui">Jquery-ui</a></li>
+								                <li><a href="https://github.com/dimsemenov/Magnific-Popup">Popup</a></li>
+								                <li><a href="https://github.com/guillaumepotier/Parsley.js">Parsley</a></li>
+								                <li><a href="https://github.com/metafizzy/isotope">Isotope</a></li>
+
+								                <li><a href="https://github.com/moment/moment">Moment</a></li>
+								                <li><a href="https://github.com/apexcharts/apexcharts.js">Apex Chart</a></li>								                
+								                <li><a href="https://morrisjs.github.io/morris.js/">Morris</a></li>
+								                <li><a href="https://github.com/DmitryBaranovskiy/raphael">Raphael</a></li>
+								                <li><a href="https://gionkunz.github.io/chartist-js/">Chartist</a></li>
+								                <li><a href="https://chartjs.org/">Chartjs</a></li>
+								                <li><a href="https://omnipotent.net/jquery.sparkline/">Sparkline</a></li>
+								                <li><a href="httpss://github.com/aterrien/jQuery-Knob">JQuery-Knob</a></li>
+								                <li><a href="https://www.flotcharts.org/">Flot-charts</a></li>
+								                <li><a href="https://github.com/benpickles/peity">Peity</a></li>
+								                <li><a href="https://github.com/toorshia/justgage">Justgage</a></li>
+
+								                <li><a href="https://hpneo.github.io/gmaps/">Gmaps</a></li>
+								                <li><a href="https://jqvmap.com">Vector Maps</a></li>
+
+								                <li><a href="https://github.com/robophil/Product-Tour">Tour</a></li>
+								                <li><a href="https://github.com/vakata/jstree">JsTree</a></li>
+
+								                <li><a href="https://github.com/imakewebthings/waypoints">Waypoints</a></li>
+								            </ul>
+										</div>
+
+										<div id="support" class="com-container">
+											<h4 class="page-header">Support</h4>
+											<p class="m-t-20">
+                                                Once again thank you for purchasing the theme. I am always avaialble to help you. If you have any suggestion or feature to make it more better, I am requesting you to contact me, I'll try my best to add them in future updates.
+                                            </p>
+
+                                                <p>
+                                                    Best,
+                                                </p>
+                                                <p class="text-primary">
+                                                    - <strong>Mannat-themes</strong>
+                                                </p>
+										</div>
+
+										<div id="changelog" class="com-container">
+											<h4 class="page-header">Change Log</h4>
+
+											
+											<p style="text-decoration: underline; font-weight: 900;"><strong>Version 1.0.0 <small>- 03 April 2019</small></strong></p>
+											
+											<ul>
+												<li>
+													Initial released
+												</li>
+											</ul>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /#page-content-wrapper -->
+
+					<div class="text-center">
+						<p class="copy">Copyright © 2019 Mannat-themes.</p>
+					</div>
+				</div>
+				<!-- /#wrapper -->
+
+				<!-- jQuery -->
+				<script src="js/jquery.js"></script>
+
+				<!-- Bootstrap Core JavaScript -->
+				<script src="js/bootstrap.min.js"></script>
+
+				<script src="js/jquery.easing.min.js"></script>
+
+				<script type="text/javascript" src="js/prettify.js"></script>
+
+	</body>
+
+</html>

@@ -1,0 +1,96 @@
+// 
+// timeline.scss
+//
+.timeline {
+    border-collapse: collapse;
+    border-spacing: 0;
+    display: table;
+    margin-bottom: 50px;
+    position: relative;
+    table-layout: fixed;
+    width: 100%;
+    .w-lg {
+        min-width: 140px;
+    }
+    .time-show {
+        margin-bottom: 30px;
+        margin-left: -70px;
+        margin-top: 30px;
+        position: relative;
+    }
+    &:before {
+        background-color: $primary;
+        bottom: 0;
+        content: "";
+        left: 70px;
+        position: absolute;
+        top: 30px;
+        width: 2px;
+        z-index: 0;
+    }
+    .timeline-icon {
+        -webkit-border-radius: 50%;
+        background-color: $primary;
+        border-radius: 50%;
+        display: block;
+        height: 20px;
+        left: -10px;
+        margin-top: -10px;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        width: 20px;
+        i {
+            color: $white;
+            font-size: 10px;
+            margin-top: 3px;
+            position: absolute;
+            left: 5px;
+        }
+    }
+    .time-icon {
+        &:before {
+            font-size: 16px;
+            margin-top: 5px;
+        }
+    }
+}
+
+.timeline-item {
+    padding-left: 70px;
+    .timeline-desk {
+        position: relative;
+        .timeline-box {
+            padding: 15px 30px 15px 40px;
+        }
+        .album {
+            img {
+                height: 36px;
+                width: auto;
+                border-radius: 3px;
+            }
+        }
+    }
+}
+
+.member-card {
+    .member-thumb {
+        width: 80px;
+    }
+}
+
+.social-links li a {
+    border-radius: 50%;
+    color: $gray-500;
+    display: inline-block;
+    height: 30px;
+    line-height: 27px;
+    border: 2px solid $gray-500;
+    text-align: center;
+    width: 30px;
+  
+    &:hover {
+      color: $gray-700;
+      border-color: $gray-700;
+    }
+  }

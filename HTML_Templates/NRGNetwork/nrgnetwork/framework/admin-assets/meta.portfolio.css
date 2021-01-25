@@ -1,0 +1,35 @@
+/*#option_wrapper_title_bgcolor,*/
+#pmeta_onepage,
+#option_wrapper_onepages_names,
+#option_wrapper_bg_repeat,
+#option_wrapper_bg_position,
+#option_wrapper_bg_type,
+#option_wrapper_bg_fixed{
+	display: none;
+}
+
+#onepage_container{
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+#onepage_container .onepage_item{
+	background-color: #f8f8f8;
+	border: 1px solid #e1e1e1;
+	height: 30px;
+	width: 80%;
+	cursor: move;
+	margin-bottom: 5px;
+	position: relative;
+}
+#onepage_container .onepage_item span{
+	display: inline-block;
+	margin-left: 20px;
+	margin-top: 7px;
+}
+#onepage_container .onepage_item a{
+	font-size: 15px;
+	color: #ff0000;
+	position: absolute;
+	right: 8px;
+	top: 7px;
+}

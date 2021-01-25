@@ -1,0 +1,234 @@
+/*! _sections.scss | Bulkit | CSS Ninja */
+
+/* ==========================================================================
+Content sections
+========================================================================== */
+
+/***
+TABLE OF CONTENTS
+=============================================================================
+0. Feature boxes
+1. Subscription combo
+2. Stat counters
+3. Partners
+4. Testimonials
+5. Contact Form
+=============================================================================
+***/
+
+/* ==========================================================================
+0. Feature boxes
+========================================================================== */
+
+.box-wrap {
+    margin-top: 60px;
+
+    .icon-box {
+        width: 100%;
+        background: $white;
+        padding: 30px 20px;
+        text-align: center;
+
+        img {
+            display: block;
+            width: 65px;
+            margin: 0 auto 6px auto;
+        }
+
+        .box-title {
+            font-family: 'Nexa Bold', sans-serif;
+            color: $dark-text;
+            padding: 6px 0;
+        }
+
+        p {
+            font-size: .9rem;
+            color: $muted-grey;
+        }
+    }
+}
+
+.feature-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    .round-icon {
+        height: 54px;
+        width: 54px;
+        min-width: 54px;
+        border-radius: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: darken($sidebar, 8%);
+        transition: all .3s;
+
+        img {
+            display: block;
+            height: 36px;
+            width: 36px;
+        }
+    }
+
+    .meta {
+        margin-left: 16px;
+
+        span, a {
+            display: block;
+
+            &:first-child {
+                font-weight: 500;
+                font-size: 1rem;
+                color: $smoke-white;
+            }
+
+            &:nth-child(2) {
+                color: $smoke-white;
+                font-size: .9rem;
+                max-width: 350px;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+3. Partners
+========================================================================== */
+
+.partner-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+    img {
+        display: block;
+        height: 80px;
+        margin: 0 25px;
+    }
+}
+
+/* ==========================================================================
+4. Testimonials
+========================================================================== */
+
+.carousel-wrapper {
+    max-width: 620px;
+    margin: 90px auto;
+
+    .carousel {
+        .slick-slide {
+            outline: none !important;
+        }
+
+        .carousel-item {
+            width: 100%;
+            border: 1px solid $fade-grey;
+            box-shadow: $light-box-shadow;
+            border-radius: 8px;
+            background: $white;
+            padding: 60px;
+            margin: 20px;
+            transition: all .3s;
+
+            &.slick-current {
+                background: $primary;
+
+                i, p {
+                    color: $smoke-white;
+                }
+
+                .item-footer {
+                    .meta {
+                        span {
+                            color: $smoke-white !important;
+                        }
+                    }
+                }
+            }
+
+            p {
+                color: $muted-grey;
+                transition: color .3s;
+            }
+
+            i {
+                transition: color .3s;
+            }
+
+            .item-footer {
+                display: flex;
+                align-items: center;
+                margin-top: 20px;
+
+                img {
+                    display: block;
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 50%;
+                }
+
+                .meta {
+                    margin-left: 10px;
+
+                    span {
+                        display: block;
+                        transition: all .3s;
+
+                        &:first-child {
+                            font-size: 1.1rem;
+                            font-weight: 600;
+                            font-family: 'Nexa Bold', sans-serif;
+                            color: $dark-text;
+                        }
+
+                        &:nth-child(2) {
+                            font-size: 1rem;
+                            color: $primary;
+                            line-height: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+5. Contact Form
+========================================================================== */
+
+.contact-title {
+    margin-top: 200px;
+}
+
+.contact-form {
+    width: 100%;
+    border: 1px solid $fade-grey;
+    box-shadow: $light-box-shadow;
+    border-radius: 8px;
+    background: $white;
+    padding: 50px;
+
+    p {
+        color: $med-grey;
+        font-size: .9rem;
+        margin-bottom: 40px;
+    }
+
+    .button-wrap {
+        margin-top: 50px;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-family: 'Nexa Bold', sans-serif;
+
+        .button {
+            height: 54px;
+        }
+    }
+}

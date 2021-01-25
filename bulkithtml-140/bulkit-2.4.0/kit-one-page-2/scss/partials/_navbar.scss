@@ -1,0 +1,353 @@
+/*! _navbar.scss | Bulkit | CSS Ninja */
+
+/* ==========================================================================
+Navbar styles
+========================================================================== */
+
+/***
+TABLE OF CONTENTS
+=============================================================================
+0. Navbar
+1. Menu icon
+=============================================================================
+***/
+
+/* ==========================================================================
+0. Navbar
+========================================================================== */
+
+.navbar {
+    background-color: $white;
+    height: 60px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.12);
+    transition: all .3s;
+
+    .navbar-brand {
+        height: 60px;
+
+        .light-logo {
+            display: none !important;
+        }
+
+        .dark-logo {
+            display: block !important;
+        }
+
+        .navbar-burger {
+            height: 60px;
+            width: 60px;
+            transition: all .3s;
+
+            span {
+                background: $muted-grey;
+            }
+        }
+    }
+
+    .separator {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 32px;
+        width: 1.4px;
+        margin: 0 16px;
+        background: #ccc;
+    }
+
+    .navbar-item {
+        color: $muted-grey;
+        transition: all .3s;
+
+        &.has-hover {
+            &:before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                -webkit-transform-origin: right center;
+                -ms-transform-origin: right center;
+                transform-origin: right center;
+                height: 1.4px;
+                background: $primary;
+                -webkit-transform: scale(0, 1);
+                -ms-transform: scale(0, 1);
+                transform: scale(0, 1);
+                -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+                transition: -webkit-transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+                transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+                transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+
+            //Hover state
+            &:hover {
+                &:before {
+                    -webkit-transform-origin: left center;
+                    -ms-transform-origin: left center;
+                    transform-origin: left center;
+                    -webkit-transform: scale(1, 1);
+                    -ms-transform: scale(1, 1);
+                    transform: scale(1, 1);
+                }
+            }
+        }
+
+        .cta-button {
+            background: $primary;
+            border-color: $primary;
+
+            &:hover {
+                box-shadow: $primary-box-shadow !important;
+                opacity: .9;
+            }
+        }
+
+        &:hover {
+            color: $primary;
+        }
+    }
+
+    &.is-faded {
+        height: 80px;
+        background-color: transparent;
+        box-shadow: none;
+
+        .navbar-brand {
+            height: 80px;
+
+            .light-logo {
+                display: block !important;
+            }
+
+            .dark-logo {
+                display: none !important;
+            }
+
+            .navbar-burger {
+                height: 80px;
+                width: 80px;
+
+                span {
+                    background: $muted-grey;
+                }
+            }
+
+            .menu-toggle i {
+                background: $muted-grey !important;
+            }
+        }
+
+        .separator {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 36px;
+            width: 1.4px;
+            margin: 0 16px;
+            background: #ccc;
+        }
+
+        .navbar-item {
+            color: $muted-grey;
+
+            &.has-hover {
+                &:before {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    -webkit-transform-origin: right center;
+                    -ms-transform-origin: right center;
+                    transform-origin: right center;
+                    height: 1.4px;
+                    background: $primary;
+                    -webkit-transform: scale(0, 1);
+                    -ms-transform: scale(0, 1);
+                    transform: scale(0, 1);
+                    -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+                    transition: -webkit-transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+                    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+                    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+                }
+
+                //Hover state
+                &:hover {
+                    &:before {
+                        -webkit-transform-origin: left center;
+                        -ms-transform-origin: left center;
+                        transform-origin: left center;
+                        -webkit-transform: scale(1, 1);
+                        -ms-transform: scale(1, 1);
+                        transform: scale(1, 1);
+                    }
+                }
+            }
+
+            .cta-button {
+                background: $primary;
+                border-color: $primary;
+
+                &:hover {
+                    box-shadow: $primary-box-shadow;
+                    opacity: .9;
+                }
+            }
+        }
+    }
+
+    &.is-mobile {
+        background-color: $white !important;
+        height: 80px !important;
+
+        .navbar-brand {
+            height: 80px !important;
+
+            .light-logo {
+                display: none !important;
+            }
+
+            .dark-logo {
+                display: block !important;
+            }
+
+            .navbar-burger {
+                height: 80px !important;
+                width: 80px !important;
+
+                span {
+                    background: $muted-grey !important;
+                }
+            }
+        }
+
+        .navbar-item {
+            color: $muted-grey !important;
+        }
+    }
+
+    .navbar-menu {
+        .navbar-item {
+            text-align: center;
+        }
+
+        .button {
+            width: 100%;
+        }
+    }
+}
+
+/* ==========================================================================
+1. Menu icon
+========================================================================== */
+.menu-toggle {
+    font-size: 20px;
+    color: #666;
+    line-height: 48px;
+    text-align: center;
+    background: transparent;
+    display: block;
+    width: 24px;
+    height: 26px;
+    cursor: pointer;
+    padding: 0;
+    margin: 0 14px;
+    transition: opacity 0.4s;
+    opacity: 1;
+    position: relative;
+    top: 2px;
+
+    .icon-box-toggle {
+        height: 100%;
+        width: 100%;
+        background: tranparent;
+        position: relative;
+        display: block;
+        width: 30px;
+        height: 30px;
+
+        &.active > span.rotate {
+            /*transform*/
+            -webkit-transform: rotate(90deg);
+            -moz-transform: translate(0px, 0px) rotate(90deg);
+            -ms-transform: translate(0px, 0px) rotate(90deg);
+            -o-transform: translate(0px, 0px) rotate(90deg);
+            transform: translate(0px, 0px) rotate(90deg);
+        }
+
+        &.active > span > i.icon-line-center {
+            visibility: hidden;
+            width: 1px;
+            height: 3px;
+            left: 70%;
+        }
+
+        &.active > span > i.icon-line-bottom {
+            margin: -2px 0 0 -10px;
+            left: 50%;
+            top: 12px;
+
+            /*transform*/
+            -webkit-transform: rotate(135deg);
+            -moz-transform: translate(0px, 0px) rotate(135deg);
+            -ms-transform: translate(0px, 0px) rotate(135deg);
+            -o-transform: translate(0px, 0px) rotate(135deg);
+            transform: translate(0px, 0px) rotate(135deg);
+        }
+
+        &.active > span > i.icon-line-top {
+            margin: -2px 0 0 -10px;
+            left: 50%;
+            top: 12px;
+
+            /*transform*/
+            -webkit-transform: rotate(45deg);
+            -moz-transform: translate(0px, 0px) rotate(45deg);
+            -ms-transform: translate(0px, 0px) rotate(45deg);
+            -o-transform: translate(0px, 0px) rotate(45deg);
+            transform: translate(0px, 0px) rotate(45deg);
+        }
+    }
+
+    .icon-line-center {
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        background: $muted-grey;
+        margin: -1px 0 0 -10px;
+        left: 50%;
+        top: 11px;
+        -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+    }
+
+    .icon-line-top {
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        background: $muted-grey;
+        margin: -3px 0 0 -10px;
+        left: 50%;
+        top: 7px;
+        -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+    }
+
+    .icon-line-bottom {
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        background: $muted-grey;
+        margin: 2px 0 0 -10px;
+        left: 50%;
+        top: 14px;
+        -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+    }
+}

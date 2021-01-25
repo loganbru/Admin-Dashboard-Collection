@@ -1,0 +1,33 @@
+/// Price Plan
+/////////////////////// 
+$price-plan-margin: 1.5rem !default;
+
+.price-plan {
+	&-media {
+		padding: 0.25rem 0;
+		margin-bottom: $price-plan-margin;
+		img {
+			max-width: 90px;
+		}
+	}
+	&-info {
+		margin-bottom: $price-plan-margin;
+        color: $base-light;
+        .text-center & {
+        	padding: 0.25rem .5rem;
+        }
+	}
+	&-amount {
+		font-size: 0.875rem;
+        color: $base-light;
+        .amount {
+        	font-size: 1.5rem;
+	        font-weight: $fw-bold;
+	        color: $body-color;
+        }
+	}
+	&-action {
+		margin-top: $price-plan-margin;
+		margin-bottom: 0.125rem;
+	}
+}

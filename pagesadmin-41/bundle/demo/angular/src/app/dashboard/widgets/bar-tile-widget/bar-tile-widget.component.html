@@ -1,0 +1,22 @@
+<pgcard TimeOut="3000" AdditionalClasses="widget-5 card no-border  widget-loader-bar full-height" Maximize="false" Toggle="false" Close="false" HeaderClass="top-right"
+ BodyClass="no-padding" ProgressType="bar">
+	<div class="container-xs-height full-height">
+		<div class="row row-xs-height">
+			<div class="col-xs-5 col-xs-height col-middle relative">
+				<div class="padding-15 top-left bottom-left">
+					<h5 class="hint-text no-margin p-l-10">France, Florence</h5>
+
+					<p class=" bold font-montserrat p-l-10">2,345,789
+						<br>USD</p>
+
+					<p class=" hint-text visible-xlg p-l-10">Today's sales</p>
+				</div>
+			</div>
+			<div class="col-xs-7 col-xs-height col-bottom relative widget-5-chart-container" #chartContainer>
+				<div class="widget-5-chart rickshaw_graph">
+					<nvd3 [options]="chartOptions" [data]="chartData"></nvd3>
+				</div>
+			</div>
+		</div>
+	</div>
+</pgcard>

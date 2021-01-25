@@ -1,0 +1,18 @@
+@import 'core.scss';
+
+.social-card-img{
+    background-image: url(/assets/img/dashboard/social_new.jpg);
+}
+
+.widget-11-2 .widget-11-2-table {
+    height: 273px;
+}
+:host /deep/ .widget-8 {
+    [echarts] > div {
+        & > svg > path {
+            &[d='M 1 0 A 1 1 0 1 0 1 0.0001'] {
+                fill: $color-warning !important;
+            }
+        }
+    }
+}

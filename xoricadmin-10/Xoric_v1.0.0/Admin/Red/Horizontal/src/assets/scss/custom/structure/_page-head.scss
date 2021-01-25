@@ -1,0 +1,28 @@
+
+
+.page-title-box {
+    padding: $grid-gutter-width  $grid-gutter-width/2 65px $grid-gutter-width/2;
+    background-color: $primary;
+    margin: 0px -12px;
+    background-image: url('../images/bg-pattern.png');
+    background-size: cover;
+
+    .page-title{
+        color: $white;
+        line-height: 30px;
+        font-size: 20px;
+    }
+
+    .breadcrumb {
+        background-color: transparent;
+        padding: 0;
+
+        .breadcrumb-item {
+            &.active {
+                color: rgba($white, 0.6);
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,56 @@
+.form-table td fieldset.templates-layouts{
+
+}
+.form-table td fieldset.templates-layouts input{
+    display: none;
+}
+.form-table td fieldset.templates-layouts label{
+    display: inline-block;
+    width: 240px;
+    margin-right: 10px !important;
+    position: relative;
+    border: 1px solid #dedede;
+    background-color: #fff;
+    padding: 8px;
+}
+.form-table td fieldset.templates-layouts label.active{
+    
+}
+.form-table td fieldset.templates-layouts label.active .thumb::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(52, 73, 94,0.7);
+}
+.form-table td fieldset.templates-layouts label.active .thumb::after{
+    content: "+";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 50%;
+    left: 50%;
+    font-size: 60px;
+    text-align: center;
+    color: #fff;
+    line-height: 100%;
+    margin-left: -30px;
+    margin-top: -30px;
+    color: #ecf0f1;
+}
+.form-table td fieldset.templates-layouts,.form-table td fieldset.templates-layouts label img{
+    width: 100%;
+}
+.form-table td fieldset.templates-layouts label .thumb{
+    display: block;
+    position: relative;
+    line-height: 0px;
+}
+.form-table td fieldset.templates-layouts label .label{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}

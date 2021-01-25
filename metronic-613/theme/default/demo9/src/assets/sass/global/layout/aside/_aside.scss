@@ -1,0 +1,43 @@
+//
+// Aside
+//
+
+
+
+
+// Aside
+.kt-aside {
+	width: kt-get($kt-aside-config, base, default, width);
+	background-color: kt-get($kt-aside-config, base, default, bg-color);
+	box-shadow: kt-get($kt-aside-config, base, default, shadow);
+}
+
+// Aside offcanvas
+@include kt-offcanvas-build(kt-aside, default, kt-get($kt-aside-config, base, offcanvas));
+
+// Desktop mode
+@include kt-desktop {
+	// Aside toggler
+	@include kt-burger-icon-build(kt-aside-toggler, kt-get($kt-aside-config, toggler));
+	@include kt-burger-icon-skin(kt-aside-toggler, kt-get($kt-aside-config, toggler, color));
+
+	.kt-aside-close  {
+		top: 10px;
+		background: rgba($kt-brand-hover-color, 0.9);
+
+		.kt-aside--on.kt-aside--left & {
+			left: kt-get($kt-aside-config, base, default, width) - 10px;  
+		}
+	}
+
+	.kt-aside-toggler {
+		margin-right:  40px;	
+	}	
+}
+
+// Tablet and mobile mode
+@include kt-tablet-and-mobile {
+	.kt-aside-toggler {
+		display: none;	
+	}	
+}

@@ -1,0 +1,599 @@
+<!doctype html>
+<!--[if lte IE 9]> <html class="lte-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="icon" type="image/png" href="assets/img/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="assets/img/favicon-32x32.png" sizes="32x32">
+
+    <title>Altair Admin v1.0.0</title>
+
+
+    <!-- uikit -->
+    <link rel="stylesheet" href="bower_components/uikit/css/uikit.almost-flat.min.css" media="all">
+
+    <!-- flag icons -->
+    <link rel="stylesheet" href="assets/icons/flags/flags.min.css" media="all">
+
+    <!-- altair admin -->
+    <link rel="stylesheet" href="assets/css/main.min.css" media="all">
+
+</head>
+<body class="sidebar_main_open">
+    <!-- main header -->
+    <header id="header_main">
+        <div class="header_main_content">
+            <nav class="uk-navbar">
+                <!-- main sidebar switch -->
+                <a href="#" id="sidebar_main_toggle" class="sSwitch sSwitch_left">
+                    <span class="sSwitchIcon"></span>
+                </a>
+                <!-- secondary sidebar switch -->
+                <a href="#" id="sidebar_secondary_toggle" class="sSwitch sSwitch_right sidebar_secondary_check">
+                    <span class="sSwitchIcon"></span>
+                </a>
+                <div class="uk-navbar-flip">
+                    <ul class="uk-navbar-nav user_actions">
+                        <li><a href="#" id="main_search_btn" class="user_action_icon"><i class="material-icons md-24 md-light">&#xE8B6;</i></a></li>
+                        <li data-uk-dropdown="{mode:'click'}" class="uk-hidden-small">
+                            <a href="#" class="user_action_icon"><i class="material-icons md-24 md-light">&#xE0BE;</i><span class="uk-badge">12</span></a>
+                            <div class="uk-dropdown uk-dropdown-xlarge uk-dropdown-flip uk-dropdown-scrollable">
+                                <ul class="md-list md-list-addon">
+                                    <li>
+                                        <div class="md-list-addon-element">
+                                            <span class="md-user-letters md-bg-cyan">qx</span>
+                                        </div>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading"><a href="pages_mailbox.html">Sed possimus nobis.</a></span>
+                                            <span class="uk-text-small uk-text-muted">Aperiam cum quidem quia officiis aut.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-addon-element">
+                                            <img class="md-user-image md-list-addon-avatar" src="assets/img/avatars/avatar_07_tn.png" alt=""/>
+                                        </div>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading"><a href="pages_mailbox.html">Est adipisci.</a></span>
+                                            <span class="uk-text-small uk-text-muted">Nihil et ut sit fugiat nisi commodi quis blanditiis.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-addon-element">
+                                            <span class="md-user-letters md-bg-light-green">wi</span>
+                                        </div>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading"><a href="pages_mailbox.html">Exercitationem et reprehenderit.</a></span>
+                                            <span class="uk-text-small uk-text-muted">Maiores odit et corrupti in et voluptatibus amet.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-addon-element">
+                                            <img class="md-user-image md-list-addon-avatar" src="assets/img/avatars/avatar_02_tn.png" alt=""/>
+                                        </div>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading"><a href="pages_mailbox.html">Voluptas ex.</a></span>
+                                            <span class="uk-text-small uk-text-muted">Et culpa occaecati fugiat eos excepturi vel et.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-addon-element">
+                                            <img class="md-user-image md-list-addon-avatar" src="assets/img/avatars/avatar_09_tn.png" alt=""/>
+                                        </div>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading"><a href="pages_mailbox.html">Vel est.</a></span>
+                                            <span class="uk-text-small uk-text-muted">Assumenda qui reiciendis itaque voluptate ea quis veritatis maxime.</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <a href="page_mailbox.html" class="md-btn md-btn-flat md-btn-flat-primary md-btn-block js-uk-prevent uk-margin-small-top">Show All</a>
+                            </div>
+                        </li>
+                        <li data-uk-dropdown="{mode:'click'}">
+                            <a href="#" class="user_action_icon"><i class="material-icons md-24 md-light">&#xE7F4;</i><span class="uk-badge">4</span></a>
+                            <div class="uk-dropdown uk-dropdown-xlarge uk-dropdown-flip uk-dropdown-scrollable">
+                                <ul class="md-list md-list-addon">
+                                    <li>
+                                        <div class="md-list-addon-element">
+                                            <i class="md-list-addon-icon material-icons uk-text-warning">&#xE8B2;</i>
+                                        </div>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Consequuntur velit et.</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate">Inventore ipsam qui labore placeat sed.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-addon-element">
+                                            <i class="md-list-addon-icon material-icons uk-text-success">&#xE88F;</i>
+                                        </div>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Voluptatum blanditiis minus.</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate">Ducimus eos accusantium est consequuntur nesciunt quia facilis.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-addon-element">
+                                            <i class="md-list-addon-icon material-icons uk-text-danger">&#xE001;</i>
+                                        </div>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Ut commodi ut.</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate">Voluptatibus quod rerum doloribus hic.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-addon-element">
+                                            <i class="md-list-addon-icon material-icons uk-text-primary">&#xE8FD;</i>
+                                        </div>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Libero iusto ipsa.</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate">Est dolorem nobis cum dignissimos.</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li data-uk-dropdown="{mode:'click'}">
+                            <a href="#" class="user_action_image"><img class="md-user-image" src="assets/img/avatars/avatar_11_tn.png" alt=""/></a>
+                            <div class="uk-dropdown uk-dropdown-small uk-dropdown-flip">
+                                <ul class="uk-nav js-uk-prevent">
+                                    <li><a href="page_user_profile.html">My profile</a></li>
+                                    <li><a href="page_settings.html">Settings</a></li>
+                                    <li><a href="login.html">Logout</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="header_main_search_form">
+            <i class="md-icon header_main_search_close material-icons">&#xE5CD;</i>
+            <form class="uk-form">
+                <input type="text" class="header_main_search_input" />
+                <button class="header_main_search_btn uk-button-link"><i class="md-icon material-icons">&#xE8B6;</i></button>
+            </form>
+        </div>
+    </header><!-- main header end -->
+
+    <!-- main sidebar -->
+    <aside id="sidebar_main">
+        <a href="#" class="uk-close sidebar_main_close_button"></a>
+        <div class="sidebar_main_header">
+            <div class="sidebar_logo"><a href="index.html"><img src="assets/img/logo_main.png" alt="" height="15" width="71"/></a></div>
+            <div class="sidebar_actions">
+                <select id="lang_switcher" name="lang_switcher">
+                    <option value="gb" selected>English</option>
+                </select>
+            </div>
+        </div>
+        <div class="menu_section">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <span class="menu_icon uk-icon-th-large"></span>
+                        Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a href="page_mailbox.html">
+                        <span class="menu_icon uk-icon-envelope-o"></span>
+                        Mailbox
+                    </a>
+                </li>
+                <li>
+                    <a href="page_invoices.html">
+                        <span class="menu_icon uk-icon-usd"></span>
+                        Invoices
+                    </a>
+                </li>
+                <li>
+                    <a href="page_snippets.html">
+                        <span class="menu_icon uk-icon-code"></span>
+                        Snippets
+                    </a>
+                </li>
+                <li>
+                    <a href="page_user_profile.html">
+                        <span class="menu_icon uk-icon-user"></span>
+                        User Profile
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="menu_icon uk-icon-list-alt"></span>
+                        Forms
+                    </a>
+                    <ul>
+                        <li><a href="forms_regular.html">Regular Elements</a></li>
+                        <li><a href="forms_advanced.html">Advanced Elements</a></li>
+                        <li><a href="forms_file_upload.html">File Upload</a></li>
+                        <li><a href="forms_validation.html">Validation</a></li>
+                    </ul>
+                </li>
+                                <li>
+                    <a href="#">
+                        <span class="menu_icon uk-icon-flask"></span>
+                        Kendo UI Widgets
+                    </a>
+                    <ul>
+                        <li><a href="kendoui_autocomplete.html">Autocomplete</a></li>
+                        <li><a href="kendoui_calendar.html">Calendar</a></li>
+                        <li><a href="kendoui_colorpicker.html">ColorPicker</a></li>
+                        <li><a href="kendoui_combobox.html">ComboBox</a></li>
+                        <li><a href="kendoui_datepicker.html">DatePicker</a></li>
+                        <li><a href="kendoui_datetimepicker.html">DateTimePicker</a></li>
+                        <li><a href="kendoui_dropdown_list.html">DropDownList</a></li>
+                        <li><a href="kendoui_masked_input.html">Masked Input</a></li>
+                        <li><a href="kendoui_menu.html">Menu</a></li>
+                        <li><a href="kendoui_multiselect.html">MultiSelect</a></li>
+                        <li><a href="kendoui_numeric_textbox.html">Numeric TextBox</a></li>
+                        <li><a href="kendoui_panelbar.html">PanelBar</a></li>
+                        <li><a href="kendoui_timepicker.html">TimePicker</a></li>
+                        <li><a href="kendoui_toolbar.html">Toolbar</a></li>
+                        <li><a href="kendoui_window.html">Window</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="menu_icon uk-icon-newspaper-o"></span>
+                        Components
+                    </a>
+                    <ul>
+                        <li><a href="components_accordion.html">Accordions</a></li>
+                        <li><a href="components_buttons.html">Buttons</a></li>
+                        <li><a href="components_cards.html">Cards</a></li>
+                        <li><a href="components_common.html">Common</a></li>
+                        <li><a href="components_dropdowns.html">Dropdowns</a></li>
+                        <li><a href="components_dynamic_grid.html">Dynamic Grid</a></li>
+                        <li><a href="components_grid.html">Grid</a></li>
+                        <li><a href="components_icons.html">Icons</a></li>
+                        <li><a href="components_modal.html">Lightbox/Modal</a></li>
+                        <li><a href="components_lists.html">Lists</a></li>
+                        <li><a href="components_nestable.html">Nestable</a></li>
+                        <li><a href="components_notifications.html">Notifications</a></li>
+                        <li><a href="components_preloaders.html">Preloaders</a></li>
+                        <li><a href="components_sortable.html">Sortable</a></li>
+                        <li><a href="components_tables.html">Tables</a></li>
+                        <li><a href="components_tooltips.html">Tooltips</a></li>
+                        <li class="act_item"><a href="components_tabs.html">Tabs</a></li>
+                    </ul>
+                </li>
+                <li >
+                    <a href="#">
+                        <span class="menu_icon uk-icon-shopping-cart"></span>
+                        E-commerce
+                    </a>
+                    <ul>
+                        <li><a href="ecommerce_product_details.html">Product Details</a></li>
+                        <li><a href="ecommerce_product_edit.html">Product Edit</a></li>
+                        <li><a href="ecommerce_products_grid.html">Products Grid</a></li>
+                        <li><a href="ecommerce_products_list.html">Products List</a></li>
+                    </ul>
+                </li>
+                <li >
+                    <a href="#">
+                        <span class="menu_icon uk-icon-plug"></span>
+                        Plugins
+                    </a>
+                    <ul>
+                        <li><a href="plugins_calendar.html">Calendar</a></li>
+                        <li><a href="plugins_charts.html">Charts</a></li>
+                        <li><a href="plugins_datatables.html">Datatables</a></li>
+                        <li><a href="plugins_gantt_chart.html">Gantt Chart</a></li>
+                        <li><a href="plugins_google_maps.html">Google Maps</a></li>
+                        <li><a href="plugins_vector_maps.html">Vector Maps</a></li>
+                    </ul>
+                </li>
+                <li >
+                    <a href="#">
+                        <span class="menu_icon uk-icon-folder-o"></span>
+                        Pages
+                    </a>
+                    <ul>
+                        <li><a href="page_blank.html">Blank</a></li>
+                        <li><a href="page_contact_list.html">Contact List</a></li>
+                        <li><a href="error_404.html">Error 404</a></li>
+                        <li><a href="error_500.html">Error 500</a></li>
+                        <li><a href="page_help.html">Help/Faq</a></li>
+                        <li><a href="login.html">Login Page</a></li>
+                        <li><a href="page_notes.html"> Notes </a> </li>
+                        <li><a href="page_settings.html">Settings</a></li>
+                        <li><a href="page_user_edit.html">User edit</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </aside><!-- main sidebar end -->
+
+    <div id="page_content">
+        <div id="page_content_inner">
+
+            <h3 class="heading_b uk-margin-bottom">Tabs</h3>
+            <div class="md-card uk-margin-medium-bottom">
+                <div class="md-card-content">
+                    <div class="uk-grid" data-uk-grid-margin>
+                        <div class="uk-width-1-1">
+                            <ul class="uk-tab" data-uk-tab="{connect:'#tabs_1'}">
+                                <li class="uk-active"><a href="#">Active</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li class="uk-disabled"><a href="#">Disabled</a></li>
+                            </ul>
+                            <ul id="tabs_1" class="uk-switcher uk-margin">
+                                <li>Content 1</li>
+                                <li>Content 2</li>
+                                <li>Content 3</li>
+                                <li>Content 4</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="heading_a uk-margin-bottom">Horizontal modifiers</h4>
+            <div class="md-card uk-margin-medium-bottom">
+                <div class="md-card-content">
+                    <div class="uk-grid" data-uk-grid-margin>
+                        <div class="uk-width-medium-1-2">
+                            <ul id="tabs_3" class="uk-switcher uk-margin">
+                                <li>Content 1</li>
+                                <li>Content 2</li>
+                                <li>Content 3</li>
+                                <li>Content 4</li>
+                            </ul>
+                            <ul class="uk-tab uk-tab-bottom" data-uk-tab="{connect:'#tabs_3'}">
+                                <li class="uk-active"><a href="#">Active</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li class="uk-disabled"><a href="#">Disabled</a></li>
+                            </ul>
+                        </div>
+                        <div class="uk-width-medium-1-2">
+                            <ul class="uk-tab uk-tab-flip" data-uk-tab="{connect:'#tabs_2'}">
+                                <li class="uk-active"><a href="#">Active</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li class="uk-disabled"><a href="#">Disabled</a></li>
+                            </ul>
+                            <ul id="tabs_2" class="uk-switcher uk-margin">
+                                <li>Content 1</li>
+                                <li>Content 2</li>
+                                <li>Content 3</li>
+                                <li>Content 4</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="uk-grid uk-margin-medium-bottom" data-uk-grid-margin>
+                <div class="uk-width-medium-1-2">
+                    <h4 class="heading_a uk-margin-bottom">Justify tabs</h4>
+                    <div class="md-card">
+                        <div class="md-card-content">
+                            <ul class="uk-tab uk-tab-grid" data-uk-tab="{connect:'#tabs_4'}">
+                                <li class="uk-width-1-3 uk-active"><a href="#">Active</a></li>
+                                <li class="uk-width-1-3"><a href="#">Item</a></li>
+                                <li class="uk-width-1-3"><a href="#">Item</a></li>
+                            </ul>
+                            <ul id="tabs_4" class="uk-switcher uk-margin">
+                                <li>Content 1</li>
+                                <li>Content 2</li>
+                                <li>Content 3</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-medium-1-2">
+                    <h4 class="heading_a uk-margin-bottom">Center tabs</h4>
+                    <div class="md-card">
+                        <div class="md-card-content">
+                            <div class="uk-tab-center">
+                                <ul class="uk-tab" data-uk-tab="{connect:'#tabs_5'}">
+                                    <li class="uk-active"><a href="#">Active</a></li>
+                                    <li><a href="#">Item</a></li>
+                                    <li><a href="#">Item</a></li>
+                                </ul>
+                            </div>
+                            <ul id="tabs_5" class="uk-switcher uk-margin">
+                                <li>Content 1</li>
+                                <li>Content 2</li>
+                                <li>Content 3</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="heading_a uk-margin-bottom">Vertical modifiers</h4>
+            <div class="md-card uk-margin-medium-bottom">
+                <div class="md-card-content">
+                    <div class="uk-grid uk-grid-divider" data-uk-grid-margin>
+                        <div class="uk-width-large-1-2">
+                            <div class="uk-grid uk-grid-medium" data-uk-grid-margin>
+                                <div class="uk-width-1-3">
+                                    <ul class="uk-tab uk-tab-left" data-uk-tab="{connect:'#tabs_6'}">
+                                        <li class="uk-active"><a href="#">Active</a></li>
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Item</a></li>
+                                    </ul>
+                                </div>
+                                <div class="uk-width-2-3">
+                                    <ul id="tabs_6" class="uk-switcher uk-margin-small-top">
+                                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at, dignissimos esse eveniet id itaque laudantium modi nisi perferendis placeat provident quia recusandae reprehenderit sed sit soluta voluptas! Architecto, laboriosam?</li>
+                                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, autem, blanditiis consequatur cumque dicta distinctio ea esse eum exercitationem explicabo id incidunt molestiae numquam quae rem repellat reprehenderit tempore voluptatem!</li>
+                                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam architecto, atque aut autem dicta dolorem enim fugit impedit maxime nam, nesciunt provident quibusdam rerum sed similique voluptate voluptatibus. Laudantium.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-width-large-1-2">
+                            <div class="uk-grid uk-grid-medium" data-uk-grid-margin>
+                                <div class="uk-width-2-3">
+                                    <ul id="tabs_7" class="uk-switcher uk-margin-small-top">
+                                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at, dignissimos esse eveniet id itaque laudantium modi nisi perferendis placeat provident quia recusandae reprehenderit sed sit soluta voluptas! Architecto, laboriosam?</li>
+                                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, autem, blanditiis consequatur cumque dicta distinctio ea esse eum exercitationem explicabo id incidunt molestiae numquam quae rem repellat reprehenderit tempore voluptatem!</li>
+                                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam architecto, atque aut autem dicta dolorem enim fugit impedit maxime nam, nesciunt provident quibusdam rerum sed similique voluptate voluptatibus. Laudantium.</li>
+                                    </ul>
+                                </div>
+                                <div class="uk-width-1-3">
+                                    <ul class="uk-tab uk-tab-right" data-uk-tab="{connect:'#tabs_7'}">
+                                        <li><a href="#">Item</a></li>
+                                        <li class="uk-active"><a href="#">Active</a></li>
+                                        <li><a href="#">Item</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="heading_a uk-margin-bottom">Animations</h4>
+            <div class="uk-grid" >
+                <div class="uk-width-medium-1-3">
+                    <div class="md-card" data-uk-grid-margin>
+                        <div class="md-card-content">
+                            <ul class="uk-tab" data-uk-tab="{connect:'#tabs_anim1', animation:'scale'}">
+                                <li class="uk-active"><a href="#">Active</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                            </ul>
+                            <ul id="tabs_anim1" class="uk-switcher uk-margin">
+                                <li>Aspernatur eius cupiditate omnis repudiandae sint nulla exercitationem possimus mollitia eveniet praesentium sequi corrupti sint ullam aliquam et aliquid omnis eligendi ipsum dolor vel cum et tempora dolorem quae aliquid deleniti voluptatum nam enim.</li>
+                                <li>Ab facere cupiditate aut nemo ut aut omnis voluptates nihil est corporis illo veniam laborum voluptatem provident ratione voluptate voluptatem repellat provident nihil nulla distinctio nisi tempore quia expedita harum modi quo repudiandae ducimus asperiores molestiae cupiditate est illum maxime quis nulla ut quaerat hic.</li>
+                                <li>Magni et totam minima quia harum sed quia voluptatum autem inventore atque aut iusto cupiditate ut eveniet et et et sit praesentium sed quia impedit et veritatis rerum voluptas in ut nam labore et nemo ratione.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-medium-1-3">
+                    <div class="md-card" data-uk-grid-margin>
+                        <div class="md-card-content">
+                            <ul class="uk-tab" data-uk-tab="{connect:'#tabs_anim2', animation:'slide-horizontal'}">
+                                <li class="uk-active"><a href="#">Active</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                            </ul>
+                            <ul id="tabs_anim2" class="uk-switcher uk-margin">
+                                <li>Voluptate voluptatem omnis at odio quisquam aperiam cumque id magnam accusamus velit veniam autem consequuntur eveniet ducimus nesciunt explicabo unde saepe vel nobis vel nam praesentium necessitatibus quisquam quisquam dolor.</li>
+                                <li>In minus maiores eum et aut sunt nihil iure ipsum in mollitia quas possimus inventore quasi laborum et necessitatibus et voluptatem voluptas expedita voluptatem aperiam.</li>
+                                <li>Similique commodi perferendis voluptatem aliquid tempora autem iste aspernatur consequatur ut non voluptatem at temporibus aliquid labore itaque dolore assumenda consequatur soluta facilis quo harum voluptates inventore consectetur ipsa qui culpa quae odit.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-medium-1-3">
+                    <div class="md-card" data-uk-grid-margin>
+                        <div class="md-card-content">
+                            <ul class="uk-tab" data-uk-tab="{connect:'#tabs_anim3', animation:'slide-vertical'}">
+                                <li class="uk-active"><a href="#">Active</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                            </ul>
+                            <ul id="tabs_anim3" class="uk-switcher uk-margin">
+                                <li>Sit corporis totam odit fuga eos ipsa qui iure ut est vero aliquam et ratione nemo architecto.</li>
+                                <li>Ipsum ut distinctio velit possimus quaerat molestias beatae voluptate eveniet fugiat non eum veritatis sit velit tempore magni accusantium facere soluta ut sed culpa ad possimus maiores modi et cumque aut explicabo quas id iure optio consequuntur in earum dolorum ipsam ut fugit unde.</li>
+                                <li>Doloremque quo dolorum qui placeat adipisci corporis labore quos fuga mollitia adipisci molestiae voluptatum laboriosam qui ratione illum quas dolores et.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-grid" >
+                <div class="uk-width-medium-1-3">
+                    <div class="md-card" data-uk-grid-margin>
+                        <div class="md-card-content">
+                            <ul class="uk-tab" data-uk-tab="{connect:'#tabs_anim4', animation:'slide-left'}">
+                                <li class="uk-active"><a href="#">Active</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                            </ul>
+                            <ul id="tabs_anim4" class="uk-switcher uk-margin">
+                                <li>Et animi dolor et sit animi consectetur rerum fugit tempora magni aliquid sed repellat voluptas perferendis doloribus dolor nemo inventore dolore accusamus commodi qui tenetur rerum est deleniti numquam consequuntur nemo.</li>
+                                <li>Et est tempore in fugit eum amet sapiente ut fuga quasi asperiores autem nulla asperiores esse reiciendis ad ut amet eos dolor laudantium ut earum ducimus eaque ad error aut quia recusandae debitis nihil id natus qui rerum libero aut commodi.</li>
+                                <li>Ipsa illum quos sed consequatur iusto molestiae nobis animi non at quia est ipsam est ab autem omnis in culpa saepe et autem qui autem eaque magni blanditiis non facilis nulla.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-medium-1-3">
+                    <div class="md-card" data-uk-grid-margin>
+                        <div class="md-card-content">
+                            <ul class="uk-tab" data-uk-tab="{connect:'#tabs_anim5', animation:'slide-right'}">
+                                <li class="uk-active"><a href="#">Active</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                            </ul>
+                            <ul id="tabs_anim5" class="uk-switcher uk-margin">
+                                <li>Enim et accusamus sit adipisci soluta et veniam consectetur possimus vel facere ea rerum impedit omnis temporibus laudantium sint rerum cum.</li>
+                                <li>Consequuntur commodi consequatur sint voluptatibus consequuntur dolorem eaque et labore cum minus voluptates excepturi deleniti quos architecto soluta voluptate qui consectetur sit sit pariatur quia quo repudiandae vel expedita hic quas rerum iste recusandae et ea magni praesentium voluptatem nobis non aliquid voluptas provident aut totam quod eligendi laudantium.</li>
+                                <li>Inventore explicabo suscipit nemo sequi nemo quia pariatur aliquid sequi quas nobis cupiditate dolor cumque sunt occaecati reiciendis odit in qui commodi hic at accusantium modi quis minima voluptatem corrupti consequatur qui asperiores unde vero aut omnis ratione suscipit nobis amet veritatis.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-medium-1-3">
+                    <div class="md-card" data-uk-grid-margin>
+                        <div class="md-card-content">
+                            <ul class="uk-tab" data-uk-tab="{connect:'#tabs_anim6', animation:'slide-bottom'}">
+                                <li class="uk-active"><a href="#">Active</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                            </ul>
+                            <ul id="tabs_anim6" class="uk-switcher uk-margin">
+                                <li>Aliquid commodi at expedita dolore qui eum laboriosam earum expedita saepe quos voluptas eveniet quidem aliquam amet consequatur accusamus magnam natus magnam eum asperiores cupiditate asperiores ratione sapiente veritatis in et et repudiandae.</li>
+                                <li>Minus reprehenderit ipsum nostrum est qui temporibus officiis ipsa ipsa nemo reiciendis quam neque consequatur eius odio voluptatem qui dolorem omnis delectus assumenda praesentium omnis labore beatae beatae dolorem odit laborum odio est ullam eum quaerat aut molestias perferendis amet sed.</li>
+                                <li>Libero ipsum ut ut asperiores quia et enim qui ducimus accusamus ea consequatur quo delectus deleniti laborum laborum aperiam cum ut magni facilis expedita quaerat molestiae aut adipisci molestiae vitae dolorem necessitatibus dolorum expedita maiores qui quidem velit accusantium et.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- google web fonts -->
+    <script>
+        WebFontConfig = {
+            google: {
+                families: [
+                    'Source+Code+Pro:400,700:latin',
+                    'Roboto:400,300,500,700,400italic:latin'
+                ]
+            }
+        };
+        (function() {
+            var wf = document.createElement('script');
+            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+            '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })();
+    </script>
+
+    <!-- momentJS date library -->
+    <script src="bower_components/moment/min/moment.min.js"></script>
+
+    <!-- common functions -->
+    <script src="assets/js/common.min.js"></script>
+    <!-- uikit functions -->
+    <script src="assets/js/uikit_custom.min.js"></script>
+    <!-- altair common functions/helpers -->
+    <script src="assets/js/altair_admin_common.min.js"></script>
+
+
+    <!-- enable hires images -->
+    <script>
+        $(function() {
+            altair_helpers.retina_images();
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,574 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+    <meta name="keywords" content="HTML5 Template">
+    <meta name="description" content="Responsive HTML5 Template">
+    <meta name="author" content="author.com">
+    <title>Responsive HTML5 Template</title>
+
+    <!-- STYLESHEET -->
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800" rel="stylesheet">
+
+    <!-- icon -->
+    <link rel="stylesheet" href="fonts/icons/main/mainfont/style.css">
+    <link rel="stylesheet" href="fonts/icons/font-awesome/css/font-awesome.min.css">
+
+    <!-- Vendor -->
+    <link rel="stylesheet" href="vendor/bootstrap/v3/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap/v4/bootstrap-grid.css">
+    <!-- Custom -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header js-header js-dropdown">
+            <div class="container">
+                <div class="header__logo">
+                    <h1>
+                        <img src="fonts/icons/main/Logo_Forum.svg" alt="logo">
+                    </h1>
+                    <div class="header__logo-btn" data-dropdown-btn="logo">
+                        Unity<i class="icon-Arrow_Below"></i>
+                    </div>
+                    <nav class="dropdown dropdown--design-01" data-dropdown-list="logo">
+                        <ul class="dropdown__catalog">
+                            <li><a href="index.html">Home Page</a></li>
+                            <li><a href="single-topic.html">Single Topic Page</a></li>
+                            <li><a href="simple-signup.html">Sign up Page</a></li>
+                            <li><a href="create-topic.html">Create Topic Page</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__search">
+                    <form action="#">
+                        <label>
+                            <i class="icon-Search js-header-search-btn-open"></i>
+                            <input type="search" placeholder="Search all forums" class="form-control">
+                        </label>
+                    </form>
+                    <div class="header__search-close js-header-search-btn-close"><i class="icon-Cancel"></i></div>
+                    <div class="header__search-btn" data-dropdown-btn="search">
+                        Topics<i class="icon-Arrow_Below"></i>
+                    </div>
+                    <div class="dropdown dropdown--design-01" data-dropdown-list="search">
+                        <ul>
+                            <li>
+                                <label>
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox" checked="checked">
+                                        <i></i>
+                                    </label>Search Titles Only
+                                </label>
+
+                            </li>
+                            <li>
+                                <label>
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox">
+                                        <i></i>
+                                    </label>Show Results as Posts
+                                </label>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="icon-Advanced_Search"></i>Advanced Search
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header__menu">
+                    <div class="header__menu-btn" data-dropdown-btn="menu">
+                        Latest Topics<i class="icon-Menu_Icon"></i>
+                    </div>
+                    <nav class="dropdown dropdown--design-01" data-dropdown-list="menu">
+                        <div>
+                            <ul class="dropdown__catalog row">
+                                <li class="col-xs-6"><a href="#">New</a></li>
+                                <li class="col-xs-6"><a href="#">Unread</a></li>
+                                <li class="col-xs-6"><a href="#">Groups</a></li>
+                                <li class="col-xs-6"><a href="#">Users</a></li>
+                                <li class="col-xs-6"><a href="#">Tags</a></li>
+                                <li class="col-xs-6"><a href="#">Shortcuts</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>Categories</h3>
+                            <ul class="dropdown__catalog row">
+                                <li class="col-xs-6"><a href="#" class="category"><i class="bg-f9bc64"></i>Hobbies</a></li>
+                                <li class="col-xs-6"><a href="#" class="category"><i class="bg-348aa7"></i>Social</a></li>
+                                <li class="col-xs-6"><a href="#" class="category"><i class="bg-4436f8"></i>Video</a></li>
+                                <li class="col-xs-6"><a href="#" class="category"><i class="bg-5dd39e"></i>Random</a></li>
+                                <li class="col-xs-6"><a href="#" class="category"><i class="bg-ff755a"></i>Arts</a></li>
+                                <li class="col-xs-6"><a href="#" class="category"><i class="bg-bce784"></i>Tech</a></li>
+                                <li class="col-xs-6"><a href="#" class="category"><i class="bg-83253f"></i>Gaming</a></li>
+                                <li class="col-xs-6"><a href="#" class="category"><i class="bg-c49bbb"></i>Science</a></li>
+                                <li class="col-xs-6"><a href="#" class="category"><i class="bg-3ebafa"></i>Exchange</a></li>
+                                <li class="col-xs-6"><a href="#" class="category"><i class="bg-c6b38e"></i>Pets</a></li>
+                                <li class="col-xs-6"><a href="#" class="category"><i class="bg-a7cdbd"></i>Entertainment</a></li>
+                                <li class="col-xs-6"><a href="#" class="category"><i class="bg-525252"></i>Education</a></li>
+                                <li class="col-xs-6"><a href="#" class="category"><i class="bg-777da7"></i>Q&amp;As</a></li>
+                                <li class="col-xs-6"><a href="#" class="category"><i class="bg-368f8b"></i>Politics</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="dropdown__catalog row">
+                                <li class="col-xs-6"><a href="#">Support</a></li>
+                                <li class="col-xs-6"><a href="#">Forum Rules</a></li>
+                                <li class="col-xs-6"><a href="#">Blog</a></li>
+                                <li class="col-xs-6"><a href="#">About</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="header__notification">
+                    <div class="header__notification-btn" data-dropdown-btn="notification">
+                        <i class="icon-Notification"></i>
+                        <span>6</span>
+                    </div>
+                    <div class="dropdown dropdown--design-01" data-dropdown-list="notification">
+                        <div>
+                            <a href="#">
+                                <i class="icon-Favorite_Topic"></i>
+                                <p>Roswell . 16 feb, 17<span>Which movie have you watched recently?</span></p>
+                            </a>
+                            <a href="#">
+                                <i class="icon-Reply_Empty"></i>
+                                <p>Callis . 18 feb, 17<span>I got an amzon thingie!</span></p>
+                            </a>
+                            <a href="#">
+                                <i class="icon-Badge"></i>
+                                <p>Earned Badge . 19 feb, 17<span><img src="fonts/icons/badges/Lets_talk.svg" alt="Lets Talk">Lets Talk</span></p>
+                            </a>
+                            <a href="#">
+                                <i class="icon-Badge"></i>
+                                <p>Earned Badge . 21 feb, 17<span><img src="fonts/icons/badges/Intermediate.svg" alt="Intermediate">Intermediate</span></p>
+                            </a>
+                            <a href="#">
+                                <i class="icon-Share_Topic"></i>
+                                <p>Charlie . 22 feb, 17<span>Need Video file of that cat.</span></p>
+                            </a>
+                            <a href="#">
+                                <i class="icon-Pencil"></i>
+                                <p>Greentea . 22 feb, 17<span>New Facebook like and share button.</span></p>
+                            </a>
+                            <span><a href="#">view older notifications...</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__user">
+                    <div class="header__user-btn" data-dropdown-btn="user">
+                        <img src="fonts/icons/avatars/A.svg" alt="avatar">
+                        azyrusmax<i class="icon-Arrow_Below"></i>
+                    </div>
+                    <nav class="dropdown dropdown--design-01" data-dropdown-list="user">
+                        <div>
+                            <div class="dropdown__icons">
+                                <a href="#"><i class="icon-Bookmark"></i></a>
+                                <a href="#"><i class="icon-Message"></i></a>
+                                <a href="#"><i class="icon-Preferences"></i></a>
+                                <a href="#"><i class="icon-Logout"></i></a>
+                            </div>
+                        </div>
+                        <div>
+                            <ul class="dropdown__catalog">
+                                <li><a href="#">Dashboard</a></li>
+                                <li><a href="#">Badges</a></li>
+                                <li><a href="#">My Groups</a></li>
+                                <li><a href="#">Notifications</a></li>
+                                <li><a href="#">Topics</a></li>
+                                <li><a href="#">Likes</a></li>
+                                <li><a href="#">Solved</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <div class="container">
+            <div class="create">
+                <div class="create__head">
+                    <div class="create__title"><img src="fonts/icons/main/New_Topic.svg" alt="New topic">Create New Thread</div>
+                    <span>Forum Guidelines</span>
+                </div>
+                <div class="create__section">
+                    <label class="create__label" for="title">Thread Title</label>
+                    <input type="text" class="form-control" id="title" placeholder="Add here">
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="create__section">
+                            <label class="create__label" for="category">Select Category</label>
+                            <label class="custom-select">
+                                <select id="category">
+                                    <option>Choose</option>
+                                    <option>Choose #2</option>
+                                    <option>Choose #3</option>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="create__section">
+                            <label class="create__label" for="sub-category">Select Sub Category</label>
+                            <label class="custom-select">
+                                <select id="sub-category">
+                                    <option>Choose</option>
+                                    <option>Choose #2</option>
+                                    <option>Choose #3</option>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="create__section create__textarea">
+                    <label class="create__label" for="description">Description</label>
+                    <div class="create__textarea-head">
+                        <span><i class="icon-Quote"></i></span>
+                        <span><i class="icon-Bold"></i></span>
+                        <span><i class="icon-Italic"></i></span>
+                        <div class="create__textarea-separate"></div>
+                        <span><i class="icon-Share_Topic"></i></span>
+                        <span><i class="icon-BlockQuote"></i></span>
+                        <span><i class="icon-Performatted"></i></span>
+                        <span><i class="icon-Upload_Files"></i></span>
+                        <span class="create__textarea-separate"></span>
+                        <span><i class="icon-Bullet_List"></i></span>
+                        <span><i class="icon-heading"></i></span>
+                        <span><i class="icon-Horizontal_Line"></i></span>
+                        <span><i class="icon-Emoticon"></i></span>
+                        <span><i class="icon-Settings"></i></span>
+                        <span><i class="icon-Color_Picker"></i></span>
+                        <div class="create__textarea-btn">
+                            <a href="#" class="btn">Preview</a>
+                        </div>
+                    </div>
+                    <textarea class="form-control" id="description">Adding amazing books to your summer reading list can be as simple as signing up for the BuzzFeed Books newsletter! You'll get a review of a new book you might love every Wednesday, plus much more twice a week: great jokes and quizzes, wonderful lists, powerful essays, all the Harry Potter and YA buzz you can handle, and of course, even more book recommendations. So make some space in your beach bag now — because you're going to have a lot to read this summer.</textarea>
+                </div>
+                <div class="create__section">
+                    <label class="create__label" for="tags">Add Tags</label>
+                    <input type="text" class="form-control" id="tags" placeholder="e.g. nature, science">
+                </div>
+                <div class="create__advanced">
+                    <div class="row">
+                        <div class="col-lg-4 col-xl-4">
+                            <div class="create__section">
+                                <label class="create__label">Who can see this?</label>
+                                <div class="create__radio">
+                                    <label class="create__box">
+                                        <label class="custom-radio">
+                                            <input type="radio" name="can-see" checked="checked">
+                                            <i></i>
+                                        </label>
+                                        <span>Everyone</span>
+                                    </label>
+                                    <label class="create__box">
+                                        <label class="custom-radio">
+                                            <input type="radio" name="can-see">
+                                            <i></i>
+                                        </label>
+                                        <span>Only Friends</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-xl-3">
+                            <div class="create__section">
+                                <label class="create__label">Share on Social?</label>
+                                <div class="create__radio">
+                                    <label class="create__box">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" name="share-social" checked="checked">
+                                            <i></i>
+                                        </label>
+                                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                                    </label>
+                                    <label class="create__box">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" name="share-social" checked="checked">
+                                            <i></i>
+                                        </label>
+                                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                                    </label>
+                                    <label class="create__box">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" name="share-social">
+                                            <i></i>
+                                        </label>
+                                        <i class="fa fa-google-plus" aria-hidden="true"></i>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-xl-5">
+                            <div class="create__section">
+                                <label class="create__label">Is this a Mature Thread?</label>
+                                <div class="create__radio">
+                                    <label class="create__box">
+                                        <label class="custom-radio">
+                                            <input type="radio" name="mature-thread">
+                                            <i></i>
+                                        </label>
+                                        <span>Yes</span>
+                                    </label>
+                                    <label class="create__box">
+                                        <label class="custom-radio">
+                                            <input type="radio" name="mature-thread" checked="checked">
+                                            <i></i>
+                                        </label>
+                                        <span>No</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="create__footer">
+                    <a href="#" class="create__btn-cansel btn">Cancel</a>
+                    <a href="#" class="create__btn-create btn btn--type-02">Create Thread</a>
+                </div>
+            </div>
+            <div class="posts" data-visible="desktop">
+                <div class="posts__head">
+                    <div class="posts__topic">Topic</div>
+                    <div class="posts__category">Category</div>
+                    <div class="posts__users">Users</div>
+                    <div class="posts__replies">Replies</div>
+                    <div class="posts__views">Views</div>
+                    <div class="posts__activity">Activity</div>
+                </div>
+                <div class="posts__body">
+                    <div class="posts__item">
+                        <div class="posts__section-left">
+                            <div class="posts__topic">
+                                <div class="posts__content">
+                                    <a href="#">
+                                        <h3>Current news and discussion</h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="posts__category"><a href="#" class="category"><i class="bg-368f8b"></i>Politics</a></div>
+                        </div>
+                        <div class="posts__section-right">
+                            <div class="posts__users">
+                                <div>
+                                    <a href="#" class="avatar"><img src="fonts/icons/avatars/A.svg" alt="avatar"></a>
+                                </div>
+                                <div>
+                                    <a href="#" class="avatar"><img src="fonts/icons/avatars/G.svg" alt="avatar"></a>
+                                </div>
+                                <div>
+                                    <a href="#" class="avatar"><img src="fonts/icons/avatars/P.svg" alt="avatar"></a>
+                                </div>
+                            </div>
+                            <div class="posts__replies">31</div>
+                            <div class="posts__views">14.5k</div>
+                            <div class="posts__activity">13d</div>
+                        </div>
+                    </div>
+                    <div class="posts__item bg-f2f4f6">
+                        <div class="posts__section-left">
+                            <div class="posts__topic">
+                                <div class="posts__content">
+                                    <a href="#">
+                                        <h3>Get your username drawn by the other users of unity! or a drawing based on what you do</h3>
+                                    </a>
+                                    <div class="posts__tags tags">
+                                        <a href="#" class="bg-4f80b0">gaming</a>
+                                        <a href="#" class="bg-424ee8">nature</a>
+                                        <a href="#" class="bg-36b7d7">entertainment</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="posts__category"><a href="#" class="category"><i class="bg-4436f8"></i>Video</a></div>
+                        </div>
+                        <div class="posts__section-right">
+                            <div class="posts__users">
+                                <div>
+                                    <a href="#" class="avatar"><img src="fonts/icons/avatars/L.svg" alt="avatar"></a>
+                                </div>
+                                <div>
+                                    <a href="#" class="avatar"><img src="fonts/icons/avatars/T.svg" alt="avatar"></a>
+                                </div>
+                            </div>
+                            <div class="posts__replies">252</div>
+                            <div class="posts__views">396</div>
+                            <div class="posts__activity">13m</div>
+                        </div>
+                    </div>
+                    <div class="posts__item">
+                        <div class="posts__section-left">
+                            <div class="posts__topic">
+                                <div class="posts__content">
+                                    <a href="#">
+                                        <h3>Which movie have you watched most recently?</h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="posts__category"><a href="#" class="category"><i class="bg-3ebafa"></i> Exchange</a></div>
+                        </div>
+                        <div class="posts__section-right">
+                            <div class="posts__users">
+                                <div>
+                                    <a href="#" class="avatar"><img src="fonts/icons/avatars/E.svg" alt="avatar"></a>
+                                </div>
+                                <div>
+                                    <a href="#" class="avatar"><img src="fonts/icons/avatars/I.svg" alt="avatar"></a>
+                                </div>
+                                <div>
+                                    <a href="#" class="avatar"><img src="fonts/icons/avatars/R.svg" alt="avatar"></a>
+                                </div>
+                            </div>
+                            <div class="posts__replies">207</div>
+                            <div class="posts__views">7.5k</div>
+                            <div class="posts__activity">41m</div>
+                        </div>
+                    </div>
+                    <div class="posts__item posts__item--bg-gradient">
+                        <div class="posts__section-left">
+                            <div class="posts__topic">
+                                <div class="posts__content">
+                                    <a href="#">
+                                        <h3><span>This post contails spoiler about</span> Star Wars Movie.</h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="posts__category"><a href="#" class="category"><i class="bg-777da7"></i> Q&amp;As</a></div>
+                        </div>
+                        <div class="posts__section-right">
+                            <div class="posts__users">
+                                <div>
+                                    <a href="#" class="avatar"><img src="fonts/icons/avatars/F.svg" alt="avatar"></a>
+                                </div>
+                            </div>
+                            <div class="posts__replies">2.3k</div>
+                            <div class="posts__views">2.0k</div>
+                            <div class="posts__activity">1h</div>
+                        </div>
+                    </div>
+                    <div class="posts__item">
+                        <div class="posts__section-left">
+                            <div class="posts__topic">
+                                <div class="posts__content">
+                                    <a href="#">
+                                        <h3>Take a picture of what you’re doing at this very moment</h3>
+                                    </a>
+                                    <div class="posts__tags tags">
+                                        <a href="#" class="bg-ec008c">selfie</a>
+                                        <a href="#" class="bg-7cc576">camera</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="posts__category"><a href="#" class="category"><i class="bg-c6b38e"></i> Pets</a></div>
+                        </div>
+                        <div class="posts__section-right">
+                            <div class="posts__users">
+                                <div>
+                                    <a href="#" class="avatar"><img src="fonts/icons/avatars/C.svg" alt="avatar"></a>
+                                </div>
+                                <div>
+                                    <a href="#" class="avatar"><img src="fonts/icons/avatars/U.svg" alt="avatar"></a>
+                                </div>
+                                <div>
+                                    <a href="#" class="avatar"><img src="fonts/icons/avatars/I.svg" alt="avatar"></a>
+                                </div>
+                            </div>
+                            <div class="posts__replies">441</div>
+                            <div class="posts__views">3.1k</div>
+                            <div class="posts__activity">6h</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer js-dropdown">
+            <div class="container">
+                <div class="footer__logo">
+                    <div>
+                        <img src="fonts/icons/main/Logo_Forum.svg" alt="logo">Unity
+                    </div>
+                </div>
+                <div class="footer__nav">
+                    <div class="footer__tline">
+                        <i class="icon-Support"></i>
+                        <ul class="footer__menu">
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">The Team</a></li>
+                        </ul>
+                        <div class="footer__language">
+                            <div class="footer__language-btn" data-dropdown-btn="language">Americas - English<i class="icon-Arrow_Below"></i></div>
+                            <div class="footer__language-dropdown dropdown dropdown--design-01 dropdown--reverse-y" data-dropdown-list="language">
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <h3>Region</h3>
+                                        <ul class="dropdown__catalog">
+                                            <li class="active"><a href="#"><i></i>America</a></li>
+                                            <li><a href="#"><i></i>Europe</a></li>
+                                            <li><a href="#"><i></i>Asia</a></li>
+                                            <li><a href="#"><i></i>China</a></li>
+                                            <li><a href="#"><i></i>Australia</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <h3>Language</h3>
+                                        <ul class="dropdown__catalog">
+                                            <li class="active"><a href="#"><i></i>English</a></li>
+                                            <li><a href="#"><i></i>Espanol</a></li>
+                                            <li><a href="#"><i></i>Portugues</a></li>
+                                            <li><a href="#"><i></i>Chinese</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__bline">
+                        <ul class="footer__menu">
+                            <li class="footer__copyright"><span>&copy; 2017 azyrusthemes.com</span></li>
+                            <li><a href="#">Teams</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Send Feedback</a></li>
+                        </ul>
+                        <ul class="footer__social">
+                            <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-cloud" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+                        </ul>
+                        <div class="footer__language-btn-m" data-dropdown-btn="language">Americas - English<i class="icon-Arrow_Below"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVA SCRIPT -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/velocity/velocity.min.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>

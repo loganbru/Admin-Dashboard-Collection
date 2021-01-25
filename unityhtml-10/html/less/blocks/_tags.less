@@ -1,0 +1,25 @@
+.tags {
+  margin-bottom: -6px;
+  flex-wrap: wrap;
+  .display-flex();
+  a {
+    margin-bottom: 6px;
+    background-color: #394047;
+    ._flex-center();
+    .display-inline-flex();
+    ._link-color(#ffffff);
+    @media only screen and (min-width: @screen-md) {
+      height: 22px;
+      padding: 0 8px;
+      border-radius: 3px;
+    }
+    @media only screen and (max-width: @screen-md-down) {
+      height: 28px;
+      padding: 0 10px;
+      font-size: 14px;
+    }
+    &:not(:last-child) {
+      margin-right: 6px;
+    }
+  }
+}

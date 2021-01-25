@@ -1,0 +1,47 @@
+
+//
+// Colorpicker
+//
+
+.sp-replacer{
+  background-color: $input-bg;
+  border-color: $input-border-color;
+  color: $gray-800;
+  &:hover, .sp-active{
+    border-color: $input-border-color;
+    color: $gray-800;
+  }
+}
+
+.sp-preview{
+  border-color: $input-border-color;
+}
+
+.sp-container{
+  background-color: $gray-300;
+  border-color: $border-color;
+
+  button{
+    background-color: $gray-300 ;
+    color: $gray-800;
+    background-image: none !important;
+    padding: .25rem .5rem;
+    font-size: .79625rem;
+    line-height: 1.5;
+    &:hover{
+      background-color: darken($gray-300, 4%);
+    }
+  }
+}
+
+.sp-picker-container{
+  border-color: $border-color;
+}
+
+.sp-input{
+  background-color: $input-bg;
+  border-color: $input-border-color;
+  color: $input-color;
+  outline: 0;
+}
+

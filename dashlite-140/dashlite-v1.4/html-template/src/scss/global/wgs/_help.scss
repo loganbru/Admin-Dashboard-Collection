@@ -1,0 +1,72 @@
+.nk-help {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+    &-img {
+        width: 120px;
+        margin-right: 0;   
+        margin-bottom: 1.5rem; 
+        flex-shrink: 0;
+        text-align: center;
+        padding: .125rem;
+        .text-center & {
+			margin-left: auto;
+			margin-right: auto;
+		}
+    }
+    &-action{
+        flex-shrink: 0;
+        margin-top: 1.5rem;
+        width: 100%;
+        margin-bottom: 0.125rem;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .nk-help {
+    	flex-wrap: nowrap;
+		&-img {
+            margin-right: 1.5rem;
+            margin-bottom: 0;
+            .card-inner-lg & {
+            	margin-left: -.5rem;
+            }
+        }
+		&-text {
+			flex-grow: 1;
+        	padding: .5rem 1rem .5rem .5rem;
+        }
+        &-action{
+        	width: auto;
+			margin-top: 0;
+			padding-left: 1.5rem;
+        }
+    }
+}
+
+.nk-help-plain {
+	.card-full & {
+		height: 100%;
+        display: flex;
+        flex-direction: column;
+	}
+	.nk-help {
+		&-img {
+			margin-bottom: 1.25rem;
+		}
+		&-text {
+			padding: 0;
+			&:not(:last-child) {
+				margin-bottom: 1.5rem;
+			}
+		}
+		&-action {
+			margin-top: auto;
+			padding: 0;
+		}
+
+		.card-full & {
+			
+		}
+	}
+}

@@ -1,0 +1,65 @@
+---
+layout: components
+title: Icon Picker
+---
+
+<!-- Hero and nav -->
+<div class="hero is-relative is-theme-info">
+
+    {{> navbar-static-light}}
+
+    <!-- Hero image -->
+    <div id="main-hero" class="hero-body">
+        <div class="container has-text-centered">
+            <div class="columns is-vcentered">
+                <div class="column is-4 is-offset-1 has-text-left">
+                    <h1 class="title components-title is-1">
+                        Iconpicker 
+                    </h1>
+                    <h2 class="subtitle is-4 components-subtitle">
+                        Iconpicker extension.
+                    </h2>
+                    <p class="components-cta">
+                        <a href="#basic-buttons" class="button button-cta btn-align light-btn btn-outlined is-bold rounded">
+                            Get Started
+                        </a>
+                    </p>
+                </div>
+                <div class="column is-offset-1 has-text-centered is-hidden-mobile">
+                    <div id="iconpicker-ill" class="vivus-svg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Hero image -->
+</div>
+<!-- /Hero and nav -->
+
+<section class="section is-medium">
+
+    <div id="basic-buttons" class="section-title-wrapper has-text-centered">
+        <div class="bg-number">1</div>
+        <h2 class="title section-title has-text-centered dark-text text-bold">
+            Iconpicker <span class="tag is-info">New</span>
+        </h2>
+    </div>
+
+    <!-- Bulma Iconpicker-->
+    <div class="columns is-vcentered">
+        <div class="column is-6 is-offset-3">
+            <div class="info-block">
+                <h4>Usage</h4>
+                <p>You  can use this component if you need a feature that involves an icon picker in your project. Just create an input and give it a <code>data-action="iconPicker"</code> attribute. This will turn the input into a clickable icon that displays an icon picker modal dialog.</p>
+            </div>
+            
+            <!-- Wrapper -->
+            <div class="iconpicker-wrapper">
+                <!-- Input -->
+                <input type="text" id="iconPicker" data-action="iconPicker" value="fa fa-plus"/>
+                <p class="help">Click on the icon to open the iconPicker.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{> footer-light}}

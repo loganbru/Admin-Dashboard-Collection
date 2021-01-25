@@ -1,0 +1,29 @@
+<!-- begin:: Header Topbar -->
+<div class="kt-header__topbar">
+	<!--begin: Search -->
+	<kt-search-default></kt-search-default>
+	<!--end: Search -->
+	<!--begin: Notifications -->
+	<kt-notification [type]="'brand'" [skin]="'light'" [icon]="'flaticon2-bell-alarm-symbol'" [useSVG]="false"></kt-notification>
+	<!--end: Notifications -->
+	<!--begin: Quick actions -->
+	<kt-quick-action [bgImage]="'./assets/media/misc/bg-1.jpg'" [skin]="'dark'" [icon]="'flaticon2-gear'" [useSVG]="false"></kt-quick-action>
+	<!--end: Quick actions -->
+	<!--begin: My Cart -->
+	<kt-cart [bgImage]="'./assets/media/misc/bg-1.jpg'" [icon]="'flaticon2-shopping-cart-1'" [useSVG]="false"></kt-cart>
+	<!--end: My Cart -->
+	<!--begin: Language bar -->
+	<kt-language-selector></kt-language-selector>
+	<!--end: Language bar -->
+	<!--begin: User bar -->
+	<kt-user-profile [greeting]="false" [avatar]="false" [badge]="false" [icon]="true"></kt-user-profile>
+	<!--end: User bar -->
+	<!--begin: Quick panel toggler -->
+	<div class="kt-header__topbar-item kt-header__topbar-item--quick-panel" data-placement="bottom" ngbTooltip="Quick panel">
+		<div class="kt-header__topbar-wrapper">
+			<span class="kt-header__topbar-icon" id="kt_quick_panel_toggler_btn"><i class="flaticon2-cube-1"></i></span>
+		</div>
+	</div>
+	<!--end: Quick panel toggler -->
+</div>
+<!-- end:: Header Topbar -->

@@ -1,0 +1,34 @@
+//
+// britechart.scss
+//
+
+.irs-line-mid, .irs-line-left, .irs-line-right, .irs-bar, .irs-bar-edge, .irs-slider {
+  background: none;
+}
+
+.irs-from, .irs-to, .irs-single {
+  background: $primary;
+
+  &:after{
+    border-top-color: $primary;
+  }
+}
+
+.irs-bar {
+  background-color: $gray-700;
+}
+
+.irs-line-left {
+  background-color: $gray-300;
+  border-radius: 3px 0 0 3px;
+}
+
+.irs-line-mid {
+  background-color: $gray-300;
+}
+
+.irs-line-right {
+  background-color: $gray-300;
+  border-radius: 0 3px 3px 0;
+}
+

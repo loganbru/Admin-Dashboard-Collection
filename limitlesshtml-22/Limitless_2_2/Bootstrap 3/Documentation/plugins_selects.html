@@ -1,0 +1,1427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/core.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script type="text/javascript" src="assets/js/plugins/ui/prism.min.js"></script>
+	
+	<script type="text/javascript" src="assets/js/core/app.js"></script>
+	<script type="text/javascript" src="assets/js/pages/sidebar_detached_sticky_native.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body data-spy="scroll" data-target=".sidebar-detached" class="has-detached-right">
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-default navbar-lg header-highlight">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="index.html"><img src="assets/images/logo_light.png" alt=""></a>
+
+			<ul class="nav navbar-nav pull-right visible-xs-block">
+				<li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+				<li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+				<li><a class="sidebar-mobile-detached-toggle"><i class="icon-grid7"></i></a></li>
+			</ul>
+		</div>
+
+		<div class="navbar-collapse collapse" id="navbar-mobile">
+			<ul class="nav navbar-nav">
+				<li><a class="sidebar-control sidebar-main-hide hidden-xs"><i class="icon-paragraph-justify3"></i></a></li>
+				<li><a class="sidebar-control sidebar-detached-hide hidden-xs"><i class="icon-drag-right"></i></a></li>
+			</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="other_changelog.html">Changelog <span class="label label-inline bg-warning-400 position-right">v. 2.0</span></a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page container -->
+	<div class="page-container">
+
+		<!-- Page content -->
+		<div class="page-content">
+
+			<!-- Main sidebar -->
+			<div class="sidebar sidebar-main">
+				<div class="sidebar-content">
+
+	        		<!-- Support -->
+					<div class="sidebar-category no-margin">
+						<div class="category-title">
+							<span>Have questions?</span>
+							<i class="icon-help text-muted pull-right"></i>
+						</div>
+
+						<div class="category-content">
+							<a href="http://kopyov.ticksy.com" class="btn bg-success-400 btn-block" target="_blank"><i class="icon-lifebuoy position-left"></i> Limitless support</a>
+						</div>
+					</div>
+					<!-- /support -->
+
+
+					<!-- Main navigation -->
+					<div class="sidebar-category">
+						<div class="category-title">
+							<span>Navigation</span>
+							<i class="icon-menu7 text-muted pull-right"></i>
+						</div>
+
+						<div class="category-content no-padding">
+							<ul class="navigation navigation-main navigation-accordion">
+
+								<!-- Main -->
+								<li class="navigation-header">Main</li>
+								<li><a href="index.html">Introduction</a></li>
+								<li><a href="main_getting_started.html">Getting started</a></li>
+								<li><a href="main_starter_kit.html">Starter kit</a></li>
+								<li><a href="main_rtl.html">RTL layout</a></li>
+
+								<li class="navigation-header">Basic functionality</li>								
+								<li><a href="base_less_css.html">LESS and CSS</a></li>
+								<li><a href="base_less_compile.html">Compiling LESS</a></li>
+								<li><a href="base_less_compile_rtl.html">Compiling LESS for RTL version</a></li>
+								<li>
+									<a href="#">Plugins</a>
+									<ul>
+										<li><a href="plugins_forms.html">Forms</a></li>
+										<li><a href="plugins_forms_styling.html">Form styling</a></li>
+										<li class="active"><a href="plugins_selects.html">Selects</a></li>
+										<li><a href="plugins_editors.html">Editors</a></li>
+										<li><a href="plugins_uploaders.html">Uploaders</a></li>
+										<li><a href="plugins_wizards.html">Wizards</a></li>
+										<li><a href="plugins_extensions.html">Extensions</a></li>
+										<li><a href="plugins_notifications.html">Notifications</a></li>
+										<li><a href="plugins_pickers.html">Pickers</a></li>
+										<li><a href="plugins_tables.html">Tables</a></li>
+										<li><a href="plugins_ui.html">UI</a></li>
+										<li><a href="plugins_vis.html">Visualization</a></li>
+									</ul>
+								</li>
+								<li><a href="base_bootstrap.html">Bootstrap</a></li>
+								<li><a href="base_color_system.html">Color system</a></li>
+								<li><a href="base_helpers.html">Helpers</a></li>
+								<li><a href="base_themes.html">Themes</a></li>
+
+								<li class="navigation-header">Layout options</li>
+								<li><a href="layout_markup.html">Markup</a></li>
+								<li><a href="layout_sidebars.html">Sidebars</a></li>
+								<li><a href="layout_navbars.html">Navbars</a></li>
+								<li><a href="layout_v_nav.html">Vertical navigation</a></li>
+								<li><a href="layout_h_nav.html">Horizontal navigation</a></li>
+								<li><a href="layout_page_header.html">Page header</a></li>
+								<li><a href="layout_footer.html">Footer</a></li>
+
+								<li class="navigation-header">Other</li>
+								<li><a href="other_credits.html">Sources and credits</a></li>
+								<li><a href="other_changelog.html">Changelog <span class="label bg-warning-400">version 2.0</span></a></li>
+								<!-- /main -->
+
+							</ul>
+						</div>
+					</div>
+					<!-- /main navigation -->
+
+				</div>
+			</div>
+			<!-- /main sidebar -->
+
+
+			<!-- Main content -->
+			<div class="content-wrapper">
+
+				<!-- Page header -->
+				<div class="page-header">
+					<div class="page-header-content">
+						<div class="page-title">
+							<h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold">Limitless</span> - Selects</h4>
+						</div>
+
+						<div class="heading-elements">
+							<ul class="breadcrumb">
+								<li><a href="index.html"><i class="icon-home2 position-left"></i> Home</a></li>
+								<li><a href="plugins_selects.html">Plugins</a></li>
+								<li class="active">Selects</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- /page header -->
+				
+
+				<!-- Content area -->
+				<div class="content">
+
+					<!-- Detached content -->
+					<div class="container-detached">
+						<div class="content-detached">
+
+							<!-- Select2 selects -->
+							<div class="panel panel-flat" id="select2">
+								<div class="panel-heading">
+									<h5 class="panel-title">Select2 selects</h5>
+									<div class="heading-elements">
+										<span class="label bg-slate heading-text">Selects</span>
+										<span class="heading-text text-muted">select2.min.js</span>
+										<ul class="icons-list">
+					                		<li><a data-action="collapse"></a></li>
+					                		<li><a data-action="close"></a></li>
+					                	</ul>
+									</div>
+								</div>
+
+								<div class="panel-body">
+									<div class="content-group-lg">
+										<h6 class="text-semibold">Overview</h6>
+										<p>Select2 is a jQuery-based replacement for select boxes. It supports searching, remote data sets, and pagination of results. Select2 exposes its default options via the <code>$.fn.select2.defaults</code> object. Properties changed in this object (same properties configurable through the constructor) will take effect for every instance created after the change. Works well in IE8+, Chrome 8+, Firefox 10+, Safari 3+, Opera 10.6+.</p>
+
+										<p>Main features:</p>
+										<ul class="list">
+											<li>Enhancing native selects with search.</li>
+											<li>Enhancing native selects with a better multi-select interface.</li>
+											<li>Loading data from JavaScript: easily load items via AJAX and have them searchable.</li>
+											<li>Nesting optgroups: native selects only support one level of nesting. Select2 does not have this restriction.</li>
+											<li>Tagging: ability to add new items on the fly.</li>
+											<li>Working with large, remote datasets: ability to partially load a dataset based on the search term.</li>
+											<li>Paging of large datasets: easy support for loading more pages when the results are scrolled to the end.</li>
+											<li>Templating: support for custom rendering of results and selections.</li>
+										</ul>
+									</div>
+
+									<div class="content-group-lg">
+										<h6 class="text-semibold">Usage</h6>
+
+										<div class="content-group">
+											<p>Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+											<pre><code class="language-markup">&lt;!-- Load library -->
+&lt;script type="text/javascript" src="assets/js/plugins/forms/selects/select2.min.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="content-group">
+											<p>Create element:</p>
+											<pre><code class="language-markup">&lt;!-- Select2 element -->
+&lt;select class="select">
+	&lt;optgroup label="Mountain Time Zone">
+		&lt;option value="value">...&lt;/option>
+		...
+	&lt;/optgroup>
+&lt;/select>
+</code></pre>
+										</div>
+
+										<div class="content-group">
+											<p>Then initialize via JavaScript:</p>
+											<pre><code class="language-javascript">// Initialization
+$('select').select2({
+	// options
+});
+</code></pre>
+										</div>
+									</div>
+
+									<div class="content-group-lg">
+										<h6 class="text-semibold">Select2 documentation</h6>
+										Full Select2 select documentation can be found online on <a href="http://select2.github.io/select2/#documentation">Official library website</a>. It's quite big, with a lot of options, events and methods. I find it useless to copy them all and paste to the Limitless documentation, nobody can represent and describe library features better than its creators. Below you can find additional links related to Select2 library.
+									</div>
+
+									<div>
+										<h6 class="text-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="text-semibold">File name</td>
+														<td>select2.min.js</td>
+													</tr>
+													<tr>
+														<td class="text-semibold">Location</td>
+														<td>assets/js/plugins/forms/selects/</td>
+													</tr>
+													<tr>
+														<td class="text-semibold">Updates</td>
+														<td><span class="label bg-warning-400">0</span></td>
+													</tr>
+													<tr>
+														<td class="text-semibold">Links</td>
+														<td>
+															<p>
+																<a href="http://select2.github.io" class="btn btn-sm bg-danger-400 btn-labeled" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+
+															<p>
+																<a href="http://select2.github.io/select2/#documentation" class="btn btn-sm bg-slate btn-labeled" target="_blank">
+																	<b><i class="icon-file-text2"></i></b>
+																	Full documentation
+																</a>
+															</p>
+
+															<a href="https://github.com/select2/select2" class="btn btn-sm bg-blue btn-labeled" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /select2 selects -->
+
+
+							<!-- Bootstrap multiselect -->
+							<div class="panel panel-flat" id="multiselect">
+								<div class="panel-heading">
+									<h5 class="panel-title">Bootstrap multiselect</h5>
+									<div class="heading-elements">
+										<span class="label bg-slate heading-text">Selects</span>
+										<span class="heading-text text-muted">bootstrap_multiselect.min.js</span>
+										<ul class="icons-list">
+					                		<li><a data-action="collapse"></a></li>
+					                		<li><a data-action="close"></a></li>
+					                	</ul>
+									</div>
+								</div>
+
+								<div class="panel-body">
+									<div class="content-group-lg">
+										<h6 class="text-semibold">Overview</h6>
+										<p>Bootstrap Multiselect is a JQuery based plugin to provide an intuitive user interface for using select inputs with the multiple attribute present. Instead of a select a bootstrap button will be shown w dropdown menu containing the single options as checkboxes.</p>
+									</div>
+
+									<div class="content-group-lg">
+										<h6 class="text-semibold">Usage</h6>
+
+										<div class="content-group">
+											<p>First include jQuery and Bootstrap libraries, then include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+											<pre><code class="language-markup">&lt;!-- Load library -->
+&lt;script type="text/javascript" src="assets/js/plugins/forms/selects/bootstrap_multiselect.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="content-group">
+											<p>Now simply use HTML to create your select input which you want to turn into a multiselect. Remember to set the multiple attribute as to get a real multiselect - but do not worry, the plugin can also be used as usual select without the multiple attribute being present:</p>
+											<pre><code class="language-markup">&lt;!-- Build your select -->
+&lt;select id="example-getting-started" multiple="multiple">
+    &lt;option value="cheese">Cheese&lt;/option>
+    &lt;option value="tomatoes">Tomatoes&lt;/option>
+    &lt;option value="mozarella">Mozzarella&lt;/option>
+    &lt;option value="mushrooms">Mushrooms&lt;/option>
+    &lt;option value="pepperoni">Pepperoni&lt;/option>
+    &lt;option value="onions">Onions&lt;/option>
+&lt;/select>
+</code></pre>
+										</div>
+
+										<div class="content-group">
+											<p>In the end, simply call the plugin on your select. You may also specify further options, see the Options tab for further information:</p>
+											<pre><code class="language-javascript">// Initialization
+$(document).ready(function() {
+    $('#example-getting-started').multiselect();
+});
+</code></pre>
+										</div>
+									</div>
+
+									<div class="content-group-lg">
+										<h6 class="text-semibold">Configuration options</h6>
+										<div class="table-responsive">
+											<table class="table table-striped table-bordered">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Option</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>multiple</code></td>
+														<td><code>multiple</code> is not a real configuration option. It refers to the multiple attribute of the select the plugin is applied on. When the <code>multiple</code> attribute of the <code>select</code> is present, the plugin uses checkboxes to allow multiple selections. If it is not present, the plugin uses radio buttons to allow single selections. When using the plugin for single selections (without the multiple attribute present), the first option will automatically be selected if no other option is selected in advance</td>
+													</tr>
+													<tr>
+														<td><code>enableHTML</code></td>
+														<td>XSS injection is a serious thread for all modern web applications. Setting <code>enableHTML</code> to <code>false</code> (default setting) will create a XSS save multiselect</td>
+													</tr>
+													<tr>
+														<td><code>enableClickableOptGroups</code></td>
+														<td>If set to <code>true</code>, optgroup's will be clickable, allowing to easily select multiple options belonging to the same group</td>
+													</tr>
+													<tr>
+														<td><code>disableIfEmpty</code></td>
+														<td>If set to <code>true</code>, the multiselect will be disabled if no options are given</td>
+													</tr>
+													<tr>
+														<td><code>dropRight</code></td>
+														<td>The dropdown can also be dropped right</td>
+													</tr>
+													<tr>
+														<td><code>maxHeight</code></td>
+														<td>The maximum height of the dropdown. This is useful when using the plugin with plenty of options</td>
+													</tr>
+													<tr>
+														<td><code>checkboxName</code></td>
+														<td>The name used for the generated checkboxes</td>
+													</tr>
+													<tr>
+														<td><code>buttonClass</code></td>
+														<td>The class of the multiselect button</td>
+													</tr>
+													<tr>
+														<td><code>inheritClass</code></td>
+														<td>Inherit the class of the button from the original select</td>
+													</tr>
+													<tr>
+														<td><code>buttonContainer</code></td>
+														<td>The container holding both the button as well as the dropdown</td>
+													</tr>
+													<tr>
+														<td><code>buttonWidth</code></td>
+														<td>The width of the multiselect button may be fixed using this option</td>
+													</tr>
+													<tr>
+														<td><code>buttonText</code></td>
+														<td>
+															A callback specifying the text shown on the button dependent on the currently selected options.<br>
+															The callback gets the currently selected options and the select as argument and returns the string shown as button text. The default <code>buttonText</code> callback returns <code>nonSelectedText</code> in the case no option is selected, <code>nSelectedText</code> in the case more than <code>numberDisplayed</code> options are selected and the names of the selected options if less than <code>numberDisplayed</code> options are selected
+														</td>
+													</tr>
+													<tr>
+														<td><code>buttonTitle</code></td>
+														<td>
+															A callback specifying the title of the button.<br>
+															The callback gets the currently selected options and the select as argument and returns the title of the button as string. The default <code>buttonTitle</code> callback returns <code>nonSelectedText</code> in the case no option is selected and the names of the selected options of less than <code>numberDisplayed</code> options are selected. If more than <code>numberDisplayed</code> options are selected, <code>nSelectedText</code> is returned
+														</td>
+													</tr>
+													<tr>
+														<td><code>nonSelectedText</code></td>
+														<td>The text displayed when no option is selected. This option is used in the default <code>buttonText</code> and <code>buttonTitle</code> functions</td>
+													</tr>
+													<tr>
+														<td><code>nSelectedText</code></td>
+														<td>The text displayed if more than <code>numberDisplayed</code> options are selected. This option is used by the default <code>buttonText</code> and <code>buttonTitle</code> callbacks</td>
+													</tr>
+													<tr>
+														<td><code>allSelectedText</code></td>
+														<td>The text displayed if all options are selected</td>
+													</tr>
+													<tr>
+														<td><code>numberDisplayed</code></td>
+														<td>This option is used by the <code>buttonText</code> and <code>buttonTitle</code> functions to determine of too much options would be displayed</td>
+													</tr>
+													<tr>
+														<td><code>optionLabel</code></td>
+														<td>A callback used to define the labels of the options</td>
+													</tr>
+													<tr>
+														<td><code>selectedClass</code></td>
+														<td>The class(es) applied on selected options</td>
+													</tr>
+													<tr>
+														<td><code>includeSelectAllOption</code></td>
+														<td>Set to <code>true</code> or <code>false</code> to enable or disable the select all option</td>
+													</tr>
+													<tr>
+														<td><code>selectAllText</code></td>
+														<td>The text displayed for the select all option</td>
+													</tr>
+													<tr>
+														<td><code>selectAllValue</code></td>
+														<td>The select all option is added as additional option within the select. To distinguish this option from the original options the value used for the select all option can be configured using the <code>selectAllValue</code> option</td>
+													</tr>
+													<tr>
+														<td><code>selectAllName</code></td>
+														<td>This option allows to control the name given to the select all option</td>
+													</tr>
+													<tr>
+														<td><code>selectAllNumber</code></td>
+														<td>If set to <code>true</code> (default), the number of selected options will be shown in parantheses when all options are seleted</td>
+													</tr>
+													<tr>
+														<td><code>onSelectAll</code></td>
+														<td>This function is triggered when the select all option is used to select all options. Note that this can also be triggered manually using the <code>.multiselect('selectAll')</code> method</td>
+													</tr>
+													<tr>
+														<td><code>enableFiltering</code></td>
+														<td>Set to <code>true</code> or <code>false</code> to enable or disable the filter. A filter input will be added to dynamically filter all options</td>
+													</tr>
+													<tr>
+														<td><code>enableCaseInsensitiveFiltering</code></td>
+														<td>The filter as configured above will use case sensitive filtering, by setting <code>enableCaseInsensitiveFiltering</code> to <code>true</code> this behavior can be changed to use case insensitive filtering</td>
+													</tr>
+													<tr>
+														<td><code>filterBehavior</code></td>
+														<td>The options are filtered based on their text. This behavior can be changed to use the value of the options or both the text and the value</td>
+													</tr>
+													<tr>
+														<td><code>filterPlaceholder</code></td>
+														<td>The placeholder used for the filter input</td>
+													</tr>
+													<tr class="border-solid">
+														<td><code>onChange</code></td>
+														<td>A function which is triggered on the <code>change</code> event of the options. Note that the event is not triggered when selecting or deselecting options using the <code>select</code> and <code>deselect</code> methods provided by the plugin</td>
+													</tr>
+													<tr>
+														<td><code>onDropdownShow</code></td>
+														<td>A callback called when the dropdown is shown</td>
+													</tr>
+													<tr>
+														<td><code>onDropdownHide</code></td>
+														<td>A callback called when the dropdown is closed</td>
+													</tr>
+													<tr>
+														<td><code>onDropdownShown</code></td>
+														<td>A callback called <strong>after</strong> the dropdown has been shown</td>
+													</tr>
+													<tr>
+														<td><code>onDropdownHidden</code></td>
+														<td>A callback called <strong>after</strong> the dropdown has been closed</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="content-group-lg">
+										<h6 class="text-semibold">Plugin methods</h6>
+										<div class="table-responsive">
+											<table class="table table-striped table-bordered">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Option</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>.multiselect('destroy')</code></td>
+														<td>This method is used to destroy the plugin on the given element - meaning unbinding the plugin</td>
+													</tr>
+													<tr>
+														<td><code>.multiselect('refresh')</code></td>
+														<td>This method is used to refresh the checked checkboxes based on the currently selected options within the select</td>
+													</tr>
+													<tr>
+														<td><code>.multiselect('rebuild')</code></td>
+														<td>Rebuilds the whole dropdown menu. All selected options will remain selected (if still existent!)</td>
+													</tr>
+													<tr>
+														<td><code>.multiselect('select', value)</code></td>
+														<td>Selects an option by its value. Works also using an array of values</td>
+													</tr>
+													<tr>
+														<td><code>.multiselect('deselect', value)</code></td>
+														<td>Deselect an option by its value. Works also using an array of values</td>
+													</tr>
+													<tr>
+														<td><code>.multiselect('selectAll', justVisible)</code></td>
+														<td>Selects all options. If <code>justVisible</code> is set to <code>true</code> or not provided, all visible options are selected (when using the filter), otherweise (<code>justVisible</code> set to <code>false</code>) all options are selected</td>
+													</tr>
+													<tr>
+														<td><code>.multiselect('deselectAll', justVisible)</code></td>
+														<td>Deselects all options. If <code>justVisible</code> is set to <code>true</code> or not provided, all visible options are deselected, otherweise (<code>justVisible</code> set to <code>false</code>) all options are deselected</td>
+													</tr>
+													<tr>
+														<td><code>.multiselect('updateButtonText')</code></td>
+														<td>When manually selecting/deselecting options and the corresponding checkboxes, this function updates the text and title of the button</td>
+													</tr>
+													<tr>
+														<td><code>.multiselect('setOptions', options)</code></td>
+														<td>Used to change configuration after initializing the multiselect. This may be useful in combination with <code>.multiselect('rebuild')</code></td>
+													</tr>
+													<tr>
+														<td><code>.multiselect('disable')</code></td>
+														<td>Disable both the underlying select and the dropdown button</td>
+													</tr>
+													<tr>
+														<td><code>.multiselect('enable')</code></td>
+														<td>Enable both the underlying select and the dropdown button</td>
+													</tr>
+													<tr>
+														<td><code>.multiselect('dataprovider', data)</code></td>
+														<td>This method is used to provide options programmatically</td>
+													</tr>
+													<tr>
+														<td><code>.multiselect('setAllSelectedText', value)</code></td>
+														<td>This method is used to programmatically provide a new text to display in the button when all options are selected, at runtime</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="content-group-lg">
+										<h6 class="text-semibold">Templates</h6>
+										<p>The generated HTML markup can be controlled using templates. Basically, templates are simple configuration options. The default templates are shown below:</p>
+
+										<pre><code class="language-javascript">// Default templates
+$(document).ready(function() {
+    $('#example').multiselect({
+        templates: {
+            button: '&lt;button type="button" class="multiselect dropdown-toggle" data-toggle="dropdown">&lt;/button>',
+            ul: '&lt;ul class="multiselect-container dropdown-menu">&lt;/ul>',
+            filter: '&lt;li class="multiselect-item filter">&lt;div class="input-group">&lt;span class="input-group-addon">&lt;i class="glyphicon glyphicon-search">&lt;/i>&lt;/span>&lt;input class="form-control multiselect-search" type="text">&lt;/div>&lt;/li>',
+            filterClearBtn: '&lt;span class="input-group-btn">&lt;button class="btn btn-default multiselect-clear-filter" type="button">&lt;i class="glyphicon glyphicon-remove-circle">&lt;/i>&lt;/button>&lt;/span>',
+            li: '&lt;li>&lt;a href="javascript:void(0);">&lt;label>&lt;/label>&lt;/a>&lt;/li>',
+            divider: '&lt;li class="multiselect-item divider">&lt;/li>',
+            liGroup: '&lt;li class="multiselect-item group">&lt;label class="multiselect-group">&lt;/label>&lt;/li>'
+        }
+    });
+});
+</code></pre>
+									</div>
+
+									<div>
+										<h6 class="text-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="text-semibold">File name</td>
+														<td>bootstrap_multiselect.min.js</td>
+													</tr>
+													<tr>
+														<td class="text-semibold">Location</td>
+														<td>assets/js/plugins/forms/selects/</td>
+													</tr>
+													<tr>
+														<td class="text-semibold">Updates</td>
+														<td><span class="label bg-warning-400">0</span></td>
+													</tr>
+													<tr>
+														<td class="text-semibold">Links</td>
+														<td>
+															<p>
+																<a href="http://davidstutz.github.io/bootstrap-multiselect/" class="btn btn-sm bg-danger-400 btn-labeled" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+
+															<a href="https://github.com/davidstutz/bootstrap-multiselect" class="btn btn-sm bg-blue btn-labeled" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /bootstrap multiselect -->
+
+
+							<!-- Bootstrap select -->
+							<div class="panel panel-flat" id="bs_select">
+								<div class="panel-heading">
+									<h5 class="panel-title">Bootstrap select</h5>
+									<div class="heading-elements">
+										<span class="label bg-slate heading-text">Selects</span>
+										<span class="heading-text text-muted">bootstrap_select.min.js</span>
+										<ul class="icons-list">
+					                		<li><a data-action="collapse"></a></li>
+					                		<li><a data-action="close"></a></li>
+					                	</ul>
+									</div>
+								</div>
+
+								<div class="panel-body">
+									<div class="content-group-lg">
+										<h6 class="text-semibold">Overview</h6>
+										A custom select / multiselect for Bootstrap using button dropdown, designed to behave like regular Bootstrap selects.
+									</div>
+
+									<div class="content-group-lg">
+										<h6 class="text-semibold">Usage</h6>
+
+										<div class="content-group">
+											<p>First include jQuery and Bootstrap libraries, then include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+											<pre><code class="language-markup">&lt;!-- Load library -->
+&lt;script type="text/javascript" src="assets/js/plugins/forms/selects/bootstrap_select.min.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="content-group">
+											<p>Create your <code>&lt;select></code> with the <code>.selectpicker</code> class:</p>
+											<pre><code class="language-markup">&lt;!-- Select element -->
+&lt;select class="selectpicker">
+	&lt;option>Mustard&lt;/option>
+	&lt;option>Ketchup&lt;/option>
+	&lt;option>Barbecue&lt;/option>
+&lt;/select>
+</code></pre>
+										</div>
+
+										<div class="content-group">
+											<p>You don't need to do anything else, as the data-api automatically picks up the <code>&lt;select></code>s with the <code>selectpicker</code> class. Alternatively you can initialize plugin via JavaScript:</p>
+											<pre><code class="language-javascript">// Initialization
+$('#selector').selectpicker();
+	// options
+});
+</code></pre>
+										</div>
+									</div>
+
+									<div class="content-group-lg">
+										<h6 class="text-semibold">Plugin options</h6>
+										<p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-style=""</code>.</p>
+
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Name</th>
+														<th style="width: 200px;">Default</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>container</code></td>
+														<td class="text-semibold">false</td>
+														<td>Appends the select to a specific element or selector, e.g., <code>container: 'body' | '.main-body'</code></td>
+													</tr>
+													<tr>
+														<td><code>countSelectedText</code></td>
+														<td class="text-semibold">'{0} of {1} selected'</td>
+														<td>Sets the format for the text displayed when selectedTextFormat is <code>count</code> or <code>count &gt; #</code>. {0} is the selected amount. {1} is total available for selection.</td>
+													</tr>
+													<tr>
+														<td><code>dropupAuto</code></td>
+														<td class="text-semibold">true</td>
+														<td>Checks to see which has more room, above or below. If the dropup has enough room to fully open normally, but there is more room above, the dropup still opens normally. Otherwise, it becomes a dropup. If dropupAuto is set to false, dropups must be called manually.</td>
+													</tr>
+													<tr>
+														<td><code>header</code></td>
+														<td class="text-semibold">false</td>
+														<td>Adds a header to the top of the menu; includes a close button by default</td>
+													</tr>
+													<tr>
+														<td><code>hideDisabled</code></td>
+														<td class="text-semibold">false</td>
+														<td>Removes disabled options and optgroups from the menu <code>data-hide-disabled: true</code></td>
+													</tr>
+													<tr>
+														<td><code>mobile</code></td>
+														<td class="text-semibold">false</td>
+														<td>Enables the device's native menu for select menus</td>
+													</tr>
+													<tr>
+														<td><code>selectedTextFormat</code></td>
+														<td class="text-semibold">null</td>
+														<td>Specifies how the selection is displayed with a multiple select</td>
+													</tr>
+													<tr>
+														<td><code>size</code></td>
+														<td class="text-semibold">'auto'</td>
+														<td>When set to <code>'auto'</code>, the menu always opens up to show as many items as the window will allow without being cut off. Set to <code>false</code> to always show all items</td>
+													</tr>
+													<tr>
+														<td><code>showSubtext</code></td>
+														<td class="text-semibold">false</td>
+														<td>Subtext associated with a selected option will be displayed in the button <code>data-show-subtext: true</code></td>
+													</tr>
+													<tr>
+														<td><code>showIcon</code></td>
+														<td class="text-semibold">true</td>
+														<td>Display icon(s) associated with selected option(s) in the button. If false, icons will not be displayed in the button.</td>
+													</tr>
+													<tr>
+														<td><code>showContent</code></td>
+														<td class="text-semibold">true</td>
+														<td>Display custom HTML associated with selected option(s) in the button. If false, the option value will be displayed instead.</td>
+													</tr>
+													<tr>
+														<td><code>style</code></td>
+														<td class="text-semibold">null</td>
+														<td>Apply a class to the button</td>
+													</tr>
+													<tr>
+														<td><code>title</code></td>
+														<td class="text-semibold">null</td>
+														<td>Set the default text for bootstrap-select</td>
+													</tr>
+													<tr>
+														<td><code>width</code></td>
+														<td class="text-semibold">null</td>
+														<td><code>auto</code> automatically adjusts the width of the select to accommodate its widest option. Set the width of the select manually, e.g. <code>300px</code> or <code>50%</code></td>
+													</tr>
+													<tr>
+														<td><code>maxOptions</code></td>
+														<td class="text-semibold">false</td>
+														<td>When set and in a multi</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="content-group-lg">
+										<h6 class="text-semibold">Plugin methods</h6>
+										<p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-style=""</code>.</p>
+
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Method</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>val()</code></td>
+														<td>You can set the selected value by calling the <code>val</code> method on the element</td>
+													</tr>
+													<tr>
+														<td><code>selectAll()</code></td>
+														<td>This will select all items in a <code>multiple</code> select</td>
+													</tr>
+													<tr>
+														<td><code>deselectAll()</code></td>
+														<td>This will deselect all items in a <code>multiple</code> select</td>
+													</tr>
+													<tr>
+														<td><code>render()</code></td>
+														<td>You can force a re-render of the bootstrap-select ui with the render method. This is useful if you programmatically change any underlying values that affect the layout of the element</td>
+													</tr>
+													<tr>
+														<td><code>mobile()</code></td>
+														<td>Enable mobile scrolling by calling <code>$('.selectpicker').selectpicker('mobile')</code>. The method for detecting the browser is left up to the user. This enables the device's native menu for select menus</td>
+													</tr>
+													<tr>
+														<td><code>setStyle()</code></td>
+														<td>Modify the class(es) associated with either the button itself or its container</td>
+													</tr>
+													<tr>
+														<td><code>refresh()</code></td>
+														<td>To programmatically update a select with JavaScript, first manipulate the select, then use the <code>refresh</code> method to update the UI to match the new state. This is necessary when removing or adding options, or when disabling/enabling a select via JavaScript</td>
+													</tr>
+													<tr>
+														<td><code>hide()</code></td>
+														<td>To programmatically hide the bootstrap-select use the <code>hide</code> method to hide it</td>
+													</tr>
+													<tr>
+														<td><code>show()</code></td>
+														<td>To programmatically show the bootstrap-select use the <code>show</code> method to show it</td>
+													</tr>
+													<tr>
+														<td><code>destroy()</code></td>
+														<td>To programmatically destroy (remove) the bootstrap-select use the <code>destroy</code> method to destroy it</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div>
+										<h6 class="text-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="text-semibold">File name</td>
+														<td>bootstrap_select.min.js</td>
+													</tr>
+													<tr>
+														<td class="text-semibold">Location</td>
+														<td>assets/js/plugins/forms/selects/</td>
+													</tr>
+													<tr>
+														<td class="text-semibold">Updates</td>
+														<td><span class="label bg-warning-400">0</span></td>
+													</tr>
+													<tr>
+														<td class="text-semibold">Links</td>
+														<td>
+															<p>
+																<a href="http://silviomoreto.github.io/bootstrap-select/" class="btn btn-sm bg-danger-400 btn-labeled" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+
+															<a href="https://github.com/silviomoreto/bootstrap-select" class="btn btn-sm bg-blue btn-labeled" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /bootstrap select -->
+
+
+							<!-- SelectBoxIt select -->
+							<div class="panel panel-flat" id="selectbox">
+								<div class="panel-heading">
+									<h5 class="panel-title">SelectBoxIt select</h5>
+									<div class="heading-elements">
+										<span class="label bg-slate heading-text">Selects</span>
+										<span class="heading-text text-muted">selectbox.min.js</span>
+										<ul class="icons-list">
+					                		<li><a data-action="collapse"></a></li>
+					                		<li><a data-action="close"></a></li>
+					                	</ul>
+									</div>
+								</div>
+
+								<div class="panel-body">
+									<div class="content-group-lg">
+										<h6 class="text-semibold">Overview</h6>
+										<p>SelectBoxIt allows you to replace ugly and hard to use HTML select boxes with gorgeous and feature rich drop downs. Twitter Bootstrap, jQueryUI, and jQuery Mobile themes are supported right out of the box. If you don't want to use these a library theme, then you can use the SelectBoxIt default theme, which closely resembles the Twitter Bootstrap theme. Feel free to customize the default theme to your liking.</p>
+
+										<p>To use SelectBoxIt, you do not have to rewrite any of your existing form validation logic or event handling. SelectBoxIt just works. SelectBoxIt also provides first-class support for mobile, tablet, and desktop browsers, triggering the native "wheel" interface for mobile and tablet devices</p>
+									</div>
+
+									<div class="content-group-lg">
+										<h6 class="text-semibold">Usage</h6>
+
+										<div class="content-group">
+											<p>The plugin is jQuery and jQuery UI dependent. Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+											<pre><code class="language-markup">&lt;!-- Load jQuery UI -->
+&lt;script type="text/javascript" src="assets/js/core/libraries/jquery_ui/core.min.js">&lt;/script>
+
+&lt;!-- Load plugin -->
+&lt;script type="text/javascript" src="assets/js/plugins/forms/selects/selectboxit.min.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="content-group">
+											<p>Create an HTML select box with <code>id</code>, <code>class</code>, or <code>name</code> attributes. If you include an <code>id</code> attribute, SelectBoxIt will create and copy a "unique" id attribute to the dropdown list. <br>
+											If you include a <code>class</code> and/or name attributes, the attributes will be copied to the new dropdown list that the plugin creates (this allows you to easily interact with the new dropdown list without having to know a new id attribute).<br>
+											It is also best practice for each select box option to have a <code>value</code> attribute, but it is not required:</p>
+											<pre><code class="language-markup">&lt;!-- Create element -->
+&lt;select id="test" name="test">
+	&lt;option value="SelectBoxIt is:">SelectBoxIt is:&lt;/option>
+	&lt;option value="a jQuery Plugin">a jQuery Plugin&lt;/option>
+	&lt;option value="a Select Box Replacement">a Select Box Replacement&lt;/option>
+	&lt;option value="a Stateful UI Widget">a Stateful UI Widget&lt;/option>
+&lt;/select>
+</code></pre>
+										</div>
+
+										<div class="content-group">
+											<p>Finally call the plugin: In your JavaScript code, call the <code>selectBoxIt()</code> method on your HTML select box:</p>
+											<pre><code class="language-javascript">// Executes your code when the DOM is ready.  Acts the same as $(document).ready().
+$(function() {
+
+	// Calls the selectBoxIt method on your HTML select box.
+	$("select").selectBoxIt();
+});
+</code></pre>
+										</div>
+									</div>
+
+									<div class="content-group-lg">
+										<h6 class="text-semibold">Plugin options</h6>
+										<p>The Options API allows you to customize the dropdown list by setting custom options and getting all current options.</p>
+
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Option</th>
+														<th style="width: 200px;">Default</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>showEffect</code></td>
+														<td class="text-semibold">"none"</td>
+														<td>The effect that opens the dropdown options list. Any of the jQueryUI show effects (i.e. <code>"bounce"</code>)</td>
+													</tr>
+													<tr>
+														<td><code>showEffectOptions</code></td>
+														<td class="text-semibold">{ }</td>
+														<td>Advanced options to use with jQueryUI show effects. Any of the jQueryUI show effects (i.e. <code>"bounce"</code>)</td>
+													</tr>
+													<tr>
+														<td><code>showEffectSpeed</code></td>
+														<td class="text-semibold">"medium"</td>
+														<td>The time duration of the show effect. Any numeric number (milliseconds)</td>
+													</tr>
+													<tr>
+														<td><code>hideEffect</code></td>
+														<td class="text-semibold">"none"</td>
+														<td>The effect that closes the dropdown options list. Any of the jQueryUI hide effects (i.e. <code>"bounce"</code>)</td>
+													</tr>
+													<tr>
+														<td><code>hideEffectOptions</code></td>
+														<td class="text-semibold">{ }</td>
+														<td>Advanced options to use with jQueryUI hide effects</td>
+													</tr>
+													<tr>
+														<td><code>hideEffectSpeed</code></td>
+														<td class="text-semibold">"medium"</td>
+														<td>The time duration of the hide effect. Any numeric number (milliseconds)</td>
+													</tr>
+													<tr>
+														<td><code>showFirstOption</code></td>
+														<td class="text-semibold">true</td>
+														<td>Determines if the first dropdown list option is shown</td>
+													</tr>
+													<tr>
+														<td><code>defaultText</code></td>
+														<td class="text-semibold">''</td>
+														<td>Overrides the default dropdown list text to allow a user to specify custom text</td>
+													</tr>
+													<tr>
+														<td><code>defaultIcon</code></td>
+														<td class="text-semibold">''</td>
+														<td>Allows a user to specify a custom dropdown list icon</td>
+													</tr>
+													<tr>
+														<td><code>downArrowIcon</code></td>
+														<td class="text-semibold">''</td>
+														<td>Overrides the default dropdown list down arrow icon class to allow a user to specify a custom CSS class</td>
+													</tr>
+													<tr>
+														<td><code>theme</code></td>
+														<td class="text-semibold">"default"</td>
+														<td>Allows the dropdown to be themed with Bootstrap or jQueryUI</td>
+													</tr>
+													<tr>
+														<td><code>keydownOpen</code></td>
+														<td class="text-semibold">true</td>
+														<td>Opens the dropdown if the up or down key is pressed when the dropdown is focused</td>
+													</tr>
+													<tr>
+														<td><code>isMobile</code></td>
+														<td class="text-semibold">function() { return (/iPhone|iPod|iPad|Android|BlackBerry|Opera Mini|IEMobile/).test(navigator.userAgent);}</td>
+														<td>The function used for mobile browser detection</td>
+													</tr>
+													<tr>
+														<td><code>copyAttributes</code></td>
+														<td class="text-semibold">["title", "rel"]</td>
+														<td>Allows a user to specify which HTML attributes they would like copied over to the new drop down</td>
+													</tr>
+													<tr>
+														<td><code>copyClasses</code></td>
+														<td class="text-semibold">"button"</td>
+														<td>Allows a user to specify whether native classes should be copied to the new select button or to the container element</td>
+													</tr>
+													<tr>
+														<td><code>native</code></td>
+														<td class="text-semibold">false</td>
+														<td>Allows you to trigger the native select box element when a user is interacting with the drop down</td>
+													</tr>
+													<tr>
+														<td><code>aggressiveChange</code></td>
+														<td class="text-semibold">false</td>
+														<td>Aggressive Change Mode will select a drop down option (and trigger the change event on the original select box) when a user navigates to an option using the <code>up</code> and <code>down</code> arrow keys via the keyboard, or searches for an option using the keyboard</td>
+													</tr>
+													<tr>
+														<td><code>selectWhenHidden</code></td>
+														<td class="text-semibold">true</td>
+														<td>Will allow a user to select an option using the keyboard when the drop down list is hidden and focused</td>
+													</tr>
+													<tr>
+														<td><code>viewport</code></td>
+														<td class="text-semibold">$(window)</td>
+														<td>Constrains the dynamic positioning of the dropdown list to the dimensions of an element</td>
+													</tr>
+													<tr>
+														<td><code>similarSearch</code></td>
+														<td class="text-semibold">false</td>
+														<td>Optimizes for lists with similar values (i.e. State list)</td>
+													</tr>
+													<tr>
+														<td><code>nativeMousdown</code></td>
+														<td class="text-semibold">false</td>
+														<td>Mimics native firefox drop down behavior by opening the drop down on mousedown and selecting the currently hovered drop down option on mouseup</td>
+													</tr>
+													<tr>
+														<td><code>customShowHideEvent</code></td>
+														<td class="text-semibold">false</td>
+														<td>Prevents the drop down from opening on click or mousedown, which allows a user to open/close the drop down with a custom event handler</td>
+													</tr>
+													<tr>
+														<td><code>autoWidth</code></td>
+														<td class="text-semibold">true</td>
+														<td>Makes sure the width of the drop down is wide enough to fit all of the drop down options</td>
+													</tr>
+													<tr>
+														<td><code>html</code></td>
+														<td class="text-semibold">true</td>
+														<td>Determines whether or not option text is rendered as html or as text</td>
+													</tr>
+													<tr>
+														<td><code>populate</code></td>
+														<td class="text-semibold">""</td>
+														<td>Convenience option that accepts JSON data, an array, a single object, or valid HTML string to add options to the drop down list. This option can also be a method that returns any of the accepted data formats</td>
+													</tr>
+													<tr>
+														<td><code>dynamicPositioning</code></td>
+														<td class="text-semibold">true</td>
+														<td>Determines whether or not the drop down list should fit inside it's viewport</td>
+													</tr>
+													<tr>
+														<td><code>hideCurrent</code></td>
+														<td class="text-semibold">false</td>
+														<td>Determines whether or not the currently selected drop down option is hidden in the list</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="content-group-lg">
+										<h6 class="text-semibold">HTML5 Data Attribute Options</h6>
+										<p>These options can be set on the select box or individual options directly within the HTML code.</p>
+
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Option</th>
+														<th style="width: 200px;">Default</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>data-icon</code></td>
+														<td class="text-semibold">" "</td>
+														<td>Specifies the custom or jQueryUI CSS classes you want to use to show icon images for the dropdown list and/or dropdown list individual options</td>
+													</tr>
+													<tr>
+														<td><code>data-iconurl</code></td>
+														<td class="text-semibold">" "</td>
+														<td>Specifies the absolute or relative URL of an image file</td>
+													</tr>
+													<tr>
+														<td><code>data-downarrow</code></td>
+														<td class="text-semibold">" "</td>
+														<td>Specifies the custom or jQueryUI CSS classes you want to use to replace the default down arrow icon image</td>
+													</tr>
+													<tr>
+														<td><code>data-text</code></td>
+														<td class="text-semibold">" "</td>
+														<td>Specifies the custom text that you want to use for the dropdown list</td>
+													</tr>
+													<tr>
+														<td><code>data-preventclose</code></td>
+														<td class="text-semibold">" "</td>
+														<td>Allows you to specify which option selections should not close the drop down</td>
+													</tr>
+													<tr>
+														<td><code>data-selectedtext</code></td>
+														<td class="text-semibold">" "</td>
+														<td>Allows the ability to change what is displayed in the dropdown when an item is selected</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="content-group-lg">
+										<h6 class="text-semibold">Plugin events</h6>
+										<p>The Events API allows your application to listen to user events triggered on the dropdown list. All custom/default events are triggered on the original select box element (not the new dropdown list).<br> The original select box <code>value</code> attribute is also synced with the new dropdown list, so if a user selects a new value from the dropdown list, the original select box value will also be updated. This allows your existing code to continue working inside of forms.</p>
+
+										<p>You can catch Default Events by using the jQuery <code>bind()</code> or <code>on()</code> methods, or by using jQuery convenience methods such as <code>click()</code>, <code>change()</code>, etc. You must use the jQuery <code>bind()</code> or <code>on()</code> methods to catch Custom Events.</p>
+
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Event</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th colspan="3" class="active">Default events</th>
+													</tr>
+													<tr class="border-double">
+														<td><code>focus</code></td>
+														<td>A focus event will be triggered when a user either clicks or tabs to the dropdown list.</td>
+													</tr>
+													<tr>
+														<td><code>focusin</code></td>
+														<td>A focusin event will be triggered when a user either clicks or tabs to the dropdown list. Focus and focusin events are closely related, but the focusin event bubbles up the DOM tree and the focus event does not bubble. If you are using a library such as <a href="http://www.backbonejs.org" target="_blank">Backbone.js</a>, which uses event delegation, use the focusin event to determine when the select box element gains focus.</td>
+													</tr>
+													<tr>
+														<td><code>click</code></td>
+														<td>A click event will be triggered when a user clicks on the dropdown list.</td>
+													</tr>
+													<tr>
+														<td><code>blur</code></td>
+														<td>A blur event will be triggered when the dropdown list loses focus.</td>
+													</tr>
+													<tr>
+														<td><code>focusout</code></td>
+														<td>A focusout event will be triggered when the dropdown list loses focus. Blur and focusout events are closely related, but the focusout event bubbles up the DOM tree and the blur event does not bubble. If you are using a library such as <a href="http://www.backbonejs.org" target="_blank">Backbone.js</a>, which uses event delegation, use the focusout event to determine when the select box element loses focus.</td>
+													</tr>
+													<tr>
+														<td><code>change</code></td>
+														<td>A change event will be triggered when a user selects a new dropdown list option.</td>
+													</tr>
+													<tr>
+														<td><code>mouseenter</code></td>
+														<td>A mouseenter event will be triggered when a user’s mouse enters an element. jQuery uses both mouseenter and mouseleave to simulate a hover event.</td>
+													</tr>
+													<tr>
+														<td><code>mouseleave</code></td>
+														<td>A mouseleave event will be triggered when a user’s mouse leaves an element. jQuery uses both mouseenter and mouseleave to simulate a hover event.</td>
+													</tr>
+													<tr>
+														<td><code>mousedown</code></td>
+														<td>A mousedown event will be triggered when a user clicks on the drop down</td>
+													</tr>
+													<tr>
+														<td><code>mouseup</code></td>
+														<td>A mouseup event will be triggered when a user clicks on the drop down</td>
+													</tr>
+
+													<tr>
+														<th colspan="3" class="active">Custom events</th>
+													</tr>
+													<tr class="border-double">
+														<td><code>open</code></td>
+														<td>An open event will be triggered when a user opens the dropdown list.</td>
+													</tr>
+													<tr>
+														<td><code>close</code></td>
+														<td>A close event will be triggered when a user closes the dropdown list.</td>
+													</tr>
+													<tr>
+														<td><code>moveDown</code></td>
+														<td>A moveDown event will be triggered when a user presses the down arrow key to select a dropdown list option directly beneath the currently selected option.</td>
+													</tr>
+													<tr>
+														<td><code>moveUp</code></td>
+														<td>A moveUp event will be triggered when a user presses the up arrow key to select a dropdown list option directly above the currently selected option.</td>
+													</tr>
+													<tr>
+														<td><code>search</code></td>
+														<td>A search event will be triggered when a user does a text search that matches a dropdown list option. Keep in mind that this event will be fired only when a search match is found.</td>
+													</tr>
+													<tr>
+														<td><code>enter</code></td>
+														<td>An enter event will be triggered when a user presses the enter key while the dropdown list is focused.</td>
+													</tr>
+													<tr>
+														<td><code>tab-focus</code></td>
+														<td>A tab-focus event will be triggered when a user presses the tab key to focus the dropdown list.</td>
+													</tr>
+													<tr>
+														<td><code>tab-blur</code></td>
+														<td>A tab-blur event will be triggered when a user presses the tab key to blur the dropdown list.</td>
+													</tr>
+													<tr>
+														<td><code>option-click</code></td>
+														<td>An option-click event will be triggered when a user clicks a dropdown list option.</td>
+													</tr>
+													<tr>
+														<td><code>backspace</code></td>
+														<td>A backspace event will be triggered when a user presses the backspace key while the dropdown list is focused.</td>
+													</tr>
+													<tr>
+														<td><code>disable</code></td>
+														<td>A disable event will be triggered if a dropdown list is disabled.</td>
+													</tr>
+													<tr>
+														<td><code>disable-option</code></td>
+														<td>A disable-option event will be triggered if a single dropdown list option is disabled.</td>
+													</tr>
+													<tr>
+														<td><code>enable</code></td>
+														<td>An enable event will be triggered if a dropdown list becomes enabled, or in other words, no longer disabled.</td>
+													</tr>
+													<tr>
+														<td><code>enable-option</code></td>
+														<td>A enable-option event will be triggered if a single dropdown list option is disabled.</td>
+													</tr>
+													<tr>
+														<td><code>destroy</code></td>
+														<td>A destroy event will be triggered if a dropdown list is destroyed</td>
+													</tr>
+													<tr>
+														<td><code>create</code></td>
+														<td>A create event will be triggered if a dropdown list is created.</td>
+													</tr>
+													<tr>
+														<td><code>changed</code></td>
+														<td>A changed event will be triggered after the original select box change event is fired and the dropdown text is changed.</td>
+													</tr>
+													<tr>
+														<td><code>refresh</code></td>
+														<td>A refresh event will be triggered after the refresh method is called to recreate the SelectBoxIt dropdown.</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div>
+										<h6 class="text-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="text-semibold">File name</td>
+														<td>selectbox.min.js</td>
+													</tr>
+													<tr>
+														<td class="text-semibold">Location</td>
+														<td>assets/js/plugins/forms/selects/</td>
+													</tr>
+													<tr>
+														<td class="text-semibold">Updates</td>
+														<td><span class="label bg-warning-400">0</span></td>
+													</tr>
+													<tr>
+														<td class="text-semibold">Links</td>
+														<td>
+															<p>
+																<a href="http://gregfranko.com/jquery.selectBoxIt.js/" class="btn btn-sm bg-danger-400 btn-labeled" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+
+															<p>
+																<a href="http://gregfranko.com/jquery.selectBoxIt.js/#GettingStarted" class="btn btn-sm bg-slate btn-labeled" target="_blank">
+																	<b><i class="icon-file-text2"></i></b>
+																	Full documentation
+																</a>
+															</p>
+
+															<a href="https://github.com/gfranko/jquery.selectBoxIt.js" class="btn btn-sm bg-blue btn-labeled" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /SelectBoxIt select -->
+
+						</div>
+					</div>
+					<!-- /detached content -->
+
+
+
+					<!-- Detached sidebar -->
+					<div class="sidebar-detached">
+			        	<div class="sidebar sidebar-default">
+							<div class="sidebar-content">
+
+				        		<!-- Contact author -->
+								<div class="sidebar-category no-margin">
+									<div class="category-title">
+										<span>Page navigation</span>
+										<i class="icon-menu7 text-muted pull-right"></i>
+									</div>
+
+									<div class="category-content">
+										<a href="http://themeforest.net/user/kopyov" class="btn bg-blue btn-block" target="_blank"><i class="icon-reading position-left"></i> Contact author</a>
+									</div>
+								</div>
+								<!-- /contact author -->
+
+			        			
+			        			<!-- Navigation -->
+								<div class="sidebar-category">
+									<div class="category-content no-padding">
+										<ul class="nav navigation no-padding-top">
+											<li class="navigation-header"><i class="icon-history pull-right"></i> Sections</li>
+											<li><a href="#select2">Select2 selects</a></li>
+											<li><a href="#multiselect">Bootstrap multiselect</a></li>
+											<li><a href="#bs_select">Bootstrap select</a></li>
+											<li><a href="#selectbox">SelectBoxIt select</a></li>
+											<li class="navigation-divider"></li>
+											<li><a href="#">Go to top <i class="icon-circle-up2 pull-right"></i></a></li>
+							            </ul>
+						            </div>
+					            </div>
+					            <!-- /navigation -->
+
+				            </div>
+			            </div>
+		            </div>
+		            <!-- /detached sidebar -->
+
+
+					<!-- Footer -->
+					<div class="footer text-muted">
+						&copy; 2015. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
+					</div>
+					<!-- /footer -->
+
+				</div>
+				<!-- /content area -->
+
+			</div>
+			<!-- /main content -->
+
+		</div>
+		<!-- /page content -->
+
+	</div>
+	<!-- /page container -->
+
+</body>
+</html>

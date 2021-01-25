@@ -1,0 +1,293 @@
+/*! _responsive.scss | Bulkit | CSS Ninja */
+
+/* ==========================================================================
+Responsive styles
+========================================================================== */
+
+/***
+TABLE OF CONTENTS
+=============================================================================
+0. Mobile (max-width 767px)
+1. Tablet portrait orientation
+2. Tablet Landscape orientation
+=============================================================================
+***/
+
+/* ==========================================================================
+0. Mobile (max-width 767px)
+========================================================================== */
+
+@media (max-width: 767px) {
+    .navbar-menu {
+        .separator {
+            display: none !important;
+        }
+    }
+
+    .hero {
+        .hero-body {
+            min-height: 75vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .hero-caption {
+        .title span {
+            font-size: 2.1rem !important;
+        }
+
+        .subtitle {
+            font-size: 1rem !important;
+        }
+    }
+
+    .section-title {
+        img {
+            width: 28px !important;
+        }
+
+        h2 {
+            font-size: 1.8rem !important;
+        }
+
+        h3 {
+            font-size: 1.2rem !important;
+        }
+    }
+
+    .box-wrap {
+        margin-top: 0 !important;
+    }
+
+    .side-title {
+        text-align: center;
+    }
+
+    .title-number {
+        right: 0 !important;
+    }
+
+    .side-paragraph {
+        font-size: 1.1rem !important;
+        max-width: 480px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .shadow-side-image {
+        left: 8% !important;
+    }
+
+    .primary-circle {
+        right: 67% !important;
+        top: 43% !important;
+        height: 100px !important;
+        width: 100px !important;
+    }
+
+    .accent-circle {
+        right: 57% !important;
+        top: 5% !important;
+        height: 50px !important;
+        width: 50px !important;
+    }
+
+    .primary-bold-circle {
+        left: 60% !important;
+        bottom: 14% !important;
+        height: 115px !important;
+        width: 115px !important;
+    }
+
+    .carousel-item {
+        padding: 25px !important;
+        margin: 10px !important;
+    }
+
+    .form-wrapper {
+        h3 {
+            font-size: 1.6rem !important;
+        }
+
+        .contact-form {
+            padding: 20px !important;
+        }
+    }
+
+    .footer {
+        .copyright {
+            flex-direction: column;
+        }
+    }
+}
+
+/* ==========================================================================
+1. Tablet portrait orientation
+========================================================================== */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .navbar-menu {
+        .separator {
+            display: none !important;
+        }
+
+        .button {
+            max-width: 500px;
+        }
+    }
+
+    .hero {
+        .hero-body {
+            min-height: 40vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .hero-shape {
+        //transform: scale(1.8);
+        min-height: 410px !important;
+    }
+
+    .columns {
+        &.is-flex-tablet {
+            display: flex;
+            flex-wrap: wrap;
+
+            .column {
+                min-width: 50%;
+                max-width: 50%;
+            }
+        }
+
+        &.stat-boxes-wrapper, &.is-methods {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
+    .column.is-1.is-hidden-mobile {
+        display: block !important;
+        max-width: 40px;
+    }
+
+    .box-wrap {
+        margin-top: 0 !important;
+    }
+
+    .is-centered-portrait {
+        text-align: center;
+    }
+
+    .is-portrait-padded {
+        max-width: 520px;
+        margin: 0 auto;
+    }
+
+    .side-image {
+        &.is-tablet {
+            display: block !important;
+            max-width: 480px !important;
+            max-height: 480px !important;
+            margin: 0 auto !important;
+        }
+    }
+
+    .shadow-side-image {
+        left: 25% !important;
+
+        &.is-active {
+            transform: translateX(-90px) !important;
+        }
+    }
+
+    .side-title {
+        text-align: center;
+    }
+
+    .title-number {
+        right: 0 !important;
+    }
+
+    .side-paragraph {
+        max-width: 480px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .orange-circle {
+        right: 2% !important;
+        top: 27% !important;
+        height: 160px !important;
+        width: 160px !important;
+    }
+
+    .blue-circle {
+        right: 82% !important;
+        top: 8% !important;
+        height: 70px !important;
+        width: 70px !important;
+    }
+
+    .orange-bold-circle {
+        left: 0% !important;
+        bottom: 8% !important;
+        height: 140px !important;
+        width: 140px !important;
+    }
+
+    .contact-form {
+        margin: 0 40px !important;
+        width: calc(100% - 80px) !important;
+    }
+
+    .footer {
+        text-align: center;
+
+        .footer-logo-text {
+            padding-right: 0 !important;
+        }
+
+        .copyright {
+            flex-direction: column;
+        }
+    }
+}
+
+/* ==========================================================================
+2. Tablet Landscape orientation
+========================================================================== */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .navbar-menu {
+        .separator {
+            display: none !important;
+        }
+
+        .button {
+            max-width: 500px;
+        }
+    }
+
+    .box-wrap {
+        margin-top: -92px !important;
+    }
+
+    .orange-circle {
+        right: 33% !important;
+        top: 2% !important;
+        height: 190px !important;
+        width: 190px !important;
+    }
+
+    .orange-bold-circle {
+        position: absolute !important;
+        left: 16% !important;
+        bottom: 8% !important;
+        height: 130px !important;
+        width: 130px !important;
+    }
+}

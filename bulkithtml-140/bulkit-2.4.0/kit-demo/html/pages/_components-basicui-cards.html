@@ -1,0 +1,1825 @@
+---
+layout: components
+title: Cards
+---
+
+<!-- Hero and nav -->
+<div class="hero is-relative is-theme-info is-bold">
+
+    {{> navbar-static-light}}
+
+    <!-- Hero image -->
+    <div id="main-hero" class="hero-body">
+        <div class="container has-text-centered">
+            <div class="columns is-vcentered">
+                <div class="column is-4 is-offset-1 has-text-left">
+                    <h1 class="title components-title is-1">
+                        Cards
+                    </h1>
+                    <h2 class="subtitle is-4 components-subtitle">
+                        Card styles and variations.
+                    </h2>
+                    <p class="components-cta">
+                        <a href="#flex-card" class="button button-cta btn-align light-btn btn-outlined is-bold rounded">
+                            Get Started
+                        </a>
+                    </p>
+                </div>
+                <div class="column is-offset-1 has-text-centered is-hidden-mobile">
+                    <div id="cards-ill" class="vivus-svg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Hero image -->
+</div>
+<!-- /Hero and nav -->
+
+<!-- Scrollnav -->
+<div id="scrollnav" class="scroll-nav-wrapper">
+    <div class="container">
+        <div class="tabs scrollnav-tabs is-centered">
+            <ul>
+                <li class="scrollnav-item is-active"><a href="#flex-card">Flex card</a></li>
+                <li class="scrollnav-item"><a href="#feature-card">Feature card</a></li>
+                <li class="scrollnav-item"><a href="#bulma-card">Classic card</a></li>
+                <li class="scrollnav-item"><a href="#media-card">Media card</a></li>
+                <li class="scrollnav-item"><a href="#event-card">Event card</a></li>
+            </ul>
+        </div>
+    </div> 
+</div>
+<!-- /Scrollnav -->
+
+
+<section class="section is-medium">
+    <div class="container">
+        <div id="flex-card" class="section-title-wrapper has-text-centered">
+            <div class="bg-number">1</div>
+            <h2 class="title section-title has-text-centered dark-text text-bold">
+                Flex-card
+            </h2>
+        </div>
+
+        <!-- Flex card basic -->
+        <div class="columns is-vcentered pt-60 pb-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Basic flex card</h4>
+                    <p class="no-padding">Flex card is a very versatile card component. It automatically spans the width of its container. you can do many things with this type of card and display any type of content, wether on a website or in an app.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <!-- Demo section -->
+            <div class="column is-4 is-offset-2">
+                <div class="flex-card simple-shadow">
+                    <div class="card-body">
+                        <div class="content">
+                            <h2 class="no-margin title-bold">Card title</h2>
+                            <p class="pt-10">Lorem ipsum dolor sit amet, has vero libris melius ea, omnis velit comprehensam duo an, meis ornatus eam ad. Ius ut labores scaevola.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-4">
+                <div class="flex-card simple-shadow">
+                    <div class="card-body">
+                        <div class="content">
+                            <h2 class="no-margin title-bold">Card title</h2>
+                            <p class="pt-10">Lorem ipsum dolor sit amet, has vero libris melius ea, omnis velit comprehensam duo an, meis ornatus eam ad. Ius ut labores scaevola.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Demo section -->
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-3">
+                <!-- Code section -->
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <figure class="highlight highlight-block">
+                                <pre><code class="html code-highlight">
+&#x3C;div class=&#x22;flex-card simple-shadow&#x22;&#x3E;
+    &#x3C;div class=&#x22;card-body&#x22;&#x3E;
+        &#x3C;div class=&#x22;content&#x22;&#x3E;
+            &#x3C;h2 class=&#x22;no-margin&#x22;&#x3E;Card title&#x3C;/h2&#x3E;
+            &#x3C;p class=&#x22;pt-10&#x22;&#x3E;Lorem ipsum dolor sit amet, has vero libris melius ea, omnis velit comprehensam duo an, meis ornatus eam ad. Ius ut labores scaevola.&#x3C;/p&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+                                        </code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Code section -->
+            </div>
+        </div>
+        <!-- /Flex card basic -->
+
+        <!-- Flex card light-bordered -->
+        <div class="columns is-vcentered pt-60 pb-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Light bordered</h4>
+                    <p class="no-padding">You can display a flex card with a light border by adding the <code>.light-bordered</code> class.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <!-- Demo section -->
+            <div class="column is-4 is-offset-2">
+                <div class="flex-card light-bordered">
+                    <div class="card-body">
+                        <div class="content">
+                            <h2 class="no-margin title-bold">Card title</h2>
+                            <p class="pt-10">Lorem ipsum dolor sit amet, has vero libris melius ea, omnis velit comprehensam duo an, meis ornatus eam ad. Ius ut labores scaevola.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-4">
+                <div class="flex-card light-bordered">
+                    <div class="card-body">
+                        <div class="content">
+                            <h2 class="no-margin title-bold">Card title</h2>
+                            <p class="pt-10">Lorem ipsum dolor sit amet, has vero libris melius ea, omnis velit comprehensam duo an, meis ornatus eam ad. Ius ut labores scaevola.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Demo section -->
+        </div>
+
+        <div class="columns is-vcentered mt-20">
+            <div class="column is-6 is-offset-3">
+                <!-- Code section -->
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <figure class="highlight highlight-block">
+                                <pre><code class="html code-highlight">
+&#x3C;div class=&#x22;flex-card light-bordered&#x22;&#x3E;
+    &#x3C;div class=&#x22;card-body&#x22;&#x3E;
+        &#x3C;div class=&#x22;content&#x22;&#x3E;
+            &#x3C;h2 class=&#x22;no-margin title-bold&#x22;&#x3E;Card title&#x3C;/h2&#x3E;
+            &#x3C;p class=&#x22;pt-10&#x22;&#x3E;Lorem ipsum dolor sit amet, has vero libris melius ea, omnis velit comprehensam duo an, meis ornatus eam ad. Ius ut labores scaevola.&#x3C;/p&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+                                        </code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Code section -->
+            </div>
+        </div>
+        <!-- /Flex light bordered -->
+
+        <!-- Raised cards -->
+        <div class="columns is-vcentered pt-60 pb-60">
+            <div class="column is-4 is-offset-2">
+                <!-- Demo section -->
+                <div class="info-block has-text-centered">
+                    <h4>Light raised</h4>
+                    <p>You can display a flex card with a light box shadow by adding the <code>.light-raised</code> class.</p>
+                </div>
+
+                <div class="flex-card light-bordered light-raised">
+                    <div class="card-body">
+                        <div class="content">
+                            <h2 class="no-margin title-bold">Card title</h2>
+                            <p class="pt-10">Lorem ipsum dolor sit amet, has vero libris melius ea, omnis velit comprehensam duo an, meis ornatus eam ad. Ius ut labores scaevola.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Demo section -->
+            </div>
+            <div class="column is-4">
+                <!-- Demo section -->
+                <div class="info-block has-text-centered">
+                    <h4>Raised</h4>
+                    <p>You can display a more important box shadow by adding the <code>.raised</code> class.</p>
+                </div>
+
+                <div class="flex-card light-bordered raised">
+                    <div class="card-body">
+                        <div class="content">
+                            <h2 class="no-margin title-bold">Card title</h2>
+                            <p class="pt-10">Lorem ipsum dolor sit amet, has vero libris melius ea, omnis velit comprehensam duo an, meis ornatus eam ad. Ius ut labores scaevola.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Demo section -->
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-3">
+                <!-- Code section -->
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <div class="navigation-tabs animated-tabs simple-tabs mb-40">
+                                <div class="tabs is-right">
+                                    <ul>
+                                        <li class="tab-link is-active" data-tab="light-raised"><a>light raised</a></li>
+                                        <li class="tab-link" data-tab="raised"><a>raised</a></li>
+                                    </ul>
+                                </div>
+                                <div id="light-raised" class="navtab-content is-active">
+                                    <figure class="highlight highlight-block"><pre><code class="html code-highlight">
+&#x3C;div class=&#x22;flex-card light-bordered light-raised&#x22;&#x3E;
+    &#x3C;div class=&#x22;card-body&#x22;&#x3E;
+        &#x3C;div class=&#x22;content&#x22;&#x3E;
+            &#x3C;h2 class=&#x22;no-margin title-bold&#x22;&#x3E;Card title&#x3C;/h2&#x3E;
+            &#x3C;p class=&#x22;pt-10&#x22;&#x3E;Lorem ipsum dolor sit amet, has vero libris melius ea, omnis velit comprehensam duo an, meis ornatus eam ad. Ius ut labores scaevola.&#x3C;/p&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+                                            </code></pre></figure>
+                                </div>
+                                <div id="raised" class="navtab-content">
+                                    <figure class="highlight highlight-block"><pre><code class="html code-highlight">
+&#x3C;div class=&#x22;flex-card light-bordered raised&#x22;&#x3E;
+    &#x3C;div class=&#x22;card-body&#x22;&#x3E;
+        &#x3C;div class=&#x22;content&#x22;&#x3E;
+            &#x3C;h2 class=&#x22;no-margin title-bold&#x22;&#x3E;Card title&#x3C;/h2&#x3E;
+            &#x3C;p class=&#x22;pt-10&#x22;&#x3E;Lorem ipsum dolor sit amet, has vero libris melius ea, omnis velit comprehensam duo an, meis ornatus eam ad. Ius ut labores scaevola.&#x3C;/p&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+                                            </code></pre></figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Code section -->
+            </div>
+        </div>
+        <!-- Raised cards -->
+
+        <!-- Flex card hover raised -->
+        <div class="columns is-vcentered pt-60 pb-60">
+            <div class="column is-4 is-offset-4">
+                <!-- Demo section -->
+                <div class="info-block">
+                    <h4>Hover raised</h4>
+                    <p>You can make a card raise on hover by adding the <code>.hover-raised</code> class.</p>
+                </div>
+
+                <div class="flex-card light-bordered hover-raised">
+                    <div class="card-body">
+                        <div class="content">
+                            <h2 class="no-margin title-bold">Hover me</h2>
+                            <p class="pt-10">Lorem ipsum dolor sit amet, has vero libris melius ea, omnis velit comprehensam duo an, meis ornatus eam ad. Ius ut labores scaevola.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Demo section -->
+
+                <!-- Code section -->
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <figure class="highlight highlight-block">
+                                <pre><code class="html code-highlight">
+&#x3C;div class=&#x22;flex-card light-bordered hover-raised&#x22;&#x3E;
+    &#x3C;div class=&#x22;card-body&#x22;&#x3E;
+        &#x3C;div class=&#x22;content&#x22;&#x3E;
+            &#x3C;h2 class=&#x22;no-margin title-bold&#x22;&#x3E;Card title&#x3C;/h2&#x3E;
+            &#x3C;p class=&#x22;pt-10&#x22;&#x3E;Lorem ipsum dolor sit amet, has vero libris melius ea, omnis velit comprehensam duo an, meis ornatus eam ad. Ius ut labores scaevola.&#x3C;/p&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+                                        </code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Code section -->
+            </div>
+        </div>
+        <!-- /Flex hover card raised -->
+
+        <!-- Flex card hover inset -->
+        <div class="columns is-vcentered mt-80">
+            <div class="column is-4 is-offset-4">
+                <!-- Demo section -->
+                <div class="info-block pb-20">
+                    <h4>Hover inset</h4>
+                    <p>You give some inset to a card on hover by adding the class <code>.hover-inset</code>.</p>
+                </div>
+
+                <div class="flex-card light-bordered hover-inset">
+                    <div class="card-body">
+                        <div class="content">
+                            <h2 class="no-margin title-bold">Hover me</h2>
+                            <p class="pt-10">Lorem ipsum dolor sit amet, has vero libris melius ea, omnis velit comprehensam duo an, meis ornatus eam ad. Ius ut labores scaevola.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Demo section -->
+
+                <!-- Code section -->
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <figure class="highlight highlight-block">
+                                <pre><code class="html code-highlight">
+&#x3C;div class=&#x22;flex-card light-bordered hover-inset&#x22;&#x3E;
+    &#x3C;div class=&#x22;card-body&#x22;&#x3E;
+        &#x3C;div class=&#x22;content&#x22;&#x3E;
+            &#x3C;h2 class=&#x22;no-margin title-bold&#x22;&#x3E;Card title&#x3C;/h2&#x3E;
+            &#x3C;p class=&#x22;pt-10&#x22;&#x3E;Lorem ipsum dolor sit amet, has vero libris melius ea, omnis velit comprehensam duo an, meis ornatus eam ad. Ius ut labores scaevola.&#x3C;/p&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+                                        </code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Code section -->
+            </div>
+        </div>
+        <!-- /Flex hover card inset -->
+
+        <!-- Flex card overflow -->
+        <div class="columns is-vcentered pt-60 pb-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Overflow card</h4>
+                    <p class="no-padding">If you  plan to design cards with elements getting out of the flow, just add the <code>.card-overflow</code> class to the flex card element.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-5 is-offset-1">
+                <!-- Demo section -->
+                <div class="demo">
+                    <div class="testimonial-item">
+                        <div class="flex-card card-overflow raised mb-40">
+                            <div class="testimonial-avatar">
+                                <img src="https://via.placeholder.com/250x250" alt=""
+                                    data-demo-src="assets/images/avatars/carolin.png">
+                            </div>
+                            <div class="testimonial-name">
+                                <h3>Marjory Cambell</h3>
+                                <span>CEO</span>
+                            </div>
+                            <div class="testimonial-content">
+                                <p>Lorem ipsum dolor sit amet, clita laoreet ne cum. His cu harum inermis iudicabit. Ex vidit fierent hendrerit eum, sed stet periculis ut. Vis in probo decore labitur. Unum simul an vis, tale patrioque eos ad, dicunt percipit ea nam.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Demo section -->
+            </div>
+            <div class="column is-5">
+                <!-- Demo section -->
+                <div class="demo">
+                    <div class="testimonial-item">
+                        <div class="flex-card card-overflow raised mb-40">
+                            <div class="testimonial-avatar">
+                                <img src="https://via.placeholder.com/250x250" alt=""
+                                    data-demo-src="assets/images/avatars/helen.jpg">
+                            </div>
+                            <div class="testimonial-name">
+                                <h3>Helen Miller</h3>
+                                <span>Sales team</span>
+                            </div>
+                            <div class="testimonial-content">
+                                <p>Lorem ipsum dolor sit amet, clita laoreet ne cum. His cu harum inermis iudicabit. Ex vidit fierent hendrerit eum, sed stet periculis ut. Vis in probo decore labitur. Unum simul an vis, tale patrioque eos ad, dicunt percipit ea nam.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Demo section -->
+            </div>
+        </div>
+        <!-- /Flex card overflow -->
+
+        <!-- Card colors -->
+        <div class="columns is-vcentered pt-60 pb-60">
+            <div class="column is-4">
+                <!-- Demo section -->
+                <div class="info-block has-text-centered">
+                    <h4>Primary card</h4>
+                    <p>Give a card a primary background by adding the <code>.primary-card</code> class.</p>
+                </div>
+
+                <div class="flex-card light-bordered primary-card light-raised">
+                    <div class="card-body">
+                        <div class="content">
+                            <h2 class="no-margin title-bold">Card title</h2>
+                            <p class="pt-10">Lorem ipsum dolor sit amet, has vero libris melius ea, omnis velit comprehensam duo an, meis ornatus eam ad. Ius ut labores scaevola.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Demo section -->
+            </div>
+            <div class="column is-4">
+                <!-- Demo section -->
+                <div class="info-block has-text-centered">
+                    <h4>Secondary card</h4>
+                    <p>Give a card a secondary background by adding the <code>.secondary-card</code> class.</p>
+                </div>
+
+                <div class="flex-card light-bordered secondary-card light-raised">
+                    <div class="card-body">
+                        <div class="content">
+                            <h2 class="no-margin title-bold">Card title</h2>
+                            <p class="pt-10">Lorem ipsum dolor sit amet, has vero libris melius ea, omnis velit comprehensam duo an, meis ornatus eam ad. Ius ut labores scaevola.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Demo section -->
+            </div>
+            <div class="column is-4">
+                <!-- Demo section -->
+                <div class="info-block has-text-centered">
+                    <h4>Accent card</h4>
+                    <p>Give a card an accent background by adding the <code>.accent-card</code> class.</p>
+                </div>
+
+                <div class="flex-card light-bordered accent-card light-raised">
+                    <div class="card-body">
+                        <div class="content">
+                            <h2 class="no-margin title-bold">Card title</h2>
+                            <p class="pt-10">Lorem ipsum dolor sit amet, has vero libris melius ea, omnis velit comprehensam duo an, meis ornatus eam ad. Ius ut labores scaevola.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Demo section -->
+            </div>
+        </div>
+        <!-- /Flex card raised -->
+
+        <!-- Flex card header -->
+        <div class="columns is-vcentered pt-60 pb-60">
+            <div class="column is-6 is-offset-3">
+                <!-- Demo section -->
+                <div class="info-block">
+                    <h4>Flex card header</h4>
+                    <p>You can add a header with content to any flex card.</p>
+                </div>
+
+                <div class="flex-card light-bordered hover-inset">
+                    <div class="flex-card-header">
+                        <div class="header-avatar">
+                            <img src="https://via.placeholder.com/250x250" alt=""
+                                data-demo-src="assets/images/avatars/helen.jpg">
+                        </div>
+                        <div class="header-info">
+                            <div class="header-title">Helen Miller</div>
+                            <div class="header-subtitle">Sales team</div>
+                        </div>
+                        <div class="header-control ml-auto">
+                            <i class="sl sl-icon-arrow-down"></i>
+                        </div>
+                    </div>
+                    <div class="card-body is-small">
+                        <div class="content">
+                            <p class="pb-10">Lorem ipsum dolor sit amet, has vero libris melius ea, omnis velit comprehensam duo an, meis ornatus eam ad. Ius ut labores scaevola.</p>
+                        </div>
+                        <div class="has-text-right">
+                            <a class="button btn-align btn-outlined accent-btn rounded raised">Follow</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Demo section -->
+
+                <!-- Code section -->
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <figure class="highlight highlight-block">
+                                <pre><code class="html code-highlight">
+&#x3C;div class=&#x22;flex-card light-bordered hover-inset&#x22;&#x3E;
+    &#x3C;div class=&#x22;flex-card-header&#x22;&#x3E;
+        &#x3C;div class=&#x22;header-avatar&#x22;&#x3E;
+            &#x3C;img src=&#x22;assets/images/avatars/helen.jpg&#x22;&#x3E;
+        &#x3C;/div&#x3E;
+        &#x3C;div class=&#x22;header-info&#x22;&#x3E;
+            &#x3C;div class=&#x22;header-title&#x22;&#x3E;Helen Miller&#x3C;/div&#x3E;
+            &#x3C;div class=&#x22;header-subtitle&#x22;&#x3E;Sales team&#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+        &#x3C;div class=&#x22;header-control ml-auto&#x22;&#x3E;
+            &#x3C;i class=&#x22;sl sl-icon-arrow-down&#x22;&#x3E;&#x3C;/i&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;card-body is-small&#x22;&#x3E;
+        &#x3C;div class=&#x22;content&#x22;&#x3E;
+            &#x3C;p class=&#x22;pb-10&#x22;&#x3E;Lorem ipsum dolor sit amet, has vero libris melius ea, omnis velit comprehensam duo an, meis ornatus eam ad. Ius ut labores scaevola.&#x3C;/p&#x3E;
+        &#x3C;/div&#x3E;
+        &#x3C;div class=&#x22;has-text-right&#x22;&#x3E;
+            &#x3C;a class=&#x22;button btn-align btn-outlined accent-btn rounded raised&#x22;&#x3E;Follow&#x3C;/a&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+                                        </code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Code section -->
+            </div>
+        </div>
+        <!-- /Flex header -->
+    </div>
+</section>
+
+<section class="section section-feature-grey is-medium">
+    <div class="container">
+        <div id="feature-card" class="section-title-wrapper has-text-centered">
+            <div class="bg-number">2</div>
+            <h2 class="title section-title has-text-centered dark-text text-bold">
+                Feature card
+            </h2>
+        </div>
+
+        <!-- Basic feature card -->
+        <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Basic feature card</h4>
+                    <p class="no-padding">Unlike flex card, feature card's dimensions are static. By default it has <code>300px320px </code> dimensions. Height can be extended by adding the modifiers <code>.card-md</code> <code>.card-lg</code> to the parent element. Feature cards display perfectly also on mobile.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <!-- Demo section -->
+            <div class="column is-4">
+                <div class="feature-card light-bordered has-text-centered"></div>
+            </div>
+            <div class="column is-4">
+                <div class="feature-card light-bordered has-text-centered"></div>
+            </div>
+            <div class="column is-4">
+                <div class="feature-card light-bordered has-text-centered"></div>
+            </div>
+            <!-- /Demo section -->
+        </div>
+
+        <div class="columns is-vcentered">
+            <!-- Code section -->
+            <div class="column is-6 is-offset-3">
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <figure class="highlight highlight-block">
+                                <pre><code class="html code-highlight">
+&#x3C;div class=&#x22;feature-card light-bordered has-text-centered&#x22;&#x3E;&#x3C;/div&#x3E;
+                                        </code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Code section -->
+        </div>
+        <!-- /Basic feature card -->
+
+        <!-- Icon feature card -->
+        <div class="columns is-vcentered  pt-60 pb-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Icon feature card</h4>
+                    <p class="no-padding">Unlike flex card, feature card's dimensions are static. By default it has <code>300px x 320px </code> dimensions. Height can be extended by adding the modifier <code>.card-md</code> to the parent element. Feature cards display perfectly also on mobile.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Feature card -->
+        <div class="columns is-vcentered">
+            <!-- Demo section -->
+            <div class="column is-one-third">
+                <div class="feature-card card-md light-bordered hover-inset has-text-centered mb-20">
+                    <div class="card-icon">
+                        <img src="assets/images/illustrations/icons/upload.svg" alt="">
+                    </div>
+                    <div class="card-title">
+                        <h4>Some title</h4>
+                    </div>
+                    <div class="card-feature-description">
+                        <span class="">Lorem ipsum dolor sit amet, clita laoreet ne cum. His caelus elet cu harum inermis iudicabit.</span>
+                    </div>
+                    <a href="#" class="button btn-align btn-more is-link color-primary">
+                        Learn more <i class="sl sl-icon-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="column">
+                <div class="feature-card card-md light-bordered hover-inset has-text-centered mb-20">
+                    <div class="card-icon">
+                        <img src="assets/images/illustrations/icons/wallet.svg" alt="">
+                    </div>
+                    <div class="card-title">
+                        <h4>Some title</h4>
+                    </div>
+                    <div class="card-feature-description">
+                        <span class="">Lorem ipsum dolor sit amet, clita laoreet ne cum. His caelus elet cu harum inermis iudicabit.</span>
+                    </div>
+                    <a href="#" class="button btn-align btn-more is-link color-primary">
+                        Learn more <i class="sl sl-icon-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="column">
+                <div class="feature-card card-md light-bordered hover-inset has-text-centered mb-20">
+                    <div class="card-icon">
+                        <img src="assets/images/illustrations/icons/building.svg" alt="">
+                    </div>
+                    <div class="card-title">
+                        <h4>Some title</h4>
+                    </div>
+                    <div class="card-feature-description">
+                        <span class="">Lorem ipsum dolor sit amet, clita laoreet ne cum. His caelus elet cu harum inermis iudicabit.</span>
+                    </div>
+                    <a href="#" class="button btn-align btn-more is-link color-primary">
+                        Learn more <i class="sl sl-icon-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- /Demo section -->
+        </div>
+        <!-- Feature card -->
+
+        <div class="columns is-vcentered">
+            <!-- Code section -->
+            <div class="column is-6 is-offset-3">
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <figure class="highlight highlight-block">
+                                <pre><code class="html code-highlight">
+&#x3C;div class=&#x22;feature-card card-md light-bordered hover-inset has-text-centered&#x22;&#x3E;
+    &#x3C;div class=&#x22;card-icon&#x22;&#x3E;
+        &#x3C;img src=&#x22;assets/images/icons/wallet.svg&#x22; alt=&#x22;&#x22;&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;card-title&#x22;&#x3E;
+        &#x3C;h4&#x3E;Some title&#x3C;/h4&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;card-feature-description&#x22;&#x3E;
+        &#x3C;span class=&#x22;&#x22;&#x3E;Lorem ipsum dolor sit amet, clita laoreet ne cum. His caelus elet cu harum inermis iudicabit.&#x3C;/span&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;a href=&#x22;#&#x22; class=&#x22;button btn-align btn-more is-link color-primary&#x22;&#x3E;
+        Learn more &#x3C;i class=&#x22;sl sl-icon-arrow-right&#x22;&#x3E;&#x3C;/i&#x3E;
+    &#x3C;/a&#x3E;
+&#x3C;/div&#x3E;
+                                        </code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Code section -->
+        </div>
+        <!-- /Icon feature card -->
+
+        <!-- Image feature card -->
+        <div class="columns is-vcentered pt-60 pb-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Image feature card</h4>
+                    <p class="no-padding">Unlike flex card, feature card's dimensions are static. By default it has <code>300px x 320px </code> dimensions. Height can be extended by adding the modifier <code>.card-md</code> to the parent element. Feature cards display perfectly also on mobile.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <!-- Demo section -->
+            <div class="column is-4">
+                <div class="feature-card card-lg light-bordered hover-inset mb-20">
+                    <div class="card-img">
+                        <img src="https://via.placeholder.com/400x300" alt=""
+                            data-demo-src="assets/images/demo/flat/cactus.png">
+                    </div>
+                    <div class="card-title pb-10 pt-10">
+                        <h4>Some title</h4>
+                    </div>
+                    <div class="card-img-description has-text-left">
+                        <span class="">Lorem ipsum dolor sit amet, clita laoreet ne cum. His caelus elet cu harum Cu soleat euismod mei, illum soleat ei vis.</span>
+                    </div>
+                    <div class="pt-10 has-text-left">
+                        <a href="#" class="button btn-align secondary-btn raised">Learn more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-4">
+                <div class="feature-card card-lg light-bordered hover-inset mb-20">
+                    <div class="card-img">
+                        <img src="https://via.placeholder.com/400x300" alt=""
+                            data-demo-src="assets/images/demo/flat/moon.png">
+                    </div>
+                    <div class="card-title pb-10 pt-10">
+                        <h4>Some title</h4>
+                    </div>
+                    <div class="card-img-description has-text-left">
+                        <span class="">Lorem ipsum dolor sit amet, clita laoreet ne cum. His caelus elet cu harum Cu soleat euismod mei, illum soleat ei vis.</span>
+                    </div>
+                    <div class="pt-10 has-text-left">
+                        <a href="#" class="button btn-align secondary-btn raised">Learn more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-4">
+                <div class="feature-card card-lg light-bordered hover-inset mb-20">
+                    <div class="card-img">
+                        <img src="https://via.placeholder.com/400x300" alt=""
+                            data-demo-src="assets/images/demo/flat/working.png">
+                    </div>
+                    <div class="card-title pb-10 pt-10">
+                        <h4>Some title</h4>
+                    </div>
+                    <div class="card-img-description has-text-left">
+                        <span class="">Lorem ipsum dolor sit amet, clita laoreet ne cum. His caelus elet cu harum Cu soleat euismod mei, illum soleat ei vis.</span>
+                    </div>
+                    <div class="pt-10 has-text-left">
+                        <a href="#" class="button btn-align secondary-btn raised">Learn more</a>
+                    </div>
+                </div>
+            </div>
+            <!-- /Demo section -->
+        </div>
+
+        <div class="columns is-vcentered">
+            <!-- Code section -->
+            <div class="column is-6 is-offset-3">
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <figure class="highlight highlight-block">
+                                <pre><code class="html code-highlight">
+&#x3C;div class=&#x22;feature-card card-lg light-bordered hover-inset&#x22;&#x3E;
+    &#x3C;div class=&#x22;card-img&#x22;&#x3E;
+        &#x3C;img src=&#x22;assets/images/photos/moon.png&#x22; alt=&#x22;&#x22;&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;card-title  pb-10 pt-10&#x22;&#x3E;
+        &#x3C;h4&#x3E;Some title&#x3C;/h4&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;card-img-description has-text-left&#x22;&#x3E;
+        &#x3C;span class=&#x22;&#x22;&#x3E;Lorem ipsum dolor sit amet, clita laoreet ne cum. His caelus elet cu harum Cu soleat euismod mei, illum soleat ei vis, offendit partiendo intellegebat id vix. ...&#x3C;/span&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+                                        </code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Code section -->
+        </div>
+        <!-- Image feature card -->
+    </div>
+</section>
+
+<section class="section is-medium">
+    <div class="container">
+        <div id="bulma-card" class="section-title-wrapper has-text-centered">
+            <div class="bg-number">3</div>
+            <h2 class="title section-title has-text-centered dark-text text-bold">
+                Classic card
+            </h2>
+        </div>
+
+        <!-- Image card -->
+        <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Bulma cards</h4>
+                    <p class="no-padding">Bulma natively offers wonderful image cards, wich are customizable. If you want to find more about Bulma cards, head to the official <a href="http://bulma.io/documentation/components/card/" target="_blank">cards documentation</a>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <!-- Demo section -->
+            <div class="column is-4">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img src="https://via.placeholder.com/400x300" alt=""
+                                data-demo-src="assets/images/demo/flat/cactus.png">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-left">
+                                <figure class="image is-48x48">
+                                    <img src="https://via.placeholder.com/250x250" class="img-circle" alt=""
+                                        data-demo-src="assets/images/avatars/helen.jpg">
+                                </figure>
+                            </div>
+                            <div class="media-content">
+                                <p class="is-size-4 color-accent">Helen Miller</p>
+                                <p class="is-size-7">23 mar 2017</p>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Phasellus nec iaculis mauris.
+                        </div>
+                        <div class="has-text-right">
+                            <a class="button btn-align accent-btn btn-outlined rounded">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-4">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img src="https://via.placeholder.com/400x300" alt=""
+                                data-demo-src="assets/images/demo/flat/moon.png">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-left">
+                                <figure class="image is-48x48">
+                                    <img src="https://via.placeholder.com/250x250" class="img-circle" alt=""
+                                        data-demo-src="assets/images/avatars/ben.jpg">
+                                </figure>
+                            </div>
+                            <div class="media-content">
+                                <p class="is-size-4 color-accent">Kevin Smith</p>
+                                <p class="is-size-7">12 apr 2017</p>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Phasellus nec iaculis mauris.
+                        </div>
+                        <div class="has-text-right">
+                            <a class="button btn-align accent-btn btn-outlined rounded">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-4">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img src="https://via.placeholder.com/400x300" alt=""
+                                data-demo-src="assets/images/demo/flat/working.png">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-left">
+                                <figure class="image is-48x48">
+                                    <img src="https://via.placeholder.com/250x250" class="img-circle" alt=""
+                                        data-demo-src="assets/images/avatars/nina.jpg">
+                                </figure>
+                            </div>
+                            <div class="media-content">
+                                <p class="is-size-4 color-accent">Sandra Mayers</p>
+                                <p class="is-size-7">29 apr 2017</p>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Phasellus nec iaculis mauris.
+                        </div>
+                        <div class="has-text-right">
+                            <a class="button btn-align accent-btn btn-outlined rounded">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Demo section -->
+        </div>
+        <!-- /Image card -->
+
+        <!-- Ressource card -->
+        <div class="columns is-vcentered pt-60 pb-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Ressource cards</h4>
+                    <p class="no-padding">Ressource cards are useful when displaying ressources, articles or blog post. They feature a image zoom out and zoom in effect when hovered. To activate these effects, add <code>.zoomIn</code> or <code>.zoomOut</code> to the <code>figure</code> container</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Demo section -->
+        <div class="columns is-vcentered">
+            <!-- Card -->
+            <div class="column is-4">
+                <div class="card ressource-card">
+                    <div class="card-image">
+                        <figure class="image is-4by3 zoomIn">
+                            <img src="https://via.placeholder.com/400x300" alt=""
+                                data-demo-src="assets/images/demo/flat/big-moon.jpg">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <a href="#" class="color-primary">Work with less inbound emails</a>
+                                <p class="subtitle is-6">Learning Center</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Card -->
+
+            <!-- Card -->
+            <div class="column is-4">
+                <div class="card ressource-card">
+                    <div class="card-image">
+                        <figure class="image is-4by3 zoomIn">
+                            <img src="https://via.placeholder.com/400x300" alt=""
+                                data-demo-src="assets/images/demo/flat/mountain-sunset.png">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <a href="#" class="color-primary">Tight collaboration equals success</a>
+                                <p class="subtitle is-6">Learning Center</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Card -->
+
+            <!-- Card -->
+            <div class="column is-4">
+                <div class="card ressource-card">
+                    <div class="card-image">
+
+                        <figure class="image is-4by3 zoomIn">
+                            <img src="https://via.placeholder.com/400x300" alt=""
+                                data-demo-src="assets/images/demo/flat/moon-mountains.png">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <a href="#" class="color-primary">How data insight helps business</a>
+                                <p class="subtitle is-6">Blog</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Card -->
+        </div>
+        <!-- /Demo section -->
+
+        <div class="columns is-vcentered">
+            <!-- Code section -->
+            <div class="column is-6 is-offset-3">
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <figure class="highlight highlight-block">
+                                <pre><code class="html code-highlight">
+&#x3C;div class=&#x22;card ressource-card&#x22;&#x3E;
+    &#x3C;div class=&#x22;card-image&#x22;&#x3E;
+        &#x3C;figure class=&#x22;image is-4by3 zoomOut&#x22;&#x3E;
+            &#x3C;img src=&#x22;assets/images/photos/city.png&#x22; alt=&#x22;&#x22;&#x3E;
+        &#x3C;/figure&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;card-content&#x22;&#x3E;
+        &#x3C;div class=&#x22;media&#x22;&#x3E;
+            &#x3C;div class=&#x22;media-content&#x22;&#x3E;
+                &#x3C;a href=&#x22;#&#x22; class=&#x22;color-primary&#x22;&#x3E;How data insight helps business&#x3C;/a&#x3E;
+                &#x3C;p class=&#x22;subtitle is-6&#x22;&#x3E;Blog&#x3C;/p&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+                                        </code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Code section -->
+        </div>
+        <!-- /Ressource card -->
+
+        <!-- Avatar ressource card -->
+        <div class="columns is-vcentered pt-60 pb-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Avatar Ressource cards</h4>
+                    <p class="no-padding">Avatars can be added to ressource cards. It is a useful feature when showing articles with multiple authors.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Demo section -->
+        <div class="columns is-vcentered">
+            <!-- Card -->
+            <div class="column is-4">
+                <div class="card ressource-card">
+                    <div class="card-image">
+                        <figure class="image is-4by3 zoomIn">
+                            <img src="https://via.placeholder.com/400x300" alt=""
+                                data-demo-src="assets/images/demo/flat/big-moon.jpg">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <a href="#" class="color-primary">Work with less inbound emails</a>
+                                <p class="subtitle is-6">Learning Center</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ressource-avatar">
+                        <img src="https://via.placeholder.com/250x250" alt=""
+                            data-demo-src="assets/images/avatars/funny1.svg">
+                    </div>
+                </div>
+            </div>
+            <!-- /Card -->
+
+            <!-- Card -->
+            <div class="column is-4">
+                <div class="card ressource-card">
+                    <div class="card-image">
+                        <figure class="image is-4by3 zoomIn">
+                            <img src="https://via.placeholder.com/400x300" alt=""
+                                data-demo-src="assets/images/demo/flat/mountain-sunset.png">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <a href="#" class="color-primary">Tight collaboration equals success</a>
+                                <p class="subtitle is-6">Learning Center</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ressource-avatar">
+                        <img src="https://via.placeholder.com/250x250" alt=""
+                            data-demo-src="assets/images/avatars/funny2.svg">
+                    </div>
+                </div>
+            </div>
+            <!-- /Card -->
+
+            <!-- Card -->
+            <div class="column is-4">
+                <div class="card ressource-card">
+                    <div class="card-image">
+
+                        <figure class="image is-4by3 zoomIn">
+                            <img src="https://via.placeholder.com/400x300" alt=""
+                                data-demo-src="assets/images/demo/flat/moon-mountains.png">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <a href="#" class="color-primary">How data insight helps business</a>
+                                <p class="subtitle is-6">Blog</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ressource-avatar">
+                        <img src="https://via.placeholder.com/250x250" alt=""
+                            data-demo-src="assets/images/avatars/funny3.svg">
+                    </div>
+                </div>
+            </div>
+            <!-- /Card -->
+        </div>
+        <!-- /Demo section -->
+
+        <div class="columns is-vcentered">
+            <!-- Code section -->
+            <div class="column is-6 is-offset-3">
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <figure class="highlight highlight-block">
+                                <pre><code class="html code-highlight">
+&#x3C;div class=&#x22;card ressource-card&#x22;&#x3E;
+    &#x3C;div class=&#x22;card-image&#x22;&#x3E;
+        &#x3C;figure class=&#x22;image is-4by3 zoomIn&#x22;&#x3E;
+            &#x3C;img src=&#x22;assets/images/photos/moon-mountains.png&#x22; alt=&#x22;&#x22;&#x3E;
+        &#x3C;/figure&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;card-content&#x22;&#x3E;
+        &#x3C;div class=&#x22;media&#x22;&#x3E;
+            &#x3C;div class=&#x22;media-content&#x22;&#x3E;
+                &#x3C;a href=&#x22;#&#x22; class=&#x22;color-primary&#x22;&#x3E;Tight collaboration equals success&#x3C;/a&#x3E;
+                &#x3C;p class=&#x22;subtitle is-6&#x22;&#x3E;Learning Center&#x3C;/p&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;ressource-avatar&#x22;&#x3E;
+        &#x3C;img src=&#x22;assets/images/avatars/funny2.svg&#x22;&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+                                            </code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Code section -->
+        </div>
+        <!-- /Avatar ressource card -->
+
+        <!-- Floating Image card wide -->
+        <div class="columns is-vcentered pt-60 pb-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Floating wide image</h4>
+                    <p class="no-padding">Floating image cards extend Bulma cards. They feature a floating wide image or a boxed one. Check the example markup for more details.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <!-- Demo section -->
+            <div class="column is-4">
+                <div class="card card-floating-wide card-shadow">
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img src="https://via.placeholder.com/400x300" alt=""
+                                data-demo-src="assets/images/demo/flat/cactus.png">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4 color-accent">New perspectives</p>
+                                <p class="subtitle is-6">23 mar 2017</p>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Phasellus nec iaculis mauris.
+                        </div>
+                        <div class="has-text-left">
+                            <a class="button btn-align accent-btn raised">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-4">
+                <div class="card card-floating-wide card-shadow">
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img src="https://via.placeholder.com/400x300" alt=""
+                                data-demo-src="assets/images/demo/flat/moon.png">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4 color-accent">New perspectives</p>
+                                <p class="subtitle is-6">23 mar 2017</p>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Phasellus nec iaculis mauris.
+                        </div>
+                        <div class="has-text-left">
+                            <a class="button btn-align accent-btn raised">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-4">
+                <div class="card card-floating-wide card-shadow">
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img src="https://via.placeholder.com/400x300" alt=""
+                                data-demo-src="assets/images/demo/flat/working.png">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4 color-accent">New perspectives</p>
+                                <p class="subtitle is-6">23 mar 2017</p>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Phasellus nec iaculis mauris.
+                        </div>
+                        <div class="has-text-left">
+                            <a class="button btn-align accent-btn raised">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Demo section -->
+        </div>
+        <div class="columns is-vcentered">
+            <!-- Code section -->
+            <div class="column is-6 is-offset-3">
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <figure class="highlight highlight-block">
+                                <pre><code class="html code-highlight">
+&#x3C;div class=&#x22;card card-floating-wide card-shadow&#x22;&#x3E;
+    &#x3C;div class=&#x22;card-image&#x22;&#x3E;
+        &#x3C;figure class=&#x22;image is-4by3&#x22;&#x3E;
+            &#x3C;img src=&#x22;assets/images/photos/cactus.png&#x22; alt=&#x22;&#x22;&#x3E;
+        &#x3C;/figure&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;card-content&#x22;&#x3E;
+        &#x3C;div class=&#x22;media&#x22;&#x3E;
+            &#x3C;div class=&#x22;media-content&#x22;&#x3E;
+                &#x3C;p class=&#x22;title is-4 color-accent&#x22;&#x3E;New perspectives&#x3C;/p&#x3E;
+                &#x3C;p class=&#x22;subtitle is-6&#x22;&#x3E;23 mar 2017&#x3C;/p&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+
+        &#x3C;div class=&#x22;content&#x22;&#x3E;
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Phasellus nec iaculis mauris.
+        &#x3C;/div&#x3E;
+        &#x3C;div class=&#x22;has-text-left&#x22;&#x3E;
+            &#x3C;a class=&#x22;button btn-align accent-btn raised&#x22;&#x3E;Read more&#x3C;/a&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+                                            </code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Code section -->
+        </div>
+        <!-- /Floating image card wide -->
+
+        <!-- Floating Image card boxed -->
+        <div class="columns is-vcentered pt-60 pb-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Floating boxed image</h4>
+                    <p class="no-padding">Floating image cards extend Bulma cards. They feature a floating wide image or a boxed one. Check the example markup for more details.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <!-- Demo section -->
+            <div class="column is-4">
+                <div class="card card-floating-boxed card-shadow">
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img src="https://via.placeholder.com/400x300" alt=""
+                                data-demo-src="assets/images/demo/flat/cactus.png">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4 color-accent">New perspectives</p>
+                                <p class="subtitle is-6">23 mar 2017</p>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Phasellus nec iaculis mauris.
+                        </div>
+                        <div class="has-text-left">
+                            <a class="button btn-align accent-btn raised">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-4">
+                <div class="card card-floating-boxed card-shadow">
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img src="https://via.placeholder.com/400x300" alt=""
+                                data-demo-src="assets/images/demo/flat/moon.png">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4 color-accent">New perspectives</p>
+                                <p class="subtitle is-6">23 mar 2017</p>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Phasellus nec iaculis mauris.
+                        </div>
+                        <div class="has-text-left">
+                            <a class="button btn-align accent-btn raised">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-4">
+                <div class="card card-floating-boxed card-shadow">
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img src="https://via.placeholder.com/400x300" alt=""
+                                data-demo-src="assets/images/demo/flat/working.png">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4 color-accent">New perspectives</p>
+                                <p class="subtitle is-6">23 mar 2017</p>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Phasellus nec iaculis mauris.
+                        </div>
+                        <div class="has-text-left">
+                            <a class="button btn-align accent-btn raised">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Demo section -->
+        </div>
+        <div class="columns is-vcentered">
+            <!-- Code section -->
+            <div class="column is-6 is-offset-3">
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <figure class="highlight highlight-block">
+                                <pre><code class="html code-highlight">
+&#x3C;div class=&#x22;card card-floating-boxed card-shadow&#x22;&#x3E;
+    &#x3C;div class=&#x22;card-image&#x22;&#x3E;
+        &#x3C;figure class=&#x22;image is-4by3&#x22;&#x3E;
+            &#x3C;img src=&#x22;assets/images/photos/cactus.png&#x22; alt=&#x22;&#x22;&#x3E;
+        &#x3C;/figure&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;card-content&#x22;&#x3E;
+        &#x3C;div class=&#x22;media&#x22;&#x3E;
+            &#x3C;div class=&#x22;media-content&#x22;&#x3E;
+                &#x3C;p class=&#x22;title is-4 color-accent&#x22;&#x3E;New perspectives&#x3C;/p&#x3E;
+                &#x3C;p class=&#x22;subtitle is-6&#x22;&#x3E;23 mar 2017&#x3C;/p&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+
+        &#x3C;div class=&#x22;content&#x22;&#x3E;
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Phasellus nec iaculis mauris.
+        &#x3C;/div&#x3E;
+        &#x3C;div class=&#x22;has-text-left&#x22;&#x3E;
+            &#x3C;a class=&#x22;button btn-align accent-btn raised&#x22;&#x3E;Read more&#x3C;/a&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+                                            </code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Code section -->
+        </div>
+        <!-- /Floating image card boxed -->
+    </div>
+</section>
+
+<section class="section section-feature-grey is-medium">
+    <div class="container">
+        <div id="media-card" class="section-title-wrapper has-text-centered">
+            <div class="bg-number">4</div>
+            <h2 class="title section-title has-text-centered dark-text text-bold">
+                Media card
+            </h2>
+        </div>
+        <!-- Left Media card -->
+        <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Left media card</h4>
+                    <p class="no-padding">Inspired by <a href="#">Medium</a> and built on top of flex cards, media cards are a great alternative way to display your content. The side layout automatically stacks on touch devices.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <!-- Demo section -->
+            <div class="column is-5 is-offset-1">
+                <div class="flex-card media-card media-card-left light-bordered light-raised">
+                    <div class="columns is-gapless is-desktop">
+                        <div class="column is-4 media-stretch">
+                            <div class="media-card-image" data-background="https://via.placeholder.com/1280x960"
+                             data-demo-background="assets/images/demo/woman-glasses.jpeg"></div>
+                        </div>
+                        <div class="column content-column">
+                            <div class="mcard-content">
+                                <h3 class="mcard-title"><a href="#">How SaaS can help small businesses becoming big players?</a></h3>
+                                <p class="mcard-description is-hidden-touch">When it comes to structuring a React app, the ideal structure is the one that allows you to move around your code... </p>
+                            </div>
+                            <div class="mcard-controls">
+                                <div class="mcard-avatar">
+                                    <img src="https://via.placeholder.com/250x250" alt=""
+                                        data-demo-src="assets/images/avatars/henry.jpg">
+                                </div>
+                                <div class="mcard-info">
+                                    <span><a href="#">Henry Rogers</a></span>
+                                    <div><span>13 Oct</span> <i class="fa fa-circle"></i>  <span>8 min read</span></div>
+                                </div>
+                                <div class="mcard-actions ml-auto">
+                                    <span><i class="material-icons">bookmark_border</i> </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-5">
+                <div class="flex-card media-card media-card-left light-bordered light-raised">
+                    <div class="columns is-gapless is-desktop">
+                        <div class="column is-4 media-stretch">
+                            <div class="media-card-image" data-background="https://via.placeholder.com/1280x960"
+                                data-demo-background="assets/images/demo/woman-glasses-back.jpeg"></div>
+                        </div>
+                        <div class="column content-column">
+                            <div class="mcard-content">
+                                <h3 class="mcard-title"><a href="#">Integrate our cities with technology, a major concern.</a></h3>
+                                <p class="mcard-description is-hidden-touch">When it comes to structuring a React app, the ideal structure is the one that allows you to move around your code... </p>
+                            </div>
+                            <div class="mcard-controls">
+                                <div class="mcard-avatar">
+                                    <img src="https://via.placeholder.com/250x250" alt=""
+                                        data-demo-src="assets/images/avatars/janet.jpg">
+                                </div>
+                                <div class="mcard-info">
+                                    <span><a href="#">Janet Biggs</a></span>
+                                    <div><span>06 Oct</span> <i class="fa fa-circle"></i>  <span>4 min read</span></div>
+                                </div>
+                                <div class="mcard-actions ml-auto">
+                                    <span><i class="material-icons">bookmark_border</i> </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Left Media card -->
+
+        <!-- Right Media card -->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Right media card</h4>
+                    <p class="no-padding">Inspired by <a href="#">Medium</a> and built on top of flex cards, media cards are a great alternative way to display your content. The side layout automatically stacks on touch devices.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <!-- Demo section -->
+            <div class="column is-5 is-offset-1">
+                <div class="flex-card media-card media-card-right light-bordered light-raised">
+                    <div class="columns is-gapless is-desktop">
+                        <div class="column content-column">
+                            <div class="mcard-content">
+                                <h3 class="mcard-title"><a href="#">How to start a successfull React project?</a></h3>
+                                <p class="mcard-description is-hidden-touch">When it comes to structuring a React app, the ideal structure is the one that allows you to move around your code... </p>
+                            </div>
+                            <div class="mcard-controls">
+                                <div class="mcard-avatar">
+                                    <img src="https://via.placeholder.com/250x250" alt=""
+                                        data-demo-src="assets/images/avatars/melany.jpg">
+                                </div>
+                                <div class="mcard-info">
+                                    <span><a href="#">Melany Lane</a></span>
+                                    <div><span>29 Aug</span> <i class="fa fa-circle"></i>  <span>15 min read</span></div>
+                                </div>
+                                <div class="mcard-actions ml-auto">
+                                    <span><i class="material-icons">bookmark_border</i> </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-4 media-stretch">
+                            <div class="media-card-image" data-background="https://via.placeholder.com/1280x960"
+                                data-demo-background="assets/images/demo/laptop-living.jpeg"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-5">
+                <div class="flex-card media-card media-card-right light-bordered light-raised">
+                    <div class="columns is-gapless is-desktop">
+                        <div class="column content-column">
+                            <div class="mcard-content">
+                                <h3 class="mcard-title"><a href="#">Tomorrow, smart cities will rule the earth.</a></h3>
+                                <p class="mcard-description is-hidden-touch">When it comes to structuring a React app, the ideal structure is the one that allows you to move around your code... </p>
+                            </div>
+                            <div class="mcard-controls">
+                                <div class="mcard-avatar">
+                                    <img src="https://via.placeholder.com/250x250" alt=""
+                                        data-demo-src="assets/images/avatars/janet.jpg">
+                                </div>
+                                <div class="mcard-info">
+                                    <span><a href="#">Janet Biggs</a></span>
+                                    <div><span>06 Oct</span> <i class="fa fa-circle"></i>  <span>4 min read</span></div>
+                                </div>
+                                <div class="mcard-actions ml-auto">
+                                    <span><i class="material-icons">bookmark_border</i> </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-4 media-stretch">
+                            <div class="media-card-image" data-background="https://via.placeholder.com/1280x960"
+                                data-demo-background="assets/images/demo/woman-ipad.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Right Media card -->
+
+        <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-3">
+                <!-- Code section -->
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <div class="navigation-tabs animated-tabs simple-tabs mb-40">
+                                <div class="tabs is-right">
+                                    <ul>
+                                        <li class="tab-link is-active" data-tab="left-media"><a>left media</a></li>
+                                        <li class="tab-link" data-tab="right-media"><a>right media</a></li>
+                                    </ul>
+                                </div>
+                                <div id="left-media" class="navtab-content is-active">
+                                    <figure class="highlight highlight-block"><pre><code class="html code-highlight">
+&#x3C;div class=&#x22;flex-card media-card media-card-left light-bordered light-raised&#x22;&#x3E;
+    &#x3C;div class=&#x22;columns is-gapless is-desktop&#x22;&#x3E;
+        &#x3C;div class=&#x22;column is-4 media-stretch&#x22;&#x3E;
+            &#x3C;div class=&#x22;media-card-image&#x22; data-background=&#x22;assets/images/photos/woman-glasses-back.jpeg&#x22;&#x3E;&#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+        &#x3C;div class=&#x22;column content-column&#x22;&#x3E;
+            &#x3C;div class=&#x22;mcard-content&#x22;&#x3E;
+                &#x3C;h3 class=&#x22;mcard-title&#x22;&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Integrate our cities with technology, a major concern.&#x3C;/a&#x3E;&#x3C;/h3&#x3E;
+                &#x3C;p class=&#x22;mcard-description is-hidden-touch&#x22;&#x3E;When it comes to structuring a React app, the ideal structure is the one that allows you to move around your code... &#x3C;/p&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div class=&#x22;mcard-controls&#x22;&#x3E;
+                &#x3C;div class=&#x22;mcard-avatar&#x22;&#x3E;
+                    &#x3C;img src=&#x22;assets/images/avatars/janet.jpg&#x22;&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;mcard-info&#x22;&#x3E;
+                    &#x3C;span&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Janet Biggs&#x3C;/a&#x3E;&#x3C;/span&#x3E;
+                    &#x3C;div&#x3E;&#x3C;span&#x3E;06 Oct&#x3C;/span&#x3E; &#x3C;i class=&#x22;fa fa-circle&#x22;&#x3E;&#x3C;/i&#x3E;  &#x3C;span&#x3E;4 min read&#x3C;/span&#x3E;&#x3C;/div&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;mcard-actions ml-auto&#x22;&#x3E;
+                    &#x3C;span&#x3E;&#x3C;i class=&#x22;material-icons&#x22;&#x3E;bookmark_border&#x3C;/i&#x3E; &#x3C;/span&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+                                            </code></pre></figure>
+                                </div>
+                                <div id="right-media" class="navtab-content">
+                                    <figure class="highlight highlight-block"><pre><code class="html code-highlight">
+&#x3C;div class=&#x22;flex-card media-card media-card-right light-bordered light-raised&#x22;&#x3E;
+    &#x3C;div class=&#x22;columns is-gapless is-desktop&#x22;&#x3E;
+        &#x3C;div class=&#x22;column content-column&#x22;&#x3E;
+            &#x3C;div class=&#x22;mcard-content&#x22;&#x3E;
+                &#x3C;h3 class=&#x22;mcard-title&#x22;&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;How to start a successfull React project?&#x3C;/a&#x3E;&#x3C;/h3&#x3E;
+                &#x3C;p class=&#x22;mcard-description is-hidden-touch&#x22;&#x3E;When it comes to structuring a React app, the ideal structure is the one that allows you to move around your code... &#x3C;/p&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div class=&#x22;mcard-controls&#x22;&#x3E;
+                &#x3C;div class=&#x22;mcard-avatar&#x22;&#x3E;
+                    &#x3C;img src=&#x22;assets/images/avatars/melany.jpg&#x22;&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;mcard-info&#x22;&#x3E;
+                    &#x3C;span&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Melany Lane&#x3C;/a&#x3E;&#x3C;/span&#x3E;
+                    &#x3C;div&#x3E;&#x3C;span&#x3E;29 Aug&#x3C;/span&#x3E; &#x3C;i class=&#x22;fa fa-circle&#x22;&#x3E;&#x3C;/i&#x3E;  &#x3C;span&#x3E;15 min read&#x3C;/span&#x3E;&#x3C;/div&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;mcard-actions ml-auto&#x22;&#x3E;
+                    &#x3C;span&#x3E;&#x3C;i class=&#x22;material-icons&#x22;&#x3E;bookmark_border&#x3C;/i&#x3E; &#x3C;/span&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+        &#x3C;div class=&#x22;column is-4 media-stretch&#x22;&#x3E;
+            &#x3C;div class=&#x22;media-card-image&#x22; data-background=&#x22;assets/images/photos/laptop-phone.jpeg&#x22;&#x3E;&#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+                                            </code></pre></figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Code section -->
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="section is-medium">
+    <div class="container">
+        <div id="event-card" class="section-title-wrapper has-text-centered">
+            <div class="bg-number">5</div>
+            <h2 class="title section-title has-text-centered dark-text text-bold">
+                Event card
+            </h2>
+        </div>
+        <!-- Event cards -->
+        <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Hoverable event cards</h4>
+                    <p class="no-padding">Inspired by <a href="#">Medium</a> and built on top of flex cards, media cards are a great alternative way to display your content. The side layout automatically stacks on touch devices.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns">
+            <div class="column is-4">
+                <!-- Event Card -->
+                <div class="event-card">
+                    <div class="card-date">
+                        <div class="date">
+                            <span class="day">24</span>
+                            <span class="month">Aug</span>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="https://via.placeholder.com/1080x810" alt=""
+                            data-demo-src="assets/images/demo/events/event1.jpg">
+                    </div>
+                    <div class="card-text">
+                        <div class="text text-container">
+                            <div class="text text-header">
+                                <h2 class="text text-title">Marbella</h2>
+                                <p class="text text-subtitle">Partners training session</p>
+                            </div>
+                            <div class="text text-details">
+                                <p class="text text-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea nulla cum impedit et nemo molestiae, suscipit animi officiis soluta natus, provident ab laudantium, amet dolorum.
+                                </p>
+                                <a href="#" class="button btn-align btn-more is-link color-accent mt-10">
+                                    Event details <i class="sl sl-icon-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Event Card -->
+            </div>
+            <div class="column is-4">
+                <!-- Event Card -->
+                <div class="event-card">
+                    <div class="card-date">
+                        <div class="date">
+                            <span class="day">19</span>
+                            <span class="month">Sep</span>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="https://via.placeholder.com/1080x810" alt=""
+                            data-demo-src="assets/images/demo/events/event2.jpg">
+                    </div>
+                    <div class="card-text">
+                        <div class="text text-container">
+                            <div class="text text-header">
+                                <h2 class="text text-title">Prague</h2>
+                                <p class="text text-subtitle">Release momentum</p>
+                            </div>
+                            <div class="text text-details">
+                                <p class="text text-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea nulla cum impedit et nemo molestiae, suscipit animi officiis soluta natus, provident ab laudantium, amet dolorum.
+                                </p>
+                                <a href="#" class="button btn-align btn-more is-link color-accent mt-10">
+                                    Event details <i class="sl sl-icon-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Event Card -->
+            </div>
+            <div class="column is-4">
+                <!-- Event Card -->
+                <div class="event-card">
+                    <div class="card-date">
+                        <div class="date">
+                            <span class="day">05</span>
+                            <span class="month">Dec</span>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="https://via.placeholder.com/1080x810" alt=""
+                            data-demo-src="assets/images/demo/events/event3.svg">
+                    </div>
+                    <div class="card-text">
+                        <div class="text text-container">
+                            <div class="text text-header">
+                                <h2 class="text text-title">Chicago</h2>
+                                <p class="text text-subtitle">Node JS Conf</p>
+                            </div>
+                            <div class="text text-details">
+                                <p class="text text-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea nulla cum impedit et nemo molestiae, suscipit animi officiis soluta natus, provident ab laudantium, amet dolorum.
+                                </p>
+                                <a href="#" class="button btn-align btn-more is-link color-accent mt-10">
+                                    Event details <i class="sl sl-icon-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Event Card -->
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <!-- Code section -->
+            <div class="column is-6 is-offset-3">
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <figure class="highlight highlight-block">
+                                <pre><code class="html code-highlight">
+&#x3C;div class=&#x22;event-card&#x22;&#x3E;
+    &#x3C;div class=&#x22;card-date&#x22;&#x3E;
+        &#x3C;div class=&#x22;date&#x22;&#x3E;
+            &#x3C;span class=&#x22;day&#x22;&#x3E;05&#x3C;/span&#x3E;
+            &#x3C;span class=&#x22;month&#x22;&#x3E;Dec&#x3C;/span&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;img-container&#x22;&#x3E;
+        &#x3C;img src=&#x22;https://source.unsplash.com/tnv84LOjes4/&#x22; alt=&#x22;&#x22; /&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;card-text&#x22;&#x3E;
+        &#x3C;div class=&#x22;text text-container&#x22;&#x3E;
+            &#x3C;div class=&#x22;text text-header&#x22;&#x3E;
+                &#x3C;h2 class=&#x22;text text-title&#x22;&#x3E;Chicago&#x3C;/h2&#x3E;
+                &#x3C;p class=&#x22;text text-subtitle&#x22;&#x3E;Node JS Conf&#x3C;/p&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div class=&#x22;text text-details&#x22;&#x3E;
+                &#x3C;p class=&#x22;text text-description&#x22;&#x3E;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea nulla cum impedit et nemo molestiae, suscipit animi officiis soluta natus, provident ab laudantium, amet dolorum.
+                &#x3C;/p&#x3E;
+                &#x3C;a href=&#x22;#&#x22; class=&#x22;button btn-align btn-more is-link color-accent mt-10&#x22;&#x3E;
+                    Event details &#x3C;i class=&#x22;sl sl-icon-arrow-right&#x22;&#x3E;&#x3C;/i&#x3E;
+                &#x3C;/a&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+                                            </code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Code section -->
+        </div>
+        <!-- Event cards -->
+    </div>
+</section>
+
+{{> footer-dark}}

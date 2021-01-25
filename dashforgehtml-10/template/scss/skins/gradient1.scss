@@ -1,0 +1,263 @@
+
+// template and bootstrap override variables
+@import "../variables";
+@import "../bootstrap/variables";
+
+// template and bootstrap mixins
+@import "../mixins";
+@import "../bootstrap/mixins";
+
+// bootstrap
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+// Local vars
+$skin-ui-01:  darken($blue,5%);
+$skin-ui-02:  darken(saturate($purple, 40%), 5%);
+
+.navbar-header {
+  border-bottom-color: transparent;
+  background-color: transparent;
+  @include gradient-x($skin-ui-01, $skin-ui-02, 0, 75%);
+
+  .df-logo {
+    &,&:hover,&:focus {
+      color: #fff;
+      font-weight: $font-weight-semibold;
+
+      span { color: lighten($cyan, 8%); }
+    }
+  }
+
+  .burger-menu {
+    color: rgba(#fff, .5);
+    @include hover-focus() { color: #fff; }
+  }
+
+  .navbar-menu-header {
+    @include gradient-x($skin-ui-01, $skin-ui-02, 0, 75%);
+
+    a:last-child {
+      color: rgba(#fff, .5);
+      @include hover-focus() { color: #fff; }
+    }
+  }
+
+  .nav-item {
+    &.with-sub {
+      .nav-link {
+        @include media-breakpoint-up(lg) {
+          &::after { border-color: rgba(#fff, .7); }
+          @include hover-focus() {
+            &::after { border-color: #fff; }
+          }
+        }
+      }
+    }
+
+    &.active {
+      .nav-link {
+        @include media-breakpoint-up(lg) { color: #fff; }
+      }
+
+      &.with-sub {
+        .nav-link {
+          &::after {
+            @include media-breakpoint-up(lg) { border-color: #fff; }
+          }
+        }
+      }
+    }
+  }
+
+  .nav-link {
+    @include media-breakpoint-up(lg) {
+      color: rgba(#fff, .7);
+      @include hover-focus() { color: #fff; }
+    }
+  }
+
+  .navbar-right {
+    .search-link {
+      color: rgba(#fff, .7);
+      @include hover-focus() { color: #fff; }
+    }
+  }
+
+  .navbar-menu-sub::before { opacity: 0; }
+
+  .dropdown-notification,
+  .dropdown-message {
+    .dropdown-link {
+      color: rgba(#fff, .7);
+      @include hover-focus() { color: #fff; }
+    }
+
+    .dropdown-menu {
+      margin-top: 19.5px;
+      &::before { opacity: 0; }
+    }
+  }
+
+  .dropdown-profile .dropdown-link {
+    @include hover-focus() {
+      .avatar img {
+        background-color: rgba(#fff, .2);
+      }
+    }
+  }
+
+  .dropdown-menu {
+    border-width: 0;
+    box-shadow: 0 0 8px 2px rgba($gray-900, .1);
+  }
+
+  .btn-social {
+    color: rgba(#fff, .5);
+    @include hover-focus() { color: #fff; }
+  }
+
+  .btn-buy {
+    background-color: $color-brand-01;
+    color: #fff;
+  }
+}
+
+// Aside
+.aside.minimize {
+  .nav-aside .nav-label + .nav-item::before {
+    border-top-color: rgba(#fff, .12);
+  }
+}
+
+.aside-header {
+  background-color: $skin-ui-02;
+  border-right-color: transparent;
+
+  .burger-menu {
+    color: rgba(#fff, .5);
+    @include hover-focus() { color: #fff; }
+  }
+}
+
+.aside-logo {
+  &,&:hover,&:focus {
+    color: #fff;
+    span {
+      color: lighten($cyan, 8%);
+    }
+  }
+}
+
+.aside-menu-link {
+  color: rgba(#fff, .5);
+  @include hover-focus() { color: #fff; }
+}
+
+.aside-body {
+  border-top-width: 0;
+  @include gradient-y($skin-ui-02, $skin-ui-01, 20%, 100%);
+}
+
+.aside-loggedin-user {
+  h6 {
+    color: #fff;
+    font-weight: $font-weight-medium;
+  }
+
+  p { color: rgba(#fff, .5); }
+
+  a {
+    color: rgba(#fff, .5);
+    @include hover-focus() { color: #fff; }
+  }
+}
+
+.aside-alert-link a {
+  color: rgba(#fff, .5);
+  @include hover-focus() { svg { color: #fff; } }
+
+  &.new::before {
+    box-shadow: 0 0 0 2px $skin-ui-02;
+    background-color: lighten($cyan, 10%);
+  }
+}
+
+.nav-aside {
+  .nav-label {
+    color: #fff;
+    font-weight: $font-weight-medium;
+  }
+
+  .nav-item {
+    &.active {
+      .nav-link {
+        color: #fff;
+
+        &::before {
+          bottom: 0;
+          top: 0;
+          border-left-color: rgba(#fff, .7);
+          border-left-width: 2px;
+          background-color: rgba(#fff, .08);
+        }
+      }
+
+      svg {
+        color: #fff;
+        fill: rgba(#fff, .2);
+      }
+    }
+
+    &.with-sub {
+      &.show {
+        .nav-link {
+          color: #fff;
+          svg { color: #fff; }
+          &::before { border-left-color: #fff; }
+        }
+      }
+
+      ul {
+        li.active a { color: #fff; }
+
+        a {
+          color: rgba(lighten($color-brand-01, 40%), .8);
+          @include hover-focus() { color: #fff; }
+        }
+      }
+    }
+  }
+
+  .nav-link {
+    color: rgba(#fff, .75);
+
+    svg {
+      color: rgba(#fff, .75);
+      stroke-width: 1.7px;
+    }
+
+    @include hover-focus() { color: #fff; }
+  }
+}
+
+.content-header {
+  @include media-breakpoint-down(md) {
+    background-color: $skin-ui-02;
+    @include gradient-x($skin-ui-02, $skin-ui-01, 20%, 100%);
+    border-bottom-width: 0;
+
+    .nav-link {
+      color: rgba(#fff, .7);
+      @include hover-focus() { color: #fff; }
+    }
+  }
+}
+
+.content-search {
+  @include media-breakpoint-down(md) {
+    svg { color: #fff; }
+    .form-control:focus { color: #fff; }
+  }
+}

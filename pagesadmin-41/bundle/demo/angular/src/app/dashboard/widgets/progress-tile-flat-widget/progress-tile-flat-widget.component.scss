@@ -1,0 +1,28 @@
+$assets-url :"/assets";
+@import 'core.scss';
+
+pgcard{
+}
+:host /deep/ .widget-9 {
+    height: 145px;   
+    overflow: hidden;
+    .btn-circle-arrow {
+        border: 1px solid #fff;
+        border-radius: 100px;
+        position: relative;
+        width: 18px;
+        height: 18px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 4px;
+        i {
+            font-size: 11px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -5px;
+            margin-top: -4px;
+        }
+    }
+}
+

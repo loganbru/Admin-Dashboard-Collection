@@ -1,0 +1,336 @@
+//////////////////////////
+/// Investment
+//////////////////////////
+
+.plan{
+    &-iv{
+        &-actions{
+            padding-top: 2rem;
+        }
+    }
+    &-item{
+        position: relative;
+        padding: 14px;
+        &-card{
+            position: relative;
+            background: $white;
+            box-shadow: $box-shadow-sm;
+            border-radius: $border-radius;
+            border: 1px solid transparent;
+            transition: all .3s;
+            &:after{
+                position: absolute;
+                right: 12px;
+                top: 12px;
+                height: 24px;
+                width: 24px;
+                border-radius: 50%;
+                background: $accent-color;
+                color: $white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 14px;
+                font-family: $nk-dashlite-font;
+                content:$ni-check;
+                opacity: 0;
+                transition: opacity .3s;
+            }
+            .sub-text{
+                font-size: $fx-sz-12;
+            }
+        }
+        &-head{
+            text-align: center;
+            padding: 1.75rem 1.5rem;
+            border-bottom: 1px solid $border-light;
+        }
+        &-heading{
+            &:not(:last-child){
+                padding-bottom: 1rem;
+            }
+        }
+        &-title{
+            margin-bottom: 0.25rem;
+        }
+        &-summary{
+            .lead-text{
+                font-size: 2rem;
+                font-weight: $fw-medium;
+                line-height: 1.3;
+            }
+        }
+        &-desc{
+            &-list{
+                li{
+                    display: flex;
+                    padding: .25rem 0;
+                }
+                .desc{
+                    &-label{
+                        min-width: 50%;
+                    }
+                    &-data{
+                        margin-left: auto;
+                    }
+                }
+                +.plan-item-action{
+                    margin-top: 2rem;
+                }
+            }
+        }
+        &-body{
+            padding: 2rem 2.5rem 2.5rem;
+        }
+        &-action{
+            text-align: center;
+        }
+    }
+    &-control{
+        position: absolute;
+        opacity: 0;
+        height: 1px;
+        width: 1px;
+        &:checked{
+            + .plan-item-card{
+                border-color: $accent-color;
+                &:after{
+                    opacity: 1;
+                }
+                .plan-label{
+                    cursor: default;
+                    background: $accent-color;
+                    border-color: $accent-color;
+                    color: $white;
+                    &-selected{
+                        display: block !important;
+                    }
+                    &-base{
+                        display: none !important;
+                    }
+                }
+            }
+        }
+    }
+    &-label{
+        cursor: pointer;
+        padding: 0.4375rem 1rem;
+        margin-bottom: 0;
+        font-family: $alt-font-family;
+        font-weight: $fw-bold;
+        font-size: $fx-sz-12;
+        line-height: 1.25rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        border-radius: $border-radius;
+        border: 1px solid $border-color;
+        background: $lighter;
+        min-width: 170px;
+        text-align: center;
+        transition: all .3s;
+        .plan-label-selected{
+            display: none;
+        }
+    }
+}
+@include media-breakpoint-up(sm){
+    .plan{
+        &-iv{
+            &-actions{
+                padding-top: 3.5rem;
+            }
+        }
+    }
+}
+// Invest Dropdown
+.invest{
+    &-cc{
+        &-dropdown{
+            width: 100%;
+            .dropdown-indicator{
+                &:after{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    width: 56px;
+                    font-size: 24px;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: $base-light;
+                    opacity: 0.5;
+                }
+            }
+            .dropdown-menu{
+                margin-top: -78px ;
+                &[x-placement="top-start"]{
+                    margin-top: 0;
+                    margin-bottom: -78px ;
+                }
+            }
+        }
+        &-item{
+            &:not(:last-child){
+                border-bottom: 1px solid $border-light;
+            }
+        }
+        &-choosen{
+            display: block;
+            width: 100%;
+            border: 1px solid $border-color;
+            border-radius: $border-radius;
+            background: $white;
+        }
+        &-opt{
+            display: block;
+        }
+    }
+    &-pm{
+        &-list{
+            border: 1px solid $border-color;
+            background: $white;
+            border-radius: $border-radius;
+        }
+        &-item{
+            position: relative;
+            &:not(:last-child){
+                border-bottom: 1px solid $border-light;
+            }
+        }
+        &-label{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 0;
+            padding: 16px 20px 16px 60px;
+            cursor: pointer;
+            &:before,&:after{
+                position: absolute;
+                top: 50%;
+                left: 20px;
+                transform: translateY(-50%);
+                height: 24px;
+                width: 24px;
+                border-radius: 50%;
+            }
+            &:before{
+                content: '';
+                border: 2px solid $border-color;
+            }
+            &:after{
+                font-family: $nk-dashlite-font;
+                content: $ni-check;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                color: $white;
+                background: $accent-color;
+                transition: opacity .3s;
+                opacity: 0;
+            }
+            .pm{
+                &-name{
+                    font-size: $fx-sz-14;
+                    color: $base-color;
+                }
+                &-icon{
+                    display: inline-flex;
+                    font-size: 24px;
+                    color: $base-light;
+                }
+            }
+        }
+        &-control{
+            position: absolute;
+            top: 0;
+            height: 1px;
+            width: 1px;
+            opacity: 0;
+            &:checked ~ {
+                .buysell-pm-label{
+                    cursor: default;
+                    &:after{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+    &-field{
+        .form-control-amount{
+            padding: 1rem 4rem 1.25rem 1.5rem;
+            height: 3.75rem;
+            font-size: 1.25rem;
+            color: $base-light;
+            border-color: $border-color;
+            ~ .form-range-slider{
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                &.noUi-horizontal{
+                    height: 4px;
+                    border-radius: 0 0 4px 4px;
+                }
+                &.noUi-target{
+                    background: rgba($border-color,.6);
+                }
+                .noUi-connects{
+                    border-radius: 0 0 4px 4px;
+                }
+            }
+        }
+        &:not(:last-child){
+            margin-bottom: 1.75rem;
+        }
+    }
+}
+
+// Invest Amount Select
+.invest-amount{
+    &-group{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &-item{
+        position: relative;
+        flex-grow: 1;
+        width: 33.33%;
+    }
+    &-label{
+        cursor: pointer;
+        border-radius: $border-radius;
+        border:1px solid $border-color;
+        background: $white;
+        font-size: $fx-sz-14;
+        text-align: center;
+        line-height: 1.25rem;
+        padding: 1rem;
+        width: 100%;
+        margin-bottom: 0;
+        transition: all .3s;
+    }
+    &-control{
+        position: absolute;
+        opacity: 0;
+        height: 1px;
+        width: 1px;
+        &:checked{
+            ~ .invest-amount-label{
+                border-color: $accent-color;
+                background-color: $accent-color;
+                color: $white;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(sm){
+    .invest-amount{
+        &-item{
+            width: auto;
+        }
+    }
+}

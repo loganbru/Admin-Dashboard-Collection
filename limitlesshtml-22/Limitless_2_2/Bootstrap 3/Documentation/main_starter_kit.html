@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/core.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script type="text/javascript" src="assets/js/plugins/ui/prism.min.js"></script>
+	
+	<script type="text/javascript" src="assets/js/core/app.js"></script>
+	<script type="text/javascript" src="assets/js/pages/sidebar_detached_sticky_native.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body data-spy="scroll" data-target=".sidebar-detached" class="has-detached-right">
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-default navbar-lg header-highlight">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="index.html"><img src="assets/images/logo_light.png" alt=""></a>
+
+			<ul class="nav navbar-nav pull-right visible-xs-block">
+				<li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+				<li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+				<li><a class="sidebar-mobile-detached-toggle"><i class="icon-grid7"></i></a></li>
+			</ul>
+		</div>
+
+		<div class="navbar-collapse collapse" id="navbar-mobile">
+			<ul class="nav navbar-nav">
+				<li><a class="sidebar-control sidebar-main-hide hidden-xs"><i class="icon-paragraph-justify3"></i></a></li>
+				<li><a class="sidebar-control sidebar-detached-hide hidden-xs"><i class="icon-drag-right"></i></a></li>
+			</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="other_changelog.html">Changelog <span class="label label-inline bg-warning-400 position-right">v. 2.0</span></a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page container -->
+	<div class="page-container">
+
+		<!-- Page content -->
+		<div class="page-content">
+
+			<!-- Main sidebar -->
+			<div class="sidebar sidebar-main">
+				<div class="sidebar-content">
+
+	        		<!-- Support -->
+					<div class="sidebar-category no-margin">
+						<div class="category-title">
+							<span>Have questions?</span>
+							<i class="icon-help text-muted pull-right"></i>
+						</div>
+
+						<div class="category-content">
+							<a href="http://kopyov.ticksy.com" class="btn bg-success-400 btn-block" target="_blank"><i class="icon-lifebuoy position-left"></i> Limitless support</a>
+						</div>
+					</div>
+					<!-- /support -->
+
+
+					<!-- Main navigation -->
+					<div class="sidebar-category">
+						<div class="category-title">
+							<span>Navigation</span>
+							<i class="icon-menu7 text-muted pull-right"></i>
+						</div>
+
+						<div class="category-content no-padding">
+							<ul class="navigation navigation-main navigation-accordion">
+
+								<!-- Main -->
+								<li class="navigation-header">Main</li>
+								<li><a href="index.html">Introduction</a></li>
+								<li><a href="main_getting_started.html">Getting started</a></li>
+								<li class="active"><a href="main_starter_kit.html">Starter kit</a></li>
+								<li><a href="main_rtl.html">RTL layout</a></li>
+
+								<li class="navigation-header">Basic functionality</li>								
+								<li><a href="base_less_css.html">LESS and CSS</a></li>
+								<li><a href="base_less_compile.html">Compiling LESS</a></li>
+								<li><a href="base_less_compile_rtl.html">Compiling LESS for RTL version</a></li>
+								<li>
+									<a href="#">Plugins</a>
+									<ul>
+										<li><a href="plugins_forms.html">Forms</a></li>
+										<li><a href="plugins_forms_styling.html">Form styling</a></li>
+										<li><a href="plugins_selects.html">Selects</a></li>
+										<li><a href="plugins_editors.html">Editors</a></li>
+										<li><a href="plugins_uploaders.html">Uploaders</a></li>
+										<li><a href="plugins_wizards.html">Wizards</a></li>
+										<li><a href="plugins_extensions.html">Extensions</a></li>
+										<li><a href="plugins_notifications.html">Notifications</a></li>
+										<li><a href="plugins_pickers.html">Pickers</a></li>
+										<li><a href="plugins_tables.html">Tables</a></li>
+										<li><a href="plugins_ui.html">UI</a></li>
+										<li><a href="plugins_vis.html">Visualization</a></li>
+									</ul>
+								</li>
+								<li><a href="base_bootstrap.html">Bootstrap</a></li>
+								<li><a href="base_color_system.html">Color system</a></li>
+								<li><a href="base_helpers.html">Helpers</a></li>
+								<li><a href="base_themes.html">Themes</a></li>
+
+								<li class="navigation-header">Layout options</li>
+								<li><a href="layout_markup.html">Markup</a></li>
+								<li><a href="layout_sidebars.html">Sidebars</a></li>
+								<li><a href="layout_navbars.html">Navbars</a></li>
+								<li><a href="layout_v_nav.html">Vertical navigation</a></li>
+								<li><a href="layout_h_nav.html">Horizontal navigation</a></li>
+								<li><a href="layout_page_header.html">Page header</a></li>
+								<li><a href="layout_footer.html">Footer</a></li>
+
+								<li class="navigation-header">Other</li>
+								<li><a href="other_credits.html">Sources and credits</a></li>
+								<li><a href="other_changelog.html">Changelog <span class="label bg-warning-400">version 2.0</span></a></li>
+								<!-- /main -->
+
+							</ul>
+						</div>
+					</div>
+					<!-- /main navigation -->
+
+				</div>
+			</div>
+			<!-- /main sidebar -->
+
+
+			<!-- Main content -->
+			<div class="content-wrapper">
+
+				<!-- Page header -->
+				<div class="page-header">
+					<div class="page-header-content">
+						<div class="page-title">
+							<h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold">Limitless</span> - Starter Kit</h4>
+						</div>
+
+						<div class="heading-elements">
+							<ul class="breadcrumb">
+								<li><a href="index.html"><i class="icon-home2 position-left"></i> Home</a></li>
+								<li class="active">Starter kit</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- /page header -->
+				
+
+				<!-- Content area -->
+				<div class="content">
+
+					<!-- Detached content -->
+					<div class="container-detached">
+						<div class="content-detached">
+
+							<!-- Purpose -->
+							<div class="panel panel-flat" id="purpose">
+								<div class="panel-heading">
+									<h5 class="panel-title">Starter kit overview</h5>
+									<div class="heading-elements">
+										<ul class="icons-list">
+					                		<li><a data-action="collapse"></a></li>
+					                		<li><a data-action="close"></a></li>
+					                	</ul>
+				                	</div>
+								</div>
+
+								<div class="panel-body">
+									<div class="content-group-lg">
+										<div class="content-group">
+											<h6 class="text-semibold" id="purpose_overview">Overview</h6>
+											<p>Each layout contains a set of blank pages called "Starter kit" (or Seed project). This kit may be very useful for developers who will work on integration. Each page includes a basic markup - navbar, sidebar, content area and a footer. The functionality is limited by default to necessary elements only - jquery and bootstrap JS libraries; bootstrap, layout, pages, helpers and core CSS files compiled from LESS.</p>
+										</div>
+
+										<p class="text-muted text-size-small">Screenshot</p>
+										<img src="assets/images/screenshots/u/starters_structure.png" alt="" class="img-thumbnail img-responsive">
+									</div>
+
+									<div>
+										<div class="content-group">
+											<h6 class="text-semibold" id="purpose_usage">Usage</h6>
+											<p>Usage of a Starter kit is very simple - add necessary library, extension or plugin path, copy necessary code from the page .js files located in <code>assets/js/demo_pages/</code> folder to a new JS file, add a path to this file in your page, re-compile LESS with styling of this plugin and use it. As simple as that.</p>
+											<p>All unnecessary component styles are commented in <code>components.less</code> file, so if you need any additional styles, just uncomment the path to LESS file and re-compile it. This method allows you to use only those components styles that are actually needed, no extra stuff.</p>
+											<p>All template pages include only those JS files, that are needed on the page. So if you need, for example, some specific functinality of Datatables, just open this page and a .js file that comes after <code>app.js</code> path, copy the code and paste it to your file. This helps to avoid loading of unnecessary and unused files.</p>
+										</div>
+
+										<p class="text-muted text-size-small">Screenshot of <code>components.less</code> file</p>
+										<img src="assets/images/screenshots/u/starters_less.png" alt="" class="img-thumbnail img-responsive">
+									</div>
+								</div>
+							</div>
+							<!-- /purpose -->
+
+
+							<!-- Files -->
+							<div class="panel panel-flat" id="files">
+								<div class="panel-heading">
+									<h5 class="panel-title">Main files</h5>
+									<div class="heading-elements">
+										<ul class="icons-list">
+					                		<li><a data-action="collapse"></a></li>
+					                		<li><a data-action="close"></a></li>
+					                	</ul>
+				                	</div>
+								</div>
+
+								<div class="panel-body">
+									<div class="content-group-lg">
+										<div id="files_layout1">
+											<h6 class="text-semibold">Layout 1 and Layout 2</h6>
+											<p class="content-group">First and second layouts contain 14 blank pages. All files include a simple demo content - panel, text with headings and paragraphs, table, form and content grid samples. By default, navbar has a set of basic components - user dropdown menu, text and icon links. Sidebar has a single and multiple levels navigation with divider and section header. Starter kit of the first and second layouts contain all available layout types and options:</p>
+										</div>
+
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th class="col-xs-3">What</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th colspan="3" class="active">Navigation</th>
+													</tr>
+													<tr class="border-double">
+														<td><code>horizontal_nav.html.html</code></td>
+														<td>Horizontal multi level navigation with mega menu and state saving feature</td>
+													</tr>
+													<tr>
+														<th colspan="3" class="active">Columns</th>
+													</tr>
+													<tr class="border-double">
+														<td><code>1_col.html</code></td>
+														<td>Full width page template</td>
+													</tr>
+													<tr>
+														<td><code>2_col.html</code></td>
+														<td>2 columns page template - main sidebar and content area</td>
+													</tr>
+													<tr>
+														<td><code>3_col_double.html</code></td>
+														<td>3 columns page layout - with main and opposite sidebars</td>
+													</tr>
+													<tr>
+														<td><code>3_col_dual.html</code></td>
+														<td>3 columns page layout - with main and secondary sidebars</td>
+													</tr>
+													<tr>
+														<td><code>4_col.html</code></td>
+														<td>4 columns page layout - with 3 sidebars and content area</td>
+													</tr>
+
+													<tr>
+														<th colspan="3" class="active">Detached sidebars</th>
+													</tr>
+													<tr class="border-double">
+														<td><code>detached_left.html</code></td>
+														<td>Left aligned detached sidebar</td>
+													</tr>
+													<tr>
+														<td><code>detached_right.html</code></td>
+														<td>Right aligned detached sidebar</td>
+													</tr>
+													<tr>
+														<td><code>detached_sticky.html</code></td>
+														<td>Sticky detached sidebar, with custom scrollbar</td>
+													</tr>
+
+													<tr>
+														<th colspan="3" class="active">Layout options</th>
+													</tr>
+													<tr class="border-double">
+														<td><code>layout_boxed.html</code></td>
+														<td>Boxed page layout</td>
+													</tr>
+													<tr>
+														<td><code>layout_fixed.html</code></td>
+														<td>Layout with fixed sidebar and navbar, with custom scrollbar</td>
+													</tr>
+													<tr>
+														<td><code>layout_navbar_fixed_main.html</code></td>
+														<td>Multiple navbars - fixed main navbar</td>
+													</tr>
+													<tr>
+														<td><code>layout_navbar_fixed_secondary.html</code></td>
+														<td>Multiple navbars - fixed secondary navbar</td>
+													</tr>
+													<tr>
+														<td><code>layout_navbar_fixed_both.html</code></td>
+														<td>Multiple navbars - both main and secondary are fixed</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="content-group-lg">
+										<div id="files_layout3">
+											<h6 class="text-semibold">Layout 3</h6>
+											<p class="content-group">Third layout contains 11 blank pages. Actually they are the same as in first two layouts, but according to main sidebar positions, this layout doesn't have detached sidebars. All files include a simple demo content - panel, text with headings and paragraphs, table, form and content grid samples. By default, navbar has a set of basic components - user dropdown menu, text and icon links. Sidebar has a single and multiple levels navigation with divider and section header. Starter kit of the third layout contains all available layout types and options:</p>
+										</div>
+
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th class="col-xs-3">What</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th colspan="3" class="active">Navigation</th>
+													</tr>
+													<tr class="border-double">
+														<td><code>horizontal_nav.html.html</code></td>
+														<td>Horizontal multi level navigation with mega menu and state saving feature</td>
+													</tr>
+													<tr>
+														<th colspan="3" class="active">Columns</th>
+													</tr>
+													<tr class="border-double">
+														<td><code>1_col.html</code></td>
+														<td>Full width page template</td>
+													</tr>
+													<tr>
+														<td><code>2_col.html</code></td>
+														<td>2 columns page template - main sidebar and content area</td>
+													</tr>
+													<tr>
+														<td><code>3_col_double.html</code></td>
+														<td>3 columns page layout - with main and opposite sidebars</td>
+													</tr>
+													<tr>
+														<td><code>3_col_dual.html</code></td>
+														<td>3 columns page layout - with main and secondary sidebars</td>
+													</tr>
+													<tr>
+														<td><code>4_col.html</code></td>
+														<td>4 columns page layout - with 3 sidebars and content area</td>
+													</tr>
+
+													<tr>
+														<th colspan="3" class="active">Layout options</th>
+													</tr>
+													<tr class="border-double">
+														<td><code>layout_boxed.html</code></td>
+														<td>Boxed page layout</td>
+													</tr>
+													<tr>
+														<td><code>layout_fixed.html</code></td>
+														<td>Layout with fixed sidebar and navbar, with custom scrollbar</td>
+													</tr>
+													<tr>
+														<td><code>layout_navbar_fixed_main.html</code></td>
+														<td>Multiple navbars - fixed main navbar</td>
+													</tr>
+													<tr>
+														<td><code>layout_navbar_fixed_secondary.html</code></td>
+														<td>Multiple navbars - fixed secondary navbar</td>
+													</tr>
+													<tr>
+														<td><code>layout_navbar_fixed_both.html</code></td>
+														<td>Multiple navbars - both main and secondary are fixed</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="content-group-lg">
+										<div id="files_layout4">
+											<h6 class="text-semibold">Layout 4</h6>
+											<p class="content-group">Fourth layout contains 10 blank pages. Here layout types are same as in other layouts, except horizontal navigations, because layout itself by default includes it. Detached sidebars are also removed, since all main sidebars are detached by default. In general, sidebars are supported, but they are optional and may be used as a secondary navigation or with specific content for specific pages. All functionality and layouts remains the same, but look different:</p>
+										</div>
+
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th class="col-xs-3">What</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th colspan="3" class="active">Columns</th>
+													</tr>
+													<tr class="border-double">
+														<td><code>1_col.html</code></td>
+														<td>Full width page template</td>
+													</tr>
+													<tr>
+														<td><code>2_col.html</code></td>
+														<td>2 columns page template - main sidebar and content area</td>
+													</tr>
+													<tr>
+														<td><code>3_col_double.html</code></td>
+														<td>3 columns page layout - with main and opposite sidebars</td>
+													</tr>
+													<tr>
+														<td><code>3_col_dual.html</code></td>
+														<td>3 columns page layout - with main and secondary sidebars</td>
+													</tr>
+													<tr>
+														<td><code>4_col.html</code></td>
+														<td>4 columns page layout - with 3 sidebars and content area</td>
+													</tr>
+
+													<tr>
+														<th colspan="3" class="active">Layout options</th>
+													</tr>
+													<tr class="border-double">
+														<td><code>layout_boxed.html</code></td>
+														<td>Boxed page layout</td>
+													</tr>
+													<tr>
+														<td><code>layout_fixed.html</code></td>
+														<td>Layout with fixed sidebar and navbar, with custom scrollbar</td>
+													</tr>
+													<tr>
+														<td><code>layout_navbar_fixed_main.html</code></td>
+														<td>Multiple navbars - fixed main navbar</td>
+													</tr>
+													<tr>
+														<td><code>layout_navbar_fixed_secondary.html</code></td>
+														<td>Multiple navbars - fixed secondary navbar</td>
+													</tr>
+													<tr>
+														<td><code>layout_navbar_fixed_both.html</code></td>
+														<td>Multiple navbars - both main and secondary are fixed</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div>
+										<div id="files_layout5">
+											<h6 class="text-semibold">Layout 5</h6>
+											<p class="content-group">Fifth layout contains 10 blank pages. Here layout types are same as in other layouts, except horizontal navigations and page header style. Detached sidebars are also removed, since all main sidebars are detached by default. In general, sidebars are supported, but they are optional and may be used as a secondary navigation or with specific content for specific pages. All functionality and layouts remains the same, but look different:</p>
+										</div>
+
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th class="col-xs-3">What</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th colspan="3" class="active">Columns</th>
+													</tr>
+													<tr class="border-double">
+														<td><code>1_col.html</code></td>
+														<td>Full width page template</td>
+													</tr>
+													<tr>
+														<td><code>2_col.html</code></td>
+														<td>2 columns page template - main sidebar and content area</td>
+													</tr>
+													<tr>
+														<td><code>3_col_double.html</code></td>
+														<td>3 columns page layout - with main and opposite sidebars</td>
+													</tr>
+													<tr>
+														<td><code>3_col_dual.html</code></td>
+														<td>3 columns page layout - with main and secondary sidebars</td>
+													</tr>
+													<tr>
+														<td><code>4_col.html</code></td>
+														<td>4 columns page layout - with 3 sidebars and content area</td>
+													</tr>
+
+													<tr>
+														<th colspan="3" class="active">Layout options</th>
+													</tr>
+													<tr class="border-double">
+														<td><code>layout_boxed.html</code></td>
+														<td>Boxed page layout</td>
+													</tr>
+													<tr>
+														<td><code>layout_fixed.html</code></td>
+														<td>Layout with fixed sidebar and navbar, with custom scrollbar</td>
+													</tr>
+													<tr>
+														<td><code>layout_navbar_fixed_main.html</code></td>
+														<td>Multiple navbars - fixed main navbar</td>
+													</tr>
+													<tr>
+														<td><code>layout_navbar_fixed_secondary.html</code></td>
+														<td>Multiple navbars - fixed secondary navbar</td>
+													</tr>
+													<tr>
+														<td><code>layout_navbar_fixed_both.html</code></td>
+														<td>Multiple navbars - both main and secondary are fixed</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /files -->
+
+
+						</div>
+					</div>
+					<!-- /detached content -->
+
+
+					<!-- Detached sidebar -->
+					<div class="sidebar-detached">
+			        	<div class="sidebar sidebar-default">
+							<div class="sidebar-content">
+
+				        		<!-- Contact author -->
+								<div class="sidebar-category no-margin">
+									<div class="category-title">
+										<span>Page navigation</span>
+										<i class="icon-menu7 text-muted pull-right"></i>
+									</div>
+
+									<div class="category-content">
+										<a href="http://themeforest.net/user/kopyov" class="btn bg-blue btn-block" target="_blank"><i class="icon-reading position-left"></i> Contact author</a>
+									</div>
+								</div>
+								<!-- /contact author -->
+
+			        			
+			        			<!-- Navigation -->
+								<div class="sidebar-category">
+									<div class="category-content no-padding">
+										<ul class="nav navigation no-padding-top">
+											<li class="navigation-header"><i class="icon-history pull-right"></i> Navigation</li>
+											<li>
+												<a href="#purpose">Description</a>
+												<ul>
+													<li><a href="#purpose_overview">Starter kit overview</a></li>
+													<li><a href="#purpose_usage">Usage instructions</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#files">Main files</a>
+												<ul>
+													<li><a href="#files_layout1">Layout 1 and Layout 2</a></li>
+													<li><a href="#files_layout3">Layout 2</a></li>
+													<li><a href="#files_layout4">Layout 4</a></li>
+													<li><a href="#files_layout5">Layout 5</a></li>
+												</ul>
+											</li>
+											<li class="navigation-divider"></li>
+											<li><a href="#">Go to top <i class="icon-circle-up2 pull-right"></i></a></li>
+							            </ul>
+						            </div>
+					            </div>
+					            <!-- /navigation -->
+
+				            </div>
+			            </div>
+		            </div>
+		            <!-- /detached sidebar -->
+
+
+					<!-- Footer -->
+					<div class="footer text-muted">
+						&copy; 2015. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
+					</div>
+					<!-- /footer -->
+
+				</div>
+				<!-- /content area -->
+
+			</div>
+			<!-- /main content -->
+
+		</div>
+		<!-- /page content -->
+
+	</div>
+	<!-- /page container -->
+
+</body>
+</html>

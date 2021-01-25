@@ -1,0 +1,31 @@
+<pgcard TimeOut="3000" AdditionalClasses="widget-12-basic card no-border widget-loader-circle no-margin  col ar-1-1 sm-vh-75"
+ Maximize="false" Toggle="false" Close="false" Controls="false" HeaderClass="hidden">
+  <div class="d-flex flex-column full-height full-width">
+      <div class="">
+        <div class="d-flex flex-row ">
+          <h2 class="m-t-5 m-b-5">Apple Inc.</h2>
+
+          <h2 class="m-l-50 m-t-5 m-b-5 text-danger">
+            <span class="">448.97</span>
+            <span class="text-danger fs-12">-318.24</span>
+          </h2>
+        </div>
+        <div class="full-width">
+          <ul class="list-inline m-b-0">
+            <li><a href="#" class="font-montserrat text-master">1D</a>
+            </li>
+            <li class="active"><a href="#"
+                                  class="font-montserrat  bg-master-light text-master">5D</a>
+            </li>
+            <li><a href="#" class="font-montserrat text-master">1M</a>
+            </li>
+            <li><a href="#" class="font-montserrat text-master">1Y</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="nvd3-line line-chart text-center flex-1 relative" data-x-grid="false">
+        <nvd3 [options]="nvd3LineOptions" [data]="nvd3LineData"></nvd3>
+      </div>
+  </div>
+</pgcard>

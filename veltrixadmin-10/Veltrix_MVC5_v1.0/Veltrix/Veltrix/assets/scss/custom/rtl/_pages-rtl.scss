@@ -1,0 +1,140 @@
+// 
+// pages-rtl.scss
+//
+
+
+// timeline
+
+
+.timeline{
+    .timeline-list{
+      border-right: 3px dashed $gray-200;
+      border-left: none;
+      .cd-timeline-content{
+        .date{
+          right: -39px;
+          left: auto;
+        }
+      }
+      &.right{
+          border-right: 0;
+          border-left: 3px dashed $gray-200;
+        .cd-timeline-content{
+          float: left;
+          text-align: left;
+          .date{
+            left: -39px !important;
+            right: inherit !important;
+          }
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .timeline{
+      padding-left: 15px;
+      padding-right: 15px;
+      .timeline-list{
+        .date{
+          right: -30px !important;
+          left: auto !important;
+        }
+        &.right{
+          .date{
+            left: -30px !important;
+          }
+        }
+      }
+    }
+  }
+  
+  
+// fAQ
+
+a.faq[data-toggle=collapse]:before {
+    left: 20px;
+    right: auto;
+  }
+
+// email
+
+.email-leftbar{
+    float: right;
+}
+
+.email-rightbar {
+    margin-right: 260px;
+    margin-left: 0px;
+}
+
+.message-list {
+    li {
+        .col-mail{
+            float: right;
+        }
+        .col-mail-1{
+            .star-toggle, .checkbox-wrapper-mail, .dot{
+                float: right
+            }
+            .checkbox-wrapper-mail {
+                margin: 15px 20px 0 10px;
+            }
+            .star-toggle {
+                margin-right: 5px;
+            }
+            
+            .title {
+                right: 110px;
+                left: 0;
+            }
+        }
+        .col-mail-2{
+            right: 320px;
+            left: 0;
+
+            .subject {
+                right: 0;
+                left: 200px;
+            }
+
+            .date {
+                left: 0;
+                right: auto;
+                padding-right: 80px;
+                padding-left: 0px;
+            }
+        
+        }
+    }
+    .checkbox-wrapper-mail {
+        label{
+            &:before{
+                right: 4px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px){
+    .email-leftbar {
+        float: none !important;
+        width: 100%;
+    }
+    .email-rightbar {
+        margin-right: 0;
+    }
+}
+
+// authentication
+
+.home-btn {
+    position: absolute;
+    left: 25px;
+    right: auto;
+}
+
+
+.account-page-full {
+    right: 0;
+  }

@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/layout.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script src="assets/js/main/jquery.min.js"></script>
+	<script src="assets/js/main/bootstrap.bundle.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script src="assets/js/plugins/prism.min.js"></script>
+	<script src="assets/js/plugins/sticky.min.js"></script>
+	
+	<script src="assets/js/main/app.js"></script>
+	<script src="assets/js/pages/components_scrollspy.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body data-spy="scroll" data-target=".sidebar-component-right">
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-expand-md navbar-light">
+		<div class="navbar-header navbar-dark d-none d-md-flex align-items-md-center">
+			<div class="navbar-brand navbar-brand-md">
+				<a href="index.html" class="d-inline-block">
+					<img src="assets/images/logo_light.png" alt="">
+				</a>
+			</div>
+	
+			<div class="navbar-brand navbar-brand-xs">
+				<a href="index.html" class="d-inline-block">
+					<img src="assets/images/logo_icon_light.png" alt="">
+				</a>
+			</div>
+		</div>
+
+		<div class="d-flex flex-1 d-md-none">
+			<div class="navbar-brand mr-auto">
+				<a href="index.html" class="d-inline-block">
+					<img src="assets/images/logo_dark.png" alt="">
+				</a>
+			</div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile">
+				<i class="icon-tree5"></i>
+			</button>
+			<button class="navbar-toggler sidebar-mobile-main-toggle" type="button">
+				<i class="icon-paragraph-justify3"></i>
+			</button>
+			<button class="navbar-toggler sidebar-mobile-component-toggle" type="button">
+				<i class="icon-unfold"></i>
+			</button>
+		</div>
+
+		<div class="collapse navbar-collapse" id="navbar-mobile">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a href="#" class="navbar-nav-link sidebar-control sidebar-main-hide d-none d-md-block">
+						<i class="icon-paragraph-justify3"></i>
+					</a>
+				</li>
+
+				<li class="nav-item">
+					<a href="#" class="navbar-nav-link sidebar-control sidebar-component-toggle d-none d-md-block">
+						<i class="icon-transmission"></i>
+					</a>
+				</li>
+			</ul>
+
+			<ul class="navbar-nav ml-md-auto">
+				<li class="nav-item dropdown">
+					<a href="other_changelog.html" class="navbar-nav-link">
+						<i class="icon-history mr-2"></i>
+						Changelog
+						<span class="badge bg-warning-400 badge-pill position-static ml-md-2">2.2</span>
+					</a>					
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page content -->
+	<div class="page-content">
+
+		<!-- Main sidebar -->
+		<div class="sidebar sidebar-dark sidebar-main sidebar-expand-md">
+
+			<!-- Sidebar mobile toggler -->
+			<div class="sidebar-mobile-toggler text-center">
+				<a href="#" class="sidebar-mobile-main-toggle">
+					<i class="icon-arrow-left8"></i>
+				</a>
+				Navigation
+				<a href="#" class="sidebar-mobile-expand">
+					<i class="icon-screen-full"></i>
+					<i class="icon-screen-normal"></i>
+				</a>
+			</div>
+			<!-- /sidebar mobile toggler -->
+
+
+			<!-- Sidebar content -->
+			<div class="sidebar-content">
+
+        		<!-- Support -->
+				<div class="card card-body">
+					<a href="http://kopyov.ticksy.com" class="btn bg-success-400 btn-block" target="_blank"><i class="icon-lifebuoy mr-2"></i> Limitless support</a>
+				</div>
+				<!-- /support -->
+
+
+				<!-- Main navigation -->
+				<div class="card card-sidebar-mobile">
+					<ul class="nav nav-sidebar" data-nav-type="accordion">
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Main</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="index.html" class="nav-link">Introduction</a></li>
+						<li class="nav-item"><a href="main_getting_started.html" class="nav-link">Getting started</a></li>
+						<li class="nav-item"><a href="main_starter_kit.html" class="nav-link active">Starter kit</a></li>
+						<li class="nav-item"><a href="main_rtl.html" class="nav-link">RTL layout</a></li>
+
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Basic functionality</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="base_scss_css.html" class="nav-link">SCSS and CSS</a></li>
+						<li class="nav-item"><a href="base_scss_compile.html" class="nav-link">Compiling SCSS</a></li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link">Plugins</a>
+							<ul class="nav nav-group-sub" data-submenu-title="Plugins">
+								<li class="nav-item"><a href="plugins_forms.html" class="nav-link">Forms</a></li>
+								<li class="nav-item"><a href="plugins_forms_styling.html" class="nav-link">Form styling</a></li>
+								<li class="nav-item"><a href="plugins_editors.html" class="nav-link">Editors</a></li>
+								<li class="nav-item"><a href="plugins_uploaders.html" class="nav-link">Uploaders</a></li>
+								<li class="nav-item"><a href="plugins_extensions.html" class="nav-link">Extensions</a></li>
+								<li class="nav-item"><a href="plugins_notifications.html" class="nav-link">Notifications</a></li>
+								<li class="nav-item"><a href="plugins_pickers.html" class="nav-link">Pickers</a></li>
+								<li class="nav-item"><a href="plugins_tables.html" class="nav-link">Tables</a></li>
+								<li class="nav-item"><a href="plugins_ui.html" class="nav-link">UI</a></li>
+								<li class="nav-item"><a href="plugins_vis.html" class="nav-link">Visualization</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a href="base_icons.html" class="nav-link">Icons</a></li>
+
+						<li class="nav-item"><a href="base_bootstrap.html" class="nav-link">Bootstrap</a></li>
+						<li class="nav-item"><a href="base_color_system.html" class="nav-link">Color system</a></li>
+						<li class="nav-item"><a href="base_helpers.html" class="nav-link">Helpers</a></li>
+						<li class="nav-item"><a href="base_themes.html" class="nav-link">Themes</a></li>
+
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Layout options</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="layout_overview.html" class="nav-link">Layouts</a></li>
+						<li class="nav-item"><a href="layout_sidebars.html" class="nav-link">Sidebars</a></li>
+						<li class="nav-item"><a href="layout_navbars.html" class="nav-link">Navbars</a></li>
+						<li class="nav-item"><a href="layout_v_nav.html" class="nav-link">Vertical navigation</a></li>
+						<li class="nav-item"><a href="layout_h_nav.html" class="nav-link">Horizontal navigation</a></li>
+						<li class="nav-item"><a href="layout_page_header.html" class="nav-link">Page header</a></li>
+
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Other</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="other_credits.html" class="nav-link">Sources and credits</a></li>
+						<li class="nav-item"><a href="other_changelog.html" class="nav-link">Changelog <span class="badge badge-pill bg-warning-400 ml-auto">version 2.2</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /main navigation -->
+
+		</div>
+		<!-- /main sidebar -->
+
+
+		<!-- Main content -->
+		<div class="content-wrapper">
+
+			<!-- Page header -->
+			<div class="page-header">
+				<div class="page-header-content header-elements-md-inline">
+					<div class="page-title d-flex">
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Limitless</span> - Starter Kit</h4>
+						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+					</div>
+
+					<div class="header-elements d-none py-0 mb-3 mb-md-0">
+						<div class="breadcrumb">
+							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
+							<span class="breadcrumb-item active">Starter kit</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /page header -->
+			
+
+			<!-- Content area -->
+			<div class="content pt-0">
+
+				<!-- Inner container -->
+				<div class="d-flex align-items-start flex-column flex-md-row">
+
+					<!-- Left content -->
+					<div class="order-2 order-md-1">
+
+						<!-- Purpose -->
+						<div class="card" id="purpose">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">Starter kit overview</h5>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+				                </div>
+							</div>
+
+							<div class="card-body">
+								<div class="mb-4">
+									<div class="mb-3">
+										<h6 class="font-weight-semibold" id="purpose_overview">Overview</h6>
+										<p>Each layout contains a set of blank pages called "Starter kit". This kit may be very useful for developers who works on integration. Each page includes a basic markup - navbar, sidebar, content area and a footer. The functionality is limited by default to necessary elements only - jquery and bootstrap JS libraries; bootstrap, layout, pages, helpers and core CSS files compiled from SCSS.</p>
+									</div>
+
+									<p class="text-muted font-size-sm">Screenshot</p>
+									<img src="assets/images/screenshots/u/starters_structure.png" alt="" class="img-thumbnail">
+								</div>
+
+								<div>
+									<div class="mb-3">
+										<h6 class="font-weight-semibold" id="purpose_usage">Usage</h6>
+										<p>In starter kit, styles of all optional components are disabled. You can control the list of components in <code>_config.scss</code> file, it also includes core layout options that allow you to configure output and particular layout. This helps you to keep your CSS light and clean.</p>
+
+										<p>All template pages include only those JS files that are needed on the page. So if you need, for example, some specific functinality of Datatables, just open this page and a .js file that comes after <code>app.js</code> path, copy the code and paste it to your file. This helps to avoid loading of unnecessary and unused files.</p>
+
+										<p>Usage of a Starter kit is relatively simple:
+											<ol class="list">
+												<li>Add path to plugin or library you want to use <strong>after</strong> bootstrap and jquery</li>
+												<li>Open HTML file that contains examples of plugin that you want to use</li>
+												<li>Copy markup of specific example and paste it to your blank page</li>
+												<li>Copy JS code of that particular example from the file located in <code>global_assets/js/demo_pages/</code> and paste it to <code>custom.js</code> file located in layout assets (or any other file where you store your JS code). Make sure you add a part to this file <strong>after</strong> plugin itself</li>
+												<li>Open <code>_config.scss</code> located in <code>global_assets/scss/</code> folder, change plugin variable to <code>true</code> and re-compile your SCSS files. If everything ran smoothly, styles of your plugin have been exported to <code>components.min.css</code> file.</li>
+												<li>That's it.</li>
+											</ol>
+										</p>
+									</div>
+
+									<p class="text-muted font-size-sm">Screenshot of <code>_config.scss</code> file</p>
+									<img src="assets/images/screenshots/u/starters_scss.png" alt="" class="img-thumbnail">
+								</div>
+							</div>
+						</div>
+						<!-- /purpose -->
+
+
+						<!-- Files -->
+						<div class="card" id="files">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">Main files</h5>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+				                </div>
+							</div>
+
+							<div class="card-body">
+								<p class="mb-4">All files include a simple demo content - card, text with headings and paragraphs, table, form and content grid samples. By default, navbar has a set of basic components - user dropdown menu, text and icon links. Sidebar has a single and multiple levels navigation with divider and section header. Starter kit of the first layout contains all available layout types and options.</p>
+
+								<div class="mb-4">
+									<h6 class="font-weight-semibold mb-3" id="files_layout1">Layout 1 <small class="d-block text-muted">Contains 14 files</small></h6>
+
+									<div class="table-responsive">
+										<table class="table table-bordered">
+											<thead>
+												<tr>
+													<th style="width: 25%;">File</th>
+													<th>Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<th colspan="3" class="table-active">Navbars</th>
+												</tr>
+												<tr class="table-border-double">
+													<td><code>navbar_fixed_main.html</code></td>
+													<td>Fixed single navbar</td>
+												</tr>
+												<tr>
+													<td><code>navbar_fixed_secondary.html</code></td>
+													<td>Sticky secondary navbar - sticks to top on scroll</td>
+												</tr>
+												<tr>
+													<td><code>navbar_fixed_both.html</code></td>
+													<td>Fixed multiple navbars</td>
+												</tr>
+
+												<tr>
+													<th colspan="3" class="table-active">Sidebars</th>
+												</tr>
+												<tr class="table-border-double">
+													<td><code>sidebar_none.html</code></td>
+													<td>Layout without sidebar and horizontal navigation</td>
+												</tr>
+												<tr>
+													<td><code>sidebar_main.html</code></td>
+													<td>Page with main sidebar only. Includes sidebar control button</td>
+												</tr>
+												<tr>
+													<td><code>sidebar_secondary.html</code></td>
+													<td>Page with main and secondary sidebars. Includes sidebar control buttons</td>
+												</tr>
+												<tr>
+													<td><code>sidebar_right.html</code></td>
+													<td>Page with main and right sidebars. Includes sidebar control buttons</td>
+												</tr>
+												<tr>
+													<td><code>sidebar_right_hidden.html</code></td>
+													<td>Page with main, secondary and right sidebar that is hidden by default</td>
+												</tr>
+												<tr>
+													<td><code>sidebar_right_visible.html</code></td>
+													<td>Page with main, secondary and right sidebar that is visible by default</td>
+												</tr>
+												<tr>
+													<td><code>sidebar_content_left.html</code></td>
+													<td>Page with left aligned content sidebar. Includes all sidebar control buttons</td>
+												</tr>
+												<tr>
+													<td><code>sidebar_content_right.html</code></td>
+													<td>Page with right aligned content sidebar. Includes all sidebar control buttons</td>
+												</tr>
+
+												<tr>
+													<th colspan="3" class="table-active">Layout options</th>
+												</tr>
+												<tr class="table-border-double">
+													<td><code>layout_boxed.html</code></td>
+													<td>Boxed page layout</td>
+												</tr>
+												<tr>
+													<td><code>layout_fixed.html</code></td>
+													<td>Layout with fixed sidebar and navbar, with custom scrollbar</td>
+												</tr>
+												<tr>
+													<td><code>layout_nav_horizontal.html</code></td>
+													<td>Layout with multi level horizontal navigation</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<div class="mb-4">
+									<h6 class="font-weight-semibold mb-3" id="files_layout2">Layout 2 <small class="d-block text-muted">Contains 14 files</small></h6>
+
+									<div class="table-responsive">
+										<table class="table table-bordered">
+											<thead>
+												<tr>
+													<th style="width: 25%;">File</th>
+													<th>Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<th colspan="3" class="table-active">Navbars</th>
+												</tr>
+												<tr class="table-border-double">
+													<td><code>navbar_fixed_main.html</code></td>
+													<td>Fixed single navbar</td>
+												</tr>
+												<tr>
+													<td><code>navbar_fixed_secondary.html</code></td>
+													<td>Sticky secondary navbar - sticks to top on scroll</td>
+												</tr>
+												<tr>
+													<td><code>navbar_fixed_both.html</code></td>
+													<td>Fixed multiple navbars</td>
+												</tr>
+
+												<tr>
+													<th colspan="3" class="table-active">Sidebars</th>
+												</tr>
+												<tr class="table-border-double">
+													<td><code>sidebar_none.html</code></td>
+													<td>Layout without sidebar and horizontal navigation</td>
+												</tr>
+												<tr>
+													<td><code>sidebar_main.html</code></td>
+													<td>Page with main sidebar only. Includes sidebar control button</td>
+												</tr>
+												<tr>
+													<td><code>sidebar_secondary.html</code></td>
+													<td>Page with main and secondary sidebars. Includes sidebar control buttons</td>
+												</tr>
+												<tr>
+													<td><code>sidebar_right.html</code></td>
+													<td>Page with main and right sidebars. Includes sidebar control buttons</td>
+												</tr>
+												<tr>
+													<td><code>sidebar_right_hidden.html</code></td>
+													<td>Page with main, secondary and right sidebar that is hidden by default</td>
+												</tr>
+												<tr>
+													<td><code>sidebar_right_visible.html</code></td>
+													<td>Page with main, secondary and right sidebar that is visible by default</td>
+												</tr>
+												<tr>
+													<td><code>sidebar_content_left.html</code></td>
+													<td>Page with left aligned content sidebar. Includes all sidebar control buttons</td>
+												</tr>
+												<tr>
+													<td><code>sidebar_content_right.html</code></td>
+													<td>Page with right aligned content sidebar. Includes all sidebar control buttons</td>
+												</tr>
+
+												<tr>
+													<th colspan="3" class="table-active">Layout options</th>
+												</tr>
+												<tr class="table-border-double">
+													<td><code>layout_boxed.html</code></td>
+													<td>Boxed page layout</td>
+												</tr>
+												<tr>
+													<td><code>layout_fixed.html</code></td>
+													<td>Layout with fixed sidebar and navbar, with custom scrollbar</td>
+												</tr>
+												<tr>
+													<td><code>layout_nav_horizontal.html</code></td>
+													<td>Layout with multi level horizontal navigation</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<div class="mb-4">
+									<h6 class="font-weight-semibold mb-3" id="files_layout3">Layout 3 <small class="d-block text-muted">Contains 13 files</small></h6>
+
+									<div class="table-responsive">
+										<table class="table table-bordered">
+											<thead>
+												<tr>
+													<th style="width: 25%;">File</th>
+													<th>Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<th colspan="3" class="table-active">Navbars</th>
+												</tr>
+												<tr class="table-border-double">
+													<td><code>navbar_fixed_main.html</code></td>
+													<td>Fixed single navbar</td>
+												</tr>
+												<tr>
+													<td><code>navbar_fixed_secondary.html</code></td>
+													<td>Sticky secondary navbar - sticks to top on scroll</td>
+												</tr>
+												<tr>
+													<td><code>navbar_fixed_both.html</code></td>
+													<td>Fixed multiple navbars</td>
+												</tr>
+
+												<tr>
+													<th colspan="3" class="table-active">Sidebars</th>
+												</tr>
+												<tr class="table-border-double">
+													<td><code>sidebar_none.html</code></td>
+													<td>Layout without sidebar and horizontal navigation</td>
+												</tr>
+												<tr>
+													<td><code>sidebar_main.html</code></td>
+													<td>Page with main sidebar only. Includes sidebar control button</td>
+												</tr>
+												<tr>
+													<td><code>sidebar_secondary.html</code></td>
+													<td>Page with main and secondary sidebars. Includes sidebar control buttons</td>
+												</tr>
+												<tr>
+													<td><code>sidebar_right.html</code></td>
+													<td>Page with main and right sidebars. Includes sidebar control buttons</td>
+												</tr>
+												<tr>
+													<td><code>sidebar_right_hidden.html</code></td>
+													<td>Page with main, secondary and right sidebar that is hidden by default</td>
+												</tr>
+												<tr>
+													<td><code>sidebar_right_visible.html</code></td>
+													<td>Page with main, secondary and right sidebar that is visible by default</td>
+												</tr>
+												<tr>
+													<td><code>sidebar_sections.html</code></td>
+													<td>Page with sectioned sidebar - no background, border and shadow. Cards have default look</td>
+												</tr>
+												<tr>
+													<td><code>sidebar_stretched.html</code></td>
+													<td>Page stretched sidebar. This sidebar type fills up all available vertical space from page header to footer</td>
+												</tr>
+
+												<tr>
+													<th colspan="3" class="table-active">Layout options</th>
+												</tr>
+												<tr class="table-border-double">
+													<td><code>layout_boxed.html</code></td>
+													<td>Boxed page layout</td>
+												</tr>
+												<tr>
+													<td><code>layout_nav_horizontal.html</code></td>
+													<td>Layout with multi level horizontal navigation</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<div class="mb-4">
+									<h6 class="font-weight-semibold mb-3" id="files_layout4">Layout 4 <small class="d-block text-muted">Contains 13 files</small></h6>
+
+									<div class="table-responsive">
+										<table class="table table-bordered">
+											<thead>
+												<tr>
+													<th style="width: 25%;">File</th>
+													<th>Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<th colspan="3" class="table-active">Navbars</th>
+												</tr>
+												<tr class="table-border-double">
+													<td><code>navbar_main_fixed.html</code></td>
+													<td>Fixed single navbar</td>
+												</tr>
+												<tr>
+													<td><code>navbar_main_hideable.html</code></td>
+													<td>Hideable navbar - slides in/out on scroll</td>
+												</tr>
+												<tr>
+													<td><code>navbar_secondary_sticky.html</code></td>
+													<td>Sticky secondary navbar - sticks to top on scroll</td>
+												</tr>
+												<tr>
+													<td><code>navbar_both_fixed.html</code></td>
+													<td>Fixed multiple navbars</td>
+												</tr>
+
+												<tr>
+													<th colspan="3" class="table-active">Sidebars</th>
+												</tr>
+												<tr class="table-border-double">
+													<td><code>sidebar_none.html</code></td>
+													<td>Layout without sidebar and horizontal navigation</td>
+												</tr>
+												<tr>
+													<td><code>sidebar_main.html</code></td>
+													<td>Page with main sidebar only. Includes sidebar control button</td>
+												</tr>
+												<tr>
+													<td><code>sidebar_secondary.html</code></td>
+													<td>Page with main and secondary sidebars. Includes sidebar control buttons</td>
+												</tr>
+												<tr>
+													<td><code>sidebar_right.html</code></td>
+													<td>Page with main and right sidebars. Includes sidebar control buttons</td>
+												</tr>
+												<tr>
+													<td><code>sidebar_right_hidden.html</code></td>
+													<td>Page with main, secondary and right sidebar that is hidden by default</td>
+												</tr>
+												<tr>
+													<td><code>sidebar_right_visible.html</code></td>
+													<td>Page with main, secondary and right sidebar that is visible by default</td>
+												</tr>
+												<tr>
+													<td><code>sidebar_sections.html</code></td>
+													<td>Page with sectioned sidebar - no background, border and shadow. Cards have default look</td>
+												</tr>
+												<tr>
+													<td><code>sidebar_stretched.html</code></td>
+													<td>Page stretched sidebar. This sidebar type fills up all available vertical space from page header to footer</td>
+												</tr>
+
+												<tr>
+													<th colspan="3" class="table-active">Layout options</th>
+												</tr>
+												<tr class="table-border-double">
+													<td><code>layout_boxed.html</code></td>
+													<td>Boxed page layout</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<div>
+									<h6 class="font-weight-semibold mb-3" id="files_layout5">Layout 5 <small class="d-block text-muted">Contains 13 files</small></h6>
+
+									<div class="table-responsive">
+										<table class="table table-bordered">
+											<thead>
+												<tr>
+													<th style="width: 25%;">File</th>
+													<th>Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<th colspan="3" class="table-active">Navbars</th>
+												</tr>
+												<tr class="table-border-double">
+													<td><code>navbar_main_fixed.html</code></td>
+													<td>Fixed single navbar</td>
+												</tr>
+												<tr>
+													<td><code>navbar_main_hideable.html</code></td>
+													<td>Hideable navbar - slides in/out on scroll</td>
+												</tr>
+												<tr>
+													<td><code>navbar_secondary_sticky.html</code></td>
+													<td>Sticky secondary navbar - sticks to top on scroll</td>
+												</tr>
+												<tr>
+													<td><code>navbar_both_fixed.html</code></td>
+													<td>Fixed multiple navbars</td>
+												</tr>
+
+												<tr>
+													<th colspan="3" class="table-active">Sidebars</th>
+												</tr>
+												<tr class="table-border-double">
+													<td><code>sidebar_none.html</code></td>
+													<td>Layout without sidebar and horizontal navigation</td>
+												</tr>
+												<tr>
+													<td><code>sidebar_main.html</code></td>
+													<td>Page with main sidebar only. Includes sidebar control button</td>
+												</tr>
+												<tr>
+													<td><code>sidebar_secondary.html</code></td>
+													<td>Page with main and secondary sidebars. Includes sidebar control buttons</td>
+												</tr>
+												<tr>
+													<td><code>sidebar_right.html</code></td>
+													<td>Page with main and right sidebars. Includes sidebar control buttons</td>
+												</tr>
+												<tr>
+													<td><code>sidebar_right_hidden.html</code></td>
+													<td>Page with main, secondary and right sidebar that is hidden by default</td>
+												</tr>
+												<tr>
+													<td><code>sidebar_right_visible.html</code></td>
+													<td>Page with main, secondary and right sidebar that is visible by default</td>
+												</tr>
+												<tr>
+													<td><code>sidebar_sections.html</code></td>
+													<td>Page with sectioned sidebar - no background, border and shadow. Cards have default look</td>
+												</tr>
+												<tr>
+													<td><code>sidebar_stretched.html</code></td>
+													<td>Page stretched sidebar. This sidebar type fills up all available vertical space from page header to footer</td>
+												</tr>
+
+												<tr>
+													<th colspan="3" class="table-active">Layout options</th>
+												</tr>
+												<tr class="table-border-double">
+													<td><code>layout_boxed.html</code></td>
+													<td>Boxed page layout</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /files -->
+
+					</div>
+					<!-- /left content -->
+
+
+					<!-- Right sidebar component -->
+					<div class="sidebar-sticky w-100 w-md-auto order-1 order-md-2">
+						<div class="sidebar sidebar-light sidebar-component sidebar-component-right sidebar-expand-md mb-3">
+							<div class="sidebar-content">
+								<div class="card">
+									<div class="card-header bg-transparent header-elements-inline">
+										<span class="text-uppercase font-size-sm font-weight-semibold">Page navigation</span>
+										<div class="header-elements">
+											<div class="list-icons">
+						                		<a class="list-icons-item" data-action="collapse"></a>
+					                		</div>
+				                		</div>
+									</div>
+
+									<div class="card-body">
+										<a href="http://themeforest.net/user/kopyov" class="btn bg-blue btn-block" target="_blank"><i class="icon-reading mr-2"></i> Contact author</a>
+									</div>
+
+									<ul class="nav nav-sidebar nav-scrollspy" data-nav-type="accordion">
+										<li class="nav-item-header pt-0"><div class="text-uppercase font-size-xs line-height-xs">Navigation</div> <i class="icon-menu"></i></li>
+										<li class="nav-item nav-item-submenu">
+											<a href="#gs" class="nav-link">Description</a>
+											<ul class="nav nav-group-sub d-block">
+												<li class="nav-item"><a href="#purpose_overview" class="nav-link">Starter Kit overview</a></li>
+												<li class="nav-item"><a href="#purpose_usage" class="nav-link">Usage instructions</a></li>
+											</ul>
+										</li>
+										<li class="nav-item nav-item-submenu">
+											<a href="#folders" class="nav-link">Main files</a>
+											<ul class="nav nav-group-sub d-block">
+												<li class="nav-item"><a href="#files_layout1" class="nav-link">Layout 1</a></li>
+												<li class="nav-item"><a href="#files_layout2" class="nav-link">Layout 2</a></li>
+												<li class="nav-item"><a href="#files_layout3" class="nav-link">Layout 3</a></li>
+												<li class="nav-item"><a href="#files_layout4" class="nav-link">Layout 4</a></li>
+												<li class="nav-item"><a href="#files_layout5" class="nav-link">Layout 5</a></li>
+											</ul>
+										</li>
+										<li class="nav-item-divider"></li>
+										<li class="nav-item"><a href="#" class="nav-link">Go to top <i class="icon-circle-up2 mr-0 ml-auto"></i></a></li>
+									</ul>
+								</div>
+				            </div>
+						</div>
+					</div>
+					<!-- /right sidebar component -->
+
+				</div>
+				<!-- /inner container -->
+
+			</div>
+			<!-- /content area -->
+
+
+			<!-- Footer -->
+			<div class="navbar navbar-expand-lg navbar-light">
+				<div class="text-center d-lg-none w-100">
+					<button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse" data-target="#navbar-footer">
+						<i class="icon-unfold mr-2"></i>
+						Footer
+					</button>
+				</div>
+
+				<div class="navbar-collapse collapse" id="navbar-footer">
+					<span class="navbar-text">
+						&copy; 2015 - 2018. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
+					</span>
+
+					<ul class="navbar-nav ml-lg-auto">
+						<li class="nav-item"><a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov" class="navbar-nav-link font-weight-semibold"><span class="text-pink-400"><i class="icon-cart2 mr-2"></i> Purchase</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /footer -->
+
+		</div>
+		<!-- /main content -->
+
+	</div>
+	<!-- /page content -->
+
+</body>
+</html>

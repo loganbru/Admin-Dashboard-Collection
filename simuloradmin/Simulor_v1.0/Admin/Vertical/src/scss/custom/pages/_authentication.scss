@@ -1,0 +1,15 @@
+// 
+// authentication.scss
+//
+
+// authentication pages background
+body.authentication-bg {
+    background-color: $gray-200;
+    background-size: cover;
+    background-position: center;
+}
+
+// Logout page
+.logout-icon {
+    width: 140px;
+}

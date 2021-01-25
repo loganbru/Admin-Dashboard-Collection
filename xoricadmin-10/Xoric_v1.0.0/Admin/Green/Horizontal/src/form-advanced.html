@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Form Advanced | Xoric - Responsive Bootstrap 4 Admin Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+        <meta content="Themesdesign" name="author" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- spectrum colorpicker -->
+        <link href="assets/libs/spectrum-colorpicker/spectrum.css" rel="stylesheet" type="text/css" />
+
+        <!-- Selectize -->
+        <link href="assets/libs/selectize/css/selectize.css" rel="stylesheet" type="text/css" />
+
+        <!-- datepicker -->
+        <link href="assets/libs/air-datepicker/css/datepicker.min.css" rel="stylesheet" type="text/css" />
+
+        <link href="assets/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.css" rel="stylesheet" />
+
+        <!-- Bootstrap Css -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <!-- Icons Css -->
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <!-- App Css-->
+        <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+
+    </head>
+
+    <body data-topbar="colored" data-layout="horizontal" data-layout-size="boxed">
+
+        <!-- Begin page -->
+        <div id="layout-wrapper">
+
+            @@include("partials/horizontal.html")
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="main-content">
+
+                <div class="page-content">
+
+                    <!-- Page-Title -->
+                    <div class="page-title-box">
+                        <div class="container-fluid">
+                            <div class="row align-items-center">
+                                <div class="col-md-8">
+                                    <h4 class="page-title mb-1">Form Advanced</h4>
+                                    <ol class="breadcrumb m-0">
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Forms</a></li>
+                                    <li class="breadcrumb-item active">Form Advanced</li>
+                                    </ol>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="float-right d-none d-md-block">
+                                        <div class="dropdown">
+                                            <button class="btn btn-light btn-rounded dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="mdi mdi-settings-outline mr-1"></i> Settings
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-animated">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">Separated link</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- end page title end breadcrumb -->
+
+                    <div class="page-content-wrapper">
+                        <div class="container-fluid">
+
+                            <div class="row">
+                                <div class="col-xl-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="header-title">Colorpicker</h5>
+                                            <p class="card-title-desc">Fancy and customizable colorpicker
+                                                plugin.</p>
+
+                                            <form action="#">
+                                                <div class="row">
+                                                    <div class="col-sm-4">
+                                                        <div class="form-group">
+                                                            <label class="d-block">Default Colorpicker</label>
+                                                            <input type="text" class="colorpicker-default" value="#3051d3">
+                                                        </div>
+
+                                                        <div class="form-group mt-5">
+                                                            <label class="d-block">Show Input</label>
+                                                            <input type="text" id="show-input" value="#3ddc97">
+                                                        </div>
+
+                                                        <div class="form-group mt-5">
+                                                            <label class="d-block">Show Alpha</label>
+                                                            <input type="text" id="show-alpha" value="rgba(240, 101, 67, 0.5)">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-sm-4">
+                                                        <div class="form-group mt-5 mt-sm-0">
+                                                            <label class="d-block">Show Palette</label>
+                                                            <input type="text" id="show-palette" value="#e4cc37">
+                                                        </div>
+                                                        <div class="form-group mt-5">
+                                                            <label class="d-block">Show Alpha</label>
+                                                            <input type="text" id="show-input-initial" value="#00a7e1">
+                                                        </div>
+                                                        <div class="form-group mt-5">
+                                                            <label class="d-block">Hide Buttons</label>
+                                                            <input type="text" id="hide-button" value="#3051d3">
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="col-sm-4">
+                                                        <div class="form-group mt-5 mt-sm-0">
+                                                            <label class="d-block">Flat Colorpicker</label>
+                                                            <input type="text" id="flat-colorpicker" value="#00a7e1">
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="header-title">Selectize</h5>
+                                            <p class="card-title-desc">Selectize plugin for a selection</p>
+
+                                            <form>
+                                                <div class="form-group mb-4">
+                                                    <label for="selectize-tags">Tagging</label>
+                                                    <input type="text" id="selectize-tags" value="California,Nevada" >
+                                                </div>
+
+                                                <div class="form-group mb-4">
+                                                    <label>Single Item</label>
+                                                    <select class="selectize">
+                                                        <option value="">Select...</option>
+                                                        <optgroup label="Alaskan/Hawaiian Time Zone">
+                                                            <option value="AK">Alaska</option>
+                                                            <option value="HI">Hawaii</option>
+                                                        </optgroup>
+                                                        <optgroup label="Pacific Time Zone">
+                                                            <option value="CA">California</option>
+                                                            <option value="NV">Nevada</option>
+                                                            <option value="OR">Oregon</option>
+                                                            <option value="WA">Washington</option>
+                                                        </optgroup>
+                                                        <optgroup label="Mountain Time Zone">
+                                                            <option value="AZ">Arizona</option>
+                                                            <option value="CO">Colorado</option>
+                                                            <option value="ID">Idaho</option>
+                                                            <option value="MT">Montana</option>
+                                                            <option value="NE">Nebraska</option>
+                                                            <option value="NM">New Mexico</option>
+                                                            <option value="ND">North Dakota</option>
+                                                            <option value="UT">Utah</option>
+                                                            <option value="WY">Wyoming</option>
+                                                        </optgroup>
+                                                    </select>
+                                                </div>
+
+                                                <div class="form-group mb-0">
+                                                    <label>Multiple Item</label>
+                                                    <select class="selectize" multiple>
+                                                        <option value="">Select a state...</option>
+                                                        <option value="AL">Alabama</option>
+                                                        <option value="AK">Alaska</option>
+                                                        <option value="AZ">Arizona</option>
+                                                        <option value="AR">Arkansas</option>
+                                                        <option value="CA" selected>California</option>
+                                                        <option value="CO">Colorado</option>
+                                                        <option value="CT">Connecticut</option>
+                                                        <option value="DE">Delaware</option>
+                                                        <option value="DC">District of Columbia</option>
+                                                        <option value="FL">Florida</option>
+                                                        <option value="GA">Georgia</option>
+                                                        <option value="HI">Hawaii</option>
+                                                        <option value="ID">Idaho</option>
+                                                        <option value="IL">Illinois</option>
+                                                        <option value="IN">Indiana</option>
+                                                        <option value="IA">Iowa</option>
+                                                        <option value="KS">Kansas</option>
+                                                        <option value="KY">Kentucky</option>
+                                                        <option value="LA">Louisiana</option>
+                                                        <option value="ME">Maine</option>
+                                                        <option value="MD">Maryland</option>
+                                                        <option value="MA">Massachusetts</option>
+                                                        <option value="MI">Michigan</option>
+                                                        <option value="MN">Minnesota</option>
+                                                        <option value="MS">Mississippi</option>
+                                                        <option value="MO">Missouri</option>
+                                                        <option value="MT" selected>Montana</option>
+                                                        <option value="NE">Nebraska</option>
+                                                        <option value="NV">Nevada</option>
+                                                        <option value="NH">New Hampshire</option>
+                                                        <option value="NJ">New Jersey</option>
+                                                        <option value="NM">New Mexico</option>
+                                                        <option value="NY">New York</option>
+                                                        <option value="NC">North Carolina</option>
+                                                        <option value="ND">North Dakota</option>
+                                                        <option value="OH">Ohio</option>
+                                                        <option value="OK">Oklahoma</option>
+                                                        <option value="OR">Oregon</option>
+                                                        <option value="PA">Pennsylvania</option>
+                                                        <option value="RI">Rhode Island</option>
+                                                        <option value="SC">South Carolina</option>
+                                                        <option value="SD">South Dakota</option>
+                                                        <option value="TN">Tennessee</option>
+                                                        <option value="TX" selected>Texas</option>
+                                                        <option value="UT">Utah</option>
+                                                        <option value="VT">Vermont</option>
+                                                        <option value="VA">Virginia</option>
+                                                        <option value="WA">Washington</option>
+                                                        <option value="WV">West Virginia</option>
+                                                        <option value="WI">Wisconsin</option>
+                                                        <option value="WY">Wyoming</option>
+                                                    </select>
+                                                </div>
+
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="header-title">Datepicker</h5>
+                                            <p class="card-title-desc">Examples of air datepicker.</p>
+
+                                            <form action="#">
+                                                <div class="form-group mb-4">
+                                                    <label>Default Datepicker</label>
+                                                    <input type="text" class="form-control datepicker-here" data-language="en" />
+                                                </div>
+                                                <div class="form-group mb-4">
+                                                    <label>Selecting multiple dates</label>
+                                                    <input type="text" class="form-control datepicker-here" data-language="en" data-multiple-dates="3" data-multiple-dates-separator=", " data-position='top left'/>
+                                                </div>
+                                                <div class="form-group mb-4">
+                                                    <label>Month selection</label>
+                                                    <input type="text" class="form-control datepicker-here" data-min-view="months" data-view="months" data-date-format="MM yyyy" data-language="en" />
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+                                                        <div class="form-group mb-4">
+                                                            <label>Range of dates</label>
+                                                            <input type="text" class="form-control datepicker-here" data-range="true" data-multiple-dates-separator=" - " data-language="en" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="form-group mb-4">
+                                                            <label>Timepicker</label>
+                                                            <input type="text" class="form-control datepicker-here" data-timepicker="true" data-language="en" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <label>Inline Datepicker</label>
+                                                    <div class="datepicker-here" data-timepicker="true" data-language="en"></div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end row -->
+
+                            <div class="row">
+                                <div class="col-xl-6">
+                                    <div class="card">
+                                        <div class="card-body">
+            
+                                            <h4 class="header-title">Bootstrap MaxLength</h4>
+                                            <p class="card-title-desc">This plugin integrates by default with
+                                                Twitter bootstrap using badges to display the maximum lenght of the
+                                                field where the user is inserting text. </p>
+            
+                                            <label>Default usage</label>
+                                            <p class="text-muted mb-2">
+                                                The badge will show up by default when the remaining chars are 10 or less:
+                                            </p>
+                                            <input type="text" class="form-control" maxlength="25" name="defaultconfig" id="defaultconfig" />
+            
+                                            <div class="mt-3">
+                                                <label>Threshold value</label>
+                                                <p class="text-muted mb-2">
+                                                    Do you want the badge to show up when there are 20 chars or less? Use the <code>threshold</code> option:
+                                                </p>
+                                                <input type="text" maxlength="25" name="thresholdconfig" class="form-control" id="thresholdconfig" />
+                                            </div>
+            
+                                            <div class="mt-3">
+                                                <label>All the options</label>
+                                                <p class="text-muted mb-2">
+                                                    Please note: if the <code>alwaysShow</code> option is enabled, the <code>threshold</code> option is ignored.
+                                                </p>
+                                                <input type="text" class="form-control" maxlength="25" name="alloptions" id="alloptions" />
+                                            </div>
+            
+                                            <div class="mt-3">
+                                                <label>Position</label>
+                                                <p class="text-muted mb-2">
+                                                    All you need to do is specify the <code>placement</code> option, with one of those strings. If none
+                                                    is specified, the positioning will be defauted to 'bottom'.
+                                                </p>
+                                                <input type="text" class="form-control" maxlength="25" name="placement" id="placement" />
+                                            </div>
+            
+                                            <div class="mt-3">
+                                                <label>textareas</label>
+                                                <p class="text-muted mb-2">
+                                                    Bootstrap maxlength supports textarea as well as inputs. Even on old IE.
+                                                </p>
+                                                <textarea id="textarea" class="form-control" maxlength="225" rows="3" placeholder="This textarea has a limit of 225 chars."></textarea>
+                                            </div>
+            
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="col-xl-6">
+                                    <div class="card">
+                                        <div class="card-body">
+            
+                                            <h4 class="header-title">Bootstrap TouchSpin</h4>
+                                            <p class="card-title-desc">A mobile and touch friendly input spinner component for Bootstrap</p>
+            
+                                            <form>
+                                                <div class="form-group">
+                                                    <label class="control-label">Using data attributes</label>
+                                                    <input data-toggle="touchspin" type="text" value="55">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label">Example with postfix (large)</label>
+                                                    <input data-toggle="touchspin" value="18.20" type="text" data-step="0.1" data-decimals="2" data-bts-postfix="%">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label">With prefix </label>
+                                                    <input data-toggle="touchspin" type="text" data-bts-prefix="$">
+                                                </div>
+            
+                                                <div class="form-group">
+                                                    <label class="control-label">Init with empty value:</label>
+                                                    <input data-toggle="touchspin" type="text">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label">Value attribute is not set (applying settings.initval)</label>
+                                                    <input id="demo3_21" type="text" value="" name="demo3_21">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label">Value is set explicitly to 33 (skipping settings.initval) </label>
+                                                    <input id="demo3_22" type="text" value="33" name="demo3_22">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label">Vertical button alignment:</label>
+                                                    <input id="demo_vertical" type="text" value="" name="demo_vertical">
+                                                </div>
+                                            </form>
+            
+                                        </div>
+                                    </div>
+    
+                                </div>
+                            </div>
+                            <!-- end row -->
+
+                        </div>
+                        <!-- end container-fluid -->
+                    </div> 
+                    <!-- end page-content-wrapper -->
+                </div>
+                <!-- End Page-content -->
+
+                @@include("partials/footer.html")
+            </div>
+            <!-- end main content-->
+
+        </div>
+        <!-- END layout-wrapper -->
+
+        @@include("partials/right-sidebar.html")
+
+        <!-- JAVASCRIPT -->
+        <script src="assets/libs/jquery/jquery.min.js"></script>
+        <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+        <script src="assets/libs/simplebar/simplebar.min.js"></script>
+        <script src="assets/libs/node-waves/waves.min.js"></script>
+
+        <script src="https://unicons.iconscout.com/release/v2.0.1/script/monochrome/bundle.js"></script>
+
+        <!-- Spectrum colorpicker -->
+        <script src="assets/libs/spectrum-colorpicker/spectrum.js"></script>
+
+        <!-- Selectize -->
+        <script src="assets/libs/selectize/js/standalone/selectize.min.js"></script>
+
+        <!-- datepicker -->
+        <script src="assets/libs/air-datepicker/js/datepicker.min.js"></script>
+        <script src="assets/libs/air-datepicker/js/i18n/datepicker.en.js"></script>
+
+        <script src="assets/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js"></script>
+        <script src="assets/libs/bootstrap-maxlength/bootstrap-maxlength.min.js"></script>
+
+        <!-- Form Advanced init -->
+        <script src="assets/js/pages/form-advanced.init.js"></script>
+
+        <script src="assets/js/app.js"></script>
+
+    </body>
+</html>

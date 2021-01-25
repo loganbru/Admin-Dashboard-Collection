@@ -1,0 +1,54 @@
+/*! _buttons.scss | Bulkit | CSS Ninja */
+
+/* ==========================================================================
+Buttons
+========================================================================== */
+
+/***
+TABLE OF CONTENTS
+=============================================================================
+0. Buttons
+=============================================================================
+***/
+
+/* ==========================================================================
+0. Buttons
+========================================================================== */
+
+.button {
+    transition: all .3s;
+
+    &.cta-button {
+        font-weight: 500;
+        height: 50px;
+        min-width: 150px;
+
+        &.is-long {
+            min-width: 180px;
+        }
+    }
+
+    &.is-raised:hover {
+        opacity: .9;
+    }
+
+    &.primary-button {
+        background: $primary;
+        border-color: $primary;
+        color: $smoke-white;
+
+        &.is-raised:hover {
+            box-shadow: $primary-box-shadow;
+        }
+    }
+
+    &.accent-button {
+        background: $accent;
+        border-color: $accent;
+        color: $smoke-white;
+
+        &.is-raised:hover {
+            box-shadow: $accent-box-shadow;
+        }
+    }
+}

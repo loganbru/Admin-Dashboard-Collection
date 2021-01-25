@@ -1,0 +1,252 @@
+/*! _sections.scss | Bulkit | CSS Ninja */
+
+/* ==========================================================================
+Content sections
+========================================================================== */
+
+/***
+TABLE OF CONTENTS
+=============================================================================
+0. Feature boxes
+1. Subscription combo
+2. Stat counters
+3. Partners
+4. Testimonials
+5. Contact Form
+=============================================================================
+***/
+
+/* ==========================================================================
+0. Feature boxes
+========================================================================== */
+
+.box-wrap {
+    margin-top: -180px;
+
+    .icon-box {
+        width: 100%;
+        border: 1px solid $fade-grey;
+        border-radius: 8px;
+        background: $white;
+        padding: 30px 20px;
+        box-shadow: $light-box-shadow;
+
+        img {
+            display: block;
+            width: 44px;
+            margin-bottom: 8px;
+        }
+
+        .box-title {
+            font-family: 'Nexa Bold', sans-serif;
+            color: $dark-text;
+            padding: 10px 0;
+        }
+
+        p {
+            font-size: .9rem;
+            color: $muted-grey;
+        }
+    }
+}
+
+/* ==========================================================================
+1. Subscription combo
+========================================================================== */
+
+.subscription-combo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+
+    .control {
+        input {
+            box-shadow: none !important;
+            border-radius: 0;
+            font-size: 1rem;
+            height: 45px;
+            padding-left: 45px !important;
+            transition: all .3s;
+
+            &:focus {
+                border-color: $primary;
+
+                + .form-icon svg {
+                    stroke: $primary;
+                }
+            }
+        }
+
+        .form-icon {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 45px;
+            width: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            svg {
+                height: 20px;
+                width: 20px;
+                stroke: darken($fade-grey, 10%);
+                transition: all .3s;
+            }
+        }
+    }
+
+    .combo-button {
+        height: 48px;
+        max-height: 48px;
+        margin-left: 4px;
+        padding-bottom: 8px;
+    }
+}
+
+/* ==========================================================================
+2. Stat counters
+========================================================================== */
+
+.stat-boxes-wrapper {
+    .stat-box {
+        width: 100%;
+        text-align: center;
+
+        .stat-icon {
+            img {
+                display: block;
+                height: 80px;
+                margin: 0 auto;
+            }
+        }
+
+        .stat-count {
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            padding: 8px 0 0 0;
+
+            span {
+                display: block;
+                font-weight: 700;
+                font-size: 2rem;
+                color: $dark-text;
+            }
+
+            small {
+                font-size: 1.4rem;
+                font-weight: 700;
+                margin-left: 4px;
+                color: $dark-text;
+            }
+        }
+
+        p {
+            color: $muted-grey;
+            font-weight: 500;
+        }
+    }
+}
+
+/* ==========================================================================
+3. Partners
+========================================================================== */
+
+.partner-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        display: block;
+        height: 80px;
+        margin: 0 25px;
+    }
+}
+
+/* ==========================================================================
+4. Testimonials
+========================================================================== */
+
+.carousel-wrapper {
+    max-width: 760px;
+    margin: 90px auto;
+
+    .carousel {
+        .slick-slide {
+            outline: none !important;
+        }
+
+        .carousel-item {
+            width: 100%;
+            border: 1px solid $fade-grey;
+            box-shadow: $light-box-shadow;
+            border-radius: 8px;
+            background: $white;
+            padding: 60px;
+            margin: 20px;
+
+            p {
+                color: $muted-grey;
+            }
+
+            .item-footer {
+                display: flex;
+                align-items: center;
+                margin-top: 20px;
+
+                img {
+                    display: block;
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 50%;
+                }
+
+                span {
+                    display: block;
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                    font-family: 'Nexa Bold', sans-serif;
+                    color: $dark-text;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+5. Contact Form
+========================================================================== */
+
+.contact-title {
+    margin-top: 200px;
+}
+
+.contact-form {
+    width: 100%;
+    border: 1px solid $fade-grey;
+    box-shadow: $light-box-shadow;
+    border-radius: 8px;
+    background: $white;
+    padding: 50px;
+
+    p {
+        color: $med-grey;
+        font-size: .9rem;
+        margin-bottom: 40px;
+    }
+
+    .button-wrap {
+        margin-top: 50px;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-family: 'Nexa Bold', sans-serif;
+
+        .button {
+            height: 54px;
+        }
+    }
+}

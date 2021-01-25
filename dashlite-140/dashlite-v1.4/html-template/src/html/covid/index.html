@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="zxx" class="js">
+
+<head>
+    <base href="../../">
+    <meta charset="utf-8">
+    <meta name="author" content="Softnio">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="@@page-discription">
+    <!-- Fav Icon  -->
+    <link rel="shortcut icon" href="./images/favicon.png">
+    <!-- Page Title  -->
+    <title>Coronavirus (COVID-19) Situation | DashLite Admin Template</title>
+    <!-- StyleSheets  -->
+    <link rel="stylesheet" href="./assets/css/dashlite.css?ver=1.4.0">
+    <link id="skin-default" rel="stylesheet" href="./assets/css/theme.css?ver=1.4.0">
+</head>
+
+<body class="nk-body npc-covid has-sidebar has-sidebar-short ui-clean ui-rounder">
+    <div class="nk-app-root">
+        <!-- main @s -->
+        <div class="nk-main ">
+            <!-- sidebar @s -->
+            <div class="nk-sidebar nk-sidebar-short nk-sidebar-fixed is-light" data-content="sidebarMenu">
+                <div class="nk-sidebar-element nk-sidebar-head">
+                    <div class="nk-sidebar-brand">
+                        <a href="html/covid/index.html" class="logo-link nk-sidebar-logo">
+                            <img class="logo-light logo-img" src="./images/logo.png" srcset="./images/logo2x.png 2x" alt="logo">
+                            <img class="logo-dark logo-img" src="./images/logo-dark.png" srcset="./images/logo-dark2x.png 2x" alt="logo-dark">
+                            <span class="nio-version">Covid</span>
+                        </a>
+                        <a href="html/covid/index.html" class="logo-link nk-sidebar-logo-small">
+                            <img class="logo-light logo-img" src="./images/logo-small.png" srcset="./images/logo-small2x.png 2x" alt="logo">
+                            <img class="logo-dark logo-img" src="./images/logo-dark-small.png" srcset="./images/logo-dark-small2x.png 2x" alt="logo-dark">
+                        </a>
+                    </div>
+                    <div class="nk-menu-trigger mr-n2">
+                        <a href="#" class="nk-nav-toggle nk-quick-nav-icon d-xl-none" data-target="sidebarMenu"><em class="icon ni ni-arrow-left"></em></a>
+                    </div>
+                </div><!-- .nk-sidebar-element -->
+                <div class="nk-sidebar-element">
+                    <div class="nk-sidebar-body" data-simplebar>
+                        <div class="nk-sidebar-content">
+                            <div class="nk-sidebar-menu nk-sidebar-menu-middle">
+                                <!-- Menu -->
+                                <ul class="nk-menu short-menu">
+                                    <li class="nk-menu-item">
+                                        <a href="html/covid/index.html" class="nk-menu-link">
+                                            <span class="nk-menu-icon"><em class="icon ni ni-notify"></em></span>
+                                            <span class="nk-menu-text">Overview</span>
+                                            <span class="nk-menu-tooltip" title="Overview"></span>
+                                        </a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="html/covid/countries.html" class="nk-menu-link">
+                                            <span class="nk-menu-icon"><em class="icon ni ni-globe"></em></span>
+                                            <span class="nk-menu-text">Countries</span>
+                                            <span class="nk-menu-tooltip" title="Countries"></span>
+                                        </a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="html/covid/symptoms.html" class="nk-menu-link">
+                                            <span class="nk-menu-icon"><em class="icon ni ni-sun"></em></span>
+                                            <span class="nk-menu-text">Symptoms</span>
+                                            <span class="nk-menu-tooltip" title="Symptoms"></span>
+                                        </a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="html/covid/prevention.html" class="nk-menu-link">
+                                            <span class="nk-menu-icon"><em class="icon ni ni-security"></em></span>
+                                            <span class="nk-menu-text">Prevention</span>
+                                            <span class="nk-menu-tooltip" title="Prevention"></span>
+                                        </a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="html/covid/faqs.html" class="nk-menu-link">
+                                            <span class="nk-menu-icon"><em class="icon ni ni-help"></em></span>
+                                            <span class="nk-menu-text">FAQs</span>
+                                            <span class="nk-menu-tooltip" title="FAQs"></span>
+                                        </a>
+                                    </li>
+                                </ul><!-- .nk-menu -->
+                            </div><!-- .nk-sidebar-menu -->
+                            <div class="nk-sidebar-footer d-none d-md-block">
+                                <ul class="nk-menu short-menu">
+                                    <li class="nk-menu-item">
+                                        <a href="#" data-toggle="modal" data-target="#covid-feedback" class="nk-menu-link">
+                                            <span class="nk-menu-icon"><em class="icon ni ni-chat-fill"></em></span>
+                                            <span class="nk-menu-text">Feedback</span>
+                                        </a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="#" data-toggle="modal" data-target="#covid-about" class="nk-menu-link">
+                                            <span class="nk-menu-icon"><em class="icon ni ni-info-fill"></em></span>
+                                            <span class="nk-menu-text">About Data</span>
+                                        </a>
+                                    </li>
+                                </ul><!-- .nk-menu -->
+                            </div><!-- .nk-sidebar-footer -->
+                        </div><!-- .nk-sidebar-contnet -->
+                    </div><!-- .nk-sidebar-body -->
+                </div><!-- .nk-sidebar-element -->
+            </div>
+            <!-- sidebar @e -->
+            <!-- wrap @s -->
+            <div class="nk-wrap ">
+                <!-- main header @s -->
+                <div class="nk-header nk-header-fluid nk-header-fixed nk-header-onlymobile is-light">
+                    <div class="container-fluid">
+                        <div class="nk-header-wrap">
+                            <div class="nk-header-brand">
+                                <a href="html/covid/index.html" class="logo-link">
+                                    <img class="logo-light logo-img" src="./images/logo.png" srcset="./images/logo2x.png 2x" alt="logo">
+                                    <img class="logo-dark logo-img" src="./images/logo-dark.png" srcset="./images/logo-dark2x.png 2x" alt="logo-dark">
+                                    <span class="nio-version">COVID-19</span>
+                                </a>
+                            </div>
+                            <div class="nk-menu-trigger ml-auto mr-n1">
+                                <a href="#" class="nk-nav-toggle nk-quick-nav-icon" data-target="sidebarMenu"><em class="icon ni ni-menu"></em></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- main header @e -->
+                <!-- content @s -->
+                <div class="nk-content ">
+                    <div class="container-fluid">
+                        <div class="nk-content-body">
+                            <div class="nk-block-head nk-block-head-sm">
+                                <div class="nk-block-between flex-wrap g-1 align-start">
+                                    <div class="nk-block-head-content">
+                                        <h5 class="nk-block-title">COVID-19 Coronavirus Tracker</h5>
+                                    </div>
+                                    <div class="nk-block-head-content">
+                                        <p class="note-text">Updated: March 27, 2020 12:30 (GMT +6)</p>
+                                    </div>
+                                </div>
+                            </div><!-- .nk-block-head -->
+                            <div class="nk-block">
+                                <div class="row g-gs">
+                                    <div class="col-xl-4">
+                                        <div class="row g-gs">
+                                            <div class="col-lg-6 col-xl-12">
+                                                <div class="card card-bordered card-full">
+                                                    <div class="card-inner">
+                                                        <div class="nk-cov-wg1">
+                                                            <div class="card-title">
+                                                                <h5 class="title">Coronavirus Cases - <small>Worldwide</small></h5>
+                                                            </div>
+                                                            <div class="nk-cov-data">
+                                                                <h6 class="overline-title">Total Confirmed Cases</h6>
+                                                                <div class="amount">621,570</div>
+                                                            </div>
+                                                            <div class="nk-cov-wg1-progress">
+                                                                <div class="progress progress-reverse progress-md progress-pill progress-bordered">
+                                                                    <div class="progress-bar bg-danger" data-progress="15" data-toggle="tooltip" title="Deaths : 15%"></div>
+                                                                    <div class="progress-bar bg-success" data-progress="30" data-toggle="tooltip" title="Recovered : 30%"></div>
+                                                                    <div class="progress-bar bg-purple" data-progress="55" data-toggle="tooltip" title="Active Cases : 55%"></div>
+                                                                </div>
+                                                            </div>
+                                                            <ul class="nk-cov-wg1-data">
+                                                                <li>
+                                                                    <div class="title">
+                                                                        <div class="dot dot-lg sq bg-purple"></div>
+                                                                        <span>Active Cases</span>
+                                                                    </div>
+                                                                    <div class="count">455,538</div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="title">
+                                                                        <div class="dot dot-lg sq bg-success"></div>
+                                                                        <span>Recovered</span>
+                                                                    </div>
+                                                                    <div class="count">137,364</div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="title">
+                                                                        <div class="dot dot-lg sq bg-danger"></div>
+                                                                        <span>Deaths</span>
+                                                                    </div>
+                                                                    <div class="count">28,668</div>
+                                                                </li>
+                                                            </ul>
+                                                            <div class="nk-cov-wg-note">The ratio of <a href="#">Recovery (27%)</a> &amp; <a href="#">Deaths (9.5%)</a>.</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div><!-- .col -->
+                                            <div class="col-lg-6 col-xl-12">
+                                                <div class="card card-bordered card-full">
+                                                    <div class="card-inner">
+                                                        <div class="nk-cov-wg2">
+                                                            <div class="card-title">
+                                                                <h5 class="title">Coronavirus Cases - <small>Bangladesh</small></h5>
+                                                            </div>
+                                                            <div class="nk-cov-group">
+                                                                <div class="nk-cov-data">
+                                                                    <h6 class="overline-title">Confirmed</h6>
+                                                                    <div class="amount amount-sm">48</div>
+                                                                </div>
+                                                                <div class="nk-cov-data">
+                                                                    <h6 class="overline-title">Recovered</h6>
+                                                                    <div class="amount amount-sm text-success">15</div>
+                                                                </div>
+                                                                <div class="nk-cov-data">
+                                                                    <h6 class="overline-title">Deaths</h6>
+                                                                    <div class="amount amount-sm text-danger">5</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="nk-cov-wg-note">The ratio of <a href="#">Recovery (31.3%)</a> &amp; <a href="#">Deaths (10.5%)</a>.</div>
+                                                            <div class="nk-cov-wg2-group">
+                                                                <div class="nk-cov-data">
+                                                                    <h6 class="sub-text">Currently <br class="d-xxl-none"> Infected Patients</h6>
+                                                                    <div class="amount amount-xs">28</div>
+                                                                </div>
+                                                                <ul class="nk-cov-wg2-data">
+                                                                    <li>
+                                                                        <div class="title">
+                                                                            <div class="dot dot-lg sq bg-purple"></div>
+                                                                            <span>In Mild Condition</span>
+                                                                        </div>
+                                                                        <div class="count">27</div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="title">
+                                                                            <div class="dot dot-lg sq bg-success"></div>
+                                                                            <span>Critical or Serious</span>
+                                                                        </div>
+                                                                        <div class="count">01</div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div><!-- .col -->
+                                        </div><!-- .row -->
+                                    </div><!-- .col -->
+                                    <div class="col-xl-8">
+                                        <div class="card card-bordered card-full">
+                                            <div class="nk-cov-wg4">
+                                                <div class="nk-cov-wg4-aside">
+                                                    <div class="nk-cov-wg4-aside-head">
+                                                        <h6 class="nk-cov-wg4-aside-title">Cases by Country</h6>
+                                                        <div class="nk-cov-wg4-aside-action mr-n2">
+                                                            <a href="#" class="btn btn-icon toggle-search" data-target="search"><em class="icon ni ni-search"></em></a>
+                                                        </div>
+                                                        <div class="search-wrap" data-search="search">
+                                                            <div class="search-content">
+                                                                <a href="#" class="search-back btn btn-icon toggle-search" data-target="search"><em class="icon ni ni-arrow-left"></em></a>
+                                                                <input type="text" class="form-control border-transparent form-focus-none" placeholder="Search by Country">
+                                                                <button class="search-submit btn btn-icon"><em class="icon ni ni-search"></em></button>
+                                                            </div>
+                                                        </div><!-- .search-wrap -->
+                                                    </div>
+                                                    <div class="nk-cov-wg4-aside-body" data-simplebar>
+                                                        <ul class="nk-cov-wg4-list">
+                                                            <li>
+                                                                <a class="nk-cov-wg4-list-item" href="#">
+                                                                    <span class="title">Worldwide</span>
+                                                                    <span class="count">737,670</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="nk-cov-wg4-list-item active" href="#">
+                                                                    <span class="title">USA</span>
+                                                                    <span class="count">144,060</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="nk-cov-wg4-list-item" href="#">
+                                                                    <span class="title">Italy</span>
+                                                                    <span class="count">97,689</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="nk-cov-wg4-list-item" href="#">
+                                                                    <span class="title">Spain</span>
+                                                                    <span class="count">85,199</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="nk-cov-wg4-list-item" href="#">
+                                                                    <span class="title">China</span>
+                                                                    <span class="count">81,470</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="nk-cov-wg4-list-item" href="#">
+                                                                    <span class="title">Germany</span>
+                                                                    <span class="count">63,929</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="nk-cov-wg4-list-item" href="#">
+                                                                    <span class="title">Iran</span>
+                                                                    <span class="count">41,495</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="nk-cov-wg4-list-item" href="#">
+                                                                    <span class="title">France</span>
+                                                                    <span class="count">40,174</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="nk-cov-wg4-list-item" href="#">
+                                                                    <span class="title">UK</span>
+                                                                    <span class="count">19,522</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="nk-cov-wg4-list-item" href="#">
+                                                                    <span class="title">Switzerland</span>
+                                                                    <span class="count">15,546</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="nk-cov-wg4-list-item" href="#">
+                                                                    <span class="title">Belgium</span>
+                                                                    <span class="count">11,899</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="nk-cov-wg4-list-item" href="#">
+                                                                    <span class="title">Netherlands</span>
+                                                                    <span class="count">11,750</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="nk-cov-wg4-list-item" href="#">
+                                                                    <span class="title">South Korea</span>
+                                                                    <span class="count">9,661</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="nk-cov-wg4-list-item" href="#">
+                                                                    <span class="title">Turkey</span>
+                                                                    <span class="count">9,217</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="nk-cov-wg4-list-item" href="#">
+                                                                    <span class="title">Austria</span>
+                                                                    <span class="count">8,774</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="nk-cov-wg4-list-item" href="#">
+                                                                    <span class="title">Portugal</span>
+                                                                    <span class="count">6,408</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="nk-cov-wg4-list-item" href="#">
+                                                                    <span class="title">Canada</span>
+                                                                    <span class="count">6,308</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="nk-cov-wg4-list-item" href="#">
+                                                                    <span class="title">Norway</span>
+                                                                    <span class="count">4,419</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="nk-cov-wg4-list-item" href="#">
+                                                                    <span class="title">Israel</span>
+                                                                    <span class="count">4,347</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="nk-cov-wg4-list-item" href="#">
+                                                                    <span class="title">Brazil</span>
+                                                                    <span class="count">4,256</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="nk-cov-wg4-list-item" href="#">
+                                                                    <span class="title">Australia</span>
+                                                                    <span class="count">4,247</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="nk-cov-wg4-list-item" href="#">
+                                                                    <span class="title">Sweden</span>
+                                                                    <span class="count">4,106</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="nk-cov-wg4-list-item" href="#">
+                                                                    <span class="title">Czechia</span>
+                                                                    <span class="count">2,866</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="nk-cov-wg4-list-item" href="#">
+                                                                    <span class="title">Malaysia</span>
+                                                                    <span class="count">2,626</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="nk-cov-wg4-list-item" href="#">
+                                                                    <span class="title">Ireland</span>
+                                                                    <span class="count">2,615</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="nk-cov-wg4-list-item" href="#">
+                                                                    <span class="title">Denmark</span>
+                                                                    <span class="count">2,555</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="nk-cov-wg4-list-item" href="#">
+                                                                    <span class="title">Chile</span>
+                                                                    <span class="count">2,139</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="nk-cov-wg4-list-item" href="#">
+                                                                    <span class="title">Romania</span>
+                                                                    <span class="count">1,952</span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="nk-cov-wg4-aside-foot text-center">
+                                                        <a href="html/covid/countries.html" class="btn btn-round btn-outline-primary">Country wise statistics</a>
+                                                    </div>
+                                                </div>
+                                                <div class="nk-cov-wg4-content">
+                                                    <div class="nk-cov-wg4-map">
+                                                        <div class="vector-map" id="worldMap"></div>
+                                                    </div>
+                                                    <div class="nk-cov-wg4-meta">
+                                                        <ul class="nk-cov-wg4-meta-data">
+                                                            <li>
+                                                                <div class="dot dot-lg sq bg-purple"></div>
+                                                                <span>Daily Infected Case</span>
+                                                            </li>
+                                                            <li>
+                                                                <div class="dot dot-lg sq bg-danger"></div>
+                                                                <span>Deaths</span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="nk-cov-wg4-meta-tools">
+                                                            <div class="drodown">
+                                                                <a href="#" class="dropdown-toggle dropdown-indicator btn btn-sm btn-outline-light btn-white" data-toggle="dropdown">30 Days</a>
+                                                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-xs">
+                                                                    <ul class="link-list-opt no-bdr">
+                                                                        <li><a href="#"><span>7 Days</span></a></li>
+                                                                        <li><a href="#"><span>15 Days</span></a></li>
+                                                                        <li><a href="#"><span>30 Days</span></a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="nk-cov-wg4-ck">
+                                                        <canvas class="covid-case-bar-chart" id="dailyIncreaseCountry"></canvas>
+                                                    </div>
+                                                    <div class="chart-label-group ml-5">
+                                                        <div class="chart-label">22 Jan, 2020</div>
+                                                        <div class="chart-label">28 Mar, 2020</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- .col -->
+                                    <div class="col-xl-4 col-md-6">
+                                        <div class="card card-bordered card-full">
+                                            <div class="card-inner">
+                                                <div class="card-title-group mb-1">
+                                                    <div class="card-title">
+                                                        <h6 class="title">Cases Over Time - <small>worldwide</small></h6>
+                                                        <p>The charts below show daily and total case trends.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="nk-cov-wg3">
+                                                    <ul class="nav nav-tabs nav-tabs-card nav-tabs-xs">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link active" data-toggle="tab" href="#confirmed-cases">Confirmed Cases</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" data-toggle="tab" href="#daily-increase">Daily Increase</a>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="tab-content mt-0">
+                                                        <div class="tab-pane active" id="confirmed-cases">
+                                                            <div class="nk-cov-wg3-legend-wrap">
+                                                                <h6 class="title">Flow of Cases</h6>
+                                                                <ul class="nk-cov-wg3-legend">
+                                                                    <li>
+                                                                        <div class="dot dot-md sq bg-purple"></div>
+                                                                        <span>Infected</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="dot dot-md sq bg-danger"></div>
+                                                                        <span>Deaths</span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="nk-cov-wg3-ck">
+                                                                <canvas class="covid-case-line-chart" id="confirmedCases"></canvas>
+                                                            </div>
+                                                            <div class="chart-label-group ml-5">
+                                                                <div class="chart-label">22 Jan, 2020</div>
+                                                                <div class="chart-label">28 Mar, 2020</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane" id="daily-increase">
+                                                            <div class="nk-cov-wg3-legend-wrap">
+                                                                <h6 class="title">Flow of Cases</h6>
+                                                                <ul class="nk-cov-wg3-legend">
+                                                                    <li>
+                                                                        <div class="dot dot-md sq bg-purple"></div>
+                                                                        <span>Infected</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="dot dot-md sq bg-danger"></div>
+                                                                        <span>Deaths</span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="nk-cov-wg3-ck">
+                                                                <canvas class="covid-case-bar-chart" id="dailyIncrease"></canvas>
+                                                            </div>
+                                                            <div class="chart-label-group ml-5">
+                                                                <div class="chart-label">22 Jan, 2020</div>
+                                                                <div class="chart-label">28 Mar, 2020</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- .col -->
+                                    <div class="col-xl-4 col-md-6">
+                                        <div class="card card-bordered card-full">
+                                            <div class="card-inner mb-n2">
+                                                <div class="card-title-group">
+                                                    <div class="card-title mb-0">
+                                                        <h6 class="title">Most Affected Countries</h6>
+                                                    </div>
+                                                    <div class="card-tools">
+                                                        <a href="html/covid/countries.html" class="link">View All</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="nk-tb-list is-medium nk-cov-wg5-table">
+                                                <div class="nk-tb-item nk-tb-head">
+                                                    <div class="nk-tb-col">Country</div>
+                                                    <div class="nk-tb-col text-right">Confirmed</div>
+                                                    <div class="nk-tb-col text-right">Recovered</div>
+                                                    <div class="nk-tb-col text-right">Deaths</div>
+                                                </div>
+                                                <div class="nk-tb-item">
+                                                    <div class="nk-tb-col">
+                                                        <div class="tb-country">
+                                                            <img class="flag" src="./images/flags/code/us.png" alt="">
+                                                            <div class="name">USA</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="nk-tb-col text-right">
+                                                        <div class="tb-lead tb-amount">105,161</div>
+                                                    </div>
+                                                    <div class="nk-tb-col text-right">
+                                                        <div class="tb-lead tb-amount">2,538</div>
+                                                    </div>
+                                                    <div class="nk-tb-col text-right">
+                                                        <div class="tb-lead tb-amount">1,722</div>
+                                                    </div>
+                                                </div>
+                                                <div class="nk-tb-item">
+                                                    <div class="nk-tb-col">
+                                                        <div class="tb-country">
+                                                            <img class="flag" src="./images/flags/code/it.png" alt="">
+                                                            <div class="name">Italy</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="nk-tb-col text-right">
+                                                        <div class="tb-lead tb-amount">86,498</div>
+                                                    </div>
+                                                    <div class="nk-tb-col text-right">
+                                                        <div class="tb-lead tb-amount">10,361</div>
+                                                    </div>
+                                                    <div class="nk-tb-col text-right">
+                                                        <div class="tb-lead tb-amount">8,215</div>
+                                                    </div>
+                                                </div>
+                                                <div class="nk-tb-item">
+                                                    <div class="nk-tb-col">
+                                                        <div class="tb-country">
+                                                            <img class="flag" src="./images/flags/code/cn.png" alt="">
+                                                            <div class="name">China</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="nk-tb-col text-right">
+                                                        <div class="tb-lead tb-amount">81,394</div>
+                                                    </div>
+                                                    <div class="nk-tb-col text-right">
+                                                        <div class="tb-lead tb-amount">74,971</div>
+                                                    </div>
+                                                    <div class="nk-tb-col text-right">
+                                                        <div class="tb-lead tb-amount">3,295</div>
+                                                    </div>
+                                                </div>
+                                                <div class="nk-tb-item">
+                                                    <div class="nk-tb-col">
+                                                        <div class="tb-country">
+                                                            <img class="flag" src="./images/flags/code/es.png" alt="">
+                                                            <div class="name">Spain</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="nk-tb-col text-right">
+                                                        <div class="tb-lead tb-amount">72,248</div>
+                                                    </div>
+                                                    <div class="nk-tb-col text-right">
+                                                        <div class="tb-lead tb-amount">12,285</div>
+                                                    </div>
+                                                    <div class="nk-tb-col text-right">
+                                                        <div class="tb-lead tb-amount">5,690</div>
+                                                    </div>
+                                                </div>
+                                                <div class="nk-tb-item">
+                                                    <div class="nk-tb-col">
+                                                        <div class="tb-country">
+                                                            <img class="flag" src="./images/flags/code/de.png" alt="">
+                                                            <div class="name">Germany</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="nk-tb-col text-right">
+                                                        <div class="tb-lead tb-amount">53,340</div>
+                                                    </div>
+                                                    <div class="nk-tb-col text-right">
+                                                        <div class="tb-lead tb-amount">6,658</div>
+                                                    </div>
+                                                    <div class="nk-tb-col text-right">
+                                                        <div class="tb-lead tb-amount">399</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- .col -->
+                                    <div class="col-xl-4">
+                                        <div class="card card-bordered card-full is-center-mb">
+                                            <div class="card-inner">
+                                                <div class="card-title mb-4">
+                                                    <h6 class="title">Top Stories &amp; Updates</h6>
+                                                </div>
+                                                <div class="nk-cov-newswg">
+                                                    <div class="nk-cov-newswg-item">
+                                                        <div class="nk-cov-newswg-content">
+                                                            <h6 class="title"><a href="#">The rules of safe shopping under coronavirus: five tips for social distancing</a></h6>
+                                                            <ul class="nk-cov-newswg-meta">
+                                                                <li><a href="#">The Guardian</a></li>
+                                                                <li>1 day ago</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="nk-cov-newswg-image">
+                                                            <img src="./images/gfx/covid-news-a.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="nk-cov-newswg-item">
+                                                        <div class="nk-cov-newswg-content">
+                                                            <h6 class="title"><a href="#">Japan’s relatively small coronavirus case count may be a mirage</a></h6>
+                                                            <ul class="nk-cov-newswg-meta">
+                                                                <li><a href="#">Vox</a></li>
+                                                                <li>1 day ago</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="nk-cov-newswg-image">
+                                                            <img src="./images/gfx/covid-news-b.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mt-3">
+                                                    <a href="#" class="link link-sm"><span>More Stories</span> <em class="icon ni ni-arrow-long-right"></em></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- .col -->
+                                </div><!-- .row -->
+                            </div><!-- .nk-block -->
+                        </div>
+                    </div>
+                </div>
+                <!-- content @e -->
+                <!-- footer @s -->
+                <div class="nk-footer d-md-none">
+                    <div class="container-fluid">
+                        <div class="nk-footer-wrap gy-1 gx-4">
+                            <div class="nk-footer-links">
+                                <ul class="nav nav-sm">
+                                    <li class="nav-item"><a class="nav-link" href="#" data-toggle="modal" data-target="#covid-feedback">Feedback</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#" data-toggle="modal" data-target="#covid-about">About Data</a></li>
+                                </ul>
+                            </div>
+                            <div class="nk-footer-copyright"> &copy; Copyright 2020, <a href="https://softnio.com" target="_blank">Softnio</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- footer @e -->
+            </div>
+            <!-- wrap @e -->
+        </div>
+        <!-- main @e -->
+    </div>
+    <!-- app-root @e -->
+    <!-- Modal About -->
+    <div class="modal fade" tabindex="-1" id="covid-about">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <a href="#" class="close" data-dismiss="modal" aria-label="Close">
+                    <em class="icon ni ni-cross"></em>
+                </a>
+                <div class="modal-body">
+                    <h5 class="title mb-3">About this data</h5>
+                    <h6 class="lead-text text-primary">It changes rapidly</h6>
+                    <p>This data changes rapidly, so what’s shown may be out of date. Table totals may not always represent an accurate sum. Information about reported cases is also available on the <a href="#">World Health Organization</a> & <a href="#">WorldoMeters.info</a> site.</p>
+                    <h6 class="lead-text text-primary">It doesn’t include all cases</h6>
+                    <p>Confirmed cases aren’t all cases. They only include people who tested positive. Testing rules and availability vary by country.</p>
+                    <div class="note-text">Updated: March 27, 2020 12:30 (GMT +6)</div>
+                </div>
+                <div class="modal-footer bg-light justify-content-center py-1">
+                    <div class="sub-text">Copyright by <a href="https://softnio.com">Softnio</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Feedback -->
+    <div class="modal fade" tabindex="-1" id="covid-feedback">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="justify-between gx-5 mb-3">
+                        <div>
+                            <h6 class="modal-title text-primary">What kind of feedback do you have about this tool?</h6>
+                        </div>
+                        <div>
+                            <a href="#" class="btn btn-icon btn-trigger mr-n2 mt-n1" data-dismiss="modal" aria-label="Close">
+                                <em class="icon ni ni-cross"></em>
+                            </a>
+                        </div>
+                    </div>
+                    <ul class="btn-list-vr g-2">
+                        <li>
+                            <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#covid-feedback-form" class="btn btn-round btn-indc btn-lighter"><em class="icon text-primary ni ni-report"></em> <span>Report an issue</span><em class="indc icon ni ni-chevron-right"></em></a>
+                        </li>
+                        <li>
+                            <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#covid-feedback-form" class="btn btn-round btn-indc btn-lighter"><em class="icon text-primary ni ni-bulb"></em> <span>Share an idea</span><em class="indc icon ni ni-chevron-right"></em></a>
+                        </li>
+                        <li>
+                            <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#covid-feedback-form" class="btn btn-round btn-indc btn-lighter"><em class="icon text-primary ni ni-question-alt"></em> <span>Give a compliment</span><em class="indc icon ni ni-chevron-right"></em></a>
+                        </li>
+                        <li>
+                            <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#covid-feedback-form" class="btn btn-round btn-indc btn-lighter"><em class="icon text-primary ni ni-policy"></em> <span>Legal or privacy concern</span><em class="indc icon ni ni-chevron-right"></em></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer bg-light justify-content-center py-1">
+                    <div class="sub-text">Copyright by <a href="https://softnio.com">Softnio</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Feedback Form -->
+    <div class="modal fade" tabindex="-1" id="covid-feedback-form">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="justify-between gx-5 mb-1">
+                        <div>
+                            <h6 class="modal-title text-primary">Tell us about the issue</h6>
+                        </div>
+                        <div>
+                            <a href="#" class="btn btn-icon btn-trigger mr-n2 mt-n1" data-dismiss="modal" aria-label="Close">
+                                <em class="icon ni ni-cross"></em>
+                            </a>
+                        </div>
+                    </div>
+                    <form action="#">
+                        <textarea class="form-control no-resize" placeholder="Enter feedback here. To help protect your privacy, don’t include personal info."></textarea>
+                        <div class="align-center justify-between mt-3">
+                            <a href="#" class="link link-sm">Privacy Policy</a>
+                            <ul class="btn-toolbar g-1">
+                                <li><a href="#" class="btn btn-light">Go Back</a></li>
+                                <li><a href="#" class="btn btn-primary">Send</a></li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer bg-light justify-content-center py-1">
+                    <div class="sub-text">Copyright by <a href="https://softnio.com">Softnio</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JavaScript -->
+    <script src="./assets/js/bundle.js?ver=1.4.0"></script>
+    <script src="./assets/js/scripts.js?ver=1.4.0"></script>
+    <script src="./assets/js/libs/jqvmap.js?ver=1.4.0"></script>
+    <script src="./assets/js/charts/chart-covid.js?ver=1.4.0"></script>
+</body>
+
+</html>

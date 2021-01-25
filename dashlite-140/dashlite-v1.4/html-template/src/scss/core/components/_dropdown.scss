@@ -1,0 +1,28 @@
+/// Dropdowns
+//////////[/////////////////
+.nk-notification{
+    .dropdown-menu &{
+        max-height: 239px;
+        overflow: auto;
+    }
+    &-item{
+        display: flex;
+        align-items: center;
+        padding: 1.25rem 1.75rem;
+    }
+    &-icon{
+        flex-shrink: 0;
+        margin-right: .75rem;
+    }
+    &-text{
+        font-size: $fx-sz-13;
+        color: $base-text;
+        span{
+            color: $base-color
+        }
+    }
+    &-time{
+        font-size: $fx-sz-11;
+        color: $base-light;
+    }
+}

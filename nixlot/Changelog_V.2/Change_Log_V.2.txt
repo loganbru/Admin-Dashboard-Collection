@@ -1,0 +1,31 @@
+update V.2, Date 28-November-2020  
+
+--------------------------------------------------------------------------------------------------------
+Updates :  Datetimepicker double click issue fixed
+1) Datetimepicker double click issue
+
+/******************************************************************
+1) Datetimepicker double click issue
+*******************************************************************/
+
+Step1::: Open form-elements.js(root---->assets/js/form-elements.js). go to line number 60 and add the below JS in your JS file.
+
+Added JS: Add this js
+=========
+
+$("body").on('mouseenter', '.datetimepicker', function(e) {
+	$('.datetimepicker').addClass('datetimepicker-display');
+});
+$("body").on('mouseleave', '.datetimepicker', function(e) {
+	$('.datetimepicker').removeClass('datetimepicker-display');
+});
+$('#datetimepicker').on("click", function (e) {
+	$('.datetimepicker').addClass('show');
+}).blur(function (e) {
+	$('.datetimepicker').removeClass('show');
+});
+
+
+Step2::: Open amazeui.datetimepicker.css(root---->assets/plugins/amazeui-datetimepicker/css/amazeui.datetimepicker.css).
+
+Step3:::  Replace the previous "amazeui.datetimepicker.css" file With Updated "amazeui.datetimepicker.css" File.

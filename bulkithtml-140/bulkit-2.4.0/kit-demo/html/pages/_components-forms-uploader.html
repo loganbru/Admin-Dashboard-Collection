@@ -1,0 +1,165 @@
+---
+layout: components
+title: File Uploader
+---
+
+<!-- Hero and nav -->
+<div class="hero is-relative is-theme-info">
+    
+    {{> navbar-static-light}}
+
+    <!-- Hero image -->
+    <div id="main-hero" class="hero-body">
+        <div class="container has-text-centered">
+            <div class="columns is-vcentered">
+                <div class="column is-4 is-offset-1 has-text-left">
+                    <h1 class="title components-title is-1">
+                        Uploader 
+                    </h1>
+                    <h2 class="subtitle is-4 components-subtitle">
+                        File uploader available styles.
+                    </h2>
+                    <p class="components-cta">
+                        <a href="#start" class="button button-cta btn-align light-btn btn-outlined is-bold rounded">
+                            Get Started
+                        </a>
+                    </p>
+                </div>
+                <div class="column is-offset-1 has-text-centered is-hidden-mobile">
+                    <div id="uploader-ill" class="vivus-svg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Hero image -->
+</div>
+<!-- /Hero and nav -->
+
+<!-- Basic Uploader -->
+<section class="section is-medium">
+    <div id="start" class="section-title-wrapper has-text-centered">
+        <div class="bg-number">1</div>
+        <h2 class="title section-title has-text-centered dark-text text-bold">
+            Basic uploader
+        </h2>
+    </div>
+
+    <div class="columns is-vcentered">
+        <div class="column is-4 is-offset-4">
+            <div class="info-block has-text-centered">
+                <p>Bulkit features the awesome <a href="https://innostudio.de/fileuploader/" target="_blank">Innostudio File uploader</a>, a very flexible premium uploader component built with jQuery. You can build the uploader you've always dreamed of ! Many options let you customize the look and feel of your component. Check out the <a href="https://innostudio.de/fileuploader/documentation" target="_blank">documentation</a> and the above examples to get and idea fo what you can do.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="columns is-vcentered">
+        <div class="column"></div>
+        <div class="column is-5">
+            <div id="onebutton" class="section-wrapper">
+                <div class="uploader-controls has-text-centered animated preFadeInUp fadeInUp">
+                    <input type="file" name="onebutton">
+                    <button type="submit" class="button btn-align btn-outlined info-btn">Upload</button>
+                </div>
+            </div>
+        </div>
+        <div class="column"></div>
+    </div>
+</section>
+<!-- /Basic Uploader -->
+
+<!-- Field Uploader -->
+<section class="section section-feature-grey is-medium">
+    <div class="section-title-wrapper has-text-centered">
+        <div class="bg-number">2</div>
+        <h2 class="title section-title has-text-centered dark-text text-bold">
+            Field uploader
+        </h2>
+    </div>
+
+    <div class="columns is-vcentered">
+        <div class="column is-4 is-offset-4">
+            <div class="info-block has-text-centered">
+                <p>You can display the file uploader as an upload input field. Every selected item is displayed in a list below the uploader. You can remove selected items individually.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="columns is-vcentered">
+        <div class="column"></div>
+        <div class="column is-5">
+            <div class="section-wrapper">
+                <div class="uploader-controls has-text-centered animated preFadeInUp fadeInUp">
+                    <input type="file" name="fielduploader">
+                    <button type="submit" class="button btn-align btn-outlined info-btn">Upload</button>
+                </div>
+            </div>
+        </div>
+        <div class="column"></div>
+    </div>
+</section>
+<!-- /Field Uploader -->
+
+<!-- Thumbnail Uploader -->
+<section class="section is-medium">
+    <div class="section-title-wrapper has-text-centered">
+        <div class="bg-number">3</div>
+        <h2 class="title section-title has-text-centered dark-text text-bold">
+            Thumbnails uploader
+        </h2>
+    </div>
+
+    <div class="columns is-vcentered">
+        <div class="column is-4 is-offset-4">
+            <div class="info-block has-text-centered">
+                <p>The example above shows how to manage multiple uploads at once using a thumbnail list. Every file can also be removed individually.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="columns is-vcentered">
+        <div class="column"></div>
+        <div class="column is-5">
+            <div class="section-wrapper">
+                <div class="uploader-controls has-text-centered animated preFadeInUp fadeInUp">
+                    <input type="file" name="thumbnails">
+                    <button type="submit" class="button btn-align btn-outlined info-btn">Upload</button>
+                </div>
+            </div>
+        </div>
+        <div class="column"></div>
+    </div>
+</section>
+<!-- /Thumbnail Uploader -->
+
+<!-- Drag n Drop Uploader -->
+<section class="section section-feature-grey is-medium">
+    <div class="section-title-wrapper has-text-centered">
+        <div class="bg-number">4</div>
+        <h2 class="title section-title has-text-centered dark-text text-bold">
+            Drag' n Drop uploader
+        </h2>
+    </div>
+
+    <div class="columns is-vcentered">
+        <div class="column is-4 is-offset-4">
+            <div class="info-block has-text-centered">
+                <p>A visually interesting upload form that also handles drag and drop functionnality. Selected items are shown in a list below the uploader.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="columns is-vcentered">
+        <div class="column"></div>
+        <div class="column is-5">
+            <div id="uploader" class="section-wrapper">
+                <div class="uploader-controls has-text-centered animated preFadeInUp fadeInUp">
+                    <input type="file" name="dragndrop">
+                </div>
+            </div>
+        </div>
+        <div class="column"></div>
+    </div>
+</section>
+<!-- /Drag n Drop Uploader -->
+
+{{> footer-dark}}

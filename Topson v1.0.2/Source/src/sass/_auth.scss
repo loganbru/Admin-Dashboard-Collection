@@ -1,0 +1,9 @@
+.auth {
+    width: 400px;
+    @media (max-width: $md) {
+        max-width: 100%;
+    }
+    .auth__input {
+        box-shadow: 0px 3px 5px #00000007;
+    }
+}

@@ -1,0 +1,236 @@
+/*! _forms.scss | Bulkit | CSS Ninja */
+
+/* ==========================================================================
+Form styles
+========================================================================== */
+
+/***
+TABLE OF CONTENTS
+=============================================================================
+0. Global
+1. Material Inputs
+=============================================================================
+***/
+
+/* ==========================================================================
+0. Global
+========================================================================== */
+
+.control {
+    &.has-icon {
+        position: relative;
+    }
+}
+
+/* ==========================================================================
+1. Material Inputs
+========================================================================== */
+
+//Material control
+.control-material {
+    position: relative;
+    margin-bottom: 2em;
+
+    input, textarea {
+        border-radius: 0 !important;
+    }
+
+    //primary colors
+    &.is-primary {
+        input.material-input:focus ~ label, input:valid ~ label, textarea:focus ~ label {
+            color: $primary;
+        }
+
+        .bar:before, .bar:after {
+            background: $primary;
+        }
+
+        &.has-icon input:focus ~ i {
+            color: $primary !important;
+        }
+    }
+
+    //accent colors
+    &.is-accent {
+        input.material-input:focus ~ label, input:valid ~ label, textarea:focus ~ label {
+            color: $accent;
+        }
+
+        .bar:before, .bar:after {
+            background: $accent;
+        }
+
+        &.has-icon input:focus ~ i {
+            color: $accent !important;
+        }
+    }
+
+    //light colors
+    &.is-light {
+        input.material-input:focus ~ label, input:valid ~ label, textarea:focus ~ label {
+            color: $white;
+        }
+
+        .bar:before, .bar:after {
+            background: $white;
+        }
+
+        &.has-icon input:focus ~ i {
+            color: $white !important;
+        }
+    }
+
+    //baisc material styles
+    input.material-input, textarea {
+        width: 100% !important;
+        font-size: 18px;
+        padding: 0.625em  0.625em 0.625em 0.3125em;
+        display: block;
+        width: 18.75em;
+        border: none;
+        border-bottom: 1px solid lighten($muted-grey, 20%);
+        background-color: transparent !important;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    //Floating label
+    label {
+        font-family: 'Arial';
+        color: $placeholder;
+        font-size: 15px;
+        font-weight: normal;
+        position: absolute;
+        pointer-events: none;
+        left: 0.3125em;
+        top: 0.625em;
+        transition: 0.2s ease all;
+        -moz-transition: 0.2s ease all;
+        -webkit-transition: 0.2s ease all;
+    }
+
+    input.material-input:focus ~ label, input:valid ~ label, textarea:focus ~ label {
+        top: -20px;
+        left: -2px;
+        font-size: 12px;
+    }
+
+    //bottom bar
+    .bar {
+        position: relative;
+        display: block;
+    }
+
+    .bar:before, .bar:after {
+        content: '';
+        height: 2px;
+        width: 0;
+        bottom: 0px;
+        position: absolute;
+        transition: 0.2s ease all;
+        -moz-transition: 0.2s ease all;
+        -webkit-transition: 0.2s ease all;
+    }
+
+    .bar:before {
+        left: 50%;
+    }
+
+    .bar:after {
+        right: 50%;
+    }
+
+    input.material-input:focus ~ .bar:before, input.material-input:focus ~ .bar:after, textarea:focus ~ .bar:before, textarea:focus ~ .bar:after {
+        width: 50%;
+    }
+
+    //with icon
+    &.has-icon {
+        input {
+            padding-right: 25px;
+        }
+
+        position: relative;
+
+        i {
+            position: absolute;
+            right: 15px;
+            top: 12px;
+            color: $placeholder;
+        }
+    }
+
+    //validation
+    &.required {
+        input {
+            padding-right: 25px;
+        }
+
+        position: relative;
+
+        i {
+            position: absolute;
+            right: 15px;
+            top: 8px;
+            color: $placeholder;
+            display: none;
+        }
+
+        small.validation-info {
+            display: none;
+            font-size: 0.8rem;
+        }
+
+        //success state
+        &.has-success {
+            input {
+                border-bottom-color: $green !important;
+            }
+
+            .bar:after, .bar:before {
+                background: $green !important;
+            }
+
+            .success i {
+                color: $green !important;
+                display: block;
+            }
+
+            label {
+                color: $green !important;
+            }
+
+            small.validation-info.success {
+                color: $green;
+                display: block;
+            }
+        }
+
+        //error state
+        &.has-error {
+            input {
+                border-bottom-color: $red !important;
+            }
+
+            .bar:after, .bar:before {
+                background: $red !important;
+            }
+
+            .error i {
+                color: $red !important;
+                display: block;
+            }
+
+            label {
+                color: $red !important;
+            }
+
+            small.validation-info.error {
+                color: $red;
+                display: block;
+            }
+        }
+    }
+}

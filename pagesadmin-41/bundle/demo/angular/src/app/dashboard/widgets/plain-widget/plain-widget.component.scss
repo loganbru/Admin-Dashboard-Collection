@@ -1,0 +1,19 @@
+$assets-url :"/assets";
+@import 'core.scss';
+
+.widget-6 {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    .card-body{
+        height: auto !important;
+    }
+    background: mix($color-master, #fff, 69%);
+    .label {
+      background: rgba(0, 0, 0, .3);
+      color: rgba(255, 255, 255, .67);
+    }
+}

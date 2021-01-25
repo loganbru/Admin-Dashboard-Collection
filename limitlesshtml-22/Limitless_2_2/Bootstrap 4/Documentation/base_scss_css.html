@@ -1,0 +1,1454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/layout.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script src="assets/js/main/jquery.min.js"></script>
+	<script src="assets/js/main/bootstrap.bundle.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script src="assets/js/plugins/prism.min.js"></script>
+	<script src="assets/js/plugins/sticky.min.js"></script>
+	
+	<script src="assets/js/main/app.js"></script>
+	<script src="assets/js/pages/components_scrollspy.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body data-spy="scroll" data-target=".sidebar-component-right">
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-expand-md navbar-light">
+		<div class="navbar-header navbar-dark d-none d-md-flex align-items-md-center">
+			<div class="navbar-brand navbar-brand-md">
+				<a href="index.html" class="d-inline-block">
+					<img src="assets/images/logo_light.png" alt="">
+				</a>
+			</div>
+	
+			<div class="navbar-brand navbar-brand-xs">
+				<a href="index.html" class="d-inline-block">
+					<img src="assets/images/logo_icon_light.png" alt="">
+				</a>
+			</div>
+		</div>
+
+		<div class="d-flex flex-1 d-md-none">
+			<div class="navbar-brand mr-auto">
+				<a href="index.html" class="d-inline-block">
+					<img src="assets/images/logo_dark.png" alt="">
+				</a>
+			</div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile">
+				<i class="icon-tree5"></i>
+			</button>
+			<button class="navbar-toggler sidebar-mobile-main-toggle" type="button">
+				<i class="icon-paragraph-justify3"></i>
+			</button>
+			<button class="navbar-toggler sidebar-mobile-component-toggle" type="button">
+				<i class="icon-unfold"></i>
+			</button>
+		</div>
+
+		<div class="collapse navbar-collapse" id="navbar-mobile">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a href="#" class="navbar-nav-link sidebar-control sidebar-main-hide d-none d-md-block">
+						<i class="icon-paragraph-justify3"></i>
+					</a>
+				</li>
+
+				<li class="nav-item">
+					<a href="#" class="navbar-nav-link sidebar-control sidebar-component-toggle d-none d-md-block">
+						<i class="icon-transmission"></i>
+					</a>
+				</li>
+			</ul>
+
+			<ul class="navbar-nav ml-md-auto">
+				<li class="nav-item dropdown">
+					<a href="other_changelog.html" class="navbar-nav-link">
+						<i class="icon-history mr-2"></i>
+						Changelog
+						<span class="badge bg-warning-400 badge-pill position-static ml-md-2">2.2</span>
+					</a>					
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page content -->
+	<div class="page-content">
+
+		<!-- Main sidebar -->
+		<div class="sidebar sidebar-dark sidebar-main sidebar-expand-md">
+
+			<!-- Sidebar mobile toggler -->
+			<div class="sidebar-mobile-toggler text-center">
+				<a href="#" class="sidebar-mobile-main-toggle">
+					<i class="icon-arrow-left8"></i>
+				</a>
+				Navigation
+				<a href="#" class="sidebar-mobile-expand">
+					<i class="icon-screen-full"></i>
+					<i class="icon-screen-normal"></i>
+				</a>
+			</div>
+			<!-- /sidebar mobile toggler -->
+
+
+			<!-- Sidebar content -->
+			<div class="sidebar-content">
+
+        		<!-- Support -->
+				<div class="card card-body">
+					<a href="http://kopyov.ticksy.com" class="btn bg-success-400 btn-block" target="_blank"><i class="icon-lifebuoy mr-2"></i> Limitless support</a>
+				</div>
+				<!-- /support -->
+
+
+				<!-- Main navigation -->
+				<div class="card card-sidebar-mobile">
+					<ul class="nav nav-sidebar" data-nav-type="accordion">
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Main</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="index.html" class="nav-link">Introduction</a></li>
+						<li class="nav-item"><a href="main_getting_started.html" class="nav-link">Getting started</a></li>
+						<li class="nav-item"><a href="main_starter_kit.html" class="nav-link">Starter kit</a></li>
+						<li class="nav-item"><a href="main_rtl.html" class="nav-link">RTL layout</a></li>
+
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Basic functionality</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="base_scss_css.html" class="nav-link active">SCSS and CSS</a></li>
+						<li class="nav-item"><a href="base_scss_compile.html" class="nav-link">Compiling SCSS</a></li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link">Plugins</a>
+							<ul class="nav nav-group-sub" data-submenu-title="Plugins">
+								<li class="nav-item"><a href="plugins_forms.html" class="nav-link">Forms</a></li>
+								<li class="nav-item"><a href="plugins_forms_styling.html" class="nav-link">Form styling</a></li>
+								<li class="nav-item"><a href="plugins_editors.html" class="nav-link">Editors</a></li>
+								<li class="nav-item"><a href="plugins_uploaders.html" class="nav-link">Uploaders</a></li>
+								<li class="nav-item"><a href="plugins_extensions.html" class="nav-link">Extensions</a></li>
+								<li class="nav-item"><a href="plugins_notifications.html" class="nav-link">Notifications</a></li>
+								<li class="nav-item"><a href="plugins_pickers.html" class="nav-link">Pickers</a></li>
+								<li class="nav-item"><a href="plugins_tables.html" class="nav-link">Tables</a></li>
+								<li class="nav-item"><a href="plugins_ui.html" class="nav-link">UI</a></li>
+								<li class="nav-item"><a href="plugins_vis.html" class="nav-link">Visualization</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a href="base_icons.html" class="nav-link">Icons</a></li>
+
+						<li class="nav-item"><a href="base_bootstrap.html" class="nav-link">Bootstrap</a></li>
+						<li class="nav-item"><a href="base_color_system.html" class="nav-link">Color system</a></li>
+						<li class="nav-item"><a href="base_helpers.html" class="nav-link">Helpers</a></li>
+						<li class="nav-item"><a href="base_themes.html" class="nav-link">Themes</a></li>
+
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Layout options</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="layout_overview.html" class="nav-link">Layouts</a></li>
+						<li class="nav-item"><a href="layout_sidebars.html" class="nav-link">Sidebars</a></li>
+						<li class="nav-item"><a href="layout_navbars.html" class="nav-link">Navbars</a></li>
+						<li class="nav-item"><a href="layout_v_nav.html" class="nav-link">Vertical navigation</a></li>
+						<li class="nav-item"><a href="layout_h_nav.html" class="nav-link">Horizontal navigation</a></li>
+						<li class="nav-item"><a href="layout_page_header.html" class="nav-link">Page header</a></li>
+
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Other</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="other_credits.html" class="nav-link">Sources and credits</a></li>
+						<li class="nav-item"><a href="other_changelog.html" class="nav-link">Changelog <span class="badge badge-pill bg-warning-400 ml-auto">version 2.2</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /main navigation -->
+
+		</div>
+		<!-- /main sidebar -->
+
+
+		<!-- Main content -->
+		<div class="content-wrapper">
+
+			<!-- Page header -->
+			<div class="page-header">
+				<div class="page-header-content header-elements-md-inline">
+					<div class="page-title d-flex">
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Limitless</span> - SCSS and CSS</h4>
+						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+					</div>
+
+					<div class="header-elements d-none py-0 mb-3 mb-md-0">
+						<div class="breadcrumb">
+							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
+							<span class="breadcrumb-item active">SCSS and CSS</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /page header -->
+			
+
+			<!-- Content area -->
+			<div class="content pt-0">
+
+				<!-- Inner container -->
+				<div class="d-flex align-items-start flex-column flex-md-row">
+
+					<!-- Left content -->
+					<div class="order-2 order-md-1">
+
+						<!-- SCSS overview -->
+						<div class="card" id="scss">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">SCSS overview</h5>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+				                </div>
+							</div>
+
+							<div class="card-body">
+								<div class="mb-4">
+									<div class="mb-3">
+										<h6 class="font-weight-semibold" id="scss_overview">Overview</h6>
+										<p>All Limitless styles are based on SCSS pre-processor - it extends the CSS language, adding features that allow variables, mixins, functions and many other techniques that allow you to make CSS that is more maintainable, themable and extendable. In total there are 203 fully commented SCSS files. Among them - Bootstrap components core, Bootstrap core overrides, layout and components related files. All files are properly divided into categories and placed inside nested folders:</p>
+									</div>
+
+									<p class="text-muted font-size-sm">Screenshot - scss structure</p>
+									<img src="assets/images/screenshots/u/scss_structure.png" alt="" class="img-thumbnail">
+								</div>
+
+								<div class="mb-4">
+									<h6 class="font-weight-semibold" id="scss_edit">Editing</h6>
+
+									<div class="mb-4">
+										<div class="mb-3">
+											<p>To edit SCSS files, use any code editor that supports <code>.scss</code> file extensions. I prefer to use Sublime Text editor with additional SASS/SCSS syntax highlight package, it's very flexible and works really fast. To include or exclude components from your project, edit main configuration file <code>_config.scss</code> located in <code>global_assets/scss/</code> folder. This file is also responsible for layout specific configs - layout type, theme and direction. make sure you have correct values.</p>
+										</div>
+										<p class="text-muted font-size-sm">Screenshot - main files to edit</p>
+										<img src="assets/images/screenshots/u/scss_editing.png" alt="" class="img-thumbnail">
+									</div>
+
+									<div class="mb-4">
+										<div class="mb-3">
+											<div class="font-weight-bold text-uppercase font-size-sm">Main files</div>
+											<hr class="mt-2">
+											<p>When a new Bootstrap version comes out, it's very important to keep upgrading process as simple as possible. That is why all core Bootstrap files remain untouched, all necessary changes need to be done in separate file with the same name in <code>global_assets/scss/themes/[theme]/bootstrap_limitless/</code> folder. This allows us to override default bootstrap CSS file after compiling.</p>
+											<p>I strongly recommend not to make any changes in default Bootstrap SCSS files, but use files from <code>global_assets/scss/themes/[theme]/bootstrap_limitless/</code> folder instead. All these files will be overridden in every future update. This will simplify your upgrading process in the future. But, of course, feel free to update any of template files if necessary.</p>
+										</div>
+
+										<p class="text-muted font-size-sm">Screenshot - Bootstrap overrides</p>
+										<img src="assets/images/screenshots/u/scss_overrides.png" alt="" class="img-thumbnail">
+									</div>
+
+									<div>
+										<div class="mb-3">
+											<div class="font-weight-bold text-uppercase font-size-sm">Variables</div>
+											<hr class="mt-2">
+											<p>If you need to change a default theme, you can edit template's variables - all main colors, spacings and other styles are located there. Main template's variables are stored in 2 files: <code>_variables-core.scss</code> and <code>_variables-custom.scss</code>, located in <code>global_assets/scss/[layout]/[theme]/variables/</code> folder.</p>
+
+											<ul class="list mb-3">
+												<li><code>_variables-core.scss</code> contains default Bootstrap variables overrides only</li>
+												<li><code>_variables-custom.scss</code> contains all other variables used in the template.</li>
+											</ul>
+
+											All variables are theme-specific, which means if you need to edit styling of certain component, try to change variables first and edit SCSS code in corresponding file only if needed.</p>
+										</div>
+
+										<p class="text-muted font-size-sm">Screenshot - variables</p>
+										<img src="assets/images/screenshots/u/scss_variables.png" alt="" class="img-thumbnail">
+									</div>
+								</div>
+
+								<div>
+									<h6 class="font-weight-semibold" id="scss_compile">Compiling</h6>
+									<p>There are tons of different applications and extensions available for SCSS compiling, but not all of them support all build tools used in Limitless. Previous versions supported desktop apps like Koala or Crunch, starting from version 2.0 onwards desktop applications are <strong>not</strong> officially supported, so use them at your own risk.</p>
+									<p class="mb-3">By default, Limitless template uses 5 separate compiled CSS files - bootstrap.css, bootstrap_limitless.css, colors.css and components.css and layout.css. CSS files have same names as 5 main SCSS files located in <code>global_assets/scss/layouts/[layout]/[theme]/compile/</code> folder. In fact, these 5 css files are automatically generated from main SCSS files. So to compile CSS files, use only these 5 main scss files:</p>
+
+									<ul class="list mb-3">
+										<li><code>bootstrap.scss</code> - Bootstrap core</li>
+										<li><code>bootstrap_limitless.scss</code> - Bootstrap core overrides</li>
+										<li><code>components.scss</code> - all template components and plugins, except Bootstrap ones</li>
+										<li><code>layout.scss</code> - layout base</li>
+										<li><code>colors.scss</code> - color system (optional)</li>
+									</ul>
+
+									<p>First 4 files are required for proper styling. Do not edit any of these files if you don't need to add something new to them, instead use <code>_config.scss</code> file to include/exclude existing styles from components.css. Color system is completely optional, if you've setup your primary theme, you can exclude this file and re-compile your CSS.</p>
+
+									<p>Keep in mind that <code>/compile/</code> folder is sensitive to files - gulp file is configured to dynamically compile <strong>all</strong> files from this folder into separate CSS files.</p>
+
+									<p class="text-muted font-size-sm">Screenshot - 5 main files</p>
+									<img src="assets/images/screenshots/u/scss_main.png" alt="" class="img-thumbnail">
+								</div>
+							</div>
+						</div>
+						<!-- /SCSS overview -->
+
+
+						<!-- SCSS files -->
+						<div class="card" id="scss_files">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">SCSS files</h5>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+				                </div>
+							</div>
+
+							<div class="card-body">
+								<div class="mb-4">
+									<p>SCSS folder includes all files responsible for template styling - core, layout, components, plugins, page kits etc. All files are properly structured according to the category: <code>_bootstrap</code> - Bootstrap framework core styling; <code>layouts</code> - all layout-specific styles;<code>shared</code> - styles that are used across all layouts; <code>themes</code> - theme-specific set of files, includes <code>bootstrap-limitless</code> - Limitless overrides of Bootstrap core styling loaded on top of original ones and <code>components</code> - main template components, custom pages and plugins.</p>
+									<p class="mb-3">5 main files that import all other files are in separate folder - bootstrap.scss, colors.scss, components.scss and bootstrap_limitless.scss and layout.scss. If you need to include or exclude any of existing files, make changes in <code>_config.scss</code> file. But if you need to add a new one, feel free to edit them. Below is the table with categorized SCSS files used in the template:</p>
+								</div>
+
+								<div class="mb-4">
+									<h6 class="font-weight-semibold" id="scss_files_bs">Bootstrap core</h6>
+									<p class="mb-3">Contains 53 main files and 30 mixins. File <code>bootstrap.scss</code> exists in 2 locations - in <code>/bootstrap/</code> and in <code>.../compile/</code> folders. Editing any of those 2 files are not recommended since it's a core functionality and it might affect other components.</p>
+									
+									<div class="table-responsive">
+										<table class="table table-bordered">
+											<thead>
+												<tr>
+													<th style="width: 25%;">File name</th>
+													<th>Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<th colspan="3" class="table-active" id="files_main">Main files</th>
+												</tr>
+												<tr class="table-border-double">
+													<td><code>_alert.scss</code></td>
+													<td>Alert components</td>
+												</tr>
+												<tr>
+													<td><code>_badge.scss</code></td>
+													<td>Badges component</td>
+												</tr>
+												<tr>
+													<td><code>_breadcrumbs.scss</code></td>
+													<td>Breadcrumbs component</td>
+												</tr>
+												<tr>
+													<td><code>_button-group.scss</code></td>
+													<td>Button groups</td>
+												</tr>
+												<tr>
+													<td><code>_buttons.scss</code></td>
+													<td>Button stylings</td>
+												</tr>
+												<tr>
+													<td><code>_card.scss</code></td>
+													<td>Cards component</td>
+												</tr>
+												<tr>
+													<td><code>_carousel.scss</code></td>
+													<td>Carousel component</td>
+												</tr>
+												<tr>
+													<td><code>_close.scss</code></td>
+													<td>Close button</td>
+												</tr>
+												<tr>
+													<td><code>_code.scss</code></td>
+													<td>Inline and blocks of code</td>
+												</tr>
+												<tr>
+													<td><code>_custom-forms.scss</code></td>
+													<td>Custom CSS form components</td>
+												</tr>
+												<tr>
+													<td><code>_dropdowns.scss</code></td>
+													<td>Dropdown menus</td>
+												</tr>
+												<tr>
+													<td><code>_forms.scss</code></td>
+													<td>Basic form components styling</td>
+												</tr>
+												<tr>
+													<td><code>_functions.scss</code></td>
+													<td>Main SASS functions used in Bootstrap</td>
+												</tr>
+												<tr>
+													<td><code>_grid.scss</code></td>
+													<td>Responsive mobile-first grid</td>
+												</tr>
+												<tr>
+													<td><code>_images.scss</code></td>
+													<td>Image styling</td>
+												</tr>
+												<tr>
+													<td><code>_input-groups.scss</code></td>
+													<td>Input groups component</td>
+												</tr>
+												<tr>
+													<td><code>_jumbotron.scss</code></td>
+													<td>Jumbotron component</td>
+												</tr>
+												<tr>
+													<td><code>_list-group.scss</code></td>
+													<td>List group nav component</td>
+												</tr>
+												<tr>
+													<td><code>_media.scss</code></td>
+													<td>Media lists</td>
+												</tr>
+												<tr>
+													<td><code>_mixins.scss</code></td>
+													<td>Mixins loading file</td>
+												</tr>
+												<tr>
+													<td><code>_modals.scss</code></td>
+													<td>Modal dialogs</td>
+												</tr>
+												<tr>
+													<td><code>_nav.scss</code></td>
+													<td>Tab, pill and other navs</td>
+												</tr>
+												<tr>
+													<td><code>_navbar.scss</code></td>
+													<td>Navbar</td>
+												</tr>
+												<tr>
+													<td><code>_pagination.scss</code></td>
+													<td>Pagination component</td>
+												</tr>
+												<tr>
+													<td><code>_popover.scss</code></td>
+													<td>Popovers component</td>
+												</tr>
+												<tr>
+													<td><code>_print.scss</code></td>
+													<td>Print styles</td>
+												</tr>
+												<tr>
+													<td><code>_progress.scss</code></td>
+													<td>Progress bars component</td>
+												</tr>
+												<tr>
+													<td><code>_reboot.scss</code></td>
+													<td>Reset default CSS</td>
+												</tr>
+												<tr>
+													<td><code>_root.scss</code></td>
+													<td>Root level styles</td>
+												</tr>
+												<tr>
+													<td><code>_tables.scss</code></td>
+													<td>Tables styling</td>
+												</tr>
+												<tr>
+													<td><code>_tooltip.scss</code></td>
+													<td>Tooltip component</td>
+												</tr>
+												<tr>
+													<td><code>_transitions.scss</code></td>
+													<td>Default transitions</td>
+												</tr>
+												<tr>
+													<td><code>_type.scss</code></td>
+													<td>Typography, page header and contextual backgrounds</td>
+												</tr>
+												<tr>
+													<td><code>_utilities.scss</code></td>
+													<td>Utilities</td>
+												</tr>
+												<tr>
+													<td><code>_variables.scss</code></td>
+													<td>Main variables</td>
+												</tr>
+												<tr>
+													<td><code>bootstrap-grid.scss</code></td>
+													<td>Import files for grid</td>
+												</tr>
+												<tr>
+													<td><code>bootstrap-reboot.scss</code></td>
+													<td>Import other files for proper reboot</td>
+												</tr>
+												<tr>
+													<td><code>bootstrap.scss</code></td>
+													<td>Import all files</td>
+												</tr>
+
+												<tr>
+													<th colspan="3" class="table-active" id="files_main">Bootstrap mixins</th>
+												</tr>
+												<tr class="table-border-double">
+													<td><code>_alert.scss</code></td>
+													<td>Alerts with color options</td>
+												</tr>
+												<tr>
+													<td><code>_background-variant.scss</code></td>
+													<td>Contextual backgrounds</td>
+												</tr>
+												<tr>
+													<td><code>_badge.scss</code></td>
+													<td>Badge colors</td>
+												</tr>
+												<tr>
+													<td><code>_border-radius.scss</code></td>
+													<td>Border radius: top, bottom, left, right</td>
+												</tr>
+												<tr>
+													<td><code>_box-shadow.scss</code></td>
+													<td>Box shadow config</td>
+												</tr>
+												<tr>
+													<td><code>_breakpoints.scss</code></td>
+													<td>Breakpoints configuration</td>
+												</tr>
+												<tr>
+													<td><code>_buttons.scss</code></td>
+													<td>Buttons with color and sizing options</td>
+												</tr>
+												<tr>
+													<td><code>_caret.scss</code></td>
+													<td>Caret directions</td>
+												</tr>
+												<tr>
+													<td><code>_clearfix.scss</code></td>
+													<td>Clear and reset floating</td>
+												</tr>
+												<tr>
+													<td><code>_float.scss</code></td>
+													<td>Left and right floating, including reset</td>
+												</tr>
+												<tr>
+													<td><code>_forms.scss</code></td>
+													<td>Form control validation</td>
+												</tr>
+												<tr>
+													<td><code>_gradients.scss</code></td>
+													<td>Gradient options</td>
+												</tr>
+												<tr>
+													<td><code>_grid-framework.scss</code></td>
+													<td>Responsive grid system</td>
+												</tr>
+												<tr>
+													<td><code>_grid.scss</code></td>
+													<td>Grid columns, container and offsets</td>
+												</tr>
+												<tr>
+													<td><code>_hover.scss</code></td>
+													<td>Hover and focus mixins</td>
+												</tr>
+												<tr>
+													<td><code>_image.scss</code></td>
+													<td>Responsive and retina images</td>
+												</tr>
+												<tr>
+													<td><code>_list-group.scss</code></td>
+													<td>List group color variants</td>
+												</tr>
+												<tr>
+													<td><code>_lists.scss</code></td>
+													<td>List styles</td>
+												</tr>
+												<tr>
+													<td><code>_nav-divider.scss</code></td>
+													<td>Navigation divider</td>
+												</tr>
+												<tr>
+													<td><code>_pagination.scss</code></td>
+													<td>Pagination sizes</td>
+												</tr>
+												<tr>
+													<td><code>_reset-text.scss</code></td>
+													<td>Text reset</td>
+												</tr>
+												<tr>
+													<td><code>_resize.scss</code></td>
+													<td>Resize elements</td>
+												</tr>
+												<tr>
+													<td><code>_screen-reader.scss</code></td>
+													<td>Screen reader mixins</td>
+												</tr>
+												<tr>
+													<td><code>_size.scss</code></td>
+													<td>Sizing shortcuts</td>
+												</tr>
+												<tr>
+													<td><code>_table-row.scss</code></td>
+													<td>Table row styling variants</td>
+												</tr>
+												<tr>
+													<td><code>_text-emphasis.scss</code></td>
+													<td>Text colors</td>
+												</tr>
+												<tr>
+													<td><code>_text-hide.scss</code></td>
+													<td>Text show/hide</td>
+												</tr>
+												<tr>
+													<td><code>_text-truncate.scss</code></td>
+													<td>Long text truncate</td>
+												</tr>
+												<tr>
+													<td><code>_transition.scss</code></td>
+													<td>Core transitions</td>
+												</tr>
+												<tr>
+													<td><code>_visibility.scss</code></td>
+													<td>Visibility mixins</td>
+												</tr>
+
+												<tr>
+													<th colspan="3" class="table-active" id="files_main">Bootstrap utilities</th>
+												</tr>
+												<tr class="table-border-double">
+													<td><code>_align.scss</code></td>
+													<td>Vertical alignment</td>
+												</tr>
+												<tr>
+													<td><code>_background.scss</code></td>
+													<td>Contextual backgrounds</td>
+												</tr>
+												<tr>
+													<td><code>_borders.scss</code></td>
+													<td>Border width, style and radius</td>
+												</tr>
+												<tr>
+													<td><code>_clearfix.scss</code></td>
+													<td>Clearing floats</td>
+												</tr>
+												<tr>
+													<td><code>_display.scss</code></td>
+													<td>Responsive display utilities</td>
+												</tr>
+												<tr>
+													<td><code>_embed.scss</code></td>
+													<td>Responsive embeds</td>
+												</tr>
+												<tr>
+													<td><code>_flex.scss</code></td>
+													<td>Flexbox utility classes</td>
+												</tr>
+												<tr>
+													<td><code>_float.scss</code></td>
+													<td>Responsive floating</td>
+												</tr>
+												<tr>
+													<td><code>_position.scss</code></td>
+													<td>Position classes</td>
+												</tr>
+												<tr>
+													<td><code>_screenreaders.scss</code></td>
+													<td>SR utility classes</td>
+												</tr>
+												<tr>
+													<td><code>_shadows.scss</code></td>
+													<td>Predefined box shadows</td>
+												</tr>
+												<tr>
+													<td><code>_sizing.scss</code></td>
+													<td>Width and height classes</td>
+												</tr>
+												<tr>
+													<td><code>_spacing.scss</code></td>
+													<td>Responsive spacing classes</td>
+												</tr>
+												<tr>
+													<td><code>_text.scss</code></td>
+													<td>Text style classes</td>
+												</tr>
+												<tr>
+													<td><code>_visibility.scss</code></td>
+													<td>Visible/invisible classes</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<div class="mb-4">
+									<h6 class="font-weight-semibold" id="scss_files_overrides">Template overrides</h6>
+									<p class="mb-3">Contains 26 modified <code>.scss</code> files from <code>global_assets/scss/_bootstrap/</code> folder. Most of the files include extended components functionality, options and styles. If you want to make any changes in these files, feel free to do so. If you don't use any of these components, exclude them in <code>_config.scss</code> file.</p>
+
+									<div class="table-responsive">
+										<table class="table table-bordered">
+											<thead>
+												<tr>
+													<th style="width: 25%;">File name</th>
+													<th>Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<th colspan="3" class="table-active" id="files_main">Main files</th>
+												</tr>
+												<tr class="table-border-double">
+													<td><code>_alert.scss</code></td>
+													<td>Alert components</td>
+												</tr>
+												<tr>
+													<td><code>_badge.scss</code></td>
+													<td>Badges component</td>
+												</tr>
+												<tr>
+													<td><code>_breadcrumbs.scss</code></td>
+													<td>Breadcrumbs component</td>
+												</tr>
+												<tr>
+													<td><code>_button-group.scss</code></td>
+													<td>Button groups</td>
+												</tr>
+												<tr>
+													<td><code>_buttons.scss</code></td>
+													<td>Button stylings</td>
+												</tr>
+												<tr>
+													<td><code>_card.scss</code></td>
+													<td>Cards component</td>
+												</tr>
+												<tr>
+													<td><code>_close.scss</code></td>
+													<td>Close button</td>
+												</tr>
+												<tr>
+													<td><code>_code.scss</code></td>
+													<td>Inline and blocks of code</td>
+												</tr>
+												<tr>
+													<td><code>_custom-forms.scss</code></td>
+													<td>Custom CSS form components</td>
+												</tr>
+												<tr>
+													<td><code>_dropdowns.scss</code></td>
+													<td>Dropdown menus</td>
+												</tr>
+												<tr>
+													<td><code>_forms.scss</code></td>
+													<td>Basic form components styling</td>
+												</tr>
+												<tr>
+													<td><code>_input-groups.scss</code></td>
+													<td>Input groups component</td>
+												</tr>
+												<tr>
+													<td><code>_list-group.scss</code></td>
+													<td>List group nav component</td>
+												</tr>
+												<tr>
+													<td><code>_media.scss</code></td>
+													<td>Media lists</td>
+												</tr>
+												<tr>
+													<td><code>_mixins.scss</code></td>
+													<td>Mixins loading file</td>
+												</tr>
+												<tr>
+													<td><code>_modals.scss</code></td>
+													<td>Modal dialogs</td>
+												</tr>
+												<tr>
+													<td><code>_nav.scss</code></td>
+													<td>Tab, pill and other navs</td>
+												</tr>
+												<tr>
+													<td><code>_navbar.scss</code></td>
+													<td>Navbar</td>
+												</tr>
+												<tr>
+													<td><code>_pagination.scss</code></td>
+													<td>Pagination component</td>
+												</tr>
+												<tr>
+													<td><code>_popover.scss</code></td>
+													<td>Popovers component</td>
+												</tr>
+												<tr>
+													<td><code>_progress.scss</code></td>
+													<td>Progress bars component</td>
+												</tr>
+												<tr>
+													<td><code>_reboot.scss</code></td>
+													<td>Reset default CSS</td>
+												</tr>
+												<tr>
+													<td><code>_tables.scss</code></td>
+													<td>Tables styling</td>
+												</tr>
+												<tr>
+													<td><code>_tooltip.scss</code></td>
+													<td>Tooltip component</td>
+												</tr>
+												<tr>
+													<td><code>_type.scss</code></td>
+													<td>Typography, page header and contextual backgrounds</td>
+												</tr>
+												<tr>
+													<td><code>_utilities.scss</code></td>
+													<td>Utilities</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<div>
+									<h6 class="font-weight-semibold" id="scss_files_components">Components</h6>
+									<p class="mb-3">Contains 94 <code>.scss</code> files. All these files are responsible for 3rd party libraries styling and functionality: plugins, extensions, custom page kits, charts etc. Feel free to edit any of these files. It also includes demo styles that are included by default for demonstration purposes only. I would suggest you to remove <code>_demo.scss</code> file in production.</p>
+
+									<div class="table-responsive">
+										<table class="table table-bordered">
+											<thead>
+												<tr>
+													<th style="width: 25%;">File name</th>
+													<th>Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<th colspan="3" class="table-active" id="files_main">Charts</th>
+												</tr>
+												<tr class="table-border-double">
+													<td><code>charts.scss</code></td>
+													<td>Charts base</td>
+												</tr>
+												<tr>
+													<td><code>c3.scss</code></td>
+													<td>C3.js visualization library</td>
+												</tr>
+												<tr>
+													<td><code>d3.scss</code></td>
+													<td>D3.js visualization library</td>
+												</tr>
+												<tr>
+													<td><code>sparklines.scss</code></td>
+													<td>Sparklines library</td>
+												</tr>
+
+												<tr>
+													<th colspan="3" class="table-active" id="files_main">jQuery UI</th>
+												</tr>
+												<tr class="table-border-double">
+													<td><code>interactions.scss</code></td>
+													<td>Interactions and other elements</td>
+												</tr>
+												<tr>
+													<td><code>widgets.scss</code></td>
+													<td>Widgets library</td>
+												</tr>
+
+												<tr>
+													<th colspan="3" class="table-active" id="files_main">Maps</th>
+												</tr>
+												<tr class="table-border-double">
+													<td><code>google-maps.scss</code></td>
+													<td>Google maps</td>
+												</tr>
+												<tr>
+													<td><code>jvectormap.scss</code></td>
+													<td>Vector maps</td>
+												</tr>
+
+												<tr>
+													<th colspan="3" class="table-active" id="files_main">Pace loader</th>
+												</tr>
+												<tr class="table-border-double">
+													<td><code>theme-default.scss</code></td>
+													<td>Default thin line</td>
+												</tr>
+												<tr>
+													<td><code>pace-demo.scss</code></td>
+													<td>Pace demonstration</td>
+												</tr>
+												<tr>
+													<td><code>theme-bar-lg.scss</code></td>
+													<td>Large progress bar theme</td>
+												</tr>
+												<tr>
+													<td><code>theme-bar-sm.scss</code></td>
+													<td>Small progress bar theme</td>
+												</tr>
+												<tr>
+													<td><code>theme-bar.scss</code></td>
+													<td>Default progress bar theme</td>
+												</tr>
+												<tr>
+													<td><code>theme-corners.scss</code></td>
+													<td>Corners theme</td>
+												</tr>
+												<tr>
+													<td><code>theme-perspective.scss</code></td>
+													<td>Perspective theme</td>
+												</tr>
+												<tr>
+													<td><code>theme-radar.scss</code></td>
+													<td>Radar theme</td>
+												</tr>
+												<tr>
+													<td><code>theme-squares.scss</code></td>
+													<td>Rotating squares theme</td>
+												</tr>
+												<tr>
+													<td><code>theme-tail-circle.scss</code></td>
+													<td>Tail and background circle theme</td>
+												</tr>
+												<tr>
+													<td><code>theme-tail.scss</code></td>
+													<td>Tail theme</td>
+												</tr>
+												<tr>
+													<td><code>theme-xbox-lg.scss</code></td>
+													<td>Large Xbox theme</td>
+												</tr>
+												<tr>
+													<td><code>theme-xbox-sm.scss</code></td>
+													<td>Small Xbox theme</td>
+												</tr>
+												<tr>
+													<td><code>theme-xbox.scss</code></td>
+													<td>Default Xbox theme</td>
+												</tr>
+
+												<tr>
+													<th colspan="3" class="table-active" id="files_main">Page kits</th>
+												</tr>
+												<tr class="table-border-double">
+													<td><code>chats.scss</code></td>
+													<td>Chat layouts and options</td>
+												</tr>
+												<tr>
+													<td><code>blog.scss</code></td>
+													<td>Blog pages</td>
+												</tr>
+												<tr>
+													<td><code>ecommerce.scss</code></td>
+													<td>Set of ecommerce pages</td>
+												</tr>
+												<tr>
+													<td><code>error.scss</code></td>
+													<td>Error pages</td>
+												</tr>
+												<tr>
+													<td><code>inbox.scss</code></td>
+													<td>Mail system templates</td>
+												</tr>
+												<tr>
+													<td><code>login.scss</code></td>
+													<td>Login and registration pages</td>
+												</tr>
+												<tr>
+													<td><code>profile.scss</code></td>
+													<td>User profiles</td>
+												</tr>
+												<tr>
+													<td><code>task-manager.scss</code></td>
+													<td>Task manager grid and detailed view</td>
+												</tr>
+												<tr>
+													<td><code>timelines.scss</code></td>
+													<td>Timeline directions and styles</td>
+												</tr>
+
+												<tr>
+													<th colspan="3" class="table-active" id="files_main">Plugins</th>
+												</tr>
+												<tr class="table-border-double">
+													<td><code>_bootstrap-switch.scss</code></td>
+													<td>Bootstrap toggle switches</td>
+												</tr>
+												<tr>
+													<td><code>_switchery.scss</code></td>
+													<td>Switchery toggles</td>
+												</tr>
+												<tr>
+													<td><code>_uniform.scss</code></td>
+													<td>Custom checkboxes, radios and file input styling</td>
+												</tr>
+												<tr class="table-border-solid">
+													<td><code>_ace.scss</code></td>
+													<td>Ace code editor</td>
+												</tr>
+												<tr>
+													<td><code>_summernote.scss</code></td>
+													<td>Summernote text editor</td>
+												</tr>
+												<tr>
+													<td><code>_trumbowyg.scss</code></td>
+													<td>Trumbowyg text editor</td>
+												</tr>
+												<tr class="table-border-solid">
+													<td><code>_typeahead.scss</code></td>
+													<td>Typeahead extension</td>
+												</tr>
+												<tr>
+													<td><code>_alpaca.scss</code></td>
+													<td>JSON forms</td>
+												</tr>
+												<tr>
+													<td><code>_validation.scss</code></td>
+													<td>Form validation</td>
+												</tr>
+												<tr>
+													<td><code>_passy.scss</code></td>
+													<td>Password checker and generator</td>
+												</tr>
+												<tr>
+													<td><code>_floating-labels.scss</code></td>
+													<td>Floating labels component</td>
+												</tr>
+												<tr>
+													<td><code>_dual-listbox.scss</code></td>
+													<td>Dual multiple select boxes</td>
+												</tr>
+												<tr>
+													<td><code>_touchspin.scss</code></td>
+													<td>Touchspin spinners for Bootstrap</td>
+												</tr>
+												<tr>
+													<td><code>_wizard.scss</code></td>
+													<td>Form wizard</td>
+												</tr>
+
+												<tr class="table-border-solid">
+													<td><code>_select2.scss</code></td>
+													<td>Single and multiple Select2 selects</td>
+												</tr>
+												<tr>
+													<td><code>_multiselect.scss</code></td>
+													<td>Bootstrap multiselect</td>
+												</tr>
+												<tr class="table-border-solid">
+													<td><code>_tokenfield.scss</code></td>
+													<td>Tokenfield for Bootstrap</td>
+												</tr>
+												<tr>
+													<td><code>_tags-input.scss</code></td>
+													<td>Tags input plugin</td>
+												</tr>
+												<tr class="table-border-solid">
+													<td><code>_fancybox.scss</code></td>
+													<td>Lightbox plugin</td>
+												</tr>
+												<tr>
+													<td><code>_image-cropper.scss</code></td>
+													<td>Image cropper extension</td>
+												</tr>
+												<tr>
+													<td><code>_fab.scss</code></td>
+													<td>Floating action buttons</td>
+												</tr>
+												<tr>
+													<td><code>_progress-buttons.scss</code></td>
+													<td>Ladda - buttons with spinner and progress bar</td>
+												</tr>
+												<tr>
+													<td><code>_dragula.scss</code></td>
+													<td>Drang and drop library</td>
+												</tr>
+												<tr>
+													<td><code>_perfect-scrollbar.scss</code></td>
+													<td>Custom scrollbar</td>
+												</tr>
+												<tr>
+													<td><code>_ripple.scss</code></td>
+													<td>Wave click effect for material layout</td>
+												</tr>
+												<tr>
+													<td><code>_slinky.scss</code></td>
+													<td>Multilevel horizontal mega menu navigation</td>
+												</tr>
+												<tr>
+													<td><code>_sticky.scss</code></td>
+													<td>Sticky kit</td>
+												</tr>
+												<tr>
+													<td><code>_fullcalendar.scss</code></td>
+													<td>Fullcalendar - event calendar extension</td>
+												</tr>
+												<tr>
+													<td><code>_fancytree.scss</code></td>
+													<td>Fancytree - dynamic multi level tree view</td>
+												</tr>
+												<tr>
+													<td><code>_prism.scss</code></td>
+													<td>Prism - syntax highlighter</td>
+												</tr>
+												<tr>
+													<td><code>_headroom.scss</code></td>
+													<td>Headroom - hideable navbars</td>
+												</tr>
+												<tr class="table-border-solid">
+													<td><code>_sweet-alerts.scss</code></td>
+													<td>Nice looking alerts and dialogs</td>
+												</tr>
+												<tr>
+													<td><code>_jgrowl.scss</code></td>
+													<td>jGrowl - growl-like notifications</td>
+												</tr>
+												<tr>
+													<td><code>_noty.scss</code></td>
+													<td>Noty - yet another notification library</td>
+												</tr>
+												<tr>
+													<td><code>_pnotify.scss</code></td>
+													<td>PNotify - powerful notification library</td>
+												</tr>
+												<tr class="table-border-solid">
+													<td><code>_noui-slider.scss</code></td>
+													<td>NoUI slider library</td>
+												</tr>
+												<tr>
+													<td><code>_ion-range-slider.scss</code></td>
+													<td>ION range slider library</td>
+												</tr>
+												<tr>
+													<td><code>_slider-pips.scss</code></td>
+													<td>Pips and tooltip for jQuery UI sliders</td>
+												</tr>
+												<tr class="table-border-solid">
+													<td><code>_anytime.scss</code></td>
+													<td>Anytime - date and time picker</td>
+												</tr>
+												<tr>
+													<td><code>_daterange.scss</code></td>
+													<td>Date range picker</td>
+												</tr>
+												<tr>
+													<td><code>_spectrum.scss</code></td>
+													<td>Spectrum - color picker</td>
+												</tr>
+												<tr>
+													<td><code>_pickadate/base.scss</code></td>
+													<td>Pick-a-date - basic styling</td>
+												</tr>
+												<tr>
+													<td><code>_pickadate/date.scss</code></td>
+													<td>Pick-a-date - date picker</td>
+												</tr>
+												<tr>
+													<td><code>_pickadate/time.scss</code></td>
+													<td>Pick-a-date - time picker</td>
+												</tr>
+												<tr class="table-border-solid">
+													<td><code>_dropzone.scss</code></td>
+													<td>Dropzone - HTML5 single and multiple file uploader</td>
+												</tr>
+												<tr>
+													<td><code>_file-input.scss</code></td>
+													<td>Bootstrap file input - single and multiple file uploader</td>
+												</tr>
+												<tr>
+													<td><code>_plupload.scss</code></td>
+													<td>Plupload - file uploader with multiple runtimes</td>
+												</tr>
+
+												<tr class="table-border-solid">
+													<td><code>_datatable-autofill.scss</code></td>
+													<td>Datatable extension - autofill</td>
+												</tr>
+												<tr>
+													<td><code>_datatable-buttons.scss</code></td>
+													<td>Datatable extension - buttons</td>
+												</tr>
+												<tr>
+													<td><code>_datatable-columns-reorder.scss</code></td>
+													<td>Datatable extension - columns reorder</td>
+												</tr>
+												<tr>
+													<td><code>_datatable-fixed-columns.scss</code></td>
+													<td>Datatable extension - fixed columns</td>
+												</tr>
+												<tr>
+													<td><code>_datatable-fixed-header.scss</code></td>
+													<td>Datatable extension - fixed header</td>
+												</tr>
+												<tr>
+													<td><code>_datatable-keytable.scss</code></td>
+													<td>Datatable extension - keytable</td>
+												</tr>
+												<tr>
+													<td><code>_datatable-responsive.scss</code></td>
+													<td>Datatable extension - responsive table</td>
+												</tr>
+												<tr>
+													<td><code>_datatable-rows-reorder.scss</code></td>
+													<td>Datatable extension - rows reorder</td>
+												</tr>
+												<tr>
+													<td><code>_datatable-scroller.scss</code></td>
+													<td>Datatable extension - scroller</td>
+												</tr>
+												<tr>
+													<td><code>_datatable-select.scss</code></td>
+													<td>Datatable extension - select</td>
+												</tr>
+												<tr>
+													<td><code>_datatables.scss</code></td>
+													<td>Datatables base</td>
+												</tr>
+												<tr>
+													<td><code>_footable.scss</code></td>
+													<td>Footable - responsive static tables</td>
+												</tr>
+												<tr>
+													<td><code>_handsontable.scss</code></td>
+													<td>handsontable - Excel-like grid library</td>
+												</tr>
+
+												<tr class="table-border-solid">
+													<td><code>_header-elements.scss</code></td>
+													<td>Page and card header components</td>
+												</tr>
+												<tr>
+													<td><code>_demo.scss</code></td>
+													<td>Styles used in live preview</td>
+												</tr>
+												<tr>
+													<td><code>_fouc.scss</code></td>
+													<td>Flashing of unstyled content fix</td>
+												</tr>
+												<tr>
+													<td><code>_helpers.scss</code></td>
+													<td>Helper classes</td>
+												</tr>
+												<tr>
+													<td><code>_helpers.scss</code></td>
+													<td>Helper classes</td>
+												</tr>
+
+												<tr>
+													<th colspan="3" class="table-active" id="files_main">Core</th>
+												</tr>
+												<tr class="table-border-double">
+													<td><code>_variables-core.scss</code></td>
+													<td>Bootstrap variables overrides</td>
+												</tr>
+												<tr>
+													<td><code>_variables-custom.scss</code></td>
+													<td>Additional variables</td>
+												</tr>
+												<tr class="table-border-solid">
+													<td><code>_ll_functions.scss</code></td>
+													<td>Custom template functions</td>
+												</tr>
+												<tr>
+													<td><code>_ll_mixins.scss</code></td>
+													<td>Custom template mixins</td>
+												</tr>
+												<tr class="table-border-solid">
+													<td><code>_palette.scss</code></td>
+													<td>Color palette</td>
+												</tr>
+												<tr>
+													<td><code>_colors.scss</code></td>
+													<td>Color classes</td>
+												</tr>
+												<tr class="table-border-solid">
+													<td><code>_content.scss</code></td>
+													<td>Template content's base</td>
+												</tr>
+												<tr>
+													<td><code>_header.scss</code></td>
+													<td>Page header</td>
+												</tr>
+												<tr>
+													<td><code>_boxed.scss</code></td>
+													<td>Boxed layout</td>
+												</tr>
+												<tr>
+													<td><code>_sidebar.scss</code></td>
+													<td>Sidebars with navigation</td>
+												</tr>
+
+												<tr>
+													<th colspan="3" class="table-active" id="files_main">Main files for compile</th>
+												</tr>
+												<tr class="table-border-double">
+													<td><code>_bootstrap.scss</code></td>
+													<td>Main bootstrap SCSS file, moved from <code>_/_bootstrap/</code> folder</td>
+												</tr>
+												<tr>
+													<td><code>_bootstrap-limitless.scss</code></td>
+													<td>Bootstrap overrides</td>
+												</tr>
+												<tr>
+													<td><code>_layout.scss</code></td>
+													<td>Layout base</td>
+												</tr>
+												<tr>
+													<td><code>_colors.scss</code></td>
+													<td>Color system</td>
+												</tr>
+												<tr>
+													<td><code>_components.scss</code></td>
+													<td>Template components</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /SCSS files -->
+
+
+						<!-- CSS files -->
+						<div class="card" id="css">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">CSS files</h5>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+				                </div>
+							</div>
+
+							<div class="card-body">
+								<div class="mb-4">
+									<div class="mb-3">
+										<h6 class="font-weight-semibold" id="css_overview">Files overview</h6>
+										<p class="mb-3">Limitless template includes 4 mandatory and 1 optional compiled CSS files, which are included in all pages. All files are properly commented so that you can quickly navigate through sections. All comments that can be found in SCSS files are removed during compilation to reduce the size of CSS files. Limitless layouts include both compressed and uncompressed CSS files.</p>
+
+										<ul class="list">
+											<li><code>bootstrap.css</code>, <code>*.min.css</code> - Bootstrap core, always use minified</li>
+											<li><code>bootstrap_limitless.css</code>, <code>*.min.css</code> - Bootstrap core overrides</li>
+											<li><code>layout.css</code>, <code>*.min.css</code> - layout base</li>
+											<li><code>components.css</code>, <code>*.min.css</code> - all template components and plugins</li>
+											<li><code>colors.css</code>, <code>*.min.css</code> - color classes, always use minified</li>
+										</ul>
+									</div>
+
+									<div class="mb-3">
+										<p class="mb-3"><strong>Note:</strong> both minified and unminified CSS files are inside same folder, because paths to images and font files are similar in both versions. If you want to place source or minified files into different folders, don't forget to change those paths. Also feel free to remove unnecessary CSS files if you don't use them. I strongly suggest not to make changes directly in CSS, but do it in SCSS files instead to avoid problems with upgrading to newer versions. If you need any help with compiling CSS, raise a support request.</p>
+									</div>
+
+									<p class="text-muted font-size-sm">Screenshot</p>
+									<img src="assets/images/screenshots/u/css_structure.png" alt="" class="img-thumbnail">
+								</div>
+
+								<div>
+									<div class="mb-4">
+										<h6 class="font-weight-semibold" id="css_edit">CSS editing</h6>
+										<p>Since main styling source is SCSS files kit, I strongly recommend to use minified versions of all CSS files included to the package and not to change CSS files directly. Edit SCSS files instead, this will help you to keep all your changes in future updates, because changes are getting added to SCSS files first, then SCSS files need to be re-compiled and detailed instructions about what needs to be changed and where it should be done in SCSS files only are provided. CSS files are generated dynamically from SCSS files.</p>
+									</div>
+
+									<div>
+										<div class="mb-3">
+										<h6 class="font-weight-semibold" id="css_icons">Icon fonts</h6>
+											<p>Although editing of main files is not recommended, icon font files can be edited. I didn't convert them to SCSS files as there is no need actually, because there are quite few CSS properties for them - general font reset and icon codes. If you need to add any changes to the icon <code>styles.css</code> files, feel free to do so. Icon sets are rarely get an update, but if you need to edit Icomoon set, raise a request for selection.json file.</p>
+										</div>
+
+										<p class="text-muted font-size-sm">Screenshot</p>
+										<img src="assets/images/screenshots/u/css_icons.png" alt="" class="img-thumbnail">
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /CSS files -->
+
+					</div>
+					<!-- /left content -->
+
+
+					<!-- Right sidebar component -->
+					<div class="sidebar-sticky w-100 w-md-auto order-1 order-md-2">
+						<div class="sidebar sidebar-light sidebar-component sidebar-component-right sidebar-expand-md mb-3">
+							<div class="sidebar-content">
+								<div class="card">
+									<div class="card-header bg-transparent header-elements-inline">
+										<span class="text-uppercase font-size-sm font-weight-semibold">Page navigation</span>
+										<div class="header-elements">
+											<div class="list-icons">
+						                		<a class="list-icons-item" data-action="collapse"></a>
+					                		</div>
+				                		</div>
+									</div>
+
+									<div class="card-body">
+										<a href="http://themeforest.net/user/kopyov" class="btn bg-blue btn-block" target="_blank"><i class="icon-reading mr-2"></i> Contact author</a>
+									</div>
+
+									<ul class="nav nav-sidebar nav-scrollspy" data-nav-type="accordion">
+										<li class="nav-item-header pt-0"><div class="text-uppercase font-size-xs line-height-xs">Navigation</div> <i class="icon-menu"></i></li>
+										<li class="nav-item nav-item-submenu">
+											<a href="#scss" class="nav-link">SCSS overview</a>
+											<ul class="nav nav-group-sub d-block">
+												<li class="nav-item"><a href="#scss_overview" class="nav-link">Overview</a></li>
+												<li class="nav-item"><a href="#scss_edit" class="nav-link">Edit SCSS files</a></li>
+												<li class="nav-item"><a href="#scss_compile" class="nav-link">Compile SCSS files</a></li>
+											</ul>
+										</li>
+										<li class="nav-item nav-item-submenu">
+											<a href="#scss_files" class="nav-link">SCSS files</a>
+											<ul class="nav nav-group-sub d-block">
+												<li class="nav-item"><a href="#scss_files_bs" class="nav-link">Bootstrap core</a></li>
+												<li class="nav-item"><a href="#scss_files_overrides" class="nav-link">Bootstrap core overrides</a></li>
+												<li class="nav-item"><a href="#scss_files_components" class="nav-link">Components</a></li>
+											</ul>
+										</li>
+										<li class="nav-item nav-item-submenu">
+											<a href="#css" class="nav-link">CSS files</a>
+											<ul class="nav nav-group-sub d-block">
+												<li class="nav-item"><a href="#css_overview" class="nav-link">Overview</a></li>
+												<li class="nav-item"><a href="#css_edit" class="nav-link">Edit CSS files</a></li>
+												<li class="nav-item"><a href="#css_icons" class="nav-link">Icons</a></li>
+											</ul>
+										</li>
+										<li class="nav-item-divider"></li>
+										<li class="nav-item"><a href="#" class="nav-link">Go to top <i class="icon-circle-up2 mr-0 ml-auto"></i></a></li>
+									</ul>
+								</div>
+				            </div>
+						</div>
+					</div>
+					<!-- /right sidebar component -->
+
+				</div>
+				<!-- /inner container -->
+
+			</div>
+			<!-- /content area -->
+
+
+			<!-- Footer -->
+			<div class="navbar navbar-expand-lg navbar-light">
+				<div class="text-center d-lg-none w-100">
+					<button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse" data-target="#navbar-footer">
+						<i class="icon-unfold mr-2"></i>
+						Footer
+					</button>
+				</div>
+
+				<div class="navbar-collapse collapse" id="navbar-footer">
+					<span class="navbar-text">
+						&copy; 2015 - 2018. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
+					</span>
+
+					<ul class="navbar-nav ml-lg-auto">
+						<li class="nav-item"><a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov" class="navbar-nav-link font-weight-semibold"><span class="text-pink-400"><i class="icon-cart2 mr-2"></i> Purchase</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /footer -->
+
+		</div>
+		<!-- /main content -->
+
+	</div>
+	<!-- /page content -->
+
+</body>
+</html>

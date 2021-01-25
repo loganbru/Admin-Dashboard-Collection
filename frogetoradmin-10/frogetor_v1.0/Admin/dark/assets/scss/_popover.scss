@@ -1,0 +1,13 @@
+//
+// Popover
+// 
+.popover-body{
+  background-color: $light;
+  color: $gray-500;
+}
+.popover-header{
+  margin-top: 0;
+  background-color: lighten($light, 8%);
+  color: $gray-600;
+  border-bottom: 1px solid lighten($bg-card, 8%);
+}

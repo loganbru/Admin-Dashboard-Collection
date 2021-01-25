@@ -1,0 +1,74 @@
+//
+// Header
+//
+
+
+
+
+// Font settings
+$kt-header-item-icon-color: rgba(kt-brand-color(), 0.7);
+$kt-header-item-hover-bg: rgba(#f0f3ff, 0.7);
+
+// Desktop mode
+@include kt-desktop {
+	// Header
+	.kt-header {
+		display: flex;
+		justify-content: space-between;
+		height: kt-get($kt-header-config, base, desktop, default, height);
+		transition: kt-get($kt-aside-config, base, minimize, transition);
+		background-color: kt-get($kt-header-config, base, self, bg-color);
+
+		// Static subheader 
+		.kt-header--fixed:not(.kt-subheader--fixed) & {
+			border-bottom: 0;
+			box-shadow: kt-get($kt-header-config, base, self, shadow);
+		}
+
+		// Fixed
+		.kt-header--fixed & {
+			position: fixed;
+			top: 0;
+			right: 0;
+			left: 0;
+			z-index: kt-get($kt-header-config, base, desktop, fixed, zindex);
+		}
+
+		// Aside enabled
+		.kt-aside--enabled & {
+			&.kt-header--fixed {
+				left: kt-get($kt-aside-config, base, default, width);
+			}
+		}
+
+		// Fixed and minimized header
+		.kt-header--fixed.kt-header--minimize & {
+			height: kt-get($kt-header-config, base, desktop, fixed, minimizeHeight);
+			transition: height 0.3s ease;
+		}
+
+		// Minimize Aside
+		.kt-header--fixed.kt-aside--minimize & {
+			left: kt-get($kt-aside-config, base, minimize, width);
+			transition: kt-get($kt-aside-config, base, minimize, transition);
+		}
+	}
+}
+
+// Mobile mode
+@include kt-tablet-and-mobile {
+	// Topbar
+	.kt-header__topbar {
+		background-color: #ffffff;
+		box-shadow: none;
+	}
+
+	// Mobile topbar view
+	.kt-header__topbar--mobile-on {
+		.kt-header__topbar {
+			box-shadow: 0px 0px 40px 0px rgba(82,63,105,0.1);
+			border-top: 1px solid kt-base-color(grey, 2);
+		}
+	}
+}
+

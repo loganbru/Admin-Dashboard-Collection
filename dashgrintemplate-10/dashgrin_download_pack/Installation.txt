@@ -1,0 +1,44 @@
+Dashgrin is a WebApp template for admin dashboards and control panels. It is a responsive HTML template that is based on the CSS framework Bootstrap 4.X.1 It utilizes all of the Bootstrap components in its design and re-styles many commonly used plugins to create a consistent design that can be used as a user interface for backend applications. Dashgrin Admin is based on a modular design, which allows it to be easily customized and built upon. This documentation will guide you through installing the template and exploring the various components that are bundled with the template.
+
+File Structure
+  HTML
+  ├── 
+  │   └── dist
+  │     └── css
+  │     └── fonts
+  │     └── img
+  │     └── js
+  │   └── src
+  │     └──scss
+  │    	  └── colors.scss
+  │    	  └── mixins.scss
+  │    	  └── navbar.scss
+  │    	  └── style.scss
+  │   └── vendors
+  │       └── All Required plugins files
+  │   └── All Html Pages
+  │   └── .jshintrc
+  │   └── Gruntfile.js
+  │   └── package.json
+  │   └── package-lock.json
+  └── 	
+  
+Installation
+
+To get started, you need to follow some specific steps ( Use of these tools is completely optional.)
+
+     Node.js and NPM. You can download Node.js from here https://nodejs.org. Npm comes bundled with Node.js.
+
+     At last install grunt using below command line
+
+npm install -g grunt-cli
+npm install grunt --save-dev
+
+After installing all the required frameworks, components and dependencies, go to the root folder of and   run the following commands from the command line:
+
+npm install
+grunt dist
+grunt
+
+If everything was installed correctly, you should see the jQuery version of Dashgrin running in http://localhost:9000/
+Above all procedures are optional you can directly use the compiled Demo files which we provided you.

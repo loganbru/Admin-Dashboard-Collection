@@ -1,0 +1,15 @@
+<wpml-config>
+    <custom-types>
+        <custom-type translate="1">portfolio</custom-type>
+    </custom-types>
+    <taxonomies>
+        <taxonomy translate="1">portfolio_entries</taxonomy>
+    </taxonomies>
+    <admin-texts>
+        <key name="theme_mods_nrgnetwork">
+			<key name="portfolio_slug" />
+            <key name="portfolio_label" />
+            <key name="subfooter_content" />
+        </key>
+    </admin-texts>
+</wpml-config>

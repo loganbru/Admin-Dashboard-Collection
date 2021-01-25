@@ -1,0 +1,21 @@
+.widget-5{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    .widget-5-chart{
+        height: auto;
+        width: auto;
+        bottom: 20px;
+        position: absolute;
+        right: 20px;
+        left: 20px;
+        top: 40px;
+    }
+    .nvd3 .nv-multibar .nv-groups rect, .nvd3 .nv-multibarHorizontal .nv-groups rect, .nvd3 .nv-discretebar .nv-groups rect{
+        stroke-opacity:1;
+        fill-opacity: 1;
+    }
+}

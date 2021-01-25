@@ -1,0 +1,52 @@
+//
+// Content
+//
+
+
+
+
+@include kt-desktop {
+	// Content
+	.kt-content {
+		padding: kt-get($kt-page-padding, desktop) 0;
+
+		// Content fit
+		&.kt-content--fit-top {
+			padding-top: 0;
+		}
+
+		&.kt-content--fit-bottom {
+			padding-bottom: 0;
+		}
+
+		// Subheader enabled
+		.kt-subheader--enabled.kt-subheader--transparent:not(.kt-subheader--fixed) & {
+			padding-top: 0;
+		}
+
+		// Fixed footer
+		.kt-footer--fixed & {
+			padding-bottom: kt-get($kt-footer-config, self, fixed, height);
+		}
+	}
+}
+
+@include kt-tablet-and-mobile {
+	.kt-content {
+		padding: kt-get($kt-page-padding, mobile)  0;
+
+		// Content fit
+		&.kt-content--fit-top {
+			padding-top: 0;
+		}
+
+		&.kt-content--fit-bottom {
+			padding-bottom: 0;
+		}
+
+		// Subheader enabled
+		.kt-subheader--enabled.kt-subheader--transparent & {
+			padding-top: 0;
+		}
+	}
+}

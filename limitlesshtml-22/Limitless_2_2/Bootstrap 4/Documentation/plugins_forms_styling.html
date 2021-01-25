@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/layout.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script src="assets/js/main/jquery.min.js"></script>
+	<script src="assets/js/main/bootstrap.bundle.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script src="assets/js/plugins/prism.min.js"></script>
+	<script src="assets/js/plugins/sticky.min.js"></script>
+	
+	<script src="assets/js/main/app.js"></script>
+	<script src="assets/js/pages/components_scrollspy.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body data-spy="scroll" data-target=".sidebar-component-right">
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-expand-md navbar-light">
+		<div class="navbar-header navbar-dark d-none d-md-flex align-items-md-center">
+			<div class="navbar-brand navbar-brand-md">
+				<a href="index.html" class="d-inline-block">
+					<img src="assets/images/logo_light.png" alt="">
+				</a>
+			</div>
+	
+			<div class="navbar-brand navbar-brand-xs">
+				<a href="index.html" class="d-inline-block">
+					<img src="assets/images/logo_icon_light.png" alt="">
+				</a>
+			</div>
+		</div>
+
+		<div class="d-flex flex-1 d-md-none">
+			<div class="navbar-brand mr-auto">
+				<a href="index.html" class="d-inline-block">
+					<img src="assets/images/logo_dark.png" alt="">
+				</a>
+			</div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile">
+				<i class="icon-tree5"></i>
+			</button>
+			<button class="navbar-toggler sidebar-mobile-main-toggle" type="button">
+				<i class="icon-paragraph-justify3"></i>
+			</button>
+			<button class="navbar-toggler sidebar-mobile-component-toggle" type="button">
+				<i class="icon-unfold"></i>
+			</button>
+		</div>
+
+		<div class="collapse navbar-collapse" id="navbar-mobile">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a href="#" class="navbar-nav-link sidebar-control sidebar-main-hide d-none d-md-block">
+						<i class="icon-paragraph-justify3"></i>
+					</a>
+				</li>
+
+				<li class="nav-item">
+					<a href="#" class="navbar-nav-link sidebar-control sidebar-component-toggle d-none d-md-block">
+						<i class="icon-transmission"></i>
+					</a>
+				</li>
+			</ul>
+
+			<ul class="navbar-nav ml-md-auto">
+				<li class="nav-item dropdown">
+					<a href="other_changelog.html" class="navbar-nav-link">
+						<i class="icon-history mr-2"></i>
+						Changelog
+						<span class="badge bg-warning-400 badge-pill position-static ml-md-2">2.2</span>
+					</a>					
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page content -->
+	<div class="page-content">
+
+		<!-- Main sidebar -->
+		<div class="sidebar sidebar-dark sidebar-main sidebar-expand-md">
+
+			<!-- Sidebar mobile toggler -->
+			<div class="sidebar-mobile-toggler text-center">
+				<a href="#" class="sidebar-mobile-main-toggle">
+					<i class="icon-arrow-left8"></i>
+				</a>
+				Navigation
+				<a href="#" class="sidebar-mobile-expand">
+					<i class="icon-screen-full"></i>
+					<i class="icon-screen-normal"></i>
+				</a>
+			</div>
+			<!-- /sidebar mobile toggler -->
+
+
+			<!-- Sidebar content -->
+			<div class="sidebar-content">
+
+        		<!-- Support -->
+				<div class="card card-body">
+					<a href="http://kopyov.ticksy.com" class="btn bg-success-400 btn-block" target="_blank"><i class="icon-lifebuoy mr-2"></i> Limitless support</a>
+				</div>
+				<!-- /support -->
+
+
+				<!-- Main navigation -->
+				<div class="card card-sidebar-mobile">
+					<ul class="nav nav-sidebar" data-nav-type="accordion">
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Main</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="index.html" class="nav-link">Introduction</a></li>
+						<li class="nav-item"><a href="main_getting_started.html" class="nav-link">Getting started</a></li>
+						<li class="nav-item"><a href="main_starter_kit.html" class="nav-link">Starter kit</a></li>
+						<li class="nav-item"><a href="main_rtl.html" class="nav-link">RTL layout</a></li>
+
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Basic functionality</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="base_scss_css.html" class="nav-link">SCSS and CSS</a></li>
+						<li class="nav-item"><a href="base_scss_compile.html" class="nav-link">Compiling SCSS</a></li>
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+							<a href="#" class="nav-link">Plugins</a>
+							<ul class="nav nav-group-sub" data-submenu-title="Plugins">
+								<li class="nav-item"><a href="plugins_forms.html" class="nav-link">Forms</a></li>
+								<li class="nav-item"><a href="plugins_forms_styling.html" class="nav-link active">Form styling</a></li>
+								<li class="nav-item"><a href="plugins_editors.html" class="nav-link">Editors</a></li>
+								<li class="nav-item"><a href="plugins_uploaders.html" class="nav-link">Uploaders</a></li>
+								<li class="nav-item"><a href="plugins_extensions.html" class="nav-link">Extensions</a></li>
+								<li class="nav-item"><a href="plugins_notifications.html" class="nav-link">Notifications</a></li>
+								<li class="nav-item"><a href="plugins_pickers.html" class="nav-link">Pickers</a></li>
+								<li class="nav-item"><a href="plugins_tables.html" class="nav-link">Tables</a></li>
+								<li class="nav-item"><a href="plugins_ui.html" class="nav-link">UI</a></li>
+								<li class="nav-item"><a href="plugins_vis.html" class="nav-link">Visualization</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a href="base_icons.html" class="nav-link">Icons</a></li>
+
+						<li class="nav-item"><a href="base_bootstrap.html" class="nav-link">Bootstrap</a></li>
+						<li class="nav-item"><a href="base_color_system.html" class="nav-link">Color system</a></li>
+						<li class="nav-item"><a href="base_helpers.html" class="nav-link">Helpers</a></li>
+						<li class="nav-item"><a href="base_themes.html" class="nav-link">Themes</a></li>
+
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Layout options</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="layout_overview.html" class="nav-link">Layouts</a></li>
+						<li class="nav-item"><a href="layout_sidebars.html" class="nav-link">Sidebars</a></li>
+						<li class="nav-item"><a href="layout_navbars.html" class="nav-link">Navbars</a></li>
+						<li class="nav-item"><a href="layout_v_nav.html" class="nav-link">Vertical navigation</a></li>
+						<li class="nav-item"><a href="layout_h_nav.html" class="nav-link">Horizontal navigation</a></li>
+						<li class="nav-item"><a href="layout_page_header.html" class="nav-link">Page header</a></li>
+
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Other</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="other_credits.html" class="nav-link">Sources and credits</a></li>
+						<li class="nav-item"><a href="other_changelog.html" class="nav-link">Changelog <span class="badge badge-pill bg-warning-400 ml-auto">version 2.2</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /main navigation -->
+
+		</div>
+		<!-- /main sidebar -->
+
+
+		<!-- Main content -->
+		<div class="content-wrapper">
+
+			<!-- Page header -->
+			<div class="page-header">
+				<div class="page-header-content header-elements-md-inline">
+					<div class="page-title d-flex">
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Limitless</span> - Form Styling</h4>
+						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+					</div>
+
+					<div class="header-elements d-none py-0 mb-3 mb-md-0">
+						<div class="breadcrumb">
+							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
+							<span class="breadcrumb-item active">Form styling</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /page header -->
+			
+
+			<!-- Content area -->
+			<div class="content pt-0">
+
+				<!-- Inner container -->
+				<div class="d-flex align-items-start flex-column flex-md-row">
+
+					<!-- Left content -->
+					<div class="order-2 order-md-1">
+
+							<!-- Bootstrap switch -->
+							<div class="card" id="switch">
+								<div class="card-header header-elements-md-inline">
+									<h5 class="card-title">Bootstrap switch</h5>
+									<div class="header-elements d-flex justify-content-between">
+										<span class="badge bg-slate">Inputs</span>
+										<span class="text-muted mx-3">switch.min.js</span>
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+									</div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Overview</h6>
+										<p>Turn checkboxes and radio buttons into toggle switches. This library is created by Mattia Larentis and maintained by the core team, with the help of the community.</p>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Usage</h6>
+
+										<div class="mb-3">
+											<p>The plugin is jQuery and Bootstrap dependent. Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+											<pre><code class="language-markup">&lt;!-- Load jQuery -->
+&lt;script src="../../../../global_assets/js/main/jquery.min.js">&lt;/script>
+
+&lt;!-- Load Bootstrap -->
+&lt;script src="../../../../global_assets/js/main/bootstrap.min.js">&lt;/script>
+
+&lt;!-- Load plugin -->
+&lt;script src="../../../../global_assets/js/plugins/forms/styling/switch.min.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Create an HTML element with <code>id</code>, <code>class</code>, or <code>name</code> attributes:</p>
+											<pre><code class="language-markup">&lt;!-- Create element -->
+&lt;input type="checkbox" name="my-checkbox" checked="checked">
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Finally call the plugin via JavaScript:</p>
+											<pre><code class="language-javascript">// Initialize plugin
+$(function() {
+	$("[name='my-checkbox']").bootstrapSwitch({
+		// options
+	});
+});
+</code></pre>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Plugin options</h6>
+										<p>The Options API allows you to customize the dropdown list by setting custom options and getting all current options.</p>
+
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Name</th>
+														<th style="width: 250px;">Attribute</th>
+														<th>Default</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>state</code></td>
+														<td><code>checked</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>The checkbox state</td>
+													</tr>
+													<tr>
+														<td><code>size</code></td>
+														<td><code>data-size</code></td>
+														<td class="font-weight-semibold">null</td>
+														<td>The checkbox size</td>
+													</tr>
+													<tr>
+														<td><code>animate</code></td>
+														<td><code>data-animate</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>Animate the switch</td>
+													</tr>
+													<tr>
+														<td><code>disabled</code></td>
+														<td><code>disabled</code></td>
+														<td class="font-weight-semibold">false</td>
+														<td>Disable state</td>
+													</tr>
+													<tr>
+														<td><code>readonly</code></td>
+														<td><code>readonly</code></td>
+														<td class="font-weight-semibold">false</td>
+														<td>Readonly state</td>
+													</tr>
+													<tr>
+														<td><code>indeterminate</code></td>
+														<td><code>data-indeterminate</code></td>
+														<td class="font-weight-semibold">false</td>
+														<td>Indeterminate state</td>
+													</tr>
+													<tr>
+														<td><code>inverse</code></td>
+														<td><code>data-inverse</code></td>
+														<td class="font-weight-semibold">false</td>
+														<td>Inverse switch direction</td>
+													</tr>
+													<tr>
+														<td><code>radioAllOff</code></td>
+														<td><code>data-radio-all-off</code></td>
+														<td class="font-weight-semibold">false</td>
+														<td>Allow this radio button to be unchecked by the user</td>
+													</tr>
+													<tr>
+														<td><code>onColor</code></td>
+														<td><code>data-on-color</code></td>
+														<td class="font-weight-semibold">'primary'</td>
+														<td>Color of the left side of the switch. Supports all BS contextual classes</td>
+													</tr>
+													<tr>
+														<td><code>offColor</code></td>
+														<td><code>data-off-color</code></td>
+														<td class="font-weight-semibold">'default'</td>
+														<td>Color of the right side of the switch. Supports all BS contextual classes</td>
+													</tr>
+													<tr>
+														<td><code>onText</code></td>
+														<td><code>data-on-text</code></td>
+														<td class="font-weight-semibold">'ON'</td>
+														<td>Text of the left side of the switch</td>
+													</tr>
+													<tr>
+														<td><code>offText</code></td>
+														<td><code>data-off-text</code></td>
+														<td class="font-weight-semibold">'OFF'</td>
+														<td>Text of the right side of the switch</td>
+													</tr>
+													<tr>
+														<td><code>labelText</code></td>
+														<td><code>data-label-text</code></td>
+														<td class="font-weight-semibold">'&amp;nbsp;'</td>
+														<td>Text of the center handle of the switch</td>
+													</tr>
+													<tr>
+														<td><code>handleWidth</code></td>
+														<td><code>data-handle-width</code></td>
+														<td class="font-weight-semibold">'auto'</td>
+														<td>Width of the left and right sides in pixels</td>
+													</tr>
+													<tr>
+														<td><code>labelWidth</code></td>
+														<td><code>data-label-width</code></td>
+														<td class="font-weight-semibold">'auto'</td>
+														<td>Width of the center handle in pixels</td>
+													</tr>
+													<tr>
+														<td><code>baseClass</code></td>
+														<td><code>data-base-class</code></td>
+														<td class="font-weight-semibold">'bootstrap-switch'</td>
+														<td>Global class prefix</td>
+													</tr>
+													<tr>
+														<td><code>wrapperClass</code></td>
+														<td><code>data-wrapper-class</code></td>
+														<td class="font-weight-semibold">'wrapper'</td>
+														<td>Container element class(es)</td>
+													</tr>
+													<tr>
+														<td><code>onInit</code></td>
+														<td></td>
+												 		<td><pre><code class="language-javascript">function(event, state) {}</code></pre></td>
+														<td>Callback function to execute on initialization</td>
+													</tr>
+													<tr>
+														<td><code>onSwitchChange</code></td>
+														<td></td>
+												 		<td><pre><code class="language-javascript">function(event, state) {}</code></pre></td>
+														<td>Callback function to execute on switch state change</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Plugin methods</h6>
+										<div class="mb-3">
+											<p>In Bootstrap Switch, every option is also a method. If the second parameter is omitted, the method return the current value.</p>
+
+											<p>You can invoke methods as follows:</p>
+											<pre><code class="language-javascript">// Methods
+$('input[name="my-checkbox"]').bootstrapSwitch('state', true, true);
+</code></pre>
+										</div>
+
+										<p>Available methods:</p>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Name</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>toggleState</code></td>
+														<td>Toggle the switch state</td>
+													</tr>
+													<tr>
+														<td><code>toggleAnimate</code></td>
+														<td>Toggle the animate option</td>
+													</tr>
+													<tr>
+														<td><code>toggleDisabled</code></td>
+														<td>Toggle the disabled state</td>
+													</tr>
+													<tr>
+														<td><code>toggleReadonly</code></td>
+														<td>Toggle the readonly state</td>
+													</tr>
+													<tr>
+														<td><code>toggleIndeterminate</code></td>
+														<td>Toggle the indeterminate state</td>
+													</tr>
+													<tr>
+														<td><code>toggleInverse</code></td>
+														<td>Toggle the inverse option</td>
+													</tr>
+													<tr>
+														<td><code>destroy</code></td>
+														<td>Destroy the instance of Bootstrap Switch</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Plugin events</h6>
+										<div class="mb-3">
+											<p>All the events are namespaced, therefore always append .bootstrapSwitch when you attach your handlers.</p>
+
+											<p>You can register to the emitted events as follow:</p>
+											<pre><code class="language-javascript">// Events
+$('input[name="my-checkbox"]').on('switchChange.bootstrapSwitch', function(event, state) {
+	console.log(this); // DOM element
+	console.log(event); // jQuery event
+	console.log(state); // true | false
+});
+</code></pre>
+										</div>
+
+										<p>Available events:</p>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Name</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>init</code></td>
+														<td>Triggered on initialization. 'this' refers to the DOM element</td>
+													</tr>
+													<tr>
+														<td><code>switchChange</code></td>
+														<td>Triggered on switch state change. 'this' refers to the DOM element</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div>
+										<h6 class="font-weight-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="font-weight-semibold">File name</td>
+														<td>switch.min.js</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Location</td>
+														<td>global_assets/js/plugins/forms/styling/</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Links</td>
+														<td>
+															<p>
+																<a href="http://www.bootstrap-switch.org/" class="btn btn-sm bg-danger-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+
+															<a href="https://github.com/nostalgiaz/bootstrap-switch" class="btn btn-sm bg-blue btn-labeled btn-labeled-left" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /bootstrap switch -->
+
+
+							<!-- Switchery -->
+							<div class="card" id="switchery">
+								<div class="card-header header-elements-md-inline">
+									<h5 class="card-title">Switchery</h5>
+									<div class="header-elements d-flex justify-content-between">
+										<span class="badge bg-slate">Inputs</span>
+										<span class="text-muted mx-3">switchery.min.js</span>
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+									</div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Overview</h6>
+										<p>Switchery is a simple component that helps you turn your default HTML checkbox inputs into beautiful iOS 7 style switches in just few simple steps. You can easily customize switches, so that they match your design perfectly. Supported by all modern browsers: Chrome, Firefox, Opera, Safari, IE8+.</p>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Usage</h6>
+
+										<div class="mb-3">
+											<p>Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+											<pre><code class="language-markup">&lt;!-- Load plugin -->
+&lt;script src="../../../../global_assets/js/plugins/forms/styling/switchery.min.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Create an HTML element with <code>id</code>, <code>class</code>, or <code>name</code> attributes:</p>
+											<pre><code class="language-markup">&lt;!-- Create element -->
+&lt;input type="checkbox" name="my-checkbox" checked="checked" class="switcher">
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Finally call the plugin via JavaScript:</p>
+											<pre><code class="language-javascript">// Initialize plugin
+var elem = document.querySelector('.js-switch');
+var init = new Switchery(elem);
+</code></pre>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Plugin options</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Name</th>
+														<th>Default</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>color</code></td>
+														<td class="font-weight-semibold">'#64bd63'</td>
+														<td>Color of the switch element (HEX or RGB value)</td>
+													</tr>
+													<tr>
+														<td><code>secondaryColor</code></td>
+														<td class="font-weight-semibold">'#dfdfdf'</td>
+														<td>Secondary color for background color and border, when the switch is off</td>
+													</tr>
+													<tr>
+														<td><code>jackColor</code></td>
+														<td class="font-weight-semibold">'#fff'</td>
+														<td>Default color of the jack/handle element</td>
+													</tr>
+													<tr>
+														<td><code>jackSecondaryColor</code></td>
+														<td class="font-weight-semibold">null</td>
+														<td>Color of unchecked jack/handle element</td>
+													</tr>
+													<tr>
+														<td><code>className</code></td>
+														<td class="font-weight-semibold">'switchery'</td>
+														<td>Class name for the switch element (by default styled in switchery.css)</td>
+													</tr>
+													<tr>
+														<td><code>disabled</code></td>
+														<td class="font-weight-semibold">false</td>
+														<td>Enable or disable click events and changing the state of the switch (boolean value)</td>
+													</tr>
+													<tr>
+														<td><code>disabledOpacity</code></td>
+														<td class="font-weight-semibold">0.5</td>
+														<td>Opacity of the switch when it's disabled (0 to 1)</td>
+													</tr>
+													<tr>
+														<td><code>speed</code></td>
+														<td class="font-weight-semibold">'0.4s'</td>
+														<td>Length of time that the transition will take, ex. '0.4s', '1s', '2.2s' (Note: transition speed of the handle is twice shorter)</td>
+													</tr>
+													<tr>
+														<td><code>size</code></td>
+														<td class="font-weight-semibold">'default'</td>
+														<td>Size of the switch element (small or large)</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Plugin API</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Name</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>.destroy()</code></td>
+														<td>Unbinding all event handlers attached to the switch element to prepare the object for garbage collection</td>
+													</tr>
+													<tr>
+														<td><code>.enable()</code></td>
+														<td>Enable disabled switch by re-adding event handlers and changing the opacity to 1</td>
+													</tr>
+													<tr>
+														<td><code>.disable()</code></td>
+														<td>Disable switch by unbinding attached events and changing opacity to <code>disabledOpacity</code> value</td>
+													</tr>
+													<tr>
+														<td><code>.isDisabled()</code></td>
+														<td>Check if switch is currently disabled by checking the readonly and disabled attributes on the checkbox and the disabled option set via JS. If any of those are present, the returned value is <code>true</code></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div>
+										<h6 class="font-weight-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="font-weight-semibold">File name</td>
+														<td>switchery.min.js</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Location</td>
+														<td>global_assets/js/plugins/forms/styling/</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Links</td>
+														<td>
+															<p>
+																<a href="http://abpetkov.github.io/switchery/" class="btn btn-sm bg-danger-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+
+															<a href="https://github.com/abpetkov/switchery" class="btn btn-sm bg-blue btn-labeled btn-labeled-left" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /switchery -->
+
+
+							<!-- Uniform -->
+							<div class="card" id="uniform">
+								<div class="card-header header-elements-md-inline">
+									<h5 class="card-title">Uniform</h5>
+									<div class="header-elements d-flex justify-content-between">
+										<span class="badge bg-slate">Inputs</span>
+										<span class="text-muted mx-3">uniform.min.js</span>
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+									</div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Overview</h6>
+										<p>Sexy form elements with jQuery. Now with HTML5 attributes! Works well with jQuery 1.6+, but we've received patches and heard that this works with jQuery 1.3.</p>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Usage</h6>
+										<p>Installation of Uniform is quite simple. First, make sure you have jQuery installed. Then you’ll want to link to the <code>jquery.uniform.js</code> file in the head area of your page.</p>
+
+										<div class="mb-3">
+											<p>Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+											<pre><code class="language-markup">&lt;!-- Load jQuery -->
+&lt;script src="../../../../global_assets/js/main/jquery.min.js">&lt;/script>
+
+&lt;!-- Load plugin -->
+&lt;script src="../../../../global_assets/js/plugins/forms/styling/uniform.min.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Create an HTML element with <code>id</code>, <code>class</code>, or <code>name</code> attributes:</p>
+											<pre><code class="language-markup">&lt;!-- Create element -->
+&lt;input type="checkbox" name="my-checkbox" checked="checked" class="styled">
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Finally call the plugin via JavaScript:</p>
+											<pre><code class="language-javascript">// Initialize plugin
+$("select").uniform({
+	// options
+});
+</code></pre>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Plugin options</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Name</th>
+														<th style="width: 200px;">Default</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>autoHide</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>If this option is set to <code>true</code>, Uniform will hide the new elements if the existing elements are currently hidden using <code>display: none</code>.If you want to show a select or checkbox you'll need to show the new Uniform <code>div</code> instead of the child element</td>
+													</tr>
+													<tr>
+														<td><code>eventNamespace</code></td>
+														<td class="font-weight-semibold">".uniform"</td>
+														<td>Binds events using this namespace with jQuery. Useful if you want to unbind them later. Shouldn't probably need to be changed unless it conflicts with other code</td>
+													</tr>
+													<tr>
+														<td><code>idPrefix</code></td>
+														<td class="font-weight-semibold">"uniform"</td>
+														<td>If <code>useID</code> is set to <code>true</code>, this string is prefixed to element ID’s and attached to the container <code>div</code> of each Uniformed element. If you have a checkbox with the ID of <code>"remember-me"</code> the container div would have the ID <code>"uniform-remember-me"</code></td>
+													</tr>
+													<tr>
+														<td><code>useID</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>If <code>true</code>, sets an <code>ID</code> on the container <code>div</code> of each form element. The ID is a prefixed version of the same ID of the form element</td>
+													</tr>
+													<tr>
+														<td><code>submitDefaultHtml</code></td>
+														<td class="font-weight-semibold">"Submit"</td>
+														<td>This text is what's shown on form submit buttons. It is very similar to <code>resetDefaultHtml</code></td>
+													</tr>
+													<tr class="border-solid">
+														<td><code>activeClass</code></td>
+														<td class="font-weight-semibold">"active"</td>
+														<td>Sets the class given to elements when they are active (pressed)</td>
+													</tr>
+													<tr>
+														<td><code>buttonClass</code></td>
+														<td class="font-weight-semibold">"button"</td>
+														<td>Sets the class given to a button that's been Uniformed</td>
+													</tr>
+													<tr>
+														<td><code>checkboxClass</code></td>
+														<td class="font-weight-semibold">"checker"</td>
+														<td>Sets the class given to the wrapper div for checkbox elements</td>
+													</tr>
+													<tr>
+														<td><code>checkedClass</code></td>
+														<td class="font-weight-semibold">"checked"</td>
+														<td>Sets the class given to elements when they are checked (radios and checkboxes)</td>
+													</tr>
+													<tr>
+														<td><code>disabledClass</code></td>
+														<td class="font-weight-semibold">"disabled"</td>
+														<td>Sets the class given to elements when they are disabled</td>
+													</tr>
+													<tr>
+														<td><code>inputAddTypeAsClass</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>When true, <code>&lt;input></code> elements will get a class applied that is equal to their <code>"type"</code> attribute</td>
+													</tr>
+													<tr>
+														<td><code>inputClass</code></td>
+														<td class="font-weight-semibold">"uniform-input"</td>
+														<td>Applies this class to all input elements when they get uniformed</td>
+													</tr>
+													<tr>
+														<td><code>radioClass</code></td>
+														<td class="font-weight-semibold">"radio"</td>
+														<td>Sets the class given to the wrapper div for radio elements. Should be changed to <code>.choice</code></td>
+													</tr>
+													<tr>
+														<td><code>focusClass</code></td>
+														<td class="font-weight-semibold">"focus"</td>
+														<td>Sets the class given to elements when they are focused</td>
+													</tr>
+													<tr>
+														<td><code>hoverClass</code></td>
+														<td class="font-weight-semibold">"hover"</td>
+														<td>Sets the class given to elements when they are currently hovered</td>
+													</tr>
+													<tr>
+														<td><code>textareaClass</code></td>
+														<td class="font-weight-semibold">"uniform"</td>
+														<td>The class that is applied to textarea elements</td>
+													</tr>
+													<tr>
+														<td><code>wrapperClass</code></td>
+														<td class="font-weight-semibold">null</td>
+														<td>When uniforming, the top level element that wraps the input is given this class. When elements would not normally be given a wrapper element, this option will create a wrapper element anyway. This can really help with running multiple themes on a single page</td>
+													</tr>
+													<tr class="border-solid">
+														<td><code>fileButtonClass</code></td>
+														<td class="font-weight-semibold">"action"</td>
+														<td>Sets the class given to <code>div</code> inside a file upload container that acts as the <code>"Choose file"</code> button</td>
+													</tr>
+													<tr>
+														<td><code>fileButtonHtml</code></td>
+														<td class="font-weight-semibold">"Choose File"</td>
+														<td>Sets the text written on the action button inside a file upload input</td>
+													</tr>
+													<tr>
+														<td><code>fileClass</code></td>
+														<td class="font-weight-semibold">"uploader"</td>
+														<td>Sets the class given to the wrapper div for file upload elements</td>
+													</tr>
+													<tr>
+														<td><code>fileDefaultHtml</code></td>
+														<td class="font-weight-semibold">"No file selected"</td>
+														<td>Sets the text written in the filename div of a file upload input when there is no file selected</td>
+													</tr>
+													<tr>
+														<td><code>filenameClass</code></td>
+														<td class="font-weight-semibold">"filename"</td>
+														<td>Sets the class given to div inside a file upload container that spits out the filename</td>
+													</tr>
+													<tr class="border-solid">
+														<td><code>resetDefaultHtml</code></td>
+														<td class="font-weight-semibold">"Reset"</td>
+														<td>This text is what's shown on form reset buttons. It is very similar to <code>submitDefaultHtml</code></td>
+													</tr>
+													<tr>
+														<td><code>resetSelector</code></td>
+														<td class="font-weight-semibold">false</td>
+														<td>This parameter allows you to use a jQuery-style selector to point to a <code>"reset"</code> button in your form if you have one. Use false if you have no <code>"reset"</code> button, or a selector string that points to the reset button if you have one</td>
+													</tr>
+													<tr class="border-solid">
+														<td><code>selectAutoWidth</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>If this option is set to <code>true</code>, Uniform will try to fit the select width to the actual content. When <code>false</code>, it forces the selects to all be the width that was specified in the theme.<br> When using auto widths, the size of the element is detected, then wrapped by Uniform and expanded to fit the wrapping</td>
+													</tr>
+													<tr>
+														<td><code>selectClass</code></td>
+														<td class="font-weight-semibold">"selector"</td>
+														<td>Sets the class given to the wrapper div for select elements, but not multiselects</td>
+													</tr>
+													<tr>
+														<td><code>selectMultiClass</code></td>
+														<td class="font-weight-semibold">"uniform-multiselect"</td>
+														<td>Sets the class given to the wrapper div for select elements that are multiselects</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Plugin API</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 400px;">Name</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>$.uniform.update([elem/selector string]);</code></td>
+														<td>If you need to change values on the form dynamically you must tell Uniform to update that element’s style. Fortunately, it’s very simple. Just call this function, and Uniform will do the rest</td>
+													</tr>
+													<tr>
+														<td><code>$.uniform.update();</code></td>
+														<td>If you don't mind updating all Uniformed elements or just don’t specifically know which element to update, you can just leave out the parameter and Uniform will update all Uniformed elements on the page</td>
+													</tr>
+													<tr>
+														<td><code>$.uniform.restore([elem/selector string]);</code></td>
+														<td>If you want to "un-uniform" something, simply call this function. It will remove the inline styles, extra dom elements, and event handlers, effectively restoring the element to it's previous state</td>
+													</tr>
+													<tr>
+														<td><code>$.uniform.elements[]</code></td>
+														<td>You can get an array of all the elements that have been Uniformed at any time using this public variable. I don't advise changing the contents!</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Tips and tricks</h6>
+										<p>Uniform is supposed to be pretty simple, but there are a few things that can be tricky. Here are some tips that may make your experience simpler:</p>
+
+										<ul class="list">
+											<li>Remember to change the CSS classes in the theme if you change the parameters for elements’ classes. This can be tedious work, but if you don’t do it, it’s not going to look correct. Find and Replace is your friend.</li>
+											<li>Uniform cannot automatically sniff out dynamic value changes. If you make changes to elements in JavaScript or using a reset button of some kind, remember to call $.uniform.update(); to sync the changes with Uniform.  See <a href="https://github.com/pixelmatrix/uniform/issues/270" target="_blank">Issue #270</a> for the little bit of code you will need.</li>
+											<li>Likewise, when you add elements to the DOM, perhaps via AJAX, and they need to get styled, you will need to use $('#newElement').uniform() on it so the styling is applied.</li>
+											<li>There is a bug in Safari 5.1 that will cause the web rendering process to crash when you use custom fonts. For more information, see <a href="https://github.com/pixelmatrix/uniform/issues/183" target="_blank">Issue #183</a>.</li>
+											<li>With IE9, you may have problems with some fonts on your site.  See <a href="https://github.com/pixelmatrix/uniform/issues/226" target="_blank">Issue #226</a> if you mysteriously see a blank page or blank form elements. The fonts in Uniform have been arranged to work around this, but custom themes may not work properly.</li>
+											<li>If you are having problems with automatically sized select elements in Firefox, double check and ensure your CSS files are listed before jQuery, Uniform and your code that uniforms the form elements.  Also check the selectAutoWidth property's documentation.</li>
+										</ul>
+									</div>
+
+									<div>
+										<h6 class="font-weight-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="font-weight-semibold">File name</td>
+														<td>uniform.min.js</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Location</td>
+														<td>global_assets/js/plugins/forms/styling/</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Links</td>
+														<td>
+															<p>
+																<a href="http://uniformjs.com/" class="btn btn-sm bg-danger-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+
+															<a href="https://github.com/pixelmatrix/uniform" class="btn btn-sm bg-blue btn-labeled btn-labeled-left" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /uniform -->
+
+					</div>
+					<!-- /left content -->
+
+
+					<!-- Right sidebar component -->
+					<div class="sidebar-sticky w-100 w-md-auto order-1 order-md-2">
+						<div class="sidebar sidebar-light sidebar-component sidebar-component-right sidebar-expand-md mb-3">
+							<div class="sidebar-content">
+								<div class="card">
+									<div class="card-header bg-transparent header-elements-inline">
+										<span class="text-uppercase font-size-sm font-weight-semibold">Page navigation</span>
+										<div class="header-elements">
+											<div class="list-icons">
+						                		<a class="list-icons-item" data-action="collapse"></a>
+					                		</div>
+				                		</div>
+									</div>
+
+									<div class="card-body">
+										<a href="http://themeforest.net/user/kopyov" class="btn bg-blue btn-block" target="_blank"><i class="icon-reading mr-2"></i> Contact author</a>
+									</div>
+
+									<ul class="nav nav-sidebar nav-scrollspy" data-nav-type="accordion">
+										<li class="nav-item-header pt-0"><div class="text-uppercase font-size-xs line-height-xs">Sections</div> <i class="icon-menu"></i></li>
+										<li class="nav-item"><a href="#switch" class="nav-link">Bootstrap Switch</a></li>
+										<li class="nav-item"><a href="#switchery" class="nav-link">Switchery</a></li>
+										<li class="nav-item"><a href="#uniform" class="nav-link">Uniform</a></li>
+										<li class="nav-item-divider"></li>
+										<li class="nav-item"><a href="#" class="nav-link">Go to top <i class="icon-circle-up2 mr-0 ml-auto"></i></a></li>
+									</ul>
+								</div>
+				            </div>
+						</div>
+					</div>
+					<!-- /right sidebar component -->
+
+				</div>
+				<!-- /inner container -->
+
+			</div>
+			<!-- /content area -->
+
+
+			<!-- Footer -->
+			<div class="navbar navbar-expand-lg navbar-light">
+				<div class="text-center d-lg-none w-100">
+					<button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse" data-target="#navbar-footer">
+						<i class="icon-unfold mr-2"></i>
+						Footer
+					</button>
+				</div>
+
+				<div class="navbar-collapse collapse" id="navbar-footer">
+					<span class="navbar-text">
+						&copy; 2015 - 2018. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
+					</span>
+
+					<ul class="navbar-nav ml-lg-auto">
+						<li class="nav-item"><a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov" class="navbar-nav-link font-weight-semibold"><span class="text-pink-400"><i class="icon-cart2 mr-2"></i> Purchase</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /footer -->
+
+		</div>
+		<!-- /main content -->
+
+	</div>
+	<!-- /page content -->
+
+</body>
+</html>

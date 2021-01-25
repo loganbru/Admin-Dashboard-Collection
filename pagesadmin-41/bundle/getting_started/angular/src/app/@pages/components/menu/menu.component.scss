@@ -1,0 +1,12 @@
+.page-sidebar .sidebar-menu .menu-items{
+    & > li ul.sub-menu{
+        margin: 0;
+        padding: 0;
+        & > :first-child{
+            margin-top: 19px;
+        }
+        & > :last-child{
+            margin-bottom: 10px;
+        }
+    }
+}

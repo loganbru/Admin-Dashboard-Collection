@@ -1,0 +1,82 @@
+// 
+// plugins-rtl.scss
+//
+
+
+// Datepicker
+
+.datepicker {
+    left: auto;
+    right: -10000px;
+
+    &.active {
+        right: unset;
+    }
+}
+
+
+// alertify
+
+.alertify {
+    .ajs-commands{
+        right: auto;
+        left: 4px;
+    }
+
+    .ajs-footer {
+        .ajs-buttons.ajs-primary{
+            text-align: left;
+        }
+    }
+}
+
+// Nestable
+
+.dd-list {
+    .dd-item {
+        button{
+            float: right;
+        }
+    }
+
+    .dd-list{
+        padding-left: 0px;
+        padding-right: 30px;
+    }
+}
+
+// FLOT CHART
+
+.legendLabel {
+    padding-right: 5px!important;
+    padding-left: 20px;
+}
+
+
+// datatable
+
+.dataTables_wrapper {
+    .dataTables_filter{
+        text-align: left !important;
+        input{
+            margin-left: 0px !important;
+            margin-right: 0.5em;
+        }
+    }
+}
+
+// Responsive Table
+
+.table-rep-plugin {
+    .btn-group.pull-right {
+        float: left;
+    }
+    .checkbox-row {
+        label{
+            &:after{
+                margin-left: -22px;
+                top: -2px;
+            }
+        }
+    }
+}

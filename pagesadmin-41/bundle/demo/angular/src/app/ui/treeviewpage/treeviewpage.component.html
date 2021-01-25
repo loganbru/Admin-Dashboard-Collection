@@ -1,0 +1,120 @@
+	       <!-- START JUMBOTRON -->
+         <div class="jumbotron">
+          <pg-container extraHorizontalClass="p-l-0 p-r-0">
+              <div class="inner" pg-parallax>
+                <!-- START BREADCRUMB -->
+                <pg-breadcrumb>
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="javascript:void(0);">UI Elements</a></li>
+                    <li class="breadcrumb-item active">Treeview</li>
+                  </ol>
+                </pg-breadcrumb> 
+                <!-- END BREADCRUMB --> 
+                <div class="row">
+                  <div class="col-xl-7 col-lg-6 ">
+                    <!-- START card -->
+                    <div class="card card-transparent">
+                      <div class="card-header ">
+                        <div class="card-title">Getting started
+                        </div>
+                      </div>
+                      <div class="card-body">
+                          <tree-root [nodes]="simpleNodes" [options]="options" class="tree-wrapper bold-node-text level1-document-icon-only m-b-20"></tree-root>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-5 col-lg-6 ">
+                    <!-- START card -->
+                    <div class="card card-transparent">
+                      <div class="card-body">
+                        <h3 class="">
+                                            Tree view
+                                        </h3>
+                        <p>This is powered by angular tree plugin, most extensively used tree view plugin which is easy use and customize, for further more we have explained how to set up you tree view on pages
+                        </p>
+                        <br>
+                        <a href="https://angular2-tree.readme.io/docs" target="_blank" class="btn btn-complete">See Plugin</a>
+                        <p class="small hinted-text inline v-align-middle m-l-10">see the plugin for
+                          <br> https://angular2-tree.readme.io/
+                        </p>
+                      </div>
+                    </div>
+                    <!-- END card -->
+                  </div>
+                </div>
+              </div>
+          </pg-container>
+        </div>
+        <!-- END JUMBOTRON -->
+        <!-- START CONTAINER FLUID -->
+        <pg-container>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card card-default">
+                <div class="card-header ">
+                  <div class="card-title">Drag n Drop
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p>You can drag n drop and move sub items to the desired place you want, Please refer the documentation for more details or angular 2 tree documentation
+                  </p>
+                  <tree-root [nodes]="nodes" [options]="optionsdng" class="tree-wrapper bold-node-text level1-document-icon-only"></tree-root>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card card-default">
+                <div class="card-header ">
+                  <div class="card-title">Check Tree
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p>You can make all the items to checkbox or even mix them up with radio controls, Please refer the documentation for more details or angular 2 tree documentation</p>
+                  <div class="tree-wrapper bold-node-text level1-document-icon-only">
+                    <tree-root [nodes]="nodes" [options]="options_checkbox" class="reverse"></tree-root>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card card-default">
+                <div class="card-header ">
+                  <div class="card-title">Search Tree
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p>You can search you tree in real time. Please refer the documentation for more details or angular 2 tree documentation</p>
+                  <div>
+                      <div class="input-group transparent col-md-8 m-b-15">
+                          <input type="text" placeholder="Type here to Search" class="form-control"  #filter3 (keyup)="filterFn(filter3.value, tree.treeModel)">
+                          <div class="input-group-append">
+                              <span class="input-group-text transparent"><i class="pg pg-search"></i>
+                              </span>
+                          </div>
+                        </div>
+                      <tree-root #tree [focused]="true" [nodes]="searchnodes"></tree-root>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card card-default">
+                  <div class="card-header ">
+                    <div class="card-title">Lazy Load Tree
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <p>You can search you tree in real time. Please refer the documentation for more details or angular 2 tree documentation</p>
+                    <tree-root [nodes]="asyncNodes" [options]="options" class="tree-wrapper bold-node-text level1-document-icon-only">
+                        <template #loadingTemplate>
+                            <pg-progress type="circle" indeterminate="true" class=""></pg-progress>
+                        </template>
+                    </tree-root>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </pg-container>
+        <!-- END CONTAINER FLUID -->

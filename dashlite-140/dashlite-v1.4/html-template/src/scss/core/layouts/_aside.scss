@@ -1,0 +1,107 @@
+// Content Aside
+@keyframes animate-fade{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.nk-aside{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background:$aside-bg;
+    min-height: 100vh;
+    max-height: 100vh;
+    z-index: 700;
+    width: 280px;
+    padding-top: $header-height + $content-gap-y;
+    border-right: 1px solid $border-light;
+    transform: translateX(-100%);
+    &.mobile-menu{
+        transition: transform .4s ease;
+    }
+    &.content-active{
+        transform: none;
+    }
+    + .toggle-overlay{
+        z-index: 600;
+    }
+    &-inner{
+        padding-left: $sidebar-gap-x;
+        padding-right: $sidebar-gap-x;
+    }
+    &-header{
+        display: none;
+    }
+    &-close{
+        display: none;
+    }
+    .nk-sidebar-menu{
+        max-height: calc(100vh - (#{$header-height} + #{$content-gap-y}));
+        padding-bottom: 1rem;
+    }
+}
+
+.has-aside {
+    .nk-content{
+        padding-bottom: 0;
+        &-wrap{
+            padding-bottom: 2rem;
+        }
+        &-body{
+            display: flex;
+            flex-direction: column;
+            min-height: calc(100vh - #{$aside-content-body-height-calc});
+        }
+    }
+    .nk-footer{
+        background: transparent;
+        padding-top: 0;
+        border-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: -1rem;
+        margin-right: -1rem;
+    }
+}
+@include media-breakpoint-between(sm,lg){
+    .nk-aside{
+        width: 300px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+@include media-breakpoint-up(lg){
+    .has-aside {
+        .nk-content-inner{
+            display: flex;
+        }
+        .nk-content-body{
+            padding: 2rem 0 0;
+        }
+    }
+    .nk-aside{
+        padding: 2rem 0;
+        width: 200px;
+        flex-shrink: 0;
+        position: static;
+        background: transparent;
+        opacity: 1;
+        visibility: visible;
+        margin-right: 48px;
+        border:none;
+        transform: none;
+        max-height: none;
+        min-height: none;
+        &-inner{
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .nk-sidebar-menu{
+            max-height: none;
+        }
+    }
+}
+@include media-breakpoint-up(xl){
+    .nk-aside{
+        margin-right: 68px;
+    }
+}

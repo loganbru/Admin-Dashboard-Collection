@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/layout.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script src="assets/js/main/jquery.min.js"></script>
+	<script src="assets/js/main/bootstrap.bundle.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script src="assets/js/plugins/prism.min.js"></script>
+	<script src="assets/js/plugins/sticky.min.js"></script>
+	
+	<script src="assets/js/main/app.js"></script>
+	<script src="assets/js/pages/components_scrollspy.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body data-spy="scroll" data-target=".sidebar-component-right">
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-expand-md navbar-light">
+		<div class="navbar-header navbar-dark d-none d-md-flex align-items-md-center">
+			<div class="navbar-brand navbar-brand-md">
+				<a href="index.html" class="d-inline-block">
+					<img src="assets/images/logo_light.png" alt="">
+				</a>
+			</div>
+	
+			<div class="navbar-brand navbar-brand-xs">
+				<a href="index.html" class="d-inline-block">
+					<img src="assets/images/logo_icon_light.png" alt="">
+				</a>
+			</div>
+		</div>
+
+		<div class="d-flex flex-1 d-md-none">
+			<div class="navbar-brand mr-auto">
+				<a href="index.html" class="d-inline-block">
+					<img src="assets/images/logo_dark.png" alt="">
+				</a>
+			</div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile">
+				<i class="icon-tree5"></i>
+			</button>
+			<button class="navbar-toggler sidebar-mobile-main-toggle" type="button">
+				<i class="icon-paragraph-justify3"></i>
+			</button>
+			<button class="navbar-toggler sidebar-mobile-component-toggle" type="button">
+				<i class="icon-unfold"></i>
+			</button>
+		</div>
+
+		<div class="collapse navbar-collapse" id="navbar-mobile">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a href="#" class="navbar-nav-link sidebar-control sidebar-main-hide d-none d-md-block">
+						<i class="icon-paragraph-justify3"></i>
+					</a>
+				</li>
+
+				<li class="nav-item">
+					<a href="#" class="navbar-nav-link sidebar-control sidebar-component-toggle d-none d-md-block">
+						<i class="icon-transmission"></i>
+					</a>
+				</li>
+			</ul>
+
+			<ul class="navbar-nav ml-md-auto">
+				<li class="nav-item dropdown">
+					<a href="other_changelog.html" class="navbar-nav-link">
+						<i class="icon-history mr-2"></i>
+						Changelog
+						<span class="badge bg-warning-400 badge-pill position-static ml-md-2">2.2</span>
+					</a>					
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page content -->
+	<div class="page-content">
+
+		<!-- Main sidebar -->
+		<div class="sidebar sidebar-dark sidebar-main sidebar-expand-md">
+
+			<!-- Sidebar mobile toggler -->
+			<div class="sidebar-mobile-toggler text-center">
+				<a href="#" class="sidebar-mobile-main-toggle">
+					<i class="icon-arrow-left8"></i>
+				</a>
+				Navigation
+				<a href="#" class="sidebar-mobile-expand">
+					<i class="icon-screen-full"></i>
+					<i class="icon-screen-normal"></i>
+				</a>
+			</div>
+			<!-- /sidebar mobile toggler -->
+
+
+			<!-- Sidebar content -->
+			<div class="sidebar-content">
+
+        		<!-- Support -->
+				<div class="card card-body">
+					<a href="http://kopyov.ticksy.com" class="btn bg-success-400 btn-block" target="_blank"><i class="icon-lifebuoy mr-2"></i> Limitless support</a>
+				</div>
+				<!-- /support -->
+
+
+				<!-- Main navigation -->
+				<div class="card card-sidebar-mobile">
+					<ul class="nav nav-sidebar" data-nav-type="accordion">
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Main</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="index.html" class="nav-link">Introduction</a></li>
+						<li class="nav-item"><a href="main_getting_started.html" class="nav-link">Getting started</a></li>
+						<li class="nav-item"><a href="main_starter_kit.html" class="nav-link">Starter kit</a></li>
+						<li class="nav-item"><a href="main_rtl.html" class="nav-link">RTL layout</a></li>
+
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Basic functionality</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="base_scss_css.html" class="nav-link">SCSS and CSS</a></li>
+						<li class="nav-item"><a href="base_scss_compile.html" class="nav-link">Compiling SCSS</a></li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link">Plugins</a>
+							<ul class="nav nav-group-sub" data-submenu-title="Plugins">
+								<li class="nav-item"><a href="plugins_forms.html" class="nav-link">Forms</a></li>
+								<li class="nav-item"><a href="plugins_forms_styling.html" class="nav-link">Form styling</a></li>
+								<li class="nav-item"><a href="plugins_editors.html" class="nav-link">Editors</a></li>
+								<li class="nav-item"><a href="plugins_uploaders.html" class="nav-link">Uploaders</a></li>
+								<li class="nav-item"><a href="plugins_extensions.html" class="nav-link">Extensions</a></li>
+								<li class="nav-item"><a href="plugins_notifications.html" class="nav-link">Notifications</a></li>
+								<li class="nav-item"><a href="plugins_pickers.html" class="nav-link">Pickers</a></li>
+								<li class="nav-item"><a href="plugins_tables.html" class="nav-link">Tables</a></li>
+								<li class="nav-item"><a href="plugins_ui.html" class="nav-link">UI</a></li>
+								<li class="nav-item"><a href="plugins_vis.html" class="nav-link">Visualization</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a href="base_icons.html" class="nav-link">Icons</a></li>
+
+						<li class="nav-item"><a href="base_bootstrap.html" class="nav-link">Bootstrap</a></li>
+						<li class="nav-item"><a href="base_color_system.html" class="nav-link">Color system</a></li>
+						<li class="nav-item"><a href="base_helpers.html" class="nav-link">Helpers</a></li>
+						<li class="nav-item"><a href="base_themes.html" class="nav-link">Themes</a></li>
+
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Layout options</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="layout_overview.html" class="nav-link">Layouts</a></li>
+						<li class="nav-item"><a href="layout_sidebars.html" class="nav-link">Sidebars</a></li>
+						<li class="nav-item"><a href="layout_navbars.html" class="nav-link">Navbars</a></li>
+						<li class="nav-item"><a href="layout_v_nav.html" class="nav-link">Vertical navigation</a></li>
+						<li class="nav-item"><a href="layout_h_nav.html" class="nav-link">Horizontal navigation</a></li>
+						<li class="nav-item"><a href="layout_page_header.html" class="nav-link">Page header</a></li>
+
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Other</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="other_credits.html" class="nav-link">Sources and credits</a></li>
+						<li class="nav-item"><a href="other_changelog.html" class="nav-link active">Changelog <span class="badge badge-pill bg-warning-400 ml-auto">version 2.2</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /main navigation -->
+
+		</div>
+		<!-- /main sidebar -->
+
+
+		<!-- Main content -->
+		<div class="content-wrapper">
+
+			<!-- Page header -->
+			<div class="page-header">
+				<div class="page-header-content header-elements-md-inline">
+					<div class="page-title d-flex">
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Limitless</span> - Changelog</h4>
+						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+					</div>
+
+					<div class="header-elements d-none py-0 mb-3 mb-md-0">
+						<div class="breadcrumb">
+							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
+							<span class="breadcrumb-item active">Changelog</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /page header -->
+			
+
+			<!-- Content area -->
+			<div class="content pt-0">
+
+				<!-- Inner container -->
+				<div class="d-flex align-items-start flex-column flex-md-row">
+
+					<!-- Left content -->
+					<div class="w-100 order-2 order-md-1">
+
+						<!-- Version 2.2 -->
+						<div class="card" id="2_2">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">Version 2.2</h5>
+								<div class="header-elements">
+									<span class="text-muted">April 2, 2019</span>
+
+									<div class="list-icons ml-3">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								<p class="mb-3">Version 2.2 is a quick update that includes mostly bug fixes reported by active users and updates of all components to the most recent version. Initial plan was to deliver a big update with lots of new things, but creating of those things take time and users asked to split it up into 2 separate updates. This is the first part. Although it's the first part, it includes some critical changes in SCSS files related to icon sets. Follow the list of changed files for more info.</p>
+
+<pre class="language-javascript mb-4"><code>// # List of updates
+// ------------------------------
+
+[updated]  Bootstrap to 4.3.1
+[updated]  NoUI slider (nouislider.min.js) - to 13.1.3
+[updated]  ION range slider (ion_rangeslider.min.js) - to 2.3.0
+[updated]  ECharts (charts.min.js) - to 4.1.0
+[updated]  Image cropper (cropper.min.js) - to 4.0.0
+[updated]  Bootstrap file input (fileinput.min.js and related) - to 4.5.2
+[updated]  Fullcalendar files - to 4.0.1
+[updated]  Trumbowyg editor (trumbowyg.min.js and related) - to 2.14.0
+[updated]  SweetAlert2 (sweet_alert.min.js) - to 7.29.1
+[updated]  Font Awesome - to 5.5.0
+[updated]  AnimateCSS - to 3.7.0
+[updated]  Bootstrap file input (fileinput) - to 4.5.2
+
+
+// # List of fixes
+// ------------------------------
+
+[fixed]  Form wizard - Current/completed step icon in IE 11
+[fixed]  IE placeholder broken
+[fixed]  Inline form in jQuery UI dialog is broken
+[fixed]  SweetAlert - multiple issues popped up during library upgrade
+[fixed]  Trumbowyg - checkboxes in modals are misaligned
+[fixed]  IE11 - SweetAlert2 - Promise library is required
+[fixed]  IE11 - layouts 2 and 4 have extra scrollbar in content area
+[fixed]  IE11 - Datatable footer has extra whitespace
+[fixed]  Boxed layout - Timelines - vertical lines are not visible
+[fixed]  Wrong path to panel_bg.png file
+[fixed]  RTL layout - wrong icons in pagination
+[fixed]  RTL layout - newer Fullcalendar version breaks the layout
+[fixed]  NoUI slider pips styling
+[fixed]  Pickadate picker width
+[fixed]  ECharts library throws JS errors if DOM element doesn't exist 
+[fixed]  Fullcalendar throws JS errors if DOM element doesn't exist
+[fixed]  AJAX and Dynamic Queue examples of Sweet Alert
+[fixed]  BlockUI in sidebar doesn't show up
+
+
+
+// # List of improvements
+// ------------------------------
+
+[improved]  Converted all icon sets to SCSS
+[improved]  Users now can replace default icon sets in SCSS
+[improved]  Replaced all hardcoded icon codes with a set of variables
+[improved]  Refactored bunch of JS and SCSS files
+[improved]  Removed unused mixin overrides
+[improved]  Now all icons include unicode
+</code></pre>
+
+
+
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">SCSS files to update</h6>
+									<p class="mb-3">This section displays a list of updated <strong>SCSS</strong> files. Includes file name, path to this file and general description of changes. All list items are grouped in categories. This information allows you to quickly find and replace necessary files. Please keep your copies of SCSS files always up-to-date to avoid upgrading issues.</p>
+
+									<div class="table-responsive">
+										<table class="table table-bordered table-sm">
+											<thead>
+												<tr>
+													<th style="width: 320px;">File</th>
+													<th style="width: 320px;">Location</th>
+													<th>Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<th colspan="4" class="table-active">Updated core files</th>
+												</tr>
+												<tr>
+													<td><code>_sidebar.scss</code></td>
+													<td>/scss/layouts/[layout]/[theme]/layout/</td>
+													<td>Replaced icon code with variables in <code>.nav-item-submenu > .nav-link:after</code> class</td>
+												</tr>
+												<tr>
+													<td><code>_bootstrap.scss</code></td>
+													<td>/scss/layouts/[layout]/[theme]/compile/</td>
+													<td>Added paths to toasts and spinners components</td>
+												</tr>
+												<tr>
+													<td><code>_bootstrap-limitless.scss</code></td>
+													<td>/scss/layouts/[layout]/[theme]/compile/</td>
+													<td>Added paths to toasts component</td>
+												</tr>
+												<tr>
+													<td><code>_variables-core.scss</code></td>
+													<td>/scss/layouts/[layout]/[theme]/variables/</td>
+													<td>
+														<p>Lots of changes here. In all layouts new variables according to BS version: <code>$dropdown-inner-border-radius</code> is set to 0; new <code>$table-bg-level</code> and <code>$table-border-level</code> variables; <code>$blockquote-small-font-size</code>; <code>$badge-transition</code>; <code>$card-color</code>; <code>$dropdown-color</code>; <code>$dropdown-divider-margin-y</code>; <code>$caret-vertical-align</code>; <code>$caret-spacing</code>; <code>$table-color</code>; <code>$table-hover-color</code>; <code>$table-dark-color</code>; <code>$table-dark-hover-color</code>; <code>$input-btn-font-family</code>; <code>$btn-font-family</code>; <code>$input-font-family</code>; <code>$input-height-*</code> variables update; <code>$custom-select-font-family</code>; <code>$custom-select-font-size</code>; <code>$custom-file-font-family</code>; <code>$form-validation-states</code>; <code>$dropdown-divider-margin-y</code>; <code>$dropdown-font-size</code>; <code>$dropdown-color</code>; <code>$jumbotron-color</code>; <code>$card-color</code>; <code>$toast-color</code>; <code>$badge-transition</code>; <code>$badge-focus-width</code>; <code>$modal-content-color</code>; <code>$list-group-color</code></p>
+														Changed: <code>$table-border-color</code>; <code>$table-bg</code>; <code>$custom-select-feedback-icon-padding-right</code>; <code>$custom-select-feedback-icon-size</code>; <code>$custom-select-font-size-sm</code>; <code>$custom-select-font-size-lg</code>; <code>$form-feedback-icon-invalid</code>; move dropdown styles below navbar; <code>$card-cap-color</code>
+													</td>
+												</tr>
+												<tr>
+													<td><code>_variables-custom.scss</code></td>
+													<td>/scss/layouts/[layout]/[theme]/variables/</td>
+													<td>Icon variables. All start with <code>$icon-*</code> prefix. And updated <code>$pickadate-max-width</code> variable</td>
+												</tr>
+
+												<tr>
+													<th colspan="4" class="table-active">Updated components</th>
+												</tr>
+												<tr class="border-top-solid">
+													<td><code>_tables.scss</code></td>
+													<td>/scss/themes/[theme]/bootstrap_limitless/</td>
+													<td>Removed table backgrounds styles</td>
+												</tr>
+												<tr>
+													<td><code>_type.scss</code></td>
+													<td>/scss/themes/[theme]/bootstrap_limitless/</td>
+													<td>Replaced dot icon in <code>.list-inline-dotted</code></td>
+												</tr>
+												<tr>
+													<td><code>_navbar.scss</code></td>
+													<td>/scss/themes/[theme]/bootstrap_limitless/</td>
+													<td>Replaced icon with variable in <code>.dropdown-submenu .dropdown-toggle:after</code> (down arrow for mobile)</td>
+												</tr>
+												<tr>
+													<td><code>_dropdown.scss</code></td>
+													<td>/scss/themes/[theme]/bootstrap_limitless/</td>
+													<td>Replaced icons with variables in <code>.dropdown-menu > .dropdown-submenu > .dropdown-item:after</code> (direction arrows for submenu), <code>.dropdown-menu > .dropdown-submenu .dropdown-toggle:after</code> in media query (down arrow for menu item on mobiles). Removed custom vertical margin from <code>.dropdown-divider</code>, use variable instead</td>
+												</tr>
+												<tr>
+													<td><code>_card.scss</code></td>
+													<td>/scss/themes/[theme]/bootstrap_limitless/</td>
+													<td>Replaced icons with variables in card actions, <code>.card-group-control .card-title > a:before</code> (collapse/expand icons)</td>
+												</tr>
+												<tr>
+													<td><code>_badge.scss</code></td>
+													<td>/scss/themes/[theme]/bootstrap_limitless/</td>
+													<td>Removed transitions since BS added variable for them</td>
+												</tr>
+												<tr>
+													<td><code>_close.scss</code></td>
+													<td>/scss/themes/[theme]/bootstrap_limitless/</td>
+													<td>Removed cursor: pointer; (according to BS changes), improved hover and focus states</td>
+												</tr>
+												<tr>
+													<td><code>_button-group.scss</code></td>
+													<td>/scss/themes/[theme]/bootstrap_limitless/</td>
+													<td>Margin for buttons with custom border size</td>
+												</tr>
+												<tr>
+													<td><code>_caret.scss</code></td>
+													<td>/scss/themes/[theme]/bootstrap_limitless/</td>
+													<td>Added 2 variables for vertical align and left spacing (according to BS changes)</td>
+												</tr>
+												<tr>
+													<td><code>_list-group</code></td>
+													<td>/scss/themes/[theme]/bootstrap_limitless/</td>
+													<td>Added styles for horizontal list groups</td>
+												</tr>
+												<tr>
+													<td><code>_toasts.scss</code></td>
+													<td>/scss/themes/[theme]/bootstrap_limitless/</td>
+													<td>Added new file and updated header styles</td>
+												</tr>
+												<tr>
+													<td><code>_alert.scss</code></td>
+													<td>/scss/themes/[theme]/bootstrap_limitless/</td>
+													<td>Replaced icon codes with variables in <code>alert[class*=alert-styled-]</code>, <code>.alert.alert-styled-custom</code> classes (alert types icons)</td>
+												</tr>
+
+												<tr class="border-top-solid">
+													<td><code>_caret.scss</code></td>
+													<td>/scss/themes/[theme]/bootstrap_limitless/mixins/</td>
+													<td>Replaced icon codes with variables in directional arrow classes</td>
+												</tr>
+												<tr>
+													<td><code>_badge.scss</code></td>
+													<td>/scss/themes/[theme]/bootstrap_limitless/mixins/</td>
+													<td>Updated hover/focus states</td>
+												</tr>
+												<tr>
+													<td><code>_forms.scss</code></td>
+													<td>/scss/themes/[theme]/bootstrap_limitless/mixins/</td>
+													<td>Removed</td>
+												</tr>
+												<tr>
+													<td><code>_ll-mixins.scss</code></td>
+													<td>/scss/shared/utils/</td>
+													<td>Added <code>size()</code> mixin. I find it very helpful, but it was deprecated. Moved to custom mixins.</td>
+												</tr>
+
+												<tr class="border-top-solid">
+													<td><code>_datatables.scss</code></td>
+													<td>/scss/themes/[theme]/components/tables/datatables/</td>
+													<td>Replaced icon codes with variables in <code>.dataTables_filter</code> class (search icon in filter input), <code>.sorting</code> related classes</td>
+												</tr>
+												<tr>
+													<td><code>_datatable-select.scss</code></td>
+													<td>/scss/themes/[theme]/components/tables/datatables/</td>
+													<td>Replaced icon codes with variables in <code>.select-checkbox</code> class (checkbox tick)</td>
+												</tr>
+												<tr>
+													<td><code>_datatable-responsive.scss</code></td>
+													<td>/scss/themes/[theme]/components/tables/datatables/</td>
+													<td>Replaced icon codes with variables in <code>td.control</code>, <code>th.control</code> icons (table row expand and collapse)</td>
+												</tr>
+												<tr>
+													<td><code>_datatable-autofill.scss</code></td>
+													<td>/scss/themes/[theme]/components/tables/datatables/</td>
+													<td>Replaced icon codes with variables in <code>.dt-autofill-button .btn:after</code> class (confirm button checkmark)</td>
+												</tr>
+												<tr>
+													<td><code>_footable.scss</code></td>
+													<td>/scss/themes/[theme]/components/tables/</td>
+													<td>Replaced icon codes with variables in <code>.footable-toggle</code> class (table row expand and collapse)</td>
+												</tr>
+												<tr>
+													<td><code>_handsontable.scss</code></td>
+													<td>/scss/themes/[theme]/components/tables/</td>
+													<td>Replaced icon codes with variables in <code>.columnSorting</code> (sorting icons), <code>.htSubmenu</code> (submenu arrow), <code>.changeTypeMenu li.active:after</code> (checkbox tick), <code>.htContextMenu td div span.selected:after</code> (checkbox tick), <code>.pika-prev:after/.pika-next:after</code> (prev/next buttons icon)</td>
+												</tr>
+
+												<tr class="border-top-solid">
+													<td><code>_uniform.scss</code></td>
+													<td>/scss/themes/[theme]/components/forms/</td>
+													<td>Replaced icon codes with variables in <code>.uniform-checker:after</code> class (checkbox tick), <code>.uniform-select span:after</code> (select down arrow)</td>
+												</tr>
+												<tr>
+													<td><code>_multiselect.scss</code></td>
+													<td>/scss/themes/[theme]/components/forms/</td>
+													<td>Replaced icon codes with variables in <code>.multiselect-item input[type=checkbox]</code> class (checkbox tick)</td>
+												</tr>
+												<tr>
+													<td><code>_wizard.scss</code></td>
+													<td>/scss/themes/[theme]/components/forms/</td>
+													<td>Replaced icon codes with variables in <code>.wizard > .steps > ul > li.current .number:after</code> (current step icon), <code>.wizard > .steps > ul > done .number:after</code> (completed step icon)</td>
+												</tr>
+												<tr>
+													<td><code>_validation.scss</code></td>
+													<td>/scss/themes/[theme]/components/forms/</td>
+													<td>Replaced icon codes with variables in <code>.validation-invalid-label:before</code> and <code>.validation-valid-label:before</code> (error/success icons)</td>
+												</tr>
+												<tr>
+													<td><code>_tokenfield.scss</code></td>
+													<td>/scss/themes/[theme]/components/forms/</td>
+													<td>Replaced icon codes with variables in <code>.tokenfield .token > .close:after</code> (close button icon)</td>
+												</tr>
+												<tr>
+													<td><code>_tags-input.scss</code></td>
+													<td>/scss/themes/[theme]/components/forms/</td>
+													<td>Replaced icon codes with variables in <code>.bootstrap-tagsinput .tag [data-role="remove"]:after</code> (close button icon)</td>
+												</tr>
+												<tr>
+													<td><code>_select2.scss</code></td>
+													<td>/scss/themes/[theme]/components/forms/</td>
+													<td>Replaced icon codes with variables in <code>.select2-selection__clear:after</code> (delete cross icon), <code>.select2-selection__arrow:after</code> (down menu arrow), <code>.select2-search--dropdown:after</code> (search icon)</td>
+												</tr>
+												<tr>
+													<td><code>_dual-listbox.scss</code></td>
+													<td>/scss/themes/[theme]/components/forms/</td>
+													<td>Replaced icon codes with variables in <code>.sidebar .bootstrap-duallistbox-container .box1:after</code> (arrow between boxes in sidebar)</td>
+												</tr>
+												<tr>
+													<td><code>_alpaca.scss</code></td>
+													<td>/scss/themes/[theme]/components/forms/</td>
+													<td>Replaced icon codes with variables in <code>.alpaca-field .glyphicon-exclamation-sign:before</code> (validation error icon)</td>
+												</tr>
+												<tr>
+													<td><code>_slinky.scss</code></td>
+													<td>/scss/themes/[theme]/components/forms/</td>
+													<td>Replaced icon codes with variables in <code>.next:after</code>, <code>.back:after</code> classes</td>
+												</tr>
+
+												<tr class="border-top-solid">
+													<td><code>_widgets.scss</code></td>
+													<td>/scss/themes/[theme]/components/forms/editors/</td>
+													<td>Some changes in <code>button-size</code> mixin</td>
+												</tr>
+
+												<tr class="border-top-solid">
+													<td><code>_base.scss</code></td>
+													<td>/scss/themes/[theme]/components/pickers/pickadate</td>
+													<td>Replaced icon codes with variables in <code>.picker__nav--prev:before</code>, <code>.picker__nav—next:before</code> (prev/next buttons)</td>
+												</tr>
+												<tr>
+													<td><code>_daterange.scss</code></td>
+													<td>/scss/themes/[theme]/components/pickers/</td>
+													<td>Replaced icon codes with variables in <code>.daterange-custom-display:after</code>> (menu down arrow). And fixed bug in input with icons (wrong icon position)</td>
+												</tr>
+												<tr>
+													<td><code>_anytime.scss</code></td>
+													<td>/scss/themes/[theme]/components/pickers/</td>
+													<td>Replaced ico codes with variables in <code>.AnyTime-x-btn:after</code> (close icon)</td>
+												</tr>
+												<tr>
+													<td><code>_spectrum.scss</code></td>
+													<td>/scss/themes/[theme]/components/pickers/</td>
+													<td>Replaced icon codes with variables in <code>.sp-clear-display:after</code> (clear color selection), <code>.sp-dd:after</code> (menu down arrow), <code>.sp-thumb-inner:after</code> (checkbox tick)</td>
+												</tr>
+
+												<tr class="border-top-solid">
+													<td><code>_pnotify.scss</code></td>
+													<td>/scss/themes/[theme]/components/notifications/</td>
+													<td>Replaced icon cides with variables in <code>.brighttheme-icon-closer</code>, <code>.brighttheme-icon-sticker</code>, <code>.brighttheme-icon-stuck</code> classes (notification controls)</td>
+												</tr>
+												<tr>
+													<td><code>_sweet-alerts.scss</code></td>
+													<td>/scss/themes/[theme]/components/notifications/</td>
+													<td>Replaced icon codes with variables in <code>.swal2-loading .swal2-confirm:before</code> (loading spinner icon), <code>.swal2-validation-message:before</code> (validation error icon)</td>
+												</tr>
+
+												<tr class="border-top-solid">
+													<td><code>_plupload.scss</code></td>
+													<td>/scss/themes/[theme]/components/forms/uploaders/</td>
+													<td>Replaced icon codes with variables in <code>.plupload_header:after</code> (uploader placeholder icon), <code>li.plupload_droptext:before</code> (uploader placeholder icon), <code>.plupload_file_action:after</code> (actions column placeholder), <code>.plupload_delete a:after</code> (delete button icon), <code>.plupload_failed a:after</code> and <code>.plupload_done a:after</code> (error/success icons)</td>
+												</tr>
+												<tr>
+													<td><code>_file-input.scss</code></td>
+													<td>/scss/themes/[theme]/components/forms/uploaders/</td>
+													<td>Replaced icon codes with variables in <code>.file-preview-other:after</code> (unsupported file type placeholder), <code>.file-thumb-loading:after</code> and <code>.file-uploading:after</code> (loading spinner)</td>
+												</tr>
+												<tr>
+													<td><code>_dropzone.scss</code></td>
+													<td>/scss/themes/[theme]/components/forms/uploaders/</td>
+													<td>Replaced icon codes with variables in <code>.dz-default.dz-message:before</code> (uploader placeholder), <code>.dz-error-mark:after</code> and <code>.dz-success-mark:after</code> (error/success icons)</td>
+												</tr>
+
+												<tr class="border-top-solid">
+													<td><code>_fancytree.scss</code></td>
+													<td>/scss/themes/[theme]/components/misc/</td>
+													<td>Replaced icon codes with variables in <code>.fancytree-checkbox</code> class (checkbox tick)</td>
+												</tr>
+												<tr>
+													<td><code>_fullcalendar.scss</code></td>
+													<td>/scss/themes/[theme]/components/misc/</td>
+													<td>Replaced icon codes with variables in <code>.fc-icon-left-single-arrow:after</code>, <code>.fc-icon-right-single-arrow:after</code> (arrows in prev/next buttons), <code>.fc-icon-x:after</code> (close icon). And updated some class names according to changes in latest version.</td>
+												</tr>
+												<tr>
+													<td><code>_fancytree.scss</code></td>
+													<td>/scss/themes/[theme]/components/misc/</td>
+													<td>Replaced icon codes with variables in <code>.fancytree-expander</code> classes (collapse/expand icons), <code>.fancytree-statusnode-error .fancytree-icon:after</code> (validation error), <code>.fancytree-loading .fancytree-expander:after</code>, <code>.fancytree-statusnode-wait .fancytree-icon:after</code> (checkmark icon), <code>.fancytree-drag-helper-img</code> (accept/reject validation icons), <code>.fancytree-ico-*</code> icons (file, expand, collapse, folder icons)</td>
+												</tr>
+												<tr>
+													<td><code>_fancybox.scss</code></td>
+													<td>/scss/themes/[theme]/components/misc/</td>
+													<td>Replaced icon codes with variables in <code>#fancybox-loading div:after</code> (loading icon), <code>.fancybox-close:after</code> (close icon), <code>.fancybox-prev</code> and <code>.fancybox-next</code> icons (direction arrows)</td>
+												</tr>
+
+												<tr class="border-top-solid">
+													<td><code>_widgets.scss</code></td>
+													<td>/scss/themes/[theme]/components/jquery_ui/</td>
+													<td>Replaced icon codes with variables in <code>.ui-accordion-header-icon:before</code> (collapse/expand accordion icons), <code>.ui-autocomplete-processing:after</code> (loading spinner), <code>.ui-datepicker-prev</code> and <code>.ui-datepicker-next</code> (direction arrows), <code>.ui-dialog-titlebar-close:after</code> (close icon), <code>.ui-menu-item-wrapper > .ui-menu-icon:after</code> (submenu arrow), <code>.ui-selectmenu-button:after</code> (select menu direction al arrow), <code>.ui-spinner-up:after</code> and <code>.ui-spinner-down:after</code> (spinner +/- icons)</td>
+												</tr>
+
+												<tr class="border-top-solid">
+													<td><code>_ion-range-slider.scss</code></td>
+													<td>/scss/themes/[theme]/components/sliders/</td>
+													<td>Renamed <code>.irs-slider</code> to <code>.irs-handle</code></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">JS files to update</h6>
+									<p class="mb-3">These are all JS files that have been changed during update process. It can be a library, plugin or a sample JS file with charts or specific page configuration - everything matters. Also includes file name, path to the file and brief description about changes made. Since JS files are responsible for template's functionality, it is required to keep them up-to-date.</p>
+
+									<div class="table-responsive">
+										<table class="table table-bordered table-sm">
+											<thead>
+												<tr>
+													<th style="width: 320px;">File</th>
+													<th style="width: 320px;">Location</th>
+													<th>Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<th colspan="4" class="table-active">Updated core files</th>
+												</tr>
+												<tr>
+													<td><code>bootstrap.bundle.min.js</code></td>
+													<td>/js/main/</td>
+													<td>Upgraded Bootstrap to the latest version</td>
+												</tr>
+
+												<tr>
+													<th colspan="4" class="table-active">Updated demo pages</th>
+												</tr>
+												<tr class="border-top-solid">
+													<td><code>extra_sliders_noui.js</code></td>
+													<td>/js/demo_pages/</td>
+													<td>Filtered pips example</td>
+												</tr>
+												<tr>
+													<td><code>extension_image_cropper.js</code></td>
+													<td>/js/demo_pages/</td>
+													<td>Demo config</td>
+												</tr>
+												<tr>
+													<td><code>extension_blockui.js</code></td>
+													<td>/js/demo_pages/</td>
+													<td>Demo config (sidebar block)</td>
+												</tr>
+												<tr>
+													<td><code>Full calendar examples</code></td>
+													<td>/js/demo_pages/</td>
+													<td><code>fullcalendar_basic.js</code>, <code>fullcalendar_styling.js</code>, <code>fullcalendar_formats.js</code>, <code>fullcalendar_advanced.js</code>  and related HTML pages</td>
+												</tr>
+												<tr>
+													<td><code>learning_detailed.js</code></td>
+													<td>/js/demo_pages/</td>
+													<td>Fullcalendar config</td>
+												</tr>
+												<tr>
+													<td><code>timelines.js</code></td>
+													<td>/js/demo_pages/</td>
+													<td>Fullcalendar config</td>
+												</tr>
+												<tr>
+													<td><code>user_pages_profile.js</code><br><code>user_pages_profile_tabbed.js</code></td>
+													<td>/js/demo_pages/</td>
+													<td>Fullcalendar config</td>
+												</tr>
+												<tr>
+													<td><code>extra_sweetalert.js</code></td>
+													<td>/js/demo_pages/</td>
+													<td>AJAX and Dynamic Queue examples</td>
+												</tr>
+
+												<tr>
+													<th colspan="4" class="table-active">Updated components</th>
+												</tr>
+												<tr class="border-top-solid">
+													<td><code>sweet_alert.min.js</code></td>
+													<td>/js/plugins/notifications/</td>
+													<td>Sweet Alert notifications library</td>
+												</tr>
+												<tr>
+													<td><code>trumbowyg.min.js and related</code></td>
+													<td>/js/plugins/editors/</td>
+													<td>Trumbowyg text editor and plugins</td>
+												</tr>
+												<tr>
+													<td><code>fullcalendar files</code></td>
+													<td>/js/plugins/ui/fullcalendar/</td>
+													<td>Fullcalendar files - full override</td>
+												</tr>
+												<tr>
+													<td><code>nouislider.min.js</code></td>
+													<td>/js/plugins/sliders/</td>
+													<td>NoUI slider library</td>
+												</tr>
+												<tr>
+													<td><code>ion_rangeslider.min.js</code></td>
+													<td>/js/plugins/sliders/</td>
+													<td>ION rane slider library</td>
+												</tr>
+												<tr>
+													<td><code>echarts.min.js</code></td>
+													<td>/js/plugins/visualization/echarts/</td>
+													<td>ECharts library</td>
+												</tr>
+												<tr>
+													<td><code>cropper.min.js</code></td>
+													<td>/js/plugins/media/</td>
+													<td>Image cropper extension</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<div>
+									<h6 class="font-weight-semibold">HTML files to update</h6>
+									<p class="mb-3">This section displays a list of updated <strong>HTML</strong> files. Includes file name, layout, theme and brief description of changes. This information allows you to quickly find and replace necessary files. Please keep your copies of HTML files always up-to-date to avoid upgrading issues.</p>
+
+									<div class="table-responsive">
+										<table class="table table-bordered table-sm">
+											<thead>
+												<tr>
+													<th style="width: 320px;">File</th>
+													<th style="width: 150px;">Layout</th>
+													<th style="width: 200px;">Theme</th>
+													<th>Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><code>editor_trumbowyg.html</code></td>
+													<td>All</td>
+													<td>All</td>
+													<td>Minor changes</td>
+												</tr>
+												<tr>
+													<td><code>*.html</code></td>
+													<td>1</td>
+													<td>All</td>
+													<td>Paths to fullcalendar files wherever used</td>
+												</tr>
+												<tr>
+													<td><code>[RTL]*.html</code></td>
+													<td>1</td>
+													<td>All</td>
+													<td>Removed <code>dir="rtl"</code> wherever fullcalendar is used</td>
+												</tr>
+												<tr>
+													<td><code>icons_fontawesome.html</code></td>
+													<td>1</td>
+													<td>All</td>
+													<td>Added icon codes</td>
+												</tr>
+												<tr>
+													<td><code>components_alerts.html</code></td>
+													<td>1</td>
+													<td>All</td>
+													<td>Added toast examples</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /version 2.2 -->
+
+
+						<!-- Version 2.1 -->
+						<div class="card" id="2_1">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">Version 2.1</h5>
+								<div class="header-elements">
+									<span class="text-muted">September 26, 2018</span>
+
+									<div class="list-icons ml-3">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								<p class="mb-3">This version includes fixes for all bugs reported by fellow users - IE/Edge browsers issues, missing rules in various components and a bunch of improvements. This is the last update that is focused only on bug fixing, starting from the next one the main focus will be new layouts, themes and functionality. This means that migration from BS3 to BS4 is finally over.</p>
+
+<pre class="language-javascript mb-4"><code>// # List of updates
+// ------------------------------
+
+[updated]	 Bootstrap to 4.1.3
+
+
+// # List of fixes
+// ------------------------------
+
+[fixed]	 IE11/Edge - userpic in navbar increases navbar height
+[fixed]  IE11/Edge - badges in navbar are misaligned
+[fixed]	 IE11/Edge - sidebar content is hidden in fixed layout
+[fixed]	 IE11/Edge - native scrollbar is visible in container with custom scrollbar
+[fixed]	 Layouts 3/4/5 - Fixed sidebar styles still exist in _sidebar.scss
+[fixed]	 Reversed rotation animation has incorrect animation name
+[fixed]	 Pick-a-Date: Missing min-width CSS rule
+[fixed]	 Pick-a-Date: Month/year drop-down
+[fixed]	 Select2: in multiple select results text doesn't wrap
+[fixed]	 Select2: custom light background applies incorrect shadow and placeholder color
+[fixed]	 Replace input type="datetime" with input type="datetime-local"
+[fixed]	 Pricing tables - text color in corner ribbon is incorrect
+[fixed]	 RTL - Mail list page - dropdowns in mail selection appear behind sidebar
+[fixed]	 RTL - In navbar button dropdowns don't support .dropdown-menu-right class
+[fixed]  Set of border utility classes mentioned in helpers has incorrect side names
+[fixed]  Documentation: Badge class still shows "badge-block" instead of "d-block"
+
+
+// # List of improvements
+// ------------------------------
+
+[improved]  Removed file extensions in components.scss
+</code></pre>
+
+
+
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">SCSS files to update</h6>
+									<p class="mb-3">This section displays a list of updated <strong>SCSS</strong> files. Includes file name, path to this file and general description of changes. All list items are grouped in categories. This information allows you to quickly find and replace necessary files. Please keep your copies of SCSS files always up-to-date to avoid upgrading issues.</p>
+
+									<div class="table-responsive">
+										<table class="table table-bordered table-sm">
+											<thead>
+												<tr>
+													<th style="width: 320px;">File</th>
+													<th style="width: 320px;">Location</th>
+													<th>Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<th colspan="4" class="table-active">Updated core files</th>
+												</tr>
+												<tr>
+													<td><code>_sidebar.scss</code></td>
+													<td>/scss/layouts/[layout]/[theme]/layout/</td>
+													<td>In 3, 4, 5 layouts only - removed styles for <code>.sidebar-fixed</code> class; in 1 and 2 layouts made some changes in the same class</td>
+												</tr>
+												<tr>
+													<td><code>components.scss</code></td>
+													<td>/scss/layouts/[layout]/[theme]/compile/</td>
+													<td>Removed file extensions</td>
+												</tr>
+
+												<tr>
+													<th colspan="4" class="table-active">Updated components</th>
+												</tr>
+												<tr class="border-top-solid">
+													<td><code>_base.scss</code></td>
+													<td>/scss/themes/[theme]/components/pickers/pickadate/</td>
+													<td>Added min-width to the picker (added new <code>$pickadate-min-width</code> variable), fixed year/month selects styling</td>
+												</tr>
+												<tr>
+													<td><code>_select2.scss</code></td>
+													<td>/scss/themes/[theme]/components/forms/</td>
+													<td>Added new rules to <code>.select2-selection__choice</code> in multiple selection, fixed custom background classes selector in single select</td>
+												</tr>
+												<tr>
+													<td><code>_perfect-scrollbar.scss</code></td>
+													<td>/scss/themes/[theme]/components/ui/</td>
+													<td>Added new rules to <code>.ps</code> class to fix IE/Edge bugs</td>
+												</tr>
+												<tr class="border-top-solid">
+													<td><code>_helpers.scss</code></td>
+													<td>/scss/shared/</td>
+													<td>Fixed animation name in reversed rotation</td>
+												</tr>
+												<tr>
+													<td><code>_ecommerce.scss</code></td>
+													<td>/scss/shared/pages/</td>
+													<td>Removed background-colour and color properties from .ribbon class, removed related variables ($pricing-ribbon-bg, $pricing-ribbon-color)</td>
+												</tr>
+												<tr>
+													<td><code>_navbar.scss</code></td>
+													<td>/scss/themes/[theme]/bootstrap_limitless/</td>
+													<td>Added ignores to right aligned dropdowns for RTL layout, cleaned up <code>.dropdown-user</code> class</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">JS files to update</h6>
+									<p class="mb-3">These are all JS files that have been changed during update process. It can be a library, plugin or a sample JS file with charts or specific page configuration - everything matters. Also includes file name, path to the file and brief description about changes made. Since JS files are responsible for template's functionality, it is required to keep them up-to-date.</p>
+
+									<div class="table-responsive">
+										<table class="table table-bordered table-sm">
+											<thead>
+												<tr>
+													<th style="width: 320px;">File</th>
+													<th style="width: 320px;">Location</th>
+													<th>Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<th colspan="4" class="table-active">Updated core files</th>
+												</tr>
+												<tr>
+													<td><code>bootstrap.bundle.min.js</code></td>
+													<td>/js/main/</td>
+													<td>Upgraded Bootstrap to the latest version</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<div>
+									<h6 class="font-weight-semibold">HTML files to update</h6>
+									<p class="mb-3">This section displays a list of updated <strong>HTML</strong> files. Includes file name, layout, theme and brief description of changes. This information allows you to quickly find and replace necessary files. Please keep your copies of HTML files always up-to-date to avoid upgrading issues.</p>
+
+									<div class="table-responsive">
+										<table class="table table-bordered table-sm">
+											<thead>
+												<tr>
+													<th style="width: 320px;">File</th>
+													<th style="width: 150px;">Layout</th>
+													<th style="width: 200px;">Theme</th>
+													<th>Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><code>components_badges.html</code></td>
+													<td>1</td>
+													<td>All</td>
+													<td>Replaced <code>.badge-block</code> with <code>.d-block</code></td>
+												</tr>
+												<tr>
+													<td><code>content_helpers.html</code></td>
+													<td>1</td>
+													<td>All</td>
+													<td>Replaced <code>.text-size-[value]</code> with <code>.font-size-[value]</code>, <code>.spinner-inverse</code> with <code>.spinner-reverse</code>, border side names in <code>.border-[side]-0</code> class</td>
+												</tr>
+												<tr>
+													<td><code>form_inputs.html</code></td>
+													<td>1</td>
+													<td>All</td>
+													<td>Replaced <code>datetime</code> input type with <code>datetime-local</code></td>
+												</tr>
+												<tr>
+													<td><code>mail_list.html</code><br><code>mail_list_detached.html</code></td>
+													<td>1</td>
+													<td>All</td>
+													<td>Added <code>.dropdown-menu-right</code> to navbar dropdowns</td>
+												</tr>
+												<tr>
+													<td><code>All</code></td>
+													<td>All</td>
+													<td>All</td>
+													<td>All files where top navbar with badge and user image are used - make sure you added “height” property to the user image, this is important change since now image size is not controlled by CSS, because of IE/Edge issues</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /version 2.1 -->
+
+
+						<!-- Version 2.0.1 -->
+						<div class="card" id="2_0_1">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">Version 2.0.1</h5>
+								<div class="header-elements">
+									<span class="text-muted">June 28, 2018</span>
+
+									<div class="list-icons ml-3">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								<p class="mb-3">Quick update that includes bug fixes for version 2.0, the most important one is IE10/11 browser support - now all layouts work fine in IE10+. Here is a list of changes:</p>
+
+<pre class="language-javascript mb-4"><code>// # List of fixed
+// ------------------------------
+
+[fixed]  Flexbox layout is broken in IE10 and IE11
+[fixed]  Right aligned custom checkers are misaligned
+[fixed]  Multiselect menu should have 100% width by default
+[fixed]  Sectioned sidebar with custom background color has wrong background in collapsed mode
+</code></pre>
+
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">SCSS files to update</h6>
+									<p class="mb-3">This section displays a list of updated <strong>SCSS</strong> files. Includes file name, path to this file and general description of changes. All list items are grouped in categories. This information allows you to quickly find and replace necessary files. Please keep your copies of SCSS files always up-to-date to avoid upgrading issues.</p>
+
+									<div class="table-responsive">
+										<table class="table table-bordered table-sm">
+											<thead>
+												<tr>
+													<th style="width: 320px;">File</th>
+													<th style="width: 320px;">Location</th>
+													<th>Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<th colspan="4" class="table-active">Updated core files</th>
+												</tr>
+												<tr>
+													<td><code>_sidebar.scss</code></td>
+													<td>/scss/layouts/[layout]/[theme]/layout/</td>
+													<td>In 3, 4, 5 layouts only - updated <code>.sidebar-xs</code> styles</td>
+												</tr>
+												<tr>
+													<td><code>_layout.scss</code></td>
+													<td>/scss/layouts/[layout]/[theme]/layout/</td>
+													<td>Updated styles for main containers</td>
+												</tr>
+
+												<tr>
+													<th colspan="4" class="table-active">Updated components</th>
+												</tr>
+												<tr class="border-top-solid">
+													<td><code>_multiselect.scss</code></td>
+													<td>/scss/themes/[theme]/components/forms/</td>
+													<td>Added <code>width: 100%;</code> to multiselect container</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<div>
+									<h6 class="font-weight-semibold">HTML files to update</h6>
+									<p class="mb-3">This section displays a list of updated <strong>HTML</strong> files. Includes file name, layout, theme and brief description of changes. This information allows you to quickly find and replace necessary files. Please keep your copies of HTML files always up-to-date to avoid upgrading issues.</p>
+
+									<div class="table-responsive">
+										<table class="table table-bordered table-sm">
+											<thead>
+												<tr>
+													<th style="width: 320px;">File</th>
+													<th style="width: 150px;">Layout</th>
+													<th style="width: 200px;">Theme</th>
+													<th>Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><code>form_checkboxes_radios.html</code></td>
+													<td>1</td>
+													<td>All</td>
+													<td>Added <code>.position-static</code> to labels in right aligned custom checkers</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /version 2.0.1 -->
+
+
+						<!-- Initial release -->
+						<div class="card" id="2_0">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">Version 2.0</h5>
+								<div class="header-elements">
+									<span class="text-muted">June 20, 2018</span>
+
+									<div class="list-icons ml-3">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								<p class="mb-3">Bootstrap 4 version has its own changelog, because 2 Bootstrap version are completely different. Major part of components have been customized in order to support BS4 and flexbox layout, so components from BS3 can be used in this version. Since all components are the same in all layouts, the template now supports 1 main layout and 4 child layouts - this means only 1st layout includes all components, child layouts include only layout-related files. This makes maintenance easy and fast. Main highlights:</p>
+
+								<div class="row mb-3">
+									<div class="col-sm-4">
+										<ul class="list">
+											<li>Adapted 3rd party components</li>
+											<li>Latest versions of all main libraries</li>
+											<li>Built with SCSS</li>
+											<li>Improved gulp tasks</li>
+											<li>Based on flexbox model</li>
+											<li>Single set of assets for all layouts</li>
+											<li>Moved to modular JS pattern</li>
+										</ul>
+									</div>
+									<div class="col-sm-4">
+										<ul class="list">
+											<li>All bugfixes and improvements from BS3 are included</li>
+											<li>Updated all examples</li>
+											<li>High attention to details</li>
+											<li>Improved file structure</li>
+											<li>Improved starter kit</li>
+											<li>Improved vertical navigation</li>
+											<li>Improved multi level navigation in navbar</li>
+										</ul>
+									</div>
+									<div class="col-sm-4">
+										<ul class="list">
+											<li>Mega menu has been extended</li>
+											<li>Improved performance</li>
+											<li>Removed old and unmaintained libraries</li>
+											<li>Single SCSS configuration file with all components</li>
+											<li>Improved theming support</li>
+											<li>Simple style editing</li>
+											<li>... and much more</li>
+										</ul>
+									</div>
+								</div>
+
+								<div><strong>Important note:</strong> since every single line of code is completely different from Bootstrap 3 version, there's no any migration guide: markup, class names, source files, pre-processors and logic are different. But both versions have their own extensive documentation. Bootstrap 3 is officially in maintenance mode since 2017 and from now on I am mainly focused on extending and improving BS4 version.</div>
+							</div>
+						</div>
+						<!-- /initial release -->
+
+					</div>
+					<!-- /left content -->
+
+
+					<!-- Right sidebar component -->
+					<div class="sidebar-sticky w-100 w-md-auto order-1 order-md-2">
+						<div class="sidebar sidebar-light sidebar-component sidebar-component-right sidebar-expand-md mb-3">
+							<div class="sidebar-content">
+								<div class="card">
+									<div class="card-header bg-transparent header-elements-inline">
+										<span class="text-uppercase font-size-sm font-weight-semibold">Page navigation</span>
+										<div class="header-elements">
+											<div class="list-icons">
+						                		<a class="list-icons-item" data-action="collapse"></a>
+					                		</div>
+				                		</div>
+									</div>
+
+									<div class="card-body">
+										<a href="http://themeforest.net/user/kopyov" class="btn bg-blue btn-block" target="_blank"><i class="icon-reading mr-2"></i> Contact author</a>
+									</div>
+
+									<ul class="nav nav-sidebar nav-scrollspy" data-nav-type="accordion">
+										<li class="nav-item-header pt-0"><div class="text-uppercase font-size-xs line-height-xs">Sections</div> <i class="icon-menu"></i></li>
+										<li class="nav-item"><a href="#2_2" class="nav-link">Version 2.2  <span class="text-muted font-weight-normal ml-auto">03.04.2019</span></a></li>
+										<li class="nav-item"><a href="#2_1" class="nav-link">Version 2.1  <span class="text-muted font-weight-normal ml-auto">26.09.2018</span></a></li>
+										<li class="nav-item nav-item-submenu">
+											<a href="#" class="nav-link">Version 2.0 <span class="text-muted font-weight-normal ml-auto">28.06.2018</span></a>
+											<ul class="nav nav-group-sub d-block">
+												<li class="nav-item"><a href="#2_0_1" class="nav-link">Version 2.0.1  <span class="text-muted font-weight-normal ml-auto">28.06.2018</span></a></li>
+												<li class="nav-item"><a href="#2_0" class="nav-link">Initial release  <span class="text-muted font-weight-normal ml-auto">20.06.2018</span></a></li>
+											</ul>
+										</li>
+										<li class="nav-item-divider"></li>
+										<li class="nav-item"><a href="#" class="nav-link">Go to top <i class="icon-circle-up2 mr-0 ml-auto"></i></a></li>
+									</ul>
+								</div>
+				            </div>
+						</div>
+					</div>
+					<!-- /right sidebar component -->
+
+				</div>
+				<!-- /inner container -->
+
+			</div>
+			<!-- /content area -->
+
+
+			<!-- Footer -->
+			<div class="navbar navbar-expand-lg navbar-light">
+				<div class="text-center d-lg-none w-100">
+					<button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse" data-target="#navbar-footer">
+						<i class="icon-unfold mr-2"></i>
+						Footer
+					</button>
+				</div>
+
+				<div class="navbar-collapse collapse" id="navbar-footer">
+					<span class="navbar-text">
+						&copy; 2015 - 2018. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
+					</span>
+
+					<ul class="navbar-nav ml-lg-auto">
+						<li class="nav-item"><a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov" class="navbar-nav-link font-weight-semibold"><span class="text-pink-400"><i class="icon-cart2 mr-2"></i> Purchase</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /footer -->
+
+		</div>
+		<!-- /main content -->
+
+	</div>
+	<!-- /page content -->
+
+</body>
+</html>

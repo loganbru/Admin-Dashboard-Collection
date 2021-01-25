@@ -1,0 +1,418 @@
+.like-button{
+	.liked-prject{
+		display: none;
+	}
+	.like-loader{
+		display: none;
+	}
+
+	&.active{
+		.like-prject{
+			display: none;
+		}
+		.liked-prject{
+			display: inline-block;
+		}
+	}
+
+	&.spinning{
+		.like-prject{
+			display: none;
+		}
+		.liked-prject{
+			display: none;
+		}
+		.like-loader{
+			display: inline-block;
+
+			i{
+				-webkit-animation: rotating 2s linear infinite;
+			       -moz-animation: rotating 2s linear infinite;
+			        -ms-animation: rotating 2s linear infinite;
+			         -o-animation: rotating 2s linear infinite;
+			            animation: rotating 2s linear infinite;
+			}
+		}
+	}
+}
+.spin-icon {
+	display: inline-block;
+	i.fa-spinner {
+		padding: 0;
+		-webkit-animation: rotating 2s linear infinite;
+	       -moz-animation: rotating 2s linear infinite;
+	        -ms-animation: rotating 2s linear infinite;
+	         -o-animation: rotating 2s linear infinite;
+	            animation: rotating 2s linear infinite;
+	}
+}
+
+
+.ui-widget-content[aria-describedby="add2collection-view"]{
+	background: #ffffff !important;
+}
+#add2collection-view{
+
+	.add2col-form{
+		margin-bottom: 25px;
+
+		input{
+			width: 70%;
+		}
+		a{
+			width: 28%;
+		    float: right;
+		    margin: 0px;
+		    padding-bottom: 9px;
+		}
+	}
+
+	.add2col-list{
+	    width: 100%;
+	    list-style-type: none;
+	    padding: 0px;
+	    border: 1px solid #eee;
+	    border-radius: 5px;
+
+	    li{
+	    	a{
+	    		display: block;
+    			padding: 10px 20px;
+
+    			&:hover{
+    				background-color: #efefef;
+    			}
+
+    			i{
+    				display: none;
+    				float: right;
+				    top: 2px;
+				    position: relative;
+    			}
+
+    			&.selected{
+    				i{
+    					display: inline-block;
+    				}
+    			}
+	    	}
+
+	    	& + li{
+	    		border-top: 1px solid #eee;
+	    	}
+
+	    	span{
+	    		display: block;
+			    padding: 10px 20px;
+			    font-size: 11px;
+	    	}
+	    }
+	}
+}
+
+.ui-dialog-titlebar-close{
+	position: absolute;
+    right: -20px;
+    top: -20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border: 0px;
+    color: #fff;
+    background-color: #333;
+    border-radius: 50%;
+
+    &::before{
+    	width: 40px;
+    	height: 40px;
+    	line-height: 1em;
+    }
+}
+
+.ui-dialog-buttonset{
+	button{
+	    margin: 0px;
+	    border: none;
+	    padding: 10px 25px;
+	}
+}
+
+
+
+
+
+
+
+.sk-author-row{
+	overflow: hidden;
+	margin-bottom: 20px;
+
+	.profile-entry{
+
+		.pi-avatar{
+			display: block;
+			float: left;
+			img{
+
+			}
+		}
+
+		.profile-info{
+			margin-left: 130px;
+
+			.pi-title{
+				font-size: 16px;
+			    line-height: 20px;
+			    font-family: 'Conv_helveticaneuecyr-bold';
+			    color: #383b43;
+			    margin-bottom: 10px;
+			    display: block;
+			}
+
+			.pi-location{
+			    font-size: 13px;
+			    line-height: 18px;
+			    font-weight: 400;
+			    margin-bottom: 10px;
+			    color: #a1a5b1;
+
+			    b{
+			    	color: #383b43;
+			    }
+			}
+
+			.pi-occupation{
+				font-size: 13px;
+			    line-height: 18px;
+			    font-weight: 400;
+			    margin-bottom: 10px;
+			    color: #a1a5b1;
+
+			    b{
+			    	color: #383b43;
+			    }
+			}
+
+			.pi-stats{
+				font-size: 12px;
+				color: #a1a5b1;
+
+				span{
+					display: inline-block;
+					margin-right: 15px;
+				}
+			}
+		}
+
+	}
+
+	.collections-entry{
+		padding: 10px;
+	    border: 1px solid #edeff2;
+	    border-radius: 3px;
+	    float: right;
+
+	    a{
+	    	position: relative;
+	    	display: block;
+
+	    	&:hover{
+
+	    		.color_bg{
+	    			opacity: 0.9;
+	    		}
+	    	}
+	    }
+
+	    .color_bg{
+    	    display: block;
+		    position: absolute;
+		    top: 0px;
+		    right: 0px;
+		    bottom: 0px;
+		    left: 0px;
+		    background: #0d58c8;
+		    opacity: 0;
+		    text-align: center;
+
+		    span:first-child{
+		    	display: inline-block;
+			    vertical-align: middle;
+			    font-size: 12px;
+			    line-height: 12px;
+			    text-transform: uppercase;
+			    color: #fff;
+			    margin-right: 0px;
+		    }
+
+		    .child{
+		    	display: inline-block;
+			    vertical-align: middle;
+			    height: 100%;
+			    width: 0px;
+		    }
+	    }
+	}
+
+}
+
+// Description text on Activity page
+#buddypress form#whats-new-form p.activity-greeting {
+	line-height: 1.2;
+}
+
+
+
+
+
+
+.be-loader{
+	background-color: @be-loader;
+
+	&.inner-loader{
+		background-color: fade(@be-loader, 50%);
+	}
+}
+
+.network-colors header{
+	background-color: @bg-header;
+}
+.network-colors footer{
+	background-color: @bg-footer;
+}
+
+
+.network-colors .header-menu > li:hover > a, .network-colors .header-menu > li.active-header > a,
+.network-colors .noto-label-links a, .network-colors .noto-name a:hover, .network-colors .noto-message a,
+.network-colors .header-menu > .active-header, .network-colors .header-menu > li:hover, .network-colors .header-menu > li > ul li:hover,
+.network-colors .filter-block > ul > li:hover, .network-colors a.be-post-title:hover,
+.network-colors .author-post a:hover, .network-colors .be-post-tag:hover, .network-colors footer p a, .network-colors a.account, .network-colors a.heshtag, .network-colors span.white a:hover, .network-colors .check-box > .checkbox-input:checked + .check-box-sign:after,
+.network-colors .link-large-popup:hover, .network-colors .be-custom-select-block:hover::after, .network-colors .be-user-site:hover, .network-colors .be-user-block.style-2 .be-text-tags a:hover, .network-colors .be-user-block.style-3 .be-text-tags a:hover,
+.network-colors .be-signup-link, .network-colors .be-signup-link:hover, .network-colors .be-comment-content a:hover, .network-colors .swiper-active-switch, .network-colors .btn.hover-1:hover, .network-colors .btn.hover-1.active,
+.network-colors .form-checkbox > input + .check, .network-colors .alert.style-2, .network-colors .accordion.style-1 .acc-body a:hover, .network-colors .accordion.style-2 .acc-title.active .acc-icon,
+.network-colors .collection a:hover, .network-colors .blog-post a.post-label:hover, .network-colors .blog-content ul.style-2 li:before, .network-colors ul.styled.style-2 li:before,
+.network-colors .contact-label .fa, .network-colors .contact-text a:hover, .network-colors .team-social a:hover, .network-colors .t_project-title:hover, .network-colors .nav-post .be-post-date a:hover, .network-colors .be-focus-input,
+.network-colors .m-close, .network-colors .en-nav.active, .network-colors .en-nav:hover, .network-colors .fake-link, .network-colors .close-mini, .network-colors .gallery-info h3, .network-colors .gallery-btn a:hover {
+    color: @brand-color;
+}
+
+.header-menu > li > a, .header-menu > li li a { color: @menu-color; }
+.header-menu > li li a { background-color: darken(@bg-header, 3%); }
+@media screen and (max-width: 1200px) {
+	.header-menu { background-color: darken(@bg-header, 3%); }
+}
+.header-menu > li li:hover > a { background-color: @brand-color; }
+
+
+.network-colors .noto-count, .network-colors .header-menu > li > ul li:hover, .network-colors .creative_filds_block a:hover, .network-colors .creative_filds_block .nav > li > a:hover, .network-colors .creative_filds_block .nav > li.active > a,
+.network-colors .tags_block li a:hover, .network-colors .tags_block li a.active, .network-colors .filter-block > ul > li:hover, .network-colors .filter-block li.be-active, .network-colors .portfolio-link .color_bg,
+.network-colors .be-popup, .network-colors .be-drop-down.color-3:hover, .network-colors .be-drop-down.color-4,
+.network-colors .drop-down-list a:hover, .network-colors ul.soc_buttons > li:hover, .network-colors .soc_buttons.light > li:hover, .network-colors .submit-block,
+.network-colors .close-button, .network-colors .message-popup .fa.close-button, .network-colors .close-button:hover, .network-colors .be-popup-sign-button, .network-colors .be-popup-sign-button:hover,
+.network-colors .be-follow-type, .network-colors .be-follow-type:hover, .network-colors .be-user-counter, .network-colors .be-button-vidget.blue-style, .network-colors .be-button-vidget.blue-style:hover,
+.network-colors .be-button-showing:hover, .network-colors .be-button-showing, .network-colors .swiper-active-switch, .network-colors .subblock .type-1:hover,
+.network-colors .btn.color-1, .network-colors .btn.hover-9:hover, .network-colors .btn.hover-9.active, .network-colors .form-group.color-4 .form-input, .network-colors .form-checkbox.style-2 > input:checked + .check:before,
+.network-colors .alert .close, .network-colors .accordion.style-1 .acc-title.active, .network-colors .accordion.style-2 .acc-title.active .acc-icon, .network-colors .blog-content ul li:before, .network-colors ul.styled li:before,
+.network-colors ol.styled li:before, .network-colors .anim, .network-colors .up-image, .network-colors .ui-widget-content {
+    background-color: @brand-color;
+}
+
+
+.network-colors .header-menu > .active-header, .network-colors .header-menu > li:hover, .network-colors .be-drop-down:hover, .network-colors .be-drop-down .drop-down-list,
+.network-colors .be-drop-down.color-3:hover, .network-colors .be-drop-down.color-4, .network-colors ul.soc_buttons > li:hover,
+.network-colors .soc_buttons.light > li:hover, .network-colors .soc_buttons.light > li:hover, .network-colors .btn.hover-1:hover, .network-colors .btn.hover-1.active,
+.network-colors .btn.hover-2:hover, .network-colors .btn.hover-2.active, .network-colors .btn.hover-9:hover, .network-colors .btn.hover-9.active, .network-colors .form-checkbox > input + .check,
+.network-colors .counter-label, .network-colors .be-focus-input, .network-colors .ch:checked + label:before, .network-colors  .btn.color-1 {
+    border-color: @brand-color;
+}
+
+.network-colors .ui-menu-item:hover {
+    background:  @brand-color;
+}
+
+
+.network-colors .a-list  a:hover {
+    background: @brand-color;
+}
+
+.network-colors .ui-menu-item:hover {
+    background:  darken(@brand-color, 20%)
+}
+
+.network-colors .btn.color-1 .fa {
+    
+}
+
+.network-colors .be-follow-type i,
+.network-colors .be-button-vidget.blue-style i{
+	color: lighten(@brand-color, 50%) !important;
+}
+
+
+
+
+
+
+
+
+
+.woocommerce, .woocommerce-page{
+	ul.products li.product{
+		margin: 0px !important;
+		width: 20% !important;
+		padding: 0 15px !important;
+		float: left !important;
+
+		&:nth-child(5n+1){
+			clear: both !important;
+		}
+	}
+}
+
+
+@media screen and (max-width: 1500px) {
+
+	.woocommerce, .woocommerce-page{
+		ul.products li.product{
+			width: 25% !important;
+
+			&:nth-child(5n+1) { clear: none !important; }
+			&:nth-child(4n+1) { clear: both !important; }
+		}
+	}
+}
+
+@media screen and (max-width: 1200px) { 
+  	.woocommerce, .woocommerce-page{
+		ul.products li.product{
+			width: 33.333% !important;
+
+			&:nth-child(4n+1) { clear: none !important; }
+  			&:nth-child(3n+1) { clear: both !important; }
+		}
+	}
+}
+
+@media screen and (max-width: 767px) { 
+  	.woocommerce, .woocommerce-page{
+		ul.products li.product{
+			width: 50% !important;
+
+			&:nth-child(3n+1) { clear: none !important; }
+  			&:nth-child(2n+1) { clear: both !important; }
+		}
+	}
+}
+
+@media screen and (max-width: 600px) { 
+  	.woocommerce, .woocommerce-page{
+		ul.products li.product{
+			width: 100% !important;
+			clear: both !important;
+		}
+	}
+}
+
+
+
+

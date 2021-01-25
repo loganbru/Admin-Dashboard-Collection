@@ -1,0 +1,30 @@
+{
+    "name": "datatables.net-rowreorder-bs4",
+    "version": "1.2.7",
+    "description": "RowReorder for DataTables with styling for [Bootstrap 4](http://getbootstrap.com/)",
+    "files": [
+        "css/**/*.css",
+        "js/**/*.js"
+    ],
+    "main": "js/rowReorder.bootstrap4.js",
+    "keywords": [
+        "row reordering",
+        "DataTables",
+        "jQuery",
+        "table",
+        "Bootstrap 4"
+    ],
+    "homepage": "https://datatables.net",
+    "bugs": "https://datatables.net/forums",
+    "license": "MIT",
+    "author": {
+        "name": "SpryMedia Ltd",
+        "url": "http://datatables.net"
+    },
+    "dependencies": {
+        "jquery": ">=1.7",
+        "datatables.net-bs4": "^1.10.15",
+        "datatables.net-rowreorder": "1.2.7"
+    },
+    "style": "css/rowReorder.bootstrap4.css"
+}

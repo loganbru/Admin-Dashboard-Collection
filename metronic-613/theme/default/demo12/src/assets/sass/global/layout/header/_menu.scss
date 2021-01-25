@@ -1,0 +1,81 @@
+//
+// Header Menu
+//
+
+
+
+
+// Desktop Mode
+@include kt-menu-hor-build-layout(kt-get($kt-header-config, menu, desktop));
+@include kt-menu-hor-build-skin(kt-get($kt-header-config, menu, desktop), default);
+
+// Tablet & Mobile Mode
+@include kt-menu-ver-build-layout(kt-get($kt-header-config, menu, tablet-and-mobile));
+@include kt-menu-ver-build-skin(kt-get($kt-header-config, menu, tablet-and-mobile), default);
+
+// Header Menu Mobile Offcanvas
+@include kt-offcanvas-build(kt-header-menu-wrapper, tablet-and-mobile, kt-get($kt-header-config, menu, offcanvas-mobile));
+
+// Desktop mode
+@include kt-desktop {
+	.kt-header-menu-wrapper {
+		body:not(.kt-aside--enabled) & {
+			display: flex;
+			flex-direction: row;
+			align-items: stretch;
+
+			.kt-header-logo {
+				padding: 0 kt-get($kt-page-padding, desktop);
+				display: flex;
+				align-items: center;
+				margin-right: 25px;
+			}
+		}
+	}
+
+	// Header menu
+	.kt-header-menu {
+		// Menu nav
+		.kt-menu__nav {
+			// Menu item
+			> .kt-menu__item {
+				align-items: stretch;
+				padding: 0 1.5rem;
+				margin: 0;
+				
+				// Menu link
+				> .kt-menu__link- {
+					align-items: stretch;
+
+					.kt-menu__link-text {
+						color: #6c7293;
+						font-weight: 500;
+					}
+
+					.kt-menu__hor-arrow {
+						color: #c8cde8;
+					}
+
+					.kt-menu__hor-icon {
+						color: #c8cde8;
+					}					
+				}
+
+				// Menu submenu
+				> .kt-menu__submenu {
+					border-top-left-radius: 0;
+					border-top-right-radius: 0;
+				}				
+			}
+		}
+	}
+}
+
+// Media range(above 1024px and below 1200px)
+@include kt-tablet-and-mobile() {
+	.kt-header-menu-wrapper {
+		.kt-header-logo {
+			display: none;
+		}
+	}
+}

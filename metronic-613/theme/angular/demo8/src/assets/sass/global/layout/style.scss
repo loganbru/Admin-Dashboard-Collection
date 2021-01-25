@@ -1,0 +1,50 @@
+//
+// Demo8 Stylesheets
+//
+
+
+
+
+////////////////////////////////////////////////////////////////
+///////////// DO NOT MODIFY BELOW INCLUDE ORDER ////////////////
+////////////////////////////////////////////////////////////////
+
+// 1: Include global config
+@import "../../config";
+
+// 2: Include demo config (that overrides the above global config)
+@import "config";
+
+// 3: Bootstrap Include
+@import "../../../bootstrap/variables";
+@import "../../../../../../tools/node_modules/bootstrap/scss/bootstrap";
+@import "../../../bootstrap/bootstrap.scss";
+
+// 4: Core Include
+@import "../../core/include";
+////////////////////////////////////////////////////////////////
+///////////// DO NOT MODIFY ABOVE INCLUDE ORDER ////////////////
+////////////////////////////////////////////////////////////////
+
+// 5: Demo Configs
+@import "header/config";
+@import "aside/config";
+@import "footer/config";
+
+
+// 6: Demo Includes
+@import "base/base";
+
+@import "header/header";
+@import "header/brand";
+@import "header/topbar";
+@import "header/menu";
+
+@import "header/base-mobile";
+
+@import "aside/aside";
+@import "aside/menu";
+
+@import "content/content";
+
+@import "footer/footer";

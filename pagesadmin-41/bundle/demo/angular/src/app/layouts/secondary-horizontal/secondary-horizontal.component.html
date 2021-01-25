@@ -1,0 +1,49 @@
+<!-- START APP -->
+<div class="container full-height no-padding">
+  <div class="secondary-sidebar-toggle bg-master-lighter padding-10 text-center d-lg-none d-xl-none">
+    <a href="javascript:void(0);" (click)="toggleSecondarySideBar($event)"><i class="pg pg-more"></i></a>
+  </div>
+  <pg-secondary-sidebar extraClass="light">
+      <p class="menu-title">BROWSE</p>
+      <ul class="main-menu">
+        <li class="">
+          <a href="javascript:void(0);">
+            <span class="title">pages frontend</span>
+          </a>
+        </li>
+        <li class="">
+          <a href="javascript:void(0);">
+            <span class="title">webarch admin</span>
+          </a>
+        </li>
+      </ul>
+      <p class="menu-title m-t-30">YOUR FAVOURITE</p>
+      <pg-menu-items-alt [Items]="menuItems"></pg-menu-items-alt>
+  </pg-secondary-sidebar>
+    <!-- END SECONDARY SIDEBAR MENU -->
+    <div class="inner-content full-height  p-r-20 p-l-20">
+        <div class="page-content-wrapper content-builder active full-height" >
+            <div class="content">
+              <div class="container container-fixed-lg">
+                <ul class="breadcrumb p-l-0">
+                  <li class="breadcrumb-item">
+                    <a href="javascript:void(0)">Home</a>
+                  </li>
+                  <li class="breadcrumb-item active">Plain template</li>
+                </ul>
+                <h3 class="page-title">Page Title</h3>
+              </div>
+              <div class=" container container-fixed-lg">
+                
+              </div>
+            </div>
+            <div class="container container-fixed-lg footer">
+              <div class="copyright sm-text-center">
+                <p class="small no-margin pull-left sm-pull-reset"><span class="hint-text">Copyright © 2014</span> <span class="font-montserrat">REVOX</span>. <span class="hint-text">All rights reserved.</span> <span class="sm-block"><a class="m-l-10 m-r-10" href="javascript:void(0)">Terms of use</a> | <a class="m-l-10" href="javascript:void(0)">Privacy Policy</a></span></p>
+                <p class="small no-margin pull-right sm-pull-reset"><a href="javascript:void(0)">Hand-crafted</a> <span class="hint-text">&amp; Made with Love ®</span></p>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+          </div>
+    </div>
+</div>

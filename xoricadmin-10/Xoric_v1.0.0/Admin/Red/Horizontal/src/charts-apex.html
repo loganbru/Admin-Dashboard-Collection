@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Apex charts | Xoric - Responsive Bootstrap 4 Admin Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+        <meta content="Themesdesign" name="author" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- Bootstrap Css -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <!-- Icons Css -->
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <!-- App Css-->
+        <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+
+    </head>
+
+    <body data-topbar="colored" data-layout="horizontal" data-layout-size="boxed">
+
+        <!-- Begin page -->
+        <div id="layout-wrapper">
+
+            @@include("partials/horizontal.html")
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="main-content">
+
+                <div class="page-content">
+
+                    <!-- Page-Title -->
+                    <div class="page-title-box">
+                        <div class="container-fluid">
+                            <div class="row align-items-center">
+                                <div class="col-md-8">
+                                    <h4 class="page-title mb-1">Apex charts</h4>
+                                    <ol class="breadcrumb m-0">
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Charts</a></li>
+                                    <li class="breadcrumb-item active">Apex</li>
+                                    </ol>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="float-right d-none d-md-block">
+                                        <div class="dropdown">
+                                            <button class="btn btn-light btn-rounded dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="mdi mdi-settings-outline mr-1"></i> Settings
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-animated">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">Separated link</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- end page title end breadcrumb -->
+
+                    <div class="page-content-wrapper">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-xl-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="header-title mb-4">Line with Data Labels</h4>
+    
+                                            <div id="line_chart_datalabel" class="apex-charts" dir="ltr"></div>                              
+                                        </div>
+                                    </div><!--end card-->
+                                </div>
+    
+                                <div class="col-xl-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="header-title mb-4">Dashed Line</h4>
+                                            
+                                            <div id="line_chart_dashed" class="apex-charts" dir="ltr"></div>        
+                                        </div>
+                                    </div><!--end card-->
+                                </div>
+                            </div>
+                            <!-- end row -->
+    
+                            <div class="row">
+                                <div class="col-xl-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="header-title mb-4">Spline Area</h4>
+    
+                                            <div id="spline_area" class="apex-charts" dir="ltr"></div>                      
+                                        </div>
+                                    </div><!--end card-->
+                                </div>
+    
+                                <div class="col-xl-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="header-title mb-4">Column Charts</h4>
+                                            
+                                            <div id="column_chart" class="apex-charts" dir="ltr"></div>                                      
+                                        </div>
+                                    </div><!--end card-->
+                                </div>
+                            </div>
+                            <!-- end row -->
+    
+                            <div class="row">
+                                <div class="col-xl-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="header-title mb-4">Column with Data Labels</h4>
+                                            
+                                            <div id="column_chart_datalabel" class="apex-charts" dir="ltr"></div>
+                                        </div>
+                                    </div><!--end card-->
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="header-title mb-4">Bar Chart</h4>
+                                            
+                                            <div id="bar_chart" class="apex-charts" dir="ltr"></div>
+                                        </div>
+                                    </div><!--end card-->
+                                </div>
+                            </div>  
+                            <!-- end row -->
+    
+                            <div class="row">
+                                <div class="col-xl-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="header-title mb-4">Line, Column & Area Chart</h4>
+                                            
+                                            <div id="mixed_chart" class="apex-charts" dir="ltr"></div> 
+                                        </div>
+                                    </div><!--end card-->
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="header-title mb-4">Radial Chart</h4>
+                                            
+                                            <div id="radial_chart" class="apex-charts" dir="ltr"></div>  
+                                        </div>
+                                    </div><!--end card-->
+                                    
+                                </div>
+                            </div>
+                            <!-- end row -->
+    
+                            <div class="row">
+                                <div class="col-xl-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="header-title mb-4">Pie Chart</h4>
+                                            
+                                            <div id="pie_chart" class="apex-charts" dir="ltr"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="header-title mb-4">Donut Chart</h4>
+                                            
+                                            <div id="donut_chart" class="apex-charts"  dir="ltr"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end row -->
+
+                        </div>
+                        <!-- end container-fluid -->
+                    </div> 
+                    <!-- end page-content-wrapper -->
+                </div>
+                <!-- End Page-content -->
+
+                
+                @@include("partials/footer.html")
+            </div>
+            <!-- end main content-->
+
+        </div>
+        <!-- END layout-wrapper -->
+
+        @@include("partials/right-sidebar.html")
+
+        <!-- JAVASCRIPT -->
+        <script src="assets/libs/jquery/jquery.min.js"></script>
+        <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+        <script src="assets/libs/simplebar/simplebar.min.js"></script>
+        <script src="assets/libs/node-waves/waves.min.js"></script>
+
+        <script src="https://unicons.iconscout.com/release/v2.0.1/script/monochrome/bundle.js"></script>
+
+        <!-- Plugin Js-->
+        <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+        <!-- demo js-->
+        <script src="assets/js/pages/apex.init.js"></script>        
+
+        <script src="assets/js/app.js"></script>
+
+    </body>
+</html>

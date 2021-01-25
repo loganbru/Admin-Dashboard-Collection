@@ -1,0 +1,97 @@
+/*
+*  Altair Admin
+*  author: tzd
+*
+*  Content:
+*    1. variables/mixins
+*    2. UIkit custom styles
+*    3. Kendo UI custom styles
+*    4. custom components
+*    5. material design styles
+*    6. plugins
+*    7. partials (header,sidebars,top bar)
+*    8. pages
+*    9. altair admin styles
+*    10. print styles
+*
+*/
+
+/* 1. altair variables/mixins ======================== */
+@import (reference) "variables_mixins";
+
+/* 2. UIkit custom styles ============================ */
+@import "uikit_custom";
+
+/* 3. Kendo UI custom styles ========================= */
+@import "kendo_ui_custom";
+
+/* 4. custom components ============================== */
+@import "components/preloaders";
+@import "components/timeline";
+
+/* 5. material design styles ========================= */
+@import "md/md_main";
+
+/* 6. plugins ======================================== */
+    // altair plugins
+    @import "plugins/altair_plugins";
+    // metrics graphics
+    @import "plugins/metrics_graphics";
+    // c3 charts
+    @import "plugins/c3_charts";
+    // clndr
+    @import "plugins/clndr";
+    // peity charts
+    @import "plugins/peity";
+    // gmaps
+    @import "plugins/gmaps";
+    // easy-pie-chart
+    @import "plugins/easy_pie_chart";
+    // icheck
+    @import "plugins/icheck";
+    // prism syntax highlighter
+    @import "plugins/prism";
+    // custom scrollbar
+    @import "plugins/custom_scrollbar";
+    // selectize
+    @import "plugins/selectize";
+    // codemirror
+    @import "plugins/codemirror";
+    // switchery
+    @import "plugins/switchery";
+    // ionrangeSlider
+    @import "plugins/ionrangeSlider";
+    // parsley (validation)
+    @import "plugins/parsley";
+    // datatables
+    @import "plugins/datatables";
+    // fullcalendar
+    @import "plugins/fullcalendar";
+    // vector maps
+    @import "plugins/vector_maps";
+    // magnific popup
+    @import "plugins/magnific_popup";
+    // file input
+    @import "plugins/fileinput";
+    // gantt chart
+    @import "plugins/gantt_chart";
+
+
+/* 7. partials (header,sidebars,top bar) ============= */
+    // main header
+    @import "partials/header_main";
+    // sidebars
+    @import "partials/sidebars";
+    // top bar
+    @import "partials/top_bar";
+    // page heading
+    @import "partials/page_heading";
+
+/* 8. custom pages =================================== */
+    @import "pages/user_profile";
+
+/* 9. altair main styles ============================= */
+@import "altair_admin";
+
+/* 10. print styles ================================== */
+@import "print";

@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/layout.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script src="assets/js/main/jquery.min.js"></script>
+	<script src="assets/js/main/bootstrap.bundle.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script src="assets/js/plugins/prism.min.js"></script>
+	<script src="assets/js/plugins/sticky.min.js"></script>
+	
+	<script src="assets/js/main/app.js"></script>
+	<script src="assets/js/pages/components_scrollspy.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body data-spy="scroll" data-target=".sidebar-component-right">
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-expand-md navbar-light">
+		<div class="navbar-header navbar-dark d-none d-md-flex align-items-md-center">
+			<div class="navbar-brand navbar-brand-md">
+				<a href="index.html" class="d-inline-block">
+					<img src="assets/images/logo_light.png" alt="">
+				</a>
+			</div>
+	
+			<div class="navbar-brand navbar-brand-xs">
+				<a href="index.html" class="d-inline-block">
+					<img src="assets/images/logo_icon_light.png" alt="">
+				</a>
+			</div>
+		</div>
+
+		<div class="d-flex flex-1 d-md-none">
+			<div class="navbar-brand mr-auto">
+				<a href="index.html" class="d-inline-block">
+					<img src="assets/images/logo_dark.png" alt="">
+				</a>
+			</div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile">
+				<i class="icon-tree5"></i>
+			</button>
+			<button class="navbar-toggler sidebar-mobile-main-toggle" type="button">
+				<i class="icon-paragraph-justify3"></i>
+			</button>
+			<button class="navbar-toggler sidebar-mobile-component-toggle" type="button">
+				<i class="icon-unfold"></i>
+			</button>
+		</div>
+
+		<div class="collapse navbar-collapse" id="navbar-mobile">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a href="#" class="navbar-nav-link sidebar-control sidebar-main-hide d-none d-md-block">
+						<i class="icon-paragraph-justify3"></i>
+					</a>
+				</li>
+
+				<li class="nav-item">
+					<a href="#" class="navbar-nav-link sidebar-control sidebar-component-toggle d-none d-md-block">
+						<i class="icon-transmission"></i>
+					</a>
+				</li>
+			</ul>
+
+			<ul class="navbar-nav ml-md-auto">
+				<li class="nav-item dropdown">
+					<a href="other_changelog.html" class="navbar-nav-link">
+						<i class="icon-history mr-2"></i>
+						Changelog
+						<span class="badge bg-warning-400 badge-pill position-static ml-md-2">2.2</span>
+					</a>					
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page content -->
+	<div class="page-content">
+
+		<!-- Main sidebar -->
+		<div class="sidebar sidebar-dark sidebar-main sidebar-expand-md">
+
+			<!-- Sidebar mobile toggler -->
+			<div class="sidebar-mobile-toggler text-center">
+				<a href="#" class="sidebar-mobile-main-toggle">
+					<i class="icon-arrow-left8"></i>
+				</a>
+				Navigation
+				<a href="#" class="sidebar-mobile-expand">
+					<i class="icon-screen-full"></i>
+					<i class="icon-screen-normal"></i>
+				</a>
+			</div>
+			<!-- /sidebar mobile toggler -->
+
+
+			<!-- Sidebar content -->
+			<div class="sidebar-content">
+
+        		<!-- Support -->
+				<div class="card card-body">
+					<a href="http://kopyov.ticksy.com" class="btn bg-success-400 btn-block" target="_blank"><i class="icon-lifebuoy mr-2"></i> Limitless support</a>
+				</div>
+				<!-- /support -->
+
+
+				<!-- Main navigation -->
+				<div class="card card-sidebar-mobile">
+					<ul class="nav nav-sidebar" data-nav-type="accordion">
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Main</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="index.html" class="nav-link">Introduction</a></li>
+						<li class="nav-item"><a href="main_getting_started.html" class="nav-link">Getting started</a></li>
+						<li class="nav-item"><a href="main_starter_kit.html" class="nav-link">Starter kit</a></li>
+						<li class="nav-item"><a href="main_rtl.html" class="nav-link">RTL layout</a></li>
+
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Basic functionality</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="base_scss_css.html" class="nav-link">SCSS and CSS</a></li>
+						<li class="nav-item"><a href="base_scss_compile.html" class="nav-link">Compiling SCSS</a></li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link">Plugins</a>
+							<ul class="nav nav-group-sub" data-submenu-title="Plugins">
+								<li class="nav-item"><a href="plugins_forms.html" class="nav-link">Forms</a></li>
+								<li class="nav-item"><a href="plugins_forms_styling.html" class="nav-link">Form styling</a></li>
+								<li class="nav-item"><a href="plugins_editors.html" class="nav-link">Editors</a></li>
+								<li class="nav-item"><a href="plugins_uploaders.html" class="nav-link">Uploaders</a></li>
+								<li class="nav-item"><a href="plugins_extensions.html" class="nav-link">Extensions</a></li>
+								<li class="nav-item"><a href="plugins_notifications.html" class="nav-link">Notifications</a></li>
+								<li class="nav-item"><a href="plugins_pickers.html" class="nav-link">Pickers</a></li>
+								<li class="nav-item"><a href="plugins_tables.html" class="nav-link">Tables</a></li>
+								<li class="nav-item"><a href="plugins_ui.html" class="nav-link">UI</a></li>
+								<li class="nav-item"><a href="plugins_vis.html" class="nav-link">Visualization</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a href="base_icons.html" class="nav-link">Icons</a></li>
+						
+						<li class="nav-item"><a href="base_bootstrap.html" class="nav-link active">Bootstrap</a></li>
+						<li class="nav-item"><a href="base_color_system.html" class="nav-link">Color system</a></li>
+						<li class="nav-item"><a href="base_helpers.html" class="nav-link">Helpers</a></li>
+						<li class="nav-item"><a href="base_themes.html" class="nav-link">Themes</a></li>
+
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Layout options</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="layout_overview.html" class="nav-link">Layouts</a></li>
+						<li class="nav-item"><a href="layout_sidebars.html" class="nav-link">Sidebars</a></li>
+						<li class="nav-item"><a href="layout_navbars.html" class="nav-link">Navbars</a></li>
+						<li class="nav-item"><a href="layout_v_nav.html" class="nav-link">Vertical navigation</a></li>
+						<li class="nav-item"><a href="layout_h_nav.html" class="nav-link">Horizontal navigation</a></li>
+						<li class="nav-item"><a href="layout_page_header.html" class="nav-link">Page header</a></li>
+
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Other</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="other_credits.html" class="nav-link">Sources and credits</a></li>
+						<li class="nav-item"><a href="other_changelog.html" class="nav-link">Changelog <span class="badge badge-pill bg-warning-400 ml-auto">version 2.2</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /main navigation -->
+
+		</div>
+		<!-- /main sidebar -->
+
+
+		<!-- Main content -->
+		<div class="content-wrapper">
+
+			<!-- Page header -->
+			<div class="page-header">
+				<div class="page-header-content header-elements-md-inline">
+					<div class="page-title d-flex">
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Limitless</span> - Bootstrap</h4>
+						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+					</div>
+
+					<div class="header-elements d-none py-0 mb-3 mb-md-0">
+						<div class="breadcrumb">
+							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
+							<span class="breadcrumb-item active">Bootstrap</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /page header -->
+			
+
+			<!-- Content area -->
+			<div class="content pt-0">
+
+				<!-- Inner container -->
+				<div class="d-flex align-items-start flex-column flex-md-row">
+
+					<!-- Left content -->
+					<div class="order-2 order-md-1">
+
+							<!-- Overview -->
+							<div class="card" id="overview">
+								<div class="card-header header-elements-inline">
+									<h5 class="card-title">Bootstrap overview</h5>
+									<div class="header-elements">
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+					                </div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="font-weight-semibold" id="overview_intro">Overview</h6>
+										<p>Limitless web application kit is fully based on Bootstrap framework. It includes almost all native Bootstrap components, grid system, original markup (except a few components where markup was slightly modified) and native classes. It is also based on original Bootstrap SCSS files. Current Bootstrap version is <code>4.1.1</code>, the latest and the most stable at the moment. Due to limited support of flexbox model in older browsers, if you need IE9/IE10 support use Bootstrap 3.3.7 version included in the package.</p>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold" id="overview_about">About Bootstrap framework</h6>
+										<p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web. The framework makes front-end web development faster and easier. It's made for folks of all skill levels, devices of all shapes, and projects of all sizes.</p>
+										<p>Bootstrap easily and efficiently scales your websites and applications with a single code base, from phones to tablets to desktops with CSS media queries. With Bootstrap, you get extensive and beautiful documentation for common HTML elements, dozens of custom HTML and CSS components, and awesome jQuery plugins.</p>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold" id="overview_components">Bootstrap components</h6>
+										<p>Over a dozen reusable components built to provide iconography, dropdowns, input groups, navigation, alerts, and much more. Limitless template includes (almost) all of them:</p>
+
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Component</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><strong>Alerts</strong></td>
+														<td>Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages</td>
+													</tr>
+													<tr>
+														<td><strong>Badges</strong></td>
+														<td>Small count and labeling component. Badges scale to match the size of the immediate parent element by using relative font sizing and <code>em</code> units</td>
+													</tr>
+													<tr>
+														<td><strong>Breadcrumbs</strong></td>
+														<td>Indicate the current page’s location within a navigational hierarchy that automatically adds separators via CSS.</td>
+													</tr>
+													<tr>
+														<td><strong>Buttons</strong></td>
+														<td>Use Bootstrap’s custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.</td>
+													</tr>
+													<tr>
+														<td><strong>Button dropdowns</strong></td>
+														<td>Use any button to trigger a dropdown menu by placing it within a <code>.btn-group</code> and providing the proper menu markup</td>
+													</tr>
+													<tr>
+														<td><strong>Button groups</strong></td>
+														<td>Group a series of buttons together on a single line with the button group, and super-power them with JavaScript.</td>
+													</tr>
+													<tr>
+														<td><strong>Cards</strong></td>
+														<td>A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options. If you’re familiar with Bootstrap 3, cards replace our old panels, wells, and thumbnails. Similar functionality to those components is available as modifier classes for cards.</td>
+													</tr>
+													<tr>
+														<td><strong>Collapse</strong></td>
+														<td>Toggle the visibility of content across your project with a few classes and our JavaScript plugins.</td>
+													</tr>
+													<tr>
+														<td><strong>Dropdowns</strong></td>
+														<td>Toggle contextual overlays for displaying lists of links and more with the Bootstrap dropdown plugin.</td>
+													</tr>
+													<tr>
+														<td><strong>Forms</strong></td>
+														<td>Form control styles, layout options, and custom components for creating a wide variety of forms.</td>
+													</tr>
+													<tr>
+														<td><strong>Input groups</strong></td>
+														<td>Easily extend form controls by adding text, buttons, or button groups on either side of textual inputs, custom selects, and custom file inputs.</td>
+													</tr>
+													<tr>
+														<td><strong>List group</strong></td>
+														<td>List groups are a flexible and powerful component for displaying a series of content. Modify and extend them to support just about any content within.</td>
+													</tr>
+													<tr>
+														<td><strong>Modal</strong></td>
+														<td>Use Bootstrap’s JavaScript modal plugin to add dialogs to your site for lightboxes, user notifications, or completely custom content.</td>
+													</tr>
+													<tr>
+														<td><strong>Navs</strong></td>
+														<td>Navigation available in Bootstrap share general markup and styles, from the base <code>.nav</code> class to the active and disabled states. The base <code>.nav</code> component is built with flexbox and provide a strong foundation for building all types of navigation components. It includes some style overrides (for working with lists), some link padding for larger hit areas, and basic disabled styling.</td>
+													</tr>
+													<tr>
+														<td><strong>Navbar</strong></td>
+														<td>Bootstrap’s powerful, responsive navigation header, the navbar. Includes support for branding, navigation, and more, including support for our collapse plugin.</td>
+													</tr>
+													<tr>
+														<td><strong>Pagination</strong></td>
+														<td>Component for showing pagination to indicate a series of related content exists across multiple pages</td>
+													</tr>
+													<tr>
+														<td><strong>Popover</strong></td>
+														<td>Add Bootstrap popovers, like those found in iOS, to any element on your site. Popovers rely on the 3rd party library <code>Popper.js</code> for positioning. You must include <code>popper.min.js</code> before <code>bootstrap.js</code> or use <code>bootstrap.bundle.min.js</code> which contains Popper.js in order for popovers to work!</td>
+													</tr>
+													<tr>
+														<td><strong>Progress bars</strong></td>
+														<td>Custom progress bars featuring support for stacked bars, animated backgrounds, and text labels.</td>
+													</tr>
+													<tr>
+														<td><strong>Scrollspy</strong></td>
+														<td>Automatically update Bootstrap navigation or list group components based on scroll position to indicate which link is currently active in the viewport.</td>
+													</tr>
+													<tr>
+														<td><strong>Tooltips</strong></td>
+														<td>Custom Bootstrap tooltips with CSS and JavaScript using CSS3 for animations and data-attributes for local title storage.</td>
+													</tr>
+													<tr>
+														<td><strong>Media object</strong></td>
+														<td>Media object to construct highly repetitive components like blog comments, tweets, and the like.</td>
+													</tr>
+													<tr>
+														<td><strong>Tables</strong></td>
+														<td>Opt-in styling of tables (given their prevalent use in JavaScript plugins) with Bootstrap.</td>
+													</tr>
+													<tr>
+														<td><strong>Responsive embed</strong></td>
+														<td>Create responsive video or slideshow embeds based on the width of the parent by creating an intrinsic ratio that scales on any device.</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /overview -->
+
+
+							<!-- Getting started -->
+							<div class="card" id="gs">
+								<div class="card-header header-elements-inline">
+									<h5 class="card-title">Getting started</h5>
+									<div class="header-elements">
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+					                </div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">HTML5 doctype</h6>
+										<p>Bootstrap requires the use of the HTML5 doctype. Without it, you’ll see some funky incomplete styling, but including it shouldn’t cause any considerable hiccups.</p>
+
+										<pre><code class="language-markup">&lt;!-- Markup -->
+&lt;!DOCTYPE html>
+&lt;html lang="en">
+  ...
+&lt;/html>
+</code></pre>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Responsive meta tag</h6>
+										<p>Bootstrap is developed mobile first, a strategy in which we optimize code for mobile devices first and then scale up components as necessary using CSS media queries. To ensure proper rendering and touch zooming for all devices, add the responsive viewport meta tag to your <code>&lt;head></code>.</p>
+
+										<pre><code class="language-markup">&lt;!-- Meta tag -->
+&lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</code></pre>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Basic usage</h6>
+										<div class="mb-3">
+											<p>Copy-paste the stylesheet <code>&lt;link></code> into your <code>&lt;head></code> before all other stylesheets to load our CSS. File ordering matters:</p>
+
+											<pre><code class="language-markup">&lt;!-- Latest compiled and minified CSS -->
+&lt;link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+&lt;!-- Limitless overrides -->
+&lt;link rel="stylesheet" href="assets/css/bootstrap_limitless.min.css">
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Many of our components require the use of JavaScript to function. Specifically, they require jQuery, Popper.js, and our own JavaScript plugins. Place the following <code>&lt;script></code>s near the end of your pages, right before the closing <code>&lt;/body></code> tag, to enable them. jQuery must come first, then Popper.js, and then our JavaScript plugins.. File ordering matters:</p>
+
+											<pre><code class="language-markup">&lt;!-- jQuery library -->
+&lt;script src="../../../../global_assets/js/main/jquery.min.js">&lt;/script>
+
+&lt;!-- Latest compiled and minified JavaScript -->
+&lt;script src="../../../../global_assets/js/main/bootstrap.bundle.min.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<p>Now you are up and running. All template files <strong>MUST</strong> contain these 5 files in your page's <code>&lt;head></code> element. All other files are optional, except <code>app.js</code>, which contains template's JS base. Also keep correct load ordering: first - dependencies, then - components. You can place JS paths either in <code>&lt;head></code> or before <code>&lt;body></code> closing tag, it's up to you. I prefer 1st option.</p>
+									</div>
+								</div>
+							</div>
+							<!-- /getting started -->
+
+
+							<!-- Bootstrap documentation -->
+							<div class="card" id="docs">
+								<div class="card-header header-elements-inline">
+									<h5 class="card-title">Bootstrap documentation</h5>
+									<div class="header-elements">
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+					                </div>
+								</div>
+
+								<div class="card-body">
+									<p>Bootstrap documentation available online on <a href="http://getbootstrap.com" target="_blank">Official Bootstrap website</a>. Below you can find different links and sources related to the framework:</p>
+
+									<div class="table-responsive">
+										<table class="table table-bordered table-striped">
+											<thead>
+												<tr>
+													<th style="width: 350px;">Link</th>
+													<th>Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><a href="http://getbootstrap.com/" target="_blank">http://getbootstrap.com/</a></td>
+													<td>Official website</td>
+												</tr>
+												<tr>
+													<td><a href="https://github.com/twbs/bootstrap" target="_blank">https://github.com/twbs/bootstrap</a></td>
+													<td>Github project</td>
+												</tr>
+												<tr>
+													<td><a href="https://github.com/twbs/bootstrap/issues" target="_blank">https://github.com/twbs/bootstrap/issues</a></td>
+													<td>Issue tracker</td>
+												</tr>
+												<tr>
+													<td><a href="http://blog.getbootstrap.com/" target="_blank">http://blog.getbootstrap.com/</a></td>
+													<td>Blog</td>
+												</tr>
+												<tr>
+													<td><a href="https://bootstrap-slack.herokuapp.com/" target="_blank">https://bootstrap-slack.herokuapp.com/</a></td>
+													<td>Slack room</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<!-- /bootstrap documentation -->
+
+
+							<!-- Grid system -->
+							<div class="card" id="grid">
+								<div class="card-header header-elements-inline">
+									<h5 class="card-title">Grid system</h5>
+									<div class="header-elements">
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+					                </div>
+								</div>
+
+								<div class="card-body">
+									<p>Use our powerful mobile-first flexbox grid to build layouts of all shapes and sizes thanks to a twelve column system, five default responsive tiers, Sass variables and mixins, and dozens of predefined classes.</p>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold" id="grid_intro">Introduction</h6>
+										<p>Bootstrap’s grid system uses a series of containers, rows, and columns to layout and align content. It’s built with flexbox and is fully responsive. Below is an example and an in-depth look at how the grid comes together. Here’s how it works</p>
+
+										<ul class="list mb-3">
+											<li>Containers provide a means to center and horizontally pad your site’s contents. Use <code>.container</code> for a responsive pixel width or <code>.container-fluid</code> for <code>width: 100%</code> across all viewport and device sizes.</li>
+											<li>Rows are wrappers for columns. Each column has horizontal <code>padding</code> (called a gutter) for controlling the space between them. This padding is then counteracted on the rows with negative margins. This way, all the content in your columns is visually aligned down the left side.</li>
+											<li>In a grid layout, content must be placed within columns and only columns may be immediate children of rows.</li>
+											<li>Thanks to flexbox, grid columns without a specified width will automatically layout as equal width columns. For example, four instances of <code>.col-sm</code> will each automatically be 25% wide from the small breakpoint and up</li>
+											<li>Column classes indicate the number of columns you’d like to use out of the possible 12 per row. So, if you want three equal-width columns across, you can use <code>.col-4</code>.</li>
+											<li>Column <code>width</code>s are set in percentages, so they’re always fluid and sized relative to their parent element.</li>
+											<li>Columns have horizontal <code>padding</code> to create the gutters between individual columns, however, you can remove the <code>marginM</code> from rows and <code>padding</code> from columns with <code>.no-gutters</code> on the <code>.row</code>.</li>
+											<li>To make the grid responsive, there are five grid breakpoints, one for each responsive breakpoint: all breakpoints (extra small), small, medium, large, and extra large.</li>
+											<li>Grid breakpoints are based on minimum width media queries, meaning <strong>they apply to that one breakpoint and all those above it</strong> (e.g., <code>.col-sm-4</code> applies to small, medium, large, and extra large devices, but not the first <code>xs</code> breakpoint).</li>
+											<li>You can use predefined grid classes (like <code>.col-4</code>) or Sass mixins for more semantic markup.</li>
+										</ul>
+
+										Be aware of the <a href="https://github.com/philipwalton/flexbugs" target="_blank">limitations and bugs around flexbox</a>, like the inability to use some HTML elements as flex containers.
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold" id="grid_queries">Media queries</h6>
+										<div class="mb-3">
+											<p>We use the following media queries in our SCSS files to create the key breakpoints in our grid system.</p>
+
+											<pre><code class="language-javascript">// No media query for all breakpoints since this is the default in Bootstrap
+
+// Small devices (tablets, 576px)
+@include media-breakpoint-up(sm) { ... }
+@include media-breakpoint-down(sm) { ... }
+
+// Medium devices (desktops, 768px)
+@include media-breakpoint-up(md) { ... }
+@include media-breakpoint-down(md) { ... }
+
+// Large devices (large desktops, 992px)
+@include media-breakpoint-up(lg) { ... }
+@include media-breakpoint-down(lg) { ... }
+
+// Extra large devices (extra large desktops, 1200px)
+@include media-breakpoint-up(xl) { ... }
+@include media-breakpoint-down(xl) { ... }
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>We occasionally expand on these media queries to include a <code>max-width</code> to limit CSS to a narrower set of devices.</p>
+
+											<pre><code class="language-javascript">// Media queries
+// Small devices (tablets, up to 576px)
+@include media-breakpoint-down(sm) { ... }
+
+// Medium devices (desktops, up to 768px)
+@include media-breakpoint-down(md) { ... }
+
+// Large devices (large desktops, up to 992px)
+@include media-breakpoint-down(lg) { ... }
+
+// Extra large devices (extra large desktops, up to 1200px)
+@include media-breakpoint-down(xl) { ... }
+</code></pre>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold" id="grid_options">Grid options</h6>
+										<p>See how aspects of the Bootstrap grid system work across multiple devices with a handy table:</p>
+
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped table-lg">
+												<thead>
+													<tr>
+														<th></th>
+														<th class="text-center">
+															Extra small<br>
+															<span class="font-weight-normal text-muted">&lt;576px</span>
+														</th>
+															<th class="text-center">
+															Small<br>
+														<span class="font-weight-normal text-muted">≥576px</span>
+														</th>
+															<th class="text-center">
+															Medium<br>
+														<span class="font-weight-normal text-muted">≥768px</span>
+														</th>
+															<th class="text-center">
+															Large<br>
+														<span class="font-weight-normal text-muted">≥992px</span>
+														</th>
+														<th class="text-center">
+															Extra large<br>
+															<span class="font-weight-normal text-muted">≥1200px</span>
+														</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th class="text-nowrap" scope="row">Max container width</th>
+														<td>None (auto)</td>
+														<td>540px</td>
+														<td>720px</td>
+														<td>960px</td>
+														<td>1140px</td>
+													</tr>
+													<tr>
+														<th class="text-nowrap" scope="row">Class prefix</th>
+														<td><code>.col-</code></td>
+														<td><code>.col-sm-</code></td>
+														<td><code>.col-md-</code></td>
+														<td><code>.col-lg-</code></td>
+														<td><code>.col-xl-</code></td>
+													</tr>
+													<tr>
+														<th class="text-nowrap" scope="row"># of columns</th>
+														<td colspan="5">12</td>
+													</tr>
+													<tr>
+														<th class="text-nowrap" scope="row">Gutter width</th>
+														<td colspan="5">40px (20px on each side of a column)</td>
+													</tr>
+													<tr>
+														<th class="text-nowrap" scope="row">Nestable</th>
+														<td colspan="5">Yes</td>
+													</tr>
+													<tr>
+														<th class="text-nowrap" scope="row">Column ordering</th>
+														<td colspan="5">Yes</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /grid system -->
+
+					</div>
+					<!-- /left content -->
+
+
+					<!-- Right sidebar component -->
+					<div class="sidebar-sticky w-100 w-md-auto order-1 order-md-2">
+						<div class="sidebar sidebar-light sidebar-component sidebar-component-right sidebar-expand-md mb-3">
+							<div class="sidebar-content">
+								<div class="card">
+									<div class="card-header bg-transparent header-elements-inline">
+										<span class="text-uppercase font-size-sm font-weight-semibold">Page navigation</span>
+										<div class="header-elements">
+											<div class="list-icons">
+						                		<a class="list-icons-item" data-action="collapse"></a>
+					                		</div>
+				                		</div>
+									</div>
+
+									<div class="card-body">
+										<a href="http://themeforest.net/user/kopyov" class="btn bg-blue btn-block" target="_blank"><i class="icon-reading mr-2"></i> Contact author</a>
+									</div>
+
+									<ul class="nav nav-sidebar nav-scrollspy" data-nav-type="accordion">
+										<li class="nav-item-header pt-0"><div class="text-uppercase font-size-xs line-height-xs">Sections</div> <i class="icon-menu"></i></li>
+										<li class="nav-item"><a href="#overview_intro" class="nav-link">Introduction</a></li>
+										<li class="nav-item"><a href="#overview_components" class="nav-link">Components</a></li>
+										<li class="nav-item"><a href="#docs" class="nav-link">Bootstrap Documentation</a></li>
+										<div class="nav-item-divider"></div>
+										<li class="nav-item"><a href="#grid_intro" class="nav-link">Grid system</a></li>
+										<li class="nav-item"><a href="#grid_queries" class="nav-link">Media Queries</a></li>
+										<li class="nav-item"><a href="#grid_options" class="nav-link">Grid Options</a></li>
+										<li class="nav-item-divider"></li>
+										<li class="nav-item"><a href="#" class="nav-link">Go to top <i class="icon-circle-up2 mr-0 ml-auto"></i></a></li>
+									</ul>
+								</div>
+				            </div>
+						</div>
+					</div>
+					<!-- /right sidebar component -->
+
+				</div>
+				<!-- /inner container -->
+
+			</div>
+			<!-- /content area -->
+
+
+			<!-- Footer -->
+			<div class="navbar navbar-expand-lg navbar-light">
+				<div class="text-center d-lg-none w-100">
+					<button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse" data-target="#navbar-footer">
+						<i class="icon-unfold mr-2"></i>
+						Footer
+					</button>
+				</div>
+
+				<div class="navbar-collapse collapse" id="navbar-footer">
+					<span class="navbar-text">
+						&copy; 2015 - 2018. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
+					</span>
+
+					<ul class="navbar-nav ml-lg-auto">
+						<li class="nav-item"><a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov" class="navbar-nav-link font-weight-semibold"><span class="text-pink-400"><i class="icon-cart2 mr-2"></i> Purchase</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /footer -->
+
+		</div>
+		<!-- /main content -->
+
+	</div>
+	<!-- /page content -->
+
+</body>
+</html>

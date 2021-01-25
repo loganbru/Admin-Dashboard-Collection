@@ -1,0 +1,153 @@
+---
+layout: default
+title: Contact
+---
+
+<!-- Hero (Parallax) and nav -->
+<div class="hero parallax is-cover is-relative is-default is-bold" data-background="https://via.placeholder.com/1920x1280" data-color="#000" data-color-opacity="0.3"
+    data-demo-background="assets/images/startup/cosy.jpg">
+
+    {{> navbar-fade}}
+
+    <!-- Hero text -->
+    <div id="main-hero" class="hero-body pt-80 pb-80">
+        <div class="container has-text-centered">
+            <div class="columns is-vcentered">
+                <div class="column is-6 is-offset-3 has-text-centered">
+                    <h1 class="title main-title text-bold is-2">
+                        Contact us
+                    </h1>
+                    <h2 class="subtitle is-4 light-text pt-10 pb-10">
+                        We are looking forward to hear from you. Don't hesitate, just tell us what's on your mind.
+                    </h2>
+                    <br>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- /Hero text -->
+</div>
+<!-- /Hero and nav -->
+
+<!-- Form section -->
+<div class="section section-feature-grey is-medium">
+    <div class="container">
+        <!-- Title -->
+        <div class="section-title-wrapper">
+            <div class="bg-number"><i class="material-icons">domain</i></div>
+            <h2 class="title section-title has-text-centered dark-text"> Get in Touch.</h2>
+            <div class="subtitle has-text-centered"><b>Call us</b>, <b>send us</b> a message, or simply come to <b>visit us</b>.</div>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="columns">
+                <!-- Side content -->
+                <div class="column is-5 is-offset-1">
+                    <p>Lorem ipsum dolor sit amet, an sea posse homero ceteros, etiam persecuti te vis, dolore nominavi voluptua sed ad. Ne elit volutpat pro, ne vim interesset ullamcorper, autem tibique omnesque cu eam.</p>
+                    <p>This is how we can help you:</p>
+
+                    <div class="content mt-20">
+                        <ul>
+                            <li class="mb-20">Lorem ipsum dolor sit amet, an sea posse homero ceteros, etiam persecuti te vis, dolore nominavi voluptua sed ad.</li>
+                            <li class="mb-20">Meliore urbanitas pro ei, ex eos legimus deleniti philosophia. Vim tamquam accusam te, qui dicat partiendo adolescens ad, in habemus accusata usu. </li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact info -->
+                    <div class="content">
+                        <!-- Card -->
+                        <div class="flex-card contact-card light-bordered hover-inset padding-15">
+                            <div class="icon">
+                                <i class="im im-icon-Email"></i>
+                            </div>
+                            <div class="contact-info">
+                                <div class="contact-name">Email</div>
+                                <div class="contact-details">
+                                    <span class="details-text"><b>hello@bulkit.io</b></span>
+                                </div>
+                            </div> 
+                        </div>
+                        <!-- Card -->
+                        <div class="flex-card contact-card light-bordered hover-inset padding-15">
+                            <div class="icon">
+                                <i class="im im-icon-Phone-Wifi"></i>
+                            </div>
+                            <div class="contact-info">
+                                <div class="contact-name">Phone</div>
+                                <div class="contact-details">
+                                    <span class="details-text"><b>+1 515 863 485</b></span>
+                                </div>
+                            </div> 
+                        </div>
+                        <!-- Card -->
+                        <div class="flex-card contact-card light-bordered hover-inset padding-15">
+                            <div class="icon">
+                                <i class="im im-icon-Map-Marker"></i>
+                            </div>
+                            <div class="contact-info">
+                                <div class="contact-name">Address</div>
+                                <div class="contact-details">
+                                    <span class="details-text"><b>15, Church St 45851 NY, USA</b></span>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Contact form -->
+                <div class="column is-5 is-offset-1">
+                    <form>
+                        <!-- Input -->
+                        <div class="field pb-10">
+                            <div class="control">
+                                <label><b>First name</b> *</label>
+                                <input class="input is-medium mt-5 mb-5" type="text">
+                            </div>
+                        </div>
+                        <!-- Input -->
+                        <div class="field pb-10">
+                            <div class="control">
+                                <label><b>Last name</b> *</label>
+                                <input class="input is-medium mt-5 mb-5" type="text">
+                            </div>
+                        </div>
+                        <!-- Input -->
+                        <div class="field pb-10">
+                            <div class="control">
+                                <label><b>Email</b> *</label>
+                                <input class="input is-medium mt-5 mb-5" type="email">
+                            </div>
+                        </div>
+                        <!-- Input -->
+                        <div class="field pb-10">
+                            <div class="control">
+                                <label><b>Company</b></label>
+                                <input class="input is-medium mt-5 mb-5" type="text">
+                            </div>
+                        </div>
+                        <!-- textarea -->
+                        <div class="field pb-10">
+                            <div class="control">
+                                <textarea class="textarea is-default-focus mt-5 mb-5" rows="5" placeholder="Your message ..."></textarea>
+                            </div>
+                        </div>
+                        <!-- Submit -->
+                        <button type="submit" class="button button-cta btn-align secondary-btn raised no-lh is-fullwidth rounded btn-outlined is-bold mt-10 mb-10">Send Message</button>
+                    </form>
+                </div>
+                <!-- /Contact form -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Form section -->
+
+<!-- Map -->
+<div id="google-map" class="section is-large"></div>
+<!-- /Map -->
+
+{{> footer-dark}}
+
+<!-- Google maps api call with api key -->
+<script src="https://maps.google.com/maps/api/js?key=AIzaSyAGLO_M5VT7BsVdjMjciKoH1fFJWWdhDPU"></script>

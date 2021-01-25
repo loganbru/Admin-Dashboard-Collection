@@ -1,0 +1,476 @@
+//////////////////////////////////
+//  IV WG 1
+//////////////////////////////////
+.nk-iv-wg1{
+	position: relative;
+	max-width: 100%;
+	padding: 1rem 1.25rem;
+	border-radius: $border-radius;
+	border: 1px solid $border-color;
+	background: $white;
+	.sub-text{
+		margin-bottom: 0.5rem;
+	}
+	&-info{
+		color: $accent-color;
+		font-weight: $fw-normal;
+		font-size: 1.125rem;
+		margin-bottom: 1rem;
+	}
+	&-progress{
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: $border-color;
+		height: 4px;
+		border-radius: 0 0 $border-radius $border-radius;
+		overflow: hidden;
+	}
+}
+
+//////////////////////////////////
+//  IV WG 2
+//////////////////////////////////
+.nk-iv-wg2 {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	&-text:not(:last-child) {
+		margin-bottom: 2.5rem;
+	}
+	&-title {
+		margin-bottom: .75rem;
+		.title {
+			font-size: 0.875rem;
+			line-height: 1.25rem;
+			font-weight: $fw-medium;
+			color: $base-light;
+			font-family: $base-font-family;
+			.icon {
+				font-size: $fx-sz-13;
+				margin-left: 0.2rem;
+			}
+			.is-dark & {
+				color: $accent-light;
+			}
+		}
+	}
+	&-amount {
+		font-size: 2.25rem;
+		letter-spacing: -0.03em;
+		line-height: 1.15em;
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+		.change, .sub {
+			padding-left: 0.5rem;
+			line-height: 1;
+		}
+		.change, .sub > span {
+			font-size: 0.875rem;
+			color: $accent-color;
+			font-weight: $fw-medium;
+			letter-spacing: normal;
+		}
+		.sub {
+			font-size: 0.875rem;
+			span {
+				padding-right: 2px;
+			}
+		}
+		&.ui-v2 {
+			font-size: 1.875rem;
+			border-bottom: 2px solid $accent-color;
+			padding-bottom: 1.25rem;
+			margin-bottom: 1rem;
+			display: block;
+			.change, .sub > span {
+				font-size: 1rem;
+			}
+		}
+	}
+	
+	&-cta {
+		text-align:center;
+		margin-top: auto;
+		margin-bottom: -0.5rem;
+		.cta-extra {
+			margin-top: 1rem;
+			min-height: 28px;
+		}
+	}
+	&-list {
+		li {
+			padding-top: 0.3rem;
+			padding-bottom: 0.3rem;
+		}
+		small {
+			font-size: 0.86em;
+		}
+		.item-value {
+			font-weight: $fw-medium;
+			font-size: 0.8125rem;
+			color: $base-color;
+			float: right;
+		}
+		.total {
+			border-top: 1px solid $border-color;
+			margin-top: 0.3rem;
+			padding-top: 0.55rem;
+			font-weight: $fw-bold;
+			.item-value {
+				font-weight: $fw-bold;
+			}
+		}
+	}
+}
+
+//////////////////////////////////
+//  IV WG 3
+//////////////////////////////////
+.nk-iv-wg3{
+	&-group{
+		display: flex;
+		align-items: flex-end;
+		flex-wrap: wrap;
+	}
+	&-ck{
+		position: relative;
+		height: 45px;
+		margin-bottom: .5rem;
+	}
+	&-title{
+		font-size: 1.125rem;
+		color: $base-light;
+		margin-bottom: .5rem;
+		font-weight: $fw-normal;
+		.icon{
+			font-size: .875rem;
+		}
+	}
+
+	&-sub{
+		font-size: .875rem;
+		color: $base-light;
+		margin-top: .125rem;
+		&-group{
+			display: flex;
+			flex-shrink: 0;
+		}
+		.icon{
+			font-size: .75rem;
+		}
+	}
+	&-plus{
+		position: absolute;
+		.icon{
+			font-size: 1rem;
+			line-height: 1.5rem;
+		}
+		~ *{
+			padding-left: 24px;
+		}
+	}
+	&-amount{
+		.number{
+			font-size: 1.25rem;
+			font-weight: $fw-bold;
+			color: $base-color;
+			line-height: 1.5rem;
+			white-space: nowrap;
+			small{
+				font-weight: $fw-normal;
+			}
+			&-sm{
+				font-size: 1.15rem;
+				color: $base-color;
+				line-height: 1.5rem;
+				white-space: nowrap;
+			}
+			.number{
+				&-up,&-down{
+					font-size: 50%;
+					.icon{
+						color: $base-text;
+					}
+					&:before{
+						font-family: $nk-dashlite-font;
+					}
+				}
+				&-up{
+					color: $success;
+					&:before{
+						content: $ni-arrow-long-up;
+					}
+				}
+				&-down{
+					color: $danger;
+					&:before{
+						content: $ni-minus-sm;
+					}
+				}
+			}
+		}
+	}
+	&-nav{
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		margin: -.5rem -1.25rem;
+		li{
+			a{
+				padding: .5rem 1.25rem;
+				display: flex;
+				align-items: center;
+				.icon{
+					font-size: 1.125rem;
+					width: 1.75rem;
+					line-height: 1.25rem;
+				}
+				span{
+					font-size: 0.875rem;
+					line-height: 1.25rem;
+				}
+			}
+		}
+	}
+	&-list{
+		li{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: .5rem 1.25rem;
+			border-bottom: 1px solid $border-light;
+			.lead-text{
+				font-size: $fx-sz-13;
+				font-weight: $fw-normal;
+			}
+		}
+		&:last-child{
+			padding: 0 0 1rem;
+			li:last-child{
+				border-bottom: none;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(md){
+	.nk-iv-wg3{ 
+		&-sub{
+			&:first-child{
+				min-width: 160px;
+			}
+		}
+	}
+}
+@media (max-width:420px){
+	.nk-iv-wg3{
+		&-sub{
+			width: 100%;
+			&-group{
+				flex-wrap: wrap;
+			}
+		}
+		&-plus{
+			margin-bottom: .75rem;
+			display: inline-block;
+			.icon{
+				font-size: 1.5rem;
+				line-height: 2.25rem;
+			}
+			~ *{
+				padding-left: 0;
+			}
+			+ *{
+				padding-top: 40px;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(sm){
+	.nk-iv-wg3{
+		&-list{
+			li{
+				padding: .5rem 1.75rem;
+			}
+		}
+	}
+}
+@media (min-width:680px) and (max-width:991px){
+	.nk-iv-wg3{
+		&-list{
+			display: flex;
+			flex-wrap: wrap;
+			li{
+				width:50%;
+				&:last-child{
+					border-bottom: 1px solid $border-light;
+				}
+			}
+			&:last-child(){
+				li:nth-last-child(2){
+					border-bottom: none;
+				}
+			}
+		}
+	}
+}
+@include media-breakpoint-up(lg){
+	.nk-iv-wg3{
+		&-list{
+			width: 33.333333%;
+			float: left;
+			li:last-child{
+				border-bottom: none;
+			}
+		}
+	}
+}
+@include media-breakpoint-up(xl){
+	.nk-iv-wg3{
+		&-amount{
+			.number{
+				font-size: 1.75rem;
+				line-height: 2.25rem;
+				font-weight: $fw-medium;
+				&-sm{
+					font-size: 1.25rem;
+					line-height: 2.25rem;
+				}
+			}
+		}
+		&-plus{
+			.icon{
+				font-size: 1.25rem;
+				line-height: 2.25rem;
+			}
+			~ *{
+				padding-left: 32px;
+			}
+		}
+	}
+}
+
+//////////////////////////////////
+//  IV WG 4
+//////////////////////////////////
+.nk-iv-wg4{
+	.lead-text{
+		font-weight: $fw-normal;
+	}
+	&-title{
+		margin-bottom: 0.75rem;
+	}
+	&-sub{
+		padding: 1.25rem 1.5rem;
+		&:not(:last-child){
+			border-bottom: 1px solid $border-light;
+		}
+		&:last-child{
+			.card &{
+				border-radius: 0 0 ($border-radius - 1) ($border-radius - 1);
+			}
+		}
+		.btn{
+			margin-top: 0.5rem;
+			margin-bottom: 0.5rem;
+		}
+	}
+	&-overview{
+		display: flex;
+		flex-wrap: wrap;
+		li{
+			width: 50%;
+		}
+	}
+	&-list{
+		li{
+			display: flex;
+			justify-content: space-between;
+			&:not(:last-child){
+				margin-bottom: 0.25rem;
+			}
+		}
+	}
+}
+
+@media (max-width:420px){
+	.nk-iv-wg4{
+		&-overview{
+			li{
+				width: 100%;
+			}
+		}
+	}
+}
+
+//////////////////////////////////
+//  IV WG 5
+//////////////////////////////////
+.nk-iv-wg5{
+	display: inline-flex;
+	flex-direction: column;
+	margin-left: auto;
+	margin-right: auto;
+	&-head{
+		margin-bottom: 1rem;
+	}
+	&-title{
+		margin-bottom: .25rem;
+	}
+	&-subtitle{
+		color: $base-light;
+	}
+	&-ck{
+		margin-top: auto;
+		position: relative;
+		display: inline-block;
+		&-result{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			text-align: center;
+			.text-lead{
+				font-size: 40px;
+				font-weight: 300;
+				color: $base-color;
+				line-height: 1.3;
+				&.sm{
+					font-size: 30px;
+				}
+			}
+			.text-sub{
+				font-size: 12px;
+				font-weight: 500;
+				color: $base-light;
+			}
+		}
+		&-minmax{
+			display: flex;
+			justify-content: space-between;
+			color: $base-light;
+			font-size: 12px;
+		}
+	}
+}
+
+@include media-breakpoint-up(xl){
+	.nk-iv-wg5{
+		&-ck{
+			canvas{
+				width: 300px !important;
+				height: 150px !important;
+			}
+			&.sm{
+				canvas{
+					width: 240px !important;
+					height: 120px !important;
+				}
+			}
+		}
+	}
+}

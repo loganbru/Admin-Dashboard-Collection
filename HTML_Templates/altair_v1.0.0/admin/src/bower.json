@@ -1,0 +1,78 @@
+{
+  "name": "altair-admin",
+  "version": "1.0.0",
+  "authors": [
+    "tzd"
+  ],
+  "description": "Altair Admin Material Design Premium Template",
+  "main": [
+    "index.php",
+    "assets/less/main.less",
+    "assets/js/altair_admin_common.js"
+  ],
+  "keywords": [
+    "admin",
+    "panel",
+    "material",
+    "design",
+    "dashboard"
+  ],
+  "license": "http://themeforest.net/licenses",
+  "homepage": "http://altair.tzdthemes.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "autosize": "~3.0.8",
+    "c3js-chart": "~0.4.10",
+    "clndr": "~1.2.14",
+    "codemirror": "~5.5.0",
+    "countUp.js": "~1.5.3",
+    "d3": "<=3.5.5",
+    "datatables": "~1.10.7",
+    "datatables-colvis": "~1.1.2",
+    "datatables-tabletools": "~2.2.4",
+    "dense": "*",
+    "fastclick": "~1.0.6",
+    "fitvids": "~1.1.0",
+    "fullcalendar": "~2.3.2",
+    "handlebars": "~3.0.3",
+    "ionrangeslider": "~2.0.12",
+    "jquery": "~2.1",
+    "jquery-icheck": "~1.0.2",
+    "jquery-mapael": "~1.0.1",
+    "jquery-mousewheel": "~3.1.13",
+    "jquery.dotdotdot": "~1.7.3",
+    "jquery.inputmask": "~3.1.63",
+    "jquery.easy-pie-chart": "~2.1.6",
+    "jquery.scrollbar": "~0.2.7",
+    "jquery-ui": "~1.11.4",
+    "kendo-ui-core": "~2015.2.720",
+    "magnific-popup": "~1.0.0",
+    "maplace.js": "~0.1.33",
+    "marked": "~0.3.3",
+    "metrics-graphics": "~2.6.0",
+    "modernizr": "~2.8.3",
+    "moment": "~2.10.3",
+    "parsleyjs": "~2.1.2",
+    "peity": "~3.2.0",
+    "prism": "gh-pages",
+    "selectize": "~0.12.1",
+    "switchery": "~0.8.1",
+    "uikit": "~2.21.0",
+    "velocity": "~1.2.1",
+    "weather-icons": "~1.3.2",
+    "jquery.actual": "~1.0.16",
+    "jquery-bez": "~1.0.11",
+    "waypoints": "~3.1.1"
+  },
+  "resolutions": {
+    "jquery": "~2.1",
+    "fastclick": "~1.0.6"
+  }
+}

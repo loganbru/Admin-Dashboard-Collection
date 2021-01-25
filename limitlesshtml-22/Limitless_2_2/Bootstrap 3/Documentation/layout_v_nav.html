@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/core.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script type="text/javascript" src="assets/js/plugins/ui/prism.min.js"></script>
+	
+	<script type="text/javascript" src="assets/js/core/app.js"></script>
+	<script type="text/javascript" src="assets/js/pages/sidebar_detached_sticky_native.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body data-spy="scroll" data-target=".sidebar-detached" class="has-detached-right">
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-default navbar-lg header-highlight">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="index.html"><img src="assets/images/logo_light.png" alt=""></a>
+
+			<ul class="nav navbar-nav pull-right visible-xs-block">
+				<li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+				<li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+				<li><a class="sidebar-mobile-detached-toggle"><i class="icon-grid7"></i></a></li>
+			</ul>
+		</div>
+
+		<div class="navbar-collapse collapse" id="navbar-mobile">
+			<ul class="nav navbar-nav">
+				<li><a class="sidebar-control sidebar-main-hide hidden-xs"><i class="icon-paragraph-justify3"></i></a></li>
+				<li><a class="sidebar-control sidebar-detached-hide hidden-xs"><i class="icon-drag-right"></i></a></li>
+			</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="other_changelog.html">Changelog <span class="label label-inline bg-warning-400 position-right">v. 2.0</span></a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page container -->
+	<div class="page-container">
+
+		<!-- Page content -->
+		<div class="page-content">
+
+			<!-- Main sidebar -->
+			<div class="sidebar sidebar-main">
+				<div class="sidebar-content">
+
+	        		<!-- Support -->
+					<div class="sidebar-category no-margin">
+						<div class="category-title">
+							<span>Have questions?</span>
+							<i class="icon-help text-muted pull-right"></i>
+						</div>
+
+						<div class="category-content">
+							<a href="http://kopyov.ticksy.com" class="btn bg-success-400 btn-block" target="_blank"><i class="icon-lifebuoy position-left"></i> Limitless support</a>
+						</div>
+					</div>
+					<!-- /support -->
+
+
+					<!-- Main navigation -->
+					<div class="sidebar-category">
+						<div class="category-title">
+							<span>Navigation</span>
+							<i class="icon-menu7 text-muted pull-right"></i>
+						</div>
+
+						<div class="category-content no-padding">
+							<ul class="navigation navigation-main navigation-accordion">
+
+								<!-- Main -->
+								<li class="navigation-header">Main</li>
+								<li><a href="index.html">Introduction</a></li>
+								<li><a href="main_getting_started.html">Getting started</a></li>
+								<li><a href="main_starter_kit.html">Starter kit</a></li>
+								<li><a href="main_rtl.html">RTL layout</a></li>
+
+								<li class="navigation-header">Basic functionality</li>								
+								<li><a href="base_less_css.html">LESS and CSS</a></li>
+								<li><a href="base_less_compile.html">Compiling LESS</a></li>
+								<li><a href="base_less_compile_rtl.html">Compiling LESS for RTL version</a></li>
+								<li>
+									<a href="#">Plugins</a>
+									<ul>
+										<li><a href="plugins_forms.html">Forms</a></li>
+										<li><a href="plugins_forms_styling.html">Form styling</a></li>
+										<li><a href="plugins_selects.html">Selects</a></li>
+										<li><a href="plugins_editors.html">Editors</a></li>
+										<li><a href="plugins_uploaders.html">Uploaders</a></li>
+										<li><a href="plugins_wizards.html">Wizards</a></li>
+										<li><a href="plugins_extensions.html">Extensions</a></li>
+										<li><a href="plugins_notifications.html">Notifications</a></li>
+										<li><a href="plugins_pickers.html">Pickers</a></li>
+										<li><a href="plugins_tables.html">Tables</a></li>
+										<li><a href="plugins_ui.html">UI</a></li>
+										<li><a href="plugins_vis.html">Visualization</a></li>
+									</ul>
+								</li>
+								<li><a href="base_bootstrap.html">Bootstrap</a></li>
+								<li><a href="base_color_system.html">Color system</a></li>
+								<li><a href="base_helpers.html">Helpers</a></li>
+								<li><a href="base_themes.html">Themes</a></li>
+
+								<li class="navigation-header">Layout options</li>
+								<li><a href="layout_markup.html">Markup</a></li>
+								<li><a href="layout_sidebars.html">Sidebars</a></li>
+								<li><a href="layout_navbars.html">Navbars</a></li>
+								<li class="active"><a href="layout_v_nav.html">Vertical navigation</a></li>
+								<li><a href="layout_h_nav.html">Horizontal navigation</a></li>
+								<li><a href="layout_page_header.html">Page header</a></li>
+								<li><a href="layout_footer.html">Footer</a></li>
+
+								<li class="navigation-header">Other</li>
+								<li><a href="other_credits.html">Sources and credits</a></li>
+								<li><a href="other_changelog.html">Changelog <span class="label bg-warning-400">version 2.0</span></a></li>
+								<!-- /main -->
+
+							</ul>
+						</div>
+					</div>
+					<!-- /main navigation -->
+
+				</div>
+			</div>
+			<!-- /main sidebar -->
+
+
+			<!-- Main content -->
+			<div class="content-wrapper">
+
+				<!-- Page header -->
+				<div class="page-header">
+					<div class="page-header-content">
+						<div class="page-title">
+							<h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold">Limitless</span> - Vertical Navigation</h4>
+						</div>
+
+						<div class="heading-elements">
+							<ul class="breadcrumb">
+								<li><a href="index.html"><i class="icon-home2 position-left"></i> Home</a></li>
+								<li class="active">Vertical navigation</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- /page header -->
+				
+
+				<!-- Content area -->
+				<div class="content">
+
+					<!-- Detached content -->
+					<div class="container-detached">
+						<div class="content-detached">
+
+							<!-- Navigation overview -->
+							<div class="panel panel-flat" id="overview">
+								<div class="panel-heading">
+									<h5 class="panel-title">Navigation overview</h5>
+									<div class="heading-elements">
+										<ul class="icons-list">
+					                		<li><a data-action="collapse"></a></li>
+					                		<li><a data-action="close"></a></li>
+					                	</ul>
+					            	</div>
+								</div>
+
+								<div class="panel-body">
+									<p>Vertical navigation - type of navigation that is used in sidebars and has vertical direction. By default navigation includes custom icons based on16px grid, aligned to the left (to the right in RTL layout) and have absolute position. In mini sidebar navigation text is hidden and appears as additional labels on parent level item hover. In this type of sidebar icons are centered and have static position. Also optional styling is available: different sizes, bordered nav and layout with right aligned icons. Vertical navigation supports the following options:</p>
+									
+									<div class="table-responsive">
+										<table class="table table-bordered table-striped">
+											<thead>
+												<tr>
+													<th style="width: 250px;">Option</th>
+													<th>Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="text-semibold">Navigation placement</td>
+													<td>Main navigation can be used in any sidebar type - main, secondary or opposite. Please note - collapsed navigation is allowed only in main sidebar, all other sidebars display full sized navigation. Since navigation is a part of sidebar content, it can be mixed with other components and can be placed before or after them depending on the priority.</td>
+												</tr>
+												<tr>
+													<td class="text-semibold">Navigation types</td>
+													<td>Default navigation type is <strong>collapsible</strong>: when new item is expanded, current level remains opened. This logic works in all navigation levels. Collapsible navigation doesn't require any additional classes. The second navigation type is <strong>accordion</strong>: when new item is expanded, current level is collapsed. This logic works in all navigation levels as well. In mini sidebar parent level of navigation doesn't have click event and shows child levels on hover, but child levels functionality remains according to the type of navigation. Sidebar navigation supports <strong>up to 3 levels</strong> of child menus.</td>
+												</tr>
+												<tr>
+													<td class="text-semibold">Navigation sizing</td>
+													<td>By default, 1st level navigation items have <code>44px</code> height, other levels have <code>40px</code> height. Besides default size, sidebar navigation supports 3 additional sizes: <code>large</code>, <code>small</code> and <code>mini</code>. Basically, these sizes change item height. To use, just add one of <code>.navigation-lg (sm, xs)</code> classes to the navigation container. This option works in all sidebars.</td>
+												</tr>
+												<tr>
+													<td class="text-semibold">Additional styling</td>
+													<td>Depending on sidebar background color, navigation menu automatically adjusts active link color for parent level. This color can be changed by adding <code>.element-*</code> class to the navigation container. Besides color options, selected items can be disabled on the fly by adding <code>.disabled</code> class to the parent <code>&lt;li&gt;</code> item, it sets reduced opacity and disables click event. Additional options: navigation with <code>right</code> icons - has right positioned icons, <code>bordered</code> navigation - has additional borders between items for better separation.</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<!-- /navigation overview -->
+
+
+							<!-- Main navigation examples -->
+							<div class="panel panel-flat" id="options">
+								<div class="panel-heading">
+									<h5 class="panel-title">Navigation options</h5>
+
+									<div class="heading-elements">
+										<ul class="icons-list">
+					                		<li><a data-action="collapse"></a></li>
+					                		<li><a data-action="close"></a></li>
+					                	</ul>
+				                	</div>
+								</div>
+
+								<div class="panel-body">
+									<h6 class="text-semibold" id="options_types">Collapsible and accordion types</h6>
+									<p class="content-group">Flexible template functionality offers 2 different kinds of navigation: collapsible and accordion. Both have custom jQuery code and provide extended control over the child nav items. Default type is <code>collapsible</code> navigation: open as many child levels as you want, they all will be visible all the time. Second type is <code>accordion</code> navigation: allows to display only 1 parent level, collapsing all others. Both navigation types have hidden 2nd level in mini sidebar that opens on hover.</p>
+
+									<div class="row">
+										<div class="col-md-6">
+											<p class="text-semibold">Collapsible navigation markup</p>
+											<pre class="language-markup content-group" data-line="3"><code>&lt;!-- Default navigation markup -->
+&lt;div class="category-content no-padding">
+	&lt;ul class="navigation navigation-main">
+		&lt;li>
+			&lt;a href="index.html">
+				&lt;i class="icon-home3">&lt;/i>
+				&lt;span>Dashboard&lt;/span>
+			&lt;/a>
+		&lt;/li>
+		&lt;li>
+			&lt;a href="#">
+				&lt;i class="icon-stats2">&lt;/i>
+				&lt;span>Data visualization&lt;/span>
+			&lt;/a>
+			&lt;ul>
+				&lt;li class="active">
+					&lt;a href="index.html">
+						&lt;i class="icon-home3">&lt;/i> 
+						D3 library
+					&lt;/a>
+				&lt;/li>
+				...
+			&lt;/ul>
+		&lt;/li>
+		...
+	&lt;/ul>
+&lt;/div>
+&lt;!-- /default navigation markup -->										
+</code></pre>
+										</div>
+
+										<div class="col-md-6">
+											<p class="text-semibold">Accordion navigation markup</p>
+											<pre class="language-markup content-group" data-line="3"><code>&lt;!-- Accordion navigation markup -->
+&lt;div class="category-content no-padding">
+	&lt;ul class="navigation navigation-main navigation-accordion">
+		&lt;li>
+			&lt;a href="index.html">
+				&lt;i class="icon-home3">&lt;/i>
+				&lt;span>Dashboard&lt;/span>
+			&lt;/a>
+		&lt;/li>
+		&lt;li>
+			&lt;a href="#">
+				&lt;i class="icon-stats2">&lt;/i>
+				&lt;span>Data visualization&lt;/span>
+			&lt;/a>
+			&lt;ul>
+				&lt;li class="active">
+					&lt;a href="index.html">
+						&lt;i class="icon-home3">&lt;/i> 
+						D3 library
+					&lt;/a>
+				&lt;/li>
+				...
+			&lt;/ul>
+		&lt;/li>
+		...
+	&lt;/ul>
+&lt;/div>
+&lt;!-- /accordion navigation markup -->										
+</code></pre>
+										</div>
+									</div>
+
+
+									<h6 class="text-semibold" id="options_positions">Icons position</h6>
+									<p class="content-group">Sidebar navigation supports icons in all menu levels. Default icons position is left. All icons have absolute position, allowing parent link text wrap and keep permanent left padding. Left position of icons allows to keep a visual hierarchy: icon > text > arrow (label), but right position of icons makes usage of arrows useless as they won't be visible. To change icons position just add <code>.navigation-icons-right</code> to the <code>.navigation</code> container, CSS will do the rest.</p>
+
+									<div class="row">
+										<div class="col-md-6">
+											<p class="text-semibold">Default left icons position</p>
+											<pre class="language-markup content-group" data-line="3"><code>&lt;!-- Left icons position -->
+&lt;div class="category-content no-padding">
+	&lt;ul class="navigation navigation-main">
+		&lt;li>
+			&lt;a href="index.html">
+				&lt;i class="icon-home3">&lt;/i>
+				&lt;span>Dashboard&lt;/span>
+			&lt;/a>
+		&lt;/li>
+		&lt;li>
+			&lt;a href="form_components.html">
+				&lt;i class="icon-compose">&lt;/i>
+				&lt;span>Form components&lt;/span>
+			&lt;/a>
+		&lt;/li>
+		...
+	&lt;/ul>
+&lt;/div>
+&lt;!-- /left icons position -->										
+</code></pre>
+										</div>
+
+										<div class="col-md-6">
+											<p class="text-semibold">Optional right icons position</p>
+											<pre class="language-markup content-group" data-line="3"><code>&lt;!-- Right icons position -->
+&lt;div class="category-content no-padding">
+	&lt;ul class="navigation navigation-main navigation-icons-right">
+		&lt;li>
+			&lt;a href="index.html">
+				&lt;i class="icon-home3">&lt;/i>
+				&lt;span>Dashboard&lt;/span>
+			&lt;/a>
+		&lt;/li>
+		&lt;li>
+			&lt;a href="form_components.html">
+				&lt;i class="icon-compose">&lt;/i>
+				&lt;span>Form components&lt;/span>
+			&lt;/a>
+		&lt;/li>
+		...
+	&lt;/ul>
+&lt;/div>
+&lt;!-- /right icons position -->										
+</code></pre>
+										</div>
+									</div>
+
+
+									<h6 class="text-semibold" id="options_display">Display options</h6>
+									<p class="content-group">Default navigation menu doesn't have any borders, parent level items are <code>44px</code> high, child levels items are <code>40px</code> high. It can be extended using 3 optional classes: <code>.navigation-lg</code> - changes parent level item height to <code>46px</code> and child levels to <code>42px</code>, <code>.navigation-sm</code> - changes parent level item height to <code>42px</code> and child levels to <code>38px</code>, <code>.navigation-xs</code> - changes parent level item height to <code>40px</code> and child levels to <code>36px</code>.</p>
+
+									<div class="row">
+										<div class="col-md-6">
+											<p class="text-semibold">Mini navigation example</p>
+											<pre class="language-markup" data-line="3"><code>&lt;!-- Mini navigation -->
+&lt;div class="category-content no-padding">
+	&lt;ul class="navigation navigation-main navigation-xs">
+		&lt;li>
+			&lt;a href="index.html">
+				&lt;i class="icon-home3">&lt;/i>
+				&lt;span>Dashboard&lt;/span>
+			&lt;/a>
+		&lt;/li>
+		&lt;li>
+			&lt;a href="form_components.html">
+				&lt;i class="icon-compose">&lt;/i>
+				&lt;span>Form components&lt;/span>
+			&lt;/a>
+		&lt;/li>
+		...
+	&lt;/ul>
+&lt;/div>
+&lt;!-- /mini navigation -->										
+</code></pre>
+										</div>
+
+										<div class="col-md-6">
+											<p class="text-semibold">Bordered navigation example</p>
+											<pre class="language-markup" data-line="3"><code>&lt;!-- Bordered navigation -->
+&lt;div class="category-content no-padding">
+	&lt;ul class="navigation navigation-main navigation-bordered">
+		&lt;li>
+			&lt;a href="index.html">
+				&lt;i class="icon-home3">&lt;/i>
+				&lt;span>Dashboard&lt;/span>
+			&lt;/a>
+		&lt;/li>
+		&lt;li>
+			&lt;a href="form_components.html">
+				&lt;i class="icon-compose">&lt;/i>
+				&lt;span>Form components&lt;/span>
+			&lt;/a>
+		&lt;/li>
+		...
+	&lt;/ul>
+&lt;/div>
+&lt;!-- /bordered navigation -->										
+</code></pre>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /main navigation examples -->
+
+
+							<!-- Main navigation classes -->
+							<div class="panel panel-flat" id="classes">
+								<div class="panel-heading">
+									<h5 class="panel-title">Navigation classes</h5>
+
+									<div class="heading-elements">
+										<ul class="icons-list">
+					                		<li><a data-action="collapse"></a></li>
+					                		<li><a data-action="close"></a></li>
+					                	</ul>
+				                	</div>
+								</div>
+
+								<div class="panel-body">
+									<p>This table contains all classes related to the sidebar navigation. Vertical navigation is a custom layout element and adapted for main navigation purposes: depending on the needs, it supports different options such as size, active item background color, type, placement etc. All these options can be set via these classes:</p>
+
+									<div class="table-responsive">
+										<table class="table table-bordered">
+											<thead>
+												<tr>
+													<th style="width: 20%;">Class</th>
+													<th>Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><code>.navigation</code></td>
+													<td>Default navigation class, must be used with any navigation type and color. Responsible for basic styling of item colors, borders, sizing and icons.</td>
+												</tr>
+												<tr>
+													<td><code>.navigation-main</code></td>
+													<td>Class for main navigation. Defines navigation in main sidebar: hides text in mini sidebar type and fires click event in parent item links. Only this navigation class works with <code>.navbar-xs</code> body class and mini sidebar, all other navigations are full sized.</td>
+												</tr>
+												<tr>
+													<td><code>.navigation-alt</code></td>
+													<td>Class for alternative navigation. Defines navigation in other sidebars. This navigation has its own functionality and keeps its functionality without main sidebar size dependency.</td>
+												</tr>
+												<tr>
+													<td><code>.navigation-accordion</code></td>
+													<td>Changes navigation type from default collapsible to accordion-like.</td>
+												</tr>
+												<tr>
+													<td><code>.navigation-icons-right</code></td>
+													<td>Changes icons position from left to right. Note: arrows that define children group state are hidden in right icons layout.</td>
+												</tr>
+												<tr>
+													<td><code>.element-*</code></td>
+													<td>Custom color system class. Changes background color of active item in 1st menu level, text and arrow of the second menu level in collapsed mode.</td>
+												</tr>
+												<tr>
+													<td><code>.navigation-bordered</code></td>
+													<td>Adds horizontal borders to menu items in parent level only.</td>
+												</tr>
+												<tr>
+													<td><code>.navigation-lg (sm, xs)</code></td>
+													<td>Changes navigation size. Basically, all these classes change vertical spacing of the items.</td>
+												</tr>
+												<tr>
+													<td><code>li.category-title</code></td>
+													<td>Divide navigation with titles by adding <code>.category-title</code> to the parent <code>&lt;li></code> item and wrap inner text in <code>&lt;span /></code>.</td>
+												</tr>
+												<tr>
+													<td><code>li.disabled</code></td>
+													<td>Disables any navigation item. Sets reduced opacity, changes cursor to <code>not-allowed</code> and disables click events.</td>
+												</tr>
+												<tr>
+													<td><code>li.active</code></td>
+													<td>Defines active navigation item. No need to add this class to all parent level <code>&lt;li></code>'s, but only for actual active link, jQuery code will do the rest.</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<!-- /main navigation classes -->
+
+						</div>
+					</div>
+					<!-- /detached content -->
+
+
+					<!-- Detached sidebar -->
+					<div class="sidebar-detached">
+			        	<div class="sidebar sidebar-default">
+							<div class="sidebar-content">
+
+				        		<!-- Contact author -->
+								<div class="sidebar-category no-margin">
+									<div class="category-title">
+										<span>Page navigation</span>
+										<i class="icon-menu7 text-muted pull-right"></i>
+									</div>
+
+									<div class="category-content">
+										<a href="http://themeforest.net/user/kopyov" class="btn bg-blue btn-block" target="_blank"><i class="icon-reading position-left"></i> Contact author</a>
+									</div>
+								</div>
+								<!-- /contact author -->
+
+			        			
+			        			<!-- Navigation -->
+								<div class="sidebar-category">
+									<div class="category-content no-padding">
+										<ul class="nav navigation no-padding-top">
+											<li class="navigation-header"><i class="icon-history pull-right"></i> Navigation</li>
+											<li><a href="#overview">Navigation overview</a></li>
+											<li>
+												<a href="#options">Navigation options</a>
+												<ul>
+													<li><a href="#options_types">Navigation types</a></li>
+													<li><a href="#options_positions">Navigation positions</a></li>
+													<li><a href="#options_display">Display options</a></li>
+												</ul>
+											</li>
+											<li><a href="#classes">Navigation classes</a></li>
+											<li class="navigation-divider"></li>
+											<li><a href="#">Go to top <i class="icon-circle-up2 pull-right"></i></a></li>
+							            </ul>
+						            </div>
+					            </div>
+					            <!-- /navigation -->
+
+				            </div>
+			            </div>
+		            </div>
+		            <!-- /detached sidebar -->
+
+
+					<!-- Footer -->
+					<div class="footer text-muted">
+						&copy; 2015. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
+					</div>
+					<!-- /footer -->
+
+				</div>
+				<!-- /content area -->
+
+			</div>
+			<!-- /main content -->
+
+		</div>
+		<!-- /page content -->
+
+	</div>
+	<!-- /page container -->
+
+</body>
+</html>

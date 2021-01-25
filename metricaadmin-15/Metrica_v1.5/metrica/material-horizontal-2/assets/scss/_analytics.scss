@@ -1,0 +1,85 @@
+//
+// Analytics
+// 
+
+
+.dash-chart {
+  position: relative;
+  height: 350px;
+}
+
+.browser_users{
+  table{
+    td{
+      i{
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+.impressions-data{
+  h2{
+    color: $gray-700;
+    font-weight: 500;
+    font-size: 34px;
+  }
+}
+
+
+// Report
+
+
+.rep-map{
+  height: 280px;
+}
+.report-card{
+  .report-main-icon{
+    font-size: 28px;
+    color: $white;
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    display: block;
+    text-align: center;
+    border-radius: 52% 48% 23% 77% / 44% 68% 32% 56%;
+    box-shadow: 0px 3px 3px 0.25px rgba($gray-700, 0.15);
+    &.bg-icon-purple{
+      background-color: lighten($purple, 6%);
+    }
+    &.bg-icon-danger{
+      background-color: lighten($danger, 12%);
+    }
+    &.bg-icon-secondary{
+      background-color: lighten($secondary, 20%);
+    }
+    &.bg-icon-warning{
+      background-color: lighten($warning, 15%);
+    }
+  }
+  h3{
+    color: $white;
+    font-weight: 600;
+  }
+  p{
+    color: $white;
+  }
+}
+.url-list{
+  li{
+    i{
+      font-size: 24px;
+      vertical-align: middle;
+    }
+  }
+}
+.traffic-card{
+  margin: 20px 0;
+  h3{
+    font-size: 34px;
+    font-weight: 500;
+    color: $gray-700;
+    margin: 20px 0;
+  }
+}
+

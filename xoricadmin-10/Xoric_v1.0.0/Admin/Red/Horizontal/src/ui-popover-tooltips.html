@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Popover & Tooltips | Xoric - Responsive Bootstrap 4 Admin Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+        <meta content="Themesdesign" name="author" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- Bootstrap Css -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <!-- Icons Css -->
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <!-- App Css-->
+        <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+
+    </head>
+
+    <body data-topbar="colored" data-layout="horizontal" data-layout-size="boxed">
+
+        <!-- Begin page -->
+        <div id="layout-wrapper">
+
+            @@include("partials/horizontal.html")
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="main-content">
+
+                <div class="page-content">
+
+                    <!-- Page-Title -->
+                    <div class="page-title-box">
+                        <div class="container-fluid">
+                            <div class="row align-items-center">
+                                <div class="col-md-8">
+                                    <h4 class="page-title mb-1">Popover & Tooltips</h4>
+                                    <ol class="breadcrumb m-0">
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Bootstrap UI</a></li>
+                                    <li class="breadcrumb-item active">Popover & Tooltips</li>
+                                    </ol>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="float-right d-none d-md-block">
+                                        <div class="dropdown">
+                                            <button class="btn btn-light btn-rounded dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="mdi mdi-settings-outline mr-1"></i> Settings
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-animated">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">Separated link</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- end page title end breadcrumb -->
+
+                    <div class="page-content-wrapper">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-body">
+            
+                                            <h4 class="header-title">Popovers</h4>
+                                            <p class="card-title-desc">Add small overlay content, like those found in iOS, to any element for housing secondary information.</p>
+                                            <div class="button-items">
+                                                <button type="button" class="btn btn-primary waves-effect" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                                                    Popover on top
+                                                </button>
+                
+                                                <button type="button" class="btn btn-primary waves-effect" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                                                    Popover on right
+                                                </button>
+                
+                                                <button type="button" class="btn btn-primary waves-effect"
+                                                        data-container="body" data-toggle="popover" data-placement="bottom"
+                                                        data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                                                    Popover on bottom
+                                                </button>
+                
+                                                <button type="button" class="btn btn-primary waves-effect" data-container="body" data-toggle="popover" data-placement="left" title="Popover Title" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                                                    Popover on left
+                                                </button>
+                
+                                                <button type="button" class="btn btn-primary waves-effect waves-light" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</button>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div> <!-- end col -->
+                            </div> <!-- end row -->
+            
+            
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-body">
+            
+                                            <h4 class="header-title">Tooltips</h4>
+                                            <p class="card-title-desc">Hover over the links below to see tooltips:</p>
+
+                                            <div class="table-responsive">
+                                                <table class="table table-centered mb-0">
+                                                    
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Tooltip on left</td>
+                                                            <td>
+                                                                <button type="button" class="btn btn-info btn-sm" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
+                                                                    Hover me
+                                                                </button>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Tooltip on right</td>
+                                                            <td>
+                                                                <button type="button" class="btn btn-info btn-sm" data-toggle="tooltip" data-placement="right" title="Tooltip on right">
+                                                                    Hover me
+                                                                </button>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Tooltip on bottom</td>
+                                                            <td>
+                                                                <button type="button" class="btn btn-info btn-sm" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+                                                                    Hover me
+                                                                </button>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Tooltip on top</td>
+                                                            <td>
+                                                                <button type="button" class="btn btn-info btn-sm" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                                                    Hover me
+                                                                </button>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+            
+                                        </div>
+                                    </div>
+                                </div> <!-- end col -->
+                            </div> <!-- end row -->
+                        </div>
+                        <!-- end container-fluid -->
+                    </div> 
+                    <!-- end page-content-wrapper -->
+                </div>
+                <!-- End Page-content -->
+
+                
+                @@include("partials/footer.html")
+            </div>
+            <!-- end main content-->
+
+        </div>
+        <!-- END layout-wrapper -->
+
+        @@include("partials/right-sidebar.html")
+
+        <!-- JAVASCRIPT -->
+        <script src="assets/libs/jquery/jquery.min.js"></script>
+        <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+        <script src="assets/libs/simplebar/simplebar.min.js"></script>
+        <script src="assets/libs/node-waves/waves.min.js"></script>
+
+        <script src="https://unicons.iconscout.com/release/v2.0.1/script/monochrome/bundle.js"></script>
+
+
+        <script src="assets/js/app.js"></script>
+
+    </body>
+</html>

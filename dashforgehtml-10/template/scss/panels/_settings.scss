@@ -1,0 +1,146 @@
+
+// Template settings menu
+.df-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.df-settings {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1200;
+  @include transition(all 0.2s);
+
+  &.show {
+    right: 250px;
+
+    .df-settings-link {
+      &,&:hover,&:focus {
+        background-color: #fff;
+        border-color: $color-ui-03;
+        color: $gray-900;
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+.df-settings-link {
+  position: absolute;
+  top: 98px;
+  left: -44px;
+  width: 45px;
+  height: 45px;
+  background-color: #fff;
+  color: $gray-600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $color-ui-03;
+  border-right-width: 0;
+  @include border-left-radius($border-radius);
+  @include transition($transition-base);
+  z-index: 1;
+
+  @include hover-focus() {
+    color: $gray-900;
+    border-color: $color-ui-04;
+    box-shadow: 0 0 10px 2px rgba($gray-900, .1);
+  }
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.df-settings-body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #fff;
+  border-left: 1px solid $color-ui-03;
+  box-shadow: 0 0 15px rgba($gray-900, .1);
+  padding: 0 20px;
+  overflow-y: auto;
+
+  label {
+    display: block;
+    line-height: 1;
+  }
+}
+
+.df-skin,
+.df-mode {
+  height: 20px;
+  border: 1px solid $border-color;
+  display: flex;
+  margin-bottom: 5px;
+  padding: 2px;
+
+  @include hover-focus() {
+    border-color: $color-ui-04;
+    box-shadow: 0 0 0 1px $color-ui-04;
+  }
+
+  &.active {
+    border-color: $blue;
+    box-shadow: 0 0 0 1px $blue;
+    position: relative;
+
+    &::before {
+      content: '\f3ff';
+      font-family: 'Ionicons';
+      font-size: 26px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      line-height: 0;
+      margin-left: -5px;
+      margin-top: -1px;
+      color: $blue;
+    }
+
+    ~ span { color: $blue; }
+  }
+
+  &.disabled {
+    cursor: default;
+    border-color: $border-color;
+    box-shadow: none;
+    opacity: .75;
+  }
+
+  > span {
+    display: block;
+    flex: 1;
+  }
+}
+
+.df-skin-deepblue {
+  span:first-child { background-color: lighten($color-brand-01, 15%); }
+  span:last-child { background-color: lighten($color-brand-02, 10%); }
+}
+
+.df-skin-charcoal {
+  span:first-child { background-color: $color-ui-02; }
+  span:last-child { background-color: #2d353e; }
+}
+
+.df-skin-gradient1 {
+  span:first-child { background-color: $indigo; }
+  span:last-child { background-color: $blue; }
+}
+
+.df-skin-name {
+  font-size: 9px;
+  font-weight: $font-weight-semibold;
+  font-family: $font-family-system;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  color: $color-text-03;
+}

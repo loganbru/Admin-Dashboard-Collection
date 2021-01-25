@@ -1,0 +1,1709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/core.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script type="text/javascript" src="assets/js/plugins/ui/prism.min.js"></script>
+	
+	<script type="text/javascript" src="assets/js/core/app.js"></script>
+	<script type="text/javascript" src="assets/js/pages/sidebar_detached_sticky_native.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body data-spy="scroll" data-target=".sidebar-detached" class="has-detached-right">
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-default navbar-lg header-highlight">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="index.html"><img src="assets/images/logo_light.png" alt=""></a>
+
+			<ul class="nav navbar-nav pull-right visible-xs-block">
+				<li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+				<li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+				<li><a class="sidebar-mobile-detached-toggle"><i class="icon-grid7"></i></a></li>
+			</ul>
+		</div>
+
+		<div class="navbar-collapse collapse" id="navbar-mobile">
+			<ul class="nav navbar-nav">
+				<li><a class="sidebar-control sidebar-main-hide hidden-xs"><i class="icon-paragraph-justify3"></i></a></li>
+				<li><a class="sidebar-control sidebar-detached-hide hidden-xs"><i class="icon-drag-right"></i></a></li>
+			</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="other_changelog.html">Changelog <span class="label label-inline bg-warning-400 position-right">v. 2.0</span></a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page container -->
+	<div class="page-container">
+
+		<!-- Page content -->
+		<div class="page-content">
+
+			<!-- Main sidebar -->
+			<div class="sidebar sidebar-main">
+				<div class="sidebar-content">
+
+	        		<!-- Support -->
+					<div class="sidebar-category no-margin">
+						<div class="category-title">
+							<span>Have questions?</span>
+							<i class="icon-help text-muted pull-right"></i>
+						</div>
+
+						<div class="category-content">
+							<a href="http://kopyov.ticksy.com" class="btn bg-success-400 btn-block" target="_blank"><i class="icon-lifebuoy position-left"></i> Limitless support</a>
+						</div>
+					</div>
+					<!-- /support -->
+
+
+					<!-- Main navigation -->
+					<div class="sidebar-category">
+						<div class="category-title">
+							<span>Navigation</span>
+							<i class="icon-menu7 text-muted pull-right"></i>
+						</div>
+
+						<div class="category-content no-padding">
+							<ul class="navigation navigation-main navigation-accordion">
+
+								<!-- Main -->
+								<li class="navigation-header">Main</li>
+								<li><a href="index.html">Introduction</a></li>
+								<li class="active"><a href="main_getting_started.html">Getting started</a></li>
+								<li><a href="main_starter_kit.html">Starter kit</a></li>
+								<li><a href="main_rtl.html">RTL layout</a></li>
+
+								<li class="navigation-header">Basic functionality</li>								
+								<li><a href="base_less_css.html">LESS and CSS</a></li>
+								<li><a href="base_less_compile.html">Compiling LESS</a></li>
+								<li><a href="base_less_compile_rtl.html">Compiling LESS for RTL version</a></li>
+								<li>
+									<a href="#">Plugins</a>
+									<ul>
+										<li><a href="plugins_forms.html">Forms</a></li>
+										<li><a href="plugins_forms_styling.html">Form styling</a></li>
+										<li><a href="plugins_selects.html">Selects</a></li>
+										<li><a href="plugins_editors.html">Editors</a></li>
+										<li><a href="plugins_uploaders.html">Uploaders</a></li>
+										<li><a href="plugins_wizards.html">Wizards</a></li>
+										<li><a href="plugins_extensions.html">Extensions</a></li>
+										<li><a href="plugins_notifications.html">Notifications</a></li>
+										<li><a href="plugins_pickers.html">Pickers</a></li>
+										<li><a href="plugins_tables.html">Tables</a></li>
+										<li><a href="plugins_ui.html">UI</a></li>
+										<li><a href="plugins_vis.html">Visualization</a></li>
+									</ul>
+								</li>
+								<li><a href="base_bootstrap.html">Bootstrap</a></li>
+								<li><a href="base_color_system.html">Color system</a></li>
+								<li><a href="base_helpers.html">Helpers</a></li>
+								<li><a href="base_themes.html">Themes</a></li>
+
+								<li class="navigation-header">Layout options</li>
+								<li><a href="layout_markup.html">Markup</a></li>
+								<li><a href="layout_sidebars.html">Sidebars</a></li>
+								<li><a href="layout_navbars.html">Navbars</a></li>
+								<li><a href="layout_v_nav.html">Vertical navigation</a></li>
+								<li><a href="layout_h_nav.html">Horizontal navigation</a></li>
+								<li><a href="layout_page_header.html">Page header</a></li>
+								<li><a href="layout_footer.html">Footer</a></li>
+
+								<li class="navigation-header">Other</li>
+								<li><a href="other_credits.html">Sources and credits</a></li>
+								<li><a href="other_changelog.html">Changelog <span class="label bg-warning-400">version 2.0</span></a></li>
+								<!-- /main -->
+
+							</ul>
+						</div>
+					</div>
+					<!-- /main navigation -->
+
+				</div>
+			</div>
+			<!-- /main sidebar -->
+
+
+			<!-- Main content -->
+			<div class="content-wrapper">
+
+				<!-- Page header -->
+				<div class="page-header">
+					<div class="page-header-content">
+						<div class="page-title">
+							<h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold">Limitless</span> - Getting Started</h4>
+						</div>
+
+						<div class="heading-elements">
+							<ul class="breadcrumb">
+								<li><a href="index.html"><i class="icon-home2 position-left"></i> Home</a></li>
+								<li class="active">Getting started</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- /page header -->
+				
+
+				<!-- Content area -->
+				<div class="content">
+
+					<!-- Detached content -->
+					<div class="container-detached">
+						<div class="content-detached">
+
+							<!-- Getting started -->
+							<div class="panel panel-flat" id="gs">
+								<div class="panel-heading">
+									<h5 class="panel-title">Getting started</h5>
+									<div class="heading-elements">
+										<ul class="icons-list">
+					                		<li><a data-action="collapse"></a></li>
+					                		<li><a data-action="close"></a></li>
+					                	</ul>
+				                	</div>
+								</div>
+
+								<div class="panel-body">
+									<div class="content-group-lg">
+										<h6 class="text-semibold" id="gs_overview">Overview</h6>
+										<p>Limitless template includes 4 layouts - 3 with vertical navigation and 1 with horizontal navigation. All layouts are placed inside 4 different folders with related name. Each layout contains main HTML files, all assets (LESS, CSS, JS, demo data, charts, maps etc etc) you can find in <code>/assets/</code> folder. CKEditor folder must be  in folder root, starters folder contains a set of blank pages with optional page layouts.</p>
+
+										<p class="text-muted text-size-small">Screenshot</p>
+										<img src="assets/images/screenshots/u/folder_layouts.png" alt="" class="img-thumbnail img-responsive">
+									</div>
+
+									<div class="content-group-lg">
+										<h6 class="text-semibold" id="gs_dependencies">Dependencies</h6>
+										<p class="content-group">Limitless template has 2 dependencies: jQuery and Bootstrap libraries, all functinoality are based on these 2 libraries. Current jQuery library version used in the template - <code>2.1.4</code>, Bootstrap version - <code>3.3.5</code>. jQuery has dropped IE8 support in 2.0 version, so by default it is not supported. Limitless version with Bootstrap 4.0 will be included as a separate version on the template once it'll be available in first stable version. Main dependency paths are:</p>
+
+										<pre class="content-group"><code class="language-markup">&lt;!-- jQuery library -->
+&lt;script type="text/javascript" src="assets/js/core/libraries/jquery.min.js">&lt;/script>
+
+&lt;!-- Bootstrap library -->
+&lt;script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js">&lt;/script>
+</code></pre>
+										Please keep in mind, that jQuery must be loaded <strong>before</strong> Bootstrap as BS is a jQuery dependent library.
+									</div>
+
+									<div>
+										<h6 class="text-semibold" id="gs_structure">Files structure</h6>
+										Each layout includes a bunch of different files responsible for core and optional functionality. All files related to components and content are the same in all layouts: LESS files, plugins, extensions, libraries, charts, CSS files, files with demo data etc. Only layout parts are different in all layouts: sidebars, navbars, page header and breadcrumbs. To keep it simple, i've decided to change them, because in different layouts default look of breadcrumbs and page headers, as well as sidebars and navbar positions are different and you won't need to overload markup with additional classes. See the table below for more information about files included to the package:
+									</div>
+								</div>
+
+								<div class="table-responsive">
+									<table class="table table-bordered table-striped">
+										<thead>
+											<tr>
+												<th class="col-xs-3">What</th>
+												<th>Quantity</th>
+												<th>Description</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th colspan="3" class="active">Core files</th>
+											</tr>
+											<tr class="border-double">
+												<td>Folders</td>
+												<td>268</td>
+												<td>Folders with files, excluding CKEditor and Starter kit folders</td>
+											</tr>
+											<tr>
+												<td>HTML files</td>
+												<td>249</td>
+												<td>Depending on layout, around 249 main HTML files in each layout</td>
+											</tr>
+											<tr>
+												<td>CSS files</td>
+												<td>7</td>
+												<td>4 main CSS files, 2 CSS for icon fonts and 1 <code>animate.min.css</code> animation library</td>
+											</tr>
+											<tr>
+												<td>LESS files</td>
+												<td>203</td>
+												<td>All LESS files, including Bootstrap core</td>
+											</tr>
+											<tr>
+												<td>JS files</td>
+												<td>896</td>
+												<td>All JS files, excluding starter kit and CKEditor folders</td>
+											</tr>
+											<tr>
+												<td>Image files</td>
+												<td>256</td>
+												<td>Logos, flag icons and notification icons</td>
+											</tr>
+											<tr>
+												<th colspan="3" class="active">Other files</th>
+											</tr>
+											<tr class="border-double">
+												<td>JSON files</td>
+												<td>23</td>
+												<td>Different demo data sources. For demo purposes</td>
+											</tr>
+											<tr>
+												<td>CSV files</td>
+												<td>11</td>
+												<td>Mainly for charts based on <code>D3.js</code> library. For demo purposes</td>
+											</tr>
+											<tr>
+												<td>TSV files</td>
+												<td>13</td>
+												<td>Mainly for charts based on <code>D3.js</code> library. For demo purposes</td>
+											</tr>
+											<tr>
+												<td>SWF files</td>
+												<td>3</td>
+												<td>Additional files for datatables TableTools extension and Plupload file uploader</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<!-- /getting started -->
+
+
+							<!-- Folders -->
+							<div class="panel panel-flat" id="folders">
+								<div class="panel-heading">
+									<h5 class="panel-title">Folders structure</h5>
+									<div class="heading-elements">
+										<ul class="icons-list">
+					                		<li><a data-action="collapse"></a></li>
+					                		<li><a data-action="close"></a></li>
+					                	</ul>
+				                	</div>
+								</div>
+
+								<div class="panel-body">
+									<div class="content-group-lg">
+										<h6 class="text-semibold" id="folders_root">Root folders</h6>
+										<p class="content-group">By default, Limitless includes HTML, LESS, compiled CSS, SWF, JS, JSON/TSV/CSV, fonts and image files. All these files are properly commented and placed inside separate folders, so if you know what you are looking for, it won't take too much time to find it. Template package root includes 3 main folders. Each folder includes related folders and files, that correspond to their purpose. Main folders are:</p>
+
+										<div class="table-responsive content-group">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th class="col-xs-3">Folder name</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>assets/</code></td>
+														<td>all template assets: LESS/CSS/JS files, fonts, images, demo data files etc.</td>
+													</tr>
+													<tr>
+														<td><code>CKEditor/</code></td>
+														<td>open source web text editor, must be placed in the root</td>
+													</tr>
+													<tr>
+														<td><code>starters/</code></td>
+														<td>starter kit for developers</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+
+										<p class="text-muted text-size-small">Screenshot</p>
+										<img src="assets/images/screenshots/u/folder_root.png" alt="" class="img-thumbnail img-responsive">
+									</div>
+
+									<div class="content-group-lg">
+										<h6 class="text-semibold" id="folders_assets">Global assets folder</h6>
+										<p class="content-group">Assets folder contains 6 sub folders, each folder includes a bunch of subfolders with related files. <code>/demo_data</code> and <code>/locales</code> are used for demo purposes only, they contain JSON/TSV/CSV files with demo data for multi level tree, maps, typeahead, file uploaders, wizards, charts and internationalization. Main subfolders are:</p>
+
+										<div class="table-responsive content-group">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th class="col-xs-3">Folder name</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>/css</code></td>
+														<td>folder with compiled CSS files and icon fonts</td>
+													</tr>
+													<tr>
+														<td><code>/demo_data</code></td>
+														<td>all JSON/TSV/CSV files with remote data used in data tables, charts, dynamic trees etc.</td>
+													</tr>
+													<tr>
+														<td><code>/images</code></td>
+														<td>folder with images, doesn't include any demo images from live preview as it's not allowed</td>
+													</tr>
+													<tr>
+														<td><code>/js</code></td>
+														<td>all core libraries, extensions, plugins and separate page files are placed inside this folder</td>
+													</tr>
+													<tr>
+														<td><code>/locales</code></td>
+														<td>demo files with translations of main navigation, used in live preview for demo purposes only</td>
+													</tr>
+													<tr>
+														<td><code>/swf</code></td>
+														<td>a couple of swf files used in datatables TableTools extension</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+
+										<p class="text-muted text-size-small">Screenshot</p>
+										<img src="assets/images/screenshots/u/folder_assets.png" alt="" class="img-thumbnail img-responsive">
+									</div>
+
+									<div class="content-group-lg">
+										<h6 class="text-semibold" id="folders_css">CSS folder</h6>
+										<p class="content-group">Global assets folder contains CSS files that are shared across layouts - font files and styles, 3rd party extensions etc. Each layout also contains assets folder with layout specific CSS files. <code>icons/</code> folder includes 3 icon sets, each set is inside separate folder. <code>extras/</code> folder includes extra css files, such as <code>animate.css</code> library. Main structure:</p>
+
+										<div class="table-responsive content-group">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th class="col-xs-3">Folder name</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>/extras</code></td>
+														<td>all existing and upcoming extra css files, such as animations and those that haven't been included to LESS</td>
+													</tr>
+													<tr>
+														<td><code>/icons</code></td>
+														<td>3 icon font sets: default Bootstrap Glyphicon icon font, Font Awesome and Icomoon. Icomoon is a main set used in all template layouts; Glyphicons is always included as it's inside compiled main BS file; Font Awesome is completely optional</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+
+										<p class="text-muted text-size-small">Screenshot</p>
+										<img src="assets/images/screenshots/u/folder_css.png" alt="" class="img-thumbnail img-responsive">
+									</div>
+
+									<div class="content-group-lg">
+										<h6 class="text-semibold" id="folders_demo_data">Demo data folder</h6>
+										<p class="content-group">Demo data folder includes all file types with remote data sets: JSON/TSV/CSV file types used in charts, maps, dynamic multi level tree, data tables, tag inputs, typeahead extension, multiple file uploader, form wizards. All these files are for demonstration purposes only. Child folders structure:</p>
+
+										<div class="table-responsive content-group">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th class="col-xs-3">Folder name</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>/alpaca</code></td>
+														<td>Remote file with demo data set used by Alpaca form generator</td>
+													</tr>
+													<tr>
+														<td><code>/d3</code></td>
+														<td>Majority of charts that are based on <code>d3.js</code> library use remote data sources. All of them are placed here</td>
+													</tr>
+													<tr>
+														<td><code>/dashboard</code></td>
+														<td>Dashboard charts - areas, heatmap, streamgraph, bullet charts. Also built with D3.js library</td>
+													</tr>
+													<tr>
+														<td><code>/dimple</code></td>
+														<td>Dimple charts. Single <code>.tsv</code> file used in all chart types</td>
+													</tr>
+													<tr>
+														<td><code>/fancytree</code></td>
+														<td>Dynamic multi level tree. Single JSON file contains multiple levels of data, used to build a file tree without markup</td>
+													</tr>
+													<tr>
+														<td><code>/maps</code></td>
+														<td>Demo data for vector maps</td>
+													</tr>
+													<tr>
+														<td><code>/tables</code></td>
+														<td>Data table demo data sources: simple JSON data source, nested object data and source with 2500 entries for <code>scroller</code> extension</td>
+													</tr>
+													<tr>
+														<td><code>/tags_input</code></td>
+														<td>JSON data source used in <code>tags input</code> plugin to fetch city names</td>
+													</tr>
+													<tr>
+														<td><code>/typeahead</code></td>
+														<td>Remote data sources for <code>typeahead</code> extension</td>
+													</tr>
+													<tr>
+														<td><code>/uploader</code></td>
+														<td>Empty JSON file required for Plupload uploader queue</td>
+													</tr>
+													<tr>
+														<td><code>/wizard</code></td>
+														<td>HTML files used as wizard steps in Stepy wizard</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+
+										<p class="text-muted text-size-small">Screenshot</p>
+										<img src="assets/images/screenshots/u/folder_demo_data.png" alt="" class="img-thumbnail img-responsive">
+									</div>
+
+									<div class="content-group-lg">
+										<h6 class="text-semibold" id="folders_images">Images folder</h6>
+										<p class="content-group">Images folder mostly needed for live preview to store brands and other demo images. But in the template package it doesn't have any of those, but only a set of flags for language switcher, colored icons for pnotify desktop notifications, custom map marker, jQuery UI datepicker trigger, logos, signature for invoice and background image for boxed layouts. Other images are moved according to Envato Market rules.</p>
+
+										<div class="table-responsive content-group">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th class="col-xs-3">Folder name</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>/backgrounds</code></td>
+														<td>Background images on boxed layout in 1st and 2nd layouts only</td>
+													</tr>
+													<tr>
+														<td><code>/flags</code></td>
+														<td>Set of 16x16 flag icons set, includes 247 icon objects. Remove unnecessary if needed</td>
+													</tr>
+													<tr>
+														<td><code>/pnotify</code></td>
+														<td>5 images for demo purposes, used in PNotify library for desktop notifications</td>
+													</tr>
+													<tr>
+														<td><code>/ui</code></td>
+														<td>Other images. Currently contains 2 - custom marker for google maps and jQuery UI Datepicker component trigger image</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+
+										<p class="text-muted text-size-small">Screenshot</p>
+										<img src="assets/images/screenshots/u/folder_images.png" alt="" class="img-thumbnail img-responsive">
+									</div>
+
+									<div class="content-group-lg">
+										<h6 class="text-semibold" id="folders_js">JS folder</h6>
+										<p class="content-group">JS folder includes all files responsible for template functionality - jQuery plugins, extensions, separate pages codes, core template functionality and libraries. Charts and maps folders are located in <code>/demo_pages/</code> folder, because they are mostly used for demo purposes - demo charts, google and vector maps setup and can be easily removed. Layout assets folder doesn't include any shared JS files, but includes layout specific files only - <code>app.js</code> file which is used in all template pages and contains basic template functionality.</p>
+
+										<div class="table-responsive content-group">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th class="col-xs-3">Folder name</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>/core</code></td>
+														<td>Core template files - libraries and main dependencies</td>
+													</tr>
+													<tr>
+														<td><code>/demo_pages</code></td>
+														<td>Almost all pages have different additional JS files loaded on top of app.js, with specific settings according to the page functionality</td>
+													</tr>
+													<tr>
+														<td><code>/plugins</code></td>
+														<td>All jQuery plugins and extensions in separate folders</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+
+										<p class="text-muted text-size-small">Screenshot</p>
+										<img src="assets/images/screenshots/u/folder_js.png" alt="" class="img-thumbnail img-responsive">
+									</div>
+									
+									<div class="content-group-lg">
+										<h6 class="text-semibold" id="folders_locales">Locales folder</h6>
+										<p class="content-group">Locales folder contains 3 <code>.json</code> files with translations of main navigation. These files are added for demonstration purposes, so you'll be able to take them as a base. They can be combined into 1 main file with all languages inside, but i decided to divide them to make it more understandable. Please check <strong>Internationalization</strong> pages console to see how they load on the page.</p>
+
+										<p class="text-muted text-size-small">Screenshot</p>
+										<img src="assets/images/screenshots/u/folder_locales.png" alt="" class="img-thumbnail img-responsive">
+									</div>
+
+									<div>
+										<h6 class="text-semibold" id="folders_swf">SWF folder</h6>
+										<p class="content-group">Yes, unfortunately we have these files as well. SWF folder contains a couple of <code>.swf</code> files used in datatables library, TableTools extension. These files allow you save table data as CSV, XLS or PDF files. Please check <code>datatable_extensions_tools.html</code> file to see it in action. Although this extension was deprecated in the latest version of Datatables, i've decided to keep it. They offered an alternate extension, which will be added in upcoming update.</p>
+
+										<div class="table-responsive content-group">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th class="col-xs-3">Folder name</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>/datatables</code></td>
+														<td>Datatables library <strong>TableTools</strong> extension</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+
+										<p class="text-muted text-size-small">Screenshot</p>
+										<img src="assets/images/screenshots/u/folder_swf.png" alt="" class="img-thumbnail img-responsive">
+									</div>
+								</div>
+							</div>
+							<!-- /folders -->
+
+
+							<!-- HTML files -->
+							<div class="panel panel-flat" id="files">
+								<div class="panel-heading">
+									<h5 class="panel-title">Main HTML files</h5>
+									<div class="heading-elements">
+										<ul class="icons-list">
+					                		<li><a data-action="collapse"></a></li>
+					                		<li><a data-action="close"></a></li>
+					                	</ul>
+				                	</div>
+								</div>
+
+								<div class="panel-body">
+									Total number of main HTML files in all layouts - 986. First layout contains 249 files, second layout - 249 files, third layout - 244 files and fourth layout - 244 files. In some layouts a couple of pages were renamed to match the navigation category. Each file has a prefix according to the navigation category, so you can quickly find what you need. Each HTML page has its own JS file with, in most cases, the same name. These files are located in <code>assets/js/pages/</code> folder. So if you need a specific functionality that you found on some page, just go this folder and open necessary file. Each file is properly commented and structured. File list:
+								</div>
+
+								<div class="table-responsive content-group">
+									<table class="table table-bordered table-striped">
+										<thead>
+											<tr>
+												<th class="col-xs-3">File name</th>
+												<th>Description</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th colspan="3" class="active" id="files_main">Main category</th>
+											</tr>
+											<tr class="border-double">
+											<tr>
+												<td><code>index.html</code></td>
+												<td>Template's main page</td>
+											</tr>
+											<tr>
+												<td><code>colors_*.html</code></td>
+												<td>Set of pages with colored components and usage examples</td>
+											</tr>
+											<tr>
+												<td><code>changelog.html</code></td>
+												<td>Version history</td>
+											</tr>
+
+											<tr>
+												<th colspan="3" class="active" id="files_layout">Layouts</th>
+											</tr>
+											<tr class="border-double">
+												<td><code>layout_navbar_fixed.html</code></td>
+												<td>Layout with fixed navbar</td>
+											</tr>
+											<tr>
+												<td><code>layout_navbar_hideable_sidebar.html</code></td>
+												<td>Layout with hideable navbar and fixed sidebar</td>
+											</tr>
+											<tr>
+												<td><code>layout_navbar_hideable.html</code></td>
+												<td>Layout with hideable navbar</td>
+											</tr>
+											<tr>
+												<td><code>layout_navbar_sidebar_fixed.html</code></td>
+												<td>Fully fixed layout - navbar and sidebar are always sticky. With custom scrollbar</td>
+											</tr>
+											<tr>
+												<td><code>layout_sidebar_fixed_native.html</code></td>
+												<td>Fully fixed layout with native scrollbar</td>
+											</tr>
+											<tr>
+												<td><code>layout_footer_fixed.html</code></td>
+												<td>Layout with fixed footer</td>
+											</tr>
+
+											<tr>
+												<th colspan="3" class="active" id="files_forms">Forms</th>
+											</tr>
+											<tr class="border-double">
+												<td><code>form_checkboxes_radios.html</code></td>
+												<td>Checkboxes, radios and switchers</td>
+											</tr>
+											<tr>
+												<td><code>form_controls_extended.html</code></td>
+												<td>Extended form controls</td>
+											</tr>
+											<tr>
+												<td><code>form_dual_listboxes.html</code></td>
+												<td>Dual select boxes component</td>
+											</tr>
+											<tr>
+												<td><code>form_input_groups.html</code></td>
+												<td>Input groups with options</td>
+											</tr>
+											<tr>
+												<td><code>form_inputs_basic.html</code></td>
+												<td>Set of basic form inputs and controls</td>
+											</tr>
+											<tr>
+												<td><code>form_inputs_grid.html</code></td>
+												<td>Optional grid of input fields</td>
+											</tr>
+											<tr>
+												<td><code>form_tag_inputs.html</code></td>
+												<td>Tag inputs components</td>
+											</tr>
+											<tr>
+												<td><code>form_validation.html</code></td>
+												<td>Form elements validation</td>
+											</tr>
+											<tr class="border-solid">
+												<td><code>form_bootstrap_select.html</code></td>
+												<td>Bootstrap select component</td>
+											</tr>
+											<tr>
+												<td><code>form_multiselect.html</code></td>
+												<td>Bootstrap single and multiple selects</td>
+											</tr>
+											<tr>
+												<td><code>form_select_box_it.html</code></td>
+												<td>SelectBoxIt select component</td>
+											</tr>
+											<tr>
+												<td><code>form_select2.html</code></td>
+												<td>Select2 single and multiple select component</td>
+											</tr>
+											<tr class="border-solid">
+												<td><code>form_layout_horizontal.html</code></td>
+												<td>Horizontal form layout</td>
+											</tr>
+											<tr>
+												<td><code>form_layout_vertical.html</code></td>
+												<td>Vertical form layout</td>
+											</tr>
+
+											<tr>
+												<th colspan="3" class="active" id="files_wiz">Wizards</th>
+											</tr>
+											<tr class="border-double">
+												<td><code>wizard_form.html</code></td>
+												<td>Form wizard component with options</td>
+											</tr>
+											<tr>
+												<td><code>wizard_steps.html</code></td>
+												<td>Steps wizard component with options</td>
+											</tr>
+											<tr>
+												<td><code>wizard_stepy.html</code></td>
+												<td>Stepy wizard component with options</td>
+											</tr>
+
+											<tr>
+												<th colspan="3" class="active" id="files_editors">Editors</th>
+											</tr>
+											<tr class="border-double">
+												<td><code>editor_ckeditor.html</code></td>
+												<td>CKEditor text editor with options</td>
+											</tr>
+											<tr>
+												<td><code>editor_code.html</code></td>
+												<td>Ace code editor with language options</td>
+											</tr>
+											<tr>
+												<td><code>editor_summernote.html</code></td>
+												<td>Summernote text editor</td>
+											</tr>
+											<tr>
+												<td><code>editor_wysihtml5.html</code></td>
+												<td>WYSIHTML5 editor</td>
+											</tr>
+
+											<tr>
+												<th colspan="3" class="active" id="files_pickers">Pickers</th>
+											</tr>
+											<tr class="border-double">
+												<td><code>picker_color.html</code></td>
+												<td>Spectrum color picker with options</td>
+											</tr>
+											<tr>
+												<td><code>picker_date.html</code></td>
+												<td>jQuery UI, daterange, pick-a-date, anytime date and time pickers</td>
+											</tr>
+											<tr>
+												<td><code>picker_location.html</code></td>
+												<td>Location picker, with Google maps</td>
+											</tr>
+
+											<tr>
+												<th colspan="3" class="active" id="files_components">Components</th>
+											</tr>
+											<tr class="border-double">
+												<td><code>components_alerts.html</code></td>
+												<td>Alert component with options and styling</td>
+											</tr>
+											<tr>
+												<td><code>components_animations.html</code></td>
+												<td>CSS3 animations based on <code>animate.css</code> library</td>
+											</tr>
+											<tr>
+												<td><code>components_breadcrumbs.html</code></td>
+												<td>Breadcrumb component with placement, elements and styling options</td>
+											</tr>
+											<tr>
+												<td><code>components_buttons.html</code></td>
+												<td>Available button styles</td>
+											</tr>
+											<tr>
+												<td><code>components_dropdowns.html</code></td>
+												<td>Dropdown menu component with options</td>
+											</tr>
+											<tr>
+												<td><code>components_labels.html</code></td>
+												<td>Labels and badges styling</td>
+											</tr>
+											<tr>
+												<td><code>components_loaders.html</code></td>
+												<td>Progress bars, area and page loaders</td>
+											</tr>
+											<tr>
+												<td><code>components_media.html</code></td>
+												<td>Media lists component with styling options</td>
+											</tr>
+											<tr>
+												<td><code>components_modals.html</code></td>
+												<td>Modal dialogs with options and styling</td>
+											</tr>
+											<tr>
+												<td><code>components_navs.html</code></td>
+												<td>Accordions, collapsible components and other navigation options</td>
+											</tr>
+											<tr>
+												<td><code>components_notifications_others.html</code></td>
+												<td>jGrowl and Noty notification libraries</td>
+											</tr>
+											<tr>
+												<td><code>components_notifications_pnotify.html</code></td>
+												<td>PNotify notification library</td>
+											</tr>
+											<tr>
+												<td><code>components_page_header.html</code></td>
+												<td>Page header styling, components and other options</td>
+											</tr>
+											<tr>
+												<td><code>components_pagination.html</code></td>
+												<td>Pagination and pager with options</td>
+											</tr>
+											<tr>
+												<td><code>components_pills.html</code></td>
+												<td>Pills nav component with styling and other options</td>
+											</tr>
+											<tr>
+												<td><code>components_popups.html</code></td>
+												<td>Tooltips, popovers with options</td>
+											</tr>
+											<tr>
+												<td><code>components_sliders.html</code></td>
+												<td>jQuery UI and NoUI sliders with pips and other options</td>
+											</tr>
+											<tr>
+												<td><code>components_tabs.html</code></td>
+												<td>Nav tabs component with different options</td>
+											</tr>
+											<tr>
+												<td><code>components_thumbnails.html</code></td>
+												<td>Thumbnails with titles, descriptions and components</td>
+											</tr>
+
+											<tr>
+												<th colspan="3" class="active" id="files_appearance">Content appearance</th>
+											</tr>
+											<tr class="border-double">
+												<td><code>appearance_content_grid.html</code></td>
+												<td>Main content grid with descriptions</td>
+											</tr>
+											<tr>
+												<td><code>appearance_content_panels.html</code></td>
+												<td>Panel component with styling and color options</td>
+											</tr>
+											<tr>
+												<td><code>appearance_draggable_panels.html</code></td>
+												<td>Draggable content panels</td>
+											</tr>
+											<tr>
+												<td><code>appearance_helpers.html</code></td>
+												<td>Table with helper classes</td>
+											</tr>
+											<tr>
+												<td><code>appearance_panel_heading.html</code></td>
+												<td>Panel heading components</td>
+											</tr>
+											<tr>
+												<td><code>appearance_syntax_highlighter.html</code></td>
+												<td>Syntax highlighter extension with options</td>
+											</tr>
+											<tr>
+												<td><code>appearance_text_styling.html</code></td>
+												<td>Table with available text styling</td>
+											</tr>
+											<tr>
+												<td><code>appearance_typography.html.html</code></td>
+												<td>Template's typography - lists, headings, well blocks etc.</td>
+											</tr>
+
+											<tr>
+												<th colspan="3" class="active" id="files_extra">Extra components</th>
+											</tr>
+											<tr class="border-double">
+												<td><code>extra_affix.html</code></td>
+												<td>Bootstrap's Affix and Scrollspy components in action</td>
+											</tr>
+											<tr>
+												<td><code>extra_context_menu.html</code></td>
+												<td>Context menu extension</td>
+											</tr>
+											<tr>
+												<td><code>extra_idle_timeout.html</code></td>
+												<td>Idle timeout extension demo</td>
+											</tr>
+											<tr>
+												<td><code>extra_session_timeout.html</code></td>
+												<td>Session timeout extension demo</td>
+											</tr>
+											<tr>
+												<td><code>extra_trees.html</code></td>
+												<td>Dynamic multi level trees with available options</td>
+											</tr>
+
+											<tr>
+												<th colspan="3" class="active" id="files_icons">Icons</th>
+											</tr>
+											<tr class="border-double">
+												<td><code>icons_fontawesome.html</code></td>
+												<td>Font Awesome icon set demo</td>
+											</tr>
+											<tr>
+												<td><code>icons_glyphicons.html</code></td>
+												<td>Bootstrap Glyphicons icon set demo</td>
+											</tr>
+											<tr>
+												<td><code>icons_icomoon.html</code></td>
+												<td>Custom Icomoon icon set demo. Main icon set used in Limitless</td>
+											</tr>
+
+											<tr>
+												<th colspan="3" class="active" id="files_sidebars">Sidebars</th>
+											</tr>
+											<tr class="border-double">
+												<td><code>sidebar_components.html</code></td>
+												<td>Available components to use in sidebar</td>
+											</tr>
+											<tr>
+												<td><code>sidebar_hidden.html</code></td>
+												<td>Page with hidden sidebar</td>
+											</tr>
+											<tr>
+												<td><code>sidebar_light.html</code></td>
+												<td>Light sidebar version</td>
+											</tr>
+											<tr class="border-solid">
+												<td><code>sidebar_default_collapse.html</code></td>
+												<td>Default sidebar collapsible</td>
+											</tr>
+											<tr>
+												<td><code>sidebar_default_hide.html</code></td>
+												<td>Default sidebar hideable</td>
+											</tr>
+											<tr class="border-solid">
+												<td><code>sidebar_mini_collapse.html</code></td>
+												<td>Mini sidebar collapsible</td>
+											</tr>
+											<tr>
+												<td><code>sidebar_mini_hide.html</code></td>
+												<td>Mini sidebar hideable</td>
+											</tr>
+											<tr class="border-solid">
+												<td><code>sidebar_detached_left.html</code></td>
+												<td>Detached sidebar, left position</td>
+											</tr>
+											<tr>
+												<td><code>sidebar_detached_right.html</code></td>
+												<td>Detached sidebar, right position</td>
+											</tr>
+											<tr>
+												<td><code>sidebar_detached_separate.html</code></td>
+												<td>Detached sidebar with separate categories</td>
+											</tr>
+											<tr>
+												<td><code>sidebar_detached_sticky_custom.html</code></td>
+												<td>Sticky detached sidebar with custom scrollbar</td>
+											</tr>
+											<tr>
+												<td><code>sidebar_detached_sticky_native.html</code></td>
+												<td>Sticky detached sidebar with native scrollbar</td>
+											</tr>
+											<tr class="border-solid">
+												<td><code>sidebar_double_collapse.html</code></td>
+												<td>Double sidebar - collapse main sidebar</td>
+											</tr>
+											<tr>
+												<td><code>sidebar_double_fix_default.html</code></td>
+												<td>Double sidebar - fix sidebar with default width</td>
+											</tr>
+											<tr>
+												<td><code>sidebar_double_fix_mini.html</code></td>
+												<td>Double sidebar - fix sidebar with mini width</td>
+											</tr>
+											<tr>
+												<td><code>sidebar_double_hide.html</code></td>
+												<td>Double sidebar - hide sidebars when opposite sidebar is visible</td>
+											</tr>
+											<tr>
+												<td><code>sidebar_double_visible.html</code></td>
+												<td>Make opposite sidebar visible by default</td>
+											</tr>
+											<tr class="border-solid">
+												<td><code>sidebar_dual_double_collapse.html</code></td>
+												<td>Dual sidebar - collapse other sidebars when opposite is visible</td>
+											</tr>
+											<tr>
+												<td><code>sidebar_dual_double_hide.html</code></td>
+												<td>Dual sidebar - hide other sidebars when opposite is visible</td>
+											</tr>
+											<tr>
+												<td><code>sidebar_dual_swap.html</code></td>
+												<td>Change sidebars position</td>
+											</tr>
+											<tr>
+												<td><code>sidebar_dual.html</code></td>
+												<td>Basic dual sidebar</td>
+											</tr>
+
+											<tr>
+												<th colspan="3" class="active" id="files_vnav">Vertical navigation</th>
+											</tr>
+											<tr class="border-double">
+												<td><code>navigation_vertical_accordion.html</code></td>
+												<td>Sidebar navigation with accordion functionality</td>
+											</tr>
+											<tr>
+												<td><code>navigation_vertical_bordered.html</code></td>
+												<td>Bordered navigation style</td>
+											</tr>
+											<tr>
+												<td><code>navigation_vertical_collapsible.html</code></td>
+												<td>Sidebar navigation with collapsible functionality</td>
+											</tr>
+											<tr>
+												<td><code>navigation_vertical_disabled.html</code></td>
+												<td>Vertical navigation with disabled links</td>
+											</tr>
+											<tr>
+												<td><code>navigation_vertical_right_icons.html</code></td>
+												<td>Navigation with right aligned icons</td>
+											</tr>
+											<tr>
+												<td><code>navigation_vertical_sizing.html</code></td>
+												<td>Vertical navigation sizing options</td>
+											</tr>
+
+											<tr>
+												<th colspan="3" class="active" id="files_hnav">Horizontal navigation</th>
+											</tr>
+											<tr class="border-double">
+												<td><code>navigation_horizontal_click.html</code></td>
+												<td>Open horizontal navigation levels on click</td>
+											</tr>
+											<tr>
+												<td><code>navigation_horizontal_disabled.html</code></td>
+												<td>Horizontal navigation with disabled links</td>
+											</tr>
+											<tr>
+												<td><code>navigation_horizontal_elements.html</code></td>
+												<td>Horizontal navigation with components</td>
+											</tr>
+											<tr>
+												<td><code>navigation_horizontal_hover.html</code></td>
+												<td>Open horizontal navigation levels on hover</td>
+											</tr>
+											<tr>
+												<td><code>navigation_horizontal_mega.html</code></td>
+												<td>Horizontal navigation with mega menu</td>
+											</tr>
+											<tr>
+												<td><code>navigation_horizontal_tabs.html</code></td>
+												<td>Tabbed horizontal navigation</td>
+											</tr>
+
+											<tr>
+												<th colspan="3" class="active" id="files_navbars">Navbars</th>
+											</tr>
+											<tr class="border-double">
+												<td><code>navbar_colors.html</code></td>
+												<td>Available navbar color options</td>
+											</tr>
+											<tr>
+												<td><code>navbar_components.html</code></td>
+												<td>Set of components that can be used inside navbar</td>
+											</tr>
+											<tr>
+												<td><code>navbar_hideable.html</code></td>
+												<td>Hide navbar on scroll</td>
+											</tr>
+											<tr>
+												<td><code>navbar_single.html</code></td>
+												<td>Page with single top and/or bottom navbar</td>
+											</tr>
+											<tr>
+												<td><code>navbar_sizes.html</code></td>
+												<td>Availabel navbar sizing options</td>
+											</tr>
+											<tr class="border-solid">
+												<td><code>navbar_multiple_header_navbar.html</code></td>
+												<td>Multiple navbars - navbar after page header</td>
+											</tr>
+											<tr>
+												<td><code>navbar_multiple_navbar_header.html</code></td>
+												<td>Multiple navbars - navbar before page header</td>
+											</tr>
+											<tr>
+												<td><code>navbar_multiple_navbar_navbar.html</code></td>
+												<td>Multiple navbars - navbars one after another</td>
+											</tr>
+											<tr>
+												<td><code>navbar_multiple_top_bottom.html</code></td>
+												<td>Multiple navbars - top and bottom positions</td>
+											</tr>
+
+											<tr>
+												<th colspan="3" class="active" id="files_vis">Data visualization</th>
+											</tr>
+											<tr class="border-double">
+												<td><code>c3_advanced.html</code></td>
+												<td>Advanced C3 charts examples</td>
+											</tr>
+											<tr>
+												<td><code>c3_axis.html</code></td>
+												<td>C3 library - chart axis options</td>
+											</tr>
+											<tr>
+												<td><code>c3_bars_pies.html</code></td>
+												<td>C3 library - bars and pies examples</td>
+											</tr>
+											<tr>
+												<td><code>c3_grid.html</code></td>
+												<td>C3 library - chart grid options</td>
+											</tr>
+											<tr>
+												<td><code>c3_lines_areas.html</code></td>
+												<td>C3 library - line and area charts examples</td>
+											</tr>
+											<tr class="border-solid">
+												<td><code>d3_bars_advanced.html</code></td>
+												<td>D3 library - advanced bar charts examples</td>
+											</tr>
+											<tr>
+												<td><code>d3_bars_basic.html</code></td>
+												<td>D3 library - basic bar charts examples</td>
+											</tr>
+											<tr>
+												<td><code>d3_circle_diagrams.html</code></td>
+												<td>D3 library - circle diagrams examples: chords, Venn diagram, sunburst</td>
+											</tr>
+											<tr>
+												<td><code>d3_lines_advanced.html</code></td>
+												<td>D3 library - advanced line chart examples</td>
+											</tr>
+											<tr>
+												<td><code>d3_lines_basic.html</code></td>
+												<td>D3 library - basic line chart examples</td>
+											</tr>
+											<tr>
+												<td><code>d3_other.html</code></td>
+												<td>D3 library - other examples: streamgraph, waterfall, bubble charts, zoomable treemap</td>
+											</tr>
+											<tr>
+												<td><code>d3_pies.html</code></td>
+												<td>D3 library - pie and donut charts examples</td>
+											</tr>
+											<tr>
+												<td><code>d3_tree.html</code></td>
+												<td>D3 library - tree layouts: clusters, dendrograms, collapsible trees etc.</td>
+											</tr>
+											<tr class="border-solid">
+												<td><code>dimple_area_horizontal.html</code></td>
+												<td>Dimple library - horizontal area charts</td>
+											</tr>
+											<tr>
+												<td><code>dimple_area_vertical.html</code></td>
+												<td>Dimple library - area charts in vertical orientation</td>
+											</tr>
+											<tr>
+												<td><code>dimple_bars_horizontal.html</code></td>
+												<td>Dimple library - bar chart examples in horizontal orientation</td>
+											</tr>
+											<tr>
+												<td><code>dimple_bars_vertical.html</code></td>
+												<td>Dimple library - bar chart examples in vertical orientation</td>
+											</tr>
+											<tr>
+												<td><code>dimple_bubble.html</code></td>
+												<td>Dimple library - bubble chart examples</td>
+											</tr>
+											<tr>
+												<td><code>dimple_lines_horizontal.html</code></td>
+												<td>Dimple library - line chart examples in horizontal orientation</td>
+											</tr>
+											<tr>
+												<td><code>dimple_lines_vertical.html</code></td>
+												<td>Dimple library - line chart examples in vertical orientation</td>
+											</tr>
+											<tr>
+												<td><code>dimple_step_horizontal.html</code></td>
+												<td>Dimple library - step line chart examples in horizontal orientation</td>
+											</tr>
+											<tr>
+												<td><code>dimple_step_vertical.html</code></td>
+												<td>Dimple library - step line chart examples in vertical orientation</td>
+											</tr>
+											<tr>
+												<td><code>dimple_pies.html</code></td>
+												<td>Dimple library - pie charts with options</td>
+											</tr>
+											<tr>
+												<td><code>dimple_rings.html</code></td>
+												<td>Dimple library - ring (donut) charts examples</td>
+											</tr>
+											<tr>
+												<td><code>dimple_scatter.html</code></td>
+												<td>Dimple library - scatter chart examples with options</td>
+											</tr>
+											<tr class="border-solid">
+												<td><code>echarts_bars_tornados.html</code></td>
+												<td>ECharts library - bar and tornado charts examples</td>
+											</tr>
+											<tr>
+												<td><code>echarts_candlesticks_others.html</code></td>
+												<td>ECharts library - candlestick and other charts examples</td>
+											</tr>
+											<tr>
+												<td><code>echarts_columns_waterfalls.html</code></td>
+												<td>ECharts library - vertical bar and waterfall charts examples</td>
+											</tr>
+											<tr>
+												<td><code>echarts_combinations.html</code></td>
+												<td>ECharts library - charts combinations</td>
+											</tr>
+											<tr>
+												<td><code>echarts_funnels_chords.html</code></td>
+												<td>ECharts library - funnel and chord diagrams examples</td>
+											</tr>
+											<tr>
+												<td><code>echarts_lines_areas.html</code></td>
+												<td>ECharts library - line and area charts examples with options</td>
+											</tr>
+											<tr>
+												<td><code>echarts_pies_donuts.html</code></td>
+												<td>ECharts library - pie and donut charts examples</td>
+											</tr>
+											<tr>
+												<td><code>echarts_scatter.html</code></td>
+												<td>ECharts library - scatter chart example with options</td>
+											</tr>
+											<tr class="border-solid">
+												<td><code>google_bars.html</code></td>
+												<td>Google charts - bar chart examples</td>
+											</tr>
+											<tr>
+												<td><code>google_lines.html</code></td>
+												<td>Google charts - line chart examples</td>
+											</tr>
+											<tr>
+												<td><code>google_other.html</code></td>
+												<td>Google charts - other chart examples: geo, trendlines, candlesticks, diff charts</td>
+											</tr>
+											<tr>
+												<td><code>google_pies.html</code></td>
+												<td>Google charts - pie and donut charts examples</td>
+											</tr>
+											<tr>
+												<td><code>google_scatter_bubble.html</code></td>
+												<td>Google charts - bubble chart examples</td>
+											</tr>
+
+											<tr>
+												<th colspan="3" class="active" id="files_maps">Maps</th>
+											</tr>
+											<tr class="border-double">
+												<td><code>maps_google_basic.html</code></td>
+												<td>Google Maps - basic setup and examples</td>
+											</tr>
+											<tr>
+												<td><code>maps_google_controls.html</code></td>
+												<td>Google Maps - map controls</td>
+											</tr>
+											<tr>
+												<td><code>maps_google_drawings.html</code></td>
+												<td>Google Maps - map drawings</td>
+											</tr>
+											<tr>
+												<td><code>maps_google_layers.html</code></td>
+												<td>Google Maps - available map layers</td>
+											</tr>
+											<tr>
+												<td><code>maps_google_markers.html</code></td>
+												<td>Google Maps - map marker options</td>
+											</tr>
+											<tr class="border-solid">
+												<td><code>maps_vector.html</code></td>
+												<td>Vector maps examples</td>
+											</tr>
+
+											<tr>
+												<th colspan="3" class="active" id="files_ext">Extensions</th>
+											</tr>
+											<tr class="border-double">
+												<td><code>extension_blockui.html</code></td>
+												<td>BlockUI extension with options and styling</td>
+											</tr>
+											<tr>
+												<td><code>extension_image_cropper.html</code></td>
+												<td>Image cropper with a bunch of avaiable options</td>
+											</tr>
+											<tr class="border-solid">
+												<td><code>extension_fullcalendar_advanced.html</code></td>
+												<td>Fullcalendar - advanced examples: RTL support and external events</td>
+											</tr>
+											<tr>
+												<td><code>extension_fullcalendar_formats.html</code></td>
+												<td>Fullcalendar - date and time format examples</td>
+											</tr>
+											<tr>
+												<td><code>extension_fullcalendar_styling.html</code></td>
+												<td>Fullcalendar - styling options</td>
+											</tr>
+											<tr>
+												<td><code>extension_fullcalendar_views.html</code></td>
+												<td>Fullcalendar - available views</td>
+											</tr>
+											<tr class="border-solid">
+												<td><code>extension_velocity_basic.html</code></td>
+												<td>Velocity animations - basic functionality demonstration</td>
+											</tr>
+											<tr>
+												<td><code>extension_velocity_examples.html</code></td>
+												<td>Velocity animations - advanced animation examples</td>
+											</tr>
+											<tr>
+												<td><code>extension_velocity_ui.html</code></td>
+												<td>Velocity animations - UI animation examples</td>
+											</tr>
+
+											<tr>
+												<th colspan="3" class="active" id="files_upl">File uploaders</th>
+											</tr>
+											<tr class="border-double">
+												<td><code>uploader_bootstrap.html</code></td>
+												<td>Single and multiple file uploader for Bootstrap</td>
+											</tr>
+											<tr>
+												<td><code>uploader_dropzone.html</code></td>
+												<td>Dropzone - single and multiple file uploader</td>
+											</tr>
+											<tr>
+												<td><code>uploader_plupload.html</code></td>
+												<td>Plupload - multiple file uploader with multiple runtimes</td>
+											</tr>
+
+											<tr>
+												<th colspan="3" class="active" id="files_int">Internationalization</th>
+											</tr>
+											<tr>
+												<td><code>internationalization_callbacks.html</code></td>
+												<td>i18next - callback examples</td>
+											</tr>
+											<tr>
+												<td><code>internationalization_fallback.html</code></td>
+												<td>i18next - set fallback language</td>
+											</tr>
+											<tr>
+												<td><code>internationalization_switch_direct.html</code></td>
+												<td>i18next - change language without page reload</td>
+											</tr>
+											<tr>
+												<td><code>internationalization_switch_query.html</code></td>
+												<td>i18next - change language with page reload using query string</td>
+											</tr>
+
+											<tr>
+												<th colspan="3" class="active" id="files_stables">Basic tables</th>
+											</tr>
+											<tr class="border-double">
+												<td><code>table_basic.html</code></td>
+												<td>Static tables - basic examples and basic styling</td>
+											</tr>
+											<tr>
+												<td><code>table_borders.html</code></td>
+												<td>Static tables - table borders options</td>
+											</tr>
+											<tr>
+												<td><code>table_elements.html</code></td>
+												<td>Static tables - set of component to use inside tables</td>
+											</tr>
+											<tr>
+												<td><code>table_responsive.html</code></td>
+												<td>Static tables - responsive static tables</td>
+											</tr>
+											<tr>
+												<td><code>table_sizing.html</code></td>
+												<td>Static tables - optional table cell sizing</td>
+											</tr>
+											<tr>
+												<td><code>table_styling.html</code></td>
+												<td>Static tables - available styling options</td>
+											</tr>
+
+											<tr>
+												<th colspan="3" class="active" id="files_dtables">Data tables</th>
+											</tr>
+											<tr class="border-double">
+												<td><code>datatable_advanced.html</code></td>
+												<td>Data tables - advanced examples</td>
+											</tr>
+											<tr>
+												<td><code>datatable_api.html</code></td>
+												<td>Data tables - API usage</td>
+											</tr>
+											<tr>
+												<td><code>datatable_basic.html</code></td>
+												<td>Data tables - examples with basic options</td>
+											</tr>
+											<tr>
+												<td><code>datatable_data_sources.html</code></td>
+												<td>Data tables - different data sources</td>
+											</tr>
+											<tr>
+												<td><code>datatable_responsive.html</code></td>
+												<td>Data tables - responsive tables</td>
+											</tr>
+											<tr>
+												<td><code>datatable_sorting.html</code></td>
+												<td>Data tables - available sorting options</td>
+											</tr>
+											<tr>
+												<td><code>datatable_styling.html</code></td>
+												<td>Data tables - available styling options</td>
+											</tr>
+											<tr class="border-solid">
+												<td><code>datatable_extension_colvis.html</code></td>
+												<td>Data tables - columns visibility extension</td>
+											</tr>
+											<tr>
+												<td><code>datatable_extension_fixed_columns.html</code></td>
+												<td>Data tables - fixed columns extension</td>
+											</tr>
+											<tr>
+												<td><code>datatable_extension_reorder.html</code></td>
+												<td>Data tables - columns reorder extension</td>
+											</tr>
+											<tr>
+												<td><code>datatable_extension_scroller.html</code></td>
+												<td>Data tables - scroller extension</td>
+											</tr>
+											<tr>
+												<td><code>datatable_extension_tools.html</code></td>
+												<td>Data tables - TableTools extension</td>
+											</tr>
+
+											<tr>
+												<th colspan="3" class="active" id="files_pages">Page kits</th>
+											</tr>
+											<tr class="border-double">
+												<td><code>task_manager_detailed.html</code></td>
+												<td>Task manager - detailed view</td>
+											</tr>
+											<tr>
+												<td><code>task_manager_grid.html</code></td>
+												<td>Task manager - grid view</td>
+											</tr>
+											<tr>
+												<td><code>task_manager_list.html</code></td>
+												<td>Task manager - table list view</td>
+											</tr>
+											<tr class="border-solid">
+												<td><code>invoice_archive.html</code></td>
+												<td>Invoices - table view</td>
+											</tr>
+											<tr>
+												<td><code>invoice_grid.html</code></td>
+												<td>Invoices - grid view</td>
+											</tr>
+											<tr>
+												<td><code>invoice_template.html</code></td>
+												<td>Invoices - static and editable invoice templates</td>
+											</tr>
+											<tr class="border-solid">
+												<td><code>user_pages_cards.html</code></td>
+												<td>User pages - user cards</td>
+											</tr>
+											<tr>
+												<td><code>user_pages_list.html</code></td>
+												<td>User pages - user list</td>
+											</tr>
+											<tr>
+												<td><code>user_pages_profile_cover.html</code></td>
+												<td>User pages - user profile with cover image</td>
+											</tr>
+											<tr>
+												<td><code>user_pages_profile.html</code></td>
+												<td>User pages - simple user profile with tabbed nav</td>
+											</tr>
+											<tr class="border-solid">
+												<td><code>login_advanced.html</code></td>
+												<td>Login - advanced login form</td>
+											</tr>
+											<tr>
+												<td><code>login_background.html</code></td>
+												<td>Login - background color option</td>
+											</tr>
+											<tr>
+												<td><code>login_hide_navbar.html</code></td>
+												<td>Login - form without navbar</td>
+											</tr>
+											<tr>
+												<td><code>login_password_recover.html</code></td>
+												<td>Login - password recover form snippet</td>
+											</tr>
+											<tr>
+												<td><code>login_registration_advanced.html</code></td>
+												<td>Login - advanced registration form</td>
+											</tr>
+											<tr>
+												<td><code>login_registration.html</code></td>
+												<td>Login - simple registration form</td>
+											</tr>
+											<tr>
+												<td><code>login_simple.html</code></td>
+												<td>Login - simple login form</td>
+											</tr>
+											<tr>
+												<td><code>login_transparent.html</code></td>
+												<td>Login - box without background color</td>
+											</tr>
+											<tr>
+												<td><code>login_unlock.html</code></td>
+												<td>Login - unlock user snippet</td>
+											</tr>
+											<tr class="border-solid">
+												<td><code>timelines_center.html</code></td>
+												<td>Timeline - center position</td>
+											</tr>
+											<tr>
+												<td><code>timelines_left.html</code></td>
+												<td>Timeline - left position</td>
+											</tr>
+											<tr>
+												<td><code>timelines_right.html</code></td>
+												<td>Timeline - right position</td>
+											</tr>
+											<tr class="border-solid">
+												<td><code>support_conversation_layouts.html</code></td>
+												<td>Support - chat layouts</td>
+											</tr>
+											<tr>
+												<td><code>support_conversation_options.html</code></td>
+												<td>Support - chat options and styling</td>
+											</tr>
+											<tr>
+												<td><code>support_faq.html</code></td>
+												<td>Support - FAQ template</td>
+											</tr>
+											<tr>
+												<td><code>support_knowledgebase.html</code></td>
+												<td>Login - knowledgebase template</td>
+											</tr>
+											<tr class="border-solid">
+												<td><code>search_basic.html</code></td>
+												<td>Search - basic search results</td>
+											</tr>
+											<tr>
+												<td><code>search_images.html</code></td>
+												<td>Search - image search results</td>
+											</tr>
+											<tr>
+												<td><code>search_users.html</code></td>
+												<td>Search - people search results</td>
+											</tr>
+											<tr>
+												<td><code>search_videos.html</code></td>
+												<td>Search - video search results</td>
+											</tr>
+											<tr class="border-solid">
+												<td><code>gallery_description.html</code></td>
+												<td>Gallery - items with description and titles</td>
+											</tr>
+											<tr>
+												<td><code>gallery_grid.html</code></td>
+												<td>Gallery - item grid</td>
+											</tr>
+											<tr>
+												<td><code>gallery_library.html</code></td>
+												<td>Gallery - list of items, inside table</td>
+											</tr>
+											<tr>
+												<td><code>gallery_titles.html</code></td>
+												<td>Gallery - items with titles</td>
+											</tr>
+											<tr class="border-solid">
+												<td><code>error_***.html</code></td>
+												<td>Error pages: 403, 404, 405, 500, 503 errors</td>
+											</tr>
+											<tr>
+												<td><code>error_offline.html</code></td>
+												<td>Website is offline page</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<!-- /HTML files -->
+
+						</div>
+					</div>
+					<!-- /detached content -->
+
+
+					<!-- Detached sidebar -->
+					<div class="sidebar-detached">
+			        	<div class="sidebar sidebar-default">
+							<div class="sidebar-content">
+
+				        		<!-- Contact author -->
+								<div class="sidebar-category no-margin">
+									<div class="category-title">
+										<span>Page navigation</span>
+										<i class="icon-menu7 text-muted pull-right"></i>
+									</div>
+
+									<div class="category-content">
+										<a href="http://themeforest.net/user/kopyov" class="btn bg-blue btn-block" target="_blank"><i class="icon-reading position-left"></i> Contact author</a>
+									</div>
+								</div>
+								<!-- /contact author -->
+
+			        			
+			        			<!-- Navigation -->
+								<div class="sidebar-category">
+									<div class="category-content no-padding">
+										<ul class="nav navigation no-padding-top">
+											<li class="navigation-divider no-margin-top"></li>
+											<li class="navigation-header"><i class="icon-history pull-right"></i> Navigation</li>
+											<li>
+												<a href="#gs">Getting started</a>
+												<ul>
+													<li><a href="#gs_overview">Overview</a></li>
+													<li><a href="#gs_dependencies">Dependencies</a></li>
+													<li><a href="#gs_structure">Files structure</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#folders">Folders</a>
+												<ul>
+													<li><a href="#folders_root">Root folders</a></li>
+													<li><a href="#folders_assets">Assets folder</a></li>
+													<li><a href="#folders_css">CSS folder</a></li>
+													<li><a href="#folders_demo_data">Demo data folder</a></li>
+													<li><a href="#folders_images">Images folder</a></li>
+													<li><a href="#folders_js">JS folder</a></li>
+													<li><a href="#folders_locales">Locales folder</a></li>
+													<li><a href="#folders_swf">SWF folder</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#files">HTML files</a>
+												<ul>
+													<li><a href="#files_main">Main category</a></li>
+													<li><a href="#files_layout">Layout</a></li>
+													<li><a href="#files_forms">Forms</a></li>
+													<li><a href="#files_wiz">Wizards</a></li>
+													<li><a href="#files_editors">Editors</a></li>
+													<li><a href="#files_pickers">Pickers</a></li>
+													<li><a href="#files_components">Components</a></li>
+													<li><a href="#files_appearance">Content appearance</a></li>
+													<li><a href="#files_extra">Extra components</a></li>
+													<li><a href="#files_icons">Icons</a></li>
+													<li><a href="#files_sidebars">Sidebars</a></li>
+													<li><a href="#files_vnav">Vertical navigation</a></li>
+													<li><a href="#files_hnav">Horizontal navigation</a></li>
+													<li><a href="#files_navbars">Navbars</a></li>
+													<li><a href="#files_vis">Data visualization</a></li>
+													<li><a href="#files_maps">Maps</a></li>
+													<li><a href="#files_ext">Extensions</a></li>
+													<li><a href="#files_upl">File uploaders</a></li>
+													<li><a href="#files_int">Internationalization</a></li>
+													<li><a href="#files_stables">Basic tables</a></li>
+													<li><a href="#files_dtables">Data tables</a></li>
+													<li><a href="#files_pages">Page kits</a></li>
+												</ul>
+											</li>
+											<li class="navigation-divider"></li>
+											<li><a href="#">Go to top <i class="icon-circle-up2 pull-right"></i></a></li>
+							            </ul>
+						            </div>
+					            </div>
+					            <!-- /navigation -->
+
+				            </div>
+			            </div>
+		            </div>
+		            <!-- /detached sidebar -->
+
+
+					<!-- Footer -->
+					<div class="footer text-muted">
+						&copy; 2015. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
+					</div>
+					<!-- /footer -->
+
+				</div>
+				<!-- /content area -->
+
+			</div>
+			<!-- /main content -->
+
+		</div>
+		<!-- /page content -->
+
+	</div>
+	<!-- /page container -->
+
+</body>
+</html>

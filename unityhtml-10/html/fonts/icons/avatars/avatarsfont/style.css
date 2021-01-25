@@ -1,0 +1,259 @@
+@font-face {
+  font-family: 'avatarsfont';
+  src:
+    url('fonts/avatarsfont.ttf?4ll2yy') format('truetype'),
+    url('fonts/avatarsfont.woff?4ll2yy') format('woff'),
+    url('fonts/avatarsfont.svg?4ll2yy#avatarsfont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="avatars-"], [class*=" avatars-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'avatarsfont' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.avatars-A .path1:before {
+  content: "\e900";
+  color: rgb(216, 17, 89);
+}
+.avatars-A .path2:before {
+  content: "\e901";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.avatars-B .path1:before {
+  content: "\e902";
+  color: rgb(33, 131, 128);
+}
+.avatars-B .path2:before {
+  content: "\e903";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.avatars-C .path1:before {
+  content: "\e904";
+  color: rgb(103, 148, 54);
+}
+.avatars-C .path2:before {
+  content: "\e905";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.avatars-D .path1:before {
+  content: "\e906";
+  color: rgb(115, 210, 222);
+}
+.avatars-D .path2:before {
+  content: "\e907";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.avatars-E .path1:before {
+  content: "\e908";
+  color: rgb(171, 209, 181);
+}
+.avatars-E .path2:before {
+  content: "\e909";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.avatars-F .path1:before {
+  content: "\e90a";
+  color: rgb(144, 103, 198);
+}
+.avatars-F .path2:before {
+  content: "\e90b";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.avatars-G .path1:before {
+  content: "\e90c";
+  color: rgb(202, 196, 206);
+}
+.avatars-G .path2:before {
+  content: "\e90d";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.avatars-H .path1:before {
+  content: "\e90e";
+  color: rgb(134, 186, 144);
+}
+.avatars-H .path2:before {
+  content: "\e90f";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.avatars-I .path1:before {
+  content: "\e910";
+  color: rgb(223, 160, 110);
+}
+.avatars-I .path2:before {
+  content: "\e911";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.avatars-J .path1:before {
+  content: "\e912";
+  color: rgb(252, 129, 74);
+}
+.avatars-J .path2:before {
+  content: "\e913";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.avatars-K .path1:before {
+  content: "\e914";
+  color: rgb(86, 66, 86);
+}
+.avatars-K .path2:before {
+  content: "\e915";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.avatars-L .path1:before {
+  content: "\e916";
+  color: rgb(46, 97, 113);
+}
+.avatars-L .path2:before {
+  content: "\e917";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.avatars-M .path1:before {
+  content: "\e918";
+  color: rgb(212, 175, 205);
+}
+.avatars-M .path2:before {
+  content: "\e919";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.avatars-N .path1:before {
+  content: "\e91a";
+  color: rgb(127, 126, 255);
+}
+.avatars-N .path2:before {
+  content: "\e91b";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.avatars-O .path1:before {
+  content: "\e91c";
+  color: rgb(204, 139, 140);
+}
+.avatars-O .path2:before {
+  content: "\e91d";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.avatars-P .path1:before {
+  content: "\e91e";
+  color: rgb(89, 129, 129);
+}
+.avatars-P .path2:before {
+  content: "\e91f";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.avatars-Q .path1:before {
+  content: "\e920";
+  color: rgb(75, 36, 74);
+}
+.avatars-Q .path2:before {
+  content: "\e921";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.avatars-R .path1:before {
+  content: "\e922";
+  color: rgb(113, 128, 185);
+}
+.avatars-R .path2:before {
+  content: "\e923";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.avatars-S .path1:before {
+  content: "\e924";
+  color: rgb(105, 116, 124);
+}
+.avatars-S .path2:before {
+  content: "\e925";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.avatars-T .path1:before {
+  content: "\e926";
+  color: rgb(0, 189, 157);
+}
+.avatars-T .path2:before {
+  content: "\e927";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.avatars-U .path1:before {
+  content: "\e928";
+  color: rgb(249, 188, 100);
+}
+.avatars-U .path2:before {
+  content: "\e929";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.avatars-V .path1:before {
+  content: "\e92a";
+  color: rgb(74, 111, 165);
+}
+.avatars-V .path2:before {
+  content: "\e92b";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.avatars-W .path1:before {
+  content: "\e92c";
+  color: rgb(217, 178, 111);
+}
+.avatars-W .path2:before {
+  content: "\e92d";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.avatars-X .path1:before {
+  content: "\e92e";
+  color: rgb(155, 106, 108);
+}
+.avatars-X .path2:before {
+  content: "\e92f";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.avatars-Y .path1:before {
+  content: "\e930";
+  color: rgb(161, 94, 73);
+}
+.avatars-Y .path2:before {
+  content: "\e931";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.avatars-Z .path1:before {
+  content: "\e932";
+  color: rgb(132, 162, 163);
+}
+.avatars-Z .path2:before {
+  content: "\e933";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}

@@ -1,0 +1,189 @@
+.nav{
+    margin: -.5rem -1rem;
+    .nav-link{
+        display: inline-flex;
+        align-items: center;
+        .icon + span, span + .icon{
+            margin-left: 0.75rem;
+        }
+        .icon{
+            font-size: 1.3em;
+        }
+    }
+    &-tabs{
+        font-family: $alt-font-family;
+        margin: 0;
+        font-size:0.8125rem;
+        border-bottom: 1px solid $border-color;
+        &-s2{
+            border-bottom: none;
+            justify-content: center;
+        }
+        + .tab-content{
+            margin-top: 1.25rem;
+        }
+        .nav{
+            &-item{
+                padding-right:1.25rem;
+                &:last-child{
+                    padding-right: 0;
+                }
+                &.active .nav-link{
+                    color: $primary;
+                    &:after{
+                        opacity: 1;
+                    }
+                }
+            }
+            &-link{
+                padding: 1rem 0;
+                font-weight: 700;
+                color: $base-text;
+                position: relative;
+                border: none;
+                outline: none;
+                display: inline-flex;
+                align-items: center;
+                .icon{
+                    font-size: 1.4em;
+                    + span{
+                        margin-left: 0.5rem;
+                    }
+                }
+                .badge{
+                    margin-left: 0.25rem;
+                }
+                &:hover{
+                    color: $base-color;
+                }
+                &:focus{
+                    color: $primary;
+                }
+                &:before,&:after{
+                    position: absolute;
+                    content: '';
+                }
+                &:after{
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    height: 3px;
+                    background: $primary;
+                    opacity: 0;
+                }
+                &.active{
+                    color: $primary;
+                    border: none;
+                    background-color: transparent;
+                    &:after{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+    &-sm{
+        font-size: 0.8125rem;
+    }
+}
+@include media-breakpoint-up(md){
+    .nav-tabs{
+        .nav-item{
+            padding-right:1.5rem;
+        }
+        &-sm{
+            .nav-item{
+                padding-right:1.25rem;
+            }
+        }
+    }
+}
+@include media-breakpoint-up(lg){
+    .nav-tabs{
+        .nav-item{
+            padding-right:1.75rem;
+        }
+        &-sm{
+            .nav-item{
+                padding-right:1.25rem;
+            }
+        }
+        .nav-link{
+            font-size: 0.875rem;
+        }
+    }
+}
+@include media-breakpoint-up(xl){
+    .nav-tabs{
+        .nav-item{
+            padding-right:2.25rem;
+        }
+        &-sm{
+            .nav-item{
+                padding-right:1.25rem;
+            }
+        }
+    }
+}
+@include media-breakpoint-down(xs){
+    .nav-tabs.is-stretch{
+        margin-left: -$stretch-gap-x;
+        margin-right: -$stretch-gap-x;
+        padding-left: $stretch-gap-x;
+        padding-right:$stretch-gap-x;
+    }
+}
+
+//Trigger
+.nav-item-trigger{
+    display: inline-flex;
+    align-items: center;
+    margin:-1px -.5rem 0 auto;
+}
+
+// Card Nav
+.nav-tabs-card{
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    font-family: $base-font-family;
+}
+@include media-breakpoint-up(sm){
+    .nav-tabs-card{
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+// ICON
+@include media-breakpoint-down(sm){
+    .nav-tabs-mb-icon{
+        .nav-item{
+            padding-right: .75rem;
+        }
+        .nav-link{
+            .icon{
+                font-size: 1.25rem;
+                padding: 0 .5rem;
+                + span{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@media (max-width:359px){
+    .nav-tabs-mb-icon{
+        .nav-item{
+            padding-right: .35rem;
+        }
+    }
+}
+
+//Medium
+.is-medium{
+    &.nav-tabs{
+        .nav-link{
+            padding: .75rem 0;
+        }
+    }
+}

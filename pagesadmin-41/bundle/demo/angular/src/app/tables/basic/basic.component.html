@@ -1,0 +1,242 @@
+
+       <!-- START JUMBOTRON -->
+       <div class="jumbotron">
+       <pg-container extraHorizontalClass="p-l-0 p-r-0" extraClass="sm-p-l-0 sm-p-r-0">
+          <div class="inner" pg-parallax>
+            <!-- START BREADCRUMB -->
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="javascript:void(0);">Tables</a></li>
+              <li class="breadcrumb-item active">Basic</li>
+            </ol>
+            <!-- END BREADCRUMB --> 
+            <div class="row">
+              <div class="col-xl-7 col-lg-6 ">
+                <!-- START card -->
+                <div class="full-height">
+                  <div class="card-body text-center">
+                    <img class="image-responsive-height demo-mw-600" src="assets/img/demo/tables.jpg" alt="">
+                  </div>
+                </div>
+                <!-- END card -->
+              </div>
+              <div class="col-xl-5 col-lg-6 ">
+                <!-- START card -->
+                <div class="card card-transparent">
+                  <div class="card-header ">
+                    <div class="card-title">Getting started
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h3>It only takes a glance.</h3>
+                    <p>Simplicity and user-freindliness define our stylized Tables, with the layout enabling any observer to grasp the basic information at a glance. </p>
+                    <p class="small hint-text m-t-5">VIA senior product manage
+                      <br> for UI/UX at REVOX</p>
+                    <br>
+                    <button class="btn btn-primary btn-cons">More</button>
+                  </div>
+                </div>
+                <!-- END card -->
+              </div>
+            </div>
+          </div>
+
+        </pg-container>
+      </div>
+      <!-- END JUMBOTRON -->
+      <!-- START CONTAINER FLUID -->
+      <pg-container extraHorizontalClass="bg-white" extraClass="bg-white">
+        <!-- START card -->
+        <div class="card card-transparent">
+          <div class="card-header ">
+            <div class="card-title">Pages Default Tables Style
+            </div>
+          </div>
+          <div class="card-body">
+              <div class="table-responsive">
+                <ngx-datatable
+                class='table table-hover'
+                [rows]="basic_table_data"
+                [columnMode]="columnModeSetting"
+                [headerHeight]="43"
+                [footerHeight]="50"
+                [rowHeight]="'auto'"
+                [limit]="5"
+                [selected]="selected"
+                [selectionType]="'checkbox'"
+                [scrollbarH]="scrollBarHorizontal"
+                (activate)="onActivate($event)"
+                (select)='onSelect($event)'>
+                <ngx-datatable-column [width]="30" [sortable]="false" [canAutoResize]="false" [draggable]="false" [resizeable]="false" cellClass="d-flex align-items-center">
+                    <ng-template ngx-datatable-header-template let-value="value" let-allRowsSelected="allRowsSelected" let-selectFn="selectFn">
+                        <button class="btn btn-link"><i class="pg pg-trash"></i>
+                        </button>
+                    </ng-template>
+                    <ng-template ngx-datatable-cell-template let-rowIndex="rowIndex" let-row="row" let-value="value" let-isSelected="isSelected" let-onCheckboxChangeFn="onCheckboxChangeFn">
+                      <div class="checkbox d-flex align-items-center">
+                          <input type="checkbox" value="1" id="checkbox_1{{rowIndex}}"  [checked]="isSelected" (change)="onCheckboxChangeFn($event)">
+                          <label for="checkbox_1{{rowIndex}}"></label>
+                      </div>
+                    </ng-template>
+                </ngx-datatable-column>
+                <ngx-datatable-column name="Title" cellClass="d-flex align-items-center"></ngx-datatable-column>
+                <ngx-datatable-column name="Place" cellClass="d-flex align-items-center">
+                    <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
+                        <a href="javascript:;" *ngFor="let value of row.places" class="btn btn-tag">{{value}}</a>
+                    </ng-template>
+                </ngx-datatable-column>
+                <ngx-datatable-column name="Activities" cellClass="d-flex align-items-center"></ngx-datatable-column>
+                <ngx-datatable-column name="Status" cellClass="d-flex align-items-center"></ngx-datatable-column>
+                <ngx-datatable-column name="Last Update" cellClass="d-flex align-items-center"></ngx-datatable-column>
+              </ngx-datatable>
+            </div>
+          </div>
+        </div>
+        <!-- END card -->
+      </pg-container>
+      <!-- END CONTAINER FLUID -->
+      <!-- START CONTAINER FLUID -->
+      <pg-container>
+        <div class="row">
+          <div class="col-lg-6">
+            <!-- START card -->
+            <div class="card card-transparent">
+              <div class="card-header ">
+                <div class="card-title">Pages Striped Tables
+                </div>
+                <div class="tools">
+                  <a class="collapse" href="javascript:;"></a>
+                  <a class="config" data-toggle="modal" href="#grid-config"></a>
+                  <a class="reload" href="javascript:;"></a>
+                  <a class="remove" href="javascript:;"></a>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                    <ngx-datatable
+                    class='table table-hover table-stripped'
+                    [rows]="strippedTableData"
+                    [columnMode]="columnModeSettingSmall"
+                    [scrollbarH]="scrollBarHorizontal"
+                    [headerHeight]="43"
+                    [footerHeight]="0"
+                    [rowHeight]="'auto'"
+                    [limit]="5"
+                    [sorts]="[{prop: 'title', dir: 'asc'}]">
+                    <ngx-datatable-column name="Title" cellClass="d-flex align-items-center"></ngx-datatable-column>
+                    <ngx-datatable-column name="Place" cellClass="d-flex align-items-center">
+                        <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
+                            <a href="javascript:;" *ngFor="let value of row.places" class="btn btn-tag">{{value}}</a>
+                        </ng-template>
+                    </ngx-datatable-column>
+                    <ngx-datatable-column name="Activities" cellClass="d-flex align-items-center"></ngx-datatable-column>
+                  </ngx-datatable>
+                </div>
+              </div>
+            </div>
+            <!-- END card -->
+          </div>
+          <div class="col-lg-6">
+            <!-- START card -->
+            <div class="card card-transparent">
+              <div class="card-header ">
+                <div class="card-title">Pages condensed Table
+                </div>
+              </div>
+              <div class="card-body">
+                  <div class="table-responsive">
+                      <ngx-datatable
+                      class='table table-condensed'
+                      [rows]="condensedTableData"
+                      [columnMode]="columnModeSettingSmall"
+                      [scrollbarH]="scrollBarHorizontal"
+                      [headerHeight]="43"
+                      [footerHeight]="0"
+                      [rowHeight]="44"
+                      [limit]="5" 
+                      [sorts]="[{prop: 'title', dir: 'asc'}]">
+                      <ngx-datatable-column name="Title" cellClass="d-flex align-items-center"></ngx-datatable-column>
+                      <ngx-datatable-column name="Places" cellClass="d-flex align-items-center">
+                      </ngx-datatable-column>
+                      <ngx-datatable-column name="Condensed" cellClass="d-flex align-items-center">
+                          <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
+                              <div class="text-truncate">
+                                {{value}}
+                                </div>
+                          </ng-template>
+                      </ngx-datatable-column>
+                    </ngx-datatable>
+                  </div>
+              </div>
+            </div>
+            <!-- END card -->
+          </div>
+        </div>
+      </pg-container>
+      <!-- END CONTAINER FLUID -->
+      <!-- START CONTAINER FLUID -->
+      <pg-container>
+        <div class="row">
+          <div class="col-lg-8">
+            <!-- START card -->
+            <div class="card card-transparent">
+              <div class="card-header ">
+                <div class="card-title">Pages detailed view table
+                </div>
+              </div>
+              <div class="card-body">
+                      <ngx-datatable
+                      #expTable
+                      class='table table-condensed'
+                      [rows]="expandTableData"
+                      [columnMode]="'force'"
+                      [headerHeight]="43"
+                      [footerHeight]="0"
+                      [rowHeight]="44"
+                      [limit]="5">
+                      <!-- Row Detail Template -->
+                      <ngx-datatable-row-detail [rowHeight]="'auto'" #myDetailRow (toggle)="onDetailToggle($event)">
+                          <ng-template let-row="row" let-expanded="expanded" ngx-datatable-row-detail-template>
+                              <table class="table table-inline m-l-40 m-r-40 m-t-10 m-b-10">
+                                  <tbody>
+                                    <tr>
+                                      <td>Learn from real test data <span class="label label-important">ALERT!</span></td>
+                                      <td>USD 1000</td>
+                                    </tr>
+                                    <tr>
+                                      <td>PSDs included</td>
+                                      <td>USD 3000</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Extra info</td>
+                                      <td>USD 2400</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                          </ng-template>
+                        </ngx-datatable-row-detail>                 
+                      <ngx-datatable-column name="Title" cellClass="d-flex align-items-center">
+                          <ng-template let-expanded="expanded" let-row="row" let-value="value" ngx-datatable-cell-template>
+                            <a
+                            class="text-black"
+                            href="javascript:void(0)"
+                            title="Expand/Collapse Row"
+                            (click)="toggleExpandRow(row)">
+                            <i class="pg" [class.pg-arrow_right]="!expanded" [class.pg-arrow_minimize]="expanded"></i>
+                          </a>
+                          {{value}}
+                        </ng-template>
+                      </ngx-datatable-column>
+                      <ngx-datatable-column name="Status" cellClass="d-flex align-items-center">
+                      </ngx-datatable-column>
+                      <ngx-datatable-column name="Price" cellClass="d-flex align-items-center">
+                      </ngx-datatable-column>
+                      <ngx-datatable-column name="Last Update" cellClass="d-flex align-items-center">
+                      </ngx-datatable-column>
+                    </ngx-datatable>
+              </div>
+            </div>
+            <!-- END card -->
+          </div>
+        </div>
+      </pg-container>
+      <!-- END CONTAINER FLUID -->

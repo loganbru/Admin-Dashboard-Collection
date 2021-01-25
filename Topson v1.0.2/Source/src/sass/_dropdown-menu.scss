@@ -1,0 +1,15 @@
+.dropdown-menu {
+    @apply box;
+    .dropdown-menu__item:hover {
+        @apply bg-gray-200;
+    }
+}
+
+.dark {
+    .dropdown-menu {
+        @apply bg-dark-2;
+        .dropdown-menu__item:hover {
+            @apply bg-dark-3;
+        }
+    }    
+}

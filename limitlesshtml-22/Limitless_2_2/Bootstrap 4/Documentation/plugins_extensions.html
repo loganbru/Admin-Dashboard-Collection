@@ -1,0 +1,2610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/layout.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script src="assets/js/main/jquery.min.js"></script>
+	<script src="assets/js/main/bootstrap.bundle.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script src="assets/js/plugins/prism.min.js"></script>
+	<script src="assets/js/plugins/sticky.min.js"></script>
+	
+	<script src="assets/js/main/app.js"></script>
+	<script src="assets/js/pages/components_scrollspy.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body data-spy="scroll" data-target=".sidebar-component-right">
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-expand-md navbar-light">
+		<div class="navbar-header navbar-dark d-none d-md-flex align-items-md-center">
+			<div class="navbar-brand navbar-brand-md">
+				<a href="index.html" class="d-inline-block">
+					<img src="assets/images/logo_light.png" alt="">
+				</a>
+			</div>
+	
+			<div class="navbar-brand navbar-brand-xs">
+				<a href="index.html" class="d-inline-block">
+					<img src="assets/images/logo_icon_light.png" alt="">
+				</a>
+			</div>
+		</div>
+
+		<div class="d-flex flex-1 d-md-none">
+			<div class="navbar-brand mr-auto">
+				<a href="index.html" class="d-inline-block">
+					<img src="assets/images/logo_dark.png" alt="">
+				</a>
+			</div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile">
+				<i class="icon-tree5"></i>
+			</button>
+			<button class="navbar-toggler sidebar-mobile-main-toggle" type="button">
+				<i class="icon-paragraph-justify3"></i>
+			</button>
+			<button class="navbar-toggler sidebar-mobile-component-toggle" type="button">
+				<i class="icon-unfold"></i>
+			</button>
+		</div>
+
+		<div class="collapse navbar-collapse" id="navbar-mobile">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a href="#" class="navbar-nav-link sidebar-control sidebar-main-hide d-none d-md-block">
+						<i class="icon-paragraph-justify3"></i>
+					</a>
+				</li>
+
+				<li class="nav-item">
+					<a href="#" class="navbar-nav-link sidebar-control sidebar-component-toggle d-none d-md-block">
+						<i class="icon-transmission"></i>
+					</a>
+				</li>
+			</ul>
+
+			<ul class="navbar-nav ml-md-auto">
+				<li class="nav-item dropdown">
+					<a href="other_changelog.html" class="navbar-nav-link">
+						<i class="icon-history mr-2"></i>
+						Changelog
+						<span class="badge bg-warning-400 badge-pill position-static ml-md-2">2.2</span>
+					</a>					
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page content -->
+	<div class="page-content">
+
+		<!-- Main sidebar -->
+		<div class="sidebar sidebar-dark sidebar-main sidebar-expand-md">
+
+			<!-- Sidebar mobile toggler -->
+			<div class="sidebar-mobile-toggler text-center">
+				<a href="#" class="sidebar-mobile-main-toggle">
+					<i class="icon-arrow-left8"></i>
+				</a>
+				Navigation
+				<a href="#" class="sidebar-mobile-expand">
+					<i class="icon-screen-full"></i>
+					<i class="icon-screen-normal"></i>
+				</a>
+			</div>
+			<!-- /sidebar mobile toggler -->
+
+
+			<!-- Sidebar content -->
+			<div class="sidebar-content">
+
+        		<!-- Support -->
+				<div class="card card-body">
+					<a href="http://kopyov.ticksy.com" class="btn bg-success-400 btn-block" target="_blank"><i class="icon-lifebuoy mr-2"></i> Limitless support</a>
+				</div>
+				<!-- /support -->
+
+
+				<!-- Main navigation -->
+				<div class="card card-sidebar-mobile">
+					<ul class="nav nav-sidebar" data-nav-type="accordion">
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Main</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="index.html" class="nav-link">Introduction</a></li>
+						<li class="nav-item"><a href="main_getting_started.html" class="nav-link">Getting started</a></li>
+						<li class="nav-item"><a href="main_starter_kit.html" class="nav-link">Starter kit</a></li>
+						<li class="nav-item"><a href="main_rtl.html" class="nav-link">RTL layout</a></li>
+
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Basic functionality</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="base_scss_css.html" class="nav-link">SCSS and CSS</a></li>
+						<li class="nav-item"><a href="base_scss_compile.html" class="nav-link">Compiling SCSS</a></li>
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+							<a href="#" class="nav-link">Plugins</a>
+							<ul class="nav nav-group-sub" data-submenu-title="Plugins">
+								<li class="nav-item"><a href="plugins_forms.html" class="nav-link">Forms</a></li>
+								<li class="nav-item"><a href="plugins_forms_styling.html" class="nav-link">Form styling</a></li>
+								<li class="nav-item"><a href="plugins_editors.html" class="nav-link">Editors</a></li>
+								<li class="nav-item"><a href="plugins_uploaders.html" class="nav-link">Uploaders</a></li>
+								<li class="nav-item"><a href="plugins_extensions.html" class="nav-link active">Extensions</a></li>
+								<li class="nav-item"><a href="plugins_notifications.html" class="nav-link">Notifications</a></li>
+								<li class="nav-item"><a href="plugins_pickers.html" class="nav-link">Pickers</a></li>
+								<li class="nav-item"><a href="plugins_tables.html" class="nav-link">Tables</a></li>
+								<li class="nav-item"><a href="plugins_ui.html" class="nav-link">UI</a></li>
+								<li class="nav-item"><a href="plugins_vis.html" class="nav-link">Visualization</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a href="base_icons.html" class="nav-link">Icons</a></li>
+
+						<li class="nav-item"><a href="base_bootstrap.html" class="nav-link">Bootstrap</a></li>
+						<li class="nav-item"><a href="base_color_system.html" class="nav-link">Color system</a></li>
+						<li class="nav-item"><a href="base_helpers.html" class="nav-link">Helpers</a></li>
+						<li class="nav-item"><a href="base_themes.html" class="nav-link">Themes</a></li>
+
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Layout options</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="layout_overview.html" class="nav-link">Layouts</a></li>
+						<li class="nav-item"><a href="layout_sidebars.html" class="nav-link">Sidebars</a></li>
+						<li class="nav-item"><a href="layout_navbars.html" class="nav-link">Navbars</a></li>
+						<li class="nav-item"><a href="layout_v_nav.html" class="nav-link">Vertical navigation</a></li>
+						<li class="nav-item"><a href="layout_h_nav.html" class="nav-link">Horizontal navigation</a></li>
+						<li class="nav-item"><a href="layout_page_header.html" class="nav-link">Page header</a></li>
+
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Other</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="other_credits.html" class="nav-link">Sources and credits</a></li>
+						<li class="nav-item"><a href="other_changelog.html" class="nav-link">Changelog <span class="badge badge-pill bg-warning-400 ml-auto">version 2.2</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /main navigation -->
+
+		</div>
+		<!-- /main sidebar -->
+
+
+		<!-- Main content -->
+		<div class="content-wrapper">
+
+			<!-- Page header -->
+			<div class="page-header">
+				<div class="page-header-content header-elements-md-inline">
+					<div class="page-title d-flex">
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Limitless</span> - Extensions</h4>
+						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+					</div>
+
+					<div class="header-elements d-none py-0 mb-3 mb-md-0">
+						<div class="breadcrumb">
+							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
+							<span class="breadcrumb-item active">Extensions</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /page header -->
+			
+
+			<!-- Content area -->
+			<div class="content pt-0">
+
+				<!-- Inner container -->
+				<div class="d-flex align-items-start flex-column flex-md-row">
+
+					<!-- Left content -->
+					<div class="order-2 order-md-1">
+
+							<!-- Velocity -->
+							<div class="card" id="velocity">
+								<div class="card-header header-elements-md-inline">
+									<h5 class="card-title">Velocity animations</h5>
+									<div class="header-elements d-flex justify-content-between">
+										<span class="badge bg-slate">Animation</span>
+										<span class="text-muted mx-3">/velocity/</span>
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+									</div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Overview</h6>
+										<p>Velocity is an animation engine with the same API as jQuery's <code>$.animate()</code>. It works with and without jQuery. It's incredibly fast, and it features color animation, transforms, loops, easings, SVG support, and scrolling. It is the best of jQuery and CSS transitions combined. Velocity works everywhere — back to IE8 and Android 2.3. Under the hood, it mimics jQuery's <code>$.queue()</code>, and thus interoperates seamlessly with jQuery's <code>$.animate()</code>, <code>$.fade()</code>, and <code>$.delay()</code>. Since Velocity's syntax is identical to <code>$.animate()</code>, your code doesn't need to change.</p>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Usage</h6>
+										<div class="mb-3">
+											<p>Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+											<pre><code class="language-markup">&lt;!-- Load library -->
+&lt;script src="../../../../global_assets/js/plugins/velocity/velocity.min.js">&lt;/script>
+
+&lt;!-- Load Velocity UI -->
+&lt;script src="../../../../global_assets/js/plugins/velocity/velocity.ui.min.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Call the plugin via JavaScript:</p>
+											<pre><code class="language-javascript">// Chaining example
+$element
+    .velocity({ width: 75 }) // Animate the width property
+    .velocity({ height: 0 }); // Then, when finished, animate the height property
+
+
+// Per-Property Easing
+$element.velocity({
+    borderBottomWidth: [ "2px", "spring" ], // Uses "spring"
+    width: [ "100px", [ 250, 15 ] ], // Uses custom spring physics
+    height: "100px" // Defaults to easeInSine, the call's default easing
+}, {
+    easing: "easeInSine" // Default easing
+});
+
+
+// Animation Delay
+$element.velocity({
+    height: "+=10em"
+}, {
+    loop: 4,
+    delay: 100 // Wait 100ms before alternating back
+});
+</code></pre>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Velocity.js documentation</h6>
+										<p>Complete Velocity.js documentation can be found online on <a href="http://julian.com/research/velocity/" target="_blank">Official library website</a>. It's quite big, actually the whole website is a documentation with examples. Follow the right sidebar to navigate the <a href="http://julian.com/research/velocity/#duration" target="_blank">options</a>, <a href="http://julian.com/research/velocity/#fade" target="_blank">commands</a> and <a href="http://julian.com/research/velocity/#transforms" target="_blank">features</a>. Also check out <a href="http://julian.com/research/velocity/#uiPack" target="_blank">UI Pack documentation</a>. I find it useless to copy them all and paste to the Limitless documentation, nobody can represent and describe library features better than its creators. Below you can find additional links related to Velocity.js library.</p>
+									</div>
+
+									<div>
+										<h6 class="font-weight-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="font-weight-semibold">File name</td>
+														<td>velocity.min.js, velocity.ui.js</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Location</td>
+														<td>global_assets/js/plugins/velocity/</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Links</td>
+														<td>
+															<p>
+																<a href="http://julian.com/research/velocity/" class="btn btn-sm bg-danger-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+
+															<p>
+																<a href="http://julian.com/research/velocity/#duration" class="btn btn-sm bg-slate btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-file-text2"></i></b>
+																	Full documentation
+																</a>
+															</p>
+															
+															<a href="https://github.com/julianshapiro/velocity" class="btn btn-sm bg-blue btn-labeled btn-labeled-left" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /velocity -->
+
+
+							<!-- Prism -->
+							<div class="card" id="prism">
+								<div class="card-header header-elements-md-inline">
+									<h5 class="card-title">Prism syntax highlighter</h5>
+									<div class="header-elements d-flex justify-content-between">
+										<span class="badge bg-slate">Typo</span>
+										<span class="text-muted mx-3">prism.min.js</span>
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+									</div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Overview</h6>
+										<p class="mb-3">Prism is a lightweight, extensible syntax highlighter, built with modern web standards in mind. Allows you to define new languages or extend existing ones, add new features thanks to Prism’s plugin architecture. Language classes are inherited so you can only define the language once for multiple code snippets.</p>
+
+										<p>Core features:</p>
+										<ul>
+											<li><strong>Only 2KB</strong> minified &amp; gzipped (core). Each language definition adds roughly 300-500 bytes.</li>
+											<li>Encourages good author practices. Other highlighters encourage or even force you to use elements that are semantically wrong,
+												like <code>&lt;pre&gt;</code> (on its own) or <code>&lt;script&gt;</code>.
+												Prism forces you to use the correct element for marking up code: <code>&lt;code&gt;</code>.
+												On its own for inline code, or inside a &lt;pre&gt; for blocks of code.
+												In addition, the language is defined through the way recommended in the HTML5 draft: through a language-xxxx class.</li>
+											<li>The language definition is inherited. This means that if multiple code snippets have the same language, you can just define it once, in one of their common ancestors.</li>
+											<li>Supports <strong>parallelism with Web Workers</strong>, if available. Disabled by default</li>
+											<li>Very easy to extend without modifying the code, due to Prism’s plugin architecture. Multiple hooks are scattered throughout the source.</li>
+											<li>Very easy to define new languages. Only thing you need is a good understanding of regular expressions</li>
+											<li>All styling is done through CSS, with sensible class names rather than ugly namespaced abbreviated nonsense.</li>
+											<li>Wide browser support: IE9+, Firefox, Chrome, Safari, Opera, most Mobile browsers</li>
+											<li>Highlights embedded languages (e.g. CSS inside HTML, JavaScript inside HTML)</li>
+											<li>Highlights inline code as well, not just code blocks</li>
+											<li>Highlights nested languages (CSS in HTML, JavaScript in HTML</li>
+											<li>It doesn’t force you to use any Prism-specific markup, not even a Prism-specific class name, only standard markup you should be using anyway. So, you can just try it for a while, remove it if you don’t like it and leave no traces behind.</li>
+											<li>Highlight specific lines and/or line ranges (requires plugin)</li>
+											<li>Show invisible characters like tabs, line breaks etc (requires plugin)</li>
+											<li>Autolink URLs and emails, use Markdown links in comments (requires plugin)</li>
+										</ul>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Usage</h6>
+										<div class="mb-3">
+											<p>Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+											<pre><code class="language-markup">&lt;!-- Load jQuery -->
+&lt;script src="../../../../global_assets/js/main/jquery.min.js">&lt;/script>
+
+&lt;!-- Load plugin -->
+&lt;script src="../../../../global_assets/js/plugins/ui/prism.min.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Prism does its best to encourage good authoring practices. Therefore, it only works with <code>&lt;code></code> elements, since marking up code without a <code>&lt;code></code> element is semantically invalid. According to the HTML5 spec, the recommended way to define a code language is a language-xxxx class, which is what Prism uses. To make things easier however, Prism assumes that this language definition is inherited. Therefore, if multiple <code>&lt;code></code> elements have the same language, you can add the language-xxxx class on one of their common ancestors. This way, you can also define a document-wide default language, by adding a language-xxxx class on the <code>&lt;body></code> or <code>&lt;html></code> element.</p>
+
+											<pre class="mb-3"><code class="language-markup">&lt;!-- Code inside Pre element -->
+&lt;pre>&lt;code class="language-css">p { color: red }&lt;/code>&lt;/pre>
+</code></pre>
+											<p>If you want to opt-out of highlighting for a <code>&lt;code></code> element that is a descendant of an element with a declared code language, you can add the class language-none to it (or any non-existing language, really).</p>
+										</div>
+
+										<div class="mb-3">
+											<p>If you want to prevent any elements from being automatically highlighted, you can use the attribute data-manual on the <code>&lt;script></code> element you used for prism and use the API. Example:
+											<pre><code class="language-markup">&lt;!-- Disable highlight -->
+&lt;script src="prism.js" data-manual>&lt;/script>
+</code></pre>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Prism.js documentation</h6>
+										<p>Complete Prism.js documentation can be found online on <a href="http://prismjs.com/" target="_blank">Official library website</a>. It's quite big, with a lot of options, events and customization options. Also check out <a href="http://prismjs.com/#plugins" target="_blank">plugins made for Prism.js</a>, <a href="http://prismjs.com/#languages-list" target="_blank">supported languages</a> or make <a href="http://prismjs.com/download.html" target="_blank">your own build</a>. I find it useless to copy them all and paste to the Limitless documentation, nobody can represent and describe library features better than its creators. Below you can find additional links related to Prism.js library.</p>
+									</div>
+
+									<div>
+										<h6 class="font-weight-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="font-weight-semibold">File name</td>
+														<td>prism.min.js</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Location</td>
+														<td>global_assets/js/plugins/ui/</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Links</td>
+														<td>
+															<p>
+																<a href="http://prismjs.com/" class="btn btn-sm bg-danger-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+
+															<p>
+																<a href="http://prismjs.com/extending.html" class="btn btn-sm bg-slate btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-file-text2"></i></b>
+																	Full documentation
+																</a>
+															</p>
+
+															<p>
+																<a href="http://prismjs.com/download.html" class="btn btn-sm bg-purple-300 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-puzzle4"></i></b>
+																	Build your own
+																</a>
+															</p>
+															
+															<a href="https://github.com/PrismJS/prism" class="btn btn-sm bg-blue btn-labeled btn-labeled-left" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /prism -->
+
+
+							<!-- Moment -->
+							<div class="card" id="moment">
+								<div class="card-header header-elements-md-inline">
+									<h5 class="card-title">Moment</h5>
+									<div class="header-elements d-flex justify-content-between">
+										<span class="badge bg-slate">Extensions</span>
+										<span class="text-muted mx-3">/ui/moment/</span>
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+									</div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Overview</h6>
+										<p>A lightweight JavaScript date library for parsing, validating, manipulating, and formatting dates. Moment was designed to work both in the browser and in Node.js. Currently the following browsers are used for the ci system: IE8, IE9 on Windows 7, stable Chrome on Windows XP, Safari 10.8 on Mac and stable Firefox on Linux.</p>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Usage</h6>
+										<p>Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+										<pre><code class="language-markup">&lt;!-- Load plugin -->
+&lt;script src="../../../../global_assets/js/plugins/ui/moment/moment.min.js">&lt;/script>
+
+&lt;!-- Or load with included locales -->
+&lt;script src="../../../../global_assets/js/plugins/ui/moment/moment_locales.min.js">&lt;/script>
+</code></pre>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Format dates</h6>
+										<pre><code class="language-javascript">// Format dates example
+moment().format('MMMM Do YYYY, h:mm:ss a'); // September 21st 2015, 1:31:51 am
+moment().format('dddd');                    // Monday
+moment().format("MMM Do YY");               // Sep 21st 15
+moment().format('YYYY [escaped] YYYY');     // 2015 escaped 2015
+moment().format();                          // 2015-09-21T01:31:51+02:00
+</code></pre>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Relative Time</h6>
+										<pre><code class="language-javascript">// Relative time example
+moment("20111031", "YYYYMMDD").fromNow(); // 4 years ago
+moment("20120620", "YYYYMMDD").fromNow(); // 3 years ago
+moment().startOf('day').fromNow();        // 2 hours ago
+moment().endOf('day').fromNow();          // in a day
+moment().startOf('hour').fromNow();       // 33 minutes ago
+</code></pre>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Calendar Time</h6>
+										<pre><code class="language-javascript">// Calendar time example
+moment().subtract(10, 'days').calendar(); // 09/11/2015
+moment().subtract(6, 'days').calendar();  // Last Tuesday at 1:33 AM
+moment().subtract(3, 'days').calendar();  // Last Friday at 1:33 AM
+moment().subtract(1, 'days').calendar();  // Yesterday at 1:33 AM
+moment().calendar();                      // Today at 1:33 AM
+moment().add(1, 'days').calendar();       // Tomorrow at 1:33 AM
+moment().add(3, 'days').calendar();       // Thursday at 1:33 AM
+moment().add(10, 'days').calendar();      // 10/01/2015
+</code></pre>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Multiple Locale Support</h6>
+										<pre><code class="language-javascript">// Multiple locale support example
+moment().format('L');    // 09/21/2015
+moment().format('l');    // 9/21/2015
+moment().format('LL');   // September 21, 2015
+moment().format('ll');   // Sep 21, 2015
+moment().format('LLL');  // September 21, 2015 1:33 AM
+moment().format('lll');  // Sep 21, 2015 1:33 AM
+moment().format('LLLL'); // Monday, September 21, 2015 1:33 AM
+moment().format('llll'); // Mon, Sep 21, 2015 1:33 AM
+</code></pre>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Moment.js documentation</h6>
+										<p>Complete Moment.js documentation can be found online on <a href="http://momentjs.com/docs/#/use-it/" target="_blank">Official library website</a>. It's quite big, with a lot of options, events and customization options. Also check out <a href="http://momentjs.com/docs/#/plugins/" target="_blank">plugins made for Moment.js</a>. I find it useless to copy them all and paste to the Limitless documentation, nobody can represent and describe library features better than its creators. Below you can find additional links related to Moment.js library.</p>
+									</div>
+
+									<div>
+										<h6 class="font-weight-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="font-weight-semibold">File name</td>
+														<td>moment.min.js, moment_locales.min.js</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Location</td>
+														<td>global_assets/js/plugins/ui/moment/</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Links</td>
+														<td>
+															<p>
+																<a href="http://momentjs.com/" class="btn btn-sm bg-danger-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+
+															<p>
+																<a href="http://momentjs.com/docs/#/use-it/" class="btn btn-sm bg-slate btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-file-text2"></i></b>
+																	Full documentation
+																</a>
+															</p>
+															
+															<a href="https://github.com/moment/moment/" class="btn btn-sm bg-blue btn-labeled btn-labeled-left" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /moment -->
+
+
+							<!-- Touch punch -->
+							<div class="card" id="punch">
+								<div class="card-header header-elements-md-inline">
+									<h5 class="card-title">Touch punch</h5>
+									<div class="header-elements d-flex justify-content-between">
+										<span class="badge bg-slate">Extensions</span>
+										<span class="text-muted mx-3">touch_punch.min.js</span>
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+									</div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Overview</h6>
+										<p>jQuery UI Touch Punch is a small hack that enables the use of touch events on sites using the jQuery UI user interface library. Touch Punch works by using simulated events to map touch events to their mouse event analogs. Simply include the script on your page and your touch events will be turned into their corresponding mouse events to which jQuery UI will respond as expected.</p>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Usage</h6>
+										<div class="mb-3">
+											<p>First off we're going to need to load the dependencies. This plugin requires jQuery and jQuery UI to function correctly:</p>
+											<pre><code class="language-markup">&lt;!-- Load jQuery -->
+&lt;script src="../../../../global_assets/js/main/jquery.min.js">&lt;/script>
+
+&lt;!-- Load jQuery UI -->
+&lt;script src="../../../../global_assets/js/extensions/jquery_ui/full.min.js">&lt;/script>
+
+&lt;!-- Load extension -->
+&lt;script src="../../../../global_assets/js/extensions/jquery_ui/touch.min.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<div class="mb-3">
+												<p>Just use jQuery UI as expected and watch it work at the touch of a finger:</p>
+												<pre><code class="language-javascript">// Initialization
+$('#widget').draggable();
+</code></pre>
+											</div>
+										</div>
+									</div>
+
+									<div>
+										<h6 class="font-weight-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="font-weight-semibold">File name</td>
+														<td>touch_punch.min.js</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Location</td>
+														<td>global_assets/js/extensions/jquery_ui/</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Links</td>
+														<td>
+															<p>
+																<a href="http://touchpunch.furf.com/" class="btn btn-sm bg-danger-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+
+															<a href="https://github.com/furf/jquery-ui-touch-punch" class="btn btn-sm bg-blue btn-labeled btn-labeled-left" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /touch punch -->
+
+
+							<!-- jQuery UI slider pips -->
+							<div class="card" id="pips">
+								<div class="card-header header-elements-md-inline">
+									<h5 class="card-title">jQuery UI slider pips</h5>
+									<div class="header-elements d-flex justify-content-between">
+										<span class="badge bg-slate">Sliders</span>
+										<span class="text-muted mx-3">slider_pips.min.js</span>
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+									</div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Overview</h6>
+										<p>Plugin to add "pips" or "floats" to a jQuery UI Slider. This plugin extends the jQuery UI Slider widget. Use it for creating a nicely-styled slider.</p>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Usage</h6>
+										<div class="mb-3">
+											<p>First off we're going to need to load the dependencies. This plugin requires jQuery and jQuery UI to function correctly:</p>
+											<pre><code class="language-markup">&lt;!-- Load jQuery -->
+&lt;script src="../../../../global_assets/js/main/jquery.min.js">&lt;/script>
+
+&lt;!-- Load jQuery UI -->
+&lt;script src="../../../../global_assets/js/extensions/jquery_ui/full.min.js">&lt;/script>
+
+&lt;!-- Load extension -->
+&lt;script src="../../../../global_assets/js/plugins/sliders/slider_pips.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Add element with attributes:</p>
+											<pre><code class="language-markup">&lt;!-- Add DIV element -->
+&lt;div class="slider">&lt;/div>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<div class="mb-3">
+												<p>Call the plugin via JavaScript:</p>
+												<pre><code class="language-javascript">// Both pips and floats
+$(".slider").slider().slider("pips").slider("float");
+</code></pre>
+											</div>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Plugin options</h6>
+										<p>It is possible to supply configuration options to the pips plugin, this allows some basic way to control how the pips/floats are handled.</p>
+
+										<div class="mb-3">
+											<p>A list of all the options available on the <code>pips</code> method:</p>
+											<div class="table-responsive">
+												<table class="table table-bordered table-striped">
+													<thead>
+														<tr>
+															<th style="width: 250px;">Option</th>
+															<th>Values</th>
+															<th>Default</th>
+															<th>Description</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td><code>first</code></td>
+															<td class="font-weight-semibold">"label", "pip" or false</td>
+															<td class="font-weight-semibold">"label"</td>
+															<td>Determines the style of the <strong>first</strong> pip on the slider</td>
+														</tr>
+														<tr>
+															<td><code>last</code></td>
+															<td class="font-weight-semibold">"label", "pip" or false</td>
+															<td class="font-weight-semibold">"label"</td>
+															<td>Determines the style of the <strong>final</strong> pip on the slider</td>
+														</tr>
+														<tr>
+															<td><code>rest</code></td>
+															<td class="font-weight-semibold">"label", "pip" or false</td>
+															<td class="font-weight-semibold">"pip"</td>
+															<td>Determines the style of <strong>all other</strong> pips on the slider</td>
+														</tr>
+														<tr>
+															<td><code>step</code></td>
+															<td class="font-weight-semibold">number</td>
+															<td class="font-weight-semibold">1 / 5%</td>
+															<td>The <code>step</code> parameter will only generate every nth pip. eg: If we set <code>step: 2</code>, then we will only get the values: 0, 2, 4, 6, 8... generated. Note: if the slider has a value over 100, step is set to 5% of the value</td>
+														</tr>
+														<tr>
+															<td><code>labels</code></td>
+															<td class="font-weight-semibold">array, object or false</td>
+															<td class="font-weight-semibold">false</td>
+															<td>Will override the values of the pips with an array of given values</td>
+														</tr>
+														<tr>
+															<td><code>prefix</code></td>
+															<td class="font-weight-semibold">string</td>
+															<td class="font-weight-semibold">""</td>
+															<td>Adds a string value before the pip label. eg: <code>prefix: $</code> => <strong>$1, $2, $3, $4, ...</strong></td>
+														</tr>
+														<tr>
+															<td><code>suffix</code></td>
+															<td class="font-weight-semibold">string</td>
+															<td class="font-weight-semibold">""</td>
+															<td>Adds a string value after the pip label. eg: <code>suffix: °c</code> => <strong>1°c, 2°c, 3°c, 4°c, ...</strong></td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+
+										<p>A list of all the options available on the <code>float</code> method:</p>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Option</th>
+														<th>Values</th>
+														<th>Default</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>handle</code></td>
+														<td class="font-weight-semibold">boolean</td>
+														<td class="font-weight-semibold">true</td>
+														<td>Determines if the float effect should appear on the <strong>slider handle</strong></td>
+													</tr>
+													<tr>
+														<td><code>pips</code></td>
+														<td class="font-weight-semibold">boolean</td>
+														<td class="font-weight-semibold">false</td>
+														<td>Determines if the float effect should appear on the <strong>pips</strong></td>
+													</tr>
+													<tr>
+														<td><code>labels</code></td>
+														<td class="font-weight-semibold">array, object or false</td>
+														<td class="font-weight-semibold">false</td>
+														<td>Will override the values of the floats with an array of given values</td>
+													</tr>
+													<tr>
+														<td><code>prefix</code></td>
+														<td class="font-weight-semibold">string</td>
+														<td class="font-weight-semibold">""</td>
+														<td>Adds a string value <strong>before</strong> the float label. eg: <code>prefix: $</code> => <strong>$1, $2, $3, $4, ...</strong></td>
+													</tr>
+													<tr>
+														<td><code>suffix</code></td>
+														<td class="font-weight-semibold">string</td>
+														<td class="font-weight-semibold">""</td>
+														<td>Adds a string value <strong>after</strong> the float label. eg: <code>suffix: °c</code> => <strong>1°c, 2°c, 3°c, 4°c, ...</strong></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Styling</h6>
+										<p>The plugin makes great use of presentation classes to provide powerful customisation. It's important the slider fits the unique style of your project, and with slight CSS modification you can get some really interesting results. To make the code as succinct and performant as possible; there's only minimal javascript configuration on how the pips are displayed, positioned, formatted, etc. Instead the power lies in the hands of CSS:</p>
+
+										<pre><code class="language-css">// List of the presentation classes used in a heirarchical tree
+.ui-slider.ui-slider-pips  {}
+.ui-slider-float {}
+    .ui-slider-handle {}
+        .ui-slider-tip {}
+    .ui-slider-pip {}
+    .ui-slider-pip-first {}
+    .ui-slider-pip-last {}
+    .ui-slider-pip-nth {}
+    .ui-slider-pip-label {}
+    .ui-slider-pip-hide {}
+        .ui-slider-line {}
+        .ui-slider-label {}
+        .ui-slider-tip-label {}
+    .ui-slider-pip-selected-initial {}
+    .ui-slider-pip-selected {}
+</code></pre>
+									</div>
+
+									<div>
+										<h6 class="font-weight-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="font-weight-semibold">File name</td>
+														<td>slider_pips.min.js</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Location</td>
+														<td>global_assets/js/plugins/sliders/</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Links</td>
+														<td>
+															<p>
+																<a href="http://simeydotme.github.io/jQuery-ui-Slider-Pips/" class="btn btn-sm bg-danger-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+
+															<a href="https://github.com/simeydotme/jQuery-ui-Slider-Pips" class="btn btn-sm bg-blue btn-labeled btn-labeled-left" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /jQuery UI slider pips -->
+
+
+							<!-- Pace -->
+							<div class="card" id="pace">
+								<div class="card-header header-elements-md-inline">
+									<h5 class="card-title">Pace page loader</h5>
+									<div class="header-elements d-flex justify-content-between">
+										<span class="badge bg-slate">Loader</span>
+										<span class="text-muted mx-3">pace.min.js</span>
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+									</div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Overview</h6>
+										<p>Include pace.js and a CSS theme of your choice, and you get a beautiful progress indicator for your page load and ajax navigation. No need to hook into any of your code, progress is detected automatically. Pace will automatically monitor your ajax requests, event loop lag, document ready state, and elements on your page to decide the progress. On ajax navigation it will begin again!</p>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Usage</h6>
+										<div class="mb-3">
+											<p>Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+											<pre><code class="language-markup">
+&lt;!-- Load plugin -->
+&lt;script src="../../../../global_assets/js/plugins/loaders/pace.min.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Add one of presented Pace themes to <code>components.scss</code> file and re-compile CSS:</p>
+											<pre><code class="language-css">// Pace page loader (default theme)
+@import "../../../../shared/pace/theme-default";
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Pace is fully automatic, no configuration is necessary to get started. If you would like to make some tweaks, here's how:</p>
+											<pre><code class="language-javascript">// Pace options
+paceOptions = {
+
+	// Disable the 'elements' source
+	elements: false,
+
+	// Only show the progress on regular and ajax-y page navigation,
+	// not every request
+	restartOnRequestAfter: false
+}
+</code></pre>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Plugin collectors</h6>
+										<p>Collectors are the bits of code which gather progress information. Pace includes four default collectors:</p>
+										<div class="table-responsive mb-3">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Collector</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>Ajax</code></td>
+														<td>Monitors all ajax requests on the page</td>
+													</tr>
+													<tr>
+														<td><code>Elements</code></td>
+														<td>Checks for the existance of specific elements on the page</td>
+													</tr>
+													<tr>
+														<td><code>Document</code></td>
+														<td>Checks the document readyState</td>
+													</tr>
+													<tr>
+														<td><code>Event Lag</code></td>
+														<td>Checks for event loop lag signaling that javascript is being executed</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+
+										<p>They can each be configured or disabled through configuration options of the same name. Add your own classes to <code>paceOptions.extraSources</code> to add more sources. Each source should either have a <code>.progress</code> property, or a <code>.elements</code> property which is a list of objects with <code>.progress</code> properties. Pace will automatically handle all scaling to make the progress changes look smooth to the user.</p>
+										<pre><code class="language-javascript">// Pace options
+paceOptions = {
+	ajax: false, // disabled
+	document: false, // disabled
+	eventLag: false, // disabled
+	elements: {
+		selectors: ['.my-page']
+	}
+};
+</code></pre>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Elements</h6>
+										<p>Elements being rendered to the screen is one way for us to decide that the page has been rendered. If you would like to use that source of information (not required at all), specify one or more selectors. You can comma seperate the selectors to propertly handle error states, where the progress bar should disappear, but the element we are looking for may never appear:</p>
+										<pre class="mb-3"><code class="language-javascript">// Pace options
+paceOptions = {
+	elements: {
+		selectors: ['.timeline,.timeline-error', '.user-profile,.profile-error']
+	}
+}
+</code></pre>
+
+										<p>Pace will consider the elements test successful when each selector matches something. For this example, when either <code>.timeline</code> or <code>.timeline-error</code> exist, and either <code>.user-profile</code> or <code>.profile-error</code> exist.</p>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Restart rules</h6>
+										<div class="mb-3">
+											<p>Most users want the progress bar to automatically restart when a pushState event occurs (generally means ajax navigation is occuring). You can disable this:</p>
+											<pre class="mb-3"><code class="language-javascript">// Pace options
+paceOptions = {
+	restartOnPushState: false
+}
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>You can also have pace restart on every ajax request which lasts longer than x ms. You'll want to disable this if you make ajax requests the user doesn't need to know about, like precaching:</p>
+
+											<pre class="mb-3"><code class="language-javascript">// Pace options
+paceOptions = {
+	restartOnRequestAfter: false
+}
+</code></pre>
+										</div>
+
+										<p>You can always trigger a restart manually by calling <code>Pace.restart()</code></p>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Plugin API</h6>
+										<p>Pace exposes the following methods:</p>
+										<div class="table-responsive mb-3">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Option</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>Pace.start</code></td>
+														<td>Show the progress bar and start updating. Called automatically if you don't use AMD or CommonJS</td>
+													</tr>
+													<tr>
+														<td><code>Pace.restart</code></td>
+														<td>Show the progress bar if it's hidden and start reporting the progress from scratch. Called automatically whenever <code>pushState</code> or <code>replaceState</code> is called by default</td>
+													</tr>
+													<tr>
+														<td><code>Pace.stop</code></td>
+														<td>Hide the progress bar and stop updating it</td>
+													</tr>
+													<tr>
+														<td><code>Pace.track</code></td>
+														<td>Explicitly track one or more requests</td>
+													</tr>
+													<tr>
+														<td><code>Pace.ignore</code></td>
+														<td>Expliticly ignore one or more requests</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Plugin events</h6>
+										<p>Pace fires the following events:</p>
+										<div class="table-responsive mb-3">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Option</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>start</code></td>
+														<td>When pace is initially started, or as a part of a restart</td>
+													</tr>
+													<tr>
+														<td><code>stop</code></td>
+														<td>When pace is manually stopped, or as a part of a restart</td>
+													</tr>
+													<tr>
+														<td><code>restart</code></td>
+														<td>When pace is restarted (manually, or by a new AJAX request)</td>
+													</tr>
+													<tr>
+														<td><code>done</code></td>
+														<td>When pace is finished</td>
+													</tr>
+													<tr>
+														<td><code>hide</code></td>
+														<td>When the pace is hidden (can be later than done, based on <code>ghostTime</code> and <code>minTime</code>)</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div>
+										<h6 class="font-weight-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="font-weight-semibold">File name</td>
+														<td>pace.min.js</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Location</td>
+														<td>global_assets/js/plugins/loaders/</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Links</td>
+														<td>
+															<p>
+																<a href="http://github.hubspot.com/pace/docs/welcome/" class="btn btn-sm bg-danger-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+
+															<p>
+																<a href="http://github.hubspot.com/pace/" class="btn btn-sm bg-slate btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-file-text2"></i></b>
+																	Full documentation
+																</a>
+															</p>
+
+															<a href="https://github.com/HubSpot/PACE" class="btn btn-sm bg-blue btn-labeled btn-labeled-left" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /pace -->
+
+
+							<!-- BlockUI -->
+							<div class="card" id="blockui">
+								<div class="card-header header-elements-md-inline">
+									<h5 class="card-title">BlockUI</h5>
+									<div class="header-elements d-flex justify-content-between">
+										<span class="badge bg-slate">Loader</span>
+										<span class="text-muted mx-3">blockui.min.js</span>
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+									</div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Overview</h6>
+										<p>The jQuery BlockUI Plugin lets you simulate synchronous behavior when using AJAX, without locking the browser. When activated, it will prevent user activity with the page (or part of the page) until it is deactivated. BlockUI adds elements to the DOM to give it both the appearance and behavior of blocking user interaction.</p>
+
+										<ul class="list">
+											<li>fetch resources from server</li>
+											<li>fetch each resource file individually (static) or all once via dynamicRoute</li>
+											<li>apply translation to HTML tags with the <em>data-i18n</em> attribute</li>
+											<li>post missing key-value pairs to server (for easy development -&gt; just translate the new keys)</li>
+											<li>search for key <em>en-US</em> first, then in <em>en</em>, then in fallback language (or de-DE, de , fallback)</li>
+										</ul>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Usage</h6>
+										<div class="mb-3">
+											<p>Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+											<pre><code class="language-markup">&lt;!-- Load jQuery -->
+&lt;script src="../../../../global_assets/js/main/jquery.min.js">&lt;/script>
+
+&lt;!-- Load plugin -->
+&lt;script src="../../../../global_assets/js/plugins/loaders/blockui.min.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>To block user activity for the page:</p>
+											<pre><code class="language-javascript">// Initialization
+$.blockUI();
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Blocking with a custom message:</p>
+											<pre><code class="language-javascript">// Initialization
+$.blockUI({
+	message: '&lt;h1>&lt;img src="busy.gif" /> Just a moment...&lt;/h1>'
+});
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Blocking with custom style:</p>
+											<pre><code class="language-javascript">// Initialization
+$.blockUI({
+	css: {
+		backgroundColor: '#f00',
+		color: '#fff'
+	}
+});
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>To unblock the page:</p>
+											<pre><code class="language-javascript">// Initialization
+$.unblockUI();
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>If you want to use the default settings and have the UI blocked for all ajax requests, it's as easy as this:</p>
+											<pre><code class="language-javascript">// Initialization
+$(document).ajaxStart($.blockUI).ajaxStop($.unblockUI);
+</code></pre>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Plugin options</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Option</th>
+														<th style="width: 250px;">Default</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>message</code></td>
+														<td class="font-weight-semibold">'&lt;h1>Please wait...&lt;/h1>'</td>
+														<td>Message displayed when blocking (use <code>null</code> for no message)</td>
+													</tr>
+													<tr>
+														<td><code>title</code></td>
+														<td class="font-weight-semibold">null</td>
+														<td>Title string; only used when <code>theme == true</code></td>
+													</tr>
+													<tr>
+														<td><code>draggable</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>Only used when <code>theme == true</code> (requires jquery-ui.js to be loaded)</td>
+													</tr>
+													<tr>
+														<td><code>theme</code></td>
+														<td class="font-weight-semibold">false</td>
+														<td>Set to true to use with jQuery UI themes</td>
+													</tr>
+													<tr>
+														<td><code>css</code></td>
+														<td class="font-weight-semibold">{...}</td>
+														<td>Styles for the message when blocking; if you wish to disable these and use an external stylesheet then do this in your code</td>
+													</tr>
+													<tr>
+														<td><code>themedCSS</code></td>
+														<td class="font-weight-semibold">width, top, left</td>
+														<td>Minimal style set used when themes are used</td>
+													</tr>
+													<tr>
+														<td><code>overlayCSS</code></td>
+														<td class="font-weight-semibold">backgroundColor, opacity, cursor</td>
+														<td>Styles for the overlay</td>
+													</tr>
+													<tr>
+														<td><code>cursorReset</code></td>
+														<td class="font-weight-semibold">'default'</td>
+														<td>Style to replace <code>wait</code> cursor before unblocking to correct issue of lingering wait cursor</td>
+													</tr>
+													<tr>
+														<td><code>growlCSS</code></td>
+														<td class="font-weight-semibold">{}</td>
+														<td>Styles applied when using <code>$.growlUI</code></td>
+													</tr>
+													<tr>
+														<td><code>forceIframe</code></td>
+														<td class="font-weight-semibold">false</td>
+														<td>Force usage of iframe in non-IE browsers (handy for blocking applets)</td>
+													</tr>
+													<tr>
+														<td><code>baseZ</code></td>
+														<td class="font-weight-semibold">1000</td>
+														<td><code>z-index</code> for the blocking overlay</td>
+													</tr>
+													<tr>
+														<td><code>centerX</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>Set to <code>true</code> to have the message automatically centered horizontally</td>
+													</tr>
+													<tr>
+														<td><code>centerY</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>Set to <code>true</code> to have the message automatically centered vertically</td>
+													</tr>
+													<tr>
+														<td><code>allowBodyStretch</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>Allow body element to be stetched in ie6; this makes blocking look better on "short" pages. Disable if you wish to prevent changes to the body height</td>
+													</tr>
+													<tr>
+														<td><code>bindEvents</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>Enable if you want <code>key</code> and <code>mouse</code> events to be disabled for content that is blocked</td>
+													</tr>
+													<tr>
+														<td><code>constrainTabKey</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>Be default blockUI will supress tab navigation from leaving blocking content (if <code>bindEvents</code> is <code>true</code>)</td>
+													</tr>
+													<tr>
+														<td><code>fadeIn</code></td>
+														<td class="font-weight-semibold">200</td>
+														<td><code>fadeIn</code> time in millis; set to <code>0</code> to disable <code>fadeIn</code> on block</td>
+													</tr>
+													<tr>
+														<td><code>fadeOut</code></td>
+														<td class="font-weight-semibold">400</td>
+														<td><code>fadeOut</code> time in millis; set to <code>0</code> to disable <code>fadeOut</code> on unblock</td>
+													</tr>
+													<tr>
+														<td><code>timeout</code></td>
+														<td class="font-weight-semibold">0</td>
+														<td>Time in millis to wait before auto-unblocking; set to <code>0</code> to disable auto-unblock</td>
+													</tr>
+													<tr>
+														<td><code>showOverlay</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>Disable if you don't want to show the overlay</td>
+													</tr>
+													<tr>
+														<td><code>focusInput</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>If <code>true</code>, focus will be placed in the first available input field when page blocking</td>
+													</tr>
+													<tr>
+														<td><code>onBlock</code></td>
+														<td class="font-weight-semibold">null</td>
+														<td>Callback method invoked when <code>fadeIn</code> has completed and blocking message is visible</td>
+													</tr>
+													<tr>
+														<td><code>onUnblock</code></td>
+														<td class="font-weight-semibold">null</td>
+														<td>Callback method invoked when unblocking has completed; the callback is passed the element that has been unblocked (which is the window object for page blocks) and the options that were passed to the unblock call</td>
+													</tr>
+													<tr>
+														<td><code>blockMsgClass</code></td>
+														<td class="font-weight-semibold">'blockMsg'</td>
+														<td>Class name of the message block</td>
+													</tr>
+													<tr>
+														<td><code>ignoreIfBlocked</code></td>
+														<td class="font-weight-semibold">false</td>
+														<td>If it is already blocked, then ignore it (don't unblock and reblock) </td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div>
+										<h6 class="font-weight-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="font-weight-semibold">File name</td>
+														<td>blockui.min.js</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Location</td>
+														<td>global_assets/js/plugins/loaders/</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Links</td>
+														<td>
+															<p>
+																<a href="http://malsup.com/jquery/block/#overview" class="btn btn-sm bg-danger-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+
+															<p>
+																<a href="http://malsup.com/jquery/block/#options" class="btn btn-sm bg-slate btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-file-text2"></i></b>
+																	Full documentation
+																</a>
+															</p>
+
+															<a href="https://github.com/malsup/blockui/" class="btn btn-sm bg-blue btn-labeled btn-labeled-left" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /blockUI -->
+
+
+							<!-- i18next -->
+							<div class="card" id="i18next">
+								<div class="card-header header-elements-md-inline">
+									<h5 class="card-title">i18next</h5>
+									<div class="header-elements d-flex justify-content-between">
+										<span class="badge bg-slate">Translation</span>
+										<span class="text-muted mx-3">i18next.min.js</span>
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+									</div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Overview</h6>
+										<p>I18next is an internationalization-framework written in and for JavaScript. But it's much more than that. i18next goes beyond just providing the standard i18n features such as (plurals, context, interpolation, format). It provides you with a complete solution to localize your product from web to mobile and desktop. Most frameworks leave it to you how translations are being loaded. You are responsible to detect the user language, to load the translations and push them into the framework.</p>
+										<p>i18next takes care of these issue for you. We provide you with plugins to:</p>
+
+										<ul class="list">
+											<li>detect the user language</li>
+											<li>load the translations</li>
+											<li>optionally cache the translations</li>
+											<li>extention, by using post-processing - e.g. to enable sprintf support</li>
+											<li>etc</li>
+										</ul>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Usage</h6>
+										<div class="mb-3">
+											<p>Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+											<pre><code class="language-markup">&lt;!-- Load jQuery -->
+&lt;script src="../../../../global_assets/js/main/jquery.min.js">&lt;/script>
+
+&lt;!-- Load i18next and related plugins -->
+&lt;script src="../../../../global_assets/js/plugins/internationalization/i18next.min.js">&lt;/script>
+&lt;script src="../../../../global_assets/js/plugins/internationalization/jquery-i18next.min.js">&lt;/script>
+&lt;script src="../../../../global_assets/js/plugins/internationalization/i18nextXHRBackend.min.js">&lt;/script>
+&lt;script src="../../../../global_assets/js/plugins/internationalization/i18nextBrowserLanguageDetector.min.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Create elements:</p>
+											<pre><code class="language-markup">&lt;!-- Create elements -->
+&lt;ul class="nav">
+	&lt;li>&lt;a href="#" data-i18n="nav.home">&lt;/a>&lt;/li>
+	&lt;li>&lt;a href="#" data-i18n="nav.page1">&lt;/a>&lt;/li>
+	&lt;li>&lt;a href="#" data-i18n="nav.page2">&lt;/a>&lt;/li>
+&lt;/ul>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Load resource file:</p>
+											<pre><code class="language-javascript">// JSON or any other file
+{
+	"app": {
+		"name": "i18next"
+	},
+	"nav": {
+		"home": "Home",
+		"page1": "Page One",
+		"page2": "Page Two"
+	}
+}
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Finally call the plugin via JavaScript:</p>
+											<pre><code class="language-javascript">// Basic initialization
+i18next.init({
+	lng: 'en',
+	debug: true,
+	resources: {
+		en: {
+			translation: {
+				"key": "hello world"
+			}
+		}
+	}
+}, function(err, t) {
+	// initialized and ready to go!
+	document.getElementById('output').innerHTML = i18next.t('key');
+});
+</code></pre>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">i18next options and documentation</h6>
+										Full i18next documentation can be found online on <a href="http://i18next.com/" target="_blank">Official library website</a>. It's quite big, with a lot of options, events and methods. I find it useless to copy them all and paste to the Limitless documentation, nobody can represent and describe library features better than its creators. Below you can find additional links related to i18next library.
+									</div>
+
+									<div>
+										<h6 class="font-weight-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="font-weight-semibold">File name</td>
+														<td>i18next.min.js</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Location</td>
+														<td>global_assets/js/plugins/internationalization/</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Links</td>
+														<td>
+															<p>
+																<a href="http://i18next.com/" class="btn btn-sm bg-danger-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+
+															<p>
+																<a href="http://i18next.com/pages/doc_features.html" class="btn btn-sm bg-slate btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-file-text2"></i></b>
+																	Full documentation
+																</a>
+															</p>
+
+															<a href="https://github.com/i18next/i18next" class="btn btn-sm bg-blue btn-labeled btn-labeled-left" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /i18next -->
+
+
+							<!-- Session timeout -->
+							<div class="card" id="timeout">
+								<div class="card-header header-elements-md-inline">
+									<h5 class="card-title">Session timeout</h5>
+									<div class="header-elements d-flex justify-content-between">
+										<span class="badge bg-slate">Tool</span>
+										<span class="text-muted mx-3">session_timeput.min.js</span>
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+									</div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Overview</h6>
+										<p>After a set amount of idle time, a Bootstrap warning dialog is shown to the user with the option to either log out, or stay connected. If "Logout" button is selected, the page is redirected to a logout URL. If "Stay Connected" is selected the dialog closes and the session is kept alive. If no option is selected after another set amount of idle time, the page is automatically redirected to a set timeout URL.</p>
+
+										<p>Idle time is defined as no mouse, keyboard or touch event activity registered by the browser.</p>
+
+										<p>As long as the user is active, the (optional) keep-alive URL keeps getting pinged and the session stays alive. If you have no need to keep the server-side session alive via the keep-alive URL, you can also use this plugin as a simple lock mechanism that redirects to your lock-session or log-out URL after a set amount of idle time.</p>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Usage</h6>
+										<p>To use session timeout extension, include path to the minified plugin file:</p>
+
+										<div class="mb-3">
+											<pre><code class="language-markup">&lt;!-- Path to file -->
+&lt;script src="../../../../global_assets/js/plugins/extensions/session_timeout.min.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Example of initialization as a session timeout:</p>
+											<pre><code class="language-javascript">// Session timeout
+$.sessionTimeout({
+    heading: 'h5',
+    title: 'Session Timeout',
+    message: 'Your session is about to expire. Do you want to stay connected?',
+    ignoreUserActivity: true,
+    warnAfter: 10000,
+    redirAfter: 30000,
+    keepAliveUrl: '/',
+    redirUrl: 'login_unlock.html',
+    logoutUrl: 'login_advanced.html'
+});
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Example of initialization as an idle timeout:</p>
+											<pre><code class="language-javascript">// Idle timeout
+$.sessionTimeout({
+    heading: 'h5',
+    title: 'Idle Timeout',
+    message: 'Your session is about to expire. Do you want to stay connected?',
+    warnAfter: 5000,
+    redirAfter: 15000,
+    keepAliveUrl: '/',
+    redirUrl: 'login_unlock.html',
+    logoutUrl: 'login_advanced.html'
+});
+</code></pre>
+										</div>
+
+										
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Options</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Option</th>
+														<th style="width: 250px;">Default</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>title</code></td>
+														<td class="font-weight-semibold">'Your session is about to expire!'</td>
+														<td>This is the text shown to user via Bootstrap warning dialog after warning period. (modal title)</td>
+													</tr>
+													<tr>
+														<td><code>message</code></td>
+														<td class="font-weight-semibold">'Your session is about to expire.'</td>
+														<td>This is the text shown to user via Bootstrap warning dialog after warning period</td>
+													</tr>
+													<tr>
+														<td><code>ignoreUserActivity</code></td>
+														<td class="font-weight-semibold">false</td>
+														<td>If <code>true</code>, this will launch the Bootstrap warning dialog / redirect (or callback functions) in a set amounts of time regardless of user activity</td>
+													</tr>
+													<tr>
+														<td><code>logoutButton</code></td>
+														<td class="font-weight-semibold">'Logout'</td>
+														<td>This is the text shown to user via Bootstrap warning dialog after warning period in the logout button</td>
+													</tr>
+													<tr class="border-solid">
+														<td><code>keepAliveButton</code></td>
+														<td class="font-weight-semibold">'Stay Connected'</td>
+														<td>This is the text shown to user via Bootstrap warning dialog after warning period in the Keep Alive button</td>
+													</tr>
+													<tr>
+														<td><code>keepAliveUrl</code></td>
+														<td class="font-weight-semibold">'/keep-alive'</td>
+														<td>URL to ping via AJAX POST to keep the session alive. This resource should do something innocuous that would keep the session alive, which will depend on your server-side platform</td>
+													</tr>
+													<tr>
+														<td><code>keepAlive</code></td>
+														<td class="font-weight-semibold">true</td>
+														<td>If <code>true</code>, the plugin keeps pinging the <code>keepAliveUrl</code> for as long as the user is active. The time between two pings is set by the <code>keepAliveInterval</code> option. If you have no server-side session timeout to worry about, feel free to set this one to <code>false</code> to prevent unnecessary network activity</td>
+													</tr>
+													<tr>
+														<td><code>keepAliveInterval</code></td>
+														<td class="font-weight-semibold">5000</td>
+														<td>Time in milliseconds between two keep-alive pings</td>
+													</tr>
+													<tr class="border-solid">
+														<td><code>ajaxType</code></td>
+														<td class="font-weight-semibold">'POST'</td>
+														<td>If you need to specify the ajax method</td>
+													</tr>
+													<tr>
+														<td><code>ajaxData</code></td>
+														<td class="font-weight-semibold">''</td>
+														<td>If you need to send some data via AJAX POST to your <code>keepAliveUrl</code>, you can use this option</td>
+													</tr>
+													<tr class="border-solid">
+														<td><code>redirUrl</code></td>
+														<td class="font-weight-semibold">'/timed-out'</td>
+														<td>URL to take browser to if no action is take after the warning</td>
+													</tr>
+													<tr>
+														<td><code>logoutUrl</code></td>
+														<td class="font-weight-semibold">'/log-out'</td>
+														<td>URL to take browser to if user clicks "Logout" on the Bootstrap warning dialog</td>
+													</tr>
+													<tr class="border-solid">
+														<td><code>warnAfter</code></td>
+														<td class="font-weight-semibold">900000 (15min)</td>
+														<td>Time in milliseconds after page is opened until warning dialog is opened</td>
+													</tr>
+													<tr>
+														<td><code>redirAfter</code></td>
+														<td class="font-weight-semibold">1200000 (20min)</td>
+														<td>Time in milliseconds after page is opened until browser is redirected to <code>redirUrl</code></td>
+													</tr>
+													<tr class="border-solid">
+														<td><code>countdownSmart</code></td>
+														<td class="font-weight-semibold">false</td>
+														<td>If <code>true</code>, displays minutes as well as seconds in the countdown timer (e.g. "3m 14s"). Displays only seconds when timer is under one minute (e.g. "42s")</td>
+													</tr>
+													<tr>
+														<td><code>countdownMessage</code></td>
+														<td class="font-weight-semibold">false</td>
+														<td>If you want a custom sentence to appear in the warning dialog with a timer showing the seconds remaining, use this option. Example: <code>countdownMessage: 'Redirecting in {timer}.'</code> Place the <code>{timer}</code> string where you want the numeric countdown to appear</td>
+													</tr>
+													<tr>
+														<td><code>countdownBar</code></td>
+														<td class="font-weight-semibold">false</td>
+														<td>If <code>true</code>, ads a countdown bar (uses Bootstrap progress bar) to the warning dialog. Can be combined with countdownMessage option or used independently</td>
+													</tr>
+													<tr class="border-solid">
+														<td><code>onStart</code></td>
+														<td class="font-weight-semibold">false</td>
+														<td>Optional callback fired when first calling the plugin and every time user refreshes the session (on any mouse, keyboard or touch action). Takes options object as the only argument</td>
+													</tr>
+													<tr>
+														<td><code>onWarn</code></td>
+														<td class="font-weight-semibold">false</td>
+														<td>Custom callback you can use instead of showing the Bootstrap warning dialog. Takes options object as the only argument</td>
+													</tr>
+													<tr>
+														<td><code>onRedir</code></td>
+														<td class="font-weight-semibold">false</td>
+														<td>Custom callback you can use instead of redirecting the user to <code>redirUrl</code>. Takes options object as the only argument</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div>
+										<h6 class="font-weight-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="font-weight-semibold">File name</td>
+														<td>session_timeout.min.js</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Location</td>
+														<td>global_assets/js/plugins/extensions/</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Links</td>
+														<td>
+															<a href="https://github.com/orangehill/bootstrap-session-timeout" class="btn bg-blue btn-labeled btn-labeled-left" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /session timeout -->
+
+
+							<!-- jQuery cookie -->
+							<div class="card" id="cookie">
+								<div class="card-header header-elements-md-inline">
+									<h5 class="card-title">jQuery Cookie</h5>
+									<div class="header-elements d-flex justify-content-between">
+										<span class="badge bg-slate">Tool</span>
+										<span class="text-muted mx-3">cookie.js</span>
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+									</div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Overview</h6>
+										<p>A simple, lightweight jQuery plugin for reading, writing and deleting cookies. Mega menu navigation plugin <code>drilldown.js</code> contains built-in <code>cookie.js</code> by default.</p>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Usage</h6>
+										<p>Include script after the jQuery library (unless you are packaging scripts somehow else):</p>
+
+										<div class="mb-3">
+											<pre><code class="language-markup">&lt;!-- Include path to file -->
+&lt;script src="../../../../global_assets/js/plugins/extensions/cookie.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Create session cookie:</p>
+											<pre><code class="language-javascript">// Initialize
+$.cookie('name', 'value');</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Create expiring cookie, 7 days from then:</p>
+											<pre><code class="language-javascript">// Initialize
+$.cookie('name', 'value', {
+	expires: 7
+});</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Create expiring cookie, valid across entire site:</p>
+											<pre><code class="language-javascript">// Initialize
+$.cookie('name', 'value', {
+	expires: 7,
+	path: '/'
+});</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Read cookie:</p>
+											<pre><code class="language-javascript">// Initialize
+$.cookie('name'); // => "value"
+$.cookie('nothing'); // => undefined</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Read all available cookies:</p>
+											<pre><code class="language-javascript">// Initialize
+$.cookie(); // => {
+	"name": "value"
+}</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Delete cookie:</p>
+											<pre><code class="language-javascript">// Returns true when cookie was successfully deleted, otherwise false
+$.removeCookie('name'); // => true
+$.removeCookie('nothing'); // => false
+
+// Need to use the same attributes (path, domain) as what the cookie was written with
+$.cookie('name', 'value', { path: '/' });
+
+// This won't work!
+$.removeCookie('name'); // => false
+
+// This will work!
+$.removeCookie('name', { path: '/' }); // => true</code></pre>
+										</div>
+
+										
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Converters</h6>
+										<p>Provide a conversion function as optional last argument for reading, in order to change the cookie's value to a different representation on the fly.</p>
+
+										<div class="mb-3">
+											<p>Example for parsing a value into a number:</p>
+											<pre><code class="language-javascript">// parsing a value into a number
+$.cookie('foo', '42');
+$.cookie('foo', Number); // => 42
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Dealing with cookies that have been encoded using <code>escape</code> (3rd party cookies):</p>
+											<pre><code class="language-javascript">// Encoded cookies
+$.cookie.raw = true;
+$.cookie('foo', unescape);
+</code></pre>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Configuration</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Parameter</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>raw</code></td>
+														<td>
+															<p>By default the cookie value is encoded/decoded when writing/reading, using encodeURIComponent/decodeURIComponent. Bypass this by setting raw to true:</p>
+															<pre><code class="language-javascript">$.cookie.raw = true;</code></pre>
+														</td>
+													</tr>
+													<tr>
+														<td><code>json</code></td>
+														<td>
+															<p>Turn on automatic storage of JSON objects passed as the cookie value. Assumes <code>JSON.stringify</code> and <code>JSON.parse</code>:</p>
+															<pre><code class="language-javascript">$.cookie.json = true;</code></pre>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Cookie options</h6>
+										<p class="mb-3">Cookie attributes can be set globally by setting properties of the $.cookie.defaults object or individually for each call to $.cookie() by passing a plain object to the options argument. Per-call options override the default options.</p>
+
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Parameter</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>expires</code></td>
+														<td>Define lifetime of the cookie. Value can be a <code>Number</code> which will be interpreted as days from time of creation or a <code>Date</code> object. If omitted, the cookie becomes a session cookie.</td>
+													</tr>
+													<tr>
+														<td><code>path</code></td>
+														<td>Define the path where the cookie is valid. By default the path of the cookie is the path of the page where the cookie was created (standard browser behavior). If you want to make it available for instance across the entire domain use <code>path: '/'</code>. <strong>Default:</strong> path of page where the cookie was created</td>
+													</tr>
+													<tr>
+														<td><code>domain</code></td>
+														<td>Define the domain where the cookie is valid. Default: domain of page where the cookie was created</td>
+													</tr>
+													<tr>
+														<td><code>secure</code></td>
+														<td>If true, the cookie transmission requires a secure protocol (https). <strong>Default:</strong> <code>false</code></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div>
+										<h6 class="font-weight-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="font-weight-semibold">File name</td>
+														<td>cookie.js</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Location</td>
+														<td>global_assets/js/plugins/extensions/</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Links</td>
+														<td>
+															<a href="https://github.com/carhartl/jquery-cookie" class="btn bg-blue btn-labeled btn-labeled-left" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /jQuery cookie -->
+
+
+							<!-- Bootstrap context menu -->
+							<div class="card" id="context">
+								<div class="card-header header-elements-md-inline">
+									<h5 class="card-title">Bootstrap context menu</h5>
+									<div class="header-elements d-flex justify-content-between">
+										<span class="badge bg-slate">Extension</span>
+										<span class="text-muted mx-3">contextmenu.js</span>
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+									</div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Overview</h6>
+										<p>A context menu extension of Bootstrap made for everyone's convenience. Supports all possible dropdown components included to the template: headers, submenus, icons, checkboxes, radios, dividers, color options etc. Besides dropdown options, includes a bunch of extended options and events.</p>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Usage</h6>
+										<p>Context menu can be initialized via data attributes or Javascript. To initialize it via data attributes, add <code>data-toggle="context"</code> to any element that needs a custom context menu and via CSS set <code>position: relative</code> to the element. And point <code>data-target</code> attribute to your custom context menu:</p>
+
+										<div class="mb-3">
+											<pre><code class="language-markup">&lt;!-- Data attributes initialization -->
+&lt;div class="context" data-toggle="context" data-target="#context-menu">
+	...
+&lt;/div>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Call the context menu via JavaScript:</p>
+											<pre><code class="language-javascript">// Javascript initialization
+$('.context').contextmenu({
+	target: '#context-menu', 
+	before: function(e,context) {
+		// execute code before context menu if shown
+	},
+	onItem: function(context,e) {
+		// execute on menu item selection
+	}
+});</code></pre>
+										</div>
+
+										
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Options</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Option</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>target</code></td>
+														<td>Equivalent of the data-target attribute. It identifies the html of the menu that will be displayed</td>
+													</tr>
+													<tr>
+														<td><code>scopes</code></td>
+														<td>DOM selector for dynamically added context elements</td>
+													</tr>
+													<tr class="border-solid">
+														<td><code>before</code></td>
+														<td>Function that is called before the context menu is displayed. If this function returns false, the context menu will not be displayed. It is passed two parameters:</td>
+													</tr>
+													<tr>
+														<td><code>(before) e</code></td>
+														<td>The original event. (You can do an e.preventDefault() to cancel the browser event)</td>
+													</tr>
+													<tr>
+														<td><code>(before) context</code></td>
+														<td>The DOM element where right click occured</td>
+													</tr>
+													<tr class="border-solid">
+														<td><code>onItem</code></td>
+														<td>Function that is called when a menu item is clicked. Useful when you want to execute a specific function when an item is clicked. It is passed two parameters:</td>
+													</tr>
+													<tr>
+														<td><code>(onItem) context</code></td>
+														<td>the DOM element where right click occured</td>
+													</tr>
+													<tr>
+														<td><code>(onItem) e</code></td>
+														<td>the click event of the menu item, <code>$(e.target)</code> is the item element</td>
+													</tr>
+
+
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Events</h6>
+
+										<div class="mb-3">
+											<p>All events are fired at the context's menu. Check out dropdown plugin for a complete description of events. Usage example:</p>
+											<pre><code class="language-javascript">// "Show" event example
+$('#myMenu').on('show.bs.context', function () {
+	// do something...
+});</code></pre>
+										</div>
+
+										<p>Events list:</p>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Event</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>show.bs.context</code></td>
+														<td>This event fires immediately when the menu is opened</td>
+													</tr>
+													<tr>
+														<td><code>shown.bs.context</code></td>
+														<td>This event is fired when the dropdown has been made visible to the user</td>
+													</tr>
+													<tr>
+														<td><code>hide.bs.context</code></td>
+														<td>This event is fired immediately when the hide instance method has been called</td>
+													</tr>
+													<tr>
+														<td><code>hidden.bs.context</code></td>
+														<td>This event is fired when the dropdown has finished being hidden from the user (will wait for CSS transitions, to complete)</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div>
+										<h6 class="font-weight-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="font-weight-semibold">File name</td>
+														<td>contextmenu.js</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Location</td>
+														<td>global_assets/js/plugins/extensions/</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Links</td>
+														<td>
+															<p>
+																<a href="http://sydcanem.com/bootstrap-contextmenu/" class="btn btn-sm bg-teal-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-file-eye"></i></b>
+																	Demonstration
+																</a>
+															</p>
+
+															<a href="https://github.com/sydcanem/bootstrap-contextmenu" class="btn bg-blue btn-labeled btn-labeled-left" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /bootstrap context menu -->
+
+
+							<!-- Bootstrap hover dropdown -->
+							<div class="card" id="hover_dropdown">
+								<div class="card-header header-elements-md-inline">
+									<h5 class="card-title">Bootstrap Hover dropdown</h5>
+									<div class="header-elements d-flex justify-content-between">
+										<span class="badge bg-slate">Extension</span>
+										<span class="text-muted mx-3">hover_dropdown.min.js</span>
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+									</div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-3">
+										<h6 class="font-weight-semibold">Overview</h6>
+										<p>A simple plugin to enable Bootstrap dropdowns to activate on hover and provide a nice user experience.</p>
+
+										<p>The dropdowns are dismissed after a configurable delay. This fixes an issue that can instantly close your nav because of a 1px gap between the button/nav item that activated the dropdown and the actual dropdown. It is also generally a better user experience, as users are not punished by going 1 pixel outside of the dropdown, which would instantly close the nav without a delay.</p>
+
+										<p>Note: The HTML markup is the same as with any other Bootstrap dropdown. This will not interfere with Bootstrap's default activate-on-click method (i.e. this plugin combined with Bootstrap's default behavior work well to support both the ideal experience on desktop and mobile).</p>
+									</div>
+
+									<div class="mb-3">
+										<h6 class="font-weight-semibold">Usage</h6>
+										<p>Just like in Bootstrap you can activate it without any JavaScript, just by adding a data-attribute, you can make it automatically work. Add data-hover="dropdown" in addition (or in place of) Bootstrap's data-toggle="dropdown". You can set options via data-attributes, too, via data-delay and data-close-others.</p>
+
+										<div class="mb-3">
+											<pre><code class="language-markup">&lt;!-- Markup initialization -->
+&lt;button class="btn btn-light dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">
+	Cool button with dropdown
+&lt;/button>
+	
+&lt;div class="dropdown-menu">
+	&lt;a href="#" class="dropdown-item">Dropdown item&lt;/a>
+	&lt;a href="#" class="dropdown-item">Dropdown item&lt;/a>
+	&lt;a href="#" class="dropdown-item">Dropdown item&lt;/a>
+&lt;/div>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Alternatively, you can initialize via JavaScript:</p>
+											<pre><code class="language-javascript">// jQuery initialization
+$(document).ready(function () {
+    $('.dropdown-toggle').dropdownHover(options);
+});</code></pre>
+										</div>
+										<p>This also works with submenus without any other configuring since Bootstrap already supports this feature. Just use the markup like you were using before. Only the top level anchor tag needs any special markup for my plugin to work.</p>
+
+										
+									</div>
+
+									<div class="mb-3">
+										<h6 class="font-weight-semibold">Options</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Option</th>
+														<th style="width: 200px;">Value</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>delay</code></td>
+														<td><code>500</code></td>
+														<td>The delay in miliseconds. This is the time to wait before closing a dropdown when the mouse is no longer over the dropdown or the button/nav item that activated it. Defaults to 500.</td>
+													</tr>
+													<tr>
+														<td><code>hoverDelay</code></td>
+														<td><code>0</code></td>
+														<td>A delay before opening in miliseconds. Some people argue this improves user experience as it decreases the number of accidental menu openings. Defaults to 0.</td>
+													</tr>
+													<tr>
+														<td><code>instantlyCloseOthers</code></td>
+														<td><code>true</code></td>
+														<td>A boolean value that when true, will instantly close all other dropdowns matched by the selector used when you activate a new navigation. This is nice for when you have dropdowns close together that may overlap. Default is true.</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div>
+										<h6 class="font-weight-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="font-weight-semibold">File name</td>
+														<td>hover_dropdown.min.js</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Location</td>
+														<td>global_assets/js/plugins/extensions/</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Links</td>
+														<td>
+															<a href="https://github.com/CWSpear/bootstrap-hover-dropdown" class="btn bg-blue btn-labeled btn-labeled-left" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /bootstrap hover dropdown -->
+
+
+							<!-- TWBS pagination -->
+							<div class="card" id="bs_pagination">
+								<div class="card-header header-elements-md-inline">
+									<h5 class="card-title">TWBS pagination</h5>
+									<div class="header-elements d-flex justify-content-between">
+										<span class="badge bg-slate">Pagination</span>
+										<span class="text-muted mx-3">bs_pagination.min.js</span>
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="collapse"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+									</div>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Overview</h6>
+										<p>This jQuery plugin simplifies the usage of Bootstrap Pagintion. It uses appropriate classes: <code>.pagination</code> (you change this one), <code>.active</code> and <code>.disabled</code>.</p>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Usage</h6>
+										<div class="mb-3">
+											<p>Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+											<pre><code class="language-markup">&lt;!-- Load jQuery -->
+&lt;script src="../../../../global_assets/js/main/jquery.min.js">&lt;/script>
+
+&lt;!-- Load Bootstrap -->
+&lt;script src="../../../../global_assets/js/main/bootstrap.bundle.min.js">&lt;/script>
+
+&lt;!-- Load plugin -->
+&lt;script src="../../../../global_assets/js/plugins/pagination/bs_pagination.min.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<p>Add elements:</p>
+											<pre><code class="language-markup">&lt;!-- Content -->
+&lt;div class="card card-body bg-light mb-3 twbs-content-default">
+	Dynamic content here.
+&lt;/div>
+
+&lt;!-- Pagination -->
+&lt;ul class="pagination-flat justify-content-center twbs-default">&lt;/ul>
+</code></pre>
+										</div>
+
+										<div class="mb-3">
+											<div class="mb-3">
+												<p>Call the plugin via JavaScript:</p>
+												<pre><code class="language-javascript">// Basic initialization
+$('.twbs-default').twbsPagination({
+    totalPages: 35,
+    visiblePages: 4,
+    prev: 'Prev',
+    first: null,
+    last: null,
+    onPageClick: function (event, page) {
+        $('.twbs-content-default').text('Page ' + page);
+    }
+});
+</code></pre>
+											</div>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<h6 class="font-weight-semibold">Plugin options</h6>
+										<p>Options explanation and default values:</p>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Option</th>
+														<th style="width: 200px;">Default</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>totalPages</code></td>
+														<td class="font-weight-semibold">required, checked</td>
+														<td>The number of pages</td>
+													</tr>
+													<tr>
+														<td><code>startPage</code></td>
+														<td class="font-weight-semibold">1</td>
+														<td>The current page that show on start</td>
+													</tr>
+													<tr>
+														<td><code>visiblePages</code></td>
+														<td class="font-weight-semibold">5</td>
+														<td>Maximum visible pages</td>
+													</tr>
+													<tr>
+														<td><code>href</code></td>
+														<td class="font-weight-semibold">false</td>
+														<td>Template for pagination links</td>
+													</tr>
+													<tr>
+														<td><code>hrefVariable</code></td>
+														<td class="font-weight-semibold">{{number}}</td>
+														<td>Variable name in href template for page number</td>
+													</tr>
+													<tr>
+														<td><code>first</code></td>
+														<td class="font-weight-semibold">'First'</td>
+														<td>Text label</td>
+													</tr>
+													<tr>
+														<td><code>prev</code></td>
+														<td class="font-weight-semibold">'Previous'</td>
+														<td>Text label</td>
+													</tr>
+													<tr>
+														<td><code>next</code></td>
+														<td class="font-weight-semibold">'Next'</td>
+														<td>Text label</td>
+													</tr>
+													<tr>
+														<td><code>last</code></td>
+														<td class="font-weight-semibold">'Last'</td>
+														<td>Text label</td>
+													</tr>
+													<tr>
+														<td><code>loop</code></td>
+														<td class="font-weight-semibold">false</td>
+														<td>Carousel-style pagination</td>
+													</tr>
+													<tr>
+														<td><code>paginationClass</code></td>
+														<td class="font-weight-semibold">'pagination'</td>
+														<td>The root style for pagination component. You can use this option to apply your own style</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div>
+										<h6 class="font-weight-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="font-weight-semibold">File name</td>
+														<td>bs_pagination.min.js</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Location</td>
+														<td>global_assets/js/plugins/pagination/</td>
+													</tr>
+													<tr>
+														<td class="font-weight-semibold">Links</td>
+														<td>
+															<p>
+																<a href="http://esimakin.github.io/twbs-pagination/" class="btn btn-sm bg-danger-400 btn-labeled btn-labeled-left" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+															
+															<a href="https://github.com/esimakin/twbs-pagination" class="btn btn-sm bg-blue btn-labeled btn-labeled-left" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /TWBS pagination -->
+
+					</div>
+					<!-- /left content -->
+
+
+					<!-- Right sidebar component -->
+					<div class="sidebar-sticky w-100 w-md-auto order-1 order-md-2">
+						<div class="sidebar sidebar-light sidebar-component sidebar-component-right sidebar-expand-md mb-3">
+							<div class="sidebar-content">
+								<div class="card">
+									<div class="card-header bg-transparent header-elements-inline">
+										<span class="text-uppercase font-size-sm font-weight-semibold">Page navigation</span>
+										<div class="header-elements">
+											<div class="list-icons">
+						                		<a class="list-icons-item" data-action="collapse"></a>
+					                		</div>
+				                		</div>
+									</div>
+
+									<div class="card-body">
+										<a href="http://themeforest.net/user/kopyov" class="btn bg-blue btn-block" target="_blank"><i class="icon-reading mr-2"></i> Contact author</a>
+									</div>
+
+									<ul class="nav nav-sidebar nav-scrollspy" data-nav-type="accordion">
+										<li class="nav-item-header pt-0"><div class="text-uppercase font-size-xs line-height-xs">Sections</div> <i class="icon-menu"></i></li>
+										<li class="nav-item"><a href="#velocity" class="nav-link">Velocity animations</a></li>
+										<li class="nav-item"><a href="#prism" class="nav-link">Prism Syntax Highlighter</a></li>
+										<li class="nav-item"><a href="#moment" class="nav-link">Moment.js</a></li>
+										<li class="nav-item"><a href="#punch" class="nav-link">Touch Punch for jQuery UI</a></li>
+										<li class="nav-item"><a href="#pips" class="nav-link">jQuery UI Slider Pips</a></li>
+										<li class="nav-item"><a href="#pace" class="nav-link">Pace</a></li>
+										<li class="nav-item"><a href="#blockui" class="nav-link">BlockUI</a></li>
+										<li class="nav-item"><a href="#i18next" class="nav-link">i18next Translation</a></li>
+										<li class="nav-item"><a href="#timeout" class="nav-link">Session and Idle Timeout</a></li>
+										<li class="nav-item"><a href="#cookie" class="nav-link">jQuery Cookie</a></li>
+										<li class="nav-item"><a href="#context" class="nav-link">Context Menu</a></li>
+										<li class="nav-item"><a href="#hover_dropdown" class="nav-link">Hover Dropdown</a></li>
+										<li class="nav-item"><a href="#bs_pagination" class="nav-link">TWBS Pagination</a></li>
+										<li class="nav-item-divider"></li>
+										<li class="nav-item"><a href="#" class="nav-link">Go to top <i class="icon-circle-up2 mr-0 ml-auto"></i></a></li>
+									</ul>
+								</div>
+				            </div>
+						</div>
+					</div>
+					<!-- /right sidebar component -->
+
+				</div>
+				<!-- /inner container -->
+
+			</div>
+			<!-- /content area -->
+
+
+			<!-- Footer -->
+			<div class="navbar navbar-expand-lg navbar-light">
+				<div class="text-center d-lg-none w-100">
+					<button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse" data-target="#navbar-footer">
+						<i class="icon-unfold mr-2"></i>
+						Footer
+					</button>
+				</div>
+
+				<div class="navbar-collapse collapse" id="navbar-footer">
+					<span class="navbar-text">
+						&copy; 2015 - 2018. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
+					</span>
+
+					<ul class="navbar-nav ml-lg-auto">
+						<li class="nav-item"><a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov" class="navbar-nav-link font-weight-semibold"><span class="text-pink-400"><i class="icon-cart2 mr-2"></i> Purchase</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /footer -->
+
+		</div>
+		<!-- /main content -->
+
+	</div>
+	<!-- /page content -->
+
+</body>
+</html>

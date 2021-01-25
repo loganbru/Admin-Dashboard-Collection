@@ -1,0 +1,1056 @@
+---
+layout: components
+title: Tables
+---
+
+<!-- Hero and nav -->
+<div class="hero is-relative is-theme-info is-bold">
+    
+    {{> navbar-static-light}}
+
+    <!-- Hero image -->
+    <div id="main-hero" class="hero-body">
+        <div class="container has-text-centered">
+            <div class="columns is-vcentered">
+                <div class="column is-4 is-offset-1 has-text-left">
+                    <h1 class="title components-title is-1">
+                        Tables 
+                    </h1>
+                    <h2 class="subtitle is-4 components-subtitle">
+                        Available table styles.
+                    </h2>
+                    <p class="components-cta">
+                        <a href="#tables" class="button button-cta btn-align light-btn btn-outlined is-bold rounded">
+                            Get Started
+                        </a>
+                    </p>
+                </div>
+                <div class="column is-offset-1 has-text-centered is-hidden-mobile">
+                    <div id="tables-ill" class="vivus-svg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Hero image -->
+</div>
+<!-- /Hero and nav -->
+
+<!-- Scrollnav -->
+<div id="scrollnav" class="scroll-nav-wrapper">
+    <div class="container">
+        <div class="tabs scrollnav-tabs is-centered">
+            <ul>
+                <li class="scrollnav-item is-active"><a href="#basic">Basic</a></li>
+                <li class="scrollnav-item"><a href="#bordered">Bordered</a></li>
+                <li class="scrollnav-item"><a href="#striped">Striped</a></li>
+                <li class="scrollnav-item"><a href="#narrowed">Narrowed</a></li>
+                <li class="scrollnav-item"><a href="#responsive">Responsive</a></li>
+                <li class="scrollnav-item"><a href="#device-compare">Device</a></li>
+                <li class="scrollnav-item"><a href="#compare">Compare</a></li>
+            </ul>
+        </div>
+    </div>  
+</div>
+<!-- /Scrollnav -->
+
+<section id="tables" class="section is-medium">
+    <div class="container">
+        <div class="section-title-wrapper has-text-centered">
+            <div class="bg-number">1</div>
+            <h2 class="title section-title has-text-centered dark-text text-bold">
+                Bulma Tables
+            </h2>
+        </div>
+
+        <!-- Basic table -->
+        <div class="columns is-vcentered">
+            <div id="basic" class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Basic Table</h4>
+                    <p class="no-padding">You can quicly setup a styled table by adding the <code>.table</code> class to a <code>table</code> Html element. Several modifiers are also available. You can use any combination of them.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered pt-30">
+            <!-- Demo section -->
+            <div class="column is-10 is-offset-1">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Username</th>
+                            <th>Position</th>
+                            <th>Role</th>
+                            <th>Current projects</th>
+                            <th>Specialized in</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><a>Michael Hoffman</a></td>
+                            <td>Engineer</td>
+                            <td>Admin</td>
+                            <td>21 projects</td>
+                            <td>Php, Javascript, Html & CSS</td>
+                            <td><button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><a>Marjory Cambell</a></td>
+                            <td>Sales Rep</td>
+                            <td>Contributor</td>
+                            <td>03 projects</td>
+                            <td>Sales and Marketing</td>
+                            <td><button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><a>Kevin Smith</a></td>
+                            <td>Engineer</td>
+                            <td>Collaborator</td>
+                            <td>12 projects</td>
+                            <td>Javascript, Angular, Vue js</td>
+                            <td><button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td><a>Adrian Fallow</a></td>
+                            <td>Sales Manager</td>
+                            <td>Reader</td>
+                            <td>07 projects</td>
+                            <td>Sales and email marketing</td>
+                            <td><button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td><a>Helen Miller</a></td>
+                            <td>Marketing Manager</td>
+                            <td>Collaborator</td>
+                            <td>03 projects</td>
+                            <td>Sales and email marketing</td>
+                            <td><button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td><a>Sarah Mitchells</a></td>
+                            <td>Accountant</td>
+                            <td>Collaborator</td>
+                            <td>01 projects</td>
+                            <td>Finance and Accounting</td>
+                            <td><button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td><a>Kareem Jabbar</a></td>
+                            <td>Accountant</td>
+                            <td>Manager</td>
+                            <td>14 projects</td>
+                            <td>Finance and Accounting</td>
+                            <td><button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- /Basic table -->
+
+        <!-- Bordered table -->
+        <div class="columns is-vcentered pt-60">
+            <div id="bordered" class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered pb-20">
+                    <h4>Bordered Table</h4>
+                    <p class="no-padding">To draw borders around the table and its cells, add the <code>.is-bordered</code> modifier class to a <code>.table</code> element.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered pt-30">
+            <!-- Demo section -->
+            <div class="column is-10 is-offset-1">
+                <table class="table is-bordered">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Username</th>
+                            <th>Position</th>
+                            <th>Role</th>
+                            <th>Current projects</th>
+                            <th>Specialized in</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><a>Michael Hoffman</a></td>
+                            <td>Engineer</td>
+                            <td>Admin</td>
+                            <td>21 projects</td>
+                            <td>Php, Javascript, Html & CSS</td>
+                            <td><button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><a>Marjory Cambell</a></td>
+                            <td>Sales Rep</td>
+                            <td>Contributor</td>
+                            <td>03 projects</td>
+                            <td>Sales and Marketing</td>
+                            <td><button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><a>Kevin Smith</a></td>
+                            <td>Engineer</td>
+                            <td>Collaborator</td>
+                            <td>12 projects</td>
+                            <td>Javascript, Angular, Vue js</td>
+                            <td><button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td><a>Adrian Fallow</a></td>
+                            <td>Sales Manager</td>
+                            <td>Reader</td>
+                            <td>07 projects</td>
+                            <td>Sales and email marketing</td>
+                            <td><button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td><a>Helen Miller</a></td>
+                            <td>Marketing Manager</td>
+                            <td>Collaborator</td>
+                            <td>03 projects</td>
+                            <td>Sales and email marketing</td>
+                            <td><button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td><a>Sarah Mitchells</a></td>
+                            <td>Accountant</td>
+                            <td>Collaborator</td>
+                            <td>01 projects</td>
+                            <td>Finance and Accounting</td>
+                            <td><button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td><a>Kareem Jabbar</a></td>
+                            <td>Accountant</td>
+                            <td>Manager</td>
+                            <td>14 projects</td>
+                            <td>Finance and Accounting</td>
+                            <td><button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- /Bordered table -->
+
+        <!-- Striped table -->
+        <div class="columns is-vcentered pt-60">
+            <div id="striped" class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Striped Table</h4>
+                    <p class="no-padding">To make a table's rows striped, add the <code>.is-striped</code> modifier class to a <code>.table</code> element.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered pt-30">
+            <!-- Demo section -->
+            <div class="column is-10 is-offset-1">
+                <table class="table is-striped">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Username</th>
+                            <th>Position</th>
+                            <th>Role</th>
+                            <th>Current projects</th>
+                            <th>Specialized in</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><a>Michael Hoffman</a></td>
+                            <td>Engineer</td>
+                            <td>Admin</td>
+                            <td>21 projects</td>
+                            <td>Php, Javascript, Html & CSS</td>
+                            <td><button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><a>Marjory Cambell</a></td>
+                            <td>Sales Rep</td>
+                            <td>Contributor</td>
+                            <td>03 projects</td>
+                            <td>Sales and Marketing</td>
+                            <td><button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><a>Kevin Smith</a></td>
+                            <td>Engineer</td>
+                            <td>Collaborator</td>
+                            <td>12 projects</td>
+                            <td>Javascript, Angular, Vue js</td>
+                            <td><button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td><a>Adrian Fallow</a></td>
+                            <td>Sales Manager</td>
+                            <td>Reader</td>
+                            <td>07 projects</td>
+                            <td>Sales and email marketing</td>
+                            <td><button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td><a>Helen Miller</a></td>
+                            <td>Marketing Manager</td>
+                            <td>Collaborator</td>
+                            <td>03 projects</td>
+                            <td>Sales and email marketing</td>
+                            <td><button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td><a>Sarah Mitchells</a></td>
+                            <td>Accountant</td>
+                            <td>Collaborator</td>
+                            <td>01 projects</td>
+                            <td>Finance and Accounting</td>
+                            <td><button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td><a>Kareem Jabbar</a></td>
+                            <td>Accountant</td>
+                            <td>Manager</td>
+                            <td>14 projects</td>
+                            <td>Finance and Accounting</td>
+                            <td><button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- /Striped table -->
+
+        <!-- Narrowed table -->
+        <div class="columns is-vcentered pt-60">
+            <div id="narrowed" class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Narrowed Table</h4>
+                    <p class="no-padding">You can make rows narrower by adding the <code>.is-narrow</code> modifier class to a <code>.table</code> element.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered pt-30">
+            <!-- Demo section -->
+            <div class="column is-10 is-offset-1">
+                <table class="table is-narrow">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Username</th>
+                            <th>Position</th>
+                            <th>Role</th>
+                            <th>Current projects</th>
+                            <th>Specialized in</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><a>Michael Hoffman</a></td>
+                            <td>Engineer</td>
+                            <td>Admin</td>
+                            <td>21 projects</td>
+                            <td>Php, Javascript, Html & CSS</td>
+                            <td><button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><a>Marjory Cambell</a></td>
+                            <td>Sales Rep</td>
+                            <td>Contributor</td>
+                            <td>03 projects</td>
+                            <td>Sales and Marketing</td>
+                            <td><button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><a>Kevin Smith</a></td>
+                            <td>Engineer</td>
+                            <td>Collaborator</td>
+                            <td>12 projects</td>
+                            <td>Javascript, Angular, Vue js</td>
+                            <td><button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td><a>Adrian Fallow</a></td>
+                            <td>Sales Manager</td>
+                            <td>Reader</td>
+                            <td>07 projects</td>
+                            <td>Sales and email marketing</td>
+                            <td><button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td><a>Helen Miller</a></td>
+                            <td>Marketing Manager</td>
+                            <td>Collaborator</td>
+                            <td>03 projects</td>
+                            <td>Sales and email marketing</td>
+                            <td><button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td><a>Sarah Mitchells</a></td>
+                            <td>Accountant</td>
+                            <td>Collaborator</td>
+                            <td>01 projects</td>
+                            <td>Finance and Accounting</td>
+                            <td><button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td><a>Kareem Jabbar</a></td>
+                            <td>Accountant</td>
+                            <td>Manager</td>
+                            <td>14 projects</td>
+                            <td>Finance and Accounting</td>
+                            <td><button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- /Narrowed table -->
+    </div>
+</section>
+
+<section class="section is-medium">
+    <div class="container">
+        <div id="flex-card" class="section-title-wrapper has-text-centered">
+            <div class="bg-number">2</div>
+            <h2 class="title section-title has-text-centered dark-text text-bold">
+                Custom Tables
+            </h2>
+        </div>
+
+        <!-- Responsive table -->
+        <div class="columns is-vcentered pt-60">
+            <div id="responsive" class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered pb-20">
+                    <h4>Responsive Table</h4>
+                    <p class="no-padding">If you want your table to behave responsively, use the responsive table. To do so, add the <code>.responsive-table</code> class to a Html <code>table</code> element. Color modifiers are also available for the table header. Available classes are <code>.is-primary</code>, <code>.is-secondary</code>, and <code>.is-accent</code>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered pt-30">
+            <!-- Demo section -->
+            <div class="column is-10 is-offset-1">
+                <table class="responsive-table is-accent mb-40">
+                    <tbody>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Role</th>
+                            <th>Projects</th>
+                            <th>Skills</th>
+                            <th>Actions</th>
+                        </tr>
+                        <tr>
+                            <td data-th="ID">
+                                1
+                            </td>
+                            <td data-th="Name">
+                                Michael Hoffman
+                            </td>
+                            <td data-th="Role">
+                                Engineer
+                            </td>
+                            <td data-th="Projects">
+                                21 projects
+                            </td>
+                            <td data-th="Skills">
+                                Javascript
+                            </td>
+                            <td data-th="Actions">
+                                <button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="ID">
+                                2
+                            </td>
+                            <td data-th="Name">
+                                Marjory Cambell
+                            </td>
+                            <td data-th="Role">
+                                Sales Rep
+                            </td>
+                            <td data-th="Projects">
+                                03 projects
+                            </td>
+                            <td data-th="Skills">
+                                Sales
+                            </td>
+                            <td data-th="Actions">
+                                <button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="ID">
+                                3
+                            </td>
+                            <td data-th="Name">
+                                Kevin Smith
+                            </td>
+                            <td data-th="Role">
+                                Engineer
+                            </td>
+                            <td data-th="Projects">
+                                12 projects
+                            </td>
+                            <td data-th="Skills">
+                                Php
+                            </td>
+                            <td data-th="Actions">
+                                <button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="ID">
+                                4
+                            </td>
+                            <td data-th="Name">
+                                Adrian Fallow
+                            </td>
+                            <td data-th="Role">
+                                Sales Manager
+                            </td>
+                            <td data-th="Projects">
+                                07 projects
+                            </td>
+                            <td data-th="Skills">
+                                Sales
+                            </td>
+                            <td data-th="Actions">
+                                <button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="ID">
+                                5
+                            </td>
+                            <td data-th="Name">
+                                Helen Miller
+                            </td>
+                            <td data-th="Role">
+                                Marketing Manager
+                            </td>
+                            <td data-th="Projects">
+                                03 projects
+                            </td>
+                            <td data-th="Skills">
+                                Marketing
+                            </td>
+                            <td data-th="Actions">
+                                <button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="ID">
+                                6
+                            </td>
+                            <td data-th="Name">
+                                Sarah Mitchells
+                            </td>
+                            <td data-th="Role">
+                                Accountant
+                            </td>
+                            <td data-th="Projects">
+                                01 project
+                            </td>
+                            <td data-th="Skills">
+                                Finance
+                            </td>
+                            <td data-th="Actions">
+                                <button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="ID">
+                                7
+                            </td>
+                            <td data-th="Name">
+                                Kareem Jabbar
+                            </td>
+                            <td data-th="Role">
+                                Accountant
+                            </td>
+                            <td data-th="Projects">
+                                14 projects
+                            </td>
+                            <td data-th="Skills">
+                                Finance
+                            </td>
+                            <td data-th="Actions">
+                                <button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="responsive-table is-primary mb-40">
+                    <tbody>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Role</th>
+                            <th>Projects</th>
+                            <th>Skills</th>
+                            <th>Actions</th>
+                        </tr>
+                        <tr>
+                            <td data-th="ID">
+                                1
+                            </td>
+                            <td data-th="Name">
+                                Michael Hoffman
+                            </td>
+                            <td data-th="Role">
+                                Engineer
+                            </td>
+                            <td data-th="Projects">
+                                21 projects
+                            </td>
+                            <td data-th="Skills">
+                                Javascript
+                            </td>
+                            <td data-th="Actions">
+                                <button class="button is-small btn-align primary-btn raised rounded btn-outlined">Hire now</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="ID">
+                                2
+                            </td>
+                            <td data-th="Name">
+                                Marjory Cambell
+                            </td>
+                            <td data-th="Role">
+                                Sales Rep
+                            </td>
+                            <td data-th="Projects">
+                                03 projects
+                            </td>
+                            <td data-th="Skills">
+                                Sales
+                            </td>
+                            <td data-th="Actions">
+                                <button class="button is-small btn-align primary-btn raised rounded btn-outlined">Hire now</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="ID">
+                                3
+                            </td>
+                            <td data-th="Name">
+                                Kevin Smith
+                            </td>
+                            <td data-th="Role">
+                                Engineer
+                            </td>
+                            <td data-th="Projects">
+                                12 projects
+                            </td>
+                            <td data-th="Skills">
+                                Php
+                            </td>
+                            <td data-th="Actions">
+                                <button class="button is-small btn-align primary-btn raised rounded btn-outlined">Hire now</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="ID">
+                                4
+                            </td>
+                            <td data-th="Name">
+                                Adrian Fallow
+                            </td>
+                            <td data-th="Role">
+                                Sales Manager
+                            </td>
+                            <td data-th="Projects">
+                                07 projects
+                            </td>
+                            <td data-th="Skills">
+                                Sales
+                            </td>
+                            <td data-th="Actions">
+                                <button class="button is-small btn-align primary-btn raised rounded btn-outlined">Hire now</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="ID">
+                                5
+                            </td>
+                            <td data-th="Name">
+                                Helen Miller
+                            </td>
+                            <td data-th="Role">
+                                Marketing Manager
+                            </td>
+                            <td data-th="Projects">
+                                03 projects
+                            </td>
+                            <td data-th="Skills">
+                                Marketing
+                            </td>
+                            <td data-th="Actions">
+                                <button class="button is-small btn-align primary-btn raised rounded btn-outlined">Hire now</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="ID">
+                                6
+                            </td>
+                            <td data-th="Name">
+                                Sarah Mitchells
+                            </td>
+                            <td data-th="Role">
+                                Accountant
+                            </td>
+                            <td data-th="Projects">
+                                01 project
+                            </td>
+                            <td data-th="Skills">
+                                Finance
+                            </td>
+                            <td data-th="Actions">
+                                <button class="button is-small btn-align primary-btn raised rounded btn-outlined">Hire now</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="ID">
+                                7
+                            </td>
+                            <td data-th="Name">
+                                Kareem Jabbar
+                            </td>
+                            <td data-th="Role">
+                                Accountant
+                            </td>
+                            <td data-th="Projects">
+                                14 projects
+                            </td>
+                            <td data-th="Skills">
+                                Finance
+                            </td>
+                            <td data-th="Actions">
+                                <button class="button is-small btn-align primary-btn raised rounded btn-outlined">Hire now</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="responsive-table is-secondary mb-40">
+                    <tbody>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Role</th>
+                            <th>Projects</th>
+                            <th>Skills</th>
+                            <th>Actions</th>
+                        </tr>
+                        <tr>
+                            <td data-th="ID">
+                                1
+                            </td>
+                            <td data-th="Name">
+                                Michael Hoffman
+                            </td>
+                            <td data-th="Role">
+                                Engineer
+                            </td>
+                            <td data-th="Projects">
+                                21 projects
+                            </td>
+                            <td data-th="Skills">
+                                Javascript
+                            </td>
+                            <td data-th="Actions">
+                                <button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="ID">
+                                2
+                            </td>
+                            <td data-th="Name">
+                                Marjory Cambell
+                            </td>
+                            <td data-th="Role">
+                                Sales Rep
+                            </td>
+                            <td data-th="Projects">
+                                03 projects
+                            </td>
+                            <td data-th="Skills">
+                                Sales
+                            </td>
+                            <td data-th="Actions">
+                                <button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="ID">
+                                3
+                            </td>
+                            <td data-th="Name">
+                                Kevin Smith
+                            </td>
+                            <td data-th="Role">
+                                Engineer
+                            </td>
+                            <td data-th="Projects">
+                                12 projects
+                            </td>
+                            <td data-th="Skills">
+                                Php
+                            </td>
+                            <td data-th="Actions">
+                                <button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="ID">
+                                4
+                            </td>
+                            <td data-th="Name">
+                                Adrian Fallow
+                            </td>
+                            <td data-th="Role">
+                                Sales Manager
+                            </td>
+                            <td data-th="Projects">
+                                07 projects
+                            </td>
+                            <td data-th="Skills">
+                                Sales
+                            </td>
+                            <td data-th="Actions">
+                                <button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="ID">
+                                5
+                            </td>
+                            <td data-th="Name">
+                                Helen Miller
+                            </td>
+                            <td data-th="Role">
+                                Marketing Manager
+                            </td>
+                            <td data-th="Projects">
+                                03 projects
+                            </td>
+                            <td data-th="Skills">
+                                Marketing
+                            </td>
+                            <td data-th="Actions">
+                                <button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="ID">
+                                6
+                            </td>
+                            <td data-th="Name">
+                                Sarah Mitchells
+                            </td>
+                            <td data-th="Role">
+                                Accountant
+                            </td>
+                            <td data-th="Projects">
+                                01 project
+                            </td>
+                            <td data-th="Skills">
+                                Finance
+                            </td>
+                            <td data-th="Actions">
+                                <button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="ID">
+                                7
+                            </td>
+                            <td data-th="Name">
+                                Kareem Jabbar
+                            </td>
+                            <td data-th="Role">
+                                Accountant
+                            </td>
+                            <td data-th="Projects">
+                                14 projects
+                            </td>
+                            <td data-th="Skills">
+                                Finance
+                            </td>
+                            <td data-th="Actions">
+                                <button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- /Responsive table -->
+
+        <!-- Device compare table -->
+        <div class="columns is-vcentered pt-60">
+            <div id="device-compare" class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Device compare Table</h4>
+                    <p class="no-padding">Use the device comparison table to compare app features between devices. Add the <code>.device-table</code> class to a <code>.table</code> element.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered pt-30">
+            <!-- Demo section -->
+            <div class="column is-6 is-offset-3">
+                <table class="table device-table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th><i class="im im-icon-Smartphone-3"></i></th>
+                            <th><i class="im im-icon-Tablet-3"></i></th>
+                            <th><i class="im im-icon-Laptop"></i></th>
+                            <th><i class="im im-icon-Monitor-2"></i></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="feature-name">Invoice editing</td>
+                            <td><i class="im im-icon-Close is-disabled"></i></td>
+                            <td><i class="im im-icon-Yes"></i></td>
+                            <td><i class="im im-icon-Yes"></i></td>
+                            <td><i class="im im-icon-Yes"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">Payments schedule</td>
+                            <td><i class="im im-icon-Yes"></i></td>
+                            <td><i class="im im-icon-Yes"></i></td>
+                            <td><i class="im im-icon-Yes"></i></td>
+                            <td><i class="im im-icon-Yes"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">Collaboration</td>
+                            <td><i class="im im-icon-Yes"></i></td>
+                            <td><i class="im im-icon-Yes"></i></td>
+                            <td><i class="im im-icon-Yes"></i></td>
+                            <td><i class="im im-icon-Yes"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">Permissions</td>
+                            <td><i class="im im-icon-Close is-disabled"></i></td>
+                            <td><i class="im im-icon-Yes"></i></td>
+                            <td><i class="im im-icon-Yes"></i></td>
+                            <td><i class="im im-icon-Yes"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- Device compare table -->
+
+        <!-- Compare table -->
+        <div class="columns is-vcentered pt-60">
+            <div id="compare" class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Feature compare Table</h4>
+                    <p class="no-padding">Use the feature comparison table to compare features between pricing plans or app editions. Add the <code>.compare-table</code> class to a <code>.table</code> element.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered pt-30">
+            <!-- Demo section -->
+            <div class="column is-8 is-offset-2">
+                <table class="table compare-table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>STARTER</th>
+                            <th>PRO</th>
+                            <th>BUSINESS</th>
+                            <th>ENTERPRISE</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="feature-name">Invoice editing</td>
+                            <td><i class="fa fa-check"></i></td>
+                            <td><i class="fa fa-check"></i></td>
+                            <td><i class="fa fa-check"></i></td>
+                            <td><i class="fa fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">Payments schedule</td>
+                            <td><i class="fa fa-check"></i></td>
+                            <td><i class="fa fa-check"></i></td>
+                            <td><i class="fa fa-check"></i></td>
+                            <td><i class="fa fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">Collaboration</td>
+                            <td><i class="fa fa-close is-disabled"></i></td>
+                            <td><i class="fa fa-close is-disabled"></i></td>
+                            <td><i class="fa fa-check"></i></td>
+                            <td><i class="fa fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">Permissions</td>
+                            <td><i class="fa fa-close is-disabled"></i></td>
+                            <td><i class="fa fa-check"></i></td>
+                            <td><i class="fa fa-check"></i></td>
+                            <td><i class="fa fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">Online Storage</td>
+                            <td><i class="fa fa-close is-disabled"></i></td>
+                            <td><i class="fa fa-close is-disabled"></i></td>
+                            <td><i class="fa fa-close is-disabled"></i></td>
+                            <td><i class="fa fa-check"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Compare table -->
+
+{{> footer-dark}}

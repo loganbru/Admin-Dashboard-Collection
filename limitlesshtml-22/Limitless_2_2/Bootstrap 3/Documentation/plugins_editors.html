@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/core.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script type="text/javascript" src="assets/js/plugins/ui/prism.min.js"></script>
+	
+	<script type="text/javascript" src="assets/js/core/app.js"></script>
+	<script type="text/javascript" src="assets/js/pages/sidebar_detached_sticky_native.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body data-spy="scroll" data-target=".sidebar-detached" class="has-detached-right">
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-default navbar-lg header-highlight">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="index.html"><img src="assets/images/logo_light.png" alt=""></a>
+
+			<ul class="nav navbar-nav pull-right visible-xs-block">
+				<li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+				<li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+				<li><a class="sidebar-mobile-detached-toggle"><i class="icon-grid7"></i></a></li>
+			</ul>
+		</div>
+
+		<div class="navbar-collapse collapse" id="navbar-mobile">
+			<ul class="nav navbar-nav">
+				<li><a class="sidebar-control sidebar-main-hide hidden-xs"><i class="icon-paragraph-justify3"></i></a></li>
+				<li><a class="sidebar-control sidebar-detached-hide hidden-xs"><i class="icon-drag-right"></i></a></li>
+			</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="other_changelog.html">Changelog <span class="label label-inline bg-warning-400 position-right">v. 2.0</span></a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page container -->
+	<div class="page-container">
+
+		<!-- Page content -->
+		<div class="page-content">
+
+			<!-- Main sidebar -->
+			<div class="sidebar sidebar-main">
+				<div class="sidebar-content">
+
+	        		<!-- Support -->
+					<div class="sidebar-category no-margin">
+						<div class="category-title">
+							<span>Have questions?</span>
+							<i class="icon-help text-muted pull-right"></i>
+						</div>
+
+						<div class="category-content">
+							<a href="http://kopyov.ticksy.com" class="btn bg-success-400 btn-block" target="_blank"><i class="icon-lifebuoy position-left"></i> Limitless support</a>
+						</div>
+					</div>
+					<!-- /support -->
+
+
+					<!-- Main navigation -->
+					<div class="sidebar-category">
+						<div class="category-title">
+							<span>Navigation</span>
+							<i class="icon-menu7 text-muted pull-right"></i>
+						</div>
+
+						<div class="category-content no-padding">
+							<ul class="navigation navigation-main navigation-accordion">
+
+								<!-- Main -->
+								<li class="navigation-header">Main</li>
+								<li><a href="index.html">Introduction</a></li>
+								<li><a href="main_getting_started.html">Getting started</a></li>
+								<li><a href="main_starter_kit.html">Starter kit</a></li>
+								<li><a href="main_rtl.html">RTL layout</a></li>
+
+								<li class="navigation-header">Basic functionality</li>								
+								<li><a href="base_less_css.html">LESS and CSS</a></li>
+								<li><a href="base_less_compile.html">Compiling LESS</a></li>
+								<li><a href="base_less_compile_rtl.html">Compiling LESS for RTL version</a></li>
+								<li>
+									<a href="#">Plugins</a>
+									<ul>
+										<li><a href="plugins_forms.html">Forms</a></li>
+										<li><a href="plugins_forms_styling.html">Form styling</a></li>
+										<li><a href="plugins_selects.html">Selects</a></li>
+										<li class="active"><a href="plugins_editors.html">Editors</a></li>
+										<li><a href="plugins_uploaders.html">Uploaders</a></li>
+										<li><a href="plugins_wizards.html">Wizards</a></li>
+										<li><a href="plugins_extensions.html">Extensions</a></li>
+										<li><a href="plugins_notifications.html">Notifications</a></li>
+										<li><a href="plugins_pickers.html">Pickers</a></li>
+										<li><a href="plugins_tables.html">Tables</a></li>
+										<li><a href="plugins_ui.html">UI</a></li>
+										<li><a href="plugins_vis.html">Visualization</a></li>
+									</ul>
+								</li>
+								<li><a href="base_bootstrap.html">Bootstrap</a></li>
+								<li><a href="base_color_system.html">Color system</a></li>
+								<li><a href="base_helpers.html">Helpers</a></li>
+								<li><a href="base_themes.html">Themes</a></li>
+
+								<li class="navigation-header">Layout options</li>
+								<li><a href="layout_markup.html">Markup</a></li>
+								<li><a href="layout_sidebars.html">Sidebars</a></li>
+								<li><a href="layout_navbars.html">Navbars</a></li>
+								<li><a href="layout_v_nav.html">Vertical navigation</a></li>
+								<li><a href="layout_h_nav.html">Horizontal navigation</a></li>
+								<li><a href="layout_page_header.html">Page header</a></li>
+								<li><a href="layout_footer.html">Footer</a></li>
+
+								<li class="navigation-header">Other</li>
+								<li><a href="other_credits.html">Sources and credits</a></li>
+								<li><a href="other_changelog.html">Changelog <span class="label bg-warning-400">version 2.0</span></a></li>
+								<!-- /main -->
+
+							</ul>
+						</div>
+					</div>
+					<!-- /main navigation -->
+
+				</div>
+			</div>
+			<!-- /main sidebar -->
+
+
+			<!-- Main content -->
+			<div class="content-wrapper">
+
+				<!-- Page header -->
+				<div class="page-header">
+					<div class="page-header-content">
+						<div class="page-title">
+							<h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold">Limitless</span> - Editors</h4>
+						</div>
+
+						<div class="heading-elements">
+							<ul class="breadcrumb">
+								<li><a href="index.html"><i class="icon-home2 position-left"></i> Home</a></li>
+								<li><a href="plugins_editors.html">Plugins</a></li>
+								<li class="active">Editors</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- /page header -->
+				
+
+				<!-- Content area -->
+				<div class="content">
+
+					<!-- Detached content -->
+					<div class="container-detached">
+						<div class="content-detached">
+
+							<!-- Ace code editor -->
+							<div class="panel panel-flat" id="ace">
+								<div class="panel-heading">
+									<h5 class="panel-title">Ace code editor</h5>
+									<div class="heading-elements">
+										<span class="label bg-slate heading-text">Editors</span>
+										<span class="heading-text text-muted">/editors/ace/</span>
+										<ul class="icons-list">
+					                		<li><a data-action="collapse"></a></li>
+					                		<li><a data-action="close"></a></li>
+					                	</ul>
+									</div>
+								</div>
+
+								<div class="panel-body">
+									<div class="content-group-lg">
+										<h6 class="text-semibold">Overview</h6>
+										<p class="content-group">Ace is an embeddable code editor written in JavaScript. It matches the features and performance of native editors such as Sublime, Vim and TextMate. It can be easily embedded in any web page and JavaScript application. Ace is maintained as the primary editor for Cloud9 IDE and is the successor of the Mozilla Skywriter (Bespin) project. Main features:</p>
+
+										<ul class="list">
+			                                <li><a href="http://pcwalton.blogspot.com/2010/11/syntax-highlighting-specification.html">Syntax highlighting</a> for over 110 languages (TextMate/Sublime Text<em>.tmlanguage</em> files can be imported)</li>
+			                                <li>Over 20 themes (TextMate/Sublime Text <em>.tmtheme</em> files can be imported)</li>
+			                                <li>Automatic indent and outdent</li>
+			                                <li>An optional command line</li>
+			                                <li>Handles huge documents (four million lines seems to be the limit!)</li>
+			                                <li>Fully customizable key bindings including vim and Emacs modes</li>
+			                                <li>Search and replace with regular expressions</li>
+			                                <li>Highlight matching parentheses</li>
+			                                <li>Toggle between soft tabs and real tabs</li>
+			                                <li>Displays hidden characters</li>
+			                                <li>Drag and drop text using the mouse</li>
+			                                <li>Line wrapping</li>
+			                                <li>Code folding</li>
+			                                <li>Multiple cursors and selections</li>
+			                                <li>Live syntax checker (currently JavaScript/CoffeeScript/CSS/XQuery)</li>
+			                                <li>Cut, copy, and paste functionality</li>
+			                            </ul>
+									</div>
+
+									<div class="content-group-lg">
+										<h6 class="text-semibold">Usage</h6>
+										<div class="content-group">
+											<p>Ace can be easily embedded into any existing web page. You can either use one of pre-packaged versions of <a href="https://github.com/ajaxorg/ace-builds/" target="_blank">ace</a> (just copy one of <code>src*</code> subdirectories somewhere into your project), or use requireJS to load contents of <a href="https://github.com/ajaxorg/ace/tree/master/lib/ace" target="_blank">lib/ace</a> as ace. By default the editor only supports plain text mode; many other languages are available as separate modules.</p>
+										</div>
+
+										<div class="content-group">
+											<p>Basic markup is:</p>
+											<pre><code class="language-markup">&lt;!-- Basic markup-->
+&lt;div id="html_editor">
+
+	&lt;!-- Default panel -->
+	&lt;div class="panel panel-default">
+		&lt;div class="panel-heading">
+			&lt;h5 class="panel-title">
+				Panel title
+				&lt;span class="text-semibold">Default&lt;/span>
+				&lt;small>Full featured toolbar&lt;/small>
+			&lt;/h5>
+		&lt;/div>
+
+		&lt;div class="panel-body">
+			Panel body
+		&lt;/div>
+	&lt;/div>
+	&lt;!-- /default panel -->
+
+&lt;/div>
+</code></pre>
+										</div>
+
+										<div class="content-group">
+											<p>Initialize via JavaScript:</p>
+											<pre><code class="language-javascript">// HTML editor
+var html_editor = ace.edit("html_editor");
+    html_editor.setTheme("ace/theme/monokai");
+    html_editor.getSession().setMode("ace/mode/html");
+    html_editor.setShowPrintMargin(false);
+</code></pre>
+										</div>
+									</div>
+
+									<div>
+										<h6 class="text-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="text-semibold">File name</td>
+														<td>ace.js, [modes, extensions, themes]</td>
+													</tr>
+													<tr>
+														<td class="text-semibold">Location</td>
+														<td>assets/js/plugins/editors/ace/</td>
+													</tr>
+													<tr>
+														<td class="text-semibold">Updates</td>
+														<td><span class="label bg-warning-400">0</span></td>
+													</tr>
+													<tr>
+														<td class="text-semibold">Links</td>
+														<td>															
+															<p>
+																<a href="http://ace.c9.io/#nav=about" class="btn bg-danger-400 btn-labeled" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+
+															<p>
+																<a href="https://groups.google.com/forum/#!forum/ace-discuss" class="btn bg-purple-400 btn-labeled" target="_blank">
+																	<b><i class="icon-google"></i></b>
+																	Google Group
+																</a>
+															</p>
+
+															<a href="https://github.com/ajaxorg/ace" class="btn bg-blue btn-labeled" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /ace code editor -->
+
+
+							<!-- Summernote text editor -->
+							<div class="panel panel-flat" id="summernote">
+								<div class="panel-heading">
+									<h5 class="panel-title">Summernote editor</h5>
+									<div class="heading-elements">
+										<span class="label bg-slate heading-text">Editors</span>
+										<span class="heading-text text-muted">summernote.min.js</span>
+										<ul class="icons-list">
+					                		<li><a data-action="collapse"></a></li>
+					                		<li><a data-action="close"></a></li>
+					                	</ul>
+									</div>
+								</div>
+
+								<div class="panel-body">
+									<div class="content-group-lg">
+										<h6 class="text-semibold">Overview</h6>
+										<p>Summernote is a JavaScript library that helps you create WYSIWYG editors online. The editor uses open source libraries - jQuery and Bootstrap. Font Awesome was required as well, but i've replaced it with Icomoon icon set. Summernote editor supports keyboard shortcuts, full list you can find in demos by clicking "Help" toolbar button. Summernote has a few special features:</p>
+
+										<ul class="list">
+											<li>Paste images from clipboard</li>
+											<li>Saves images directly in the content of the field using base64 encoding, so you don't need to implement image handling at all</li>
+											<li>Simple UI</li>
+											<li>Interactive WYSIWYG editing</li>
+											<li>Handy integration with server</li>
+										</ul>
+									</div>
+
+									<div class="content-group-lg">
+										<h6 class="text-semibold">Usage</h6>
+										<p>Usage is pretty simple. First include main JS file and Uniform plugin. Uniform is needed to style checkboxes and file inputs inside modal dialogs:</p>
+
+										<div class="content-group">
+											<pre><code class="language-markup">&lt;!-- JS file path -->
+&lt;script type="text/javascript" src="assets/js/plugins/editors/summernote/summernote.min.js">&lt;/script>
+
+&lt;!-- Uniform plugin file path -->
+&lt;script type="text/javascript" src="assets/js/plugins/forms/styling/uniform.min.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="content-group">
+											<p>Then place a <code>div</code> tag somewhere in the <code>body</code> tag. This element will be replaced with the summernote editor:</p>
+											<pre><code class="language-markup">&lt;!-- Target element -->
+&lt;div id="summernote">Hello Summernote&lt;/div>
+</code></pre>
+										</div>
+
+										<div class="content-group">
+											<p>Finally, run this script after the DOM is ready:</p>
+											<pre><code class="language-javascript">// Initialize plugin
+$(document).ready(function() {
+	$('#summernote').summernote();
+});
+</code></pre>
+										</div>
+									</div>
+
+									<div class="content-group-lg">
+										<h6 class="text-semibold">Custom toolbar</h6>
+
+										<div class="content-group">
+											<p>Summernote allows you to make own custom toolbar. To create one, use <code>toolbar</code> option:</p>
+											<pre><code class="language-javascript">// Font style only toolbar
+$('.summernote').summernote({
+  toolbar: [
+    //[groupname, [button list]]
+     
+    ['style', ['bold', 'italic', 'underline', 'clear']],
+    ['font', ['strikethrough', 'superscript', 'subscript']],
+    ['fontsize', ['fontsize']],
+    ['color', ['color']],
+    ['para', ['ul', 'ol', 'paragraph']],
+    ['height', ['height']],
+  ]
+});
+</code></pre>
+										</div>
+
+
+										<div class="content-group">
+											<p>You can compose a toolbar with pre-shipped buttons:</p>
+											<div class="table-responsive">
+												<table class="table table-striped table-bordered">
+													<thead>
+														<tr>
+															<th style="width: 250px;">Category</th>
+															<th>Button id</th>
+															<th>Function</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<th rowspan="5">Insert</th>
+															<td><code>picture</code></td>
+															<td>Insert a picture</td>
+														</tr>
+														<tr>
+															<td><code>link</code></td>
+															<td>Insert a hyperlink</td>
+														</tr>
+														<tr>
+															<td><code>video</code></td>
+															<td>Insert a video</td>
+														</tr>
+														<tr>
+															<td><code>table</code></td>
+															<td>Insert a table</td>
+														</tr>
+														<tr>
+															<td><code>hr</code></td>
+															<td>Insert a horizontal rule</td>
+														</tr>
+														<tr>
+														<th rowspan="9">Style</th>
+															<td><code>style</code></td>
+															<td>Format selected block</td>
+														</tr>
+														<tr>
+															<td><code>fontname</code></td>
+															<td>Set font family</td>
+														</tr>
+														<tr>
+															<td><code>fontsize</code></td>
+															<td>Set font size</td>
+														</tr>
+														<tr>
+															<td><code>color</code></td>
+															<td>Set foreground and background color</td>
+														</tr>
+														<tr>
+															<td><code>bold</code></td>
+															<td>Toggle weight</td>
+														</tr>
+														<tr>
+															<td><code>italic</code></td>
+															<td>Toggle italic</td>
+														</tr>
+														<tr>
+															<td><code>underline</code></td>
+															<td>Toggle underline</td>
+														</tr>
+														<tr>
+															<td><code>strikethrough</code></td>
+															<td>Toggle strikethrough</td>
+														</tr>
+														<tr>
+															<td><code>clear</code></td>
+															<td>Clearing all styles</td>
+														</tr>
+														<tr>
+															<th rowspan="4">Layout</th>
+															<td><code>ul</code></td>
+															<td>Make an un-ordered list</td>
+														</tr>
+														<tr>
+															<td><code>ol</code></td>
+															<td>Make an ordered list</td>
+														</tr>
+														<tr>
+															<td><code>paragraph</code></td>
+															<td>Set text alignment</td>
+														</tr>
+														<tr>
+															<td><code>height</code></td>
+															<td>Set height of text</td>
+														</tr>
+														<tr>
+															<th rowspan="5">Misc</th>
+															<td><code>fullscreen</code></td>
+															<td>Toggle fullscreen editing mode</td>
+														</tr>
+														<tr>
+															<td><code>codeview</code></td>
+															<td>Toggle wysiwyg and html editing mode</td>
+														</tr>
+														<tr>
+															<td><code>undo</code></td>
+															<td>Undo</td>
+														</tr>
+														<tr>
+															<td><code>redo</code></td>
+															<td>Redo</td>
+														</tr>
+														<tr>
+															<td><code>help</code></td>
+															<td>Show help dialog</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+
+									<div class="content-group-lg">
+										<h6 class="text-semibold">API reference</h6>
+										<p class="content-group">Usage is pretty simple. First include main JS file and Uniform plugin. Uniform is needed to style checkboxes and file inputs inside modal dialogs:</p>
+
+										<div class="content-group">
+											<p><code>code</code> - get the HTML source code underlying the text in the editor:</p>
+											<pre><code class="language-javascript">// Summernote API
+var sHTML = $('#summernote').code();
+</code></pre>
+										</div>
+
+										<div class="content-group">
+											<p><code>Destroy</code> Summernote:</p>
+											<pre><code class="language-javascript">// Destroy editor
+$('#summernote').destroy();
+</code></pre>
+										</div>
+
+										<p><strong class="text-pink">Note:</strong> Full Summernote API can be found on <a href="http://summernote.org/#/deep-dive#api" target="_blank">official API documentation</a> pages.</p>
+									</div>
+
+									<div>
+										<h6 class="text-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="text-semibold">File name</td>
+														<td>summernote.min.js</td>
+													</tr>
+													<tr>
+														<td class="text-semibold">Location</td>
+														<td>assets/js/plugins/editors/summernote/</td>
+													</tr>
+													<tr>
+														<td class="text-semibold">Updates</td>
+														<td><span class="label bg-warning-400">0</span></td>
+													</tr>
+													<tr>
+														<td class="text-semibold">Links</td>
+														<td>															
+															<p>
+																<a href="http://summernote.org/#/" class="btn bg-danger-400 btn-labeled" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+
+															<p>
+																<a href="http://summernote.org/jsduck/" class="btn bg-slate btn-labeled" target="_blank">
+																	<b><i class="icon-file-text2"></i></b>
+																	Full documentation
+																</a>
+															</p>
+
+															<p>
+																<a href="http://summernote.org/#/example" class="btn btn-sm bg-teal-400 btn-labeled" target="_blank">
+																	<b><i class="icon-file-eye"></i></b>
+																	Demonstration
+																</a>
+															</p>
+
+															<a href="https://github.com/summernote/summernote" class="btn bg-blue btn-labeled" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /summernote text editor -->
+
+
+							<!-- WYSIHTML5 text editor -->
+							<div class="panel panel-flat" id="wysihtml5">
+								<div class="panel-heading">
+									<h5 class="panel-title">WYSIHTML5</h5>
+									<div class="heading-elements">
+										<span class="label bg-slate heading-text">Editors</span>
+										<span class="heading-text text-muted">/editors/wysihtml5/</span>
+										<ul class="icons-list">
+					                		<li><a data-action="collapse"></a></li>
+					                		<li><a data-action="close"></a></li>
+					                	</ul>
+									</div>
+								</div>
+
+								<div class="panel-body">
+									<div class="content-group-lg">
+										<h6 class="text-semibold">Overview</h6>
+										<p>WYSIHTML5 is an open source rich text editor based on HTML5 technology and the progressive-enhancement approach. It uses a sophisticated security concept and aims to generate fully valid HTML5 markup by preventing unmaintainable tag soups and inline styles. The code is completely library agnostic: No jQuery, Prototype or similar is required. Main editor features:</p>
+
+										<ul class="list">
+											<li>Auto linking of urls as-you-type</li>
+											<li>Generates valid and semantic HTML5 markup (no <code>&lt;font&gt;</code>)</li>
+											<li>Uses class-names instead of inline styles</li>
+											<li>Unifies line-break handling across browsers (hitting enter will create <code>&lt;br&gt;</code> instead of <code>&lt;p&gt;</code> or <code>&lt;div&gt;</code>)</li>
+											<li>Auto-parses content inserted via copy &amp; paste (from Word, Powerpoint, PDF, other web pages, …)</li>
+											<li>Converts invalid or unknown html tags into valid/similar tags</li>
+											<li>Source code view for users with HTML skills</li>
+											<li>Uses sandboxed iframes in order to prevent identity theft through XSS</li>
+											<li>Editor inherits styles and attributes (placeholder, autofocus, …) from original textarea (you only have to style one element)</li>
+											<li>Speech-input for Chrome</li>
+										</ul>
+									</div>
+
+									<div class="content-group-lg">
+										<h6 class="text-semibold">Usage</h6>
+										<p class="content-group">Just like in Bootstrap you can activate it without any JavaScript, just by adding a data-attribute, you can make it automatically work. Add data-hover="dropdown" in addition (or in place of) Bootstrap's data-toggle="dropdown". You can set options via data-attributes, too, via data-delay and data-close-others.</p>
+
+
+										<div class="content-group">
+											<p>1. The first editor script contains the html5 parser rules that are needed for wysihtml5 in order to create valid and desired markup. The second script is the minified wysihtml5 library. Toolbar is placed inside separate file. Also Uniform plugin is added for nice looking checkboxes and file inputs in modal dialogs. Ordering matters:</p>
+											<pre><code class="language-markup">&lt;!-- Include Uniform plugin -->
+&lt;script type="text/javascript" src="assets/js/plugins/forms/styling/uniform.min.js">&lt;/script>
+
+&lt;!-- Include minified library -->
+&lt;script type="text/javascript" src="assets/js/plugins/editors/wysihtml5/wysihtml5.min.js">&lt;/script>
+
+&lt;!-- Include toolbar -->
+&lt;script type="text/javascript" src="assets/js/plugins/editors/wysihtml5/toolbar.js">&lt;/script>
+
+&lt;!-- Include parser rules -->
+&lt;script type="text/javascript" src="assets/js/plugins/editors/wysihtml5/parsers.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="content-group">
+											<p>2. WYSIHTML5 takes a textarea and transforms it into a rich text editor. The textarea acts as a fallback for unsupported browsers (eg. IE &lt; 8). Make sure the textarea element has an id, so we can later access it easily from javascript. The resulting rich text editor will much behave and look like the textarea since behavior (placeholder, autofocus, ...) and css styles will be copied over. <strong>Please note</strong>: The textarea will always hold the editor's generated markup. Therefore wysihtml5 integrates smoothly with forms.</p>
+											<pre><code class="language-markup">&lt;!-- Create textarea -->
+&lt;form action="#">
+	&lt;div class="form-group">
+		&lt;textarea id="wysihtml5-textarea" placeholder="Enter your text ...">&lt;/textarea>
+	&lt;/div>
+&lt;/form>
+</code></pre>
+										</div>
+
+										<div class="content-group">
+											<p>3. And initialize plugin. Make sure you place the <code>&lt;script></code> at the end of the document, before the <code>&lt;/body></code> tag because the document must be loaded before running the script. Or, test if document is loaded (i.e. jQuery's <code>$(document).ready()</code>) and initialize the editor aferwards.</p>
+											<pre><code class="language-javascript">// Initialize editor
+$('.wysihtml5-default').wysihtml5({
+    parserRules:  wysihtml5ParserRules
+});
+</code></pre>
+										</div>
+
+										
+									</div>
+
+									<div class="content-group-lg">
+										<h6 class="text-semibold">Options</h6>
+										<p>Following is a list of all configuration parameters with their corresponding default values:</p>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Option</th>
+														<th>Value</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>name</code></td>
+														<td class="text-semibold">null</td>
+														<td>Give the editor a name, the name will also be set as class name on the iframe and on the iframe's body</td>
+													</tr>
+													<tr>
+														<td><code>style</code></td>
+														<td class="text-semibold">true</td>
+														<td>Whether the editor should look like the textarea (by adopting styles)</td>
+													</tr>
+													<tr>
+														<td><code>toolbar</code></td>
+														<td class="text-semibold">null</td>
+														<td>Id of the toolbar element or DOM node, pass false value if you don't want any toolbar logic</td>
+													</tr>
+													<tr>
+														<td><code>autoLink</code></td>
+														<td class="text-semibold">null</td>
+														<td>Whether urls, entered by the user should automatically become clickable-links</td>
+													</tr>
+													<tr>
+														<td><code>parserRules</code></td>
+														<td class="text-semibold">{ tags: { br: {}, span: {}, div: {}, p: {} }, classes: {} }</td>
+														<td>Object which includes parser rules to apply when html gets inserted via copy &amp; paste</td>
+													</tr>
+													<tr>
+														<td><code>parser</code></td>
+														<td class="text-semibold">wysihtml5.dom.parse</td>
+														<td>Parser method to use when the user inserts content via copy &amp; paste</td>
+													</tr>
+													<tr>
+														<td><code>composerClassName</code></td>
+														<td class="text-semibold">"wysihtml5-editor"</td>
+														<td>Class name which should be set on the contentEditable element in the created sandbox iframe, can be styled via the 'stylesheets' option</td>
+													</tr>
+													<tr>
+														<td><code>bodyClassName</code></td>
+														<td class="text-semibold">"wysihtml5-supported"</td>
+														<td>Class name to add to the body when the wysihtml5 editor is supported</td>
+													</tr>
+													<tr>
+														<td><code>useLineBreaks</code></td>
+														<td class="text-semibold">true</td>
+														<td>By default wysihtml5 will insert a <code>&lt;br></code> for line breaks, set this to false to use <code>&lt;p></code></td>
+													</tr>
+													<tr>
+														<td><code>stylesheets</code></td>
+														<td class="text-semibold">[]</td>
+														<td>Array (or single string) of stylesheet urls to be loaded in the editor's iframe</td>
+													</tr>
+													<tr>
+														<td><code>placeholderText</code></td>
+														<td class="text-semibold">null</td>
+														<td>Placeholder text to use, defaults to the placeholder attribute on the textarea element</td>
+													</tr>
+													<tr>
+														<td><code>supportTouchDevices</code></td>
+														<td class="text-semibold">true</td>
+														<td>Whether the rich text editor should be rendered on touch devices (wysihtml5 >= 0.3.0 comes with basic support for iOS 5)</td>
+													</tr>
+													<tr>
+														<td><code>cleanUp</code></td>
+														<td class="text-semibold">true</td>
+														<td>Whether senseless <code>&lt;span></code> elements (empty or without attributes) should be removed/replaced with their content</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div>
+										<h6 class="text-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="text-semibold">File name</td>
+														<td>summernote.min.js</td>
+													</tr>
+													<tr>
+														<td class="text-semibold">Location</td>
+														<td>assets/js/plugins/editors/summernote/</td>
+													</tr>
+													<tr>
+														<td class="text-semibold">Updates</td>
+														<td><span class="label bg-warning-400">0</span></td>
+													</tr>
+													<tr>
+														<td class="text-semibold">Links</td>
+														<td>															
+															<p>
+																<a href="http://xing.github.io/wysihtml5/" class="btn bg-danger-400 btn-labeled" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+
+															<p>
+																<a href="https://github.com/xing/wysihtml5/wiki/Getting-Started" class="btn bg-slate btn-labeled" target="_blank">
+																	<b><i class="icon-file-text2"></i></b>
+																	Full documentation
+																</a>
+															</p>
+
+															<a href="https://github.com/xing/wysihtml5" class="btn bg-blue btn-labeled" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /WYSIHTML5 text editor -->
+
+						</div>
+					</div>
+					<!-- /detached content -->
+
+
+
+					<!-- Detached sidebar -->
+					<div class="sidebar-detached">
+			        	<div class="sidebar sidebar-default">
+							<div class="sidebar-content">
+
+				        		<!-- Contact author -->
+								<div class="sidebar-category no-margin">
+									<div class="category-title">
+										<span>Page navigation</span>
+										<i class="icon-menu7 text-muted pull-right"></i>
+									</div>
+
+									<div class="category-content">
+										<a href="http://themeforest.net/user/kopyov" class="btn bg-blue btn-block" target="_blank"><i class="icon-reading position-left"></i> Contact author</a>
+									</div>
+								</div>
+								<!-- /contact author -->
+
+			        			
+			        			<!-- Navigation -->
+								<div class="sidebar-category">
+									<div class="category-content no-padding">
+										<ul class="nav navigation no-padding-top">
+											<li class="navigation-header"><i class="icon-history pull-right"></i> Sections</li>
+											<li><a href="#ace">Ace Code Editor</a></li>
+											<li><a href="#summernote">Summernote Editor</a></li>
+											<li><a href="#wysihtml5">WYSIHTML5 Editor</a></li>
+											<li class="navigation-divider"></li>
+											<li><a href="#">Go to top <i class="icon-circle-up2 pull-right"></i></a></li>
+							            </ul>
+						            </div>
+					            </div>
+					            <!-- /navigation -->
+
+				            </div>
+			            </div>
+		            </div>
+		            <!-- /detached sidebar -->
+
+
+					<!-- Footer -->
+					<div class="footer text-muted">
+						&copy; 2015. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
+					</div>
+					<!-- /footer -->
+
+				</div>
+				<!-- /content area -->
+
+			</div>
+			<!-- /main content -->
+
+		</div>
+		<!-- /page content -->
+
+	</div>
+	<!-- /page container -->
+
+</body>
+</html>

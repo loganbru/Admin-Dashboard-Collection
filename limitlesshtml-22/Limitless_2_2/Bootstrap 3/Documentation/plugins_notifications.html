@@ -1,0 +1,1646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/core.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script type="text/javascript" src="assets/js/plugins/ui/prism.min.js"></script>
+	
+	<script type="text/javascript" src="assets/js/core/app.js"></script>
+	<script type="text/javascript" src="assets/js/pages/sidebar_detached_sticky_native.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body data-spy="scroll" data-target=".sidebar-detached" class="has-detached-right">
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-default navbar-lg header-highlight">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="index.html"><img src="assets/images/logo_light.png" alt=""></a>
+
+			<ul class="nav navbar-nav pull-right visible-xs-block">
+				<li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+				<li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+				<li><a class="sidebar-mobile-detached-toggle"><i class="icon-grid7"></i></a></li>
+			</ul>
+		</div>
+
+		<div class="navbar-collapse collapse" id="navbar-mobile">
+			<ul class="nav navbar-nav">
+				<li><a class="sidebar-control sidebar-main-hide hidden-xs"><i class="icon-paragraph-justify3"></i></a></li>
+				<li><a class="sidebar-control sidebar-detached-hide hidden-xs"><i class="icon-drag-right"></i></a></li>
+			</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="other_changelog.html">Changelog <span class="label label-inline bg-warning-400 position-right">v. 2.0</span></a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page container -->
+	<div class="page-container">
+
+		<!-- Page content -->
+		<div class="page-content">
+
+			<!-- Main sidebar -->
+			<div class="sidebar sidebar-main">
+				<div class="sidebar-content">
+
+	        		<!-- Support -->
+					<div class="sidebar-category no-margin">
+						<div class="category-title">
+							<span>Have questions?</span>
+							<i class="icon-help text-muted pull-right"></i>
+						</div>
+
+						<div class="category-content">
+							<a href="http://kopyov.ticksy.com" class="btn bg-success-400 btn-block" target="_blank"><i class="icon-lifebuoy position-left"></i> Limitless support</a>
+						</div>
+					</div>
+					<!-- /support -->
+
+
+					<!-- Main navigation -->
+					<div class="sidebar-category">
+						<div class="category-title">
+							<span>Navigation</span>
+							<i class="icon-menu7 text-muted pull-right"></i>
+						</div>
+
+						<div class="category-content no-padding">
+							<ul class="navigation navigation-main navigation-accordion">
+
+								<!-- Main -->
+								<li class="navigation-header">Main</li>
+								<li><a href="index.html">Introduction</a></li>
+								<li><a href="main_getting_started.html">Getting started</a></li>
+								<li><a href="main_starter_kit.html">Starter kit</a></li>
+								<li><a href="main_rtl.html">RTL layout</a></li>
+
+								<li class="navigation-header">Basic functionality</li>								
+								<li><a href="base_less_css.html">LESS and CSS</a></li>
+								<li><a href="base_less_compile.html">Compiling LESS</a></li>
+								<li><a href="base_less_compile_rtl.html">Compiling LESS for RTL version</a></li>
+								<li>
+									<a href="#">Plugins</a>
+									<ul>
+										<li><a href="plugins_forms.html">Forms</a></li>
+										<li><a href="plugins_forms_styling.html">Form styling</a></li>
+										<li><a href="plugins_selects.html">Selects</a></li>
+										<li><a href="plugins_editors.html">Editors</a></li>
+										<li><a href="plugins_uploaders.html">Uploaders</a></li>
+										<li><a href="plugins_wizards.html">Wizards</a></li>
+										<li><a href="plugins_extensions.html">Extensions</a></li>
+										<li class="active"><a href="plugins_notifications.html">Notifications</a></li>
+										<li><a href="plugins_pickers.html">Pickers</a></li>
+										<li><a href="plugins_tables.html">Tables</a></li>
+										<li><a href="plugins_ui.html">UI</a></li>
+										<li><a href="plugins_vis.html">Visualization</a></li>
+									</ul>
+								</li>
+								<li><a href="base_bootstrap.html">Bootstrap</a></li>
+								<li><a href="base_color_system.html">Color system</a></li>
+								<li><a href="base_helpers.html">Helpers</a></li>
+								<li><a href="base_themes.html">Themes</a></li>
+
+								<li class="navigation-header">Layout options</li>
+								<li><a href="layout_markup.html">Markup</a></li>
+								<li><a href="layout_sidebars.html">Sidebars</a></li>
+								<li><a href="layout_navbars.html">Navbars</a></li>
+								<li><a href="layout_v_nav.html">Vertical navigation</a></li>
+								<li><a href="layout_h_nav.html">Horizontal navigation</a></li>
+								<li><a href="layout_page_header.html">Page header</a></li>
+								<li><a href="layout_footer.html">Footer</a></li>
+
+								<li class="navigation-header">Other</li>
+								<li><a href="other_credits.html">Sources and credits</a></li>
+								<li><a href="other_changelog.html">Changelog <span class="label bg-warning-400">version 2.0</span></a></li>
+								<!-- /main -->
+
+							</ul>
+						</div>
+					</div>
+					<!-- /main navigation -->
+
+				</div>
+			</div>
+			<!-- /main sidebar -->
+
+
+			<!-- Main content -->
+			<div class="content-wrapper">
+
+				<!-- Page header -->
+				<div class="page-header">
+					<div class="page-header-content">
+						<div class="page-title">
+							<h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold">Limitless</span> - Notifications</h4>
+						</div>
+
+						<div class="heading-elements">
+							<ul class="breadcrumb">
+								<li><a href="index.html"><i class="icon-home2 position-left"></i> Home</a></li>
+								<li><a href="plugins_notifications.html">Plugins</a></li>
+								<li class="active">Notifications</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- /page header -->
+				
+
+				<!-- Content area -->
+				<div class="content">
+
+					<!-- Detached content -->
+					<div class="container-detached">
+						<div class="content-detached">
+
+							<!-- Bootbox dialogs -->
+							<div class="panel panel-flat" id="bootbox">
+								<div class="panel-heading">
+									<h5 class="panel-title">Bootbox dialogs</h5>
+									<div class="heading-elements">
+										<span class="label bg-slate heading-text">Notifications</span>
+										<span class="heading-text text-muted">bootbox.min.js</span>
+										<ul class="icons-list">
+					                		<li><a data-action="collapse"></a></li>
+					                		<li><a data-action="close"></a></li>
+					                	</ul>
+									</div>
+								</div>
+
+								<div class="panel-body">
+									<div class="content-group-lg">
+										<h6 class="text-semibold">Overview</h6>
+										<p>Bootbox.js is a small JavaScript library which allows you to create programmatic dialog boxes using Bootstrap modals, without having to worry about creating, managing or removing any of the required DOM elements or JS event handlers.</p>
+									</div>
+
+									<div class="content-group-lg">
+										<h6 class="text-semibold">Usage</h6>
+										<div class="content-group">
+											<p>Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+											<pre><code class="language-markup">&lt;!-- Load jQuery -->
+&lt;script type="text/javascript" src="assets/js/core/libraries/jquery.min.js">&lt;/script>
+
+&lt;!-- Load Bootstrap -->
+&lt;script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js">&lt;/script>
+
+&lt;!-- Load plugin -->
+&lt;script type="text/javascript" src="assets/js/plugins/notifications/bootbox.min.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="content-group">
+											<p>Call the plugin via JavaScript:</p>
+											<pre><code class="language-javascript">// Initialization example
+bootbox.alert({ 
+    size: 'small',
+    message: "Your message here…", 
+    callback: function(){ /* your callback code */ }
+})
+</code></pre>
+										</div>
+									</div>
+
+									<div class="content-group-lg">
+										<h6 class="text-semibold">Alert dialog</h6>
+										<p>A simple alert dialog with a single button. Pressing the <kbd>ESC</kbd> key or clicking the close button dismisses the dialog. If a callback is provided it is not passed any value when executed</p>
+
+										<p>Alert options:</p>
+										<pre><code class="language-javascript">// Options
+bootbox.alert({ 
+    size: 'small',
+    message: "Your message here…", 
+    callback: function(){ /* your callback code */ }
+});
+</code></pre>
+									</div>
+
+									<div class="content-group-lg">
+										<h6 class="text-semibold">Confirm dialog</h6>
+										<p>A confirm dialog with a cancel and a confirm button. Pressing the <kbd>ESC</kbd> key or clicking close dismisses the dialog and invokes the callback as if the user had clicked the cancel button</p>
+
+										<p>Confirm options:</p>
+										<pre><code class="language-javascript">// Options
+bootbox.confirm({ 
+    size: 'small',
+    message: "Your message here…", 
+    callback: function(result){ /* your callback code */ }
+});
+</code></pre>
+									</div>
+
+									<div class="content-group-lg">
+										<h6 class="text-semibold">Prompt dialog</h6>
+										<p>A dialog which prompts for user input. Pressing the <kbd>ESC</kbd> key or clicking close dismisses the dialog and invokes the callback as if the user had clicked the cancel button. <strong>Prompt dialogs require a callback function</strong>.</p>
+
+										<p>Prompt options:</p>
+										<pre><code class="language-javascript">// Options
+bootbox.prompt({ 
+    size: 'small',
+    message: "Your message here…", 
+    callback: function(result){ /* your callback code */ }
+})
+</code></pre>
+									</div>
+
+									<div class="content-group-lg">
+										<h6 class="text-semibold">Dialog options</h6>
+										<p>Options can be passed in as a JavaScript object. Please note that not all options are valid for all dialog types.</p>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Option</th>
+														<th style="width: 200px;">Type</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>message</code></td>
+														<td class="text-semibold">String | Element</td>
+														<td>[Required]. Text (or markup) displayed in the dialog</td>
+													</tr>
+													<tr>
+														<td><code>title</code></td>
+														<td class="text-semibold">String | Element</td>
+														<td>Adds a header to the dialog and places this text (or markup) in an <code>&lt;h4></code> element</td>
+													</tr>
+													<tr>
+														<td><code>locale</code></td>
+														<td class="text-semibold">String</td>
+														<td>The locale settings used to translate the three standard button labels: OK, CONFIRM, CANCEL. Default: <code>en</code>. Currently available: <code>bg_BG</code>, <code>br</code>, <code>cs</code>, <code>da</code>, <code>de</code>, <code>el</code>, <code>en</code>, <code>es</code>, <code>et</code>, <code>fa</code>, <code>fi</code>, <code>fr</code>, <code>he</code>, <code>hu</code>, <code>hr</code>, <code>id</code>, <code>it</code>, <code>ja</code>, <code>lt</code>, <code>lv</code>, <code>nl</code>, <code>no</code>, <code>pl</code>, <code>pt</code>, <code>ru</code> <code>sq</code>, <code>sv</code>, <code>th</code>, <code>tr</code>, <code>zh_CN</code>, <code>zh_TW</code></td>
+													</tr>
+													<tr>
+														<td><code>callback</code></td>
+														<td class="text-semibold">Function</td>
+														<td>[Required]. An alert callback should not supply an argument; it will be ignored if it does. Confirm and prompt callbacks must supply an argument for the result; for confirm, it will be a <code>true</code> or <code>false</code> value, while the prompt result will hold the value entered by the user</td>
+													</tr>
+													<tr>
+														<td><code>onEscape</code></td>
+														<td class="text-semibold">Boolean | Function</td>
+														<td>Allows the user to dismisss the dialog by hitting <kbd>ESC</kbd>, which will invoke this function</td>
+													</tr>
+													<tr>
+														<td><code>show</code></td>
+														<td class="text-semibold">Boolean</td>
+														<td>Whether the dialog should be shown immediately</td>
+													</tr>
+													<tr>
+														<td><code>backdrop</code></td>
+														<td class="text-semibold">Boolean</td>
+														<td>Whether the dialog should be have a backdrop or not. Also determines whether clicking on the backdrop dismisses the modal</td>
+													</tr>
+													<tr>
+														<td><code>closeButton</code></td>
+														<td class="text-semibold">Boolean</td>
+														<td>Whether the dialog should have a close button or not</td>
+													</tr>
+													<tr>
+														<td><code>animate</code></td>
+														<td class="text-semibold">Boolean</td>
+														<td>Animate the dialog in and out (requires a browser which supports CSS animations)</td>
+													</tr>
+													<tr>
+														<td><code>className</code></td>
+														<td class="text-semibold">String</td>
+														<td>An additional class to apply to the dialog wrapper. Default <code>null</code></td>
+													</tr>
+													<tr>
+														<td><code>size</code></td>
+														<td class="text-semibold">String</td>
+														<td>Adds the relevant Bootstrap modal size class to the dialog wrapper. Valid values are <code>'large'</code> and <code>'small'</code></td>
+													</tr>
+													<tr>
+														<td><code>buttons</code></td>
+														<td class="text-semibold">Object</td>
+														<td>[Required]. Buttons are defined as JavaScript objects</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="content-group-lg">
+										<h6 class="text-semibold">Public methods</h6>
+										<p>Options can be passed in as a JavaScript object. Please note that not all options are valid for all dialog types.</p>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Method</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>bootbox.init(function)</code></td>
+														<td>Allows the user to supply a function to be called when dialog gets initialized</td>
+													</tr>
+													<tr>
+														<td><code>bootbox.setDefaults(object options)</code></td>
+														<td>This method allows the user to set many of the default options. Many of these options are also applied to the basic wrapper methods and can be overridden whenever the wrapper methods are invoked with a single options argument</td>
+													</tr>
+													<tr>
+														<td><code>bootbox.addLocale(String name, object values)</code></td>
+														<td>Allows the user to add a custom translation for each of the built-in command buttons</td>
+													</tr>
+													<tr>
+														<td><code>bootbox.removeLocale(String name)</code></td>
+														<td>Allows the user to remove a locale from the available locale settings</td>
+													</tr>
+													<tr>
+														<td><code>bootbox.setLocale(String name)</code></td>
+														<td>Allows the user to select a locale rather than using <code>setDefaults("locale", ...)</code></td>
+													</tr>
+													<tr>
+														<td><code>bootbox.hideAll()</code></td>
+														<td>Hide all currently active bootbox dialogs. Individual dialogs can be closed as per normal Bootstrap dialogs</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div>
+										<h6 class="text-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="text-semibold">File name</td>
+														<td>bootbox.min.js</td>
+													</tr>
+													<tr>
+														<td class="text-semibold">Location</td>
+														<td>assets/js/plugins/notifications/</td>
+													</tr>
+													<tr>
+														<td class="text-semibold">Updates</td>
+														<td><span class="label bg-warning-400">0</span></td>
+													</tr>
+													<tr>
+														<td class="text-semibold">Links</td>
+														<td>
+															<p>
+																<a href="http://bootboxjs.com/" class="btn btn-sm bg-danger-400 btn-labeled" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+
+															<p>
+																<a href="http://bootboxjs.com/documentation.html" class="btn btn-sm bg-slate btn-labeled" target="_blank">
+																	<b><i class="icon-file-text2"></i></b>
+																	Full documentation
+																</a>
+															</p>
+
+															<a href="https://github.com/makeusabrew/bootbox" class="btn btn-sm bg-blue btn-labeled" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /bootbox dialogs -->
+
+
+							<!-- jGrowl -->
+							<div class="panel panel-flat" id="jgrowl">
+								<div class="panel-heading">
+									<h5 class="panel-title">jGrowl notifications</h5>
+									<div class="heading-elements">
+										<span class="label bg-slate heading-text">Notifications</span>
+										<span class="heading-text text-muted">jgrowl.min.js</span>
+										<ul class="icons-list">
+					                		<li><a data-action="collapse"></a></li>
+					                		<li><a data-action="close"></a></li>
+					                	</ul>
+									</div>
+								</div>
+
+								<div class="panel-body">
+									<div class="content-group-lg">
+										<h6 class="text-semibold">Overview</h6>
+										<p>jGrowl is a jQuery plugin that raises unobtrusive messages within the browser, similar to the way that OS X's Growl Framework works. The idea is simple, deliver notifications to the end user in a noticeable way that doesn't obstruct the work flow and yet keeps the user informed.</p>
+									</div>
+
+									<div class="content-group-lg">
+										<h6 class="text-semibold">Usage</h6>
+										<div class="content-group">
+											<p>Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+											<pre><code class="language-markup">&lt;!-- Load jQuery -->
+&lt;script type="text/javascript" src="assets/js/core/libraries/jquery.min.js">&lt;/script>
+
+&lt;!-- Load plugin -->
+&lt;script type="text/javascript" src="assets/js/plugins/notifications/jgrowl.min.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="content-group">
+											<p>Call the plugin via JavaScript:</p>
+											<pre><code class="language-javascript">// Sample 1
+$.jGrowl("Hello world!");
+
+// Sample 2
+$.jGrowl("Stick this!", {
+	sticky: true
+});
+
+// Sample 3
+$.jGrowl("A message with a header", {
+	header: 'Important'
+});
+
+// Sample 4
+$.jGrowl("A message that will live a little longer.", {
+	life: 10000
+});
+
+// Sample 5
+$.jGrowl("A message with a beforeOpen callback and a different opening animation.", {
+    beforeClose: function(e,m) {
+        alert('About to close this notification!');
+    },
+    animateOpen: {
+        height: 'show'
+    }
+});
+</code></pre>
+										</div>
+									</div>
+
+									<div class="content-group-lg">
+										<h6 class="text-semibold">Plugin options</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Option</th>
+														<th style="width: 200px;">Default</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>pool</code></td>
+														<td class="text-semibold">0</td>
+														<td>Limit the number of messages appearing at a given time to the number in the pool</td>
+													</tr>
+													<tr>
+														<td><code>header</code></td>
+														<td class="text-semibold">empty</td>
+														<td>Optional header to prefix the message, this is often helpful for associating messages to each other</td>
+													</tr>
+													<tr>
+														<td><code>group</code></td>
+														<td class="text-semibold">empty</td>
+														<td>A css class to be applied to notifications when they are created, useful for 'grouping' notifications by a css selector</td>
+													</tr>
+													<tr>
+														<td><code>sticky</code></td>
+														<td class="text-semibold">false</td>
+														<td>When set to true a message will stick to the screen until it is intentionally closed by the user</td>
+													</tr>
+													<tr>
+														<td><code>position</code></td>
+														<td class="text-semibold">top-right</td>
+														<td>Designates a class which is applied to the jGrowl container and controls its position on the screen. By Default there are five options available, top-left, top-right, bottom-left, bottom-right, center. This must be changed in the defaults before the startup method is called</td>
+													</tr>
+													<tr>
+														<td><code>appendTo</code></td>
+														<td class="text-semibold">body</td>
+														<td>The element where our jGrowl messages are appended to. The default is <code>body</code> but feel free to define another one</td>
+													</tr>
+													<tr>
+														<td><code>glue</code></td>
+														<td class="text-semibold">after</td>
+														<td>Designates whether a jGrowl notification should be appended to the container after all notifications, or whether it should be prepended to the container before all notifications. Options are after or before</td>
+													</tr>
+													<tr>
+														<td><code>theme</code></td>
+														<td class="text-semibold">default</td>
+														<td>A CSS class designating custom styling for this particular message, intended for use with jQuery UI</td>
+													</tr>
+													<tr>
+														<td><code>themeState</code></td>
+														<td class="text-semibold">highlight</td>
+														<td>A CSS class designating custom styling for this particular message and its state, intended for use with jQuery UI</td>
+													</tr>
+													<tr>
+														<td><code>corners</code></td>
+														<td class="text-semibold">10px</td>
+														<td>If the corners jQuery plugin is include this option specifies the curvature radius to be used for the notifications as they are created</td>
+													</tr>
+													<tr>
+														<td><code>check</code></td>
+														<td class="text-semibold">250</td>
+														<td>The frequency that jGrowl should check for messages to be scrubbed from the screen.This must be changed in the defaults before the startup method is called</td>
+													</tr>
+													<tr>
+														<td><code>life</code></td>
+														<td class="text-semibold">3000</td>
+														<td>The lifespan of a non-sticky message on the screen</td>
+													</tr>
+													<tr>
+														<td><code>closeDuration</code></td>
+														<td class="text-semibold">normal</td>
+														<td>The animation speed used to close a notification</td>
+													</tr>
+													<tr>
+														<td><code>openDuration</code></td>
+														<td class="text-semibold">normal</td>
+														<td>The animation speed used to open a notification</td>
+													</tr>
+													<tr>
+														<td><code>easing</code></td>
+														<td class="text-semibold">swing</td>
+														<td>The easing method to be used with the animation for opening and closing a notification</td>
+													</tr>
+													<tr>
+														<td><code>closer</code></td>
+														<td class="text-semibold">true</td>
+														<td>Whether or not the close-all button should be used when more then one notification appears on the screen. Optionally this property can be set to a function which will be used as a callback when the close all button is clicked. This must be changed in the defaults before the startup method is called</td>
+													</tr>
+													<tr>
+														<td><code>closeTemplate</code></td>
+														<td class="text-semibold">×</td>
+														<td>This content is used for the individual notification close links that are added to the corner of a notification. This must be changed in the defaults before the startup method is called</td>
+													</tr>
+													<tr>
+														<td><code>closerTemplate</code></td>
+														<td class="text-semibold">&lt;div&gt;[ close all ]&lt;/div&gt;</td>
+														<td>This content is used for the close-all link that is added to the bottom of a jGrowl container when it contains more than one notification. This must be changed in the defaults before the startup method is called</td>
+													</tr>
+													<tr>
+														<td><code>log</code></td>
+														<td class="text-semibold">function(e,m,o) {}</td>
+														<td>Callback to be used before anything is done with the notification. This is intended to be used if the user would like to have some type of logging mechanism for all notifications passed to jGrowl. This callback receives the notification's DOM context, the notifications message and its option object</td>
+													</tr>
+													<tr>
+														<td><code>beforeOpen</code></td>
+														<td class="text-semibold">function(e,m,o) {}</td>
+														<td>Callback to be used before a new notification is opened. This callback receives the notification's DOM context, the notifications message and its option object</td>
+													</tr>
+													<tr>
+														<td><code>afterOpen</code></td>
+														<td class="text-semibold">function(e,m,o) {}</td>
+														<td>Callback to be used after a new notification is opened. This callback receives the notification's DOM context, the notifications message and its option object</td>
+													</tr>
+													<tr>
+														<td><code>open</code></td>
+														<td class="text-semibold">function(e,m,o) {}</td>
+														<td>Callback to be used when a new notification is opened. This callback receives the notification's DOM context, the notifications message and its option object</td>
+													</tr>
+													<tr>
+														<td><code>beforeClose</code></td>
+														<td class="text-semibold">function(e,m,o) {}</td>
+														<td>Callback to be used before a new notification is closed. This callback receives the notification's DOM context, the notifications message and its option object</td>
+													</tr>
+													<tr>
+														<td><code>close</code></td>
+														<td class="text-semibold">function(e,m,o) {}</td>
+														<td>Callback to be used when a new notification is closed. This callback receives the notification's DOM context, the notifications message and its option object</td>
+													</tr>
+													<tr>
+														<td><code>animateOpen</code></td>
+														<td class="text-semibold">{ opacity: 'show' }</td>
+														<td>The animation properties to use when opening a new notification (default to <code>fadeOut</code>)</td>
+													</tr>
+													<tr>
+														<td><code>animateClose</code></td>
+														<td class="text-semibold">{ opacity: 'hide' }</td>
+														<td>The animation properties to use when closing a new notification (defaults to <code>fadeIn</code>)</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div>
+										<h6 class="text-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="text-semibold">File name</td>
+														<td>jgrowl.min.js</td>
+													</tr>
+													<tr>
+														<td class="text-semibold">Location</td>
+														<td>assets/js/plugins/notifications/</td>
+													</tr>
+													<tr>
+														<td class="text-semibold">Updates</td>
+														<td><span class="label bg-warning-400">0</span></td>
+													</tr>
+													<tr>
+														<td class="text-semibold">Links</td>
+														<td>
+															<a href="https://github.com/stanlemon/jGrowl" class="btn btn-sm bg-blue btn-labeled" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /jGrowl -->
+
+
+							<!-- Noty -->
+							<div class="panel panel-flat" id="noty">
+								<div class="panel-heading">
+									<h5 class="panel-title">Noty notifications</h5>
+									<div class="heading-elements">
+										<span class="label bg-slate heading-text">Notifications</span>
+										<span class="heading-text text-muted">noty.min.js</span>
+										<ul class="icons-list">
+					                		<li><a data-action="collapse"></a></li>
+					                		<li><a data-action="close"></a></li>
+					                	</ul>
+									</div>
+								</div>
+
+								<div class="panel-body">
+									<div class="content-group-lg">
+										<h6 class="text-semibold">Overview</h6>
+										<p>NOTY is a jQuery plugin that makes it easy to create alert - success - error - warning - information - confirmation messages as an alternative the standard alert dialog. Each notification is added to a queue. The notifications can be positioned at the: top - topLeft - topCenter - topRight - center - centerLeft - centerRight - bottom - bottomLeft - bottomCenter - bottomRight.</p>
+									</div>
+
+									<div class="content-group-lg">
+										<h6 class="text-semibold">Usage</h6>
+										<div class="content-group">
+											<p>Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+											<pre><code class="language-markup">&lt;!-- Load jQuery -->
+&lt;script type="text/javascript" src="assets/js/core/libraries/jquery.min.js">&lt;/script>
+
+&lt;!-- Load plugin -->
+&lt;script type="text/javascript" src="assets/js/plugins/notifications/noty.min.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="content-group">
+											<p>Call the plugin via JavaScript:</p>
+											<pre><code class="language-javascript">// Basic initialization
+var n = noty({
+	text: 'noty - a jquery notification library!'
+});
+</code></pre>
+										</div>
+									</div>
+
+									<div class="content-group-lg">
+										<h6 class="text-semibold">Plugin options and defaults</h6>
+										<pre><code class="language-javascript">// Options and defaults
+$.noty.defaults = {
+    layout: 'top',
+    theme: 'defaultTheme',
+    type: 'alert', // alert, success, error, warning, information, confirm
+    text: '', // can be html or string
+    dismissQueue: true, // If you want to use queue feature set this true
+    template: '&lt;div class="noty_message">&lt;span class="noty_text">&lt;/span>&lt;div class="noty_close">&lt;/div>&lt;/div>',
+    animation: {
+        open: {height: 'toggle'}, // or Animate.css class names like: 'animated bounceInLeft'
+        close: {height: 'toggle'}, // or Animate.css class names like: 'animated bounceOutLeft'
+        easing: 'swing',
+        speed: 500 // opening &amp; closing animation speed
+    },
+    timeout: false, // delay for closing event. Set false for sticky notifications
+    force: false, // adds notification to the beginning of queue when set to true
+    modal: false,
+    maxVisible: 5, // you can set max visible notification for dismissQueue true option,
+    killer: false, // for close all notifications before show
+    closeWith: ['click'], // ['click', 'button', 'hover', 'backdrop'] // backdrop click will close all notifications
+    callback: {
+        onShow: function() {},
+        afterShow: function() {},
+        onClose: function() {},
+        afterClose: function() {},
+        onCloseClick: function() {},
+    },
+    buttons: false // an array of buttons
+};
+</code></pre>
+									</div>
+
+									<div class="content-group-lg">
+										<h6 class="text-semibold">Plugin API</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Option</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>$.noty.get(id)</code></td>
+														<td>Returns a NOTY javascript object</td>
+													</tr>
+													<tr>
+														<td><code>$.noty.close(id)</code></td>
+														<td>Close a NOTY - same as <code>var n = noty({text: 'Hi!'})); n.close();</code></td>
+													</tr>
+													<tr>
+														<td><code>$.noty.clearQueue()</code></td>
+														<td>Clears the notification queue</td>
+													</tr>
+													<tr>
+														<td><code>$.noty.closeAll()</code></td>
+														<td>Close all notifications</td>
+													</tr>
+													<tr>
+														<td><code>$.noty.setText(id, text)</code></td>
+														<td> Notification text updater - same as <code>var n = noty({text: 'Hi!'})); n.setText('Hi again!');</code></td>
+													</tr>
+													<tr>
+														<td><code>$.noty.setType(id, type)</code></td>
+														<td>Notification type updater - same as <code>var n = noty({text: 'Hi!'})); n.setType('error');</code></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div>
+										<h6 class="text-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="text-semibold">File name</td>
+														<td>noty.min.js</td>
+													</tr>
+													<tr>
+														<td class="text-semibold">Location</td>
+														<td>assets/js/plugins/notifications/</td>
+													</tr>
+													<tr>
+														<td class="text-semibold">Updates</td>
+														<td><span class="label bg-warning-400">0</span></td>
+													</tr>
+													<tr>
+														<td class="text-semibold">Links</td>
+														<td>
+															<p>
+																<a href="http://ned.im/noty/#/about" class="btn btn-sm bg-danger-400 btn-labeled" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+
+															<a href="https://github.com/needim/noty/" class="btn btn-sm bg-blue btn-labeled" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /noty -->
+
+
+							<!-- PNotify -->
+							<div class="panel panel-flat" id="pnotify">
+								<div class="panel-heading">
+									<h5 class="panel-title">PNotify notifications</h5>
+									<div class="heading-elements">
+										<span class="label bg-slate heading-text">Notifications</span>
+										<span class="heading-text text-muted">pnotify.min.js</span>
+										<ul class="icons-list">
+					                		<li><a data-action="collapse"></a></li>
+					                		<li><a data-action="close"></a></li>
+					                	</ul>
+									</div>
+								</div>
+
+								<div class="panel-body">
+									<div class="content-group-lg">
+										<h6 class="text-semibold">Overview</h6>
+										<p>PNotify is a JavaScript notification plugin, developed by SciActive. Formerly known as Pines Notify. It is designed to provide an unparalleled level of flexibility, while still being very easy to implement and use. PNotify provides desktop notifications based on the <code>Web Notifications Draft</code>. If desktop notifications are not available or not allowed, PNotify will fall back to displaying the notice as a regular, in-browser notice.</p>
+									</div>
+
+									<div class="content-group-lg">
+										<h6 class="text-semibold">Usage</h6>
+										<div class="content-group">
+											<p>Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+											<pre><code class="language-markup">&lt;!-- Load jQuery -->
+&lt;script type="text/javascript" src="assets/js/core/libraries/jquery.min.js">&lt;/script>
+
+&lt;!-- Load plugin -->
+&lt;script type="text/javascript" src="assets/js/plugins/notifications/pnotify.min.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="content-group">
+											<p>Call the plugin via JavaScript:</p>
+											<pre><code class="language-javascript">// Initialization sample
+$(function(){
+    new PNotify({
+        title: 'Regular Notice',
+        text: 'Check me out! I\'m a notice.'
+    });
+});
+</code></pre>
+										</div>
+									</div>
+
+									<div class="content-group-lg">
+										<h6 class="text-semibold">Plugin options</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Option</th>
+														<th style="width: 200px;">Default</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>title</code></td>
+														<td class="text-semibold">false</td>
+														<td>The notice's title</td>
+													</tr>
+													<tr>
+														<td><code>title_escape</code></td>
+														<td class="text-semibold">false</td>
+														<td>Whether to escape the content of the title. (HTML not allowed)</td>
+													</tr>
+													<tr>
+														<td><code>text</code></td>
+														<td class="text-semibold">false</td>
+														<td>The notice's text</td>
+													</tr>
+													<tr>
+														<td><code>text_escape</code></td>
+														<td class="text-semibold">false</td>
+														<td>Whether to escape the content of the text. (HTML not allowed)</td>
+													</tr>
+													<tr>
+														<td><code>styling</code></td>
+														<td class="text-semibold">"brighttheme"</td>
+														<td>What styling classes to use. (Can be either <code>"brighttheme"</code>, <code>"jqueryui"</code>, <code>"bootstrap2"</code>, <code>"bootstrap3"</code>, <code>"fontawesome"</code>, or a custom style object)</td>
+													</tr>
+													<tr>
+														<td><code>addclass</code></td>
+														<td class="text-semibold">""</td>
+														<td>Additional classes to be added to the notice</td>
+													</tr>
+													<tr>
+														<td><code>cornerclass</code></td>
+														<td class="text-semibold">""</td>
+														<td>Class to be added to the notice for corner styling</td>
+													</tr>
+													<tr>
+														<td><code>auto_display</code></td>
+														<td class="text-semibold">true</td>
+														<td>Display the notice when it is created. Turn this off to add notifications to the history without displaying them</td>
+													</tr>
+													<tr>
+														<td><code>width</code></td>
+														<td class="text-semibold">"300px"</td>
+														<td>Width of the notice</td>
+													</tr>
+													<tr>
+														<td><code>min_height</code></td>
+														<td class="text-semibold">"16px"</td>
+														<td>Minimum height of the notice. It will expand to fit content</td>
+													</tr>
+													<tr>
+														<td><code>type</code></td>
+														<td class="text-semibold">"notice"</td>
+														<td>Type of the notice. <code>"notice"</code>, <code>"info"</code>, <code>"success"</code>, or <code>"error"</code></td>
+													</tr>
+													<tr>
+														<td><code>icon</code></td>
+														<td class="text-semibold">true</td>
+														<td>Set icon to true to use the default icon for the selected style/type, <code>false</code> for no icon, or a <code>string</code> for your own icon class</td>
+													</tr>
+													<tr>
+														<td><code>animation</code></td>
+														<td class="text-semibold">"fade"</td>
+														<td>The animation to use when displaying and hiding the notice. <code>"none"</code>, <code>"show"</code>, <code>"fade"</code>, and <code>"slide"</code> are built in to jQuery. Others require jQuery UI. Use an object with <code>effect_in</code> and <code>effect_out</code> to use different effects</td>
+													</tr>
+													<tr>
+														<td><code>animate_speed</code></td>
+														<td class="text-semibold">"slow"</td>
+														<td>Speed at which the notice animates in and out. <code>"slow"</code>, <code>"def"</code> or <code>"normal"</code>, <code>"fast"</code> or <code>number</code> of milliseconds</td>
+													</tr>
+													<tr>
+														<td><code>position_animate_speed</code></td>
+														<td class="text-semibold">500</td>
+														<td>Specify a specific duration of position animation</td>
+													</tr>
+													<tr>
+														<td><code>opacity</code></td>
+														<td class="text-semibold">1</td>
+														<td>Opacity of the notice</td>
+													</tr>
+													<tr>
+														<td><code>shadow</code></td>
+														<td class="text-semibold">true</td>
+														<td>Display a drop shadow</td>
+													</tr>
+													<tr>
+														<td><code>hide</code></td>
+														<td class="text-semibold">true</td>
+														<td>After a delay, remove the notice</td>
+													</tr>
+													<tr>
+														<td><code>delay</code></td>
+														<td class="text-semibold">8000</td>
+														<td>Delay in milliseconds before the notice is removed</td>
+													</tr>
+													<tr>
+														<td><code>mouse_reset</code></td>
+														<td class="text-semibold">true</td>
+														<td>Reset the hide timer if the mouse moves over the notice</td>
+													</tr>
+													<tr>
+														<td><code>remove</code></td>
+														<td class="text-semibold">true</td>
+														<td>Remove the notice's elements from the DOM after it is removed</td>
+													</tr>
+													<tr>
+														<td><code>insert_brs</code></td>
+														<td class="text-semibold">true</td>
+														<td>Change new lines to br tags</td>
+													</tr>
+													<tr>
+														<td><code>stack</code></td>
+														<td class="text-semibold">-</td>
+														<td>The stack on which the notices will be placed. Also controls the direction the notices stack</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="content-group-lg">
+										<h6 class="text-semibold">Plugin modules</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Option</th>
+														<th style="width: 200px;">Default</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th colspan="3" class="active">Desktop. <code>desktop: {...}</code></th>
+													</tr>
+													<tr>
+														<td><code>desktop</code></td>
+														<td class="text-semibold">false</td>
+														<td>Display the notification as a desktop notification</td>
+													</tr>
+													<tr>
+														<td><code>fallback</code></td>
+														<td class="text-semibold">true</td>
+														<td>If desktop notifications are not supported or allowed, fall back to a regular notice</td>
+													</tr>
+													<tr>
+														<td><code>icon</code></td>
+														<td class="text-semibold">null</td>
+														<td>The URL of the icon to display. If <code>false</code>, no icon will show. If <code>null</code>, a default icon will show</td>
+													</tr>
+													<tr>
+														<td><code>tag</code></td>
+														<td class="text-semibold">null</td>
+														<td>Using a tag lets you update an existing notice, or keep from duplicating notices between tabs. If you leave tag null, one will be generated, facilitating the <code>"update"</code> function</td>
+													</tr>
+
+													<tr>
+														<th colspan="3" class="active">Buttons. <code>buttons: {...}</code></th>
+													</tr>
+													<tr>
+														<td><code>closer</code></td>
+														<td class="text-semibold">true</td>
+														<td>Provide a button for the user to manually close the notice</td>
+													</tr>
+													<tr>
+														<td><code>closer_hover</code></td>
+														<td class="text-semibold">true</td>
+														<td>Only show the closer button on hover</td>
+													</tr>
+													<tr>
+														<td><code>sticker</code></td>
+														<td class="text-semibold">true</td>
+														<td>Provide a button for the user to manually stick the notice</td>
+													</tr>
+													<tr>
+														<td><code>sticker_hover</code></td>
+														<td class="text-semibold">true</td>
+														<td>Only show the sticker button on hover</td>
+													</tr>
+													<tr>
+														<td><code>show_on_nonblock</code></td>
+														<td class="text-semibold">false</td>
+														<td>Show the buttons even when the nonblock module is in use</td>
+													</tr>
+													<tr>
+														<td><code>labels</code></td>
+														<td class="text-semibold">{close: "Close", stick: "Stick"}</td>
+														<td>Lets you change the displayed text, facilitating internationalization</td>
+													</tr>
+
+													<tr>
+														<th colspan="3" class="active">NonBlock. <code>nonblock: {...}</code></th>
+													</tr>
+													<tr>
+														<td><code>nonblock</code></td>
+														<td class="text-semibold">false</td>
+														<td>Create a non-blocking notice. It lets the user click elements underneath it</td>
+													</tr>
+													<tr>
+														<td><code>nonblock_opacity</code></td>
+														<td class="text-semibold">0.2</td>
+														<td>The opacity of the notice (if it's non-blocking) when the mouse is over it</td>
+													</tr>
+
+													<tr>
+														<th colspan="3" class="active">Confirm. <code>confirm: {...}</code></th>
+													</tr>
+													<tr>
+														<td><code>confirm</code></td>
+														<td class="text-semibold">false</td>
+														<td>Make a confirmation box</td>
+													</tr>
+													<tr>
+														<td><code>prompt</code></td>
+														<td class="text-semibold">false</td>
+														<td>Make a prompt</td>
+													</tr>
+													<tr>
+														<td><code>prompt_class</code></td>
+														<td class="text-semibold">""</td>
+														<td>Classes to add to the input element of the prompt</td>
+													</tr>
+													<tr>
+														<td><code>prompt_default</code></td>
+														<td class="text-semibold">""</td>
+														<td>The default value of the prompt</td>
+													</tr>
+													<tr>
+														<td><code>prompt_multi_line</code></td>
+														<td class="text-semibold">false</td>
+														<td>Whether the prompt should accept multiple lines of text</td>
+													</tr>
+													<tr>
+														<td><code>align</code></td>
+														<td class="text-semibold">"right"</td>
+														<td>Where to align the buttons. (right, center, left, justify)</td>
+													</tr>
+													<tr>
+														<td><code>buttons</code></td>
+														<td class="text-semibold">[{text: "Ok", addClass: "", promptTrigger: true, click: function(notice, value){ notice.remove(); notice.get().trigger("pnotify.confirm", [notice, value]); }},{text: "Cancel", addClass: "", click: function(notice){ notice.remove(); notice.get().trigger("pnotify.cancel", notice); }}]</td>
+														<td>The buttons to display, and their callbacks. If a button has promptTrigger set to true, it will be triggered when the user hits enter in a single line prompt</td>
+													</tr>
+
+													<tr>
+														<th colspan="3" class="active">History. <code>history: {...}</code></th>
+													</tr>
+													<tr>
+														<td><code>history</code></td>
+														<td class="text-semibold">true</td>
+														<td>Place the notice in the history</td>
+													</tr>
+													<tr>
+														<td><code>menu</code></td>
+														<td class="text-semibold">false</td>
+														<td>Display a pull down menu to redisplay previous notices</td>
+													</tr>
+													<tr>
+														<td><code>fixed</code></td>
+														<td class="text-semibold">true</td>
+														<td>Make the pull down menu fixed to the top of the viewport</td>
+													</tr>
+													<tr>
+														<td><code>maxonscreen</code></td>
+														<td class="text-semibold">Infinity</td>
+														<td>Maximum number of notifications to have onscreen</td>
+													</tr>
+													<tr>
+														<td><code>labels</code></td>
+														<td class="text-semibold">{redisplay: "Redisplay", all: "All", last: "Last"}</td>
+														<td>Lets you change the displayed text, facilitating internationalization</td>
+													</tr>
+
+													<tr>
+														<th colspan="3" class="active">Reference. <code>reference: {...}</code></th>
+													</tr>
+													<tr>
+														<td><code>putThing</code></td>
+														<td class="text-semibold">false</td>
+														<td>Maximum number of notifications to have onscreen</td>
+													</tr>
+													<tr>
+														<td><code>labels</code></td>
+														<td class="text-semibold">{text: "Spin Around"}</td>
+														<td>Provide a thing for stuff. Turned off by default</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="content-group-lg">
+										<h6 class="text-semibold">Plugin callbacks</h6>
+										<p>The callback options all expect one argument, a function, which will be called when that event occurs. They can be included in the options object passed to PNotify() just like any other options. If the function returns false on the "before_open" or "before_close" callback, that event will be canceled.</p>
+
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Callback</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>before_init</code></td>
+														<td>This option is called before the notice has been initialized. It accepts one argument, the options object</td>
+													</tr>
+													<tr>
+														<td><code>after_init</code></td>
+														<td>This option is called after the notice has been initialized. It accepts one argument, the notice object</td>
+													</tr>
+													<tr>
+														<td><code>before_open</code></td>
+														<td>This option is called before the notice has been displayed. It accepts one argument, the notice object</td>
+													</tr>
+													<tr>
+														<td><code>after_open</code></td>
+														<td>This option is called after the notice has been displayed. It accepts one argument, the notice object</td>
+													</tr>
+													<tr>
+														<td><code>before_close</code></td>
+														<td>This option is called before the notice closes. It accepts one argument, the notice object</td>
+													</tr>
+													<tr>
+														<td><code>after_close</code></td>
+														<td>This option is called after the notice closes. It accepts one argument, the notice object</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div>
+										<h6 class="text-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="text-semibold">File name</td>
+														<td>pnotify.min.js</td>
+													</tr>
+													<tr>
+														<td class="text-semibold">Location</td>
+														<td>assets/js/plugins/notifications/</td>
+													</tr>
+													<tr>
+														<td class="text-semibold">Updates</td>
+														<td><span class="label bg-warning-400">0</span></td>
+													</tr>
+													<tr>
+														<td class="text-semibold">Links</td>
+														<td>
+															<p>
+																<a href="http://sciactive.com/pnotify/" class="btn btn-sm bg-danger-400 btn-labeled" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+
+															<p>
+																<a href="http://sciactive.com/pnotify/#demos-simple" class="btn btn-sm bg-teal-400 btn-labeled" target="_blank">
+																	<b><i class="icon-file-eye"></i></b>
+																	Demonstration
+																</a>
+															</p>
+
+															<a href="https://github.com/sciactive/pnotify" class="btn btn-sm bg-blue btn-labeled" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /pnotify -->
+
+
+							<!-- Sweet alerts -->
+							<div class="panel panel-flat" id="sweet">
+								<div class="panel-heading">
+									<h5 class="panel-title">Sweet alerts</h5>
+									<div class="heading-elements">
+										<span class="label bg-slate heading-text">Notifications</span>
+										<span class="heading-text text-muted">sweet_alert.min.js</span>
+										<ul class="icons-list">
+					                		<li><a data-action="collapse"></a></li>
+					                		<li><a data-action="close"></a></li>
+					                	</ul>
+									</div>
+								</div>
+
+								<div class="panel-body">
+									<div class="content-group-lg">
+										<h6 class="text-semibold">Overview</h6>
+										<p>Sweet Alert is a JavaScript notification plugin for a beautiful alert replacement. SweetAlert automatically centers itself on the page and looks great no matter if you're using a desktop computer, mobile or tablet.</p>
+									</div>
+
+									<div class="content-group-lg">
+										<h6 class="text-semibold">Usage</h6>
+										<div class="content-group">
+											<p>Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+											<pre><code class="language-markup">&lt;!-- Load jQuery -->
+&lt;script type="text/javascript" src="assets/js/core/libraries/jquery.min.js">&lt;/script>
+
+&lt;!-- Load plugin -->
+&lt;script type="text/javascript" src="assets/js/plugins/notifications/sweet_alert.min.js">&lt;/script>
+</code></pre>
+										</div>
+
+										<div class="content-group">
+											<div class="content-group">
+												<p>Call the plugin via JavaScript:</p>
+												<pre><code class="language-javascript">// Basic initialization
+swal("Oops...", "Something went wrong!", "error");
+</code></pre>
+											</div>
+
+											<p>More advanced example - a warning message, with a function attached to the <code>"Confirm"</code> button:</p>
+											<pre><code class="language-javascript">// Advanced initialization
+swal({
+	title: "Are you sure?",
+	text: "You will not be able to recover this imaginary file!",
+	type: "warning",
+	showCancelButton: true,
+	confirmButtonColor: "#DD6B55",
+	confirmButtonText: "Yes, delete it!",
+	closeOnConfirm: false,
+	html: false
+}, function() {
+	swal(
+		"Deleted!",
+		"Your imaginary file has been deleted.",
+		"success"
+	);
+});
+</code></pre>
+										</div>
+									</div>
+
+									<div class="content-group-lg">
+										<h6 class="text-semibold">Plugin options</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Option</th>
+														<th style="width: 200px;">Default</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>title</code></td>
+														<td class="text-semibold">null (required)</td>
+														<td>The title of the modal. It can either be added to the object under the key <code>"title"</code> or passed as the first parameter of the function</td>
+													</tr>
+													<tr>
+														<td><code>text</code></td>
+														<td class="text-semibold">null</td>
+														<td>A description for the modal. It can either be added to the object under the key <code>"text"</code> or passed as the second parameter of the function</td>
+													</tr>
+													<tr>
+														<td><code>type</code></td>
+														<td class="text-semibold">null</td>
+														<td>The type of the modal. SweetAlert comes with 4 built-in types which will show a corresponding icon animation: <code>"warning"</code>, <code>"error"</code>, <code>"success"</code> and <code>"info"</code>. You can also set it as <code>"input"</code> to get a prompt modal. It can either be put in the object under the key <code>"type"</code> or passed as the third parameter of the function</td>
+													</tr>
+													<tr>
+														<td><code>allowEscapeKey</code></td>
+														<td class="text-semibold">true</td>
+														<td>If set to <code>true</code>, the user can dismiss the modal by pressing the <kbd>escape</kbd> key</td>
+													</tr>
+													<tr>
+														<td><code>customClass</code></td>
+														<td class="text-semibold">null</td>
+														<td>A custom CSS class for the modal. It can be added to the object under the key <code>"customClass"</code></td>
+													</tr>
+													<tr>
+														<td><code>allowOutsideClick</code></td>
+														<td class="text-semibold">false</td>
+														<td>If set to <code>true</code>, the user can dismiss the modal by clicking outside it</td>
+													</tr>
+													<tr>
+														<td><code>showCancelButton</code></td>
+														<td class="text-semibold">false</td>
+														<td>If set to <code>true</code>, a "Cancel" button will be shown, which the user can click on to dismiss the modal</td>
+													</tr>
+													<tr>
+														<td><code>showConfirmButton</code></td>
+														<td class="text-semibold">true</td>
+														<td>If set to <code>false</code>, the "OK/Confirm" button will be hidden. Make sure you set a timer or set <code>allowOutsideClick</code> to <code>true</code> when using this, in order not to annoy the user</td>
+													</tr>
+													<tr>
+														<td><code>confirmButtonText</code></td>
+														<td class="text-semibold">"OK"</td>
+														<td>Use this to change the text on the "Confirm" button. If <code>showCancelButton</code> is set as <code>true</code>, the confirm button will automatically show "Confirm" instead of "OK"</td>
+													</tr>
+													<tr>
+														<td><code>confirmButtonColor</code></td>
+														<td class="text-semibold">"#AEDEF4"</td>
+														<td>Use this to change the background color of the "Confirm" button (must be a HEX value)</td>
+													</tr>
+													<tr>
+														<td><code>cancelButtonText</code></td>
+														<td class="text-semibold">"Cancel"</td>
+														<td>Use this to change the text on the "Cancel" button</td>
+													</tr>
+													<tr>
+														<td><code>closeOnConfirm</code></td>
+														<td class="text-semibold">true</td>
+														<td>Set to <code>false</code> if you want the modal to stay open even if the user presses the "Confirm" button. This is especially useful if the function attached to the "Confirm" button is another SweetAlert</td>
+													</tr>
+													<tr>
+														<td><code>closeOnCancel</code></td>
+														<td class="text-semibold">true</td>
+														<td>Same as <code>closeOnConfirm</code>, but for the cancel button</td>
+													</tr>
+													<tr>
+														<td><code>imageUrl</code></td>
+														<td class="text-semibold">null</td>
+														<td>Add a customized icon for the modal. Should contain a string with the path to the image</td>
+													</tr>
+													<tr>
+														<td><code>imageSize</code></td>
+														<td class="text-semibold">"80x80"</td>
+														<td>If <code>imageUrl</code> is set, you can specify imageSize to describes how big you want the icon to be in px. Pass in a string with two values separated by an "x". The first value is the <code>width</code>, the second is the <code>height</code></td>
+													</tr>
+													<tr>
+														<td><code>timer</code></td>
+														<td class="text-semibold">null</td>
+														<td>Auto close timer of the modal. Set in ms (milliseconds)</td>
+													</tr>
+													<tr>
+														<td><code>html</code></td>
+														<td class="text-semibold">false</td>
+														<td>If set to <code>true</code>, will not escape title and text parameters. (Set to false if you're worried about XSS attacks.)</td>
+													</tr>
+													<tr>
+														<td><code>animation</code></td>
+														<td class="text-semibold">true</td>
+														<td>If set to <code>false</code>, the modal's animation will be disabled. Possible (string) values: <code>pop</code> (default when <code>animation</code> set to <code>true</code>), <code>slide-from-top</code>, <code>slide-from-bottom</code></td>
+													</tr>
+													<tr>
+														<td><code>inputType</code></td>
+														<td class="text-semibold">"text"</td>
+														<td>Change the type of the input field when using type: <code>"input"</code> (this can be useful if you want users to type in their password for example).</td>
+													</tr>
+													<tr>
+														<td><code>inputPlaceholder</code></td>
+														<td class="text-semibold">null</td>
+														<td>When using the input-type, you can specify a placeholder to help the user</td>
+													</tr>
+													<tr>
+														<td><code>inputValue</code></td>
+														<td class="text-semibold">null</td>
+														<td>Specify a default text value that you want your input to show when using <code>type: "input"</code></td>
+													</tr>
+													<tr>
+														<td><code>showLoaderOnConfirm</code></td>
+														<td class="text-semibold">false</td>
+														<td>Set to <code>true</code> to disable the buttons and show that something is loading</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="content-group-lg">
+										<h6 class="text-semibold">Plugin methods</h6>
+										<p>SweetAlert also comes with some simple methods that you can call:</p>
+
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Callback</th>
+														<th style="width: 250px;">Example</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>setDefaults</code></td>
+														<td class="text-semibold">swal.setDefaults({ confirmButtonColor: '#0000' });</td>
+														<td>If you end up using a lot of the same settings when calling SweetAlert, you can use <code>setDefaults</code> at the start of your program to set them once and for all!</td>
+													</tr>
+													<tr>
+														<td><code>close</code></td>
+														<td class="text-semibold">swal.close();</td>
+														<td>Close the currently open SweetAlert programatically</td>
+													</tr>
+													<tr>
+														<td><code>showInputError</code></td>
+														<td class="text-semibold">swal.showInputError("Invalid email!");</td>
+														<td>Show an error message after validating the input field, if the user's data is bad</td>
+													</tr>
+													<tr>
+														<td><code>enableButtons, disableButtons</code></td>
+														<td class="text-semibold">swal.disableButtons();</td>
+														<td>Disable or enable the user to click on the cancel and confirm buttons</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div>
+										<h6 class="text-semibold">Plugin info</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px;">Property</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="text-semibold">File name</td>
+														<td>sweet_alert.min.js</td>
+													</tr>
+													<tr>
+														<td class="text-semibold">Location</td>
+														<td>assets/js/plugins/notifications/</td>
+													</tr>
+													<tr>
+														<td class="text-semibold">Updates</td>
+														<td><span class="label bg-warning-400">0</span></td>
+													</tr>
+													<tr>
+														<td class="text-semibold">Links</td>
+														<td>
+															<p>
+																<a href="http://t4t5.github.io/sweetalert/" class="btn btn-sm bg-danger-400 btn-labeled" target="_blank">
+																	<b><i class="icon-mention"></i></b>
+																	Official plugin website
+																</a>
+															</p>
+															
+															<a href="https://github.com/t4t5/sweetalert" class="btn btn-sm bg-blue btn-labeled" target="_blank">
+																<b><i class="icon-github"></i></b>
+																Github project page
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /sweet alerts -->
+
+						</div>
+					</div>
+					<!-- /detached content -->
+
+
+
+					<!-- Detached sidebar -->
+					<div class="sidebar-detached">
+			        	<div class="sidebar sidebar-default">
+							<div class="sidebar-content">
+
+				        		<!-- Contact author -->
+								<div class="sidebar-category no-margin">
+									<div class="category-title">
+										<span>Page navigation</span>
+										<i class="icon-menu7 text-muted pull-right"></i>
+									</div>
+
+									<div class="category-content">
+										<a href="http://themeforest.net/user/kopyov" class="btn bg-blue btn-block" target="_blank"><i class="icon-reading position-left"></i> Contact author</a>
+									</div>
+								</div>
+								<!-- /contact author -->
+
+			        			
+			        			<!-- Navigation -->
+								<div class="sidebar-category">
+									<div class="category-content no-padding">
+										<ul class="nav navigation no-padding-top">
+											<li class="navigation-header"><i class="icon-history pull-right"></i> Sections</li>
+											<li><a href="#bootbox">Bootbox Dialogs</a></li>
+											<li><a href="#jgrowl">jGrowl Notifications</a></li>
+											<li><a href="#noty">Noty Notifications</a></li>
+											<li><a href="#pnotify">PNotify Notifications</a></li>
+											<li><a href="#sweet">Sweet Alerts</a></li>
+											<li class="navigation-divider"></li>
+											<li><a href="#">Go to top <i class="icon-circle-up2 pull-right"></i></a></li>
+							            </ul>
+						            </div>
+					            </div>
+					            <!-- /navigation -->
+
+				            </div>
+			            </div>
+		            </div>
+		            <!-- /detached sidebar -->
+
+
+					<!-- Footer -->
+					<div class="footer text-muted">
+						&copy; 2015. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
+					</div>
+					<!-- /footer -->
+
+				</div>
+				<!-- /content area -->
+
+			</div>
+			<!-- /main content -->
+
+		</div>
+		<!-- /page content -->
+
+	</div>
+	<!-- /page container -->
+
+</body>
+</html>

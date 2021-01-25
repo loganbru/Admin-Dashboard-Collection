@@ -1,0 +1,1016 @@
+/* Slider */
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+@charset 'UTF-8';
+/* Slider */
+.slick-loading .slick-list
+{
+    background: #fff url('./ajax-loader.gif') center center no-repeat;
+}
+
+/* Icons */
+@font-face
+{
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('./fonts/slick.eot');
+    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
+}
+/* Arrows */
+.slick-prev,
+.slick-next
+{
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+    color: transparent;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before
+{
+    opacity: 1;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before
+{
+    opacity: .25;
+}
+
+.slick-prev:before,
+.slick-next:before
+{
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+
+    opacity: .75;
+    color: white;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev
+{
+    left: -25px;
+}
+[dir='rtl'] .slick-prev
+{
+    right: -25px;
+    left: auto;
+}
+.slick-prev:before
+{
+    content: '←';
+}
+[dir='rtl'] .slick-prev:before
+{
+    content: '→';
+}
+
+.slick-next
+{
+    right: -25px;
+}
+[dir='rtl'] .slick-next
+{
+    right: auto;
+    left: -25px;
+}
+.slick-next:before
+{
+    content: '→';
+}
+[dir='rtl'] .slick-next:before
+{
+    content: '←';
+}
+
+/* Dots */
+.slick-dotted.slick-slider
+{
+    margin-bottom: 30px;
+}
+
+.slick-dots
+{
+    position: absolute;
+    bottom: -25px;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.slick-dots li button:before
+{
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    content: '•';
+    text-align: center;
+
+    opacity: .25;
+    color: black;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before
+{
+    opacity: .75;
+    color: black;
+}
+
+/*!
+* Datepicker v0.5.3
+* https://github.com/fengyuanchen/datepicker
+*
+* Copyright (c) 2014-2017 Fengyuan Chen
+* Released under the MIT license
+*
+* Date: 2017-06-15T11:00:53.699Z
+*/
+
+
+/***
+TABLE OF CONTENTS
+=============================================================================
+0. Container
+1. Dropdown
+2. Panel
+=============================================================================
+***/
+
+/* ==========================================================================
+0. Container
+========================================================================== */
+
+.datepicker-container {
+    font-size: 12px;
+    line-height: 30px;
+    padding: 20px;
+    border-radius: 5px;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 210px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #fff;
+    direction: ltr !important;
+    -ms-touch-action: none;
+    touch-action: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+}
+
+.datepicker-container:before,
+.datepicker-container:after {
+    position: absolute;
+
+    display: block;
+
+    width: 0;
+    height: 0;
+
+    content: ' ';
+
+    border: 5px solid transparent;
+}
+
+/* ==========================================================================
+1. Dropdown
+========================================================================== */
+
+.datepicker-dropdown {
+    position: absolute;
+    z-index: 999999 !important;
+
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+
+    border: 1px solid #ccc;
+    -webkit-box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+}
+
+.datepicker-inline {
+    position: static;
+}
+
+.datepicker-top-left:before,
+.datepicker-top-left:after,
+.datepicker-top-right:before,
+.datepicker-top-right:after {
+    top: -5px;
+    left: 10px;
+
+    border-top: 0;
+}
+
+.datepicker-top-left:before,
+.datepicker-top-right:before {
+border-bottom-color: #ccc;
+}
+
+.datepicker-top-left:after,
+.datepicker-top-right:after {
+    top: -4px;
+
+    border-bottom-color: #fff;
+}
+
+.datepicker-bottom-left:before,
+.datepicker-bottom-left:after,
+.datepicker-bottom-right:before,
+.datepicker-bottom-right:after {
+    bottom: -5px;
+    left: 10px;
+
+    border-bottom: 0;
+}
+
+.datepicker-bottom-left:before,
+.datepicker-bottom-right:before {
+border-top-color: #ccc;
+}
+
+.datepicker-bottom-left:after,
+.datepicker-bottom-right:after {
+    bottom: -4px;
+
+    border-top-color: #fff;
+}
+
+.datepicker-top-right:before,
+.datepicker-top-right:after,
+.datepicker-bottom-right:before,
+.datepicker-bottom-right:after {
+    right: 10px;
+    left: auto;
+}
+
+/* ==========================================================================
+2. Panel
+========================================================================== */
+
+.datepicker-panel > ul:before,
+.datepicker-panel > ul:after {
+    display: table;
+
+    content: ' ';
+}
+
+.datepicker-panel > ul:after {
+    clear: both;
+}
+
+.datepicker-panel > ul {
+    width: 102%;
+    margin: 0;
+    padding: 0;
+}
+
+.datepicker-panel > ul:first-child li {
+    line-height: 25px;
+}
+
+.datepicker-panel > ul:first-child li:nth-child(2) {
+    line-height: 28px !important;
+}
+
+.datepicker-panel > ul > li {
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    cursor: pointer;
+    text-align: center;
+    background-color: #fff;
+}
+
+.datepicker-panel > ul > li:hover {
+    background-color: #ededed;
+    color: #444 !important;
+    border-radius: 50px;
+}
+
+.datepicker-panel > ul > li.muted,
+.datepicker-panel > ul > li.muted:hover {
+    color: #999;
+}
+
+.datepicker-panel > ul > li.highlighted {
+    color: #0023ff !important;
+    border-radius: 50px;
+}
+
+.datepicker-panel > ul > li.highlighted:hover {
+    opacity: 0.8;
+    color: #0023ff !important;
+}
+
+.datepicker-panel > ul > li.picked,
+.datepicker-panel > ul > li.picked:hover {
+    color: #fff !important;
+    background-color: #0023ff;
+    border-radius: 50px;
+}
+
+.datepicker-panel > ul > li.picked {
+    animation-name: gelatine;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+}
+
+.datepicker-panel > ul > li.disabled,
+.datepicker-panel > ul > li.disabled:hover {
+    cursor: default;
+
+    color: #ccc;
+    background-color: #fff;
+}
+
+.datepicker-panel > ul > li.disabled.highlighted,
+.datepicker-panel > ul > li.disabled:hover.highlighted {
+    background-color: #e6f2ff;
+}
+
+.datepicker-panel > ul > li[data-view='years prev'],
+.datepicker-panel > ul > li[data-view='year prev'],
+.datepicker-panel > ul > li[data-view='month prev'],
+.datepicker-panel > ul > li[data-view='years next'],
+.datepicker-panel > ul > li[data-view='year next'],
+.datepicker-panel > ul > li[data-view='month next'],
+.datepicker-panel > ul > li[data-view='next'] {
+    font-size: 18px;
+}
+
+.datepicker-panel > ul > li[data-view='years current'],
+.datepicker-panel > ul > li[data-view='year current'],
+.datepicker-panel > ul > li[data-view='month current'] {
+    width: 150px;
+}
+
+.datepicker-panel > ul[data-view='years'] > li,
+.datepicker-panel > ul[data-view='months'] > li {
+    line-height: 52.5px;
+
+    width: 52.5px;
+    height: 52.5px;
+}
+
+.datepicker-panel > ul[data-view='week'] > li,
+.datepicker-panel > ul[data-view='week'] > li:hover {
+    cursor: default;
+
+    background-color: #fff;
+}
+
+.datepicker-hide {
+    display: none;
+}
+
+/*! chosen.css | Nephos | CSS Ninja */
+
+/* ==========================================================================
+Chosen select custom styles
+========================================================================== */
+
+/***
+TABLE OF CONTENTS
+=============================================================================
+0. Container
+1. Chosen single
+2. Dropdown
+3. Chosen multiple
+=============================================================================
+***/
+
+/* ==========================================================================
+0. Container
+========================================================================== */
+
+.chosen-container {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 15px;
+    zoom: 1;
+    *display: inline;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.chosen-container * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.chosen-container .chosen-drop {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: block;
+    z-index: 990;
+    width: 100%;
+    border: 1px solid #dbdbdb;
+    background-color: #fff;
+    border-top: 0;
+    border-radius: 0 0 4px 4px;
+}
+
+.chosen-container.chosen-with-drop .chosen-drop {
+    left: 0;
+}
+
+.chosen-container a {
+    cursor: pointer;
+}
+
+.chosen-focus-input {
+    display: none !important;
+}
+
+/* ==========================================================================
+1. Chosen single
+========================================================================== */
+
+.chosen-container-single .chosen-single {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 0 0 0 18px;
+    height: 41px;
+    line-height: 40px;
+    border: 1px solid #dbdbdb;
+    background-color: #fff;
+    color: #888;
+    text-decoration: none;
+    white-space: nowrap;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+.chosen-container-active.chosen-with-drop .chosen-single {
+    border-radius: 4px 4px 0 0;
+}
+
+.chosen-container-active .chosen-drop,
+.chosen-container-single .chosen-drop {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+}
+
+.chosen-container-active.chosen-with-drop .chosen-drop {
+    opacity: 1;
+    visibility: visible;
+}
+
+.chosen-container-single .chosen-default {
+    color: #999;
+}
+
+.chosen-container-single .chosen-single span {
+    display: block;
+    overflow: hidden;
+    margin-right: 26px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #cecece;
+    font-weight: normal;
+}
+
+.chosen-container-single .chosen-single-with-deselect span {
+    margin-right: 38px;
+}
+
+.chosen-container-single .chosen-single div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 18px;
+    height: 100%;
+}
+
+.chosen-container-single .chosen-single div:after {
+    content: "\f107";
+    font-family: "FontAwesome";
+    font-size: 18px;
+    margin: 0;
+    right: 20px;
+    position: relative;
+    width: auto;
+    height: auto;
+    display: inline-block;
+    color: #c0c0c0;
+    float: right;
+    font-weight: normal;
+    transition: transform 0.3s;
+    transform: translate3d(0, 0, 0) rotate(0deg);
+}
+
+.chosen-container-active.chosen-with-drop .chosen-single div:after {
+    transform: translate3d(0, 0, 0) rotate(180deg);
+}
+
+.chosen-container-single .chosen-search {
+    position: relative;
+    z-index: 1010;
+    margin: 0;
+    padding: 3px 8px;
+    white-space: nowrap;
+}
+
+.chosen-container-single .chosen-search input[type="text"] {
+    margin: 1px 0;
+    padding: 6px 20px 6px 6px;
+    width: 100%;
+    height: 40px;
+    outline: 0;
+    margin-bottom: 10px!important;
+    border: 1px solid #ddd!important;
+    background-color: #fbfbfb!important;
+    display: block;
+    position: relative;
+    z-index: 9;
+    background-color: #fafafa;
+}
+
+.chosen-container-single .chosen-search:before {
+    content: "\f002";
+    font-family: "FontAwesome";
+    font-size: 15px;
+    margin: 0 15px 0 0;
+    top: 12px;
+    position: relative;
+    width: 11px;
+    height: 5px;
+    display: inline-block;
+    color: #aaa;
+    float: right;
+    font-weight: normal;
+    z-index: 10;
+    transition: transform 0.3s;
+}
+
+.chosen-container-single .chosen-drop {
+    margin-top: -1px;
+    background-clip: padding-box;
+}
+
+.chosen-container-single.chosen-container-single-nosearch .chosen-search {
+    position: absolute;
+    left: -9999px;
+}
+
+/* ==========================================================================
+2. Dropdown
+========================================================================== */
+
+.chosen-container .chosen-results {
+    color: #888;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0 4px 8px 0;
+    padding: 0 4px 0 8px;
+    max-height: 300px;
+}
+
+.chosen-container .chosen-results li {
+    display: none;
+    margin: 0;
+    padding: 9px 10px;
+    list-style: none;
+    line-height: 15px;
+    word-wrap: break-word;
+    font-size: 14px;
+    -webkit-touch-callout: none;
+}
+
+.chosen-container-multi .chosen-results li {
+    padding: 10px 18px;
+    transition: color 0.3s;
+}
+
+.chosen-container .chosen-results li.active-result {
+    display: list-item;
+    cursor: pointer;
+}
+
+.chosen-container .chosen-results li.disabled-result {
+    display: list-item;
+    color: #ccc;
+    cursor: default;
+}
+
+.chosen-container .chosen-results li.highlighted {
+    background-color: transparent;
+    border-radius: 0;
+    color: #7F00FF;
+    transition: color 0.2s ease-in-out;
+}
+
+.chosen-container .chosen-results li.no-results {
+    color: #888;
+    display: list-item;
+    background-color: #fff;
+}
+
+.chosen-container-multi .chosen-results li.no-results {
+    background-color: #fff;
+}
+
+.chosen-container .chosen-results li.group-result {
+    display: list-item;
+    font-weight: bold;
+    cursor: default;
+}
+
+.chosen-container .chosen-results li.group-option {
+    padding-left: 15px;
+}
+
+.chosen-container .chosen-results li em {
+    font-style: normal;
+    text-decoration: underline;
+}
+
+.chosen-container-multi .chosen-choices {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 0 0 0 18px;
+    height: auto;
+    border: 1px solid #dbdbdb;
+    background-color: #fff;
+    text-decoration: none;
+    white-space: nowrap;
+    line-height: 33px;
+    cursor: pointer;
+    margin: 0;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.06);
+}
+
+.chosen-container-multi.chosen-with-drop .chosen-choices {
+    border-radius: 4px 4px 0 0;
+}
+
+.chosen-container-multi .chosen-choices li {
+    float: left;
+    list-style: none;
+}
+
+/* ==========================================================================
+3. chosen multiple
+========================================================================== */
+
+.chosen-container-multi .chosen-choices li.search-field {
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+}
+
+.chosen-container-multi .chosen-choices li.search-field input[type="text"] {
+    margin: 0;
+    padding: 0;
+    height: 49px;
+    outline: 0;
+    border: 0!important;
+    background: transparent!important;
+    color: #888;
+    line-height: normal;
+    font-weight: 500;
+    box-shadow: none;
+    transition: none;
+}
+
+.chosen-container-multi .chosen-choices li.search-choice {
+    position: relative;
+    margin: 10px 6px 0 -4px;
+    padding: 0 25px 0 8px;
+    max-width: 100%;
+    background-color: #66676b;
+    line-height: 29px;
+    color: #fff;
+    cursor: default;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 3px;
+}
+
+.chosen-container-multi .chosen-choices li.search-choice span {
+    word-wrap: break-word;
+}
+
+.chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
+    position: absolute;
+    top: -2px;
+    right: 7px;
+    display: block;
+}
+
+.chosen-container-multi .chosen-choices li.search-choice .search-choice-close:before {
+    content: "\f00d";
+    font-family: "FontAwesome";
+    font-size: 10px;
+    top: 1px;
+    position: relative;
+    width: 11px;
+    height: 5px;
+    display: inline-block;
+    color: #fff;
+    float: right;
+    font-weight: normal;
+}
+
+.chosen-container-multi .chosen-choices li.search-choice-disabled {
+    padding-right: 5px;
+    border: 1px solid #ccc;
+    background-color: #e4e4e4;
+    color: #888;
+}
+
+.chosen-container-multi .chosen-choices li.search-choice-focus {
+    background: #d4d4d4;
+}
+
+.chosen-container-multi .chosen-results {
+    margin: 0;
+    padding: 0;
+}
+
+.chosen-container-multi .chosen-drop .result-selected {
+    display: list-item;
+    color: #ccc;
+    cursor: default;
+}
+
+.chosen-container.chosen-container-multi .chosen-drop {
+    opacity: 0;
+    visibility: hidden;
+    padding: 10px 0;
+}
+
+.chosen-container.chosen-container-multi.chosen-with-drop.chosen-container-active .chosen-drop {
+    opacity: 1;
+    visibility: visible;
+}
+
+.chosen-container-active .chosen-single,
+.chosen-container-active .chosen-choices,
+.chosen-container-active.chosen-with-drop .chosen-single {
+    border: 1px solid #e0e0e0;
+}
+
+.chosen-container-active.chosen-with-drop .chosen-single div {
+    border-left: none;
+    background: transparent;
+}
+
+.chosen-container-active .chosen-choices li.search-field input[type="text"] {
+    color: #888!important;
+}
+
+.chosen-drop::-webkit-scrollbar {
+    width: 10px;
+}
+
+.chosen-drop::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+
+.chosen-drop::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.chosen-drop::-webkit-scrollbar-thumb:hover {
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.chosen-single .chosen-search-input {
+    border: none !important;
+    outline: none !important;
+    display: none !important;
+    &:active, &:focus {
+        border: none !important;
+        outline: none !important;
+    }
+}

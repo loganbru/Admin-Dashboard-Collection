@@ -1,0 +1,111 @@
+//
+// Mobile Tab
+// 
+
+
+
+.responsive-tabs-container[class*="accordion-"] .tab-pane {
+  margin-bottom: 15px;
+}
+
+.responsive-tabs-container[class*="accordion-"] .accordion-link {
+  display: none;
+  margin-bottom: 2px;
+  padding: 20px 15px;
+  background-color: $primary;
+  border-radius: 0;
+  border: 1px solid $primary;
+  color: $white;
+}
+
+.responsive-tabs-container[class*="accordion-"] .accordion-link.active {
+    border-bottom: medium none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    color: $white;
+}
+
+@media (max-width: 767px) {
+  .responsive-tabs-container.accordion-sm .nav-tabs {
+    display: none;
+  }
+  
+  .responsive-tabs-container.accordion-sm .accordion-link {
+    display: block;
+    text-align: left;
+  }
+  
+  .responsive-tabs-container[class*="accordion-"] .tab-pane {
+    border:1px solid $primary;
+    border-top:none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-width: medium 1px 1px;
+    margin-bottom: 10px;
+    margin-top: -10px;
+    padding: 10px 10px 0;
+  }
+ .responsive-tabs-container .tab-content a div{
+   display: block;
+   float: left;
+  i{
+    font-size: 30px;
+    margin: 0 20px 0 6px;
+  }
+ }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .responsive-tabs-container.accordion-sm .nav-tabs {
+    display: none;
+  }
+  .responsive-tabs-container .tab-content a div{
+    display: block;
+    float: left;
+   i{
+     font-size: 30px;
+     margin: 0 20px 0 6px;
+   }
+  }
+  .responsive-tabs-container .tab-content a div {
+    display: block;
+    float: left;
+  }
+  
+  .responsive-tabs-container.accordion-sm .accordion-link {
+    display: block;
+    text-align: left;
+    
+  }
+  
+  .responsive-tabs-container[class*="accordion-"] .tab-pane {
+    border:1px solid $primary;
+    border-top:none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-width: medium 1px 1px;
+    margin-bottom: 10px;
+    margin-top: -10px;
+    padding: 10px 10px 0;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .responsive-tabs-container.accordion-md .nav-tabs {
+    display: none;
+  }
+  
+  .responsive-tabs-container.accordion-md .accordion-link {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .responsive-tabs-container.accordion-lg .nav-tabs {
+    display: none;
+  }
+  
+  .responsive-tabs-container.accordion-lg .accordion-link {
+    display: block;
+  }
+}

@@ -1,0 +1,30 @@
+$assets-url :"/assets";
+
+
+.widget-2 {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  .card-body{
+    height:auto !important;
+  }
+  &:after {
+    background-image: url("#{$assets-url}/img/social/person-cropped.jpg");
+    background-size: cover;
+    content: " ";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 0;
+    opacity: .69;
+  }
+  & > div{
+    position: relative;
+    z-index: 1;
+  }
+}

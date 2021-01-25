@@ -1,0 +1,119 @@
+// Table
+table.nk-tb-covid.dataTable.dtr-inline.collapsed > tbody > tr:not(.child) > td:first-child:before, 
+table.nk-tb-covid.dataTable.dtr-inline.collapsed > tbody > tr:not(.child) > th:first-child:before{
+    display: none;
+}
+.cov-sortable{
+	cursor: pointer;
+	&:before{
+		right: 1em;
+    	content: "\2191";
+	}
+	&:after{
+		right: 0.5em;
+    	content: "\2193";
+	}
+	&:before,&:after{
+		position: absolute;
+		top: calc(50% - 1px);
+		transform: translateY(-50%);
+		display: block;
+		opacity: 0.5;
+	}
+	&.sort-down:after,&.sort-up:before{
+		opacity: 1;
+	}
+}
+
+
+.nk-tb-covid{
+    .nk-tb-col-action {
+        width: 40px;
+    }
+}
+@media (max-width:374px){
+    .nk-tb-covid{
+        font-size: 12px;
+        .nk-tb-head .nk-tb-col {
+        	font-size: 12px;
+        }
+    }
+}
+.nk-tb-countries {
+	.nk-tb-col {
+		width: 90px;
+		display: none;
+		.tb-lead small {
+			margin-left: .125rem;
+			font-size: 11px;
+		}
+	}
+	.nk-tb-col-action {
+		width: 54px; 
+	}
+	.nk-tb-col-country {
+		width: 135px;
+		max-width: 135px;
+		min-width: 135px;
+	}
+	.nk-tb-col-country, .nk-tb-col-action, .nk-tb-col-infect {
+		display: table-cell;
+	}
+}
+
+@media (min-width: 360px){
+	.nk-tb-countries {
+		.nk-tb-col-death {
+			display: table-cell;
+		}
+	}
+}
+@media (min-width: 414px){
+	.nk-tb-countries {
+		.nk-tb-col-recover {
+			display: table-cell;
+		}
+	}
+}
+@media (min-width: 576px){
+	.nk-tb-countries {
+		.nk-tb-col-infect-hr {
+			display: table-cell;
+		}
+		.nk-tb-col-country {
+			width: 160px;
+			max-width: 160px;
+			min-width: 160px;
+		}
+	}
+}
+@media (min-width: 800px){
+	.nk-tb-countries {
+		.nk-tb-col-active {
+			display: table-cell;
+		}
+	}
+}
+
+@media (min-width:992px) and (max-width: 1199px), (min-width:1320px) {
+	.nk-tb-countries {
+		.nk-tb-col-serious {
+			display: table-cell;
+		}
+	}
+}
+@include media-breakpoint-up(xxl){
+	.nk-tb-countries {
+		.nk-tb-col {
+			width: 150px;
+		}
+		.nk-tb-col-country {
+			width: 240px;
+			max-width: 240px;
+			min-width: 240px;
+		}
+		.nk-tb-col-action {
+			width: 70px; 
+		}
+	}
+}

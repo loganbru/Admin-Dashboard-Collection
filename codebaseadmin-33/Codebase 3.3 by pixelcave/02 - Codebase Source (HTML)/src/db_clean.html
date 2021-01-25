@@ -1,0 +1,796 @@
+<!doctype html>
+<html lang="en" class="no-focus">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+        <title>Codebase - Bootstrap 4 Admin Template &amp; UI Framework</title>
+
+        <meta name="description" content="Codebase - Bootstrap 4 Admin Template &amp; UI Framework created by pixelcave and published on Themeforest">
+        <meta name="author" content="pixelcave">
+        <meta name="robots" content="noindex, nofollow">
+
+        <!-- Open Graph Meta -->
+        <meta property="og:title" content="Codebase - Bootstrap 4 Admin Template &amp; UI Framework">
+        <meta property="og:site_name" content="Codebase">
+        <meta property="og:description" content="Codebase - Bootstrap 4 Admin Template &amp; UI Framework created by pixelcave and published on Themeforest">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="">
+        <meta property="og:image" content="">
+
+        <!-- Icons -->
+        <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
+        <link rel="shortcut icon" href="assets/media/favicons/favicon.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="assets/media/favicons/favicon-192x192.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/media/favicons/apple-touch-icon-180x180.png">
+        <!-- END Icons -->
+
+        <!-- Stylesheets -->
+
+        <!-- Fonts and Codebase framework -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,400i,600,700&display=swap">
+        <link rel="stylesheet" id="css-main" href="assets/css/codebase.min.css">
+
+        <!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
+        <!-- <link rel="stylesheet" id="css-theme" href="assets/css/themes/flat.min.css"> -->
+        <!-- END Stylesheets -->
+    </head>
+    <body>
+
+        <!-- Page Container -->
+        <!--
+            Available classes for #page-container:
+
+        GENERIC
+
+            'enable-cookies'                            Remembers active color theme between pages (when set through color theme helper Template._uiHandleTheme())
+
+        SIDEBAR & SIDE OVERLAY
+
+            'sidebar-r'                                 Right Sidebar and left Side Overlay (default is left Sidebar and right Side Overlay)
+            'sidebar-mini'                              Mini hoverable Sidebar (screen width > 991px)
+            'sidebar-o'                                 Visible Sidebar by default (screen width > 991px)
+            'sidebar-o-xs'                              Visible Sidebar by default (screen width < 992px)
+            'sidebar-inverse'                           Dark themed sidebar
+
+            'side-overlay-hover'                        Hoverable Side Overlay (screen width > 991px)
+            'side-overlay-o'                            Visible Side Overlay by default
+
+            'enable-page-overlay'                       Enables a visible clickable Page Overlay (closes Side Overlay on click) when Side Overlay opens
+
+            'side-scroll'                               Enables custom scrolling on Sidebar and Side Overlay instead of native scrolling (screen width > 991px)
+
+        HEADER
+
+            ''                                          Static Header if no class is added
+            'page-header-fixed'                         Fixed Header
+
+        HEADER STYLE
+
+            ''                                          Classic Header style if no class is added
+            'page-header-modern'                        Modern Header style
+            'page-header-inverse'                       Dark themed Header (works only with classic Header style)
+            'page-header-glass'                         Light themed Header with transparency by default
+                                                        (absolute position, perfect for light images underneath - solid light background on scroll if the Header is also set as fixed)
+            'page-header-glass page-header-inverse'     Dark themed Header with transparency by default
+                                                        (absolute position, perfect for dark images underneath - solid dark background on scroll if the Header is also set as fixed)
+
+        MAIN CONTENT LAYOUT
+
+            ''                                          Full width Main Content if no class is added
+            'main-content-boxed'                        Full width Main Content with a specific maximum width (screen width > 1200px)
+            'main-content-narrow'                       Full width Main Content with a percentage width (screen width > 1200px)
+        -->
+        <div id="page-container" class="sidebar-o enable-page-overlay side-scroll page-header-modern main-content-boxed">
+
+            <!-- Side Overlay-->
+            <aside id="side-overlay">
+                <!-- Side Header -->
+                <div class="content-header content-header-fullrow bg-primary-dark">
+                    <div class="content-header-section align-parent">
+                        <!-- Close Side Overlay -->
+                        <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                        <button type="button" class="btn btn-circle btn-dual-secondary align-v-r" data-toggle="layout" data-action="side_overlay_close">
+                            <i class="fa fa-times text-danger"></i>
+                        </button>
+                        <!-- END Close Side Overlay -->
+
+                        <!-- User Info -->
+                        <div class="content-header-item">
+                            <a class="img-link mr-5" href="javascript:void(0)">
+                                <img class="img-avatar img-avatar32" src="assets/media/avatars/avatar11.jpg" alt="">
+                            </a>
+                            <a class="align-middle link-effect text-white-op font-w600" href="javascript:void(0)">Admin</a>
+                        </div>
+                        <!-- END User Info -->
+                    </div>
+                </div>
+                <!-- END Side Header -->
+
+                <!-- Upgrade Plan -->
+                <div class="content-side content-side-full bg-danger-light">
+                    <p class="mb-5 d-flex justify-content-between">
+                        <a class="text-danger font-size-xs" href="javascript:void(0)">
+                            <i class="fa fa-arrow-circle-up"></i> Upgrade
+                        </a>
+                        <span class="font-size-xs text-danger">
+                            1.9GB from <strong>2TB</strong>
+                        </span>
+                    </p>
+                    <div class="progress mb-0" style="height: 5px;">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                            <span class="progress-bar-label"></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- END Upgrade Plan -->
+
+                <!-- Side Content -->
+                <div class="content-side">
+                    <!-- Mini Stats -->
+                    <div class="block pull-t pull-r-l">
+                        <div class="block-content block-content-full block-content-sm bg-gd-dusk">
+                            <div class="row text-center">
+                                <div class="col-4">
+                                    <div class="font-size-sm font-w600 text-uppercase text-white-op">Sales</div>
+                                    <div class="font-size-h4 text-white">985</div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="font-size-sm font-w600 text-uppercase text-white-op">Tickets</div>
+                                    <div class="font-size-h4 text-white">251</div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="font-size-sm font-w600 text-uppercase text-white-op">Projects</div>
+                                    <div class="font-size-h4 text-white">39</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END Mini Stats -->
+
+                    <!-- Search -->
+                    <div class="block pull-r-l">
+                        <div class="block-content block-content-full block-content-sm bg-body-light">
+                            <form>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="side-overlay-search" name="side-overlay-search" placeholder="Search..">
+                                    <div class="input-group-append">
+                                        <button type="submit" class="btn btn-secondary px-10">
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- END Search -->
+
+                    <!-- Notifications -->
+                    <div class="block pull-r-l">
+                        <div class="block-header bg-body-light">
+                            <h3 class="block-title">Notifications</h3>
+                            <div class="block-options">
+                                <button type="button" class="btn-block-option" data-toggle="block-option" data-action="state_toggle" data-action-mode="demo">
+                                    <i class="si si-refresh"></i>
+                                </button>
+                                <button type="button" class="btn-block-option" data-toggle="block-option" data-action="content_toggle"></button>
+                            </div>
+                        </div>
+                        <div class="block-content">
+                            <ul class="list list-activity">
+                                <li>
+                                    <i class="si si-wallet text-success"></i>
+                                    <div class="font-w600">+$29 New sale</div>
+                                    <div>
+                                        <a href="javascript:void(0)">Admin Template</a>
+                                    </div>
+                                    <div class="font-size-xs text-muted">5 min ago</div>
+                                </li>
+                                <li>
+                                    <i class="si si-close text-danger"></i>
+                                    <div class="font-w600">Project removed</div>
+                                    <div>
+                                        <a href="javascript:void(0)">Best Icon Set</a>
+                                    </div>
+                                    <div class="font-size-xs text-muted">26 min ago</div>
+                                </li>
+                                <li>
+                                    <i class="si si-pencil text-info"></i>
+                                    <div class="font-w600">You edited the file</div>
+                                    <div>
+                                        <a href="javascript:void(0)">
+                                            <i class="fa fa-file-text-o"></i> Docs.doc
+                                        </a>
+                                    </div>
+                                    <div class="font-size-xs text-muted">3 hours ago</div>
+                                </li>
+                                <li>
+                                    <i class="si si-plus text-success"></i>
+                                    <div class="font-w600">New user</div>
+                                    <div>
+                                        <a href="javascript:void(0)">StudioWeb - View Profile</a>
+                                    </div>
+                                    <div class="font-size-xs text-muted">5 hours ago</div>
+                                </li>
+                                <li>
+                                    <i class="si si-wrench text-warning"></i>
+                                    <div class="font-w600">Core v3.9 is available</div>
+                                    <div>
+                                        <a href="javascript:void(0)">Update now</a>
+                                    </div>
+                                    <div class="font-size-xs text-muted">8 hours ago</div>
+                                </li>
+                                <li>
+                                    <i class="si si-user-follow text-pulse"></i>
+                                    <div class="font-w600">+1 Friend Request</div>
+                                    <div>
+                                        <a href="javascript:void(0)">Accept</a>
+                                    </div>
+                                    <div class="font-size-xs text-muted">1 day ago</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- END Notifications -->
+                </div>
+                <!-- END Side Content -->
+            </aside>
+            <!-- END Side Overlay -->
+
+            <!-- Sidebar -->
+            <nav id="sidebar">
+                <!-- Sidebar Content -->
+                <div class="sidebar-content">
+                    <!-- Side Header -->
+                    <div class="content-header content-header-fullrow px-15">
+                        <!-- Mini Mode -->
+                        <div class="content-header-section sidebar-mini-visible-b">
+                            <!-- Logo -->
+                            <span class="content-header-item font-w700 font-size-xl float-left animated fadeIn">
+                                <span class="text-dual-primary-dark">c</span><span class="text-primary">b</span>
+                            </span>
+                            <!-- END Logo -->
+                        </div>
+                        <!-- END Mini Mode -->
+
+                        <!-- Normal Mode -->
+                        <div class="content-header-section text-center align-parent sidebar-mini-hidden">
+                            <!-- Close Sidebar, Visible only on mobile screens -->
+                            <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                            <button type="button" class="btn btn-circle btn-dual-secondary d-lg-none align-v-r" data-toggle="layout" data-action="sidebar_close">
+                                <i class="fa fa-times text-danger"></i>
+                            </button>
+                            <!-- END Close Sidebar -->
+
+                            <!-- Logo -->
+                            <div class="content-header-item">
+                                <a class="link-effect font-w700" href="index.html">
+                                    <i class="si si-fire text-primary"></i>
+                                    <span class="font-size-xl text-dual-primary-dark">code</span><span class="font-size-xl text-primary">base</span>
+                                </a>
+                            </div>
+                            <!-- END Logo -->
+                        </div>
+                        <!-- END Normal Mode -->
+                    </div>
+                    <!-- END Side Header -->
+
+                    <!-- New Account -->
+                    <div class="content-side content-side-full bg-body-light">
+                        <button type="button" class="btn btn-sm btn-block btn-hero btn-alt-primary" data-toggle="click-ripple">
+                            <i class="fa fa-user-plus mr-5"></i> New Account
+                        </button>
+                    </div>
+                    <!-- END New Account -->
+
+                    <!-- Side Navigation -->
+                    <div class="content-side content-side-full">
+                        <ul class="nav-main">
+                            <li>
+                                <a class="active" href="db_clean.html"><i class="si si-home"></i><span class="sidebar-mini-hide">Home <span class="badge badge-pill badge-primary ml-5">3</span></span></a>
+                            </li>
+                            <li class="nav-main-heading"><span class="sidebar-mini-visible">PR</span><span class="sidebar-mini-hidden">Projects</span></li>
+                            <li>
+                                <a href=""><i class="si si-docs"></i><span class="sidebar-mini-hide">Manage</span></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="si si-users"></i><span class="sidebar-mini-hide">Clients</span></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="si si-energy"></i><span class="sidebar-mini-hide">Team</span></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="si si-wallet"></i><span class="sidebar-mini-hide">Payments</span></a>
+                            </li>
+                            <li class="nav-main-heading"><span class="sidebar-mini-visible">ST</span><span class="sidebar-mini-hidden">Settings</span></li>
+                            <li>
+                                <a href=""><i class="si si-fire"></i><span class="sidebar-mini-hide">Security</span></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="si si-pencil"></i><span class="sidebar-mini-hide">Profile</span></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="si si-flag"></i><span class="sidebar-mini-hide">Notifications</span></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="si si-lock"></i><span class="sidebar-mini-hide">Password Update</span></a>
+                            </li>
+                            <li class="nav-main-heading"><span class="sidebar-mini-visible">HP</span><span class="sidebar-mini-hidden">Help</span></li>
+                            <li>
+                                <a href=""><i class="si si-notebook"></i><span class="sidebar-mini-hide">Knowledge Base</span></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="si si-envelope"></i><span class="sidebar-mini-hide">Contact Us</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- END Side Navigation -->
+                </div>
+                <!-- Sidebar Content -->
+            </nav>
+            <!-- END Sidebar -->
+
+            <!-- Header -->
+            <header id="page-header">
+                <!-- Header Content -->
+                <div class="content-header">
+                    <!-- Left Section -->
+                    <div class="content-header-section">
+                        <!-- Toggle Sidebar -->
+                        <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                        <button type="button" class="btn btn-circle btn-dual-secondary" data-toggle="layout" data-action="sidebar_toggle">
+                            <i class="fa fa-navicon"></i>
+                        </button>
+                        <!-- END Toggle Sidebar -->
+
+                        <!-- Open Search Section -->
+                        <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                        <button type="button" class="btn btn-circle btn-dual-secondary" data-toggle="layout" data-action="header_search_on">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        <!-- END Open Search Section -->
+                    </div>
+                    <!-- END Left Section -->
+
+                    <!-- Right Section -->
+                    <div class="content-header-section">
+                        <!-- User Dropdown -->
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-rounded btn-dual-secondary" id="page-header-user-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Admin<i class="fa fa-angle-down ml-5"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right min-width-150" aria-labelledby="page-header-user-dropdown">
+                                <a class="dropdown-item" href="javascript:void(0)">
+                                    <i class="si si-user mr-5"></i> Profile
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center justify-content-between" href="javascript:void(0)">
+                                    <span><i class="si si-envelope-open mr-5"></i> Inbox</span>
+                                    <span class="badge badge-primary">3</span>
+                                </a>
+                                <a class="dropdown-item" href="javascript:void(0)">
+                                    <i class="si si-note mr-5"></i> Invoices
+                                </a>
+                                <div class="dropdown-divider"></div>
+
+                                <!-- Toggle Side Overlay -->
+                                <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                                <a class="dropdown-item" href="javascript:void(0)" data-toggle="layout" data-action="side_overlay_toggle">
+                                    <i class="si si-wrench mr-5"></i> Settings
+                                </a>
+                                <!-- END Side Overlay -->
+
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="javascript:void(0)">
+                                    <i class="si si-logout mr-5"></i> Sign Out
+                                </a>
+                            </div>
+                        </div>
+                        <!-- END User Dropdown -->
+
+                        <!-- Toggle Side Overlay -->
+                        <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                        <button type="button" class="btn btn-rounded btn-dual-secondary" data-toggle="layout" data-action="side_overlay_toggle">
+                            <i class="fa fa-tasks"></i>
+                            <span class="badge badge-pill badge-danger ml-5">
+                                <i class="fa fa-exclamation-triangle mr-5"></i>1
+                            </span>
+                        </button>
+                        <!-- END Toggle Side Overlay -->
+                    </div>
+                    <!-- END Right Section -->
+                </div>
+                <!-- END Header Content -->
+
+                <!-- Header Search -->
+                <div id="page-header-search" class="overlay-header">
+                    <div class="content-header content-header-fullrow">
+                        <form>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <!-- Close Search Section -->
+                                    <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                                    <button type="button" class="btn btn-secondary px-15" data-toggle="layout" data-action="header_search_off">
+                                        <i class="fa fa-times"></i>
+                                    </button>
+                                    <!-- END Close Search Section -->
+                                </div>
+                                <input type="text" class="form-control" placeholder="Search or hit ESC.." id="page-header-search-input" name="page-header-search-input">
+                                <div class="input-group-append">
+                                    <button type="submit" class="btn btn-secondary px-15">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- END Header Search -->
+
+                <!-- Header Loader -->
+                <div id="page-header-loader" class="overlay-header bg-primary">
+                    <div class="content-header content-header-fullrow text-center">
+                        <div class="content-header-item">
+                            <i class="fa fa-sun-o fa-spin text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- END Header Loader -->
+            </header>
+            <!-- END Header -->
+
+            <!-- Main Container -->
+            <main id="main-container">
+
+                <!-- Page Content -->
+                <div class="content">
+                    <!-- Header -->
+                    <div class="block block-rounded bg-gd-dusk">
+                        <div class="block-content bg-white-op-5">
+                            <div class="py-30 text-center">
+                                <h1 class="font-w700 text-white mb-10">Dashboard</h1>
+                                <h2 class="h4 font-w400 text-white-op">Welcome Admin, create something amazing!</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END Header -->
+
+                    <!-- Quick Stats -->
+                    <h2 class="content-heading">
+                        <i class="fa fa-line-chart text-muted mr-5"></i> Quick Stats
+                    </h2>
+                    <div class="row gutters-tiny push">
+                        <div class="col-6 col-md-4 col-xl-2">
+                            <a class="block block-rounded block-link-pop text-center" href="javascript:void(0)">
+                                <div class="block-content">
+                                    <p class="font-size-h1 font-w700 mb-5">
+                                        105
+                                    </p>
+                                    <p class="font-w600 text-muted">
+                                        <i class="fa fa-bar-chart mr-5"></i> Sales/Week
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-4 col-xl-2">
+                            <a class="block block-rounded block-link-pop text-center" href="javascript:void(0)">
+                                <div class="block-content">
+                                    <p class="font-size-h1 font-w700 mb-5">
+                                        58.25
+                                    </p>
+                                    <p class="font-w600 text-muted">
+                                        <i class="fa fa-cloud-upload mr-5"></i> MB/s
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-4 col-xl-2">
+                            <a class="block block-rounded block-link-pop text-center" href="javascript:void(0)">
+                                <div class="block-content">
+                                    <p class="font-size-h1 font-w700 mb-5">
+                                        $983
+                                    </p>
+                                    <p class="font-w600 text-muted">
+                                        <i class="fa fa-money mr-5"></i> Earnings
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-4 col-xl-2">
+                            <a class="block block-rounded block-link-pop text-center" href="javascript:void(0)">
+                                <div class="block-content">
+                                    <p class="font-size-h1 font-w700 mb-5">
+                                        21
+                                    </p>
+                                    <p class="font-w600 text-muted">
+                                        <i class="fa fa-envelope mr-5"></i> Messages
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-4 col-xl-2">
+                            <a class="block block-rounded block-link-pop text-center" href="javascript:void(0)">
+                                <div class="block-content">
+                                    <p class="font-size-h1 font-w700 mb-5">
+                                        12
+                                    </p>
+                                    <p class="font-w600 text-muted">
+                                        <i class="fa fa-shopping-cart mr-5"></i> Products
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-4 col-xl-2">
+                            <a class="block block-rounded block-link-pop text-center" href="javascript:void(0)">
+                                <div class="block-content">
+                                    <p class="font-size-h1 font-w700 mb-5">
+                                        36
+                                    </p>
+                                    <p class="font-w600 text-muted">
+                                        <i class="fa fa-tickets mr-5"></i> Tickets
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- END Quick Stats -->
+
+                    <!-- Latest Projects -->
+                    <h2 class="content-heading">
+                        <i class="fa fa-briefcase text-muted mr-5"></i> Latest Projects
+                    </h2>
+                    <div class="row row-deck">
+                        <div class="col-md-6 col-xl-3">
+                            <a class="block block-link-shadow block-rounded ribbon ribbon-modern ribbon-primary text-center" href="javascript:void(0)">
+                                <div class="ribbon-box">$14</div>
+                                <div class="block-content block-content-full">
+                                    <div class="item item-circle bg-pulse text-pulse-lighter mx-auto my-20">
+                                        <i class="fa fa-html5"></i>
+                                    </div>
+                                    <div class="text-warning">
+                                        <i class="fa fa-fw fa-star"></i>
+                                        <i class="fa fa-fw fa-star"></i>
+                                        <i class="fa fa-fw fa-star"></i>
+                                        <i class="fa fa-fw fa-star"></i>
+                                        <i class="fa fa-fw fa-star"></i>
+                                    </div>
+                                    <div class="font-size-sm text-muted">
+                                        (258 reviews)
+                                    </div>
+                                </div>
+                                <div class="block-content block-content-full block-content-sm bg-body-light">
+                                    <div class="font-size-sm text-muted">10 lessons • 5 hours</div>
+                                </div>
+                                <div class="block-content block-content-full">
+                                    <div class="font-w600">Learn HTML5 in 10 easy steps</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-xl-3">
+                            <a class="block block-link-shadow block-rounded ribbon ribbon-modern ribbon-primary text-center" href="javascript:void(0)">
+                                <div class="ribbon-box">$29</div>
+                                <div class="block-content block-content-full">
+                                    <div class="item item-circle bg-info text-info-light mx-auto my-20">
+                                        <i class="fa fa-css3"></i>
+                                    </div>
+                                    <div class="text-warning">
+                                        <i class="fa fa-fw fa-star"></i>
+                                        <i class="fa fa-fw fa-star"></i>
+                                        <i class="fa fa-fw fa-star"></i>
+                                        <i class="fa fa-fw fa-star"></i>
+                                        <i class="fa fa-fw fa-star"></i>
+                                    </div>
+                                    <div class="font-size-sm text-muted">
+                                        (75 reviews)
+                                    </div>
+                                </div>
+                                <div class="block-content block-content-full block-content-sm bg-body-light">
+                                    <div class="font-size-sm text-muted">15 lessons • 11 hours</div>
+                                </div>
+                                <div class="block-content block-content-full">
+                                    <div class="font-w600">Be a pro with CSS3 in one week</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-xl-3">
+                            <a class="block block-link-shadow block-rounded ribbon ribbon-modern ribbon-primary text-center" href="javascript:void(0)">
+                                <div class="ribbon-box">$24</div>
+                                <div class="block-content block-content-full">
+                                    <div class="item item-circle bg-corporate text-corporate-lighter mx-auto my-20">
+                                        <i class="fa fa-video-camera"></i>
+                                    </div>
+                                    <div class="text-warning">
+                                        <i class="fa fa-fw fa-star"></i>
+                                        <i class="fa fa-fw fa-star"></i>
+                                        <i class="fa fa-fw fa-star"></i>
+                                        <i class="fa fa-fw fa-star"></i>
+                                        <i class="fa fa-fw fa-star-half-o"></i>
+                                    </div>
+                                    <div class="font-size-sm text-muted">
+                                        (985 reviews)
+                                    </div>
+                                </div>
+                                <div class="block-content block-content-full block-content-sm bg-body-light">
+                                    <div class="font-size-sm text-muted">8 lessons • 3 hours</div>
+                                </div>
+                                <div class="block-content block-content-full">
+                                    <div class="font-w600">Be a Youtuber today</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-xl-3">
+                            <a class="block block-link-shadow block-rounded ribbon ribbon-modern ribbon-primary text-center" href="javascript:void(0)">
+                                <div class="ribbon-box">$14</div>
+                                <div class="block-content block-content-full">
+                                    <div class="item item-circle bg-elegance text-elegance-lighter mx-auto my-20">
+                                        <i class="fa fa-briefcase"></i>
+                                    </div>
+                                    <div class="text-warning">
+                                        <i class="fa fa-fw fa-star"></i>
+                                        <i class="fa fa-fw fa-star"></i>
+                                        <i class="fa fa-fw fa-star"></i>
+                                        <i class="fa fa-fw fa-star"></i>
+                                        <i class="fa fa-fw fa-star-half-o"></i>
+                                    </div>
+                                    <div class="font-size-sm text-muted">
+                                        (325 reviews)
+                                    </div>
+                                </div>
+                                <div class="block-content block-content-full block-content-sm bg-body-light">
+                                    <div class="font-size-sm text-muted">25 lessons • 17 hours</div>
+                                </div>
+                                <div class="block-content block-content-full">
+                                    <div class="font-w600">Marketing Tips 101</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- END Latest Projects -->
+
+                    <!-- Top Contributors -->
+                    <h2 class="content-heading">
+                        <i class="fa fa-star text-muted mr-5"></i> Top Contributors
+                    </h2>
+                    <div class="row">
+                        <div class="col-md-6 col-xl-3">
+                            <a class="block block-rounded block-link-shadow text-center" href="javascript:void(0)">
+                                <div class="block-content block-content-full">
+                                    <img class="img-avatar" src="assets/media/avatars/avatar7.jpg" alt="">
+                                </div>
+                                <div class="block-content block-content-full block-content-sm bg-body-light">
+                                    <div class="font-w600 mb-5">Melissa Rice</div>
+                                    <div class="font-size-sm text-muted">Photographer</div>
+                                </div>
+                                <div class="block-content">
+                                    <div class="row items-push text-center">
+                                        <div class="col-6">
+                                            <div class="mb-5"><i class="si si-wallet fa-2x"></i></div>
+                                            <div class="font-size-sm text-muted">$3.090</div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="mb-5"><i class="si si-trophy fa-2x"></i></div>
+                                            <div class="font-size-sm text-muted">4 Awards</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-xl-3">
+                            <a class="block block-rounded block-link-shadow text-center" href="javascript:void(0)">
+                                <div class="block-content block-content-full">
+                                    <img class="img-avatar" src="assets/media/avatars/avatar8.jpg" alt="">
+                                </div>
+                                <div class="block-content block-content-full block-content-sm bg-body-light">
+                                    <div class="font-w600 mb-5">Danielle Jones</div>
+                                    <div class="font-size-sm text-muted">Copywriter</div>
+                                </div>
+                                <div class="block-content">
+                                    <div class="row items-push text-center">
+                                        <div class="col-6">
+                                            <div class="mb-5"><i class="si si-briefcase fa-2x"></i></div>
+                                            <div class="font-size-sm text-muted">35 Projects</div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="mb-5"><i class="si si-users fa-2x"></i></div>
+                                            <div class="font-size-sm text-muted">350 Users</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-xl-3">
+                            <a class="block block-rounded block-link-shadow text-center" href="javascript:void(0)">
+                                <div class="block-content block-content-full">
+                                    <img class="img-avatar" src="assets/media/avatars/avatar9.jpg" alt="">
+                                </div>
+                                <div class="block-content block-content-full block-content-sm bg-body-light">
+                                    <div class="font-w600 mb-5">Jesse Fisher</div>
+                                    <div class="font-size-sm text-muted">Web Designer</div>
+                                </div>
+                                <div class="block-content">
+                                    <div class="row items-push text-center">
+                                        <div class="col-6">
+                                            <div class="mb-5"><i class="si si-badge fa-2x"></i></div>
+                                            <div class="font-size-sm text-muted">8 Badges</div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="mb-5"><i class="si si-wallet fa-2x"></i></div>
+                                            <div class="font-size-sm text-muted">$3.100</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-xl-3">
+                            <a class="block block-rounded block-link-shadow text-center" href="javascript:void(0)">
+                                <div class="block-content block-content-full">
+                                    <img class="img-avatar" src="assets/media/avatars/avatar12.jpg" alt="">
+                                </div>
+                                <div class="block-content block-content-full block-content-sm bg-body-light">
+                                    <div class="font-w600 mb-5">Ryan Flores</div>
+                                    <div class="font-size-sm text-muted">Web Developer</div>
+                                </div>
+                                <div class="block-content">
+                                    <div class="row items-push">
+                                        <div class="col-6">
+                                            <div class="mb-5"><i class="si si-notebook fa-2x"></i></div>
+                                            <div class="font-size-sm text-muted">4 Notes</div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="mb-5"><i class="si si-camera fa-2x"></i></div>
+                                            <div class="font-size-sm text-muted">14 Photos</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- END Top Contributors -->
+                </div>
+                <!-- END Page Content -->
+
+            </main>
+            <!-- END Main Container -->
+
+            <!-- Footer -->
+            <footer id="page-footer" class="opacity-0">
+                <div class="content py-20 font-size-sm clearfix">
+                    <div class="float-right">
+                        Crafted with <i class="fa fa-heart text-pulse"></i> by <a class="font-w600" href="https://1.envato.market/ydb" target="_blank">pixelcave</a>
+                    </div>
+                    <div class="float-left">
+                        <a class="font-w600" href="https://1.envato.market/95j" target="_blank">Codebase 3.3</a> &copy; <span class="js-year-copy"></span>
+                    </div>
+                </div>
+            </footer>
+            <!-- END Footer -->
+        </div>
+        <!-- END Page Container -->
+
+        <!--
+            Codebase JS Core
+
+            Vital libraries and plugins used in all pages. You can choose to not include this file if you would like
+            to handle those dependencies through webpack. Please check out assets/_es6/main/bootstrap.js for more info.
+
+            If you like, you could also include them separately directly from the assets/js/core folder in the following
+            order. That can come in handy if you would like to include a few of them (eg jQuery) from a CDN.
+
+            assets/js/core/jquery.min.js
+            assets/js/core/bootstrap.bundle.min.js
+            assets/js/core/simplebar.min.js
+            assets/js/core/jquery-scrollLock.min.js
+            assets/js/core/jquery.appear.min.js
+            assets/js/core/jquery.countTo.min.js
+            assets/js/core/js.cookie.min.js
+        -->
+        <script src="assets/js/codebase.core.min.js"></script>
+
+        <!--
+            Codebase JS
+
+            Custom functionality including Blocks/Layout API as well as other vital and optional helpers
+            webpack is putting everything together at assets/_es6/main/app.js
+        -->
+        <script src="assets/js/codebase.app.min.js"></script>
+    </body>
+</html>

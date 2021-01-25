@@ -1,0 +1,208 @@
+  <!-- MODAL STICK UP  -->
+  <div bsModal #addNewAppModal="bs-modal" class="modal fade stick-up" tabindex="-1" role="dialog" aria-labelledby="addNewAppModal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header clearfix ">
+          <button type="button" class="close" (click)="addNewAppModal.hide()" aria-hidden="true"><i class="pg pg-close fs-14"></i>
+          </button>
+          <h4 class="p-b-5"><span class="semi-bold">New</span> App</h4>
+        </div>
+        <div class="modal-body">
+          <p class="small-text">Create a new app using this form, make sure you fill them all</p>
+          <form role="form" autocomplete="off" #basicForm="ngForm">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="form-group form-group-default required" [class.has-error]="modalAppName.invalid && (modalAppName.dirty || modalAppName.touched)" >
+                    <label>First name</label>
+                    <input type="text" class="form-control" id="appName" name="appName" [(ngModel)]="appName"  #modalAppName="ngModel" required>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="form-group form-group-default required" [class.has-error]="modalAppDescription.invalid && (modalAppDescription.dirty || modalAppDescription.touched)" >
+                    <label>Description</label>
+                    <input type="text" placeholder="Tell us more about it"  class="form-control" id="appDescription" name="appDescription" [(ngModel)]="appDescription"  #modalAppDescription="ngModel" required>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group form-group-default required" [class.has-error]="modalAppPrice.invalid && (modalAppPrice.dirty || modalAppPrice.touched)" >
+                    <label>Price</label>
+                    <input type="text" class="form-control" id="appPrice" name="appPrice" [(ngModel)]="appPrice"  #modalAppPrice="ngModel" placeholder="your price" required>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group form-group-default required" [class.has-error]="modalAppNotes.invalid && (modalAppNotes.dirty || modalAppNotes.touched)" >
+                    <label>Notes</label>
+                    <input type="text" class="form-control" placeholder="a note" id="appNotes" name="appNotes" [(ngModel)]="appNotes"  #modalAppNotes="ngModel" required>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button id="add-app" type="button" class="btn btn-primary  btn-cons" (click)="addRow()" [class.disabled]="basicForm.invalid" >Add</button>
+          <button type="button" class="btn btn-cons" (click)="addNewAppModal.hide()">Close</button>
+        </div>
+      </div>
+      <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+   <!-- START JUMBOTRON -->
+  <div class="jumbotron">
+  <pg-container extraHorizontalClass="p-l-0 p-r-0" extraClass="sm-p-l-0 sm-p-r-0">
+    <div class=" container-fluid   container-fixed-lg sm-p-l-0 sm-p-r-0">
+      <div class="inner"  pg-parallax>
+        <!-- START BREADCRUMB -->
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="javascript:void(0);">Tables</a></li>
+          <li class="breadcrumb-item active">Advance</li>
+        </ol>
+        <!-- END BREADCRUMB --> 
+        <div class="row">
+          <div class="col-xl-7 col-lg-6 ">
+            <!-- START card -->
+            <div class="full-height">
+              <div class="card-body text-center">
+                <img class="image-responsive-height demo-mw-600" src="assets/img/demo/tables.jpg" alt="">
+              </div>
+            </div>
+            <!-- END card -->
+          </div>
+          <div class="col-xl-5 col-lg-6 ">
+            <!-- START card -->
+            <div class="card card-transparent">
+              <div class="card-header ">
+                <div class="card-title">Getting started
+                </div>
+              </div>
+              <div class="card-body">
+                <h3>Easier than finding a needle in the haystack.</h3>
+                <p>Sharing the same stylized design layout, these tables allows for the effective compilation and organization of data with easy access and maneuverability for users. </p>
+                <p class="small hint-text m-t-5">VIA senior product manage
+                  <br> for UI/UX at REVOX</p>
+                <br>
+                <button class="btn btn-primary btn-cons">More</button>
+              </div>
+            </div>
+            <!-- END card -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </pg-container>
+  </div>
+  <!-- END JUMBOTRON -->
+  <!-- START CONTAINER FLUID -->
+  <pg-container extraHorizontalClass="bg-white" extraClass="bg-white">
+    <!-- START card -->
+    <div class="card card-transparent">
+      <div class="card-header ">
+        <div class="card-title">Pages Default Tables Style
+        </div>
+        <div class="pull-right">
+          <div class="col-xs-12">
+            <input type="text" class="form-control pull-right" placeholder="Search" (keyup)='updateFilter($event)'>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="card-body">
+          <div class="table-responsive">
+            <ngx-datatable
+              #table
+              class='table table-hover'
+              [columns]="columns"
+              [columnMode]="columnModeSetting"
+              [scrollbarH]="scrollBarHorizontal"
+              [headerHeight]="50"
+              [footerHeight]="50"
+              [rowHeight]="'auto'"
+              [limit]="5"
+              [rows]='basicRows'>
+              <ng-template 
+              ngx-datatable-footer-template 
+              let-rowCount="rowCount"
+              let-pageSize="pageSize"
+              let-selectedCount="selectedCount"
+              let-curPage="curPage"
+              let-offset="offset">
+              Showing {{curPage}} to {{pageSize}} of {{rowCount}} entries
+            </ng-template>
+            </ngx-datatable>
+          </div>
+      </div>
+    </div>
+    <!-- END card -->
+  </pg-container>
+  <!-- END CONTAINER FLUID -->
+  <!-- START CONTAINER FLUID -->
+  <pg-container>
+    <!-- START card -->
+    <div class="card card-transparent">
+      <div class="card-header ">
+        <div class="card-title">Table with Dynamic Rows
+        </div>
+        <div class="pull-right">
+          <div class="col-xs-12">
+            <button (click)="showModal()"  class="btn btn-primary btn-cons"><i class="fa fa-plus"></i> Add row
+            </button>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="card-body">
+          <div class="table-responsive">
+            <ngx-datatable
+            #tableDynamic
+            class='table table-hover'
+            [columns]="columnsDynamic"
+            [columnMode]="columnModeSetting"
+            [scrollbarH]="scrollBarHorizontal"
+            [headerHeight]="50"
+            [footerHeight]="50"
+            [rowHeight]="'auto'"
+            [limit]="5"
+            [rows]='dynamicRows'>
+            </ngx-datatable>
+          </div>
+      </div>
+    </div>
+    <!-- END card -->
+  </pg-container>
+  <!-- END CONTAINER FLUID -->
+  <!-- START CONTAINER FLUID -->
+  <pg-container extraHorizontalClass="bg-white" extraClass="bg-white">
+      <!-- START card -->
+      <div class="card card-transparent">
+        <div class="card-header  d-flex justify-content-between">
+          <div class="card-title">Table with Fixed and lazy scrolling
+          </div>
+          <div class="export-options-container"></div>
+          <!-- <div class="clearfix"></div> -->
+        </div>
+        <div class="card-body">
+            <div class="table-responsive"  style="height:600px;overflow-y: hidden">
+              <ngx-datatable
+              #tableAdvance
+              class='table table-hover table-stripped'
+              [columns]="advanceColumns"
+              [columnMode]="columnModeSetting"
+              [scrollbarH]="scrollBarHorizontal"
+              [headerHeight]="50"
+              [footerHeight]="50"
+              [rowHeight]="60"
+              [limit]="5"
+              [scrollbarV]="true"
+              [rows]='advanceRows'>
+              </ngx-datatable>
+            </div>
+        </div>
+      </div>
+      <!-- END card -->
+  </pg-container>
+  <!-- END CONTAINER FLUID -->
+

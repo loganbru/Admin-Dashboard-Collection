@@ -1,0 +1,1580 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required Meta Tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <title> Bulkit :: Tables</title>
+        <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+
+        <!--Core CSS -->
+        <link rel="stylesheet" href="assets/css/bulma.css">
+        <link rel="stylesheet" href="assets/css/app.css">
+        <link rel="stylesheet" href="assets/css/core_demo.css">
+        <link rel="stylesheet" href="assets/css/icons.min.css">
+
+    </head>
+    <body>
+        <div class="pageloader"></div>
+        <div class="infraloader is-active"></div>        
+        <!-- Hero and nav -->
+        <div class="hero is-relative is-theme-info is-bold">
+            
+            <nav class="navbar navbar-wrapper navbar-light is-transparent is-static">
+                <div class="container">
+                    <!-- Brand -->
+                    <div class="navbar-brand">
+                        <a class="navbar-item" href="/">
+                            <img src="assets/images/logos/bulkit-white.svg" alt="">
+                        </a>
+            
+                        <!-- Sidebar Trigger -->
+                        <a id="navigation-trigger" class="navbar-item hamburger-btn" href="javascript:void(0);">
+                            <span class="menu-toggle">
+                                <span class="icon-box-toggle">
+                                    <span class="rotate">
+                                        <i class="icon-line-top"></i>
+                                        <i class="icon-line-center"></i>
+                                        <i class="icon-line-bottom"></i>
+                                    </span>
+                                </span>
+                            </span>
+                        </a>
+            
+                        <!-- Responsive toggle -->
+                        <div class="custom-burger" data-target="">
+                            <a id="" class="responsive-btn" href="javascript:void(0);">
+                                <span class="menu-toggle">
+                                    <span class="icon-box-toggle">
+                                        <span class="rotate">
+                                            <i class="icon-line-top"></i>
+                                            <i class="icon-line-center"></i>
+                                            <i class="icon-line-bottom"></i>
+                                        </span>
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
+                        <!-- /Responsive toggle -->
+                    </div>
+            
+                    <!-- Navbar menu -->
+                    <div class="navbar-menu">
+                        <!-- Navbar Start -->
+                        <div class="navbar-start">
+                            <!-- Dropdown -->
+                            <div class="navbar-item has-dropdown is-hoverable is-hidden-mobile">
+                                <a class="navbar-link" href="#demos">
+                                    Demos
+                                </a>
+                                <div class="navbar-dropdown is-boxed is-medium">
+                                    <!-- Dropdown item -->
+                                    <a class="navbar-item is-menu" href="/agency/index.html">
+                                        <i class="material-icons">weekend</i>
+                                        <span>Agency Kit</span>
+                                    </a>
+                                    <!-- Dropdown item -->
+                                    <a class="navbar-item is-menu" href="/startup/index.html">
+                                        <i class="material-icons">wb_incandescent</i>
+                                        <span>Startup Kit</span>
+                                    </a>
+                                    <!-- Dropdown item -->
+                                    <a class="navbar-item is-menu" href="/landing-kits/kit-1/index.html">
+                                        <i class="material-icons">looks</i>
+                                        <span>Landing Kit 1</span>
+                                    </a>
+                                    <!-- Dropdown item -->
+                                    <a class="navbar-item is-menu" href="/landing-kits/kit-2/index.html">
+                                        <i class="material-icons">invert_colors</i>
+                                        <span>Landing Kit 2</span>
+                                    </a>
+                                    <!-- Dropdown item -->
+                                    <a class="navbar-item is-menu" href="/landing-kits/kit-3/index.html">
+                                        <i class="material-icons">bubble_chart</i>
+                                        <span>Landing Kit 3</span>
+                                    </a>
+                                    <!-- Dropdown item -->
+                                    <a class="navbar-item is-menu" href="/landing-kits/kit-4/index.html">
+                                        <i class="material-icons">business</i>
+                                        <span>Landing Kit 4</span>
+                                    </a>
+                                    <!-- Dropdown item -->
+                                    <a class="navbar-item is-menu" href="/landing-kits/kit-5/index.html">
+                                        <i class="material-icons">face</i>
+                                        <span>Landing Kit 5</span>
+                                    </a>
+                                    <!-- Dropdown item -->
+                                    <a class="navbar-item is-menu" href="/landing-kits/kit-6/index.html">
+                                        <i class="material-icons">cloud</i>
+                                        <span>Landing Kit 6</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Mobile dropdown -->
+                            <div class="mobile-drop is-hidden-desktop">
+                                <div class="mobile-drop-trigger">
+                                    Demos <i class="material-icons">keyboard_arrow_right</i>
+                                </div>
+                                <div class="child-menu">
+                                    <ul>
+                                        <li>
+                                            <a href="/agency/index.html">Agency kit</a>
+                                        </li>
+                                        <li>
+                                            <a href="/startup/index.html">Startup kit</a>
+                                        </li>
+                                        <li>
+                                            <a href="/landing-kits/kit-1/index.html">Landing kit 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="/landing-kits/kit-2/index.html">Landing kit 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="/landing-kits/kit-3/index.html">Landing kit 3</a>
+                                        </li>
+                                        <li>
+                                            <a href="/landing-kits/kit-4/index.html">Landing kit 4</a>
+                                        </li>
+                                        <li>
+                                            <a href="/landing-kits/kit-5/index.html">Landing kit 5</a>
+                                        </li>
+                                        <li>
+                                            <a href="/landing-kits/kit-6/index.html">Landing kit 6</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Navbar item -->
+                            <a class="navbar-item is-slide" href="https://docs.bulkit.cssninja.io/" target="_blank">
+                                Docs
+                            </a>
+                            <!-- Navbar item -->
+                            <a class="navbar-item is-slide" href="https://cssninja.io/" target="_blank">
+                                Support
+                            </a>
+                        </div>
+            
+                        <!-- Navbar end -->
+                        <div class="navbar-end">
+                            <!-- Signup button -->
+                            <div class="navbar-item">
+                                <a id="#signup-btn" href="https://themeforest.net/item/bulkit-agency-startup-and-saas-template/21278677?ref=cssninjaStudio" class="button button-cta btn-outlined is-bold btn-align light-btn rounded raised">
+                                    Buy now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- Hero image -->
+            <div id="main-hero" class="hero-body">
+                <div class="container has-text-centered">
+                    <div class="columns is-vcentered">
+                        <div class="column is-4 is-offset-1 has-text-left">
+                            <h1 class="title components-title is-1">
+                                Tables 
+                            </h1>
+                            <h2 class="subtitle is-4 components-subtitle">
+                                Available table styles.
+                            </h2>
+                            <p class="components-cta">
+                                <a href="#tables" class="button button-cta btn-align light-btn btn-outlined is-bold rounded">
+                                    Get Started
+                                </a>
+                            </p>
+                        </div>
+                        <div class="column is-offset-1 has-text-centered is-hidden-mobile">
+                            <div id="tables-ill" class="vivus-svg"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Hero image -->
+        </div>
+        <!-- /Hero and nav -->
+        
+        <!-- Scrollnav -->
+        <div id="scrollnav" class="scroll-nav-wrapper">
+            <div class="container">
+                <div class="tabs scrollnav-tabs is-centered">
+                    <ul>
+                        <li class="scrollnav-item is-active"><a href="#basic">Basic</a></li>
+                        <li class="scrollnav-item"><a href="#bordered">Bordered</a></li>
+                        <li class="scrollnav-item"><a href="#striped">Striped</a></li>
+                        <li class="scrollnav-item"><a href="#narrowed">Narrowed</a></li>
+                        <li class="scrollnav-item"><a href="#responsive">Responsive</a></li>
+                        <li class="scrollnav-item"><a href="#device-compare">Device</a></li>
+                        <li class="scrollnav-item"><a href="#compare">Compare</a></li>
+                    </ul>
+                </div>
+            </div>  
+        </div>
+        <!-- /Scrollnav -->
+        
+        <section id="tables" class="section is-medium">
+            <div class="container">
+                <div class="section-title-wrapper has-text-centered">
+                    <div class="bg-number">1</div>
+                    <h2 class="title section-title has-text-centered dark-text text-bold">
+                        Bulma Tables
+                    </h2>
+                </div>
+        
+                <!-- Basic table -->
+                <div class="columns is-vcentered">
+                    <div id="basic" class="column is-6 is-offset-3">
+                        <div class="info-block has-text-centered">
+                            <h4>Basic Table</h4>
+                            <p class="no-padding">You can quicly setup a styled table by adding the <code>.table</code> class to a <code>table</code> Html element. Several modifiers are also available. You can use any combination of them.</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="columns is-vcentered pt-30">
+                    <!-- Demo section -->
+                    <div class="column is-10 is-offset-1">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Username</th>
+                                    <th>Position</th>
+                                    <th>Role</th>
+                                    <th>Current projects</th>
+                                    <th>Specialized in</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td><a>Michael Hoffman</a></td>
+                                    <td>Engineer</td>
+                                    <td>Admin</td>
+                                    <td>21 projects</td>
+                                    <td>Php, Javascript, Html & CSS</td>
+                                    <td><button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td><a>Marjory Cambell</a></td>
+                                    <td>Sales Rep</td>
+                                    <td>Contributor</td>
+                                    <td>03 projects</td>
+                                    <td>Sales and Marketing</td>
+                                    <td><button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td><a>Kevin Smith</a></td>
+                                    <td>Engineer</td>
+                                    <td>Collaborator</td>
+                                    <td>12 projects</td>
+                                    <td>Javascript, Angular, Vue js</td>
+                                    <td><button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td><a>Adrian Fallow</a></td>
+                                    <td>Sales Manager</td>
+                                    <td>Reader</td>
+                                    <td>07 projects</td>
+                                    <td>Sales and email marketing</td>
+                                    <td><button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button></td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td><a>Helen Miller</a></td>
+                                    <td>Marketing Manager</td>
+                                    <td>Collaborator</td>
+                                    <td>03 projects</td>
+                                    <td>Sales and email marketing</td>
+                                    <td><button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button></td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td><a>Sarah Mitchells</a></td>
+                                    <td>Accountant</td>
+                                    <td>Collaborator</td>
+                                    <td>01 projects</td>
+                                    <td>Finance and Accounting</td>
+                                    <td><button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button></td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td><a>Kareem Jabbar</a></td>
+                                    <td>Accountant</td>
+                                    <td>Manager</td>
+                                    <td>14 projects</td>
+                                    <td>Finance and Accounting</td>
+                                    <td><button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- /Basic table -->
+        
+                <!-- Bordered table -->
+                <div class="columns is-vcentered pt-60">
+                    <div id="bordered" class="column is-6 is-offset-3">
+                        <div class="info-block has-text-centered pb-20">
+                            <h4>Bordered Table</h4>
+                            <p class="no-padding">To draw borders around the table and its cells, add the <code>.is-bordered</code> modifier class to a <code>.table</code> element.</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="columns is-vcentered pt-30">
+                    <!-- Demo section -->
+                    <div class="column is-10 is-offset-1">
+                        <table class="table is-bordered">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Username</th>
+                                    <th>Position</th>
+                                    <th>Role</th>
+                                    <th>Current projects</th>
+                                    <th>Specialized in</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td><a>Michael Hoffman</a></td>
+                                    <td>Engineer</td>
+                                    <td>Admin</td>
+                                    <td>21 projects</td>
+                                    <td>Php, Javascript, Html & CSS</td>
+                                    <td><button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td><a>Marjory Cambell</a></td>
+                                    <td>Sales Rep</td>
+                                    <td>Contributor</td>
+                                    <td>03 projects</td>
+                                    <td>Sales and Marketing</td>
+                                    <td><button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td><a>Kevin Smith</a></td>
+                                    <td>Engineer</td>
+                                    <td>Collaborator</td>
+                                    <td>12 projects</td>
+                                    <td>Javascript, Angular, Vue js</td>
+                                    <td><button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td><a>Adrian Fallow</a></td>
+                                    <td>Sales Manager</td>
+                                    <td>Reader</td>
+                                    <td>07 projects</td>
+                                    <td>Sales and email marketing</td>
+                                    <td><button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button></td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td><a>Helen Miller</a></td>
+                                    <td>Marketing Manager</td>
+                                    <td>Collaborator</td>
+                                    <td>03 projects</td>
+                                    <td>Sales and email marketing</td>
+                                    <td><button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button></td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td><a>Sarah Mitchells</a></td>
+                                    <td>Accountant</td>
+                                    <td>Collaborator</td>
+                                    <td>01 projects</td>
+                                    <td>Finance and Accounting</td>
+                                    <td><button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button></td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td><a>Kareem Jabbar</a></td>
+                                    <td>Accountant</td>
+                                    <td>Manager</td>
+                                    <td>14 projects</td>
+                                    <td>Finance and Accounting</td>
+                                    <td><button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- /Bordered table -->
+        
+                <!-- Striped table -->
+                <div class="columns is-vcentered pt-60">
+                    <div id="striped" class="column is-6 is-offset-3">
+                        <div class="info-block has-text-centered">
+                            <h4>Striped Table</h4>
+                            <p class="no-padding">To make a table's rows striped, add the <code>.is-striped</code> modifier class to a <code>.table</code> element.</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="columns is-vcentered pt-30">
+                    <!-- Demo section -->
+                    <div class="column is-10 is-offset-1">
+                        <table class="table is-striped">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Username</th>
+                                    <th>Position</th>
+                                    <th>Role</th>
+                                    <th>Current projects</th>
+                                    <th>Specialized in</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td><a>Michael Hoffman</a></td>
+                                    <td>Engineer</td>
+                                    <td>Admin</td>
+                                    <td>21 projects</td>
+                                    <td>Php, Javascript, Html & CSS</td>
+                                    <td><button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td><a>Marjory Cambell</a></td>
+                                    <td>Sales Rep</td>
+                                    <td>Contributor</td>
+                                    <td>03 projects</td>
+                                    <td>Sales and Marketing</td>
+                                    <td><button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td><a>Kevin Smith</a></td>
+                                    <td>Engineer</td>
+                                    <td>Collaborator</td>
+                                    <td>12 projects</td>
+                                    <td>Javascript, Angular, Vue js</td>
+                                    <td><button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td><a>Adrian Fallow</a></td>
+                                    <td>Sales Manager</td>
+                                    <td>Reader</td>
+                                    <td>07 projects</td>
+                                    <td>Sales and email marketing</td>
+                                    <td><button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button></td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td><a>Helen Miller</a></td>
+                                    <td>Marketing Manager</td>
+                                    <td>Collaborator</td>
+                                    <td>03 projects</td>
+                                    <td>Sales and email marketing</td>
+                                    <td><button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button></td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td><a>Sarah Mitchells</a></td>
+                                    <td>Accountant</td>
+                                    <td>Collaborator</td>
+                                    <td>01 projects</td>
+                                    <td>Finance and Accounting</td>
+                                    <td><button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button></td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td><a>Kareem Jabbar</a></td>
+                                    <td>Accountant</td>
+                                    <td>Manager</td>
+                                    <td>14 projects</td>
+                                    <td>Finance and Accounting</td>
+                                    <td><button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- /Striped table -->
+        
+                <!-- Narrowed table -->
+                <div class="columns is-vcentered pt-60">
+                    <div id="narrowed" class="column is-6 is-offset-3">
+                        <div class="info-block has-text-centered">
+                            <h4>Narrowed Table</h4>
+                            <p class="no-padding">You can make rows narrower by adding the <code>.is-narrow</code> modifier class to a <code>.table</code> element.</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="columns is-vcentered pt-30">
+                    <!-- Demo section -->
+                    <div class="column is-10 is-offset-1">
+                        <table class="table is-narrow">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Username</th>
+                                    <th>Position</th>
+                                    <th>Role</th>
+                                    <th>Current projects</th>
+                                    <th>Specialized in</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td><a>Michael Hoffman</a></td>
+                                    <td>Engineer</td>
+                                    <td>Admin</td>
+                                    <td>21 projects</td>
+                                    <td>Php, Javascript, Html & CSS</td>
+                                    <td><button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td><a>Marjory Cambell</a></td>
+                                    <td>Sales Rep</td>
+                                    <td>Contributor</td>
+                                    <td>03 projects</td>
+                                    <td>Sales and Marketing</td>
+                                    <td><button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td><a>Kevin Smith</a></td>
+                                    <td>Engineer</td>
+                                    <td>Collaborator</td>
+                                    <td>12 projects</td>
+                                    <td>Javascript, Angular, Vue js</td>
+                                    <td><button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td><a>Adrian Fallow</a></td>
+                                    <td>Sales Manager</td>
+                                    <td>Reader</td>
+                                    <td>07 projects</td>
+                                    <td>Sales and email marketing</td>
+                                    <td><button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button></td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td><a>Helen Miller</a></td>
+                                    <td>Marketing Manager</td>
+                                    <td>Collaborator</td>
+                                    <td>03 projects</td>
+                                    <td>Sales and email marketing</td>
+                                    <td><button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button></td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td><a>Sarah Mitchells</a></td>
+                                    <td>Accountant</td>
+                                    <td>Collaborator</td>
+                                    <td>01 projects</td>
+                                    <td>Finance and Accounting</td>
+                                    <td><button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button></td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td><a>Kareem Jabbar</a></td>
+                                    <td>Accountant</td>
+                                    <td>Manager</td>
+                                    <td>14 projects</td>
+                                    <td>Finance and Accounting</td>
+                                    <td><button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- /Narrowed table -->
+            </div>
+        </section>
+        
+        <section class="section is-medium">
+            <div class="container">
+                <div id="flex-card" class="section-title-wrapper has-text-centered">
+                    <div class="bg-number">2</div>
+                    <h2 class="title section-title has-text-centered dark-text text-bold">
+                        Custom Tables
+                    </h2>
+                </div>
+        
+                <!-- Responsive table -->
+                <div class="columns is-vcentered pt-60">
+                    <div id="responsive" class="column is-6 is-offset-3">
+                        <div class="info-block has-text-centered pb-20">
+                            <h4>Responsive Table</h4>
+                            <p class="no-padding">If you want your table to behave responsively, use the responsive table. To do so, add the <code>.responsive-table</code> class to a Html <code>table</code> element. Color modifiers are also available for the table header. Available classes are <code>.is-primary</code>, <code>.is-secondary</code>, and <code>.is-accent</code>.</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="columns is-vcentered pt-30">
+                    <!-- Demo section -->
+                    <div class="column is-10 is-offset-1">
+                        <table class="responsive-table is-accent mb-40">
+                            <tbody>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Role</th>
+                                    <th>Projects</th>
+                                    <th>Skills</th>
+                                    <th>Actions</th>
+                                </tr>
+                                <tr>
+                                    <td data-th="ID">
+                                        1
+                                    </td>
+                                    <td data-th="Name">
+                                        Michael Hoffman
+                                    </td>
+                                    <td data-th="Role">
+                                        Engineer
+                                    </td>
+                                    <td data-th="Projects">
+                                        21 projects
+                                    </td>
+                                    <td data-th="Skills">
+                                        Javascript
+                                    </td>
+                                    <td data-th="Actions">
+                                        <button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-th="ID">
+                                        2
+                                    </td>
+                                    <td data-th="Name">
+                                        Marjory Cambell
+                                    </td>
+                                    <td data-th="Role">
+                                        Sales Rep
+                                    </td>
+                                    <td data-th="Projects">
+                                        03 projects
+                                    </td>
+                                    <td data-th="Skills">
+                                        Sales
+                                    </td>
+                                    <td data-th="Actions">
+                                        <button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-th="ID">
+                                        3
+                                    </td>
+                                    <td data-th="Name">
+                                        Kevin Smith
+                                    </td>
+                                    <td data-th="Role">
+                                        Engineer
+                                    </td>
+                                    <td data-th="Projects">
+                                        12 projects
+                                    </td>
+                                    <td data-th="Skills">
+                                        Php
+                                    </td>
+                                    <td data-th="Actions">
+                                        <button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-th="ID">
+                                        4
+                                    </td>
+                                    <td data-th="Name">
+                                        Adrian Fallow
+                                    </td>
+                                    <td data-th="Role">
+                                        Sales Manager
+                                    </td>
+                                    <td data-th="Projects">
+                                        07 projects
+                                    </td>
+                                    <td data-th="Skills">
+                                        Sales
+                                    </td>
+                                    <td data-th="Actions">
+                                        <button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-th="ID">
+                                        5
+                                    </td>
+                                    <td data-th="Name">
+                                        Helen Miller
+                                    </td>
+                                    <td data-th="Role">
+                                        Marketing Manager
+                                    </td>
+                                    <td data-th="Projects">
+                                        03 projects
+                                    </td>
+                                    <td data-th="Skills">
+                                        Marketing
+                                    </td>
+                                    <td data-th="Actions">
+                                        <button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-th="ID">
+                                        6
+                                    </td>
+                                    <td data-th="Name">
+                                        Sarah Mitchells
+                                    </td>
+                                    <td data-th="Role">
+                                        Accountant
+                                    </td>
+                                    <td data-th="Projects">
+                                        01 project
+                                    </td>
+                                    <td data-th="Skills">
+                                        Finance
+                                    </td>
+                                    <td data-th="Actions">
+                                        <button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-th="ID">
+                                        7
+                                    </td>
+                                    <td data-th="Name">
+                                        Kareem Jabbar
+                                    </td>
+                                    <td data-th="Role">
+                                        Accountant
+                                    </td>
+                                    <td data-th="Projects">
+                                        14 projects
+                                    </td>
+                                    <td data-th="Skills">
+                                        Finance
+                                    </td>
+                                    <td data-th="Actions">
+                                        <button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+        
+                        <table class="responsive-table is-primary mb-40">
+                            <tbody>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Role</th>
+                                    <th>Projects</th>
+                                    <th>Skills</th>
+                                    <th>Actions</th>
+                                </tr>
+                                <tr>
+                                    <td data-th="ID">
+                                        1
+                                    </td>
+                                    <td data-th="Name">
+                                        Michael Hoffman
+                                    </td>
+                                    <td data-th="Role">
+                                        Engineer
+                                    </td>
+                                    <td data-th="Projects">
+                                        21 projects
+                                    </td>
+                                    <td data-th="Skills">
+                                        Javascript
+                                    </td>
+                                    <td data-th="Actions">
+                                        <button class="button is-small btn-align primary-btn raised rounded btn-outlined">Hire now</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-th="ID">
+                                        2
+                                    </td>
+                                    <td data-th="Name">
+                                        Marjory Cambell
+                                    </td>
+                                    <td data-th="Role">
+                                        Sales Rep
+                                    </td>
+                                    <td data-th="Projects">
+                                        03 projects
+                                    </td>
+                                    <td data-th="Skills">
+                                        Sales
+                                    </td>
+                                    <td data-th="Actions">
+                                        <button class="button is-small btn-align primary-btn raised rounded btn-outlined">Hire now</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-th="ID">
+                                        3
+                                    </td>
+                                    <td data-th="Name">
+                                        Kevin Smith
+                                    </td>
+                                    <td data-th="Role">
+                                        Engineer
+                                    </td>
+                                    <td data-th="Projects">
+                                        12 projects
+                                    </td>
+                                    <td data-th="Skills">
+                                        Php
+                                    </td>
+                                    <td data-th="Actions">
+                                        <button class="button is-small btn-align primary-btn raised rounded btn-outlined">Hire now</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-th="ID">
+                                        4
+                                    </td>
+                                    <td data-th="Name">
+                                        Adrian Fallow
+                                    </td>
+                                    <td data-th="Role">
+                                        Sales Manager
+                                    </td>
+                                    <td data-th="Projects">
+                                        07 projects
+                                    </td>
+                                    <td data-th="Skills">
+                                        Sales
+                                    </td>
+                                    <td data-th="Actions">
+                                        <button class="button is-small btn-align primary-btn raised rounded btn-outlined">Hire now</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-th="ID">
+                                        5
+                                    </td>
+                                    <td data-th="Name">
+                                        Helen Miller
+                                    </td>
+                                    <td data-th="Role">
+                                        Marketing Manager
+                                    </td>
+                                    <td data-th="Projects">
+                                        03 projects
+                                    </td>
+                                    <td data-th="Skills">
+                                        Marketing
+                                    </td>
+                                    <td data-th="Actions">
+                                        <button class="button is-small btn-align primary-btn raised rounded btn-outlined">Hire now</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-th="ID">
+                                        6
+                                    </td>
+                                    <td data-th="Name">
+                                        Sarah Mitchells
+                                    </td>
+                                    <td data-th="Role">
+                                        Accountant
+                                    </td>
+                                    <td data-th="Projects">
+                                        01 project
+                                    </td>
+                                    <td data-th="Skills">
+                                        Finance
+                                    </td>
+                                    <td data-th="Actions">
+                                        <button class="button is-small btn-align primary-btn raised rounded btn-outlined">Hire now</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-th="ID">
+                                        7
+                                    </td>
+                                    <td data-th="Name">
+                                        Kareem Jabbar
+                                    </td>
+                                    <td data-th="Role">
+                                        Accountant
+                                    </td>
+                                    <td data-th="Projects">
+                                        14 projects
+                                    </td>
+                                    <td data-th="Skills">
+                                        Finance
+                                    </td>
+                                    <td data-th="Actions">
+                                        <button class="button is-small btn-align primary-btn raised rounded btn-outlined">Hire now</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+        
+                        <table class="responsive-table is-secondary mb-40">
+                            <tbody>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Role</th>
+                                    <th>Projects</th>
+                                    <th>Skills</th>
+                                    <th>Actions</th>
+                                </tr>
+                                <tr>
+                                    <td data-th="ID">
+                                        1
+                                    </td>
+                                    <td data-th="Name">
+                                        Michael Hoffman
+                                    </td>
+                                    <td data-th="Role">
+                                        Engineer
+                                    </td>
+                                    <td data-th="Projects">
+                                        21 projects
+                                    </td>
+                                    <td data-th="Skills">
+                                        Javascript
+                                    </td>
+                                    <td data-th="Actions">
+                                        <button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-th="ID">
+                                        2
+                                    </td>
+                                    <td data-th="Name">
+                                        Marjory Cambell
+                                    </td>
+                                    <td data-th="Role">
+                                        Sales Rep
+                                    </td>
+                                    <td data-th="Projects">
+                                        03 projects
+                                    </td>
+                                    <td data-th="Skills">
+                                        Sales
+                                    </td>
+                                    <td data-th="Actions">
+                                        <button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-th="ID">
+                                        3
+                                    </td>
+                                    <td data-th="Name">
+                                        Kevin Smith
+                                    </td>
+                                    <td data-th="Role">
+                                        Engineer
+                                    </td>
+                                    <td data-th="Projects">
+                                        12 projects
+                                    </td>
+                                    <td data-th="Skills">
+                                        Php
+                                    </td>
+                                    <td data-th="Actions">
+                                        <button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-th="ID">
+                                        4
+                                    </td>
+                                    <td data-th="Name">
+                                        Adrian Fallow
+                                    </td>
+                                    <td data-th="Role">
+                                        Sales Manager
+                                    </td>
+                                    <td data-th="Projects">
+                                        07 projects
+                                    </td>
+                                    <td data-th="Skills">
+                                        Sales
+                                    </td>
+                                    <td data-th="Actions">
+                                        <button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-th="ID">
+                                        5
+                                    </td>
+                                    <td data-th="Name">
+                                        Helen Miller
+                                    </td>
+                                    <td data-th="Role">
+                                        Marketing Manager
+                                    </td>
+                                    <td data-th="Projects">
+                                        03 projects
+                                    </td>
+                                    <td data-th="Skills">
+                                        Marketing
+                                    </td>
+                                    <td data-th="Actions">
+                                        <button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-th="ID">
+                                        6
+                                    </td>
+                                    <td data-th="Name">
+                                        Sarah Mitchells
+                                    </td>
+                                    <td data-th="Role">
+                                        Accountant
+                                    </td>
+                                    <td data-th="Projects">
+                                        01 project
+                                    </td>
+                                    <td data-th="Skills">
+                                        Finance
+                                    </td>
+                                    <td data-th="Actions">
+                                        <button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-th="ID">
+                                        7
+                                    </td>
+                                    <td data-th="Name">
+                                        Kareem Jabbar
+                                    </td>
+                                    <td data-th="Role">
+                                        Accountant
+                                    </td>
+                                    <td data-th="Projects">
+                                        14 projects
+                                    </td>
+                                    <td data-th="Skills">
+                                        Finance
+                                    </td>
+                                    <td data-th="Actions">
+                                        <button class="button is-small btn-align accent-btn raised rounded btn-outlined">Hire now</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- /Responsive table -->
+        
+                <!-- Device compare table -->
+                <div class="columns is-vcentered pt-60">
+                    <div id="device-compare" class="column is-6 is-offset-3">
+                        <div class="info-block has-text-centered">
+                            <h4>Device compare Table</h4>
+                            <p class="no-padding">Use the device comparison table to compare app features between devices. Add the <code>.device-table</code> class to a <code>.table</code> element.</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="columns is-vcentered pt-30">
+                    <!-- Demo section -->
+                    <div class="column is-6 is-offset-3">
+                        <table class="table device-table">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th><i class="im im-icon-Smartphone-3"></i></th>
+                                    <th><i class="im im-icon-Tablet-3"></i></th>
+                                    <th><i class="im im-icon-Laptop"></i></th>
+                                    <th><i class="im im-icon-Monitor-2"></i></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="feature-name">Invoice editing</td>
+                                    <td><i class="im im-icon-Close is-disabled"></i></td>
+                                    <td><i class="im im-icon-Yes"></i></td>
+                                    <td><i class="im im-icon-Yes"></i></td>
+                                    <td><i class="im im-icon-Yes"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="feature-name">Payments schedule</td>
+                                    <td><i class="im im-icon-Yes"></i></td>
+                                    <td><i class="im im-icon-Yes"></i></td>
+                                    <td><i class="im im-icon-Yes"></i></td>
+                                    <td><i class="im im-icon-Yes"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="feature-name">Collaboration</td>
+                                    <td><i class="im im-icon-Yes"></i></td>
+                                    <td><i class="im im-icon-Yes"></i></td>
+                                    <td><i class="im im-icon-Yes"></i></td>
+                                    <td><i class="im im-icon-Yes"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="feature-name">Permissions</td>
+                                    <td><i class="im im-icon-Close is-disabled"></i></td>
+                                    <td><i class="im im-icon-Yes"></i></td>
+                                    <td><i class="im im-icon-Yes"></i></td>
+                                    <td><i class="im im-icon-Yes"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- Device compare table -->
+        
+                <!-- Compare table -->
+                <div class="columns is-vcentered pt-60">
+                    <div id="compare" class="column is-6 is-offset-3">
+                        <div class="info-block has-text-centered">
+                            <h4>Feature compare Table</h4>
+                            <p class="no-padding">Use the feature comparison table to compare features between pricing plans or app editions. Add the <code>.compare-table</code> class to a <code>.table</code> element.</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="columns is-vcentered pt-30">
+                    <!-- Demo section -->
+                    <div class="column is-8 is-offset-2">
+                        <table class="table compare-table">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>STARTER</th>
+                                    <th>PRO</th>
+                                    <th>BUSINESS</th>
+                                    <th>ENTERPRISE</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="feature-name">Invoice editing</td>
+                                    <td><i class="fa fa-check"></i></td>
+                                    <td><i class="fa fa-check"></i></td>
+                                    <td><i class="fa fa-check"></i></td>
+                                    <td><i class="fa fa-check"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="feature-name">Payments schedule</td>
+                                    <td><i class="fa fa-check"></i></td>
+                                    <td><i class="fa fa-check"></i></td>
+                                    <td><i class="fa fa-check"></i></td>
+                                    <td><i class="fa fa-check"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="feature-name">Collaboration</td>
+                                    <td><i class="fa fa-close is-disabled"></i></td>
+                                    <td><i class="fa fa-close is-disabled"></i></td>
+                                    <td><i class="fa fa-check"></i></td>
+                                    <td><i class="fa fa-check"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="feature-name">Permissions</td>
+                                    <td><i class="fa fa-close is-disabled"></i></td>
+                                    <td><i class="fa fa-check"></i></td>
+                                    <td><i class="fa fa-check"></i></td>
+                                    <td><i class="fa fa-check"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="feature-name">Online Storage</td>
+                                    <td><i class="fa fa-close is-disabled"></i></td>
+                                    <td><i class="fa fa-close is-disabled"></i></td>
+                                    <td><i class="fa fa-close is-disabled"></i></td>
+                                    <td><i class="fa fa-check"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Compare table -->
+        
+        <!-- Dark footer -->
+        <footer id="dark-footer" class="footer footer-dark">
+            <div class="container">
+                <div class="columns">
+                    <div class="column">
+                        <div class="footer-column">
+                            <div class="footer-header">
+                                <h3>Product</h3>
+                            </div>
+                            <ul class="link-list">
+                                <li><a href="#">Discover features</a></li>
+                                <li><a href="#">CMS integration</a></li>
+                                <li><a href="#">Customers</a></li>
+                                <li><a href="#">Weekly sessions</a></li>
+                                <li><a href="#">Free trials and demo</a></li>
+                                <li><a href="#">What's next ?</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="footer-column">
+                            <div class="footer-header">
+                                <h3>Company</h3>
+                            </div>
+                            <ul class="link-list">
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">About security</a></li>
+                                <li><a href="#">User guide</a></li>
+                                <li><a href="#">Terms of service</a></li>
+                                <li><a href="#">Terms of website use</a></li>
+                                <li><a href="#">Privacy policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="footer-column">
+                            <div class="footer-header">
+                                <h3>Learning</h3>
+                            </div>
+                            <ul class="link-list">
+                                <li><a href="#">Resources</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">API documentation</a></li>
+                                <li><a href="#">Admin guide</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="footer-column">
+                            <div class="footer-logo">
+                                <img src="assets/images/logos/bulkit-sky.svg" alt="">
+                            </div>
+                            <div class="footer-header">
+                                <nav class="level is-mobile">
+                                    <div class="level-left level-social">
+                                        <a href="#" class="level-item">
+                                            <span class="icon"><i class="fa fa-facebook"></i></span>
+                                        </a>
+                                        <a href="#" class="level-item">
+                                            <span class="icon"><i class="fa fa-twitter"></i></span>
+                                        </a>
+                                        <a href="#" class="level-item">
+                                            <span class="icon"><i class="fa fa-linkedin"></i></span>
+                                        </a>
+                                        <a href="#" class="level-item">
+                                            <span class="icon"><i class="fa fa-dribbble"></i></span>
+                                        </a>
+                                        <a href="#" class="level-item">
+                                            <span class="icon"><i class="fa fa-github"></i></span>
+                                        </a>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="copyright">
+                                <span class="moto light-text">Designed and coded with <i class="fa fa-heart color-red"></i> by CSS Ninja.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- /Dark footer -->        <!-- Side navigation -->
+        <div class="side-navigation-menu">
+            <!-- Categories menu -->
+            <div class="category-menu-wrapper">
+                <!-- Menu -->
+                <ul class="categories">
+                    <li class="square-logo"><img src="assets/images/logos/square-white.svg" alt=""></li>
+                    <li class="category-link is-active" data-navigation-menu="demo-pages"><i class="sl sl-icon-layers"></i></li>
+                    <li class="category-link" data-navigation-menu="onepagers"><i class="sl sl-icon-energy"></i></li>
+                    <li class="category-link" data-navigation-menu="components"><i class="sl sl-icon-grid"></i></li>
+                </ul>
+                <!-- Menu -->
+        
+                <ul class="author">
+                    <li>
+                        <!-- Theme author -->
+                        <a href="https://cssninja.io" target="_blank">
+                            <img class="main-menu-author" src="assets/images/logos/cssninja.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /Categories menu -->
+        
+            <!-- Navigation menu -->
+            <div id="demo-pages" class="navigation-menu-wrapper animated preFadeInRight fadeInRight">
+                <!-- Navigation Header -->
+                <div class="navigation-menu-header">
+                    <span>Demo pages</span>
+                    <a class="ml-auto hamburger-btn navigation-close" href="javascript:void(0);">
+                        <span class="menu-toggle">
+                            <span class="icon-box-toggle">
+                                <span class="rotate">
+                                    <i class="icon-line-top"></i>
+                                    <i class="icon-line-center"></i>
+                                    <i class="icon-line-bottom"></i>
+                                </span>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <!-- Navigation Body -->
+                <ul class="navigation-menu">
+                    <li class="has-children"><a class="parent-link" href="#"><span class="material-icons">weekend</span>Agency kit</a>
+                        <ul>
+                            <li><a class="is-submenu" href="/agency/index.html">Homepage</a></li>
+                            <li><a class="is-submenu" href="/agency/agency-about.html">About</a></li>
+                            <li><a class="is-submenu" href="/agency/agency-portfolio.html">Portfolio</a></li>
+                            <li><a class="is-submenu" href="/agency/agency-contact.html">Contact</a></li>
+                            <li><a class="is-submenu" href="/agency/agency-blog.html">Blog</a></li>
+                            <li><a class="is-submenu" href="/agency/agency-post-sidebar.html">Post sidebar</a></li>
+                            <li><a class="is-submenu" href="/agency/agency-post-nosidebar.html">Post no sidebar</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children"><a class="parent-link" href="#"><span class="material-icons">wb_incandescent</span>Startup kit</a>
+                        <ul>
+                            <li><a class="is-submenu" href="/startup/index.html">Homepage</a></li>
+                            <li><a class="is-submenu" href="/startup/startup-about.html">About</a></li>
+                            <li><a class="is-submenu" href="/startup/startup-product.html">Product</a></li>
+                            <li><a class="is-submenu" href="/startup/startup-contact.html">Contact</a></li>
+                            <li><a class="is-submenu" href="/startup/startup-login.html">Login</a></li>
+                            <li><a class="is-submenu" href="/startup/startup-signup.html">Sign up</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children"><a class="parent-link" href="#"><span class="material-icons">looks</span>Landing kit v1</a>
+                        <ul>
+                            <li><a class="is-submenu" href="/landing-kits/kit-1/index.html">Landing page</a></li>
+                            <li><a class="is-submenu" href="/landing-kits/kit-1/landing-features.html">Feature page</a></li>
+                            <li><a class="is-submenu" href="/landing-kits/kit-1/landing-pricing.html">Pricing page</a></li>
+                            <li><a class="is-submenu" href="/landing-kits/kit-1/landing-login.html">Login page</a></li>
+                            <li><a class="is-submenu" href="/landing-kits/kit-1/landing-signup.html">Signup page</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children"><a class="parent-link" href="#"><span class="material-icons">invert_colors</span>Landing kit v2</a>
+                        <ul>
+                            <li><a class="is-submenu" href="/landing-kits/kit-2/index.html">Landing page</a></li>
+                            <li><a class="is-submenu" href="/landing-kits/kit-2/landing-v1-features.html">Feature page</a></li>
+                            <li><a class="is-submenu" href="/landing-kits/kit-2/landing-v1-pricing.html">Pricing page</a></li>
+                            <li><a class="is-submenu" href="/landing-kits/kit-2/landing-v1-login.html">Login page</a></li>
+                            <li><a class="is-submenu" href="/landing-kits/kit-2/landing-v1-signup.html">Signup page</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children"><a class="parent-link" href="#"><span class="material-icons">chat_bubble</span>Landing kit v3</a>
+                        <ul>
+                            <li><a class="is-submenu" href="/landing-kits/kit-3/index.html">Landing page</a></li>
+                            <li><a class="is-submenu" href="/landing-kits/kit-3/landing-v2-features.html">Feature page</a></li>
+                            <li><a class="is-submenu" href="/landing-kits/kit-3/landing-v2-pricing.html">Pricing page</a></li>
+                            <li><a class="is-submenu" href="/landing-kits/kit-3/landing-v2-login.html">Login page</a></li>
+                            <li><a class="is-submenu" href="/landing-kits/kit-3/landing-v2-signup.html">Signup page</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children"><a class="parent-link" href="#"><span class="material-icons">business</span>Landing kit v4</a>
+                        <ul>
+                            <li><a class="is-submenu" href="/landing-kits/kit-4/index.html">Landing page</a></li>
+                            <li><a class="is-submenu" href="/landing-kits/kit-4/landing-v3-pricing.html">Pricing page</a></li>
+                            <li><a class="is-submenu" href="/landing-kits/kit-4/landing-v3-help.html">Help center</a></li>
+                            <li><a class="is-submenu" href="/landing-kits/kit-4/landing-v3-help-category.html">Help category</a></li>
+                            <li><a class="is-submenu" href="/landing-kits/kit-4/landing-v3-help-article.html">Help article</a></li>
+                            <li><a class="is-submenu" href="/landing-kits/kit-4/landing-v3-signup.html">Login</a></li>
+                            <li><a class="is-submenu" href="/landing-kits/kit-4/landing-v3-login.html">Sign up</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children"><a class="parent-link" href="#"><span class="material-icons">face</span>Landing kit v5</a>
+                        <ul>
+                            <li><a class="is-submenu has-new-feature" href="/landing-kits/kit-5/index.html">Landing page</a></li>
+                            <li><a class="is-submenu has-new-feature" href="/landing-kits/kit-5/landing-v4-features.html">Feature page</a></li>
+                            <li><a class="is-submenu has-new-feature" href="/landing-kits/kit-5/landing-v4-pricing.html">Pricing Page</a></li>
+                            <li><a class="is-submenu has-new-feature" href="/landing-kits/kit-5/landing-v4-login.html">Login / Signup</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children"><a class="parent-link" href="#"><span class="material-icons">cloud</span>Landing kit v6</a>
+                        <ul>
+                            <li><a class="is-submenu has-new-update" href="/landing-kits/kit-6/index.html">Landing page</a></li>
+                            <li><a class="is-submenu has-new-update" href="/landing-kits/kit-6/landing-v5-home.html">Landing page v2</a></li>
+                            <li><a class="is-submenu has-new-update" href="/landing-kits/kit-6/landing-v5-login.html">Login page</a></li>
+                            <li><a class="is-submenu has-new-update" href="/landing-kits/kit-6/landing-v5-signup.html">Signup page</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children"><a class="parent-link has-new" href="#"><span class="material-icons">backspace</span>Error
+                            Kit</a>
+                        <ul>
+                            <li><a class="is-submenu has-new-update is-2_4" href="/landing-kits/kit-error/index.html">Error 404 (V1)</a></li>
+                            <li><a class="is-submenu has-new-update is-2_4" href="/landing-kits/kit-error/error-2.html">Error 404 (V2)</a></li>
+                            <li><a class="is-submenu has-new-update is-2_4" href="/landing-kits/kit-error/error-3.html">Error 404 (V3)</a></li>
+                            <li><a class="is-submenu has-new-update is-2_4" href="/landing-kits/kit-error/error-4.html">Error 404 (V4)</a></li>
+                            <li><a class="is-submenu has-new-update is-2_4" href="/landing-kits/kit-error/error-5.html">Error 404 (V5)</a></li>
+                            <li><a class="is-submenu has-new-update is-2_4" href="/landing-kits/kit-error/error-6.html">Error 404 (V6)</a></li>
+                            <li><a class="is-submenu has-new-update is-2_4" href="/landing-kits/kit-error/error-7.html">Error 500 (V1)</a></li>
+                            <li><a class="is-submenu has-new-update is-2_4" href="/landing-kits/kit-error/error-8.html">Error 500 (V2)</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /Navigation menu -->
+            <!-- Navigation menu -->
+            <div id="onepagers" class="navigation-menu-wrapper animated preFadeInRight fadeInRight is-hidden">
+                <!-- Navigation Header -->
+                <div class="navigation-menu-header">
+                    <span>One Pagers</span>
+                    <a class="ml-auto hamburger-btn navigation-close" href="javascript:void(0);">
+                        <span class="menu-toggle">
+                            <span class="icon-box-toggle">
+                                <span class="rotate">
+                                    <i class="icon-line-top"></i>
+                                    <i class="icon-line-center"></i>
+                                    <i class="icon-line-bottom"></i>
+                                </span>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <!-- Navigation body -->
+                <ul class="navigation-menu">
+                    <li class="has-children"><a class="parent-link has-new" href="#"><span class="material-icons">dashboard</span>One Pager 1</a>
+                        <ul>
+                            <li><a class="is-submenu has-new-update is-2_3" href="/one-pager-1/">Header 1</a></li>
+                            <li><a class="is-submenu has-new-update is-2_3" href="/one-pager-1/op1-2.html">Header 2</a></li>
+                            <li><a class="is-submenu has-new-update is-2_3" href="/one-pager-1/op1-3.html">Header 3</a></li>
+                            <li><a class="is-submenu has-new-update is-2_3" href="/one-pager-1/op1-4.html">Header 4</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children"><a class="parent-link has-new" href="#">
+                            <span class="material-icons">markunread_mailbox</span>One Pager 2</a>
+                        <ul>
+                            <li><a class="is-submenu has-new-update is-2_4" href="/one-pager-2/">Landing Page</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- Navigation menu -->
+            <div id="components" class="navigation-menu-wrapper animated preFadeInRight fadeInRight is-hidden">
+                <!-- Navigation Header -->
+                <div class="navigation-menu-header">
+                    <span>Components</span>
+                    <a class="ml-auto hamburger-btn navigation-close" href="javascript:void(0);">
+                        <span class="menu-toggle">
+                            <span class="icon-box-toggle">
+                                <span class="rotate">
+                                    <i class="icon-line-top"></i>
+                                    <i class="icon-line-center"></i>
+                                    <i class="icon-line-bottom"></i>
+                                </span>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <!-- Navigation body -->
+                <ul class="navigation-menu">
+                    <li class="has-children"><a class="parent-link" href="#"><span class="material-icons">view_quilt</span>Layout</a>
+                        <ul>
+                            <li><a class="is-submenu has-new-feature" href="/_components-layout-grid.html">Grid system</a></li>
+                            <li><a class="is-submenu" href="/_components-layout-video.html">Video background</a></li>
+                            <li><a class="is-submenu" href="/_components-layout-parallax.html">Parallax</a></li>
+                            <li><a class="is-submenu" href="/_components-layout-headers.html">Headers</a></li>
+                            <li><a class="is-submenu" href="/_components-layout-footers.html">Footers</a></li>
+                            <li><a class="is-submenu has-new-feature" href="/_components-layout-typography.html">Typography</a></li>
+                            <li><a class="is-submenu" href="/_components-layout-colors.html">Colors</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children"><a class="parent-link" href="#"><span class="material-icons">subject</span>Navbars</a>
+                        <ul>
+                            <li><a class="is-submenu has-new-feature" href="/_components-layout-navbar-fade-light.html">Fade light</a></li>
+                            <li><a class="is-submenu has-new-feature" href="/_components-layout-navbar-fade-dark.html">Fade dark</a></li>
+                            <li><a class="is-submenu has-new-feature" href="/_components-layout-navbar-static-light.html">Static light</a></li>
+                            <li><a class="is-submenu has-new-feature" href="/_components-layout-navbar-static-dark.html">Static dark</a></li>
+                            <li><a class="is-submenu has-new-feature" href="/_components-layout-navbar-static-solid.html">Static solid</a></li>
+                            <li><a class="is-submenu has-new-feature" href="/_components-layout-navbar-double-dark.html">Double dark</a></li>
+                            <li><a class="is-submenu has-new-feature" href="/_components-layout-navbar-double-light.html">Double light</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children"><a class="parent-link" href="#"><span class="material-icons">view_stream</span>Sections</a>
+                        <ul>
+                            <li><a class="is-submenu" href="/_components-sections-features.html">Features</a></li>
+                            <li><a class="is-submenu" href="/_components-sections-pricing.html">Pricing</a></li>
+                            <li><a class="is-submenu" href="/_components-sections-team.html">Team</a></li>
+                            <li><a class="is-submenu" href="/_components-sections-testimonials.html">Testimonials</a></li>
+                            <li><a class="is-submenu" href="/_components-sections-clients.html">Clients</a></li>
+                            <li><a class="is-submenu" href="/_components-sections-counters.html">Counters</a></li>
+                            <li><a class="is-submenu" href="/_components-sections-carousel.html">Carousel</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children"><a class="parent-link" href="#"><span class="material-icons">playlist_add_check</span>Basic UI</a>
+                        <ul>
+                            <li><a class="is-submenu" href="/_components-basicui-cards.html">Cards</a></li>
+                            <li><a class="is-submenu" href="/_components-basicui-buttons.html">Buttons</a></li>
+                            <li><a class="is-submenu" href="/_components-basicui-dropdowns.html">Dropdowns</a></li>
+                            <li><a class="is-submenu" href="/_components-basicui-lists.html">Lists</a></li>
+                            <li><a class="is-submenu" href="/_components-basicui-modals.html">Modals</a></li>
+                            <li><a class="is-submenu" href="/_components-basicui-tabs.html">Tabs & pills</a></li>
+                            <li><a class="is-submenu" href="/_components-basicui-accordion.html">Accordions</a></li>
+                            <li><a class="is-submenu" href="/_components-basicui-badges.html">Badges & labels</a></li>
+                            <li><a class="is-submenu" href="/_components-basicui-popups.html">Popups</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children"><a class="parent-link" href="#"><span class="material-icons">playlist_add</span>Advanced UI</a>
+                        <ul>
+                            <li><a class="is-submenu" href="/_components-advancedui-tables.html">Tables</a></li>
+                            <li><a class="is-submenu" href="/_components-advancedui-timeline.html">Timeline</a></li>
+                            <li><a class="is-submenu" href="/_components-advancedui-boxes.html">Boxes</a></li>
+                            <li><a class="is-submenu" href="/_components-advancedui-messages.html">Messages</a></li>
+                            <li><a class="is-submenu has-new-feature" href="/_components-advancedui-megamenu.html">Megamenu</a></li>
+                            <li><a class="is-submenu has-new-feature" href="/_components-advancedui-calendar.html">Calendar</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children"><a class="parent-link has-new" href="#"><span class="material-icons">check_box</span>Forms</a>
+                        <ul>
+                            <li><a class="is-submenu has-new-feature is-2_2" href="/_components-forms-inputs.html">Inputs</a></li>
+                            <li><a class="is-submenu" href="/_components-forms-controls.html">Controls</a></li>
+                            <li><a class="is-submenu" href="/_components-forms-layouts.html">Form layouts</a></li>
+                            <li><a class="is-submenu has-new-feature" href="/_components-forms-steps.html">Step forms</a></li>
+                            <li><a class="is-submenu" href="/_components-forms-uploader.html">Uploader</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children"><a class="parent-link" href="#"><span class="material-icons">adjust</span>Icons</a>
+                        <ul>
+                            <li><a class="is-submenu" href="/_components-icons-im.html">Icons Mind</a></li>
+                            <li><a class="is-submenu" href="/_components-icons-sl.html">Simple Line Icons</a></li>
+                            <li><a class="is-submenu" href="/_components-icons-fa.html">Font Awesome</a></li>
+                            <li><a class="is-submenu" href="https://material.io/icons/" target="_blank">Material Icons</a></li>
+                            <li><a class="is-submenu has-new-feature" href="/_components-extensions-iconpicker.html">Icon Picker</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /Navigation menu --></div>
+        <!-- /Side navigation -->        <!-- Back To Top Button -->
+        <div id="backtotop"><a href="#"></a></div>        <!-- Concatenated jQuery and plugins -->
+        <script src="assets/js/app.js"></script>
+        
+        <!-- Bulkit js -->
+        <script src="assets/js/components-modals.js"></script>
+        <script src="assets/js/components-inputs.js"></script>
+        <script src="assets/js/components-accordion.js"></script>
+        <script src="assets/js/components-toasts.js"></script>
+        <script src="assets/js/components-range.js"></script>
+        <script src="assets/js/components-fileinput.js"></script>
+        <script src="assets/js/components-uploader.js"></script>
+        
+        <script src="assets/js/extensions/bulma-iconpicker.js"></script>
+        
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/demo.js"></script>    </body>  
+</html>

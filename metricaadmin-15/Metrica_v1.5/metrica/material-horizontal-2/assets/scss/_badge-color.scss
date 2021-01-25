@@ -1,0 +1,123 @@
+
+.badge {
+  box-shadow: $shadow;
+  padding: 4px 6px 3px;
+  font-weight: 500;
+  line-height: 10px;
+  &.badge-md {
+    padding: 6px;
+    font-size: 10px;
+  }
+}
+
+
+
+.badge-custom {
+  background: $primary;
+  color: $white;
+}
+
+.badge-primary {
+  background-color: $primary;
+  box-shadow: 0 5px 5px rgba($primary,0.5);
+}
+
+.badge-secondary {
+  background-color: $secondary;
+  box-shadow: 0 5px 5px rgba($secondary,0.3);
+}
+
+.badge-success {
+  background-color: $success;
+  box-shadow: 0 5px 5px rgba($success,0.3);
+}
+
+.badge-info {
+  background-color: $info;
+  box-shadow: 0 5px 5px rgba($info,0.3);
+}
+
+.badge-warning {
+  background-color: $warning;
+  color: $white;
+  box-shadow: 0 5px 5px rgba($warning,0.3);
+}
+
+.badge-danger {
+  background-color: $danger;
+  box-shadow: 0 5px 5px rgba($danger,0.3);
+}
+
+.badge-purple {
+  background-color: $purple;
+  color: $white;
+  box-shadow: 0 5px 5px rgba($purple,0.3);
+}
+
+.badge-pink {
+  background-color: $pink;
+  color: $white;
+  box-shadow: 0 5px 5px rgba($pink,0.3);
+}
+
+.badge-blue {
+  background-color: $blue;
+  color: $white;
+  box-shadow: 0 5px 5px rgba($blue,0.3);
+}
+
+.badge-orange {
+  background-color: $orange;
+  color: $white;
+  box-shadow: 0 5px 5px rgba($orange,0.3);
+}
+
+.badge-dark {
+  background-color: $dark;
+  box-shadow: 0 5px 5px rgba($dark,0.3);
+}
+
+/*Badge Soft Color*/
+
+.badge-soft-success{
+  color: $success;
+  background-color: rgba($success,.2);
+}
+
+.badge-soft-primary{
+  color: $primary;
+  background-color: rgba($primary,.2);
+}
+
+.badge-soft-danger{
+  color: $danger;
+  background-color: rgba($danger,.2);
+}
+
+.badge-soft-info{
+  color: $info;
+  background-color: rgba($info,.2);
+}
+.badge-soft-warning{
+  color: $warning;
+  background-color: rgba($warning,.2);
+}
+.badge-soft-pink{
+  color: $pink;
+  background-color: rgba($pink,.2);
+}
+
+.badge-soft-purple{
+  color: $purple;
+  background-color: rgba($purple,.2);
+}
+
+.badge-soft-blue{
+  color: $blue;
+  background-color: rgba($blue,.2);
+}
+
+.badge-soft-dark{
+  color: $dark;
+  background-color: rgba($dark,.2);
+}

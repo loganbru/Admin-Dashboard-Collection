@@ -1,0 +1,56 @@
+{
+  "name": "yarn-install",
+  "version": "1.0.0",
+  "description": "Install dependencies using Yarn with npm fallback.",
+  "license": "MIT",
+  "repository": "egoist/yarn-install",
+  "author": {
+    "name": "EGOIST",
+    "email": "0x142857@gmail.com",
+    "url": "github.com/egoist"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "scripts": {
+    "test": "jest -i && npm run lint",
+    "lint": "xo"
+  },
+  "files": [
+    "index.js",
+    "bin"
+  ],
+  "bin": {
+    "yarn-install": "bin/yarn-install.js",
+    "yarn-remove": "bin/yarn-remove.js"
+  },
+  "keywords": [
+    "yarn",
+    "install"
+  ],
+  "devDependencies": {
+    "eslint-config-rem": "^3.1.0",
+    "execa": "^0.5.0",
+    "jest-cli": "^15.1.1",
+    "pokemon": "^1.2.2",
+    "require-uncached": "^1.0.3",
+    "xo": "^0.18.2"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "xo": {
+    "extends": "rem",
+    "envs": [
+      "jest"
+    ],
+    "rules": {
+      "no-unused-expressions": 0
+    }
+  },
+  "dependencies": {
+    "cac": "^3.0.3",
+    "chalk": "^1.1.3",
+    "cross-spawn": "^4.0.2"
+  }
+}

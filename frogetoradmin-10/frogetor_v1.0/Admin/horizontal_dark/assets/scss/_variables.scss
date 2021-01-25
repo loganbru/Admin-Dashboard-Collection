@@ -1,0 +1,67 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+
+
+// Color variables
+
+$white:                     #ffffff;
+$primary:                   #5766da;
+$secondary:                 #787892;
+$success:                   #1ecab8;
+$info:                      #00bcd4;
+$warning:                   #fbb624;
+$danger:                    #f93b7a;
+$purple:                    #7043c1;
+$pink:                      #ec408f;
+$muted:                     #98a6ad;
+$light:                     #2f394e;
+$dark:                      #f8f9fa;
+
+// Gray Colors
+$gray-900:                  #f8f9fa;
+$gray-800:                  #e9ecef;
+$gray-700:                  #dee2e6;
+$gray-600:                  #ced4da;
+$gray-500:                  #a8a8b1;
+$gray-400:                  #6c757d;
+$gray-300:                  #5d5b6f;
+$gray-200:                  #343a40;
+$gray-100:                  #23222f;
+
+
+
+// Body Background
+$account-body:              #181b2e;
+$bg-body:                   #0f111d;
+$bg-card:                   #181b2e;
+$co-card:                   #181b2e;
+// Topbar
+$topbar-height:               70px;
+$bg-navbar:                 #0f111d; 
+$bg-logo:                   #23222f;
+
+$table-light:               #2c3046;
+
+// Left-sidebar
+$bg-leftbar:                #181b2e;
+$leftbar-width:               270px;
+$leftbar-width-collapsed:     70px;
+$menu-item-color:           #7a7c88;
+$menu-item-hover-color:     #a3a5b3;
+$menu-sub-item-color:       #7a7c88;
+$menu-sub-item-hover-color: #a3a5b3;
+
+$header-title:              #b8bdc3;
+
+// Font variables
+$font-primary:                'Roboto', sans-serif;
+
+// Font Base
+$font-size-base:              14px;
+
+// Shadow
+$shadow:                      0 0 24px 0 rgba(0, 0, 0, 0.06), 0 1px 0 0 rgba(0, 0, 0, 0.02);
+$shadow-lg:                   0 0 24px 0 rgba(0, 0, 0, 0.15), 0 1px 0 0 rgba(0, 0, 0, 0.1);
+
+$range-handle:              #6b5841;

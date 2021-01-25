@@ -1,0 +1,43 @@
+<pgcard TimeOut="3000" AdditionalClasses="widget-14 card no-border  no-margin widget-loader-circle" Maximize="false" Toggle="false" Close="false" BodyClass="no-padding">
+  <ng-template #CardTitle>
+    <span class="font-montserrat fs-11 all-caps">
+      Server load
+    </span>
+  </ng-template>	
+  <div class="container-xs-height full-height">
+        <div class="row-xs-height">
+          <div class="col-xs-height">
+            <div class="p-l-20 p-r-20">
+              <p>Server: www.revox.io</p>
+  
+              <div class="row">
+                <div class="col-xlg-3 col-lg-4 col-md-12">
+                  <h4 class="bold no-margin">5.2GB</h4>
+  
+                  <p class="small no-margin">Total usage</p>
+                </div>
+                <div class="col-xlg-3 col-lg-4 col-md-6">
+                  <h5 class=" no-margin p-t-5">227.34KB</h5>
+  
+                  <p class="small no-margin">Currently</p>
+                </div>
+                <div class="col-xlg-3 col-lg-4 col-md-6">
+                  <h5 class=" no-margin p-t-5">117.65MB</h5>
+  
+                  <p class="small no-margin">Average</p>
+                </div>
+                <div class="col-xlg-3 visible-xlg">
+                  <div class="widget-14-chart-legend bg-transparent text-black no-padding pull-right"></div>
+                  <div class="clearfix"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row-xs-height">
+          <div class="col-xs-height relative" #chartContainer>
+					  <nvd3 [options]="chartOptions" [data]="chartData"></nvd3>
+          </div>
+        </div>
+      </div>
+</pgcard>

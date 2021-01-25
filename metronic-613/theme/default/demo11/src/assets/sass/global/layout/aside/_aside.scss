@@ -1,0 +1,73 @@
+//
+// Aside
+//
+
+
+
+
+// Aside
+.kt-aside {
+	width: kt-get($kt-aside-config, base, default, width);
+	background-color: kt-get($kt-aside-config, base, default, bg-color);
+	box-shadow: kt-get($kt-aside-config, base, default, shadow);
+	transition: kt-get($kt-aside-config, base, minimize, transition);
+
+	// Menu
+	.kt-aside-menu {
+		margin: 15px 0;
+
+		.ps__rail-y {
+			right: 2px;
+		}
+	}
+}
+
+// Desktop Mode
+@include kt-desktop {
+	.kt-aside {
+		@include kt-rounded {
+			border-radius: $kt-border-radius;
+		}
+
+		// Fixed
+		.kt-aside--fixed & {
+			position: fixed;
+			top: kt-get($kt-header-config, base, desktop, default, height) + kt-get($kt-page-padding, desktop);
+			bottom: kt-get($kt-page-padding, desktop);
+			z-index: kt-get($kt-aside-config, base, fixed, zindex);
+		}
+
+		.kt-aside--static & {
+			position: relative;
+			z-index: 1;
+			margin-top: 25px;
+			margin-bottom: 25px;
+		}
+
+		.kt-header--fixed.kt-aside--static & {
+			padding-top: kt-get($kt-header-config, base, default, height);
+		}
+
+		// Minimize
+		.kt-aside--minimize & {
+			width: kt-get($kt-aside-config, base, minimize, width);
+			transition: kt-get($kt-aside-config, base, minimize, transition);
+		}
+
+		.kt-aside--minimizing & {
+			overflow: hidden;
+			
+			.kt-aside-menu {
+				.kt-menu__nav  {
+					width: kt-get($kt-aside-config, base, default, width);
+					overflow: hidden;
+				}
+			}
+		}
+
+		// Scroll
+		@include kt-perfect-scrollbar-ver-size( kt-get($kt-aside-config, base, fixed, scroll, width) );
+	}
+}
+
+@include kt-offcanvas-build(kt-aside, tablet-and-mobile, kt-get($kt-aside-config, base, offcanvas-mobile));

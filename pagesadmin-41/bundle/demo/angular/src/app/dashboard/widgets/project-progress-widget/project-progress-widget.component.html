@@ -1,0 +1,118 @@
+<pgcard TimeOut="3000" AdditionalClasses="card no-border no-margin widget-loader-circle todolist-widget pending-projects-widget" Maximize="false"
+ Toggle="false" Close="false">
+	<ng-template #CardTitle>
+		<span class="font-montserrat fs-11 all-caps">
+			Recent projects
+			<i class="fa fa-chevron-right"></i>
+		</span>
+	</ng-template>
+	<div class="">
+		<h5 class="">Ongoing projects at
+			<span class="semi-bold">pages</span>
+		</h5>
+	</div>
+	<pg-tabset tabAnimation="slide-left" Type="simple" ShowPagination="true">
+		<pg-tab>
+			<ng-template #TabHeading>
+				Pending
+			</ng-template>
+			<div class="p-t-15">
+				<div class="d-flex">
+					<span class="icon-thumbnail bg-master-light pull-left text-master">ws</span>
+					<div class="flex-1 full-width overflow-ellipsis">
+						<p class="hint-text all-caps font-montserrat  small no-margin overflow-ellipsis ">Revox Ltd
+						</p>
+						<h5 class="no-margin overflow-ellipsis ">Marketing Campaign for revox</h5>
+					</div>
+				</div>
+				<div class="m-t-15">
+					<p class="hint-text small pull-left">71% compleated from total</p>
+					<a href="javascript:void(0)" class="pull-right text-master">
+						<i class="pg pg-more"></i>
+					</a>
+					<div class="clearfix"></div>
+				</div>
+				<div class="progress progress-small m-b-15 m-t-10">
+					<!-- START BOOTSTRAP PROGRESS (http://getbootstrap.com/components/#progress) -->
+					<div class="progress-bar progress-bar-info" style="width:71%"></div>
+					<!-- END BOOTSTRAP PROGRESS -->
+				</div>
+			</div>
+			<div class="p-t-15">
+				<div class="d-flex">
+					<span class="icon-thumbnail bg-warning-light pull-left text-master">cr</span>
+					<div class="flex-1 full-width overflow-ellipsis">
+						<p class="hint-text all-caps font-montserrat  small no-margin overflow-ellipsis ">Nike Ltd
+						</p>
+						<h5 class="no-margin overflow-ellipsis ">Corporate rebranding</h5>
+					</div>
+				</div>
+				<div class="m-t-15">
+					<p class="hint-text small pull-left">20% compleated from total</p>
+					<a href="javascript:void(0)" class="pull-right text-master">
+						<i class="pg pg-more"></i>
+					</a>
+					<div class="clearfix"></div>
+				</div>
+				<div class="progress progress-small m-b-15 m-t-10">
+					<!-- START BOOTSTRAP PROGRESS (http://getbootstrap.com/components/#progress) -->
+					<div class="progress-bar progress-bar-warning" style="width:20%"></div>
+					<!-- END BOOTSTRAP PROGRESS -->
+				</div>
+			</div>
+			<a href="javascript:void(0)" class="btn btn-block m-t-30">See all projects</a>
+		</pg-tab>
+		<pg-tab>
+			<ng-template #TabHeading>
+				Completed
+			</ng-template>
+			<div class="p-t-15">
+				<div class="d-flex">
+					<span class="icon-thumbnail bg-master-light pull-left text-master">ws</span>
+					<div class="flex-1 full-width overflow-ellipsis">
+						<p class="hint-text all-caps font-montserrat  small no-margin overflow-ellipsis ">Apple Corp
+						</p>
+						<h5 class="no-margin overflow-ellipsis ">Marketing Campaign for revox</h5>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="m-t-15">
+					<p class="hint-text small pull-left">45% compleated from total</p>
+					<a href="javascript:void(0)" class="pull-right text-master">
+						<i class="pg pg-more"></i>
+					</a>
+					<div class="clearfix"></div>
+				</div>
+				<div class="progress progress-small m-b-15 m-t-10">
+					<!-- START BOOTSTRAP PROGRESS (http://getbootstrap.com/components/#progress) -->
+					<div class="progress-bar progress-bar-info" style="width:45%"></div>
+					<!-- END BOOTSTRAP PROGRESS -->
+				</div>
+			</div>
+			<div class="p-t-15">
+				<div class="d-flex">
+					<span class="icon-thumbnail bg-warning-light pull-left text-master">cr</span>
+					<div class="flex-1 full-width overflow-ellipsis">
+						<p class="hint-text all-caps font-montserrat  small no-margin overflow-ellipsis ">Yahoo Inc
+						</p>
+						<h5 class="no-margin overflow-ellipsis ">Corporate rebranding</h5>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="m-t-25">
+					<p class="hint-text small pull-left">20% compleated from total</p>
+					<a href="javascript:void(0)" class="pull-right text-master">
+						<i class="pg pg-more"></i>
+					</a>
+					<div class="clearfix"></div>
+				</div>
+				<div class="progress progress-small m-b-15 m-t-10">
+					<!-- START BOOTSTRAP PROGRESS (http://getbootstrap.com/components/#progress) -->
+					<div class="progress-bar progress-bar-warning" style="width:20%"></div>
+					<!-- END BOOTSTRAP PROGRESS -->
+				</div>
+			</div>
+			<a href="javascript:void(0)" class="btn btn-block m-t-30">See all projects</a>
+		</pg-tab>
+	</pg-tabset>
+</pgcard>

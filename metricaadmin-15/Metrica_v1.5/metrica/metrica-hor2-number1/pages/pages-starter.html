@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Metrica - Responsive Bootstrap 4 Admin Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../assets/images/favicon.ico">
+        <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/css/metisMenu.min.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/css/style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div class="topbar">
+            <nav class="topbar-main">
+                <div class="topbar-left">
+                    <a href="../projects/projects-index.html" class="logo">
+                        <span>
+                            <img src="../assets/images/logo-sm.png" alt="logo-small" class="logo-sm">
+                        </span>
+                        <span>
+                            <img src="../assets/images/logo-dark.png" alt="logo-large" class="logo-lg">
+                        </span>
+                    </a>
+                </div>
+                <ul class="list-unstyled topbar-nav float-right mb-0"> 
+                    <li class="hidden-sm">
+                        <a class="nav-link dropdown-toggle waves-effect waves-light" data-toggle="dropdown" href="javascript: void(0);" role="button"
+                            aria-haspopup="false" aria-expanded="false">
+                            English <img src="../assets/images/flags/us_flag.jpg" class="ml-2" height="16" alt=""/> <i class="mdi mdi-chevron-down"></i> 
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="javascript: void(0);"><span> German </span><img src="../assets/images/flags/germany_flag.jpg" alt="" class="ml-2 float-right" height="14"/></a>
+                            <a class="dropdown-item" href="javascript: void(0);"><span> Italian </span><img src="../assets/images/flags/italy_flag.jpg" alt="" class="ml-2 float-right" height="14"/></a>
+                            <a class="dropdown-item" href="javascript: void(0);"><span> French </span><img src="../assets/images/flags/french_flag.jpg" alt="" class="ml-2 float-right" height="14"/></a>
+                            <a class="dropdown-item" href="javascript: void(0);"><span> Spanish </span><img src="../assets/images/flags/spain_flag.jpg" alt="" class="ml-2 float-right" height="14"/></a>
+                            <a class="dropdown-item" href="javascript: void(0);"><span> Russian </span><img src="../assets/images/flags/russia_flag.jpg" alt="" class="ml-2 float-right" height="14"/></a>
+                        </div>
+                    </li>
+                    <li class="dropdown notification-list">
+                        <a class="nav-link dropdown-toggle arrow-none waves-light waves-effect" data-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="false" aria-expanded="false">
+                            <i class="dripicons-bell noti-icon"></i>
+                            <span class="badge badge-danger badge-pill noti-icon-badge">2</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-lg">
+                            <h6 class="dropdown-item-text">
+                                Notifications (18)
+                            </h6>
+                            <div class="slimscroll notification-list">
+                                <a href="javascript:void(0);" class="dropdown-item notify-item active">
+                                    <div class="notify-icon bg-success"><i class="mdi mdi-cart-outline"></i></div>
+                                    <p class="notify-details">Your order is placed<small class="text-muted">Dummy text of the printing and typesetting industry.</small></p>
+                                </a>
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <div class="notify-icon bg-warning"><i class="mdi mdi-message"></i></div>
+                                    <p class="notify-details">New Message received<small class="text-muted">You have 87 unread messages</small></p>
+                                </a>
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <div class="notify-icon bg-info"><i class="mdi mdi-glass-cocktail"></i></div>
+                                    <p class="notify-details">Your item is shipped<small class="text-muted">It is a long established fact that a reader will</small></p>
+                                </a>
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <div class="notify-icon bg-primary"><i class="mdi mdi-cart-outline"></i></div>
+                                    <p class="notify-details">Your order is placed<small class="text-muted">Dummy text of the printing and typesetting industry.</small></p>
+                                </a>
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <div class="notify-icon bg-danger"><i class="mdi mdi-message"></i></div>
+                                    <p class="notify-details">New Message received<small class="text-muted">You have 87 unread messages</small></p>
+                                </a>
+                            </div>
+                            <a href="javascript:void(0);" class="dropdown-item text-center text-primary">
+                                View all <i class="fi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="nav-link dropdown-toggle waves-effect waves-light nav-user pr-0" data-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="false" aria-expanded="false">
+                            <img src="../assets/images/users/user-4.jpg" alt="profile-user" class="rounded-circle" /> 
+                            <span class="ml-1 nav-user-name hidden-sm">Amelia <i class="mdi mdi-chevron-down"></i> </span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="#"><i class="dripicons-user text-muted mr-2"></i> Profile</a>
+                            <a class="dropdown-item" href="#"><i class="dripicons-wallet text-muted mr-2"></i> My Wallet</a>
+                            <a class="dropdown-item" href="#"><i class="dripicons-gear text-muted mr-2"></i> Settings</a>
+                            <a class="dropdown-item" href="#"><i class="dripicons-lock text-muted mr-2"></i> Lock screen</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"><i class="dripicons-exit text-muted mr-2"></i> Logout</a>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <a class="navbar-toggle nav-link" id="mobileToggle">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+    
+                <ul class="list-unstyled topbar-nav mb-0">
+                    <li class="hide-phone app-search">
+                        <form role="search" class="">
+                            <input type="text" placeholder="Search..." class="form-control">
+                            <a href=""><i class="fas fa-search"></i></a>
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+            <div class="navbar-custom-menu">
+                <div class="container-fluid">
+                    <div id="navigation">
+                        <ul class="navigation-menu">
+                            <li class="has-submenu">
+                                <a href="javascript:;" class="navbar-link">
+                                    <i class="ti-layers-alt"></i>  
+                                    <span>Pages</span>
+                                </a>
+                                <ul class="submenu submenu-tab">
+                                    <li><a href="../pages/pages-profile.html"><i class="ti-user"></i>Profile</a></li>
+                                    <li><a href="../pages/pages-chat.html"><i class="ti-comments"></i>Chat</a></li>
+                                    <li><a href="../pages/pages-contact-list.html"><i class="ti-list"></i>Contact List</a></li>
+                                    <li><a href="../pages/pages-starter.html"><i class="ti-clipboard"></i>Starter</a></li>
+                                    <li class="has-submenu">
+                                        <a href="javascript:;"><i class="ti-wand"></i>Extra Pages</a>
+                                        <ul class="submenu">
+                                            <li><a href="../pages/pages-tour.html">Tour</a></li>
+                                            <li><a href="../pages/pages-timeline.html">Timeline</a></li>
+                                            <li><a href="../pages/pages-invoice.html">Invoice</a></li>
+                                            <li><a href="../pages/pages-treeview.html">Treeview</a></li>
+                                            <li><a href="../pages/pages-pricing.html">Pricing</a></li>
+                                            <li><a href="../pages/pages-blogs.html">Blogs</a></li>
+                                            <li><a href="../pages/pages-faq.html">FAQ</a></li>
+                                            <li><a href="../pages/pages-gallery.html">Gallery</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="javascript:;" class="navbar-link">
+                                    <i class="ti-lock"></i>
+                                    <span>Authentication</span>
+                                </a>
+                                <ul class="submenu submenu-tab">
+                                    <li><a href="../authentication/auth-login.html"><i class="ti-shift-right"></i>Log In</a></li>
+                                    <li><a href="../authentication/auth-register.html"><i class="ti-pencil"></i>Register</a></li>
+                                    <li><a href="../authentication/auth-recover-pw.html"><i class="ti-back-right"></i>Recover Password</a></li>
+                                    <li><a href="../authentication/auth-lock-screen.html"><i class="ti-lock"></i>Lock Screen</a></li>
+                                    <li><a href="../authentication/auth-404.html"><i class="ti-alert"></i>Error 404</a></li>
+                                    <li><a href="../authentication/auth-500.html"><i class="ti-na"></i>Error 500</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>    
+        </div>
+        <div class="page-wrapper">
+            <div class="page-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="page-title-box">
+                                <div class="float-right">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="javascript:void(0);">Metrica</a></li>
+                                        <li class="breadcrumb-item"><a href="javascript:void(0);">Pages</a></li>
+                                        <li class="breadcrumb-item active">Starter</li>
+                                    </ol>
+                                </div>
+                                <h4 class="page-title">Starter</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer text-center text-sm-left">
+               <div class="boxed-footer">
+                    &copy; 2019 Metrica <span class="text-muted d-none d-sm-inline-block float-right">Crafted with <i class="mdi mdi-heart text-danger"></i> by Mannatthemes</span>
+               </div>
+            </footer>
+        </div>
+        <script src="../assets/js/jquery.min.js"></script>
+        <script src="../assets/js/bootstrap.bundle.min.js"></script>
+        <script src="../assets/js/metisMenu.min.js"></script>
+        <script src="../assets/js/waves.min.js"></script>
+        <script src="../assets/js/jquery.slimscroll.min.js"></script>
+        <script src="../assets/js/tab-init.js"></script>
+        <script src="../assets/js/app.js"></script>
+    </body>
+</html>

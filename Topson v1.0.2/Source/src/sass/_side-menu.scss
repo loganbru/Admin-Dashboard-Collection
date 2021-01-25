@@ -1,0 +1,27 @@
+.side-menu {
+    z-index: 51;
+    .side-menu__content {
+        .side-menu__content__link {
+            &.side-menu__content__link--active {
+                @apply text-light-1;
+                &:before {
+                    content: "";
+                    @apply w-1 h-1 absolute top-0 inset-x-0 mx-auto mt-12 bg-light-1 rounded-full;
+                }
+            }
+        }
+    }
+}
+
+.dark {
+    .side-menu {
+        .side-menu__content {
+            box-shadow: 0px 5px 15px rgba(22, 22, 35, 0.1);
+            .side-menu__content__link {
+                &.side-menu__content__link--active {
+                    @apply text-light-1;
+                }
+            }
+        }
+    }
+}

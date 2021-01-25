@@ -1,0 +1,1229 @@
+---
+layout: components
+title: Lists
+---
+
+<!-- Hero and nav -->
+<div class="hero is-relative is-theme-info">
+
+    {{> navbar-static-light}}
+
+    <!-- Hero image -->
+    <div id="main-hero" class="hero-body">
+        <div class="container has-text-centered">
+            <div class="columns is-vcentered">
+                <div class="column is-4 is-offset-1 has-text-left">
+                    <h1 class="title components-title is-1">
+                        Lists
+                    </h1>
+                    <h2 class="subtitle is-4 components-subtitle">
+                        Available lists variations.
+                    </h2>
+                    <p class="components-cta">
+                        <a href="#common-lists" class="button button-cta btn-align light-btn btn-outlined is-bold rounded">
+                            Get Started
+                        </a>
+                    </p>
+                </div>
+                <div class="column is-offset-1 has-text-centered is-hidden-mobile">
+                    <div id="lists-ill" class="vivus-svg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Hero image -->
+</div>
+<!-- /Hero and nav -->
+
+<!-- Scrollnav -->
+<div id="scrollnav" class="scroll-nav-wrapper">
+    <div class="container">
+        <div class="tabs scrollnav-tabs is-centered">
+            <ul>
+                <li class="scrollnav-item is-active"><a href="#common-lists">Common lists</a></li>
+                <li class="scrollnav-item"><a href="#levels">Levels</a></li>
+                <li class="scrollnav-item"><a href="#special-lists">Special lists</a></li>
+            </ul>
+        </div>
+    </div>  
+</div>
+<!-- /Scrollnav -->
+
+<section class="section is-medium">
+    <div class="container">
+        <div id="common-lists" class="section-title-wrapper has-text-centered">
+            <div class="bg-number">1</div>
+            <h2 class="title section-title has-text-centered revealOnScroll delay-1 dark-text text-bold">
+                Common lists
+            </h2>
+        </div>
+
+        <!-- Basic list -->
+        <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Basic list</h4>
+                    <p class="no-padding">To create a basic list, jus create a <code>ul</code> or a <code>ol</code> structure with several <code>li</code> elements nested inside. The result is a simple list, without bullets or numbers.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-4 is-offset-4">
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                    <li>Item 4</li>
+                    <li>Item 5</li>
+                </ul>
+            </div>
+        </div>
+        <!-- /Basic list -->
+
+        <!-- Bulleted list -->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Content list</h4>
+                    <p class="no-padding">If you dont want to create a standard bulleted list, just wrap the list structure we saw previsously with a <code>.content</code> <code>div</code> element. Bullets will then show. Numbers will be also be shown if it is an ordered list.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-4 is-offset-4">
+                <div class="content">
+                    <ul>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                        <li>Item 4</li>
+                        <li>Item 5</li>
+                    </ul>
+                </div> 
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-3">
+                <!-- Code section -->
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <figure class="highlight highlight-block">
+                                <pre><code class="html code-highlight">
+&#x3C;div class=&#x22;content&#x22;&#x3E;
+    &#x3C;ul&#x3E;
+        &#x3C;li&#x3E;Item 1&#x3C;/li&#x3E;
+        &#x3C;li&#x3E;Item 2&#x3C;/li&#x3E;
+        &#x3C;li&#x3E;Item 3&#x3C;/li&#x3E;
+        &#x3C;li&#x3E;Item 4&#x3C;/li&#x3E;
+        &#x3C;li&#x3E;Item 5&#x3C;/li&#x3E;
+    &#x3C;/ul&#x3E;
+&#x3C;/div&#x3E; 
+                                        </code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Code section -->
+            </div>
+        </div>
+        <!-- /Bulleted list -->
+
+        <!-- Icon bullet list -->
+        <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered pb-20">
+                    <h4>Icon bullet</h4>
+                    <p class="no-padding">You can customize the glyph or bullet being shown at the left of unordered list items. You can replace it with a font icon. Add the <code>.icon-bullet-list</code> class to an unordered list to activate it. Default icon is <code>fa fa-circle-o</code>. It could be anything else, you just have to make the changes in the related css snippet. </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-4 is-offset-4">
+                <ul class="icon-bullet-list">
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                    <li>Item 4</li>
+                    <li>Item 5</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered huge-pb">
+            <div class="column is-6 is-offset-3">
+                <!-- Code section -->
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <figure class="highlight highlight-block">
+                                <pre><code class="html code-highlight">
+&#x3C;ul class=&#x22;icon-bullet-list&#x22;&#x3E;
+    &#x3C;li&#x3E;Item 1&#x3C;/li&#x3E;
+    &#x3C;li&#x3E;Item 2&#x3C;/li&#x3E;
+    &#x3C;li&#x3E;Item 3&#x3C;/li&#x3E;
+    &#x3C;li&#x3E;Item 4&#x3C;/li&#x3E;
+    &#x3C;li&#x3E;Item 5&#x3C;/li&#x3E;
+&#x3C;/ul&#x3E;
+                                        </code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Code section -->
+            </div>
+        </div>
+        <!-- /Icon bullet list -->
+
+        <!-- Solid list -->
+        <div class="columns is-vcentered mt-80">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered pb-20">
+                    <h4>Solid list</h4>
+                    <p class="no-padding">You can build customized lists with solid lists. However, it doesnt rely on <code>ul</code> or <code>ol</code> for the structure, but rather on <code>div</code>. You can have anything you want as a bullet, including icons and images. Check the code sample for more details.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-4 is-offset-4">
+                <div class="solid-list">
+                    <div class="solid-list-item">
+                        <div class="list-bullet">
+                            <i class="sl sl-icon-check"></i>
+                        </div>
+                        <div class="list-text">
+                            This is a list item text
+                        </div>
+                    </div>
+                    <div class="solid-list-item">
+                        <div class="list-bullet">
+                            <i class="sl sl-icon-check"></i>
+                        </div>
+                        <div class="list-text">
+                            This is another list item text
+                        </div>
+                    </div>
+                    <div class="solid-list-item">
+                        <div class="list-bullet">
+                            <i class="sl sl-icon-check"></i>
+                        </div>
+                        <div class="list-text">
+                            This is a third list item text
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-3">
+                <!-- Code section -->
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <figure class="highlight highlight-block">
+                                <pre><code class="html code-highlight">
+&#x3C;div class=&#x22;solid-list&#x22;&#x3E;
+    &#x3C;div class=&#x22;solid-list-item&#x22;&#x3E;
+        &#x3C;div class=&#x22;list-bullet&#x22;&#x3E;
+            &#x3C;i class=&#x22;sl sl-icon-check&#x22;&#x3E;&#x3C;/i&#x3E;
+        &#x3C;/div&#x3E;
+        &#x3C;div class=&#x22;list-text&#x22;&#x3E;
+            This is a list item text
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;solid-list-item&#x22;&#x3E;
+        &#x3C;div class=&#x22;list-bullet&#x22;&#x3E;
+            &#x3C;i class=&#x22;sl sl-icon-check&#x22;&#x3E;&#x3C;/i&#x3E;
+        &#x3C;/div&#x3E;
+        &#x3C;div class=&#x22;list-text&#x22;&#x3E;
+            This is another list item text
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;solid-list-item&#x22;&#x3E;
+        &#x3C;div class=&#x22;list-bullet&#x22;&#x3E;
+            &#x3C;i class=&#x22;sl sl-icon-check&#x22;&#x3E;&#x3C;/i&#x3E;
+        &#x3C;/div&#x3E;
+        &#x3C;div class=&#x22;list-text&#x22;&#x3E;
+            This is a third list item text
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+                                        </code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Code section -->
+            </div>
+        </div>
+        <!-- /Solid list -->
+
+        <!-- Inline list -->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Inline list</h4>
+                    <p class="no-padding">You can make a list display horizontally. Just add the <code>.inline-list</code> class to the <code>ul</code> element. List separators are made of font awesome icons. You are free to change them with an appropriate element.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-4 is-offset-4">
+                <div class="inline-list has-text-centered">
+                    <div>Item 1</div>
+                    <i class="inline-bullet fa fa-circle"></i>
+                    <div>Item 2</div>
+                    <i class="inline-bullet fa fa-circle"></i>
+                    <div>Item 3</div>
+                    <i class="inline-bullet fa fa-circle"></i>
+                    <div>Item 4</div>
+                    <i class="inline-bullet fa fa-circle"></i>
+                    <div>Item 5</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-3">
+                <!-- Code section -->
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <figure class="highlight highlight-block">
+                                <pre><code class="html code-highlight">
+&#x3C;div class=&#x22;inline-list&#x22;&#x3E;
+    &#x3C;div&#x3E;Item 1&#x3C;/div&#x3E;
+    &#x3C;i class=&#x22;inline-bullet fa fa-circle&#x22;&#x3E;&#x3C;/i&#x3E;
+    &#x3C;div&#x3E;Item 2&#x3C;/div&#x3E;
+    &#x3C;i class=&#x22;inline-bullet fa fa-circle&#x22;&#x3E;&#x3C;/i&#x3E;
+    &#x3C;div&#x3E;Item 3&#x3C;/div&#x3E;
+    &#x3C;i class=&#x22;inline-bullet fa fa-circle&#x22;&#x3E;&#x3C;/i&#x3E;
+    &#x3C;div&#x3E;Item 4&#x3C;/div&#x3E;
+    &#x3C;i class=&#x22;inline-bullet fa fa-circle&#x22;&#x3E;&#x3C;/i&#x3E;
+    &#x3C;div&#x3E;Item 5&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+                                        </code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Code section -->
+            </div>
+        </div>
+        <!-- /Inline list -->
+
+        <!-- List block minimal -->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>List block minimal</h4>
+                    <p class="no-padding">List blocks are very handy and act as interactive lists, such as menus or options. They can also have badges appended to list items. Here is the structure of a minimal list block. Active list items are by default highlighted with the <code>$primary</code> color.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-4 is-offset-4">
+                <ul class="list-block minimal">
+                    <li class="is-active"><a>This is a list block item</a> <span class="b-badge is-primary">9</span></li>
+                    <li><a>It is very handy for menus</a></li>
+                    <li><a>Use it as a sticky element</a></li>
+                    <li><a>It's cool</a> <span class="b-badge is-primary">5</span></li>
+                    <li><a>Support team is great</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-3">
+                <!-- Code section -->
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <figure class="highlight highlight-block">
+                                <pre><code class="html code-highlight">
+&#x3C;ul class=&#x22;list-block minimal&#x22;&#x3E;
+    &#x3C;li class=&#x22;is-active&#x22;&#x3E;&#x3C;a&#x3E;This is a list block item&#x3C;/a&#x3E; &#x3C;span class=&#x22;b-badge is-primary&#x22;&#x3E;9&#x3C;/span&#x3E;&#x3C;/li&#x3E;
+    &#x3C;li&#x3E;&#x3C;a&#x3E;It is very handy for menus&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+    &#x3C;li&#x3E;&#x3C;a&#x3E;Use it as a sticky element&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+    &#x3C;li&#x3E;&#x3C;a&#x3E;It&#x27;s cool&#x3C;/a&#x3E; &#x3C;span class=&#x22;b-badge is-primary&#x22;&#x3E;5&#x3C;/span&#x3E;&#x3C;/li&#x3E;
+    &#x3C;li&#x3E;&#x3C;a&#x3E;Support team is great&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+&#x3C;/ul&#x3E;
+                                        </code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Code section -->
+            </div>
+        </div>
+        <!-- /List block minimal -->
+
+        <!-- List block -->
+        <div class="columns is-vcentered pt60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>List block</h4>
+                    <p class="no-padding">A list block can appear like a small panel with a light shadow. This is the list block default behaviour.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-4 is-offset-4">
+                <ul class="list-block">
+                    <li class="is-active"><a>This is a list block item</a> <span class="b-badge rounded is-primary">9</span></li>
+                    <li><a>It is very handy for menus</a></li>
+                    <li><a>Use it as a sticky element</a></li>
+                    <li><a>It's cool</a> <span class="b-badge rounded is-primary">5</span></li>
+                    <li><a>Support team is great</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-3">
+                <!-- Code section -->
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <figure class="highlight highlight-block">
+                                <pre><code class="html code-highlight">
+&#x3C;ul class=&#x22;list-block&#x22;&#x3E;
+    &#x3C;li class=&#x22;is-active&#x22;&#x3E;&#x3C;a&#x3E;This is a list block item&#x3C;/a&#x3E; &#x3C;span class=&#x22;b-badge rounded is-primary&#x22;&#x3E;9&#x3C;/span&#x3E;&#x3C;/li&#x3E;
+    &#x3C;li&#x3E;&#x3C;a&#x3E;It is very handy for menus&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+    &#x3C;li&#x3E;&#x3C;a&#x3E;Use it as a sticky element&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+    &#x3C;li&#x3E;&#x3C;a&#x3E;It&#x27;s cool&#x3C;/a&#x3E; &#x3C;span class=&#x22;b-badge rounded is-primary&#x22;&#x3E;5&#x3C;/span&#x3E;&#x3C;/li&#x3E;
+    &#x3C;li&#x3E;&#x3C;a&#x3E;Support team is great&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+&#x3C;/ul&#x3E;
+                                        </code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Code section -->
+            </div>
+        </div>
+        <!-- /List block -->
+
+        <!-- List block with icons -->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>List block with icons</h4>
+                    <p class="no-padding">You can add icons to a list block element items. Insert the icon before the item's text. It can be from any icon family.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-4 is-offset-4">
+                <ul class="list-block">
+                    <li class="is-active"><a><i class="sl sl-icon-star mr-20"></i> This is a list block item</a></li>
+                    <li><a><i class="sl sl-icon-trophy mr-20"></i> It is very handy for menus</a></li>
+                    <li><a><i class="sl sl-icon-cup mr-20"></i> Use it as a sticky element</a></li>
+                    <li><a><i class="sl sl-icon-badge mr-20"></i> It's cool</a></li>
+                    <li><a><i class="sl sl-icon-support mr-20"></i> Support team is great</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-3">
+                <!-- Code section -->
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <figure class="highlight highlight-block">
+                                <pre><code class="html code-highlight">
+&#x3C;ul class=&#x22;list-block&#x22;&#x3E;
+    &#x3C;li class=&#x22;is-active&#x22;&#x3E;&#x3C;a&#x3E;&#x3C;i class=&#x22;sl sl-icon-star mr-20&#x22;&#x3E;&#x3C;/i&#x3E; This is a list block item&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+    &#x3C;li&#x3E;&#x3C;a&#x3E;&#x3C;i class=&#x22;sl sl-icon-trophy mr-20&#x22;&#x3E;&#x3C;/i&#x3E; It is very handy for menus&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+    &#x3C;li&#x3E;&#x3C;a&#x3E;&#x3C;i class=&#x22;sl sl-icon-cup mr-20&#x22;&#x3E;&#x3C;/i&#x3E; Use it as a sticky element&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+    &#x3C;li&#x3E;&#x3C;a&#x3E;&#x3C;i class=&#x22;sl sl-icon-badge mr-20&#x22;&#x3E;&#x3C;/i&#x3E; It&#x27;s cool&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+    &#x3C;li&#x3E;&#x3C;a&#x3E;&#x3C;i class=&#x22;sl sl-icon-support mr-20&#x22;&#x3E;&#x3C;/i&#x3E; Support team is great&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+&#x3C;/ul&#x3E;
+                                        </code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Code section -->
+            </div>
+        </div>
+        <!-- /List block with icons -->
+
+        <!-- List block bordered -->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>List block bordered</h4>
+                    <p class="no-padding">Add the <code>.bordered</code> class to a list block to make its items bordered.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-4 is-offset-4">
+                <ul class="list-block bordered">
+                    <li class="is-active"><a>This is a list block item</a></li>
+                    <li><a>It is very handy for menus</a></li>
+                    <li><a>Use it as a sticky element</a></li>
+                    <li><a>It's cool</a></li>
+                    <li><a>Support team is great</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-3">
+                <!-- Code section -->
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <figure class="highlight highlight-block">
+                                <pre><code class="html code-highlight">
+&#x3C;ul class=&#x22;list-block bordered&#x22;&#x3E;
+    &#x3C;li class=&#x22;is-active&#x22;&#x3E;&#x3C;a&#x3E;This is a list block item&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+    &#x3C;li&#x3E;&#x3C;a&#x3E;It is very handy for menus&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+    &#x3C;li&#x3E;&#x3C;a&#x3E;Use it as a sticky element&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+    &#x3C;li&#x3E;&#x3C;a&#x3E;It&#x27;s cool&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+    &#x3C;li&#x3E;&#x3C;a&#x3E;Support team is great&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+&#x3C;/ul&#x3E;
+                                        </code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Code section -->
+            </div>
+        </div>
+        <!-- /List block bordered -->
+
+        <!-- Active item colors -->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Active item colors</h4>
+                    <p class="no-padding">You can change the background color of active items. In order to do this, add the <code>.is-secondary</code> or the <code>.is -accent</code> class to the <code>ul</code> element. The list block active background color defaults to <code>$primary</code>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-4">
+                <ul class="list-block">
+                    <li class="is-active"><a>This is a Primary active item</a></li>
+                    <li><a>It is very handy for menus</a></li>
+                    <li><a>Use it as a sticky element</a></li>
+                    <li><a>It's cool</a></li>
+                    <li><a>Support team is great</a></li>
+                </ul>
+            </div>
+            <div class="column is-4">
+                <ul class="list-block is-secondary">
+                    <li class="is-active"><a>This is a Secondary active item</a></li>
+                    <li><a>It is very handy for menus</a></li>
+                    <li><a>Use it as a sticky element</a></li>
+                    <li><a>It's cool</a></li>
+                    <li><a>Support team is great</a></li>
+                </ul>
+            </div>
+            <div class="column is-4">
+                <ul class="list-block is-accent">
+                    <li class="is-active"><a>This is an Accent active item</a></li>
+                    <li><a>It is very handy for menus</a></li>
+                    <li><a>Use it as a sticky element</a></li>
+                    <li><a>It's cool</a></li>
+                    <li><a>Support team is great</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- /Active item colors -->
+
+    </div>
+</section>
+
+<section class="section section-feature-grey is-medium">
+    <div class="container">
+        <div id="levels" class="section-title-wrapper has-text-centered pt-60">
+            <div class="bg-number">2</div>
+            <h2 class="title section-title has-text-centered dark-text text-bold">
+                Levels
+            </h2>
+        </div>
+
+        <!-- Basic level -->
+        <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Basic level</h4>
+                    <p class="no-padding">Level is a versatile component brought by Bulma. It basically imitates the behaviour of an inline list. However, you can insert almost any element inside a level. The default level has two parts : <code>.level-left</code> and <code>.level-right</code>. Each one of these parts contains level items. By default, level items are displayed vertically on mobile. Check the code sample for more details about level structure.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns">
+            <div class="column is-8 is-offset-2">
+                <nav class="level">
+                    <!-- Left side -->
+                    <div class="level-left">
+                        <div class="level-item">
+                            <p class="subtitle is-5">
+                                <strong>123</strong> tasks
+                            </p>
+                        </div>
+                        <div class="level-item">
+                            <div class="field has-addons">
+                                <p class="control no-margin-bottom">
+                                    <input class="input" type="text" placeholder="Find a task">
+                                </p>
+                                <p class="control">
+                                    <button class="button btn-align accent-btn raised">
+                                        Search
+                                    </button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right side -->
+                    <div class="level-right">
+                        <p class="level-item"><i class="sl sl-icon-grid is-icon-md"></i></p>
+                        <p class="level-item"><i class="sl sl-icon-user is-icon-md"></i></p>
+                        <p class="level-item"><i class="sl sl-icon-picture is-icon-md"></i></p>
+                        <p class="level-item"><i class="sl sl-icon-check is-icon-md"></i></p>
+                        <p class="level-item"><a class="button btn-align accent-btn raised">New task</a></p>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-8 is-offset-2">
+                <!-- Code section -->
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <figure class="highlight highlight-block">
+                                <pre><code class="html code-highlight">
+&#x3C;nav class=&#x22;level&#x22;&#x3E;
+    &#x3C;!-- Left side --&#x3E;
+    &#x3C;div class=&#x22;level-left&#x22;&#x3E;
+        &#x3C;div class=&#x22;level-item&#x22;&#x3E;
+            &#x3C;p class=&#x22;subtitle is-5&#x22;&#x3E;
+                &#x3C;strong&#x3E;123&#x3C;/strong&#x3E; tasks
+            &#x3C;/p&#x3E;
+        &#x3C;/div&#x3E;
+        &#x3C;div class=&#x22;level-item&#x22;&#x3E;
+            &#x3C;div class=&#x22;field has-addons&#x22;&#x3E;
+                &#x3C;p class=&#x22;control no-margin-bottom&#x22;&#x3E;
+                    &#x3C;input class=&#x22;input&#x22; type=&#x22;text&#x22; placeholder=&#x22;Find a task&#x22;&#x3E;
+                &#x3C;/p&#x3E;
+                &#x3C;p class=&#x22;control&#x22;&#x3E;
+                    &#x3C;button class=&#x22;button btn-align accent-btn raised&#x22;&#x3E;
+                        Search
+                    &#x3C;/button&#x3E;
+                &#x3C;/p&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+
+    &#x3C;!-- Right side --&#x3E;
+    &#x3C;div class=&#x22;level-right&#x22;&#x3E;
+        &#x3C;p class=&#x22;level-item&#x22;&#x3E;&#x3C;i class=&#x22;sl sl-icon-grid is-icon-md&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/p&#x3E;
+        &#x3C;p class=&#x22;level-item&#x22;&#x3E;&#x3C;i class=&#x22;sl sl-icon-user is-icon-md&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/p&#x3E;
+        &#x3C;p class=&#x22;level-item&#x22;&#x3E;&#x3C;i class=&#x22;sl sl-icon-picture is-icon-md&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/p&#x3E;
+        &#x3C;p class=&#x22;level-item&#x22;&#x3E;&#x3C;i class=&#x22;sl sl-icon-check is-icon-md&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/p&#x3E;
+        &#x3C;p class=&#x22;level-item&#x22;&#x3E;&#x3C;a class=&#x22;button btn-align accent-btn raised&#x22;&#x3E;New task&#x3C;/a&#x3E;&#x3C;/p&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/nav&#x3E;
+                                        </code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Code section -->
+            </div>
+        </div>
+        <!-- /Basic level -->
+
+        <!-- Nav level -->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Navigation level</h4>
+                    <p class="no-padding">A level can easily be turned into a navigation bar. Add the class <code>.nav-level</code> to the <code>.level</code> element. </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns">
+            <div class="column is-10 is-offset-1">
+                <nav class="level nav-level">
+                    <!-- Left side -->
+                    <div class="level-left">
+                        <div class="level-item">
+                            <p class="subtitle is-5">
+                                <strong>123</strong> tasks
+                            </p>
+                        </div>
+                        <div class="level-item">
+                            <div class="field has-addons">
+                                <p class="control no-margin-bottom">
+                                    <input class="input" type="text" placeholder="Find a task">
+                                </p>
+                                <p class="control">
+                                    <button class="button btn-align accent-btn raised">
+                                        Search
+                                    </button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right side -->
+                    <div class="level-right">
+                        <p class="level-item"><i class="sl sl-icon-grid is-icon-md"></i></p>
+                        <p class="level-item"><i class="sl sl-icon-user is-icon-md"></i></p>
+                        <p class="level-item"><i class="sl sl-icon-picture is-icon-md"></i></p>
+                        <p class="level-item"><i class="sl sl-icon-check is-icon-md"></i></p>
+                        <p class="level-item"><a class="button btn-align accent-btn raised">New task</a></p>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-8 is-offset-2">
+                <!-- Code section -->
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <figure class="highlight highlight-block">
+                                <pre><code class="html code-highlight">
+&#x3C;nav class=&#x22;level nav-level&#x22;&#x3E;
+    &#x3C;!-- Left side --&#x3E;
+    &#x3C;div class=&#x22;level-left&#x22;&#x3E;
+        &#x3C;div class=&#x22;level-item&#x22;&#x3E;
+            &#x3C;p class=&#x22;subtitle is-5&#x22;&#x3E;
+                &#x3C;strong&#x3E;123&#x3C;/strong&#x3E; tasks
+            &#x3C;/p&#x3E;
+        &#x3C;/div&#x3E;
+        &#x3C;div class=&#x22;level-item&#x22;&#x3E;
+            &#x3C;div class=&#x22;field has-addons&#x22;&#x3E;
+                &#x3C;p class=&#x22;control no-margin-bottom&#x22;&#x3E;
+                    &#x3C;input class=&#x22;input&#x22; type=&#x22;text&#x22; placeholder=&#x22;Find a task&#x22;&#x3E;
+                &#x3C;/p&#x3E;
+                &#x3C;p class=&#x22;control&#x22;&#x3E;
+                    &#x3C;button class=&#x22;button btn-align accent-btn raised&#x22;&#x3E;
+                        Search
+                    &#x3C;/button&#x3E;
+                &#x3C;/p&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+
+    &#x3C;!-- Right side --&#x3E;
+    &#x3C;div class=&#x22;level-right&#x22;&#x3E;
+        &#x3C;p class=&#x22;level-item&#x22;&#x3E;&#x3C;i class=&#x22;sl sl-icon-grid is-icon-md&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/p&#x3E;
+        &#x3C;p class=&#x22;level-item&#x22;&#x3E;&#x3C;i class=&#x22;sl sl-icon-user is-icon-md&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/p&#x3E;
+        &#x3C;p class=&#x22;level-item&#x22;&#x3E;&#x3C;i class=&#x22;sl sl-icon-picture is-icon-md&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/p&#x3E;
+        &#x3C;p class=&#x22;level-item&#x22;&#x3E;&#x3C;i class=&#x22;sl sl-icon-check is-icon-md&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/p&#x3E;
+        &#x3C;p class=&#x22;level-item&#x22;&#x3E;&#x3C;a class=&#x22;button btn-align accent-btn raised&#x22;&#x3E;New task&#x3C;/a&#x3E;&#x3C;/p&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/nav&#x3E;
+                                        </code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Code section -->
+            </div>
+        </div>
+        <!-- /Nav level -->
+
+        <!-- Centered level -->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Centered level</h4>
+                    <p class="no-padding">Level items can be centered. To achieve this, remove <code>.level-left</code> and <code>.level-right</code> wrappers. All level items must be direct children of the <code>.level</code> element.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns">
+            <div class="column is-10 is-offset-1">
+                <nav class="level centered-level">
+                    <p class="level-item has-text-centered">
+                        <a class="link is-info">Projects</a>
+                    </p>
+                    <p class="level-item has-text-centered">
+                        <a class="link is-info">Tasks</a>
+                    </p>
+                    <p class="level-item has-text-centered">
+                        <img class="height-30" src="assets/images/logos/logo-grayscale.png" alt="">
+                    </p>
+                    <p class="level-item has-text-centered">
+                        <a class="link is-info">Team</a>
+                    </p>
+                    <p class="level-item has-text-centered">
+                        <a class="link is-info">Documents</a>
+                    </p>
+                </nav>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-8 is-offset-2">
+                <!-- Code section -->
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <figure class="highlight highlight-block">
+                                <pre><code class="html code-highlight">
+&#x3C;nav class=&#x22;level centered-level&#x22;&#x3E;
+    &#x3C;p class=&#x22;level-item has-text-centered&#x22;&#x3E;
+        &#x3C;a class=&#x22;link is-info&#x22;&#x3E;Projects&#x3C;/a&#x3E;
+    &#x3C;/p&#x3E;
+    &#x3C;p class=&#x22;level-item has-text-centered&#x22;&#x3E;
+        &#x3C;a class=&#x22;link is-info&#x22;&#x3E;Tasks&#x3C;/a&#x3E;
+    &#x3C;/p&#x3E;
+    &#x3C;p class=&#x22;level-item has-text-centered&#x22;&#x3E;
+        &#x3C;img src=&#x22;assets/images/logos/logo-grayscale.png&#x22; alt=&#x22;&#x22;&#x3E;
+    &#x3C;/p&#x3E;
+    &#x3C;p class=&#x22;level-item has-text-centered&#x22;&#x3E;
+        &#x3C;a class=&#x22;link is-info&#x22;&#x3E;Team&#x3C;/a&#x3E;
+    &#x3C;/p&#x3E;
+    &#x3C;p class=&#x22;level-item has-text-centered&#x22;&#x3E;
+        &#x3C;a class=&#x22;link is-info&#x22;&#x3E;Documents&#x3C;/a&#x3E;
+    &#x3C;/p&#x3E;
+&#x3C;/nav&#x3E;
+                                        </code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Code section -->
+            </div>
+        </div>
+        <!-- /Centered level -->
+
+        <!-- Mobile level -->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Mobile level</h4>
+                    <p class="no-padding">The level's inline layout can be kept on mobile, instead of the stacking behaviour. Simply add the modifier <code>.is-mobile</code> to the <code>.level</code> element. Reduce your screen size to see it in action.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns">
+            <div class="column is-4 is-offset-4">
+                <nav class="level is-mobile">
+                    <p class="level-item has-text-centered">
+                        <a class="link is-info"><i class="fa fa-facebook fa-2x"></i></a>
+                    </p>
+                    <p class="level-item has-text-centered">
+                        <a class="link is-info"><i class="fa fa-twitter fa-2x"></i></a>
+                    </p>
+                    <p class="level-item has-text-centered">
+                        <a class="link is-info"><i class="fa fa-linkedin fa-2x"></i></a>
+                    </p>
+                    <p class="level-item has-text-centered">
+                        <a class="link is-info"><i class="fa fa-dribbble fa-2x"></i></a>
+                    </p>
+                    <p class="level-item has-text-centered">
+                        <a class="link is-info"><i class="fa fa-github fa-2x"></i></a>
+                    </p>
+                </nav>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-8 is-offset-2">
+                <!-- Code section -->
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <figure class="highlight highlight-block">
+                                <pre><code class="html code-highlight">
+&#x3C;nav class=&#x22;level is-mobile&#x22;&#x3E;
+    &#x3C;p class=&#x22;level-item has-text-centered&#x22;&#x3E;
+        &#x3C;a class=&#x22;link is-info&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-facebook fa-2x&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/a&#x3E;
+    &#x3C;/p&#x3E;
+    &#x3C;p class=&#x22;level-item has-text-centered&#x22;&#x3E;
+        &#x3C;a class=&#x22;link is-info&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-twitter fa-2x&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/a&#x3E;
+    &#x3C;/p&#x3E;
+    &#x3C;p class=&#x22;level-item has-text-centered&#x22;&#x3E;
+        &#x3C;a class=&#x22;link is-info&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-linkedin fa-2x&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/a&#x3E;
+    &#x3C;/p&#x3E;
+    &#x3C;p class=&#x22;level-item has-text-centered&#x22;&#x3E;
+        &#x3C;a class=&#x22;link is-info&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-dribbble fa-2x&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/a&#x3E;
+    &#x3C;/p&#x3E;
+    &#x3C;p class=&#x22;level-item has-text-centered&#x22;&#x3E;
+        &#x3C;a class=&#x22;link is-info&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-github fa-2x&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/a&#x3E;
+    &#x3C;/p&#x3E;
+&#x3C;/nav&#x3E;
+                                        </code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Code section -->
+            </div>
+        </div>
+        <!-- /Mobile level -->
+    </div>
+</section>
+
+<section class="section is-medium">
+    <div class="container">
+        <div id="special-lists" class="section-title-wrapper has-text-centered pt-60">
+            <div class="bg-number">3</div>
+            <h2 class="title section-title has-text-centered dark-text text-bold">
+                special lists
+            </h2>
+        </div>
+
+        <!-- User list -->
+        <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>User list</h4>
+                    <p class="no-padding">You can use lists to display other types of content. This is a user availability list for example.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-4 is-offset-4">
+                <ul class="user-list">
+                    <li>
+                        <div class="user-list-avatar">
+                            <img src="https://via.placeholder.com/250x250" alt=""
+                                data-demo-src="assets/images/avatars/terry.jpg">
+                        </div>
+                        <div class="user-list-info">
+                            <div class="name">Terry Daniels</div>
+                            <div class="position">CEO</div>
+                        </div>
+                        <div class="user-list-status is-online"></div>
+                    </li>
+                    <li>
+                        <div class="user-list-avatar">
+                            <img src="https://via.placeholder.com/250x250" alt=""
+                                data-demo-src="assets/images/avatars/carolin.png">
+                        </div>
+                        <div class="user-list-info">
+                            <div class="name">Marjory Cambell</div>
+                            <div class="position">CFO</div>
+                        </div>
+                        <div class="user-list-status is-busy"></div>
+                    </li>
+                    <li>
+                        <div class="user-list-avatar">
+                            <img src="https://via.placeholder.com/250x250" alt=""
+                                data-demo-src="assets/images/avatars/ben.jpg">
+                        </div>
+                        <div class="user-list-info">
+                            <div class="name">Kevin Smith</div>
+                            <div class="position">Software Engineer</div>
+                        </div>
+                        <div class="user-list-status is-offline"></div>
+                    </li>
+                    <li>
+                        <div class="user-list-avatar">
+                            <img src="https://via.placeholder.com/250x250" alt=""
+                                data-demo-src="assets/images/avatars/melany.jpg">
+                        </div>
+                        <div class="user-list-info">
+                            <div class="name">Melany Wright</div>
+                            <div class="position">Sales Manager</div>
+                        </div>
+                        <div class="user-list-status is-online"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-8 is-offset-2">
+                <!-- Code section -->
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <figure class="highlight highlight-block">
+                                <pre><code class="html code-highlight">
+&#x3C;ul class=&#x22;user-list&#x22;&#x3E;
+    &#x3C;li&#x3E;
+        &#x3C;div class=&#x22;user-list-avatar&#x22;&#x3E;
+            &#x3C;img src=&#x22;assets/images/avatars/terry.jpg&#x22; alt=&#x22;&#x22;&#x3E;
+        &#x3C;/div&#x3E;
+        &#x3C;div class=&#x22;user-list-info&#x22;&#x3E;
+            &#x3C;div class=&#x22;name&#x22;&#x3E;Terry Daniels&#x3C;/div&#x3E;
+            &#x3C;div class=&#x22;position&#x22;&#x3E;CEO&#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+        &#x3C;div class=&#x22;user-list-status is-online&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;/li&#x3E;
+    &#x3C;li&#x3E;
+        &#x3C;div class=&#x22;user-list-avatar&#x22;&#x3E;
+            &#x3C;img src=&#x22;assets/images/avatars/carolin.png&#x22; alt=&#x22;&#x22;&#x3E;
+        &#x3C;/div&#x3E;
+        &#x3C;div class=&#x22;user-list-info&#x22;&#x3E;
+            &#x3C;div class=&#x22;name&#x22;&#x3E;Marjory Cambell&#x3C;/div&#x3E;
+            &#x3C;div class=&#x22;position&#x22;&#x3E;CFO&#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+        &#x3C;div class=&#x22;user-list-status is-busy&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;/li&#x3E;
+    &#x3C;li&#x3E;
+        &#x3C;div class=&#x22;user-list-avatar&#x22;&#x3E;
+            &#x3C;img src=&#x22;assets/images/avatars/ben.jpg&#x22; alt=&#x22;&#x22;&#x3E;
+        &#x3C;/div&#x3E;
+        &#x3C;div class=&#x22;user-list-info&#x22;&#x3E;
+            &#x3C;div class=&#x22;name&#x22;&#x3E;Kevin Smith&#x3C;/div&#x3E;
+            &#x3C;div class=&#x22;position&#x22;&#x3E;Software Engineer&#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+        &#x3C;div class=&#x22;user-list-status is-offline&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;/li&#x3E;
+    &#x3C;li&#x3E;
+        &#x3C;div class=&#x22;user-list-avatar&#x22;&#x3E;
+            &#x3C;img src=&#x22;assets/images/avatars/melany.jpg&#x22; alt=&#x22;&#x22;&#x3E;
+        &#x3C;/div&#x3E;
+        &#x3C;div class=&#x22;user-list-info&#x22;&#x3E;
+            &#x3C;div class=&#x22;name&#x22;&#x3E;Melany Wright&#x3C;/div&#x3E;
+            &#x3C;div class=&#x22;position&#x22;&#x3E;Sales Manager&#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+        &#x3C;div class=&#x22;user-list-status is-online&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;/li&#x3E;
+&#x3C;/ul&#x3E;
+                                        </code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Code section -->
+            </div>
+        </div>
+        <!-- User list -->
+
+        <!-- Media list -->
+        <div class="columns is-vcentered pt-60">
+            <div class="column is-6 is-offset-3">
+                <div class="info-block has-text-centered">
+                    <h4>Media list</h4>
+                    <p class="no-padding">This is another example of a user list. It is based on the Bulma media object element.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-4 is-offset-4">
+                <ul class="user-media-list">
+                    <li>
+                        <div class="media">
+                            <figure class="media-left">
+                                <p class="image is-48x48">
+                                    <img class="img-circle" src="https://via.placeholder.com/250x250" alt=""
+                                        data-demo-src="assets/images/avatars/terry.jpg">
+                                    <span class="avatar-status is-online"></span>
+                                </p>
+                            </figure>
+                            <div class="media-content">
+                                <div class="content">
+                                    <p>
+                                        <span>Terry Daniels</span>
+                                        <br>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="media">
+                            <figure class="media-left">
+                                <p class="image is-48x48">
+                                    <img class="img-circle" src="https://via.placeholder.com/250x250" alt=""
+                                        data-demo-src="assets/images/avatars/carolin.png">
+                                    <span class="avatar-status is-busy"></span>
+                                </p>
+                            </figure>
+                            <div class="media-content">
+                                <div class="content">
+                                    <p>
+                                        <span>Marjory Cambell</span>
+                                        <br>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sinum garet et setus.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="media">
+                            <figure class="media-left">
+                                <p class="image is-48x48">
+                                    <img class="img-circle" src="https://via.placeholder.com/250x250" alt=""
+                                        data-demo-src="assets/images/avatars/ben.jpg">
+                                    <span class="avatar-status is-offline"></span>
+                                </p>
+                            </figure>
+                            <div class="media-content">
+                                <div class="content">
+                                    <p>
+                                        <span>Kevin Smith</span>
+                                        <br>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="media">
+                            <figure class="media-left">
+                                <p class="image is-48x48">
+                                    <img class="img-circle" src="https://via.placeholder.com/250x250" alt=""
+                                        data-demo-src="assets/images/avatars/melany.jpg">
+                                    <span class="avatar-status is-online"></span>
+                                </p>
+                            </figure>
+                            <div class="media-content">
+                                <div class="content">
+                                    <p>
+                                        <span>Melany Wright</span>
+                                        <br>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-8 is-offset-2">
+                <!-- Code section -->
+                <div class="accordion-wrapper">
+                    <div class="toggle-wrap">
+                        <span class="trigger"><a href="#"><i class="im im-icon-Coding is-icon-2x"></i> SHOW CODE<i class="im im-icon-Add"></i></a></span>
+                        <div class="toggle-container">
+                            <figure class="highlight highlight-block">
+                                <pre><code class="html code-highlight">
+&#x3C;ul class=&#x22;user-media-list&#x22;&#x3E;
+    &#x3C;li&#x3E;
+        &#x3C;article class=&#x22;media&#x22;&#x3E;
+            &#x3C;figure class=&#x22;media-left&#x22;&#x3E;
+                &#x3C;p class=&#x22;image is-48x48&#x22;&#x3E;
+                    &#x3C;img class=&#x22;img-circle&#x22; src=&#x22;assets/images/avatars/terry.jpg&#x22;&#x3E;
+                    &#x3C;span class=&#x22;avatar-status is-online&#x22;&#x3E;&#x3C;/span&#x3E;
+                &#x3C;/p&#x3E;
+            &#x3C;/figure&#x3E;
+            &#x3C;div class=&#x22;media-content&#x22;&#x3E;
+                &#x3C;div class=&#x22;content&#x22;&#x3E;
+                    &#x3C;p&#x3E;
+                        &#x3C;span&#x3E;Terry Daniels&#x3C;/span&#x3E;
+                        &#x3C;br&#x3E;
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    &#x3C;/p&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/article&#x3E;
+    &#x3C;/li&#x3E;
+    &#x3C;li&#x3E;
+        &#x3C;article class=&#x22;media&#x22;&#x3E;
+            &#x3C;figure class=&#x22;media-left&#x22;&#x3E;
+                &#x3C;p class=&#x22;image is-48x48&#x22;&#x3E;
+                    &#x3C;img class=&#x22;img-circle&#x22; src=&#x22;assets/images/avatars/carolin.png&#x22;&#x3E;
+                    &#x3C;span class=&#x22;avatar-status is-busy&#x22;&#x3E;&#x3C;/span&#x3E;
+                &#x3C;/p&#x3E;
+            &#x3C;/figure&#x3E;
+            &#x3C;div class=&#x22;media-content&#x22;&#x3E;
+                &#x3C;div class=&#x22;content&#x22;&#x3E;
+                    &#x3C;p&#x3E;
+                        &#x3C;span&#x3E;Marjory Cambell&#x3C;/span&#x3E;
+                        &#x3C;br&#x3E;
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sinum garet et setus.
+                    &#x3C;/p&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/article&#x3E;
+    &#x3C;/li&#x3E;
+    &#x3C;li&#x3E;
+        &#x3C;article class=&#x22;media&#x22;&#x3E;
+            &#x3C;figure class=&#x22;media-left&#x22;&#x3E;
+                &#x3C;p class=&#x22;image is-48x48&#x22;&#x3E;
+                    &#x3C;img class=&#x22;img-circle&#x22; src=&#x22;assets/images/avatars/ben.jpg&#x22;&#x3E;
+                    &#x3C;span class=&#x22;avatar-status is-offline&#x22;&#x3E;&#x3C;/span&#x3E;
+                &#x3C;/p&#x3E;
+            &#x3C;/figure&#x3E;
+            &#x3C;div class=&#x22;media-content&#x22;&#x3E;
+                &#x3C;div class=&#x22;content&#x22;&#x3E;
+                    &#x3C;p&#x3E;
+                        &#x3C;span&#x3E;Kevin Smith&#x3C;/span&#x3E;
+                        &#x3C;br&#x3E;
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    &#x3C;/p&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/article&#x3E;
+    &#x3C;/li&#x3E;
+    &#x3C;li&#x3E;
+        &#x3C;article class=&#x22;media&#x22;&#x3E;
+            &#x3C;figure class=&#x22;media-left&#x22;&#x3E;
+                &#x3C;p class=&#x22;image is-48x48&#x22;&#x3E;
+                    &#x3C;img class=&#x22;img-circle&#x22; src=&#x22;assets/images/avatars/melany.jpg&#x22;&#x3E;
+                    &#x3C;span class=&#x22;avatar-status is-online&#x22;&#x3E;&#x3C;/span&#x3E;
+                &#x3C;/p&#x3E;
+            &#x3C;/figure&#x3E;
+            &#x3C;div class=&#x22;media-content&#x22;&#x3E;
+                &#x3C;div class=&#x22;content&#x22;&#x3E;
+                    &#x3C;p&#x3E;
+                        &#x3C;span&#x3E;Melany Wright&#x3C;/span&#x3E;
+                        &#x3C;br&#x3E;
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    &#x3C;/p&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/article&#x3E;
+    &#x3C;/li&#x3E;
+&#x3C;/ul&#x3E;
+                                        </code></pre>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Code section -->
+            </div>
+        </div>
+        <!-- Media list -->
+
+    </div>
+</section>
+
+{{> footer-dark}}

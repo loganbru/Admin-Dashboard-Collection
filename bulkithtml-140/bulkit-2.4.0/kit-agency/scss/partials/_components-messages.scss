@@ -1,0 +1,379 @@
+/*! _messages.scss | Bulkit | CSS Ninja */
+
+/* ==========================================================================
+Messages styles
+========================================================================== */
+
+/***
+TABLE OF CONTENTS
+=============================================================================
+0. Messages
+1. GGpopovers
+2. GGtooltips
+=============================================================================
+***/
+
+/* ==========================================================================
+0. Messages
+========================================================================== */
+.message {
+    //header
+    .message-header {
+        background: $muted-grey;
+    }
+    //primary style
+    &.msg-primary {
+        .message-header {
+            background: $primary;
+        }
+        .message-body {
+            border: 1px solid $primary; 
+        }
+    }
+    //secondary style
+    &.msg-secondary {
+        .message-header {
+            background: $secondary;
+        }
+        .message-body {
+            border: 1px solid $secondary;
+        }
+    }
+    //accent style
+    &.msg-accent {
+        .message-header {
+            background: $accent;
+        }
+        .message-body {
+            border: 1px solid $accent; 
+        }
+    }
+    //info style
+    &.msg-info {
+        .message-header {
+            background: $blue;
+        }
+        .message-body {
+            border: 1px solid $blue;
+        }
+    }
+    //success style
+    &.msg-success {
+        .message-header {
+            background: $green;
+        }
+        .message-body {
+            border: 1px solid $green;
+        }
+    }
+    //warning style
+    &.msg-warning {
+        .message-header {
+            background: $orange;
+        }
+        .message-body {
+            border: 1px solid $orange;
+        }
+    }
+    //danger style
+    &.msg-danger {
+        .message-header {
+            background: $red;
+        }
+        .message-body {
+            border: 1px solid $red;
+        }
+    }
+    //icon messages
+    &.icon-msg {
+        position: relative;
+        //body
+        .message-body {
+            padding: 1em 3em 1em 1.5em;
+            h4 {
+                padding-bottom: 5px;
+                font-size: 1.1rem;
+                font-weight: 500;
+                color: $blue-grey;
+            }
+        }
+        //icon
+        i {
+            position: absolute;
+            top: -35px;
+            right: -20px;
+            padding: 20px;
+            background: $muted-grey;
+            border: 5px solid white;
+            border-radius: 100px;
+            color: $white;
+        }
+        //color styles
+        &.primary-msg i {
+            background: $primary;
+        }
+        &.secondary-msg i {
+            background: $secondary;
+        }
+        &.accent-msg i {
+            background: $accent;
+        }
+        &.info-msg i {
+            background: $blue;
+        }
+        &.success-msg i {
+            background: $green;
+        }
+        &.warning-msg i {
+            background: $orange;
+        }
+        &.danger-msg i {
+            background: $red;
+        }
+    }
+}
+
+/* ==========================================================================
+1. GGpopovers
+========================================================================== */
+
+.ggpopover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1060;
+    display: none;
+    max-width: 276px;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: left;
+    white-space: normal;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ededed;
+    border-radius: 4px;
+    -webkit-box-shadow: inset rgba(143, 160, 241, 0.2) 0 0 0 1px, rgba(213, 220, 247, 0.59) 0 10px 20px;
+    box-shadow: inset rgba(143, 160, 241, 0.2) 0 0 0 1px, rgba(213, 220, 247, 0.59) 0 10px 20px;
+    &.fade {
+        filter: alpha(opacity=0);
+        opacity: 0;
+        -webkit-transition: opacity 0.15s linear;
+        -moz-transition: opacity 0.15s linear;
+        -o-transition: opacity 0.15s linear;
+        transition: opacity 0.15s linear;
+        &.in {
+            filter: alpha(opacity=100);
+            opacity: 1;
+        }
+    }
+    &.top {
+        margin-top: -20px;
+        > .arrow {
+            bottom: -11px;
+            left: 50%;
+            margin-left: -11px;
+            border-top-color: #999;
+            border-top-color: rgba(0, 0, 0, .25);
+            border-bottom-width: 0;
+        }
+        > .arrow > .after {
+            bottom: 1px;
+            margin-left: -10px;
+            content: " ";
+            border-top-color: #fff;
+            border-bottom-width: 0;
+        }
+    }
+    &.right {
+        margin-left: 20px; 
+        > .arrow {
+            top: 50%;
+            left: -11px;
+            margin-top: -11px;
+            border-right-color: #999;
+            border-right-color: rgba(0, 0, 0, .25);
+            border-left-width: 0;
+        }
+        > .arrow > .after {
+            bottom: -10px;
+            left: 1px;
+            content: " ";
+            border-right-color: #fff;
+            border-left-width: 0;
+        }
+    }
+    &.bottom {
+        margin-top: 20px;
+        .arrow .after {
+            border-bottom-color: rgb(247, 247, 247);
+        }
+        > .arrow {
+            top: -11px;
+            left: 50%;
+            margin-left: -11px;
+            border-top-width: 0;
+            border-bottom-color: #999;
+            border-bottom-color: rgba(0, 0, 0, .25);
+        }
+        > .arrow > .after {
+            top: 1px;
+            margin-left: -10px;
+            content: " ";
+            border-top-width: 0;
+            border-bottom-color: #fff;
+        }
+    }
+    &.left {
+        margin-left: -20px;
+        > .arrow {
+            top: 50%;
+            right: -11px;
+            margin-top: -11px;
+            border-right-width: 0;
+            border-left-color: #999;
+            border-left-color: rgba(0, 0, 0, .25);
+        }
+        > .arrow > .after {
+            right: 1px;
+            bottom: -10px;
+            content: " ";
+            border-right-width: 0;
+            border-left-color: #fff;
+        }
+    }
+    .popover-title {
+        padding: 8px 14px;
+        margin: 0;
+        font-size: 14px;
+        background-color: #fff;
+        border-bottom: 1px solid #000;
+        border-color: #ededed;
+        border-radius: 4px 4px 0 0;
+        color: #444F60;
+    }
+    .popover-content {
+        padding: 9px 14px 15px 14px;
+        border-radius: 0 0 4px 4px;
+        font-size: 0.9rem;
+        color: #666 !important;
+    }
+    > .arrow, .arrow > .after {
+        position: absolute;
+        display: block;
+        width: 0;
+        height: 0;
+        border-color: transparent;
+        border-style: solid;
+    }
+    > .arrow {
+        border-width: 11px;
+    }
+    .arrow > .after {
+        content: "";
+        border-width: 10px;
+    }
+}
+
+/* ==========================================================================
+2. GGtooltips
+========================================================================== */
+
+.ggtooltip {
+    position: absolute;
+    z-index: 1030;
+    display: block;
+    padding: 5px;
+    font-size: 10px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    visibility: visible;
+    &.fade {
+        opacity: 0;
+        -webkit-transition: opacity 0.2s linear;
+        -moz-transition: opacity 0.2s linear;
+        -o-transition: opacity 0.2s linear;
+        transition: opacity 0.2s linear;
+        &.in {
+            opacity: 1;
+        }
+    }
+    &.in {
+        opacity: 0.8;
+        filter: alpha(opacity=80);
+    }
+    &.top {
+        margin-top: -15px;
+        .ggtooltip-arrow, .ggtooltip-arrow-shadow {
+            bottom: 1px;
+            left: 50%;
+            margin-left: -5px;
+            border-top-color: #222 !important;
+            border-width: 5px 5px 0;
+        }
+        .ggtooltip-arrow-shadow {
+            bottom: 0;
+        }
+    }
+    &.right {
+        margin-left: 15px;
+        .ggtooltip-arrow, .ggtooltip-arrow-shadow {
+            top: 50%;
+            left: 1px;
+            margin-top: -5px;
+            border-right-color: #222 !important;
+            border-width: 5px 5px 5px 0;
+        }
+        .ggtooltip-arrow-shadow {
+            left: 0;
+        }
+    }
+    &.bottom {
+        margin-top: 15px;
+        .ggtooltip-arrow, .ggtooltip-arrow-shadow {
+            top: 1px;
+            left: 50%;
+            margin-left: -5px;
+            border-bottom-color: #222 !important;
+            border-width: 0 5px 5px;
+        }
+        .ggtooltip-arrow-shadow {
+            top: 0;
+        }
+    }
+    &.left {
+        margin-left: -15px;
+        .ggtooltip-arrow, .ggtooltip-arrow-shadow {
+            top: 50%;
+            right: 1px;
+            margin-top: -5px;
+            border-left-color: #222 !important;
+            border-width: 5px 0 5px 5px;
+        }
+        .ggtooltip-arrow-shadow {
+            right: 0;
+        }
+    }
+    .ggtooltip-inner {
+        max-width: 200px;
+        padding: 8px 12px;
+        color: #ffffff !important;
+        text-align: center;
+        text-decoration: none;
+        background-color: #222 !important;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        box-shadow: 0 3px 10px 4px rgba(0,0,0,.04)
+    }
+    .ggtooltip-arrow, .ggtooltip-arrow-shadow {
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-color: transparent !important;
+        border-style: solid;
+    }
+}
